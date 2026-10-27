@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "scope": "Original mature adult neutral artistic body bases without clothing, non-graphic anatomy, no intimate detail. Not runtime registered.",
+  "output_prefix": "characters_v2/pose_redraw_pilot_v2",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": false,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "controlnet": {
+    "name": "xinsir-openpose-sdxl.safetensors",
+    "sha256": "b8524e557a7df60d081f5d4a0eb109967d107df217943bf88c2d99b9ebcc06c5",
+    "strength": 0.5,
+    "start_percent": 0.0,
+    "end_percent": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background, (dress:1.4), (shirt:1.4), pants, trousers, sleeves, skirt, shoes, socks, picture frame, wall, room, duplicate character, long neck, dislocated shoulder, separated limb, rigid doll joint",
+  "items": [
+    {
+      "id": "female_arms_folded",
+      "rig": "female_canonical",
+      "category": "arms",
+      "sex": "female",
+      "state": "folded",
+      "title": "Руки скрещены",
+      "control": "characters_v2/pose_redraw_pilot_v2/female_arms_folded/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and feet, generous canvas margins, (1girl:1.15), solo, mature adult woman age 30, short brown bob haircut, blue eyes, balanced natural proportions, (nude:1.25), (bare shoulders:1.2), (bare arms:1.2), (bare legs:1.2), (barefoot:1.15), arms folded loosely across mid torso, natural crossed forearms, smooth simplified non-graphic anatomy, matte skin without shine, simple empty backdrop, one adult only",
+      "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background, (dress:1.4), (shirt:1.4), pants, trousers, sleeves, skirt, shoes, socks, picture frame, wall, room, duplicate character, long neck, dislocated shoulder, separated limb, rigid doll joint, inset, diagram, miniature, icon, glowing skin, highlights, glossy skin, 1boy, man, male, masculine, huge breasts, obese",
+      "seed": 2026101980
+    },
+    {
+      "id": "male_arms_folded",
+      "rig": "male_canonical",
+      "category": "arms",
+      "sex": "male",
+      "state": "folded",
+      "title": "Руки скрещены",
+      "control": "characters_v2/pose_redraw_pilot_v2/male_arms_folded/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and feet, generous canvas margins, (1boy:1.4), (male focus:1.3), solo, (mature adult man age 35:1.3), masculine adult face, short brown hair, blue eyes, broad shoulders, (flat masculine chest:1.2), natural male pectoral muscles, (nude:1.25), (bare shoulders:1.2), (bare arms:1.2), (bare legs:1.2), (barefoot:1.15), arms folded loosely across mid torso, natural crossed forearms, smooth simplified non-graphic anatomy, matte skin without shine, simple empty backdrop, one adult only",
+      "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background, (dress:1.4), (shirt:1.4), pants, trousers, sleeves, skirt, shoes, socks, picture frame, wall, room, duplicate character, long neck, dislocated shoulder, separated limb, rigid doll joint, inset, diagram, miniature, icon, glowing skin, highlights, glossy skin, 1girl, girl, woman, female, breasts, feminine, long hair",
+      "seed": 2026101981
+    },
+    {
+      "id": "female_full_pose_seated_front",
+      "rig": "female_canonical",
+      "category": "full_pose",
+      "sex": "female",
+      "state": "seated_front",
+      "title": "Сидит прямо",
+      "control": "characters_v2/pose_redraw_pilot_v2/female_full_pose_seated_front/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and feet, generous canvas margins, (1girl:1.15), solo, mature adult woman age 30, short brown bob haircut, blue eyes, balanced natural proportions, (nude:1.25), (bare shoulders:1.2), (bare arms:1.2), (bare legs:1.2), (barefoot:1.15), sitting upright on a plain gray armless stool, front view, both feet flat on ground, hands resting on thighs, smooth simplified non-graphic anatomy, matte skin without shine, simple empty backdrop, one adult only",
+      "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background, (dress:1.4), (shirt:1.4), pants, trousers, sleeves, skirt, shoes, socks, picture frame, wall, room, duplicate character, long neck, dislocated shoulder, separated limb, rigid doll joint, inset, diagram, miniature, icon, glowing skin, highlights, glossy skin, 1boy, man, male, masculine, huge breasts, obese",
+      "seed": 2026101982
+    },
+    {
+      "id": "male_full_pose_seated_front",
+      "rig": "male_canonical",
+      "category": "full_pose",
+      "sex": "male",
+      "state": "seated_front",
+      "title": "Сидит прямо",
+      "control": "characters_v2/pose_redraw_pilot_v2/male_full_pose_seated_front/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and feet, generous canvas margins, (1boy:1.4), (male focus:1.3), solo, (mature adult man age 35:1.3), masculine adult face, short brown hair, blue eyes, broad shoulders, (flat masculine chest:1.2), natural male pectoral muscles, (nude:1.25), (bare shoulders:1.2), (bare arms:1.2), (bare legs:1.2), (barefoot:1.15), sitting upright on a plain gray armless stool, front view, both feet flat on ground, hands resting on thighs, smooth simplified non-graphic anatomy, matte skin without shine, simple empty backdrop, one adult only",
+      "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background, (dress:1.4), (shirt:1.4), pants, trousers, sleeves, skirt, shoes, socks, picture frame, wall, room, duplicate character, long neck, dislocated shoulder, separated limb, rigid doll joint, inset, diagram, miniature, icon, glowing skin, highlights, glossy skin, 1girl, girl, woman, female, breasts, feminine, long hair",
+      "seed": 2026101983
+    }
+  ],
+  "mode": "full_redraw",
+  "width": 832,
+  "height": 1472
+}

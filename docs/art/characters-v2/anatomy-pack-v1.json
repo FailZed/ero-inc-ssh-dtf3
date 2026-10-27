@@ -1,0 +1,59 @@
+{
+  "adapter_sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+  "rigs": [
+    {
+      "id": "female_curvy",
+      "gender": "female",
+      "body_build": "moderate_curvy",
+      "neck_y": 343,
+      "canonical": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+      "variants": [
+        {
+          "id": "small",
+          "label": "Маленькая грудь",
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\female_bust_small_v4.png",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\ecf13dc1-c1ae-472a-9217-8dfc9109161a.json"
+        },
+        {
+          "id": "medium",
+          "label": "Средняя грудь",
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\female_bust_medium_v3.png",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\004a15c2-41d5-469a-919f-6c3d2b28b021.json"
+        },
+        {
+          "id": "full",
+          "label": "Полная грудь",
+          "source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\fcffeb0a-61e2-4bfa-9264-a19fe878aa9b.json"
+        }
+      ]
+    },
+    {
+      "id": "male_toned",
+      "gender": "male",
+      "body_build": "toned",
+      "neck_y": 332,
+      "canonical": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\male_toned\\full.png",
+      "variants": [
+        {
+          "id": "small",
+          "label": "Небольшой размер",
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\male_anatomy_small_v3.png",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\2b641eeb-c6ef-4757-b9d9-ee53828edf9c.json"
+        },
+        {
+          "id": "average",
+          "label": "Средний размер",
+          "source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\male_toned\\full.png",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\4689609e-13f2-49c1-af80-42a42e3b1e7d.json"
+        },
+        {
+          "id": "larger",
+          "label": "Более крупный размер",
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\male_anatomy_larger_v3.png",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\a8a8f742-1201-4b8d-a5b7-ab6b65508272.json"
+        }
+      ]
+    }
+  ]
+}

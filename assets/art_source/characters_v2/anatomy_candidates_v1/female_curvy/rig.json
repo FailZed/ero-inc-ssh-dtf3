@@ -1,0 +1,109 @@
+{
+  "id": "female_curvy",
+  "gender": "female",
+  "body_build": "moderate_curvy",
+  "age": 28,
+  "morphology": "human",
+  "head": "head.png",
+  "head_sha256": "f3b39471e5bdad18ef67e674fba04f0f4e625f6efa593e05aac4eb076b51bfa0",
+  "head_source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+  "head_source_sha256": "f9a7c48dac61c877d0788452073bda3fcccaa0745879d624daf6e0eb6a17f3c8",
+  "head_scope": "combined head, face and hair; not independently customizable yet",
+  "working_canvas": [
+    832,
+    1472
+  ],
+  "export_canvas": [
+    720,
+    1280
+  ],
+  "neck_y": 317,
+  "uniform_transform": {
+    "scale": 0.8807692307692307,
+    "size": [
+      733,
+      1296
+    ],
+    "offset": [
+      -7,
+      15
+    ]
+  },
+  "variants": [
+    {
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\female_bust_small_v4.png",
+      "source_sha256": "d14a86aac7fa6e11fe5b3358af1345a7eb1f0fba62626a59719a173f5849ccb1",
+      "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\ecf13dc1-c1ae-472a-9217-8dfc9109161a.json",
+      "operation": "Shared uniform transform and complementary head/body split",
+      "anatomical_variant": "small",
+      "canvas": [
+        720,
+        1280
+      ],
+      "baseline_y": 1244,
+      "id": "small",
+      "label": "Маленькая грудь",
+      "body": "body_small.png",
+      "body_sha256": "fc23b5c74a5a967835680b2b229a59c9db546516b33e2bdb81f1334fed4060e9",
+      "preview": "preview_small.png",
+      "alpha_bounds": [
+        183,
+        98,
+        534,
+        1243
+      ],
+      "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+      "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+    },
+    {
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\female_bust_medium_v3.png",
+      "source_sha256": "91d24d577446d7afd862ebdd52d0caef8f53ee463523ba90cac67b928dbcfd0b",
+      "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\004a15c2-41d5-469a-919f-6c3d2b28b021.json",
+      "operation": "Shared uniform transform and complementary head/body split",
+      "anatomical_variant": "medium",
+      "canvas": [
+        720,
+        1280
+      ],
+      "baseline_y": 1244,
+      "id": "medium",
+      "label": "Средняя грудь",
+      "body": "body_medium.png",
+      "body_sha256": "bfd4807f76284aa661c616078f6c1072b157489e357cf7773ba59565b7dce7a7",
+      "preview": "preview_medium.png",
+      "alpha_bounds": [
+        183,
+        98,
+        534,
+        1243
+      ],
+      "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+      "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+    },
+    {
+      "source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+      "source_sha256": "f9a7c48dac61c877d0788452073bda3fcccaa0745879d624daf6e0eb6a17f3c8",
+      "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\fcffeb0a-61e2-4bfa-9264-a19fe878aa9b.json",
+      "operation": "Shared uniform transform and complementary head/body split",
+      "anatomical_variant": "full",
+      "canvas": [
+        720,
+        1280
+      ],
+      "baseline_y": 1244,
+      "id": "full",
+      "label": "Полная грудь",
+      "body": "body_full.png",
+      "body_sha256": "edf60807c0d362743dd38d054b514af229acf7ea75fb3b48c0702f3608f304d9",
+      "preview": "preview_full.png",
+      "alpha_bounds": [
+        183,
+        98,
+        535,
+        1243
+      ],
+      "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+      "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+    }
+  ]
+}

@@ -1,0 +1,4935 @@
+{
+  "actions": {
+    "connect": 712,
+    "create": 1038,
+    "dispute": 2,
+    "eat": 1000,
+    "practice": 2544,
+    "publish": 133,
+    "rest": 19,
+    "sleep": 2595,
+    "study": 1171,
+    "support": 76,
+    "visit": 444,
+    "walk": 54,
+    "wash": 461,
+    "work": 2030
+  },
+  "aspirations": {
+    "career": 23,
+    "community": 36,
+    "creativity": 27,
+    "mastery": 14
+  },
+  "daily_milliseconds": [
+    1404,
+    1105,
+    1188,
+    1158,
+    1148,
+    1097,
+    1560
+  ],
+  "date": "2026-10-19",
+  "days": 7,
+  "directed_memories": 1197,
+  "emotions": {
+    "confident": 2,
+    "content": 42,
+    "grateful": 2,
+    "happy": 27,
+    "lonely": 23,
+    "sad": 4
+  },
+  "engine": "4.7.2-stable (official)",
+  "examples": [
+    {
+      "decision": {
+        "action": "wash",
+        "minute": 10545,
+        "reason": "needs_and_personality",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.045,
+              "novelty": 0.294117647058824,
+              "personality": 0.0
+            },
+            "score": 0.0455949933823529
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.21,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.1189557
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.78,
+              "novelty": 1.0,
+              "personality": 0.132
+            },
+            "score": 0.6353024
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.4704126890625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.045,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0538302875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.4704126890625
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.0375
+            },
+            "score": 0.4849126890625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.117
+            },
+            "score": 0.4644526890625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 0.625,
+              "personality": 0.33
+            },
+            "score": 0.5750126890625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.05
+            },
+            "score": 0.5364126890625
+          },
+          {
+            "available": false,
+            "blocked": "skill_prerequisite",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.1
+            },
+            "score": 0.5024126890625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.264
+            },
+            "score": 0.45168
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.264
+            },
+            "score": 0.15168
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.5675,
+              "novelty": 1.0,
+              "personality": 0.234
+            },
+            "score": 0.4984926890625
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.537275,
+              "novelty": 1.0,
+              "personality": 0.306
+            },
+            "score": 0.467995796907776
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.537275,
+              "novelty": 1.0,
+              "personality": 0.255
+            },
+            "score": 0.451875796907777
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.537275,
+              "novelty": 1.0,
+              "personality": 0.44
+            },
+            "score": 0.474075796907777
+          }
+        ]
+      },
+      "emotion": {
+        "id": "content",
+        "strength": 0.0
+      },
+      "goal": {
+        "completed": false,
+        "id": "career",
+        "milestones": 1,
+        "progress": 2235,
+        "stage": 1
+      },
+      "id": "resident_000001",
+      "name": "Александр Ветров",
+      "needs": {
+        "energy": 94.75,
+        "fun": 42.5,
+        "hygiene": 21.5,
+        "mood": 86.0,
+        "satiety": 78.0,
+        "social": 45.605
+      },
+      "plan": [
+        "work"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10335
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "partner": "",
+            "phase": "action",
+            "reason": "night"
+          },
+          "kind": "intent",
+          "minute": 10335
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "eat",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "eat",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "action": "practice",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "action": "practice",
+            "minutes": 60
+          },
+          "kind": "action_completed",
+          "minute": 10545
+        },
+        {
+          "data": {
+            "action": "wash",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10545
+        }
+      ],
+      "sentiments": {
+        "resident_000017": {
+          "expires": 19530,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000027": {
+          "expires": 12810,
+          "kind": "rejected",
+          "value": -2.0
+        },
+        "resident_000031": {
+          "expires": 14280,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000043": {
+          "expires": 18600,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000046": {
+          "expires": 12840,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000054": {
+          "expires": 19770,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000073": {
+          "expires": 20010,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000092": {
+          "expires": 20040,
+          "kind": "friendship",
+          "value": 10.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "connect",
+        "minute": 10560,
+        "reason": "needs_and_personality",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0375,
+              "novelty": 0.294117647058824,
+              "personality": 0.0
+            },
+            "score": 0.0444383386948529
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.22,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.1255376
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.655,
+              "novelty": 1.0,
+              "personality": 0.062
+            },
+            "score": 0.5287239625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.4196206125
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0375,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0526736328125
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.4196206125
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 1.0,
+              "personality": 0.0675
+            },
+            "score": 0.4377206125
+          },
+          {
+            "available": false,
+            "blocked": "already_present",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.6444,
+              "novelty": 1.0,
+              "personality": 0.096
+            },
+            "score": 0.5333957827008
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 0.625,
+              "personality": 0.155
+            },
+            "score": 0.5032206125
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 1.0,
+              "personality": 0.09
+            },
+            "score": 0.4904206125
+          },
+          {
+            "available": false,
+            "blocked": "skill_prerequisite",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 1.0,
+              "personality": 0.18
+            },
+            "score": 0.4612206125
+          },
+          {
+            "available": false,
+            "blocked": "role",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.124
+            },
+            "score": 0.13488
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.124
+            },
+            "score": 0.43488
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000077",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.6444,
+              "novelty": 1.0,
+              "personality": 0.192
+            },
+            "score": 0.5049157827008
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.6444,
+              "novelty": 1.0,
+              "personality": 0.336
+            },
+            "score": 0.5121957827008
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.6444,
+              "novelty": 1.0,
+              "personality": 0.28
+            },
+            "score": 0.4954757827008
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.6444,
+              "novelty": 1.0,
+              "personality": 0.215
+            },
+            "score": 0.4876757827008
+          }
+        ]
+      },
+      "emotion": {
+        "id": "sad",
+        "strength": 12.0
+      },
+      "goal": {
+        "completed": false,
+        "id": "mastery",
+        "milestones": 2,
+        "progress": 0,
+        "stage": 2
+      },
+      "id": "resident_000002",
+      "name": "Ирина Белова",
+      "needs": {
+        "energy": 96.25,
+        "fun": 48.5,
+        "hygiene": 34.5,
+        "mood": 84.0,
+        "satiety": 78.0,
+        "social": 35.56
+      },
+      "plan": [
+        "study"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "action": "eat",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "action": "eat",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "connect",
+            "partner": "resident_000073",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "connect",
+            "partner": "resident_000073",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10530
+        },
+        {
+          "data": {
+            "kind": "rejected",
+            "other": "resident_000073"
+          },
+          "kind": "experience",
+          "minute": 10560
+        },
+        {
+          "data": {
+            "accepted": false,
+            "action": "connect",
+            "other": "resident_000073"
+          },
+          "kind": "social_outcome",
+          "minute": 10560
+        },
+        {
+          "data": {
+            "action": "connect",
+            "partner": "resident_000077",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10560
+        }
+      ],
+      "sentiments": {
+        "resident_000010": {
+          "expires": 19830,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000029": {
+          "expires": 12000,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000037": {
+          "expires": 14310,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000070": {
+          "expires": 12675,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000073": {
+          "expires": 20640,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000080": {
+          "expires": 19800,
+          "kind": "friendship",
+          "value": 10.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "practice",
+        "minute": 10560,
+        "reason": "needs_and_personality",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0225,
+              "novelty": 0.294117647058824,
+              "personality": 0.0
+            },
+            "score": 0.0427370855698529
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.56,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.4282192
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.385,
+              "novelty": 1.0,
+              "personality": 0.172
+            },
+            "score": 0.2854921375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.7135158375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0225,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0509723796875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.7135158375
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.117
+            },
+            "score": 0.7375558375
+          },
+          {
+            "available": false,
+            "blocked": "already_present",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.162
+            },
+            "score": 0.7129558375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.43
+            },
+            "score": 0.8451158375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.156
+            },
+            "score": 0.7922358375
+          },
+          {
+            "available": false,
+            "blocked": "skill_prerequisite",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.312
+            },
+            "score": 0.7709558375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.344
+            },
+            "score": 0.16128
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.344
+            },
+            "score": 0.16128
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000081",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.905,
+              "novelty": 1.0,
+              "personality": 0.324
+            },
+            "score": 0.7523958375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "resident_000081",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.452,
+              "novelty": 0.625,
+              "personality": 0.546
+            },
+            "score": 0.6988637696
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.452,
+              "novelty": 1.0,
+              "personality": 0.455
+            },
+            "score": 0.3929437696
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.452,
+              "novelty": 1.0,
+              "personality": 0.349
+            },
+            "score": 0.3802237696
+          }
+        ]
+      },
+      "emotion": {
+        "id": "happy",
+        "strength": 10.0
+      },
+      "goal": {
+        "completed": false,
+        "id": "community",
+        "milestones": 1,
+        "progress": 120,
+        "stage": 1
+      },
+      "id": "resident_000003",
+      "name": "Ирина Белова",
+      "needs": {
+        "energy": 97.75,
+        "fun": 9.5,
+        "hygiene": 61.5,
+        "mood": 100.0,
+        "satiety": 44.0,
+        "social": 54.8
+      },
+      "plan": [
+        "visit",
+        "connect",
+        "support"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "sleep",
+            "partner": "",
+            "phase": "action",
+            "reason": "night"
+          },
+          "kind": "intent",
+          "minute": 10395
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "support",
+            "partner": "resident_000067",
+            "phase": "travel",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "support",
+            "partner": "resident_000067",
+            "phase": "action",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10530
+        },
+        {
+          "data": {
+            "kind": "friendship",
+            "other": "resident_000067"
+          },
+          "kind": "experience",
+          "minute": 10560
+        },
+        {
+          "data": {
+            "accepted": true,
+            "action": "support",
+            "other": "resident_000067"
+          },
+          "kind": "social_outcome",
+          "minute": 10560
+        },
+        {
+          "data": {
+            "action": "support",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10560
+        },
+        {
+          "data": {
+            "action": "practice",
+            "partner": "",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10560
+        }
+      ],
+      "sentiments": {
+        "resident_000006": {
+          "expires": 11025,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000015": {
+          "expires": 19800,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000042": {
+          "expires": 19410,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000064": {
+          "expires": 18465,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000067": {
+          "expires": 20640,
+          "kind": "friendship",
+          "value": 18.0
+        },
+        "resident_000071": {
+          "expires": 11205,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000073": {
+          "expires": 12840,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000081": {
+          "expires": 19290,
+          "kind": "supported",
+          "value": 24.0
+        },
+        "resident_000084": {
+          "expires": 16830,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000085": {
+          "expires": 11235,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000086": {
+          "expires": 15420,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000092": {
+          "expires": 19650,
+          "kind": "friendship",
+          "value": -2.0
+        },
+        "resident_000097": {
+          "expires": 17700,
+          "kind": "friendship",
+          "value": 40.0
+        },
+        "resident_000100": {
+          "expires": 10995,
+          "kind": "friendship",
+          "value": 10.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "practice",
+        "minute": 10500,
+        "reason": "needs_and_personality",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.03,
+              "novelty": 0.294117647058824,
+              "personality": 0.0
+            },
+            "score": 0.0434846058823529
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.52,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.3894896
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.31,
+              "novelty": 1.0,
+              "personality": 0.132
+            },
+            "score": 0.2145067
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.6976597375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.03,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0517199
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.6976597375
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.1065
+            },
+            "score": 0.7204397375
+          },
+          {
+            "available": false,
+            "blocked": "already_present",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.255
+            },
+            "score": 0.7082597375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 0.625,
+              "personality": 0.33
+            },
+            "score": 0.8022597375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.142
+            },
+            "score": 0.7746997375
+          },
+          {
+            "available": false,
+            "blocked": "skill_prerequisite",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.284
+            },
+            "score": 0.7517397375
+          },
+          {
+            "available": false,
+            "blocked": "role",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.264
+            },
+            "score": 0.15168
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.264
+            },
+            "score": 0.15168
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000012",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.865,
+              "novelty": 1.0,
+              "personality": 0.51
+            },
+            "score": 0.7588597375
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "resident_000012",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.4815,
+              "novelty": 1.0,
+              "personality": 0.39
+            },
+            "score": 0.7237707311125
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4815,
+              "novelty": 1.0,
+              "personality": 0.325
+            },
+            "score": 0.4059707311125
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4815,
+              "novelty": 1.0,
+              "personality": 0.388
+            },
+            "score": 0.4135307311125
+          }
+        ]
+      },
+      "emotion": {
+        "id": "content",
+        "strength": 0.0
+      },
+      "goal": {
+        "completed": false,
+        "id": "community",
+        "milestones": 1,
+        "progress": 120,
+        "stage": 1
+      },
+      "id": "resident_000004",
+      "name": "Артём Орлов",
+      "needs": {
+        "energy": 94.0,
+        "fun": 10.5,
+        "hygiene": 67.0,
+        "mood": 100.0,
+        "satiety": 44.0,
+        "social": 47.8
+      },
+      "plan": [
+        "visit",
+        "connect",
+        "support"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10320
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "partner": "",
+            "phase": "action",
+            "reason": "night"
+          },
+          "kind": "intent",
+          "minute": 10320
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10440
+        },
+        {
+          "data": {
+            "action": "visit",
+            "partner": "",
+            "phase": "travel",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10440
+        },
+        {
+          "data": {
+            "action": "visit",
+            "partner": "",
+            "phase": "action",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "visit",
+            "reason": "social_invitation"
+          },
+          "kind": "interrupted",
+          "minute": 10470
+        },
+        {
+          "data": {
+            "action": "practice",
+            "partner": "",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10500
+        },
+        {
+          "data": {
+            "action": "practice",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10515
+        }
+      ],
+      "sentiments": {
+        "resident_000005": {
+          "expires": 10995,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000008": {
+          "expires": 11025,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000012": {
+          "expires": 11115,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000016": {
+          "expires": 19995,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000028": {
+          "expires": 11295,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000037": {
+          "expires": 19755,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000062": {
+          "expires": 15690,
+          "kind": "rejected",
+          "value": 28.0
+        },
+        "resident_000070": {
+          "expires": 19860,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000071": {
+          "expires": 11055,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000086": {
+          "expires": 16845,
+          "kind": "rejected",
+          "value": 18.0
+        },
+        "resident_000091": {
+          "expires": 14130,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000093": {
+          "expires": 19500,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000096": {
+          "expires": 17100,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000097": {
+          "expires": 19200,
+          "kind": "friendship",
+          "value": 30.0
+        },
+        "resident_000098": {
+          "expires": 16260,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000099": {
+          "expires": 11205,
+          "kind": "friendship",
+          "value": 30.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "practice",
+        "minute": 10500,
+        "reason": "needs_and_personality",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0225,
+              "novelty": 0.294117647058824,
+              "personality": 0.0
+            },
+            "score": 0.0427370855698529
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.57,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.4378041
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.515,
+              "novelty": 1.0,
+              "personality": 0.06
+            },
+            "score": 0.3968206125
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.6511286546875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0225,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0509723796875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.6511286546875
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.1185
+            },
+            "score": 0.6753486546875
+          },
+          {
+            "available": false,
+            "blocked": "already_present",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.7825,
+              "novelty": 0.625,
+              "personality": 0.144
+            },
+            "score": 0.9334086546875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.06,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.15
+            },
+            "score": 0.8091286546875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.06,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.158
+            },
+            "score": 0.7900886546875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.06,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.316
+            },
+            "score": 0.7690486546875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.12
+            },
+            "score": 0.1344
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.12
+            },
+            "score": 0.1344
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000012",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.7825,
+              "novelty": 1.0,
+              "personality": 0.288
+            },
+            "score": 0.6256886546875
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.3517,
+              "novelty": 1.0,
+              "personality": 0.57
+            },
+            "score": 0.2630475092631
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.3517,
+              "novelty": 1.0,
+              "personality": 0.475
+            },
+            "score": 0.2416475092631
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": -0.06,
+              "goal": 0.0,
+              "need": 0.3517,
+              "novelty": 1.0,
+              "personality": 0.502
+            },
+            "score": 0.2448875092631
+          }
+        ]
+      },
+      "emotion": {
+        "id": "grateful",
+        "strength": 11.6666666666667
+      },
+      "goal": {
+        "completed": false,
+        "id": "community",
+        "milestones": 1,
+        "progress": 30,
+        "stage": 1
+      },
+      "id": "resident_000005",
+      "name": "Михаил Соколов",
+      "needs": {
+        "energy": 94.75,
+        "fun": 18.75,
+        "hygiene": 46.5,
+        "mood": 100.0,
+        "satiety": 39.0,
+        "social": 61.89
+      },
+      "plan": [
+        "visit",
+        "connect",
+        "support"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "sleep",
+            "partner": "",
+            "phase": "action",
+            "reason": "night"
+          },
+          "kind": "intent",
+          "minute": 10335
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "visit",
+            "partner": "",
+            "phase": "travel",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "visit",
+            "partner": "",
+            "phase": "action",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10470
+        },
+        {
+          "data": {
+            "action": "visit",
+            "reason": "social_invitation"
+          },
+          "kind": "interrupted",
+          "minute": 10470
+        },
+        {
+          "data": {
+            "kind": "supported",
+            "other": "resident_000047"
+          },
+          "kind": "experience",
+          "minute": 10500
+        },
+        {
+          "data": {
+            "action": "practice",
+            "partner": "",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10500
+        },
+        {
+          "data": {
+            "action": "practice",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10515
+        }
+      ],
+      "sentiments": {
+        "resident_000006": {
+          "expires": 12600,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000020": {
+          "expires": 12630,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000021": {
+          "expires": 17160,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000031": {
+          "expires": 13410,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000035": {
+          "expires": 19335,
+          "kind": "friendship",
+          "value": 30.0
+        },
+        "resident_000040": {
+          "expires": 14040,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000046": {
+          "expires": 14250,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000047": {
+          "expires": 20580,
+          "kind": "supported",
+          "value": 16.0
+        },
+        "resident_000052": {
+          "expires": 12690,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000059": {
+          "expires": 19680,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000062": {
+          "expires": 12780,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000083": {
+          "expires": 18330,
+          "kind": "supported",
+          "value": 42.0
+        },
+        "resident_000084": {
+          "expires": 15600,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000086": {
+          "expires": 14850,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000095": {
+          "expires": 13380,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000100": {
+          "expires": 20040,
+          "kind": "rejected",
+          "value": -2.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "wash",
+        "minute": 10545,
+        "reason": "needs_and_personality",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.09,
+              "novelty": 0.357142857142857,
+              "personality": 0.0
+            },
+            "score": 0.0591330142857143
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.23,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.1323379
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.76,
+              "novelty": 1.0,
+              "personality": 0.144
+            },
+            "score": 0.6229312
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.17,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.1299681
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.09,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0648473
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.17,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.1299681
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.17,
+              "novelty": 1.0,
+              "personality": 0.087
+            },
+            "score": 0.1504081
+          },
+          {
+            "available": false,
+            "blocked": "already_present",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4416,
+              "novelty": 1.0,
+              "personality": 0.252
+            },
+            "score": 0.3585589297152
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.17,
+              "novelty": 1.0,
+              "personality": 0.36
+            },
+            "score": 0.2531681
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.17,
+              "novelty": 1.0,
+              "personality": 0.116
+            },
+            "score": 0.2038881
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.17,
+              "novelty": 0.625,
+              "personality": 0.232
+            },
+            "score": 0.4628081
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.288
+            },
+            "score": 0.15456
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.288
+            },
+            "score": 0.15456
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000046",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4416,
+              "novelty": 0.625,
+              "personality": 0.504
+            },
+            "score": 0.3937989297152
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4416,
+              "novelty": 1.0,
+              "personality": 0.474
+            },
+            "score": 0.3951989297152
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4416,
+              "novelty": 1.0,
+              "personality": 0.395
+            },
+            "score": 0.3757189297152
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.4416,
+              "novelty": 1.0,
+              "personality": 0.399
+            },
+            "score": 0.3761989297152
+          }
+        ]
+      },
+      "emotion": {
+        "id": "happy",
+        "strength": 9.375
+      },
+      "goal": {
+        "completed": false,
+        "id": "creativity",
+        "milestones": 2,
+        "progress": 360,
+        "stage": 2
+      },
+      "id": "resident_000006",
+      "name": "Илья Белов",
+      "needs": {
+        "energy": 90.25,
+        "fun": 82.25,
+        "hygiene": 23.5,
+        "mood": 100.0,
+        "satiety": 76.0,
+        "social": 54.835
+      },
+      "plan": [
+        "publish"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "connect",
+            "partner": "resident_000015",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10500
+        },
+        {
+          "data": {
+            "action": "connect",
+            "reason": "destination_changed"
+          },
+          "kind": "blocked",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "connect",
+            "partner": "resident_000083",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "kind": "friendship",
+            "other": "resident_000083"
+          },
+          "kind": "experience",
+          "minute": 10545
+        },
+        {
+          "data": {
+            "accepted": true,
+            "action": "connect",
+            "other": "resident_000083"
+          },
+          "kind": "social_outcome",
+          "minute": 10545
+        },
+        {
+          "data": {
+            "action": "connect",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10545
+        },
+        {
+          "data": {
+            "action": "wash",
+            "partner": "",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10545
+        },
+        {
+          "data": {
+            "action": "wash",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10560
+        }
+      ],
+      "sentiments": {
+        "resident_000003": {
+          "expires": 14115,
+          "kind": "rejected",
+          "value": -2.0
+        },
+        "resident_000020": {
+          "expires": 14835,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000028": {
+          "expires": 12630,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000033": {
+          "expires": 19890,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000042": {
+          "expires": 12660,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000043": {
+          "expires": 19140,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000053": {
+          "expires": 12840,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000063": {
+          "expires": 18300,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000081": {
+          "expires": 15600,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000083": {
+          "expires": 20625,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000086": {
+          "expires": 15630,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000087": {
+          "expires": 16950,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000088": {
+          "expires": 19200,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000091": {
+          "expires": 18270,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000093": {
+          "expires": 14175,
+          "kind": "friendship",
+          "value": 10.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "publish",
+        "minute": 10515,
+        "reason": "aspiration",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.03,
+              "novelty": 0.294117647058824,
+              "personality": 0.0
+            },
+            "score": 0.0434846058823529
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.19,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.1064783
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 0.625,
+              "personality": 0.14
+            },
+            "score": 0.0518
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.27,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.1965671
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.03,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0517199
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.27,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.1965671
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.27,
+              "novelty": 1.0,
+              "personality": 0.1155
+            },
+            "score": 0.2204271
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.554,
+              "novelty": 1.0,
+              "personality": 0.105
+            },
+            "score": 0.4500452968
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.27,
+              "novelty": 1.0,
+              "personality": 0.35
+            },
+            "score": 0.3185671
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.27,
+              "novelty": 1.0,
+              "personality": 0.154
+            },
+            "score": 0.2750471
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.27,
+              "novelty": 1.0,
+              "personality": 0.308
+            },
+            "score": 0.5535271
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.28
+            },
+            "score": 0.1536
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.28
+            },
+            "score": 0.1536
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000088",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.554,
+              "novelty": 1.0,
+              "personality": 0.21
+            },
+            "score": 0.4826452968
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.554,
+              "novelty": 1.0,
+              "personality": 0.246
+            },
+            "score": 0.4769652968
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.554,
+              "novelty": 1.0,
+              "personality": 0.205
+            },
+            "score": 0.4620452968
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.554,
+              "novelty": 1.0,
+              "personality": 0.486
+            },
+            "score": 0.4957652968
+          }
+        ]
+      },
+      "emotion": {
+        "id": "content",
+        "strength": 0.0
+      },
+      "goal": {
+        "completed": false,
+        "id": "creativity",
+        "milestones": 2,
+        "progress": 420,
+        "stage": 2
+      },
+      "id": "resident_000007",
+      "name": "Вера Орлова",
+      "needs": {
+        "energy": 94.75,
+        "fun": 70.75,
+        "hygiene": 98.5,
+        "mood": 95.5,
+        "satiety": 78.0,
+        "social": 42.6875
+      },
+      "plan": [
+        "publish"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10335
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "partner": "",
+            "phase": "action",
+            "reason": "night"
+          },
+          "kind": "intent",
+          "minute": 10335
+        },
+        {
+          "data": {
+            "action": "sleep",
+            "minutes": 120
+          },
+          "kind": "action_completed",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "eat",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10455
+        },
+        {
+          "data": {
+            "action": "eat",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "action": "wash",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "action": "wash",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "publish",
+            "partner": "",
+            "phase": "action",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10515
+        }
+      ],
+      "sentiments": {
+        "resident_000008": {
+          "expires": 14865,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000012": {
+          "expires": 18450,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000035": {
+          "expires": 19920,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000045": {
+          "expires": 17730,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000047": {
+          "expires": 14250,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000052": {
+          "expires": 12510,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000058": {
+          "expires": 15540,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000062": {
+          "expires": 16980,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000081": {
+          "expires": 19170,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000083": {
+          "expires": 16950,
+          "kind": "rejected",
+          "value": 8.0
+        },
+        "resident_000084": {
+          "expires": 17010,
+          "kind": "rejected",
+          "value": -12.0
+        },
+        "resident_000087": {
+          "expires": 12630,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000093": {
+          "expires": 17040,
+          "kind": "friendship",
+          "value": 10.0
+        }
+      }
+    },
+    {
+      "decision": {
+        "action": "publish",
+        "minute": 10560,
+        "reason": "aspiration",
+        "scores": [
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "sleep",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0600000000000001,
+              "novelty": 0.357142857142857,
+              "personality": 0.0
+            },
+            "score": 0.0510249142857143
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "eat",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.25,
+              "novelty": 0.625,
+              "personality": 0.0
+            },
+            "score": 0.1465625
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "wash",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.045,
+              "novelty": 0.625,
+              "personality": 0.13
+            },
+            "score": 0.0544302875
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "rest",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.2,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.1476
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recover",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0600000000000001,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.0567392
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "recreation",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.2,
+              "novelty": 1.0,
+              "personality": 0.0
+            },
+            "score": 0.1476
+          },
+          {
+            "available": false,
+            "blocked": "weather",
+            "destination": "global_map",
+            "id": "walk",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.2,
+              "novelty": 1.0,
+              "personality": 0.0705
+            },
+            "score": 0.16606
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "visit",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.486,
+              "novelty": 1.0,
+              "personality": 0.234
+            },
+            "score": 0.3994335672
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "practice",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.2,
+              "novelty": 1.0,
+              "personality": 0.325
+            },
+            "score": 0.2666
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "create",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.2,
+              "novelty": 1.0,
+              "personality": 0.094
+            },
+            "score": 0.21888
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "bedroom",
+            "id": "publish",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 1.0,
+              "need": 0.2,
+              "novelty": 1.0,
+              "personality": 0.188
+            },
+            "score": 0.49016
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "work",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.26
+            },
+            "score": 0.1512
+          },
+          {
+            "available": false,
+            "blocked": "closed",
+            "destination": "training_center",
+            "id": "study",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.0,
+              "novelty": 1.0,
+              "personality": 0.26
+            },
+            "score": 0.1512
+          },
+          {
+            "available": true,
+            "blocked": "",
+            "destination": "global_map",
+            "id": "connect",
+            "partner": "resident_000095",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.486,
+              "novelty": 0.625,
+              "personality": 0.468
+            },
+            "score": 0.4325135672
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "support",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.486,
+              "novelty": 1.0,
+              "personality": 0.456
+            },
+            "score": 0.4360735672
+          },
+          {
+            "available": false,
+            "blocked": "no_available_partner",
+            "destination": "global_map",
+            "id": "reconcile",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.486,
+              "novelty": 1.0,
+              "personality": 0.38
+            },
+            "score": 0.4169535672
+          },
+          {
+            "available": false,
+            "blocked": "personality",
+            "destination": "global_map",
+            "id": "dispute",
+            "partner": "",
+            "reasons": {
+              "emotion": 0.0,
+              "goal": 0.0,
+              "need": 0.486,
+              "novelty": 1.0,
+              "personality": 0.306
+            },
+            "score": 0.4080735672
+          }
+        ]
+      },
+      "emotion": {
+        "id": "happy",
+        "strength": 8.125
+      },
+      "goal": {
+        "completed": false,
+        "id": "creativity",
+        "milestones": 2,
+        "progress": 300,
+        "stage": 2
+      },
+      "id": "resident_000008",
+      "name": "Марина Ветрова",
+      "needs": {
+        "energy": 94.0,
+        "fun": 80.0,
+        "hygiene": 95.5,
+        "mood": 100.0,
+        "satiety": 75.0,
+        "social": 51.4
+      },
+      "plan": [
+        "publish"
+      ],
+      "recent_history": [
+        {
+          "data": {
+            "action": "connect",
+            "partner": "resident_000080",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10485
+        },
+        {
+          "data": {
+            "kind": "friendship",
+            "other": "resident_000080"
+          },
+          "kind": "experience",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "accepted": true,
+            "action": "connect",
+            "other": "resident_000080"
+          },
+          "kind": "social_outcome",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "connect",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "wash",
+            "partner": "",
+            "phase": "travel",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10515
+        },
+        {
+          "data": {
+            "action": "wash",
+            "partner": "",
+            "phase": "action",
+            "reason": "needs_and_personality"
+          },
+          "kind": "intent",
+          "minute": 10530
+        },
+        {
+          "data": {
+            "action": "wash",
+            "minutes": 30
+          },
+          "kind": "action_completed",
+          "minute": 10560
+        },
+        {
+          "data": {
+            "action": "publish",
+            "partner": "",
+            "phase": "action",
+            "reason": "aspiration"
+          },
+          "kind": "intent",
+          "minute": 10560
+        }
+      ],
+      "sentiments": {
+        "resident_000004": {
+          "expires": 19635,
+          "kind": "rejected",
+          "value": -2.0
+        },
+        "resident_000007": {
+          "expires": 14865,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000016": {
+          "expires": 13395,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000024": {
+          "expires": 12735,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000034": {
+          "expires": 14835,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000049": {
+          "expires": 19665,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000063": {
+          "expires": 16995,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000064": {
+          "expires": 18435,
+          "kind": "friendship",
+          "value": 30.0
+        },
+        "resident_000072": {
+          "expires": 12615,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000080": {
+          "expires": 20595,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000084": {
+          "expires": 19245,
+          "kind": "friendship",
+          "value": 10.0
+        },
+        "resident_000089": {
+          "expires": 17730,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000090": {
+          "expires": 15510,
+          "kind": "friendship",
+          "value": 20.0
+        },
+        "resident_000099": {
+          "expires": 19215,
+          "kind": "rejected",
+          "value": -12.0
+        }
+      }
+    }
+  ],
+  "failed": 0,
+  "failures": [],
+  "fears": {
+    "rejection": 12,
+    "stagnation": 5
+  },
+  "milestones": 141,
+  "milliseconds": 8660,
+  "npcs": 100,
+  "relationships": 1203,
+  "scope": "Opt-in headless logic study; no art, animation, main Gameplay binding or player saves. Not Sims 4 parity.",
+  "stories": [
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000002"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000037"
+        },
+        "npc": "resident_000004"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000015"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000018"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000020"
+        },
+        "npc": "resident_000019"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000024"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000025"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000041"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000056"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9675
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000054"
+        },
+        "npc": "resident_000001"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9690
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000028"
+        },
+        "npc": "resident_000017"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9690
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000085"
+        },
+        "npc": "resident_000040"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9690
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000087"
+        },
+        "npc": "resident_000048"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9690
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000092"
+        },
+        "npc": "resident_000060"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9690
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000097"
+        },
+        "npc": "resident_000055"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9705
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000080"
+        },
+        "npc": "resident_000002"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000003"
+        },
+        "npc": "resident_000015"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000023"
+        },
+        "npc": "resident_000018"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000043"
+        },
+        "npc": "resident_000024"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000077"
+        },
+        "npc": "resident_000025"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000065"
+        },
+        "npc": "resident_000041"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000066"
+        },
+        "npc": "resident_000048"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000084"
+        },
+        "npc": "resident_000056"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000064"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000046"
+        },
+        "npc": "resident_000069"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9720
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000071"
+        },
+        "npc": "resident_000035"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9735
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000052"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9735
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000067"
+        },
+        "npc": "resident_000057"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9735
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000070"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9735
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000088"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9735
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000010"
+        },
+        "npc": "resident_000002"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000027"
+        },
+        "npc": "resident_000022"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000095"
+        },
+        "npc": "resident_000024"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000086"
+        },
+        "npc": "resident_000025"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000049"
+        },
+        "npc": "resident_000041"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000068"
+        },
+        "npc": "resident_000048"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000045"
+        },
+        "npc": "resident_000056"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000038"
+        },
+        "npc": "resident_000066"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000081"
+        },
+        "npc": "resident_000091"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9750
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000078"
+        },
+        "npc": "resident_000034"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9765
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000051"
+        },
+        "npc": "resident_000053"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9765
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000073"
+        },
+        "npc": "resident_000012"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000062"
+        },
+        "npc": "resident_000025"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000031"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000019"
+        },
+        "npc": "resident_000048"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000075"
+        },
+        "npc": "resident_000056"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000063"
+        },
+        "npc": "resident_000066"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000004"
+        },
+        "npc": "resident_000070"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000014"
+        },
+        "npc": "resident_000082"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9780
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "mastery",
+          "stage": 2
+        },
+        "npc": "resident_000050"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9795
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000058"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9795
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000020"
+        },
+        "npc": "resident_000074"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9795
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000044"
+        },
+        "npc": "resident_000079"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9795
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000033"
+        },
+        "npc": "resident_000006"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9810
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000011"
+        },
+        "npc": "resident_000029"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9810
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000083"
+        },
+        "npc": "resident_000060"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9810
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000023"
+        },
+        "npc": "resident_000075"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9810
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000099"
+        },
+        "npc": "resident_000098"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9810
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000028"
+        },
+        "npc": "resident_000076"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9825
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000091"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9825
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000035"
+        },
+        "npc": "resident_000007"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000077"
+        },
+        "npc": "resident_000015"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000037"
+        },
+        "npc": "resident_000026"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000057"
+        },
+        "npc": "resident_000029"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000065"
+        },
+        "npc": "resident_000043"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000018"
+        },
+        "npc": "resident_000047"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000055"
+        },
+        "npc": "resident_000050"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000090"
+        },
+        "npc": "resident_000058"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000078"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9840
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000009"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9855
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000046"
+        },
+        "npc": "resident_000039"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9855
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000084"
+        },
+        "npc": "resident_000094"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9855
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000017"
+        },
+        "npc": "resident_000018"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9870
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000093"
+        },
+        "npc": "resident_000029"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9870
+    },
+    {
+      "data": {
+        "details": {
+          "level": 4
+        },
+        "npc": "resident_000038"
+      },
+      "kind": "npc_life_career_progress",
+      "minute": 9870
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "career",
+          "stage": 2
+        },
+        "npc": "resident_000038"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9870
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000012"
+        },
+        "npc": "resident_000050"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9870
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "support",
+          "other": "resident_000095"
+        },
+        "npc": "resident_000013"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9885
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000010"
+        },
+        "npc": "resident_000016"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9885
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000067"
+        },
+        "npc": "resident_000036"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9885
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000072"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9885
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000081"
+        },
+        "npc": "resident_000094"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9885
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000003"
+        },
+        "npc": "resident_000029"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9900
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000045"
+        },
+        "npc": "resident_000070"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9900
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000022"
+        },
+        "npc": "resident_000088"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9900
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000074"
+        },
+        "npc": "resident_000096"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9900
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000075"
+        },
+        "npc": "resident_000013"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9915
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000004"
+        },
+        "npc": "resident_000016"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9915
+    },
+    {
+      "data": {
+        "details": {
+          "completed": false,
+          "goal": "creativity",
+          "stage": 2
+        },
+        "npc": "resident_000082"
+      },
+      "kind": "npc_life_milestone",
+      "minute": 9915
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000073"
+        },
+        "npc": "resident_000001"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9930
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000035"
+        },
+        "npc": "resident_000029"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9930
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000054"
+        },
+        "npc": "resident_000045"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9930
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000053"
+        },
+        "npc": "resident_000056"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9930
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000059"
+        },
+        "npc": "resident_000070"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9930
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000092"
+        },
+        "npc": "resident_000001"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9960
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "support",
+          "other": "resident_000100"
+        },
+        "npc": "resident_000005"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 9960
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000049"
+        },
+        "npc": "resident_000030"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10500
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000004"
+        },
+        "npc": "resident_000033"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10500
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000005"
+        },
+        "npc": "resident_000047"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10500
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000068"
+        },
+        "npc": "resident_000052"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10500
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000011"
+        },
+        "npc": "resident_000079"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10500
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000080"
+        },
+        "npc": "resident_000008"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10515
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000027"
+        },
+        "npc": "resident_000034"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10515
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000055"
+        },
+        "npc": "resident_000009"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10530
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000012"
+        },
+        "npc": "resident_000015"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10530
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000086"
+        },
+        "npc": "resident_000025"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10530
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000087"
+        },
+        "npc": "resident_000026"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10530
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000043"
+        },
+        "npc": "resident_000040"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10530
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000093"
+        },
+        "npc": "resident_000066"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10530
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000083"
+        },
+        "npc": "resident_000006"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10545
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "support",
+          "other": "resident_000082"
+        },
+        "npc": "resident_000020"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10545
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000099"
+        },
+        "npc": "resident_000027"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10545
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000062"
+        },
+        "npc": "resident_000042"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10545
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000073"
+        },
+        "npc": "resident_000002"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "support",
+          "other": "resident_000067"
+        },
+        "npc": "resident_000003"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": false,
+          "action": "connect",
+          "other": "resident_000088"
+        },
+        "npc": "resident_000024"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000064"
+        },
+        "npc": "resident_000069"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000037"
+        },
+        "npc": "resident_000070"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000045"
+        },
+        "npc": "resident_000072"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    },
+    {
+      "data": {
+        "details": {
+          "accepted": true,
+          "action": "connect",
+          "other": "resident_000041"
+        },
+        "npc": "resident_000098"
+      },
+      "kind": "npc_life_social_outcome",
+      "minute": 10560
+    }
+  ],
+  "successful_social_actions": 788
+}

@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Ai\\ComfyUI-EroInc\\output\\body-refined-cutouts\\female_pear.png",
+  "source_sha256": "8c32251da93ce946e9db728e75c2f4c93a4f6012e65af3ea05f7bf9c3a4b9f45",
+  "operation": "body alpha slice and uniform registration; no anatomical deformation",
+  "source_cut_y": 240,
+  "uniform_scale": 1.0090817356205852,
+  "canvas": [
+    720,
+    1280
+  ],
+  "neck_attach": [
+    351.7,
+    245
+  ],
+  "feet_baseline_y": 1244,
+  "alpha_bounds": [
+    189,
+    245,
+    530,
+    1245
+  ],
+  "head_included": false,
+  "clothes_included": false,
+  "status": "body layer candidate; separate heads, fitted clothing and runtime review remain"
+}

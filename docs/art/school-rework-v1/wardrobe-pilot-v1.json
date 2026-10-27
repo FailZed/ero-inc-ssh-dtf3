@@ -1,0 +1,788 @@
+{
+  "schema": 1,
+  "mode": "masked_reference_edit",
+  "scope": "Fifteen garment-only School-derived repaint studies. No explicit scenes or nude bodies. Geometry and original alpha must be preserved.",
+  "output_prefix": "school_rework/pilot-v1",
+  "width": 768,
+  "height": 1024,
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 0.36,
+  "preserve_input_latent": true,
+  "encode_individually": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+  "items": [
+    {
+      "id": "female_dress_white_v1",
+      "rig": "female_dress_white",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Белое платье",
+      "candidate_number": 1,
+      "image": "school-rework/pilot-v1/female_dress_white/reference.png",
+      "mask": "school-rework/pilot-v1/female_dress_white/mask.png",
+      "denoise": 0.28,
+      "preserve_input_latent": true,
+      "seed": 981202610,
+      "prompt": "eincanime, white sleeveless fitted knee length dress, round neckline, matte white cotton fabric, subtle light steel blue fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_dress_white",
+        "title": "Ж · Белое платье",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/everyday/medium_tits/everyday.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\everyday\\medium_tits\\everyday.png",
+        "source_sha256": "fe17f440a6bdecfac0912f0bb4d23659356c01a8bd09687cc25013f5ccaad39c",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          691,
+          595,
+          1279,
+          1773
+        ],
+        "crop": [
+          659,
+          563,
+          1311,
+          1805
+        ],
+        "local_size": [
+          483,
+          920
+        ],
+        "local_offset": [
+          142,
+          52
+        ],
+        "scale": 0.7407407407407407,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_dress_white\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_dress_white_v2",
+      "rig": "female_dress_white",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Белое платье",
+      "candidate_number": 2,
+      "image": "school-rework/pilot-v1/female_dress_white/reference.png",
+      "mask": "school-rework/pilot-v1/female_dress_white/mask.png",
+      "denoise": 0.36,
+      "preserve_input_latent": true,
+      "seed": 981202611,
+      "prompt": "eincanime, white sleeveless fitted knee length dress, round neckline, matte white cotton fabric, subtle light steel blue fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_dress_white",
+        "title": "Ж · Белое платье",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/everyday/medium_tits/everyday.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\everyday\\medium_tits\\everyday.png",
+        "source_sha256": "fe17f440a6bdecfac0912f0bb4d23659356c01a8bd09687cc25013f5ccaad39c",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          691,
+          595,
+          1279,
+          1773
+        ],
+        "crop": [
+          659,
+          563,
+          1311,
+          1805
+        ],
+        "local_size": [
+          483,
+          920
+        ],
+        "local_offset": [
+          142,
+          52
+        ],
+        "scale": 0.7407407407407407,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_dress_white\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_dress_white_v3",
+      "rig": "female_dress_white",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Белое платье",
+      "candidate_number": 3,
+      "image": "school-rework/pilot-v1/female_dress_white/reference.png",
+      "mask": "school-rework/pilot-v1/female_dress_white/mask.png",
+      "denoise": 0.44,
+      "preserve_input_latent": true,
+      "seed": 981202612,
+      "prompt": "eincanime, white sleeveless fitted knee length dress, round neckline, matte white cotton fabric, subtle light steel blue fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_dress_white",
+        "title": "Ж · Белое платье",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/everyday/medium_tits/everyday.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\everyday\\medium_tits\\everyday.png",
+        "source_sha256": "fe17f440a6bdecfac0912f0bb4d23659356c01a8bd09687cc25013f5ccaad39c",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          691,
+          595,
+          1279,
+          1773
+        ],
+        "crop": [
+          659,
+          563,
+          1311,
+          1805
+        ],
+        "local_size": [
+          483,
+          920
+        ],
+        "local_offset": [
+          142,
+          52
+        ],
+        "scale": 0.7407407407407407,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_dress_white\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_dress_two_tone_v1",
+      "rig": "female_dress_two_tone",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Двухцветное платье",
+      "candidate_number": 1,
+      "image": "school-rework/pilot-v1/female_dress_two_tone/reference.png",
+      "mask": "school-rework/pilot-v1/female_dress_two_tone/mask.png",
+      "denoise": 0.28,
+      "preserve_input_latent": true,
+      "seed": 981202613,
+      "prompt": "eincanime, sleeveless knee length dress, vertically divided black left half and white right half, round neckline, matte fabric, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_dress_two_tone",
+        "title": "Ж · Двухцветное платье",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/everyday/medium_tits/everyday1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\everyday\\medium_tits\\everyday1.png",
+        "source_sha256": "a6483af6de6b020201048eb0ec0bdad17b8409d9b91894bcf22e181b875674be",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          691,
+          595,
+          1279,
+          1773
+        ],
+        "crop": [
+          659,
+          563,
+          1311,
+          1805
+        ],
+        "local_size": [
+          483,
+          920
+        ],
+        "local_offset": [
+          142,
+          52
+        ],
+        "scale": 0.7407407407407407,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_dress_two_tone\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_dress_two_tone_v2",
+      "rig": "female_dress_two_tone",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Двухцветное платье",
+      "candidate_number": 2,
+      "image": "school-rework/pilot-v1/female_dress_two_tone/reference.png",
+      "mask": "school-rework/pilot-v1/female_dress_two_tone/mask.png",
+      "denoise": 0.36,
+      "preserve_input_latent": true,
+      "seed": 981202614,
+      "prompt": "eincanime, sleeveless knee length dress, vertically divided black left half and white right half, round neckline, matte fabric, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_dress_two_tone",
+        "title": "Ж · Двухцветное платье",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/everyday/medium_tits/everyday1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\everyday\\medium_tits\\everyday1.png",
+        "source_sha256": "a6483af6de6b020201048eb0ec0bdad17b8409d9b91894bcf22e181b875674be",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          691,
+          595,
+          1279,
+          1773
+        ],
+        "crop": [
+          659,
+          563,
+          1311,
+          1805
+        ],
+        "local_size": [
+          483,
+          920
+        ],
+        "local_offset": [
+          142,
+          52
+        ],
+        "scale": 0.7407407407407407,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_dress_two_tone\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_dress_two_tone_v3",
+      "rig": "female_dress_two_tone",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Двухцветное платье",
+      "candidate_number": 3,
+      "image": "school-rework/pilot-v1/female_dress_two_tone/reference.png",
+      "mask": "school-rework/pilot-v1/female_dress_two_tone/mask.png",
+      "denoise": 0.44,
+      "preserve_input_latent": true,
+      "seed": 981202615,
+      "prompt": "eincanime, sleeveless knee length dress, vertically divided black left half and white right half, round neckline, matte fabric, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_dress_two_tone",
+        "title": "Ж · Двухцветное платье",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/everyday/medium_tits/everyday1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\everyday\\medium_tits\\everyday1.png",
+        "source_sha256": "a6483af6de6b020201048eb0ec0bdad17b8409d9b91894bcf22e181b875674be",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          691,
+          595,
+          1279,
+          1773
+        ],
+        "crop": [
+          659,
+          563,
+          1311,
+          1805
+        ],
+        "local_size": [
+          483,
+          920
+        ],
+        "local_offset": [
+          142,
+          52
+        ],
+        "scale": 0.7407407407407407,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_dress_two_tone\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_jeans_v1",
+      "rig": "female_jeans",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Брюки",
+      "candidate_number": 1,
+      "image": "school-rework/pilot-v1/female_jeans/reference.png",
+      "mask": "school-rework/pilot-v1/female_jeans/mask.png",
+      "denoise": 0.28,
+      "preserve_input_latent": true,
+      "seed": 981202616,
+      "prompt": "eincanime, brown slim fitted denim trousers with pockets belt loops and rolled cuffs, matte brown fabric, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_jeans",
+        "title": "Ж · Брюки",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/down_clothes/jeans.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\down_clothes\\jeans.png",
+        "source_sha256": "2a75a5cf427c4db4924adfd82b62ab3b481044863c5ab8e61252579c5e6d1d05",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          631,
+          1193,
+          1254,
+          2481
+        ],
+        "crop": [
+          599,
+          1161,
+          1286,
+          2513
+        ],
+        "local_size": [
+          467,
+          920
+        ],
+        "local_offset": [
+          150,
+          52
+        ],
+        "scale": 0.6804733727810651,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_jeans\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_jeans_v2",
+      "rig": "female_jeans",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Брюки",
+      "candidate_number": 2,
+      "image": "school-rework/pilot-v1/female_jeans/reference.png",
+      "mask": "school-rework/pilot-v1/female_jeans/mask.png",
+      "denoise": 0.36,
+      "preserve_input_latent": true,
+      "seed": 981202617,
+      "prompt": "eincanime, brown slim fitted denim trousers with pockets belt loops and rolled cuffs, matte brown fabric, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_jeans",
+        "title": "Ж · Брюки",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/down_clothes/jeans.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\down_clothes\\jeans.png",
+        "source_sha256": "2a75a5cf427c4db4924adfd82b62ab3b481044863c5ab8e61252579c5e6d1d05",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          631,
+          1193,
+          1254,
+          2481
+        ],
+        "crop": [
+          599,
+          1161,
+          1286,
+          2513
+        ],
+        "local_size": [
+          467,
+          920
+        ],
+        "local_offset": [
+          150,
+          52
+        ],
+        "scale": 0.6804733727810651,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_jeans\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_jeans_v3",
+      "rig": "female_jeans",
+      "category": "garment_repaint_candidate",
+      "title": "Ж · Брюки",
+      "candidate_number": 3,
+      "image": "school-rework/pilot-v1/female_jeans/reference.png",
+      "mask": "school-rework/pilot-v1/female_jeans/mask.png",
+      "denoise": 0.44,
+      "preserve_input_latent": true,
+      "seed": 981202618,
+      "prompt": "eincanime, brown slim fitted denim trousers with pockets belt loops and rolled cuffs, matte brown fabric, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_jeans",
+        "title": "Ж · Брюки",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/clothes/down_clothes/jeans.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\clothes\\down_clothes\\jeans.png",
+        "source_sha256": "2a75a5cf427c4db4924adfd82b62ab3b481044863c5ab8e61252579c5e6d1d05",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          631,
+          1193,
+          1254,
+          2481
+        ],
+        "crop": [
+          599,
+          1161,
+          1286,
+          2513
+        ],
+        "local_size": [
+          467,
+          920
+        ],
+        "local_offset": [
+          150,
+          52
+        ],
+        "scale": 0.6804733727810651,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\female_jeans\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_suit_v1",
+      "rig": "male_suit",
+      "category": "garment_repaint_candidate",
+      "title": "М · Костюм",
+      "candidate_number": 1,
+      "image": "school-rework/pilot-v1/male_suit/reference.png",
+      "mask": "school-rework/pilot-v1/male_suit/mask.png",
+      "denoise": 0.28,
+      "preserve_input_latent": true,
+      "seed": 981202619,
+      "prompt": "eincanime, black business suit jacket, white shirt and red necktie, one sleeve raised and bent, matte black fabric, clear simple lapels, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_suit",
+        "title": "М · Костюм",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/type2/body_1/clothes/clothes1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\type2\\body_1\\clothes\\clothes1.png",
+        "source_sha256": "2efd8ce82c8d4d2f8c8c22a54969e3223d00a07a3aa9e60cf6d02bef089b53bf",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          483,
+          256,
+          1523,
+          1502
+        ],
+        "crop": [
+          451,
+          224,
+          1555,
+          1534
+        ],
+        "local_size": [
+          664,
+          788
+        ],
+        "local_offset": [
+          52,
+          118
+        ],
+        "scale": 0.6014492753623188,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\male_suit\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_suit_v2",
+      "rig": "male_suit",
+      "category": "garment_repaint_candidate",
+      "title": "М · Костюм",
+      "candidate_number": 2,
+      "image": "school-rework/pilot-v1/male_suit/reference.png",
+      "mask": "school-rework/pilot-v1/male_suit/mask.png",
+      "denoise": 0.36,
+      "preserve_input_latent": true,
+      "seed": 981202620,
+      "prompt": "eincanime, black business suit jacket, white shirt and red necktie, one sleeve raised and bent, matte black fabric, clear simple lapels, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_suit",
+        "title": "М · Костюм",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/type2/body_1/clothes/clothes1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\type2\\body_1\\clothes\\clothes1.png",
+        "source_sha256": "2efd8ce82c8d4d2f8c8c22a54969e3223d00a07a3aa9e60cf6d02bef089b53bf",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          483,
+          256,
+          1523,
+          1502
+        ],
+        "crop": [
+          451,
+          224,
+          1555,
+          1534
+        ],
+        "local_size": [
+          664,
+          788
+        ],
+        "local_offset": [
+          52,
+          118
+        ],
+        "scale": 0.6014492753623188,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\male_suit\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_suit_v3",
+      "rig": "male_suit",
+      "category": "garment_repaint_candidate",
+      "title": "М · Костюм",
+      "candidate_number": 3,
+      "image": "school-rework/pilot-v1/male_suit/reference.png",
+      "mask": "school-rework/pilot-v1/male_suit/mask.png",
+      "denoise": 0.44,
+      "preserve_input_latent": true,
+      "seed": 981202621,
+      "prompt": "eincanime, black business suit jacket, white shirt and red necktie, one sleeve raised and bent, matte black fabric, clear simple lapels, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_suit",
+        "title": "М · Костюм",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/type2/body_1/clothes/clothes1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\type2\\body_1\\clothes\\clothes1.png",
+        "source_sha256": "2efd8ce82c8d4d2f8c8c22a54969e3223d00a07a3aa9e60cf6d02bef089b53bf",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          483,
+          256,
+          1523,
+          1502
+        ],
+        "crop": [
+          451,
+          224,
+          1555,
+          1534
+        ],
+        "local_size": [
+          664,
+          788
+        ],
+        "local_offset": [
+          52,
+          118
+        ],
+        "scale": 0.6014492753623188,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\male_suit\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_shirt_v1",
+      "rig": "male_shirt",
+      "category": "garment_repaint_candidate",
+      "title": "М · Рубашка",
+      "candidate_number": 1,
+      "image": "school-rework/pilot-v1/male_shirt/reference.png",
+      "mask": "school-rework/pilot-v1/male_shirt/mask.png",
+      "denoise": 0.28,
+      "preserve_input_latent": true,
+      "seed": 981202622,
+      "prompt": "eincanime, steel gray collared button up shirt with chest pocket, one sleeve raised, matte gray cotton, clear thin fold lines, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_shirt",
+        "title": "М · Рубашка",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/type2/body_1/clothes/usually1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\type2\\body_1\\clothes\\usually1.png",
+        "source_sha256": "cce69cc5a5a616c45029c3d2431b68f85d527288dd8f439224935de38e7ef9a4",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          585,
+          379,
+          1402,
+          1306
+        ],
+        "crop": [
+          553,
+          347,
+          1434,
+          1338
+        ],
+        "local_size": [
+          664,
+          747
+        ],
+        "local_offset": [
+          52,
+          138
+        ],
+        "scale": 0.753688989784336,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\male_shirt\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_shirt_v2",
+      "rig": "male_shirt",
+      "category": "garment_repaint_candidate",
+      "title": "М · Рубашка",
+      "candidate_number": 2,
+      "image": "school-rework/pilot-v1/male_shirt/reference.png",
+      "mask": "school-rework/pilot-v1/male_shirt/mask.png",
+      "denoise": 0.36,
+      "preserve_input_latent": true,
+      "seed": 981202623,
+      "prompt": "eincanime, steel gray collared button up shirt with chest pocket, one sleeve raised, matte gray cotton, clear thin fold lines, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_shirt",
+        "title": "М · Рубашка",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/type2/body_1/clothes/usually1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\type2\\body_1\\clothes\\usually1.png",
+        "source_sha256": "cce69cc5a5a616c45029c3d2431b68f85d527288dd8f439224935de38e7ef9a4",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          585,
+          379,
+          1402,
+          1306
+        ],
+        "crop": [
+          553,
+          347,
+          1434,
+          1338
+        ],
+        "local_size": [
+          664,
+          747
+        ],
+        "local_offset": [
+          52,
+          138
+        ],
+        "scale": 0.753688989784336,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\male_shirt\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_shirt_v3",
+      "rig": "male_shirt",
+      "category": "garment_repaint_candidate",
+      "title": "М · Рубашка",
+      "candidate_number": 3,
+      "image": "school-rework/pilot-v1/male_shirt/reference.png",
+      "mask": "school-rework/pilot-v1/male_shirt/mask.png",
+      "denoise": 0.44,
+      "preserve_input_latent": true,
+      "seed": 981202624,
+      "prompt": "eincanime, steel gray collared button up shirt with chest pocket, one sleeve raised, matte gray cotton, clear thin fold lines, restrained cel fold shadows, isolated garment layer on invisible mannequin, preserve exact garment construction and fold placement, delicate thin colored lineart, matte flat colors, simple controlled two tone cel shading, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_shirt",
+        "title": "М · Рубашка",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/type2/body_1/clothes/usually1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\type2\\body_1\\clothes\\usually1.png",
+        "source_sha256": "cce69cc5a5a616c45029c3d2431b68f85d527288dd8f439224935de38e7ef9a4",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          585,
+          379,
+          1402,
+          1306
+        ],
+        "crop": [
+          553,
+          347,
+          1434,
+          1338
+        ],
+        "local_size": [
+          664,
+          747
+        ],
+        "local_offset": [
+          52,
+          138
+        ],
+        "scale": 0.753688989784336,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\pilot-v1\\male_shirt\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    }
+  ]
+}

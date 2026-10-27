@@ -1,0 +1,1783 @@
+{
+  "prompt_id": "69744606-17bf-4e41-bfa7-ae82e3e76da7",
+  "created_utc": "2026-10-19T10:56:36.632268+00:00",
+  "model": {
+    "path": "E:\\Ai\\ComfyUI-EroInc\\runtime\\ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints\\DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+    "size": 6938115222,
+    "mtime_ns": 1792329874683931900,
+    "sha256": "44670e67c55f059116171ee8538875da3abf624fbdaace6d1a7ac2d9617f0211"
+  },
+  "generator": "Local ComfyUI / DaSiWa masked edit",
+  "input_images": [
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_build_guides_v2\\male_average\\reference.png",
+      "sha256": "2b3ccceceb4b62479a4529b2f8c98d2bc871b831af988d6556ea3b521d9a06d3"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_build_guides_v2\\male_average\\abdomen-inner-mask.png",
+      "sha256": "23eed578d8e04ac68da77f81231ad18fe4a4db62568d4010f4ce17daa16712c0"
+    }
+  ],
+  "prompt": {
+    "4": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+      }
+    },
+    "10": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_build_guides_v2/male_average/reference.png"
+      }
+    },
+    "11": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_build_guides_v2/male_average/abdomen-inner-mask.png"
+      }
+    },
+    "12": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "11",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "5": {
+      "class_type": "VAEEncodeForInpaint",
+      "inputs": {
+        "pixels": [
+          "10",
+          0
+        ],
+        "vae": [
+          "4",
+          2
+        ],
+        "mask": [
+          "12",
+          0
+        ],
+        "grow_mask_by": 6
+      }
+    },
+    "6": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "18",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, original mature adult man age 30, full body, natural nude male figure study, ordinary healthy adult build, smooth gently rounded abdomen, soft ordinary chest, natural nipples, delicate thin brown lineart, warm light skin, one light peach cel shadow, matte flat colors, relaxed standing pose, flat light gray background"
+      }
+    },
+    "7": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "18",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, (six pack:1.5), (defined abs:1.5), (muscle lines:1.3), (muscular torso:1.3), rib lines, deep shadows, hourglass, narrow waist"
+      }
+    },
+    "3": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "18",
+          0
+        ],
+        "positive": [
+          "6",
+          0
+        ],
+        "negative": [
+          "7",
+          0
+        ],
+        "latent_image": [
+          "5",
+          0
+        ],
+        "seed": 9861202,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.9
+      }
+    },
+    "8": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "3",
+          0
+        ],
+        "vae": [
+          "4",
+          2
+        ]
+      }
+    },
+    "13": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "10",
+          0
+        ],
+        "source": [
+          "8",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "12",
+          0
+        ]
+      }
+    },
+    "9": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "13",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_complete_pilot_v2/male_average"
+      }
+    },
+    "18": {
+      "class_type": "LoraLoader",
+      "inputs": {
+        "model": [
+          "4",
+          0
+        ],
+        "clip": [
+          "4",
+          1
+        ],
+        "lora_name": "EroInc\\candidate_400.safetensors",
+        "strength_model": 0.65,
+        "strength_clip": 0.0
+      }
+    }
+  },
+  "workflow": {
+    "last_node_id": 18,
+    "last_link_id": 18,
+    "nodes": [
+      {
+        "id": 4,
+        "type": "CheckpointLoaderSimple",
+        "pos": [
+          0,
+          240
+        ],
+        "size": [
+          330,
+          120
+        ],
+        "flags": {},
+        "order": 0,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "links": [
+              17
+            ]
+          },
+          {
+            "name": "CLIP",
+            "type": "CLIP",
+            "links": [
+              18
+            ]
+          },
+          {
+            "name": "VAE",
+            "type": "VAE",
+            "links": [
+              3,
+              12
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "CheckpointLoaderSimple",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+        ]
+      },
+      {
+        "id": 10,
+        "type": "LoadImage",
+        "pos": [
+          0,
+          750
+        ],
+        "size": [
+          330,
+          440
+        ],
+        "flags": {},
+        "order": 1,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "links": [
+              2,
+              13
+            ]
+          },
+          {
+            "name": "MASK",
+            "type": "MASK",
+            "links": []
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "LoadImage",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "characters_v2/body_build_guides_v2/male_average/reference.png"
+        ]
+      },
+      {
+        "id": 11,
+        "type": "LoadImage",
+        "pos": [
+          380,
+          750
+        ],
+        "size": [
+          330,
+          440
+        ],
+        "flags": {},
+        "order": 2,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "links": [
+              1
+            ]
+          },
+          {
+            "name": "MASK",
+            "type": "MASK",
+            "links": []
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "LoadImage",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "characters_v2/body_build_guides_v2/male_average/abdomen-inner-mask.png"
+        ]
+      },
+      {
+        "id": 12,
+        "type": "ImageToMask",
+        "pos": [
+          880,
+          450
+        ],
+        "size": [
+          300,
+          200
+        ],
+        "flags": {},
+        "order": 3,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "image",
+            "type": "IMAGE",
+            "link": 1
+          }
+        ],
+        "outputs": [
+          {
+            "name": "MASK",
+            "type": "MASK",
+            "links": [
+              4,
+              15
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "ImageToMask",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "red"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "VAEEncodeForInpaint",
+        "pos": [
+          0,
+          540
+        ],
+        "size": [
+          330,
+          120
+        ],
+        "flags": {},
+        "order": 4,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "pixels",
+            "type": "IMAGE",
+            "link": 2
+          },
+          {
+            "name": "vae",
+            "type": "VAE",
+            "link": 3
+          },
+          {
+            "name": "mask",
+            "type": "MASK",
+            "link": 4
+          }
+        ],
+        "outputs": [
+          {
+            "name": "LATENT",
+            "type": "LATENT",
+            "links": [
+              10
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "VAEEncodeForInpaint",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "type": "CLIPTextEncode",
+        "pos": [
+          380,
+          0
+        ],
+        "size": [
+          450,
+          300
+        ],
+        "flags": {},
+        "order": 5,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 5
+          }
+        ],
+        "outputs": [
+          {
+            "name": "CONDITIONING",
+            "type": "CONDITIONING",
+            "links": [
+              8
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "CLIPTextEncode",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "masterpiece, best quality, eincanime, original mature adult man age 30, full body, natural nude male figure study, ordinary healthy adult build, smooth gently rounded abdomen, soft ordinary chest, natural nipples, delicate thin brown lineart, warm light skin, one light peach cel shadow, matte flat colors, relaxed standing pose, flat light gray background"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "CLIPTextEncode",
+        "pos": [
+          380,
+          350
+        ],
+        "size": [
+          450,
+          300
+        ],
+        "flags": {},
+        "order": 6,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 6
+          }
+        ],
+        "outputs": [
+          {
+            "name": "CONDITIONING",
+            "type": "CONDITIONING",
+            "links": [
+              9
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "CLIPTextEncode",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, (six pack:1.5), (defined abs:1.5), (muscle lines:1.3), (muscular torso:1.3), rib lines, deep shadows, hourglass, narrow waist"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "KSampler",
+        "pos": [
+          1230,
+          240
+        ],
+        "size": [
+          320,
+          280
+        ],
+        "flags": {},
+        "order": 7,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "model",
+            "type": "MODEL",
+            "link": 7
+          },
+          {
+            "name": "positive",
+            "type": "CONDITIONING",
+            "link": 8
+          },
+          {
+            "name": "negative",
+            "type": "CONDITIONING",
+            "link": 9
+          },
+          {
+            "name": "latent_image",
+            "type": "LATENT",
+            "link": 10
+          }
+        ],
+        "outputs": [
+          {
+            "name": "LATENT",
+            "type": "LATENT",
+            "links": [
+              11
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "KSampler",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          9861202,
+          "fixed",
+          16,
+          6.0,
+          "euler",
+          "normal",
+          0.9
+        ]
+      },
+      {
+        "id": 8,
+        "type": "VAEDecode",
+        "pos": [
+          1600,
+          240
+        ],
+        "size": [
+          220,
+          70
+        ],
+        "flags": {},
+        "order": 8,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "samples",
+            "type": "LATENT",
+            "link": 11
+          },
+          {
+            "name": "vae",
+            "type": "VAE",
+            "link": 12
+          }
+        ],
+        "outputs": [
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "links": [
+              14
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "VAEDecode",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": []
+      },
+      {
+        "id": 13,
+        "type": "ImageCompositeMasked",
+        "pos": [
+          1600,
+          650
+        ],
+        "size": [
+          300,
+          170
+        ],
+        "flags": {},
+        "order": 9,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "destination",
+            "type": "IMAGE",
+            "link": 13
+          },
+          {
+            "name": "source",
+            "type": "IMAGE",
+            "link": 14
+          },
+          {
+            "name": "mask",
+            "type": "MASK",
+            "link": 15
+          }
+        ],
+        "outputs": [
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "links": [
+              16
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "ImageCompositeMasked",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          0,
+          0,
+          false
+        ]
+      },
+      {
+        "id": 9,
+        "type": "SaveImage",
+        "pos": [
+          1880,
+          240
+        ],
+        "size": [
+          400,
+          600
+        ],
+        "flags": {},
+        "order": 10,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "images",
+            "type": "IMAGE",
+            "link": 16
+          }
+        ],
+        "outputs": [],
+        "properties": {
+          "Node name for S&R": "SaveImage",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "characters_v2/body_complete_pilot_v2/male_average"
+        ]
+      },
+      {
+        "id": 18,
+        "type": "LoraLoader",
+        "pos": [
+          0,
+          930
+        ],
+        "size": [
+          330,
+          160
+        ],
+        "flags": {},
+        "order": 11,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "model",
+            "type": "MODEL",
+            "link": 17
+          },
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 18
+          }
+        ],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "links": [
+              7
+            ]
+          },
+          {
+            "name": "CLIP",
+            "type": "CLIP",
+            "links": [
+              5,
+              6
+            ]
+          }
+        ],
+        "properties": {
+          "Node name for S&R": "LoraLoader",
+          "cnr_id": "comfy-core"
+        },
+        "widgets_values": [
+          "EroInc\\candidate_400.safetensors",
+          0.65,
+          0.0
+        ]
+      }
+    ],
+    "links": [
+      [
+        1,
+        11,
+        0,
+        12,
+        0,
+        "IMAGE"
+      ],
+      [
+        2,
+        10,
+        0,
+        5,
+        0,
+        "IMAGE"
+      ],
+      [
+        3,
+        4,
+        2,
+        5,
+        1,
+        "VAE"
+      ],
+      [
+        4,
+        12,
+        0,
+        5,
+        2,
+        "MASK"
+      ],
+      [
+        5,
+        18,
+        1,
+        6,
+        0,
+        "CLIP"
+      ],
+      [
+        6,
+        18,
+        1,
+        7,
+        0,
+        "CLIP"
+      ],
+      [
+        7,
+        18,
+        0,
+        3,
+        0,
+        "MODEL"
+      ],
+      [
+        8,
+        6,
+        0,
+        3,
+        1,
+        "CONDITIONING"
+      ],
+      [
+        9,
+        7,
+        0,
+        3,
+        2,
+        "CONDITIONING"
+      ],
+      [
+        10,
+        5,
+        0,
+        3,
+        3,
+        "LATENT"
+      ],
+      [
+        11,
+        3,
+        0,
+        8,
+        0,
+        "LATENT"
+      ],
+      [
+        12,
+        4,
+        2,
+        8,
+        1,
+        "VAE"
+      ],
+      [
+        13,
+        10,
+        0,
+        13,
+        0,
+        "IMAGE"
+      ],
+      [
+        14,
+        8,
+        0,
+        13,
+        1,
+        "IMAGE"
+      ],
+      [
+        15,
+        12,
+        0,
+        13,
+        2,
+        "MASK"
+      ],
+      [
+        16,
+        13,
+        0,
+        9,
+        0,
+        "IMAGE"
+      ],
+      [
+        17,
+        4,
+        0,
+        18,
+        0,
+        "MODEL"
+      ],
+      [
+        18,
+        4,
+        1,
+        18,
+        1,
+        "CLIP"
+      ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+      "ds": {
+        "scale": 0.65,
+        "offset": [
+          80,
+          80
+        ]
+      },
+      "ero_inc_title": "characters_v2/body_complete_pilot_v2/male_average"
+    },
+    "version": 0.4
+  },
+  "adapter": {
+    "name": "EroInc\\candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength_model": 0.65,
+    "strength_clip": 0.0
+  },
+  "gpu_budget": {
+    "schema": 1,
+    "duty_percent": 100,
+    "cpu_priority": "normal",
+    "gpu_priority": "normal",
+    "vram_reserve_gb": 1,
+    "note": "Full GPU compute authorized by user; no artificial duty pauses. Normal process priorities.",
+    "authorized_date": "2026-10-19"
+  },
+  "acceptance": "DRAFT - not approved for runtime",
+  "history": {
+    "prompt": [
+      21,
+      "69744606-17bf-4e41-bfa7-ae82e3e76da7",
+      {
+        "4": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+          }
+        },
+        "10": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_build_guides_v2/male_average/reference.png"
+          }
+        },
+        "11": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_build_guides_v2/male_average/abdomen-inner-mask.png"
+          }
+        },
+        "12": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "11",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "5": {
+          "class_type": "VAEEncodeForInpaint",
+          "inputs": {
+            "pixels": [
+              "10",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ],
+            "mask": [
+              "12",
+              0
+            ],
+            "grow_mask_by": 6
+          }
+        },
+        "6": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "18",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, original mature adult man age 30, full body, natural nude male figure study, ordinary healthy adult build, smooth gently rounded abdomen, soft ordinary chest, natural nipples, delicate thin brown lineart, warm light skin, one light peach cel shadow, matte flat colors, relaxed standing pose, flat light gray background"
+          }
+        },
+        "7": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "18",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, (six pack:1.5), (defined abs:1.5), (muscle lines:1.3), (muscular torso:1.3), rib lines, deep shadows, hourglass, narrow waist"
+          }
+        },
+        "3": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "18",
+              0
+            ],
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "latent_image": [
+              "5",
+              0
+            ],
+            "seed": 9861202,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.9
+          }
+        },
+        "8": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          }
+        },
+        "13": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "10",
+              0
+            ],
+            "source": [
+              "8",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "12",
+              0
+            ]
+          }
+        },
+        "9": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "13",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_complete_pilot_v2/male_average"
+          }
+        },
+        "18": {
+          "class_type": "LoraLoader",
+          "inputs": {
+            "model": [
+              "4",
+              0
+            ],
+            "clip": [
+              "4",
+              1
+            ],
+            "lora_name": "EroInc\\candidate_400.safetensors",
+            "strength_model": 0.65,
+            "strength_clip": 0.0
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "last_node_id": 18,
+            "last_link_id": 18,
+            "nodes": [
+              {
+                "id": 4,
+                "type": "CheckpointLoaderSimple",
+                "pos": [
+                  0,
+                  240
+                ],
+                "size": [
+                  330,
+                  120
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                      17
+                    ]
+                  },
+                  {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                      18
+                    ]
+                  },
+                  {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                      3,
+                      12
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CheckpointLoaderSimple",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+                ]
+              },
+              {
+                "id": 10,
+                "type": "LoadImage",
+                "pos": [
+                  0,
+                  750
+                ],
+                "size": [
+                  330,
+                  440
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      2,
+                      13
+                    ]
+                  },
+                  {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "LoadImage",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "characters_v2/body_build_guides_v2/male_average/reference.png"
+                ]
+              },
+              {
+                "id": 11,
+                "type": "LoadImage",
+                "pos": [
+                  380,
+                  750
+                ],
+                "size": [
+                  330,
+                  440
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      1
+                    ]
+                  },
+                  {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "LoadImage",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "characters_v2/body_build_guides_v2/male_average/abdomen-inner-mask.png"
+                ]
+              },
+              {
+                "id": 12,
+                "type": "ImageToMask",
+                "pos": [
+                  880,
+                  450
+                ],
+                "size": [
+                  300,
+                  200
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 1
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                      4,
+                      15
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "ImageToMask",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "red"
+                ]
+              },
+              {
+                "id": 5,
+                "type": "VAEEncodeForInpaint",
+                "pos": [
+                  0,
+                  540
+                ],
+                "size": [
+                  330,
+                  120
+                ],
+                "flags": {},
+                "order": 4,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "pixels",
+                    "type": "IMAGE",
+                    "link": 2
+                  },
+                  {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 3
+                  },
+                  {
+                    "name": "mask",
+                    "type": "MASK",
+                    "link": 4
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      10
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "VAEEncodeForInpaint",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  6
+                ]
+              },
+              {
+                "id": 6,
+                "type": "CLIPTextEncode",
+                "pos": [
+                  380,
+                  0
+                ],
+                "size": [
+                  450,
+                  300
+                ],
+                "flags": {},
+                "order": 5,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 5
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      8
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "masterpiece, best quality, eincanime, original mature adult man age 30, full body, natural nude male figure study, ordinary healthy adult build, smooth gently rounded abdomen, soft ordinary chest, natural nipples, delicate thin brown lineart, warm light skin, one light peach cel shadow, matte flat colors, relaxed standing pose, flat light gray background"
+                ]
+              },
+              {
+                "id": 7,
+                "type": "CLIPTextEncode",
+                "pos": [
+                  380,
+                  350
+                ],
+                "size": [
+                  450,
+                  300
+                ],
+                "flags": {},
+                "order": 6,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 6
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      9
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, (six pack:1.5), (defined abs:1.5), (muscle lines:1.3), (muscular torso:1.3), rib lines, deep shadows, hourglass, narrow waist"
+                ]
+              },
+              {
+                "id": 3,
+                "type": "KSampler",
+                "pos": [
+                  1230,
+                  240
+                ],
+                "size": [
+                  320,
+                  280
+                ],
+                "flags": {},
+                "order": 7,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 7
+                  },
+                  {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 8
+                  },
+                  {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 9
+                  },
+                  {
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 10
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      11
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "KSampler",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  9861202,
+                  "fixed",
+                  16,
+                  6.0,
+                  "euler",
+                  "normal",
+                  0.9
+                ]
+              },
+              {
+                "id": 8,
+                "type": "VAEDecode",
+                "pos": [
+                  1600,
+                  240
+                ],
+                "size": [
+                  220,
+                  70
+                ],
+                "flags": {},
+                "order": 8,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 11
+                  },
+                  {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 12
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      14
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "VAEDecode",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": []
+              },
+              {
+                "id": 13,
+                "type": "ImageCompositeMasked",
+                "pos": [
+                  1600,
+                  650
+                ],
+                "size": [
+                  300,
+                  170
+                ],
+                "flags": {},
+                "order": 9,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "destination",
+                    "type": "IMAGE",
+                    "link": 13
+                  },
+                  {
+                    "name": "source",
+                    "type": "IMAGE",
+                    "link": 14
+                  },
+                  {
+                    "name": "mask",
+                    "type": "MASK",
+                    "link": 15
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      16
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "ImageCompositeMasked",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  0,
+                  0,
+                  false
+                ]
+              },
+              {
+                "id": 9,
+                "type": "SaveImage",
+                "pos": [
+                  1880,
+                  240
+                ],
+                "size": [
+                  400,
+                  600
+                ],
+                "flags": {},
+                "order": 10,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 16
+                  }
+                ],
+                "outputs": [],
+                "properties": {
+                  "Node name for S&R": "SaveImage",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "characters_v2/body_complete_pilot_v2/male_average"
+                ]
+              },
+              {
+                "id": 18,
+                "type": "LoraLoader",
+                "pos": [
+                  0,
+                  930
+                ],
+                "size": [
+                  330,
+                  160
+                ],
+                "flags": {},
+                "order": 11,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 17
+                  },
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 18
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                      7
+                    ]
+                  },
+                  {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                      5,
+                      6
+                    ]
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "LoraLoader",
+                  "cnr_id": "comfy-core"
+                },
+                "widgets_values": [
+                  "EroInc\\candidate_400.safetensors",
+                  0.65,
+                  0.0
+                ]
+              }
+            ],
+            "links": [
+              [
+                1,
+                11,
+                0,
+                12,
+                0,
+                "IMAGE"
+              ],
+              [
+                2,
+                10,
+                0,
+                5,
+                0,
+                "IMAGE"
+              ],
+              [
+                3,
+                4,
+                2,
+                5,
+                1,
+                "VAE"
+              ],
+              [
+                4,
+                12,
+                0,
+                5,
+                2,
+                "MASK"
+              ],
+              [
+                5,
+                18,
+                1,
+                6,
+                0,
+                "CLIP"
+              ],
+              [
+                6,
+                18,
+                1,
+                7,
+                0,
+                "CLIP"
+              ],
+              [
+                7,
+                18,
+                0,
+                3,
+                0,
+                "MODEL"
+              ],
+              [
+                8,
+                6,
+                0,
+                3,
+                1,
+                "CONDITIONING"
+              ],
+              [
+                9,
+                7,
+                0,
+                3,
+                2,
+                "CONDITIONING"
+              ],
+              [
+                10,
+                5,
+                0,
+                3,
+                3,
+                "LATENT"
+              ],
+              [
+                11,
+                3,
+                0,
+                8,
+                0,
+                "LATENT"
+              ],
+              [
+                12,
+                4,
+                2,
+                8,
+                1,
+                "VAE"
+              ],
+              [
+                13,
+                10,
+                0,
+                13,
+                0,
+                "IMAGE"
+              ],
+              [
+                14,
+                8,
+                0,
+                13,
+                1,
+                "IMAGE"
+              ],
+              [
+                15,
+                12,
+                0,
+                13,
+                2,
+                "MASK"
+              ],
+              [
+                16,
+                13,
+                0,
+                9,
+                0,
+                "IMAGE"
+              ],
+              [
+                17,
+                4,
+                0,
+                18,
+                0,
+                "MODEL"
+              ],
+              [
+                18,
+                4,
+                1,
+                18,
+                1,
+                "CLIP"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 0.65,
+                "offset": [
+                  80,
+                  80
+                ]
+              },
+              "ero_inc_title": "characters_v2/body_complete_pilot_v2/male_average"
+            },
+            "version": 0.4
+          }
+        },
+        "client_id": "023c490b-c67f-48bc-a95e-7b463669c308",
+        "create_time": 1792407396632
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "male_average_00001_.png",
+            "subfolder": "characters_v2\\body_complete_pilot_v2",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "69744606-17bf-4e41-bfa7-ae82e3e76da7",
+            "timestamp": 1792407396633
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "10",
+              "6",
+              "18"
+            ],
+            "prompt_id": "69744606-17bf-4e41-bfa7-ae82e3e76da7",
+            "timestamp": 1792407396635
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "69744606-17bf-4e41-bfa7-ae82e3e76da7",
+            "timestamp": 1792407430013
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  }
+}

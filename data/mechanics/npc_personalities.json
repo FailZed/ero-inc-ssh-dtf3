@@ -1,0 +1,128 @@
+{
+  "school_personality_map": {
+    "Слабый": {"id": "weak"}, "Агрессивный": {"id": "aggressive"},
+    "Надменный": {"id": "haughty"}, "Надежный": {"id": "reliable"},
+    "С чувством юмора": {"id": "humorous"}, "Глупость": {"id": "naive"},
+    "Общительность": {"id": "sociable"}, "Затворничество": {"id": "reclusive"},
+    "Сплетничество": {"id": "gossip"}, "Лживость": {"id": "deceitful"},
+    "Извращенный": {"id": "uninhibited"}
+  },
+  "personalities": {
+    "weak": {"conversation": -0.04}, "aggressive": {"conversation": -0.04},
+    "haughty": {"conversation": -0.03}, "reliable": {"conversation": 0.02},
+    "humorous": {"conversation": 0.06}, "naive": {"conversation": 0.03},
+    "sociable": {"conversation": 0.08}, "reclusive": {"conversation": -0.06},
+    "gossip": {"conversation": 0.04}, "deceitful": {"conversation": 0.02},
+    "uninhibited": {"conversation": 0.03}
+  },
+  "agency_personalities": {
+    "weak": {
+      "label": "Робкий", "school": true,
+      "biases": {"dispute": -0.30, "support": 0.16, "reconcile": 0.17, "practice": 0.05, "court": -0.10},
+      "goals": {"wellbeing": 4, "community": 2, "mastery": 1},
+      "social_decay": 0.8, "familiarity": 0.5, "credulity": 0.65,
+      "negative_gain": 1.25, "memory_duration": 1.3, "fear_gain": 1.4,
+      "acceptance": -0.04, "response": {"support": 0.1, "boast": -0.04}
+    },
+    "aggressive": {
+      "label": "Агрессивный", "school": true,
+      "biases": {"dispute": 0.28, "practice": 0.08, "support": -0.08, "reconcile": -0.10},
+      "goals": {"career": 3, "mastery": 3, "wellbeing": 1},
+      "social_decay": 0.9, "familiarity": 0.1, "credulity": 0.35,
+      "negative_gain": 1.35, "memory_duration": 1.2, "fear_gain": 0.75,
+      "acceptance": -0.04, "response": {"boast": -0.1, "joke": -0.03}
+    },
+    "haughty": {
+      "label": "Надменный", "school": true,
+      "biases": {"boast": 0.32, "publish": 0.15, "create": 0.07, "support": -0.12},
+      "goals": {"career": 4, "creativity": 3, "mastery": 1},
+      "social_decay": 0.9, "familiarity": 0.15, "credulity": 0.4,
+      "negative_gain": 1.3, "memory_duration": 1.4, "fear_gain": 1.1,
+      "acceptance": -0.05, "response": {"boast": -0.12, "court": -0.02}
+    },
+    "reliable": {
+      "label": "Надёжный", "school": true,
+      "biases": {"support": 0.25, "reconcile": 0.16, "work": 0.10, "verify": 0.18, "deceive": -0.35, "gossip": -0.12},
+      "goals": {"community": 3, "career": 3, "mastery": 2},
+      "social_decay": 1.0, "familiarity": 0.4, "credulity": 0.25,
+      "negative_gain": 0.9, "memory_duration": 1.3, "fear_gain": 0.8,
+      "acceptance": 0.02, "response": {"support": 0.12, "deceive": -0.15}
+    },
+    "humorous": {
+      "label": "С чувством юмора", "school": true,
+      "biases": {"joke": 0.34, "recreation": 0.10, "support": 0.10, "dispute": -0.1},
+      "goals": {"community": 4, "creativity": 2, "wellbeing": 2},
+      "social_decay": 1.1, "familiarity": 0.1, "credulity": 0.5,
+      "negative_gain": 0.65, "memory_duration": 0.7, "fear_gain": 0.65,
+      "acceptance": 0.04, "response": {"joke": 0.15, "support": 0.05}
+    },
+    "naive": {
+      "label": "Простодушный", "school": true,
+      "biases": {"connect": 0.12, "recreation": 0.10, "verify": -0.16, "deceive": -0.22},
+      "goals": {"community": 3, "wellbeing": 3, "creativity": 2},
+      "social_decay": 1.1, "familiarity": 0.05, "credulity": 0.9,
+      "negative_gain": 1.1, "memory_duration": 0.9, "fear_gain": 1.15,
+      "acceptance": 0.07, "response": {"deceive": 0.1, "boast": 0.1, "joke": 0.08}
+    },
+    "sociable": {
+      "label": "Общительный", "school": true,
+      "biases": {"connect": 0.23, "visit": 0.18, "joke": 0.12, "court": 0.07},
+      "goals": {"community": 5, "relationship": 2, "creativity": 1},
+      "social_decay": 1.4, "familiarity": -0.15, "credulity": 0.55,
+      "negative_gain": 0.9, "memory_duration": 0.9, "fear_gain": 0.9,
+      "acceptance": 0.08, "response": {"connect": 0.1, "joke": 0.08, "court": 0.03}
+    },
+    "reclusive": {
+      "label": "Замкнутый", "school": true,
+      "biases": {"practice": 0.20, "create": 0.16, "recreation": 0.12, "visit": -0.24, "connect": -0.15, "gossip": -0.25},
+      "goals": {"mastery": 4, "creativity": 4, "wellbeing": 1},
+      "social_decay": 0.45, "familiarity": 0.65, "credulity": 0.4,
+      "negative_gain": 1.05, "memory_duration": 1.4, "fear_gain": 1.1,
+      "acceptance": -0.1, "response": {"support": 0.12, "gossip": -0.12}
+    },
+    "gossip": {
+      "label": "Сплетник", "school": true,
+      "biases": {"gossip": 0.34, "visit": 0.17, "connect": 0.14, "verify": 0.04},
+      "goals": {"community": 4, "creativity": 3, "career": 1},
+      "social_decay": 1.3, "familiarity": -0.1, "credulity": 0.6,
+      "negative_gain": 1.0, "memory_duration": 1.1, "fear_gain": 1.0,
+      "acceptance": 0.05, "response": {"gossip": 0.15, "boast": 0.05}
+    },
+    "deceitful": {
+      "label": "Лживый", "school": true,
+      "biases": {"deceive": 0.33, "boast": 0.12, "work": 0.07, "support": -0.10, "verify": 0.12},
+      "goals": {"career": 4, "creativity": 2, "community": 1},
+      "social_decay": 1.0, "familiarity": -0.05, "credulity": 0.2,
+      "negative_gain": 0.85, "memory_duration": 1.0, "fear_gain": 0.8,
+      "acceptance": 0.0, "response": {"deceive": -0.18, "boast": -0.05}
+    },
+    "uninhibited": {
+      "label": "Раскрепощённый", "school": true,
+      "biases": {"court": 0.34, "connect": 0.10, "visit": 0.13, "recreation": 0.07},
+      "goals": {"relationship": 5, "community": 2, "creativity": 1},
+      "social_decay": 1.15, "familiarity": -0.1, "credulity": 0.5,
+      "negative_gain": 0.85, "memory_duration": 0.85, "fear_gain": 0.8,
+      "acceptance": 0.03, "response": {"court": 0.1, "joke": 0.03}
+    },
+    "calm": {"label": "Спокойный", "school": false, "biases": {}, "goals": {}, "social_decay": 1, "familiarity": 0, "credulity": 0.5, "negative_gain": 1, "memory_duration": 1, "fear_gain": 1, "acceptance": 0, "response": {}},
+    "confident": {"label": "Уверенный", "school": false, "biases": {"publish": 0.1, "boast": 0.1, "court": 0.06}, "goals": {}, "social_decay": 1, "familiarity": 0, "credulity": 0.45, "negative_gain": 0.85, "memory_duration": 1, "fear_gain": 0.8, "acceptance": 0.03, "response": {}},
+    "reserved": {"label": "Сдержанный", "school": false, "biases": {"connect": -0.08, "practice": 0.08, "verify": 0.06}, "goals": {}, "social_decay": 0.85, "familiarity": 0.3, "credulity": 0.4, "negative_gain": 1, "memory_duration": 1.1, "fear_gain": 1, "acceptance": -0.04, "response": {}}
+  },
+  "agency_actions": {
+    "joke": {"label": "Попробовать развеселить собеседника", "minutes": 30, "destination": "global_map", "restore": {"social": 25, "fun": 25}, "social": true, "base": 0.02, "traits": {"sociability": 0.3}, "emotion": "happy"},
+    "boast": {"label": "Рассказать о своём достижении", "minutes": 30, "destination": "global_map", "restore": {"social": 20, "fun": 10}, "social": true, "base": 0.01, "traits": {"bravery": 0.2}, "emotion": "confident"},
+    "gossip": {"label": "Обсудить известную новость", "minutes": 30, "destination": "global_map", "restore": {"social": 30, "fun": 12}, "social": true, "base": 0.01, "traits": {"sociability": 0.2}, "emotion": "content"},
+    "deceive": {"label": "Приукрасить собственные успехи", "minutes": 30, "destination": "global_map", "restore": {"social": 20, "fun": 10}, "social": true, "tags": ["deception"], "base": 0.01, "traits": {"cunning": 0.3}, "emotion": "confident"},
+    "verify": {"label": "Проверить услышанное утверждение", "minutes": 30, "destination": "home", "restore": {"fun": 4}, "base": 0.01, "traits": {"responsibility": 0.2}, "emotion": "focused"},
+    "court": {"label": "Проявить романтический интерес", "minutes": 30, "destination": "global_map", "restore": {"social": 30, "fun": 15}, "social": true, "minimum_trust": 5, "mutual_attraction": true, "tags": ["romance"], "base": 0.01, "traits": {"romantic": 0.4}, "emotion": "happy"}
+  },
+  "agency_aspirations": {
+    "relationship": {"label": "Построить близкие отношения", "stages": [{"action": "connect", "minutes": 180}, {"action": "court", "minutes": 180}, {"action": "support", "minutes": 180}]}
+  },
+  "agency_experiences": {
+    "amused": {"emotion": "happy", "strength": 16, "duration": 180, "sentiment": 6},
+    "admired": {"emotion": "confident", "strength": 12, "duration": 240, "sentiment": 4},
+    "misled": {"emotion": "hurt", "strength": 20, "duration": 720, "sentiment": -25},
+    "romantic_interest": {"emotion": "happy", "strength": 18, "duration": 360, "sentiment": 8}
+  }
+}

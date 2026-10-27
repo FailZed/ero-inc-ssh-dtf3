@@ -1,0 +1,1439 @@
+{
+  "temporary": true,
+  "source": "School-0.981-win/game/archive.rpa",
+  "authorization": "Owner requested temporary image reuse on 2026-10-18",
+  "destination": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school",
+  "donor_scripts_imported": false,
+  "files": [
+    {
+      "source": "images/character/npc/new/accessories/cat_ears/hair1.png",
+      "target": "npc/new/accessories/cat_ears/hair1.png",
+      "sha256": "703a54182303b79ad41642ddacb98729c8654299b4ac91792eb92c5c00e380d5",
+      "bytes": 20316,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/abs1.png",
+      "target": "npc/new/body/abs1.png",
+      "sha256": "e9daa19d4317e4854f7a51a430fd433284a473788a3da973c40d63a22071aa7f",
+      "bytes": 37228,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/body_new.png",
+      "target": "npc/new/body/body_new.png",
+      "sha256": "f09c2c349ea719962f5d0d63696b2afeb5f990c1a8efeee9d928095ea13509f2",
+      "bytes": 137090,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/collarbones1.png",
+      "target": "npc/new/body/collarbones1.png",
+      "sha256": "116a9aff9f2432ad4dcc436827c4e20ffaf6ad1d988c91b4cdc8c619b4e1360d",
+      "bytes": 50108,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/hand/hand_back/hand1.png",
+      "target": "npc/new/body/hand/hand_back/hand1.png",
+      "sha256": "04da23c8c6eeaf754de5e33580688884e71f2e8820f281d56e59cd325b407b01",
+      "bytes": 35414,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/hand/hand_back/hand2.png",
+      "target": "npc/new/body/hand/hand_back/hand2.png",
+      "sha256": "11aef27f987b56a894557ccbf0c5a1093f3750b40e14fe96e3cf195b3e892347",
+      "bytes": 55099,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/hand/hand_forward/hand1.png",
+      "target": "npc/new/body/hand/hand_forward/hand1.png",
+      "sha256": "b0327b82d362be8fda136e1520d39cc98446dd8516d3be5ea6ddf29007f842cb",
+      "bytes": 40229,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/hand/hand_forward/hand2.png",
+      "target": "npc/new/body/hand/hand_forward/hand2.png",
+      "sha256": "185ec513974b3a80e8ddf2df8d85d5db8286e205056714ee32193bc6d8681706",
+      "bytes": 25680,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/hand1.png",
+      "target": "npc/new/body/hand1.png",
+      "sha256": "7c9f97c75fe22f089db265d876beabc8d734c6abe1dbbdf9f0d064b087a0e37f",
+      "bytes": 15861,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/tits_medium.png",
+      "target": "npc/new/body/tits_medium.png",
+      "sha256": "b7c5f54771e83a6db7d4fb0291f603e11fd8e03560a0105171cecec127bfa778",
+      "bytes": 117878,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/tits_small.png",
+      "target": "npc/new/body/tits_small.png",
+      "sha256": "1b4004dd5983baa97d723dc1fc119994d24639b6d98cc2d157b1411d750a7144",
+      "bytes": 88740,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/brassiere/medium_tits/brassiere.png",
+      "target": "npc/new/clothes/brassiere/medium_tits/brassiere.png",
+      "sha256": "918bffeae7f5d46572e9afa2d1c1c4a6abb7809413b398ff7e687422cc79dd65",
+      "bytes": 20359,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/brassiere/small_tits/brassiere.png",
+      "target": "npc/new/clothes/brassiere/small_tits/brassiere.png",
+      "sha256": "6fff60d493c5be448cb95b8cd233e475d35b4233777578070dced5e19fd7c811",
+      "bytes": 18709,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/down_clothes/jeans.png",
+      "target": "npc/new/clothes/down_clothes/jeans.png",
+      "sha256": "2a75a5cf427c4db4924adfd82b62ab3b481044863c5ab8e61252579c5e6d1d05",
+      "bytes": 144506,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/down_clothes/jeans1.png",
+      "target": "npc/new/clothes/down_clothes/jeans1.png",
+      "sha256": "7f479ff9f65b565f275041436c0902b7498a494839e238b2f68eba471380a717",
+      "bytes": 102459,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/everyday/medium_tits/everyday.png",
+      "target": "npc/new/clothes/everyday/medium_tits/everyday.png",
+      "sha256": "fe17f440a6bdecfac0912f0bb4d23659356c01a8bd09687cc25013f5ccaad39c",
+      "bytes": 58070,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/everyday/medium_tits/everyday1.png",
+      "target": "npc/new/clothes/everyday/medium_tits/everyday1.png",
+      "sha256": "a6483af6de6b020201048eb0ec0bdad17b8409d9b91894bcf22e181b875674be",
+      "bytes": 61696,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/everyday/small_tits/everyday.png",
+      "target": "npc/new/clothes/everyday/small_tits/everyday.png",
+      "sha256": "e29a094e96785a7d6e8e68a4595b2b718ff3eb10570b5dca27de144153f5fdf7",
+      "bytes": 57739,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/everyday/small_tits/everyday1.png",
+      "target": "npc/new/clothes/everyday/small_tits/everyday1.png",
+      "sha256": "1faf341cfff708bdfc866339dac3751de2010854ab6f45a7714f4080712cf3b5",
+      "bytes": 57452,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/clothes/pantsu/pantsu.png",
+      "target": "npc/new/clothes/pantsu/pantsu.png",
+      "sha256": "fb4e04237532b9bc1577ee846b9bdc052b55a0e996c0c8a934d0abc12615db2d",
+      "bytes": 14696,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/1.png",
+      "target": "npc/new/face/details/eyebrows/1.png",
+      "sha256": "7c3d4409faf09f7815bf1376b1697e89b7144a1327073719a25fbfc1fa43c603",
+      "bytes": 7014,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/10.png",
+      "target": "npc/new/face/details/eyebrows/10.png",
+      "sha256": "8a1e58731cf96822b6dbd3c2a0bbe2b1ed0dbb101a30c8b1f5fc25163a249506",
+      "bytes": 6897,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/11.png",
+      "target": "npc/new/face/details/eyebrows/11.png",
+      "sha256": "8cdcdab93cec509783e746bea6eea59cfc149f6aaaa28b13da6cd6bc60a5ca6a",
+      "bytes": 6914,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/12.png",
+      "target": "npc/new/face/details/eyebrows/12.png",
+      "sha256": "dca8b13fdfab187c05c85b17757ee3b534ef3871a57c376bf7ae8d3c39c0aead",
+      "bytes": 7054,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/13.png",
+      "target": "npc/new/face/details/eyebrows/13.png",
+      "sha256": "51eb5c398a78b808cd707f475d63d2638f54ccf53bcc3fe9af75cfae15afd05e",
+      "bytes": 6803,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/14.png",
+      "target": "npc/new/face/details/eyebrows/14.png",
+      "sha256": "b759f5ca58857b6b4a0ee14e7b1eb973f254bfff9bbf1f01d3f274129b44e911",
+      "bytes": 6939,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/2.png",
+      "target": "npc/new/face/details/eyebrows/2.png",
+      "sha256": "715a07263021eb0acb45b5105c25cfa399c4717e7161237960da810ebac83d6d",
+      "bytes": 7002,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/3.png",
+      "target": "npc/new/face/details/eyebrows/3.png",
+      "sha256": "081f265c64637be1e30bc7078c15ffce861a3346897a2cb3e89692f57c2c1920",
+      "bytes": 6873,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/4.png",
+      "target": "npc/new/face/details/eyebrows/4.png",
+      "sha256": "9f87080b9ac78ec4a5eec51da8fbc279a25dc948a45d16227249f1230469ab04",
+      "bytes": 6894,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/5.png",
+      "target": "npc/new/face/details/eyebrows/5.png",
+      "sha256": "9b433955433fe0d407b4aa026e1f89172f86774bba6c2ae3d42698c08b51e9c0",
+      "bytes": 6977,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/6.png",
+      "target": "npc/new/face/details/eyebrows/6.png",
+      "sha256": "390f9d029c6da7c99629b26a5416311d242331e2944bc6fec59ed5cba4782ff0",
+      "bytes": 6871,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/7.png",
+      "target": "npc/new/face/details/eyebrows/7.png",
+      "sha256": "ab213e283d46d22b139a12dc11c7975bd10674e16bde65079297c80986833981",
+      "bytes": 6836,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/8.png",
+      "target": "npc/new/face/details/eyebrows/8.png",
+      "sha256": "27f58a17ab19d1c8fba2dc7f5b8d73b05f7d09c8347c317cb4815170bb40ed7d",
+      "bytes": 6892,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/eyebrows/9.png",
+      "target": "npc/new/face/details/eyebrows/9.png",
+      "sha256": "912a9c4bf136bb042bbd6ec780beb07e036a146377ec0c25c5377fb106938758",
+      "bytes": 7044,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/1.png",
+      "target": "npc/new/face/details/mounth/1.png",
+      "sha256": "99f916a93a66a6f6811a4caa4c68e248cdc63c232e8f625fe7dcd7e89fa89827",
+      "bytes": 8347,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/10.png",
+      "target": "npc/new/face/details/mounth/10.png",
+      "sha256": "b9e475d2ad679cf58258fafa6ba4abe521f53999d5a66e40712dcf68ae4a0606",
+      "bytes": 7072,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/11.png",
+      "target": "npc/new/face/details/mounth/11.png",
+      "sha256": "2fb960fefb0100e46529a4fac03721d27a447022358db593f2518cda1f6a89c2",
+      "bytes": 7881,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/12.png",
+      "target": "npc/new/face/details/mounth/12.png",
+      "sha256": "144a4beabcf4bd9da92a6f4d26feaebb29c28574dbaede30d5516d268dade2a7",
+      "bytes": 7457,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/13.png",
+      "target": "npc/new/face/details/mounth/13.png",
+      "sha256": "227bb17a9233ad2f1a0052b606ac6bfad3834547e3d5911f662c6b5dc6c6c9a0",
+      "bytes": 8097,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/14.png",
+      "target": "npc/new/face/details/mounth/14.png",
+      "sha256": "16cd63cc52799914d1a01c3111c1e4d265e1423ecedb3dcf997e66492bab78f8",
+      "bytes": 6872,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/15.png",
+      "target": "npc/new/face/details/mounth/15.png",
+      "sha256": "665d9192acb6b70bb15e128447da3d65fb5c7198e7be1ce18014180f95a1daf5",
+      "bytes": 7708,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/16.png",
+      "target": "npc/new/face/details/mounth/16.png",
+      "sha256": "d89bd7004ec4ff93fd005d0a98ada75bc7c8fe89f10d89de641dbda95dd1b67a",
+      "bytes": 6984,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/17.png",
+      "target": "npc/new/face/details/mounth/17.png",
+      "sha256": "dca1a0956c444eb3ca17608d11d97e2ca06322a2da882e282da046a04db25c79",
+      "bytes": 7367,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/2.png",
+      "target": "npc/new/face/details/mounth/2.png",
+      "sha256": "f04aa1579df5b67ab45d4d6a7fc009526f951696bd794deaa0f138c497add21b",
+      "bytes": 6374,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/3.png",
+      "target": "npc/new/face/details/mounth/3.png",
+      "sha256": "333a19f4b4eb94be0e6251ddb492cc6fc9b1bb324c9324552ee4b305f3189ad5",
+      "bytes": 6725,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/4.png",
+      "target": "npc/new/face/details/mounth/4.png",
+      "sha256": "7bb2db893ebedc389ffc491b1b41fcd7fb75ba5fb7ad5f8793a9ee3d8c1d7986",
+      "bytes": 8427,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/5.png",
+      "target": "npc/new/face/details/mounth/5.png",
+      "sha256": "abd91382187c2010e984de3897f61aedb4aa3268b472bd8c6f5f31f404ece653",
+      "bytes": 7616,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/6.png",
+      "target": "npc/new/face/details/mounth/6.png",
+      "sha256": "6af9fe138514325858d59c02be87a3704699a44c7f96c2b2104be51f7eb0a9e3",
+      "bytes": 7215,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/7.png",
+      "target": "npc/new/face/details/mounth/7.png",
+      "sha256": "8c16ff1facb8cae6c9e9187c69d3b9ad5c861ed759cfd2c17bd1c54c05794e6c",
+      "bytes": 7360,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/8.png",
+      "target": "npc/new/face/details/mounth/8.png",
+      "sha256": "261a94609e5832f65f3291fc16a07b6d8b2d1324d867bf5f5c759da831c8309a",
+      "bytes": 7751,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/details/mounth/9.png",
+      "target": "npc/new/face/details/mounth/9.png",
+      "sha256": "60fabec0f8026c549f71c44734707d5cd5761376a37acfafdb0e08537f61df34",
+      "bytes": 7109,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/eye_ap1.png",
+      "target": "npc/new/face/eye/eye_ap1.png",
+      "sha256": "38cb3a380d45d826fb43660ea6aa02c0a54a24d5db6420772817ede38f893b88",
+      "bytes": 7659,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/eye_ap2.png",
+      "target": "npc/new/face/eye/eye_ap2.png",
+      "sha256": "5bd07cc1f3baa22a0c56d936535bd0da70f47b3c84726278c11ca79d374f46a9",
+      "bytes": 8100,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/eye_ap3.png",
+      "target": "npc/new/face/eye/eye_ap3.png",
+      "sha256": "ff999463ac3ae5a8fcefdc43379a9e5bce7cc902dd1fa9e40a5853ba54b8ec79",
+      "bytes": 7941,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/eye_type1.png",
+      "target": "npc/new/face/eye/eye_type1.png",
+      "sha256": "73bf5c1814f66957264e25598860817e77226185de26a3ee03fe3342381cb6b0",
+      "bytes": 14900,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/eye_type2.png",
+      "target": "npc/new/face/eye/eye_type2.png",
+      "sha256": "a2bf9d1576cfde4ddd6374153154cdad9dcd1da46d91aa1b96a8d65f3f3cc800",
+      "bytes": 13952,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/eye_type3.png",
+      "target": "npc/new/face/eye/eye_type3.png",
+      "sha256": "9b1fc610c6dbf8d78786445d792c95d67d339dc31e8e934c6fbeebb561c4a1de",
+      "bytes": 14634,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/left_eye/eye1.png",
+      "target": "npc/new/face/eye/left_eye/eye1.png",
+      "sha256": "40eb288614df21a95287ff82273623560b354173d2033153d426c2c576c34d6b",
+      "bytes": 8211,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/left_eye/eye2.png",
+      "target": "npc/new/face/eye/left_eye/eye2.png",
+      "sha256": "1c3ff4b27e15887f9b407e1871510ad96f4c69f0dd85adca80bd8539f281041d",
+      "bytes": 8157,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/left_eye/eye3.png",
+      "target": "npc/new/face/eye/left_eye/eye3.png",
+      "sha256": "3d62904ec14d7069b744502ac65e9c62c8e91adef3f9d010179a252cf1a62661",
+      "bytes": 8173,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/right_eye/eye1.png",
+      "target": "npc/new/face/eye/right_eye/eye1.png",
+      "sha256": "f69ef75f467c3bf85c0bbc3003856df394f1c14707afc5d5f24ff180d877507a",
+      "bytes": 8278,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/right_eye/eye2.png",
+      "target": "npc/new/face/eye/right_eye/eye2.png",
+      "sha256": "df790ca3aca84c5eceb7b5963d899fb714ebefecfc4b44e5d22af2716eda65e9",
+      "bytes": 8197,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eye/right_eye/eye3.png",
+      "target": "npc/new/face/eye/right_eye/eye3.png",
+      "sha256": "4551937cc77566f12d5d58650c3115621b4a80695a17c68e1d5dcdecb448af15",
+      "bytes": 8232,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/eyebrows.png",
+      "target": "npc/new/face/eyebrows.png",
+      "sha256": "27f58a17ab19d1c8fba2dc7f5b8d73b05f7d09c8347c317cb4815170bb40ed7d",
+      "bytes": 6892,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/face_type1.png",
+      "target": "npc/new/face/face_type1.png",
+      "sha256": "341b01eaa8b61d1ff5f8f3329ec12d2e185b14c3a22b6189c1ed822f798f7a8b",
+      "bytes": 25027,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/face_type2.png",
+      "target": "npc/new/face/face_type2.png",
+      "sha256": "449fd2a2f0662fdec6a1c2ed068cf983327dd983967e30ebbd8784ff2b704493",
+      "bytes": 41315,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/face_type3.png",
+      "target": "npc/new/face/face_type3.png",
+      "sha256": "8ba7c1dffd44b3bd48aba44c048a2e50b915c7365fb8aacd408029904f1ce921",
+      "bytes": 44807,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/face/nose_type1.png",
+      "target": "npc/new/face/nose_type1.png",
+      "sha256": "71752e4ffb2fd5537aa845a4ca1b04a0a1b31c3b1c6f2497002adf060a825c11",
+      "bytes": 7310,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base1/length2/back/1.png",
+      "target": "npc/new/hair/base1/length2/back/1.png",
+      "sha256": "9a6aee605a5608c7a30f5058709aee7677460cefc877b13b3825e2ad7093da02",
+      "bytes": 44857,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base1/length2/front/1.png",
+      "target": "npc/new/hair/base1/length2/front/1.png",
+      "sha256": "493041578d77e1e106a9d2ea84ee5208fadb81901bca746770c056f9577df809",
+      "bytes": 90163,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base1/length3/back/1.png",
+      "target": "npc/new/hair/base1/length3/back/1.png",
+      "sha256": "5823206f2c2dca1dbcdf5e4e81a83e9f32bd5e6b499c95aff32c578a29f01c41",
+      "bytes": 49840,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base2/length1/front/1.png",
+      "target": "npc/new/hair/base2/length1/front/1.png",
+      "sha256": "9c7fe61bce6e785ec917ce702daaa15e920bab2119754fd1b7ed6e9ef7a9ac23",
+      "bytes": 85054,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base2/length2/front/1.png",
+      "target": "npc/new/hair/base2/length2/front/1.png",
+      "sha256": "d047ac6a2288252ae9145b33a183d9af7ce087efe0a37c444769a59aa5c6730d",
+      "bytes": 68246,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base2/length3/back/1.png",
+      "target": "npc/new/hair/base2/length3/back/1.png",
+      "sha256": "822c2aaa50c34ae73cd08cce19a8ac484b1339e4df8a281b524619dcb9ce9093",
+      "bytes": 69068,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/hair/base2/length3/front/1.png",
+      "target": "npc/new/hair/base2/length3/front/1.png",
+      "sha256": "df0e8de937f34613e22b9c277d339627386416ae2d417858c57e7422c6874e13",
+      "bytes": 69296,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/hair/base1/length1/front/1.png",
+      "target": "npc/npc_m/hair/base1/length1/front/1.png",
+      "sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+      "bytes": 35479,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/hair/base1/length2/back/1.png",
+      "target": "npc/npc_m/hair/base1/length2/back/1.png",
+      "sha256": "8213c1564e42441e4bef7697c56f07c9281e334ecbd64c7a3997322d7b3b6b81",
+      "bytes": 10063,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/hair/base1/length2/front/1.png",
+      "target": "npc/npc_m/hair/base1/length2/front/1.png",
+      "sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+      "bytes": 35479,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/hair/base1/length3/back/1.png",
+      "target": "npc/npc_m/hair/base1/length3/back/1.png",
+      "sha256": "b968e3ad65ade3bbf6204b42a3c4746b58447d871e760ce676e77e0bc0f83415",
+      "bytes": 13862,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/hair/base1/length3/front/1.png",
+      "target": "npc/npc_m/hair/base1/length3/front/1.png",
+      "sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+      "bytes": 35479,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/hair/base2/length2/back/1.png",
+      "target": "npc/npc_m/hair/base2/length2/back/1.png",
+      "sha256": "b2db3962f8c2070ab07d0ced9d4515e395a400e4381c40fd55d27f47b325b453",
+      "bytes": 14405,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/body_1/abs2.png",
+      "target": "npc/npc_m/type2/body_1/abs2.png",
+      "sha256": "76fdd496e140891e8d8e66fe09a629f08da84e7f4e409e17b902f0b949c6550b",
+      "bytes": 42555,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/body_1/clothes/clothes1.png",
+      "target": "npc/npc_m/type2/body_1/clothes/clothes1.png",
+      "sha256": "2efd8ce82c8d4d2f8c8c22a54969e3223d00a07a3aa9e60cf6d02bef089b53bf",
+      "bytes": 133113,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/body_1/clothes/usually1.png",
+      "target": "npc/npc_m/type2/body_1/clothes/usually1.png",
+      "sha256": "cce69cc5a5a616c45029c3d2431b68f85d527288dd8f439224935de38e7ef9a4",
+      "bytes": 130113,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/body_1/clothes/usually2.png",
+      "target": "npc/npc_m/type2/body_1/clothes/usually2.png",
+      "sha256": "b9c973ec4f0659c08ebd93e7d3e3d97ebdd5a92b9eabd417d74a96278c0734a0",
+      "bytes": 115182,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/body_1/main.png",
+      "target": "npc/npc_m/type2/body_1/main.png",
+      "sha256": "1e49074400c61b9fe9f0d8a0ed26b650f3faede57a524f651852259081c3830a",
+      "bytes": 153769,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/down_clothes/jeans.png",
+      "target": "npc/npc_m/type2/down_clothes/jeans.png",
+      "sha256": "263265141d2339fa234831bc8b65a77c993d34e6642bb6958ea605d24b128ac7",
+      "bytes": 169146,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/down_clothes/usually1.png",
+      "target": "npc/npc_m/type2/down_clothes/usually1.png",
+      "sha256": "c0df053e629115bc50df22832fb8295963d39c5c02b240f7088d3407a7bf3af9",
+      "bytes": 102201,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/1.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/1.png",
+      "sha256": "88fed8bcfe4f5a98ba488e3c750cfbc09bac017c8e6d1cebce405b51814ca387",
+      "bytes": 8044,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/10.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/10.png",
+      "sha256": "3726b448e7a06f37dab0d4ee917e0c40ef9e57785fa5fd1c4d309747e7cb65aa",
+      "bytes": 7467,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/11.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/11.png",
+      "sha256": "62c42e63f16cfba56364f95da93bd99b6f1a09b60af43f703d2dea590accfc3f",
+      "bytes": 7461,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/12.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/12.png",
+      "sha256": "3dbc19d892b7f90babab1e39e180bbd3457577845014e0dee0c0c69550ffaa59",
+      "bytes": 7718,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/13.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/13.png",
+      "sha256": "67b4fed161b6638b1f91ada5ce4fa5da67d23a9cdf85112a92b5bad7754f75cd",
+      "bytes": 7488,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/14.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/14.png",
+      "sha256": "13132087cc35abe62ea4a8812754579037a22ab9e1da7e70aded068a0e2b4427",
+      "bytes": 7387,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/2.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/2.png",
+      "sha256": "95eda1f5a74a005ab9cbaadf6aa26750dc6b5d3d21e87e1dd8481544bc5eee40",
+      "bytes": 7921,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/3.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/3.png",
+      "sha256": "249c88007aca5c3b56c380eb938620493e454d831c389013fa8d6fc3dc4dfdd7",
+      "bytes": 7574,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/4.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/4.png",
+      "sha256": "e31c9a87bcf3498a98a0947d43334e8c3c2432d4921ac6499287d74db06b6931",
+      "bytes": 7592,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/5.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/5.png",
+      "sha256": "1c635ccbb50f1f1c80c380835576189f570f022b8cf5bfd851ada79a0d27207f",
+      "bytes": 7513,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/6.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/6.png",
+      "sha256": "15b5935e25b4dfa702b903b2e7eebf6fadb0cc89f05f38bd712fd168b84efbed",
+      "bytes": 7484,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/7.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/7.png",
+      "sha256": "8415fedf80641fd3dede2f951c936456dc38133bb45bb473993237bd99546a08",
+      "bytes": 7526,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/8.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/8.png",
+      "sha256": "0d0f08d3a5b1fb13080ef63a8719db47948409183adba11822c959348a1c443f",
+      "bytes": 7473,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/eyebrows/type1/9.png",
+      "target": "npc/npc_m/type2/face/details/eyebrows/type1/9.png",
+      "sha256": "3ca92bcb42816285ce0cfd4239a7b78c53e7588b69df9edaecf0eeadc64c302b",
+      "bytes": 7472,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/1.png",
+      "target": "npc/npc_m/type2/face/details/mounth/1.png",
+      "sha256": "3039ff8d521ec9ea30b32de9d4760609a1b3593532cd41a5894e4d010ebe7f14",
+      "bytes": 8860,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/10.png",
+      "target": "npc/npc_m/type2/face/details/mounth/10.png",
+      "sha256": "e930bd4daeb6260ff92cd04513b6b12dd344856be05d09f7e94748b20d86d993",
+      "bytes": 9907,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/11.png",
+      "target": "npc/npc_m/type2/face/details/mounth/11.png",
+      "sha256": "e10467611b7701530401ec28cc4fb9011ef84a4fa234e63908a1819662af6f0d",
+      "bytes": 9733,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/12.png",
+      "target": "npc/npc_m/type2/face/details/mounth/12.png",
+      "sha256": "cd5c97eb5c49a8e99ffd8fa8c06a94b54154643d503b615b9fea1ad19c1cdc56",
+      "bytes": 9529,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/13.png",
+      "target": "npc/npc_m/type2/face/details/mounth/13.png",
+      "sha256": "4a32a7f9c7df9d93a791c4c1518387b4d798803433841d01b4a6484b93fedb17",
+      "bytes": 9224,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/14.png",
+      "target": "npc/npc_m/type2/face/details/mounth/14.png",
+      "sha256": "98cc1e3e9f05694e7ab5d7cde5850a1814ff081bc9588fb4f1738b880137c12f",
+      "bytes": 8288,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/15.png",
+      "target": "npc/npc_m/type2/face/details/mounth/15.png",
+      "sha256": "f107c2b698a1d69cd5f99a8d8e12daef47e4d5810c9ef424ad91a83137c60d9f",
+      "bytes": 9005,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/16.png",
+      "target": "npc/npc_m/type2/face/details/mounth/16.png",
+      "sha256": "45a9bfef6820e1223bc94b47138ef72a5563ed084a108eb8e708a3990df077f5",
+      "bytes": 8229,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/17.png",
+      "target": "npc/npc_m/type2/face/details/mounth/17.png",
+      "sha256": "457efd56e2225db52edabee4a81e5e524a6453b9b5b37c4857920158129cf319",
+      "bytes": 8267,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/2.png",
+      "target": "npc/npc_m/type2/face/details/mounth/2.png",
+      "sha256": "c377d22c74b807f7b3111c28a00d46edcc547840b3269a6d04a0c4bb40dc0098",
+      "bytes": 8364,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/3.png",
+      "target": "npc/npc_m/type2/face/details/mounth/3.png",
+      "sha256": "318a7ee35cd0a668d65420d40bc2a6bebe0d5ecfa81e559bb6e26ed6114ed47d",
+      "bytes": 8672,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/4.png",
+      "target": "npc/npc_m/type2/face/details/mounth/4.png",
+      "sha256": "327aeb5d50616a5a8b578bc4e7e0deb2f31784f8249ec6bb6511a20b3e6dc657",
+      "bytes": 9592,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/5.png",
+      "target": "npc/npc_m/type2/face/details/mounth/5.png",
+      "sha256": "88c1563d2778ffe65426bb6cba80c38beb699ae0e8ae13e06ee6a7c713dee878",
+      "bytes": 8865,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/6.png",
+      "target": "npc/npc_m/type2/face/details/mounth/6.png",
+      "sha256": "6ed5811d7f406720d5e0e975421ac0ff0696e2cbf3f70e12c859d245fa9f19a4",
+      "bytes": 8372,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/7.png",
+      "target": "npc/npc_m/type2/face/details/mounth/7.png",
+      "sha256": "2318bc4b4df2d74e36196951011c8df40d6f5c1472a22a81816383505caccac6",
+      "bytes": 8523,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/8.png",
+      "target": "npc/npc_m/type2/face/details/mounth/8.png",
+      "sha256": "d6b047bd49e707876981bff127d1a0829cc5772e3724d0dbe65b3553fcd75a77",
+      "bytes": 9475,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/details/mounth/9.png",
+      "target": "npc/npc_m/type2/face/details/mounth/9.png",
+      "sha256": "84e9b644e527d284968c8e483fab6777bdd05f3102e31222d83736e1177770a3",
+      "bytes": 8474,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/eye_ap1.png",
+      "target": "npc/npc_m/type2/face/eye/eye_ap1.png",
+      "sha256": "6eafefc51ef4baa5be4033a08475455ca2f4e67623c841994b0142a7a941f46b",
+      "bytes": 8471,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/eye_ap2.png",
+      "target": "npc/npc_m/type2/face/eye/eye_ap2.png",
+      "sha256": "45b347f383ecfffe816ee2b5ade3796ca7121edc4cf477dc9cd0758b4b7ef516",
+      "bytes": 8098,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/eye_ap3.png",
+      "target": "npc/npc_m/type2/face/eye/eye_ap3.png",
+      "sha256": "c5c43b706453c1c54b7687b9eb982e1d046b88e4d9fb7f0605d8a7aa79c57b35",
+      "bytes": 8563,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/eye_type1.png",
+      "target": "npc/npc_m/type2/face/eye/eye_type1.png",
+      "sha256": "8e610c47f665c7afddfee24a21c8129602885a37d24d5caf8873145db65872aa",
+      "bytes": 10287,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/eye_type2.png",
+      "target": "npc/npc_m/type2/face/eye/eye_type2.png",
+      "sha256": "8516f7fe08ba214dd7df9bbb38be6c55fad5368e2941c9488cd1c6f9bd9f4ba8",
+      "bytes": 10163,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/eye_type3.png",
+      "target": "npc/npc_m/type2/face/eye/eye_type3.png",
+      "sha256": "39c02d159506240a0c949cd55954247d5968ecce6080029db284386e81f4da65",
+      "bytes": 10086,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/fix_eye.png",
+      "target": "npc/npc_m/type2/face/eye/fix_eye.png",
+      "sha256": "6b05a281cc33bacfe5be89c5feb029ce2973015bb2f7a719c2b9a44fd66318b4",
+      "bytes": 17347,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/left_eye/eye1.png",
+      "target": "npc/npc_m/type2/face/eye/left_eye/eye1.png",
+      "sha256": "084234b268fd6e2fc7984ded1eb9d447c532ffb0906fdff85208d44497d8a76d",
+      "bytes": 7132,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/left_eye/eye2.png",
+      "target": "npc/npc_m/type2/face/eye/left_eye/eye2.png",
+      "sha256": "a84eb25732dba18e32d0ab7ebf1cb654191ef59f6761b59475e79e55914c5a12",
+      "bytes": 7116,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/left_eye/eye3.png",
+      "target": "npc/npc_m/type2/face/eye/left_eye/eye3.png",
+      "sha256": "732e2e9cee4bce08a0c805b4951fcf819d5af4716b0341e99d148895efea82b9",
+      "bytes": 6699,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/right_eye/eye1.png",
+      "target": "npc/npc_m/type2/face/eye/right_eye/eye1.png",
+      "sha256": "26adc0477cf2891532f2f242f0bc69de12d4558028b6f1cd295c62bfcebc0257",
+      "bytes": 7105,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/right_eye/eye2.png",
+      "target": "npc/npc_m/type2/face/eye/right_eye/eye2.png",
+      "sha256": "4dcae5fa4ba9ea60968d56d5eda345418100d8c7a8e69b240d7031024434685e",
+      "bytes": 7041,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/right_eye/eye3.png",
+      "target": "npc/npc_m/type2/face/eye/right_eye/eye3.png",
+      "sha256": "698364c0815e7c902c5f720ef65a898d91ca42e58f775b8e2ea3635725a2f261",
+      "bytes": 6726,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eye/shine.png",
+      "target": "npc/npc_m/type2/face/eye/shine.png",
+      "sha256": "ee49081466a2995dd2e2efe46c0e9502373ca1e290068ac7950157192120f25b",
+      "bytes": 6311,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/eyebrows.png",
+      "target": "npc/npc_m/type2/face/eyebrows.png",
+      "sha256": "8f57241c7fa6a730e8b8bad4c8950f4097739a4f9a792273be619d048c8679ab",
+      "bytes": 7117,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/face1.png",
+      "target": "npc/npc_m/type2/face/face1.png",
+      "sha256": "232a8225afb184e69b71b98c25bb7787060d921c33f405b760ece2a50bef6e4f",
+      "bytes": 20923,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/face2.png",
+      "target": "npc/npc_m/type2/face/face2.png",
+      "sha256": "a4bbd6c9809026c8a36215a8bcc33bd77e31537b2caac15d505c9197477880a8",
+      "bytes": 21933,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/face3.png",
+      "target": "npc/npc_m/type2/face/face3.png",
+      "sha256": "17ae7c04e31fc9675a6af40eb7f69ba8d0ad2971928ad93e052df8392dd222d8",
+      "bytes": 21219,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/face4.png",
+      "target": "npc/npc_m/type2/face/face4.png",
+      "sha256": "0e5f9d9e6e4ecc8ca9c3b09ae5775670157ef1c3c84053f8f8b09904fa9924ac",
+      "bytes": 21743,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/nose1.png",
+      "target": "npc/npc_m/type2/face/nose1.png",
+      "sha256": "d61112edd33171d91bbd93db09748f888f83648aae254c79e998b7012e88d286",
+      "bytes": 7148,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/nose2.png",
+      "target": "npc/npc_m/type2/face/nose2.png",
+      "sha256": "a8e1a321c09352c12a69adeee1ebe5724111fa551edb85ed00207575c7fe0960",
+      "bytes": 7675,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/face/nose3.png",
+      "target": "npc/npc_m/type2/face/nose3.png",
+      "sha256": "084cb67a807bba641e7d45a2a9b2496561543331c58f332264cae8f21d720837",
+      "bytes": 7171,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/legs.png",
+      "target": "npc/npc_m/type2/legs.png",
+      "sha256": "e53f7c0cedd3633d7c354ec9cf4de3f9dc308197add40a6ced2d324156343015",
+      "bytes": 153321,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/npc_m/type2/undergarment/pants1.png",
+      "target": "npc/npc_m/type2/undergarment/pants1.png",
+      "sha256": "d575facdc3c8aa56a9806cf2f28294606cd6339dcdfef01e0f5cb3fb1a757652",
+      "bytes": 22498,
+      "size": [
+        1920,
+        2596
+      ]
+    }
+  ]
+}

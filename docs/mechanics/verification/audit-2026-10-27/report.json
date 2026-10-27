@@ -1,0 +1,299 @@
+{
+  "date": "2026-10-27",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "scope": "School 0.981 static mechanics comparison and current EroInc main-game integration audit",
+  "donor_provenance": {
+    "files_checked": 197,
+    "lines": 241870,
+    "hash_mismatches": [],
+    "recovered_compiled_in_prior_inventory": 11,
+    "executed": false
+  },
+  "gameplay": {
+    "checks": 505,
+    "failed": 0,
+    "failures": []
+  },
+  "integration_routes": {
+    "checks": 44,
+    "failed": 0,
+    "main_ui": true,
+    "world_restore": true
+  },
+  "city": {
+    "checks": 118,
+    "failed": 0,
+    "markers": 15,
+    "periods": 4,
+    "weather": 4
+  },
+  "registered_services": {
+    "atomic_rejection": true,
+    "services": [
+      "character",
+      "inventory",
+      "world",
+      "economy",
+      "housing",
+      "preferences",
+      "social",
+      "organizations",
+      "lifecycle",
+      "encounters",
+      "actions",
+      "events",
+      "health",
+      "combat",
+      "careers",
+      "security",
+      "social_rules",
+      "institutions",
+      "interior",
+      "activities",
+      "appearance",
+      "population",
+      "npc_behavior",
+      "npc_personalities",
+      "npc_agency",
+      "npc_relationships",
+      "npc_dialogue",
+      "needs"
+    ]
+  },
+  "standalone_pack": {
+    "checks": 1722,
+    "failed": 0,
+    "failures": []
+  },
+  "snapshot_process": [
+    {
+      "mode": "write",
+      "ok": true
+    },
+    {
+      "mode": "read",
+      "ok": true
+    }
+  ],
+  "story_flows": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 12449,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11508,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11733,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 8176,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11462,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "merged_catalog_counts_before_main_presentation_and_city_extensions": {
+    "attributes": 9,
+    "skills": 7,
+    "perks": 6,
+    "effects": 2,
+    "substances": 1,
+    "items": 23,
+    "recipes": 1,
+    "outfits": 3,
+    "training_programs": 5,
+    "jobs": 1,
+    "professions": 3,
+    "contracts": 4,
+    "projects": 1,
+    "assets": 1,
+    "organizations": 1,
+    "group_projects": 1,
+    "campaigns": 3,
+    "publications": 2,
+    "stream_topics": 3,
+    "weapons": 6,
+    "combat_moves": 12,
+    "agency_actions": 27,
+    "agency_aspirations": 6,
+    "human_dimensions": 6,
+    "human_values": 4,
+    "human_interests": 6,
+    "dialogue_nodes": 30,
+    "dialogue_choices": 38,
+    "quests": 1,
+    "events": 1,
+    "achievements": 1
+  },
+  "school_perk_definitions": 65,
+  "known_exit_diagnostics": {
+    "main_object_instances": 63,
+    "main_resources": 27,
+    "standalone_pack_same_diagnostics": false
+  },
+  "limitations": [
+    "Static School inspection; no donor gameplay trace comparison.",
+    "Current main game includes presentation and city extensions beyond counted merged catalogs.",
+    "Test counts verify stated contracts, not exhaustive School content or all numeric parity.",
+    "No new screenshots or visual acceptance in this audit.",
+    "No writes to user save slots."
+  ],
+  "logs": {
+    "gameplay.log": {
+      "bytes": 946,
+      "sha256": "7ac59137c5f21530385a7c3b758dce84f587f7afb833c3d4fa66d731abfde5b9"
+    },
+    "mechanics-pack.log": {
+      "bytes": 537,
+      "sha256": "f51ba55366865a0b39f2afe19c0c4b5d2a8e9adfefa764e5e6880d6e76765718"
+    },
+    "snapshot-write.log": {
+      "bytes": 378,
+      "sha256": "d50f128271246e61363a46c50ef7272412ec207cf73e5342a5e709960a3b5548"
+    },
+    "snapshot-read.log": {
+      "bytes": 377,
+      "sha256": "cc9db4be94322f036c6dc077e54cf8a0e301aed6dc56de8b43d2e58775abb611"
+    },
+    "flow-0.log": {
+      "bytes": 614,
+      "sha256": "422f843c5571d0979a8fe29a17c49643344c803ef75efec0a6c1c676ea9c6a05"
+    },
+    "flow-1.log": {
+      "bytes": 616,
+      "sha256": "ac27ec0a80b2602b4f5fd119d7b28cfcaf766285159089e28bc21cadc0704a40"
+    },
+    "flow-2.log": {
+      "bytes": 614,
+      "sha256": "21c5c00576971696a90ca96d8d365507218e553ad43ee15e10f955b70dde95a9"
+    },
+    "flow-3.log": {
+      "bytes": 614,
+      "sha256": "72742d65f1767b32ab11e1850544fe53ea6a2fa1e8c4ed07e365d735d0548d50"
+    },
+    "flow-4.log": {
+      "bytes": 615,
+      "sha256": "6e62d07805566474843e6225396a9201aaf01899781f021c15dde5c102d85867"
+    }
+  },
+  "source_hashes": {
+    "project.godot": "4d8ece910a09526039578d673be3c5788c577333ca1fb05a19fe4aff670da2a4",
+    ".godot-version": "964bf9b089d1e1c9474f4baab1c909ee2affc1fea9464eceaf5d3b8d2ce555f4",
+    "docs/mechanics/source_inventory.json": "ccb591ed56a57b29faae0a398003e679aa3bc3fb7e832128b946b871d5d14432",
+    "scripts/gameplay/gameplay.gd": "3c8eb0f79c08f1fdd1e44dc324f6eedc5687c9cee1c4904662cf8585c36c18ba",
+    "scripts/gameplay/main_simulation.gd": "1c28ce2a3d4e2b2f6069a88b52c34c4ec3999b13df802c94c9bbec141d63c77a",
+    "scripts/mechanics/simulation.gd": "7ad9e09ac43f9481ea0314c8822bddaa1ab559387637a553c6d1fbb64ae1923f",
+    "scripts/mechanics/npc_life_simulation.gd": "7e7ffdf29e82e81b6da64fa7b372c9081f182b90267ed9afea798fd058b9b652",
+    "scripts/mechanics/npc_relationships.gd": "9bb783f4484506ef27c77307e56588b3db3910160171ca0689a324b383efd34e",
+    "scripts/mechanics/lifecycle.gd": "a41c801d6837470aa3490ee8c26fb45a1ef2df2f04e3ec33ca4c286a61d5551f",
+    "scripts/portraits/character_visuals.gd": "6dbbe8a68923ff36df650638b5d640087ccbb82b32647c7626c9a758e703ef6f",
+    "scripts/ui/gameplay/gameplay_shell.gd": "5c672bb2461c962c9ab1afbfeb0443d9a13d41c46a55e095dfb8c0aa3d9987da",
+    "scripts/ui/gameplay/mini_game.gd": "84b11509c8719564c75677a5ff6a879c2848a2528e2fbd62286ca6ef98cc5e21",
+    "scripts/ui/main_menu.gd": "01e62aa9778468e7732551840dbaa24739e08728ee44128b0220f3180043b733",
+    "scripts/managers/game_session.gd": "e0d8bd72e69c4e75f9f472e04c85f5e771ddd08f31e04c94188dfd959d58b199",
+    "data/art/character_layers.json": "7cccd4938bd880d057e5790967fd7763f1f414a2e04a9665058d9039c4db44bd",
+    "data/world/city-river-v2.json": "56e0e2c9640bafd6ffb90d6d090d1140806486cbefb9a38c6daf05525d22004e",
+    "data/mechanics/base.json": "ad62fcd8966de96c08167f8068681fffe7e36eff95aa4ea057d1038bfe8b846e",
+    "data/mechanics/advanced.json": "aa6e8d8f760b52251e7f287075fc2ff3e18569546293da05f517a3bc02446b84",
+    "data/mechanics/parity.json": "5ca67e68631bb58991b800b6a0078433e280be93d4df1ffcddb4d3e71ce14323",
+    "data/mechanics/balance.json": "1f5900bf85b3f30fc8d53eaa720a7f8d3a61a81e82302ffdc3795de9fe5e1db9",
+    "data/mechanics/npc_life.json": "3928ef3e8b4f62d45256b0db992c5f9c1303e491f0cd43242c087a9eb55c69e2",
+    "data/mechanics/human_social.json": "b3336e6263c0ca66982f91e7c684608bc68457206b9ce9f1369171f9ffffdfea",
+    "data/mechanics/npc_dialogue.json": "eabcd3deb5b3b63bf960621062863208ea7baa7b684a17494a6a1e093a294d61"
+  }
+}

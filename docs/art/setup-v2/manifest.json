@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "tool": "built-in image_gen",
+  "engine": "Godot 4.6.3",
+  "native_game_viewport": "1920x1080",
+  "reference_only": true,
+  "production_ui_changed": false,
+  "prompts": "prompts.json",
+  "flow": [
+    "New game: world and NPC settings",
+    "New game: difficulty",
+    "Prologue scene 05 at home: bathroom mirror character creation"
+  ],
+  "story_source": "TimeLine/prolog/scene_05_mirror_and_photo.dtl:15",
+  "style_source": "scenes/mainMenu/main_menu.tscn",
+  "bathroom_source": "assets/textures/backgrounds/location_pack_v1/bathroom_night.png",
+  "files": [
+    {
+      "path": "character-mirror-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ec0986f2dd11e2274f943334b7001227f43e9526de7a398a8cf9fe2bd0f3706e",
+      "status": "design-reference-not-integrated"
+    },
+    {
+      "path": "difficulty-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "62c8e5580100c421d221f26b5eb5acb5855f9f573fa0ab11442a78c4ee39f33c",
+      "status": "design-reference-not-integrated"
+    },
+    {
+      "path": "reference-main-menu.png",
+      "width": 1600,
+      "height": 900,
+      "sha256": "030cd75b9ef5913f824d569a115c9edc2d66928d470664019bbe3e5bfc41f846",
+      "status": "existing-engine-capture"
+    },
+    {
+      "path": "world-npcs-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "414f144cf75e7737fa64eda5412d57200c6ac4b1cf1c8de254235c347dfed2ae",
+      "status": "design-reference-not-integrated"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "schema": 1,
+  "rules": {
+    "history_limit": 128,
+    "remark_cooldown": 480,
+    "spontaneous_hourly_chance": 0.08,
+    "erection_urgent_minutes": 240,
+    "private_locations": [
+      "bathroom",
+      "clinic",
+      "global_map",
+      "university",
+      "university_hall",
+      "university_library",
+      "library",
+      "riverside_cafe",
+      "sports_center",
+      "residential_district"
+    ],
+    "supply_locations": [
+      "global_map",
+      "market",
+      "clinic"
+    ]
+  },
+  "symptoms": {
+    "period_cramps": {
+      "label": "Менструальные спазмы",
+      "need_rates": {
+        "energy": -1,
+        "mood": -0.5
+      }
+    },
+    "cycle_fatigue": {
+      "label": "Утомляемость во время месячных",
+      "need_rates": {
+        "rested": -1
+      }
+    },
+    "heavy_flow": {
+      "label": "Обильные месячные",
+      "need_rates": {
+        "energy": -0.7
+      }
+    },
+    "premenstrual_discomfort": {
+      "label": "Предменструальный дискомфорт",
+      "need_rates": {
+        "mood": -0.5
+      }
+    },
+    "cycle_headache": {
+      "label": "Головная боль на фоне цикла",
+      "need_rates": {
+        "energy": -0.5
+      }
+    },
+    "spontaneous_erection": {
+      "label": "Спонтанная эрекция",
+      "need_rates": {}
+    },
+    "painful_erection": {
+      "label": "Болезненная эрекция",
+      "need_rates": {
+        "mood": -0.5
+      }
+    },
+    "erectile_difficulty": {
+      "label": "Трудности с эрекцией",
+      "need_rates": {}
+    },
+    "urinary_burning": {
+      "label": "Боль или жжение при мочеиспускании",
+      "need_rates": {
+        "mood": -0.8
+      }
+    },
+    "urinary_urgency": {
+      "label": "Частые позывы",
+      "need_rates": {
+        "bladder": -2
+      }
+    },
+    "genital_irritation": {
+      "label": "Раздражение и зуд",
+      "need_rates": {
+        "mood": -0.6
+      }
+    },
+    "pelvic_discomfort": {
+      "label": "Дискомфорт в области таза",
+      "need_rates": {
+        "energy": -0.4
+      }
+    },
+    "acute_pelvic_pain": {
+      "label": "Выраженная боль в области таза",
+      "need_rates": {
+        "mood": -1
+      }
+    },
+    "visible_growths": {
+      "label": "Необычные образования: нужен осмотр",
+      "need_rates": {}
+    }
+  },
+  "cycle": {
+    "flow_pattern": [
+      0.5,
+      0.65,
+      0.45,
+      0.3,
+      0.16
+    ],
+    "heavy_fraction": 0.18,
+    "leak_cooldown": 180,
+    "products": {
+      "pad": {
+        "label": "Обычная прокладка",
+        "absorbency": 1,
+        "change_minutes": 240
+      },
+      "night_pad": {
+        "label": "Средство повышенной впитываемости",
+        "absorbency": 1.8,
+        "change_minutes": 480
+      },
+      "cup": {
+        "label": "Многоразовая менструальная чаша",
+        "absorbency": 2,
+        "change_minutes": 480
+      }
+    }
+  },
+  "hpv": {
+    "strains": {
+      "low_risk": {
+        "label": "ВПЧ низкого риска: наблюдение",
+        "initial_fraction": 0.04
+      },
+      "high_risk": {
+        "label": "ВПЧ высокого риска: наблюдение",
+        "initial_fraction": 0.03
+      }
+    },
+    "persistence_fraction": 0.15,
+    "lesion_fraction": 0.22,
+    "contact_chance": 0.2,
+    "barrier_residual": 0.45,
+    "vaccine_residual": [
+      1,
+      0.7,
+      0.35,
+      0.12
+    ],
+    "screening_min_age": 25,
+    "hpv_test_min_age": 30,
+    "screening_interval": 259200
+  },
+  "conditions": {
+    "urinary_infection": {
+      "label": "Инфекция мочевых путей",
+      "requires": "any",
+      "symptoms": [
+        "urinary_burning",
+        "urinary_urgency"
+      ],
+      "daily_chance": 0.0015,
+      "treatment_minutes": 7200
+    },
+    "candidiasis": {
+      "label": "Кандидоз",
+      "requires": "any",
+      "symptoms": [
+        "genital_irritation"
+      ],
+      "daily_chance": 0.0018,
+      "treatment_minutes": 14400
+    },
+    "contact_irritation": {
+      "label": "Контактное раздражение кожи",
+      "requires": "any",
+      "symptoms": [
+        "genital_irritation"
+      ],
+      "daily_chance": 0.002,
+      "treatment_minutes": 4320
+    },
+    "prostate_discomfort": {
+      "label": "Состояние с простатическим/тазовым дискомфортом",
+      "requires": "erections",
+      "symptoms": [
+        "pelvic_discomfort",
+        "urinary_urgency"
+      ],
+      "daily_chance": 0.0008,
+      "treatment_minutes": 20160
+    }
+  },
+  "actions": {
+    "rest": {
+      "minutes": 15,
+      "cost": 0
+    },
+    "cleanup": {
+      "minutes": 10,
+      "cost": 0
+    },
+    "change_product": {
+      "minutes": 5,
+      "cost": 0
+    },
+    "buy_products": {
+      "minutes": 5,
+      "cost": 8
+    },
+    "consult": {
+      "minutes": 30,
+      "cost": 25
+    },
+    "screen": {
+      "minutes": 30,
+      "cost": 35
+    },
+    "vaccinate": {
+      "minutes": 15,
+      "cost": 40
+    },
+    "treat": {
+      "minutes": 15,
+      "cost": 20
+    },
+    "treat_lesions": {
+      "minutes": 45,
+      "cost": 60
+    },
+    "followup": {
+      "minutes": 45,
+      "cost": 50
+    },
+    "emergency": {
+      "minutes": 30,
+      "cost": 0
+    }
+  },
+  "lines": {
+    "privacy": [
+      "Мне нужен небольшой перерыв и немного уединения. Скоро вернусь.",
+      "Сейчас не очень удобно. Давай продолжим чуть позже."
+    ],
+    "discomfort": [
+      "Сегодня самочувствие мешает обычным делам. Хочу немного отдохнуть."
+    ],
+    "period_cramps": [
+      "Сегодня месячные, и тянет живот. Давай ненадолго присядем.",
+      "Спазмы сейчас мешают сосредоточиться. Мне нужен короткий перерыв."
+    ],
+    "heavy_flow": [
+      "Сегодня выделения сильнее обычного. Хочу быть поближе к туалету и вовремя менять средства гигиены."
+    ],
+    "cycle_fatigue": [
+      "Во время месячных я быстрее устаю. Сегодня выберу более спокойный день."
+    ],
+    "premenstrual_discomfort": [
+      "Последние дни перед месячными ощущаю больше дискомфорта. Хочется спокойствия."
+    ],
+    "cycle_headache": [
+      "Сегодня болит голова. Не хочется шумных мест и спешки."
+    ],
+    "spontaneous_erection": [
+      "Иногда эрекция возникает неожиданно, без каких-то особых намерений. Мне нужно немного времени."
+    ],
+    "painful_erection": [
+      "Эрекция стала болезненной. Если не проходит, мне нужна медицинская помощь."
+    ],
+    "erectile_difficulty": [
+      "Когда я устаю или тревожусь, бывают трудности с эрекцией. Это меня расстраивает, и мне важна поддержка."
+    ],
+    "hpv": [
+      "На осмотре обнаружили ВПЧ. Я обсуждаю с врачом наблюдение и профилактику; это не означает рак или чью-то неверность."
+    ],
+    "consultation": [
+      "Врач объяснил, что со мной происходит. Сейчас следую плану и слежу за самочувствием."
+    ],
+    "urinary_burning": [
+      "При походе в туалет появилось жжение. Хочу обратиться в клинику."
+    ],
+    "urinary_urgency": [
+      "В туалет приходится ходить чаще обычного. Если это не пройдёт, нужен осмотр."
+    ],
+    "genital_irritation": [
+      "Появилось раздражение, и одежда неприятно натирает. Хочу разобраться с причиной."
+    ],
+    "pelvic_discomfort": [
+      "В области таза ощущается дискомфорт. Я запишусь на осмотр."
+    ],
+    "acute_pelvic_pain": [
+      "Боль стала сильной. Нужно прервать дела и обратиться за срочной помощью."
+    ],
+    "visible_growths": [
+      "Заметил необычное изменение кожи. Хочу показать врачу, а не гадать о причине."
+    ]
+  }
+}

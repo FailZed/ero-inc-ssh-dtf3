@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://scripts/portraits/pregnancy_garment.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy5.png" id="2"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/abdomen_texture = ExtResource("2")
+shader_parameter/stage_strength = 0.555556
+shader_parameter/garment_role = 1

@@ -1,0 +1,298 @@
+{
+  "donor": "School 0.981",
+  "date": "2026-10-27",
+  "method": "static candidate references only; no donor execution or content transfer",
+  "limitation": "Keyword hits are leads, not proof of complete behavior or numeric parity; missing hits do not prove absence.",
+  "features": {
+    "protection": [
+      {
+        "path": "location/events/events_with_barnibold.rpy",
+        "sha256": "d2e26f7b3c7242a56e37a52a0ea503da56825e190c8e67da879e687466a102af",
+        "lines": [
+          858
+        ]
+      },
+      {
+        "path": "mods/generation_npc.rpy",
+        "sha256": "4b21a5525b2d2f0e7ad43b0c5ddc6d42e5bffa236beddbf81e583920fd6839df",
+        "lines": [
+          548
+        ]
+      },
+      {
+        "path": "mods/npc/sex_npc_in_room.rpy",
+        "sha256": "3ba9fa73014c1ffcac2b7458a392cfbb3e7f4ee63db5af7b006cf8b3a5b924fc",
+        "lines": [
+          330,
+          335,
+          340,
+          351,
+          919,
+          924,
+          967,
+          1087,
+          1706,
+          1708,
+          1749,
+          1752,
+          2677,
+          2735,
+          3073,
+          3350,
+          3352,
+          3353,
+          3365,
+          3366,
+          3436,
+          3438,
+          3439,
+          3451,
+          3452,
+          6946,
+          7016,
+          7041,
+          7112,
+          7264,
+          7281,
+          7282,
+          7283,
+          7288,
+          7527,
+          7532,
+          7537,
+          7552,
+          7665,
+          7666,
+          7667,
+          7672,
+          8137,
+          8138,
+          8139,
+          8144,
+          8348,
+          8689,
+          8761,
+          8949,
+          9100,
+          9858,
+          9860,
+          10008
+        ]
+      },
+      {
+        "path": "system/function_library.rpy",
+        "sha256": "971ed7e45276a3c1573096914b9f5dac3bf3e7459e1f00fb8dcb876a47f91fe0",
+        "lines": [
+          1639
+        ]
+      }
+    ],
+    "pregnancy": [
+      {
+        "path": "initializing_the_data.rpy",
+        "sha256": "f6f46ac2d7c10714eae222f90d92aeb9366416b7b8d77797e9df7ece8a1751d0",
+        "lines": [
+          1041
+        ]
+      },
+      {
+        "path": "location/room.rpy",
+        "sha256": "be5914eb0ed5e587e402453f5c8bcd0f9e00cb71c16c2d3be35fd508aab83cfb",
+        "lines": [
+          757
+        ]
+      },
+      {
+        "path": "mods/ivent_npc_list.rpy",
+        "sha256": "230532c48d54840d6ccab712d9e18dd25b001d9307088f9b22cbf9e23e6d9d5b",
+        "lines": [
+          15879,
+          15906,
+          16003,
+          16054
+        ]
+      },
+      {
+        "path": "mods/npc/cg_scenes_for_npcs.rpy",
+        "sha256": "084ab7cd7378fe4d0dda9839d0eb4e780b7f1ee29aca057c46ec87c13811d85e",
+        "lines": [
+          852,
+          853,
+          854,
+          855
+        ]
+      },
+      {
+        "path": "mods/npc/npc_after_fight.rpy",
+        "sha256": "9d2f0914b1dffb4fd4b978a438f55951d5019d26459704a3f794f004783632a0",
+        "lines": [
+          268,
+          481,
+          639,
+          782
+        ]
+      },
+      {
+        "path": "mods/npc/sex_npc_in_room.rpy",
+        "sha256": "3ba9fa73014c1ffcac2b7458a392cfbb3e7f4ee63db5af7b006cf8b3a5b924fc",
+        "lines": [
+          919,
+          9960
+        ]
+      },
+      {
+        "path": "mods/npc_main.rpy",
+        "sha256": "77100d3df23fd1ed35c89754ace8f423be2a2da5db46274cb4f6efea248297db",
+        "lines": [
+          1886,
+          1887,
+          1888,
+          1889
+        ]
+      },
+      {
+        "path": "screens.rpy",
+        "sha256": "858d47a16c610e0ad8d5f275ba3f40c276e233cc724ca186070314bb7d21f0a7",
+        "lines": [
+          2655
+        ]
+      },
+      {
+        "path": "system/editor_of_generator.rpy",
+        "sha256": "0111dfcda5cf62ab4b9745370f1c09599865347d7dcb7d97e61935cf59aef4f6",
+        "lines": [
+          344
+        ]
+      },
+      {
+        "path": "system/generator_randomized_npc.rpy",
+        "sha256": "691c837133c0b66f8c5bad6c0e8b44043cf5afae73f49e95ff3570a6d5019061",
+        "lines": [
+          3153
+        ]
+      },
+      {
+        "path": "system/modules/npc/pregnancy.rpy",
+        "sha256": "e7e199e9c188745ebc0804b1536bb46d72af7c65de6fd0559fd4e8156c054826",
+        "lines": [
+          3,
+          6,
+          8,
+          13,
+          18,
+          23,
+          30,
+          39,
+          124,
+          133,
+          163,
+          181,
+          182,
+          224,
+          239,
+          240,
+          260,
+          261,
+          277,
+          295,
+          309,
+          340,
+          364,
+          373,
+          388,
+          400,
+          421,
+          436,
+          464,
+          471,
+          473,
+          552,
+          562
+        ]
+      },
+      {
+        "path": "system/modules/setting_content.rpy",
+        "sha256": "626f7c836c523e068e958606b73cb3521d2aafd7380f7a38e5ca16b552eb9bba",
+        "lines": [
+          51
+        ]
+      }
+    ],
+    "pregnancy_decision": [
+      {
+        "path": "location/room.rpy",
+        "sha256": "be5914eb0ed5e587e402453f5c8bcd0f9e00cb71c16c2d3be35fd508aab83cfb",
+        "lines": [
+          757
+        ]
+      },
+      {
+        "path": "mods/ivent_npc_list.rpy",
+        "sha256": "230532c48d54840d6ccab712d9e18dd25b001d9307088f9b22cbf9e23e6d9d5b",
+        "lines": [
+          15879,
+          15906,
+          16003,
+          16054
+        ]
+      },
+      {
+        "path": "mods/npc/npc_after_fight.rpy",
+        "sha256": "9d2f0914b1dffb4fd4b978a438f55951d5019d26459704a3f794f004783632a0",
+        "lines": [
+          268,
+          481,
+          639,
+          782
+        ]
+      },
+      {
+        "path": "mods/npc_main.rpy",
+        "sha256": "77100d3df23fd1ed35c89754ace8f423be2a2da5db46274cb4f6efea248297db",
+        "lines": [
+          1887,
+          1889
+        ]
+      },
+      {
+        "path": "system/modules/npc/pregnancy.rpy",
+        "sha256": "e7e199e9c188745ebc0804b1536bb46d72af7c65de6fd0559fd4e8156c054826",
+        "lines": [
+          13,
+          18,
+          23,
+          30,
+          39,
+          124,
+          133,
+          163,
+          181,
+          182,
+          224,
+          239,
+          240,
+          260,
+          261,
+          277,
+          295,
+          309,
+          340,
+          364,
+          373,
+          388,
+          400,
+          421,
+          436,
+          464,
+          471,
+          552,
+          562
+        ]
+      }
+    ],
+    "contraception": [],
+    "cycle": [],
+    "infertility": [],
+    "child_support": []
+  }
+}

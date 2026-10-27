@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "status": "style_calibration_before_pose_and_clothing_catalogs",
+  "checkpoint": "DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+  "checkpoint_sha256": "44670E67C55F059116171EE8538875DA3ABF624FBDAACE6D1A7AC2D9617F0211",
+  "source": "https://civitai.red/models/1034922/dasiwa-illustrious-or-anime?modelVersionId=3012006",
+  "license": "https://freedevproject.org/faipl-1.0-sd/",
+  "output_prefix": "characters_v2/style_calibration",
+  "settings": {
+    "width": 832,
+    "height": 1152,
+    "steps": 30,
+    "cfg": 5.0,
+    "sampler_name": "euler_ancestral",
+    "scheduler": "normal"
+  },
+  "positive": "masterpiece, best quality, {style}, {subject}, solo, adult {person}, 28 years old, {hair}, {eyes} eyes, {face_details}, plain {top} shirt, upper body, looking at viewer, straight-on, neutral expression, light gray background, soft even lighting",
+  "negative": "{exclude}, worst quality, low quality, lowres, bad anatomy, text, watermark, logo, 3d, realistic, photorealistic, sketch, monochrome, greyscale, thick outlines, heavy shadows, hatched shading, stubble, beard, old face, wrinkles, blush lines, child, teen, loli, shota, nude, nipples, cleavage, erotic pose, metallic skin, robot, mask, lipstick, multiple people",
+  "profiles": [
+    {
+      "id": "female_tv",
+      "gender": "female",
+      "person": "woman",
+      "subject": "1girl, adult woman",
+      "style": "anime screencap, nukitashi, thin lineart, cel shading",
+      "hair": "shoulder-length chestnut brown hair, sidelocks",
+      "eyes": "green",
+      "face_details": "almond-shaped eyes, small mouth",
+      "top": "white",
+      "seed": 9819301
+    },
+    {
+      "id": "male_tv",
+      "gender": "male",
+      "person": "man",
+      "subject": "1boy, adult man, male focus",
+      "style": "anime screencap, nukitashi, thin lineart, cel shading",
+      "hair": "short brown hair, swept bangs",
+      "eyes": "blue",
+      "face_details": "bishounen, clean-shaven, small mouth",
+      "top": "navy blue",
+      "seed": 9819302
+    },
+    {
+      "id": "female_soft",
+      "gender": "female",
+      "person": "woman",
+      "subject": "1girl, adult woman",
+      "style": "anime coloring, delicate lineart, cel shading, flat color, bright pastel colors",
+      "hair": "shoulder-length chestnut brown hair, sidelocks",
+      "eyes": "green",
+      "face_details": "almond-shaped eyes, small mouth",
+      "top": "white",
+      "seed": 9819301
+    },
+    {
+      "id": "male_soft",
+      "gender": "male",
+      "person": "man",
+      "subject": "1boy, adult man, male focus",
+      "style": "anime coloring, delicate lineart, cel shading, flat color, bright pastel colors",
+      "hair": "short brown hair, swept bangs",
+      "eyes": "blue",
+      "face_details": "bishounen, clean-shaven, small mouth",
+      "top": "navy blue",
+      "seed": 9819302
+    }
+  ],
+  "acceptance": [
+    "Adult original characters; no copied anime character identity or costume.",
+    "Thin controlled outlines, expressive eyes, matte skin and limited cel shadows.",
+    "Male and female rendering belong to one family; reject masks and plastic faces.",
+    "Style first. Pose, full body and wardrobe catalogs follow after calibration and LoRA validation."
+  ],
+  "workflow_group": "EroInc_AnimeStyle"
+}

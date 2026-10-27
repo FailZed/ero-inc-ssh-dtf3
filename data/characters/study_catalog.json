@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "models": [
+    {
+      "id": "interaction_model",
+      "title": "Повседневная модель",
+      "model": "res://assets/characters/mdrg_study/interaction_model/interaction_model.model3.json",
+      "info": "res://assets/characters/mdrg_study/interaction_model/model.info.json",
+      "study_asset": true,
+      "parameters": 106,
+      "drawables": 257,
+      "physics_chains": 11
+    },
+    {
+      "id": "blowjob_scene",
+      "title": "Постановка · ракурс 2",
+      "model": "res://assets/characters/mdrg_study/blowjob_scene/blowjob_scene.model3.json",
+      "info": "res://assets/characters/mdrg_study/blowjob_scene/model.info.json",
+      "study_asset": true,
+      "parameters": 66,
+      "drawables": 166,
+      "physics_chains": 2
+    },
+    {
+      "id": "bot_doggy",
+      "title": "Постановка · ракурс 1",
+      "model": "res://assets/characters/mdrg_study/bot_doggy/bot_doggy.model3.json",
+      "info": "res://assets/characters/mdrg_study/bot_doggy/model.info.json",
+      "study_asset": true,
+      "parameters": 112,
+      "drawables": 199,
+      "physics_chains": 9
+    },
+    {
+      "id": "bot_missionary",
+      "title": "Постановка · ракурс 4",
+      "model": "res://assets/characters/mdrg_study/bot_missionary/bot_missionary.model3.json",
+      "info": "res://assets/characters/mdrg_study/bot_missionary/model.info.json",
+      "study_asset": true,
+      "parameters": 170,
+      "drawables": 324,
+      "physics_chains": 13
+    },
+    {
+      "id": "cowgirl",
+      "title": "Постановка · ракурс 3",
+      "model": "res://assets/characters/mdrg_study/cowgirl/cowgirl.model3.json",
+      "info": "res://assets/characters/mdrg_study/cowgirl/model.info.json",
+      "study_asset": true,
+      "parameters": 118,
+      "drawables": 240,
+      "physics_chains": 10
+    },
+    {
+      "id": "shower",
+      "title": "Постановка · душ",
+      "model": "res://assets/characters/mdrg_study/shower/shower.model3.json",
+      "info": "res://assets/characters/mdrg_study/shower/model.info.json",
+      "study_asset": true,
+      "parameters": 96,
+      "drawables": 231,
+      "physics_chains": 12
+    }
+  ]
+}

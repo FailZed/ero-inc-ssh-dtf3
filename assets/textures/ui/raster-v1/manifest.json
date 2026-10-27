@@ -1,0 +1,340 @@
+{
+  "assets": [
+    {
+      "id": "meal",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "115142a46ed9fc160722801f393297a73ad89ff8c9aa3a1534e56bf66ed5bec3",
+      "bytes": 322393,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "phone_body",
+      "source_size": [
+        913,
+        1723
+      ],
+      "runtime_size": [
+        533,
+        1200
+      ],
+      "sha256": "b91d23b16aa9f48ea0c06a9623e4e15b21498a635eb5ea51bfd094678ecd8b9a",
+      "bytes": 506766,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "journal_surface",
+      "source_size": [
+        1959,
+        803
+      ],
+      "runtime_size": [
+        1600,
+        637
+      ],
+      "sha256": "54e268b994c0c3d74fa0d0ee058c64e4aecc0301ce491f884d26a42f01d1a4a8",
+      "bytes": 1782487,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "book",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "829a71f18c20638330fc1b98acdf87928d0c24b43d6c135330d3a33e986dd3c3",
+      "bytes": 305849,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "jacket",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "ccd69ee0071b6e74a63bb51f5d22db32f66639fdb6c2d3794f793b611530d3ff",
+      "bytes": 330026,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "backpack",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "c38e5b17ecaa4532a934fcadbfad80c9b67f5d2845e283411b1da3f21831e6dc",
+      "bytes": 312140,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "phone_wallpaper",
+      "source_size": [
+        863,
+        1822
+      ],
+      "runtime_size": [
+        767,
+        1620
+      ],
+      "sha256": "051b44f790cd93459053f9657d8caac2aa4c4ae11b657d9106efb2ee8a832993",
+      "bytes": 1545723,
+      "alpha": false,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "computer",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "d3b866fa004b07c01ad1e4f5be8bcf0e1cf0e8e50a52b9fc279b6c4320c264c1",
+      "bytes": 232808,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "stove",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "d447443c111045998d3e188b8bba8012555dd5e0134ebde0808c32683062ca20",
+      "bytes": 226606,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "desk",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "9927a8b6f93358b6a883e21dd90d303d8839f9606926b7a60166ae51bf715be4",
+      "bytes": 162260,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "phone_wallpaper_rain",
+      "source_size": [
+        864,
+        1821
+      ],
+      "runtime_size": [
+        768,
+        1619
+      ],
+      "sha256": "798ab82775eb942329b51eb8ddf11addca2d4c6e66707325e4b377803c863ed0",
+      "bytes": 1906381,
+      "alpha": false,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "grain",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "0435a8c617452f6701b73d8b7f4d7c48b54ea1727df90ca47f24c0a0f09da97c",
+      "bytes": 357296,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "vegetable",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "8d3fcb4278d41f9015b7e9f27874b0508e893938d38b1720683758a9b1024e71",
+      "bytes": 384005,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "lockpick",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "bdd7a48b11fc4d4a7b8aef8f7b3ae5acbf47aa330bb50c713ec6eb72cb77724c",
+      "bytes": 306162,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "phone_wallpaper_water",
+      "source_size": [
+        863,
+        1823
+      ],
+      "runtime_size": [
+        767,
+        1620
+      ],
+      "sha256": "3a90f3c89c8409a378fb3a40330a5da75d3bbfbda2f5636406fd9462087cf2a1",
+      "bytes": 1605940,
+      "alpha": false,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "app_messages",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "419369cd222610c55339a57ea0cce9ee7aa1dc1d64f134d2cfe0f4cfd1237a26",
+      "bytes": 149157,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "app_contacts",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "133b17144ac2e7642359dde7d8dbea805bf7dee040d646bdaa4815512ba33cef",
+      "bytes": 151487,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "app_calendar",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "53261eff0f632b00982f1af6b5e867327c859eb251a7426ea3fe65268ab43022",
+      "bytes": 150219,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "app_bank",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "febaedcb98c3ddd01c901b00f14c128055c8a896305632575e31a74aec44cedb",
+      "bytes": 157953,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "app_map",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "46a162576c92265f4d969db59a48bd3feb49792961cf9f62427b4e4349dd3ad0",
+      "bytes": 161242,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "app_journal",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        512,
+        512
+      ],
+      "sha256": "aad6200a4f4609679486fad6b0c7dc8edc6bda41765a56d510da8a88eaaa8247",
+      "bytes": 158443,
+      "alpha": true,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    }
+  ]
+}

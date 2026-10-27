@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "scope": "Original mature adult neutral artistic body bases without clothing, non-graphic anatomy, no intimate detail. Not runtime registered.",
+  "output_prefix": "characters_v2/pose_neutral_pilot_v2",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": false,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "controlnet": {
+    "name": "xinsir-openpose-sdxl.safetensors",
+    "sha256": "b8524e557a7df60d081f5d4a0eb109967d107df217943bf88c2d99b9ebcc06c5",
+    "strength": 0.58,
+    "start_percent": 0.0,
+    "end_percent": 0.75
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "female_arms_folded",
+      "rig": "female_canonical",
+      "category": "arms",
+      "image": "characters_v2/pose_neutral_pilot_v2/female_arms_folded/reference.png",
+      "mask": "characters_v2/pose_neutral_pilot_v2/female_arms_folded/mask.png",
+      "control": "characters_v2/pose_neutral_pilot_v2/female_arms_folded/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult woman, short brown bob haircut, blue eyes, balanced natural adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, standing upright, arms folded loosely across mid torso, both forearms crossing naturally, front view",
+      "seed": 2026101900,
+      "head_neck_y": 343,
+      "sex": "female"
+    },
+    {
+      "id": "male_arms_folded",
+      "rig": "male_canonical",
+      "category": "arms",
+      "image": "characters_v2/pose_neutral_pilot_v2/male_arms_folded/reference.png",
+      "mask": "characters_v2/pose_neutral_pilot_v2/male_arms_folded/mask.png",
+      "control": "characters_v2/pose_neutral_pilot_v2/male_arms_folded/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult man, short brown hair, blue eyes, moderately athletic adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, standing upright, arms folded loosely across mid torso, both forearms crossing naturally, front view",
+      "seed": 2026101901,
+      "head_neck_y": 332,
+      "sex": "male"
+    },
+    {
+      "id": "female_seated_front",
+      "rig": "female_canonical",
+      "category": "full_pose",
+      "image": "characters_v2/pose_neutral_pilot_v2/female_seated_front/reference.png",
+      "mask": "characters_v2/pose_neutral_pilot_v2/female_seated_front/mask.png",
+      "control": "characters_v2/pose_neutral_pilot_v2/female_seated_front/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult woman, short brown bob haircut, blue eyes, balanced natural adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, sitting upright on a plain gray armless stool, both feet firmly on the ground, knees naturally apart, hands resting naturally on thighs, front view",
+      "seed": 2026101902,
+      "head_neck_y": 563,
+      "sex": "female"
+    },
+    {
+      "id": "male_seated_front",
+      "rig": "male_canonical",
+      "category": "full_pose",
+      "image": "characters_v2/pose_neutral_pilot_v2/male_seated_front/reference.png",
+      "mask": "characters_v2/pose_neutral_pilot_v2/male_seated_front/mask.png",
+      "control": "characters_v2/pose_neutral_pilot_v2/male_seated_front/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult man, short brown hair, blue eyes, moderately athletic adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, sitting upright on a plain gray armless stool, both feet firmly on the ground, knees naturally apart, hands resting naturally on thighs, front view",
+      "seed": 2026101903,
+      "head_neck_y": 552,
+      "sex": "male"
+    }
+  ]
+}

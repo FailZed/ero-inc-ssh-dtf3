@@ -1,0 +1,116 @@
+{
+  "scope": "fullbody and masked wardrobe calibration; adult original art only",
+  "adapter_sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+  "items": [
+    {
+      "id": "casual_female",
+      "status": "accepted_style_probe",
+      "reason": "Full figure, clean anime face and matte cel shading. Not a layered rig."
+    },
+    {
+      "id": "casual_male",
+      "status": "rejected",
+      "reason": "Floating yellow door-like object above head."
+    },
+    {
+      "id": "body_female",
+      "status": "accepted_base_candidate",
+      "reason": "Moderate curvy adult body, complete figure. Cutout and pose fit still reviewed separately."
+    },
+    {
+      "id": "body_male",
+      "status": "rejected_for_rig",
+      "reason": "Toe reaches bottom frame; insufficient export margin."
+    },
+    {
+      "id": "male_margin_a",
+      "status": "alternate_base_candidate",
+      "reason": "Whole figure with margins; stronger nose shadow than B."
+    },
+    {
+      "id": "male_margin_b",
+      "status": "accepted_base_candidate",
+      "reason": "Adult toned male, natural flaccid anatomy, whole figure with margins, simpler face."
+    },
+    {
+      "id": "female_winter",
+      "status": "rejected_fit",
+      "reason": "Unconstrained inpaint changes silhouette; rectangular hand protection leaves holes and neck cut."
+    },
+    {
+      "id": "female_winter_fit",
+      "status": "rejected_winter",
+      "reason": "Coat fits better, but the model omitted trousers; bare legs are not the intended winter outfit."
+    },
+    {
+      "id": "female_winter_complete_v1",
+      "status": "rejected_fit",
+      "reason": "Top mask cuts the coat at its lower boundary. Boots moved away from the original feet."
+    },
+    {
+      "id": "female_bust_small_v2",
+      "status": "accepted_anatomy_candidate_needs_seam_cleanup",
+      "reason": "Clearly smaller natural adult chest; face, hands and pose retained. Faint lower mask seam remains."
+    },
+    {
+      "id": "female_bust_medium_v2",
+      "status": "accepted_anatomy_candidate_needs_seam_cleanup",
+      "reason": "Medium natural adult chest, distinct from the fuller base. Faint lower mask seam remains."
+    },
+    {
+      "id": "male_anatomy_small_v2",
+      "status": "needs_anatomy_review",
+      "reason": "Small flaccid variant produced; shaft/scrotum separation is too simplified for a final anatomical base."
+    },
+    {
+      "id": "female_bust_small_v3",
+      "status": "rejected_seam",
+      "reason": "Soft narrow mask leaves a ghost of the old lower breast contour."
+    },
+    {
+      "id": "female_bust_small_v4",
+      "status": "accepted_anatomy_candidate",
+      "reason": "Wider soft mask removes the old contour; original adult identity and pose preserved."
+    },
+    {
+      "id": "female_bust_medium_v3",
+      "status": "accepted_anatomy_candidate",
+      "reason": "Matte adult body variant; final medium/full volume distinction still needs calibration."
+    },
+    {
+      "id": "male_anatomy_small_v3",
+      "status": "accepted_anatomy_candidate",
+      "reason": "Distinct small natural flaccid anatomy, original pose and identity preserved."
+    },
+    {
+      "id": "male_anatomy_larger_v3",
+      "status": "accepted_anatomy_candidate",
+      "reason": "Natural flaccid anatomy retained; final quantitative size distinction remains separate from labels."
+    },
+    {
+      "id": "female_winter_complete_v2",
+      "status": "rejected_footwear",
+      "reason": "Whole-canvas editing still clips or moves the left boot."
+    },
+    {
+      "id": "female_winter_boots_region",
+      "status": "improved_candidate_needs_trouser_seam_cleanup",
+      "reason": "Local crop restores boot placement. A trouser seam remains at the edge of the regional edit."
+    },
+    {
+      "id": "sam2_winter_parts_probe",
+      "status": "rejected_layer_masks",
+      "reason": "Incomplete garment masks and holes. Scores alone do not qualify the result for a layered rig."
+    },
+    {
+      "id": "female_casual_v2",
+      "status": "top_design_candidate_only",
+      "reason": "Useful blouse design. Lower edit boundary produces a trouser seam; not a ready outfit."
+    },
+    {
+      "id": "male_casual_v2",
+      "status": "top_design_candidate_only",
+      "reason": "Useful t-shirt design. Trousers/ankle fit and independent garment masks still need work."
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "status": "drafts_require_visual_review",
+  "checkpoint": "DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+  "checkpoint_sha256": "44670E67C55F059116171EE8538875DA3ABF624FBDAACE6D1A7AC2D9617F0211",
+  "source": "https://civitai.red/models/1034922/dasiwa-illustrious-or-anime?modelVersionId=3012006",
+  "license": "https://freedevproject.org/faipl-1.0-sd/",
+  "model_distribution": "Local use only in this pipeline. Do not bundle or mirror the checkpoint with the game.",
+  "settings": {
+    "width": 720,
+    "height": 1280,
+    "steps": 40,
+    "cfg": 3.0,
+    "sampler_name": "euler_ancestral",
+    "scheduler": "simple"
+  },
+  "controlnet": {
+    "enabled": false,
+    "model": "xinsir-openpose-sdxl.safetensors",
+    "pose": "controls/adult_front_idle_v2.png",
+    "male_pose": "controls/adult_front_idle.png",
+    "strength": 1.1,
+    "source": "https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0",
+    "license": "Apache-2.0",
+    "build_pose_directory": "controls/builds"
+  },
+  "image_reference": {
+    "enabled": false,
+    "image": "derived/style_target_dasiwa.png",
+    "denoise": 0.82,
+    "male_denoise": 0.9,
+    "role": "User-approved original DaSiWa whole-figure style study; regenerate the whole image, no fixed-head mask"
+  },
+  "positive": "masterpiece, best quality, newest, amazing quality, full color, {subject}, solo, adult {person}, age 28, detailed eyes, {character_role}, simple anime style, (front facing neutral standing pose:1.2), (looking straight at viewer:1.2), level head, arms relaxed at sides, feet flat and slightly apart, {build}, nude neutral body, {anatomy}, natural warm beige skin, very short brown pixie hair, teal eyes, minimalistic light gray background, fine simple lineart, soft painted shading, illustration, full body view, both hands and feet visible",
+  "negative": "{exclude}, {anatomy_exclude}, {build_exclude}, worst quality, low quality, blurry, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, text, watermark, logo, signature, cropped, 3d render, photorealistic, plastic, mannequin, young, child, teen, loli, shota, cropped body, multiple views, multiple people, monochrome, greyscale, black and white, clothing, underwear, bikini, swimsuit, censorship, censor spots, glowing orbs, light rays, long hair, hair covering shoulders, tilted head, tilted hips, contrapposto, arched back, seductive pose, obese, extreme proportions, huge breasts, huge belly, exaggerated muscles, hard shadows, thick outlines",
+  "profiles": [
+    {
+      "id": "male_slim",
+      "gender": "male",
+      "person": "man",
+      "build": "skinny slender adult man, thin narrow chest and shoulders, thin arms and legs, flat smooth abdomen",
+      "seed": 9817101,
+      "pose_shape": {
+        "shoulders": 0.82,
+        "hips": 0.88,
+        "arms": 0.9
+      },
+      "negative": "(muscular, muscles, six pack, abs, broad shoulders:1.3)"
+    },
+    {
+      "id": "male_average",
+      "gender": "male",
+      "person": "man",
+      "build": "ordinary average adult male body, normal chest and shoulders, smooth abdomen, moderate body fat, untrained physique",
+      "seed": 9817102,
+      "pose_shape": {
+        "shoulders": 0.96,
+        "hips": 1,
+        "arms": 1
+      },
+      "negative": "(muscular, six pack, abs, bodybuilder:1.2)"
+    },
+    {
+      "id": "male_toned",
+      "gender": "male",
+      "person": "man",
+      "build": "lean lightly toned build, modest shoulders and defined arms, light abdominal definition",
+      "seed": 9817103,
+      "pose_shape": {
+        "shoulders": 1,
+        "hips": 1,
+        "arms": 1
+      }
+    },
+    {
+      "id": "male_athletic",
+      "gender": "male",
+      "person": "man",
+      "build": "athletic swimmer build, broad shoulders, narrow waist, clearly developed arms and legs",
+      "seed": 9817104,
+      "pose_shape": {
+        "shoulders": 1.06,
+        "hips": 1,
+        "arms": 1.06
+      }
+    },
+    {
+      "id": "male_muscular",
+      "gender": "male",
+      "person": "man",
+      "build": "strong muscular build, thick shoulders, large arms and powerful legs, substantial muscle mass",
+      "seed": 9817105,
+      "pose_shape": {
+        "shoulders": 1.12,
+        "hips": 1.06,
+        "arms": 1.17
+      }
+    },
+    {
+      "id": "male_broad",
+      "gender": "male",
+      "person": "man",
+      "build": "broad large-framed build, wide chest and shoulders, thick torso and limbs, balanced moderate body fat",
+      "seed": 9817106,
+      "pose_shape": {
+        "shoulders": 1.18,
+        "hips": 1.13,
+        "arms": 1.2
+      }
+    },
+    {
+      "id": "male_soft",
+      "gender": "male",
+      "person": "man",
+      "build": "ordinary soft adult male body, slightly rounded waist and abdomen, soft upper arms and thighs, moderate body fat",
+      "seed": 9817107,
+      "pose_shape": {
+        "shoulders": 1.03,
+        "hips": 1.07,
+        "arms": 1.08
+      },
+      "negative": "(six pack, abs, shredded, bodybuilder:1.3)"
+    },
+    {
+      "id": "male_solid",
+      "gender": "male",
+      "person": "man",
+      "build": "solid robust adult male body, moderately thick waist and limbs, broad sturdy frame, balanced natural proportions",
+      "seed": 9817108,
+      "pose_shape": {
+        "shoulders": 1.1,
+        "hips": 1.12,
+        "arms": 1.17
+      },
+      "negative": "shredded, six pack, bodybuilder"
+    },
+    {
+      "id": "female_slim",
+      "gender": "female",
+      "person": "woman",
+      "build": "(slender lean body:1.25), narrow adult shoulders and hips, slim arms and legs, small breasts",
+      "seed": 9817201,
+      "pose_shape": {
+        "shoulders": 0.96,
+        "hips": 0.94,
+        "arms": 1
+      }
+    },
+    {
+      "id": "female_average",
+      "gender": "female",
+      "person": "woman",
+      "build": "average balanced adult body, natural shoulders and hips, normal waist, medium breasts",
+      "seed": 9817202,
+      "pose_shape": {
+        "shoulders": 1,
+        "hips": 1,
+        "arms": 1
+      }
+    },
+    {
+      "id": "female_toned",
+      "gender": "female",
+      "person": "woman",
+      "build": "lean lightly toned adult body, light muscle definition, slim waist, firm arms and legs, small breasts",
+      "seed": 9817203,
+      "pose_shape": {
+        "shoulders": 1,
+        "hips": 0.97,
+        "arms": 1
+      }
+    },
+    {
+      "id": "female_athletic",
+      "gender": "female",
+      "person": "woman",
+      "build": "athletic adult runner body, developed shoulders, strong thighs and calves, moderate muscle definition, medium breasts",
+      "seed": 9817204,
+      "pose_shape": {
+        "shoulders": 1.05,
+        "hips": 1,
+        "arms": 1.05
+      }
+    },
+    {
+      "id": "female_muscular",
+      "gender": "female",
+      "person": "woman",
+      "build": "moderately strong fit adult body, visible arm and leg muscle, modest abs, natural athletic proportions, medium breasts",
+      "seed": 9817205,
+      "pose_shape": {
+        "shoulders": 1.08,
+        "hips": 1.04,
+        "arms": 1.1
+      }
+    },
+    {
+      "id": "female_curvy",
+      "gender": "female",
+      "person": "woman",
+      "build": "moderate natural hourglass adult body, slightly fuller hips, defined normal waist, balanced medium breasts, natural proportions",
+      "seed": 9817206,
+      "pose_shape": {
+        "shoulders": 1,
+        "hips": 1.1,
+        "arms": 1.08
+      }
+    },
+    {
+      "id": "female_soft",
+      "gender": "female",
+      "person": "woman",
+      "build": "ordinary adult body with slightly soft waist, gentle natural curves, moderate hips and thighs, medium breasts, no pronounced belly",
+      "seed": 9817207,
+      "pose_shape": {
+        "shoulders": 1.02,
+        "hips": 1.06,
+        "arms": 1.07
+      }
+    },
+    {
+      "id": "female_pear",
+      "gender": "female",
+      "person": "woman",
+      "build": "moderate pear-shaped adult body, slim upper torso and arms, small breasts, slightly wider hips and thighs, healthy natural proportions",
+      "seed": 9817208,
+      "pose_shape": {
+        "shoulders": 0.94,
+        "hips": 1.18,
+        "arms": 1.1
+      }
+    }
+  ],
+  "acceptance": [
+    "Full length: entire head, both hands, all fingers and both feet inside frame with safe margins.",
+    "No clothing or sexual posing. Adult male bodies retain natural nipples and relaxed male anatomy as requested; no erection or exaggerated genital proportions.",
+    "Adult proportions; stable frontal pose; no extra limbs or malformed hands.",
+    "Each build is visibly distinct. These are drafts, not a claim of exact School coverage.",
+    "Background removal, shared anchors and separate fitted clothing must pass before runtime integration.",
+    "No donor School images as inputs; preserve generated PNG prompt and workflow metadata."
+  ]
+}

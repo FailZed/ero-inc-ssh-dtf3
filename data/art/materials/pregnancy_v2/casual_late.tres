@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://scripts/portraits/pregnancy_painted_garment.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://assets/textures/portraits/maternity_v2/casual_late_v2.png" id="2"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/painted_texture = ExtResource("2")
+shader_parameter/registration = Vector4(264.0,41.0,1422.5456,2184.084)

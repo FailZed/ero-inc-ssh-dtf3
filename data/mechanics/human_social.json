@@ -1,0 +1,46 @@
+{
+  "human_generation": {
+    "population": {"honesty": 50, "emotionality": 50, "extraversion": 50, "agreeableness": 50, "conscientiousness": 50, "openness": 50, "spread": 30}
+  },
+  "human_dimensions": {
+    "honesty": {"label": "Честность и скромность", "facets": ["sincerity", "fairness", "greed_avoidance", "modesty"]},
+    "emotionality": {"label": "Эмоциональность", "facets": ["fearfulness", "anxiety", "dependence", "sentimentality"]},
+    "extraversion": {"label": "Экстраверсия", "facets": ["social_self_esteem", "social_boldness", "sociability", "liveliness"]},
+    "agreeableness": {"label": "Уживчивость", "facets": ["forgivingness", "gentleness", "flexibility", "patience"]},
+    "conscientiousness": {"label": "Добросовестность", "facets": ["organization", "diligence", "perfectionism", "prudence"]},
+    "openness": {"label": "Открытость опыту", "facets": ["aesthetic_appreciation", "inquisitiveness", "creativity", "unconventionality"]}
+  },
+  "human_values": {
+    "security": {"label": "Безопасность"}, "benevolence": {"label": "Забота"},
+    "achievement": {"label": "Достижения"}, "autonomy": {"label": "Самостоятельность"}
+  },
+  "human_interests": {
+    "arts": {"label": "Искусство"}, "science": {"label": "Наука"}, "sport": {"label": "Спорт"},
+    "nature": {"label": "Природа"}, "games": {"label": "Игры"}, "community": {"label": "Общественная жизнь"}
+  },
+  "human_social_rules": {
+    "simulation": {"bond_limit": 32, "daily_gain_budget": 8, "repeat_minutes": 180, "repair_days": 3, "neglect_days": 3}
+  },
+  "agency_actions": {
+    "joke": {"label": "Рассмешить собеседника", "minutes": 30, "destination": "global_map", "restore": {"social": 25, "fun": 25}, "social": true, "base": 0.02, "traits": {}, "emotion": "happy"},
+    "boast": {"label": "Рассказать о своём достижении", "minutes": 30, "destination": "global_map", "restore": {"social": 20, "fun": 10}, "social": true, "base": 0.01, "traits": {}, "emotion": "confident"},
+    "gossip": {"label": "Обсудить известную новость", "minutes": 30, "destination": "global_map", "restore": {"social": 30, "fun": 12}, "social": true, "base": 0.01, "traits": {}, "emotion": "content"},
+    "deceive": {"label": "Приукрасить собственные успехи", "minutes": 30, "destination": "global_map", "restore": {"social": 20, "fun": 10}, "social": true, "tags": ["deception"], "base": 0.01, "traits": {}, "emotion": "confident"},
+    "verify": {"label": "Проверить услышанное утверждение", "minutes": 30, "destination": "home", "restore": {"fun": 4}, "base": 0.01, "traits": {}, "emotion": "focused"},
+    "court": {"label": "Проявить романтический интерес", "minutes": 30, "destination": "global_map", "restore": {"social": 30, "fun": 15}, "social": true, "minimum_trust": 5, "mutual_attraction": true, "tags": ["romance"], "base": 0.01, "traits": {}, "emotion": "happy"},
+    "share_values": {"label": "Поговорить о важном", "minutes": 45, "destination": "global_map", "restore": {"social": 25, "fun": 10}, "social": true, "minimum_trust": 12, "base": 0.04, "traits": {}, "emotion": "content"},
+    "cooperate": {"label": "Помочь с общим делом", "minutes": 60, "destination": "global_map", "restore": {"social": 18, "fun": 5}, "social": true, "base": 0.03, "traits": {}, "emotion": "content"},
+    "apologize": {"label": "Признать причинённый вред", "minutes": 30, "destination": "global_map", "restore": {"social": 8}, "social": true, "base": 0.02, "traits": {}, "emotion": "hopeful"},
+    "invite_relationship": {"label": "Предложить отношения", "minutes": 30, "destination": "global_map", "restore": {"social": 20}, "social": true, "mutual_attraction": true, "tags": ["romance"], "base": 0.02, "traits": {}, "emotion": "hopeful"}
+  },
+  "agency_aspirations": {
+    "relationship": {"label": "Построить близкие отношения", "stages": [{"action": "connect", "minutes": 180}, {"action": "court", "minutes": 180}, {"action": "support", "minutes": 180}]}
+  },
+  "agency_experiences": {
+    "witnessed_harm": {"emotion": "tense", "strength": 12, "duration": 360, "sentiment": -10},
+    "amused": {"emotion": "happy", "strength": 16, "duration": 180, "sentiment": 6},
+    "admired": {"emotion": "confident", "strength": 12, "duration": 240, "sentiment": 4},
+    "misled": {"emotion": "hurt", "strength": 20, "duration": 720, "sentiment": -25},
+    "romantic_interest": {"emotion": "happy", "strength": 18, "duration": 360, "sentiment": 8}
+  }
+}

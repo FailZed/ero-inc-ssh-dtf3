@@ -1,0 +1,803 @@
+{
+  "schema": 1,
+  "mode": "masked_reference_edit",
+  "scope": "Fifteen hair-only School-derived repaint studies. No explicit scenes or nude bodies. Geometry and original alpha must be preserved.",
+  "output_prefix": "school_rework/hair-pilot-v1",
+  "width": 768,
+  "height": 1024,
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 0.36,
+  "preserve_input_latent": true,
+  "encode_individually": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+  "items": [
+    {
+      "id": "female_hair_short_v1",
+      "rig": "female_hair_short",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Короткие волосы",
+      "candidate_number": 1,
+      "image": "school-rework/hair-pilot-v1/female_hair_short/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_short/mask.png",
+      "denoise": 0.18,
+      "preserve_input_latent": true,
+      "seed": 981202610,
+      "prompt": "eincanime, front layer of short silver gray hair with bangs, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_short",
+        "asset_family": "hair",
+        "title": "Ж · Короткие волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length1/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length1\\front\\1.png",
+        "source_sha256": "9c7fe61bce6e785ec917ce702daaa15e920bab2119754fd1b7ed6e9ef7a9ac23",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          735,
+          133,
+          1215,
+          587
+        ],
+        "crop": [
+          703,
+          101,
+          1247,
+          619
+        ],
+        "local_size": [
+          664,
+          632
+        ],
+        "local_offset": [
+          52,
+          196
+        ],
+        "scale": 1.2205882352941178,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_short\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_short_v2",
+      "rig": "female_hair_short",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Короткие волосы",
+      "candidate_number": 2,
+      "image": "school-rework/hair-pilot-v1/female_hair_short/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_short/mask.png",
+      "denoise": 0.24,
+      "preserve_input_latent": true,
+      "seed": 981202611,
+      "prompt": "eincanime, front layer of short silver gray hair with bangs, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_short",
+        "asset_family": "hair",
+        "title": "Ж · Короткие волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length1/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length1\\front\\1.png",
+        "source_sha256": "9c7fe61bce6e785ec917ce702daaa15e920bab2119754fd1b7ed6e9ef7a9ac23",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          735,
+          133,
+          1215,
+          587
+        ],
+        "crop": [
+          703,
+          101,
+          1247,
+          619
+        ],
+        "local_size": [
+          664,
+          632
+        ],
+        "local_offset": [
+          52,
+          196
+        ],
+        "scale": 1.2205882352941178,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_short\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_short_v3",
+      "rig": "female_hair_short",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Короткие волосы",
+      "candidate_number": 3,
+      "image": "school-rework/hair-pilot-v1/female_hair_short/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_short/mask.png",
+      "denoise": 0.3,
+      "preserve_input_latent": true,
+      "seed": 981202612,
+      "prompt": "eincanime, front layer of short silver gray hair with bangs, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_short",
+        "asset_family": "hair",
+        "title": "Ж · Короткие волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length1/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length1\\front\\1.png",
+        "source_sha256": "9c7fe61bce6e785ec917ce702daaa15e920bab2119754fd1b7ed6e9ef7a9ac23",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          735,
+          133,
+          1215,
+          587
+        ],
+        "crop": [
+          703,
+          101,
+          1247,
+          619
+        ],
+        "local_size": [
+          664,
+          632
+        ],
+        "local_offset": [
+          52,
+          196
+        ],
+        "scale": 1.2205882352941178,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_short\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_long_front_v1",
+      "rig": "female_hair_long_front",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Длинные волосы спереди",
+      "candidate_number": 1,
+      "image": "school-rework/hair-pilot-v1/female_hair_long_front/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_long_front/mask.png",
+      "denoise": 0.18,
+      "preserve_input_latent": true,
+      "seed": 981202613,
+      "prompt": "eincanime, front layer of long silver gray hair with bangs, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_long_front",
+        "asset_family": "hair",
+        "title": "Ж · Длинные волосы спереди",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length3/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length3\\front\\1.png",
+        "source_sha256": "df0e8de937f34613e22b9c277d339627386416ae2d417858c57e7422c6874e13",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          790,
+          133,
+          1162,
+          575
+        ],
+        "crop": [
+          758,
+          101,
+          1194,
+          607
+        ],
+        "local_size": [
+          664,
+          771
+        ],
+        "local_offset": [
+          52,
+          126
+        ],
+        "scale": 1.5229357798165137,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_long_front\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_long_front_v2",
+      "rig": "female_hair_long_front",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Длинные волосы спереди",
+      "candidate_number": 2,
+      "image": "school-rework/hair-pilot-v1/female_hair_long_front/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_long_front/mask.png",
+      "denoise": 0.24,
+      "preserve_input_latent": true,
+      "seed": 981202614,
+      "prompt": "eincanime, front layer of long silver gray hair with bangs, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_long_front",
+        "asset_family": "hair",
+        "title": "Ж · Длинные волосы спереди",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length3/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length3\\front\\1.png",
+        "source_sha256": "df0e8de937f34613e22b9c277d339627386416ae2d417858c57e7422c6874e13",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          790,
+          133,
+          1162,
+          575
+        ],
+        "crop": [
+          758,
+          101,
+          1194,
+          607
+        ],
+        "local_size": [
+          664,
+          771
+        ],
+        "local_offset": [
+          52,
+          126
+        ],
+        "scale": 1.5229357798165137,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_long_front\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_long_front_v3",
+      "rig": "female_hair_long_front",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Длинные волосы спереди",
+      "candidate_number": 3,
+      "image": "school-rework/hair-pilot-v1/female_hair_long_front/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_long_front/mask.png",
+      "denoise": 0.3,
+      "preserve_input_latent": true,
+      "seed": 981202615,
+      "prompt": "eincanime, front layer of long silver gray hair with bangs, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_long_front",
+        "asset_family": "hair",
+        "title": "Ж · Длинные волосы спереди",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length3/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length3\\front\\1.png",
+        "source_sha256": "df0e8de937f34613e22b9c277d339627386416ae2d417858c57e7422c6874e13",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          790,
+          133,
+          1162,
+          575
+        ],
+        "crop": [
+          758,
+          101,
+          1194,
+          607
+        ],
+        "local_size": [
+          664,
+          771
+        ],
+        "local_offset": [
+          52,
+          126
+        ],
+        "scale": 1.5229357798165137,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_long_front\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_long_back_v1",
+      "rig": "female_hair_long_back",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Длинные волосы сзади",
+      "candidate_number": 1,
+      "image": "school-rework/hair-pilot-v1/female_hair_long_back/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_long_back/mask.png",
+      "denoise": 0.18,
+      "preserve_input_latent": true,
+      "seed": 981202616,
+      "prompt": "eincanime, back layer of long silver gray hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_long_back",
+        "asset_family": "hair",
+        "title": "Ж · Длинные волосы сзади",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length3/back/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length3\\back\\1.png",
+        "source_sha256": "822c2aaa50c34ae73cd08cce19a8ac484b1339e4df8a281b524619dcb9ce9093",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          735,
+          290,
+          1215,
+          854
+        ],
+        "crop": [
+          703,
+          258,
+          1247,
+          886
+        ],
+        "local_size": [
+          664,
+          767
+        ],
+        "local_offset": [
+          52,
+          128
+        ],
+        "scale": 1.2205882352941178,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_long_back\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_long_back_v2",
+      "rig": "female_hair_long_back",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Длинные волосы сзади",
+      "candidate_number": 2,
+      "image": "school-rework/hair-pilot-v1/female_hair_long_back/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_long_back/mask.png",
+      "denoise": 0.24,
+      "preserve_input_latent": true,
+      "seed": 981202617,
+      "prompt": "eincanime, back layer of long silver gray hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_long_back",
+        "asset_family": "hair",
+        "title": "Ж · Длинные волосы сзади",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length3/back/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length3\\back\\1.png",
+        "source_sha256": "822c2aaa50c34ae73cd08cce19a8ac484b1339e4df8a281b524619dcb9ce9093",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          735,
+          290,
+          1215,
+          854
+        ],
+        "crop": [
+          703,
+          258,
+          1247,
+          886
+        ],
+        "local_size": [
+          664,
+          767
+        ],
+        "local_offset": [
+          52,
+          128
+        ],
+        "scale": 1.2205882352941178,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_long_back\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "female_hair_long_back_v3",
+      "rig": "female_hair_long_back",
+      "category": "hair_repaint_candidate",
+      "title": "Ж · Длинные волосы сзади",
+      "candidate_number": 3,
+      "image": "school-rework/hair-pilot-v1/female_hair_long_back/reference.png",
+      "mask": "school-rework/hair-pilot-v1/female_hair_long_back/mask.png",
+      "denoise": 0.3,
+      "preserve_input_latent": true,
+      "seed": 981202618,
+      "prompt": "eincanime, back layer of long silver gray hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "female_hair_long_back",
+        "asset_family": "hair",
+        "title": "Ж · Длинные волосы сзади",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/new/hair/base2/length3/back/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\new\\hair\\base2\\length3\\back\\1.png",
+        "source_sha256": "822c2aaa50c34ae73cd08cce19a8ac484b1339e4df8a281b524619dcb9ce9093",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          735,
+          290,
+          1215,
+          854
+        ],
+        "crop": [
+          703,
+          258,
+          1247,
+          886
+        ],
+        "local_size": [
+          664,
+          767
+        ],
+        "local_offset": [
+          52,
+          128
+        ],
+        "scale": 1.2205882352941178,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\female_hair_long_back\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_hair_short_v1",
+      "rig": "male_hair_short",
+      "category": "hair_repaint_candidate",
+      "title": "М · Короткие волосы",
+      "candidate_number": 1,
+      "image": "school-rework/hair-pilot-v1/male_hair_short/reference.png",
+      "mask": "school-rework/hair-pilot-v1/male_hair_short/mask.png",
+      "denoise": 0.18,
+      "preserve_input_latent": true,
+      "seed": 981202619,
+      "prompt": "eincanime, front layer of short silver gray masculine hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_hair_short",
+        "asset_family": "hair",
+        "title": "М · Короткие волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/hair/base1/length1/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\hair\\base1\\length1\\front\\1.png",
+        "source_sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          752,
+          94,
+          1085,
+          318
+        ],
+        "crop": [
+          720,
+          62,
+          1117,
+          350
+        ],
+        "local_size": [
+          664,
+          482
+        ],
+        "local_offset": [
+          52,
+          271
+        ],
+        "scale": 1.672544080604534,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\male_hair_short\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_hair_short_v2",
+      "rig": "male_hair_short",
+      "category": "hair_repaint_candidate",
+      "title": "М · Короткие волосы",
+      "candidate_number": 2,
+      "image": "school-rework/hair-pilot-v1/male_hair_short/reference.png",
+      "mask": "school-rework/hair-pilot-v1/male_hair_short/mask.png",
+      "denoise": 0.24,
+      "preserve_input_latent": true,
+      "seed": 981202620,
+      "prompt": "eincanime, front layer of short silver gray masculine hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_hair_short",
+        "asset_family": "hair",
+        "title": "М · Короткие волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/hair/base1/length1/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\hair\\base1\\length1\\front\\1.png",
+        "source_sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          752,
+          94,
+          1085,
+          318
+        ],
+        "crop": [
+          720,
+          62,
+          1117,
+          350
+        ],
+        "local_size": [
+          664,
+          482
+        ],
+        "local_offset": [
+          52,
+          271
+        ],
+        "scale": 1.672544080604534,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\male_hair_short\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_hair_short_v3",
+      "rig": "male_hair_short",
+      "category": "hair_repaint_candidate",
+      "title": "М · Короткие волосы",
+      "candidate_number": 3,
+      "image": "school-rework/hair-pilot-v1/male_hair_short/reference.png",
+      "mask": "school-rework/hair-pilot-v1/male_hair_short/mask.png",
+      "denoise": 0.3,
+      "preserve_input_latent": true,
+      "seed": 981202621,
+      "prompt": "eincanime, front layer of short silver gray masculine hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_hair_short",
+        "asset_family": "hair",
+        "title": "М · Короткие волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/hair/base1/length1/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\hair\\base1\\length1\\front\\1.png",
+        "source_sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          752,
+          94,
+          1085,
+          318
+        ],
+        "crop": [
+          720,
+          62,
+          1117,
+          350
+        ],
+        "local_size": [
+          664,
+          482
+        ],
+        "local_offset": [
+          52,
+          271
+        ],
+        "scale": 1.672544080604534,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\male_hair_short\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_hair_long_front_v1",
+      "rig": "male_hair_long_front",
+      "category": "hair_repaint_candidate",
+      "title": "М · Длинные волосы",
+      "candidate_number": 1,
+      "image": "school-rework/hair-pilot-v1/male_hair_long_front/reference.png",
+      "mask": "school-rework/hair-pilot-v1/male_hair_long_front/mask.png",
+      "denoise": 0.18,
+      "preserve_input_latent": true,
+      "seed": 981202622,
+      "prompt": "eincanime, front layer of long silver gray masculine hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_hair_long_front",
+        "asset_family": "hair",
+        "title": "М · Длинные волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/hair/base1/length3/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\hair\\base1\\length3\\front\\1.png",
+        "source_sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          752,
+          94,
+          1085,
+          318
+        ],
+        "crop": [
+          720,
+          62,
+          1117,
+          350
+        ],
+        "local_size": [
+          664,
+          482
+        ],
+        "local_offset": [
+          52,
+          271
+        ],
+        "scale": 1.672544080604534,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\male_hair_long_front\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_hair_long_front_v2",
+      "rig": "male_hair_long_front",
+      "category": "hair_repaint_candidate",
+      "title": "М · Длинные волосы",
+      "candidate_number": 2,
+      "image": "school-rework/hair-pilot-v1/male_hair_long_front/reference.png",
+      "mask": "school-rework/hair-pilot-v1/male_hair_long_front/mask.png",
+      "denoise": 0.24,
+      "preserve_input_latent": true,
+      "seed": 981202623,
+      "prompt": "eincanime, front layer of long silver gray masculine hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_hair_long_front",
+        "asset_family": "hair",
+        "title": "М · Длинные волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/hair/base1/length3/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\hair\\base1\\length3\\front\\1.png",
+        "source_sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          752,
+          94,
+          1085,
+          318
+        ],
+        "crop": [
+          720,
+          62,
+          1117,
+          350
+        ],
+        "local_size": [
+          664,
+          482
+        ],
+        "local_offset": [
+          52,
+          271
+        ],
+        "scale": 1.672544080604534,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\male_hair_long_front\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    },
+    {
+      "id": "male_hair_long_front_v3",
+      "rig": "male_hair_long_front",
+      "category": "hair_repaint_candidate",
+      "title": "М · Длинные волосы",
+      "candidate_number": 3,
+      "image": "school-rework/hair-pilot-v1/male_hair_long_front/reference.png",
+      "mask": "school-rework/hair-pilot-v1/male_hair_long_front/mask.png",
+      "denoise": 0.3,
+      "preserve_input_latent": true,
+      "seed": 981202624,
+      "prompt": "eincanime, front layer of long silver gray masculine hair, isolated hairpiece, organized large strands, no face, preserve exact hair layer structure, delicate thin colored outlines, matte gray colors, simple two tone cel shading, clean large hair strands, clean anime sprite material, flat diffuse light, plain pale gray backdrop",
+      "negative": "person, head, face, skin, hands, feet, nude, naked, sexual, child, mannequin body, clothing rack, hanger, text, logo, watermark, 3d, glossy, shiny, photorealistic, heavy outlines, busy background, new ornaments, altered silhouette",
+      "authoring": {
+        "garment": "male_hair_long_front",
+        "asset_family": "hair",
+        "title": "М · Длинные волосы",
+        "source_archive": "School-0.981-win/game/archive.rpa",
+        "donor_path": "images/character/npc/npc_m/hair/base1/length3/front/1.png",
+        "source": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school\\npc\\npc_m\\hair\\base1\\length3\\front\\1.png",
+        "source_sha256": "470d9cb1339c3b1400def7f24be8ed23919782d1fd2ef739813ae384d44ea7d2",
+        "canvas": [
+          1920,
+          2596
+        ],
+        "source_bounds": [
+          752,
+          94,
+          1085,
+          318
+        ],
+        "crop": [
+          720,
+          62,
+          1117,
+          350
+        ],
+        "local_size": [
+          664,
+          482
+        ],
+        "local_offset": [
+          52,
+          271
+        ],
+        "scale": 1.672544080604534,
+        "source_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\school-rework\\hair-pilot-v1\\male_hair_long_front\\source.png",
+        "source_authorization": "User requested School image transfer and repaint on 2026-10-19.",
+        "source_kind": "School-derived repaint; not wholly original art.",
+        "geometry_policy": "Exact original native canvas, offset and alpha; repaint changes material RGB only."
+      }
+    }
+  ]
+}

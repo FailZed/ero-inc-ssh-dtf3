@@ -1,0 +1,300 @@
+{
+  "client_date": "2026-10-27",
+  "timezone": "Europe/Moscow",
+  "engine": "Godot 4.7.2 stable",
+  "audio_driver": "Dummy",
+  "main_schema": 7,
+  "catalog_hash": "275e6d9f963e0b1fd6ddba55b2d3a36e0b3bd45b01e3258acbcf2260a4b691ad",
+  "user_save_slots_modified": false,
+  "test_fixtures_only": true,
+  "architecture": {
+    "runtime": "scripts/gameplay/main_simulation.gd",
+    "removed_runtime_wrappers": [
+      "life_simulation",
+      "livelihood_simulation",
+      "growth_simulation",
+      "adaptive_character",
+      "adaptive_needs",
+      "adaptive_encounters",
+      "adaptive_preferences"
+    ],
+    "previous_gameplay_schema_support": false,
+    "previous_catalog_migration": false,
+    "single_job_skill_field": "livelihood_rules.jobs.<id>.skill"
+  },
+  "content": {
+    "skills": 30,
+    "skill_levels": 10,
+    "optional_needs": 7,
+    "habit_tiers": 3,
+    "habit_max_decay_reduction": 0.36,
+    "habit_max_penalty_reduction": 0.45,
+    "difficulty_help_caps": {
+      "easy": 0.4,
+      "normal": 0.28,
+      "hard": 0.14
+    },
+    "expert_memory_rounds": {
+      "easy": 3,
+      "normal": 4,
+      "hard": 5
+    }
+  },
+  "checks": {
+    "growth_rules": {
+      "audio": "Dummy",
+      "checks": 92,
+      "failed": 0,
+      "failures": []
+    },
+    "growth_native": {
+      "audio": "Dummy",
+      "checks": 39,
+      "directory": "E:/GoDot/.research/school-0.981/growth-2026-10-27/captures",
+      "failed": 0,
+      "failures": [],
+      "size": [
+        1366,
+        768
+      ]
+    },
+    "growth_snapshot_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true
+    },
+    "growth_snapshot_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true
+    },
+    "main": {
+      "checks": 676,
+      "failed": 0,
+      "failures": []
+    },
+    "standalone_pack": {
+      "checks": 2489,
+      "failed": 0,
+      "failures": []
+    },
+    "livelihood_rules": {
+      "audio": "Dummy",
+      "checks": 83,
+      "failed": 0,
+      "failures": []
+    },
+    "livelihood_native": {
+      "audio": "Dummy",
+      "checks": 27,
+      "directory": "E:/GoDot/.research/school-0.981/livelihood-2026-10-27/captures",
+      "failed": 0,
+      "failures": [],
+      "size": [
+        1366,
+        768
+      ]
+    },
+    "livelihood_snapshot_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true
+    },
+    "livelihood_snapshot_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true
+    },
+    "sandbox_rules": {
+      "checks": 77,
+      "failed": 0,
+      "failures": []
+    },
+    "sandbox_flow": {
+      "checks": 11,
+      "failed": 0,
+      "failures": []
+    },
+    "sandbox_snapshot_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true,
+      "stage": "complete"
+    },
+    "sandbox_snapshot_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true,
+      "stage": "complete"
+    },
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 33,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 10995,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 33,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 10992,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 10904,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 7534,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 10873,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ]
+  },
+  "captures": {
+    "kind": "native Godot captures of a controlled test world; interface references, not user save screenshots",
+    "resolution": [
+      1366,
+      768
+    ],
+    "visually_reviewed": true,
+    "files": [
+      "after-auto-shift.png",
+      "expert-memory-play.png",
+      "expert-memory-preview.png",
+      "expert-work-paid.png",
+      "habits.png",
+      "hud-hidden-needs.png",
+      "needs.png",
+      "physical-skills.png",
+      "skills.png"
+    ],
+    "review": "Skill/category cards, habit purchase, seven checkboxes, hidden HUD icons, expanded health meters, expert preview/input and failed-answer payout inspected. Temporary existing character art."
+  },
+  "limitations": [
+    "Not every skill has a dedicated profession or minigame yet; all thirty have actual practice routes.",
+    "Standalone PCK covers independent mechanics; growth and gameplay integration are covered in main-game suites.",
+    "Baseline main-project shutdown warnings remain: 63 ObjectDB instances and 27 addon resources; no other errors in collected logs.",
+    "Other executor owns reproductive and pregnancy-wellbeing systems; concurrent work retained."
+  ],
+  "sha256": {
+    "scripts/gameplay/main_simulation.gd": "6a6feba72a644e03b341d5bf7b2761ab536ea937c84c2ad3557278fcd7df37a1",
+    "scripts/gameplay/gameplay.gd": "7059c359ac5976be851afeabc525c5895b7413612c246a22288497c9eedf87d7",
+    "scripts/mechanics/growth.gd": "08955e2a1a7ceebb70d219dbf14055a36050ec5aa1dd3b9bebd6daf9da2477cd",
+    "scripts/mechanics/livelihood.gd": "888c9fd0a8593c7d0ec3c9ecd9b8360f61b8dd2a488a505050ca7438e58759f0",
+    "scripts/mechanics/core/livelihood_validation.gd": "d990bb03c88e71c3438c397de1361e28e24c4eb6770c9ecffe4def6738a32f1d",
+    "scripts/mechanics/preferences.gd": "58a8e4ab82c1ba32bea732a0ccc24f967525e5f4ea611e3d7b8ad342ae5399a7",
+    "scripts/mechanics/setup_config.gd": "108f433836e15a14ff13aae2f0d9b24162bc086127f3dc6a4a6d3aa2161c2294",
+    "scripts/gameplay/action_policy.gd": "905a9e2ec35329125064ad86fbb4700326f648a6863538f044ea4b5b46ff7a42",
+    "scripts/gameplay/player_character.gd": "0fc7be0d37764c5a87fa23f1c2231ca7c960a1c277454bacf3f3cd3ad56f3776",
+    "scripts/gameplay/player_needs.gd": "8d73135c7e6deb958911f44148acaf6204a4ab0d32b10d0c32bbec43db1eb5f8",
+    "scripts/gameplay/player_encounters.gd": "625e2d58cb9bd0e8b246aa31cd2ebd4e522f7d98d8199e64467b3e5987488f11",
+    "scripts/gameplay/player_preferences.gd": "be2b3ac538f1bf5bde8d08f25622bbbcc8169f02894fa438aecbc0fb6fa74929",
+    "scripts/gameplay/growth_presentation.gd": "d7f87dca6134f74aa784eb2473cc2a1cd404fe786b263cd1c2090ef007cfe86b",
+    "scripts/gameplay/presentation.gd": "4dd0708606c909be2e65525a149b3f56e560c18e5992303a72c1af0fb32d0915",
+    "scripts/ui/gameplay/growth_window.gd": "1a980d52e6a2a7d75e5670b7aad74626ac00d3d8c1e20816c987027686ee9021",
+    "scripts/ui/gameplay/livelihood_window.gd": "76d920737cc36762f015743fd209aee3d085103f43f3c103018c2c25be1e1703",
+    "scripts/ui/gameplay/mini_game.gd": "7eb789309742650df3ca742ff0103d3f44f9d0ac9c42ced87e958af44915b981",
+    "scripts/ui/gameplay/world_setup.gd": "c8228c512494a9b64f1b2eb86993a0a66e750b9ca3ee2b295d65f34320af1118",
+    "scripts/ui/gameplay/player_hud.gd": "186bc8a8f8394dc6686ce75af077705fd3d47dd5ac5843c3da183788c3a7fc1d",
+    "scripts/ui/gameplay/game_screens.gd": "56fc4a7da08e743745c5c8e573c2d129c39c439bfc93d85c8740777c0a2bc594",
+    "scripts/ui/gameplay/gameplay_shell.gd": "59c7bb9b871af0fa065a09d25c187b18f8cbad0169956d37aff3fb5ce4230c19",
+    "scripts/ui/gameplay/work_timing_meter.gd": "3602b7d4efe5ca341f9343ba826b933ec5cb0c04036004031de8fcad264e0270",
+    "data/mechanics/growth.json": "d0780b4f995d7e90f62002ed1ffd9c5fe5125da8c6105cca8606add5d96c125b",
+    "data/mechanics/livelihood.json": "955f0714a379f8923b76be0fc1a79e9a81f37dbbde40538bfb3348453d44a296",
+    "tools/build_growth_catalog.py": "c1d4482aa39c4bab969c7fee3c520e0a655cd77fbb1805240b546ae7d5fcacdf",
+    "tools/test_growth.ps1": "9a4055f657bd18198fef816d09605e12b01c2c11eb6daa9d073ba9b0e7e8ec42",
+    "tests/gameplay/growth.gd": "b3bcc05d79f142b10cae68215d10dad909f3d948f83674c4346079ff6a2b8df3",
+    "tests/gameplay/growth_snapshot.gd": "80ec03b66221133458656dfb270a36a5793fa92b90bca97cb003f819f1210a97",
+    "tests/gameplay/capture_growth.gd": "73a8a90450bb2f3118edef34f1b0765f4493a6f4e4e5ba259461120e3ea334c8"
+  }
+}

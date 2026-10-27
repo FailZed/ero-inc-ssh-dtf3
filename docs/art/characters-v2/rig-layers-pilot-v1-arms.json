@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "scope": "Small owned-art rig-layer completions. No intimate region is painted. Candidates require full-figure pose review.",
+  "output_prefix": "characters_v2/rig_layers_pilot-v1/arms",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "female_average_arm_left",
+      "rig": "female_average",
+      "category": "rig_complete_arm",
+      "image": "characters_v2/rig_layers_pilot-v1/female_average_arm_left/reference.png",
+      "mask": "characters_v2/rig_layers_pilot-v1/female_average_arm_left/mask.png",
+      "seed": 2026102200,
+      "denoise": 0.35,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single complete adult woman upper arm and forearm, original anime character sprite component, relaxed natural straight arm, continuous shoulder elbow and wrist, delicate thin brown lineart, matte warm skin, restrained peach cel shadows, empty pale gray background",
+      "negative": "child, clothing, glove, sleeve, shirt, wristband, jewelry, tattoo, torso, face, body, second arm, extra hand, text, watermark, plastic, 3d, photorealistic, gore, injury, glossy skin",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\female_average_arm_left\\guide-full.png",
+        "target_alpha": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\female_average_arm_left\\target-alpha.png",
+        "edit_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\female_average_arm_left\\edit-full.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "crop": [
+          439,
+          289,
+          690,
+          791
+        ],
+        "local_canvas": [
+          512,
+          1024
+        ],
+        "local_size": [
+          350,
+          700
+        ],
+        "local_offset": [
+          81,
+          162
+        ],
+        "scale": 1.3944223107569722,
+        "shoulder": [
+          534.0807291666665,
+          359.11263020833326
+        ],
+        "elbow": [
+          551.0208333333335,
+          536.9837239583333
+        ],
+        "wrist": [
+          595.4886067708333,
+          736.0299479166667
+        ],
+        "hand_landmark_start": 91,
+        "side": "left",
+        "not_yet_approved": true
+      }
+    },
+    {
+      "id": "female_average_arm_right",
+      "rig": "female_average",
+      "category": "rig_complete_arm",
+      "image": "characters_v2/rig_layers_pilot-v1/female_average_arm_right/reference.png",
+      "mask": "characters_v2/rig_layers_pilot-v1/female_average_arm_right/mask.png",
+      "seed": 2026102201,
+      "denoise": 0.35,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single complete adult woman upper arm and forearm, original anime character sprite component, relaxed natural straight arm, continuous shoulder elbow and wrist, delicate thin brown lineart, matte warm skin, restrained peach cel shadows, empty pale gray background",
+      "negative": "child, clothing, glove, sleeve, shirt, wristband, jewelry, tattoo, torso, face, body, second arm, extra hand, text, watermark, plastic, 3d, photorealistic, gore, injury, glossy skin",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\female_average_arm_right\\guide-full.png",
+        "target_alpha": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\female_average_arm_right\\target-alpha.png",
+        "edit_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\female_average_arm_right\\edit-full.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "crop": [
+          206,
+          291,
+          444,
+          801
+        ],
+        "local_canvas": [
+          512,
+          1024
+        ],
+        "local_size": [
+          327,
+          700
+        ],
+        "local_offset": [
+          92,
+          162
+        ],
+        "scale": 1.3725490196078431,
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          335.03450520833337,
+          551.8063151041667
+        ],
+        "wrist": [
+          301.154296875,
+          746.6175130208335
+        ],
+        "hand_landmark_start": 112,
+        "side": "right",
+        "not_yet_approved": true
+      }
+    },
+    {
+      "id": "male_toned_arm_left",
+      "rig": "male_toned",
+      "category": "rig_complete_arm",
+      "image": "characters_v2/rig_layers_pilot-v1/male_toned_arm_left/reference.png",
+      "mask": "characters_v2/rig_layers_pilot-v1/male_toned_arm_left/mask.png",
+      "seed": 2026102202,
+      "denoise": 0.35,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single complete adult man upper arm and forearm, original anime character sprite component, relaxed natural straight arm, continuous shoulder elbow and wrist, delicate thin brown lineart, matte warm skin, restrained peach cel shadows, empty pale gray background",
+      "negative": "child, clothing, glove, sleeve, shirt, wristband, jewelry, tattoo, torso, face, body, second arm, extra hand, text, watermark, plastic, 3d, photorealistic, gore, injury, glossy skin",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\male_toned_arm_left\\guide-full.png",
+        "target_alpha": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\male_toned_arm_left\\target-alpha.png",
+        "edit_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\male_toned_arm_left\\edit-full.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "crop": [
+          413,
+          304,
+          656,
+          800
+        ],
+        "local_canvas": [
+          512,
+          1024
+        ],
+        "local_size": [
+          343,
+          700
+        ],
+        "local_offset": [
+          84,
+          162
+        ],
+        "scale": 1.4112903225806452,
+        "shoulder": [
+          508.59895833333326,
+          374.7200520833335
+        ],
+        "elbow": [
+          542.453125,
+          556.6861979166665
+        ],
+        "wrist": [
+          561.49609375,
+          745.0
+        ],
+        "hand_landmark_start": 91,
+        "side": "left",
+        "not_yet_approved": true
+      }
+    },
+    {
+      "id": "male_toned_arm_right",
+      "rig": "male_toned",
+      "category": "rig_complete_arm",
+      "image": "characters_v2/rig_layers_pilot-v1/male_toned_arm_right/reference.png",
+      "mask": "characters_v2/rig_layers_pilot-v1/male_toned_arm_right/mask.png",
+      "seed": 2026102203,
+      "denoise": 0.35,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single complete adult man upper arm and forearm, original anime character sprite component, relaxed natural straight arm, continuous shoulder elbow and wrist, delicate thin brown lineart, matte warm skin, restrained peach cel shadows, empty pale gray background",
+      "negative": "child, clothing, glove, sleeve, shirt, wristband, jewelry, tattoo, torso, face, body, second arm, extra hand, text, watermark, plastic, 3d, photorealistic, gore, injury, glossy skin",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\male_toned_arm_right\\guide-full.png",
+        "target_alpha": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\male_toned_arm_right\\target-alpha.png",
+        "edit_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v1\\male_toned_arm_right\\edit-full.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "crop": [
+          163,
+          308,
+          394,
+          816
+        ],
+        "local_canvas": [
+          512,
+          1024
+        ],
+        "local_size": [
+          318,
+          700
+        ],
+        "local_offset": [
+          97,
+          162
+        ],
+        "scale": 1.3779527559055118,
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          273.73567708333337,
+          567.265625
+        ],
+        "wrist": [
+          258.92447916666674,
+          761.9270833333333
+        ],
+        "hand_landmark_start": 112,
+        "side": "right",
+        "not_yet_approved": true
+      }
+    }
+  ],
+  "encode_individually": true
+}

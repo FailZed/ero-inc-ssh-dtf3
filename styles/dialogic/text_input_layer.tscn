@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="1"]
+[ext_resource type="Script" path="res://styles/dialogic/text_input_layer.gd" id="2"]
+
+[node name="TextInputLayer" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="DialogicNode_TextInput" parent="." index="0"]
+offset_left = -360.0
+offset_top = -140.0
+offset_right = 360.0
+offset_bottom = 140.0

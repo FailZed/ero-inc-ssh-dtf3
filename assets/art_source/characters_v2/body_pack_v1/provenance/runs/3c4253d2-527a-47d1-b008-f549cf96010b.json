@@ -1,0 +1,1786 @@
+{
+  "prompt_id": "3c4253d2-527a-47d1-b008-f549cf96010b",
+  "created_utc": "2026-10-19T12:31:11.151723+00:00",
+  "generator": "Local ComfyUI / DaSiWa grouped independent masked edits",
+  "model": {
+    "path": "E:\\Ai\\ComfyUI-EroInc\\runtime\\ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints\\DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+    "size": 6938115222,
+    "mtime_ns": 1792329874683931900,
+    "sha256": "44670e67c55f059116171ee8538875da3abf624fbdaace6d1a7ac2d9617f0211"
+  },
+  "adapter": {
+    "name": "EroInc\\candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "body_adapter": null,
+  "input_images": [
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_3_covered\\reference.png",
+      "sha256": "a6a54f87fa6c172cd1e7b3de3061142336d8848fa80a23bb7b3e436b9d47e88e",
+      "role": "image",
+      "item": "male_external_3_covered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_3_covered\\mask.png",
+      "sha256": "dd0d41b24d10cc8292ff301a176a5542e1527f8433f5b5a15588fd479e614d4a",
+      "role": "mask",
+      "item": "male_external_3_covered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_3_uncovered\\reference.png",
+      "sha256": "4b3127c3fa832f5ed89c03fb13fda1576281687f34d1c22e229b4069dabcf835",
+      "role": "image",
+      "item": "male_external_3_uncovered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_3_uncovered\\mask.png",
+      "sha256": "dd0d41b24d10cc8292ff301a176a5542e1527f8433f5b5a15588fd479e614d4a",
+      "role": "mask",
+      "item": "male_external_3_uncovered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_4_covered\\reference.png",
+      "sha256": "40ca091011bba3cfa7dca4461d41aa5b20f5bce12b9a94a4a7acef585a99d29b",
+      "role": "image",
+      "item": "male_external_4_covered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_4_covered\\mask.png",
+      "sha256": "dd0d41b24d10cc8292ff301a176a5542e1527f8433f5b5a15588fd479e614d4a",
+      "role": "mask",
+      "item": "male_external_4_covered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_4_uncovered\\reference.png",
+      "sha256": "b8e68562d088727b93ae12ec1b33b92c584bfb6417f6dcfcdecc73a7abf3efdb",
+      "role": "image",
+      "item": "male_external_4_uncovered"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_anatomy_guides_v3\\male_external_4_uncovered\\mask.png",
+      "sha256": "dd0d41b24d10cc8292ff301a176a5542e1527f8433f5b5a15588fd479e614d4a",
+      "role": "mask",
+      "item": "male_external_4_uncovered"
+    }
+  ],
+  "items": [
+    {
+      "id": "male_external_3_covered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904004,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_3_uncovered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904005,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_4_covered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904006,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_4_uncovered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904007,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    }
+  ],
+  "output_map": [
+    {
+      "id": "male_external_3_covered",
+      "save_node": "50",
+      "sampler_node": "28",
+      "composite_node": "49"
+    },
+    {
+      "id": "male_external_3_uncovered",
+      "save_node": "53",
+      "sampler_node": "33",
+      "composite_node": "52"
+    },
+    {
+      "id": "male_external_4_covered",
+      "save_node": "56",
+      "sampler_node": "38",
+      "composite_node": "55"
+    },
+    {
+      "id": "male_external_4_uncovered",
+      "save_node": "59",
+      "sampler_node": "43",
+      "composite_node": "58"
+    }
+  ],
+  "prompt": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "LoraLoader",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "clip": [
+          "1",
+          1
+        ],
+        "lora_name": "EroInc\\candidate_400.safetensors",
+        "strength_model": 0.65,
+        "strength_clip": 0.0
+      }
+    },
+    "3": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/reference.png"
+      }
+    },
+    "4": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/mask.png"
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+      }
+    },
+    "6": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+      }
+    },
+    "7": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/reference.png"
+      }
+    },
+    "8": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/mask.png"
+      }
+    },
+    "9": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+      }
+    },
+    "10": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+      }
+    },
+    "11": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/reference.png"
+      }
+    },
+    "12": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/mask.png"
+      }
+    },
+    "13": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+      }
+    },
+    "14": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/reference.png"
+      }
+    },
+    "16": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/mask.png"
+      }
+    },
+    "17": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+      }
+    },
+    "18": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+      }
+    },
+    "19": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "3",
+          0
+        ],
+        "image2": [
+          "7",
+          0
+        ]
+      }
+    },
+    "20": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "19",
+          0
+        ],
+        "image2": [
+          "11",
+          0
+        ]
+      }
+    },
+    "21": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "20",
+          0
+        ],
+        "image2": [
+          "15",
+          0
+        ]
+      }
+    },
+    "22": {
+      "class_type": "VAEEncode",
+      "inputs": {
+        "pixels": [
+          "21",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "23": {
+      "class_type": "EroIncConditioningBarrier",
+      "inputs": {
+        "latent": [
+          "22",
+          0
+        ],
+        "conditioning_1": [
+          "5",
+          0
+        ],
+        "conditioning_2": [
+          "6",
+          0
+        ],
+        "conditioning_3": [
+          "9",
+          0
+        ],
+        "conditioning_4": [
+          "10",
+          0
+        ],
+        "conditioning_5": [
+          "13",
+          0
+        ],
+        "conditioning_6": [
+          "14",
+          0
+        ],
+        "conditioning_7": [
+          "17",
+          0
+        ],
+        "conditioning_8": [
+          "18",
+          0
+        ]
+      }
+    },
+    "24": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 0,
+        "length": 1
+      }
+    },
+    "25": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "24",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "26": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "4",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "27": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "25",
+          0
+        ],
+        "mask": [
+          "26",
+          0
+        ]
+      }
+    },
+    "28": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "5",
+          0
+        ],
+        "negative": [
+          "6",
+          0
+        ],
+        "latent_image": [
+          "27",
+          0
+        ],
+        "seed": 9904004,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.3
+      }
+    },
+    "29": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 1,
+        "length": 1
+      }
+    },
+    "30": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "29",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "31": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "8",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "32": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "30",
+          0
+        ],
+        "mask": [
+          "31",
+          0
+        ]
+      }
+    },
+    "33": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "9",
+          0
+        ],
+        "negative": [
+          "10",
+          0
+        ],
+        "latent_image": [
+          "32",
+          0
+        ],
+        "seed": 9904005,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.3
+      }
+    },
+    "34": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 2,
+        "length": 1
+      }
+    },
+    "35": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "34",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "36": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "12",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "37": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "35",
+          0
+        ],
+        "mask": [
+          "36",
+          0
+        ]
+      }
+    },
+    "38": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "13",
+          0
+        ],
+        "negative": [
+          "14",
+          0
+        ],
+        "latent_image": [
+          "37",
+          0
+        ],
+        "seed": 9904006,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.3
+      }
+    },
+    "39": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 3,
+        "length": 1
+      }
+    },
+    "40": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "39",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "41": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "16",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "42": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "40",
+          0
+        ],
+        "mask": [
+          "41",
+          0
+        ]
+      }
+    },
+    "43": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "17",
+          0
+        ],
+        "negative": [
+          "18",
+          0
+        ],
+        "latent_image": [
+          "42",
+          0
+        ],
+        "seed": 9904007,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.3
+      }
+    },
+    "44": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "28",
+          0
+        ],
+        "samples2": [
+          "33",
+          0
+        ]
+      }
+    },
+    "45": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "44",
+          0
+        ],
+        "samples2": [
+          "38",
+          0
+        ]
+      }
+    },
+    "46": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "45",
+          0
+        ],
+        "samples2": [
+          "43",
+          0
+        ]
+      }
+    },
+    "47": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "46",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "48": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 0,
+        "length": 1
+      }
+    },
+    "49": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "3",
+          0
+        ],
+        "source": [
+          "48",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "26",
+          0
+        ]
+      }
+    },
+    "50": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "49",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_anatomy_v3/male_external_3_covered"
+      }
+    },
+    "51": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 1,
+        "length": 1
+      }
+    },
+    "52": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "7",
+          0
+        ],
+        "source": [
+          "51",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "31",
+          0
+        ]
+      }
+    },
+    "53": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "52",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_anatomy_v3/male_external_3_uncovered"
+      }
+    },
+    "54": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 2,
+        "length": 1
+      }
+    },
+    "55": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "11",
+          0
+        ],
+        "source": [
+          "54",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "36",
+          0
+        ]
+      }
+    },
+    "56": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "55",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_anatomy_v3/male_external_4_covered"
+      }
+    },
+    "57": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 3,
+        "length": 1
+      }
+    },
+    "58": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "15",
+          0
+        ],
+        "source": [
+          "57",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "41",
+          0
+        ]
+      }
+    },
+    "59": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "58",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_anatomy_v3/male_external_4_uncovered"
+      }
+    }
+  },
+  "gpu_budget": {
+    "schema": 1,
+    "duty_percent": 100,
+    "cpu_priority": "normal",
+    "gpu_priority": "normal",
+    "vram_reserve_gb": 1,
+    "note": "Full GPU compute authorized by user; no artificial duty pauses. Normal process priorities.",
+    "authorized_date": "2026-10-19"
+  },
+  "acceptance": "Unreviewed candidates; never runtime registered",
+  "history": {
+    "prompt": [
+      32,
+      "3c4253d2-527a-47d1-b008-f549cf96010b",
+      {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+          }
+        },
+        "2": {
+          "class_type": "LoraLoader",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ],
+            "lora_name": "EroInc\\candidate_400.safetensors",
+            "strength_model": 0.65,
+            "strength_clip": 0.0
+          }
+        },
+        "3": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/reference.png"
+          }
+        },
+        "4": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/mask.png"
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+          }
+        },
+        "6": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+          }
+        },
+        "7": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/reference.png"
+          }
+        },
+        "8": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/mask.png"
+          }
+        },
+        "9": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+          }
+        },
+        "10": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+          }
+        },
+        "11": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/reference.png"
+          }
+        },
+        "12": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/mask.png"
+          }
+        },
+        "13": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+          }
+        },
+        "14": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+          }
+        },
+        "15": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/reference.png"
+          }
+        },
+        "16": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/mask.png"
+          }
+        },
+        "17": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background"
+          }
+        },
+        "18": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines"
+          }
+        },
+        "19": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "3",
+              0
+            ],
+            "image2": [
+              "7",
+              0
+            ]
+          }
+        },
+        "20": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "19",
+              0
+            ],
+            "image2": [
+              "11",
+              0
+            ]
+          }
+        },
+        "21": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "20",
+              0
+            ],
+            "image2": [
+              "15",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "21",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          }
+        },
+        "23": {
+          "class_type": "EroIncConditioningBarrier",
+          "inputs": {
+            "latent": [
+              "22",
+              0
+            ],
+            "conditioning_1": [
+              "5",
+              0
+            ],
+            "conditioning_2": [
+              "6",
+              0
+            ],
+            "conditioning_3": [
+              "9",
+              0
+            ],
+            "conditioning_4": [
+              "10",
+              0
+            ],
+            "conditioning_5": [
+              "13",
+              0
+            ],
+            "conditioning_6": [
+              "14",
+              0
+            ],
+            "conditioning_7": [
+              "17",
+              0
+            ],
+            "conditioning_8": [
+              "18",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 0,
+            "length": 1
+          }
+        },
+        "25": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "24",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "26": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "4",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "27": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "25",
+              0
+            ],
+            "mask": [
+              "26",
+              0
+            ]
+          }
+        },
+        "28": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "5",
+              0
+            ],
+            "negative": [
+              "6",
+              0
+            ],
+            "latent_image": [
+              "27",
+              0
+            ],
+            "seed": 9904004,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.3
+          }
+        },
+        "29": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 1,
+            "length": 1
+          }
+        },
+        "30": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "29",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "31": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "8",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "32": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "30",
+              0
+            ],
+            "mask": [
+              "31",
+              0
+            ]
+          }
+        },
+        "33": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "9",
+              0
+            ],
+            "negative": [
+              "10",
+              0
+            ],
+            "latent_image": [
+              "32",
+              0
+            ],
+            "seed": 9904005,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.3
+          }
+        },
+        "34": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 2,
+            "length": 1
+          }
+        },
+        "35": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "34",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "36": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "12",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "37": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "35",
+              0
+            ],
+            "mask": [
+              "36",
+              0
+            ]
+          }
+        },
+        "38": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "13",
+              0
+            ],
+            "negative": [
+              "14",
+              0
+            ],
+            "latent_image": [
+              "37",
+              0
+            ],
+            "seed": 9904006,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.3
+          }
+        },
+        "39": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 3,
+            "length": 1
+          }
+        },
+        "40": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "39",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "41": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "16",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "42": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "40",
+              0
+            ],
+            "mask": [
+              "41",
+              0
+            ]
+          }
+        },
+        "43": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "17",
+              0
+            ],
+            "negative": [
+              "18",
+              0
+            ],
+            "latent_image": [
+              "42",
+              0
+            ],
+            "seed": 9904007,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.3
+          }
+        },
+        "44": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "28",
+              0
+            ],
+            "samples2": [
+              "33",
+              0
+            ]
+          }
+        },
+        "45": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "44",
+              0
+            ],
+            "samples2": [
+              "38",
+              0
+            ]
+          }
+        },
+        "46": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "45",
+              0
+            ],
+            "samples2": [
+              "43",
+              0
+            ]
+          }
+        },
+        "47": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "46",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          }
+        },
+        "48": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 0,
+            "length": 1
+          }
+        },
+        "49": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "3",
+              0
+            ],
+            "source": [
+              "48",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "26",
+              0
+            ]
+          }
+        },
+        "50": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "49",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_anatomy_v3/male_external_3_covered"
+          }
+        },
+        "51": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 1,
+            "length": 1
+          }
+        },
+        "52": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "7",
+              0
+            ],
+            "source": [
+              "51",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "31",
+              0
+            ]
+          }
+        },
+        "53": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "52",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_anatomy_v3/male_external_3_uncovered"
+          }
+        },
+        "54": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 2,
+            "length": 1
+          }
+        },
+        "55": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "11",
+              0
+            ],
+            "source": [
+              "54",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "36",
+              0
+            ]
+          }
+        },
+        "56": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "55",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_anatomy_v3/male_external_4_covered"
+          }
+        },
+        "57": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 3,
+            "length": 1
+          }
+        },
+        "58": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "15",
+              0
+            ],
+            "source": [
+              "57",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "41",
+              0
+            ]
+          }
+        },
+        "59": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "58",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_anatomy_v3/male_external_4_uncovered"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "ero_inc_group": {
+            "ids": [
+              "male_external_3_covered",
+              "male_external_3_uncovered",
+              "male_external_4_covered",
+              "male_external_4_uncovered"
+            ],
+            "config_sha256": "b559b7acda1c51f69e6e7240171e310f573fe54f82229b8056297a6665434e59",
+            "independent_sampler_batch_size": 1
+          }
+        },
+        "client_id": "1c365cb1-24f2-41ed-848f-5a1829b500ad",
+        "create_time": 1792413071150
+      },
+      [
+        "56",
+        "59",
+        "53",
+        "50"
+      ]
+    ],
+    "outputs": {
+      "56": {
+        "images": [
+          {
+            "filename": "male_external_4_covered_00001_.png",
+            "subfolder": "characters_v2\\body_anatomy_v3",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "59": {
+        "images": [
+          {
+            "filename": "male_external_4_uncovered_00001_.png",
+            "subfolder": "characters_v2\\body_anatomy_v3",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "53": {
+        "images": [
+          {
+            "filename": "male_external_3_uncovered_00001_.png",
+            "subfolder": "characters_v2\\body_anatomy_v3",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "50": {
+        "images": [
+          {
+            "filename": "male_external_3_covered_00001_.png",
+            "subfolder": "characters_v2\\body_anatomy_v3",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "3c4253d2-527a-47d1-b008-f549cf96010b",
+            "timestamp": 1792413071151
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2"
+            ],
+            "prompt_id": "3c4253d2-527a-47d1-b008-f549cf96010b",
+            "timestamp": 1792413071170
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "3c4253d2-527a-47d1-b008-f549cf96010b",
+            "timestamp": 1792413118669
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "56": {
+        "node_id": "56",
+        "display_node": "56",
+        "parent_node": null,
+        "real_node_id": "56"
+      },
+      "59": {
+        "node_id": "59",
+        "display_node": "59",
+        "parent_node": null,
+        "real_node_id": "59"
+      },
+      "53": {
+        "node_id": "53",
+        "display_node": "53",
+        "parent_node": null,
+        "real_node_id": "53"
+      },
+      "50": {
+        "node_id": "50",
+        "display_node": "50",
+        "parent_node": null,
+        "real_node_id": "50"
+      }
+    }
+  }
+}

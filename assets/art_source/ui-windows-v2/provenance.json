@@ -1,0 +1,34 @@
+{
+  "generator": "OpenAI built-in ImageGen",
+  "date": "2026-10-27",
+  "role": "Original production raster surfaces. No text or interactions are baked into art.",
+  "assets": [
+    {
+      "id": "window_surface",
+      "transparent_background": false,
+      "prompt": "Production raster UI skin texture for original modern nocturnal life RPG EroInc. Exactly front-on flat rectangular 3:2 surface. Elegant extremely dark blue-black matte enamel and subtle paper-grain material, steel-blue thin understated rectangular inset edge around all four sides, quiet soft upper-left blue lighting, tiny warm copper corner seam only. Center 90 percent is almost uniform deep navy, very low contrast, deliberately blank for live readable game text. Restrained premium tactile game UI, not vector, not glossy 3D dashboard. No objects, no icons, no symbols, no lettering, no numbers, no logo, no text, no vignettes that look like scenes, no ornamental filigree, no rounded purple shapes. Full-bleed texture, no drop shadow or transparent outside.",
+      "source": "window_surface.png",
+      "original_file": "exec-c23e409a-0106-4050-879e-9d46f7e3c1ac.png",
+      "runtime": "res://assets/textures/ui/windows-v2/window_surface.png",
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "room_floor",
+      "transparent_background": false,
+      "prompt": "Production background raster for a top-down apartment room planning UI in original nocturnal life RPG EroInc. Orthographic perfectly top-down rectangular empty single room floor, 4:3 landscape. Muted blue-grey painted walls around the outer 5 percent and a dark walnut parquet floor with subtle long planks; one narrow open doorway centered on bottom wall. No furniture, no characters, no objects, no grid lines, no numbers, no text, no labels, no UI. Refined hand-painted realism with matte tactile surfaces and restrained steel blue ambient evening light. Layout is a rectangle occupying whole image with interior floor covering 90 percent. Not an isometric cutaway, no perspective distortion, a true flat architectural room plan art. Subdued low contrast for live draggable furniture sprites and selection overlay.",
+      "source": "room_floor.png",
+      "original_file": "exec-9757ab3c-fdc4-4a89-b00e-4c583255f9ad.png",
+      "runtime": "res://assets/textures/ui/windows-v2/room_floor.png",
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "card_face",
+      "source": "card_face.png",
+      "generator": "OpenAI built-in ImageGen",
+      "runtime": "res://assets/textures/ui/windows-v2/card_face.png",
+      "normalization": "Crop alpha >245 opaque face bounds and resize to at most 320x480; preserve source alpha. Native controls draw real ranks and values."
+    }
+  ]
+}

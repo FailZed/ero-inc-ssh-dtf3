@@ -1,0 +1,1543 @@
+{
+  "passed": true,
+  "count": 48,
+  "errors": [],
+  "items": [
+    {
+      "id": "female_fit_01",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_01.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "chest_m_round",
+          "areola_form_1",
+          "female_external_1",
+          "female_hair_1",
+          "female_tone_1",
+          "female_thigh_full"
+        ],
+        "pose": "rest",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        235624
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        615,
+        1394
+      ],
+      "sha256": "e934fe13f05702df3a4c43826b5ff0679781af5b733545cb08642dd66e4e6f31",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_02",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_02.png",
+      "recipe": {
+        "body": "female_athletic",
+        "features": [
+          "chest_l_round",
+          "areola_form_2",
+          "female_external_2",
+          "female_hair_2",
+          "female_calf_full"
+        ],
+        "pose": "left_open",
+        "palette": "pale",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        246111
+      ],
+      "alpha_bounds": [
+        113,
+        95,
+        622,
+        1394
+      ],
+      "sha256": "f12f0fcb487bdd096f879d2f2ae437e0c6ee0f9085bc85a7f5b3eeed182cb4d9",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_03",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_03.png",
+      "recipe": {
+        "body": "female_slim",
+        "features": [
+          "chest_xl_round",
+          "areola_form_3",
+          "female_external_3",
+          "female_hair_3"
+        ],
+        "pose": "right_open",
+        "palette": "warm",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        216533
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        747,
+        1394
+      ],
+      "sha256": "b7df0d83bc362be69cad9413ed3360361b2390616ff1380baf61d98d3d2a487a",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_04",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_04.png",
+      "recipe": {
+        "body": "female_toned",
+        "features": [
+          "chest_m_teardrop",
+          "areola_form_4",
+          "female_external_4",
+          "female_hair_4",
+          "female_tone_2"
+        ],
+        "pose": "both_open",
+        "palette": "peach",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        231247
+      ],
+      "alpha_bounds": [
+        121,
+        95,
+        769,
+        1394
+      ],
+      "sha256": "e5a1cbdcb15b72c963033f93f89c0c7b275010d4775ae4928162c080a83a9df4",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_05",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_05.png",
+      "recipe": {
+        "body": "female_strong",
+        "features": [
+          "chest_l_teardrop",
+          "areola_form_5",
+          "female_external_1",
+          "female_hair_5",
+          "female_thigh_slender"
+        ],
+        "pose": "left_in",
+        "palette": "olive",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        233979
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        635,
+        1394
+      ],
+      "sha256": "b56a1383d39c3b0aad15bd9b27d0f66aa74f11ed88cd655f6cff1d6d8c84805e",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_06",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_06.png",
+      "recipe": {
+        "body": "female_curvy",
+        "features": [
+          "chest_xl_teardrop",
+          "areola_form_6",
+          "female_external_2",
+          "female_hair_6",
+          "female_calf_slender"
+        ],
+        "pose": "right_in",
+        "palette": "tan",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        227644
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        604,
+        1394
+      ],
+      "sha256": "31c9abf372cd336f60fc59c4f695bc059af9d1ae326206bfde90fade9faad8b4",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_07",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_07.png",
+      "recipe": {
+        "body": "female_soft",
+        "features": [
+          "chest_m_compact",
+          "areola_form_7",
+          "female_external_3",
+          "female_hair_7",
+          "female_tone_3"
+        ],
+        "pose": "both_in",
+        "palette": "brown",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        220865
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        604,
+        1394
+      ],
+      "sha256": "e5647bd4287121927f3aafbef685e402cf9473d684868c448310b9c4b79b73d8",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_08",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_08.png",
+      "recipe": {
+        "body": "female_pear",
+        "features": [
+          "chest_l_compact",
+          "areola_form_1",
+          "female_external_4",
+          "female_hair_8"
+        ],
+        "pose": "left_wide",
+        "palette": "deep",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        251765
+      ],
+      "alpha_bounds": [
+        42,
+        95,
+        684,
+        1394
+      ],
+      "sha256": "28702b970f97c2d6e32d8e6e559461f85ea77a28875dbd7b2e1bf8cb6772d552",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_09",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_09.png",
+      "recipe": {
+        "body": "female_compact",
+        "features": [
+          "chest_xl_compact",
+          "areola_form_2",
+          "female_external_1",
+          "female_hair_9",
+          "female_thigh_full"
+        ],
+        "pose": "right_wide",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        242585
+      ],
+      "alpha_bounds": [
+        201,
+        95,
+        804,
+        1394
+      ],
+      "sha256": "75a3106d29f4284cd36ee2ffc26d01426249ebb7d38d226a8ea2a6502d667d1a",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_10",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_10.png",
+      "recipe": {
+        "body": "female_sturdy",
+        "features": [
+          "chest_m_wide",
+          "areola_form_3",
+          "female_external_2",
+          "female_hair_10",
+          "female_tone_1",
+          "female_calf_full"
+        ],
+        "pose": "rest",
+        "palette": "pale",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        257559
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        627,
+        1394
+      ],
+      "sha256": "f056c69fee5323bc14c604b61ae8cbf9c21fecb400b28f43facc207d509a9846",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_11",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_11.png",
+      "recipe": {
+        "body": "female_mature_slender",
+        "features": [
+          "chest_l_wide",
+          "areola_form_4",
+          "female_external_3",
+          "female_hair_1"
+        ],
+        "pose": "left_open",
+        "palette": "warm",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        226005
+      ],
+      "alpha_bounds": [
+        124,
+        95,
+        613,
+        1394
+      ],
+      "sha256": "3756fe6033f235ea1c6b67b04f2606faef5da6158d58c8df20ac3177c0403e38",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_12",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_12.png",
+      "recipe": {
+        "body": "female_mature_soft",
+        "features": [
+          "chest_xl_wide",
+          "areola_form_5",
+          "female_external_4",
+          "female_hair_2"
+        ],
+        "pose": "right_open",
+        "palette": "peach",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        258840
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        774,
+        1394
+      ],
+      "sha256": "456f96ea949234575a3c2f3076361934c67fda4ba0b81e4733334e18106f45c1",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_13",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_13.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "chest_m_lower_full",
+          "areola_form_6",
+          "female_external_1",
+          "female_hair_3",
+          "female_tone_2",
+          "female_thigh_slender"
+        ],
+        "pose": "both_open",
+        "palette": "olive",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        230679
+      ],
+      "alpha_bounds": [
+        123,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "f85e3893bbc02d2cb5102a40e90cf7fe50fd24e2f8dc8d62fe9ee0f0c506a28f",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_14",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_14.png",
+      "recipe": {
+        "body": "female_athletic",
+        "features": [
+          "chest_l_lower_full",
+          "areola_form_7",
+          "female_external_2",
+          "female_hair_4",
+          "female_calf_slender"
+        ],
+        "pose": "left_in",
+        "palette": "tan",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        227621
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        622,
+        1394
+      ],
+      "sha256": "64e7c042ec9906a52d57b3b6e7d0e25693da9ed9bf51e7887ebc977accb9e380",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_15",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_15.png",
+      "recipe": {
+        "body": "female_slim",
+        "features": [
+          "chest_xl_lower_full",
+          "areola_form_1",
+          "female_external_3",
+          "female_hair_5"
+        ],
+        "pose": "right_in",
+        "palette": "brown",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        205688
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        575,
+        1394
+      ],
+      "sha256": "30b8783fa824fc835cc12f5e80b07daf2e3263f99610fb8c933922839edb8e38",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_16",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_16.png",
+      "recipe": {
+        "body": "female_toned",
+        "features": [
+          "chest_m_asymmetric",
+          "areola_form_2",
+          "female_external_4",
+          "female_hair_6",
+          "female_tone_3"
+        ],
+        "pose": "both_in",
+        "palette": "deep",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        208581
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        587,
+        1394
+      ],
+      "sha256": "ad9b94b893fff3288f54d1a4e2498d73400ae2887666f5fabc2d2861561fe50f",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_17",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_17.png",
+      "recipe": {
+        "body": "female_strong",
+        "features": [
+          "chest_l_asymmetric",
+          "areola_form_3",
+          "female_external_1",
+          "female_hair_7",
+          "female_thigh_full"
+        ],
+        "pose": "left_wide",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        255746
+      ],
+      "alpha_bounds": [
+        19,
+        95,
+        714,
+        1394
+      ],
+      "sha256": "3c1575c8d35bfa716b9321bf9ef74f69ee07e896bf514c6c3f75cee007358060",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_18",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_18.png",
+      "recipe": {
+        "body": "female_curvy",
+        "features": [
+          "chest_xl_asymmetric",
+          "areola_form_4",
+          "female_external_2",
+          "female_hair_8",
+          "female_calf_full"
+        ],
+        "pose": "right_wide",
+        "palette": "pale",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        247630
+      ],
+      "alpha_bounds": [
+        207,
+        95,
+        800,
+        1394
+      ],
+      "sha256": "1b5c804e91d8655d7733ac6c63373b0f1b8ec5bd58390143e44074a4461f26a5",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_19",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_19.png",
+      "recipe": {
+        "body": "female_soft",
+        "features": [
+          "chest_xs_round",
+          "areola_form_5",
+          "female_external_3",
+          "female_hair_9",
+          "female_tone_1"
+        ],
+        "pose": "rest",
+        "palette": "warm",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        241403
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        617,
+        1394
+      ],
+      "sha256": "a531626db1a3d68594755dbb3005e25790fb8a272146a8adbc9427fd6f57d202",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_20",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_20.png",
+      "recipe": {
+        "body": "female_pear",
+        "features": [
+          "chest_s_round",
+          "areola_form_6",
+          "female_external_4",
+          "female_hair_10"
+        ],
+        "pose": "left_open",
+        "palette": "peach",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        246313
+      ],
+      "alpha_bounds": [
+        126,
+        95,
+        618,
+        1394
+      ],
+      "sha256": "7e3f326bfe81ee153927d6395d4a4c9c779727ce41e6171f0f1073a7f150957b",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_21",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_21.png",
+      "recipe": {
+        "body": "female_compact",
+        "features": [
+          "chest_xs_teardrop",
+          "areola_form_7",
+          "female_external_1",
+          "female_hair_1",
+          "female_thigh_slender"
+        ],
+        "pose": "right_open",
+        "palette": "olive",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        231319
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        772,
+        1394
+      ],
+      "sha256": "b3ee419f25a69a0294b9483b4d84d1cf385340fd5cc61be75d50a93101ab0d7d",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_22",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_22.png",
+      "recipe": {
+        "body": "female_sturdy",
+        "features": [
+          "chest_s_teardrop",
+          "areola_form_1",
+          "female_external_2",
+          "female_hair_2",
+          "female_tone_2",
+          "female_calf_slender"
+        ],
+        "pose": "both_open",
+        "palette": "tan",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        258128
+      ],
+      "alpha_bounds": [
+        100,
+        95,
+        789,
+        1394
+      ],
+      "sha256": "d03402f61c6d3d926b348fcd2a2fa849000400051db86ea378f0f2d9f2cd5502",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_23",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_23.png",
+      "recipe": {
+        "body": "female_mature_slender",
+        "features": [
+          "chest_xs_compact",
+          "areola_form_2",
+          "female_external_3",
+          "female_hair_3"
+        ],
+        "pose": "left_in",
+        "palette": "brown",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        210743
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        613,
+        1394
+      ],
+      "sha256": "b16d289fe0fa90e2711c06f9e24cd32531445d537361e416de7f4fe43314ac50",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_24",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_24.png",
+      "recipe": {
+        "body": "female_mature_soft",
+        "features": [
+          "chest_s_compact",
+          "areola_form_3",
+          "female_external_4",
+          "female_hair_4"
+        ],
+        "pose": "right_in",
+        "palette": "deep",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        244330
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        614,
+        1394
+      ],
+      "sha256": "35043c131fd9cb66a8117b17b1e3f00010bf39a8ef3abcf9a6b7466d16ea47ce",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_25",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_25.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "chest_xs_wide",
+          "areola_form_4",
+          "female_external_1",
+          "female_hair_5",
+          "female_tone_3",
+          "female_thigh_full"
+        ],
+        "pose": "both_in",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        213294
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        595,
+        1394
+      ],
+      "sha256": "7c5ed1468e5f1937fa9ca7010c866ede71515d449e3219da94845598db786225",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_26",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_26.png",
+      "recipe": {
+        "body": "female_athletic",
+        "features": [
+          "chest_s_wide",
+          "areola_form_5",
+          "female_external_2",
+          "female_hair_6",
+          "female_calf_full"
+        ],
+        "pose": "left_wide",
+        "palette": "pale",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        247200
+      ],
+      "alpha_bounds": [
+        29,
+        95,
+        695,
+        1394
+      ],
+      "sha256": "deea0882c44522263b9f9d0c5ed1b1dfb61711ba346ebd70c95a8c3f8d37b3f9",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_27",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_27.png",
+      "recipe": {
+        "body": "female_slim",
+        "features": [
+          "chest_xs_lower_full",
+          "areola_form_6",
+          "female_external_3",
+          "female_hair_7"
+        ],
+        "pose": "right_wide",
+        "palette": "warm",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        213561
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        777,
+        1394
+      ],
+      "sha256": "277be2303825b51cd4efd00a57ef03cfd195a311f62c46f65ac6bcd26af62782",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_28",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_28.png",
+      "recipe": {
+        "body": "female_toned",
+        "features": [
+          "chest_s_lower_full",
+          "areola_form_7",
+          "female_external_4",
+          "female_hair_8",
+          "female_tone_1"
+        ],
+        "pose": "rest",
+        "palette": "peach",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        230757
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        616,
+        1394
+      ],
+      "sha256": "5c2c93e72996390563de697f0a6a3bb58adf973f86e6f0ac7b10d2dc4d5a8a72",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_29",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_29.png",
+      "recipe": {
+        "body": "female_strong",
+        "features": [
+          "chest_xs_asymmetric",
+          "areola_form_1",
+          "female_external_1",
+          "female_hair_9",
+          "female_thigh_slender"
+        ],
+        "pose": "left_open",
+        "palette": "olive",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        247300
+      ],
+      "alpha_bounds": [
+        86,
+        95,
+        635,
+        1394
+      ],
+      "sha256": "dfa5cdf348c05cb9f25338eeec010c1ea5c4c1e88ebc75de6e38bab4987953e1",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "female_fit_30",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\female_fit_30.png",
+      "recipe": {
+        "body": "female_curvy",
+        "features": [
+          "chest_s_asymmetric",
+          "areola_form_2",
+          "female_external_2",
+          "female_hair_10",
+          "female_calf_slender"
+        ],
+        "pose": "right_open",
+        "palette": "tan",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        237393
+      ],
+      "alpha_bounds": [
+        216,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "007e6f63c40dfb0e682dfd6f02b02c6c48cd2c0cf759208a5e9143d6fbca3171",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_01",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_01.png",
+      "recipe": {
+        "body": "male_slim",
+        "features": [
+          "male_external_1_covered",
+          "male_hair_1",
+          "male_tone_0"
+        ],
+        "pose": "rest",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 332,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        210730
+      ],
+      "alpha_bounds": [
+        249,
+        96,
+        594,
+        1395
+      ],
+      "sha256": "3992dc7261dcf7e20bbcce3cf32f327e21cfaa05783df40f51cce9645438eac5",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_02",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_02.png",
+      "recipe": {
+        "body": "male_soft",
+        "features": [
+          "male_external_1_uncovered",
+          "male_hair_2",
+          "male_tone_1"
+        ],
+        "pose": "left_open",
+        "palette": "pale",
+        "frame": "compact",
+        "neck_y": 400,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        253244
+      ],
+      "alpha_bounds": [
+        71,
+        165,
+        594,
+        1395
+      ],
+      "sha256": "18035d1e17d7acb13e0197405c7d477d251efe7462dfd71b3ed7ee56e422e6a3",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_03",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_03.png",
+      "recipe": {
+        "body": "male_average",
+        "features": [
+          "male_external_2_covered",
+          "male_hair_3",
+          "male_tone_2"
+        ],
+        "pose": "right_open",
+        "palette": "warm",
+        "frame": "tall",
+        "neck_y": 280,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        256233
+      ],
+      "alpha_bounds": [
+        237,
+        43,
+        737,
+        1395
+      ],
+      "sha256": "3065099653fe1834fc9f691f0464d7d5e2a0aba00280ef11faca6ddc95cc4cdb",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_04",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_04.png",
+      "recipe": {
+        "body": "male_toned",
+        "features": [
+          "male_external_2_uncovered",
+          "male_hair_4",
+          "male_tone_0"
+        ],
+        "pose": "both_open",
+        "palette": "peach",
+        "frame": "long_leg",
+        "neck_y": 332,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        237414
+      ],
+      "alpha_bounds": [
+        75,
+        102,
+        737,
+        1395
+      ],
+      "sha256": "553e995d6e00aa9d6614eeec261d3a8ae60127a8b90a009d0c73a46a8fa5cb96",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_05",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_05.png",
+      "recipe": {
+        "body": "male_athletic",
+        "features": [
+          "male_external_3_covered",
+          "male_hair_5",
+          "male_tone_1"
+        ],
+        "pose": "left_in",
+        "palette": "olive",
+        "frame": "normal",
+        "neck_y": 332,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        239431
+      ],
+      "alpha_bounds": [
+        249,
+        96,
+        594,
+        1395
+      ],
+      "sha256": "b3a120c772f14e033ca21ee53e82d1ca552fbe49c5c46ccda20769f15b9e3bda",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_06",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_06.png",
+      "recipe": {
+        "body": "male_muscular",
+        "features": [
+          "male_external_3_uncovered",
+          "male_hair_6",
+          "male_tone_2"
+        ],
+        "pose": "right_in",
+        "palette": "tan",
+        "frame": "compact",
+        "neck_y": 400,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        247381
+      ],
+      "alpha_bounds": [
+        209,
+        165,
+        594,
+        1395
+      ],
+      "sha256": "fee6a83bb6e2c2abac9ec0d9bbce0b4a88d76d44a021953d23ec3f5d427961b9",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_07",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_07.png",
+      "recipe": {
+        "body": "male_broad",
+        "features": [
+          "male_external_4_covered",
+          "male_hair_1",
+          "male_tone_0"
+        ],
+        "pose": "both_in",
+        "palette": "brown",
+        "frame": "tall",
+        "neck_y": 280,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        247139
+      ],
+      "alpha_bounds": [
+        244,
+        43,
+        594,
+        1395
+      ],
+      "sha256": "ba114f9a9a839df2d9463ed9069e8f0dee9c87af67ffdff2eef9ed96ac86fd03",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_08",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_08.png",
+      "recipe": {
+        "body": "male_solid",
+        "features": [
+          "male_external_4_uncovered",
+          "male_hair_2",
+          "male_tone_1"
+        ],
+        "pose": "left_wide",
+        "palette": "deep",
+        "frame": "long_leg",
+        "neck_y": 332,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        282169
+      ],
+      "alpha_bounds": [
+        18,
+        102,
+        683,
+        1395
+      ],
+      "sha256": "cf7d36bb24adefbd18b300b027fc3e6d89f8b46920b33fc09da90701f5d7321c",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "male_fit_09",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\male_fit_09.png",
+      "recipe": {
+        "body": "male_slim",
+        "features": [
+          "male_external_1_covered",
+          "male_hair_3",
+          "male_tone_2"
+        ],
+        "pose": "right_wide",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 332,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        210652
+      ],
+      "alpha_bounds": [
+        201,
+        96,
+        710,
+        1395
+      ],
+      "sha256": "af280897aa912138c5c6eaa69dc159abb126bd6231b93add87cb80ccb590f3ee",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_01",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_01.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_01",
+          "areola_form_1",
+          "female_external_1"
+        ],
+        "pose": "rest",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        228457
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "75c5c0a90a0f5ee086800a6843e720671e0361a68c2f6cbdabe7782032e8bce4",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_02",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_02.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_02",
+          "areola_form_2",
+          "female_external_2"
+        ],
+        "pose": "rest",
+        "palette": "pale",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        230089
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "4a561c4149c50886295edab72ae462ff78f156537231185a3b5a9b445be8aedb",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_03",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_03.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_03",
+          "areola_form_3",
+          "female_external_3"
+        ],
+        "pose": "rest",
+        "palette": "warm",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        231709
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "c8be63f8a8a4006270e6c75528c939f72ac8bc41db0f19c70da5b56b4f6e20a0",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_04",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_04.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_04",
+          "areola_form_4",
+          "female_external_4"
+        ],
+        "pose": "rest",
+        "palette": "peach",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        233347
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "d91753a416b8c4f9c7b08e6f6a491291343109bb017a486522306a349bb68071",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_05",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_05.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_05",
+          "areola_form_5",
+          "female_external_1"
+        ],
+        "pose": "rest",
+        "palette": "olive",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        234888
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "02c25af238ec34d0a2272a69dab1e4c0900d7bf16a053da9259b2bf0653f4566",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_06",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_06.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_06",
+          "areola_form_6",
+          "female_external_2"
+        ],
+        "pose": "rest",
+        "palette": "tan",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        236441
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "af6bd2f7783496cfd701085ce506e8066de439130a093ba0c6d10f03bf948cfb",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_07",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_07.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_07",
+          "areola_form_7",
+          "female_external_3"
+        ],
+        "pose": "rest",
+        "palette": "brown",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        237986
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "3de84c21c2c10175adee521a451499a5b936a42fcc58093b8d749ac92f842380",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_08",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_08.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_08",
+          "areola_form_1",
+          "female_external_4"
+        ],
+        "pose": "rest",
+        "palette": "deep",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        239398
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "4cd2ac28492b279ba037e46730ae2b4ccb2b66a0cee4689a01d0e57cfc2a6166",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    },
+    {
+      "id": "pregnancy_fit_09",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-complete-v1\\fit-proofs-v2\\pregnancy_fit_09.png",
+      "recipe": {
+        "body": "female_average",
+        "features": [
+          "pregnancy_stage_09",
+          "areola_form_2",
+          "female_external_1"
+        ],
+        "pose": "rest",
+        "palette": "porcelain",
+        "frame": "normal",
+        "neck_y": 343,
+        "baseline_y": 1395,
+        "not_runtime_registered": true
+      },
+      "large_foreground_components": [
+        240869
+      ],
+      "alpha_bounds": [
+        122,
+        95,
+        768,
+        1394
+      ],
+      "sha256": "104f6e84807d032eb7c10e81e64ee4f748be7da7c4b2611901c8da34cb6bc93b",
+      "technical_passed": true,
+      "visual_review": "Reviewed on full-figure board; see visual-review.json for scope and limits."
+    }
+  ],
+  "pregnancy_progression": [
+    {
+      "id": "pregnancy_stage_01",
+      "abdominal_alpha_area": 24073.19
+    },
+    {
+      "id": "pregnancy_stage_02",
+      "abdominal_alpha_area": 25579.67
+    },
+    {
+      "id": "pregnancy_stage_03",
+      "abdominal_alpha_area": 26991.06
+    },
+    {
+      "id": "pregnancy_stage_04",
+      "abdominal_alpha_area": 28450.75
+    },
+    {
+      "id": "pregnancy_stage_05",
+      "abdominal_alpha_area": 29824.19
+    },
+    {
+      "id": "pregnancy_stage_06",
+      "abdominal_alpha_area": 31230.53
+    },
+    {
+      "id": "pregnancy_stage_07",
+      "abdominal_alpha_area": 32590.11
+    },
+    {
+      "id": "pregnancy_stage_08",
+      "abdominal_alpha_area": 33821.93
+    },
+    {
+      "id": "pregnancy_stage_09",
+      "abdominal_alpha_area": 35084.27
+    }
+  ],
+  "pregnancy_progression_increasing": true,
+  "scope": "Real composed fit proofs; components and bounds checked. Requires separate visual inspection. These are combinations, not new source drawings."
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "interaction_model",
+  "title": "Повседневные взаимодействия",
+  "initial": {"ParamShirtEnabled":1,"ParamSkirtEnabled":1,"ParamBraEnabled":1,"ParamPantiesEnabled":1,"ParamShoeLOn":1,"ParamShoeROn":1},
+  "gaze": {"x":["ParamEyeballLX","ParamEyeballRX"],"y":["ParamEyeballLY","ParamEyeballRY"]},
+  "blink": "ParamEyeOpen",
+  "palette": [
+    {"title":"Кожа","meshes":["Skin*","PointyEar*"],"color":"ffe4d7"},
+    {"title":"Волосы","meshes":["ModdableHair*","Brow*","Catear*"],"color":"bac9e2"},
+    {"title":"Глаза","meshes":["Iris*"],"color":"6badd6"},
+    {"title":"Верх одежды","meshes":["PlainShirt*","LongHoodie*","AltLongHoodie*"],"color":"b1cfe0"},
+    {"title":"Низ одежды","meshes":["Skirt","*BPants*"],"color":"6689a8"}
+  ],
+  "zones": [
+    {"id":"head","title":"Голова","meshes":["HitAreaHeadpat"],"x":"ParamHeadX","y":"ParamHeadY","press":{"ParamHeadpat":1},"move_x":"ParamHeadpatX","move_y":"ParamHeadpatY"},
+    {"id":"face","title":"Щека","meshes":["HitAreaFaceStroke","SkinFace"],"x":"ParamHeadZ","y":"ParamHeadY","press":{"ParamFaceRubEnable":1},"move_x":"ParamFaceRubMoveX","move_y":"ParamFaceRubMoveY"},
+    {"id":"hand_l","title":"Левая рука","meshes":["AttachArmLHand*","SkinArmL"],"x":"ParamArmLRot","y":"ParamArmLUp"},
+    {"id":"hand_r","title":"Правая рука","meshes":["AttachArmRHand*","SkinArmR"],"x":"ParamArmRRot","y":"ParamArmRUp"},
+    {"id":"body","title":"Положение корпуса","meshes":["PlainShirt*","Plainshirt*","Shirt*","Hoodie*","LongHoodie*","Dress2*","SkinBodyFront","SkinBodyBack"],"x":"ParamBodyX","y":"ParamBodyZ"}
+  ],
+  "expressions": {
+    "Нейтрально":{},
+    "Улыбка":{"ParamMouthForm":0.65,"ParamEyesHappy":0.5,"ParamBrowLEmote":0.2,"ParamBrowREmote":0.2},
+    "Удивление":{"ParamEyeLShock":0.6,"ParamEyeRShock":0.6,"ParamBrowLY":0.5,"ParamBrowRY":0.5,"ParamMouthOpen":0.25},
+    "Задумчивость":{"ParamHeadZ":0.2,"ParamBrowLEmote":-0.35,"ParamBrowREmote":-0.15,"ParamMouthForm":-0.25}
+  },
+  "poses": {
+    "Спокойно":{},
+    "Рука поднята":{"ParamArmLUp":1,"ParamArmLGesture":2,"ParamArmLRot":0.2},
+    "Приветствие":{"ParamArmRUp":1,"ParamArmRGesture":3,"ParamArmRRot":-0.2},
+    "Наклон":{"ParamBodyZ":0.3,"ParamHeadZ":-0.25}
+  },
+  "outfits": {
+    "Рубашка и юбка":{"ParamShirtEnabled":1,"ParamSkirtEnabled":1,"ParamHoodieEnabled":0,"ParamPantsEnabled":0,"ParamDress2Enabled":0},
+    "Худи и брюки":{"ParamShirtEnabled":0,"ParamSkirtEnabled":0,"ParamHoodieEnabled":1,"ParamPantsEnabled":1,"ParamDress2Enabled":0},
+    "Платье":{"ParamShirtEnabled":0,"ParamSkirtEnabled":0,"ParamHoodieEnabled":0,"ParamPantsEnabled":0,"ParamDress2Enabled":1}
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-18",
+  "phase": 4,
+  "engine": "Godot 4.7.2 stable official ed1daf0bf",
+  "services": 23,
+  "main_game_integration_enabled": false,
+  "save_slot_changes": false,
+  "tests": {
+    "isolated": {
+      "result": {
+        "checks": 707,
+        "failed": 0,
+        "failures": []
+      },
+      "benchmark": {
+        "days": 7,
+        "milliseconds": 1097,
+        "npcs": 100
+      }
+    },
+    "integration": {
+      "result": {
+        "checks": 718,
+        "failed": 0,
+        "failures": []
+      },
+      "benchmark": {
+        "days": 7,
+        "milliseconds": 1133,
+        "npcs": 100
+      }
+    },
+    "pack": {
+      "result": {
+        "checks": 707,
+        "failed": 0,
+        "failures": []
+      },
+      "benchmark": {
+        "days": 7,
+        "milliseconds": 1108,
+        "npcs": 100
+      }
+    },
+    "windows_debug_executable": {
+      "bootstrap": "Temporary Node wrapper of the same SceneTree runner in isolated workspace only",
+      "result": {
+        "checks": 707,
+        "failed": 0,
+        "failures": []
+      }
+    }
+  },
+  "balance_results": "BALANCE_RESULTS.json",
+  "balance_acceptance_passed": true,
+  "engine_migration": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "installed_path": "C:\\Users\\vladi\\AppData\\Local\\Programs\\Godot\\4.7.2",
+    "previous_4_6_3_retained": true,
+    "primary_sources": [
+      "https://godotengine.org/download/archive/4.7.2-stable/",
+      "https://docs.godotengine.org/en/stable/tutorials/migrating/upgrading_to_godot_4.7.html"
+    ],
+    "editor_archive_sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+    "templates_archive_sha256": "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011",
+    "archives_verified": true,
+    "templates": [
+      {
+        "name": "android_debug.apk",
+        "bytes": 127260725,
+        "sha256": "59e0073f0fa59f552684a861d8f4266b0b34b488a140d6657eac7dd70d1a0a0d"
+      },
+      {
+        "name": "android_release.apk",
+        "bytes": 104803333,
+        "sha256": "6d1bb2cfa126a1b1c87e064a35b3cbd181bef0ec784dec1efd1d64dffa8be6cb"
+      },
+      {
+        "name": "android_source.zip",
+        "bytes": 214418211,
+        "sha256": "a15416b528efb0a19a7d187e4d9f4e5336d0689144b111329fb4bd12c4447ad3"
+      },
+      {
+        "name": "version.txt",
+        "bytes": 13,
+        "sha256": "38885c88f75abbc797a1db7559719800279a00cfb9fa8b2e2868a7f6f84bad2e"
+      },
+      {
+        "name": "windows_debug_x86_64.exe",
+        "bytes": 103176704,
+        "sha256": "51498b72b3a237f882ebd7d1787f06a4bc1eaf0572daab93837adcfd3cfdc107"
+      },
+      {
+        "name": "windows_release_x86_64.exe",
+        "bytes": 109268480,
+        "sha256": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562"
+      }
+    ],
+    "project_change_version_only": true,
+    "dialogic_compatibility_patch": "Two explicit null fallbacks and one false fallback in two files; save subsystem unchanged",
+    "editor_import": "No GDScript parse or compile errors after patch",
+    "headless_smoke": "ENGINE_MIGRATION_SMOKE failed=0",
+    "gpu_smoke": "D3D12 Mobile RX 7800 XT: failed=0, screenshot visually inspected",
+    "gpu_capture": "E:/GoDot/.research/school-0.981/phase4/main-menu-4.7.2.png",
+    "android_apk_tested": false,
+    "android_blocker": "Android SDK build-tools directory unavailable"
+  },
+  "protected_files": [
+    {
+      "path": "project.godot",
+      "sha256": "a391db1834ff17d934d219531e98d002e3270802e0d94feb13ef02de4976d951",
+      "unchanged": false,
+      "authorized_engine_version_only": true
+    },
+    {
+      "path": "export_presets.cfg",
+      "sha256": "f59e89af3e8e4b9b9f9816db04ce3f5af1c07dc40d912709d931a02eeaadf70a",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/managers/game_session.gd",
+      "sha256": "36dd35c65e528cf86be83f152d0a3826d05c31e4b4ea661309284a864ad57007",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/managers/location_manager.gd",
+      "sha256": "c074d95940b8616e73e1c24c0e3d2279ac30a71e4fe1d1711bbcb953fda231be",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/core/game.gd",
+      "sha256": "ba82c0511e57b4a48eeb847b0ebddf3284fc9b4f29da87a28b1a942a311fdabc",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/ui/hub_ui.gd",
+      "sha256": "03acccda2f4eef414ea1bdfdef6ff96ab3c16efc914430a22106765da9aff41d",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/mechanics/adapters/session_adapter.gd",
+      "sha256": "000a4e0e3bf160dacfa612aca285c2a36da5620da8b7ba44f3a8b329537082b0",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/ui/save_slot_data.gd",
+      "sha256": "357c140f7d67d43569748f3a2bcc98b73186657aafa28e484bb74ba4aa8d9f50",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/ui/save_slot_card.gd",
+      "sha256": "118fddb76a50c8e9a434efbd201cf4aedc0bc6da21dc787da0461d0260436d06",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/ui/load_menu.gd",
+      "sha256": "20f2801174fe3666ced7d4667c6957238e34d86d7c44db5b5feecaf9562720a5",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/ui/character_creation_modal.gd",
+      "sha256": "090dce5db77f6f07a821525d538a458beb720353d44a4b9e605d1a028a65e414",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scenes/ui/CharacterCreationModal.tscn",
+      "sha256": "25e35ad2cdfb99f86886243d019db8230b8033eea36b60984d652ec23608d08d",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/portraits/protagonist_layered_portrait.gd",
+      "sha256": "5fe66aa75cf6cd2c252b7a805f49f32d838a998e89182029a1ecc4bcd40f92f6",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scripts/portraits/protagonist_appearance_assembler.gd",
+      "sha256": "8ec0dad1cb8fa9a28e854a22c695a9f1d8d0de7141c1f9612f5aa9f39951303b",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    },
+    {
+      "path": "scenes/portraits/protagonist/layered_protagonist_portrait.tscn",
+      "sha256": "8de0ecc0b0d1c5830f1ff1952ce39e726a3ec7a89de63a4c47d87bc7e72f69af",
+      "unchanged": true,
+      "authorized_engine_version_only": false
+    }
+  ],
+  "source_sha256": {
+    "data/mechanics/advanced.json": "aa6e8d8f760b52251e7f287075fc2ff3e18569546293da05f517a3bc02446b84",
+    "data/mechanics/balance.json": "1f5900bf85b3f30fc8d53eaa720a7f8d3a61a81e82302ffdc3795de9fe5e1db9",
+    "data/mechanics/base.json": "ad62fcd8966de96c08167f8068681fffe7e36eff95aa4ea057d1038bfe8b846e",
+    "data/mechanics/parity.json": "5ca67e68631bb58991b800b6a0078433e280be93d4df1ffcddb4d3e71ce14323",
+    "scenes/debug/interior_lab.tscn": "01e8eb2e3eb70e348ebc4efbc7e4c43f0970e0026c6c8f73bac9f2ca9a29eafe",
+    "scenes/debug/mechanics_lab.tscn": "b6710bf1f59eb85b8d4142998b01d308f0d1b76907266916a8c047fa95971825",
+    "scenes/debug/world_setup.tscn": "3b86696765c1005388545a18723bfaf043e7b84c2e4d383d7c4d4f84a4cc6aa3",
+    "scripts/mechanics/actions.gd": "f8d7bd9ee671ff402de2969932b045b2427dba66ad8606ab3f9b4663426b8d8b",
+    "scripts/mechanics/activities.gd": "89df1d82e6930753559dcdec8436a23dc414072a177f40c5e4faa8a6619008cf",
+    "scripts/mechanics/adapters/quest_inventory_controller.gd": "5c5f00ad31f28dbbf9df8f526f08448cfee31108ce56e213a5430bf78231bcaf",
+    "scripts/mechanics/adapters/session_adapter.gd": "000a4e0e3bf160dacfa612aca285c2a36da5620da8b7ba44f3a8b329537082b0",
+    "scripts/mechanics/appearance.gd": "14a3fd01ad97825ff0207b95a7373406241ac7c432e54efcf957c5db60e95238",
+    "scripts/mechanics/careers.gd": "16302b14b3d4c8b2fff2d434c846cc640f3c71882ed8fca674257ba0a0c53898",
+    "scripts/mechanics/character.gd": "24dc0f5a167f367b16e15a548ad7157b3ee08c3681dbdb9b5f5ae4c85099848a",
+    "scripts/mechanics/combat.gd": "71c81b5d8c0ca5caa654331508dbcc6799bb0f9404bd3b9820e2f468ecb4cab2",
+    "scripts/mechanics/core/advanced_validation.gd": "d5e8b5dbb8465bcc8e230cca3e72fddd2866654889eea8ed1e9a0afbedba3982",
+    "scripts/mechanics/core/calendar.gd": "2142bd80adee8f289eca798a5b16f5940917867310bb29b43741895bbd1d1cfc",
+    "scripts/mechanics/core/formulas.gd": "99d131bac63cdb9e6c248a7dc017cf5a553303418c371f299f682a1a299de8f3",
+    "scripts/mechanics/core/module.gd": "566db7999b0e80109b4596c0ecb7097c84d5b981918848049265bbe6be32a3f4",
+    "scripts/mechanics/core/rules.gd": "d23eae9cccca784fe6f72e1681a54a752d13560f5795b8c2867ecc02e0d6eaa9",
+    "scripts/mechanics/core/validation.gd": "298a3a35c9e2d04c69427ac22945dbe8df0a8779f2bb6ea72579024bc58c8a20",
+    "scripts/mechanics/debug/interior_lab.gd": "fbf2cc8d38eac7a31dce6c0d479c26ead68d89482d9e5ef84c2d57a1c07cd945",
+    "scripts/mechanics/debug/mechanics_lab.gd": "0c2f60aed0a3ce8857d713223caec6c35445afedfdd97b073ba440b91377b925",
+    "scripts/mechanics/debug/setup_portrait.gd": "9c52c1ef6ed576d07eeb8fd8d262e70f130a59ef0631ea178c5ac52349603b8a",
+    "scripts/mechanics/debug/world_setup.gd": "3c0941a919747766403d0bfc9932f719ff922d8043d1aa6e732c74139d36f818",
+    "scripts/mechanics/economy.gd": "b0492d5d140dba96bd6ed0de7e844121ca9973ffbdc92e183b8ed0312e5f410a",
+    "scripts/mechanics/encounters.gd": "89dc736a70c87a06ff1dffc14b1a0ef09c72982a2483c6e8080ac5f3c099bfb9",
+    "scripts/mechanics/events.gd": "8f0fecf54ad35a7816c74eda4148caa46ef635de409e49db5041e2235d6ca572",
+    "scripts/mechanics/health.gd": "12de9139372d305d1cebe0c637dfc295fdf5ca481ebe36a46116bc783228e969",
+    "scripts/mechanics/housing.gd": "d01d745812d704540bce7b1138738e28dfd53a5cadc146fdd9129ab7202eb2ed",
+    "scripts/mechanics/institutions.gd": "1cd2be04d6381028e18df3975f72a1e7ed74a30b9be69ae09c35f80995173d7a",
+    "scripts/mechanics/interior.gd": "e2a729ddd4ff497581d1f3389c8f023a0b8ec76c845ed85f45cdbab90f57c2ac",
+    "scripts/mechanics/inventory.gd": "0f0fe6066504b5bcb68ce76103ee2d4432dcad9e22f686f9b630bc65bdcbe602",
+    "scripts/mechanics/lifecycle.gd": "a41c801d6837470aa3490ee8c26fb45a1ef2df2f04e3ec33ca4c286a61d5551f",
+    "scripts/mechanics/npc_behavior.gd": "6d88a4ba9827289124e6df7890dc71b4fd5a1d416501b55b260938e298c4fa2e",
+    "scripts/mechanics/organizations.gd": "9da0125238b3f773a39404d317e0d7c32dfcf5d00e25ea4ed65dead49b61f648",
+    "scripts/mechanics/population.gd": "b3785d15514fd7acac027d5caed7b32134e058c78020d2b88dfd72cfde5e93ea",
+    "scripts/mechanics/preferences.gd": "cbc6d49109c6e168829a6e890aa6442c29309f16e5c2e5568c324c2434835181",
+    "scripts/mechanics/security.gd": "70fadb83a97ef597ccb9e3d304edd3e197565f19c9aa41b891a480b50cad1b22",
+    "scripts/mechanics/setup_config.gd": "460dd2b9ac2cceac4ade4cf872a31aacde6fffb5ba0e6f983489143db402fd87",
+    "scripts/mechanics/simulation.gd": "622a1da4bf6c0836dcc163aa42a4602791d0fb038a5fc0559ba209929c1e9d2a",
+    "scripts/mechanics/social_rules.gd": "5096028e48ef506771d93190ce9ce6f11651d4af5d8f39bacfd3eb8e23b71dfe",
+    "scripts/mechanics/social.gd": "129efa19529590837a897dbe0f2f34f1390970ffe2642d59cb3c905b69dae2a5",
+    "scripts/mechanics/world.gd": "fb98e72d5fe128bdcc466295c1715dfb46dc2c225ef399b1aac88f66614f8853",
+    "tests/mechanics/advanced.gd": "271d54d01313295a16d102c141ce7d25b59c3c0df837a0fb683c5e94c26422d6",
+    "tests/mechanics/balance_probe.gd": "caada73bb1b24f93571103b31348dfc4dea956987f8db8c812ccbd1b89c590fd",
+    "tests/mechanics/balance.gd": "2de9e2b57bbc333f2b37146a2b9b0f945345239335db70413c4ea319acb1ecc5",
+    "tests/mechanics/parity.gd": "e3fd520bf255897b6032b027b22ac4d00c3f721d74e0e24048a6be5d0fffc2b6",
+    "tests/mechanics/run.gd": "fe5d077c247c7a15a289a0d0cc40395591702fd0e50220bb143d5a887c565857",
+    "project.godot": "a391db1834ff17d934d219531e98d002e3270802e0d94feb13ef02de4976d951",
+    ".godot-version": "964bf9b089d1e1c9474f4baab1c909ee2affc1fea9464eceaf5d3b8d2ce555f4",
+    "AGENTS.md": "9e214849216cff912b1b56d75f9bc955a46f6a8bbb237bc3b95ec8f6601cbe61",
+    "tools/test_mechanics.ps1": "79291ddab9c33acdf39dc691813fb4a00e7a880d057cd0beb63f79809fd02290",
+    "tools/godot.ps1": "6f95bcaf61816236621abc736765c0dd3c7730e8644a75a5c8417963359fbd63",
+    "addons/dialogic/Modules/Variable/subsystem_variables.gd": "dc181b8557c45cccb5e8504973caf80ed5f22fa47bf8d40e562c4b0959fc1688",
+    "addons/dialogic/Modules/Text/node_name_label.gd": "4457dd11bca8d6a1749f912dd99b117445fb0676efab04437d9c8df8e6e7b261"
+  },
+  "installed_gamedev_skills": 75,
+  "existing_integration_messages": [
+    "Quest Weaver inventory_controller not attached",
+    "27 addon resources still in use at exit",
+    "Godot 4.7.2 reports 63 ObjectDB instances at exit in main-project checks"
+  ],
+  "scope": "Behavior contracts, EroInc balance and private branches; not exhaustive School content or numeric parity. User approved engine migration; gameplay/saves not integrated."
+}

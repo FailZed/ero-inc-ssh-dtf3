@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-19",
+  "revision": "contextual-npc-dialogue-and-adult-topics",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "catalog": {
+    "nodes": 30,
+    "choices": 38,
+    "pools": 176,
+    "russian_lines": 348,
+    "voices": 7
+  },
+  "tests": {
+    "gameplay_command": "tools/test_gameplay.ps1",
+    "gameplay_result": {
+      "checks": 242,
+      "failed": 0,
+      "failures": []
+    },
+    "standalone_command": "tools/test_mechanics.ps1 -Isolated -Pack",
+    "standalone_result": {
+      "checks": 1722,
+      "failed": 0,
+      "failures": []
+    },
+    "npc_week_benchmark": {
+      "actions": {
+        "boast": 2,
+        "connect": 507,
+        "cooperate": 117,
+        "create": 873,
+        "deceive": 88,
+        "dispute": 3,
+        "eat": 1020,
+        "gossip": 7,
+        "joke": 90,
+        "practice": 2245,
+        "publish": 40,
+        "recreation": 5,
+        "rest": 71,
+        "sleep": 2668,
+        "study": 1421,
+        "support": 1,
+        "visit": 407,
+        "walk": 198,
+        "wash": 473,
+        "work": 1612
+      },
+      "days": 7,
+      "milestones": 138,
+      "milliseconds": 32144,
+      "npcs": 100
+    },
+    "story_command": "tools/test_story_flow.ps1",
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 33,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11837,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 33,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11771,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11836,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 8406,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11714,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ]
+  },
+  "sha256": {
+    "scripts/mechanics/npc_dialogue.gd": "53a45700c2d3ceff00ac2a7e25241f3622528566bac45d8b9f2d4d957ab97bb6",
+    "data/mechanics/npc_dialogue.json": "eabcd3deb5b3b63bf960621062863208ea7baa7b684a17494a6a1e093a294d61",
+    "scripts/mechanics/core/dialogue_validation.gd": "47678ac9aef37de93056aaddc0d652a8335ca62d5dc57b8f16a837b56ce0ca7e",
+    "scripts/mechanics/core/validation.gd": "f5ee58ef577c92a20548020330e26d6bc0bdfb42c7c583be14e766def5333638",
+    "scripts/mechanics/simulation.gd": "18614b9da1c8a4961f77f620c88d09e864dac2bcc3ffd49ce206b2a9340a3167",
+    "scripts/mechanics/npc_life_simulation.gd": "7e7ffdf29e82e81b6da64fa7b372c9081f182b90267ed9afea798fd058b9b652",
+    "scripts/mechanics/npc_personalities.gd": "9652addec646cf231cc710461c779ff6b56db2f48d5b259be69b3c20bb5727ff",
+    "scripts/mechanics/human_agency.gd": "84939966affa9e7bea1b975f83dd3befb72d10bfdb93690c416f684fd57b9ce0",
+    "scripts/mechanics/setup_config.gd": "bf6154bd469cc2d57b758679b3a1d0984205ef22af94f145afe2c94996485ce1",
+    "scripts/gameplay/gameplay.gd": "0c31cf490c5794687e4557e27dcdcb937f655f13f7484a58fb1f3892ddd09ef2",
+    "scripts/gameplay/presentation.gd": "113f7f3fe16ca36d0492bb8ad7a60ef9310dd30c6c1be4921ba65415892f3fc8",
+    "scripts/ui/gameplay/conversation_window.gd": "742cd66cc26dfb39756a7018c26bb55913f7eba60e1260778d0371dff6df7f74",
+    "scripts/ui/gameplay/gameplay_shell.gd": "bc8f4daaca03ae2a44377f94659e2a97b555a15989aeac02e89c1b58db6d00fa",
+    "scripts/ui/gameplay/world_setup.gd": "a50418059feae826c16c436b06223d8bc057634a48979fe9844430efeec87917",
+    "scripts/ui/gameplay/preview.gd": "757279ce06ee28b38b79762edfaa30e37ff21f8578961add8e035803c5272bf4",
+    "tests/mechanics/dialogue.gd": "5b7a72b0f8d74c1dcc60f9ba64f7380d7e95dd02b97890cb2f88fe594b2d59a1",
+    "tests/mechanics/run.gd": "4b77c092f95e2a7c0c70ecf7f53dd92f3e6887c7da5cb8a8a68fa0f5d928258d",
+    "tests/gameplay/dialogue.gd": "b25a71f297c4eb960b1c9576e47eb5a4b54b6401daf65596d7839675a403666b",
+    "tests/gameplay/run.gd": "155ce79fc94057501364de191df94366fc0efd4824faafa47ae9ffb54d4b1e5d"
+  },
+  "captures": [
+    {
+      "path": "docs/gameplay/captures/dialogue-1920/conversation-memory.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "efec99e525a1a13f61d6f206b45341904cde4e781e3db425e1b5e9652e5ea421",
+      "visually_inspected": true,
+      "kind": "actual Godot render in controlled development world, original temporary project portraits"
+    },
+    {
+      "path": "docs/gameplay/captures/dialogue-1920/conversation.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "449809bdf507769f15739418d4241134a2873bea2a89fdaf55058a6eab220d37",
+      "visually_inspected": true,
+      "kind": "actual Godot render in controlled development world, original temporary project portraits"
+    },
+    {
+      "path": "docs/gameplay/captures/dialogue-1920/initiative.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "cb32466b3d1f74d517eb1869edb19f41e533dd4e8a8e3c07ad57f97f5b41cfdc",
+      "visually_inspected": true,
+      "kind": "actual Godot render in controlled development world, original temporary project portraits"
+    },
+    {
+      "path": "docs/gameplay/captures/dialogue-1366/adult.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "363c1f836e9938874c9138cb102417d02335ac50005d1bd0f985c4cb55ef31f5",
+      "visually_inspected": true,
+      "kind": "actual Godot render in controlled development world, original temporary project portraits"
+    },
+    {
+      "path": "docs/gameplay/captures/dialogue-1366/conversation-memory.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "aedc77e83ba49ca321b64af0e34b8d01792c4d1749e608d60ae117ca7828efb1",
+      "visually_inspected": true,
+      "kind": "actual Godot render in controlled development world, original temporary project portraits"
+    },
+    {
+      "path": "docs/gameplay/captures/dialogue-1366/message.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "6fc0ec4ef7587a125c007997a376f966210c70e80156202a21928aaa92265e93",
+      "visually_inspected": true,
+      "kind": "actual Godot render in controlled development world, original temporary project portraits"
+    }
+  ],
+  "limitations": [
+    "Finite authored contextual Russian dialogue, no external text generator.",
+    "Not full narrative or numeric parity with School; original donor code, art and lines are not included.",
+    "Adult dialogue is non-graphic discussion of relationships and sexuality; no staged explicit scenes.",
+    "Scripted prologue/chapter remains authored Dialogic flow; contextual graph is for free-roam.",
+    "New catalogue requires a new compatible world; no old-save migration or slot-file rewrite.",
+    "Main project retains existing addon exit warnings for 63 ObjectDB instances and 27 resources; standalone PCK exits cleanly."
+  ]
+}

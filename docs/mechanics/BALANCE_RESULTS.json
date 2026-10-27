@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-18",
+  "engine": "Godot 4.7.2 stable",
+  "scenario": "tests/mechanics/balance_probe.gd",
+  "scenario_sha256": "caada73bb1b24f93571103b31348dfc4dea956987f8db8c812ccbd1b89c590fd",
+  "baseline": "Phase 3 runtime restored outside project and run on Godot 4.6.3 with the same current policy fixture",
+  "before": {
+    "combat": {
+      "easy": {
+        "median_turns": 8,
+        "p90_turns": 10,
+        "seeds": 64,
+        "unfinished": 0,
+        "wins": 64
+      },
+      "hard": {
+        "median_turns": 10,
+        "p90_turns": 14,
+        "seeds": 64,
+        "unfinished": 0,
+        "wins": 58
+      },
+      "normal": {
+        "median_turns": 10,
+        "p90_turns": 14,
+        "seeds": 64,
+        "unfinished": 0,
+        "wins": 57
+      }
+    },
+    "daily_loop": {
+      "easy": {
+        "cash": 1694,
+        "days": 28,
+        "energy": 100.0,
+        "first_level_day": 4,
+        "followers": 166,
+        "food_failures": 0,
+        "health": 100.0,
+        "level": 5,
+        "mood": 70.0
+      },
+      "hard": {
+        "cash": 1313,
+        "days": 28,
+        "energy": 100.0,
+        "first_level_day": 5,
+        "followers": 166,
+        "food_failures": 16,
+        "health": 9.6,
+        "level": 4,
+        "mood": 0.0
+      },
+      "normal": {
+        "cash": 1294,
+        "days": 28,
+        "energy": 100.0,
+        "first_level_day": 5,
+        "followers": 166,
+        "food_failures": 12,
+        "health": 9.6,
+        "level": 4,
+        "mood": 0.0
+      }
+    },
+    "errors": [],
+    "stream_split": {
+      "1": {
+        "accepted": 60,
+        "followers": 93,
+        "income": 0,
+        "skill": 93
+      },
+      "15": {
+        "accepted": 4,
+        "followers": 4,
+        "income": 0,
+        "skill": 4
+      },
+      "60": {
+        "accepted": 1,
+        "followers": 2,
+        "income": 1,
+        "skill": 2
+      }
+    }
+  },
+  "after": {
+    "combat": {
+      "easy": {
+        "median_turns": 7,
+        "p90_turns": 9,
+        "seeds": 64,
+        "unfinished": 0,
+        "wins": 63
+      },
+      "hard": {
+        "median_turns": 9,
+        "p90_turns": 12,
+        "seeds": 64,
+        "unfinished": 0,
+        "wins": 34
+      },
+      "normal": {
+        "median_turns": 10,
+        "p90_turns": 13,
+        "seeds": 64,
+        "unfinished": 0,
+        "wins": 45
+      }
+    },
+    "daily_loop": {
+      "easy": {
+        "cash": 1753,
+        "days": 28,
+        "energy": 100.0,
+        "first_level_day": 4,
+        "followers": 204,
+        "food_failures": 0,
+        "health": 100.0,
+        "level": 5,
+        "mood": 70.2084101417443
+      },
+      "hard": {
+        "cash": 813,
+        "days": 28,
+        "energy": 100.0,
+        "first_level_day": 4,
+        "followers": 204,
+        "food_failures": 0,
+        "health": 100.0,
+        "level": 5,
+        "mood": 98.2127948061043
+      },
+      "normal": {
+        "cash": 1013,
+        "days": 28,
+        "energy": 100.0,
+        "first_level_day": 4,
+        "followers": 204,
+        "food_failures": 0,
+        "health": 100.0,
+        "level": 5,
+        "mood": 98.2127948061043
+      }
+    },
+    "errors": [],
+    "stream_split": {
+      "1": {
+        "accepted": 0,
+        "followers": 0,
+        "income": 0,
+        "skill": 0
+      },
+      "15": {
+        "accepted": 4,
+        "followers": 2,
+        "income": 4,
+        "skill": 6
+      },
+      "60": {
+        "accepted": 1,
+        "followers": 2,
+        "income": 4,
+        "skill": 6
+      }
+    }
+  },
+  "acceptance_passed": true,
+  "limitations": [
+    "Synthetic deterministic policies, not human playtests",
+    "Daily loop grants computer, omits route time, rent, education and quests",
+    "Combat uses equal stats 10, unarmed jab/recover policy, 64 seeds per difficulty"
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "scope": "Original adult layered-art candidates; manual curation before runtime or training; V2 expands coat hems and edits footwear per foot",
+  "output_prefix": "characters_v2/wardrobe_v2",
+  "preserve_input_latent": true,
+  "denoise": 0.84,
+  "steps": 32,
+  "cfg": 5.0,
+  "sampler": "euler_ancestral",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "naked, nipples, exposed breasts, exposed genitals, transparent clothes, torn clothes, 3d, realistic, glossy, metallic skin, thick outlines, text, watermark, logo, child, teen, chibi, multiple people, extra limbs, extra fingers, floating objects, cropped feet",
+  "items": [
+    {
+      "id": "female_bust_small",
+      "rig": "female_average",
+      "category": "anatomy",
+      "mask": "characters_v2/bases/female_average/bust-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, unclothed nonsexual anatomical body base, small natural adult breasts, modest flat chest, natural nipples, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721255,
+      "denoise": 0.85,
+      "image": "characters_v2/bases/female_average/reference.png",
+      "negative": "clothes, underwear, bikini, censorship, arousal, erection, erect penis, sexual activity, seductive pose, text, watermark, extra limbs, bad anatomy, 3d, realistic, child, teen, chibi, extreme proportions, exaggerated breasts, oversized breasts, penis, testicles"
+    },
+    {
+      "id": "female_bust_medium",
+      "rig": "female_average",
+      "category": "anatomy",
+      "mask": "characters_v2/bases/female_average/bust-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, unclothed nonsexual anatomical body base, medium natural adult breasts, balanced chest volume, natural nipples, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721272,
+      "denoise": 0.85,
+      "image": "characters_v2/bases/female_average/reference.png",
+      "negative": "clothes, underwear, bikini, censorship, arousal, erection, erect penis, sexual activity, seductive pose, text, watermark, extra limbs, bad anatomy, 3d, realistic, child, teen, chibi, extreme proportions, exaggerated breasts, oversized breasts, penis, testicles"
+    },
+    {
+      "id": "male_anatomy_small",
+      "rig": "male_toned",
+      "category": "anatomy",
+      "mask": "characters_v2/bases/male_toned/anatomy-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, unclothed nonsexual adult anatomical base, small natural flaccid external male anatomy, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721289,
+      "denoise": 0.85,
+      "image": "characters_v2/bases/male_toned/reference.png",
+      "negative": "clothes, underwear, bikini, censorship, arousal, erection, erect penis, sexual activity, seductive pose, text, watermark, extra limbs, bad anatomy, 3d, realistic, child, teen, chibi, extreme proportions, huge genitals, oversized genitals, vulva, breasts"
+    },
+    {
+      "id": "male_anatomy_larger",
+      "rig": "male_toned",
+      "category": "anatomy",
+      "mask": "characters_v2/bases/male_toned/anatomy-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, unclothed nonsexual adult anatomical base, moderately larger natural flaccid external male anatomy, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721306,
+      "denoise": 0.85,
+      "image": "characters_v2/bases/male_toned/reference.png",
+      "negative": "clothes, underwear, bikini, censorship, arousal, erection, erect penis, sexual activity, seductive pose, text, watermark, extra limbs, bad anatomy, 3d, realistic, child, teen, chibi, extreme proportions, huge genitals, oversized genitals, vulva, breasts"
+    },
+    {
+      "id": "female_winter_coat",
+      "rig": "female_average",
+      "category": "winter",
+      "mask": "characters_v2/bases/female_average/coat-long-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing a closed winter wool coat with long sleeves, knitted scarf around neck, plain practical coat, coat hem at hips, long winter trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721000,
+      "denoise": 0.78,
+      "image": "characters_v2/staged/female_trousers_probe.png"
+    },
+    {
+      "id": "female_winter_complete_left",
+      "rig": "female_average",
+      "category": "winter",
+      "mask": "characters_v2/bases/female_average/shoe-0-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing practical dark leather winter ankle boots, warm winter trousers over boot tops, closed winter coat, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721017,
+      "denoise": 0.9,
+      "image_from": "female_winter_coat"
+    },
+    {
+      "id": "female_winter_complete",
+      "rig": "female_average",
+      "category": "winter",
+      "mask": "characters_v2/bases/female_average/shoe-1-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing practical dark leather winter ankle boots, warm winter trousers over boot tops, closed winter coat, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721017,
+      "denoise": 0.9,
+      "image_from": "female_winter_complete_left"
+    },
+    {
+      "id": "male_winter_trousers",
+      "rig": "male_toned",
+      "category": "winter",
+      "mask": "characters_v2/bases/male_toned/bottom-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing (dark charcoal straight long trousers:1.4), loose warm winter trousers, fabric waistband, cloth covers entire legs down to ankles, bare feet, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721034,
+      "denoise": 0.84,
+      "image": "characters_v2/bases/male_toned/reference.png"
+    },
+    {
+      "id": "male_winter_coat",
+      "rig": "male_toned",
+      "category": "winter",
+      "mask": "characters_v2/bases/male_toned/coat-long-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing a closed dark navy winter parka, long sleeves, gray knitted scarf, plain practical winter coat, coat hem below hips, long winter trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721051,
+      "denoise": 0.78,
+      "image_from": "male_winter_trousers"
+    },
+    {
+      "id": "male_winter_complete_left",
+      "rig": "male_toned",
+      "category": "winter",
+      "mask": "characters_v2/bases/male_toned/shoe-0-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing dark practical leather winter ankle boots, long winter trousers over boot tops, closed winter coat, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721068,
+      "denoise": 0.9,
+      "image_from": "male_winter_coat"
+    },
+    {
+      "id": "male_winter_complete",
+      "rig": "male_toned",
+      "category": "winter",
+      "mask": "characters_v2/bases/male_toned/shoe-1-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing dark practical leather winter ankle boots, long winter trousers over boot tops, closed winter coat, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721068,
+      "denoise": 0.9,
+      "image_from": "male_winter_complete_left"
+    },
+    {
+      "id": "female_underwear",
+      "rig": "female_average",
+      "category": "underwear",
+      "mask": "characters_v2/bases/female_average/underwear-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing a plain opaque cotton bra and plain matching cotton briefs, ordinary white underwear, natural adult body, bare feet, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721085,
+      "denoise": 0.82,
+      "image": "characters_v2/bases/female_average/reference.png"
+    },
+    {
+      "id": "male_underwear",
+      "rig": "male_toned",
+      "category": "underwear",
+      "mask": "characters_v2/bases/male_toned/underwear-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing plain dark boxer briefs, ordinary underwear, shirtless adult torso, bare feet, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721102,
+      "denoise": 0.82,
+      "image": "characters_v2/bases/male_toned/reference.png",
+      "negative": "exposed genitals, transparent clothes, torn clothes, 3d, realistic, glossy, metallic skin, thick outlines, text, watermark, logo, child, teen, chibi, multiple people, extra limbs, extra fingers, floating objects, cropped feet"
+    },
+    {
+      "id": "female_casual",
+      "rig": "female_average",
+      "category": "casual",
+      "mask": "characters_v2/bases/female_average/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing plain white short sleeve blouse, simple everyday outfit, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721119,
+      "denoise": 0.82,
+      "image": "characters_v2/staged/female_trousers_probe.png"
+    },
+    {
+      "id": "male_casual",
+      "rig": "male_toned",
+      "category": "casual",
+      "mask": "characters_v2/bases/male_toned/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing plain gray short sleeve t-shirt, simple everyday outfit, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721136,
+      "denoise": 0.82,
+      "image_from": "male_winter_trousers"
+    },
+    {
+      "id": "female_home",
+      "rig": "female_average",
+      "category": "home",
+      "mask": "characters_v2/bases/female_average/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing loose soft long sleeve home shirt, relaxed home outfit, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721153,
+      "denoise": 0.82,
+      "image": "characters_v2/staged/female_trousers_probe.png"
+    },
+    {
+      "id": "male_home",
+      "rig": "male_toned",
+      "category": "home",
+      "mask": "characters_v2/bases/male_toned/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing loose soft long sleeve home shirt, relaxed home outfit, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721170,
+      "denoise": 0.82,
+      "image_from": "male_winter_trousers"
+    },
+    {
+      "id": "female_work",
+      "rig": "female_average",
+      "category": "work",
+      "mask": "characters_v2/bases/female_average/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing plain collared blouse with fitted office jacket, business outfit, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721187,
+      "denoise": 0.82,
+      "image": "characters_v2/staged/female_trousers_probe.png"
+    },
+    {
+      "id": "male_work",
+      "rig": "male_toned",
+      "category": "work",
+      "mask": "characters_v2/bases/male_toned/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing plain collared shirt and simple office jacket, business outfit, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721204,
+      "denoise": 0.82,
+      "image_from": "male_winter_trousers"
+    },
+    {
+      "id": "female_outerwear",
+      "rig": "female_average",
+      "category": "outerwear",
+      "mask": "characters_v2/bases/female_average/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, wearing closed light green casual bomber jacket, long sleeves, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721221,
+      "denoise": 0.82,
+      "image": "characters_v2/staged/female_trousers_probe.png"
+    },
+    {
+      "id": "male_outerwear",
+      "rig": "male_toned",
+      "category": "outerwear",
+      "mask": "characters_v2/bases/male_toned/upper-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult man, short brown hair, blue eyes, male focus, age 28, wearing closed olive casual bomber jacket, long sleeves, long trousers, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 721238,
+      "denoise": 0.82,
+      "image_from": "male_winter_trousers"
+    }
+  ]
+}

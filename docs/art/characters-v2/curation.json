@@ -1,0 +1,147 @@
+{
+  "train_01_female": {
+    "decision": "accept",
+    "reason": "Thin line, flat skin, coherent eyes and grouped hair. Caption corrected to observed gray hair and window background.",
+    "caption": "eincanime, 1girl, adult woman, age 28, short gray bob hair, green eyes, white t-shirt, upper body portrait, neutral expression, window background"
+  },
+  "train_02_male": {
+    "decision": "reject",
+    "reason": "Rugged aged face, broad nostrils and forehead creases depart from the chosen simple face rendering."
+  },
+  "train_03_female": {
+    "decision": "accept",
+    "reason": "Consistent thin outline, one skin shadow, clear eyes, ordinary moderate proportions. Caption corrected to navy hair and gray wall.",
+    "caption": "eincanime, 1girl, adult woman, age 28, long dark navy hair, blue eyes, navy blue oversized t-shirt, standing, waist up, neutral expression, gray wall background"
+  },
+  "train_04_male": {
+    "decision": "accept",
+    "reason": "Thin outlines, clean face and coherent limited shadow palette. Caption corrected to white shirt.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short blond hair, blue eyes, white t-shirt, waist up, standing, gentle smile, light gray background"
+  },
+  "train_05_female": {
+    "decision": "accept",
+    "reason": "Full figure, simple coherent cel shading, modest build, visible feet. Corrected actual trouser color.",
+    "caption": "eincanime, 1girl, adult woman, age 28, long blond hair, amber eyes, green t-shirt, cream cropped trousers, navy sneakers, standing, full body, light gray background"
+  },
+  "train_06_male": {
+    "decision": "accept",
+    "reason": "Full adult male figure in a coherent flat anime family, natural stance, small simply drawn nose. Corrected observed black hair and ochre shirt.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short black hair, amber eyes, ochre t-shirt, black trousers, gray sneakers, standing, full body, neutral expression, light gray background"
+  },
+  "train_07_female": {
+    "decision": "accept",
+    "reason": "Clean three-quarter adult face, limited cel colors and consistent outlines. Caption corrected to actual auburn ponytail, brown eyes and white shirt.",
+    "caption": "eincanime, 1girl, adult woman, age 28, long auburn ponytail, brown eyes, white t-shirt, upper body portrait, three-quarter view, neutral expression, light gray background"
+  },
+  "train_08_male": {
+    "decision": "reject",
+    "reason": "Aged face, forehead creases, thick eyebrows and multi-plane shading diverge from the target."
+  },
+  "train_09_female": {
+    "decision": "accept",
+    "reason": "Clean limited shadows, thin outline, clear simple face. Corrected actual colors and framing.",
+    "caption": "eincanime, 1girl, adult woman, age 28, short silver hair, teal eyes, mint green t-shirt, dark jeans, waist up, gentle smile, light gray background"
+  },
+  "train_10_male": {
+    "decision": "accept",
+    "reason": "Coherent cel palette, simple facial drawing and thin garment outlines. Corrected colors.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short auburn hair, teal eyes, teal t-shirt, waist up, neutral expression, light gray background"
+  },
+  "train_11_female": {
+    "decision": "accept",
+    "reason": "Full body within frame, simple small face and moderate silhouette, consistent matte palette.",
+    "caption": "eincanime, 1girl, adult woman, age 28, long light brown hair, gray eyes, gray t-shirt, dark gray cropped trousers, navy sneakers, full body, standing, light gray background"
+  },
+  "train_12_male": {
+    "decision": "accept",
+    "reason": "Strong representative male style target: simplified face, grouped hair, controlled cel shadows, thin outline.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short dark blue hair, blue eyes, brown t-shirt, dark trousers, brown sneakers, full body, standing, gentle smile, light gray background"
+  },
+  "train_13_female": {
+    "decision": "accept",
+    "reason": "Consistent thin contour, matte palette and limited cel shadows; caption corrected after visual inspection.",
+    "caption": "eincanime, 1girl, adult woman, age 28, long lavender hair, violet eyes, pale blue t-shirt, upper body, neutral expression, light gray background"
+  },
+  "train_14_male": {
+    "decision": "accept",
+    "reason": "Consistent thin contour, matte palette and limited cel shadows; caption corrected after visual inspection.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short dark brown hair, violet eyes, pale lilac t-shirt, waist up, standing, three-quarter view, neutral expression, light gray background"
+  },
+  "train_15_female": {
+    "decision": "accept",
+    "reason": "Thin lines, flat matte color, controlled facial and skin shadows, moderate proportions. Actual colors captioned.",
+    "caption": "eincanime, 1girl, adult woman, age 28, short dark blue bob hair, gray eyes, ochre t-shirt, waist up, neutral expression, light gray background"
+  },
+  "train_16_male": {
+    "decision": "reject",
+    "reason": "Unwanted generated shirt emblem; keep unmarked garments in this small style dataset."
+  },
+  "train_17_female": {
+    "decision": "accept",
+    "reason": "Visually checked: clear original adult character, coherent thin contour, matte color, limited cel shadows. Observed colors and framing captioned.",
+    "caption": "eincanime, 1girl, adult woman, age 28, short gray bob hair, green eyes, white t-shirt, navy trousers, gray sneakers, full body, standing, light gray background"
+  },
+  "train_18_male": {
+    "decision": "accept",
+    "reason": "Visually checked: clear original adult character, coherent thin contour, matte color, limited cel shadows. Observed colors and framing captioned.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short dark brown hair, green eyes, light olive green t-shirt, dark green trousers, gray sneakers, full body, standing, gentle smile, light gray background"
+  },
+  "train_19_female": {
+    "decision": "accept",
+    "reason": "Visually checked: clear original adult character, coherent thin contour, matte color, limited cel shadows. Observed colors and framing captioned.",
+    "caption": "eincanime, 1girl, adult woman, age 28, short dark navy bob hair, blue eyes, navy t-shirt, upper body portrait, neutral expression, light gray background"
+  },
+  "train_20_male": {
+    "decision": "reject",
+    "reason": "Unwanted generated multicolored shirt emblem; not included in the style training selection."
+  },
+  "train_21_female": {
+    "decision": "accept",
+    "reason": "Clear original adult figure, thin linework, restrained matte palette and simple face. Caption corrected to actual output.",
+    "caption": "eincanime, 1girl, adult woman, age 28, long blond hair, amber eyes, light green oversized t-shirt, standing, waist up, neutral expression, light gray background"
+  },
+  "train_23_female": {
+    "decision": "accept",
+    "reason": "Clear original adult figure, thin linework, restrained matte palette and simple face. Caption corrected to actual output.",
+    "caption": "eincanime, 1girl, adult woman, age 28, auburn ponytail, brown eyes, white t-shirt, navy cropped trousers, navy sneakers, full body, standing, neutral expression, light gray background"
+  },
+  "train_22_male": {
+    "decision": "reject",
+    "reason": "Orange skin, black heavy shadow shapes, thick outline: clear color/rendering failure."
+  },
+  "train_24_male": {
+    "decision": "accept",
+    "reason": "Full original adult male figure, coherent simple face, thin lines and limited matte shadows. Corrected actual outfit and eye colors.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short silver hair, brown eyes, gray t-shirt, black trousers, navy sneakers, full body, standing, three-quarter view, gentle smile, light gray background"
+  },
+  "holdout_01_female": {
+    "decision": "accept",
+    "reason": "Known unwanted shirt text retained as a validation challenge; excluded from training.",
+    "caption": "eincanime, 1girl, adult woman, age 28, auburn ponytail, brown eyes, white printed t-shirt, upper body portrait, neutral expression, light gray background"
+  },
+  "holdout_02_male": {
+    "decision": "accept",
+    "reason": "Independent-seed adult male baseline, not training data.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short silver hair, brown eyes, gray t-shirt, waist up, neutral expression, light gray background"
+  },
+  "holdout_03_female": {
+    "decision": "accept",
+    "reason": "Independent-seed adult female baseline, not training data.",
+    "caption": "eincanime, 1girl, adult woman, age 28, short silver hair, teal eyes, cream t-shirt, waist up, gentle smile, light gray background"
+  },
+  "holdout_04_male": {
+    "decision": "accept",
+    "reason": "Independent-seed adult male baseline, not training data.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short auburn hair, teal eyes, teal t-shirt, waist up, neutral expression, light gray background"
+  },
+  "holdout_05_female": {
+    "decision": "accept",
+    "reason": "Independent-seed full adult female baseline, not training data.",
+    "caption": "eincanime, 1girl, adult woman, age 28, shoulder-length brown hair, blue-gray eyes, gray t-shirt, gray cropped trousers, navy sneakers, full body, standing, light gray background"
+  },
+  "holdout_06_male": {
+    "decision": "accept",
+    "reason": "Independent-seed full adult male baseline, not training data.",
+    "caption": "eincanime, 1boy, male focus, adult man, age 28, short dark blue hair, gray eyes, brown t-shirt, navy trousers, brown shoes, full body, standing, gentle smile, light gray background"
+  }
+}

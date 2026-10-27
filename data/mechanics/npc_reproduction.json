@@ -1,0 +1,15 @@
+{
+  "npc_reproduction_rules": {
+    "simulation": {
+      "scan_minutes":30, "health_minutes":60, "stage_minutes":1,
+      "max_sessions":8, "max_jobs":24, "actor_budget":32,
+      "pair_candidates":8, "initiative_chance":0.3,
+      "pair_cooldown":1440, "decline_cooldown":360,
+      "opening_hour":18, "closing_hour":22,
+      "courtship_trust":12, "job_retry_minutes":180,
+      "decision_delay":60, "barrier_stock":3, "pill_stock":4,
+      "shop_minutes":5, "paperwork_minutes":15,
+      "reserve_money":15, "history_limit":128
+    }
+  }
+}

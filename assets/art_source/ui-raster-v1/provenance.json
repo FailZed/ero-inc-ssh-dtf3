@@ -1,0 +1,218 @@
+{
+  "generator": "OpenAI built-in ImageGen",
+  "date": "2026-10-27",
+  "role": "Original production raster artwork. Native Godot controls provide all text, focus and interactions.",
+  "style": "Nocturnal painterly realism, blue-black and steel-blue with restrained copper light.",
+  "assets": [
+    {
+      "id": "meal",
+      "original_file": "exec-4697005e-421a-4fac-bc64-fc024037ddfb.png",
+      "source": "meal.png"
+    },
+    {
+      "id": "phone_body",
+      "original_file": "exec-7754471c-7015-426f-bbed-cca81b5b1a78.png",
+      "source": "phone_body.png"
+    },
+    {
+      "id": "journal_surface",
+      "original_file": "exec-1b8f02a3-c10c-41cd-894c-43a22b156623.png",
+      "source": "journal_surface.png"
+    },
+    {
+      "id": "book",
+      "original_file": "exec-843e17d3-e335-4e30-b733-012de7f11550.png",
+      "source": "book.png"
+    },
+    {
+      "id": "jacket",
+      "original_file": "exec-f93197f7-e3e6-431a-b37d-609cc8f75b0c.png",
+      "source": "jacket.png"
+    },
+    {
+      "id": "backpack",
+      "original_file": "exec-2eb638d0-acb1-417a-9c2c-c59757e20ef1.png",
+      "source": "backpack.png"
+    },
+    {
+      "id": "phone_wallpaper",
+      "original_file": "exec-c588f70d-2ebd-4857-a2d7-11f26695f34e.png",
+      "source": "phone_wallpaper.png"
+    },
+    {
+      "id": "computer",
+      "original_file": "exec-301b722a-6921-4f95-815d-c48144d3205a.png",
+      "source": "computer.png"
+    },
+    {
+      "id": "stove",
+      "original_file": "exec-3660bd32-67de-4096-8935-ea269234c2ab.png",
+      "source": "stove.png"
+    },
+    {
+      "id": "desk",
+      "original_file": "exec-7b817e6a-b81a-4f2c-8f50-b77dd790b773.png",
+      "source": "desk.png"
+    },
+    {
+      "id": "phone_wallpaper_rain",
+      "original_file": "exec-86ec7c42-118b-4cfe-80f6-14ea6dd36ac8.png",
+      "source": "phone_wallpaper_rain.png"
+    },
+    {
+      "id": "grain",
+      "original_file": "exec-39dfbb2d-e2ff-4459-9d3b-ed6b4893337f.png",
+      "source": "grain.png"
+    },
+    {
+      "id": "vegetable",
+      "original_file": "exec-9ab0f8f3-a241-4c1e-9faf-4580760dec00.png",
+      "source": "vegetable.png"
+    },
+    {
+      "id": "lockpick",
+      "original_file": "exec-7fee8abe-dfcb-42cb-86c2-2fa0cb001aaa.png",
+      "source": "lockpick.png"
+    },
+    {
+      "id": "phone_wallpaper_water",
+      "original_file": "exec-020dff83-436c-492f-9196-41ff75cf2b0d.png",
+      "source": "phone_wallpaper_water.png"
+    },
+    {
+      "id": "app_messages",
+      "source": "app_messages.png",
+      "original_file": "exec-6f5a537b-f0a4-4b6f-9503-6a1895ad42a3.png"
+    },
+    {
+      "id": "app_contacts",
+      "source": "app_contacts.png",
+      "original_file": "exec-c54826db-3587-45ea-aa82-2293c5963ce4.png"
+    },
+    {
+      "id": "app_calendar",
+      "source": "app_calendar.png",
+      "original_file": "exec-2447e78e-3b69-4252-8a18-3ee719e0d177.png"
+    },
+    {
+      "id": "app_bank",
+      "source": "app_bank.png",
+      "original_file": "exec-310cc1ec-a43d-4676-9fd8-d82d6503fbd9.png"
+    },
+    {
+      "id": "app_map",
+      "source": "app_map.png",
+      "original_file": "exec-70403a6f-51a7-43d8-8122-504cac09e589.png"
+    },
+    {
+      "id": "app_journal",
+      "source": "app_journal.png",
+      "original_file": "exec-9c9cf7f1-d26a-45ee-82c2-3b0e2ccd972b.png"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "meal",
+      "prompt_summary": "Prepared chicken, rice and vegetables on blue gray plate; cool moonlight warm amber; transparent square inventory art."
+    },
+    {
+      "id": "phone_body",
+      "prompt_summary": "Exactly front-on slim dark gunmetal smartphone, blank navy screen with camera dot, no UI, true alpha, portrait."
+    },
+    {
+      "id": "journal_surface",
+      "prompt_summary": "Open dark blue leather organizer, blank slate paper, narrow left page and broad right page, seam at 31 percent, seven steel rings, copper bookmark, transparent wide spread."
+    },
+    {
+      "id": "book",
+      "transparent_background": true,
+      "prompt": "Production raster game asset for EroInc, an original modern nocturnal life-sim RPG. Premium hand-painted realism with tactile materials and restrained brushwork, softly modelled volumes, clean readable silhouette, cool upper-left moonlight and subtle warm amber bounce; blue-black, steel blue, muted teal and restrained copper palette. NOT vector, not flat illustration, not clipart, not plastic 3D. ONE isolated closed hardback personal book, three-quarter overhead view, blue-teal cloth and leather cover, a slightly worn steel-blue spine, cream page edges and one copper-orange ribbon bookmark. Subtle abstract embossed decoration only, absolutely no lettering or logo. Whole book centered with generous alpha padding, occupies 75 percent of square canvas, readable at 64x64. No scene, no hands, no table, no extra objects, no UI frame, no badge, no text, no watermark; true transparent background."
+    },
+    {
+      "id": "jacket",
+      "transparent_background": true,
+      "prompt": "Production raster game asset for EroInc, an original modern nocturnal life-sim RPG. Premium hand-painted realism with tactile materials and restrained brushwork, softly modelled volumes, clean readable silhouette, cool upper-left moonlight and subtle warm amber bounce; blue-black, steel blue, muted teal and restrained copper palette. NOT vector, not flat illustration, not clipart, not plastic 3D. ONE isolated everyday adult blue-grey casual jacket, neatly folded but instantly recognizable as a jacket with its collar, sleeves and front zip visible. Contemporary practical canvas fabric with subtle stitching and natural creases, no brand or logo. Three-quarter overhead view, whole jacket centered with generous alpha padding, occupies 75 percent of square canvas, readable at 64x64. No mannequin, no person, no hands, no hanger, no scene, no UI frame, no text, no watermark; true transparent background."
+    },
+    {
+      "id": "backpack",
+      "transparent_background": true,
+      "prompt": "Production raster game asset for EroInc, an original modern nocturnal life-sim RPG. Premium hand-painted realism with tactile materials and restrained brushwork, softly modelled volumes, clean readable silhouette, cool upper-left moonlight and subtle warm amber bounce; blue-black, steel blue, muted teal and restrained copper palette. NOT vector, not flat illustration, not clipart, not plastic 3D. ONE isolated modern compact backpack, three-quarter front view, dark charcoal-blue canvas and understated leather panels, a small front pocket, brushed steel buckles and restrained copper zipper details. Credible fabric weave and softened wear on seams. Whole object visible, centered with generous alpha padding, occupies 78 percent of square canvas, reads very clearly at 48x48 and 64x64. No scene, no person, no letters, no brand, no logo, no UI badge, no frame, no text, no watermark; true transparent background."
+    },
+    {
+      "id": "phone_wallpaper",
+      "transparent_background": false,
+      "prompt": "Production raster wallpaper artwork for an in-game phone in EroInc, an original modern nocturnal life-sim RPG. Upright portrait 9:19 composition. A quiet contemporary river city at blue hour deepening into night, subtle painted realism, atmospheric blue-black sky, pale blue moon glow behind wispy clouds, softly reflected warm amber windows along the river. Distant buildings and river occupy the lower 40 percent; upper 60 percent is calm, low-contrast dark navy atmosphere for a live clock and app icons. Restrained, elegant, tactile painterly surface; no neon cyberpunk, no purple, no fantasy castle. The artwork itself only: no phone body, no mockup, no interface, no icons, no clock, no lettering, no labels, no people, no logos, no watermark. This is an original city mood painting, not a diagram or map."
+    },
+    {
+      "id": "computer",
+      "transparent_background": true,
+      "prompt": "Production isolated inventory item icon for EroInc, an original modern nocturnal RPG. Premium detailed hand-painted realism: tactile materials, controlled brushwork, readable silhouette, cool upper-left moonlight and faint amber bounce, blue-black, steel-blue, muted teal and copper palette. NOT vector or clipart, no flat symbolic rendering, no cartoon outlines. Three-quarter overhead view. Square canvas, one complete object centered, generous true transparent margin, about 75 percent occupancy, readable at 64 pixels. No scene, no hands, no person, no text, no labels, no logo, no watermark. One contemporary desktop computer set as a single coherent inventory object: a slim dark steel-blue monitor with an unlit empty navy screen, small keyboard neatly in front and a compact computer tower beside it. Clean realistic plastic and brushed steel, no letters or keyboard legends visible at icon scale. Entire set fits within the canvas."
+    },
+    {
+      "id": "stove",
+      "transparent_background": true,
+      "prompt": "Production isolated inventory item icon for EroInc, an original modern nocturnal RPG. Premium detailed hand-painted realism: tactile materials, controlled brushwork, readable silhouette, cool upper-left moonlight and faint amber bounce, blue-black, steel-blue, muted teal and copper palette. NOT vector or clipart, no flat symbolic rendering, no cartoon outlines. Three-quarter overhead view. Square canvas, one complete object centered, generous true transparent margin, about 75 percent occupancy, readable at 64 pixels. No scene, no hands, no person, no text, no labels, no logo, no watermark. One compact freestanding domestic electric cooker: matte blue-grey enamel, dark glass oven door with visible metal handle, four dark circular burner plates on top, a few simple unlettered knobs. Contemporary practical kitchen appliance, slightly tactile clean enamel and steel, fully visible, no cooking pots or additional items."
+    },
+    {
+      "id": "desk",
+      "transparent_background": true,
+      "prompt": "Production isolated inventory item icon for EroInc, an original modern nocturnal RPG. Premium detailed hand-painted realism: tactile materials, controlled brushwork, readable silhouette, cool upper-left moonlight and faint amber bounce, blue-black, steel-blue, muted teal and copper palette. NOT vector or clipart, no flat symbolic rendering, no cartoon outlines. Three-quarter overhead view. Square canvas, one complete object centered, generous true transparent margin, about 75 percent occupancy, readable at 64 pixels. No scene, no hands, no person, no text, no labels, no logo, no watermark. One practical small writing desk: dark warm walnut top, slim muted steel-blue legs, one small drawer with a brushed metal handle. Empty surface, original contemporary everyday furniture, not fantasy, fully visible including all legs, stable and readable silhouette."
+    },
+    {
+      "id": "phone_wallpaper_rain",
+      "transparent_background": false,
+      "prompt": "Production phone wallpaper for original nocturnal RPG EroInc, upright portrait 9:19. Painterly realistic view down a quiet contemporary city side street just after rain. Deep blue-black night sky and building silhouettes occupy upper 60 percent with very little contrast; lower 40 percent has a softly glowing amber cafe window, wet cobblestones reflecting muted warm light, a couple of potted plants and fine drifting mist. Refined hand-painted raster game environment with tactile materials, blue-black, steel blue, restrained warm orange; elegant calm mood, no purple neon, no cyberpunk spectacle. No people, no cars in foreground, no phone body, no app icons, no UI, no typography, no lettering on shopfronts, no logos, no watermark. Maintain quiet dark negative space for a live phone clock and icons."
+    },
+    {
+      "id": "grain",
+      "prompt": "A single premium hand-painted raster game inventory illustration for EroInc, nocturnal contemporary life RPG. Semi-realistic tactile materials, restrained brush texture, crisp silhouette, cool blue moonlight from upper left with a small warm copper highlight. Match a slate blue black UI with off-white labels. Three-quarter product view, object occupies 80% of a square canvas, centered, fully contained. No text, no letters, no numbers, no frame, no UI, no symbols. True transparent background; no checkerboard or ground plane. A small open unbranded kraft paper bag containing raw golden rice grains, folded paper edges and a small handful of rice at its base. Only the bag and rice.",
+      "transparent_background": true
+    },
+    {
+      "id": "vegetable",
+      "prompt": "A single premium hand-painted raster game inventory illustration for EroInc, nocturnal contemporary life RPG. Semi-realistic tactile materials, restrained brush texture, crisp silhouette, cool blue moonlight from upper left with a small warm copper highlight. Match a slate blue black UI with off-white labels. Three-quarter product view, object occupies 80% of a square canvas, centered, fully contained. No text, no letters, no numbers, no frame, no UI, no symbols. True transparent background; no checkerboard or ground plane. A fresh vegetable bundle: one carrot with green tops, one small cabbage and one red tomato, arranged as a compact readable inventory icon. No bowl.",
+      "transparent_background": true
+    },
+    {
+      "id": "lockpick",
+      "prompt": "A single premium hand-painted raster game inventory illustration for EroInc, nocturnal contemporary life RPG. Semi-realistic tactile materials, restrained brush texture, crisp silhouette, cool blue moonlight from upper left with a small warm copper highlight. Match a slate blue black UI with off-white labels. Three-quarter product view, object occupies 80% of a square canvas, centered, fully contained. No text, no letters, no numbers, no frame, no UI, no symbols. True transparent background; no checkerboard or ground plane. A small realistic dark steel lockpick kit, two thin polished lockpicks and a tension wrench arranged diagonally on a half-open black leather tool pouch. Elegant simple identifiable shapes, no weapons.",
+      "transparent_background": true
+    },
+    {
+      "id": "phone_wallpaper_water",
+      "prompt": "Create a premium painted nocturnal smartphone wallpaper, portrait aspect ratio 9:19. A quiet lake and distant dark mountains at blue hour, one small copper window in a cabin at the far shore, soft mist, delicate moonlight reflections. Painterly realism with soft matte brushwork; blue-black, desaturated steel-blue, restrained amber. Elegant tranquil spacious composition. Top 40 percent almost empty smooth deep navy sky for live clock text, low contrast middle for real app icons, all detail in lower third. Full-bleed artwork only, absolutely no phone mockup, no device, no text, no letters, no UI, no border. Original game environment.",
+      "transparent_background": false
+    },
+    {
+      "id": "app_messages",
+      "prompt": "Create ONE original raster Android-style launcher app icon for the fictional EroInc phone. Modern Android Material design language, simple bold friendly geometry, flat matte colors, clean graphic silhouette, a subtle two-tone layer for depth, absolutely no photorealism, no glossy 3D, no metal, no tiny detail. Perfectly front-on. A single circular adaptive icon plate centered in a square canvas, diameter 84% of canvas, with generous fully transparent margin outside the circle. No phone, no mockup, no screenshot, no grid, no frame, no lettering, no numbers, no logos, no words. Smooth high quality antialiased raster edges. The symbol is large, centered, recognizable at 48px and occupies 55% of the circle. Cohesive original app family inspired by Android, without copying an existing brand's exact icon. Messages app: rich medium cobalt-blue circular plate, one large off-white rounded speech bubble with a small tail, two short thick blue message bars inside, a pale blue offset bubble layer behind. Cheerful simple modern Android SMS visual.",
+      "transparent_background": true
+    },
+    {
+      "id": "app_contacts",
+      "prompt": "Create ONE original raster Android-style launcher app icon for the fictional EroInc phone. Modern Android Material design language, simple bold friendly geometry, flat matte colors, clean graphic silhouette, a subtle two-tone layer for depth, absolutely no photorealism, no glossy 3D, no metal, no tiny detail. Perfectly front-on. A single circular adaptive icon plate centered in a square canvas, diameter 84% of canvas, with generous fully transparent margin outside the circle. No phone, no mockup, no screenshot, no grid, no frame, no lettering, no numbers, no logos, no words. Smooth high quality antialiased raster edges. The symbol is large, centered, recognizable at 48px and occupies 55% of the circle. Cohesive original app family inspired by Android, without copying an existing brand's exact icon. Contacts app: warm muted apricot-orange circular plate, a single large off-white head-and-shoulders person silhouette, a small deeper-orange second shoulder layer behind. Bold friendly Android address book visual.",
+      "transparent_background": true
+    },
+    {
+      "id": "app_calendar",
+      "prompt": "Create ONE original raster Android-style launcher app icon for the fictional EroInc phone. Modern Android Material design language, simple bold friendly geometry, flat matte colors, clean graphic silhouette, a subtle two-tone layer for depth, absolutely no photorealism, no glossy 3D, no metal, no tiny detail. Perfectly front-on. A single circular adaptive icon plate centered in a square canvas, diameter 84% of canvas, with generous fully transparent margin outside the circle. No phone, no mockup, no screenshot, no grid, no frame, no lettering, no numbers, no logos, no words. Smooth high quality antialiased raster edges. The symbol is large, centered, recognizable at 48px and occupies 55% of the circle. Cohesive original app family inspired by Android, without copying an existing brand's exact icon. Calendar app: very pale cool ivory circular plate, one large blue-and-white tear-off calendar page with two blue binding tabs, blue top header and a simple 2 by 3 grid of small blue square date marks, no numbers at all. Clean bold Android calendar visual.",
+      "transparent_background": true
+    },
+    {
+      "id": "app_bank",
+      "prompt": "Create ONE original raster Android-style launcher app icon for the fictional EroInc phone. Modern Android Material design language, simple bold friendly geometry, flat matte colors, clean graphic silhouette, a subtle two-tone layer for depth, absolutely no photorealism, no glossy 3D, no metal, no tiny detail. Perfectly front-on. A single circular adaptive icon plate centered in a square canvas, diameter 84% of canvas, with generous fully transparent margin outside the circle. No phone, no mockup, no screenshot, no grid, no frame, no lettering, no numbers, no logos, no words. Smooth high quality antialiased raster edges. The symbol is large, centered, recognizable at 48px and occupies 55% of the circle. Cohesive original app family inspired by Android, without copying an existing brand's exact icon.  Banking app: rich calm emerald-green circular plate, one large off-white simplified folded wallet silhouette with a small rounded mint-green clasp and a single dark-green dot. An extra pale-mint bank card peeks from the top. Bold clean Android wallet visual, no currency signs, no letters, no numbers.",
+      "transparent_background": true
+    },
+    {
+      "id": "app_map",
+      "prompt": "Create ONE original raster Android-style launcher app icon for the fictional EroInc phone. Modern Android Material design language, simple bold friendly geometry, flat matte colors, clean graphic silhouette, a subtle two-tone layer for depth, absolutely no photorealism, no glossy 3D, no metal, no tiny detail. Perfectly front-on. A single circular adaptive icon plate centered in a square canvas, diameter 84% of canvas, with generous fully transparent margin outside the circle. No phone, no mockup, no screenshot, no grid, no frame, no lettering, no numbers, no logos, no words. Smooth high quality antialiased raster edges. The symbol is large, centered, recognizable at 48px and occupies 55% of the circle. Cohesive original app family inspired by Android, without copying an existing brand's exact icon.  City map app: soft pale mint-green circular plate, a simple folded map made of three broad panels in sage green, pale blue and warm cream, one bold coral-orange location pin in front with a circular hole. Clean flat readable Android maps visual, no lettering or roads with labels.",
+      "transparent_background": true
+    },
+    {
+      "id": "app_journal",
+      "prompt": "Create ONE original raster Android-style launcher app icon for the fictional EroInc phone. Modern Android Material design language, simple bold friendly geometry, flat matte colors, clean graphic silhouette, a subtle two-tone layer for depth, absolutely no photorealism, no glossy 3D, no metal, no tiny detail. Perfectly front-on. A single circular adaptive icon plate centered in a square canvas, diameter 84% of canvas, with generous fully transparent margin outside the circle. No phone, no mockup, no screenshot, no grid, no frame, no lettering, no numbers, no logos, no words. Smooth high quality antialiased raster edges. The symbol is large, centered, recognizable at 48px and occupies 55% of the circle. Cohesive original app family inspired by Android, without copying an existing brand's exact icon.  Notes app: muted warm golden-amber circular plate, one large off-white rounded paper sheet with a folded corner, two broad ochre horizontal writing bars and one small deep-amber pencil diagonally across the lower right. Bold modern Android notes visual, no real letters, no numbers.",
+      "transparent_background": true
+    }
+  ],
+  "phone_icon_direction": "Original circular Android-style raster launcher icons: bold simple symbols, colored plates, transparent margin. Native focus, badges and captions."
+}

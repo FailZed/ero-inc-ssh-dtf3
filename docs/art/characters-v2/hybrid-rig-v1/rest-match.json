@@ -1,0 +1,12 @@
+{
+  "female": {
+    "mean_absolute_channel_error_255": 0.004977856163041348,
+    "pixels_difference_over_8": 0,
+    "max_channel_difference": 3
+  },
+  "male": {
+    "mean_absolute_channel_error_255": 0.007040564373897707,
+    "pixels_difference_over_8": 0,
+    "max_channel_difference": 5
+  }
+}

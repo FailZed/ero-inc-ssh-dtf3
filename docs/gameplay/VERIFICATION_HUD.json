@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-19",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "revision": "modern-needs-hud-without-portrait",
+  "gameplay_command": "tools/test_gameplay.ps1",
+  "gameplay_result": {
+    "checks": 281,
+    "failed": 0,
+    "failures": []
+  },
+  "mechanics_command": "tools/test_mechanics.ps1",
+  "mechanics_result": {
+    "checks": 1733,
+    "failed": 0,
+    "failures": [],
+    "mode": "main-project integration; independent mechanics runtime; not a new PCK export"
+  },
+  "hud_contract": {
+    "portrait": false,
+    "primary": [
+      "health",
+      "energy"
+    ],
+    "secondary": [
+      "hydration",
+      "satiety",
+      "hygiene",
+      "bladder",
+      "rested",
+      "fun",
+      "social"
+    ],
+    "stamina": "passive recovery with world time, suspended during exertion; existing activity costs retained",
+    "sleep": "separate rested resource"
+  },
+  "captures": [
+    {
+      "path": "docs/gameplay/captures/hud-modern-1920/hud.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "5a1e72dff4b4d09129daf12a0a48a26e6a0fa036f6ca2e44eb5dfceb7bc6a675",
+      "visually_inspected": true,
+      "kind": "actual Godot render, controlled development world",
+      "user_save": false
+    },
+    {
+      "path": "docs/gameplay/captures/hud-modern-1920/hud-detail.png",
+      "width": 444,
+      "height": 174,
+      "sha256": "cdd3645b50d631573d3eea59ef819c6c12dd8a7eb8bdb8ca08bbc0c47754151f",
+      "visually_inspected": true,
+      "kind": "actual Godot render, controlled development world; cropped Control region",
+      "user_save": false
+    },
+    {
+      "path": "docs/gameplay/captures/hud-modern-1366/hud-needs.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "cc6210a36fdfd0bdba9f50ef8e6d77a69487519408900eb708a0f37df4168a69",
+      "visually_inspected": true,
+      "kind": "actual Godot render, controlled development world",
+      "user_save": false
+    },
+    {
+      "path": "docs/gameplay/captures/hud-modern-1366/initiative.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "f4e5943a973c25c414e51cfa392b90703b156ec4e5d488a35edf6ddb11c7e967",
+      "visually_inspected": true,
+      "kind": "actual Godot render, controlled development world",
+      "user_save": false
+    },
+    {
+      "path": "docs/gameplay/captures/hud-modern-ultrawide/hud.png",
+      "width": 3440,
+      "height": 1421,
+      "sha256": "b109843ce8bf353b6d5d37ef38feb6121f6abdaea9e0fa52739d4e717ec1caf5",
+      "visually_inspected": true,
+      "kind": "actual Godot render, controlled development world",
+      "user_save": false
+    }
+  ],
+  "sha256": {
+    "scripts/gameplay/gameplay.gd": "8785bce2eddf946aac6e09db9021475227a269648b894793cc09c95960302d45",
+    "scripts/gameplay/main_simulation.gd": "dbdfc8f4546a66de85c0fc60f18639a08633a84a7052a4436acb8dc16173c826",
+    "scripts/gameplay/player_needs.gd": "5924b35f1297f169096d724f02cb3f832cc0831c762553caeb7233130a60ad82",
+    "scripts/gameplay/presentation.gd": "dd903cbd0007094ecfe64d3ac1228d34df1a6fbe1468ac72620e1aeffc27fc76",
+    "scripts/ui/gameplay/gameplay_shell.gd": "f4ed372ffeca150c1204a93c2327893b5016265d8ea44def0543cff9dbe7ff4d",
+    "scripts/ui/gameplay/hud_widgets.gd": "71e2c4a1055048d06b0d7f2d479c90613c5fa3a0f86fce7f8adb2db743bf8d42",
+    "scripts/ui/gameplay/player_hud.gd": "0e6bc6a7e0d1c533e4e03a41d5742fcd4a4ea9d07c76fe446132009be7524f0f",
+    "scripts/ui/gameplay/need_indicator.gd": "d0418f6be055af03d83691d0e4925b3377814cc6b5679e93b1845b439ce617b4",
+    "scripts/ui/gameplay/preview.gd": "17b68510c41cb6029e596cb0e23acca15e3c9913929faf48c0a979adf7f4d914",
+    "tests/gameplay/player_needs.gd": "13f0f02fc1c9fdcdbf1415a90a8a0f069459b897412851aca2ef9b98f7bcd4bc",
+    "tests/gameplay/hud.gd": "c6ed011bab402646ea97025cdc13c079aa266669ed45da6debc8e47f4a93c729",
+    "tests/gameplay/run.gd": "464808262a9ba1461e100e2ba8031c094236e14c00e910b744921f421d926ec5"
+  },
+  "notes": [
+    "HUD is integrated into the main free-roam shell.",
+    "Additional player needs live in the main-game extension, outside the independent parity runtime.",
+    "New gameplay assertions cover need actions, stamina regeneration/expenditure, rollback, pure UI reads and JSON continuation.",
+    "Full rings mean satisfied needs; tooltip states what the value measures.",
+    "No hardware gamepad test.",
+    "Ultrawide requested 3440x1440; actual window client capture is 3440x1421.",
+    "Existing addon exit warnings remain at 63 ObjectDB instances and 27 resources.",
+    "Other captures in these directories may belong to earlier visual iterations; only listed captures describe this revision."
+  ]
+}

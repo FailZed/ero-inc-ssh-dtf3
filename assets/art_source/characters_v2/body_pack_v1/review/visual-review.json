@@ -1,0 +1,38 @@
+{
+  "reviewed_utc": "2026-10-19T14:17:13.690078+00:00",
+  "status": "reviewed_reference_art_pack",
+  "scope": "Original adult nonsexual body artwork and supported local layer recipes; separate from main game.",
+  "boards_reviewed": [
+    "review-00.png",
+    "review-04.png",
+    "review-08.png",
+    "review-12.png",
+    "review-16.png",
+    "review-20.png",
+    "review-24.png",
+    "review-28.png",
+    "review-32.png",
+    "review-36.png",
+    "review-40.png",
+    "review-44.png"
+  ],
+  "combinations_reviewed": 48,
+  "inspection": [
+    "Full figures reviewed on opaque light and dark boards; native PNGs and local gallery also inspected.",
+    "Thin brown contours, matte palette and controlled cel shadows retained.",
+    "Shoulder continuity, hand/body overlap, alpha edges, baseline and skin recoloring inspected.",
+    "Every chest size/shape appears in a composed fit proof; both sexes, gestures and all eight palettes covered.",
+    "Nine abdominal stages have strictly increasing rendered foreground area with the same body/frame."
+  ],
+  "limits": [
+    "48 selected recipes are a coverage sample, not an exhaustive test of the Cartesian product.",
+    "Extreme width and gesture combinations can have pronounced stylized shoulder contours; inspect at the intended game scale before integration.",
+    "Heads are reference guides. Individual faces, hairstyles, underwear and seasonal wardrobe are separate packs.",
+    "Pregnancy states use their own volume and pose; the compositor rejects incompatible chest, muscle, leg and gesture replacements.",
+    "Anthro body/coat/tail bases are standalone; complete human-rig interoperability and final species faces are not claimed.",
+    "Body LoRA is accepted only for checked reference-preserving edits, not arbitrary free pose generation.",
+    "No in-engine or existing save migration was performed."
+  ],
+  "counting": "Source edits, reference reuse, proportion derivatives, material variants and composed examples are separate. Quantitative category coverage does not establish universal artistic superiority over School.",
+  "runtime_registered": false
+}

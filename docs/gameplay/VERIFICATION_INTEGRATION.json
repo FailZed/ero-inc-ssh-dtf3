@@ -1,0 +1,292 @@
+{
+  "date": "2026-10-19",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "revision": "main-game-action-routes",
+  "scope": "Implemented main-game systems and playable UI routes; not complete donor content or Sims parity",
+  "gameplay": {
+    "checks": 387,
+    "failed": 0,
+    "failures": []
+  },
+  "ui_routes": {
+    "checks": 44,
+    "failed": 0,
+    "main_ui": true,
+    "world_restore": true
+  },
+  "service_boundary_audit": {
+    "atomic_rejection": true,
+    "services": [
+      "character",
+      "inventory",
+      "world",
+      "economy",
+      "housing",
+      "preferences",
+      "social",
+      "organizations",
+      "lifecycle",
+      "encounters",
+      "actions",
+      "events",
+      "health",
+      "combat",
+      "careers",
+      "security",
+      "social_rules",
+      "institutions",
+      "interior",
+      "activities",
+      "appearance",
+      "population",
+      "npc_behavior",
+      "npc_personalities",
+      "npc_agency",
+      "npc_relationships",
+      "npc_dialogue",
+      "needs"
+    ]
+  },
+  "standalone_pck": {
+    "checks": 1722,
+    "failed": 0,
+    "failures": []
+  },
+  "story_flows": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10932,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10886,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10877,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 7571,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10854,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "snapshot_process": [
+    {
+      "mode": "write",
+      "ok": true
+    },
+    {
+      "mode": "read",
+      "ok": true
+    }
+  ],
+  "source_sha256": {
+    "scripts/gameplay/gameplay.gd": "3c8eb0f79c08f1fdd1e44dc324f6eedc5687c9cee1c4904662cf8585c36c18ba",
+    "scripts/gameplay/main_simulation.gd": "7440ef17a1dabd0894c9c492722f7c4c59729b644ea97dd372543e36de6e17cc",
+    "scripts/gameplay/player_social_rules.gd": "6f34a71008af4161929406001705f4f20d45e3b778c757978dcc9b0316f8a926",
+    "scripts/gameplay/player_character.gd": "f7029b14a8ef8d4c9a0d58296adcc9bcb9e6f9e88b83f65ff630879a327e57d2",
+    "scripts/gameplay/player_needs.gd": "8af9ddb01595459b297930f01c35b2f818f6e2c9c68df66460e89d632ba0c446",
+    "scripts/gameplay/action_policy.gd": "a0df25222f8f331ac7b2edc27e77ebfe0107eea8bba5f5cc1974915385292e78",
+    "scripts/gameplay/presentation.gd": "28ab24f80167a8a036bbd7d437d18ff463fab31a37726695044044dd0f12c207",
+    "scripts/gameplay/player_relationships.gd": "ea4c2f55894d07ca1310f3f5b3997df738f64cecc3db79a7aa2c7fc60f1be899",
+    "scripts/gameplay/player_institutions.gd": "89a0520f711b403225f277e415bd7a2ff47e6a8498c42a7913a0bf27b3577cbf",
+    "scripts/ui/gameplay/gameplay_shell.gd": "65018c62e9b5d1ce4f3fb3295be908f74f228208bd543c71030bb7b72d22116e",
+    "scripts/ui/gameplay/player_hud.gd": "0142d7cfc58a1ecfdd0fd989a6e23e2034459c6894848f20932c9f90f27eaf42",
+    "scripts/ui/gameplay/preview.gd": "c6908b0ab5ea03d146246b64feef3e262a12e47c3708683502dc7abc63df1502",
+    "scripts/mechanics/simulation.gd": "7ad9e09ac43f9481ea0314c8822bddaa1ab559387637a553c6d1fbb64ae1923f",
+    "scripts/mechanics/npc_life_simulation.gd": "7e7ffdf29e82e81b6da64fa7b372c9081f182b90267ed9afea798fd058b9b652",
+    "scripts/mechanics/human_agency.gd": "84939966affa9e7bea1b975f83dd3befb72d10bfdb93690c416f684fd57b9ce0",
+    "scripts/mechanics/npc_relationships.gd": "9bb783f4484506ef27c77307e56588b3db3910160171ca0689a324b383efd34e",
+    "scripts/mechanics/npc_dialogue.gd": "53a45700c2d3ceff00ac2a7e25241f3622528566bac45d8b9f2d4d957ab97bb6",
+    "tests/gameplay/integration_routes.gd": "8b77fe1e5c4d306044d14cce6bc1aa23eb69ac308433934a7687b469bbbaeaad",
+    "tests/gameplay/dialogue.gd": "5e762e61a236830b46f0d122c0a326571119e55fa0fb2b2f8bc28faeeb914271",
+    "tests/gameplay/snapshot_process.gd": "93222bb88bb86c0b5464aa3a1665f9042b7302abf250f288f3bb03e693678ea7",
+    "tests/gameplay/run.gd": "743c24117be3c88d9a462265e7ecebd52066114b1caf4c5db2559d21608d6fcc",
+    "tools/test_gameplay.ps1": "9d52e9b32a751126b23fc4f89c825f664d9137fdb801d38c43ccb96d92126fdd",
+    "tools/test_gameplay_snapshot.ps1": "5644659af85ff90272523a3ab1820330a092eea1ca57aad86e9d75c36a2f109a",
+    "tools/test_story_flow.ps1": "cc6b5155cd31c326c8c11fbb5a5c865445792ff5af8b948a5f55122f81459edf",
+    "tools/test_mechanics.ps1": "eba234cbbb26c47574f64ba7382de4e95b46de3d3dd64ed2a3e44a8ab36744d4"
+  },
+  "logs": {
+    "docs/gameplay/verification/integration-2026-10-19/tests.log": {
+      "sha256": "307abe9f26c6f061944df34c89f0c2f99c87a7c812b417776d1ef7c56434b73e"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/tests-pack.log": {
+      "sha256": "b4d4626bc8742a79301ad699baf4b56df4b7d15836f84b3a120ad0d0ed02b47d"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/flow-0.log": {
+      "sha256": "bf2acd53a4011ed4968c36ef84fcfbf1d8f3580fdfd8d8034d4b44dbb1ebd730"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/flow-1.log": {
+      "sha256": "19208ce6c201093a40bb785343bf7a74e85e01669937abebd2f084c475e68557"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/flow-2.log": {
+      "sha256": "d4e9fd0fcf19efae40f0b364b6e6d7e8a080481a6a7b43083aeaa0f0017eec1f"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/flow-3.log": {
+      "sha256": "20b4f54686c7e6d09a3d0d7568a1daa2a184ccb47e204caa295c6400fb8a42c6"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/flow-4.log": {
+      "sha256": "bdbb3b48906ff50e9dab1702b33e6fc7bb427f9f9d0c115725511bd33df54d99"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/snapshot-write.log": {
+      "sha256": "d50f128271246e61363a46c50ef7272412ec207cf73e5342a5e709960a3b5548"
+    },
+    "docs/gameplay/verification/integration-2026-10-19/snapshot-read.log": {
+      "sha256": "cc9db4be94322f036c6dc077e54cf8a0e301aed6dc56de8b43d2e58775abb611"
+    }
+  },
+  "captures": [
+    {
+      "path": "docs/gameplay/captures/integration-2026-10-19/integration-company.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "f9293b367f725cead4b2a5108b1b4a1e9b1d3db47e208192963dcce3d73ccca4",
+      "native_godot": true,
+      "visually_inspected": true,
+      "kind": "controlled development world; same main-game presenters and commands"
+    },
+    {
+      "path": "docs/gameplay/captures/integration-2026-10-19/integration-projects.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "752dcd9afdacbea31e64097dc0abbb1f58c5046a1a756cbe7a418ecb8e2669a8",
+      "native_godot": true,
+      "visually_inspected": true,
+      "kind": "controlled development world; same main-game presenters and commands"
+    },
+    {
+      "path": "docs/gameplay/captures/integration-2026-10-19/integration-journal.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "b4e896f79e9b00e64133373f7f47f84c7a24ab67436f2da759554c76eec23d8c",
+      "native_godot": true,
+      "visually_inspected": true,
+      "kind": "controlled development world; same main-game presenters and commands"
+    },
+    {
+      "path": "docs/gameplay/captures/integration-2026-10-19/integration-condition.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "26c9d76e2c529738de3c8ac265eff679affc99f9d5bb16e20308b3d3ab26c9a2",
+      "native_godot": true,
+      "visually_inspected": true,
+      "kind": "controlled development world; same main-game presenters and commands"
+    }
+  ],
+  "snapshot_coverage": [
+    "unfinished combat and election",
+    "partial project and active promise",
+    "shared evening memories and directed bonds",
+    "temporary effect and habit exposure",
+    "needs, bank, inventory and RNG",
+    "identical next combat action in a fresh process"
+  ],
+  "main_schema": 2,
+  "catalog_hash": "1fbc950b731085dbc2e6f8019c9d9281e5f2f9b73c4ccf7a3669121f4dd82da6",
+  "known_shutdown_messages": {
+    "main": "Pre-existing 63 ObjectDB / 27 resources at shutdown; unchanged from prior pass",
+    "standalone_pck": "No shutdown warnings in the verified log"
+  },
+  "remaining_content": [
+    "Club contribution is a daily abstraction, not physical NPC shifts",
+    "Parenting beyond the existing family outcome is not implemented",
+    "Individual authored stories, geography and expanded content remain separate work",
+    "Long human balance playtests remain"
+  ],
+  "user_save_slots_modified": false
+}

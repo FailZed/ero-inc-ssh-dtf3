@@ -1,0 +1,40 @@
+{
+  "assets": [
+    {
+      "id": "window_surface",
+      "file": "window_surface.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "2c91e814d35396adc062a8ea142cb3d1bc3bc65112e7fcd84f51a3263ed200b6",
+      "bytes": 2503865,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "room_floor",
+      "file": "room_floor.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "05529893a09262b61b2991a437c44101cd5f4f36c6a742bcd96398a7dee943e0",
+      "bytes": 2138405,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    },
+    {
+      "id": "card_face",
+      "file": "card_face.png",
+      "size": [
+        312,
+        480
+      ],
+      "sha256": "a842cdfa20a4cf407e54dd016abfb218a8857e3e02346a418e3d688c4b9927a2",
+      "bytes": 221073,
+      "filter": "linear_mipmaps",
+      "repeat": false
+    }
+  ]
+}

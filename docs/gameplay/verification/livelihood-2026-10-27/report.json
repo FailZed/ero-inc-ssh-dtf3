@@ -1,0 +1,353 @@
+{
+  "client_date": "2026-10-27",
+  "timezone": "Europe/Moscow",
+  "engine": "Godot 4.7.2 stable",
+  "audio_driver": "Dummy",
+  "user_save_slots_modified": false,
+  "content": {
+    "jobs": 12,
+    "career_tracks": 5,
+    "career_tiers": 5,
+    "mini_game_kinds": [
+      "memory",
+      "sorting",
+      "focus"
+    ],
+    "illicit_jobs": 3,
+    "daily_offers": 3,
+    "order_templates": 5,
+    "life_goals": 5,
+    "home_upgrades": 3
+  },
+  "checks": {
+    "rules": {
+      "audio": "Dummy",
+      "checks": 82,
+      "failed": 0,
+      "failures": []
+    },
+    "native": {
+      "audio": "Dummy",
+      "checks": 27,
+      "directory": "E:/GoDot/.research/school-0.981/livelihood-2026-10-27/captures",
+      "failed": 0,
+      "failures": [],
+      "size": [
+        1366,
+        768
+      ]
+    },
+    "snapshot_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true
+    },
+    "snapshot_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true
+    },
+    "main": {
+      "checks": 584,
+      "failed": 0,
+      "failures": []
+    },
+    "standalone_pack": {
+      "checks": 2394,
+      "failed": 0,
+      "failures": []
+    },
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 33,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 12098,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 33,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11874,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11352,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 7911,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11041,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ]
+  },
+  "sources_sha256": {
+    "data/mechanics/livelihood.json": "30c4654cfc96921e2924c1621f577fb18a49f011a3a680e8fc42a5ffba046487",
+    "scripts/mechanics/livelihood.gd": "d72a5e38bac2b23177a09481c0301e431af4fcecd7d381b6aba60c3415342db6",
+    "scripts/mechanics/core/livelihood_validation.gd": "d45ef4928758a6b632c1a40180f3d6ce7798e13dcfa4addfa3d3f7671456341f",
+    "scripts/gameplay/livelihood_simulation.gd": "dd28a4d726e3b2c8267e9d7b6244da68ec8402642d249209f3a9ba06e9dcaf43",
+    "scripts/gameplay/livelihood_presentation.gd": "58a751a190ccaf3d41c15f575ef7c7a5418f7d8529e1e0c36330195efcd35802",
+    "scripts/ui/gameplay/livelihood_window.gd": "c2c63f58962dad58fc99d71091b81e55d3cab79a187000c6b3e26cb269ba12f9",
+    "scripts/ui/gameplay/work_timing_meter.gd": "a2480329cf43f3209b9b9b4bd0cf29aa78268027bcb63564db6654da0c940fc9",
+    "scripts/gameplay/gameplay.gd": "77e18b4d89bfdbbac2fea6aef92e469c047a5986fba7840bb479070613ca8387",
+    "scripts/gameplay/action_policy.gd": "e1a836479c541b2bd4ecccc0067d15f3db8f56629228e791b9ea63ed3e73110a",
+    "scripts/gameplay/presentation.gd": "a93836826329345f2cbc903ac579342af11f2ade058fa342f638753d6b3b8902",
+    "scripts/ui/gameplay/gameplay_shell.gd": "4e7c83964b1bcca6593bd0f4ade9c462bd96423a5a58df6d47d323f23636ba04",
+    "tests/gameplay/livelihood.gd": "1201b155fc5e67a98f3800d4a2018b7c970a1558cdb6d51c0ab4c4645f264da0",
+    "tests/gameplay/livelihood_snapshot.gd": "7e17e7a394845cac2290efa5104a3e481bc189098f6f35177d8ac52643c5cf9a",
+    "tests/gameplay/capture_livelihood.gd": "1e797806f1310ab4f3a0e6488e48e2f20d0d0b82f69829274cf81bab769d4ff3",
+    "tools/test_livelihood.ps1": "b75198f00f0755bfc27c6e8a0230e6947c0d5038652aa4e2bb066aff97288b3a",
+    "tools/godot.ps1": "81c37bf90ae2b3a14fffbd970798ec1d1d0f8dd0279aec41bc7230b222cebd32"
+  },
+  "shared_dependencies_sha256": {
+    "scripts/gameplay/main_simulation.gd": "7b419361c9331b33e53417e425ccfc4d75471a60cc32397e476a5adba68d26c2",
+    "scripts/gameplay/life_simulation.gd": "ee253174741d200d89b024f6fbd84539bdf669b04ff3213bdc878cf7081de570",
+    "scripts/ui/gameplay/game_screens.gd": "9d216153ac47868cb5dba48aaa46727afcc7c78e0dca03b67b57390243551dba",
+    "scripts/ui/gameplay/ui_factory.gd": "3f3f27f960fa88d7a425210620abe0f01724b3853399026bedd274e3a9dd7348"
+  },
+  "evidence": {
+    "focus-play.png": {
+      "bytes": 229523,
+      "sha256": "206886b65e3d3a1520f6a5078667c9327fbf5d375b449adaf946a346df886083",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "gameplay.log": {
+      "bytes": 1251,
+      "sha256": "d8483037735ad17934dd215485e33e83cd793b01267a5e346b81677526552d9f"
+    },
+    "goals.png": {
+      "bytes": 209478,
+      "sha256": "f1cdb8f2badc53d1b3747be0b216931fc5893d4336dde3e863c9ad0a139a6c57",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "home.png": {
+      "bytes": 185558,
+      "sha256": "43ec0d2050733362a67be3ab6f0b2949805636d4f09c505afb5f6027afc5019e",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "illicit-jobs.png": {
+      "bytes": 247105,
+      "sha256": "9e60a4310fcdf7c4746ed47cff3d65ec7e152da04cda7a77bfc079e62f384b27",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "jobs.png": {
+      "bytes": 247392,
+      "sha256": "838e2f38886450d3b5db7cbf8a51376a10d73f087272c7d63dae872401240ba0",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "mechanics-pack.log": {
+      "bytes": 537,
+      "sha256": "6e1f5ae64e1df68344287e5d8ddebb829d50cb61bd9eda1b682e9d20aba9a602"
+    },
+    "memory-play.png": {
+      "bytes": 237010,
+      "sha256": "31203f242f611f2177a9c2d678a6de0ab415c49c081ff664cdbd4bd36852d520",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "memory-preview.png": {
+      "bytes": 238715,
+      "sha256": "cf8559eca52a2bb4765a19399cffcc2fc567c263dd5aca8c0a17db5c88ba9638",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "native.log": {
+      "bytes": 633,
+      "sha256": "86c14c38843595d33dbacef5478bad7cfeb4f027b1f0c925e10b08bd3c03ace3"
+    },
+    "orders.png": {
+      "bytes": 192967,
+      "sha256": "7d9a16f6be57b7b696f31deb9696373e67b17a2f09918467ebdda8f69dd45542",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "rules.log": {
+      "bytes": 400,
+      "sha256": "caacbf6f4ba958b434ea03ec207c888461fcbdfb5d87d3d3ac433641b0ad62ab"
+    },
+    "snapshot-read.log": {
+      "bytes": 396,
+      "sha256": "327d348ecd39dc69142108f49c969fa7bdfc5827b2dc423212cea19630d89153"
+    },
+    "snapshot-write.log": {
+      "bytes": 397,
+      "sha256": "d63b6b6c1b01bbc32a1f73b376c5d00f52f60b8be4385b90eea7c78822736a8a"
+    },
+    "story-0.log": {
+      "bytes": 614,
+      "sha256": "f1654ef9104b5d70bc54ab8925c8ee192eb4359ab84acecf223d769c11f96e82"
+    },
+    "story-1.log": {
+      "bytes": 616,
+      "sha256": "5e421c611b63f92bc031ae1ab56c147baf7b5a6db6875e15fdef6e363a712baa"
+    },
+    "story-2.log": {
+      "bytes": 614,
+      "sha256": "0dd829fa5dfc6c9dfdf6f69cadfc9569ef9958c9a8ca674ebda50085d97a65ad"
+    },
+    "story-3.log": {
+      "bytes": 614,
+      "sha256": "52058aad9f7d3af38f7d8fafe3f812ea8d057177a564c47d8535adf29e0fd1d8"
+    },
+    "story-4.log": {
+      "bytes": 615,
+      "sha256": "cc81484b3306c4ddb373343a50968a40b437a5ea7f30c48bd0fd9156dd44926b"
+    },
+    "work-paid.png": {
+      "bytes": 324029,
+      "sha256": "5531a424c0be199d09ed9daaf31510d3d1d7f2cd7cc94c07f25e23e3cf3647c3",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    },
+    "work-pause.png": {
+      "bytes": 229329,
+      "sha256": "db8515719a5bda8c4196cb3c1931d908e91b9e8942c8d84eaa74bec6d4fa018f",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native controlled-runtime reference capture"
+    }
+  },
+  "notes": [
+    "Original EroInc systems and data. No feature/numeric parity with School or Sims claimed.",
+    "The standalone PCK tests independent mechanics; the new work layer is verified in main-project rules, real native UI and separate-process restoration.",
+    "The native run creates a new controlled sandbox, uses actual money-screen entry, travels to the cafe, plays memory via buttons, tests pause and payment. Technical level 2 is a fixture solely to show the gated focus interface.",
+    "Images are native Godot captures at 1366x768, reference examples from a controlled test world, not a user save or final art approval.",
+    "Existing shutdown messages remain: 63 ObjectDB instances and 27 resources in use in main-project logs.",
+    "The shared workspace contains another executor's UI and reproductive changes. Hashes record the versions present at report creation."
+  ],
+  "visually_inspected_reference_images": [
+    "focus-play.png",
+    "goals.png",
+    "home.png",
+    "illicit-jobs.png",
+    "jobs.png",
+    "memory-play.png",
+    "memory-preview.png",
+    "orders.png",
+    "work-paid.png",
+    "work-pause.png"
+  ]
+}

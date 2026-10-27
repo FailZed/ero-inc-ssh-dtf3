@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "status": "reviewed_style_calibration",
+  "runtime_ready": false,
+  "scope": "Two retained style-reference edits, not two new body builds or a complete body/wardrobe pack. Existing six anatomical variants remain separately in anatomy_candidates_v1.",
+  "generation_profile": {
+    "steps": 16,
+    "cfg": 6,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "smart_memory": true,
+    "lora": "EroInc/candidate_400.safetensors",
+    "lora_strength": 0.65,
+    "controlnet": false
+  },
+  "items": [
+    {
+      "id": "female_style_restore",
+      "sex": "female",
+      "age": 30,
+      "morphology": "human",
+      "canvas": [
+        832,
+        1472
+      ],
+      "neck_y": 343,
+      "baseline_y": 1395,
+      "status": "reviewed_style_calibration_not_new_distinct_body_build",
+      "runtime_ready": false,
+      "head_scope": "Combined face and hair; not a complete customizable head rig.",
+      "natural_anatomy": "Reference external anatomy retained; chest features visually present.",
+      "files": {
+        "full": {
+          "path": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\female\\full.png",
+          "sha256": "1928e7aa14106050d78ee68d135c9f8bb89526bb13665f0a7fa8be6424b75bc0"
+        },
+        "head": {
+          "path": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\female\\head.png",
+          "sha256": "bc6601c202146d220b762064ba16a1a8f2ba2c6e6a605fe5126f93c23adcf975"
+        },
+        "body": {
+          "path": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\female\\body.png",
+          "sha256": "26ad17d81b648219dfd87ab9e60e7e9b12eadd2c1b42aa582d43245fe0603c32"
+        }
+      },
+      "lineage": {
+        "generator": "Local ComfyUI / DaSiWa reference masked edit",
+        "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\8e7bbcb2-a676-471d-92cc-5d9166435fa2.json",
+        "generation_sha256": "30a01a00d8196b30f20873a752cb259cea2d90846fdd13af190886971663c331",
+        "source_reference": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+        "source_reference_sha256": "f9a7c48dac61c877d0788452073bda3fcccaa0745879d624daf6e0eb6a17f3c8",
+        "segmentation": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\body_reference_v1\\cutouts\\female_restore_raw.png",
+        "segmentation_sha256": "0af4f546d6da29af036aa20b274dfa148c2be2c4a56ae969548879573e44c86b",
+        "mask_sha256": "f39a58cf922e5216dab54155a89f3e215c89ae625a9f05d805122865f04b60f6",
+        "operation": "CPU segmentation; restore original protected RGBA regions and head; complementary alpha split. No anatomy warping."
+      },
+      "technical_qa": {
+        "rgba": true,
+        "bounds": [
+          216,
+          95,
+          615,
+          1395
+        ],
+        "unchanged_rgba_pixels": 793426,
+        "changed_outside_mask": 0,
+        "shared_head_exact": true,
+        "complementary_layers_exact_visible_pixels": true
+      }
+    },
+    {
+      "id": "male_style_restore",
+      "sex": "male",
+      "age": 30,
+      "morphology": "human",
+      "canvas": [
+        832,
+        1472
+      ],
+      "neck_y": 332,
+      "baseline_y": 1395,
+      "status": "reviewed_style_calibration_not_new_distinct_body_build",
+      "runtime_ready": false,
+      "head_scope": "Combined face and hair; not a complete customizable head rig.",
+      "natural_anatomy": "Reference external anatomy retained; chest features visually present.",
+      "files": {
+        "full": {
+          "path": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\male\\full.png",
+          "sha256": "cd332f74b7178a0163a829ca4f77bae86cd53fafeff4d1b54f7e2b5906c22d5b"
+        },
+        "head": {
+          "path": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\male\\head.png",
+          "sha256": "670a7584dad7033ce42620f7abc24a454fb35c14eb86d75d229cf4fa9341062b"
+        },
+        "body": {
+          "path": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\male\\body.png",
+          "sha256": "87212fe49245da2bbba475da416dc61211debff5a0d0e8939996f06de274e7fc"
+        }
+      },
+      "lineage": {
+        "generator": "Local ComfyUI / DaSiWa reference masked edit",
+        "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\68435862-e392-48ff-b7ed-20f9eaf61ad7.json",
+        "generation_sha256": "5ac697dc1fd6c225126e280fb89fc96e3d6d343cb69181173248e20f975e0b18",
+        "source_reference": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\male_toned\\full.png",
+        "source_reference_sha256": "bb07647747e54800dfba9e9bdcd1b38d171ea8276ff960e7753fe29c09e5ea85",
+        "segmentation": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\body_reference_v1\\cutouts\\male_restore_raw.png",
+        "segmentation_sha256": "ee3cd64c06c3227ee99c1a395b2765b132c865de0e462228209ad7bc7b627bf4",
+        "mask_sha256": "0f531156660ff08a98d270a2d0eb7454692064ff134d90e88f481ca12a4d4158",
+        "operation": "CPU segmentation; restore original protected RGBA regions and head; complementary alpha split. No anatomy warping."
+      },
+      "technical_qa": {
+        "rgba": true,
+        "bounds": [
+          237,
+          95,
+          594,
+          1395
+        ],
+        "unchanged_rgba_pixels": 800069,
+        "changed_outside_mask": 0,
+        "shared_head_exact": true,
+        "complementary_layers_exact_visible_pixels": true
+      }
+    }
+  ]
+}

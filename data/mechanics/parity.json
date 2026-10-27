@@ -1,0 +1,23 @@
+{
+  "difficulties": {
+    "easy": {"xp": 1.1, "need_decay": 0.75, "resource_cost": 0.8, "relation_gain": 1.25, "dialogue_fatigue": 0.9, "interaction_bonus": 0.12, "injury_damage": 0.0, "injury_recovery": 2.0, "initial_points": 40, "satiety_enabled": false, "rent_enabled": false, "education_failure": false, "starvation_attrition": false, "exhaustion_enabled": false, "eviction_enabled": false},
+    "normal": {"xp": 1.0, "need_decay": 1.0, "resource_cost": 1.0, "relation_gain": 1.0, "dialogue_fatigue": 1.0, "interaction_bonus": 0.0, "injury_damage": 0.5, "injury_recovery": 2.0, "initial_points": 30, "satiety_enabled": true, "rent_enabled": true, "education_failure": true, "starvation_attrition": false, "exhaustion_enabled": false, "eviction_enabled": false},
+    "hard": {"xp": 0.9, "need_decay": 1.25, "resource_cost": 1.25, "relation_gain": 0.8, "dialogue_fatigue": 1.1, "interaction_bonus": -0.12, "injury_damage": 1.0, "injury_recovery": 1.0, "initial_points": 20, "satiety_enabled": true, "rent_enabled": true, "education_failure": true, "starvation_attrition": true, "exhaustion_enabled": true, "eviction_enabled": true},
+    "custom": {"xp": 1.0, "need_decay": 1.0, "resource_cost": 1.0, "relation_gain": 1.0, "dialogue_fatigue": 1.0, "interaction_bonus": 0.0, "injury_damage": 0.5, "injury_recovery": 2.0, "initial_points": 30, "satiety_enabled": true, "rent_enabled": true, "education_failure": true, "starvation_attrition": false, "exhaustion_enabled": false, "eviction_enabled": false}
+  },
+  "formula_rules": {
+    "combat": {"stat_scale": 4.0, "base_accuracy": 25.0, "easy_accuracy_bonus": 20.0, "minimum_accuracy": 0.05, "maximum_accuracy": 0.97},
+    "discipline": {"warning_absences": 3, "expulsion_absences": 8, "appeal_cost": 50},
+    "survival": {"collapse_after_minutes": 180, "unconscious_minutes": 120, "eviction_months": 2}
+  },
+  "npc_activities": {
+    "paid_work": {"locations": ["global_map"], "weight": 3, "skill": "computing", "xp": 2, "income": 12, "energy_cost": 8, "roles": ["worker"], "trait_weights": {"responsibility": 0.01}},
+    "socialize": {"locations": ["global_map"], "weight": 1, "trait_weights": {"sociability": 0.02}},
+    "train": {"locations": ["training_center"], "weight": 1, "skill": "fighting", "xp": 2, "energy_cost": 6, "trait_weights": {"bravery": 0.01}}
+  },
+  "interactions": {
+    "discuss_books": {"minutes": 10, "chance": 0.6, "success": {"affinity": 3, "trust": 2}, "failure": {"affinity": -1}, "branches": [{"id": "shared_interest", "when": {"path": "npc.preferences", "op": "contains", "value": "books"}, "chance_bias": 0.15, "success": {"affinity": 6, "trust": 3}, "text_token": "conversation.books.shared"}]},
+    "offer_help": {"minutes": 15, "chance": 0.6, "success": {"trust": 4}, "failure": {}, "branches": [{"id": "distrust", "when": {"path": "relation.trust", "op": "lt", "value": 0}, "chance_bias": -0.25, "success": {"trust": 2}, "text_token": "conversation.help.cautious"}, {"id": "responsible", "when": {"path": "npc.traits.responsibility", "op": "gte", "value": 60}, "chance_bias": 0.1, "success": {"trust": 6}, "text_token": "conversation.help.cooperation"}]},
+    "joke": {"minutes": 5, "chance": 0.65, "success": {"affinity": 3}, "failure": {"affinity": -2}, "branches": [{"id": "reserved", "when": {"path": "npc.personality", "value": "reserved"}, "chance_bias": -0.15, "text_token": "conversation.joke.reserved"}]}
+  }
+}

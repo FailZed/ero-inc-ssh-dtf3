@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-19",
+  "source_version": "School 0.981",
+  "method": "Static taxonomy audit of registry and generator branches; donor never executed",
+  "registry": {
+    "line": 982,
+    "sha256": "3BF6762373C8DC917C61514D07FF3AC97CF38DD5D362E4FC2856CB9204A56854",
+    "path": "new.rpy"
+  },
+  "generator": {
+    "path": "system/generator_randomized_npc.rpy",
+    "sha256": "691C837133C0B66F8C5BAD6C0E8B44043CF5AFAE73F49E95FF3570A6D5019061"
+  },
+  "source_type_count": 11,
+  "implemented_type_count": 11,
+  "types": [
+    {
+      "school_label": "Слабый",
+      "id": "weak",
+      "ero_inc_label": "Робкий",
+      "generator_line": 3507
+    },
+    {
+      "school_label": "Агрессивный",
+      "id": "aggressive",
+      "ero_inc_label": "Агрессивный",
+      "generator_line": 3531
+    },
+    {
+      "school_label": "Надменный",
+      "id": "haughty",
+      "ero_inc_label": "Надменный",
+      "generator_line": 3556
+    },
+    {
+      "school_label": "Надежный",
+      "id": "reliable",
+      "ero_inc_label": "Надёжный",
+      "generator_line": 3582
+    },
+    {
+      "school_label": "С чувством юмора",
+      "id": "humorous",
+      "ero_inc_label": "С чувством юмора",
+      "generator_line": 3603
+    },
+    {
+      "school_label": "Глупость",
+      "id": "naive",
+      "ero_inc_label": "Простодушный",
+      "generator_line": 3624
+    },
+    {
+      "school_label": "Общительность",
+      "id": "sociable",
+      "ero_inc_label": "Общительный",
+      "generator_line": 3645
+    },
+    {
+      "school_label": "Затворничество",
+      "id": "reclusive",
+      "ero_inc_label": "Замкнутый",
+      "generator_line": 3666
+    },
+    {
+      "school_label": "Сплетничество",
+      "id": "gossip",
+      "ero_inc_label": "Сплетник",
+      "generator_line": 3687
+    },
+    {
+      "school_label": "Лживость",
+      "id": "deceitful",
+      "ero_inc_label": "Лживый",
+      "generator_line": 3708
+    },
+    {
+      "school_label": "Извращенный",
+      "id": "uninhibited",
+      "ero_inc_label": "Раскрепощённый",
+      "generator_line": 3728
+    }
+  ],
+  "limitations": [
+    "Coverage of eleven named generator archetypes, not every authored reaction or event",
+    "Independent EroInc behavior, tuning and content",
+    "No donor source code, narratives, biographies or art imported"
+  ]
+}

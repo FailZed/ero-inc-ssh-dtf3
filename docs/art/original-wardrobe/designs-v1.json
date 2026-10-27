@@ -1,0 +1,458 @@
+{
+  "schema": 1,
+  "mode": "masked_reference_edit",
+  "scope": "15 original fully clothed adult outfit designs. School garment images are not inputs. Reference faces and hands retained; new cut and silhouette require garment-layer extraction and fit review.",
+  "output_prefix": "original_wardrobe/v1",
+  "width": 832,
+  "height": 1472,
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 0.75,
+  "preserve_input_latent": true,
+  "encode_individually": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+  "items": [
+    {
+      "id": "female_utility_candidate_1",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_utility",
+      "title": "Весна / осень · городской комплект",
+      "season": "spring_autumn",
+      "candidate_number": 1,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.68,
+      "preserve_input_latent": true,
+      "seed": 2026110300,
+      "prompt": "navy cropped utility jacket with asymmetric zip and two flat patch pockets, ivory high neck knit shirt, charcoal straight leg trousers, low black boots, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_utility_candidate_2",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_utility",
+      "title": "Весна / осень · городской комплект",
+      "season": "spring_autumn",
+      "candidate_number": 2,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.75,
+      "preserve_input_latent": true,
+      "seed": 2026110301,
+      "prompt": "navy cropped utility jacket with asymmetric zip and two flat patch pockets, ivory high neck knit shirt, charcoal straight leg trousers, low black boots, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_utility_candidate_3",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_utility",
+      "title": "Весна / осень · городской комплект",
+      "season": "spring_autumn",
+      "candidate_number": 3,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.82,
+      "preserve_input_latent": true,
+      "seed": 2026110302,
+      "prompt": "navy cropped utility jacket with asymmetric zip and two flat patch pockets, ivory high neck knit shirt, charcoal straight leg trousers, low black boots, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_wrap_candidate_1",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_wrap",
+      "title": "Лето · платье с запахом",
+      "season": "summer",
+      "candidate_number": 1,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.68,
+      "preserve_input_latent": true,
+      "seed": 2026110303,
+      "prompt": "teal short sleeve wrap midi dress with asymmetric overlapping front and a narrow matching fabric belt, simple closed flat shoes, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_wrap_candidate_2",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_wrap",
+      "title": "Лето · платье с запахом",
+      "season": "summer",
+      "candidate_number": 2,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.75,
+      "preserve_input_latent": true,
+      "seed": 2026110304,
+      "prompt": "teal short sleeve wrap midi dress with asymmetric overlapping front and a narrow matching fabric belt, simple closed flat shoes, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_wrap_candidate_3",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_wrap",
+      "title": "Лето · платье с запахом",
+      "season": "summer",
+      "candidate_number": 3,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.82,
+      "preserve_input_latent": true,
+      "seed": 2026110305,
+      "prompt": "teal short sleeve wrap midi dress with asymmetric overlapping front and a narrow matching fabric belt, simple closed flat shoes, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_wool_candidate_1",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_wool",
+      "title": "Зима · шерстяное пальто",
+      "season": "winter",
+      "candidate_number": 1,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.68,
+      "preserve_input_latent": true,
+      "seed": 2026110306,
+      "prompt": "long navy double breasted wool coat with restrained copper buttons and wide lapels, cream scarf, dark straight trousers, black ankle boots, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_wool_candidate_2",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_wool",
+      "title": "Зима · шерстяное пальто",
+      "season": "winter",
+      "candidate_number": 2,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.75,
+      "preserve_input_latent": true,
+      "seed": 2026110307,
+      "prompt": "long navy double breasted wool coat with restrained copper buttons and wide lapels, cream scarf, dark straight trousers, black ankle boots, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "female_wool_candidate_3",
+      "rig": "female_average",
+      "sex": "female",
+      "category": "original_outfit_design",
+      "outfit_id": "female_wool",
+      "title": "Зима · шерстяное пальто",
+      "season": "winter",
+      "candidate_number": 3,
+      "image": "original-wardrobe/v1/female/reference.png",
+      "mask": "original-wardrobe/v1/female/mask.png",
+      "denoise": 0.82,
+      "preserve_input_latent": true,
+      "seed": 2026110308,
+      "prompt": "long navy double breasted wool coat with restrained copper buttons and wide lapels, cream scarf, dark straight trousers, black ankle boots, fully clothed, opaque fabric, 1girl, mature adult woman age 30, short brown bob, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\female\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "female_average",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "male_overshirt_candidate_1",
+      "rig": "male_toned",
+      "sex": "male",
+      "category": "original_outfit_design",
+      "outfit_id": "male_overshirt",
+      "title": "Весна / осень · куртка-рубашка",
+      "season": "spring_autumn",
+      "candidate_number": 1,
+      "image": "original-wardrobe/v1/male/reference.png",
+      "mask": "original-wardrobe/v1/male/mask.png",
+      "denoise": 0.68,
+      "preserve_input_latent": true,
+      "seed": 2026110309,
+      "prompt": "slate gray overshirt jacket with contrast square patch pockets and rolled cuffs, ivory crew neck shirt, navy tapered cargo trousers, black low sneakers, fully clothed, opaque fabric, 1boy, male focus, mature adult man age 35, short brown hair, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "male_toned",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "male_overshirt_candidate_2",
+      "rig": "male_toned",
+      "sex": "male",
+      "category": "original_outfit_design",
+      "outfit_id": "male_overshirt",
+      "title": "Весна / осень · куртка-рубашка",
+      "season": "spring_autumn",
+      "candidate_number": 2,
+      "image": "original-wardrobe/v1/male/reference.png",
+      "mask": "original-wardrobe/v1/male/mask.png",
+      "denoise": 0.75,
+      "preserve_input_latent": true,
+      "seed": 2026110310,
+      "prompt": "slate gray overshirt jacket with contrast square patch pockets and rolled cuffs, ivory crew neck shirt, navy tapered cargo trousers, black low sneakers, fully clothed, opaque fabric, 1boy, male focus, mature adult man age 35, short brown hair, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "male_toned",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "male_overshirt_candidate_3",
+      "rig": "male_toned",
+      "sex": "male",
+      "category": "original_outfit_design",
+      "outfit_id": "male_overshirt",
+      "title": "Весна / осень · куртка-рубашка",
+      "season": "spring_autumn",
+      "candidate_number": 3,
+      "image": "original-wardrobe/v1/male/reference.png",
+      "mask": "original-wardrobe/v1/male/mask.png",
+      "denoise": 0.82,
+      "preserve_input_latent": true,
+      "seed": 2026110311,
+      "prompt": "slate gray overshirt jacket with contrast square patch pockets and rolled cuffs, ivory crew neck shirt, navy tapered cargo trousers, black low sneakers, fully clothed, opaque fabric, 1boy, male focus, mature adult man age 35, short brown hair, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "male_toned",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "male_parka_candidate_1",
+      "rig": "male_toned",
+      "sex": "male",
+      "category": "original_outfit_design",
+      "outfit_id": "male_parka",
+      "title": "Зима · парка",
+      "season": "winter",
+      "candidate_number": 1,
+      "image": "original-wardrobe/v1/male/reference.png",
+      "mask": "original-wardrobe/v1/male/mask.png",
+      "denoise": 0.68,
+      "preserve_input_latent": true,
+      "seed": 2026110312,
+      "prompt": "forest green hooded winter parka with a diagonal chest zip and quilted inner facing, sand colored scarf, charcoal trousers, black lace up boots, fully clothed, opaque fabric, 1boy, male focus, mature adult man age 35, short brown hair, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "male_toned",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "male_parka_candidate_2",
+      "rig": "male_toned",
+      "sex": "male",
+      "category": "original_outfit_design",
+      "outfit_id": "male_parka",
+      "title": "Зима · парка",
+      "season": "winter",
+      "candidate_number": 2,
+      "image": "original-wardrobe/v1/male/reference.png",
+      "mask": "original-wardrobe/v1/male/mask.png",
+      "denoise": 0.75,
+      "preserve_input_latent": true,
+      "seed": 2026110313,
+      "prompt": "forest green hooded winter parka with a diagonal chest zip and quilted inner facing, sand colored scarf, charcoal trousers, black lace up boots, fully clothed, opaque fabric, 1boy, male focus, mature adult man age 35, short brown hair, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "male_toned",
+        "no_school_clothing_pixels": true
+      }
+    },
+    {
+      "id": "male_parka_candidate_3",
+      "rig": "male_toned",
+      "sex": "male",
+      "category": "original_outfit_design",
+      "outfit_id": "male_parka",
+      "title": "Зима · парка",
+      "season": "winter",
+      "candidate_number": 3,
+      "image": "original-wardrobe/v1/male/reference.png",
+      "mask": "original-wardrobe/v1/male/mask.png",
+      "denoise": 0.82,
+      "preserve_input_latent": true,
+      "seed": 2026110314,
+      "prompt": "forest green hooded winter parka with a diagonal chest zip and quilted inner facing, sand colored scarf, charcoal trousers, black lace up boots, fully clothed, opaque fabric, 1boy, male focus, mature adult man age 35, short brown hair, blue eyes, solo, standing front view, arms relaxed at sides, full body, eincanime, anime screencap, delicate thin warm brown outlines, matte colors, simple controlled peach cel shadows, flat diffuse light, original contemporary wardrobe design, no logos, plain light gray backdrop",
+      "negative": "nude, naked, nipples, genitals, lingerie, underwear, see through, cleavage, sexual, erotic, child, teen, school uniform, cosplay, glossy, plastic, 3d, photorealistic, thick black outlines, extra hands, extra arms, extra legs, missing limbs, deformed hands, text, logo, watermark, duplicate person, floating objects",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "protected_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\protected.png",
+        "guide": "E:\\Ai\\ComfyUI-EroInc\\input\\original-wardrobe\\v1\\male\\fully-clothed-guide.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "body_id": "male_toned",
+        "no_school_clothing_pixels": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "E:\\GoDot\\ero-inc\\scripts\\managers\\game_session.gd",
+      "expected": "e0d8bd72e69c4e75f9f472e04c85f5e771ddd08f31e04c94188dfd959d58b199",
+      "observed": "e0d8bd72e69c4e75f9f472e04c85f5e771ddd08f31e04c94188dfd959d58b199",
+      "passed": true
+    },
+    {
+      "path": "E:\\GoDot\\ero-inc\\scripts\\ui\\save_slot_data.gd",
+      "expected": "357c140f7d67d43569748f3a2bcc98b73186657aafa28e484bb74ba4aa8d9f50",
+      "observed": "357c140f7d67d43569748f3a2bcc98b73186657aafa28e484bb74ba4aa8d9f50",
+      "passed": true
+    },
+    {
+      "path": "E:\\GoDot\\ero-inc\\scripts\\ui\\save_slot_card.gd",
+      "expected": "118fddb76a50c8e9a434efbd201cf4aedc0bc6da21dc787da0461d0260436d06",
+      "observed": "118fddb76a50c8e9a434efbd201cf4aedc0bc6da21dc787da0461d0260436d06",
+      "passed": true
+    },
+    {
+      "path": "E:\\GoDot\\ero-inc\\scripts\\ui\\load_menu.gd",
+      "expected": "20f2801174fe3666ced7d4667c6957238e34d86d7c44db5b5feecaf9562720a5",
+      "observed": "20f2801174fe3666ced7d4667c6957238e34d86d7c44db5b5feecaf9562720a5",
+      "passed": true
+    },
+    {
+      "path": "E:\\GoDot\\ero-inc\\addons\\dialogic\\Modules\\Save\\subsystem_save.gd",
+      "expected": "d601cf37fbf8d835a497efde1ea52dab4853b0b2c5771c3e70229c96225b6eef",
+      "observed": "d601cf37fbf8d835a497efde1ea52dab4853b0b2c5771c3e70229c96225b6eef",
+      "passed": true
+    },
+    {
+      "path": "E:/GoDot/ero-inc/data/art/character_layers.json",
+      "expected": "7cccd4938bd880d057e5790967fd7763f1f414a2e04a9665058d9039c4db44bd",
+      "observed": "7cccd4938bd880d057e5790967fd7763f1f414a2e04a9665058d9039c4db44bd",
+      "passed": true
+    },
+    {
+      "path": "C:/Users/vladi/AppData/Roaming/Godot/app_userdata/EroInc/dialogic/saves/global_info.txt",
+      "expected": "d3c4a314f4dcdfc47eefb6bd17ce6719c0fcb5033b15d2c02280e9fbc99ce265",
+      "observed": "d3c4a314f4dcdfc47eefb6bd17ce6719c0fcb5033b15d2c02280e9fbc99ce265",
+      "passed": true
+    }
+  ]
+}

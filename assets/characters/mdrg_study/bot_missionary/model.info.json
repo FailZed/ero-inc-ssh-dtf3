@@ -1,0 +1,1394 @@
+{
+  "id": "bot_missionary",
+  "source_name": "bot_missionary",
+  "parameters": [
+    {
+      "id": "ParamEyeballLX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballLY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballRX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballRY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeart",
+      "min": -0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamIrisZoom",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyesHappy",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeOpen",
+      "min": -1.0,
+      "max": 0.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowREmote",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowLEmote",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowRRot",
+      "min": -30.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowLRot",
+      "min": -30.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeLShock",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeRShock",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowLY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowRY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamToungeY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamToungeX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamMouthForm",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSaliva",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamMouthOpen",
+      "min": -1.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBlush",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadZ",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarsFlick",
+      "min": -0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadpatX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadpatY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadpat",
+      "min": -1.0,
+      "max": 1.0,
+      "default": -1.0
+    },
+    {
+      "id": "ParamHairX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSalivaPhysics",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPupilWiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarsWiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSocksEnabled",
+      "min": -0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "ParamPantsAside",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHoodieEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHoodie",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamShirtEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamShirt",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPantiesX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPantiesY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFlattenBoobs",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFlattenNipples",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPelvisX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPelvisY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHands",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamVaginaAroused",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamTense",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamOrgasm",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamLegsQuiver",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamOmegaMeter",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamVaginaPush",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR0",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR1",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR2",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR3",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR4",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR5",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR6",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagR7",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL0",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL1",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL2",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL3",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL4",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL5",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL6",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXRayVagL7",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCumLeakAnim",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCumInside",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCumInsideWomb",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamVaginaSpread",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamVaginaClitMoveX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamVaginaClitMoveY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCockAngleXVaginaEntrance",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR0",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR1",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR2",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR3",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR4",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR5",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR6",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalR7",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL0",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL1",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL2",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL3",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL4",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL5",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL6",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXrayAnalL7",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAnalSpread",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCumInsideAnal",
+      "min": 0.0,
+      "max": 100.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCockAngleXAnalEntrance",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamDick",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamXray",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamThrust",
+      "min": -1.0,
+      "max": 1.0,
+      "default": -1.0
+    },
+    {
+      "id": "ParamThrustAnal",
+      "min": -1.0,
+      "max": 1.0,
+      "default": -1.0
+    },
+    {
+      "id": "ParamCumShotAnim",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFlacidity",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCumOutsideX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCumShotLengthY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHideCumShot",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAnusFingeringEnable",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAnusFingeringInsert",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAnusFingeringRotation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableLegLGrab",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableLegRGrab",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableWaistGrab",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableFingering",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFingeringMovement",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFingeringRotation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableSpread",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSpreadMove",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableThumbMouth",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamThumbMouthX",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHandholdingEnableL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHandholdingEnableR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHandholdingTightenMCL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHandholdingTightenMCR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamClitRubEnable",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamClitRubZ",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableNipplePinchR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNippleRPinchX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNippleRPinchY",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNipplePinchSqueezeR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNipplePinchRotationR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableNipplePinchL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNippleLPinchX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNippleLPinchY",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNipplePinchSqueezeL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamNipplePinchRotationL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableBoobFondleL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobSqueezeL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableBoobFondleR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobSqueezeR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_1_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_2_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_3_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_4_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_5_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_6_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_7_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_8_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_9_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamTailWiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHairPhysicsBaseToShort",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHairPhysicsShortToMid",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHairPhysicsMidToLong",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobXL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobYL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobXR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobYR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobRJiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobLJiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamLegRPhysics",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamLegLPhysics",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsLowerLegL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsLowerLegR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsFootL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsFootR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsCumWomb",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAssSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamThighSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCalfSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFootWidth",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFootLength",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    }
+  ],
+  "drawables": [
+    "GlowOmegaMeterMask",
+    "Plainshirt_front",
+    "ShadowPlainshirt_shadow",
+    "Plainshirt_lowerback",
+    "Plainshirt_main_alt",
+    "Plainshirt_main_top_clone",
+    "Plainshirt_sleeveL_lower",
+    "Plainshirt_sleeveL_Shoulder",
+    "Plainshirt_sleeveL_back",
+    "Plainshirt_sleeveR_lower",
+    "Plainshirt_sleeveR_Shoulder",
+    "Plainshirt_sleeveR_back",
+    "Plainshirt_alt",
+    "ShadowPlainshirt_alt_shadow",
+    "Plainshirt_alt_back",
+    "Plainshirt_chest2",
+    "Panties_upper",
+    "Panties_Above",
+    "Panties_Bottom",
+    "StockingR_foot",
+    "StockingL_Lower",
+    "StockingL_foot",
+    "StockingL_thigh",
+    "StockingR_lower",
+    "StockingR_thigh",
+    "BraChest",
+    "BraTopL",
+    "BraTopR",
+    "SkirtUpper",
+    "SkirtBack",
+    "ModdableBack",
+    "BPantsLowerR",
+    "BPantsLowerL",
+    "BPantsUpperR",
+    "BPantsUpperL",
+    "AltBPantsBelt",
+    "BPantsCrotch",
+    "AltLongHoodieStringL",
+    "AltLongHoodieStringR",
+    "LongHoodieHoodFront",
+    "LongHoodieHoodBack",
+    "LongHoodieBottomFront",
+    "LongHoodieChest",
+    "LongHoodieFront",
+    "LongHoodieSleeve2L",
+    "LongHoodieSleeve2R",
+    "LongHoodieSleeveL",
+    "LongHoodieSleeveR",
+    "LongHoodieBack",
+    "BPantsRemoved",
+    "LongHoodieUpFront",
+    "LongHoodieUpBack",
+    "CumOutsideUnderBoobMiddle",
+    "CumOutsideBoobR",
+    "CumOutsideInnerThighR",
+    "CumOutsideInnerThighL",
+    "CumOutsideBelly",
+    "CumWombLv1",
+    "CumWombLv2",
+    "CumWombLv3",
+    "CumWombLv4",
+    "CumVaginaLeak2",
+    "CumVaginaLeak1",
+    "headpet_1",
+    "headpet_2",
+    "headpet_3",
+    "HairHologram",
+    "CatearFrontR",
+    "CatearFrontL",
+    "CatearMidL",
+    "CatearMidR",
+    "CatearBackR",
+    "CatearBackL",
+    "blush_2",
+    "blush",
+    "lines",
+    "SkinNose",
+    "BrowL",
+    "BrowR",
+    "SkinFace",
+    "highlight",
+    "Iris2L",
+    "Iris2R",
+    "Iris1L",
+    "Iris1R",
+    "PupilL",
+    "PupilR",
+    "EyeBall",
+    "SkinEyelidClosedL",
+    "SkinEyelidClosedR",
+    "SkinEyelidL",
+    "SkinEyelidR",
+    "SkinEyelid2L",
+    "SkinEyelid2R",
+    "SkinNeck",
+    "ModdableHairBack",
+    "ModdableFace",
+    "SkinVaginaPenetratedFront",
+    "SkinVaginaPenetratedBack",
+    "SkinVaginaL",
+    "SkinVaginaR",
+    "SkinLegRFront",
+    "SkinLegRBack",
+    "SkinLegLFront",
+    "SkinLegLBack",
+    "SkinPelvis",
+    "SkinButtL",
+    "SkinButtR",
+    "SkinBoobL",
+    "SkinBoobR",
+    "SkinRibcageFront",
+    "SkinArmR",
+    "SkinArmL",
+    "SkinShoulderL",
+    "SkinShoulderR",
+    "SkinRibcageBack",
+    "SkinTorsoLower",
+    "SkinTorsoUpper",
+    "DickSkin",
+    "DickMain",
+    "CumDick1",
+    "CumDick2",
+    "Xrayouter",
+    "XrayWomb",
+    "XrayBase",
+    "XrayAnalOuter",
+    "XrayAnalInnerR",
+    "XrayAnalInnerL",
+    "XrayAnalBase",
+    "VaginaInner",
+    "VaginaBase",
+    "AnusFront",
+    "AnusBack",
+    "InsideLegR",
+    "InsideLegL",
+    "NippleL",
+    "HighlightBoobL",
+    "NippleR",
+    "HightlightBoobR",
+    "Barcode",
+    "InsdeArmR",
+    "InsdeArmL",
+    "GlowOmegaMeterInner",
+    "GlowOmegaMeter",
+    "ModdableShirtLogo",
+    "ModdableShirtLeftSleeveLogo",
+    "ModdableShirtRightSleeveLogo",
+    "ModdablePantiesLogo",
+    "ModdableHoodieLogo",
+    "TailMain10",
+    "TailMain9",
+    "TailMain8",
+    "TailMain7",
+    "TailMain6",
+    "TailMain5",
+    "TailMain4",
+    "TailMain3",
+    "TailMain2",
+    "TailMain",
+    "CumOutsideBellyR",
+    "CumOutsideBoobRSide",
+    "CumOutsideFaceRight",
+    "CumOutsideFaceNose",
+    "CumOutsideFaceLeft",
+    "PointyEarL",
+    "PointyEarR",
+    "BellChokerMain",
+    "BellChokerBell",
+    "XrayInnerL",
+    "XrayInnerR2",
+    "HitAreaSpread",
+    "Plainshirt_main_bottom",
+    "HitAreaBoobR",
+    "HitAreaNippleL",
+    "HitAreaNippleR",
+    "HitAreaBoobL",
+    "HitAreaBothNipples",
+    "HitAreaBothBoobs",
+    "Dress2RolledUpFront",
+    "Dress2BottomBack",
+    "Dress2Chest",
+    "Dress2AltWaist",
+    "Dress2AltRib",
+    "Dress2SleeveL",
+    "Dress2SleeveR",
+    "DickMask",
+    "HitAreaGrabLegL",
+    "HitAreaGrabLegR",
+    "HitAreaWaistGrab",
+    "HitAreaOpenMouth",
+    "HitAreaCloseMouth",
+    "HitAreaFaceStroke",
+    "HitAreaThumbMouth",
+    "HitAreaFingering",
+    "HitAreaClitRub",
+    "ThumbMask",
+    "ThumbSuckThumb",
+    "ThumbSuck",
+    "SkinMouthThumbSuck",
+    "SkinLipUpper",
+    "SkinLipLower",
+    "SkinLipUpperToungeOut",
+    "SkinLipLowerToungeOut",
+    "SharpTeethUpper",
+    "TeethUpper",
+    "Saliva2",
+    "Saliva1",
+    "Tounge",
+    "SharpTeethLower",
+    "TeethLower",
+    "InnerMouthTounge",
+    "InnerMouth",
+    "MCRightHandVaginaSpread",
+    "MCRightHandThumbVaginaSpread",
+    "MCLeftHandVaginaSpread",
+    "MCLeftHandThumbVaginaSpread",
+    "MCLeftHandLegGrab",
+    "MCRightHandLegGrab",
+    "MCLeftHandNippleGrab",
+    "MCRightHandNippleGrab",
+    "ArtMesh8",
+    "MCLeftHandThumbNippleGrab",
+    "MCRightHandWaistGrab",
+    "MCLeftHandWaistGrab",
+    "MCLeftHandMiddleFingersFingering",
+    "MCLeftHandFingering",
+    "MCRightHandFondle",
+    "MCLeftHandFondle",
+    "AttachArmRHandHandholdingAbove",
+    "MCLeftHandHandholding",
+    "AttachArmLHandHandholdingAbove",
+    "MCRightHandHandholding",
+    "ClitRub",
+    "CumAnal",
+    "CumVagina2",
+    "SkinCumflation",
+    "AttachLegRFront",
+    "AttachLegRFoot",
+    "AttachLegRBack",
+    "AttachLegLFront",
+    "AttachLegLFoot",
+    "AttachLegLBack",
+    "AttachArmLForearm",
+    "AttachArmLHand1",
+    "AttachArmLHand2",
+    "AttachArmL",
+    "AttachArmRForearm",
+    "AttachArmRHand1",
+    "AttachArmRHand2",
+    "AttachArmR",
+    "HitAreaHandholdingL",
+    "HitAreaHandholdingR",
+    "Dress1_LowerFront",
+    "Dress1_Chest",
+    "Dress1_StringR",
+    "Dress1_Pelvis",
+    "Dress1_Waist",
+    "Dress1_Ribcage",
+    "Dress1_LowerBack",
+    "Dress1_StringsL",
+    "H0_Top_LeafR",
+    "H0_Top_LeafL",
+    "H0_Side",
+    "H0_Braid",
+    "H0_Back",
+    "H1_Top_Ahoge",
+    "H1_Side_Top",
+    "H1_Side_L2",
+    "H1_Front_Bang",
+    "H1_Side_L",
+    "H1_BackL",
+    "H1_Back_R1",
+    "H1_Back_R2",
+    "H3_Side",
+    "H3_Back_Top",
+    "H3_Back",
+    "H4_Knot",
+    "H4_Tail",
+    "HitAreaHeadpat",
+    "HitAreaLongHoodieMoveDown",
+    "HitAreaLongHoodieMoveUp",
+    "CumOutsideInnerThighLowerL",
+    "CumOutsideInnerThighL2",
+    "CumOutsideInnerThighR2",
+    "CumOutsideBoobL",
+    "CumOutsideBoobLSide",
+    "NipPiercingLeft",
+    "NipPiercingRight",
+    "NavelPiercing",
+    "MCAnusHandWrist_POV",
+    "MCAnusHandMain_POV",
+    "MCAnusHandFinger_POV",
+    "MCAnusHandThumb_POV",
+    "HitAreaAnusCenter",
+    "CumWomb1",
+    "CumVagina1",
+    "VaginaInner2",
+    "ModdableHairFront",
+    "H0_FrontClippedUp_Bang",
+    "H0_FrontClippedUp_HairClip",
+    "H0_Front_Bang",
+    "H0_Side_BangL",
+    "H0_Side_BangR",
+    "H0_SideAlt_Strand",
+    "H2_Front_Bang",
+    "H3_Front",
+    "CuteBow",
+    "Headband",
+    "WizardHat",
+    "BikiniBot_U_Main",
+    "BikiniTop_M_Left",
+    "BikiniTop_M_Right",
+    "BikiniTop_A_StrapR",
+    "BikiniTop_A_StrapL",
+    "BikiniBot_U_Main2",
+    "BikiniBot_U_Main3",
+    "BikiniBot_U_Main4",
+    "BikiniBot_U_Main5",
+    "BikiniBot_U_Main6",
+    "BikiniBot_U_Main7",
+    "HitArea_Panties",
+    "BikiniTop_A_OutlineL",
+    "BikiniTop_A_OutlineR",
+    "BikiniTop_A_StrapMiddle"
+  ],
+  "parts": [
+    "Part27",
+    "Part6",
+    "Part",
+    "Part10",
+    "Body2",
+    "Part28",
+    "Part22",
+    "Part3",
+    "Part24",
+    "Part7",
+    "Part5",
+    "Part4",
+    "Part29",
+    "Part8",
+    "Part9",
+    "Part12",
+    "Part11",
+    "Part25",
+    "Part21",
+    "Part18",
+    "Part23",
+    "Part17",
+    "Part19",
+    "Part26",
+    "Part15",
+    "Part16",
+    "Part14",
+    "Part2",
+    "Part13",
+    "Mask",
+    "Bra",
+    "Skirt",
+    "TailMain_Skinning",
+    "Part20"
+  ],
+  "provenance": {
+    "source": "My Dystopian Robot Girlfriend 0.97.12, Incontinent Cell",
+    "purpose": "User-authorized local study; imported donor model, not original EroInc art",
+    "source_game": "E:\\factorial-omega-win-64",
+    "moc_sha256": "6ba461bf6de1ab8f5ff11158ba52c7b23520be7f9983ae4aa44203b97ef27757"
+  }
+}

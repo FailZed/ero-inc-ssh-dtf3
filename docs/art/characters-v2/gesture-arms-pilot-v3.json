@@ -1,0 +1,522 @@
+{
+  "schema": 1,
+  "scope": "Nonsexual exposed arm edits on a fully clothed adult context. Only arm components are extracted.",
+  "output_prefix": "characters_v2/gesture_arms_pilot-v3",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "female_average_present_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/female_average_present_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/female_average_present_right/mask.png",
+      "seed": 2026102500,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult woman age 30, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, offering an open palm, palm facing up, relaxed separate fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\female_average_present_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          261.11262782342635,
+          530.532847873843
+        ],
+        "wrist": [
+          77.63613077183305,
+          456.80601164636437
+        ],
+        "pose": "present",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_wave_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/female_average_wave_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/female_average_wave_right/mask.png",
+      "seed": 2026102501,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult woman age 30, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, open hand raised for greeting, five natural fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\female_average_wave_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          187.734142369101,
+          462.4977801422612
+        ],
+        "wrist": [
+          206.49329372836985,
+          265.6542748119689
+        ],
+        "pose": "wave",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_shrug_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/female_average_shrug_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/female_average_shrug_right/mask.png",
+      "seed": 2026102502,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult woman age 30, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\female_average_shrug_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          255.43716983506903,
+          527.4344270817024
+        ],
+        "wrist": [
+          97.08048545628537,
+          409.01807743776567
+        ],
+        "pose": "shrug",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_shrug_left",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/female_average_shrug_left/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/female_average_shrug_left/mask.png",
+      "seed": 2026102503,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult woman age 30, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\female_average_shrug_left\\guide-full.png",
+        "shoulder": [
+          534.0807291666665,
+          359.11263020833326
+        ],
+        "elbow": [
+          614.330669415254,
+          518.7529766471234
+        ],
+        "wrist": [
+          782.7894728379974,
+          403.78161631796445
+        ],
+        "pose": "shrug",
+        "side": "left",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_hip_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/female_average_hip_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/female_average_hip_right/mask.png",
+      "seed": 2026102504,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult woman age 30, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, relaxed hand at the end of a bent arm, natural wrist and fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\female_average_hip_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          239.02675780524865,
+          516.9723101331182
+        ],
+        "wrist": [
+          370.0898437499999,
+          665.0322265625
+        ],
+        "pose": "hip",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_present_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/male_toned_present_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/male_toned_present_right/mask.png",
+      "seed": 2026102505,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult man age 35, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, offering an open palm, palm facing up, relaxed separate fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\male_toned_present_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          210.4907420727289,
+          547.030701407029
+        ],
+        "wrist": [
+          29.45694786767467,
+          473.96073288432626
+        ],
+        "pose": "present",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_wave_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/male_toned_wave_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/male_toned_wave_right/mask.png",
+      "seed": 2026102506,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult man age 35, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, open hand raised for greeting, five natural fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\male_toned_wave_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          137.07977362030059,
+          478.1873735326179
+        ],
+        "wrist": [
+          156.61293713184355,
+          283.9429129490068
+        ],
+        "pose": "wave",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_shrug_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/male_toned_shrug_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/male_toned_shrug_right/mask.png",
+      "seed": 2026102507,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult man age 35, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\male_toned_shrug_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          204.70402408781507,
+          543.8493829686837
+        ],
+        "wrist": [
+          48.7190445973645,
+          426.45627790049656
+        ],
+        "pose": "shrug",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_shrug_left",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/male_toned_shrug_left/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/male_toned_shrug_left/mask.png",
+      "seed": 2026102508,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult man age 35, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\male_toned_shrug_left\\guide-full.png",
+        "shoulder": [
+          508.59895833333326,
+          374.7200520833335
+        ],
+        "elbow": [
+          600.9442086101152,
+          535.1262164955866
+        ],
+        "wrist": [
+          751.9347658839127,
+          420.9921973424768
+        ],
+        "pose": "shrug",
+        "side": "left",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_hip_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v3/male_toned_hip_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v3/male_toned_hip_right/mask.png",
+      "seed": 2026102509,
+      "denoise": 0.62,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, original mature adult man age 35, standing front view, fully clothed in sleeveless dark navy high neck shirt and gray trousers, brown hair, blue eyes, natural bent arm, relaxed hand at the end of a bent arm, natural wrist and fingers, natural adult anatomy, continuous soft elbow, proportionate hand with five fingers, delicate thin warm brown outlines, matte warm skin, limited peach cel shadows, flat diffuse light, plain pale gray background",
+      "negative": "nude, naked, breasts, nipples, genitals, sexual, erotic, child, teen, long sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          0,
+          0,
+          832,
+          1472
+        ],
+        "local_offset": [
+          0,
+          0
+        ],
+        "local_size": [
+          832,
+          1472
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v3\\male_toned_hip_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          188.34017012831947,
+          533.3318891798269
+        ],
+        "wrist": [
+          321.4440104166666,
+          676.1458333333335
+        ],
+        "pose": "hip",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "context_fully_clothed": true,
+        "approved": false
+      }
+    }
+  ],
+  "width": 832,
+  "height": 1472,
+  "encode_individually": true
+}

@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "status": "reviewed_anatomy_candidates_not_runtime_registered",
+  "runtime_ready": false,
+  "canvas": [
+    720,
+    1280
+  ],
+  "baseline_y": 1244,
+  "scope": "Two original adult identities, three anatomical body variants each. Head contains face and hair together; no claim of a complete character rig.",
+  "adapter_sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+  "rigs": [
+    {
+      "id": "female_curvy",
+      "gender": "female",
+      "body_build": "moderate_curvy",
+      "age": 28,
+      "morphology": "human",
+      "head": "head.png",
+      "head_sha256": "f3b39471e5bdad18ef67e674fba04f0f4e625f6efa593e05aac4eb076b51bfa0",
+      "head_source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+      "head_source_sha256": "f9a7c48dac61c877d0788452073bda3fcccaa0745879d624daf6e0eb6a17f3c8",
+      "head_scope": "combined head, face and hair; not independently customizable yet",
+      "working_canvas": [
+        832,
+        1472
+      ],
+      "export_canvas": [
+        720,
+        1280
+      ],
+      "neck_y": 317,
+      "uniform_transform": {
+        "scale": 0.8807692307692307,
+        "size": [
+          733,
+          1296
+        ],
+        "offset": [
+          -7,
+          15
+        ]
+      },
+      "variants": [
+        {
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\female_bust_small_v4.png",
+          "source_sha256": "d14a86aac7fa6e11fe5b3358af1345a7eb1f0fba62626a59719a173f5849ccb1",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\ecf13dc1-c1ae-472a-9217-8dfc9109161a.json",
+          "operation": "Shared uniform transform and complementary head/body split",
+          "anatomical_variant": "small",
+          "canvas": [
+            720,
+            1280
+          ],
+          "baseline_y": 1244,
+          "id": "small",
+          "label": "Маленькая грудь",
+          "body": "body_small.png",
+          "body_sha256": "fc23b5c74a5a967835680b2b229a59c9db546516b33e2bdb81f1334fed4060e9",
+          "preview": "preview_small.png",
+          "alpha_bounds": [
+            183,
+            98,
+            534,
+            1243
+          ],
+          "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+          "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+        },
+        {
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\female_bust_medium_v3.png",
+          "source_sha256": "91d24d577446d7afd862ebdd52d0caef8f53ee463523ba90cac67b928dbcfd0b",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\004a15c2-41d5-469a-919f-6c3d2b28b021.json",
+          "operation": "Shared uniform transform and complementary head/body split",
+          "anatomical_variant": "medium",
+          "canvas": [
+            720,
+            1280
+          ],
+          "baseline_y": 1244,
+          "id": "medium",
+          "label": "Средняя грудь",
+          "body": "body_medium.png",
+          "body_sha256": "bfd4807f76284aa661c616078f6c1072b157489e357cf7773ba59565b7dce7a7",
+          "preview": "preview_medium.png",
+          "alpha_bounds": [
+            183,
+            98,
+            534,
+            1243
+          ],
+          "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+          "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+        },
+        {
+          "source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\female_average\\full.png",
+          "source_sha256": "f9a7c48dac61c877d0788452073bda3fcccaa0745879d624daf6e0eb6a17f3c8",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\fcffeb0a-61e2-4bfa-9264-a19fe878aa9b.json",
+          "operation": "Shared uniform transform and complementary head/body split",
+          "anatomical_variant": "full",
+          "canvas": [
+            720,
+            1280
+          ],
+          "baseline_y": 1244,
+          "id": "full",
+          "label": "Полная грудь",
+          "body": "body_full.png",
+          "body_sha256": "edf60807c0d362743dd38d054b514af229acf7ea75fb3b48c0702f3608f304d9",
+          "preview": "preview_full.png",
+          "alpha_bounds": [
+            183,
+            98,
+            535,
+            1243
+          ],
+          "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+          "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+        }
+      ]
+    },
+    {
+      "id": "male_toned",
+      "gender": "male",
+      "body_build": "toned",
+      "age": 28,
+      "morphology": "human",
+      "head": "head.png",
+      "head_sha256": "7d793c9b14989b00ccc3659648a5999e0033dade88df1574f3b09cf0a54c3c87",
+      "head_source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\male_toned\\full.png",
+      "head_source_sha256": "bb07647747e54800dfba9e9bdcd1b38d171ea8276ff960e7753fe29c09e5ea85",
+      "head_scope": "combined head, face and hair; not independently customizable yet",
+      "working_canvas": [
+        832,
+        1472
+      ],
+      "export_canvas": [
+        720,
+        1280
+      ],
+      "neck_y": 307,
+      "uniform_transform": {
+        "scale": 0.8807692307692307,
+        "size": [
+          733,
+          1296
+        ],
+        "offset": [
+          -7,
+          15
+        ]
+      },
+      "variants": [
+        {
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\male_anatomy_small_v3.png",
+          "source_sha256": "1ff5d5e38fe94e390685bb5b1093189a54777824602064422ad06fe659ebfea0",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\2b641eeb-c6ef-4757-b9d9-ee53828edf9c.json",
+          "operation": "Shared uniform transform and complementary head/body split",
+          "anatomical_variant": "small",
+          "canvas": [
+            720,
+            1280
+          ],
+          "baseline_y": 1244,
+          "id": "small",
+          "label": "Небольшой размер",
+          "body": "body_small.png",
+          "body_sha256": "6201b160fcdf487c8dec3b86aa89120e85cd0636321fc76c0bf51af3534f8bef",
+          "preview": "preview_small.png",
+          "alpha_bounds": [
+            202,
+            99,
+            517,
+            1244
+          ],
+          "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+          "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+        },
+        {
+          "source": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\bases\\male_toned\\full.png",
+          "source_sha256": "bb07647747e54800dfba9e9bdcd1b38d171ea8276ff960e7753fe29c09e5ea85",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\4689609e-13f2-49c1-af80-42a42e3b1e7d.json",
+          "operation": "Shared uniform transform and complementary head/body split",
+          "anatomical_variant": "average",
+          "canvas": [
+            720,
+            1280
+          ],
+          "baseline_y": 1244,
+          "id": "average",
+          "label": "Средний размер",
+          "body": "body_average.png",
+          "body_sha256": "d315c814e88175fbe4495beea12610c6545e4c22b3f4142cd9f0a7cdefdb4087",
+          "preview": "preview_average.png",
+          "alpha_bounds": [
+            202,
+            99,
+            516,
+            1243
+          ],
+          "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+          "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+        },
+        {
+          "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\cutouts\\male_anatomy_larger_v3.png",
+          "source_sha256": "5dca7e4e3831d48b2cb38a2df8228221a891dc79f67a5d3fd027cc75866f9f6f",
+          "run": "E:\\Ai\\ComfyUI-EroInc\\runs\\a8a8f742-1201-4b8d-a5b7-ab6b65508272.json",
+          "operation": "Shared uniform transform and complementary head/body split",
+          "anatomical_variant": "larger",
+          "canvas": [
+            720,
+            1280
+          ],
+          "baseline_y": 1244,
+          "id": "larger",
+          "label": "Более крупный размер",
+          "body": "body_larger.png",
+          "body_sha256": "3bcd73b07f93b0a33108416f98c1fc44af7c3c523a299019e3b23d08bc4349ef",
+          "preview": "preview_larger.png",
+          "alpha_bounds": [
+            202,
+            99,
+            517,
+            1244
+          ],
+          "technical_qa": "passed: shared canvas, complementary layers, full figure margins",
+          "status": "candidate_needs_clothing_fit_and_final_visual_acceptance"
+        }
+      ]
+    }
+  ]
+}

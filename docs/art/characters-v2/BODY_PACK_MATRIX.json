@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "status": "body_categories_covered_art_reviewed_not_integrated",
+  "scope": "Neutral original adult body foundations and anatomical replacement modules. Clothing, faces/hair, tattoos, wounds and accessories are separate packs. No donor pixels or implementations.",
+  "school_evidence": "E:/Ai/ComfyUI-EroInc/batches/body-pack-complete-v1/donor-body-metadata.json",
+  "categories": [
+    {
+      "id": "male_foundations",
+      "school_minimum": 24,
+      "school_structure": "4 frame groups x 6 body families",
+      "target": 32,
+      "our_structure": "8 body builds x 4 proportion frames; frame derivatives counted separately from base drawings",
+      "actual": 32,
+      "status": "covered"
+    },
+    {
+      "id": "female_foundations",
+      "school_minimum": 11,
+      "school_structure": "4 main + 2 waist overlays + 3 chubby + 2 mature body families",
+      "target": 12,
+      "actual": 12,
+      "status": "covered"
+    },
+    {
+      "id": "pregnancy_stages",
+      "school_minimum": 9,
+      "target": 9,
+      "actual": 9,
+      "status": "covered"
+    },
+    {
+      "id": "breast_size",
+      "school_minimum": 5,
+      "target": 5,
+      "actual": 5,
+      "status": "covered"
+    },
+    {
+      "id": "breast_shapes_per_size",
+      "school_minimum": 6,
+      "target": 6,
+      "note": "Natural shape alternatives; neutral standing base, not motion frames.",
+      "actual": 6,
+      "status": "covered"
+    },
+    {
+      "id": "nipple_areola_forms",
+      "school_minimum": 7,
+      "target": 7,
+      "actual": 7,
+      "status": "covered"
+    },
+    {
+      "id": "female_external_anatomy",
+      "school_minimum": 4,
+      "target": 4,
+      "actual": 4,
+      "status": "covered"
+    },
+    {
+      "id": "male_external_anatomy",
+      "school_minimum": 8,
+      "target": 8,
+      "structure": "4 natural resting proportions x 2 foreskin/coverage forms",
+      "actual": 8,
+      "status": "covered"
+    },
+    {
+      "id": "female_body_hair",
+      "school_minimum": 10,
+      "target": 10,
+      "actual": 10,
+      "status": "covered"
+    },
+    {
+      "id": "male_body_hair",
+      "school_minimum": 4,
+      "target": 6,
+      "our_structure": "3 pubic + 2 chest + 1 leg patterns",
+      "actual": 6,
+      "status": "covered"
+    },
+    {
+      "id": "arm_pose_families",
+      "school_minimum": 9,
+      "target": 9,
+      "note": "Separate front/back arm parts are not counted as independent pose designs.",
+      "actual": 9,
+      "status": "covered"
+    },
+    {
+      "id": "anthro_species_by_sex",
+      "school_minimum": 0,
+      "target": 6,
+      "structure": "cat, fox, wolf x adult female/male; own original bodies",
+      "actual": 6,
+      "status": "covered"
+    },
+    {
+      "id": "skin_material_palettes",
+      "school_minimum": 1,
+      "target": 8,
+      "note": "Recolors are never counted as new body drawings.",
+      "actual": 8,
+      "status": "covered"
+    },
+    {
+      "id": "thigh_shapes_per_sex",
+      "school_minimum": 2,
+      "target": 2,
+      "actual": 2,
+      "status": "covered"
+    },
+    {
+      "id": "calf_shapes_per_sex",
+      "school_minimum": 2,
+      "target": 2,
+      "actual": 2,
+      "status": "covered"
+    },
+    {
+      "id": "tan_patterns",
+      "school_minimum": 2,
+      "target": 2,
+      "actual": 2,
+      "status": "covered"
+    },
+    {
+      "id": "female_tone_with_default",
+      "target": 4,
+      "actual": 4,
+      "status": "covered"
+    },
+    {
+      "id": "male_tone_profiles",
+      "target": 3,
+      "actual": 3,
+      "status": "covered"
+    }
+  ],
+  "acceptance": [
+    "All required categories covered; unique visible shape alternatives rather than filenames.",
+    "Reference rendering retained, mature anatomy and whole-body nonsexual pose.",
+    "RGBA contours inspected against dark and light backgrounds.",
+    "Registered replacement masks and common anchors; supported recipes inspected for gaps and overlap errors; no donor pixels.",
+    "Full manifest separates source drawings, proportion derivatives, recolors and combinations.",
+    "Pack exported separately from runtime and saves."
+  ],
+  "completed_utc": "2026-10-19T14:17:13.690078+00:00",
+  "pack": "assets/art_source/characters_v2/body_pack_v1",
+  "technical_audit": "assets/art_source/characters_v2/body_pack_v1/review/final-technical-audit.json",
+  "visual_review": "assets/art_source/characters_v2/body_pack_v1/review/visual-review.json",
+  "parity_claim": "Required category/state counts covered. Male frame and pregnancy derivatives are explicitly distinguished from source drawings; quality and arbitrary recipe interoperability are not inferred from counts."
+}

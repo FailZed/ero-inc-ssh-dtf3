@@ -1,0 +1,164 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/save_slot_card.gd" id="1_card_script"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Card"]
+bg_color = Color(0.01, 0.018, 0.03, 0.66)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.36, 0.58, 0.73, 0.62)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 0.22)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Preview"]
+bg_color = Color(0.018, 0.031, 0.046, 0.48)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.30, 0.48, 0.61, 0.54)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Action"]
+bg_color = Color(0.015, 0.028, 0.04, 0.36)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.76, 0.42)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[node name="SaveSlotCard" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 292)
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+script = ExtResource("1_card_script")
+theme_override_styles/panel = SubResource("StyleBoxFlat_Card")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PreviewFrame" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+clip_contents = true
+theme_override_styles/panel = SubResource("StyleBoxFlat_Preview")
+
+[node name="PreviewTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/PreviewFrame"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch_mode = 6
+
+[node name="MarkerDots" type="Label" parent="MarginContainer/VBoxContainer/PreviewFrame"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -30.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.34, 0.12, 0.95)
+theme_override_font_sizes/font_size = 20
+text = "..."
+horizontal_alignment = 2
+
+[node name="EmptyOverlay" type="CenterContainer" parent="MarginContainer/VBoxContainer/PreviewFrame"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="EmptyLabel" type="Label" parent="MarginContainer/VBoxContainer/PreviewFrame/EmptyOverlay"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.48, 0.62, 0.72, 0.78)
+text = "Пустой слот"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MetaBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer/MetaBox"]
+layout_mode = 2
+clip_text = true
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.84, 0.91, 0.96, 1)
+text = "Пустой слот"
+
+[node name="DateLabel" type="Label" parent="MarginContainer/VBoxContainer/MetaBox"]
+layout_mode = 2
+clip_text = true
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.54, 0.66, 0.74, 0.9)
+text = "Нет данных"
+
+[node name="ActionsRow" type="HFlowContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 4
+
+[node name="PrimaryButton" type="Button" parent="MarginContainer/VBoxContainer/ActionsRow"]
+visible = false
+layout_mode = 2
+flat = true
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.78, 0.88, 0.96, 1)
+theme_override_colors/font_color_hover = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_color_pressed = Color(0.94, 0.45, 0.22, 1)
+theme_override_colors/font_color_disabled = Color(0.38, 0.46, 0.52, 0.72)
+theme_override_styles/normal = SubResource("StyleBoxFlat_Action")
+theme_override_styles/hover = SubResource("StyleBoxFlat_Action")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_Action")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_Action")
+text = "Загрузить"
+
+[node name="DeleteButton" type="Button" parent="MarginContainer/VBoxContainer/ActionsRow"]
+custom_minimum_size = Vector2(30, 24)
+layout_mode = 2
+flat = true
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.78, 0.88, 0.96, 1)
+theme_override_colors/font_color_hover = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_color_pressed = Color(0.94, 0.45, 0.22, 1)
+theme_override_colors/font_color_disabled = Color(0.38, 0.46, 0.52, 0.72)
+theme_override_styles/normal = SubResource("StyleBoxFlat_Action")
+theme_override_styles/hover = SubResource("StyleBoxFlat_Action")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_Action")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_Action")
+text = "DEL"
+
+[node name="OverwriteButton" type="Button" parent="MarginContainer/VBoxContainer/ActionsRow"]
+visible = false
+layout_mode = 2
+flat = true
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.78, 0.88, 0.96, 1)
+theme_override_colors/font_color_hover = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_color_pressed = Color(0.94, 0.45, 0.22, 1)
+theme_override_colors/font_color_disabled = Color(0.38, 0.46, 0.52, 0.72)
+theme_override_styles/normal = SubResource("StyleBoxFlat_Action")
+theme_override_styles/hover = SubResource("StyleBoxFlat_Action")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_Action")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_Action")
+text = "Перезаписать"

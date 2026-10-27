@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "scope": "Restore user-selected rendering through owned reference edits; review before expansion. Not runtime art.",
+  "output_prefix": "characters_v2/body_complete_bases_v1",
+  "preserve_input_latent": true,
+  "denoise": 0.32,
+  "steps": 16,
+  "cfg": 6.0,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi",
+  "items": [
+    {
+      "id": "male_slim",
+      "rig": "male_slim",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_slim/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_slim/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, slender adult male frame, narrow chest, slim limbs, smooth abdomen, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871000,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_average",
+      "rig": "female_average",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_average/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_average/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, balanced ordinary adult female proportions, medium natural breasts, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871001,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_soft",
+      "rig": "male_soft",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_soft/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_soft/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, soft ordinary adult male build, rounded waist, smooth abdomen, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871002,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_athletic",
+      "rig": "female_athletic",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_athletic/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_athletic/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, athletic adult woman, moderate shoulders, strong thighs, subtle musculature, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871003,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_average",
+      "rig": "male_average",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_average/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_average/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, ordinary adult male build, smooth abdomen, moderate frame, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871004,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_toned",
+      "rig": "male_toned",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_toned/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_toned/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, lean toned adult male build, moderate natural muscle definition, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871005,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_athletic",
+      "rig": "male_athletic",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_athletic/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_athletic/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, fit athletic adult male frame, developed shoulders and thighs, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871006,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_muscular",
+      "rig": "male_muscular",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_muscular/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_muscular/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, strong muscular adult man, developed balanced muscles, moderate proportions, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871007,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_broad",
+      "rig": "male_broad",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_broad/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_broad/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, wide adult male skeletal frame, broad chest, ordinary muscle tone, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871008,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_solid",
+      "rig": "male_solid",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/male_solid/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/male_solid/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult man, short brown hair, blue eyes, sturdy stocky adult man, broad waist, strong thighs, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871009,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_slim",
+      "rig": "female_slim",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_slim/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_slim/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, slender mature adult woman, narrow hips, slim limbs, small natural adult breasts, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871010,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_toned",
+      "rig": "female_toned",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_toned/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_toned/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, lean toned adult woman, modest natural muscle definition, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871011,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_strong",
+      "rig": "female_strong",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_strong/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_strong/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, strong adult female build, sturdy shoulders and legs, moderate musculature, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871012,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_curvy",
+      "rig": "female_curvy",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_curvy/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_curvy/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, moderately curvy adult woman, natural fuller breasts, clear waist, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871013,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_soft",
+      "rig": "female_soft",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_soft/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_soft/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, slightly soft adult female build, gentle rounded waist, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871014,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_pear",
+      "rig": "female_pear",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_pear/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_pear/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, adult pear shaped build, moderately broader hips and thighs, narrower shoulders, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871015,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_compact",
+      "rig": "female_compact",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_compact/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_compact/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, compact adult female frame, balanced proportions, ordinary build, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871016,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_sturdy",
+      "rig": "female_sturdy",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_sturdy/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_sturdy/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, sturdy adult female build, strong legs, broad ordinary waist, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871017,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_mature_slender",
+      "rig": "female_mature_slender",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_mature_slender/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_mature_slender/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, mature adult woman age 40, slender frame, natural adult breasts, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871018,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_mature_soft",
+      "rig": "female_mature_soft",
+      "category": "body_build",
+      "image": "characters_v2/body_complete_guides_v1/female_mature_soft/reference.png",
+      "mask": "characters_v2/body_complete_guides_v1/female_mature_soft/edit-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body neutral unclothed anatomical figure, adult woman, short brown bob, blue eyes, mature adult woman age 40, softly rounded moderate build, natural adult breasts, natural nipples, natural adult external anatomy, same relaxed standing pose, delicate thin brown contours, pale warm skin, light peach cel shadow, matte colors, limited flat cel shading, evenly lit, flat light gray background",
+      "seed": 9871019,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    }
+  ]
+}

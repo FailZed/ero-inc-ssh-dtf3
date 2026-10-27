@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "scope": "Restore user-selected rendering through owned reference edits; review before expansion. Not runtime art.",
+  "output_prefix": "characters_v2/body_anatomy_v3",
+  "preserve_input_latent": true,
+  "denoise": 0.8,
+  "steps": 16,
+  "cfg": 6.0,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi",
+  "items": [
+    {
+      "id": "male_external_1_covered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_1_covered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_1_covered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904000,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_1_uncovered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_1_uncovered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_1_uncovered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904001,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_2_covered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_2_covered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_2_covered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904002,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_2_uncovered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_2_uncovered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_2_uncovered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904003,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_3_covered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_3_covered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904004,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_3_uncovered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_3_uncovered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904005,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_4_covered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_4_covered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural foreskin, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904006,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_external_4_uncovered",
+      "rig": "male_canonical",
+      "category": "male_external_anatomy",
+      "image": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/reference.png",
+      "mask": "characters_v2/body_anatomy_guides_v3/male_external_4_uncovered/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, natural flaccid male anatomy at rest, natural separate scrotum, natural circumcised anatomy, same neutral relaxed standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904007,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    }
+  ]
+}

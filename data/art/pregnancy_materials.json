@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "temporary_art": true,
+  "rig": "prototype_female",
+  "source_manifest": "res://docs/art/SCHOOL_PREGNANCY_ASSETS.json",
+  "variants": {
+    "1": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy1.png",
+      "material": "res://data/art/materials/pregnancy_01.tres"
+    },
+    "2": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy2.png",
+      "material": "res://data/art/materials/pregnancy_02.tres"
+    },
+    "3": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy3.png",
+      "material": "res://data/art/materials/pregnancy_03.tres"
+    },
+    "4": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy4.png",
+      "material": "res://data/art/materials/pregnancy_04.tres"
+    },
+    "5": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy5.png",
+      "material": "res://data/art/materials/pregnancy_05.tres"
+    },
+    "6": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy6.png",
+      "material": "res://data/art/materials/pregnancy_06.tres"
+    },
+    "7": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy7.png",
+      "material": "res://data/art/materials/pregnancy_07.tres"
+    },
+    "8": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy8.png",
+      "material": "res://data/art/materials/pregnancy_08.tres"
+    },
+    "9": {
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/_pregnancy9.png",
+      "material": "res://data/art/materials/pregnancy_09.tres"
+    }
+  }
+}

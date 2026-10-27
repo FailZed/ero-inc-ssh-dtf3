@@ -1,0 +1,98 @@
+{
+  "status": "raw_curation_in_progress",
+  "items": [
+    {
+      "id": "female_arms_folded",
+      "index": "E:/Ai/ComfyUI-EroInc/batches/pose-redraw-pilot-v1/index.json",
+      "acceptance": "Whole figure reviewed: natural crossed forearms, no stencil head or warped limb, neutral non-graphic artistic anatomy. Alpha/layer extraction still pending."
+    },
+    {
+      "id": "female_full_pose_seated_front",
+      "index": "E:/Ai/ComfyUI-EroInc/batches/pose-redraw-pilot-v1/index.json",
+      "acceptance": "Whole figure reviewed: seated weight and bent knees, natural hands, no intimate genital detail. Stool/floor removal and layer extraction pending.",
+      "alpha_cleanup": [
+        {
+          "operation": "right_edge_from_skin",
+          "box": [
+            500,
+            1100,
+            590,
+            1360
+          ],
+          "edge_padding": 2,
+          "reason": "Native inspection identified stool crossbar outside the right shin; trim alpha to real painted skin edge, do not deform leg."
+        }
+      ]
+    },
+    {
+      "id": "male_full_pose_seated_front",
+      "index": "E:/Ai/ComfyUI-EroInc/batches/pose-redraw-pilot-v3/index.json",
+      "acceptance": "Whole figure reviewed: adult masculine anatomy and coherent sitting pose, no stickers. Stool/floor removal and layer extraction pending."
+    },
+    {
+      "id": "female_arms_rest",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-00.png",
+      "acceptance": "Whole figure reviewed: coherent adult body, natural relaxed/hip hand placement, no clothing or censor object. Alpha and native layer QA pending.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "male_arms_rest",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-00.png",
+      "acceptance": "Whole figure reviewed: coherent adult body, natural relaxed/hip hand placement, no clothing or censor object. Alpha and native layer QA pending.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "female_arms_hip_left",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-00.png",
+      "acceptance": "Whole figure reviewed: coherent adult body, natural relaxed/hip hand placement, no clothing or censor object. Alpha and native layer QA pending.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "female_arms_palm_left",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-04.png",
+      "acceptance": "Actual figure inspected: open-palm gesture, coherent limbs, clean non-graphic body. Background miniatures/text must be excluded in RGBA processing.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "female_arms_palm_right",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-08.png",
+      "acceptance": "Actual figure inspected: correct open-palm side, continuous anatomy, no censor object. Native mask review pending.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "female_arms_wave_left",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-12.png",
+      "acceptance": "Actual figure inspected: raised open palm and coherent elbow/shoulder, clean non-graphic body. Native alpha/layer review pending.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "female_arms_thinking",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-20.png",
+      "acceptance": "Actual figure inspected: hand touches chin naturally, continuous body anatomy, no censor object. Background miniature removal and native alpha review pending.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    },
+    {
+      "id": "female_arms_hip_right",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v3\\index.json",
+      "review_board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v3\\review.png",
+      "acceptance": "Correct front-facing hip gesture and coherent non-graphic figure under corrected standard ControlNet renderer. Background miniature must be excluded in RGBA.",
+      "inspection": "Full-figure board; transparent/native layer review remains separate."
+    }
+  ],
+  "rejections": [
+    {
+      "id": "male_arms_hip_left",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\index.json",
+      "board": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-all-v1\\review-00.png",
+      "reason": "Accidental dark censor object on pelvis. Not accepted; whole-figure seed retry required."
+    }
+  ],
+  "updated_utc": "2026-10-19T15:17:00.315497+00:00"
+}

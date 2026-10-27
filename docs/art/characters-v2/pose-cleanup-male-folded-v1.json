@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "scope": "Original mature adult neutral artistic body bases without clothing, non-graphic anatomy, no intimate detail. Not runtime registered.",
+  "output_prefix": "characters_v2/pose_cleanup_male_folded_v1",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "male_arms_folded_repair_1",
+      "rig": "male_canonical",
+      "category": "cleanup",
+      "image": "characters_v2/pose_cleanup_male_folded_v1/reference.png",
+      "mask": "characters_v2/pose_cleanup_male_folded_v1/mask.png",
+      "prompt": "eincanime, mature adult man age 35, original anime illustration, smooth uninterrupted skin surface in the small retouch area, featureless non-graphic pelvis, preserve existing neutral standing posture and all limbs, thin brown contours, warm matte flat colors, controlled peach cel shadows",
+      "negative": "genitals, penis, testicles, sexual, erotic, graphic anatomy, censored, censor bar, mosaic, sticker, emoji, white oval, white patch, symbols, clothing, text, logo, extra limbs, distorted anatomy",
+      "seed": 2026102000,
+      "denoise": 0.16,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_folded_repair_2",
+      "rig": "male_canonical",
+      "category": "cleanup",
+      "image": "characters_v2/pose_cleanup_male_folded_v1/reference.png",
+      "mask": "characters_v2/pose_cleanup_male_folded_v1/mask.png",
+      "prompt": "eincanime, mature adult man age 35, original anime illustration, smooth uninterrupted skin surface in the small retouch area, featureless non-graphic pelvis, preserve existing neutral standing posture and all limbs, thin brown contours, warm matte flat colors, controlled peach cel shadows",
+      "negative": "genitals, penis, testicles, sexual, erotic, graphic anatomy, censored, censor bar, mosaic, sticker, emoji, white oval, white patch, symbols, clothing, text, logo, extra limbs, distorted anatomy",
+      "seed": 2026102001,
+      "denoise": 0.22,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_folded_repair_3",
+      "rig": "male_canonical",
+      "category": "cleanup",
+      "image": "characters_v2/pose_cleanup_male_folded_v1/reference.png",
+      "mask": "characters_v2/pose_cleanup_male_folded_v1/mask.png",
+      "prompt": "eincanime, mature adult man age 35, original anime illustration, smooth uninterrupted skin surface in the small retouch area, featureless non-graphic pelvis, preserve existing neutral standing posture and all limbs, thin brown contours, warm matte flat colors, controlled peach cel shadows",
+      "negative": "genitals, penis, testicles, sexual, erotic, graphic anatomy, censored, censor bar, mosaic, sticker, emoji, white oval, white patch, symbols, clothing, text, logo, extra limbs, distorted anatomy",
+      "seed": 2026102002,
+      "denoise": 0.28,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_folded_repair_4",
+      "rig": "male_canonical",
+      "category": "cleanup",
+      "image": "characters_v2/pose_cleanup_male_folded_v1/reference.png",
+      "mask": "characters_v2/pose_cleanup_male_folded_v1/mask.png",
+      "prompt": "eincanime, mature adult man age 35, original anime illustration, smooth uninterrupted skin surface in the small retouch area, featureless non-graphic pelvis, preserve existing neutral standing posture and all limbs, thin brown contours, warm matte flat colors, controlled peach cel shadows",
+      "negative": "genitals, penis, testicles, sexual, erotic, graphic anatomy, censored, censor bar, mosaic, sticker, emoji, white oval, white patch, symbols, clothing, text, logo, extra limbs, distorted anatomy",
+      "seed": 2026102003,
+      "denoise": 0.34,
+      "preserve_input_latent": true
+    }
+  ],
+  "source_pose_index": "E:\\Ai\\ComfyUI-EroInc\\batches\\pose-redraw-pilot-v3\\index.json",
+  "source_pose_id": "male_arms_folded"
+}

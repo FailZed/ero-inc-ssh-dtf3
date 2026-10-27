@@ -1,0 +1,22 @@
+extends RefCounted
+const ERRORS := {
+	"adult_health_no_desire":"Сейчас нет желания близости. Можно отложить встречу.",
+	"adult_health_urgent_care":"Самочувствие требует срочной медицинской помощи.",
+	"adult_health_painful_discomfort":"Из-за боли или раздражения лучше прервать планы и обратиться к врачу.",
+	"adult_health_adults_only":"Это состояние доступно только взрослым персонажам.",
+	"menstrual_capability_required":"Это средство не требуется при текущих особенностях организма.",
+	"missing_menstrual_product":"В запасе нет выбранного средства гигиены.",
+	"unknown_menstrual_product":"Такое средство гигиены недоступно.",
+	"cervical_screening_not_applicable":"Этот скрининг не подходит при текущих анатомических особенностях.",
+	"screening_age_required":"Плановый скрининг пока не предусмотрен городской программой по возрасту.",
+	"screening_cooldown":"Следующий скрининг ещё не назначен. Жалобы можно обсудить на обычном осмотре.",
+	"vaccination_complete":"Все этапы вакцинации завершены.",
+	"vaccination_not_due":"Время следующего этапа вакцинации ещё не наступило.",
+	"vaccination_age_review_required":"Городская программа вакцинации рассчитана на взрослых до 45 лет.",
+	"vaccination_consult_required":"Сначала обсудите вакцинацию на врачебном осмотре.",
+	"vaccination_deferred_pregnancy":"Вакцинация отложена до завершения беременности.",
+	"diagnosis_required":"Сначала нужен осмотр и назначение врача.",
+	"treatment_in_progress":"Назначенный курс ещё продолжается.",
+	"diagnosed_lesions_required":"Для этой процедуры нужны выявленные врачом изменения кожи.",
+	"no_urgent_health_problem":"Сейчас нет состояния для этой срочной процедуры.",
+	"invalid_intimacy_intention":"Выберите доступное намерение."}

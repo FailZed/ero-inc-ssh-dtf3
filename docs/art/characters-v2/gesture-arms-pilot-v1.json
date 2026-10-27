@@ -1,0 +1,512 @@
+{
+  "schema": 1,
+  "scope": "Nonsexual isolated adult arm and hand corrective art only. No torso input or output.",
+  "output_prefix": "characters_v2/gesture_arms_pilot-v1",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "female_average_present_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/female_average_present_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/female_average_present_right/mask.png",
+      "seed": 2026102400,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult female arm and hand sprite component, bent elbow, offering an open palm, palm facing up, relaxed separate fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          -18,
+          300,
+          411,
+          586
+        ],
+        "local_offset": [
+          59,
+          167
+        ],
+        "local_size": [
+          650,
+          433
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\female_average_present_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          261.11262782342635,
+          530.532847873843
+        ],
+        "wrist": [
+          77.63613077183305,
+          456.80601164636437
+        ],
+        "pose": "present",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_wave_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/female_average_wave_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/female_average_wave_right/mask.png",
+      "seed": 2026102401,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult female arm and hand sprite component, bent elbow, open hand raised for greeting, five natural fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          132,
+          166,
+          411,
+          518
+        ],
+        "local_offset": [
+          126,
+          59
+        ],
+        "local_size": [
+          515,
+          650
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\female_average_wave_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          187.734142369101,
+          462.4977801422612
+        ],
+        "wrist": [
+          206.49329372836985,
+          265.6542748119689
+        ],
+        "pose": "wave",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_shrug_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/female_average_shrug_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/female_average_shrug_right/mask.png",
+      "seed": 2026102402,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult female arm and hand sprite component, bent elbow, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          4,
+          300,
+          411,
+          583
+        ],
+        "local_offset": [
+          59,
+          158
+        ],
+        "local_size": [
+          650,
+          452
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\female_average_shrug_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          255.43716983506903,
+          527.4344270817024
+        ],
+        "wrist": [
+          97.08048545628537,
+          409.01807743776567
+        ],
+        "pose": "shrug",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_shrug_left",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/female_average_shrug_left/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/female_average_shrug_left/mask.png",
+      "seed": 2026102403,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult female arm and hand sprite component, bent elbow, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          473,
+          298,
+          867,
+          575
+        ],
+        "local_offset": [
+          59,
+          155
+        ],
+        "local_size": [
+          650,
+          457
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\female_average_shrug_left\\guide-full.png",
+        "shoulder": [
+          534.0807291666665,
+          359.11263020833326
+        ],
+        "elbow": [
+          614.330669415254,
+          518.7529766471234
+        ],
+        "wrist": [
+          782.7894728379974,
+          403.78161631796445
+        ],
+        "pose": "shrug",
+        "side": "left",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "female_average_hip_right",
+      "rig": "female_average",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/female_average_hip_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/female_average_hip_right/mask.png",
+      "seed": 2026102404,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult female arm and hand sprite component, bent elbow, relaxed hand at the end of a bent arm, natural wrist and fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          183,
+          300,
+          473,
+          747
+        ],
+        "local_offset": [
+          173,
+          59
+        ],
+        "local_size": [
+          422,
+          650
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\female_average_hip_right\\guide-full.png",
+        "shoulder": [
+          349.85709635416674,
+          361.23014322916674
+        ],
+        "elbow": [
+          239.02675780524865,
+          516.9723101331182
+        ],
+        "wrist": [
+          370.0898437499999,
+          665.0322265625
+        ],
+        "pose": "hip",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_present_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/male_toned_present_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/male_toned_present_right/mask.png",
+      "seed": 2026102405,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult male arm and hand sprite component, bent elbow, offering an open palm, palm facing up, relaxed separate fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          -35,
+          310,
+          368,
+          608
+        ],
+        "local_offset": [
+          59,
+          143
+        ],
+        "local_size": [
+          650,
+          481
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\male_toned_present_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          210.4907420727289,
+          547.030701407029
+        ],
+        "wrist": [
+          29.45694786767467,
+          473.96073288432626
+        ],
+        "pose": "present",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_wave_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/male_toned_wave_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/male_toned_wave_right/mask.png",
+      "seed": 2026102406,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult male arm and hand sprite component, bent elbow, open hand raised for greeting, five natural fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          71,
+          165,
+          368,
+          539
+        ],
+        "local_offset": [
+          126,
+          59
+        ],
+        "local_size": [
+          516,
+          650
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\male_toned_wave_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          137.07977362030059,
+          478.1873735326179
+        ],
+        "wrist": [
+          156.61293713184355,
+          283.9429129490068
+        ],
+        "pose": "wave",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_shrug_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/male_toned_shrug_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/male_toned_shrug_right/mask.png",
+      "seed": 2026102407,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult male arm and hand sprite component, bent elbow, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          -35,
+          310,
+          368,
+          605
+        ],
+        "local_offset": [
+          59,
+          146
+        ],
+        "local_size": [
+          650,
+          476
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\male_toned_shrug_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          204.70402408781507,
+          543.8493829686837
+        ],
+        "wrist": [
+          48.7190445973645,
+          426.45627790049656
+        ],
+        "pose": "shrug",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_shrug_left",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/male_toned_shrug_left/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/male_toned_shrug_left/mask.png",
+      "seed": 2026102408,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult male arm and hand sprite component, bent elbow, palm facing up in a natural questioning gesture, relaxed fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          440,
+          306,
+          863,
+          596
+        ],
+        "local_offset": [
+          59,
+          161
+        ],
+        "local_size": [
+          650,
+          446
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\male_toned_shrug_left\\guide-full.png",
+        "shoulder": [
+          508.59895833333326,
+          374.7200520833335
+        ],
+        "elbow": [
+          600.9442086101152,
+          535.1262164955866
+        ],
+        "wrist": [
+          751.9347658839127,
+          420.9921973424768
+        ],
+        "pose": "shrug",
+        "side": "left",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    },
+    {
+      "id": "male_toned_hip_right",
+      "rig": "male_toned",
+      "category": "isolated_gesture_arm",
+      "image": "characters_v2/gesture_arms_pilot-v1/male_toned_hip_right/reference.png",
+      "mask": "characters_v2/gesture_arms_pilot-v1/male_toned_hip_right/mask.png",
+      "seed": 2026102409,
+      "denoise": 0.56,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, single isolated complete adult male arm and hand sprite component, bent elbow, relaxed hand at the end of a bent arm, natural wrist and fingers, natural adult anatomy, continuous elbow volume, elegant proportional hand, thin warm brown outlines, matte warm skin, subtle limited peach cel shading, plain pale gray background, no other body parts",
+      "negative": "body, torso, breasts, face, chest, genitals, sexual, erotic, child, teen, clothes, sleeves, glove, extra arm, duplicate hand, six fingers, short stump, thin stick arm, huge hand, thick ink, plastic, 3d, text, symbols, watermark, injury, gore",
+      "authoring": {
+        "crop": [
+          128,
+          310,
+          447,
+          769
+        ],
+        "local_offset": [
+          158,
+          59
+        ],
+        "local_size": [
+          452,
+          650
+        ],
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\gesture_arms_pilot-v1\\male_toned_hip_right\\guide-full.png",
+        "shoulder": [
+          299.12630208333326,
+          378.9518229166665
+        ],
+        "elbow": [
+          188.34017012831947,
+          533.3318891798269
+        ],
+        "wrist": [
+          321.4440104166666,
+          676.1458333333335
+        ],
+        "pose": "hip",
+        "side": "right",
+        "canvas": [
+          832,
+          1472
+        ],
+        "nonsexual_arm_only": true,
+        "approved": false
+      }
+    }
+  ],
+  "width": 768,
+  "height": 768,
+  "encode_individually": true
+}

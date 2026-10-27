@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "scope": "Restore user-selected rendering through owned reference edits; review before expansion. Not runtime art.",
+  "output_prefix": "characters_v2/body_pose_v9",
+  "preserve_input_latent": true,
+  "denoise": 0.8,
+  "steps": 16,
+  "cfg": 6.0,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi",
+  "items": [
+    {
+      "id": "male_arms_left_open",
+      "rig": "male_canonical",
+      "category": "arm_pose_families",
+      "image": "characters_v2/body_pose_guides_v9/male_arms_left_open/reference.png",
+      "mask": "characters_v2/body_pose_guides_v9/male_arms_left_open/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, relaxed standing adult figure, left open arm gesture, bare shoulders and bare arms, natural relaxed hands, preserve body and legs, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904008,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_right_open",
+      "rig": "male_canonical",
+      "category": "arm_pose_families",
+      "image": "characters_v2/body_pose_guides_v9/male_arms_right_open/reference.png",
+      "mask": "characters_v2/body_pose_guides_v9/male_arms_right_open/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, relaxed standing adult figure, right open arm gesture, bare shoulders and bare arms, natural relaxed hands, preserve body and legs, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904009,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_both_open",
+      "rig": "male_canonical",
+      "category": "arm_pose_families",
+      "image": "characters_v2/body_pose_guides_v9/male_arms_both_open/reference.png",
+      "mask": "characters_v2/body_pose_guides_v9/male_arms_both_open/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, relaxed standing adult figure, both open arm gesture, bare shoulders and bare arms, natural relaxed hands, preserve body and legs, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904010,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_left_wide",
+      "rig": "male_canonical",
+      "category": "arm_pose_families",
+      "image": "characters_v2/body_pose_guides_v9/male_arms_left_wide/reference.png",
+      "mask": "characters_v2/body_pose_guides_v9/male_arms_left_wide/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, relaxed standing adult figure, left wide arm gesture, bare shoulders and bare arms, natural relaxed hands, preserve body and legs, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904014,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_right_wide",
+      "rig": "male_canonical",
+      "category": "arm_pose_families",
+      "image": "characters_v2/body_pose_guides_v9/male_arms_right_wide/reference.png",
+      "mask": "characters_v2/body_pose_guides_v9/male_arms_right_wide/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult man, short brown hair, age 30, full body neutral unclothed anatomical character sheet, relaxed standing adult figure, right wide arm gesture, bare shoulders and bare arms, natural relaxed hands, preserve body and legs, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904015,
+      "denoise": 0.3,
+      "preserve_input_latent": true
+    }
+  ],
+  "body_lora": {
+    "name": "EroInc/body_300.safetensors",
+    "sha256": "20cf92b51978984959cb3b4e6edb4ce4d054ce6955220ca9df56b333f1fe0823",
+    "strength": 0.35
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-19",
+  "engine": "Godot 4.7.2 stable official ed1daf0bf",
+  "scope": "Original opt-in NPC life runtime; no Sims 4 or School parity claim",
+  "main_game_enabled": false,
+  "main_catalog_groups_changed": false,
+  "save_schema_changed": false,
+  "player_save_files_used": false,
+  "art_generation_changed": false,
+  "catalog": {
+    "stages_per_aspiration": 3,
+    "aspirations": 5,
+    "actions": 17
+  },
+  "tests": {
+    "result": {
+      "checks": 911,
+      "failed": 0,
+      "failures": []
+    },
+    "exported_standalone": true,
+    "command": "tools/test_mechanics.ps1 -Isolated -Pack",
+    "replay": "JSON restore and bulk/split time equality passed",
+    "inactive_extension": "Existing state and RNG equality passed",
+    "npc_life_benchmark": {
+      "actions": {
+        "connect": 691,
+        "create": 1338,
+        "dispute": 1,
+        "eat": 1000,
+        "practice": 2325,
+        "publish": 170,
+        "reconcile": 1,
+        "rest": 23,
+        "sleep": 2591,
+        "study": 1278,
+        "support": 53,
+        "visit": 439,
+        "walk": 47,
+        "wash": 448,
+        "work": 1932
+      },
+      "days": 7,
+      "milestones": 154,
+      "milliseconds": 8497,
+      "npcs": 100
+    },
+    "legacy_benchmark": {
+      "days": 7,
+      "milliseconds": 1111,
+      "npcs": 100
+    }
+  },
+  "independent_probe": {
+    "failed": 0,
+    "successful_social_actions": 788,
+    "milestones": 141,
+    "milliseconds": 8660,
+    "days": 7,
+    "command": "tools/godot.ps1 --headless --main-pack mechanics-test.pck --script npc_life_probe.gd",
+    "npcs": 100,
+    "seed": 20261019,
+    "report": "NPC_LIFE_STUDY.json"
+  },
+  "validation_limits": [
+    "Headless logic only; not FPS or Live2D",
+    "The main Gameplay does not enable this extension",
+    "Not a human playtest",
+    "500 NPC performance not measured",
+    "General GOAP, spatial furniture interactions, households and complete careers are outside this change"
+  ],
+  "source_hashes": {
+    "scripts/mechanics/npc_life_simulation.gd": "F39965F1D266A9410926B0B97A59EC9C7D190BEAD8799952E659411C16DFB81A",
+    "scripts/mechanics/npc_agency.gd": "CDDA2BB404CD81BE268E3464367386583639F73BEE5993F5687AAAECEDF90902",
+    "scripts/mechanics/core/utility_ai.gd": "0FFC862B231B80F4C76B5B8AB336811C4A1A432997318B865B6F79D42541CA94",
+    "scripts/mechanics/core/agency_validation.gd": "81AE8985B5F14C197E4D91929F0F9CCDC6DA667A9957A6AC4C4D9E38421EA41A",
+    "scripts/mechanics/debug/npc_life_probe.gd": "3F91A02A792E59BDB36E0000C04CC7D0949112BAE85408A80A63E63872AA9BFF",
+    "scripts/mechanics/social.gd": "98C589764EB97F1213C98EC385C9156D498B2D3B76432042116DC80640F5626E",
+    "scripts/mechanics/social_rules.gd": "B9A70F27B2A203595E1DA1E754D00085479E08CE290417DB5DA1207583991AD3",
+    "scripts/mechanics/core/validation.gd": "D9A593DA58310768E15F0F55581E356841960828535CC2B85163222535A27820",
+    "data/mechanics/npc_life.json": "3928EF3E8B4F62D45256B0DB992C5F9C1303E491F0CD43242C087A9EB55C69E2",
+    "tests/mechanics/npc_life.gd": "69473FC5BBAEB709146C949564C543B15559100B795BA48E137010EA05EB998F",
+    "tests/mechanics/run.gd": "CEA89630BF3450557F02A83BC19A573BE527B316C8CB43F3FAC6DB5A20B01B8C"
+  }
+}

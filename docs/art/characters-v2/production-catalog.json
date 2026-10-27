@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "status": "six_anatomy_layer_candidates_exported_wardrobe_not_approved",
+  "engine_integration": false,
+  "style": {
+    "trigger": "eincanime",
+    "checkpoint": "DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+    "adapter": "EroInc/candidate_400.safetensors",
+    "strength": 0.65,
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9"
+  },
+  "technical": {
+    "generation_size": [
+      832,
+      1472
+    ],
+    "layer_canvas": [
+      720,
+      1280
+    ],
+    "baseline_y": 1244,
+    "lighting": "even warm diffuse light, matte materials, limited cel shadows",
+    "background": "flat neutral for generation; verified alpha after cutout",
+    "alignment": "body silhouette and pose are locked before clothes; identical canvas and anchor across layers",
+    "working_layer_canvas": [
+      832,
+      1472
+    ],
+    "working_baseline_y": 1395,
+    "export_note": "Working layers remain 832x1472. Final 720x1280 export uses one shared uniform transform with baseline 1244; no individual layer stretching."
+  },
+  "age": {
+    "minimum": 25,
+    "default": 28,
+    "scope": "original adult characters only"
+  },
+  "body_types": {
+    "female": {
+      "slim": "slender adult proportions",
+      "average": "balanced ordinary proportions",
+      "toned": "slender with modest muscle definition",
+      "athletic": "fit adult with moderate shoulders and thighs",
+      "strong": "moderately developed adult musculature",
+      "curvy": "moderate bust and hips, natural waist",
+      "soft": "slightly softer ordinary build",
+      "pear": "moderate hips and thighs, narrower shoulders"
+    },
+    "male": {
+      "slim": "slender adult man",
+      "average": "ordinary balanced build",
+      "toned": "lean modest muscle definition",
+      "athletic": "fit adult man",
+      "muscular": "developed musculature without exaggeration",
+      "broad": "wider adult shoulders and torso",
+      "soft": "slightly soft ordinary build",
+      "solid": "stockier adult man with balanced proportions"
+    }
+  },
+  "morphology": {
+    "human": {
+      "layers": []
+    },
+    "kemonomimi": {
+      "species": [
+        "cat",
+        "fox",
+        "wolf"
+      ],
+      "layers": [
+        "ears_back",
+        "ears_front",
+        "tail_back"
+      ],
+      "face": "human adult face"
+    },
+    "anthro": {
+      "species": [
+        "cat",
+        "fox",
+        "wolf"
+      ],
+      "layers": [
+        "tail_back",
+        "fur_body",
+        "muzzle",
+        "ears",
+        "fur_front"
+      ],
+      "face": "original adult anthropomorphic face; separate rig and clothing-fit QA"
+    }
+  },
+  "poses": {
+    "idle_front": "standing, front view, relaxed lowered arms, feet apart",
+    "idle_three_quarter": "standing, slight three-quarter view, relaxed lowered arms",
+    "explain": "standing, one open palm raised near waist, conversational gesture",
+    "greeting": "standing, one hand raised in a calm greeting",
+    "arms_crossed": "standing, arms comfortably crossed",
+    "hand_on_hip": "standing, one hand on hip, relaxed posture",
+    "thinking": "standing, hand near chin, thoughtful posture",
+    "seated": "sitting upright on a simple chair, hands resting on thighs"
+  },
+  "emotions": [
+    "neutral",
+    "gentle_smile",
+    "confident",
+    "thoughtful",
+    "surprised",
+    "concerned",
+    "sad",
+    "annoyed",
+    "embarrassed"
+  ],
+  "wardrobe": {
+    "body_base": {
+      "purpose": "nonsexual anatomical base beneath clothes",
+      "female": "natural adult female anatomy, neutral standing pose",
+      "male": "natural adult male anatomy, natural nipples and flaccid external anatomy, neutral standing pose"
+    },
+    "casual": {
+      "top": [
+        "plain t-shirt",
+        "plain blouse",
+        "plain shirt"
+      ],
+      "bottom": [
+        "straight trousers",
+        "jeans",
+        "knee-length skirt"
+      ],
+      "shoes": [
+        "sneakers",
+        "flat shoes"
+      ]
+    },
+    "home": {
+      "top": [
+        "loose t-shirt",
+        "long-sleeve home shirt"
+      ],
+      "bottom": [
+        "lounge trousers",
+        "home shorts"
+      ],
+      "shoes": [
+        "slippers",
+        "bare feet"
+      ]
+    },
+    "work": {
+      "top": [
+        "collared shirt",
+        "blouse",
+        "simple jacket"
+      ],
+      "bottom": [
+        "straight trousers",
+        "knee-length skirt"
+      ],
+      "shoes": [
+        "plain shoes"
+      ]
+    },
+    "sport": {
+      "top": [
+        "sports t-shirt"
+      ],
+      "bottom": [
+        "track trousers",
+        "sports shorts"
+      ],
+      "shoes": [
+        "sneakers"
+      ]
+    },
+    "bathroom": {
+      "top": [
+        "closed bathrobe"
+      ],
+      "shoes": [
+        "slippers",
+        "bare feet"
+      ]
+    },
+    "street": {
+      "outer": [
+        "light cardigan",
+        "casual jacket"
+      ],
+      "top": [
+        "plain t-shirt",
+        "shirt"
+      ],
+      "bottom": [
+        "jeans",
+        "straight trousers"
+      ],
+      "shoes": [
+        "sneakers",
+        "boots"
+      ]
+    },
+    "underwear": {
+      "female": [
+        "plain opaque bra",
+        "plain opaque briefs"
+      ],
+      "male": [
+        "plain boxer briefs"
+      ],
+      "purpose": "ordinary nonsexual base layer"
+    },
+    "outerwear": {
+      "outer": [
+        "light zipped jacket",
+        "closed wool coat"
+      ],
+      "bottom": [
+        "jeans",
+        "straight trousers"
+      ],
+      "shoes": [
+        "ankle boots"
+      ]
+    },
+    "winter": {
+      "outer": [
+        "closed padded winter coat",
+        "closed wool winter coat"
+      ],
+      "bottom": [
+        "warm straight trousers"
+      ],
+      "shoes": [
+        "winter boots"
+      ],
+      "accessories": [
+        "knitted scarf",
+        "knitted hat",
+        "winter gloves"
+      ],
+      "note": "Start with bare hands and no hat to validate the base fit. Hats and gloves are separate later accessories."
+    }
+  },
+  "layer_order": [
+    "tail_back",
+    "hair_back",
+    "ears_back",
+    "body",
+    "face_base",
+    "eyes",
+    "eyebrows",
+    "mouth",
+    "underwear",
+    "bottom",
+    "top",
+    "outerwear",
+    "shoes",
+    "accessories",
+    "hair_front",
+    "ears_front",
+    "fur_front"
+  ],
+  "quality_gates": [
+    "Style comparison passes before pose and wardrobe production.",
+    "Full figure contains head, hands and both feet with margins.",
+    "Keep moderate female body diversity; exclude extreme or distorted proportions.",
+    "Original identity remains stable across expressions and garments.",
+    "Clothes fit the exact selected body and pose; no one-size overlay stretching.",
+    "No logos, signatures, accidental text, robotic faces or plastic skin.",
+    "Every shipped layer has verified alpha, exact canvas, anchor and source lineage."
+  ],
+  "note": "This file defines the next production families; it does not claim those images or layered rigs are already drawn.",
+  "anatomical_variants": {
+    "independent_of": [
+      "body_build",
+      "height",
+      "identity",
+      "pose"
+    ],
+    "female_bust": {
+      "values": [
+        "small",
+        "medium",
+        "full"
+      ],
+      "meaning": "Natural adult chest volume; moderate proportions"
+    },
+    "male_genitals": {
+      "values": [
+        "small",
+        "average",
+        "larger"
+      ],
+      "meaning": "Natural flaccid adult anatomy; neutral nonsexual standing base"
+    },
+    "wardrobe_fit_key": [
+      "morphology",
+      "gender",
+      "body_build",
+      "bust_size",
+      "pose"
+    ],
+    "status": "Six exported candidates. Final volume calibration, additional builds and clothing fit pending.",
+    "note": "A prompt label does not prove the rendered size. Clothing needs per-base fit, especially around the female chest.",
+    "candidate_pack": "assets/art_source/characters_v2/anatomy_candidates_v1/manifest.json",
+    "review_board": "docs/art/characters-v2/anatomy-variants-review.png"
+  }
+}

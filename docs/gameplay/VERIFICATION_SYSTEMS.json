@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-19",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "revision": "connected-main-systems-and-npc-club-decisions",
+  "scope": "Main game integration and existing runtime regression; not complete donor content parity",
+  "commands": [
+    "tools/test_gameplay.ps1",
+    "tools/test_mechanics.ps1 -Isolated -Pack",
+    "tools/test_story_flow.ps1",
+    "tools/test_gameplay_snapshot.ps1"
+  ],
+  "gameplay": {
+    "checks": 341,
+    "failed": 0,
+    "failures": []
+  },
+  "service_boundary_audit": {
+    "atomic_rejection": true,
+    "services": [
+      "character",
+      "inventory",
+      "world",
+      "economy",
+      "housing",
+      "preferences",
+      "social",
+      "organizations",
+      "lifecycle",
+      "encounters",
+      "actions",
+      "events",
+      "health",
+      "combat",
+      "careers",
+      "security",
+      "social_rules",
+      "institutions",
+      "interior",
+      "activities",
+      "appearance",
+      "population",
+      "npc_behavior",
+      "npc_personalities",
+      "npc_agency",
+      "npc_relationships",
+      "npc_dialogue",
+      "needs"
+    ]
+  },
+  "independent_pck": {
+    "checks": 1722,
+    "failed": 0,
+    "failures": []
+  },
+  "story_flows": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11056,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10947,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11003,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 7629,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10968,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "cross_process_snapshot": [
+    {
+      "mode": "write",
+      "ok": true
+    },
+    {
+      "mode": "read",
+      "ok": true
+    }
+  ],
+  "snapshot_schema": {
+    "base": 1,
+    "main": 2
+  },
+  "captures": [
+    {
+      "path": "docs/gameplay/captures/systems-2026-10-19/systems-health.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "661dc145886553ebbc3319813c29837db727f8db1629f99505b60363e6e63ee4",
+      "visually_inspected": true,
+      "kind": "actual native Godot UI in a controlled development world; not a user save or a concept image"
+    },
+    {
+      "path": "docs/gameplay/captures/systems-2026-10-19/systems-work.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "74f28a7bec2792a376d764dfe41c237e9651760ab0e931a2df4e23ab991fbc7d",
+      "visually_inspected": true,
+      "kind": "actual native Godot UI in a controlled development world; not a user save or a concept image"
+    },
+    {
+      "path": "docs/gameplay/captures/systems-2026-10-19/systems-club.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "cf13335a05c49b80530645ed278307cfa1ff1424c2f5d7ce9fb203e99e28feef",
+      "visually_inspected": true,
+      "kind": "actual native Godot UI in a controlled development world; not a user save or a concept image"
+    }
+  ],
+  "source_sha256": {
+    "scripts/mechanics/simulation.gd": "7ad9e09ac43f9481ea0314c8822bddaa1ab559387637a553c6d1fbb64ae1923f",
+    "scripts/mechanics/character.gd": "2748a66001ba4d4d372c5a5f2e2b95266c4287f5f539129c541b8de1b73d4ad0",
+    "scripts/gameplay/gameplay.gd": "8785bce2eddf946aac6e09db9021475227a269648b894793cc09c95960302d45",
+    "scripts/gameplay/main_simulation.gd": "918af7ad5b66fb9fe10bfddca07913bd0f0df243d76c6ef15d1c04a5688e5eb7",
+    "scripts/gameplay/player_needs.gd": "3b849f835c756d52c4dc40265c72cee37bbc9c57277cc69a02a4d88d10913e1a",
+    "scripts/gameplay/action_policy.gd": "9a4e5b37254d363b38405eb5e3f70274b9fdeb46731982cb8c89281568e59ea1",
+    "scripts/gameplay/player_character.gd": "189f1e4d8ed0ca7443b2e02ccf4831cd5715d45aca9b86b14e6a0fd79a13bf52",
+    "scripts/gameplay/player_relationships.gd": "ea4c2f55894d07ca1310f3f5b3997df738f64cecc3db79a7aa2c7fc60f1be899",
+    "scripts/gameplay/player_institutions.gd": "89a0520f711b403225f277e415bd7a2ff47e6a8498c42a7913a0bf27b3577cbf",
+    "scripts/gameplay/presentation.gd": "2adf2c3c810ad2630421cc22723f188cd5e81ef7ac131039cdd320b6bc66f9bf",
+    "scripts/ui/gameplay/gameplay_shell.gd": "16fc03ed96f370a98a25370642fb0184c04d1619a089cf1f985dd9a13d161a55",
+    "scripts/ui/gameplay/player_hud.gd": "0142d7cfc58a1ecfdd0fd989a6e23e2034459c6894848f20932c9f90f27eaf42",
+    "scripts/ui/gameplay/preview.gd": "fae88273245523d31d36abf214104a53c689b82118ff8a0478fca6687af10532",
+    "tests/gameplay/player_needs.gd": "10e640de9d5326ad57392dd2a79ed890620824e7f6f8809a8b9f29419f613d33",
+    "tests/gameplay/systems.gd": "2b4fb0dd1e13399344e31581d35530bf4e10d05dd21159ddef980d193588a3f7",
+    "tests/gameplay/snapshot_process.gd": "fddb2c1b193bf2d0397989c6e80ade8d32dc62bd19ea5ca12c91923a7c9875ce",
+    "tests/gameplay/run.gd": "539ab6f73a9f160be62b47462dbd5ab7fe8508c85a4cb6597e88119d27f00fad",
+    "tools/test_gameplay_snapshot.ps1": "5644659af85ff90272523a3ab1820330a092eea1ca57aad86e9d75c36a2f109a"
+  },
+  "logs": [
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/tests.log",
+      "sha256": "92b58e14ef91f3e31451527ade1292cd920f16c697fd67f4168a2608f666b489"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/tests-pack.log",
+      "sha256": "a6e40323e0b27143dc976dd3867dd3b1fd8781a131cec72347c3eb7118f5486a"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/flow-0.log",
+      "sha256": "1e2d3036c7a9e8568a1335976eeaf8859bde90b0d18e2eb114c4616f5c61f2c6"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/flow-1.log",
+      "sha256": "ef2a884ca2574edf634a84cb2203c042bf03f85ce1b0102921bec02fbf1b7191"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/flow-2.log",
+      "sha256": "35a168d7ed5ba561a2eaa3f0789bd76e2b72e585e6cd4c69f97fdfbe9778db37"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/flow-3.log",
+      "sha256": "dee263ec7a49450ccac297f51e9cc9cb10a615556d6177f1a29fd10b9e07e092"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/flow-4.log",
+      "sha256": "61944b99422177a0a6e02cad8c0fc94d51117c231417f600cefeb348ece7297c"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/snapshot-write.log",
+      "sha256": "d50f128271246e61363a46c50ef7272412ec207cf73e5342a5e709960a3b5548"
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/phase5/snapshot-read.log",
+      "sha256": "cc9db4be94322f036c6dc077e54cf8a0e301aed6dc56de8b43d2e58775abb611"
+    }
+  ],
+  "remaining": [
+    "club work remains a daily contribution abstraction rather than physical NPC work shifts",
+    "individual stories and expanded authored content",
+    "parenting beyond the existing family outcome",
+    "human playtesting of long-term balance"
+  ],
+  "notes": [
+    "No user save slots were written or deleted by this verification.",
+    "The cross-process fixture is a generated JSON artifact under the research directory.",
+    "Main game retains pre-existing addon exit warnings for 63 objects and 27 resources.",
+    "The standalone PCK finished without those exit warnings.",
+    "No hardware gamepad or human balance playtest was performed."
+  ]
+}

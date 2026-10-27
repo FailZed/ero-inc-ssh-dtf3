@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://0g7x2iyxijp5"]
+
+[ext_resource type="Script" path="res://scripts/portraits/protagonist_layered_portrait.gd" id="1"]
+
+[node name="LayeredProtagonist" type="Node2D"]
+script = ExtResource("1")

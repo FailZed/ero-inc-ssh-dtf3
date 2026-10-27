@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "scope": "One diagnostic repair case, not mass production, no runtime registration.",
+  "output_prefix": "characters_v2/pose_reference_arms_refine-v4",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "controlnet": {
+    "name": "xinsir-openpose-sdxl.safetensors",
+    "sha256": "b8524e557a7df60d081f5d4a0eb109967d107df217943bf88c2d99b9ebcc06c5",
+    "strength": 1.1,
+    "start_percent": 0.0,
+    "end_percent": 1.0
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "male_arms_folded",
+      "rig": "male_canonical",
+      "sex": "male",
+      "state": "folded",
+      "title": "Руки скрещены",
+      "category": "arms",
+      "image": "characters_v2/pose_reference_arms_refine-v4/male_arms_folded/reference.png",
+      "mask": "characters_v2/pose_reference_arms_refine-v4/male_arms_folded/mask.png",
+      "control": "characters_v2/pose_reference_arms_refine-v4/male_arms_folded/control.png",
+      "prompt": "eincanime, 1boy, male focus, mature adult man age 35, masculine face, short brown hair, flat male chest, original anime illustration, same adult character, same body proportions and skin palette, delicate thin brown lineart, matte flat colors, controlled peach cel shading, natural complete hands and joints, arms folded loosely across mid torso, natural crossed forearms, redraw changed anatomy naturally, bare arms and legs, plain light gray backdrop",
+      "negative": "child, teen, clothes, shirt, trousers, sleeves, skirt, fabric, shoes, socks, text, watermark, logo, sticker, emoji, symbols, toy, miniature, inset, censor bar, mosaic, distorted anatomy, extra limbs, extra fingers, missing fingers, cut wrist, disconnected arm, long neck, 3d, glossy skin, photorealistic",
+      "seed": 2026111001,
+      "denoise": 0.45,
+      "preserve_input_latent": true,
+      "protected_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\pose_reference_arms_refine-v4\\male_arms_folded\\protected-full.png",
+      "protected_sha256": "656f61639cec7c74288cfd8be138910168e00dba1cf82703eda2f16343c01765",
+      "edit_mask_full": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\pose_reference_arms_refine-v4\\male_arms_folded\\edit-mask-full.png",
+      "edit_mask_sha256": "69ce2ec5ae12da2ffdcfc5f5d68e8f55725e3feb40e25a661b7047ee68e118be",
+      "crop_box": [
+        0,
+        0,
+        1472,
+        1024
+      ],
+      "source_basis_record": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\pose_selected_v3\\processed\\male_arms_rest\\record.json",
+      "region_redraw_not_deformation": true,
+      "foreground_policy": "whole_foreground_no_material_deletion",
+      "repair_source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\pose_reference_arms_pilot-v1\\male_arms_folded_00001_.png",
+      "repair_scope": "Existing correct crossed-arm pose; erase only original hand remnants in preparation; inpaint seams and missing thin thigh edge; non-graphic adult anatomy. Not accepted."
+    }
+  ],
+  "encode_individually": true
+}

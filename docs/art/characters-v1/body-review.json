@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "updated": "2026-10-18",
+  "generator": "Local ComfyUI / DaSiWa EpitaphEcstasy, version 3012006",
+  "runtime_integration": false,
+  "user_approved_style": {
+    "file": "E:/GoDot/ero-inc/assets/art_source/characters_v1/style_target_dasiwa.png",
+    "original": "E:/Ai/ComfyUI-EroInc/output/characters_v1/female_slim_00001_.png",
+    "run": "8e7d9415-826e-4d64-a1b1-678645cf8508",
+    "rgb_pixel_sha256": "d12539c18787a2f64c7f913c0b5a6cf6cae3040d7a85ff41798cb143f0b5ca7b",
+    "scope": "User approved appearance and moderate proportions. Pose and independent layers still require work.",
+    "runtime_eligible": false
+  },
+  "criteria": [
+    "Adult characters, drawn 2D anime; reject plastic/3D appearance.",
+    "Both sexes use the same verified local checkpoint on E:.",
+    "Female builds vary moderately; no extreme obesity or exaggerated proportions.",
+    "Coherent whole figure before layer separation; no fixed-head/body repaint seams.",
+    "Full body with safe margins, natural hands and both complete feet.",
+    "Neutral frontal pose, arms at sides; no crossed/covering hands or contrapposto.",
+    "Latest user instruction: adult male bases retain natural sexual characteristics in a relaxed neutral full-body pose."
+  ],
+  "lora": {
+    "trained": false,
+    "decision": "First establish a clean coherent dataset. Rejected and inconsistent studies are not training inputs."
+  },
+  "entries": [
+    {
+      "file": "E:/Ai/ComfyUI-EroInc/output/characters_v1/female_slim_00003_.png",
+      "run": "1e578499-a0ef-4ab9-9f43-943af2c22c5b",
+      "status": "rejected",
+      "reasons": ["Hard flat shading does not match the approved soft painted style", "Turned head"],
+      "training_eligible": false,
+      "runtime_eligible": false
+    },
+    {
+      "file": "E:/Ai/ComfyUI-EroInc/output/characters_v1/male_average_00007_.png",
+      "run": "29b208ee-a03f-4602-84c3-7a05c0785b39",
+      "status": "rejected",
+      "reasons": ["Hard flat shading does not match the approved soft painted style", "Excessive muscle definition for average build"],
+      "training_eligible": false,
+      "runtime_eligible": false
+    },
+    {
+      "file": "E:/Ai/ComfyUI-EroInc/output/characters_v1/body_variants/female_full_00002_.png",
+      "run": "706dddbb-9c23-41d3-9e89-d2d10eb89a4a",
+      "status": "rejected_by_user",
+      "reasons": ["Extreme fullness", "Changed pose and covering hands", "Original head incoherent with repainted body"],
+      "training_eligible": false,
+      "runtime_eligible": false
+    },
+    {
+      "files": "E:/Ai/ComfyUI-EroInc/output/characters_v1/body_variants/female_full_*.png",
+      "status": "retired_experiment",
+      "reasons": ["Fixed-head mass resculpt workflow abandoned", "Extreme build tags removed from active profiles"],
+      "training_eligible": false,
+      "runtime_eligible": false
+    },
+    {
+      "file": "E:/Ai/ComfyUI-EroInc/output/characters_v1/male_average_00006_.png",
+      "run": "401b3c99-4629-40f4-b1c5-53804f6b7d8e",
+      "status": "rejected",
+      "reasons": ["Glossy plastic shading", "Excessive muscle definition for average build", "Not a clean neutral body layer"],
+      "training_eligible": false,
+      "runtime_eligible": false
+    },
+    {
+      "file": "E:/GoDot/ero-inc/assets/art_source/characters_v1/male_full_a.png",
+      "status": "reference_only_excluded_from_body_pack",
+      "generator": "OpenAI ImageGen",
+      "reasons": ["User requested the same local DaSiWa for both male and female bodies"],
+      "training_eligible": false,
+      "runtime_eligible": false
+    }
+  ]
+}

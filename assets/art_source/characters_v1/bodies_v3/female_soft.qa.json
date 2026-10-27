@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Ai\\ComfyUI-EroInc\\output\\body-refined-cutouts\\female_soft.png",
+  "source_sha256": "316f7b4bfd3e4c7e78e0cec9ba187a3c0b1243eed03d5ad73a036c27f52d850b",
+  "operation": "body alpha slice and uniform registration; no anatomical deformation",
+  "source_cut_y": 240,
+  "uniform_scale": 0.999000999000999,
+  "canvas": [
+    720,
+    1280
+  ],
+  "neck_attach": [
+    385.61,
+    245
+  ],
+  "feet_baseline_y": 1244,
+  "alpha_bounds": [
+    204,
+    245,
+    523,
+    1245
+  ],
+  "head_included": false,
+  "clothes_included": false,
+  "status": "body layer candidate; separate heads, fitted clothing and runtime review remain"
+}

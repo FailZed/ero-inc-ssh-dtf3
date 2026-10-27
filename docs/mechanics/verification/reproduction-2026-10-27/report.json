@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-27",
+  "engine": "4.7.2",
+  "main_schema": 5,
+  "reproduction_schema": 1,
+  "implementation": "Independent EroInc technical systems; six scene hooks, no donor scene content or numeric-parity claim.",
+  "mechanics_pack": {
+    "checks": 2111,
+    "failed": 0,
+    "failures": []
+  },
+  "gameplay": {
+    "checks": 565,
+    "failed": 0,
+    "failures": []
+  },
+  "cross_process": [
+    {
+      "checks": 14,
+      "failed": 0,
+      "mode": "write"
+    },
+    {
+      "checks": 6,
+      "failed": 0,
+      "mode": "read"
+    }
+  ],
+  "story_routes": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11495,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11561,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 12152,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 8444,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 12130,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "visual_qa": {
+    "kind": "native Godot captures of a prepared test world, not generated references or user saves",
+    "size": [
+      1366,
+      768
+    ],
+    "audio": "Dummy",
+    "visually_inspected": [
+      "protection.png",
+      "health.png",
+      "support.png"
+    ]
+  },
+  "existing_engine_exit_diagnostics": "Main project retains previously documented 63 ObjectDB / 27 resource exit diagnostics. Independent exported pack has none. No test assertions or script errors in successful runs.",
+  "user_save_slots_modified": false,
+  "source_sha256": {
+    "scripts/mechanics/reproduction.gd": "958f35dd61da840b430a7e4567bbf233f68eda219c37cf5a44d87f9f23b6e1f0",
+    "scripts/mechanics/intimacy.gd": "b5ab72154df40b75c0dd31bf1a7b07f75a4b14d54bb7ba46966d89e484d75b10",
+    "scripts/mechanics/child_support.gd": "3c39d9fe342e33326fa976bb8903160dd4629fafcc5605d86b8daa5ff457866f",
+    "scripts/mechanics/reproductive_simulation.gd": "748617b51ca289552bf00067f625bcf52a7e498bb5cc404b82d4e43a653edd07",
+    "scripts/mechanics/reproductive_lifecycle.gd": "ffa4ec9738dc4300b387b7dd3536f3af75a089f39d8a12c104f9f1b21bf8edd2",
+    "scripts/mechanics/core/reproductive_validation.gd": "bebf2606dc5e8523418fddf50577c430bc39cff3342399de8076fde5a73923ae",
+    "data/mechanics/reproduction.json": "3b57901dd68edda61b6ebf88a45c7a0aee8ada30226cb3f4c746fc4600ce9f4a",
+    "scripts/gameplay/main_simulation.gd": "3f4514470fd50d1fa370ad0b6f43d9297c6241c72a700b393ca939f7febb8758",
+    "scripts/gameplay/gameplay.gd": "34409f5ddd8853fc220bb02342439fcc9a9b95376020a9299a266ebe6620047b",
+    "scripts/ui/gameplay/reproductive_panel.gd": "3bc5f04384048db17ec517e9d6c6a3b415d6ea848c7f0942d08007a142c66d9e",
+    "scripts/ui/gameplay/gameplay_shell.gd": "e5fee655af7309a227a2d3707a3eb2bc8d757c4a55a0f810ac9e5b2b7a06c3e9",
+    "scripts/ui/gameplay/family_panel.gd": "64769f5013cefaf9bdf47d0a7fa845da3314ff8f81d6b2fa4e789d3a26d95a81",
+    "scripts/mechanics/family.gd": "61362f17611442d7fd97aabcb0139596485d2ec177be312df6902e5fece6c6ff",
+    "scripts/mechanics/social_rules.gd": "3f5aa31095393fef33c9d12ff7edd51fcffe080d87472a8483426e26666084d4",
+    "scripts/gameplay/presentation.gd": "099e73e8431e7349b3fb69608927ffb1295c05704c1108fc9e4df4e89fc5829a",
+    "tests/mechanics/reproduction.gd": "1175304a540cf0c1d1fb155cb177c3509a00ce6f28c43dfd6b9a7579549ef4df",
+    "tests/mechanics/reproduction_snapshot.gd": "885da113c65cf5f264db4a2463c0670bfb8001bb3b675206102da3e9e8de488a",
+    "tests/gameplay/reproduction.gd": "d6f2374df1d7d56d21cb978b1ac26cc1db917461c1be80ca6ec53d35c99f948a",
+    "tests/gameplay/capture_reproduction.gd": "1dd704c4030e6f74069db5b4014cd8044e24ccd6c7bbd9bfc121033cca600368",
+    "tools/test_reproduction_snapshot.ps1": "564cb9c11db5b2cd636e7d20a5f2942256688fff28d39917e0e1c56f8ede6f85",
+    "tools/audit_reproduction_source.py": "2bb7b8d7673252e96ac3a5ef69255fff1df93206285cb5b1a187fdba1ba39ca4"
+  },
+  "artifact_sha256": {
+    "capture-error.log": "90f059e27c6bf1f32dc867ce456962583c59f8b9c4c7c6283f647c0d8fad4a02",
+    "capture.log": "51cf37c2eff43ddaf7e480c17914d34998b67b7892266de2eff7670d4a5083bb",
+    "flow-0.log": "926938b23b4f556e22cf4568c18e7ff5211d8d91c9bfe7a8dd5f5d5697670f24",
+    "flow-1.log": "f47e151fed46e6ddfa8912321bf1c8da4bcfdc4011c0aa663951c442031771b5",
+    "flow-2.log": "62705988e36d117d276125bc4689c36ca8fc1b99ea9e5fb59a08150b018017ad",
+    "flow-3.log": "7ecc6ba8c9d6d3801742493968b5b3b71b3b05092b870101f821f4d97a3caf72",
+    "flow-4.log": "9a52b32d323c0993c685317cc0d27f73420379ea529348edb2576d78f5fd621c",
+    "gameplay.log": "67fe6361e504adbab815d3456292039c228c1a3b9f289696cbf629e9cb7f9575",
+    "health.png": "271339464afb0e8bccdf3bed7c79d591bd0ed35ea070463edbb34cb96267564c",
+    "mechanics-pack.log": "50ef0cf1eaf3d78bcbe0edc2f573de04263038ab2a2842f0b1cba53e07a3685c",
+    "protection.png": "878240a24149d6f8b27889896cddb9048f7a7834e845b4ea431af3cb3feb63ff",
+    "snapshot-read.log": "24c494454370b3400ba68c1cf79913f17e01821104f41c3932f4f788a61741e2",
+    "snapshot-write.log": "228855a2b7d232bbddc6759e387fb4e514846b01da8ff95b09ab95469228d2c5",
+    "support.png": "09141449251bc98b5272429f1f729ad4f840ec0d8c19190d0bb478902f08cf81"
+  }
+}

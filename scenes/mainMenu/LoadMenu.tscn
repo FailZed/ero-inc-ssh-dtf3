@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://qndi7r8pajjx"]
+
+[ext_resource type="Script" uid="uid://d20ssf8s622cu" path="res://scripts/ui/load_menu.gd" id="1_load_menu_script"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_load_panel"]
+content_margin_left = 32.0
+content_margin_top = 28.0
+content_margin_right = 32.0
+content_margin_bottom = 24.0
+bg_color = Color(0.012, 0.02, 0.032, 0.58)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.36, 0.58, 0.73, 0.48)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tab_normal"]
+bg_color = Color(0, 0, 0, 0)
+border_width_bottom = 1
+border_color = Color(0.36, 0.58, 0.73, 0.18)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tab_pressed"]
+bg_color = Color(0.02, 0.06, 0.09, 0.28)
+border_width_bottom = 2
+border_color = Color(0.21, 0.62, 0.95, 0.95)
+
+[node name="LoadMenu" type="Control" unique_id=235765288]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_load_menu_script")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=37839999]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=12606885]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_load_panel")
+
+[node name="MainLayout" type="VBoxContainer" parent="MarginContainer/PanelContainer" unique_id=1158238994]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="TopSpacer" type="Control" parent="MarginContainer/PanelContainer/MainLayout" unique_id=813236507]
+visible = false
+layout_mode = 2
+
+[node name="HeaderRow" type="HBoxContainer" parent="MarginContainer/PanelContainer/MainLayout" unique_id=415959018]
+custom_minimum_size = Vector2(0, 78)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="TitleAccent" type="ColorRect" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow" unique_id=381482991]
+custom_minimum_size = Vector2(3, 54)
+layout_mode = 2
+color = Color(0.36, 0.58, 0.73, 0.7)
+
+[node name="TitleBlock" type="VBoxContainer" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow" unique_id=165466955]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow/TitleBlock" unique_id=225747639]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.86, 0.92, 0.96, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.82)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 40
+text = "Загрузить игру"
+
+[node name="HeaderSpacer" type="Control" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow" unique_id=475562513]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TopTabs" type="HBoxContainer" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow" unique_id=52130448]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="AutoTabButton" type="Button" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow/TopTabs" unique_id=262249107]
+custom_minimum_size = Vector2(170, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.78, 0.84, 0.92)
+theme_override_colors/font_pressed_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tab_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tab_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tab_pressed")
+toggle_mode = true
+button_pressed = true
+text = "AUTO"
+
+[node name="ManualTabButton" type="Button" parent="MarginContainer/PanelContainer/MainLayout/HeaderRow/TopTabs" unique_id=1191559536]
+custom_minimum_size = Vector2(170, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.78, 0.84, 0.92)
+theme_override_colors/font_pressed_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tab_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tab_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tab_pressed")
+toggle_mode = true
+text = "MANUAL"
+
+[node name="BodyPanel" type="ScrollContainer" parent="MarginContainer/PanelContainer/MainLayout" unique_id=1407083515]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+horizontal_scroll_mode = 0
+follow_focus = true
+
+[node name="BodyMargin" type="MarginContainer" parent="MarginContainer/PanelContainer/MainLayout/BodyPanel" unique_id=558132118]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 4
+
+size_flags_horizontal = 3
+
+[node name="BodyLayout" type="VBoxContainer" parent="MarginContainer/PanelContainer/MainLayout/BodyPanel/BodyMargin" unique_id=124315907]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+size_flags_horizontal = 3
+
+[node name="EmptyStateLabel" type="Label" parent="MarginContainer/PanelContainer/MainLayout/BodyPanel/BodyMargin/BodyLayout" unique_id=1340849513]
+visible = false
+layout_mode = 2
+text = "Для выбранного раздела пока нет сохранений."
+
+[node name="SlotGrid" type="GridContainer" parent="MarginContainer/PanelContainer/MainLayout/BodyPanel/BodyMargin/BodyLayout" unique_id=1897427619]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="PaginationRow" type="HBoxContainer" parent="MarginContainer/PanelContainer/MainLayout" unique_id=1637971586]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="PrevPageButton" type="Button" parent="MarginContainer/PanelContainer/MainLayout/PaginationRow" unique_id=256778848]
+custom_minimum_size = Vector2(34, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.8, 0.86, 0.95)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.28, 0.38, 0.46, 0.5)
+theme_override_font_sizes/font_size = 24
+text = "‹"
+flat = true
+
+[node name="PageInfoLabel" type="Label" parent="MarginContainer/PanelContainer/MainLayout/PaginationRow" unique_id=1919340265]
+custom_minimum_size = Vector2(86, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.88, 0.93, 0.95)
+theme_override_font_sizes/font_size = 17
+text = "1 / 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NextPageButton" type="Button" parent="MarginContainer/PanelContainer/MainLayout/PaginationRow" unique_id=968106930]
+custom_minimum_size = Vector2(34, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.8, 0.86, 0.95)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.28, 0.38, 0.46, 0.5)
+theme_override_font_sizes/font_size = 24
+text = "›"
+flat = true
+
+[node name="UserPagesRow" type="HBoxContainer" parent="MarginContainer/PanelContainer/MainLayout/PaginationRow" unique_id=687329515]
+visible = false
+layout_mode = 2
+
+[node name="BottomSpacer" type="Control" parent="MarginContainer/PanelContainer/MainLayout" unique_id=756585296]
+layout_mode = 2

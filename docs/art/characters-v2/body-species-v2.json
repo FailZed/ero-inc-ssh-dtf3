@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "scope": "Restore user-selected rendering through owned reference edits; review before expansion. Not runtime art.",
+  "output_prefix": "characters_v2/body_species_v2",
+  "preserve_input_latent": true,
+  "denoise": 0.8,
+  "steps": 16,
+  "cfg": 6.0,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi",
+  "items": [
+    {
+      "id": "cat_female",
+      "rig": "female_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/cat_female/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/cat_female/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard",
+      "seed": 9919000,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "cat_male",
+      "rig": "male_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/cat_male/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/cat_male/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina",
+      "seed": 9919001,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "fox_female",
+      "rig": "female_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/fox_female/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/fox_female/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard",
+      "seed": 9919002,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "fox_male",
+      "rig": "male_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/fox_male/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/fox_male/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina",
+      "seed": 9919003,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "wolf_female",
+      "rig": "female_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/wolf_female/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/wolf_female/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic wolf person, fully fur covered body, natural wolf muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard",
+      "seed": 9919004,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "wolf_male",
+      "rig": "male_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/wolf_male/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/wolf_male/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic wolf person, fully fur covered body, natural wolf muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina",
+      "seed": 9919005,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    }
+  ]
+}

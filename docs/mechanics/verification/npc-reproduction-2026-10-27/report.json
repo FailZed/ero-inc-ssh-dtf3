@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Europe/Moscow",
+  "godot": "4.7.2",
+  "main_schema": 6,
+  "npc_reproduction_schema": 1,
+  "implementation": "Original non-graphic EroInc NPC autonomy; shared reproduction, health, lifecycle, family and support services. No donor narrative/code transfer or numeric parity claim.",
+  "npc_domain": {
+    "checks": 283,
+    "failed": 0,
+    "included_in_mechanics_pack": true
+  },
+  "mechanics_pack": {
+    "checks": 2394,
+    "failed": 0,
+    "failures": []
+  },
+  "gameplay": {
+    "checks": 584,
+    "failed": 0,
+    "failures": []
+  },
+  "main_npc_integration": {
+    "background_hooks": 6,
+    "checks": 12,
+    "foreground_hooks": 0
+  },
+  "npc_cross_process": [
+    {
+      "checks": 43,
+      "failed": 0,
+      "failures": [],
+      "mode": "write"
+    },
+    {
+      "checks": 17,
+      "failed": 0,
+      "failures": [],
+      "mode": "read"
+    }
+  ],
+  "player_cross_process_regression": [
+    {
+      "checks": 14,
+      "failed": 0,
+      "mode": "write"
+    },
+    {
+      "checks": 6,
+      "failed": 0,
+      "mode": "read"
+    }
+  ],
+  "story_routes": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 12098,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11874,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11352,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 7911,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11041,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "prepared_fixtures": [
+    {
+      "case": "encounter",
+      "sessions_before": 1,
+      "jobs_before": 0,
+      "routines_before": 0,
+      "births_after": 1,
+      "support_obligations_after": 0,
+      "player_cash_unchanged": true,
+      "player_location_unchanged": true,
+      "reproductive_participants_are_npcs": true
+    },
+    {
+      "case": "clinic",
+      "sessions_before": 0,
+      "jobs_before": 1,
+      "routines_before": 0,
+      "births_after": 0,
+      "support_obligations_after": 0,
+      "player_cash_unchanged": true,
+      "player_location_unchanged": true,
+      "reproductive_participants_are_npcs": true
+    },
+    {
+      "case": "support",
+      "sessions_before": 0,
+      "jobs_before": 1,
+      "routines_before": 0,
+      "births_after": 1,
+      "support_obligations_after": 1,
+      "player_cash_unchanged": true,
+      "player_location_unchanged": true,
+      "reproductive_participants_are_npcs": true
+    },
+    {
+      "case": "routine",
+      "sessions_before": 0,
+      "jobs_before": 0,
+      "routines_before": 1,
+      "births_after": 0,
+      "support_obligations_after": 0,
+      "player_cash_unchanged": true,
+      "player_location_unchanged": true,
+      "reproductive_participants_are_npcs": true
+    }
+  ],
+  "legacy_migration": "Exact previous main schema 5 catalog constructed from actual previous reproductive runtime; additive in-memory NPC state; unknown hashes rejected.",
+  "ui": "No NPC background event opens the foreground player scene; six background hooks and zero foreground hooks observed in main integration.",
+  "user_save_slots_modified": false,
+  "known_exit_diagnostics": "Main project retains previously documented 63 ObjectDB objects / 27 resources on exit. No additional engine or script errors in the final successful main run. Isolated exported pack has no exit diagnostics.",
+  "exported_sources_match": {
+    "scripts/mechanics/autonomous_reproductive_simulation.gd": true,
+    "scripts/mechanics/npc_reproduction.gd": true,
+    "scripts/mechanics/npc_private_encounters.gd": true,
+    "scripts/mechanics/npc_reproductive_jobs.gd": true,
+    "scripts/mechanics/npc_reproductive_context.gd": true,
+    "scripts/mechanics/core/npc_reproductive_validation.gd": true,
+    "data/mechanics/npc_reproduction.json": true,
+    "scripts/mechanics/reproduction.gd": true,
+    "scripts/mechanics/family.gd": true,
+    "scripts/mechanics/health.gd": true,
+    "scripts/mechanics/inventory.gd": true,
+    "tests/mechanics/npc_reproduction.gd": true,
+    "tests/mechanics/npc_reproduction_snapshot.gd": true,
+    "tests/mechanics/run_npc_reproduction.gd": true
+  },
+  "source_sha256": {
+    "scripts/mechanics/autonomous_reproductive_simulation.gd": "737250cf97f5aed13a37a4478f02e78ead5cbe02cede48f076189b2241e7b87b",
+    "scripts/mechanics/npc_reproduction.gd": "03cbc32f18740b6aba7640c1f47a8eba146e6f0709e014f75bc2b25b4911caff",
+    "scripts/mechanics/npc_private_encounters.gd": "a4c0f1b1de832b865f506fcbba7eefbca7a798d7f2ff1258828962675b228675",
+    "scripts/mechanics/npc_reproductive_jobs.gd": "0ac5b57b8735a3787ba2cdfbfa583641f84591571cdb87326da78b669e45598c",
+    "scripts/mechanics/npc_reproductive_context.gd": "98ba2bda5f4258bfad43b89ce0914327b46f42af65c694d3b27305a0501f815a",
+    "scripts/mechanics/core/npc_reproductive_validation.gd": "20ed147ed6f5f1586163eaf0d914b219500928faae60cc6401d8ba245a3130ef",
+    "data/mechanics/npc_reproduction.json": "4796721aeddea51462327124d4a90eac0971b63a0f4cd5a64061c8347718080d",
+    "scripts/mechanics/reproduction.gd": "80723d36e30455ca5b33e47ee8e88e2fd07736ca0b46ad7566d8c50bd02cd8ee",
+    "scripts/mechanics/family.gd": "7b281681f88c61514aa86477af3c144adfe84a1541361ff09c22bc5a438eda3d",
+    "scripts/mechanics/health.gd": "d1bc3500534fbb2f79e2341907e31a8ff6975122c46a14ba1a85bbd7da6804b7",
+    "scripts/mechanics/inventory.gd": "893e38beb5d4f309a7d8da7165fd27177415c9cc438aebbfc76b340b4ae4fe75",
+    "scripts/gameplay/main_simulation.gd": "7b419361c9331b33e53417e425ccfc4d75471a60cc32397e476a5adba68d26c2",
+    "scripts/gameplay/livelihood_simulation.gd": "dd28a4d726e3b2c8267e9d7b6244da68ec8402642d249209f3a9ba06e9dcaf43",
+    "tests/mechanics/npc_reproduction.gd": "ed8f360823f8ab84b451a14aa8f638890fdd0fec6bb4f4fe752a92e481ab1529",
+    "tests/mechanics/npc_reproduction_snapshot.gd": "5fca1f7c5bab43d67f6c4938975a71dc6c74c09f2071c3712febcf35cd888bee",
+    "tests/mechanics/run_npc_reproduction.gd": "b44a85890381ae44db72d8b170b5e6b73d70fe537cd6080602524d8359d24559",
+    "tests/gameplay/npc_reproduction.gd": "51130556836ab31d54f7c69d05ae7a87869c1650770734257e7dd704986ebbd3",
+    "tools/test_npc_reproduction_snapshot.ps1": "93d2f170673227aca698c58021a466abcc895adce73fbcd2d1b2121d3ca94f98"
+  },
+  "artifact_sha256": {
+    "flow-0.log": "f1654ef9104b5d70bc54ab8925c8ee192eb4359ab84acecf223d769c11f96e82",
+    "flow-1.log": "5e421c611b63f92bc031ae1ab56c147baf7b5a6db6875e15fdef6e363a712baa",
+    "flow-2.log": "0dd829fa5dfc6c9dfdf6f69cadfc9569ef9958c9a8ca674ebda50085d97a65ad",
+    "flow-3.log": "52058aad9f7d3af38f7d8fafe3f812ea8d057177a564c47d8535adf29e0fd1d8",
+    "flow-4.log": "cc81484b3306c4ddb373343a50968a40b437a5ea7f30c48bd0fd9156dd44926b",
+    "gameplay.log": "d8483037735ad17934dd215485e33e83cd793b01267a5e346b81677526552d9f",
+    "mechanics-pack.log": "6e1f5ae64e1df68344287e5d8ddebb829d50cb61bd9eda1b682e9d20aba9a602",
+    "npc-snapshot-read.log": "5749186dbdef6e6d1f23085c5e95d3dcda9555778113b483fe47c954f34f5bdf",
+    "npc-snapshot-write.log": "011c46e80b337c7bacd874c8d11217ac0d8f224a4a7a72aa8b25dc02708423c6",
+    "player-snapshot-read.log": "24c494454370b3400ba68c1cf79913f17e01821104f41c3932f4f788a61741e2",
+    "player-snapshot-write.log": "228855a2b7d232bbddc6759e387fb4e514846b01da8ff95b09ab95469228d2c5"
+  }
+}

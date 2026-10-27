@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://ce5w76x7274aa"]
+
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="1_base"]
+[ext_resource type="Script" uid="uid://c5bwbp52jk08t" path="res://styles/dialogic/vn_textbox_70_layer.gd" id="2_script"]
+[ext_resource type="StyleBox" uid="uid://ycsi6iigtb5u" path="res://styles/button_normal.tres" id="3_dwn5c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h77ci"]
+content_margin_left = 28.0
+content_margin_top = 18.0
+content_margin_right = 28.0
+content_margin_bottom = 18.0
+bg_color = Color(0.018, 0.035, 0.052, 0.97)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.62)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dwn5c"]
+content_margin_left = 14.0
+content_margin_top = 7.0
+content_margin_right = 14.0
+content_margin_bottom = 7.0
+bg_color = Color(0.006, 0.012, 0.02, 0.78)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.72)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qgm5s"]
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+bg_color = Color(0.015, 0.025, 0.035, 0.42)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3, 0.5, 0.64, 0.55)
+
+[node name="VN_TextboxLayer" unique_id=673742918 instance=ExtResource("1_base")]
+script = ExtResource("2_script")
+box_width_ratio = 0.84
+box_height_ratio = 0.20
+box_opacity = 0.97
+box_margin_bottom = 104
+show_side_controls = true
+side_controls_width = 200.0
+side_controls_gap = 12.0
+side_controls_offset = Vector2(0, 12)
+side_controls_follow_textbox = false
+side_controls_screen_margin = Vector2(24, 24)
+text_letter_speed = 0.01
+text_reveal_skippable = true
+text_reveal_skip_delay = 0.1
+text_advance_delay = 0.1
+autoadvance_enabled = false
+autoadvance_fixed_delay = 1.0
+autoadvance_per_character_delay = 0.1
+autoadvance_ignored_characters_enabled = true
+
+[node name="Animations" parent="." index="0"]
+autoplay = &"RESET"
+
+[node name="DialogTextPanel" parent="Anchor/AnimationParent/Sizer" index="0"]
+self_modulate = Color(1, 1, 1, 0.9)
+theme_override_styles/panel = SubResource("StyleBoxFlat_h77ci")
+
+[node name="DialogicNode_DialogText" parent="Anchor/AnimationParent/Sizer/DialogTextPanel" index="0"]
+theme_override_colors/default_color = Color(0.86, 0.92, 0.96, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.82)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/normal_font_size = 29
+theme_override_font_sizes/bold_font_size = 29
+theme_override_font_sizes/bold_italics_font_size = 29
+theme_override_font_sizes/italics_font_size = 29
+
+[node name="NextIndicator" parent="Anchor/AnimationParent/Sizer/DialogTextPanel" index="1"]
+modulate = Color(0.88, 0.94, 0.98, 0.95)
+
+[node name="NameLabelPanel" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder" index="0"]
+self_modulate = Color(1, 1, 1, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_dwn5c")
+
+[node name="DialogControlsPanel" type="PanelContainer" parent="Anchor/AnimationParent" index="1" unique_id=136684660]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 0
+offset_left = -959.0
+offset_top = -250.0
+offset_right = -758.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_qgm5s")
+
+[node name="Buttons" type="HBoxContainer" parent="Anchor/AnimationParent/DialogControlsPanel" index="0" unique_id=658013951]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="HistoryButton" type="Button" parent="Anchor/AnimationParent/DialogControlsPanel/Buttons" index="0" unique_id=1794098509]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.82, 0.89, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.9, 0.95, 0.98, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.4, 0.5, 0.58, 0.7)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("3_dwn5c")
+theme_override_styles/pressed = ExtResource("3_dwn5c")
+theme_override_styles/hover = ExtResource("3_dwn5c")
+theme_override_styles/disabled = ExtResource("3_dwn5c")
+theme_override_styles/focus = ExtResource("3_dwn5c")
+text = "История"
+alignment = 0
+
+[node name="HideButton" type="Button" parent="Anchor/AnimationParent/DialogControlsPanel/Buttons" index="1" unique_id=1332257677]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.82, 0.89, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.9, 0.95, 0.98, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.4, 0.5, 0.58, 0.7)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("3_dwn5c")
+theme_override_styles/pressed = ExtResource("3_dwn5c")
+theme_override_styles/hover = ExtResource("3_dwn5c")
+theme_override_styles/disabled = ExtResource("3_dwn5c")
+theme_override_styles/focus = ExtResource("3_dwn5c")
+text = "Скрыть окно"
+alignment = 0
+
+[node name="SaveButton" type="Button" parent="Anchor/AnimationParent/DialogControlsPanel/Buttons" index="2" unique_id=1197406676]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.82, 0.89, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.9, 0.95, 0.98, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.4, 0.5, 0.58, 0.7)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("3_dwn5c")
+theme_override_styles/pressed = ExtResource("3_dwn5c")
+theme_override_styles/hover = ExtResource("3_dwn5c")
+theme_override_styles/focus = ExtResource("3_dwn5c")
+text = "Сохранение"
+alignment = 0
+
+[node name="LoadButton" type="Button" parent="Anchor/AnimationParent/DialogControlsPanel/Buttons" index="3" unique_id=1090498927]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.82, 0.89, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.9, 0.95, 0.98, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.4, 0.5, 0.58, 0.7)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("3_dwn5c")
+theme_override_styles/pressed = ExtResource("3_dwn5c")
+theme_override_styles/hover = ExtResource("3_dwn5c")
+theme_override_styles/focus = ExtResource("3_dwn5c")
+text = "Загрузка"
+alignment = 0
+
+[node name="MenuButton" type="Button" parent="Anchor/AnimationParent/DialogControlsPanel/Buttons" index="4" unique_id=1991849503]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.82, 0.89, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.9, 0.95, 0.98, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_disabled_color = Color(0.4, 0.5, 0.58, 0.7)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("3_dwn5c")
+theme_override_styles/pressed = ExtResource("3_dwn5c")
+theme_override_styles/hover = ExtResource("3_dwn5c")
+theme_override_styles/focus = ExtResource("3_dwn5c")
+text = "Меню"
+alignment = 0
+
+[node name="DialogicNode_NameLabel" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder/NameLabelPanel" index="0"]
+theme_override_font_sizes/font_size = 26

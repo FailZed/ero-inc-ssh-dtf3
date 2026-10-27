@@ -1,0 +1,76 @@
+{
+  "project": "EroInc",
+  "date": "2026-09-17",
+  "generator": "ImageGen (built-in)",
+  "script": "https://docs.google.com/document/d/17MGdEhAfeDBCamzr-jgrxNOOKDjFBuj_J9Xi0HMJFUQ/edit?tab=t.rewvh7wknp6h",
+  "assets": [
+    {
+      "file": "warehouse_exterior_night.png",
+      "title": "Склад · снаружи",
+      "mood": "Лунная ночь, изоляция, вход в кошмар.",
+      "source": "F:/GoDot/ero-inc/assets/textures/backgrounds/prolog/warehouse_exterior_night.png",
+      "creation": "reused existing ImageGen asset"
+    },
+    {
+      "file": "warehouse_interior_night.png",
+      "title": "Склад · внутри",
+      "mood": "Холодный пол, ящик, луна через прорванную крышу.",
+      "source": "F:/GoDot/art-preproduction/comparison/imagegen/01_warehouse.png",
+      "creation": "reused existing ImageGen asset"
+    },
+    {
+      "file": "warehouse_ceiling_moon.png",
+      "title": "Склад · взгляд вверх",
+      "mood": "Первый взгляд героя с пола: слишком близкая луна.",
+      "source": "C:/Users/FailZed/.codex/generated_images/01a0b0e1-bbe3-7543-ba97-2d8e03ba6a9a/exec-6573e16d-c4e1-420c-b4c6-bc0c4e4e7770.png",
+      "creation": "generated in final pack pass",
+      "prompt": "Use case: illustration-story. Create one wide 16:9 visual novel background for EroInc. Input image is the continuity and style reference: the SAME abandoned warehouse. New camera angle: first-person view lying flat on its cold floor, looking straight UP at the roof. Almost entirely ceiling and night sky, no floor visible. Rusted steel trusses and torn corrugated roof sheets surround a ragged opening; a large unnervingly close full moon shines through the opening, black-blue sky and thin clouds. Match the reference's roof structure, finely inked edges, detailed worn textures, painterly anime background finish and restrained blue-grey palette. The moon is the focal point, oppressive uncanny silence, deep but readable navy shadows. No people, silhouettes, hands, blood, lights, text, watermark, border, crystals or neon. Output full bleed landscape."
+    },
+    {
+      "file": "bedroom_night.png",
+      "title": "Спальня · 03:20",
+      "mood": "Тревога после кошмара, тусклый свет из-за штор.",
+      "source": "F:/GoDot/art-preproduction/comparison/imagegen/02_bedroom.png",
+      "creation": "reused existing ImageGen asset"
+    },
+    {
+      "file": "bedroom_morning.png",
+      "title": "Спальня · утро",
+      "mood": "Сентябрьский свет и запоздалое пробуждение.",
+      "source": "C:/Users/FailZed/.codex/generated_images/01a0b0e1-bbe3-7543-ba97-2d8e03ba6a9a/exec-fa10afb9-fbe3-478a-a1d1-45a2d82c643b.png",
+      "creation": "generated in final pack pass",
+      "prompt": "Use case: lighting-weather. Edit target: provided bedroom background. Create the SAME exact room in late morning, 11 AM on the first of September, after waking late. Keep the identical camera, bed left, bedside cabinet and tiny faded framed photograph, radiator under central window, wardrobe right, desk and chair at right, rug, floor boards, room proportions and all furniture placements. Part the heavy curtains enough to let September sunlight enter; partly open horizontal blinds visible in the window. Sunlight gently catches the rumpled bedding and floor; dim cool blue-grey corners remain. Mood is a lonely ordinary rented home and a hesitant new day, lived-in and modest, no apocalyptic dereliction. Preserve the precise hand-drawn anime background style, fine dark ink contours and richly painted texture of the original. Muted grey-beige and blue with restrained pale warm sunlight and green trees outside. Preserve 16:9 full bleed composition. No characters, lettering, clock digits, logos, watermarks, glowing effects. Make an actual daylight lighting transformation while preserving layout."
+    },
+    {
+      "file": "hallway_night.png",
+      "title": "Коридор · ночь",
+      "mood": "Тёмный порог ванной и слабый свет из кухни.",
+      "source": "C:/Users/FailZed/.codex/generated_images/01a0b0e1-bbe3-7543-ba97-2d8e03ba6a9a/exec-aad16f2a-da73-4b24-867c-93dccc19d8d3.png",
+      "creation": "generated in final pack pass",
+      "prompt": "Use case: illustration-story. One full-bleed 16:9 visual novel background. The input bedroom is a STYLE and APARTMENT CONTINUITY reference, not the composition to copy. Show the small corridor of this same modest rented apartment at 03:20 at night. View from just outside bedroom into a short narrow hallway, with the partly open bathroom door at its far end, an unlit almost black bathroom beyond. Faint blue streetlight from the bedroom behind viewer and a weak warm light spill from a kitchen doorway on the right barely touch the floor. A small worn shoe cabinet and shoes at the near left, jacket hooks, simple intact painted doors, an old light switch beside bathroom door. The home is modest and aged but inhabited and functional. Match dark wood, muted grey-blue walls, precise dark ink edges, richly textured painterly anime finish, realistic perspective and deep readable shadows of the reference. Mood: familiar home turning uncanny after a nightmare, the darkness at bathroom threshold is the focal point. Clear floor center for later character sprites. No people, faces, silhouettes, ghosts, blood, text, signs, watermark, border, exaggerated ruins or neon."
+    },
+    {
+      "file": "bathroom_night.png",
+      "title": "Ванная · ночь",
+      "mood": "Свет включился: зеркало, раковина, упавшая подушка.",
+      "source": "F:/GoDot/art-preproduction/comparison/imagegen/03_bathroom.png",
+      "creation": "reused existing ImageGen asset"
+    },
+    {
+      "file": "home_street_day.png",
+      "title": "Дом и улица · день",
+      "mood": "Выход из дома: солнце после долгой непогоды.",
+      "source": "C:/Users/FailZed/.codex/generated_images/01a0b0e1-bbe3-7543-ba97-2d8e03ba6a9a/exec-ee27314b-dcee-469b-9aad-93ccc69bfaf0.png",
+      "creation": "generated in final pack pass",
+      "prompt": "Use case: illustration-story. Create one 16:9 full bleed visual novel background for EroInc: outside the protagonist's rented home, a quiet narrow residential street in a university neighborhood on a sunny September late morning after two weeks of bad weather. Input is a STYLE reference only, not a warehouse to reproduce. Match its meticulous thin ink contours, painterly anime environmental art, richly detailed aged surfaces, credible perspective and restrained colors. Scene: a modest older four-storey grey plaster apartment building occupies the left, its entrance and small fenced front garden clearly visible. The narrow street and pavement recede toward the right distance past lower residential houses, metal fences, leafy trees with a few yellow leaves and practical street lamps. Worn asphalt with repaired seams, subdued grey building facades, intact lived-in windows. Beyond a low fence on the right, a small neighborhood ball court and a bench suggest everyday community life. Eye-level wide view, usable open pavement foreground for later dialogue character sprites. Lighting: pale September sunshine on upper walls and foliage, cool blue-grey shadows below, a few fading rain puddles. Mood: slightly melancholy ordinary housing but a breathable fresh beginning, quiet human warmth against a sober material world. Keep it grounded in an Eastern European feeling, no luxury villas or dystopian destruction. No people at all, no cars blocking the view, no readable text, labels, logos, watermark, frame, neon, heavy cartoon outlines or 3D render."
+    },
+    {
+      "file": "home_street_dusk.png",
+      "title": "Дом и улица · вечер",
+      "mood": "Возвращение с друзьями: прохлада, фонари, передышка.",
+      "source": "C:/Users/FailZed/.codex/generated_images/01a0b0e1-bbe3-7543-ba97-2d8e03ba6a9a/exec-0ce03280-ff48-499f-97d8-de02de031ac7.png",
+      "creation": "generated in final pack pass",
+      "prompt": "Use case: lighting-weather. Edit the provided daytime residential street into its dusk version for a visual novel. Lock the exact camera, composition, every building shape, all windows, the home entrance on the left, trees, low garden fences, street lamps, bench and ball court right, road geometry, puddles and paving. SAME LOCATION and camera, only time of day and illumination change. It is early September evening after the protagonist walks home with friends: the sky turning deep dark blue overhead, beautiful muted lavender clouds and a last pale peach glow near the far horizon. Turn on the street lamps with small restrained warm yellow pools; a few apartment windows emit soft amber domestic light. Grey weathered facades fall into cool indigo shadow but textures remain readable. Puddles reflect the sky and a little lamplight. Mood is peaceful vulnerable companionship, relief after a difficult day, warmth amid a melancholy ordinary neighborhood. Preserve the exact finely inked, richly painted realistic anime background rendering and full-bleed 16:9 framing. No people, silhouettes, moon, added buildings, new props, neon, horror effects, text, watermark or border."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-18",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "scope": "Modular characters, face composition correction, mirror, conversation stage and authored Dialogic cast",
+  "integration": {
+    "checks": 156,
+    "failed": 0,
+    "failures": []
+  },
+  "chapter_routes": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11577,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11500,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11526,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 8051,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11478,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "protected_save_code": [
+    {
+      "Path": "E:\\GoDot\\ero-inc\\scripts\\managers\\game_session.gd",
+      "Hash": "E0D8BD72E69C4E75F9F472E04C85F5E771DDD08F31E04C94188DFD959D58B199",
+      "unchanged": true
+    },
+    {
+      "Path": "E:\\GoDot\\ero-inc\\scripts\\ui\\save_slot_data.gd",
+      "Hash": "357C140F7D67D43569748F3A2BCC98B73186657AAFA28E484BB74BA4AA8D9F50",
+      "unchanged": true
+    },
+    {
+      "Path": "E:\\GoDot\\ero-inc\\scripts\\ui\\save_slot_card.gd",
+      "Hash": "118FDDB76A50C8E9A434EFBD201CF4AEDC0BC6DA21DC787DA0461D0260436D06",
+      "unchanged": true
+    },
+    {
+      "Path": "E:\\GoDot\\ero-inc\\scripts\\ui\\load_menu.gd",
+      "Hash": "20F2801174FE3666CED7D4667C6957238E34D86D7C44DB5B5FEECAF9562720A5",
+      "unchanged": true
+    },
+    {
+      "Path": "E:\\GoDot\\ero-inc\\addons\\dialogic\\Modules\\Save\\subsystem_save.gd",
+      "Hash": "D601CF37FBF8D835A497EFDE1EA52DAB4853B0B2C5771C3E70229C96225B6EEF",
+      "unchanged": true
+    }
+  ],
+  "native_gpu_screens": [
+    "phase6/screens/fixed/resident.png",
+    "phase6/screens/fixed/mirror.png",
+    "phase6/screens/fixed/dialogue.png",
+    "phase6/screens/fixed/faces.png",
+    "phase6/screens/expressions/faces.png",
+    "phase6/screens/720/resident.png",
+    "phase6/screens/ultrawide/dialogue.png"
+  ],
+  "visual_inspection": "Completed on native GPU images; faces, five expressions, mirror, UI overlap and responsive layout reviewed",
+  "editor_import": "No SCRIPT ERROR / parse error / resource load failure in editor-import-final.log",
+  "known_shutdown_diagnostics": "Existing 63 ObjectDB / 27 resources in main runtime, 4 / 1 in editor; no new script error in passing suites",
+  "temporary_art": {
+    "images": 143,
+    "registrations": 84,
+    "rigs": 2,
+    "manifest": "docs/art/SCHOOL_TEMPORARY_ASSETS.json"
+  },
+  "save_test_incident": {
+    "created_test_slot": "auto_01 at 2026-10-18 15:21:08",
+    "existing_slots_overwritten": false,
+    "resolution": "New test slot archived outside user data to phase6/test-generated-save; its latest_save_slot and autosave_slot_index pointers removed. Test runner now pauses the autosave timer every frame."
+  },
+  "limitations": [
+    "Male head contour is built into its body; facial style changes use matching eye variants.",
+    "Fully furry anatomy, species-specific ears/tails, additional outfits and poses need dedicated matching art.",
+    "Temporary artistic presets are not final canonical character designs."
+  ]
+}

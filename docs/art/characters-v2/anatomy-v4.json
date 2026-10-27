@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "scope": "Original adult layered-art candidates; manual curation before runtime or training; V2 expands coat hems and edits footwear per foot",
+  "output_prefix": "characters_v2/anatomy_v4",
+  "preserve_input_latent": true,
+  "denoise": 0.84,
+  "steps": 32,
+  "cfg": 5.0,
+  "sampler": "euler_ancestral",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "naked, nipples, exposed breasts, exposed genitals, transparent clothes, torn clothes, 3d, realistic, glossy, metallic skin, thick outlines, text, watermark, logo, child, teen, chibi, multiple people, extra limbs, extra fingers, floating objects, cropped feet",
+  "items": [
+    {
+      "id": "female_bust_small",
+      "rig": "female_average",
+      "category": "anatomy",
+      "mask": "characters_v2/bases/female_average/bust-wide-soft-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, original adult woman, short brown bob, blue eyes, age 28, unclothed nonsexual anatomical body base, small natural adult breasts, modest flat chest, natural nipples, neutral standing pose, front view, arms relaxed at sides, full body, flat light gray background, flat lighting",
+      "seed": 723101,
+      "denoise": 0.85,
+      "image": "characters_v2/bases/female_average/reference.png",
+      "negative": "clothes, underwear, bikini, censorship, arousal, erection, erect penis, sexual activity, seductive pose, text, watermark, extra limbs, bad anatomy, 3d, realistic, child, teen, chibi, extreme proportions, exaggerated breasts, oversized breasts, penis, testicles"
+    }
+  ]
+}

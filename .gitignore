@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Local development environment and builds
+.venv/
+__pycache__/
+*.pyc
+dist/
+builds/
+.DS_Store
+._*

@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "scope": "Ten neutral non-graphic adult mannequin pose studies on magenta. No intimate details. Only reviewed limb art may be selected; no runtime registration.",
+  "output_prefix": "characters_v2/pose_selection_v1",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": false,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "controlnet": {
+    "name": "xinsir-openpose-sdxl.safetensors",
+    "sha256": "b8524e557a7df60d081f5d4a0eb109967d107df217943bf88c2d99b9ebcc06c5",
+    "strength": 0.58,
+    "start_percent": 0.0,
+    "end_percent": 0.75
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "female_average_shrug_candidate_1",
+      "rig": "female_average",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/female_average-shrug.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, balanced adult female proportions, short brown bob hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, both elbows naturally bent, palms facing up in a relaxed questioning shrug, open proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102600,
+      "control_strength": 0.55,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "female_average_shrug_candidate_2",
+      "rig": "female_average",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/female_average-shrug.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, balanced adult female proportions, short brown bob hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, both elbows naturally bent, palms facing up in a relaxed questioning shrug, open proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102601,
+      "control_strength": 0.6,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "female_average_shrug_candidate_3",
+      "rig": "female_average",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/female_average-shrug.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, balanced adult female proportions, short brown bob hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, both elbows naturally bent, palms facing up in a relaxed questioning shrug, open proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102602,
+      "control_strength": 0.65,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "female_average_shrug_candidate_4",
+      "rig": "female_average",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/female_average-shrug.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, balanced adult female proportions, short brown bob hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, both elbows naturally bent, palms facing up in a relaxed questioning shrug, open proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102603,
+      "control_strength": 0.58,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "female_average_shrug_candidate_5",
+      "rig": "female_average",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/female_average-shrug.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, balanced adult female proportions, short brown bob hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, both elbows naturally bent, palms facing up in a relaxed questioning shrug, open proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102604,
+      "control_strength": 0.62,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "male_toned_present_candidate_1",
+      "rig": "male_toned",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/male_toned-present.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, moderately athletic adult male proportions, short brown hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, right elbow naturally bent, right open palm facing upwards presenting something, other arm relaxed down, proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102605,
+      "control_strength": 0.55,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "male_toned_present_candidate_2",
+      "rig": "male_toned",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/male_toned-present.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, moderately athletic adult male proportions, short brown hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, right elbow naturally bent, right open palm facing upwards presenting something, other arm relaxed down, proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102606,
+      "control_strength": 0.6,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "male_toned_present_candidate_3",
+      "rig": "male_toned",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/male_toned-present.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, moderately athletic adult male proportions, short brown hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, right elbow naturally bent, right open palm facing upwards presenting something, other arm relaxed down, proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102607,
+      "control_strength": 0.65,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "male_toned_present_candidate_4",
+      "rig": "male_toned",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/male_toned-present.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, moderately athletic adult male proportions, short brown hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, right elbow naturally bent, right open palm facing upwards presenting something, other arm relaxed down, proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102608,
+      "control_strength": 0.58,
+      "control_end": 0.7,
+      "reviewed": false
+    },
+    {
+      "id": "male_toned_present_candidate_5",
+      "rig": "male_toned",
+      "category": "non_graphic_pose_study",
+      "control": "characters_v2/pose_selection_v1/male_toned-present.png",
+      "prompt": "eincanime, original mature adult age 35, neutral nonsexual anatomical mannequin study, moderately athletic adult male proportions, short brown hair, smooth featureless chest and pelvis, no intimate anatomical details, no nipples, no genitals, no clothing, full length front view, right elbow naturally bent, right open palm facing upwards presenting something, other arm relaxed down, proportional hands, five fingers per hand, natural shoulder elbow wrist anatomy, delicate thin warm brown outlines, matte flat warm skin colors, restrained peach cel shading, plain solid bright magenta chroma key background RGB 255 0 255, even diffuse light, complete feet in frame, generous margins, single figure",
+      "negative": "child, teen, young, sexual, erotic, seductive, nipples, areola, genitals, penis, vulva, pubic hair, intimate detail, clothes, underwear, leotard, accessories, extra arms, deformed hand, huge hands, missing fingers, extra fingers, fused fingers, thick black outlines, 3d, plastic, glossy skin, text, labels, gradient background, scenery, shadow on background, cropped feet, multiple figures",
+      "seed": 2026102609,
+      "control_strength": 0.62,
+      "control_end": 0.7,
+      "reviewed": false
+    }
+  ],
+  "mode": "full_redraw",
+  "width": 832,
+  "height": 1472
+}

@@ -1,0 +1,548 @@
+[gd_scene format=3 uid="uid://dm3iv7c4g8m5g"]
+
+[ext_resource type="Script" uid="uid://c1k7mjgr775nc" path="res://scripts/ui/main_menu.gd" id="1_main_menu_script"]
+[ext_resource type="PackedScene" uid="uid://c5trandlt3ey7" path="res://scenes/ui/Aside.tscn" id="2_aside_scene"]
+[ext_resource type="PackedScene" uid="uid://qndi7r8pajjx" path="res://scenes/mainMenu/LoadMenu.tscn" id="3_load_menu_scene"]
+[ext_resource type="Texture2D" uid="uid://ck4do3lc68yy6" path="res://assets/textures/backgrounds/prolog/warehouse_exterior_night.png" id="4_warehouse_bg"]
+
+[sub_resource type="Shader" id="Shader_aside_blur"]
+code = "shader_type canvas_item;
+
+uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_linear_mipmap;
+uniform float blur_radius = 4.0;
+uniform float overlay_alpha = 0.42;
+
+void fragment() {
+	vec2 px = SCREEN_PIXEL_SIZE * blur_radius;
+	vec4 color = texture(screen_texture, SCREEN_UV) * 0.20;
+	color += texture(screen_texture, SCREEN_UV + vec2(px.x, 0.0)) * 0.13;
+	color += texture(screen_texture, SCREEN_UV - vec2(px.x, 0.0)) * 0.13;
+	color += texture(screen_texture, SCREEN_UV + vec2(0.0, px.y)) * 0.13;
+	color += texture(screen_texture, SCREEN_UV - vec2(0.0, px.y)) * 0.13;
+	color += texture(screen_texture, SCREEN_UV + vec2(px.x, px.y)) * 0.07;
+	color += texture(screen_texture, SCREEN_UV + vec2(-px.x, px.y)) * 0.07;
+	color += texture(screen_texture, SCREEN_UV + vec2(px.x, -px.y)) * 0.07;
+	color += texture(screen_texture, SCREEN_UV + vec2(-px.x, -px.y)) * 0.07;
+	COLOR = vec4(color.rgb, overlay_alpha);
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aside_blur"]
+shader = SubResource("Shader_aside_blur")
+shader_parameter/blur_radius = 5.5
+shader_parameter/overlay_alpha = 0.55
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aside_panel"]
+bg_color = Color(0.0156863, 0.0235294, 0.0352941, 0.32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_empty"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_content_panel"]
+bg_color = Color(0.01, 0.018, 0.03, 0.58)
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.36, 0.58, 0.73, 0.48)
+
+[node name="MainMenu" type="Control" unique_id=1320051718]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main_menu_script")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1092102897]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_warehouse_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BackgroundShade" type="ColorRect" parent="." unique_id=2127841629]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00784314, 0.0117647, 0.0196078, 0.4)
+
+[node name="WarehouseDimmer" type="ColorRect" parent="." unique_id=1452388459]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00784314, 0.0117647, 0.0196078, 0.12)
+
+[node name="AsideBlur" type="ColorRect" parent="." unique_id=1086234851]
+material = SubResource("ShaderMaterial_aside_blur")
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_right = 420.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MainLayout" type="HBoxContainer" parent="." unique_id=2028440468]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="AsidePanel" type="PanelContainer" parent="MainLayout" unique_id=2078289113]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_aside_panel")
+
+[node name="AsideInstance" parent="MainLayout/AsidePanel" unique_id=1534126976 instance=ExtResource("2_aside_scene")]
+layout_mode = 2
+
+[node name="Divider" type="VSeparator" parent="MainLayout" unique_id=1938347890]
+visible = false
+layout_mode = 2
+
+[node name="ContentPanel" type="PanelContainer" parent="MainLayout" unique_id=371238112]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_empty")
+
+[node name="ContentMargin" type="MarginContainer" parent="MainLayout/ContentPanel" unique_id=1949275869]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 34
+theme_override_constants/margin_right = 38
+theme_override_constants/margin_bottom = 34
+
+[node name="ContentLayout" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin" unique_id=758676131]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 18
+
+[node name="ContentHeader" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout" unique_id=1455464372]
+visible = false
+layout_mode = 2
+
+[node name="ContentTitleLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentHeader" unique_id=1465374092]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Главное меню"
+
+[node name="ContentSubtitleLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentHeader" unique_id=525914071]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.756863, 0.780392, 0.85098, 1)
+text = "Aside слева используется как общий навигационный блок."
+
+[node name="ContentStack" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout" unique_id=1480282082]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OverviewPanel" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack" unique_id=1895391768]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="OverviewCard" type="PanelContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/OverviewPanel" unique_id=580957063]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_content_panel")
+
+[node name="OverviewMargin" type="MarginContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/OverviewPanel/OverviewCard" unique_id=1164557811]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="OverviewText" type="RichTextLabel" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/OverviewPanel/OverviewCard/OverviewMargin" unique_id=38953628]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]Структура Main Menu[/b]
+
+- Слева: переиспользуемый Aside Menu.
+- Справа: активный раздел, который можно переключать без смены layout.
+- Панель сохранений поддерживает режимы Load и Save."
+fit_content = true
+scroll_active = false
+
+[node name="LoadMenuPanel" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack" unique_id=219497681 instance=ExtResource("3_load_menu_scene")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SettingsMenuPanel" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack" unique_id=1033827958]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="SettingsHeader" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel" unique_id=647375834]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="HeaderAccent" type="ColorRect" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader" unique_id=2036317595]
+custom_minimum_size = Vector2(3, 48)
+layout_mode = 2
+color = Color(0.36, 0.58, 0.73, 0.72)
+
+[node name="SettingsHeaderTitle" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader" unique_id=23122520]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.86, 0.92, 0.96, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.82)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 30
+text = "SETTINGS"
+vertical_alignment = 1
+
+[node name="SettingsHeaderSpacer" type="Control" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader" unique_id=124563046]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsTabs" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader" unique_id=1078369852]
+visible = false
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="GameTab" type="Button" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader/SettingsTabs" unique_id=1671573017]
+custom_minimum_size = Vector2(140, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.76, 1, 1)
+theme_override_font_sizes/font_size = 17
+text = "GAME"
+alignment = 1
+
+[node name="TextTab" type="Button" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader/SettingsTabs" unique_id=1950085662]
+custom_minimum_size = Vector2(140, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.78, 0.84, 0.9)
+theme_override_font_sizes/font_size = 17
+text = "TEXT"
+alignment = 1
+
+[node name="LanguageTab" type="Button" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsHeader/SettingsTabs" unique_id=1204153885]
+custom_minimum_size = Vector2(140, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.78, 0.84, 0.9)
+theme_override_font_sizes/font_size = 17
+text = "LANGUAGE"
+alignment = 1
+
+[node name="SettingsCard" type="PanelContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel" unique_id=987158470]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_content_panel")
+
+[node name="SettingsMargin" type="MarginContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard" unique_id=63225886]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 18
+
+[node name="SettingsLayout" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin" unique_id=458738210]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="SettingsText" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout" unique_id=1273041418]
+layout_mode = 2
+text = "Автосохранения"
+autowrap_mode = 3
+
+[node name="AutosaveColumns" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout" unique_id=1485182322]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="AutosaveLeftColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns" unique_id=1049664760]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="AutosaveEnabledCheck" type="CheckBox" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveLeftColumn" unique_id=1067665265]
+layout_mode = 2
+text = "Включить автосохранения"
+
+[node name="AutosaveTimeCheck" type="CheckBox" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveLeftColumn" unique_id=1790359409]
+layout_mode = 2
+text = "Автосохранение по времени"
+
+[node name="AutosaveChoiceCheck" type="CheckBox" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveLeftColumn" unique_id=1937212992]
+layout_mode = 2
+text = "Автосохранение перед выбором"
+
+[node name="AutosaveRightColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns" unique_id=1045890755]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="AutosaveHeader" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveRightColumn" unique_id=1968130865]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="AutosaveLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveRightColumn/AutosaveHeader" unique_id=808522106]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Интервал автосохранения"
+
+[node name="AutosaveValueLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveRightColumn/AutosaveHeader" unique_id=2116239657]
+layout_mode = 2
+text = "15 мин"
+horizontal_alignment = 2
+
+[node name="AutosaveSlider" type="HSlider" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveRightColumn" unique_id=1950616392]
+layout_mode = 2
+min_value = 1.0
+max_value = 30.0
+value = 15.0
+
+[node name="AutosaveHint" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/AutosaveColumns/AutosaveRightColumn" unique_id=1790557448]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.756863, 0.780392, 0.85098, 1)
+text = "Диапазон: от 1 до 30 минут. Значение по умолчанию: 15 минут."
+autowrap_mode = 3
+
+[node name="TimeDivider" type="ColorRect" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout" unique_id=1784856537]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+color = Color(0.34, 0.58, 0.73, 0.18)
+
+[node name="TimeSettingsTitle" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout" unique_id=476507356]
+layout_mode = 2
+text = "Время"
+autowrap_mode = 3
+
+[node name="TimeColumns" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout" unique_id=1105628709]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="TimeLeftColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/TimeColumns" unique_id=1028724662]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="DayLengthLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/TimeColumns/TimeLeftColumn" unique_id=1372099222]
+layout_mode = 2
+text = "Длина игрового дня"
+
+[node name="DayLengthHint" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/TimeColumns/TimeLeftColumn" unique_id=2094411914]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.756863, 0.780392, 0.85098, 1)
+text = "Определяет, сколько реальных минут длится полный игровой день."
+autowrap_mode = 3
+
+[node name="TimeRightColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/TimeColumns" unique_id=2033625506]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DayLengthOptionButton" type="OptionButton" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/SettingsCard/SettingsMargin/SettingsLayout/TimeColumns/TimeRightColumn" unique_id=1083120478]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+
+[node name="TextSettingsCard" type="PanelContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel" unique_id=987158471]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_content_panel")
+
+[node name="TextSettingsMargin" type="MarginContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard" unique_id=63225887]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="TextSettingsLayout" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin" unique_id=458738211]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="TextSettingsTitle" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout" unique_id=1273041419]
+layout_mode = 2
+text = "Текст"
+autowrap_mode = 3
+
+[node name="TextColumns" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout" unique_id=1485182323]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="TextLeftColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns" unique_id=1049664761]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="InstantTextCheck" type="CheckBox" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextLeftColumn" unique_id=1067665266]
+layout_mode = 2
+text = "Моментальный текст"
+
+[node name="InstantTextHint" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextLeftColumn" unique_id=1790359410]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.756863, 0.780392, 0.85098, 1)
+text = "Когда включено, вся реплика появляется сразу без печатающего эффекта."
+autowrap_mode = 3
+
+[node name="TextRightColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns" unique_id=1045890756]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="TextSpeedHeader" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextRightColumn" unique_id=1968130866]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TextSpeedLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextRightColumn/TextSpeedHeader" unique_id=808522107]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Скорость текста"
+
+[node name="TextSpeedValueLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextRightColumn/TextSpeedHeader" unique_id=2116239658]
+layout_mode = 2
+text = "100%"
+horizontal_alignment = 2
+
+[node name="TextSpeedSlider" type="HSlider" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextRightColumn" unique_id=1950616393]
+layout_mode = 2
+min_value = 0.5
+max_value = 3.0
+step = 0.25
+value = 1.0
+
+[node name="TextSpeedHint" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/TextSettingsCard/TextSettingsMargin/TextSettingsLayout/TextColumns/TextRightColumn" unique_id=1790557449]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.756863, 0.780392, 0.85098, 1)
+text = "Ниже 100% текст идет медленнее, выше 100% быстрее."
+autowrap_mode = 3
+
+[node name="LanguageSettingsCard" type="PanelContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel" unique_id=987158472]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_content_panel")
+
+[node name="LanguageSettingsMargin" type="MarginContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard" unique_id=63225888]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="LanguageSettingsLayout" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin" unique_id=458738212]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="LanguageTitle" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin/LanguageSettingsLayout" unique_id=1273041420]
+layout_mode = 2
+text = "Язык"
+
+[node name="LanguageColumns" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin/LanguageSettingsLayout" unique_id=1485182324]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="LanguageLeftColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin/LanguageSettingsLayout/LanguageColumns" unique_id=1049664762]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="LanguageHint" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin/LanguageSettingsLayout/LanguageColumns/LanguageLeftColumn" unique_id=1790359411]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.756863, 0.780392, 0.85098, 1)
+text = "Переключает язык системного интерфейса между русским и английским."
+autowrap_mode = 3
+
+[node name="LanguageRightColumn" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin/LanguageSettingsLayout/LanguageColumns" unique_id=1045890757]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="LanguageOptionButton" type="OptionButton" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/SettingsMenuPanel/LanguageSettingsCard/LanguageSettingsMargin/LanguageSettingsLayout/LanguageColumns/LanguageRightColumn" unique_id=1950616394]
+layout_mode = 2
+
+[node name="GalleryMenuPanel" type="VBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack" unique_id=1137364520]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="GalleryCard" type="PanelContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/GalleryMenuPanel" unique_id=1158998205]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_content_panel")
+
+[node name="GalleryMargin" type="MarginContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/GalleryMenuPanel/GalleryCard" unique_id=989091104]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GalleryText" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/ContentStack/GalleryMenuPanel/GalleryCard/GalleryMargin" unique_id=343528475]
+layout_mode = 2
+text = "Раздел галлереи подключен как отдельная правая панель. Слева остается тот же Aside Menu, что упрощает повторное использование навигации."
+autowrap_mode = 3
+
+[node name="FooterRow" type="HBoxContainer" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout" unique_id=323662579]
+layout_mode = 2
+
+[node name="FeedbackLabel" type="Label" parent="MainLayout/ContentPanel/ContentMargin/ContentLayout/FooterRow" unique_id=1364628702]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.803922, 0.513726, 1)
+
+[node name="TitleBlock" type="HBoxContainer" parent="." unique_id=831066918]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.74600005
+anchor_top = 0.133
+anchor_right = 0.91
+anchor_bottom = 0.245
+offset_left = -0.32006836
+offset_top = -30.64
+offset_right = 106.0
+offset_bottom = 22.399994
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 22
+
+[node name="TitleAccent" type="ColorRect" parent="TitleBlock" unique_id=2099426752]
+custom_minimum_size = Vector2(3, 122)
+layout_mode = 2
+color = Color(0.95, 0.39, 0.16, 0.92)
+
+[node name="TitleTextStack" type="VBoxContainer" parent="TitleBlock" unique_id=319774312]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="GameTitle" type="Label" parent="TitleBlock/TitleTextStack" unique_id=203556387]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.945, 0.972, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.92)
+theme_override_colors/font_outline_color = Color(0.13, 0.18, 0.22, 0.72)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 78
+text = "ERO INC."
+
+[node name="GameSubtitle" type="Label" parent="TitleBlock/TitleTextStack" unique_id=1799402807]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.79, 0.8, 0.78, 0.96)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 21
+text = "The life is simple 
+The choices are not"

@@ -1,0 +1,785 @@
+{
+  "items": {
+    "egg": {
+      "weight": 0.2,
+      "price": 5,
+      "category": "ingredient"
+    },
+    "milk": {
+      "weight": 0.5,
+      "price": 6,
+      "category": "ingredient"
+    },
+    "fruit": {
+      "weight": 0.3,
+      "price": 5,
+      "category": "ingredient"
+    },
+    "fish": {
+      "weight": 0.4,
+      "price": 12,
+      "category": "ingredient"
+    },
+    "herbs": {
+      "weight": 0.1,
+      "price": 3,
+      "category": "ingredient"
+    },
+    "meat": {
+      "weight": 0.4,
+      "price": 14,
+      "category": "ingredient"
+    },
+    "porridge_portion": {
+      "weight": 0.4,
+      "price": 12,
+      "category": "food",
+      "restore": {
+        "satiety": 25,
+        "mood": 3
+      }
+    },
+    "salad_portion": {
+      "weight": 0.4,
+      "price": 12,
+      "category": "food",
+      "restore": {
+        "satiety": 20,
+        "mood": 3
+      }
+    },
+    "omelet_portion": {
+      "weight": 0.4,
+      "price": 17,
+      "category": "food",
+      "restore": {
+        "satiety": 35,
+        "mood": 3
+      }
+    },
+    "fish_soup_portion": {
+      "weight": 0.4,
+      "price": 22,
+      "category": "food",
+      "restore": {
+        "satiety": 45,
+        "mood": 3
+      }
+    },
+    "stew_portion": {
+      "weight": 0.4,
+      "price": 27,
+      "category": "food",
+      "restore": {
+        "satiety": 55,
+        "mood": 3
+      }
+    },
+    "pilaf_portion": {
+      "weight": 0.4,
+      "price": 32,
+      "category": "food",
+      "restore": {
+        "satiety": 65,
+        "mood": 3
+      }
+    },
+    "packed_lunch_portion": {
+      "weight": 0.4,
+      "price": 25,
+      "category": "food",
+      "restore": {
+        "satiety": 50,
+        "mood": 3
+      }
+    },
+    "fruit_snack_portion": {
+      "weight": 0.4,
+      "price": 12,
+      "category": "food",
+      "restore": {
+        "satiety": 20,
+        "mood": 3
+      }
+    }
+  },
+  "recipes": {
+    "porridge": {
+      "ingredients": {
+        "grain": 1,
+        "milk": 1
+      },
+      "outputs": {
+        "porridge_portion": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "xp": 6,
+      "minutes": 12
+    },
+    "salad": {
+      "ingredients": {
+        "vegetable": 2,
+        "herbs": 1
+      },
+      "outputs": {
+        "salad_portion": 1
+      },
+      "equipment": [],
+      "skill": "cooking",
+      "xp": 5,
+      "minutes": 10
+    },
+    "omelet": {
+      "ingredients": {
+        "egg": 2,
+        "milk": 1
+      },
+      "outputs": {
+        "omelet_portion": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "xp": 10,
+      "minutes": 20,
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 10
+      }
+    },
+    "fish_soup": {
+      "ingredients": {
+        "fish": 1,
+        "vegetable": 1,
+        "herbs": 1
+      },
+      "outputs": {
+        "fish_soup_portion": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "xp": 15,
+      "minutes": 30,
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 20
+      }
+    },
+    "stew": {
+      "ingredients": {
+        "meat": 1,
+        "vegetable": 2
+      },
+      "outputs": {
+        "stew_portion": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "xp": 20,
+      "minutes": 40,
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 35
+      }
+    },
+    "pilaf": {
+      "ingredients": {
+        "meat": 1,
+        "grain": 2,
+        "vegetable": 1
+      },
+      "outputs": {
+        "pilaf_portion": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "xp": 22,
+      "minutes": 45,
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 50
+      }
+    },
+    "packed_lunch": {
+      "ingredients": {
+        "grain": 1,
+        "fish": 1,
+        "vegetable": 1
+      },
+      "outputs": {
+        "packed_lunch_portion": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "xp": 15,
+      "minutes": 30,
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 25
+      }
+    },
+    "fruit_snack": {
+      "ingredients": {
+        "fruit": 2,
+        "milk": 1
+      },
+      "outputs": {
+        "fruit_snack_portion": 1
+      },
+      "equipment": [],
+      "skill": "cooking",
+      "xp": 5,
+      "minutes": 10
+    }
+  },
+  "perks": {
+    "steady_hands": {
+      "cost": 2,
+      "stats": {
+        "agility": 1
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 2
+      }
+    },
+    "lasting_pace": {
+      "cost": 2,
+      "stats": {
+        "endurance": 2
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 3
+      }
+    },
+    "careful_planner": {
+      "cost": 2,
+      "stats": {
+        "intellect": 1,
+        "cunning": 1
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 3
+      }
+    },
+    "warm_speaker": {
+      "cost": 2,
+      "stats": {
+        "charisma": 2
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 3
+      }
+    },
+    "confident_voice": {
+      "cost": 2,
+      "stats": {
+        "authority": 2
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 4
+      }
+    },
+    "curious_reader": {
+      "cost": 2,
+      "stats": {
+        "erudition": 2
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 2
+      }
+    },
+    "patient_teacher": {
+      "cost": 2,
+      "stats": {
+        "charisma": 1,
+        "erudition": 1
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 4
+      }
+    },
+    "athletic_balance": {
+      "cost": 2,
+      "stats": {
+        "strength": 1,
+        "agility": 1
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 4
+      }
+    },
+    "lucky_break": {
+      "cost": 2,
+      "stats": {
+        "luck": 2
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 4
+      }
+    },
+    "practical_mind": {
+      "cost": 2,
+      "stats": {
+        "cunning": 2
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 3
+      }
+    },
+    "household_rhythm": {
+      "cost": 2,
+      "stats": {
+        "endurance": 1
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 3
+      },
+      "multipliers": {
+        "resource_cost": 0.95
+      }
+    },
+    "focused_learner": {
+      "cost": 2,
+      "stats": {
+        "intellect": 1
+      },
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 5
+      },
+      "xp_multiplier": 1.05
+    }
+  },
+  "contracts": {
+    "accessibility_review": {
+      "profession": "digital",
+      "skill": "computing",
+      "level": 1,
+      "effort": 90,
+      "deadline": 4320,
+      "pay": 90,
+      "xp": 30,
+      "equipment": [
+        "computer"
+      ]
+    },
+    "archive_index": {
+      "profession": "digital",
+      "skill": "computing",
+      "level": 1,
+      "effort": 120,
+      "deadline": 4320,
+      "pay": 100,
+      "xp": 30,
+      "equipment": [
+        "computer"
+      ]
+    },
+    "security_review": {
+      "profession": "digital",
+      "skill": "cybersecurity",
+      "level": 1,
+      "effort": 150,
+      "deadline": 4320,
+      "pay": 150,
+      "xp": 30,
+      "equipment": [
+        "computer"
+      ]
+    },
+    "event_photos": {
+      "profession": "journalism",
+      "skill": "journalism",
+      "level": 1,
+      "effort": 120,
+      "deadline": 4320,
+      "pay": 110,
+      "xp": 30,
+      "equipment": [
+        "camera"
+      ]
+    },
+    "community_interview": {
+      "profession": "journalism",
+      "skill": "journalism",
+      "level": 1,
+      "effort": 90,
+      "deadline": 4320,
+      "pay": 85,
+      "xp": 30,
+      "equipment": [
+        "computer"
+      ]
+    },
+    "study_materials": {
+      "profession": "digital",
+      "skill": "study",
+      "level": 1,
+      "effort": 120,
+      "deadline": 4320,
+      "pay": 100,
+      "xp": 30,
+      "equipment": [
+        "computer"
+      ]
+    }
+  },
+  "assets": {
+    "repair_workshop": {
+      "price": 1800,
+      "daily_income": 22,
+      "daily_expense": 6,
+      "max_level": 3,
+      "upgrade_cost": 900,
+      "sell_ratio": 0.6
+    },
+    "photo_studio": {
+      "price": 2400,
+      "daily_income": 30,
+      "daily_expense": 10,
+      "max_level": 3,
+      "upgrade_cost": 1200,
+      "sell_ratio": 0.6
+    },
+    "small_cafe": {
+      "price": 3600,
+      "daily_income": 42,
+      "daily_expense": 18,
+      "max_level": 3,
+      "upgrade_cost": 1800,
+      "sell_ratio": 0.6
+    }
+  },
+  "projects": {
+    "portfolio": {
+      "effort": 180,
+      "pay": 100,
+      "requirements": {
+        "path": "world.equipment",
+        "op": "contains",
+        "value": "computer"
+      }
+    },
+    "community_site": {
+      "effort": 240,
+      "pay": 140,
+      "requirements": {
+        "path": "world.equipment",
+        "op": "contains",
+        "value": "computer"
+      }
+    },
+    "learning_app": {
+      "effort": 360,
+      "pay": 220,
+      "requirements": {
+        "path": "world.equipment",
+        "op": "contains",
+        "value": "computer"
+      }
+    }
+  },
+  "events": {
+    "campus_result": {
+      "requirements": {
+        "path": "world.education.grade",
+        "op": "gte",
+        "value": 15
+      },
+      "once": true,
+      "priority": 2,
+      "effects": [
+        {
+          "kind": "xp",
+          "amount": 20
+        }
+      ]
+    },
+    "home_cook": {
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 30
+      },
+      "once": true,
+      "priority": 2,
+      "effects": [
+        {
+          "kind": "need",
+          "id": "mood",
+          "amount": 8
+        }
+      ]
+    },
+    "family_welcome": {
+      "requirements": {
+        "path": "family.members.family_1",
+        "op": "exists"
+      },
+      "once": true,
+      "priority": 2,
+      "effects": [
+        {
+          "kind": "money",
+          "amount": 40
+        }
+      ]
+    },
+    "digital_reference": {
+      "requirements": {
+        "path": "world.flags.digital_job_completed",
+        "value": true
+      },
+      "once": true,
+      "priority": 2,
+      "effects": [
+        {
+          "kind": "xp",
+          "amount": 15
+        }
+      ]
+    }
+  },
+  "achievements": {
+    "first_cook": {
+      "requirements": {
+        "path": "player.skills.cooking",
+        "op": "gte",
+        "value": 8
+      },
+      "rewards": [
+        {
+          "kind": "unlock",
+          "id": "first_cook"
+        }
+      ]
+    },
+    "family_carer": {
+      "requirements": {
+        "path": "family.members.family_1.bonds.player",
+        "op": "gte",
+        "value": 4
+      },
+      "rewards": [
+        {
+          "kind": "unlock",
+          "id": "family_carer"
+        }
+      ]
+    },
+    "digital_student": {
+      "requirements": {
+        "path": "player.skills.cybersecurity",
+        "op": "gte",
+        "value": 15
+      },
+      "rewards": [
+        {
+          "kind": "unlock",
+          "id": "digital_student"
+        }
+      ]
+    }
+  },
+  "content_labels": {
+    "egg": {
+      "label": "Яйца"
+    },
+    "milk": {
+      "label": "Молоко"
+    },
+    "fruit": {
+      "label": "Фрукты"
+    },
+    "fish": {
+      "label": "Рыба"
+    },
+    "herbs": {
+      "label": "Зелень"
+    },
+    "meat": {
+      "label": "Мясо"
+    },
+    "porridge": {
+      "label": "Каша"
+    },
+    "porridge_portion": {
+      "label": "Каша · порция"
+    },
+    "salad": {
+      "label": "Овощной салат"
+    },
+    "salad_portion": {
+      "label": "Овощной салат · порция"
+    },
+    "omelet": {
+      "label": "Омлет"
+    },
+    "omelet_portion": {
+      "label": "Омлет · порция"
+    },
+    "fish_soup": {
+      "label": "Рыбный суп"
+    },
+    "fish_soup_portion": {
+      "label": "Рыбный суп · порция"
+    },
+    "stew": {
+      "label": "Домашнее рагу"
+    },
+    "stew_portion": {
+      "label": "Домашнее рагу · порция"
+    },
+    "pilaf": {
+      "label": "Плов"
+    },
+    "pilaf_portion": {
+      "label": "Плов · порция"
+    },
+    "packed_lunch": {
+      "label": "Обед с собой"
+    },
+    "packed_lunch_portion": {
+      "label": "Обед с собой · порция"
+    },
+    "fruit_snack": {
+      "label": "Фруктовый перекус"
+    },
+    "fruit_snack_portion": {
+      "label": "Фруктовый перекус · порция"
+    },
+    "steady_hands": {
+      "label": "Твёрдая рука"
+    },
+    "lasting_pace": {
+      "label": "Ровный темп"
+    },
+    "careful_planner": {
+      "label": "Продуманный план"
+    },
+    "warm_speaker": {
+      "label": "Тёплый собеседник"
+    },
+    "confident_voice": {
+      "label": "Уверенный голос"
+    },
+    "curious_reader": {
+      "label": "Любознательный читатель"
+    },
+    "patient_teacher": {
+      "label": "Терпеливый наставник"
+    },
+    "athletic_balance": {
+      "label": "Атлетическое равновесие"
+    },
+    "lucky_break": {
+      "label": "Удачный случай"
+    },
+    "practical_mind": {
+      "label": "Практичный ум"
+    },
+    "household_rhythm": {
+      "label": "Домашний ритм"
+    },
+    "focused_learner": {
+      "label": "Сосредоточенный ученик"
+    },
+    "accessibility_review": {
+      "label": "Проверка доступности интерфейса"
+    },
+    "archive_index": {
+      "label": "Каталогизация архива"
+    },
+    "security_review": {
+      "label": "Аудит цифровой защиты"
+    },
+    "event_photos": {
+      "label": "Фотографии городского события"
+    },
+    "community_interview": {
+      "label": "История соседского проекта"
+    },
+    "study_materials": {
+      "label": "Подготовка учебных материалов"
+    },
+    "repair_workshop": {
+      "label": "Ремонтная мастерская"
+    },
+    "photo_studio": {
+      "label": "Фотостудия"
+    },
+    "small_cafe": {
+      "label": "Небольшое кафе"
+    },
+    "portfolio": {
+      "label": "Личное портфолио"
+    },
+    "community_site": {
+      "label": "Сайт соседского сообщества"
+    },
+    "learning_app": {
+      "label": "Учебное приложение"
+    },
+    "campus_result": {
+      "label": "Результат учебного семестра"
+    },
+    "home_cook": {
+      "label": "Уверенная домашняя кухня"
+    },
+    "family_welcome": {
+      "label": "Поддержка молодой семьи"
+    },
+    "digital_reference": {
+      "label": "Первый отзыв о цифровой работе"
+    },
+    "first_cook": {
+      "label": "Первый кулинарный опыт"
+    },
+    "family_carer": {
+      "label": "Забота о семье"
+    },
+    "digital_student": {
+      "label": "Цифровой исследователь"
+    }
+  }
+}

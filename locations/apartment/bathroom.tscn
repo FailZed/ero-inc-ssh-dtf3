@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cu7dvlvyqd6p"]
+
+[ext_resource type="Texture2D" uid="uid://bxqj1qjbh46d5" path="res://assets/textures/locations/apartment/bathroom_16x9.png" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://c18yeu5hisq11" path="res://scenes/ui/HubUI.tscn" id="2_hub_ui"]
+[ext_resource type="Script" uid="uid://bqjoakyjs7v55" path="res://scripts/locations/location_scene.gd" id="3_location_scene"]
+
+[node name="Bathroom" type="Node2D" unique_id=336746763]
+script = ExtResource("3_location_scene")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=868855241]
+position = Vector2(960, 540)
+texture = ExtResource("1_bg")
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=1823078236]
+layer = 20
+
+[node name="HubUI" parent="Hud" unique_id=329795261 instance=ExtResource("2_hub_ui")]
+open_on_ready = true

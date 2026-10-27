@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "scope": "Original mature adult neutral artistic body bases without clothing, non-graphic anatomy, no intimate detail. Not runtime registered.",
+  "output_prefix": "characters_v2/pose_puppet_pilot_v3",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 0.32,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background, dress, sleeves, skirt, shoes, socks, picture frame, wall, room, floor, chair, furniture",
+  "items": [
+    {
+      "id": "female_arms_folded",
+      "rig": "female_canonical",
+      "sex": "female",
+      "category": "arms",
+      "state": "folded",
+      "title": "Руки скрещены",
+      "image": "characters_v2/pose_puppet_pilot_v3/female_arms_folded/reference.png",
+      "mask": "characters_v2/pose_puppet_pilot_v3/female_arms_folded/mask.png",
+      "control": "characters_v2/pose_puppet_pilot_v3/female_arms_folded/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult woman, short brown bob haircut, blue eyes, balanced natural adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, arms folded loosely across mid torso, natural crossed forearms, nude adult nonsexual anatomical art reference, bare shoulders and limbs, smooth simplified pelvis",
+      "seed": 2026101950,
+      "head_neck_y": 343,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_arms_folded",
+      "rig": "male_canonical",
+      "sex": "male",
+      "category": "arms",
+      "state": "folded",
+      "title": "Руки скрещены",
+      "image": "characters_v2/pose_puppet_pilot_v3/male_arms_folded/reference.png",
+      "mask": "characters_v2/pose_puppet_pilot_v3/male_arms_folded/mask.png",
+      "control": "characters_v2/pose_puppet_pilot_v3/male_arms_folded/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult man, short brown hair, blue eyes, moderately athletic adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, arms folded loosely across mid torso, natural crossed forearms, nude adult nonsexual anatomical art reference, bare shoulders and limbs, smooth simplified pelvis",
+      "seed": 2026101951,
+      "head_neck_y": 332,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "female_full_pose_seated_front",
+      "rig": "female_canonical",
+      "sex": "female",
+      "category": "full_pose",
+      "state": "seated_front",
+      "title": "Сидит прямо",
+      "image": "characters_v2/pose_puppet_pilot_v3/female_full_pose_seated_front/reference.png",
+      "mask": "characters_v2/pose_puppet_pilot_v3/female_full_pose_seated_front/mask.png",
+      "control": "characters_v2/pose_puppet_pilot_v3/female_full_pose_seated_front/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult woman, short brown bob haircut, blue eyes, balanced natural adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, sitting upright on a plain gray armless stool, front view, both feet flat on ground, hands resting on thighs, nude adult nonsexual anatomical art reference, bare shoulders and limbs, smooth simplified pelvis",
+      "seed": 2026101952,
+      "head_neck_y": 565,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "male_full_pose_seated_front",
+      "rig": "male_canonical",
+      "sex": "male",
+      "category": "full_pose",
+      "state": "seated_front",
+      "title": "Сидит прямо",
+      "image": "characters_v2/pose_puppet_pilot_v3/male_full_pose_seated_front/reference.png",
+      "mask": "characters_v2/pose_puppet_pilot_v3/male_full_pose_seated_front/mask.png",
+      "control": "characters_v2/pose_puppet_pilot_v3/male_full_pose_seated_front/control.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult age 30, full body visual novel character sprite, delicate thin brown lineart, matte flat colors, limited soft peach cel shadows, even diffuse light, plain light gray background, complete hands and shoes, generous canvas margins, adult man, short brown hair, blue eyes, moderately athletic adult proportions, unclothed neutral artistic figure study, smooth simplified anatomical base, non-graphic anatomy, no intimate details, bare feet, relaxed nonsexual posture, sitting upright on a plain gray armless stool, front view, both feet flat on ground, hands resting on thighs, nude adult nonsexual anatomical art reference, bare shoulders and limbs, smooth simplified pelvis",
+      "seed": 2026101953,
+      "head_neck_y": 565,
+      "denoise": 0.32,
+      "preserve_input_latent": true
+    }
+  ]
+}

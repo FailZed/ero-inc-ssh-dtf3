@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Ai\\ComfyUI-EroInc\\output\\body-drafts-v2\\male_muscular.png",
+  "source_sha256": "7fb3207d97ca25833e316fe9b024cc68c8780309f383e1958880d20d423d1b2a",
+  "operation": "body alpha slice and uniform registration; no anatomical deformation",
+  "source_cut_y": 240,
+  "uniform_scale": 1.0330578512396693,
+  "canvas": [
+    720,
+    1280
+  ],
+  "neck_attach": [
+    366.62,
+    245
+  ],
+  "feet_baseline_y": 1244,
+  "alpha_bounds": [
+    164,
+    245,
+    552,
+    1245
+  ],
+  "head_included": false,
+  "clothes_included": false,
+  "status": "body layer candidate; separate heads, fitted clothing and runtime review remain"
+}

@@ -1,0 +1,1786 @@
+{
+  "prompt_id": "8323529a-65c7-4f9a-9cc0-18b7bb1f09b4",
+  "created_utc": "2026-10-19T12:28:27.120054+00:00",
+  "generator": "Local ComfyUI / DaSiWa grouped independent masked edits",
+  "model": {
+    "path": "E:\\Ai\\ComfyUI-EroInc\\runtime\\ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints\\DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+    "size": 6938115222,
+    "mtime_ns": 1792329874683931900,
+    "sha256": "44670e67c55f059116171ee8538875da3abf624fbdaace6d1a7ac2d9617f0211"
+  },
+  "adapter": {
+    "name": "EroInc\\candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "body_adapter": null,
+  "input_images": [
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\cat_female\\reference.png",
+      "sha256": "6b7ce83b09670541568524c054c644bf83a9a2ea14bc69e591e5e7cfd22aca61",
+      "role": "image",
+      "item": "cat_female"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\cat_female\\mask.png",
+      "sha256": "cbf0bad1b486f54cefc304d3264f2dad76114b6e996bb521ecbe1634212c4c94",
+      "role": "mask",
+      "item": "cat_female"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\cat_male\\reference.png",
+      "sha256": "94389eb49cb331cdb6029c2b8fdf00d00b0755b3f44e13b255a937601cb7bcf9",
+      "role": "image",
+      "item": "cat_male"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\cat_male\\mask.png",
+      "sha256": "cbf0bad1b486f54cefc304d3264f2dad76114b6e996bb521ecbe1634212c4c94",
+      "role": "mask",
+      "item": "cat_male"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\fox_female\\reference.png",
+      "sha256": "3ae436bd2dc8f074b10cbabf494f6bbd21da50007ae0adbd1d4299203576e3a7",
+      "role": "image",
+      "item": "fox_female"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\fox_female\\mask.png",
+      "sha256": "cbf0bad1b486f54cefc304d3264f2dad76114b6e996bb521ecbe1634212c4c94",
+      "role": "mask",
+      "item": "fox_female"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\fox_male\\reference.png",
+      "sha256": "b2526534166117149f00683f60982e038cc819b1807e12aaf74e8f7454ed8758",
+      "role": "image",
+      "item": "fox_male"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_species_guides_v2\\fox_male\\mask.png",
+      "sha256": "cbf0bad1b486f54cefc304d3264f2dad76114b6e996bb521ecbe1634212c4c94",
+      "role": "mask",
+      "item": "fox_male"
+    }
+  ],
+  "items": [
+    {
+      "id": "cat_female",
+      "rig": "female_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/cat_female/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/cat_female/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard",
+      "seed": 9919000,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "cat_male",
+      "rig": "male_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/cat_male/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/cat_male/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina",
+      "seed": 9919001,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "fox_female",
+      "rig": "female_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/fox_female/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/fox_female/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard",
+      "seed": 9919002,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "fox_male",
+      "rig": "male_canonical",
+      "category": "anthro_species_by_sex",
+      "image": "characters_v2/body_species_guides_v2/fox_male/reference.png",
+      "mask": "characters_v2/body_species_guides_v2/fox_male/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina",
+      "seed": 9919003,
+      "denoise": 0.4,
+      "preserve_input_latent": true
+    }
+  ],
+  "output_map": [
+    {
+      "id": "cat_female",
+      "save_node": "50",
+      "sampler_node": "28",
+      "composite_node": "49"
+    },
+    {
+      "id": "cat_male",
+      "save_node": "53",
+      "sampler_node": "33",
+      "composite_node": "52"
+    },
+    {
+      "id": "fox_female",
+      "save_node": "56",
+      "sampler_node": "38",
+      "composite_node": "55"
+    },
+    {
+      "id": "fox_male",
+      "save_node": "59",
+      "sampler_node": "43",
+      "composite_node": "58"
+    }
+  ],
+  "prompt": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "LoraLoader",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "clip": [
+          "1",
+          1
+        ],
+        "lora_name": "EroInc\\candidate_400.safetensors",
+        "strength_model": 0.65,
+        "strength_clip": 0.0
+      }
+    },
+    "3": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/cat_female/reference.png"
+      }
+    },
+    "4": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/cat_female/mask.png"
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+      }
+    },
+    "6": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard"
+      }
+    },
+    "7": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/cat_male/reference.png"
+      }
+    },
+    "8": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/cat_male/mask.png"
+      }
+    },
+    "9": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+      }
+    },
+    "10": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina"
+      }
+    },
+    "11": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/fox_female/reference.png"
+      }
+    },
+    "12": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/fox_female/mask.png"
+      }
+    },
+    "13": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+      }
+    },
+    "14": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/fox_male/reference.png"
+      }
+    },
+    "16": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_species_guides_v2/fox_male/mask.png"
+      }
+    },
+    "17": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+      }
+    },
+    "18": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina"
+      }
+    },
+    "19": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "3",
+          0
+        ],
+        "image2": [
+          "7",
+          0
+        ]
+      }
+    },
+    "20": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "19",
+          0
+        ],
+        "image2": [
+          "11",
+          0
+        ]
+      }
+    },
+    "21": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "20",
+          0
+        ],
+        "image2": [
+          "15",
+          0
+        ]
+      }
+    },
+    "22": {
+      "class_type": "VAEEncode",
+      "inputs": {
+        "pixels": [
+          "21",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "23": {
+      "class_type": "EroIncConditioningBarrier",
+      "inputs": {
+        "latent": [
+          "22",
+          0
+        ],
+        "conditioning_1": [
+          "5",
+          0
+        ],
+        "conditioning_2": [
+          "6",
+          0
+        ],
+        "conditioning_3": [
+          "9",
+          0
+        ],
+        "conditioning_4": [
+          "10",
+          0
+        ],
+        "conditioning_5": [
+          "13",
+          0
+        ],
+        "conditioning_6": [
+          "14",
+          0
+        ],
+        "conditioning_7": [
+          "17",
+          0
+        ],
+        "conditioning_8": [
+          "18",
+          0
+        ]
+      }
+    },
+    "24": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 0,
+        "length": 1
+      }
+    },
+    "25": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "24",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "26": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "4",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "27": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "25",
+          0
+        ],
+        "mask": [
+          "26",
+          0
+        ]
+      }
+    },
+    "28": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "5",
+          0
+        ],
+        "negative": [
+          "6",
+          0
+        ],
+        "latent_image": [
+          "27",
+          0
+        ],
+        "seed": 9919000,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.4
+      }
+    },
+    "29": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 1,
+        "length": 1
+      }
+    },
+    "30": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "29",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "31": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "8",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "32": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "30",
+          0
+        ],
+        "mask": [
+          "31",
+          0
+        ]
+      }
+    },
+    "33": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "9",
+          0
+        ],
+        "negative": [
+          "10",
+          0
+        ],
+        "latent_image": [
+          "32",
+          0
+        ],
+        "seed": 9919001,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.4
+      }
+    },
+    "34": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 2,
+        "length": 1
+      }
+    },
+    "35": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "34",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "36": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "12",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "37": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "35",
+          0
+        ],
+        "mask": [
+          "36",
+          0
+        ]
+      }
+    },
+    "38": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "13",
+          0
+        ],
+        "negative": [
+          "14",
+          0
+        ],
+        "latent_image": [
+          "37",
+          0
+        ],
+        "seed": 9919002,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.4
+      }
+    },
+    "39": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 3,
+        "length": 1
+      }
+    },
+    "40": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "39",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "41": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "16",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "42": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "40",
+          0
+        ],
+        "mask": [
+          "41",
+          0
+        ]
+      }
+    },
+    "43": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "17",
+          0
+        ],
+        "negative": [
+          "18",
+          0
+        ],
+        "latent_image": [
+          "42",
+          0
+        ],
+        "seed": 9919003,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.4
+      }
+    },
+    "44": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "28",
+          0
+        ],
+        "samples2": [
+          "33",
+          0
+        ]
+      }
+    },
+    "45": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "44",
+          0
+        ],
+        "samples2": [
+          "38",
+          0
+        ]
+      }
+    },
+    "46": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "45",
+          0
+        ],
+        "samples2": [
+          "43",
+          0
+        ]
+      }
+    },
+    "47": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "46",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "48": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 0,
+        "length": 1
+      }
+    },
+    "49": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "3",
+          0
+        ],
+        "source": [
+          "48",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "26",
+          0
+        ]
+      }
+    },
+    "50": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "49",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_species_v2/cat_female"
+      }
+    },
+    "51": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 1,
+        "length": 1
+      }
+    },
+    "52": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "7",
+          0
+        ],
+        "source": [
+          "51",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "31",
+          0
+        ]
+      }
+    },
+    "53": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "52",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_species_v2/cat_male"
+      }
+    },
+    "54": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 2,
+        "length": 1
+      }
+    },
+    "55": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "11",
+          0
+        ],
+        "source": [
+          "54",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "36",
+          0
+        ]
+      }
+    },
+    "56": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "55",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_species_v2/fox_female"
+      }
+    },
+    "57": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 3,
+        "length": 1
+      }
+    },
+    "58": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "15",
+          0
+        ],
+        "source": [
+          "57",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "41",
+          0
+        ]
+      }
+    },
+    "59": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "58",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_species_v2/fox_male"
+      }
+    }
+  },
+  "gpu_budget": {
+    "schema": 1,
+    "duty_percent": 100,
+    "cpu_priority": "normal",
+    "gpu_priority": "normal",
+    "vram_reserve_gb": 1,
+    "note": "Full GPU compute authorized by user; no artificial duty pauses. Normal process priorities.",
+    "authorized_date": "2026-10-19"
+  },
+  "acceptance": "Unreviewed candidates; never runtime registered",
+  "history": {
+    "prompt": [
+      30,
+      "8323529a-65c7-4f9a-9cc0-18b7bb1f09b4",
+      {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+          }
+        },
+        "2": {
+          "class_type": "LoraLoader",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ],
+            "lora_name": "EroInc\\candidate_400.safetensors",
+            "strength_model": 0.65,
+            "strength_clip": 0.0
+          }
+        },
+        "3": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/cat_female/reference.png"
+          }
+        },
+        "4": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/cat_female/mask.png"
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+          }
+        },
+        "6": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard"
+          }
+        },
+        "7": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/cat_male/reference.png"
+          }
+        },
+        "8": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/cat_male/mask.png"
+          }
+        },
+        "9": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic cat person, fully fur covered body, natural cat muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+          }
+        },
+        "10": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina"
+          }
+        },
+        "11": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/fox_female/reference.png"
+          }
+        },
+        "12": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/fox_female/mask.png"
+          }
+        },
+        "13": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, 1girl, mature adult woman, natural adult build, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+          }
+        },
+        "14": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, male, beard"
+          }
+        },
+        "15": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/fox_male/reference.png"
+          }
+        },
+        "16": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_species_guides_v2/fox_male/mask.png"
+          }
+        },
+        "17": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, 1boy, male focus, mature adult man, flat masculine chest, broad shoulders, age 30, original anthropomorphic fox person, fully fur covered body, natural fox muzzle and nose, animal ears, natural fur tail, upright biped, humanlike adult proportions, neutral full-body standing reference, relaxed bare arms at sides, same original brown hair and blue eyes, matte limited cel shading, thin brown contours, evenly lit, flat light gray background"
+          }
+        },
+        "18": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, human skin, costume, mask, muzzle gag, collar, palette swatches, character sheet labels, extra tail, breasts, female, girl, vagina"
+          }
+        },
+        "19": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "3",
+              0
+            ],
+            "image2": [
+              "7",
+              0
+            ]
+          }
+        },
+        "20": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "19",
+              0
+            ],
+            "image2": [
+              "11",
+              0
+            ]
+          }
+        },
+        "21": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "20",
+              0
+            ],
+            "image2": [
+              "15",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "21",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          }
+        },
+        "23": {
+          "class_type": "EroIncConditioningBarrier",
+          "inputs": {
+            "latent": [
+              "22",
+              0
+            ],
+            "conditioning_1": [
+              "5",
+              0
+            ],
+            "conditioning_2": [
+              "6",
+              0
+            ],
+            "conditioning_3": [
+              "9",
+              0
+            ],
+            "conditioning_4": [
+              "10",
+              0
+            ],
+            "conditioning_5": [
+              "13",
+              0
+            ],
+            "conditioning_6": [
+              "14",
+              0
+            ],
+            "conditioning_7": [
+              "17",
+              0
+            ],
+            "conditioning_8": [
+              "18",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 0,
+            "length": 1
+          }
+        },
+        "25": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "24",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "26": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "4",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "27": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "25",
+              0
+            ],
+            "mask": [
+              "26",
+              0
+            ]
+          }
+        },
+        "28": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "5",
+              0
+            ],
+            "negative": [
+              "6",
+              0
+            ],
+            "latent_image": [
+              "27",
+              0
+            ],
+            "seed": 9919000,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.4
+          }
+        },
+        "29": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 1,
+            "length": 1
+          }
+        },
+        "30": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "29",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "31": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "8",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "32": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "30",
+              0
+            ],
+            "mask": [
+              "31",
+              0
+            ]
+          }
+        },
+        "33": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "9",
+              0
+            ],
+            "negative": [
+              "10",
+              0
+            ],
+            "latent_image": [
+              "32",
+              0
+            ],
+            "seed": 9919001,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.4
+          }
+        },
+        "34": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 2,
+            "length": 1
+          }
+        },
+        "35": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "34",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "36": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "12",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "37": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "35",
+              0
+            ],
+            "mask": [
+              "36",
+              0
+            ]
+          }
+        },
+        "38": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "13",
+              0
+            ],
+            "negative": [
+              "14",
+              0
+            ],
+            "latent_image": [
+              "37",
+              0
+            ],
+            "seed": 9919002,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.4
+          }
+        },
+        "39": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 3,
+            "length": 1
+          }
+        },
+        "40": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "39",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "41": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "16",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "42": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "40",
+              0
+            ],
+            "mask": [
+              "41",
+              0
+            ]
+          }
+        },
+        "43": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "17",
+              0
+            ],
+            "negative": [
+              "18",
+              0
+            ],
+            "latent_image": [
+              "42",
+              0
+            ],
+            "seed": 9919003,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.4
+          }
+        },
+        "44": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "28",
+              0
+            ],
+            "samples2": [
+              "33",
+              0
+            ]
+          }
+        },
+        "45": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "44",
+              0
+            ],
+            "samples2": [
+              "38",
+              0
+            ]
+          }
+        },
+        "46": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "45",
+              0
+            ],
+            "samples2": [
+              "43",
+              0
+            ]
+          }
+        },
+        "47": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "46",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          }
+        },
+        "48": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 0,
+            "length": 1
+          }
+        },
+        "49": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "3",
+              0
+            ],
+            "source": [
+              "48",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "26",
+              0
+            ]
+          }
+        },
+        "50": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "49",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_species_v2/cat_female"
+          }
+        },
+        "51": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 1,
+            "length": 1
+          }
+        },
+        "52": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "7",
+              0
+            ],
+            "source": [
+              "51",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "31",
+              0
+            ]
+          }
+        },
+        "53": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "52",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_species_v2/cat_male"
+          }
+        },
+        "54": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 2,
+            "length": 1
+          }
+        },
+        "55": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "11",
+              0
+            ],
+            "source": [
+              "54",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "36",
+              0
+            ]
+          }
+        },
+        "56": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "55",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_species_v2/fox_female"
+          }
+        },
+        "57": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 3,
+            "length": 1
+          }
+        },
+        "58": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "15",
+              0
+            ],
+            "source": [
+              "57",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "41",
+              0
+            ]
+          }
+        },
+        "59": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "58",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_species_v2/fox_male"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "ero_inc_group": {
+            "ids": [
+              "cat_female",
+              "cat_male",
+              "fox_female",
+              "fox_male"
+            ],
+            "config_sha256": "bd85df3dd2e2b41a390114d6330935f963a1daf976b2958dbe51888ece256526",
+            "independent_sampler_batch_size": 1
+          }
+        },
+        "client_id": "ae7146a8-6fa1-4e19-89de-b143e7995983",
+        "create_time": 1792412907120
+      },
+      [
+        "56",
+        "59",
+        "53",
+        "50"
+      ]
+    ],
+    "outputs": {
+      "56": {
+        "images": [
+          {
+            "filename": "fox_female_00001_.png",
+            "subfolder": "characters_v2\\body_species_v2",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "59": {
+        "images": [
+          {
+            "filename": "fox_male_00001_.png",
+            "subfolder": "characters_v2\\body_species_v2",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "53": {
+        "images": [
+          {
+            "filename": "cat_male_00001_.png",
+            "subfolder": "characters_v2\\body_species_v2",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "50": {
+        "images": [
+          {
+            "filename": "cat_female_00001_.png",
+            "subfolder": "characters_v2\\body_species_v2",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "8323529a-65c7-4f9a-9cc0-18b7bb1f09b4",
+            "timestamp": 1792412907121
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2"
+            ],
+            "prompt_id": "8323529a-65c7-4f9a-9cc0-18b7bb1f09b4",
+            "timestamp": 1792412907139
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "8323529a-65c7-4f9a-9cc0-18b7bb1f09b4",
+            "timestamp": 1792412955143
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "56": {
+        "node_id": "56",
+        "display_node": "56",
+        "parent_node": null,
+        "real_node_id": "56"
+      },
+      "59": {
+        "node_id": "59",
+        "display_node": "59",
+        "parent_node": null,
+        "real_node_id": "59"
+      },
+      "53": {
+        "node_id": "53",
+        "display_node": "53",
+        "parent_node": null,
+        "real_node_id": "53"
+      },
+      "50": {
+        "node_id": "50",
+        "display_node": "50",
+        "parent_node": null,
+        "real_node_id": "50"
+      }
+    }
+  }
+}

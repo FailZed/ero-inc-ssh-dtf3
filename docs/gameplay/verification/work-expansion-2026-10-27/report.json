@@ -1,0 +1,345 @@
+{
+  "client_date": "2026-10-27",
+  "timezone": "Europe/Moscow",
+  "engine": "Godot 4.7.2 stable",
+  "audio_driver": "Dummy",
+  "user_save_slots_modified": false,
+  "test_fixtures_only": true,
+  "main_schema": 8,
+  "work_state_version": 2,
+  "previous_gameplay_formats_supported": false,
+  "catalog_hash": "fc1d650e11d3d84cb38c0d8fa72ce2f47b75fec4c4178bf8507f13206f12c709",
+  "content": {
+    "jobs": 33,
+    "new_jobs": 21,
+    "skills_with_jobs": 30,
+    "categories": [
+      "academic",
+      "creative",
+      "logistics",
+      "outdoors",
+      "service",
+      "social",
+      "sport",
+      "technical",
+      "underground"
+    ],
+    "interactive_families": [
+      "memory",
+      "sorting",
+      "focus",
+      "reasoning",
+      "comparison",
+      "sequence"
+    ],
+    "authored_tasks": 85,
+    "promotion": {
+      "skill_levels": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "experience": [
+        0,
+        60,
+        180,
+        360,
+        600
+      ],
+      "quality_bonus": 25
+    },
+    "automatic_promotion": "skill only, no experience stored",
+    "interactive_promotion": "job-specific experience and skill gates; quality acceleration requires next-tier skill",
+    "study": "selected timetable and commute; explicit skip with real attendance consequences"
+  },
+  "checks": {
+    "work_expansion": {
+      "audio": "Dummy",
+      "checks": 92,
+      "failed": 0,
+      "failures": []
+    },
+    "native_work_expansion": {
+      "audio": "Dummy",
+      "checks": 58,
+      "directory": "E:/GoDot/.research/school-0.981/work-expansion-2026-10-27/captures",
+      "failed": 0,
+      "failures": [],
+      "size": [
+        1366,
+        768
+      ]
+    },
+    "work_expansion_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true,
+      "tasks": 3
+    },
+    "work_expansion_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true,
+      "tasks": 3
+    },
+    "all_work_routes": {
+      "audio": "Dummy",
+      "checks": 168,
+      "failed": 0,
+      "failures": []
+    },
+    "native_memory_timing_pause": {
+      "audio": "Dummy",
+      "checks": 27,
+      "directory": "E:/GoDot/.research/school-0.981/livelihood-2026-10-27/captures",
+      "failed": 0,
+      "failures": [],
+      "size": [
+        1366,
+        768
+      ]
+    },
+    "work_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true
+    },
+    "work_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true
+    },
+    "growth": {
+      "audio": "Dummy",
+      "checks": 92,
+      "failed": 0,
+      "failures": []
+    },
+    "growth_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true
+    },
+    "growth_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true
+    },
+    "sandbox": {
+      "checks": 77,
+      "failed": 0,
+      "failures": []
+    },
+    "real_mirror_sandbox": {
+      "checks": 11,
+      "failed": 0,
+      "failures": []
+    },
+    "sandbox_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true,
+      "stage": "complete"
+    },
+    "sandbox_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true,
+      "stage": "complete"
+    },
+    "main": {
+      "checks": 690,
+      "failed": 0,
+      "failures": []
+    },
+    "standalone_pack": {
+      "checks": 2607,
+      "failed": 0,
+      "failures": []
+    },
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 33,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 12165,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 33,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11014,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11023,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 7624,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11042,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ]
+  },
+  "total_assertions": 3987,
+  "captures": {
+    "kind": "native Godot interface references from a controlled test world, not user saves",
+    "resolution": [
+      1366,
+      768
+    ],
+    "visually_reviewed": true,
+    "files": [
+      "career-quality-reward.png",
+      "comparison.png",
+      "general-work-conflict.png",
+      "jobs-and-promotion.png",
+      "reasoning-feedback.png",
+      "reasoning.png",
+      "sequence-partial.png",
+      "sequence.png",
+      "skill-filter.png",
+      "study-conflict.png",
+      "study-skip-receipt.png"
+    ],
+    "review": "Job and skill selection, bounded choice assistance, equal-size comparison symbols, partial sequence and undo, quality reward, timetable block, actual missed-class receipt and reachable general-work decision reviewed. Existing temporary art and concurrent shared window design retained."
+  },
+  "integration_fixes": [
+    "New sandbox clock is established before configuring time-stamped systems; no backward rewrite of existing saves.",
+    "Adult-health record tick order sorted for deterministic continuation after JSON; other health behavior retained.",
+    "Native Window name collision removed from three shared overlays without changing their design.",
+    "Affected tests and native callers use the current task, career and snapshot schemas; no compatibility bridge."
+  ],
+  "limits": [
+    "Thirty-three jobs share six challenge families; not thirty-three unique minigames.",
+    "Standalone PCK checks independent mechanics; work expansion is exercised by main-game rule and native suites.",
+    "Baseline shutdown diagnostics from the main project remain: 63 ObjectDB instances and 27 addon resources.",
+    "PCK was rerun after a nonzero-exit anomaly despite zero assertion failures; final harness completed with exit 0."
+  ],
+  "sha256": {
+    "scripts/mechanics/livelihood.gd": "1d6c8e109961c89822d6c604e8bada76d51d27038ce0c7146c986b194354d681",
+    "scripts/mechanics/work_challenges.gd": "cc993f2cdb058be2ccab480bf651df1367d1108c73d0427f84077d30b2d99ae3",
+    "scripts/mechanics/work_schedule.gd": "65ad15a63f5e3be40b663e9af7fae7f605eb0d383c716c38e5f023a66c34ea9c",
+    "scripts/mechanics/core/livelihood_validation.gd": "335a55bed3e7540a0e2fe8fa8203a9e04ce2b706d9436c471d3df88c9137e5a9",
+    "scripts/mechanics/growth.gd": "c4b60ab9c021ee80fa7f80b962a15d13e91ec6b3d3b8ce2896dc976e7087eb01",
+    "scripts/gameplay/main_simulation.gd": "35ee79508fef8d62bf7e79408f50ce191da6cde57246f1f8925d93cd7adbae96",
+    "scripts/gameplay/player_careers.gd": "47fe1c057319fadb8197b622c0f79a21b263ed4a5c2059cc2329cd9976523463",
+    "scripts/gameplay/city_world.gd": "626bd9bdb5ae112df9faafba50bdaec51f04ee753e215cd06b8feb3a42367dc5",
+    "scripts/gameplay/action_policy.gd": "330c0fc56f135bc0800f7c2177cdc243f966b9b6afdaa654997b17c18fedfd25",
+    "scripts/gameplay/gameplay.gd": "7477f099c29aed7fc9e4076f8aaa25d0abb88398508fa06209114accf5ea87bd",
+    "scripts/gameplay/livelihood_presentation.gd": "58f63e99f537a8e33d0e1813145556087478bcf789c953c819477afb9ebb7afd",
+    "scripts/ui/gameplay/livelihood_window.gd": "a4585ba8b4b56606700af3f34d3a8e1b1636eefb8971ed4eb784df938d327c39",
+    "scripts/ui/gameplay/work_schedule_window.gd": "457e276f2e7a80e3dff1a3470a600ea07bea7bf9ea83a5c9566728e115ea7d80",
+    "scripts/ui/gameplay/gameplay_shell.gd": "7ee888fc4d80a541cab91f24e597f6a1cee40fb10205820b60ff59c9597694b0",
+    "scripts/ui/gameplay/curriculum_window.gd": "8112ecc7ca9522a10114b1765c42b56817d4518e77c8ca2e4bbc01a274b5d3bf",
+    "scripts/ui/gameplay/growth_window.gd": "b925341841027ef92ca80622135929f790a9210787bf6868f83a3a20368c068a",
+    "scripts/ui/gameplay/personal_story_window.gd": "058f2f479ed2fdb0939d5c928e8c5a401ce5fd678ce143c8f9fafbfb3a967655",
+    "scripts/mechanics/adult_health.gd": "d7685f1d74bdc59f03533a3bfe07ede5c65a5ff6528d9d6ecbcc37b7fcf4ded9",
+    "data/mechanics/livelihood.json": "1ff99c26ce50b8fcd9ddcf770d7461e56a94514cef76a7d4ec3419e4ee66e08f",
+    "tools/build_work_catalog.py": "102b2aff820e523f908e352091330c017b76f1bc6bd4430f4597986815a61bb4",
+    "tools/test_work_expansion.ps1": "2fff8c89752a9df481dd9e91f2f3fb8510899ec7e27216ea8a0f843352d3462c",
+    "tests/gameplay/work_driver.gd": "8da3f5945debe5d4d5f91519d0e199b827f572409b6bdbb311e89b6492b7cb82",
+    "tests/gameplay/work_expansion.gd": "127ce413d879cf08e4793d37cab1790a67b0fc91cd9c69f549c3cfe8666a0bc4",
+    "tests/gameplay/work_expansion_snapshot.gd": "ee20b660907f10f7e539f94836ba9c3510aee17b248545aea34cd7b91d4a4744",
+    "tests/gameplay/capture_work_expansion.gd": "471309e9aaf1497bec7416ee256cc6656817b9229f15b41b036ba4b16b19c25f",
+    "tests/gameplay/livelihood.gd": "1d75650975c77d511a3fe180188fed07e8f41e56831f5dd877ec9b85e33692ad",
+    "tests/gameplay/livelihood_snapshot.gd": "f8363cfc44ba62c6ef029e08d75b433c673f6703bcf418853c7d805090f212ca",
+    "tests/gameplay/capture_livelihood.gd": "8009c5297a1fab6acb097e10e0251666ec5dca63d1ffe4af3036b102f47b9e99",
+    "tests/gameplay/growth.gd": "674b1a988b34710fe53350783b2a2825e3531c48fd1359bc7434ec2a5d0770a2",
+    "tests/gameplay/growth_snapshot.gd": "af25b1409900497e65c23d8a8d1fc43580c010f7ed10488b423831424491ffbb",
+    "tests/gameplay/capture_growth.gd": "4b38f9478f40e834e5cfcd3bb62a07908cf325a86edbede56d79cac7a4d049b3",
+    "tests/gameplay/run_sandbox.gd": "404634c4c83329049acb4e40c2acbb149f9e6c3f77f69b8d39c2f4ad4980228d",
+    "tests/gameplay/remaining.gd": "b507723b4f5ec3e5269c44a608addfcd196124417f42061733921530f6df2d00"
+  }
+}

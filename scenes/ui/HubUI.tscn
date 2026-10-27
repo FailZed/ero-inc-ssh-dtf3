@@ -1,0 +1,381 @@
+[gd_scene format=3 uid="uid://c18yeu5hisq11"]
+
+[ext_resource type="Script" uid="uid://cgee66weooop8" path="res://scripts/ui/hub_ui.gd" id="1_hub_script"]
+[ext_resource type="Texture2D" uid="uid://bb0h0t6ky2jp6" path="res://assets/icons/hud/inventory.svg" id="2_bag_icon"]
+[ext_resource type="Texture2D" uid="uid://sjdupepnfeow" path="res://assets/icons/hud/character.svg" id="3_profile_icon"]
+[ext_resource type="Texture2D" uid="uid://dftbkpey261wt" path="res://assets/icons/hud/journal.svg" id="4_journal_icon"]
+[ext_resource type="Texture2D" uid="uid://d0m4apx4ppjo2" path="res://assets/icons/hud/settings.svg" id="5_menu_icon"]
+[ext_resource type="Texture2D" uid="uid://bql3mxd1y40fa" path="res://assets/icons/hud/clock.svg" id="6_clock_icon"]
+[ext_resource type="Texture2D" uid="uid://djucs8g3fb6g3" path="res://assets/icons/hud/calendar.svg" id="7_calendar_icon"]
+[ext_resource type="Texture2D" uid="uid://tyntid7xgy2t" path="res://assets/icons/hud/dollar.svg" id="8_dollar_icon"]
+[ext_resource type="Texture2D" uid="uid://c6ht84k4t76qh" path="res://assets/icons/hud/quest.svg" id="9_quest_icon"]
+[ext_resource type="Texture2D" uid="uid://bn0tgfyfrm4d7" path="res://assets/icons/hud/minus.svg" id="10_minus_icon"]
+[ext_resource type="Texture2D" uid="uid://c3r55nq2xhc2c" path="res://assets/icons/hud/back.svg" id="11_back_icon"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_frame"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.46)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+content_margin_left = 18.0
+content_margin_top = 16.0
+content_margin_right = 18.0
+content_margin_bottom = 16.0
+bg_color = Color(0.006, 0.012, 0.02, 0.54)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.46)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_button_normal"]
+content_margin_left = 12.0
+content_margin_top = 10.0
+content_margin_right = 12.0
+content_margin_bottom = 10.0
+bg_color = Color(0.006, 0.012, 0.02, 0.48)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.44)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_button_pressed"]
+content_margin_left = 12.0
+content_margin_top = 10.0
+content_margin_right = 12.0
+content_margin_bottom = 10.0
+bg_color = Color(0.03, 0.02, 0.018, 0.74)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.95, 0.39, 0.16, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_button_hover"]
+content_margin_left = 12.0
+content_margin_top = 10.0
+content_margin_right = 12.0
+content_margin_bottom = 10.0
+bg_color = Color(0.02, 0.06, 0.09, 0.62)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.42, 0.76, 1, 0.92)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_back_button_normal"]
+content_margin_left = 28.0
+content_margin_top = 12.0
+content_margin_right = 28.0
+content_margin_bottom = 12.0
+bg_color = Color(0.006, 0.012, 0.02, 0.5)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.48)
+corner_radius_top_left = 34
+corner_radius_top_right = 34
+corner_radius_bottom_right = 34
+corner_radius_bottom_left = 34
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_back_button_pressed"]
+content_margin_left = 28.0
+content_margin_top = 12.0
+content_margin_right = 28.0
+content_margin_bottom = 12.0
+bg_color = Color(0.03, 0.02, 0.018, 0.76)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.95, 0.39, 0.16, 1)
+corner_radius_top_left = 34
+corner_radius_top_right = 34
+corner_radius_bottom_right = 34
+corner_radius_bottom_left = 34
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_back_button_hover"]
+content_margin_left = 28.0
+content_margin_top = 12.0
+content_margin_right = 28.0
+content_margin_bottom = 12.0
+bg_color = Color(0.02, 0.06, 0.09, 0.64)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.42, 0.76, 1, 0.9)
+corner_radius_top_left = 34
+corner_radius_top_right = 34
+corner_radius_bottom_right = 34
+corner_radius_bottom_left = 34
+
+[node name="HubUI" type="Control" unique_id=974398296]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_hub_script")
+
+[node name="Frame" type="Panel" parent="." unique_id=1639064608]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_frame")
+
+[node name="StatusPanel" type="PanelContainer" parent="." unique_id=2073690880]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77300006
+anchor_top = 0.006
+anchor_right = 0.998
+anchor_bottom = 0.07
+offset_left = -0.16015625
+offset_top = -0.48000002
+offset_right = -0.16015625
+offset_bottom = -4.800003
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="StatusRow" type="HBoxContainer" parent="StatusPanel" unique_id=1652626830]
+layout_mode = 2
+theme_override_constants/separation = 26
+
+[node name="TimeGroup" type="HBoxContainer" parent="StatusPanel/StatusRow" unique_id=2037681131]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ClockIcon" type="TextureRect" parent="StatusPanel/StatusRow/TimeGroup" unique_id=793320081]
+modulate = Color(0.78, 0.84, 0.9, 1)
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("6_clock_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TimeLabel" type="Label" parent="StatusPanel/StatusRow/TimeGroup" unique_id=645818700]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.84, 0.9, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.78)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 20
+text = "23:47"
+
+[node name="DateGroup" type="HBoxContainer" parent="StatusPanel/StatusRow" unique_id=785602086]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="CalendarIcon" type="TextureRect" parent="StatusPanel/StatusRow/DateGroup" unique_id=116616469]
+modulate = Color(0.78, 0.84, 0.9, 1)
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("7_calendar_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DateLabel" type="Label" parent="StatusPanel/StatusRow/DateGroup" unique_id=1435283078]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.84, 0.9, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.78)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 20
+text = "APR 12"
+
+[node name="MoneyGroup" type="HBoxContainer" parent="StatusPanel/StatusRow" unique_id=2076206942]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="DollarIcon" type="TextureRect" parent="StatusPanel/StatusRow/MoneyGroup" unique_id=59382285]
+modulate = Color(0.78, 0.84, 0.9, 1)
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("8_dollar_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MoneyLabel" type="Label" parent="StatusPanel/StatusRow/MoneyGroup" unique_id=194164814]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.84, 0.9, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.78)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 20
+text = "12,450"
+
+[node name="QuestPanel" type="PanelContainer" parent="." unique_id=82862024]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77500004
+anchor_top = 0.31100002
+anchor_right = 0.998
+anchor_bottom = 0.56
+offset_left = -0.00012207031
+offset_top = 0.1199646
+offset_right = -0.00012207031
+offset_bottom = 1.2000122
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="QuestLayout" type="VBoxContainer" parent="QuestPanel" unique_id=1446420403]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="QuestHeader" type="HBoxContainer" parent="QuestPanel/QuestLayout" unique_id=735697356]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="QuestIcon" type="TextureRect" parent="QuestPanel/QuestLayout/QuestHeader" unique_id=192643071]
+modulate = Color(0.95, 0.55, 0.18, 1)
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("9_quest_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="QuestTitle" type="Label" parent="QuestPanel/QuestLayout/QuestHeader" unique_id=1232831136]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.55, 0.18, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.78)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 19
+text = "НАЙТИ ВХОД"
+
+[node name="QuestMinusIcon" type="TextureRect" parent="QuestPanel/QuestLayout/QuestHeader" unique_id=1637025871]
+modulate = Color(0.78, 0.84, 0.9, 1)
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("10_minus_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="QuestDescription" type="Label" parent="QuestPanel/QuestLayout" unique_id=184410571]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.76, 0.82, 0.86, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.72)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "Осмотри склад и попробуй войти внутрь."
+autowrap_mode = 3
+
+[node name="QuestDivider" type="ColorRect" parent="QuestPanel/QuestLayout" unique_id=151280851]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+color = Color(0.34, 0.58, 0.73, 0.18)
+
+[node name="ObjectiveRow" type="HBoxContainer" parent="QuestPanel/QuestLayout" unique_id=527947816]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ObjectiveLabel" type="Label" parent="QuestPanel/QuestLayout/ObjectiveRow" unique_id=764522015]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.78, 0.84, 0.9, 1)
+theme_override_font_sizes/font_size = 15
+text = "Нажать на ворота"
+
+[node name="ProgressLabel" type="Label" parent="QuestPanel/QuestLayout/ObjectiveRow" unique_id=123747732]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.86, 0.92, 0.96, 1)
+theme_override_font_sizes/font_size = 15
+text = "0/1"
+
+[node name="BottomBar" type="HBoxContainer" parent="." unique_id=801216300]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.003
+anchor_top = 0.89300007
+anchor_right = 0.28800002
+anchor_bottom = 0.998
+offset_left = -0.7600002
+offset_top = -0.44006348
+offset_right = -0.76000977
+offset_bottom = -0.44018555
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 22
+
+[node name="InventoryButton" type="Button" parent="BottomBar" unique_id=1375315195]
+custom_minimum_size = Vector2(116, 108)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_button_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_button_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
+icon = ExtResource("2_bag_icon")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ProfileButton" type="Button" parent="BottomBar" unique_id=1430091639]
+custom_minimum_size = Vector2(116, 108)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_button_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_button_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
+icon = ExtResource("3_profile_icon")
+icon_alignment = 1
+expand_icon = true
+
+[node name="JournalButton" type="Button" parent="BottomBar" unique_id=1227722421]
+custom_minimum_size = Vector2(116, 108)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_button_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_button_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
+icon = ExtResource("4_journal_icon")
+icon_alignment = 1
+expand_icon = true
+
+[node name="MenuButton" type="Button" parent="BottomBar" unique_id=1057284505]
+custom_minimum_size = Vector2(116, 108)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_button_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_button_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
+icon = ExtResource("5_menu_icon")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BackButton" type="Button" parent="." unique_id=1798775470]
+custom_minimum_size = Vector2(112, 54)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.92700005
+anchor_top = 0.938
+anchor_right = 0.9990001
+anchor_bottom = 0.998
+offset_left = 0.15991211
+offset_top = -0.040039063
+offset_right = 0.15979004
+offset_bottom = -0.040039063
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_back_button_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_back_button_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_back_button_hover")
+icon = ExtResource("11_back_icon")
+icon_alignment = 1
+expand_icon = true

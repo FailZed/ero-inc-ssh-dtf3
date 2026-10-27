@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-27T19:56:00.142685+03:00",
+  "engine": "Godot 4.7.2 stable",
+  "audio_driver": "Dummy",
+  "user_save_files_changed": false,
+  "scope": [
+    "story-free survival sandbox",
+    "optional original NPC arcs",
+    "derived character visual states",
+    "pregnancy world setting integration"
+  ],
+  "concurrent_work": "Reproductive implementation belongs to another executor; this layer inherits the current parent runtime.",
+  "content": {
+    "personal_arcs": 6,
+    "personal_nodes": 48,
+    "authored_npc_arcs": [
+      "asuka",
+      "oliver",
+      "ellie"
+    ],
+    "generated_npc_templates": [
+      "neighbor",
+      "maker",
+      "newcomer"
+    ],
+    "school_complete_parity_claimed": false,
+    "new_raster_assets": 0,
+    "art_status": "existing temporary layered prototypes"
+  },
+  "tests": {
+    "sandbox": {
+      "checks": 78,
+      "failed": 0,
+      "failures": []
+    },
+    "real_scene_and_mirror": {
+      "checks": 11,
+      "failed": 0,
+      "failures": []
+    },
+    "sandbox_snapshot_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true,
+      "stage": "complete"
+    },
+    "sandbox_snapshot_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true,
+      "stage": "complete"
+    },
+    "gameplay": {
+      "checks": 572,
+      "failed": 0,
+      "failures": []
+    },
+    "services": {
+      "atomic_rejection": true,
+      "services": [
+        "character",
+        "inventory",
+        "world",
+        "economy",
+        "housing",
+        "preferences",
+        "social",
+        "organizations",
+        "lifecycle",
+        "encounters",
+        "actions",
+        "events",
+        "health",
+        "combat",
+        "careers",
+        "security",
+        "social_rules",
+        "institutions",
+        "interior",
+        "activities",
+        "appearance",
+        "population",
+        "npc_behavior",
+        "npc_personalities",
+        "npc_agency",
+        "npc_relationships",
+        "npc_dialogue",
+        "family",
+        "digital",
+        "collections",
+        "reproduction",
+        "intimacy",
+        "child_support",
+        "needs",
+        "npc_stories"
+      ]
+    },
+    "standalone_pack": {
+      "checks": 2111,
+      "failed": 0,
+      "failures": []
+    },
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 33,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11901,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 33,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11215,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 12073,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 8493,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 12138,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ],
+    "systems_snapshot_write": {
+      "mode": "write",
+      "ok": true
+    },
+    "systems_snapshot_read": {
+      "mode": "read",
+      "ok": true
+    }
+  },
+  "capture": {
+    "audio": "Dummy",
+    "directory": "E:/GoDot/.research/school-0.981/sandbox-2026-10-27/captures",
+    "size": [
+      1366,
+      768
+    ],
+    "visually_inspected_files": [
+      "npc-personal-story.png",
+      "sandbox-city.png",
+      "sandbox-mirror.png",
+      "setup-mode.png",
+      "setup-rules.png",
+      "visual-states-male.png",
+      "visual-states.png"
+    ],
+    "review": "Seven controlled-runtime reference captures inspected: setup mode/rules, mirror, city, personal story, both rig comparisons. Temporary artwork limitations are documented."
+  },
+  "evidence": {
+    "capture.log": {
+      "bytes": 591,
+      "sha256": "0e8bcc9059d65ff0d7d5c612ff12428ddf088c5999386cb5b37e3bb2bd262b9e"
+    },
+    "flow.log": {
+      "bytes": 386,
+      "sha256": "0c1f5b5f6c176038d57a325d40d0d0de1f99ca9dd8120a54beed80e6f2c08ac8"
+    },
+    "gameplay.log": {
+      "bytes": 1133,
+      "sha256": "8bbae70283dc7ee967579f6e0d7ef07437aee0ca258cf90eacbea495d2e4c654"
+    },
+    "mechanics-pack.log": {
+      "bytes": 537,
+      "sha256": "add5717ed48f3b297b61756372ad03b0dcf9a9ccf8b68ef4e1791fc7726c2ceb"
+    },
+    "npc-personal-story.png": {
+      "bytes": 420190,
+      "sha256": "5257d972afb1fdf0fe0daa4c11eadf9207b433a4b3260de48afcef4445bbe97a",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    },
+    "sandbox-city.png": {
+      "bytes": 1568133,
+      "sha256": "ae07ecf5b6ba1cb6f368085fb3cbe9b1f76312b95c70cc52e2950253b10bd2e8",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    },
+    "sandbox-mirror.png": {
+      "bytes": 1281734,
+      "sha256": "1543563b50db2ee7134fb6e3df4e284a6dc8652283d71cd7cc1ba7db5824a6eb",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    },
+    "setup-mode.png": {
+      "bytes": 1349316,
+      "sha256": "cc1b7a3199e4ec4a6f86fb25906b032f2dbcc2df415d66c2828a60a65a533fd1",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    },
+    "setup-rules.png": {
+      "bytes": 1119937,
+      "sha256": "101546a17092dd760efa12cdfc9337dac5a3429c298a16bad48b5277c2079a4d",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    },
+    "snapshot-read.log": {
+      "bytes": 412,
+      "sha256": "e445d89eb02c4bda990b6f0015b5986790b2ad7d9b6016c0da4cd87a7f28752c"
+    },
+    "snapshot-write.log": {
+      "bytes": 413,
+      "sha256": "0f05c73aa0ea7234a0a49f8474d6394ddc16a9688618a0b01f597125690e4a50"
+    },
+    "story-0.log": {
+      "bytes": 614,
+      "sha256": "438a5022cc911ffa493a21c69a1f84a6f4bea21df1c4a5b4ad8a859458a83180"
+    },
+    "story-1.log": {
+      "bytes": 616,
+      "sha256": "6551e187a35f4ebc365889d830e68a40e7b9e3cb9a4d62d9617002011498b9ef"
+    },
+    "story-2.log": {
+      "bytes": 614,
+      "sha256": "e772aed32959758b2794059db15d7714b8d98f1cbc413ea9233c0095a043d827"
+    },
+    "story-3.log": {
+      "bytes": 614,
+      "sha256": "87a951063ec288933818185a05783c29f1ffd2a94ba24d3a0225a2ddcb1fb3f2"
+    },
+    "story-4.log": {
+      "bytes": 615,
+      "sha256": "e5364b3e4879df99aa24b7937c68e5bead246d70f746b1e75c4c45e9c1e98a7f"
+    },
+    "systems-snapshot-read.log": {
+      "bytes": 377,
+      "sha256": "cc9db4be94322f036c6dc077e54cf8a0e301aed6dc56de8b43d2e58775abb611"
+    },
+    "systems-snapshot-write.log": {
+      "bytes": 378,
+      "sha256": "d50f128271246e61363a46c50ef7272412ec207cf73e5342a5e709960a3b5548"
+    },
+    "tests.log": {
+      "bytes": 381,
+      "sha256": "13a994f9b319602c67aca3b39f7a9a8625ebdab9002c65947407ff1d9682b079"
+    },
+    "visual-states-male.png": {
+      "bytes": 216667,
+      "sha256": "8166b2b4f8c650db0dc3573b6d5f4b8db7a62ca17b55d220bec05c9c3c1781ec",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    },
+    "visual-states.png": {
+      "bytes": 241022,
+      "sha256": "eb3c18331b276f28e0d1a6464f96fcf0ac55c853f52547ef62fe124d540c50f8",
+      "size": [
+        1366,
+        768
+      ],
+      "provenance": "native Godot controlled test-world capture; reference example"
+    }
+  },
+  "sources_sha256": {
+    ".godot-version": "964bf9b089d1e1c9474f4baab1c909ee2affc1fea9464eceaf5d3b8d2ce555f4",
+    "project.godot": "4d8ece910a09526039578d673be3c5788c577333ca1fb05a19fe4aff670da2a4",
+    "tools/godot.ps1": "81c37bf90ae2b3a14fffbd970798ec1d1d0f8dd0279aec41bc7230b222cebd32",
+    "tools/test_sandbox.ps1": "a6b496aca444d64557613b854a246436d607667bd62c67c8edbb5a74f9e66be9",
+    "scripts/mechanics/setup_config.gd": "9564c9555d540a2790d2e34b8c1a05130578ae51bd9e0c7e1698fd3d346fe622",
+    "scripts/mechanics/npc_stories.gd": "5102fdcc87c7fcdb45d99511ca8e69e03d9b381863af316e98778d27e6726dc2",
+    "scripts/mechanics/family_lifecycle.gd": "b5d2973e508df759c7d192f2a913947f1e264a2c2896888b1543b3ed377c5cfc",
+    "scripts/gameplay/gameplay.gd": "34409f5ddd8853fc220bb02342439fcc9a9b95376020a9299a266ebe6620047b",
+    "scripts/gameplay/life_simulation.gd": "ee253174741d200d89b024f6fbd84539bdf669b04ff3213bdc878cf7081de570",
+    "scripts/gameplay/sandbox_flow.gd": "6af29f3100b39fbf7ae22fe7f955c5fb8040c11c558a95d7804e905b61dcc3fb",
+    "scripts/gameplay/action_policy.gd": "452b02a571ca9935240f14b433e86316018e34cf429d34c2dc0b07df8a0a26a2",
+    "scripts/gameplay/presentation.gd": "099e73e8431e7349b3fb69608927ffb1295c05704c1108fc9e4df4e89fc5829a",
+    "scripts/core/game.gd": "670e850fd6fbf1b0022aea19b3f00545d998eaa7a72228e0332b58023067ffc3",
+    "scripts/ui/gameplay/world_setup.gd": "b91a38553cb61c4c67b8bb61563784a7fde096ea93cf6f09045f8883d9d8f01d",
+    "scripts/ui/gameplay/personal_story_window.gd": "b23ae58341516921a768686704c728902b966beee5e947d43aa2a4a28c5c339d",
+    "scripts/ui/gameplay/gameplay_shell.gd": "0364da1ee5841bc7c5122b02763a03216b09ed0d2c0ae8a1fc540824ca1ef812",
+    "scripts/portraits/character_visuals.gd": "43209f2209fb1f1a2c77dc6a11c34bdebc1b975e2777fea4dde01a2a1ecc3cfa",
+    "scripts/portraits/character_state.gd": "c8a8c7b98760291288edf73098628eba729eef7896a4a26112cf996e168b5c71",
+    "scripts/portraits/character_state.gdshader": "6c1ea5e2035fa8f44d1087b5e78e6d2c40040de4914e683b1baddeaedf286607",
+    "scripts/portraits/character_state_overlay.gd": "75ef80b9d9b6642ed8633b69d8a396d66dbccf3855fb85a936a0749e61fae494",
+    "scripts/portraits/layered_character_view.gd": "538aec2eefd0f9418dd0413dfdd7fe8d12f980ec972304bf01ffac5b0c8b0d25",
+    "scripts/portraits/modular_dialogic_portrait.gd": "e64207386b106efa0e866cf18480685a518fe8d6bfbed0954bac5679cee45a64",
+    "data/mechanics/npc_stories.json": "57c9037b305c5ce314917e186fef88d13c70470897270c8f7f407a53adc94491",
+    "data/art/character_layers.json": "7cccd4938bd880d057e5790967fd7763f1f414a2e04a9665058d9039c4db44bd",
+    "tests/gameplay/run_sandbox.gd": "09092ba5f4cda076d0214490274e7fe277247985972bcc9aa95345decdf9c0aa",
+    "tests/gameplay/sandbox_flow.gd": "6c638193b1cae0a8c451d71be972e1521c26c6608775c40bc3a66d33c6965af9",
+    "tests/gameplay/sandbox_snapshot.gd": "65ac2dd2bc994087f55611ff27a2492c1bc7b2665376d9d55c0c8642ad309339",
+    "tests/gameplay/capture_sandbox.gd": "cf11a1b3de7138fb7411dedfc772fc99af11ace671815fcb8b20d91be4f24425"
+  },
+  "current_shared_dependencies_sha256": {
+    "scripts/gameplay/main_simulation.gd": "3f4514470fd50d1fa370ad0b6f43d9297c6241c72a700b393ca939f7febb8758",
+    "scripts/mechanics/reproductive_simulation.gd": "748617b51ca289552bf00067f625bcf52a7e498bb5cc404b82d4e43a653edd07",
+    "scripts/mechanics/reproduction.gd": "a6db351c8c0f0b589c30a4cd7350e60cacebbe0f9eb802bf88d4fa2ca5d4e448",
+    "scripts/ui/gameplay/ui_factory.gd": "3f3f27f960fa88d7a425210620abe0f01724b3853399026bedd274e3a9dd7348"
+  },
+  "limitations": [
+    "Standalone mechanics PCK does not register the main-only personal story service or sandbox scene; those have separate main-project tests.",
+    "Visual screenshots are controlled-runtime reference examples, not a user save or final art approval.",
+    "Pregnancy shader and rig-specific bandages are temporary visual support; final original poses, clothing variants and anthro states remain.",
+    "Known main-project shutdown messages remain: 63 ObjectDB instances and 27 resources in use; no SCRIPT ERROR or test FAIL in attached passing logs.",
+    "Shared workspace can continue changing after this report. Hashes record the files at report creation."
+  ]
+}

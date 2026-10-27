@@ -1,0 +1,1122 @@
+{
+  "schema": 1,
+  "temporary_art": true,
+  "rigs": {
+    "prototype_female": {
+      "canvas": [
+        1920,
+        2596
+      ],
+      "frame": [
+        450,
+        70,
+        1100,
+        2160
+      ],
+      "mirror_frame": [
+        700,
+        90,
+        600,
+        900
+      ],
+      "face_frame": [
+        710,
+        80,
+        540,
+        570
+      ],
+      "pose": "idle",
+      "gender": "female",
+      "morphologies": [
+        "human",
+        "semi_furry"
+      ]
+    },
+    "prototype_male": {
+      "canvas": [
+        1920,
+        2596
+      ],
+      "frame": [
+        450,
+        70,
+        1100,
+        2160
+      ],
+      "mirror_frame": [
+        700,
+        90,
+        600,
+        900
+      ],
+      "face_frame": [
+        660,
+        0,
+        540,
+        570
+      ],
+      "pose": "idle",
+      "gender": "male",
+      "morphologies": [
+        "human",
+        "semi_furry"
+      ]
+    }
+  },
+  "layers": {
+    "female_arms_back": {
+      "rig": "prototype_female",
+      "slot": "arms_back",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/hand/hand_back/hand1.png",
+      "z": 15,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_body": {
+      "rig": "prototype_female",
+      "slot": "body",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/body_new.png",
+      "z": 20,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_chest": {
+      "rig": "prototype_female",
+      "slot": "chest",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/tits_medium.png",
+      "z": 21,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_tone": {
+      "rig": "prototype_female",
+      "slot": "body_detail",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/abs1.png",
+      "z": 22,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "body_type": "athletic"
+      }
+    },
+    "female_underwear_bottom": {
+      "rig": "prototype_female",
+      "slot": "underwear_bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/pantsu/pantsu.png",
+      "z": 30,
+      "tint": "",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_underwear_top": {
+      "rig": "prototype_female",
+      "slot": "underwear_top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/brassiere/medium_tits/brassiere.png",
+      "z": 31,
+      "tint": "",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_arms_front": {
+      "rig": "prototype_female",
+      "slot": "arms_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/body/hand/hand_forward/hand1.png",
+      "z": 65,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_face_1": {
+      "rig": "prototype_female",
+      "slot": "face",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/face_type1.png",
+      "z": 40,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "face": 1
+      }
+    },
+    "female_sclera_1": {
+      "rig": "prototype_female",
+      "slot": "sclera",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/eye_ap1.png",
+      "z": 42,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "female_eyes_1": {
+      "rig": "prototype_female",
+      "slot": "eyes",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/eye_type1.png",
+      "z": 44,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "female_iris_left_1": {
+      "rig": "prototype_female",
+      "slot": "iris_left",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/left_eye/eye1.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "female_iris_right_1": {
+      "rig": "prototype_female",
+      "slot": "iris_right",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/right_eye/eye1.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "female_face_2": {
+      "rig": "prototype_female",
+      "slot": "face",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/face_type2.png",
+      "z": 40,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "face": 2
+      }
+    },
+    "female_sclera_2": {
+      "rig": "prototype_female",
+      "slot": "sclera",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/eye_ap2.png",
+      "z": 42,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "female_eyes_2": {
+      "rig": "prototype_female",
+      "slot": "eyes",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/eye_type2.png",
+      "z": 44,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "female_iris_left_2": {
+      "rig": "prototype_female",
+      "slot": "iris_left",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/left_eye/eye2.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "female_iris_right_2": {
+      "rig": "prototype_female",
+      "slot": "iris_right",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/right_eye/eye2.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "female_face_3": {
+      "rig": "prototype_female",
+      "slot": "face",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/face_type3.png",
+      "z": 40,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "face": 3
+      }
+    },
+    "female_sclera_3": {
+      "rig": "prototype_female",
+      "slot": "sclera",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/eye_ap3.png",
+      "z": 42,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "female_eyes_3": {
+      "rig": "prototype_female",
+      "slot": "eyes",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/eye_type3.png",
+      "z": 44,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "female_iris_left_3": {
+      "rig": "prototype_female",
+      "slot": "iris_left",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/left_eye/eye3.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "female_iris_right_3": {
+      "rig": "prototype_female",
+      "slot": "iris_right",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eye/right_eye/eye3.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "female_nose": {
+      "rig": "prototype_female",
+      "slot": "nose",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/nose_type1.png",
+      "z": 45,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "female_mouth_neutral": {
+      "rig": "prototype_female",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/mounth/14.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "neutral"
+      }
+    },
+    "female_brows_neutral": {
+      "rig": "prototype_female",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/eyebrows.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "neutral"
+      }
+    },
+    "female_mouth_smile": {
+      "rig": "prototype_female",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/mounth/9.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "smile"
+      }
+    },
+    "female_brows_smile": {
+      "rig": "prototype_female",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/eyebrows/8.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "smile"
+      }
+    },
+    "female_mouth_concern": {
+      "rig": "prototype_female",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/mounth/6.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "concern"
+      }
+    },
+    "female_brows_concern": {
+      "rig": "prototype_female",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/eyebrows/5.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "concern"
+      }
+    },
+    "female_mouth_angry": {
+      "rig": "prototype_female",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/mounth/6.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "angry"
+      }
+    },
+    "female_brows_angry": {
+      "rig": "prototype_female",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/eyebrows/1.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "angry"
+      }
+    },
+    "female_mouth_attentive": {
+      "rig": "prototype_female",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/mounth/14.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "attentive"
+      }
+    },
+    "female_brows_attentive": {
+      "rig": "prototype_female",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/face/details/eyebrows/3.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "attentive"
+      }
+    },
+    "female_hair_front_short": {
+      "rig": "prototype_female",
+      "slot": "hair_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/hair/base2/length1/front/1.png",
+      "z": 70,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "short"
+      }
+    },
+    "female_hair_front_long": {
+      "rig": "prototype_female",
+      "slot": "hair_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/hair/base2/length3/front/1.png",
+      "z": 70,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "long"
+      }
+    },
+    "female_hair_back_long": {
+      "rig": "prototype_female",
+      "slot": "hair_back",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/hair/base2/length3/back/1.png",
+      "z": 10,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "long"
+      }
+    },
+    "female_hair_front_loose": {
+      "rig": "prototype_female",
+      "slot": "hair_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/hair/base1/length2/front/1.png",
+      "z": 70,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "loose"
+      }
+    },
+    "female_hair_back_loose": {
+      "rig": "prototype_female",
+      "slot": "hair_back",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/hair/base1/length2/back/1.png",
+      "z": 10,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "loose"
+      }
+    },
+    "female_ears": {
+      "rig": "prototype_female",
+      "slot": "ears",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/accessories/cat_ears/hair1.png",
+      "z": 72,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "morphology": "semi_furry"
+      }
+    },
+    "female_top_casual": {
+      "rig": "prototype_female",
+      "slot": "top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/everyday/medium_tits/everyday.png",
+      "z": 60,
+      "tint": "clothing",
+      "pose": "idle",
+      "when": {
+        "outfit": "casual"
+      }
+    },
+    "female_bottom_casual": {
+      "rig": "prototype_female",
+      "slot": "bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/down_clothes/jeans.png",
+      "z": 55,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "outfit": "casual"
+      }
+    },
+    "female_top_work": {
+      "rig": "prototype_female",
+      "slot": "top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/everyday/medium_tits/everyday1.png",
+      "z": 60,
+      "tint": "clothing",
+      "pose": "idle",
+      "when": {
+        "outfit": "work"
+      }
+    },
+    "female_bottom_work": {
+      "rig": "prototype_female",
+      "slot": "bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/down_clothes/jeans.png",
+      "z": 55,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "outfit": "work"
+      }
+    },
+    "female_top_training": {
+      "rig": "prototype_female",
+      "slot": "top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/everyday/medium_tits/everyday.png",
+      "z": 60,
+      "tint": "clothing",
+      "pose": "idle",
+      "when": {
+        "outfit": "training"
+      }
+    },
+    "female_bottom_training": {
+      "rig": "prototype_female",
+      "slot": "bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/clothes/down_clothes/jeans.png",
+      "z": 55,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "outfit": "training"
+      }
+    },
+    "male_legs": {
+      "rig": "prototype_male",
+      "slot": "legs",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/legs.png",
+      "z": 16,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "male_body": {
+      "rig": "prototype_male",
+      "slot": "body",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/body_1/main.png",
+      "z": 20,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "male_tone": {
+      "rig": "prototype_male",
+      "slot": "body_detail",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/body_1/abs2.png",
+      "z": 22,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "body_type": "athletic"
+      }
+    },
+    "male_underwear_bottom": {
+      "rig": "prototype_male",
+      "slot": "underwear_bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/undergarment/pants1.png",
+      "z": 30,
+      "tint": "",
+      "pose": "idle",
+      "when": {}
+    },
+    "male_eye_base": {
+      "rig": "prototype_male",
+      "slot": "eye_base",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/fix_eye.png",
+      "z": 41,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {}
+    },
+    "male_sclera_1": {
+      "rig": "prototype_male",
+      "slot": "sclera",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/eye_ap1.png",
+      "z": 42,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "male_eyes_1": {
+      "rig": "prototype_male",
+      "slot": "eyes",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/eye_type1.png",
+      "z": 44,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "male_iris_left_1": {
+      "rig": "prototype_male",
+      "slot": "iris_left",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/left_eye/eye1.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "male_iris_right_1": {
+      "rig": "prototype_male",
+      "slot": "iris_right",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/right_eye/eye1.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 1
+      }
+    },
+    "male_sclera_2": {
+      "rig": "prototype_male",
+      "slot": "sclera",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/eye_ap2.png",
+      "z": 42,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "male_eyes_2": {
+      "rig": "prototype_male",
+      "slot": "eyes",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/eye_type2.png",
+      "z": 44,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "male_iris_left_2": {
+      "rig": "prototype_male",
+      "slot": "iris_left",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/left_eye/eye2.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "male_iris_right_2": {
+      "rig": "prototype_male",
+      "slot": "iris_right",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/right_eye/eye2.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 2
+      }
+    },
+    "male_sclera_3": {
+      "rig": "prototype_male",
+      "slot": "sclera",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/eye_ap3.png",
+      "z": 42,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "male_eyes_3": {
+      "rig": "prototype_male",
+      "slot": "eyes",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/eye_type3.png",
+      "z": 44,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "male_iris_left_3": {
+      "rig": "prototype_male",
+      "slot": "iris_left",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/left_eye/eye3.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "male_iris_right_3": {
+      "rig": "prototype_male",
+      "slot": "iris_right",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eye/right_eye/eye3.png",
+      "z": 43,
+      "tint": "eyes",
+      "pose": "idle",
+      "when": {
+        "eyes": 3
+      }
+    },
+    "male_mouth_neutral": {
+      "rig": "prototype_male",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/mounth/9.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "neutral"
+      }
+    },
+    "male_brows_neutral": {
+      "rig": "prototype_male",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/eyebrows.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "neutral"
+      }
+    },
+    "male_mouth_smile": {
+      "rig": "prototype_male",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/mounth/8.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "smile"
+      }
+    },
+    "male_brows_smile": {
+      "rig": "prototype_male",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/eyebrows/type1/8.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "smile"
+      }
+    },
+    "male_mouth_concern": {
+      "rig": "prototype_male",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/mounth/6.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "concern"
+      }
+    },
+    "male_brows_concern": {
+      "rig": "prototype_male",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/eyebrows/type1/5.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "concern"
+      }
+    },
+    "male_mouth_angry": {
+      "rig": "prototype_male",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/mounth/6.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "angry"
+      }
+    },
+    "male_brows_angry": {
+      "rig": "prototype_male",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/eyebrows/type1/1.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "angry"
+      }
+    },
+    "male_mouth_attentive": {
+      "rig": "prototype_male",
+      "slot": "mouth",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/mounth/9.png",
+      "z": 46,
+      "tint": "skin",
+      "pose": "idle",
+      "when": {
+        "expression": "attentive"
+      }
+    },
+    "male_brows_attentive": {
+      "rig": "prototype_male",
+      "slot": "brows",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/face/details/eyebrows/type1/3.png",
+      "z": 47,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "expression": "attentive"
+      }
+    },
+    "male_hair_front_short": {
+      "rig": "prototype_male",
+      "slot": "hair_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/hair/base1/length1/front/1.png",
+      "z": 70,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "short"
+      }
+    },
+    "male_hair_front_long": {
+      "rig": "prototype_male",
+      "slot": "hair_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/hair/base1/length3/front/1.png",
+      "z": 70,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "long"
+      }
+    },
+    "male_hair_back_long": {
+      "rig": "prototype_male",
+      "slot": "hair_back",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/hair/base1/length3/back/1.png",
+      "z": 10,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "long"
+      }
+    },
+    "male_hair_front_loose": {
+      "rig": "prototype_male",
+      "slot": "hair_front",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/hair/base1/length2/front/1.png",
+      "z": 70,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "loose"
+      }
+    },
+    "male_hair_back_loose": {
+      "rig": "prototype_male",
+      "slot": "hair_back",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/hair/base1/length2/back/1.png",
+      "z": 10,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "hair": "loose"
+      }
+    },
+    "male_ears": {
+      "rig": "prototype_male",
+      "slot": "ears",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/new/accessories/cat_ears/hair1.png",
+      "z": 72,
+      "tint": "hair",
+      "pose": "idle",
+      "when": {
+        "morphology": "semi_furry"
+      },
+      "offset": [
+        -80,
+        -70
+      ]
+    },
+    "male_top_casual": {
+      "rig": "prototype_male",
+      "slot": "top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/body_1/clothes/usually1.png",
+      "z": 60,
+      "tint": "clothing",
+      "pose": "idle",
+      "when": {
+        "outfit": "casual"
+      }
+    },
+    "male_bottom_casual": {
+      "rig": "prototype_male",
+      "slot": "bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/down_clothes/jeans.png",
+      "z": 55,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "outfit": "casual"
+      }
+    },
+    "male_top_work": {
+      "rig": "prototype_male",
+      "slot": "top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/body_1/clothes/clothes1.png",
+      "z": 60,
+      "tint": "clothing",
+      "pose": "idle",
+      "when": {
+        "outfit": "work"
+      }
+    },
+    "male_bottom_work": {
+      "rig": "prototype_male",
+      "slot": "bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/down_clothes/jeans.png",
+      "z": 55,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "outfit": "work"
+      }
+    },
+    "male_top_training": {
+      "rig": "prototype_male",
+      "slot": "top",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/body_1/clothes/usually1.png",
+      "z": 60,
+      "tint": "clothing",
+      "pose": "idle",
+      "when": {
+        "outfit": "training"
+      }
+    },
+    "male_bottom_training": {
+      "rig": "prototype_male",
+      "slot": "bottom",
+      "texture": "res://assets/textures/portraits/prototype_school/npc/npc_m/type2/down_clothes/jeans.png",
+      "z": 55,
+      "tint": "",
+      "pose": "idle",
+      "when": {
+        "outfit": "training"
+      }
+    }
+  },
+  "palettes": {
+    "skin": [
+      "ffffff",
+      "efcfb8",
+      "d4a584",
+      "b77c58"
+    ],
+    "hair": [
+      "352f3c",
+      "644735",
+      "ab714f",
+      "dcc08b",
+      "6c779c",
+      "a8afb8"
+    ],
+    "eyes": [
+      "729fc2",
+      "8ba883",
+      "b99361",
+      "a58ab9"
+    ],
+    "clothing": [
+      "62829e",
+      "929bb4",
+      "c7b9aa",
+      "6c8e81"
+    ]
+  },
+  "story_profiles": {
+    "asuka": {
+      "name": "Асука",
+      "gender": "female",
+      "morphology": "human",
+      "face": 2,
+      "eyes": 2,
+      "hair": "loose",
+      "hair_color": "8b584b",
+      "skin_color": "ffffff",
+      "eye_color": "8ba883",
+      "clothing_color": "8598b2",
+      "body_type": "slim"
+    },
+    "ellie": {
+      "name": "Элли",
+      "gender": "female",
+      "morphology": "semi_furry",
+      "face": 1,
+      "eyes": 1,
+      "hair": "short",
+      "hair_color": "34333e",
+      "skin_color": "ffffff",
+      "eye_color": "9cabb5",
+      "clothing_color": "93a5ba",
+      "body_type": "slim"
+    },
+    "oliver": {
+      "name": "Оливер",
+      "gender": "male",
+      "morphology": "semi_furry",
+      "face": 1,
+      "eyes": 3,
+      "hair": "loose",
+      "hair_color": "4e3c35",
+      "skin_color": "ffffff",
+      "eye_color": "a4bca3",
+      "clothing_color": "9aaba4",
+      "body_type": "slim"
+    },
+    "lin": {
+      "name": "Лин",
+      "gender": "female",
+      "morphology": "human",
+      "face": 3,
+      "eyes": 1,
+      "hair": "long",
+      "hair_color": "38313d",
+      "skin_color": "ffffff",
+      "eye_color": "a58ab9",
+      "clothing_color": "929bb4",
+      "body_type": "slim"
+    },
+    "mira": {
+      "name": "Мира",
+      "gender": "female",
+      "morphology": "human",
+      "face": 2,
+      "eyes": 2,
+      "hair": "short",
+      "hair_color": "9b6947",
+      "skin_color": "ffffff",
+      "eye_color": "729fc2",
+      "clothing_color": "c7b9aa",
+      "body_type": "slim"
+    },
+    "uriel": {
+      "name": "Уриэль",
+      "gender": "male",
+      "morphology": "human",
+      "face": 3,
+      "eyes": 2,
+      "hair": "short",
+      "hair_color": "bca78c",
+      "skin_color": "ffffff",
+      "eye_color": "729fc2",
+      "clothing_color": "8892a5",
+      "body_type": "slim"
+    },
+    "ryan": {
+      "name": "Райан",
+      "gender": "male",
+      "morphology": "human",
+      "face": 2,
+      "eyes": 2,
+      "hair": "short",
+      "hair_color": "4b443f",
+      "skin_color": "ffffff",
+      "eye_color": "b99361",
+      "clothing_color": "ffffff",
+      "outfit": "work",
+      "body_type": "slim"
+    },
+    "rector": {
+      "name": "Михаил Мэтисон",
+      "gender": "male",
+      "morphology": "human",
+      "face": 3,
+      "eyes": 3,
+      "hair": "short",
+      "hair_color": "a8afb8",
+      "skin_color": "ffffff",
+      "eye_color": "9cabb5",
+      "clothing_color": "ffffff",
+      "outfit": "work",
+      "body_type": "slim"
+    }
+  },
+  "aliases": {
+    "Ректор": "rector",
+    "Михаил Мэтисон": "rector",
+    "Райан": "ryan",
+    "Асука": "asuka",
+    "Элли": "ellie",
+    "Оливер": "oliver",
+    "Лин": "lin",
+    "Мира": "mira",
+    "Уриэль": "uriel",
+    "Уриил": "uriel"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "family_rules": {
+    "household": {"daily_cost": 6, "history_limit": 64, "max_members": 16, "care_interval": 120, "support_cost": 60, "support_minutes": 480}
+  },
+  "family_stages": {
+    "infant": {"label": "Младенец", "after_months": 0, "decay": {"food": 5, "hygiene": 3, "rest": 2, "attention": 2}},
+    "toddler": {"label": "Малыш", "after_months": 12, "decay": {"food": 4, "hygiene": 2, "rest": 2, "attention": 2}},
+    "child": {"label": "Ребёнок", "after_months": 36, "decay": {"food": 3, "hygiene": 2, "rest": 2, "attention": 1}},
+    "teen": {"label": "Подросток", "after_months": 144, "decay": {"food": 3, "hygiene": 2, "rest": 2, "attention": 1}},
+    "adult": {"label": "Взрослый член семьи", "after_months": 216, "decay": {"food": 2, "hygiene": 1, "rest": 1, "attention": 0.5}}
+  },
+  "family_actions": {
+    "feed": {"label": "Покормить / приготовить еду", "minutes": 20, "energy": 3, "cost": 3, "needs": {"food": 60}, "stages": ["infant", "toddler", "child", "teen", "adult"]},
+    "wash": {"label": "Помочь с гигиеной", "minutes": 15, "energy": 3, "cost": 1, "needs": {"hygiene": 65}, "stages": ["infant", "toddler", "child"]},
+    "settle": {"label": "Уложить отдыхать", "minutes": 20, "energy": 2, "cost": 0, "needs": {"rest": 55}, "stages": ["infant", "toddler", "child"]},
+    "play": {"label": "Провести время вместе", "minutes": 30, "energy": 4, "cost": 0, "needs": {"attention": 50}, "development": 2, "stages": ["infant", "toddler", "child", "teen", "adult"]},
+    "teach": {"label": "Помочь освоить новое", "minutes": 40, "energy": 5, "cost": 0, "needs": {"attention": 25}, "development": 5, "stages": ["toddler", "child", "teen"]},
+    "checkup": {"label": "Организовать осмотр", "minutes": 60, "energy": 3, "cost": 30, "needs": {"health": 30}, "stages": ["infant", "toddler", "child", "teen", "adult"]}
+  }
+}

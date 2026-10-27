@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-27",
+  "engine": "Godot 4.7.2 stable",
+  "main_schema": 8,
+  "rules_file_sha256": "28d0af11ce86a70ec6b23b573c28932de471e4f86accfeed3b0613e3139bff28",
+  "focused_adult_health": {
+    "checks": 118,
+    "failed": 0
+  },
+  "main_ui": {
+    "checks": 14,
+    "failed": 0,
+    "actual_buttons": true
+  },
+  "social_and_routes": {
+    "checks": 128,
+    "failed": 0
+  },
+  "standalone_pck": {
+    "checks": 2607,
+    "failed": 0,
+    "failures": []
+  },
+  "main_gameplay": {
+    "checks": 690,
+    "failed": 0,
+    "failures": []
+  },
+  "visual_verification": {
+    "health-panel.png": "Actual main-game Godot health panel at 1600x1000, visually inspected"
+  },
+  "scope": [
+    "libido, explicit wishes, satisfaction and disappointment",
+    "mood effects of wanted intimacy interrupted by physiological difficulty",
+    "menstruation, products and leaks",
+    "spontaneous erections, difficulties and urgent episodes",
+    "HPV, barrier risk reduction, vaccination, screening and observation",
+    "four other adult health symptom conditions",
+    "autonomous adult NPC self-care and medical routes"
+  ],
+  "limitations": [
+    "fictional game rates, treatment durations and clinic programme; not a clinical simulator",
+    "prolonged pathological erection supports authored medical scenarios; ordinary short episodes do not randomly become chronic disease"
+  ],
+  "save_files_rewritten": false,
+  "existing_main_exit_warnings": {
+    "ObjectDB": 63,
+    "resources": 27
+  },
+  "related_maintenance": [
+    "current-schema test assertions follow the declared main schema",
+    "explicit int type fixed a work_challenges compilation blocker"
+  ]
+}

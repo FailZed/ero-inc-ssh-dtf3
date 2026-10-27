@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "scope": "Restore user-selected rendering through owned reference edits; review before expansion. Not runtime art.",
+  "output_prefix": "characters_v2/body_pregnancy_v2",
+  "preserve_input_latent": true,
+  "denoise": 0.8,
+  "steps": 16,
+  "cfg": 6.0,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi",
+  "items": [
+    {
+      "id": "pregnancy_stage_05",
+      "rig": "female_canonical",
+      "category": "pregnancy_stages",
+      "image": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_05/reference.png",
+      "mask": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_05/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult woman, short brown bob, age 30, full body neutral unclothed anatomical character sheet, neutral adult pregnant woman, pregnancy progression stage 5 of nine, naturally rounded pregnant abdomen, same resting arms, same standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904004,
+      "denoise": 0.29,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "pregnancy_stage_06",
+      "rig": "female_canonical",
+      "category": "pregnancy_stages",
+      "image": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_06/reference.png",
+      "mask": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_06/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult woman, short brown bob, age 30, full body neutral unclothed anatomical character sheet, neutral adult pregnant woman, pregnancy progression stage 6 of nine, naturally rounded pregnant abdomen, same resting arms, same standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904005,
+      "denoise": 0.29,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "pregnancy_stage_07",
+      "rig": "female_canonical",
+      "category": "pregnancy_stages",
+      "image": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_07/reference.png",
+      "mask": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_07/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult woman, short brown bob, age 30, full body neutral unclothed anatomical character sheet, neutral adult pregnant woman, pregnancy progression stage 7 of nine, naturally rounded pregnant abdomen, same resting arms, same standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904006,
+      "denoise": 0.29,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "pregnancy_stage_08",
+      "rig": "female_canonical",
+      "category": "pregnancy_stages",
+      "image": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_08/reference.png",
+      "mask": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_08/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult woman, short brown bob, age 30, full body neutral unclothed anatomical character sheet, neutral adult pregnant woman, pregnancy progression stage 8 of nine, naturally rounded pregnant abdomen, same resting arms, same standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904007,
+      "denoise": 0.29,
+      "preserve_input_latent": true
+    },
+    {
+      "id": "pregnancy_stage_09",
+      "rig": "female_canonical",
+      "category": "pregnancy_stages",
+      "image": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_09/reference.png",
+      "mask": "characters_v2/body_pregnancy_guides_v2/pregnancy_stage_09/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, eincbody, original mature adult woman, short brown bob, age 30, full body neutral unclothed anatomical character sheet, neutral adult pregnant woman, pregnancy progression stage 9 of nine, naturally rounded pregnant abdomen, same resting arms, same standing pose, natural adult anatomy, blue eyes, delicate thin brown lineart, pale warm skin, matte flat colors, limited light peach cel shadows, evenly lit, plain light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, jacket, coat, sleeves, fabric, detached limbs, duplicate outlines",
+      "seed": 9904008,
+      "denoise": 0.29,
+      "preserve_input_latent": true
+    }
+  ],
+  "body_lora": {
+    "name": "EroInc/body_300.safetensors",
+    "sha256": "20cf92b51978984959cb3b4e6edb4ce4d054ce6955220ca9df56b333f1fe0823",
+    "strength": 0.35
+  }
+}

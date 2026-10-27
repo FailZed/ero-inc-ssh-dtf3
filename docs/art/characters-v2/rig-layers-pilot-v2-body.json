@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "scope": "Small owned-art rig-layer completions. No intimate region is painted. Candidates require full-figure pose review.",
+  "output_prefix": "characters_v2/rig_layers_pilot-v2/body",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": true,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "female_average_body",
+      "rig": "female_average",
+      "category": "rig_hidden_body",
+      "image": "characters_v2/rig_layers_pilot-v2/female_average_body/reference.png",
+      "mask": "characters_v2/rig_layers_pilot-v2/female_average_body/mask.png",
+      "seed": 2026102100,
+      "denoise": 0.4,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, mature adult woman age 30, short brown bob, neutral artistic figure study, standing front view, arms held behind back and completely hidden, unobstructed bare chest waist and hips, same original body proportions, delicate thin brown outlines, matte warm skin, controlled peach cel shadows, plain pale gray background",
+      "negative": "child, teen, clothes, bra, shirt, underwear, sleeves, jacket, glove, extra arms, hands at hips, hands in front, toy, sticker, symbols, text, glossy skin, plastic, 3d, photorealistic, injury, gore, erotic pose",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\female_average\\full.png",
+        "source_sha256": "089e922a2b7859e0d0e97ece2b27f8108ce7471dcf24eab85b8314190bdb94fe",
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v2\\female_average_body\\guide-full.png",
+        "target_alpha": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v2\\female_average_body\\target-alpha.png",
+        "edit_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v2\\female_average_body\\edit-full.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "crop": [
+          0,
+          0,
+          832,
+          1024
+        ],
+        "protected_center": {
+          "x": 457.85026041666674,
+          "half_width": 85,
+          "from_y": 625
+        },
+        "not_yet_approved": true
+      }
+    },
+    {
+      "id": "male_toned_body",
+      "rig": "male_toned",
+      "category": "rig_hidden_body",
+      "image": "characters_v2/rig_layers_pilot-v2/male_toned_body/reference.png",
+      "mask": "characters_v2/rig_layers_pilot-v2/male_toned_body/mask.png",
+      "seed": 2026102101,
+      "denoise": 0.4,
+      "preserve_input_latent": true,
+      "prompt": "eincanime, mature adult man age 35, short brown hair, neutral artistic figure study, standing front view, arms held behind back and completely hidden, unobstructed bare chest waist and hips, same original body proportions, delicate thin brown outlines, matte warm skin, controlled peach cel shadows, plain pale gray background",
+      "negative": "child, teen, clothes, bra, shirt, underwear, sleeves, jacket, glove, extra arms, hands at hips, hands in front, toy, sticker, symbols, text, glossy skin, plastic, 3d, photorealistic, injury, gore, erotic pose",
+      "authoring": {
+        "source": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\body_pack_v1\\foundations\\male_toned\\full.png",
+        "source_sha256": "f0a48a4c90f0221b6fe1617cafd31f57bf12ff87e9a4fc4d98cb3a0e7f4a1034",
+        "guide_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v2\\male_toned_body\\guide-full.png",
+        "target_alpha": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v2\\male_toned_body\\target-alpha.png",
+        "edit_mask": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\rig_layers_pilot-v2\\male_toned_body\\edit-full.png",
+        "canvas": [
+          832,
+          1472
+        ],
+        "crop": [
+          0,
+          0,
+          832,
+          1024
+        ],
+        "protected_center": {
+          "x": 410.2102864583333,
+          "half_width": 85,
+          "from_y": 625
+        },
+        "not_yet_approved": true
+      }
+    }
+  ],
+  "encode_individually": true
+}

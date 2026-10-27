@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-27",
+  "engine": "4.7.2.stable",
+  "scope": "Adult pregnancy wellbeing and NPC self-care/dialogue",
+  "rules_sha256": "c391bd8beefef5a4f421df4b19a165fac572e3af26bb99b476e1a3fe7b43983c",
+  "focused": {
+    "checks": 95,
+    "failed": 0
+  },
+  "main_ui": {
+    "checks": 14,
+    "failed": 0,
+    "real_buttons": true
+  },
+  "standalone_pck": {
+    "checks": 2489,
+    "failed": 0
+  },
+  "main_gameplay": {
+    "checks": 676,
+    "failed": 0
+  },
+  "visual_verification": {
+    "health-panel.png": "Actual Godot main-game health panel; visually inspected at 1600x1000"
+  },
+  "save_files_rewritten": false,
+  "model_notes": [
+    "15 common symptom groups; individual susceptibility and daily variation",
+    "Numerical frequencies, need changes and six-week recovery window are fictional game balance",
+    "Common discomfort and existing health warning signals; not all possible obstetric complications"
+  ],
+  "existing_main_exit_warnings": {
+    "ObjectDB": 63,
+    "resources": 27
+  }
+}

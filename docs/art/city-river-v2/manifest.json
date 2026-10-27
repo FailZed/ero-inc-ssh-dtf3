@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-19",
+  "tool": "built-in image_gen; reference-image edits",
+  "kind": "Original 2.5D city illustration, not a 3D mesh",
+  "status": "integrated in main game",
+  "story_locks": "docs/art/city-river-v2/STORY_LOCKS.md",
+  "geography": "data/world/city-river-v2.json",
+  "prompts": [
+    "docs/art/city-river-v2/clean-background-prompt.txt",
+    "docs/art/city-river-v2/correction-prompt.txt",
+    "docs/art/city-river-v2/optional-house-correction-prompt.txt",
+    "docs/art/city-river-v2/time-of-day-prompts.json",
+    "docs/art/city-river-v2/university-floor-refinement-prompt.txt"
+  ],
+  "assets": [
+    {
+      "id": "labeled",
+      "path": "assets/textures/world/city-river-v2/city-labeled-v2.png",
+      "source": "C:/Users/vladi/.codex/generated_images/01a14fac-109a-76b1-ad2b-d68d1147344c/exec-e710baf3-c7b2-43f2-9405-cb3499f40156.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "fully_opaque": true,
+      "bytes": 2916943,
+      "sha256": "8c23fd59cd5c4abdeb53ea8ce1ef5d7fcb51beac6241d9c74271ca896aa88c81",
+      "visually_inspected": true,
+      "purpose": "approval illustration"
+    },
+    {
+      "id": "clean",
+      "path": "assets/textures/world/city-river-v2/city-clean-v2.png",
+      "source": "C:/Users/vladi/.codex/generated_images/01a14fac-109a-76b1-ad2b-d68d1147344c/exec-daeef136-f804-4bcf-b9cc-03be77b484dd.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "fully_opaque": true,
+      "bytes": 3000484,
+      "sha256": "eeb85603c9f62c1670416fe0591f5644d06010a9098606d878371c14358ca24a",
+      "visually_inspected": true,
+      "purpose": "main game time-of-day texture"
+    },
+    {
+      "id": "morning",
+      "path": "assets/textures/world/city-river-v2/city-morning-v2.png",
+      "source": "C:/Users/vladi/.codex/generated_images/01a14fac-109a-76b1-ad2b-d68d1147344c/exec-f257f3a5-b502-4142-911e-b0098b419cd1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "fully_opaque": true,
+      "bytes": 3549971,
+      "sha256": "e3de2a06820f0d1db52cad5a58286db878028b4e96434a927633e222c7cbd8c0",
+      "visually_inspected": true,
+      "purpose": "main game time-of-day texture"
+    },
+    {
+      "id": "day",
+      "path": "assets/textures/world/city-river-v2/city-day-v2.png",
+      "source": "C:/Users/vladi/.codex/generated_images/01a14fac-109a-76b1-ad2b-d68d1147344c/exec-957bd5c1-a359-468e-a478-564b81f2767d.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "fully_opaque": true,
+      "bytes": 3695630,
+      "sha256": "87ba2ae08d499d6ed1c211c5f26b39b1324cf756267c28481bedc65880872642",
+      "visually_inspected": true,
+      "purpose": "main game time-of-day texture"
+    },
+    {
+      "id": "sunset",
+      "path": "assets/textures/world/city-river-v2/city-sunset-v2.png",
+      "source": "C:/Users/vladi/.codex/generated_images/01a14fac-109a-76b1-ad2b-d68d1147344c/exec-09589f7e-ca82-414a-88a1-c2996e9a6c2f.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "fully_opaque": true,
+      "bytes": 3339760,
+      "sha256": "f45c3bf0f5a8169acbcb67de24b16af4b2c4b39447cc8228dc53a69c03aacfe8",
+      "visually_inspected": true,
+      "purpose": "main game time-of-day texture"
+    }
+  ],
+  "limitations": [
+    "Exterior location views use a focused camera on this illustration.",
+    "New residences share the existing interior room set.",
+    "Weather shaders animate precipitation; no ground snow accumulation."
+  ]
+}

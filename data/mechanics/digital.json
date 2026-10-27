@@ -1,0 +1,11 @@
+{
+  "skills": {"cybersecurity": {}},
+  "digital_operations": {
+    "training": {"label": "Учебная цифровая лаборатория", "minutes": 30, "level": 0, "reward": 15, "risk": 0, "cooldown": 240, "outcome": "practice"},
+    "recovery": {"label": "Восстановление клиентского архива", "minutes": 45, "level": 20, "reward": 80, "risk": 0, "cooldown": 1440, "outcome": "work"},
+    "grades": {"label": "Подмена учебной записи", "minutes": 45, "level": 35, "reward": 0, "risk": 20, "cooldown": 10080, "outcome": "grades"},
+    "directory": {"label": "Поиск записи в городском каталоге", "minutes": 30, "level": 10, "reward": 0, "risk": 0, "cooldown": 1440, "outcome": "directory"},
+    "scholarship": {"label": "Подмена платёжной заявки", "minutes": 60, "level": 60, "reward": 120, "risk": 30, "cooldown": 43200, "outcome": "money"},
+    "bank": {"label": "Рискованная банковская операция", "minutes": 90, "level": 100, "reward": 180, "risk": 45, "cooldown": 10080, "outcome": "money"}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "deadline_moscow": "2026-10-19T09:00:00+03:00",
+  "families": [
+    {
+      "name": "seasonal-guided-v1",
+      "script": "generate_wardrobe_batch.py",
+      "config": "seasonal-guided-v1.json"
+    }
+  ]
+}

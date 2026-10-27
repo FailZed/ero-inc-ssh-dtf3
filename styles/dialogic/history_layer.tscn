@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://c25jg5v1fyus7"]
+
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="1_base"]
+[ext_resource type="Script" uid="uid://bxpffy4yolw7g" path="res://styles/dialogic/history_layer.gd" id="2_script"]
+[ext_resource type="PackedScene" uid="uid://cj1wcfok7e4sn" path="res://styles/dialogic/history_item_card.tscn" id="3_history_card"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_header"]
+content_margin_left = 24.0
+content_margin_top = 16.0
+content_margin_right = 24.0
+content_margin_bottom = 16.0
+bg_color = Color(0.006, 0.012, 0.02, 0.72)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.62)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_history_frame"]
+content_margin_left = 4.0
+content_margin_top = 5.0
+content_margin_right = 3.0
+content_margin_bottom = 5.0
+bg_color = Color(0.006, 0.012, 0.02, 0.54)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_close_normal"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.005, 0.009, 0.013, 0.82)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.68)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_close_pressed"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.03, 0.02, 0.018, 0.92)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.95, 0.39, 0.16, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_close_hover"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.02, 0.06, 0.09, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.42, 0.76, 1, 0.95)
+
+[node name="ExampleHistoryScene" unique_id=572912230 instance=ExtResource("1_base")]
+visible = false
+script = ExtResource("2_script")
+font_use_global_size = true
+font_custom_size = 15
+font_use_global_fonts = true
+font_custom_normal = ""
+font_custom_bold = ""
+font_custom_italics = ""
+HistoryItem = ExtResource("3_history_card")
+disabled = false
+
+[node name="HistoryHeader" type="PanelContainer" parent="." index="0" unique_id=1184049425]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 74.0
+offset_top = 60.0
+offset_right = -74.0
+offset_bottom = 123.0
+grow_horizontal = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_header")
+
+[node name="HeaderRow" type="HBoxContainer" parent="HistoryHeader" index="0" unique_id=1757613792]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TitleAccent" type="ColorRect" parent="HistoryHeader/HeaderRow" index="0" unique_id=1352327051]
+custom_minimum_size = Vector2(3, 28)
+layout_mode = 2
+color = Color(0.95, 0.39, 0.16, 0.92)
+
+[node name="TitleLabel" type="Label" parent="HistoryHeader/HeaderRow" index="1" unique_id=1765088725]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.88, 0.94, 0.98, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.82)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 22
+text = "История Диалогов"
+vertical_alignment = 1
+
+[node name="HistoryBox" parent="." index="1"]
+offset_top = 122.0
+offset_bottom = -284.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_history_frame")
+
+[node name="HistoryLog" parent="HistoryBox" index="0"]
+theme_override_constants/separation = 10
+
+[node name="ShowHistory" parent="." index="2"]
+visible = false
+
+[node name="HideHistory" parent="." index="3"]
+custom_minimum_size = Vector2(42, 42)
+offset_left = -126.0
+offset_top = 70.0
+offset_right = -84.0
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(0.86, 0.92, 0.96, 1)
+theme_override_colors/font_pressed_color = Color(0.95, 0.39, 0.16, 1)
+theme_override_colors/font_hover_color = Color(0.42, 0.76, 1, 1)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_close_normal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_close_pressed")
+theme_override_styles/hover = SubResource("StyleBoxFlat_close_hover")
+theme_override_styles/focus = SubResource("StyleBoxFlat_close_hover")
+text = "X"

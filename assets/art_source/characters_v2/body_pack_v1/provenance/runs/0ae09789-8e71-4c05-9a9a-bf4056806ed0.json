@@ -1,0 +1,1794 @@
+{
+  "prompt_id": "0ae09789-8e71-4c05-9a9a-bf4056806ed0",
+  "created_utc": "2026-10-19T12:33:28.188582+00:00",
+  "generator": "Local ComfyUI / DaSiWa grouped independent masked edits",
+  "model": {
+    "path": "E:\\Ai\\ComfyUI-EroInc\\runtime\\ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints\\DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+    "size": 6938115222,
+    "mtime_ns": 1792329874683931900,
+    "sha256": "44670e67c55f059116171ee8538875da3abf624fbdaace6d1a7ac2d9617f0211"
+  },
+  "adapter": {
+    "name": "EroInc\\candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "body_adapter": null,
+  "input_images": [
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_xs_lower_full\\reference.png",
+      "sha256": "c85b3016f4b0d351a03d893250da2aaff6698693d1dfb7c1be78cfcd156e74fc",
+      "role": "image",
+      "item": "chest_xs_lower_full"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_xs_lower_full\\mask.png",
+      "sha256": "1ce0a9a8531cdeb5205c7300b5b0a3ac290aa228845df2cca2cad55722df6a9c",
+      "role": "mask",
+      "item": "chest_xs_lower_full"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_s_lower_full\\reference.png",
+      "sha256": "0ff42faf24f421b8a0b7457d8f48abc5db81e30a3c6168644eb5454311df4273",
+      "role": "image",
+      "item": "chest_s_lower_full"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_s_lower_full\\mask.png",
+      "sha256": "1ce0a9a8531cdeb5205c7300b5b0a3ac290aa228845df2cca2cad55722df6a9c",
+      "role": "mask",
+      "item": "chest_s_lower_full"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_xs_asymmetric\\reference.png",
+      "sha256": "ad7243c5ae641c2307a4e055dd4c764845e383171f5e043e5112f8223090a5b1",
+      "role": "image",
+      "item": "chest_xs_asymmetric"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_xs_asymmetric\\mask.png",
+      "sha256": "1ce0a9a8531cdeb5205c7300b5b0a3ac290aa228845df2cca2cad55722df6a9c",
+      "role": "mask",
+      "item": "chest_xs_asymmetric"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_s_asymmetric\\reference.png",
+      "sha256": "6159dc671ffe579c470f1615564b4f8cb31d06d4b6abddc49d1b93d1323b22ea",
+      "role": "image",
+      "item": "chest_s_asymmetric"
+    },
+    {
+      "path": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\body_chest_guides_v4\\chest_s_asymmetric\\mask.png",
+      "sha256": "1ce0a9a8531cdeb5205c7300b5b0a3ac290aa228845df2cca2cad55722df6a9c",
+      "role": "mask",
+      "item": "chest_s_asymmetric"
+    }
+  ],
+  "items": [
+    {
+      "id": "chest_xs_lower_full",
+      "rig": "female_canonical",
+      "category": "breast_shape",
+      "image": "characters_v2/body_chest_guides_v4/chest_xs_lower_full/reference.png",
+      "mask": "characters_v2/body_chest_guides_v4/chest_xs_lower_full/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, very small natural adult breasts, minimal adult chest volume, natural lower fullness, gently lower natural contour, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts",
+      "seed": 9881008,
+      "denoise": 0.27,
+      "preserve_input_latent": true,
+      "size": "xs",
+      "shape": "lower_full"
+    },
+    {
+      "id": "chest_s_lower_full",
+      "rig": "female_canonical",
+      "category": "breast_shape",
+      "image": "characters_v2/body_chest_guides_v4/chest_s_lower_full/reference.png",
+      "mask": "characters_v2/body_chest_guides_v4/chest_s_lower_full/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, small natural adult breasts, natural lower fullness, gently lower natural contour, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts",
+      "seed": 9881009,
+      "denoise": 0.27,
+      "preserve_input_latent": true,
+      "size": "s",
+      "shape": "lower_full"
+    },
+    {
+      "id": "chest_xs_asymmetric",
+      "rig": "female_canonical",
+      "category": "breast_shape",
+      "image": "characters_v2/body_chest_guides_v4/chest_xs_asymmetric/reference.png",
+      "mask": "characters_v2/body_chest_guides_v4/chest_xs_asymmetric/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, very small natural adult breasts, minimal adult chest volume, slight natural left right asymmetry, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts",
+      "seed": 9881010,
+      "denoise": 0.27,
+      "preserve_input_latent": true,
+      "size": "xs",
+      "shape": "asymmetric"
+    },
+    {
+      "id": "chest_s_asymmetric",
+      "rig": "female_canonical",
+      "category": "breast_shape",
+      "image": "characters_v2/body_chest_guides_v4/chest_s_asymmetric/reference.png",
+      "mask": "characters_v2/body_chest_guides_v4/chest_s_asymmetric/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, small natural adult breasts, slight natural left right asymmetry, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts",
+      "seed": 9881011,
+      "denoise": 0.27,
+      "preserve_input_latent": true,
+      "size": "s",
+      "shape": "asymmetric"
+    }
+  ],
+  "output_map": [
+    {
+      "id": "chest_xs_lower_full",
+      "save_node": "50",
+      "sampler_node": "28",
+      "composite_node": "49"
+    },
+    {
+      "id": "chest_s_lower_full",
+      "save_node": "53",
+      "sampler_node": "33",
+      "composite_node": "52"
+    },
+    {
+      "id": "chest_xs_asymmetric",
+      "save_node": "56",
+      "sampler_node": "38",
+      "composite_node": "55"
+    },
+    {
+      "id": "chest_s_asymmetric",
+      "save_node": "59",
+      "sampler_node": "43",
+      "composite_node": "58"
+    }
+  ],
+  "prompt": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "LoraLoader",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "clip": [
+          "1",
+          1
+        ],
+        "lora_name": "EroInc\\candidate_400.safetensors",
+        "strength_model": 0.65,
+        "strength_clip": 0.0
+      }
+    },
+    "3": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_xs_lower_full/reference.png"
+      }
+    },
+    "4": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_xs_lower_full/mask.png"
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, very small natural adult breasts, minimal adult chest volume, natural lower fullness, gently lower natural contour, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+      }
+    },
+    "6": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+      }
+    },
+    "7": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_s_lower_full/reference.png"
+      }
+    },
+    "8": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_s_lower_full/mask.png"
+      }
+    },
+    "9": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, small natural adult breasts, natural lower fullness, gently lower natural contour, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+      }
+    },
+    "10": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+      }
+    },
+    "11": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_xs_asymmetric/reference.png"
+      }
+    },
+    "12": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_xs_asymmetric/mask.png"
+      }
+    },
+    "13": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, very small natural adult breasts, minimal adult chest volume, slight natural left right asymmetry, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+      }
+    },
+    "14": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_s_asymmetric/reference.png"
+      }
+    },
+    "16": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "characters_v2/body_chest_guides_v4/chest_s_asymmetric/mask.png"
+      }
+    },
+    "17": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, small natural adult breasts, slight natural left right asymmetry, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+      }
+    },
+    "18": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          1
+        ],
+        "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+      }
+    },
+    "19": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "3",
+          0
+        ],
+        "image2": [
+          "7",
+          0
+        ]
+      }
+    },
+    "20": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "19",
+          0
+        ],
+        "image2": [
+          "11",
+          0
+        ]
+      }
+    },
+    "21": {
+      "class_type": "ImageBatch",
+      "inputs": {
+        "image1": [
+          "20",
+          0
+        ],
+        "image2": [
+          "15",
+          0
+        ]
+      }
+    },
+    "22": {
+      "class_type": "VAEEncode",
+      "inputs": {
+        "pixels": [
+          "21",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "23": {
+      "class_type": "EroIncConditioningBarrier",
+      "inputs": {
+        "latent": [
+          "22",
+          0
+        ],
+        "conditioning_1": [
+          "5",
+          0
+        ],
+        "conditioning_2": [
+          "6",
+          0
+        ],
+        "conditioning_3": [
+          "9",
+          0
+        ],
+        "conditioning_4": [
+          "10",
+          0
+        ],
+        "conditioning_5": [
+          "13",
+          0
+        ],
+        "conditioning_6": [
+          "14",
+          0
+        ],
+        "conditioning_7": [
+          "17",
+          0
+        ],
+        "conditioning_8": [
+          "18",
+          0
+        ]
+      }
+    },
+    "24": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 0,
+        "length": 1
+      }
+    },
+    "25": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "24",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "26": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "4",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "27": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "25",
+          0
+        ],
+        "mask": [
+          "26",
+          0
+        ]
+      }
+    },
+    "28": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "5",
+          0
+        ],
+        "negative": [
+          "6",
+          0
+        ],
+        "latent_image": [
+          "27",
+          0
+        ],
+        "seed": 9881008,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.27
+      }
+    },
+    "29": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 1,
+        "length": 1
+      }
+    },
+    "30": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "29",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "31": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "8",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "32": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "30",
+          0
+        ],
+        "mask": [
+          "31",
+          0
+        ]
+      }
+    },
+    "33": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "9",
+          0
+        ],
+        "negative": [
+          "10",
+          0
+        ],
+        "latent_image": [
+          "32",
+          0
+        ],
+        "seed": 9881009,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.27
+      }
+    },
+    "34": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 2,
+        "length": 1
+      }
+    },
+    "35": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "34",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "36": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "12",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "37": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "35",
+          0
+        ],
+        "mask": [
+          "36",
+          0
+        ]
+      }
+    },
+    "38": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "13",
+          0
+        ],
+        "negative": [
+          "14",
+          0
+        ],
+        "latent_image": [
+          "37",
+          0
+        ],
+        "seed": 9881010,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.27
+      }
+    },
+    "39": {
+      "class_type": "LatentFromBatch",
+      "inputs": {
+        "samples": [
+          "23",
+          0
+        ],
+        "batch_index": 3,
+        "length": 1
+      }
+    },
+    "40": {
+      "class_type": "LatentBatchSeedBehavior",
+      "inputs": {
+        "samples": [
+          "39",
+          0
+        ],
+        "seed_behavior": "random"
+      }
+    },
+    "41": {
+      "class_type": "ImageToMask",
+      "inputs": {
+        "image": [
+          "16",
+          0
+        ],
+        "channel": "red"
+      }
+    },
+    "42": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "40",
+          0
+        ],
+        "mask": [
+          "41",
+          0
+        ]
+      }
+    },
+    "43": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "2",
+          0
+        ],
+        "positive": [
+          "17",
+          0
+        ],
+        "negative": [
+          "18",
+          0
+        ],
+        "latent_image": [
+          "42",
+          0
+        ],
+        "seed": 9881011,
+        "steps": 16,
+        "cfg": 6.0,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 0.27
+      }
+    },
+    "44": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "28",
+          0
+        ],
+        "samples2": [
+          "33",
+          0
+        ]
+      }
+    },
+    "45": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "44",
+          0
+        ],
+        "samples2": [
+          "38",
+          0
+        ]
+      }
+    },
+    "46": {
+      "class_type": "LatentBatch",
+      "inputs": {
+        "samples1": [
+          "45",
+          0
+        ],
+        "samples2": [
+          "43",
+          0
+        ]
+      }
+    },
+    "47": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "46",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "48": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 0,
+        "length": 1
+      }
+    },
+    "49": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "3",
+          0
+        ],
+        "source": [
+          "48",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "26",
+          0
+        ]
+      }
+    },
+    "50": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "49",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_chest_forms_v4/chest_xs_lower_full"
+      }
+    },
+    "51": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 1,
+        "length": 1
+      }
+    },
+    "52": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "7",
+          0
+        ],
+        "source": [
+          "51",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "31",
+          0
+        ]
+      }
+    },
+    "53": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "52",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_chest_forms_v4/chest_s_lower_full"
+      }
+    },
+    "54": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 2,
+        "length": 1
+      }
+    },
+    "55": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "11",
+          0
+        ],
+        "source": [
+          "54",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "36",
+          0
+        ]
+      }
+    },
+    "56": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "55",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_chest_forms_v4/chest_xs_asymmetric"
+      }
+    },
+    "57": {
+      "class_type": "ImageFromBatch",
+      "inputs": {
+        "image": [
+          "47",
+          0
+        ],
+        "batch_index": 3,
+        "length": 1
+      }
+    },
+    "58": {
+      "class_type": "ImageCompositeMasked",
+      "inputs": {
+        "destination": [
+          "15",
+          0
+        ],
+        "source": [
+          "57",
+          0
+        ],
+        "x": 0,
+        "y": 0,
+        "resize_source": false,
+        "mask": [
+          "41",
+          0
+        ]
+      }
+    },
+    "59": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "58",
+          0
+        ],
+        "filename_prefix": "characters_v2/body_chest_forms_v4/chest_s_asymmetric"
+      }
+    }
+  },
+  "gpu_budget": {
+    "schema": 1,
+    "duty_percent": 100,
+    "cpu_priority": "normal",
+    "gpu_priority": "normal",
+    "vram_reserve_gb": 1,
+    "note": "Full GPU compute authorized by user; no artificial duty pauses. Normal process priorities.",
+    "authorized_date": "2026-10-19"
+  },
+  "acceptance": "Unreviewed candidates; never runtime registered",
+  "history": {
+    "prompt": [
+      33,
+      "0ae09789-8e71-4c05-9a9a-bf4056806ed0",
+      {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "DasiwaIllustriousAnime_epitaphecstasy.safetensors"
+          }
+        },
+        "2": {
+          "class_type": "LoraLoader",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ],
+            "lora_name": "EroInc\\candidate_400.safetensors",
+            "strength_model": 0.65,
+            "strength_clip": 0.0
+          }
+        },
+        "3": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_xs_lower_full/reference.png"
+          }
+        },
+        "4": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_xs_lower_full/mask.png"
+          }
+        },
+        "5": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, very small natural adult breasts, minimal adult chest volume, natural lower fullness, gently lower natural contour, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+          }
+        },
+        "6": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+          }
+        },
+        "7": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_s_lower_full/reference.png"
+          }
+        },
+        "8": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_s_lower_full/mask.png"
+          }
+        },
+        "9": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, small natural adult breasts, natural lower fullness, gently lower natural contour, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+          }
+        },
+        "10": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+          }
+        },
+        "11": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_xs_asymmetric/reference.png"
+          }
+        },
+        "12": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_xs_asymmetric/mask.png"
+          }
+        },
+        "13": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, very small natural adult breasts, minimal adult chest volume, slight natural left right asymmetry, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+          }
+        },
+        "14": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+          }
+        },
+        "15": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_s_asymmetric/reference.png"
+          }
+        },
+        "16": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "characters_v2/body_chest_guides_v4/chest_s_asymmetric/mask.png"
+          }
+        },
+        "17": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "masterpiece, best quality, eincanime, original mature adult woman age 30, full body neutral nude anatomical figure, small natural adult breasts, slight natural left right asymmetry, natural nipples, same adult brown bob and blue eyes, same relaxed standing pose, thin delicate brown contours, matte flat skin colors, light peach cel shadows, evenly lit, flat light gray background"
+          }
+        },
+        "18": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "clip": [
+              "2",
+              1
+            ],
+            "text": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, enlarged nipples, breast implants, spherical implants, extreme breasts, full breasts, large breasts"
+          }
+        },
+        "19": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "3",
+              0
+            ],
+            "image2": [
+              "7",
+              0
+            ]
+          }
+        },
+        "20": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "19",
+              0
+            ],
+            "image2": [
+              "11",
+              0
+            ]
+          }
+        },
+        "21": {
+          "class_type": "ImageBatch",
+          "inputs": {
+            "image1": [
+              "20",
+              0
+            ],
+            "image2": [
+              "15",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "21",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          }
+        },
+        "23": {
+          "class_type": "EroIncConditioningBarrier",
+          "inputs": {
+            "latent": [
+              "22",
+              0
+            ],
+            "conditioning_1": [
+              "5",
+              0
+            ],
+            "conditioning_2": [
+              "6",
+              0
+            ],
+            "conditioning_3": [
+              "9",
+              0
+            ],
+            "conditioning_4": [
+              "10",
+              0
+            ],
+            "conditioning_5": [
+              "13",
+              0
+            ],
+            "conditioning_6": [
+              "14",
+              0
+            ],
+            "conditioning_7": [
+              "17",
+              0
+            ],
+            "conditioning_8": [
+              "18",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 0,
+            "length": 1
+          }
+        },
+        "25": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "24",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "26": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "4",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "27": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "25",
+              0
+            ],
+            "mask": [
+              "26",
+              0
+            ]
+          }
+        },
+        "28": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "5",
+              0
+            ],
+            "negative": [
+              "6",
+              0
+            ],
+            "latent_image": [
+              "27",
+              0
+            ],
+            "seed": 9881008,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.27
+          }
+        },
+        "29": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 1,
+            "length": 1
+          }
+        },
+        "30": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "29",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "31": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "8",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "32": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "30",
+              0
+            ],
+            "mask": [
+              "31",
+              0
+            ]
+          }
+        },
+        "33": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "9",
+              0
+            ],
+            "negative": [
+              "10",
+              0
+            ],
+            "latent_image": [
+              "32",
+              0
+            ],
+            "seed": 9881009,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.27
+          }
+        },
+        "34": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 2,
+            "length": 1
+          }
+        },
+        "35": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "34",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "36": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "12",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "37": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "35",
+              0
+            ],
+            "mask": [
+              "36",
+              0
+            ]
+          }
+        },
+        "38": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "13",
+              0
+            ],
+            "negative": [
+              "14",
+              0
+            ],
+            "latent_image": [
+              "37",
+              0
+            ],
+            "seed": 9881010,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.27
+          }
+        },
+        "39": {
+          "class_type": "LatentFromBatch",
+          "inputs": {
+            "samples": [
+              "23",
+              0
+            ],
+            "batch_index": 3,
+            "length": 1
+          }
+        },
+        "40": {
+          "class_type": "LatentBatchSeedBehavior",
+          "inputs": {
+            "samples": [
+              "39",
+              0
+            ],
+            "seed_behavior": "random"
+          }
+        },
+        "41": {
+          "class_type": "ImageToMask",
+          "inputs": {
+            "image": [
+              "16",
+              0
+            ],
+            "channel": "red"
+          }
+        },
+        "42": {
+          "class_type": "SetLatentNoiseMask",
+          "inputs": {
+            "samples": [
+              "40",
+              0
+            ],
+            "mask": [
+              "41",
+              0
+            ]
+          }
+        },
+        "43": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "positive": [
+              "17",
+              0
+            ],
+            "negative": [
+              "18",
+              0
+            ],
+            "latent_image": [
+              "42",
+              0
+            ],
+            "seed": 9881011,
+            "steps": 16,
+            "cfg": 6.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.27
+          }
+        },
+        "44": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "28",
+              0
+            ],
+            "samples2": [
+              "33",
+              0
+            ]
+          }
+        },
+        "45": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "44",
+              0
+            ],
+            "samples2": [
+              "38",
+              0
+            ]
+          }
+        },
+        "46": {
+          "class_type": "LatentBatch",
+          "inputs": {
+            "samples1": [
+              "45",
+              0
+            ],
+            "samples2": [
+              "43",
+              0
+            ]
+          }
+        },
+        "47": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "46",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          }
+        },
+        "48": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 0,
+            "length": 1
+          }
+        },
+        "49": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "3",
+              0
+            ],
+            "source": [
+              "48",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "26",
+              0
+            ]
+          }
+        },
+        "50": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "49",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_chest_forms_v4/chest_xs_lower_full"
+          }
+        },
+        "51": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 1,
+            "length": 1
+          }
+        },
+        "52": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "7",
+              0
+            ],
+            "source": [
+              "51",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "31",
+              0
+            ]
+          }
+        },
+        "53": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "52",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_chest_forms_v4/chest_s_lower_full"
+          }
+        },
+        "54": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 2,
+            "length": 1
+          }
+        },
+        "55": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "11",
+              0
+            ],
+            "source": [
+              "54",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "36",
+              0
+            ]
+          }
+        },
+        "56": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "55",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_chest_forms_v4/chest_xs_asymmetric"
+          }
+        },
+        "57": {
+          "class_type": "ImageFromBatch",
+          "inputs": {
+            "image": [
+              "47",
+              0
+            ],
+            "batch_index": 3,
+            "length": 1
+          }
+        },
+        "58": {
+          "class_type": "ImageCompositeMasked",
+          "inputs": {
+            "destination": [
+              "15",
+              0
+            ],
+            "source": [
+              "57",
+              0
+            ],
+            "x": 0,
+            "y": 0,
+            "resize_source": false,
+            "mask": [
+              "41",
+              0
+            ]
+          }
+        },
+        "59": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "58",
+              0
+            ],
+            "filename_prefix": "characters_v2/body_chest_forms_v4/chest_s_asymmetric"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "ero_inc_group": {
+            "ids": [
+              "chest_xs_lower_full",
+              "chest_s_lower_full",
+              "chest_xs_asymmetric",
+              "chest_s_asymmetric"
+            ],
+            "config_sha256": "97b92819738e7ad5b7a152975e53ff1ce7ece1898c9258962ecc1c695217f5a2",
+            "independent_sampler_batch_size": 1
+          }
+        },
+        "client_id": "1ee097f6-45ae-42fe-8889-d8028f6f0847",
+        "create_time": 1792413208188
+      },
+      [
+        "56",
+        "59",
+        "53",
+        "50"
+      ]
+    ],
+    "outputs": {
+      "56": {
+        "images": [
+          {
+            "filename": "chest_xs_asymmetric_00001_.png",
+            "subfolder": "characters_v2\\body_chest_forms_v4",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "59": {
+        "images": [
+          {
+            "filename": "chest_s_asymmetric_00001_.png",
+            "subfolder": "characters_v2\\body_chest_forms_v4",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "53": {
+        "images": [
+          {
+            "filename": "chest_s_lower_full_00001_.png",
+            "subfolder": "characters_v2\\body_chest_forms_v4",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      },
+      "50": {
+        "images": [
+          {
+            "filename": "chest_xs_lower_full_00001_.png",
+            "subfolder": "characters_v2\\body_chest_forms_v4",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 832,
+              "height": 1472
+            }
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "0ae09789-8e71-4c05-9a9a-bf4056806ed0",
+            "timestamp": 1792413208189
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2"
+            ],
+            "prompt_id": "0ae09789-8e71-4c05-9a9a-bf4056806ed0",
+            "timestamp": 1792413208205
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "0ae09789-8e71-4c05-9a9a-bf4056806ed0",
+            "timestamp": 1792413254769
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "56": {
+        "node_id": "56",
+        "display_node": "56",
+        "parent_node": null,
+        "real_node_id": "56"
+      },
+      "59": {
+        "node_id": "59",
+        "display_node": "59",
+        "parent_node": null,
+        "real_node_id": "59"
+      },
+      "53": {
+        "node_id": "53",
+        "display_node": "53",
+        "parent_node": null,
+        "real_node_id": "53"
+      },
+      "50": {
+        "node_id": "50",
+        "display_node": "50",
+        "parent_node": null,
+        "real_node_id": "50"
+      }
+    }
+  }
+}

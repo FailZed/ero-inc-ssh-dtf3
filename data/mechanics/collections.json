@@ -1,0 +1,52 @@
+{
+  "gallery_entries": {
+    "home": {
+      "label": "Дом после возвращения",
+      "image": "res://assets/textures/backgrounds/location_pack_v1/bedroom_night.png",
+      "text": "Тихая комната и время для собственных планов.",
+      "requirements": {
+        "path": "world.visits.bedroom",
+        "op": "gte",
+        "value": 1
+      }
+    },
+    "city": {
+      "label": "Первый выход в город",
+      "image": "res://assets/textures/backgrounds/location_pack_v1/home_street_day.png",
+      "text": "Знакомый маршрут становится частью повседневной жизни.",
+      "requirements": {
+        "path": "world.visits.global_map",
+        "op": "gte",
+        "value": 1
+      }
+    },
+    "progress": {
+      "label": "Первое достижение",
+      "image": "res://assets/textures/backgrounds/location_pack_v1/home_street_dusk.png",
+      "text": "Новые навыки открывают больше самостоятельных решений.",
+      "requirements": {
+        "path": "world.unlocked",
+        "op": "contains",
+        "value": "milestone_first_level"
+      }
+    },
+    "family": {
+      "label": "Новая глава семьи",
+      "image": "res://assets/textures/locations/apartment/kitchen_16x9.png",
+      "text": "В доме появились новые заботы, привычки и общие планы.",
+      "requirements": {
+        "path": "family.members.family_1",
+        "op": "exists"
+      }
+    },
+    "digital": {
+      "label": "Цифровая работа",
+      "image": "res://assets/textures/backgrounds/location_pack_v1/bedroom_morning.png",
+      "text": "Завершённая задача остаётся в истории ваших занятий.",
+      "requirements": {
+        "path": "world.flags.digital_job_completed",
+        "value": true
+      }
+    }
+  }
+}

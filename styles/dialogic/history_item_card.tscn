@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://cj1wcfok7e4sn"]
+
+[ext_resource type="Script" uid="uid://67t6pr2eatac" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/example_history_item.gd" id="1_history_item_script"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card"]
+content_margin_left = 8.0
+content_margin_top = 5.0
+content_margin_right = 8.0
+content_margin_bottom = 5.0
+bg_color = Color(0.006, 0.012, 0.02, 0.62)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34, 0.58, 0.73, 0.42)
+
+[node name="HistoryItem" type="PanelContainer" unique_id=1888375023]
+custom_minimum_size = Vector2(0, 71)
+offset_left = -1.0
+offset_right = 980.0
+offset_bottom = 71.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+script = ExtResource("1_history_item_script")
+
+[node name="Content" type="HBoxContainer" parent="." unique_id=201964303]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Icon" type="TextureRect" parent="Content" unique_id=1360471317]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+size_flags_vertical = 0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextStack" type="VBoxContainer" parent="Content" unique_id=26546475]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="NameLabel" type="Label" parent="Content/TextStack" unique_id=76039732]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.76, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.76)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 15
+text = "Speaker:"
+
+[node name="TextBox" type="RichTextLabel" parent="Content/TextStack" unique_id=1646836394]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0.84, 0.9, 0.96, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.72)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/bold_font_size = 16
+theme_override_font_sizes/bold_italics_font_size = 16
+theme_override_font_sizes/italics_font_size = 16
+bbcode_enabled = true
+text = "Dialog history text"
+fit_content = true

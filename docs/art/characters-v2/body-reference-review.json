@@ -1,0 +1,13 @@
+{
+  "updated_utc": "2026-10-19T10:44:37.209705+00:00",
+  "local_generation": "DaSiWa FP16,16 steps,CFG6,Euler/Normal,smart memory,own style LoRA .65,no ControlNet",
+  "result": "Two masked style restoration edits reviewed and exported as full/head/body RGBA. Natural anatomy retained. No new distinct body builds claimed.",
+  "manifest": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\style_restore_candidates_v1\\manifest.json",
+  "not_complete": [
+    "Body-build diversity: thin/average/soft male still tends to defined musculature.",
+    "Independent face/front hair/back hair layers, pose sets and body morphologies.",
+    "Underwear and four-season wardrobe remain later stages."
+  ],
+  "training": "No new LoRA trained; rejected or mislabeled images excluded.",
+  "runtime_ready": false
+}

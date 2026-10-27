@@ -1,0 +1,46 @@
+{
+  "agency_rules": {
+    "simulation": {
+      "decision_minutes": 15, "history_limit": 48, "sentiment_limit": 16,
+      "moodlet_limit": 12, "want_limit": 3, "partner_candidates": 8,
+      "hysteresis": 0.04, "travel_minimum": 15,
+      "need_decay": {"energy": 3, "satiety": 4, "hygiene": 2, "social": 3, "fun": 3},
+      "critical_need": 18, "want_duration": 1440, "stagnation_minutes": 4320
+    }
+  },
+  "agency_actions": {
+    "sleep": {"label": "Выспаться", "minutes": 120, "destination": "home", "restore": {"energy": 65}, "base": 0.03, "traits": {}, "emotion": "calm"},
+    "eat": {"label": "Поесть", "minutes": 30, "destination": "home", "restore": {"satiety": 65}, "cost": 5, "base": 0.02, "traits": {}, "emotion": "content"},
+    "wash": {"label": "Привести себя в порядок", "minutes": 30, "destination": "home", "restore": {"hygiene": 70}, "base": 0.01, "traits": {"responsibility": 0.2}, "emotion": "content"},
+    "rest": {"label": "Отдохнуть", "minutes": 30, "destination": "home", "restore": {"energy": 22, "fun": 12}, "base": 0.04, "traits": {}, "emotion": "calm"},
+    "recover": {"label": "Восстановить здоровье", "minutes": 60, "destination": "home", "restore": {"energy": 30}, "health": 10, "base": 0.01, "traits": {}, "emotion": "calm"},
+    "recreation": {"label": "Заняться любимым делом", "minutes": 45, "destination": "home", "restore": {"fun": 40}, "base": 0.04, "traits": {}, "emotion": "happy"},
+    "walk": {"label": "Прогуляться", "minutes": 30, "destination": "global_map", "restore": {"fun": 22, "energy": 3}, "weather": ["clear", "cloudy"], "base": 0.05, "traits": {"bravery": 0.15}, "emotion": "calm"},
+    "visit": {"label": "Выйти к людям", "minutes": 30, "destination": "global_map", "restore": {"fun": 8}, "base": 0.02, "traits": {"sociability": 0.3}, "emotion": "hopeful"},
+    "practice": {"label": "Развивать навык", "minutes": 60, "destination": "home", "restore": {"fun": 8}, "skill": "study", "xp": 4, "base": 0.12, "traits": {"responsibility": 0.5}, "emotion": "focused"},
+    "create": {"label": "Работать над личным проектом", "minutes": 60, "destination": "home", "restore": {"fun": 18}, "skill": "journalism", "xp": 4, "base": 0.10, "traits": {"bravery": 0.2}, "emotion": "inspired"},
+    "publish": {"label": "Опубликовать свою работу", "minutes": 60, "destination": "home", "restore": {"fun": 10}, "skill": "journalism", "xp": 2, "requires_skill": {"journalism": 8}, "income": 12, "base": 0.06, "traits": {"bravery": 0.4}, "emotion": "confident"},
+    "work": {"label": "Заработать на свою цель", "minutes": 60, "destination": "global_map", "restore": {}, "skill": "computing", "xp": 2, "income": 12, "roles": ["worker"], "base": 0.08, "traits": {"responsibility": 0.4}, "emotion": "focused"},
+    "study": {"label": "Учиться", "minutes": 60, "destination": "training_center", "restore": {}, "skill": "study", "xp": 4, "base": 0.08, "traits": {"responsibility": 0.4}, "emotion": "focused"},
+    "connect": {"label": "Пообщаться с человеком", "minutes": 30, "destination": "global_map", "restore": {"social": 35, "fun": 10}, "social": true, "base": 0.04, "traits": {"sociability": 0.6}, "emotion": "happy"},
+    "support": {"label": "Поддержать знакомого", "minutes": 30, "destination": "global_map", "restore": {"social": 25}, "social": true, "minimum_trust": 4, "base": 0.03, "traits": {"loyalty": 0.6}, "emotion": "content"},
+    "reconcile": {"label": "Попытаться помириться", "minutes": 30, "destination": "global_map", "restore": {"social": 20}, "social": true, "negative_sentiment": true, "base": 0.02, "traits": {"loyalty": 0.5}, "emotion": "hopeful"},
+    "dispute": {"label": "Высказать накопившиеся претензии", "minutes": 30, "destination": "global_map", "restore": {"social": 15}, "social": true, "negative_sentiment": true, "trait_min": {"bravery": 50}, "trait_max": {"loyalty": 55}, "tags": ["conflict"], "base": 0.02, "traits": {"cunning": 0.5, "bravery": 0.3}, "emotion": "angry"}
+  },
+  "agency_aspirations": {
+    "career": {"label": "Стать хорошим специалистом", "stages": [{"action": "practice", "minutes": 480}, {"action": "work", "minutes": 2400}, {"action": "work", "minutes": 4800}]},
+    "mastery": {"label": "Овладеть выбранным делом", "stages": [{"action": "practice", "minutes": 600}, {"action": "practice", "minutes": 2400}, {"action": "study", "minutes": 1440}]},
+    "creativity": {"label": "Создать и показать свою работу", "stages": [{"action": "create", "minutes": 480}, {"action": "create", "minutes": 1800}, {"action": "publish", "minutes": 1200}]},
+    "community": {"label": "Найти близких людей", "stages": [{"action": "connect", "minutes": 240}, {"action": "support", "minutes": 360}, {"action": "connect", "minutes": 900}]},
+    "wellbeing": {"label": "Наладить свою жизнь", "stages": [{"action": "walk", "minutes": 240}, {"action": "practice", "minutes": 600}, {"action": "connect", "minutes": 360}]}
+  },
+  "agency_experiences": {
+    "supported": {"emotion": "grateful", "strength": 14, "duration": 360, "sentiment": 16},
+    "rejected": {"emotion": "sad", "strength": 12, "duration": 240, "sentiment": -12, "fear": "rejection"},
+    "betrayed": {"emotion": "hurt", "strength": 28, "duration": 1440, "sentiment": -45, "fear": "rejection"},
+    "achievement": {"emotion": "confident", "strength": 20, "duration": 720, "sentiment": 0},
+    "setback": {"emotion": "tense", "strength": 14, "duration": 360, "sentiment": 0, "fear": "stagnation"},
+    "friendship": {"emotion": "happy", "strength": 10, "duration": 240, "sentiment": 10},
+    "conflict": {"emotion": "angry", "strength": 16, "duration": 240, "sentiment": -10}
+  }
+}

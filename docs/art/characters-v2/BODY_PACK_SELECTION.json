@@ -1,0 +1,82 @@
+{
+  "scope": "Original neutral adult body pack. Separate from runtime, saves, wardrobe and final face/hair packs. Proportion derivatives, materials and composited examples are counted separately.",
+  "build_guides": "E:/Ai/ComfyUI-EroInc/batches/body-pack-complete-v1/base-guides-v2.json",
+  "canonical_references": {
+    "female": "E:/Ai/ComfyUI-EroInc/input/characters_v2/bases/female_average/full.png",
+    "male": "E:/Ai/ComfyUI-EroInc/input/characters_v2/bases/male_toned/full.png"
+  },
+  "groups": [
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_complete_bases_v2/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_chest_forms_v3/processed/index.json",
+      "exclude_prefixes": [
+        "chest_xs_",
+        "chest_s_"
+      ]
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_chest_forms_v4/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_details_rest_v1/processed/index.json",
+      "categories": [
+        "female_external_anatomy",
+        "nipple_areola_forms"
+      ]
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_anatomy_v3/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_hair_v2/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_tone_v3/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_complete_pilot_v2/processed/index.json",
+      "ids": [
+        "male_average"
+      ],
+      "rename": {
+        "male_average": "male_tone_0"
+      },
+      "category_override": "muscle_definition"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_legs_v1/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_pose_v7/processed/index.json",
+      "ids": [
+        "female_arms_left_open",
+        "female_arms_right_open",
+        "female_arms_both_open",
+        "female_arms_left_in",
+        "female_arms_right_in",
+        "female_arms_both_in",
+        "female_arms_left_wide",
+        "male_arms_left_in"
+      ]
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_pose_v8/processed/index.json",
+      "ids": [
+        "female_arms_right_wide",
+        "male_arms_right_in",
+        "male_arms_both_in"
+      ]
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_pose_v10/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_pregnancy_v7/processed/index.json"
+    },
+    {
+      "processed_index": "E:/Ai/ComfyUI-EroInc/output/characters_v2/body_species_v2/processed/index.json"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "weapons": {
+    "unarmed": {"class": "unarmed", "damage": 0, "defence": 0},
+    "knuckles": {"class": "knuckles", "damage": 3, "defence": 0},
+    "spiked_knuckles": {"class": "knuckles", "damage": 4, "bleeding": 0.15},
+    "knife": {"class": "blade", "damage": 4, "bleeding": 0.3},
+    "folding_blade": {"class": "blade", "damage": 3, "bleeding": 0.2},
+    "bat": {"class": "blunt", "damage": 6, "defence": 1}
+  },
+  "combat_moves": {
+    "jab": {"ap": 2, "stamina": 8, "damage": 1, "accuracy": 0.05},
+    "heavy": {"ap": 3, "stamina": 15, "damage": 1.6, "accuracy": -0.1, "knockdown": 0.08},
+    "kick": {"ap": 3, "stamina": 18, "damage": 2.1, "accuracy": -0.15, "weapons": ["unarmed", "knuckles"]},
+    "feint": {"ap": 1, "stamina": 5, "damage": 0.3, "accuracy": 0.15, "special": "feint"},
+    "body_hook": {"ap": 2, "stamina": 10, "damage": 1.2, "critical": 0.05},
+    "uppercut": {"ap": 3, "stamina": 16, "damage": 1.3, "accuracy": -0.05, "critical": 0.1, "knockdown": 0.12},
+    "sweep": {"ap": 2, "stamina": 14, "damage": 0.6, "knockdown": 0.35},
+    "disarm": {"ap": 3, "stamina": 15, "damage": 0.2, "accuracy": -0.15, "special": "disarm"},
+    "slash": {"ap": 2, "stamina": 10, "damage": 1.2, "bleeding": 0.4, "weapons": ["blade"]},
+    "thrust": {"ap": 3, "stamina": 15, "damage": 1.8, "accuracy": -0.12, "weapons": ["blade"]},
+    "bat_precise": {"ap": 3, "stamina": 16, "damage": 2.2, "weapons": ["blunt"]},
+    "bat_swing": {"ap": 4, "stamina": 24, "damage": 2.6, "accuracy": -0.2, "knockdown": 0.2, "weapons": ["blunt"]}
+  },
+  "items": {
+    "knuckles": {"weight": 0.3, "price": 40, "category": "weapon", "slot": "weapon", "weapon": "knuckles"},
+    "spiked_knuckles": {"weight": 0.4, "price": 60, "category": "weapon", "slot": "weapon", "weapon": "spiked_knuckles"},
+    "knife": {"weight": 0.3, "price": 50, "category": "weapon", "slot": "weapon", "weapon": "knife"},
+    "folding_blade": {"weight": 0.2, "price": 45, "category": "weapon", "slot": "weapon", "weapon": "folding_blade"},
+    "bat": {"weight": 1.2, "price": 55, "category": "weapon", "slot": "weapon", "weapon": "bat"},
+    "bandage": {"weight": 0.1, "price": 8, "category": "medicine"},
+    "medicine": {"weight": 0.1, "price": 20, "category": "medicine"},
+    "desk": {"weight": 5, "price": 80, "category": "equipment", "equipment": "desk"},
+    "chair": {"weight": 2, "price": 35, "category": "equipment", "equipment": "chair"},
+    "bookshelf": {"weight": 6, "price": 65, "category": "equipment", "equipment": "bookshelf"},
+    "camera": {"weight": 0.8, "price": 90, "category": "equipment", "equipment": "camera"},
+    "casual_top": {"weight": 0.2, "price": 25, "category": "clothing", "slot": "top", "visual": "casual_top"},
+    "work_top": {"weight": 0.3, "price": 40, "category": "clothing", "slot": "top", "visual": "work_top"},
+    "training_top": {"weight": 0.2, "price": 30, "category": "clothing", "slot": "top", "visual": "training_top"},
+    "trousers": {"weight": 0.4, "price": 35, "category": "clothing", "slot": "bottom", "visual": "trousers"}
+  },
+  "outfits": {
+    "casual": {"items": ["casual_top", "trousers"], "activities": ["rest", "read", "walk", "idle"]},
+    "work": {"items": ["work_top", "trousers"], "activities": ["work", "study"]},
+    "training": {"items": ["training_top", "trousers"], "activities": ["training", "exercise"]}
+  },
+  "treatments": {
+    "bandage": {"item": "bandage", "minutes": 2, "stop_bleeding": 5, "repair": 2, "restore": 2, "cooldown": 30},
+    "medicine": {"item": "medicine", "minutes": 5, "infection": 40, "restore": 5, "cooldown": 360},
+    "clinic": {"cost": 40, "minutes": 30, "stop_bleeding": 5, "infection": 100, "repair": 25, "restore": 20, "care_minutes": 1440, "cooldown": 360}
+  },
+  "conditions": {
+    "pregnancy": {"duration_months": 9, "stages": [{"after_months": 1}, {"after_months": 3}, {"after_months": 6}, {"after_months": 9}], "stat_multipliers": {"endurance": 0.9}},
+    "fatigue": {"duration": 180, "stages": [{"after": 60}], "stat_multipliers": {"strength": 0.85, "agility": 0.9}},
+    "concussion": {"duration": 2880, "stages": [{"after": 1440}], "stat_multipliers": {"intellect": 0.7, "erudition": 0.8}}
+  },
+  "contracts": {
+    "small_website": {"profession": "digital", "skill": "computing", "level": 1, "effort": 90, "deadline": 2880, "pay": 100, "xp": 25, "equipment": ["computer"]},
+    "application": {"profession": "digital", "skill": "computing", "level": 2, "effort": 180, "deadline": 4320, "pay": 250, "xp": 60, "equipment": ["computer"]},
+    "data_repair": {"profession": "digital", "skill": "computing", "level": 1, "effort": 60, "deadline": 1440, "pay": 70, "xp": 20, "equipment": ["computer"]},
+    "photo_assignment": {"profession": "journalism", "skill": "journalism", "level": 1, "effort": 120, "deadline": 2880, "pay": 120, "xp": 30, "equipment": ["camera"]}
+  },
+  "professions": {
+    "digital": {"pay": 50, "minutes": 120, "energy": 18, "xp": 25, "daily_limit": 2},
+    "retail": {"location": "global_map", "hours": [480, 1200], "pay": 40, "minutes": 120, "energy": 20, "xp": 20},
+    "journalism": {"pay": 45, "minutes": 120, "energy": 15, "xp": 25, "publication_slots_at": [0, 3, 8, 15, 30]}
+  },
+  "stream_topics": {
+    "games": {"skill": "computing", "growth": 0.08, "monetization": 0.15},
+    "education": {"skill": "study", "growth": 0.05, "monetization": 0.25},
+    "creative": {"skill": "journalism", "growth": 0.07, "monetization": 0.2}
+  },
+  "publications": {
+    "neighborhood_report": {"sources": 2, "pay": 70, "xp": 25},
+    "club_report": {"sources": 3, "pay": 100, "xp": 40}
+  },
+  "campaigns": {
+    "festival": {"focus": "festival", "cost": 40, "reward": 90, "reputation": 15, "stages": [{"id": "plan", "effort": 2}, {"id": "prepare", "effort": 4}, {"id": "perform", "effort": 2}]},
+    "research": {"focus": "research", "cost": 20, "reward": 60, "reputation": 10, "stages": [{"id": "collect", "effort": 3}, {"id": "analyze", "effort": 3}]},
+    "publicity": {"focus": "publicity", "cost": 10, "reward": 20, "reputation": 20, "stages": [{"id": "draft", "effort": 2}, {"id": "publish", "effort": 2}]}
+  },
+  "personalities": {
+    "calm": {"conversation": 0.02}, "confident": {"conversation": 0.04}, "reserved": {"conversation": -0.08},
+    "reliable": {"conversation": 0.02}, "aggressive": {"conversation": -0.04}
+  },
+  "promises": {
+    "read_book": {"minutes": 1440, "requirements": {"path": "player.skills.study", "op": "gte", "value": 10}},
+    "complete_project": {"minutes": 2880, "requirements": {"path": "economy.projects.website_order.completed", "value": true}}
+  },
+  "furniture": {
+    "stove": {"size": [2, 1], "layer": 1, "visual": "stove"},
+    "computer": {"size": [1, 1], "layer": 2, "visual": "computer"},
+    "desk": {"size": [2, 1], "layer": 1, "visual": "desk"},
+    "chair": {"size": [1, 1], "layer": 1, "visual": "chair"},
+    "bookshelf": {"size": [1, 2], "layer": 1, "visual": "bookshelf"},
+    "camera": {"size": [1, 1], "layer": 2, "visual": "camera"}
+  },
+  "training_programs": {
+    "strength": {"minutes": 30, "energy": 8, "daily_limit": 3, "attributes": {"strength": 40, "endurance": 20}, "skills": {"fighting": 8}},
+    "running": {"minutes": 30, "energy": 7, "daily_limit": 3, "attributes": {"agility": 40, "endurance": 20}, "skills": {"fighting": 3}},
+    "reading": {"minutes": 45, "energy": 3, "attributes": {"erudition": 25, "intellect": 15}, "skills": {"study": 10}, "requirements": {"path": "inventory.items.book", "op": "gte", "value": 1}},
+    "speech": {"minutes": 30, "energy": 4, "attributes": {"charisma": 30, "authority": 20}, "skills": {"journalism": 6}},
+    "cinema": {"minutes": 90, "energy": 2, "cost": 15, "daily_limit": 1, "attributes": {}, "skills": {"study": 3}, "effect": "focused"}
+  },
+  "perks": {
+    "efficient_worker": {"cost": 1, "requirements": {"path": "player.level", "op": "gte", "value": 2}, "multipliers": {"resource_cost": 0.9}},
+    "resilient": {"cost": 1, "stats": {"endurance": 2}, "multipliers": {"need_decay": 0.9}},
+    "persuasive": {"cost": 1, "stats": {"charisma": 2, "authority": 1}},
+    "fighter": {"cost": 1, "stats": {"strength": 2, "agility": 1}},
+    "scholar": {"cost": 1, "stats": {"erudition": 2}, "multipliers": {"xp": 1.1}}
+  }
+}

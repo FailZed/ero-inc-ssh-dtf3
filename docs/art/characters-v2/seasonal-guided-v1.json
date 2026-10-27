@@ -1,0 +1,1027 @@
+{
+  "schema": 1,
+  "scope": "Four-season original adult garment components; generation and extraction require visual acceptance",
+  "output_prefix": "characters_v2/seasonal_guided_v1",
+  "preserve_input_latent": true,
+  "denoise": 0.62,
+  "steps": 32,
+  "cfg": 5.5,
+  "sampler": "euler_ancestral",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "transparent clothes, exposed breasts under clothing, exposed genitals under clothing, lettering, text, watermark, logo, 3d, photorealistic, glossy skin, floating objects, extra limbs, deformed hands, multiple people, child, teen, chibi",
+  "items": [
+    {
+      "id": "female_summer_crew_tee",
+      "rig": "female_average",
+      "category": "summer",
+      "part": "shirt_short",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_summer_crew_tee/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_summer_crew_tee/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a plain blue crew-neck cotton t-shirt, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726000,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_summer_polo",
+      "rig": "female_average",
+      "category": "summer",
+      "part": "shirt_short",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_summer_polo/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_summer_polo/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a blue short sleeve polo shirt with a soft collar and two buttons, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726017,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_summer_linen_blouse",
+      "rig": "female_average",
+      "category": "summer",
+      "part": "shirt_short",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_summer_linen_blouse/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_summer_linen_blouse/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a loose blue short sleeve linen blouse with small buttons, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726034,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_summer_cotton_shorts",
+      "rig": "female_average",
+      "category": "summer",
+      "part": "shorts",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_summer_cotton_shorts/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_summer_cotton_shorts/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing dark navy cotton shorts ending above knees with fabric waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726051,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_summer_linen_trousers",
+      "rig": "female_average",
+      "category": "summer",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_summer_linen_trousers/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_summer_linen_trousers/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing navy straight linen trousers, trouser hems above bare feet, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726068,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_summer_midi_skirt",
+      "rig": "female_average",
+      "category": "summer",
+      "part": "skirt",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_summer_midi_skirt/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_summer_midi_skirt/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a navy A-line midi skirt with simple waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726085,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_summer_crew_tee",
+      "rig": "male_toned",
+      "category": "summer",
+      "part": "shirt_short",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_summer_crew_tee/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_summer_crew_tee/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a plain blue crew-neck cotton t-shirt, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726102,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_summer_polo",
+      "rig": "male_toned",
+      "category": "summer",
+      "part": "shirt_short",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_summer_polo/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_summer_polo/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a blue short sleeve polo shirt with a soft collar and two buttons, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726119,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_summer_linen_blouse",
+      "rig": "male_toned",
+      "category": "summer",
+      "part": "shirt_short",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_summer_linen_blouse/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_summer_linen_blouse/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a loose blue short sleeve linen blouse with small buttons, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726136,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_summer_cotton_shorts",
+      "rig": "male_toned",
+      "category": "summer",
+      "part": "shorts",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_summer_cotton_shorts/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_summer_cotton_shorts/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing dark navy cotton shorts ending above knees with fabric waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726153,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_summer_linen_trousers",
+      "rig": "male_toned",
+      "category": "summer",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_summer_linen_trousers/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_summer_linen_trousers/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing navy straight linen trousers, trouser hems above bare feet, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726170,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_summer_midi_skirt",
+      "rig": "male_toned",
+      "category": "summer",
+      "part": "shorts",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_summer_midi_skirt/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_summer_midi_skirt/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing dark navy relaxed summer shorts, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726187,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_spring_cotton_longsleeve",
+      "rig": "female_average",
+      "category": "spring",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_spring_cotton_longsleeve/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_spring_cotton_longsleeve/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a plain blue long sleeve cotton shirt with ribbed cuffs, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726204,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_spring_cardigan",
+      "rig": "female_average",
+      "category": "spring",
+      "part": "jacket",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_spring_cardigan/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_spring_cardigan/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed blue knitted cardigan with simple buttons, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726221,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_spring_bomber",
+      "rig": "female_average",
+      "category": "spring",
+      "part": "jacket",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/female_spring_bomber/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_spring_bomber/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed green lightweight bomber jacket with ribbed collar, cuffs and zipper, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726238,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_spring_straight_jeans",
+      "rig": "female_average",
+      "category": "spring",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_spring_straight_jeans/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_spring_straight_jeans/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing dark navy straight jeans, five pockets, trouser hems above bare feet, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726255,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_spring_chinos",
+      "rig": "female_average",
+      "category": "spring",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_spring_chinos/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_spring_chinos/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing navy straight chino trousers with cloth waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726272,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_spring_shirt_dress",
+      "rig": "female_average",
+      "category": "spring",
+      "part": "dress",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_spring_shirt_dress/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_spring_shirt_dress/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a blue button-front shirt dress with long sleeves and a modest knee-length hem, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726289,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_spring_cotton_longsleeve",
+      "rig": "male_toned",
+      "category": "spring",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_spring_cotton_longsleeve/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_spring_cotton_longsleeve/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a plain blue long sleeve cotton shirt with ribbed cuffs, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726306,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_spring_cardigan",
+      "rig": "male_toned",
+      "category": "spring",
+      "part": "jacket",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_spring_cardigan/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_spring_cardigan/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed blue knitted cardigan with simple buttons, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726323,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_spring_bomber",
+      "rig": "male_toned",
+      "category": "spring",
+      "part": "jacket",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/male_spring_bomber/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_spring_bomber/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed green lightweight bomber jacket with ribbed collar, cuffs and zipper, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726340,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_spring_straight_jeans",
+      "rig": "male_toned",
+      "category": "spring",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_spring_straight_jeans/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_spring_straight_jeans/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing dark navy straight jeans, five pockets, trouser hems above bare feet, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726357,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_spring_chinos",
+      "rig": "male_toned",
+      "category": "spring",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_spring_chinos/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_spring_chinos/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing navy straight chino trousers with cloth waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726374,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_spring_shirt_dress",
+      "rig": "male_toned",
+      "category": "spring",
+      "part": "jacket",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_spring_shirt_dress/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_spring_shirt_dress/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed blue casual zip jacket with a simple collar and long sleeves, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726391,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_autumn_rib_sweater",
+      "rig": "female_average",
+      "category": "autumn",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_autumn_rib_sweater/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_autumn_rib_sweater/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a blue rib-knit sweater with long sleeves and a round neck, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726408,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_autumn_turtleneck",
+      "rig": "female_average",
+      "category": "autumn",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_autumn_turtleneck/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_autumn_turtleneck/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a blue wool turtleneck with long sleeves, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726425,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_autumn_field_jacket",
+      "rig": "female_average",
+      "category": "autumn",
+      "part": "jacket",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/female_autumn_field_jacket/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_autumn_field_jacket/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed green field jacket with patch pockets and high collar, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726442,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_autumn_corduroy",
+      "rig": "female_average",
+      "category": "autumn",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_autumn_corduroy/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_autumn_corduroy/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing navy corduroy trousers, straight legs, trouser hems above bare feet, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726459,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_autumn_denim",
+      "rig": "female_average",
+      "category": "autumn",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_autumn_denim/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_autumn_denim/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing dark navy relaxed denim trousers with seams and a plain waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726476,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_autumn_knit_dress",
+      "rig": "female_average",
+      "category": "autumn",
+      "part": "dress",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_autumn_knit_dress/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_autumn_knit_dress/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a blue long sleeve knitted dress with a modest knee-length hem, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726493,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_autumn_rib_sweater",
+      "rig": "male_toned",
+      "category": "autumn",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_autumn_rib_sweater/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_autumn_rib_sweater/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a blue rib-knit sweater with long sleeves and a round neck, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726510,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_autumn_turtleneck",
+      "rig": "male_toned",
+      "category": "autumn",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_autumn_turtleneck/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_autumn_turtleneck/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a blue wool turtleneck with long sleeves, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726527,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_autumn_field_jacket",
+      "rig": "male_toned",
+      "category": "autumn",
+      "part": "jacket",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/male_autumn_field_jacket/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_autumn_field_jacket/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed green field jacket with patch pockets and high collar, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726544,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_autumn_corduroy",
+      "rig": "male_toned",
+      "category": "autumn",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_autumn_corduroy/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_autumn_corduroy/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing navy corduroy trousers, straight legs, trouser hems above bare feet, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726561,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_autumn_denim",
+      "rig": "male_toned",
+      "category": "autumn",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_autumn_denim/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_autumn_denim/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing dark navy relaxed denim trousers with seams and a plain waistband, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726578,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_autumn_knit_dress",
+      "rig": "male_toned",
+      "category": "autumn",
+      "part": "jacket",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_autumn_knit_dress/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_autumn_knit_dress/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed blue casual zip jacket with a simple collar and long sleeves, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726595,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_winter_wool_sweater",
+      "rig": "female_average",
+      "category": "winter",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_winter_wool_sweater/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_winter_wool_sweater/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a thick blue cable-knit wool sweater with long sleeves and warm cuffs, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726612,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_winter_fleece",
+      "rig": "female_average",
+      "category": "winter",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/female_winter_fleece/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_winter_fleece/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed blue fleece pullover with a short zipper and high collar, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726629,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_winter_puffer",
+      "rig": "female_average",
+      "category": "winter",
+      "part": "jacket",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/female_winter_puffer/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_winter_puffer/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed green quilted winter puffer jacket with long sleeves, thick cuffs, high collar and horizontal padded sections, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726646,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_winter_parka",
+      "rig": "female_average",
+      "category": "winter",
+      "part": "coat",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/female_winter_parka/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_winter_parka/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed green insulated winter parka, hood down, covered chest, long sleeves, warm cuffs, hem above knees, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726663,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "female_winter_warm_trousers",
+      "rig": "female_average",
+      "category": "winter",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/female_winter_warm_trousers/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_winter_warm_trousers/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing dark navy insulated winter trousers with straight legs and warm fabric, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726680,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "female_winter_wool_coat",
+      "rig": "female_average",
+      "category": "winter",
+      "part": "coat",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/female_winter_wool_coat/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/female_winter_wool_coat/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1girl, original adult woman, age 28, wearing a closed green winter wool coat with lapels, covered chest, long sleeves, hem above knees, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726697,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_winter_wool_sweater",
+      "rig": "male_toned",
+      "category": "winter",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_winter_wool_sweater/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_winter_wool_sweater/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a thick blue cable-knit wool sweater with long sleeves and warm cuffs, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726714,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_winter_fleece",
+      "rig": "male_toned",
+      "category": "winter",
+      "part": "shirt_long",
+      "color": "#617f9c",
+      "image": "characters_v2/guides/seasonal_v1/male_winter_fleece/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_winter_fleece/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed blue fleece pullover with a short zipper and high collar, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726731,
+      "extraction": {
+        "hue": 202,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_winter_puffer",
+      "rig": "male_toned",
+      "category": "winter",
+      "part": "jacket",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/male_winter_puffer/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_winter_puffer/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed green quilted winter puffer jacket with long sleeves, thick cuffs, high collar and horizontal padded sections, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726748,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_winter_parka",
+      "rig": "male_toned",
+      "category": "winter",
+      "part": "coat",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/male_winter_parka/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_winter_parka/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed green insulated winter parka, hood down, covered chest, long sleeves, warm cuffs, hem above knees, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726765,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    },
+    {
+      "id": "male_winter_warm_trousers",
+      "rig": "male_toned",
+      "category": "winter",
+      "part": "trousers",
+      "color": "#394b67",
+      "image": "characters_v2/guides/seasonal_v1/male_winter_warm_trousers/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_winter_warm_trousers/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing dark navy insulated winter trousers with straight legs and warm fabric, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726782,
+      "extraction": {
+        "hue": 218,
+        "tolerance": 42,
+        "roi": [
+          160,
+          580,
+          710,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "male_winter_wool_coat",
+      "rig": "male_toned",
+      "category": "winter",
+      "part": "coat",
+      "color": "#687f5a",
+      "image": "characters_v2/guides/seasonal_v1/male_winter_wool_coat/reference.png",
+      "mask": "characters_v2/guides/seasonal_v1/male_winter_wool_coat/mask.png",
+      "prompt": "masterpiece, best quality, eincanime, anime screencap, thin lineart, matte colors, simple cel shading, 1boy, male focus, original adult man, age 28, wearing a closed green winter wool coat with lapels, covered chest, long sleeves, hem above knees, neat cloth folds, neutral relaxed standing pose, front view, arms at sides, full body, gray background, flat lighting",
+      "seed": 726799,
+      "extraction": {
+        "hue": 88,
+        "tolerance": 42,
+        "roi": [
+          160,
+          310,
+          710,
+          1420
+        ]
+      }
+    }
+  ]
+}

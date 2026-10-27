@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Ai\\ComfyUI-EroInc\\output\\body-drafts-v3\\female_curvy.png",
+  "source_sha256": "a0b892574a9364aeed46f6d4e9423f681672caf7ca3039e51a0d60ce59dc007d",
+  "operation": "body alpha slice and uniform registration; no anatomical deformation",
+  "source_cut_y": 240,
+  "uniform_scale": 0.9910802775024777,
+  "canvas": [
+    720,
+    1280
+  ],
+  "neck_attach": [
+    358.8,
+    245
+  ],
+  "feet_baseline_y": 1244,
+  "alpha_bounds": [
+    196,
+    245,
+    521,
+    1245
+  ],
+  "head_included": false,
+  "clothes_included": false,
+  "status": "body layer candidate; separate heads, fitted clothing and runtime review remain"
+}

@@ -1,0 +1,31 @@
+{
+  "settings": {"xp_base": 80, "xp_growth": 40},
+  "difficulties": {
+    "easy": {"xp":1.1,"need_decay":0.75,"resource_cost":0.8,"relation_gain":1.25,"dialogue_fatigue":0.9,"interaction_bonus":0.12,"injury_damage":0.0,"injury_recovery":2.0,"initial_points":40,"satiety_enabled":false,"rent_enabled":false,"education_failure":false,"starvation_attrition":false,"exhaustion_enabled":false,"eviction_enabled":false,"combat_accuracy":0.2,"enemy_accuracy":-0.08,"npc_tactics":0.15},
+    "normal": {"xp":1.0,"need_decay":1.0,"resource_cost":1.0,"relation_gain":1.0,"dialogue_fatigue":1.0,"interaction_bonus":0.0,"injury_damage":0.5,"injury_recovery":2.0,"initial_points":30,"satiety_enabled":true,"rent_enabled":true,"education_failure":true,"starvation_attrition":false,"exhaustion_enabled":false,"eviction_enabled":false,"combat_accuracy":0.0,"enemy_accuracy":0.0,"npc_tactics":0.5},
+    "hard": {"xp":0.9,"need_decay":1.25,"resource_cost":1.25,"relation_gain":0.8,"dialogue_fatigue":1.1,"interaction_bonus":-0.12,"injury_damage":1.0,"injury_recovery":1.0,"initial_points":20,"satiety_enabled":true,"rent_enabled":true,"education_failure":true,"starvation_attrition":true,"exhaustion_enabled":true,"eviction_enabled":true,"combat_accuracy":0.0,"enemy_accuracy":0.06,"npc_tactics":0.85},
+    "custom": {"xp":1.0,"need_decay":1.0,"resource_cost":1.0,"relation_gain":1.0,"dialogue_fatigue":1.0,"interaction_bonus":0.0,"injury_damage":0.5,"injury_recovery":2.0,"initial_points":30,"satiety_enabled":true,"rent_enabled":true,"education_failure":true,"starvation_attrition":false,"exhaustion_enabled":false,"eviction_enabled":false,"combat_accuracy":0.0,"enemy_accuracy":0.0,"npc_tactics":0.5}
+  },
+  "balance_rules": {
+    "progression": {"attribute_base":100,"attribute_linear":12,"attribute_quadratic":0.2,"late_level_after":8,"late_level_growth":3},
+    "social": {"charisma_cap":0.28,"charisma_scale":30,"memory_bias_cap":0.12,"fear_penalty":0.003,"gift_reward_limit":3,"date_cooldown":1440,"date_energy":6},
+    "career": {"pay_growth":0.15,"pay_cap":2.5,"skill_scale":200,"stream_daily_minutes":360,"audience_followers_scale":4,"stream_energy_per_minute":0.12}
+  },
+  "date_activities": {
+    "coffee": {"minutes":60,"cost":15,"energy":6,"mood":8,"success":{"affinity":8,"trust":3,"attraction":5},"goals":["career","community"]},
+    "walk": {"minutes":45,"cost":0,"energy":8,"mood":6,"locations":["global_map"],"weather":["clear","cloudy"],"success":{"affinity":5,"trust":4,"attraction":3},"goals":["community"]},
+    "cinema": {"minutes":90,"cost":30,"energy":3,"mood":12,"locations":["global_map"],"success":{"affinity":10,"trust":2,"attraction":6},"goals":["creativity"]}
+  },
+  "preference_sets": {
+    "reader": {"categories":["books"]},
+    "foodie": {"categories":["food","ingredient"]},
+    "practical": {"categories":["equipment","clothing"]},
+    "eclectic": {"categories":["books","food","clothing"]}
+  },
+  "interactions": {
+    "listen": {"minutes":10,"chance":0.8,"success":{"trust":4,"affinity":1},"failure":{},"mood":2,"branches":[{"id":"stressed","when":{"path":"npc.needs.mood","op":"lt","value":40},"chance_bias":0.08,"success":{"trust":6,"affinity":2},"text_token":"conversation.listen.support"},{"id":"reserved","when":{"path":"npc.personality","value":"reserved"},"chance_bias":0.05,"text_token":"conversation.listen.reserved"}]},
+    "share_interest": {"minutes":15,"chance":0.6,"success":{"affinity":5,"trust":2},"failure":{"affinity":-1},"mood":3,"branches":[{"id":"creative","when":{"path":"npc.biography.goal","value":"creativity"},"chance_bias":0.15,"success":{"affinity":7,"trust":3},"text_token":"conversation.interest.creative"},{"id":"familiar","when":{"path":"relation.trust","op":"gte","value":20},"chance_bias":0.1,"text_token":"conversation.interest.familiar"}]},
+    "flirt": {"minutes":10,"chance":0.45,"tags":["romance"],"requires_attraction":true,"success":{"attraction":4,"affinity":2},"failure":{"affinity":-1},"branches":[{"id":"fear","when":{"path":"relation.fear","op":"gte","value":30},"chance_bias":-0.3,"failure":{"trust":-2},"text_token":"conversation.flirt.uncomfortable"},{"id":"mutual_interest","when":{"all":[{"path":"relation.trust","op":"gte","value":15},{"path":"relation.attraction","op":"gte","value":10}]},"chance_bias":0.15,"text_token":"conversation.flirt.mutual"}]},
+    "set_boundary": {"minutes":5,"chance":0.85,"success":{"trust":2,"fear":-5},"failure":{},"branches":[{"id":"distrust","when":{"path":"relation.trust","op":"lt","value":0},"chance_bias":-0.15,"text_token":"conversation.boundary.cautious"}]}
+  }
+}

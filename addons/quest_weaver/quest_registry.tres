@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuestRegistry" format=3]
+
+[ext_resource type="Script" path="res://addons/quest_weaver/core/quest_registry.gd" id="1_3vag5"]
+
+[resource]
+script = ExtResource("1_3vag5")
+quest_path_map = {
+"warehouse_enter": "res://quests/warehouse_enter.quest"
+}
+metadata/_custom_type_script = "res://addons/quest_weaver/core/quest_registry.gd"

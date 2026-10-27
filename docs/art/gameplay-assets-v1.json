@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-18",
+  "generator": "OpenAI ImageGen tool",
+  "local_dasiwa_checkpoint_executed": false,
+  "assets": [
+    {
+      "path": "res://assets/textures/backgrounds/campus_v1/campus-atlas.png",
+      "dimensions": [1672,941],
+      "purpose": "Painted university hall, corridor, classroom and courtyard; four AtlasTexture regions",
+      "brief": "Cohesive contemporary visual novel campus; red brick and warm stone, daylight, cool shadows, restrained warm lights, no UI or readable text",
+      "status": "Working backgrounds in gameplay; replace with approved geographic references later"
+    },
+    {
+      "path": "res://assets/textures/portraits/world_examples/residents-atlas.png",
+      "dimensions": [1672,941],
+      "purpose": "Three adult archetype examples in world setup: human woman, semi-furry cat man with human face, fully furry fox woman",
+      "brief": "Detailed anime visual novel illustration, adult proportions, fully clothed urban outfits, clean lineart, soft shading, expressive eyes, consistent cool city light and warm rim light, no text",
+      "status": "Examples of morphology, not individual portraits assigned to generated residents"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@path": "res://addons/dialogic/Resources/character.gd",
+  "display_name": "Ректор",
+  "portraits": {
+    "neutral": {
+      "scene": "res://scenes/portraits/modular_character_portrait.tscn",
+      "scale": 1,
+      "offset": Vector2(0,0)
+    },
+    "smile": {
+      "scene": "res://scenes/portraits/modular_character_portrait.tscn",
+      "scale": 1,
+      "offset": Vector2(0,0)
+    },
+    "concern": {
+      "scene": "res://scenes/portraits/modular_character_portrait.tscn",
+      "scale": 1,
+      "offset": Vector2(0,0)
+    },
+    "angry": {
+      "scene": "res://scenes/portraits/modular_character_portrait.tscn",
+      "scale": 1,
+      "offset": Vector2(0,0)
+    },
+    "attentive": {
+      "scene": "res://scenes/portraits/modular_character_portrait.tscn",
+      "scale": 1,
+      "offset": Vector2(0,0)
+    }
+  },
+  "nicknames": [],
+  "custom_info": {},
+  "default_portrait": "neutral"
+}

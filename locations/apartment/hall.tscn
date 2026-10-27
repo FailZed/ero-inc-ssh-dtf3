@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/locations/apartment/hallway_16x9.png" id="1_bg"]
+[ext_resource type="Script" path="res://scripts/locations/door_area.gd" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://c18yeu5hisq11" path="res://scenes/ui/HubUI.tscn" id="3_hub_ui"]
+[ext_resource type="Script" path="res://scripts/locations/location_scene.gd" id="4_location_scene"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_street"]
+size = Vector2(300, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bathroom"]
+size = Vector2(170, 560)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bedroom"]
+size = Vector2(300, 460)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kitchen"]
+size = Vector2(300, 650)
+
+[node name="ApartmentHall" type="Node2D"]
+script = ExtResource("4_location_scene")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_bg")
+
+[node name="StreetExitDoor" type="Area2D" parent="."]
+position = Vector2(170, 560)
+script = ExtResource("2_door")
+target_location_id = "global_map"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StreetExitDoor"]
+shape = SubResource("RectangleShape2D_street")
+
+[node name="BathroomDoor" type="Area2D" parent="."]
+position = Vector2(535, 505)
+script = ExtResource("2_door")
+target_location_id = "bathroom"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BathroomDoor"]
+shape = SubResource("RectangleShape2D_bathroom")
+
+[node name="BedroomDoor" type="Area2D" parent="."]
+position = Vector2(970, 530)
+script = ExtResource("2_door")
+target_location_id = "bedroom"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BedroomDoor"]
+shape = SubResource("RectangleShape2D_bedroom")
+
+[node name="KitchenDoor" type="Area2D" parent="."]
+position = Vector2(1325, 520)
+script = ExtResource("2_door")
+target_location_id = "kitchen"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KitchenDoor"]
+shape = SubResource("RectangleShape2D_kitchen")
+
+[node name="Hud" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="HubUI" parent="Hud" instance=ExtResource("3_hub_ui")]
+open_on_ready = true

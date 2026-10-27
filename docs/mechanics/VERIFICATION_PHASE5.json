@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-18",
+  "phase": 5,
+  "engine": "Godot 4.7.2 stable official ed1daf0bf",
+  "services": 23,
+  "main_game_integration_enabled": true,
+  "save_slot_implementation_changes": false,
+  "user_save_files_used_by_tests": false,
+  "session_only_changed_function": "apply_character_profile_v2",
+  "state_storage": "Existing Dialogic World dictionary: snapshot, setup, phase, story flags and log",
+  "tests": {
+    "gameplay": {
+      "checks": 136,
+      "failed": 0,
+      "failures": []
+    },
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 31,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 9697,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 31,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 9665,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 31,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 9654,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 31,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 6818,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 31,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 9659,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ],
+    "mechanics_with_autoload": {
+      "checks": 718,
+      "failed": 0,
+      "failures": []
+    },
+    "mechanics_exported_pck": {
+      "checks": 707,
+      "failed": 0,
+      "failures": []
+    }
+  },
+  "visual_verification": {
+    "renderer": "Direct3D 12, RX 7800 XT",
+    "screens_1366x768": [
+      "setup",
+      "difficulty",
+      "mirror",
+      "curriculum",
+      "guided",
+      "campus",
+      "resident",
+      "world",
+      "map"
+    ],
+    "additional": [
+      "setup 1920x1080",
+      "resident 2560x1080",
+      "world 1280x720"
+    ],
+    "copied_screens": "docs/gameplay/screens",
+    "screens_are": "Native Control windows from the in-memory preview scene, not concept mockups"
+  },
+  "protected_sources": [
+    {
+      "path": "scripts/managers/game_session.gd",
+      "sha256": "E0D8BD72E69C4E75F9F472E04C85F5E771DDD08F31E04C94188DFD959D58B199",
+      "byte_identical_to_phase_start": false
+    },
+    {
+      "path": "scripts/ui/save_slot_data.gd",
+      "sha256": "357C140F7D67D43569748F3A2BCC98B73186657AAFA28E484BB74BA4AA8D9F50",
+      "byte_identical_to_phase_start": true
+    },
+    {
+      "path": "scripts/ui/save_slot_card.gd",
+      "sha256": "118FDDB76A50C8E9A434EFBD201CF4AEDC0BC6DA21DC787DA0461D0260436D06",
+      "byte_identical_to_phase_start": true
+    },
+    {
+      "path": "scripts/ui/load_menu.gd",
+      "sha256": "20F2801174FE3666CED7D4667C6957238E34D86D7C44DB5B5FEECAF9562720A5",
+      "byte_identical_to_phase_start": true
+    },
+    {
+      "path": "addons/dialogic/Modules/Save/subsystem_save.gd",
+      "sha256": "D601CF37FBF8D835A497EFDE1EA52DAB4853B0B2C5771C3E70229C96225B6EEF",
+      "byte_identical_to_phase_start": true
+    }
+  ],
+  "scope_limits": [
+    "First chapter is a condensed adaptation, not a full literary import",
+    "No approved geographic city map yet",
+    "Local DaSiWa checkpoint was not executed; local NPC portrait manifest is empty",
+    "Existing layered protagonist art and semantic NPC placeholders remain",
+    "All content branches of School are not claimed complete",
+    "No actual user save/load round trip or Android APK verification"
+  ],
+  "known_exit_messages": [
+    "Main project: 63 ObjectDB instances and 27 addon resources at shutdown; preexisting",
+    "Editor import: 4 ObjectDB instances and 1 resource at shutdown"
+  ],
+  "sources": [
+    {
+      "path": "project.godot",
+      "sha256": "4D8ECE910A09526039578D673BE3C5788C577333CA1FB05A19FE4AFF670DA2A4"
+    },
+    {
+      "path": "export_presets.cfg",
+      "sha256": "ED53F852D28B979CC395E4881F73A68D39DC2AECF6C19E1B909E06944738D273"
+    },
+    {
+      "path": "scripts/core/game.gd",
+      "sha256": "19479D9B4643BAE063551B9EA20C82E4C948A5B3C4F5A1A11DC90ECDEA318686"
+    },
+    {
+      "path": "scripts/ui/character_creation_modal.gd",
+      "sha256": "2C090AB3EF439824ED70207CCBFD99C480081DB3C38271C3C8CB126C096B35BF"
+    },
+    {
+      "path": "scripts/portraits/npc_portrait_library.gd",
+      "sha256": "C492D2AC49A46A5C955E2F2C7DE035CD6FE162F2023FB8317127412052B50ECB"
+    },
+    {
+      "path": "scripts/portraits/protagonist_dialogic_bridge.gd",
+      "sha256": "9B77FEB8795129D29B5125912E63CE4509D78B6A5B120967C099880C78538A05"
+    },
+    {
+      "path": "scripts/mechanics/world.gd",
+      "sha256": "84B65076280A051483BD031CBE04A906232D93744A410607351B5DED94AA9902"
+    },
+    {
+      "path": "scripts/mechanics/encounters.gd",
+      "sha256": "08BB2DD808CACA38B23F0389EECD74036C646C65E708861C4CA6074E871EB6A8"
+    },
+    {
+      "path": "scripts/mechanics/simulation.gd",
+      "sha256": "A18FCB39922D79FC6D7B9CE785FAFD5BD882511BD950A38F16A17CC6F75D9699"
+    },
+    {
+      "path": "addons/dialogic/Core/DialogicGameHandler.gd",
+      "sha256": "D7D0869B7D9549FE9362D9E9506D72FF19F23C564B48C7E3DA06316099098E86"
+    },
+    {
+      "path": "addons/dialogic/Modules/Character/subsystem_portraits.gd",
+      "sha256": "801E0399C69FD2DEE40631426940B6F5D6BAC22603F22066FBF268C998E5F856"
+    },
+    {
+      "path": "TimeLine/chapter_one.dtl",
+      "sha256": "1D64D2891CD3F222FB6211E5CF5628B912CAA814B3F13D8282766E2DE09A91B3"
+    },
+    {
+      "path": "data/art/npc_portraits.json",
+      "sha256": "44B9CA58D5D971F867CDEF8B376E421C3D51C5082C0CA9DF3FEE8AF6E3EBCF57"
+    },
+    {
+      "path": "scripts/gameplay/curriculum.gd",
+      "sha256": "7353DCFFAF225E3DD65DE97892D41049E8C64F19FB9F169D70E80800AD4ED19B"
+    },
+    {
+      "path": "scripts/gameplay/gameplay.gd",
+      "sha256": "5F4CFAB98C545262FE91F8559F602A440C5492CEFE8B146AED9A6EF3C12F8F85"
+    },
+    {
+      "path": "scripts/gameplay/guided_story.gd",
+      "sha256": "54C8FC995D4A825F95528869E06584991D3DA2B3DF58BA83E6A787EF6D3066E0"
+    },
+    {
+      "path": "scripts/gameplay/presentation.gd",
+      "sha256": "673B903BAB61F75BACED7EDA932BD460ABB01EC6377BE9889987C46AEDB1FE94"
+    },
+    {
+      "path": "scripts/ui/gameplay/curriculum_window.gd",
+      "sha256": "C89279BFBFBB4F254BE407D983CE4EBC6553D69EB354501684F9976EC8430201"
+    },
+    {
+      "path": "scripts/ui/gameplay/gameplay_shell.gd",
+      "sha256": "9B45EA01D88ADEC74A511ED4BFAC7B9AB16863C380C330293E7AF0F0555772ED"
+    },
+    {
+      "path": "scripts/ui/gameplay/guided_exploration.gd",
+      "sha256": "5C89FA3776AFAE5D2DAE1C7E388890A0E67CEEDCF7626BED706CFF3B1BD930C2"
+    },
+    {
+      "path": "scripts/ui/gameplay/layered_preview.gd",
+      "sha256": "B4B4C34AD8E8876ECAD65604E56AAF7662C45B4398B1D34D4EFCACC5212913F1"
+    },
+    {
+      "path": "scripts/ui/gameplay/mini_game.gd",
+      "sha256": "84B11509C8719564C75677A5FF6A879C2848A2528E2FBD62286CA6EF98CC5E21"
+    },
+    {
+      "path": "scripts/ui/gameplay/preview.gd",
+      "sha256": "3B274F281685C2FD307F5DE66EAFCD050064ABD5B5D7BC2713B3010B4EE8C25D"
+    },
+    {
+      "path": "scripts/ui/gameplay/resident_preview.gd",
+      "sha256": "5BCB9CE2753552491B19F22A19653062B98828B6C6B517507398817B7C746ECA"
+    },
+    {
+      "path": "scripts/ui/gameplay/room_plan.gd",
+      "sha256": "FE6B799FF1776B9FF8F14B7512FC3F18AF1DBC5527240FAB8A1150D00B6E7D0B"
+    },
+    {
+      "path": "scripts/ui/gameplay/ui_factory.gd",
+      "sha256": "57C021B38BB6E2595A0CF301BD8F0944A3EE871811ED55EC631A0D40F35E6D84"
+    },
+    {
+      "path": "scripts/ui/gameplay/world_setup.gd",
+      "sha256": "270090C21634B8DB59DDAC42E2D901E4DB7A0FEB338AAAADADE11A9F4CCA82ED"
+    }
+  ]
+}

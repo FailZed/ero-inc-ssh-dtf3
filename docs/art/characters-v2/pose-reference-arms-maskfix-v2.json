@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "scope": "Original adult non-graphic reference poses. Entire changing regions redrawn by the model; no rotated or bent existing body pixels. Protected body and neutral pelvic surface stay unchanged. Not runtime registered.",
+  "output_prefix": "characters_v2/pose_reference_arms_maskfix-v2",
+  "steps": 16,
+  "cfg": 6,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "denoise": 1.0,
+  "preserve_input_latent": false,
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "controlnet": {
+    "name": "xinsir-openpose-sdxl.safetensors",
+    "sha256": "b8524e557a7df60d081f5d4a0eb109967d107df217943bf88c2d99b9ebcc06c5",
+    "strength": 0.85,
+    "start_percent": 0.0,
+    "end_percent": 0.9
+  },
+  "negative": "clothes, shirt, trousers, underwear, lingerie, swimsuit, fabric, genitals, penis, testicles, vulva, labia, nipples, areola, pubic hair, erotic, sexual, seductive pose, child, teen, school uniform, chibi, 3d, photorealistic, plastic, glossy skin, thick black ink, crosshatching, text, logo, watermark, extra limbs, extra fingers, fused hands, missing hands, malformed feet, cropped head, cropped feet, multiple people, duplicate body, busy background",
+  "items": [
+    {
+      "id": "male_arms_folded",
+      "rig": "male_canonical",
+      "sex": "male",
+      "state": "folded",
+      "title": "Руки скрещены",
+      "category": "arms",
+      "image": "characters_v2/pose_reference_arms_maskfix-v2/male_arms_folded/reference.png",
+      "mask": "characters_v2/pose_reference_arms_maskfix-v2/male_arms_folded/mask.png",
+      "control": "characters_v2/pose_reference_arms_maskfix-v2/male_arms_folded/control.png",
+      "prompt": "eincanime, 1boy, male focus, mature adult man age 35, masculine face, short brown hair, flat male chest, original anime illustration, same adult character, same body proportions and skin palette, delicate thin brown lineart, matte flat colors, controlled peach cel shading, natural complete hands and joints, arms folded loosely across mid torso, natural crossed forearms, redraw changed anatomy naturally, unclothed neutral artistic figure study, bare shoulders, bare chest, bare arms and legs, plain light gray backdrop",
+      "negative": "child, teen, clothes, bra, underwear, jacket, coat, shirt, trousers, sleeves, skirt, fabric, shoes, socks, text, watermark, logo, sticker, emoji, symbols, toy, miniature, inset, censor bar, mosaic, distorted anatomy, extra limbs, extra fingers, missing fingers, cut wrist, disconnected arm, long neck, 3d, glossy skin, photorealistic",
+      "seed": 2026111000,
+      "denoise": 0.9,
+      "preserve_input_latent": false,
+      "protected_rgba": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\pose_reference_arms_maskfix-v2\\male_arms_folded\\protected-full.png",
+      "protected_sha256": "656f61639cec7c74288cfd8be138910168e00dba1cf82703eda2f16343c01765",
+      "edit_mask_full": "E:\\Ai\\ComfyUI-EroInc\\input\\characters_v2\\pose_reference_arms_maskfix-v2\\male_arms_folded\\edit-mask-full.png",
+      "edit_mask_sha256": "8a06be6c387443d35da5227e6c4aa290e8b5f9537966dbcb4e7b6574b4027c9e",
+      "crop_box": [
+        0,
+        0,
+        1472,
+        1024
+      ],
+      "source_basis_record": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v2\\pose_selected_v3\\processed\\male_arms_rest\\record.json",
+      "region_redraw_not_deformation": true,
+      "mask_validation": {
+        "method": "entire upper body, no old head-slice subtraction",
+        "transition_y": 270,
+        "bottom_y": 938,
+        "coverage": [
+          {
+            "side": "screen_left",
+            "old_outer_silhouette_pixels": 39558,
+            "uncovered_pixels": 0
+          },
+          {
+            "side": "screen_right",
+            "old_outer_silhouette_pixels": 38425,
+            "uncovered_pixels": 0
+          }
+        ]
+      },
+      "foreground_policy": "whole_foreground_no_material_deletion"
+    }
+  ],
+  "encode_individually": true
+}

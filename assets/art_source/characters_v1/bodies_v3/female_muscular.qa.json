@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Ai\\ComfyUI-EroInc\\output\\body-drafts-v3\\female_muscular.png",
+  "source_sha256": "853bcdf9a32f54581f55c645481d74ce2acdb95d422563368dbaa1ec94c24366",
+  "operation": "body alpha slice and uniform registration; no anatomical deformation",
+  "source_cut_y": 240,
+  "uniform_scale": 0.9784735812133072,
+  "canvas": [
+    720,
+    1280
+  ],
+  "neck_attach": [
+    354.87,
+    245
+  ],
+  "feet_baseline_y": 1244,
+  "alpha_bounds": [
+    195,
+    245,
+    528,
+    1245
+  ],
+  "head_included": false,
+  "clothes_included": false,
+  "status": "body layer candidate; separate heads, fitted clothing and runtime review remain"
+}

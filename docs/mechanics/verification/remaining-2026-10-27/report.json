@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-27",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "main_schema": 4,
+  "scope": "Family continuation, abstract digital gameplay, local collection viewer and original catalog expansion; intimate scenes excluded by user instruction.",
+  "gameplay": {
+    "checks": 522,
+    "failed": 0,
+    "failures": []
+  },
+  "systems": {
+    "atomic_rejection": true,
+    "services": [
+      "character",
+      "inventory",
+      "world",
+      "economy",
+      "housing",
+      "preferences",
+      "social",
+      "organizations",
+      "lifecycle",
+      "encounters",
+      "actions",
+      "events",
+      "health",
+      "combat",
+      "careers",
+      "security",
+      "social_rules",
+      "institutions",
+      "interior",
+      "activities",
+      "appearance",
+      "population",
+      "npc_behavior",
+      "npc_personalities",
+      "npc_agency",
+      "npc_relationships",
+      "npc_dialogue",
+      "family",
+      "digital",
+      "collections",
+      "needs"
+    ]
+  },
+  "new_main_ui": {
+    "checks": 17,
+    "main_ui": true
+  },
+  "standalone_pack": {
+    "checks": 1828,
+    "failed": 0,
+    "failures": []
+  },
+  "new_snapshot_process": [
+    {
+      "mode": "write",
+      "ok": true
+    },
+    {
+      "mode": "read",
+      "ok": true
+    }
+  ],
+  "existing_snapshot_process": [
+    {
+      "mode": "write",
+      "ok": true
+    },
+    {
+      "mode": "read",
+      "ok": true
+    }
+  ],
+  "story_flows": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 12399,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11333,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11231,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 7811,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 11219,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "catalog_counts": {
+    "items": 37,
+    "recipes": 9,
+    "perks": 18,
+    "contracts": 10,
+    "projects": 4,
+    "assets": 4,
+    "events": 5,
+    "achievements": 4,
+    "digital_operations": 6,
+    "gallery_entries": 5
+  },
+  "visual_review": {
+    "renderer": "Native Godot OpenGL compatibility",
+    "size": [
+      1366,
+      768
+    ],
+    "audio_driver": "Dummy",
+    "controlled_fixture": true,
+    "user_save": false,
+    "images": [
+      "family.png",
+      "digital.png",
+      "collection.png",
+      "collection-open.png",
+      "menu-collection.png"
+    ],
+    "inspected": true
+  },
+  "previous_main_restore": {
+    "schema": 3,
+    "original_catalog_hash": "5ed87b56ee7777355a8156a97df4f43387dfb4022c4d5f1a561b42c27cec0157",
+    "reconstructed_catalog_hash": "5ed87b56ee7777355a8156a97df4f43387dfb4022c4d5f1a561b42c27cec0157",
+    "ok": true,
+    "fixture_only": true
+  },
+  "unchanged_scene_entry_owner": {
+    "file": "scripts/gameplay/gameplay.gd",
+    "byte_identical_to_before": true
+  },
+  "known_exit_diagnostics": {
+    "main_object_instances": 63,
+    "main_resources": 27,
+    "same_messages_in_standalone_pack": false
+  },
+  "remaining_limits": [
+    "No intimate scenes modified.",
+    "No exhaustive School narrative/content or numeric parity claim.",
+    "Family stages are isolated records; physical child navigation and age portraits are not implemented.",
+    "Fully supported visual wardrobes/morphologies and large authored story sets remain separate work.",
+    "No donor servers or subscription integrations were added."
+  ],
+  "artifacts": {
+    "gameplay.log": {
+      "sha256": "7f7610b4dcafb37674e2bb2f0dc7bffc3c7e1466d13df39cc445c1ece8ffec45",
+      "bytes": 1029
+    },
+    "mechanics-pack.log": {
+      "sha256": "fd26ee49d639d78e825100131cb8651e8d291117ccfde9c792359402c1c67963",
+      "bytes": 537
+    },
+    "remaining-snapshot-write.log": {
+      "sha256": "f9c1cbfda7dad604c2a5151ea2cf97a95b20ae39392856c5c9ea5c3d0eb2ed98",
+      "bytes": 380
+    },
+    "remaining-snapshot-read.log": {
+      "sha256": "3c9996e7ea785a5a1aa61b95907f82a5918ea03688e07266df5ff6dfea786961",
+      "bytes": 379
+    },
+    "snapshot-write.log": {
+      "sha256": "d50f128271246e61363a46c50ef7272412ec207cf73e5342a5e709960a3b5548",
+      "bytes": 378
+    },
+    "snapshot-read.log": {
+      "sha256": "cc9db4be94322f036c6dc077e54cf8a0e301aed6dc56de8b43d2e58775abb611",
+      "bytes": 377
+    },
+    "flow-0.log": {
+      "sha256": "4fa6bf19c42d649a4967ff16a88f098ca32b8f24a218b217011fdfaad430ac8f",
+      "bytes": 614
+    },
+    "flow-1.log": {
+      "sha256": "efb8a99d376933baf042d2cbe40526aded447f57a21b64fd3bda4c1aa3369ac7",
+      "bytes": 616
+    },
+    "flow-2.log": {
+      "sha256": "6c07b2e11885fffaa49b749ec0f3c04f0f9210b5749a98dd52b75da68acabade",
+      "bytes": 614
+    },
+    "flow-3.log": {
+      "sha256": "9eff30ce17c17e4cd1516e5f243bf426d7c911518ba9c57aba7e6bebfbeb24cc",
+      "bytes": 614
+    },
+    "flow-4.log": {
+      "sha256": "4999ea09b9284662c5a6694a6a9ccb7c628d74cc82079e15ed5d9202908e6733",
+      "bytes": 615
+    },
+    "collection-open.png": {
+      "sha256": "c977b02590dae2a32718deb2a075cf971c1526e2831b3599c8fee2ae29391740",
+      "bytes": 451475
+    },
+    "collection.png": {
+      "sha256": "022f194ed5351f5afe769a136939b38ae7a9776cd25d41cd9a295d9d2e97db20",
+      "bytes": 295106
+    },
+    "digital.png": {
+      "sha256": "7b49033176b0f477c80f93cefa9fce4502d32e7a4ac3c7d6fe1101a4b18032ba",
+      "bytes": 342147
+    },
+    "family.png": {
+      "sha256": "0741f8ffebbf969ccda17cea44f37c0cfd04a11cb7d9070557251e7368932df7",
+      "bytes": 318982
+    },
+    "menu-collection.png": {
+      "sha256": "86606144e075e9e7180f3cb68c52d54e1c33764fe67a566e484a47c1043631f5",
+      "bytes": 796050
+    }
+  },
+  "source_sha256": {
+    "tools/godot.ps1": "81c37bf90ae2b3a14fffbd970798ec1d1d0f8dd0279aec41bc7230b222cebd32",
+    "tools/test_mechanics.ps1": "f33b8803e77d7ccb77736bc3799926ee06263d10740342844a5320532b26033a",
+    "tools/test_gameplay.ps1": "db9fd9e525f1752f762baf2f143a747460a868b258e8dc38c877707350690790",
+    "tools/test_story_flow.ps1": "cf397dd7afbbb88b50712793ae85618b18e0edf2b51c497c1bc33b3c03e5f30f",
+    "tools/test_remaining_snapshot.ps1": "f395a6c90a7ae58c853cba88e41e11303bf7417285a3395ff6cbd046f6ca1114",
+    "scripts/gameplay/main_simulation.gd": "f447cb8368b6d485c5133551b13e20cac28b1311cfe753924046addf0df76181",
+    "scripts/gameplay/action_policy.gd": "ce20b15c4aefe78c90e692370be0068c45b5f608bd907240de7a99094ce2749c",
+    "scripts/gameplay/player_social_rules.gd": "e40df92f3cb5cb378e24ac6b3fd798edf320d7cacc9001fe123020e037933c69",
+    "scripts/gameplay/presentation.gd": "5611e0fdde15ad3e9b4d1d4eaf2352e6f787dd5375a3e4d78c8ab2e1d15df659",
+    "scripts/managers/game_session.gd": "d8026504ab6af1b65019cdbb88dfa20c991b1ac65cea4ccbc1f375e6dde1511a",
+    "scripts/ui/gameplay/gameplay_shell.gd": "526d7e613b1fd8430ab13df683eebf086249728118947c0111439c6808051345",
+    "scripts/ui/gameplay/family_panel.gd": "87d21d0382c4e58ff73b1e578bb0e75ad44c39111cd18c9072d18351856dd194",
+    "scripts/ui/gameplay/collection_view.gd": "f1e947659b342c4d77a2b0af829815f088e6faa34cece9fdd4ce0b9c37fe3810",
+    "scripts/ui/main_menu.gd": "a4bf55dbd29ac98f7175b7f3150ada63d8e1b836179cfbb2a5c266b901202c65",
+    "scripts/mechanics/extended_simulation.gd": "64f855463d982211fd0b49a299da97482be872ccbd381378c27c99345d394cae",
+    "scripts/mechanics/family.gd": "75b1cd36ee355daac8d3dd94b1d02b407518bb00461ec467f2ff92271beaa4ba",
+    "scripts/mechanics/family_lifecycle.gd": "e3e1b29823248b28e328dc7c98acc8bca9fe02bbb514415f81e71ae66e32ab8a",
+    "scripts/mechanics/digital.gd": "72b9d137c3e3facb22a8a0248d10f1281644ade1b1e61d9f2299ea650facb152",
+    "scripts/mechanics/collections.gd": "9afb777f6756be9124d8a5b93b95f9b4059d6d713df0a87b736e6c6c1ebf91c5",
+    "data/mechanics/family.json": "6451f067980fa6a49b2c28e57203fab31104c0ef81565d98a3257503843744f3",
+    "data/mechanics/digital.json": "86c3a472708fa427980a20ed62c3e3c89629c0ef18eb98ca687d4544c877ebb5",
+    "data/mechanics/collections.json": "bbdc84ce246da915300aed43dc2eed0499c88a6e25eca7bde24b4c76a4105677",
+    "data/mechanics/remaining_content.json": "2e24b64d2987c0ffde66127e60528f878dad4f39ffd12554296a27b9410d7513",
+    "tests/mechanics/run.gd": "83caebfb4330aa63703ec65f292cb9705f1e12e912f1ae5dc670a599ec66336f",
+    "tests/mechanics/family.gd": "d2bb302d77605c514034784b52113cbcb50464905f62385609b2b2ff9dd1a31f",
+    "tests/mechanics/digital.gd": "5692304e8936607b642b61b25b68ecefaf7fd4bab5c7740f5147943b1fd48a5e",
+    "tests/mechanics/run_extended.gd": "fbfee08228a5a755deb3570c575fbf29bfbf78b73ac4e8c3cf517af8a9970bd8",
+    "tests/gameplay/run.gd": "38080d3d7898e5aad4675cc5545680ec52b3c8d18634e15031c3644447b7fd9f",
+    "tests/gameplay/city.gd": "18ee3c5004846964fb0746ab34ff1a21cfda0460a599886a55f4911a972ac31f",
+    "tests/gameplay/integration_routes.gd": "fe06d072c42e81afcfa51d73b296bd68dc46438b82dec246dcf356d250be5223",
+    "tests/gameplay/remaining.gd": "b870ee0733388396250a7fa4350676f398565d8527a8ae0288e0fe3e4b936624",
+    "tests/gameplay/remaining_snapshot.gd": "9a813e9a332fed3c210722f1e0144fa10d47f402f8d594fb255ec331e6efd7f1",
+    "tests/gameplay/capture_remaining.gd": "1e80980f4c564df93a15d4311d86661b722a838aee0d3499529404f026bfff13"
+  }
+}

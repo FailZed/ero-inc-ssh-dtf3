@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-19",
+  "revision": "continuous-human-personality-and-directed-social-bonds",
+  "engine": "4.7.2-stable (official)",
+  "source": "https://www.hexaco.org/scaledescriptions",
+  "scope": "Default NPC life runtime replaced; main Gameplay/UI not integrated. Old life snapshots are not migrated. Original game formulas, no clinical prediction or Sims 4 parity claim.",
+  "coverage": {
+    "domains": 6,
+    "facets": 24,
+    "values": 4,
+    "interests": 6,
+    "directed_scales": 8,
+    "actions": 27,
+    "aspirations": 6,
+    "detailed_bonds_per_npc": 32
+  },
+  "tests": {
+    "command": "tools/test_mechanics.ps1 -Isolated -Pack",
+    "exported_standalone": true,
+    "result": {
+      "checks": 1331,
+      "failed": 0,
+      "failures": []
+    },
+    "focused_human_checks": 348,
+    "npc_life_benchmark": {
+      "actions": {
+        "boast": 2,
+        "connect": 507,
+        "cooperate": 117,
+        "create": 873,
+        "deceive": 88,
+        "dispute": 3,
+        "eat": 1020,
+        "gossip": 7,
+        "joke": 90,
+        "practice": 2245,
+        "publish": 40,
+        "recreation": 5,
+        "rest": 71,
+        "sleep": 2668,
+        "study": 1421,
+        "support": 1,
+        "visit": 407,
+        "walk": 198,
+        "wash": 473,
+        "work": 1612
+      },
+      "days": 7,
+      "milestones": 138,
+      "milliseconds": 31699,
+      "npcs": 100
+    },
+    "proven_behaviors": [
+      "Every facet changes behavior rules; continuous traits reach autonomous decisions",
+      "Directed trust, affection, comfort, respect, closeness, romantic interest and grievance",
+      "Actual timed help and asymmetric care balance",
+      "Apology acknowledges harm; repair requires useful acts on distinct days",
+      "Refusals, personal boundaries, content filters, accepted mutual proposals and separation",
+      "Interests and values learned through meetings instead of read from strangers",
+      "Repeat suppression and pair-specific daily gain budget; gifts cannot erase harm",
+      "Existing player interaction and biography entry points use the new model",
+      "False claims verified with real action time and directed consequences",
+      "Malformed facets, references, knowledge, dates and consent rejected atomically",
+      "Bounded social memory and deterministic JSON/RNG replay with split time"
+    ]
+  },
+  "population_study": {
+    "file": "NPC_SOCIAL_STUDY.json",
+    "npcs": 100,
+    "days": 7,
+    "milliseconds": 30844,
+    "failed": 0,
+    "unique_profiles": 100,
+    "directed_bonds": 1791,
+    "disclosed_topics": 1634,
+    "milestones": 159,
+    "event_counts": {
+      "npc_life_career_progress": 166,
+      "npc_life_claim_made": 30,
+      "npc_life_gossip": 8,
+      "npc_life_milestone": 159,
+      "npc_life_new_aspiration": 5,
+      "npc_life_social_outcome": 1200,
+      "npc_social_harm": 8,
+      "npc_social_outcome": 1200
+    },
+    "dimensions": {
+      "agreeableness": {
+        "max": 92.0,
+        "mean": 48.6725,
+        "min": 15.25
+      },
+      "conscientiousness": {
+        "max": 84.0,
+        "mean": 52.4775,
+        "min": 10.75
+      },
+      "emotionality": {
+        "max": 89.25,
+        "mean": 51.7975,
+        "min": 8.5
+      },
+      "extraversion": {
+        "max": 95.5,
+        "mean": 50.475,
+        "min": 9.5
+      },
+      "honesty": {
+        "max": 87.75,
+        "mean": 50.9925,
+        "min": 14.5
+      },
+      "openness": {
+        "max": 86.5,
+        "mean": 48.305,
+        "min": 10.5
+      }
+    }
+  },
+  "file_sha256": {
+    "data/mechanics/human_social.json": "35a0f71cd8328affe3735d8e6af0836ab73ca94102558b683b6d4f23c479d9fd",
+    "scripts/mechanics/npc_life_simulation.gd": "346c8174b52f273fb6044823c6fae3e288a59ce4b036d2f20c4bfb4f03675ea9",
+    "scripts/mechanics/npc_agency.gd": "987489fef8ac9e2feced93513906244652f3729ba8db2db3d93ad59f3282acf7",
+    "scripts/mechanics/npc_personalities.gd": "f3681bbd4bca022795790c070dd6fd77975897f0efa4db3d79da4f31a39a9e0d",
+    "scripts/mechanics/npc_relationships.gd": "9bb783f4484506ef27c77307e56588b3db3910160171ca0689a324b383efd34e",
+    "scripts/mechanics/human_agency.gd": "05075238abd462a45fdaa4651ff7bbbc05d0e369335037005de09c34c28a63ad",
+    "scripts/mechanics/human_social.gd": "305c42a6a868c3ee99e5f985144390d8a58a8fcc9c93bdd60e5819aa03a69adc",
+    "scripts/mechanics/human_social_rules.gd": "02abe7ed726c12d1f1ab657faf1624203060f857a50a3da9b40eef3a4f496db4",
+    "scripts/mechanics/core/human_validation.gd": "e3165876e593ef47edec3aaf648b7e016651031709ec88ef4420c481323bd4d3",
+    "scripts/mechanics/core/validation.gd": "7538197ee4520a3b091737c4b525602e2403dcbbcde0b40f85da532047a7100d",
+    "scripts/mechanics/core/personality_validation.gd": "7fc671d7f6b67708399ace76fafe9c9c159c80f630ab50d3813b691b6b1579fd",
+    "scripts/mechanics/character.gd": "f9b1512caa8048491fc716c320a5e9904d1bf475bf9a2dc987162f02f98b5ba3",
+    "scripts/mechanics/debug/npc_life_probe.gd": "07b081ed0ee5ab6b114f3c23e842d7506e8bd9767c25f7a29d7f8d118e2fce0e",
+    "tests/mechanics/human_social.gd": "bf301ab4bb61226815fc10fe54d13f97fa84c65414d5c73f95d36182dd68ed9a",
+    "tests/mechanics/npc_life.gd": "b2f4281993bc5903c9112b9c8cde0e4fc04e2ff3e13dd118eee42959c8d535df",
+    "tests/mechanics/run.gd": "9c14a21dcda5897299da23881a3cd830ddd3c17354d552753014729d103edf6f"
+  }
+}

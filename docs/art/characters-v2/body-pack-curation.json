@@ -1,0 +1,36 @@
+{
+  "updated_utc": "2026-10-19T10:42:08.507398+00:00",
+  "scope": "Art review, not runtime acceptance",
+  "rejected_series": [
+    {
+      "batch": "body-pack-v1",
+      "candidates": 8,
+      "decision": "reject_direction_do_not_expand_or_train",
+      "reason": "User rejected drift from the approved rendering; new faces, heavier lines and simplified anatomy. Individual files remain preserved.",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-v1\\index.json"
+    },
+    {
+      "batch": "body-pack-v2",
+      "candidates": 4,
+      "decision": "reject_direction_do_not_expand_or_train",
+      "reason": "User rejected drift from the approved rendering; new faces, heavier lines and simplified anatomy. Individual files remain preserved.",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-v2\\index.json"
+    },
+    {
+      "batch": "body-pack-v3",
+      "candidates": 4,
+      "decision": "reject_direction_do_not_expand_or_train",
+      "reason": "User rejected drift from the approved rendering; new faces, heavier lines and simplified anatomy. Individual files remain preserved.",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-v3\\index.json"
+    },
+    {
+      "batch": "body-pack-base-probe",
+      "candidates": 0,
+      "decision": "reject_direction_do_not_expand_or_train",
+      "reason": "User rejected drift from the approved rendering; new faces, heavier lines and simplified anatomy. Individual files remain preserved.",
+      "index": "E:\\Ai\\ComfyUI-EroInc\\batches\\body-pack-base-probe\\index.json"
+    }
+  ],
+  "current_reference_family": "body-reference-v1",
+  "natural_anatomy": "Required on neutral unclothed adult bases; anatomy suppression removed from tool defaults."
+}

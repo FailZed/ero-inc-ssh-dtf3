@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "count": 6,
+  "scope": "Layer assembly and recorded output hashes; clothing fit not included.",
+  "items": [
+    {
+      "rig": "female_curvy",
+      "variant": "small",
+      "exact_layer_assembly": true
+    },
+    {
+      "rig": "female_curvy",
+      "variant": "medium",
+      "exact_layer_assembly": true
+    },
+    {
+      "rig": "female_curvy",
+      "variant": "full",
+      "exact_layer_assembly": true
+    },
+    {
+      "rig": "male_toned",
+      "variant": "small",
+      "exact_layer_assembly": true
+    },
+    {
+      "rig": "male_toned",
+      "variant": "average",
+      "exact_layer_assembly": true
+    },
+    {
+      "rig": "male_toned",
+      "variant": "larger",
+      "exact_layer_assembly": true
+    }
+  ]
+}

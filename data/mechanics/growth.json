@@ -1,0 +1,479 @@
+{
+  "skills": {
+    "study": {
+      "label": "Учёба",
+      "category": "mind",
+      "practice": "Разбирать учебные задачи",
+      "locations": [
+        "bedroom",
+        "training_center"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "cooking": {
+      "label": "Кулинария",
+      "category": "craft",
+      "practice": "Отрабатывать кухонные приёмы",
+      "locations": [
+        "kitchen"
+      ],
+      "minutes": 30,
+      "energy": 5,
+      "cost": 6,
+      "xp": 8
+    },
+    "computing": {
+      "label": "Программирование",
+      "category": "technical",
+      "practice": "Практиковать программирование",
+      "locations": [
+        "bedroom"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8,
+      "tool": "computer"
+    },
+    "fighting": {
+      "label": "Самооборона",
+      "category": "body",
+      "practice": "Отрабатывать безопасные связки",
+      "locations": [
+        "city_park",
+        "training_center"
+      ],
+      "minutes": 30,
+      "energy": 10,
+      "cost": 0,
+      "xp": 8
+    },
+    "stealth": {
+      "label": "Скрытность",
+      "category": "body",
+      "practice": "Тренировать тихое движение",
+      "locations": [
+        "city_park"
+      ],
+      "minutes": 30,
+      "energy": 7,
+      "cost": 0,
+      "xp": 8
+    },
+    "cards": {
+      "label": "Карточные игры",
+      "category": "mind",
+      "practice": "Разбирать учебные карточные ситуации",
+      "locations": [
+        "bedroom",
+        "riverside_cafe"
+      ],
+      "minutes": 30,
+      "energy": 3,
+      "cost": 0,
+      "xp": 8
+    },
+    "journalism": {
+      "label": "Журналистика",
+      "category": "creative",
+      "practice": "Составить заметку о городе",
+      "locations": [
+        "bedroom",
+        "south_promenade"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "cybersecurity": {
+      "label": "Цифровая безопасность",
+      "category": "technical",
+      "practice": "Заниматься на учебном стенде",
+      "locations": [
+        "bedroom"
+      ],
+      "minutes": 30,
+      "energy": 5,
+      "cost": 0,
+      "xp": 8,
+      "tool": "computer"
+    },
+    "logic": {
+      "label": "Логика",
+      "category": "mind",
+      "practice": "Решать логические задачи",
+      "locations": [
+        "bedroom",
+        "city_park"
+      ],
+      "minutes": 30,
+      "energy": 3,
+      "cost": 0,
+      "xp": 8
+    },
+    "research": {
+      "label": "Исследование",
+      "category": "mind",
+      "practice": "Сопоставлять источники",
+      "locations": [
+        "bedroom",
+        "training_center"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "writing": {
+      "label": "Писательство",
+      "category": "creative",
+      "practice": "Работать над коротким рассказом",
+      "locations": [
+        "bedroom",
+        "riverside_cafe"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "public_speaking": {
+      "label": "Ораторское мастерство",
+      "category": "social",
+      "practice": "Репетировать выступление",
+      "locations": [
+        "bedroom",
+        "city_park"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "empathy": {
+      "label": "Эмпатия",
+      "category": "social",
+      "practice": "Разбирать разные точки зрения",
+      "locations": [
+        "bedroom",
+        "riverside_cafe"
+      ],
+      "minutes": 30,
+      "energy": 3,
+      "cost": 0,
+      "xp": 8
+    },
+    "persuasion": {
+      "label": "Убеждение",
+      "category": "social",
+      "practice": "Готовить аргументированную речь",
+      "locations": [
+        "bedroom",
+        "training_center"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "fitness": {
+      "label": "Физическая форма",
+      "category": "body",
+      "practice": "Тренировать общую выносливость",
+      "locations": [
+        "city_park",
+        "training_center"
+      ],
+      "minutes": 30,
+      "energy": 10,
+      "cost": 0,
+      "xp": 8
+    },
+    "athletics": {
+      "label": "Атлетика",
+      "category": "body",
+      "practice": "Тренировать координацию и бег",
+      "locations": [
+        "city_park",
+        "north_beach"
+      ],
+      "minutes": 30,
+      "energy": 10,
+      "cost": 0,
+      "xp": 8
+    },
+    "handiness": {
+      "label": "Ремонт",
+      "category": "technical",
+      "practice": "Собирать учебный макет",
+      "locations": [
+        "bedroom"
+      ],
+      "minutes": 30,
+      "energy": 5,
+      "cost": 5,
+      "xp": 8
+    },
+    "painting": {
+      "label": "Рисование",
+      "category": "creative",
+      "practice": "Делать зарисовки",
+      "locations": [
+        "bedroom",
+        "city_park"
+      ],
+      "minutes": 30,
+      "energy": 3,
+      "cost": 3,
+      "xp": 8
+    },
+    "photography": {
+      "label": "Фотография",
+      "category": "creative",
+      "practice": "Практиковать композицию кадра",
+      "locations": [
+        "city_park",
+        "south_promenade"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8,
+      "tool": "camera"
+    },
+    "music": {
+      "label": "Музыка",
+      "category": "creative",
+      "practice": "Тренировать слух и ритм",
+      "locations": [
+        "bedroom"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "performance": {
+      "label": "Сценическое мастерство",
+      "category": "creative",
+      "practice": "Репетировать короткий номер",
+      "locations": [
+        "bedroom",
+        "south_promenade"
+      ],
+      "minutes": 30,
+      "energy": 6,
+      "cost": 0,
+      "xp": 8
+    },
+    "comedy": {
+      "label": "Юмор",
+      "category": "social",
+      "practice": "Готовить комедийный монолог",
+      "locations": [
+        "bedroom",
+        "riverside_cafe"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "dancing": {
+      "label": "Танцы",
+      "category": "body",
+      "practice": "Отрабатывать танцевальные движения",
+      "locations": [
+        "bedroom",
+        "city_park"
+      ],
+      "minutes": 30,
+      "energy": 8,
+      "cost": 0,
+      "xp": 8
+    },
+    "gardening": {
+      "label": "Садоводство",
+      "category": "craft",
+      "practice": "Ухаживать за учебными посадками",
+      "locations": [
+        "city_park"
+      ],
+      "minutes": 30,
+      "energy": 6,
+      "cost": 3,
+      "xp": 8
+    },
+    "fishing": {
+      "label": "Рыбалка",
+      "category": "craft",
+      "practice": "Практиковать заброс на берегу",
+      "locations": [
+        "north_beach",
+        "south_promenade"
+      ],
+      "minutes": 30,
+      "energy": 5,
+      "cost": 0,
+      "xp": 8
+    },
+    "crafting": {
+      "label": "Ремесло",
+      "category": "craft",
+      "practice": "Работать над простым изделием",
+      "locations": [
+        "bedroom"
+      ],
+      "minutes": 30,
+      "energy": 5,
+      "cost": 5,
+      "xp": 8
+    },
+    "sales": {
+      "label": "Торговля",
+      "category": "social",
+      "practice": "Разбирать потребности покупателей",
+      "locations": [
+        "bedroom",
+        "north_shops"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "logistics": {
+      "label": "Логистика",
+      "category": "mind",
+      "practice": "Планировать учебные маршруты",
+      "locations": [
+        "bedroom",
+        "north_shops"
+      ],
+      "minutes": 30,
+      "energy": 4,
+      "cost": 0,
+      "xp": 8
+    },
+    "leadership": {
+      "label": "Организация людей",
+      "category": "social",
+      "practice": "Планировать совместную работу",
+      "locations": [
+        "bedroom",
+        "training_center"
+      ],
+      "minutes": 30,
+      "energy": 5,
+      "cost": 0,
+      "xp": 8
+    },
+    "discipline": {
+      "label": "Самоорганизация",
+      "category": "mind",
+      "practice": "Планировать день и внимание",
+      "locations": [
+        "bedroom"
+      ],
+      "minutes": 30,
+      "energy": 3,
+      "cost": 0,
+      "xp": 8
+    }
+  },
+  "growth_rules": {
+    "profiles": {
+      "easy": {
+        "floor": 0.55,
+        "help_cap": 0.4,
+        "work_ms": 36000,
+        "focus": 0.12,
+        "round_ms": 6000,
+        "game_factor": 1.15
+      },
+      "normal": {
+        "floor": 0.7,
+        "help_cap": 0.28,
+        "work_ms": 30000,
+        "focus": 0.1,
+        "round_ms": 5000,
+        "game_factor": 1.0
+      },
+      "hard": {
+        "floor": 0.85,
+        "help_cap": 0.14,
+        "work_ms": 24000,
+        "focus": 0.08,
+        "round_ms": 4000,
+        "game_factor": 0.85
+      }
+    },
+    "habits": {
+      "hydration": {
+        "label": "Запас воды",
+        "skills": [
+          "fitness",
+          "discipline"
+        ]
+      },
+      "satiety": {
+        "label": "Сытость",
+        "skills": [
+          "cooking",
+          "fitness"
+        ]
+      },
+      "hygiene": {
+        "label": "Гигиена",
+        "skills": [
+          "handiness",
+          "discipline"
+        ]
+      },
+      "bladder": {
+        "label": "Туалет",
+        "skills": [
+          "discipline",
+          "fitness"
+        ]
+      },
+      "rested": {
+        "label": "Выспанность",
+        "skills": [
+          "fitness",
+          "discipline"
+        ]
+      },
+      "fun": {
+        "label": "Досуг",
+        "skills": [
+          "music",
+          "dancing",
+          "cards"
+        ]
+      },
+      "social": {
+        "label": "Общение",
+        "skills": [
+          "empathy",
+          "public_speaking"
+        ]
+      }
+    },
+    "habit_thresholds": [
+      10,
+      50,
+      150
+    ],
+    "work_care": {
+      "hydration": 75,
+      "satiety": 65,
+      "bladder": 80,
+      "social": 60
+    }
+  }
+}

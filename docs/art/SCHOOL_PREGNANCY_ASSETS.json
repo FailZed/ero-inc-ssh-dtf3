@@ -1,0 +1,99 @@
+{
+  "temporary": true,
+  "source": "School-0.981-win/game/archive.rpa",
+  "authorization": "User requested temporary borrowed pregnancy layers and material variants on 2026-10-27",
+  "destination": "E:\\GoDot\\ero-inc\\assets\\textures\\portraits\\prototype_school",
+  "donor_scripts_imported": false,
+  "files": [
+    {
+      "source": "images/character/npc/new/body/_pregnancy1.png",
+      "target": "npc/new/body/_pregnancy1.png",
+      "sha256": "fdf85e25a1b2c629b2de32745ade268dd7c6987b41c2f9b9de2a935343f443ef",
+      "bytes": 62194,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy2.png",
+      "target": "npc/new/body/_pregnancy2.png",
+      "sha256": "bacd78ceafa6b24b81a0bd6cc98bb24be7229a0555fc55b782e9cb3e39e557fb",
+      "bytes": 67318,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy3.png",
+      "target": "npc/new/body/_pregnancy3.png",
+      "sha256": "1b1a4ca9668045ce7e616c56bc5bea854f00799241fbf0b273f87e1bd8936ebf",
+      "bytes": 79737,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy4.png",
+      "target": "npc/new/body/_pregnancy4.png",
+      "sha256": "66d37f62bd577a753bf852ba598f3aa63b658b66288f8f073e72c3f643e4a4ad",
+      "bytes": 66997,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy5.png",
+      "target": "npc/new/body/_pregnancy5.png",
+      "sha256": "57763fa768d8d9a7f73e1d27a88e743f9f8a6f316e6a4dd3453d353269d491c7",
+      "bytes": 63483,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy6.png",
+      "target": "npc/new/body/_pregnancy6.png",
+      "sha256": "7a97642b0981270308198cb187ac04ee72c25b671808b0291c8540af644e25b1",
+      "bytes": 67024,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy7.png",
+      "target": "npc/new/body/_pregnancy7.png",
+      "sha256": "1354672709adc674349e785cee3769698ab6d12ef4ed36a6e18bdee8997114d9",
+      "bytes": 69053,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy8.png",
+      "target": "npc/new/body/_pregnancy8.png",
+      "sha256": "01be9b68f5de547cc22d90b758c06b6bfe5c5420f9414ea0ce74ae49515342de",
+      "bytes": 58109,
+      "size": [
+        1920,
+        2596
+      ]
+    },
+    {
+      "source": "images/character/npc/new/body/_pregnancy9.png",
+      "target": "npc/new/body/_pregnancy9.png",
+      "sha256": "25e2948ece614638e8a9c92989df14fdf0694266b0a228da83b0428ac90f25a8",
+      "bytes": 59556,
+      "size": [
+        1920,
+        2596
+      ]
+    }
+  ]
+}

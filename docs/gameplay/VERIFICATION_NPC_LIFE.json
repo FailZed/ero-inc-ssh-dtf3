@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-19",
+  "revision": "main-game-npc-life-integration",
+  "engine": "Godot 4.7.2 stable official ed1daf0bf",
+  "scope": "Main Gameplay activates continuous NPC personalities and directed relationships at city unlock after chapter one; ordinary action-driven clock and World save/load",
+  "tests": {
+    "gameplay_command": "tools/test_gameplay.ps1",
+    "gameplay_result": {
+      "checks": 213,
+      "failed": 0,
+      "failures": []
+    },
+    "story_command": "tools/test_story_flow.ps1",
+    "story_flows": [
+      {
+        "branch": 0,
+        "checks": 33,
+        "difficulty": "easy",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 12021,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 1,
+        "checks": 33,
+        "difficulty": "normal",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11507,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "hard",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11531,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 3,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": true,
+        "last": "chapter_one:261",
+        "milliseconds": 8204,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": false
+      },
+      {
+        "branch": 2,
+        "checks": 33,
+        "difficulty": "custom",
+        "failed": 0,
+        "failures": [],
+        "flee": false,
+        "last": "chapter_one:261",
+        "milliseconds": 11526,
+        "stages": [
+          "night",
+          "return_to_bed",
+          "photo",
+          "morning_dress",
+          "morning_wash",
+          "morning_leave",
+          "campus",
+          "classroom",
+          "homecoming"
+        ],
+        "teacher_right": true
+      }
+    ],
+    "mechanics_command": "tools/test_mechanics.ps1 -Isolated -Pack",
+    "mechanics_result": {
+      "checks": 1331,
+      "failed": 0,
+      "failures": []
+    },
+    "real_user_save_slots_modified": false,
+    "proven_behaviors": [
+      "Automatic enable for all generated NPCs and authored adult contacts at open-world transition",
+      "No artificial months of aging through authored date jumps",
+      "Authored acquaintance facts and goals seed the same directed relationship model",
+      "NPCs autonomously meet and progress while the player waits",
+      "GameSession and simulation time remain synchronized without double ticks",
+      "Ordinary help, detected theft, witnesses, apologies and combat produce relationship and emotional consequences",
+      "NPC goals, scales, history and both directions of relationships render in the actual game UI",
+      "Read-only social forecasts and profile rendering consume no world state or RNG",
+      "Serialized ordinary World load restores enabled life, facets, goals, intentions, bonds, grievance and RNG",
+      "New-game population personality controls affect generated residents"
+    ]
+  },
+  "visual_validation": {
+    "inspected": true,
+    "rendering_method": "gl_compatibility",
+    "capture_kind": "Live Godot UI from development fixture using the main Gameplay after 180 game minutes; not conceptual references or a complete-playthrough recording",
+    "screens": [
+      {
+        "file": "captures/social-1920/people.png",
+        "size": "1920x1080",
+        "screen": "People and relationships"
+      },
+      {
+        "file": "captures/social-1920/npc.png",
+        "size": "1920x1080",
+        "screen": "NPC goals and directed scales"
+      },
+      {
+        "file": "captures/social-1366/npc.png",
+        "size": "1366x768",
+        "screen": "NPC profile at smaller window"
+      }
+    ],
+    "corrected": "Numeric labels no longer wrap digits; portrait and life/relationship summary share a responsive row",
+    "character_art": "Existing temporary portrait assets; no new art generated"
+  },
+  "known_limits": [
+    "Simulation uses action time; menu reading pauses the world",
+    "No migration of earlier catalogs/snapshots; start a new game for the new model",
+    "Main project retains pre-existing shutdown warnings for 63 addon objects and 27 resources; standalone mechanics exits cleanly",
+    "No full Sims 4 parity, physical furniture navigation or new bespoke NPC dialogue library claimed",
+    "Large time skips remain synchronous; frame scheduling and broader human playtests remain future work"
+  ],
+  "file_sha256": {
+    "scripts/gameplay/gameplay.gd": "5fc2e4703b0098b376a74e263f4072aad118f3cebee269095dae1a1fe072ca44",
+    "scripts/gameplay/presentation.gd": "3b7ea47264782bbe1b3f8ed200382e537e87d8a68acbd15033a6b4f027f701f4",
+    "scripts/gameplay/social_presentation.gd": "066ddcb74f47bfa4188490b737c350dd212214a55044c10cf8ed4bfc07d28b37",
+    "scripts/ui/gameplay/gameplay_shell.gd": "e010431bf75fc2ff2770d54ec1a926f3db57804ad65fa94543b0a9d823ba1d3c",
+    "scripts/ui/gameplay/conversation_window.gd": "0f6258f7125dd84f7df5e8f1836a1f29fa8971ddae8f7e6873cf493940b62aaa",
+    "scripts/ui/gameplay/social_status.gd": "66d4578d9076b2d6f60f68475aac030c01e0a9c69cb7bc788e86fd32493726c9",
+    "scripts/ui/gameplay/world_setup.gd": "de653df6e2084538c558a695778191c23ff1a0a848ac24462bd8f9aed58ba9e2",
+    "scripts/ui/gameplay/preview.gd": "13ad612b315dbd6d4496c9e127305c083d8576ec2cdc44fc02e4a8bad1dfc5ad",
+    "scripts/mechanics/setup_config.gd": "e01b5c3da5380cb87152713334723b7d433e205e43f4d2fb81f88b1dd106aa75",
+    "scripts/mechanics/npc_personalities.gd": "abd7ba9616f3d555ce994c655070616b9704c58da02c5f8fb3439c3d8749ff0a",
+    "scripts/mechanics/human_agency.gd": "1eee3eb1a8b3d54510bf17872b59de6a920152ba39efc5fc8499a6383da8e866",
+    "scripts/mechanics/core/human_validation.gd": "1bfc66fd2823e0630cfa461d1d13a9b1b59bd25788f0ac8c51aa4beed82cafe3",
+    "scripts/mechanics/combat.gd": "087a3421a30bee378de45dcf64459a4a79edafc75f5825653161daac8f9ce023",
+    "scripts/mechanics/security.gd": "0d40b62831682532273150628bd1f0bf17537a2ea4a6dc50059675204b00fb6a",
+    "data/mechanics/human_social.json": "b3336e6263c0ca66982f91e7c684608bc68457206b9ce9f1369171f9ffffdfea",
+    "tests/gameplay/run.gd": "fac79c42cef66da7939a47a649c1d1ff7f6c92b27ede169e446944b4b78a7e3d",
+    "tests/gameplay/npc_life.gd": "f828efd99e1277a6d66f3061737acbc689a87b20b74da8f60a7f916e630ca986",
+    "docs/gameplay/captures/social-1920/people.png": "f2c3b972615570922f6f43cf7773137686c6690e7acce079b0401b76c965d627",
+    "docs/gameplay/captures/social-1920/npc.png": "6f1b499090faacc0a2d6b2dd40669b96dba51e2010135216c7add228e2588073",
+    "docs/gameplay/captures/social-1366/npc.png": "acaeb76b377d9aa338e27c35d6c21ec312d320b62ecd66ce433b109bd6ff63d3"
+  }
+}

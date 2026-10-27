@@ -1,0 +1,3127 @@
+{
+  "date": "2026-10-27",
+  "engine": "4.7.2",
+  "scope": "Current main-game logic; functional gameplay actions and autonomous rules",
+  "counting_rules": [
+    "A distinct functional gameplay action or autonomous rule is one inventory entry.",
+    "Start/input/finish callbacks of one interaction are not automatically separate mechanics.",
+    "Different recipes, items, jobs, skills, symptoms, dialogue lines and story nodes are content variants.",
+    "Decision stages with independent world consequences may be separate entries.",
+    "Queries, debug/configuration APIs, validation, transaction safety, rendering and save/load are excluded.",
+    "Shared routing and player/NPC adapters are not additional mechanics; distinct autonomous decision processes may be.",
+    "This is an explicit audit classification, not an engine metric or proof of complete content and test coverage."
+  ],
+  "gameplay_mechanics_count": 275,
+  "category_counts": {
+    "Старт и правила": 8,
+    "Время и городской мир": 6,
+    "Развитие персонажа": 9,
+    "Бытовые потребности": 11,
+    "Здоровье и состояния": 9,
+    "Предметы, торговля и внешность": 11,
+    "Учёба": 5,
+    "Финансы и работа": 32,
+    "Жильё и обустройство": 17,
+    "Бой": 15,
+    "Преступность и наказания": 6,
+    "Мини-игры": 11,
+    "Генерация и самостоятельная жизнь NPC": 18,
+    "Отношения и социальные действия": 26,
+    "Диалоги и телефон": 10,
+    "Организации": 13,
+    "Близость и репродукция": 23,
+    "Самочувствие при беременности": 8,
+    "Семья и уход": 16,
+    "Алименты": 7,
+    "Сюжет, задания и коллекции": 12,
+    "Планирование действий": 2
+  },
+  "main_runtime_registered_subsystems": 39,
+  "additional_technical_systems": [
+    "Save/load, including manual and automatic slots"
+  ],
+  "verification": "Static inventory with resolved source symbols. Prior main-game run: 676 assertions, 0 failed. No claim of individually testing all listed entries.",
+  "excluded_historical_paths": [
+    "social_rules.autonomy/_review_partners/_consider_betrayal are bypassed while the current HumanAgency is enabled; old independent behavior paths are not extra mechanics."
+  ],
+  "sources_sha256": {
+    "TimeLine/chapter_one.dtl": "1d64d2891cd3f222fb6211e5cf5628b912caa814b3f13d8282766e2de09a91b3",
+    "scripts/gameplay/city_housing.gd": "36fd60ecce0fbde845a74159edd057102a867a51e15cb7c0501c856ba7737393",
+    "scripts/gameplay/city_world.gd": "72c5d95f8ceb6f531d5d8d9c479c5d1ce8ec7d0b0e2977f6f5bcba196d156cd9",
+    "scripts/gameplay/gameplay.gd": "7059c359ac5976be851afeabc525c5895b7413612c246a22288497c9eedf87d7",
+    "scripts/gameplay/player_institutions.gd": "89a0520f711b403225f277e415bd7a2ff47e6a8498c42a7913a0bf27b3577cbf",
+    "scripts/gameplay/player_needs.gd": "8d73135c7e6deb958911f44148acaf6204a4ab0d32b10d0c32bbec43db1eb5f8",
+    "scripts/gameplay/player_social_rules.gd": "e40df92f3cb5cb378e24ac6b3fd798edf320d7cacc9001fe123020e037933c69",
+    "scripts/gameplay/sandbox_flow.gd": "6af29f3100b39fbf7ae22fe7f955c5fb8040c11c558a95d7804e905b61dcc3fb",
+    "scripts/mechanics/actions.gd": "f8d7bd9ee671ff402de2969932b045b2427dba66ad8606ab3f9b4663426b8d8b",
+    "scripts/mechanics/activities.gd": "89df1d82e6930753559dcdec8436a23dc414072a177f40c5e4faa8a6619008cf",
+    "scripts/mechanics/appearance.gd": "14a3fd01ad97825ff0207b95a7373406241ac7c432e54efcf957c5db60e95238",
+    "scripts/mechanics/careers.gd": "16302b14b3d4c8b2fff2d434c846cc640f3c71882ed8fca674257ba0a0c53898",
+    "scripts/mechanics/character.gd": "2748a66001ba4d4d372c5a5f2e2b95266c4287f5f539129c541b8de1b73d4ad0",
+    "scripts/mechanics/child_support.gd": "3c39d9fe342e33326fa976bb8903160dd4629fafcc5605d86b8daa5ff457866f",
+    "scripts/mechanics/collections.gd": "9afb777f6756be9124d8a5b93b95f9b4059d6d713df0a87b736e6c6c1ebf91c5",
+    "scripts/mechanics/combat.gd": "087a3421a30bee378de45dcf64459a4a79edafc75f5825653161daac8f9ce023",
+    "scripts/mechanics/core/calendar.gd": "2142bd80adee8f289eca798a5b16f5940917867310bb29b43741895bbd1d1cfc",
+    "scripts/mechanics/digital.gd": "72b9d137c3e3facb22a8a0248d10f1281644ade1b1e61d9f2299ea650facb152",
+    "scripts/mechanics/economy.gd": "b0492d5d140dba96bd6ed0de7e844121ca9973ffbdc92e183b8ed0312e5f410a",
+    "scripts/mechanics/encounters.gd": "08bb2dd808caca38b23f0389eecd74036c646c65e708861c4ca6074e871eb6a8",
+    "scripts/mechanics/events.gd": "8f0fecf54ad35a7816c74eda4148caa46ef635de409e49db5041e2235d6ca572",
+    "scripts/mechanics/family.gd": "7b281681f88c61514aa86477af3c144adfe84a1541361ff09c22bc5a438eda3d",
+    "scripts/mechanics/growth.gd": "08955e2a1a7ceebb70d219dbf14055a36050ec5aa1dd3b9bebd6daf9da2477cd",
+    "scripts/mechanics/health.gd": "d1bc3500534fbb2f79e2341907e31a8ff6975122c46a14ba1a85bbd7da6804b7",
+    "scripts/mechanics/housing.gd": "d01d745812d704540bce7b1138738e28dfd53a5cadc146fdd9129ab7202eb2ed",
+    "scripts/mechanics/institutions.gd": "1cd2be04d6381028e18df3975f72a1e7ed74a30b9be69ae09c35f80995173d7a",
+    "scripts/mechanics/interior.gd": "e2a729ddd4ff497581d1f3389c8f023a0b8ec76c845ed85f45cdbab90f57c2ac",
+    "scripts/mechanics/intimacy.gd": "5710629fe1ba0c4ff175c72a21272a6dcfa03c04df4fa588a86021b472e3b85a",
+    "scripts/mechanics/inventory.gd": "893e38beb5d4f309a7d8da7165fd27177415c9cc438aebbfc76b340b4ae4fe75",
+    "scripts/mechanics/livelihood.gd": "888c9fd0a8593c7d0ec3c9ecd9b8360f61b8dd2a488a505050ca7438e58759f0",
+    "scripts/mechanics/npc_agency.gd": "9bd6d2d6e7a0718852362959a672ae76f709f95f9fcac56b74a29c19046f7481",
+    "scripts/mechanics/npc_dialogue.gd": "a6c11d1f08d392c6a6c79b45ce9e0b2ced9301e9461d30d24fa953d1994b3ff1",
+    "scripts/mechanics/npc_personalities.gd": "9652addec646cf231cc710461c779ff6b56db2f48d5b259be69b3c20bb5727ff",
+    "scripts/mechanics/npc_relationships.gd": "9bb783f4484506ef27c77307e56588b3db3910160171ca0689a324b383efd34e",
+    "scripts/mechanics/npc_reproduction.gd": "03cbc32f18740b6aba7640c1f47a8eba146e6f0709e014f75bc2b25b4911caff",
+    "scripts/mechanics/npc_stories.gd": "5102fdcc87c7fcdb45d99511ca8e69e03d9b381863af316e98778d27e6726dc2",
+    "scripts/mechanics/organizations.gd": "9da0125238b3f773a39404d317e0d7c32dfcf5d00e25ea4ed65dead49b61f648",
+    "scripts/mechanics/population.gd": "b3785d15514fd7acac027d5caed7b32134e058c78020d2b88dfd72cfde5e93ea",
+    "scripts/mechanics/preferences.gd": "58a8e4ab82c1ba32bea732a0ccc24f967525e5f4ea611e3d7b8ad342ae5399a7",
+    "scripts/mechanics/pregnancy_selfcare.gd": "85319ae124b851b1d1cfa912bbb31169241461f20b2d44b30222d3ba4543b03d",
+    "scripts/mechanics/pregnancy_wellbeing.gd": "d46c4ea184b3740c434d5cddd874bec09d60c1fbfecf93ed06904235989589d8",
+    "scripts/mechanics/reproduction.gd": "80723d36e30455ca5b33e47ee8e88e2fd07736ca0b46ad7566d8c50bd02cd8ee",
+    "scripts/mechanics/reproductive_lifecycle.gd": "ffa4ec9738dc4300b387b7dd3536f3af75a089f39d8a12c104f9f1b21bf8edd2",
+    "scripts/mechanics/security.gd": "0d40b62831682532273150628bd1f0bf17537a2ea4a6dc50059675204b00fb6a",
+    "scripts/mechanics/setup_config.gd": "108f433836e15a14ff13aae2f0d9b24162bc086127f3dc6a4a6d3aa2161c2294",
+    "scripts/mechanics/simulation.gd": "7ad9e09ac43f9481ea0314c8822bddaa1ab559387637a553c6d1fbb64ae1923f",
+    "scripts/mechanics/social.gd": "41bd8b968d8f3750e7e9da26f1745d1671153ac1a59367253ca308c90a65881e",
+    "scripts/mechanics/social_rules.gd": "3f5aa31095393fef33c9d12ff7edd51fcffe080d87472a8483426e26666084d4",
+    "scripts/mechanics/world.gd": "84b65076280a051483bd031cbe04a906232d93744a410607351b5ded94aa9902",
+    "scripts/ui/character_creation_modal.gd": "2c090ab3ef439824ed70207ccbfd99c480081db3c38271c3c8cb126c096b35bf",
+    "scripts/ui/gameplay/action_queue.gd": "6e1e38ba03313617287496a829e405922084b0af61bc60f4dd9400dceae09ec5"
+  },
+  "mechanics": [
+    {
+      "id": "M001",
+      "category": "Старт и правила",
+      "name": "Сюжетный режим или свободная песочница",
+      "source": {
+        "path": "scripts/gameplay/sandbox_flow.gd",
+        "symbol": "begin",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M002",
+      "category": "Старт и правила",
+      "name": "Настройка состава и размера населения",
+      "source": {
+        "path": "scripts/mechanics/setup_config.gd",
+        "symbol": "validate",
+        "line": 26
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M003",
+      "category": "Старт и правила",
+      "name": "Готовые уровни сложности",
+      "source": {
+        "path": "scripts/mechanics/preferences.gd",
+        "symbol": "execute",
+        "line": 22
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M004",
+      "category": "Старт и правила",
+      "name": "Собственные множители сложности",
+      "source": {
+        "path": "scripts/mechanics/preferences.gd",
+        "symbol": "execute",
+        "line": 22
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M005",
+      "category": "Старт и правила",
+      "name": "Фильтры категорий содержания",
+      "source": {
+        "path": "scripts/mechanics/preferences.gd",
+        "symbol": "execute",
+        "line": 22
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M006",
+      "category": "Старт и правила",
+      "name": "Включение и отключение отдельных потребностей",
+      "source": {
+        "path": "scripts/mechanics/growth.gd",
+        "symbol": "execute",
+        "line": 93
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M007",
+      "category": "Старт и правила",
+      "name": "Создание личности и внешности героя",
+      "source": {
+        "path": "scripts/ui/character_creation_modal.gd",
+        "symbol": "_build_page",
+        "line": 78
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M008",
+      "category": "Старт и правила",
+      "name": "Распределение стартовых очков",
+      "source": {
+        "path": "scripts/ui/character_creation_modal.gd",
+        "symbol": "_change_stat",
+        "line": 122
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M009",
+      "category": "Время и городской мир",
+      "name": "Календарь с реальными днями, неделями и месяцами",
+      "source": {
+        "path": "scripts/mechanics/core/calendar.gd",
+        "symbol": "snapshot",
+        "line": 15
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M010",
+      "category": "Время и городской мир",
+      "name": "Ожидание и перемотка времени",
+      "source": {
+        "path": "scripts/mechanics/simulation.gd",
+        "symbol": "advance",
+        "line": 157
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M011",
+      "category": "Время и городской мир",
+      "name": "Погода и температура",
+      "source": {
+        "path": "scripts/gameplay/city_world.gd",
+        "symbol": "tick",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M012",
+      "category": "Время и городской мир",
+      "name": "Переход в соседнюю локацию с затратами",
+      "source": {
+        "path": "scripts/gameplay/city_world.gd",
+        "symbol": "_travel",
+        "line": 64
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M013",
+      "category": "Время и городской мир",
+      "name": "Планирование и прохождение составного маршрута",
+      "source": {
+        "path": "scripts/gameplay/city_world.gd",
+        "symbol": "route",
+        "line": 21
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M014",
+      "category": "Время и городской мир",
+      "name": "Доступность мест по времени и условиям",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "availability",
+        "line": 11
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M015",
+      "category": "Развитие персонажа",
+      "name": "Опыт и уровни с сохранением остатка",
+      "source": {
+        "path": "scripts/mechanics/character.gd",
+        "symbol": "_add_xp",
+        "line": 89
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M016",
+      "category": "Развитие персонажа",
+      "name": "Повышение характеристик за очки",
+      "source": {
+        "path": "scripts/mechanics/character.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M017",
+      "category": "Развитие персонажа",
+      "name": "Покупка перков с условиями и бонусами",
+      "source": {
+        "path": "scripts/mechanics/character.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M018",
+      "category": "Развитие персонажа",
+      "name": "Практика и развитие навыков",
+      "source": {
+        "path": "scripts/mechanics/growth.gd",
+        "symbol": "execute",
+        "line": 93
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M019",
+      "category": "Развитие персонажа",
+      "name": "Тренировка характеристик с растущими порогами",
+      "source": {
+        "path": "scripts/mechanics/activities.gd",
+        "symbol": "execute",
+        "line": 8
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M020",
+      "category": "Развитие персонажа",
+      "name": "Суточные ограничения тренировок и практики",
+      "source": {
+        "path": "scripts/mechanics/activities.gd",
+        "symbol": "execute",
+        "line": 8
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M021",
+      "category": "Развитие персонажа",
+      "name": "Повседневные занятия по условиям места и оборудования",
+      "source": {
+        "path": "scripts/mechanics/actions.gd",
+        "symbol": "execute",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M022",
+      "category": "Развитие персонажа",
+      "name": "Привычки, замедляющие расход потребностей",
+      "source": {
+        "path": "scripts/mechanics/growth.gd",
+        "symbol": "execute",
+        "line": 93
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M023",
+      "category": "Развитие персонажа",
+      "name": "Помощь навыков при работе и мини-играх",
+      "source": {
+        "path": "scripts/mechanics/growth.gd",
+        "symbol": "_help",
+        "line": 45
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M024",
+      "category": "Бытовые потребности",
+      "name": "Расход и восстановление выносливости",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "tick",
+        "line": 102
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M025",
+      "category": "Бытовые потребности",
+      "name": "Голод, насыщение и последствия голодания",
+      "source": {
+        "path": "scripts/mechanics/character.gd",
+        "symbol": "tick",
+        "line": 123
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M026",
+      "category": "Бытовые потребности",
+      "name": "Жажда и питьё",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "execute",
+        "line": 23
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M027",
+      "category": "Бытовые потребности",
+      "name": "Гигиена и душ",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "execute",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M028",
+      "category": "Бытовые потребности",
+      "name": "Потребность в туалете",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "execute",
+        "line": 23
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M029",
+      "category": "Бытовые потребности",
+      "name": "Сон и короткий сон",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "execute",
+        "line": 23
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M030",
+      "category": "Бытовые потребности",
+      "name": "Досуг и потребность в развлечениях",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "execute",
+        "line": 23
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M031",
+      "category": "Бытовые потребности",
+      "name": "Потребность в общении и её удовлетворение",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "after_action",
+        "line": 118
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M032",
+      "category": "Бытовые потребности",
+      "name": "Зависимость настроения от потребностей",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "mood_target",
+        "line": 70
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M033",
+      "category": "Бытовые потребности",
+      "name": "Влияние недосыпа и обезвоживания на обучение",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "learning_factor",
+        "line": 63
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M034",
+      "category": "Бытовые потребности",
+      "name": "Влияние недосыпа и обезвоживания на восстановление",
+      "source": {
+        "path": "scripts/gameplay/player_needs.gd",
+        "symbol": "recovery_factor",
+        "line": 56
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M035",
+      "category": "Здоровье и состояния",
+      "name": "Временные эффекты с бонусами, штрафами и сроками",
+      "source": {
+        "path": "scripts/mechanics/character.gd",
+        "symbol": "add_effect",
+        "line": 67
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M036",
+      "category": "Здоровье и состояния",
+      "name": "Употребление веществ, привыкание и отмена",
+      "source": {
+        "path": "scripts/mechanics/character.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M037",
+      "category": "Здоровье и состояния",
+      "name": "Травмы частей тела и штрафы к характеристикам",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "injure",
+        "line": 22
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M038",
+      "category": "Здоровье и состояния",
+      "name": "Кровотечение",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "tick",
+        "line": 98
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M039",
+      "category": "Здоровье и состояния",
+      "name": "Инфекция",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "tick",
+        "line": 98
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M040",
+      "category": "Здоровье и состояния",
+      "name": "Естественное заживление и восстановление под уходом",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "tick",
+        "line": 98
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M041",
+      "category": "Здоровье и состояния",
+      "name": "Лечение расходниками и в клинике",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "execute",
+        "line": 46
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M042",
+      "category": "Здоровье и состояния",
+      "name": "Интоксикация и её снижение",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "execute",
+        "line": 46
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M043",
+      "category": "Здоровье и состояния",
+      "name": "Истощение, обморок и восстановление",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "tick",
+        "line": 98
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M044",
+      "category": "Предметы, торговля и внешность",
+      "name": "Владение и количество предметов",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "change",
+        "line": 9
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M045",
+      "category": "Предметы, торговля и внешность",
+      "name": "Вес и вместимость инвентаря",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "capacity",
+        "line": 25
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M046",
+      "category": "Предметы, торговля и внешность",
+      "name": "Покупка предметов",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "_trade",
+        "line": 57
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M047",
+      "category": "Предметы, торговля и внешность",
+      "name": "Продажа предметов",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "_trade",
+        "line": 57
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M048",
+      "category": "Предметы, торговля и внешность",
+      "name": "Пополнение запасов магазинов",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "tick",
+        "line": 109
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M049",
+      "category": "Предметы, торговля и внешность",
+      "name": "Использование расходуемых предметов",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "execute",
+        "line": 28
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M050",
+      "category": "Предметы, торговля и внешность",
+      "name": "Надевание и снятие экипировки по слотам",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "execute",
+        "line": 28
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M051",
+      "category": "Предметы, торговля и внешность",
+      "name": "Приготовление по рецептам и оборудованию",
+      "source": {
+        "path": "scripts/mechanics/inventory.gd",
+        "symbol": "_craft",
+        "line": 82
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M052",
+      "category": "Предметы, торговля и внешность",
+      "name": "Редактирование внешности NPC",
+      "source": {
+        "path": "scripts/mechanics/appearance.gd",
+        "symbol": "execute",
+        "line": 13
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M053",
+      "category": "Предметы, торговля и внешность",
+      "name": "Комплекты одежды",
+      "source": {
+        "path": "scripts/mechanics/appearance.gd",
+        "symbol": "execute",
+        "line": 13
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M054",
+      "category": "Предметы, торговля и внешность",
+      "name": "Переодевание по занятию, месту и погоде",
+      "source": {
+        "path": "scripts/mechanics/appearance.gd",
+        "symbol": "dress_for_context",
+        "line": 69
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M055",
+      "category": "Учёба",
+      "name": "Выбор дисциплин и спорта",
+      "source": {
+        "path": "scripts/gameplay/gameplay.gd",
+        "symbol": "apply_curriculum",
+        "line": 173
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M056",
+      "category": "Учёба",
+      "name": "Посещение занятий, оценки и опыт",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "_lesson",
+        "line": 87
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M057",
+      "category": "Учёба",
+      "name": "Домашняя работа",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "execute",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M058",
+      "category": "Учёба",
+      "name": "Пропуски, предупреждения и отчисление",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "tick",
+        "line": 101
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M059",
+      "category": "Учёба",
+      "name": "Восстановление после отчисления",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "execute",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M060",
+      "category": "Финансы и работа",
+      "name": "Внесение денег на банковский счёт",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M061",
+      "category": "Финансы и работа",
+      "name": "Снятие денег со счёта",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M062",
+      "category": "Финансы и работа",
+      "name": "Получение кредита",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M063",
+      "category": "Финансы и работа",
+      "name": "Погашение кредита",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M064",
+      "category": "Финансы и работа",
+      "name": "Проценты на вклад и долг",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "tick",
+        "line": 88
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M065",
+      "category": "Финансы и работа",
+      "name": "Покупка доходного актива",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "_asset",
+        "line": 46
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M066",
+      "category": "Финансы и работа",
+      "name": "Улучшение доходного актива",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "_asset",
+        "line": 46
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M067",
+      "category": "Финансы и работа",
+      "name": "Продажа доходного актива",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "_asset",
+        "line": 46
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M068",
+      "category": "Финансы и работа",
+      "name": "Пассивный доход и расходы активов",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "tick",
+        "line": 88
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M069",
+      "category": "Финансы и работа",
+      "name": "Рабочие смены с требованиями и оплатой",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_work",
+        "line": 78
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M070",
+      "category": "Финансы и работа",
+      "name": "Автоматическая смена с фиксированным качеством",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_work",
+        "line": 78
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M071",
+      "category": "Финансы и работа",
+      "name": "Опыт и уровень профессии",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_promote",
+        "line": 73
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M072",
+      "category": "Финансы и работа",
+      "name": "Взятие фриланс-заказа",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M073",
+      "category": "Финансы и работа",
+      "name": "Работа над заказом по частям и качество",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_work_contract",
+        "line": 31
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M074",
+      "category": "Финансы и работа",
+      "name": "Сдача заказа и получение оплаты",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M075",
+      "category": "Финансы и работа",
+      "name": "Истечение сроков заказов",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "tick",
+        "line": 171
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M076",
+      "category": "Финансы и работа",
+      "name": "Разработка личного проекта",
+      "source": {
+        "path": "scripts/mechanics/economy.gd",
+        "symbol": "_project",
+        "line": 70
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M077",
+      "category": "Финансы и работа",
+      "name": "Стриминг, аудитория и доход",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_stream",
+        "line": 88
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M078",
+      "category": "Финансы и работа",
+      "name": "Журналистское расследование",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_publication",
+        "line": 137
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M079",
+      "category": "Финансы и работа",
+      "name": "Сбор уникальных источников через интервью",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_publication",
+        "line": 137
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M080",
+      "category": "Финансы и работа",
+      "name": "Проверка журналистских материалов",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_publication",
+        "line": 137
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M081",
+      "category": "Финансы и работа",
+      "name": "Публикация материала",
+      "source": {
+        "path": "scripts/mechanics/careers.gd",
+        "symbol": "_publication",
+        "line": 137
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M082",
+      "category": "Финансы и работа",
+      "name": "Ежедневное обновление доски заказов",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "board",
+        "line": 175
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M083",
+      "category": "Финансы и работа",
+      "name": "Принятие ежедневного заказа",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_take_order",
+        "line": 188
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M084",
+      "category": "Финансы и работа",
+      "name": "Доставка реальных предметов по заказу",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_deliver",
+        "line": 202
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M085",
+      "category": "Финансы и работа",
+      "name": "Серия рабочих дней",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_attendance",
+        "line": 168
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M086",
+      "category": "Финансы и работа",
+      "name": "Выбор добровольной жизненной цели",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "execute",
+        "line": 54
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M087",
+      "category": "Финансы и работа",
+      "name": "Получение награды за жизненную цель",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "execute",
+        "line": 54
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M088",
+      "category": "Финансы и работа",
+      "name": "Нелегальные подработки с риском наказания",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "risk",
+        "line": 27
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M089",
+      "category": "Финансы и работа",
+      "name": "Предварительное сканирование цифровой задачи",
+      "source": {
+        "path": "scripts/mechanics/digital.gd",
+        "symbol": "execute",
+        "line": 31
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M090",
+      "category": "Финансы и работа",
+      "name": "Выполнение цифровой операции",
+      "source": {
+        "path": "scripts/mechanics/digital.gd",
+        "symbol": "execute",
+        "line": 31
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M091",
+      "category": "Финансы и работа",
+      "name": "Цифровой след и его снижение",
+      "source": {
+        "path": "scripts/mechanics/digital.gd",
+        "symbol": "tick",
+        "line": 87
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M092",
+      "category": "Жильё и обустройство",
+      "name": "Покупка недвижимости",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M093",
+      "category": "Жильё и обустройство",
+      "name": "Аренда недвижимости",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M094",
+      "category": "Жильё и обустройство",
+      "name": "Переезд и домашний адрес",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M095",
+      "category": "Жильё и обустройство",
+      "name": "Продажа недвижимости",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M096",
+      "category": "Жильё и обустройство",
+      "name": "Расторжение аренды",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M097",
+      "category": "Жильё и обустройство",
+      "name": "Регулярная аренда и накопление долга",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "tick",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M098",
+      "category": "Жильё и обустройство",
+      "name": "Погашение долга по аренде",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M099",
+      "category": "Жильё и обустройство",
+      "name": "Выселение за неуплату",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "tick",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M100",
+      "category": "Жильё и обустройство",
+      "name": "Социальное жильё при потере дома",
+      "source": {
+        "path": "scripts/gameplay/city_housing.gd",
+        "symbol": "emergency_available",
+        "line": 5
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M101",
+      "category": "Жильё и обустройство",
+      "name": "Заселение жильца с изменением адреса",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M102",
+      "category": "Жильё и обустройство",
+      "name": "Выселение жильца с восстановлением адреса",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M103",
+      "category": "Жильё и обустройство",
+      "name": "Арендная плата жильцов и их долги",
+      "source": {
+        "path": "scripts/mechanics/housing.gd",
+        "symbol": "tick",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M104",
+      "category": "Жильё и обустройство",
+      "name": "Установка принадлежащего игроку оборудования",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "execute",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M105",
+      "category": "Жильё и обустройство",
+      "name": "Размещение, перемещение и поворот мебели",
+      "source": {
+        "path": "scripts/mechanics/interior.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M106",
+      "category": "Жильё и обустройство",
+      "name": "Снятие мебели с возвратом владения",
+      "source": {
+        "path": "scripts/mechanics/interior.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M107",
+      "category": "Жильё и обустройство",
+      "name": "Улучшения дома с уровнями и бонусами",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_upgrade",
+        "line": 226
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M108",
+      "category": "Жильё и обустройство",
+      "name": "Уборка дома и чистота",
+      "source": {
+        "path": "scripts/mechanics/world.gd",
+        "symbol": "execute",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M109",
+      "category": "Бой",
+      "name": "Пошаговый бой и очки действий",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "action",
+        "line": 60
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M110",
+      "category": "Бой",
+      "name": "Выбор приёма и мощности атаки с учётом оружия",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "forecast",
+        "line": 29
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M111",
+      "category": "Бой",
+      "name": "Прицельные атаки по частям тела",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "forecast",
+        "line": 29
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M112",
+      "category": "Бой",
+      "name": "Защита части тела",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "action",
+        "line": 60
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M113",
+      "category": "Бой",
+      "name": "Боевые стойки",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "action",
+        "line": 60
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M114",
+      "category": "Бой",
+      "name": "Восстановление выносливости вместо атаки",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "action",
+        "line": 60
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M115",
+      "category": "Бой",
+      "name": "Запугивание противника",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "action",
+        "line": 60
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M116",
+      "category": "Бой",
+      "name": "Побег из боя",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "action",
+        "line": 60
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M117",
+      "category": "Бой",
+      "name": "Критические попадания",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "_strike",
+        "line": 107
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M118",
+      "category": "Бой",
+      "name": "Сбивание с ног",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "_strike",
+        "line": 107
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M119",
+      "category": "Бой",
+      "name": "Финт и раскрытие защиты",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "_strike",
+        "line": 107
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M120",
+      "category": "Бой",
+      "name": "Обезоруживание",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "_strike",
+        "line": 107
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M121",
+      "category": "Бой",
+      "name": "Тактический выбор действий противником",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "_enemy_turn",
+        "line": 140
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M122",
+      "category": "Бой",
+      "name": "Автоматическая защита от боевого опыта",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "forecast",
+        "line": 29
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M123",
+      "category": "Бой",
+      "name": "Исход боя и однократная награда",
+      "source": {
+        "path": "scripts/mechanics/combat.gd",
+        "symbol": "_update_outcome",
+        "line": 226
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M124",
+      "category": "Преступность и наказания",
+      "name": "Кража денег или предмета",
+      "source": {
+        "path": "scripts/mechanics/security.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M125",
+      "category": "Преступность и наказания",
+      "name": "Ограбление жилища через вскрытие замка",
+      "source": {
+        "path": "scripts/mechanics/security.gd",
+        "symbol": "_begin_burglary",
+        "line": 64
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M126",
+      "category": "Преступность и наказания",
+      "name": "Влияние свидетелей на риск и последствия",
+      "source": {
+        "path": "scripts/mechanics/security.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M127",
+      "category": "Преступность и наказания",
+      "name": "Накопление розыска и его снижение",
+      "source": {
+        "path": "scripts/mechanics/security.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M128",
+      "category": "Преступность и наказания",
+      "name": "Оплата штрафа",
+      "source": {
+        "path": "scripts/mechanics/security.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M129",
+      "category": "Преступность и наказания",
+      "name": "Отбывание игрового наказания",
+      "source": {
+        "path": "scripts/mechanics/security.gd",
+        "symbol": "execute",
+        "line": 4
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M130",
+      "category": "Мини-игры",
+      "name": "Блэкджек",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_game_input",
+        "line": 62
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M131",
+      "category": "Мини-игры",
+      "name": "Испытание реакции",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_game_input",
+        "line": 62
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M132",
+      "category": "Мини-игры",
+      "name": "Силовое испытание",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_game_input",
+        "line": 62
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M133",
+      "category": "Мини-игры",
+      "name": "Угадывание числа",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_game_input",
+        "line": 62
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M134",
+      "category": "Мини-игры",
+      "name": "Вскрытие замка по штифтам",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_game_input",
+        "line": 62
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M135",
+      "category": "Мини-игры",
+      "name": "Попадание во вращающееся временное окно",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_timed_input",
+        "line": 123
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M136",
+      "category": "Мини-игры",
+      "name": "Отжимания с усилием и повторениями",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_timed_input",
+        "line": 123
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M137",
+      "category": "Мини-игры",
+      "name": "Рабочее испытание на запоминание заказа",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_input",
+        "line": 102
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M138",
+      "category": "Мини-игры",
+      "name": "Рабочее испытание на сортировку посылок",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_input",
+        "line": 102
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M139",
+      "category": "Мини-игры",
+      "name": "Рабочее испытание на попадание в рабочую зону",
+      "source": {
+        "path": "scripts/mechanics/livelihood.gd",
+        "symbol": "_input",
+        "line": 102
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M140",
+      "category": "Мини-игры",
+      "name": "Ставки, выигрыш и потеря ставки",
+      "source": {
+        "path": "scripts/mechanics/encounters.gd",
+        "symbol": "_finish_game",
+        "line": 115
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M141",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Воспроизводимая генерация населения по seed",
+      "source": {
+        "path": "scripts/mechanics/population.gd",
+        "symbol": "execute",
+        "line": 53
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M142",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Генерация биографии, роли, ресурсов и домашнего адреса",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "generate_from_template",
+        "line": 73
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M143",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Непрерывные грани характера",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "initialize_character",
+        "line": 80
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M144",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Личные ценности и интересы",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "initialize_character",
+        "line": 80
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M145",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Обязательные смены и занятия NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_commitment",
+        "line": 306
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M146",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Приоритет срочных потребностей NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_urgent",
+        "line": 299
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M147",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Оценка занятий и самостоятельный выбор действий",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "evaluate",
+        "line": 391
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M148",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Самостоятельные перемещения NPC со временем в пути",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_start",
+        "line": 475
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M149",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Развитие навыков и заработок NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_finish",
+        "line": 518
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M150",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Долгосрочные цели NPC с этапами",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_progress",
+        "line": 643
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M151",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Краткосрочные желания NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_refresh_wants",
+        "line": 279
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M152",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Эмоции и временные эмоциональные состояния",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_emotion",
+        "line": 205
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M153",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Переживания, страхи и направленные чувства",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_experience",
+        "line": 222
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M154",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Память о фактах и забывание",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "age",
+        "line": 32
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M155",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Самостоятельное общение и совместные дела NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "_social_outcome",
+        "line": 593
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M156",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Поддержка игроком цели NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_agency.gd",
+        "symbol": "execute",
+        "line": 13
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M157",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Передача новостей между NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "social_success",
+        "line": 219
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M158",
+      "category": "Генерация и самостоятельная жизнь NPC",
+      "name": "Проверка NPC известных утверждений",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "complete_solo",
+        "line": 207
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M159",
+      "category": "Отношения и социальные действия",
+      "name": "Раздельные направленные отношения A к B и B к A",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "_new_bond",
+        "line": 18
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M160",
+      "category": "Отношения и социальные действия",
+      "name": "Стадии дружбы",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "tick",
+        "line": 321
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M161",
+      "category": "Отношения и социальные действия",
+      "name": "Постепенное раскрытие интересов и ценностей",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "_disclose",
+        "line": 86
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M162",
+      "category": "Отношения и социальные действия",
+      "name": "Знакомство и обычное общение",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M163",
+      "category": "Отношения и социальные действия",
+      "name": "Шутки",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M164",
+      "category": "Отношения и социальные действия",
+      "name": "Эмоциональная поддержка",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M165",
+      "category": "Отношения и социальные действия",
+      "name": "Совместная работа и взаимопомощь",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M166",
+      "category": "Отношения и социальные действия",
+      "name": "Ухаживание и романтический интерес",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M167",
+      "category": "Отношения и социальные действия",
+      "name": "Сплетни с учётом известных сведений",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "social_success",
+        "line": 219
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M168",
+      "category": "Отношения и социальные действия",
+      "name": "Обман и разоблачение",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "social_success",
+        "line": 219
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M169",
+      "category": "Отношения и социальные действия",
+      "name": "Хвастовство реальными достижениями",
+      "source": {
+        "path": "scripts/mechanics/npc_personalities.gd",
+        "symbol": "social_success",
+        "line": 219
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M170",
+      "category": "Отношения и социальные действия",
+      "name": "Обсуждение личных ценностей",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M171",
+      "category": "Отношения и социальные действия",
+      "name": "Спор и межличностный вред",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M172",
+      "category": "Отношения и социальные действия",
+      "name": "Извинение с признанием вреда",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M173",
+      "category": "Отношения и социальные действия",
+      "name": "Восстановление доверия поступками в разные дни",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "_repair",
+        "line": 176
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M174",
+      "category": "Отношения и социальные действия",
+      "name": "Личные границы и отказ",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "blocked",
+        "line": 98
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M175",
+      "category": "Отношения и социальные действия",
+      "name": "Подарки с передачей владения и учётом предпочтений",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M176",
+      "category": "Отношения и социальные действия",
+      "name": "Предложение отношений и взаимное согласие",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "resolve",
+        "line": 186
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M177",
+      "category": "Отношения и социальные действия",
+      "name": "Одностороннее расставание",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "execute",
+        "line": 272
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M178",
+      "category": "Отношения и социальные действия",
+      "name": "Свидания с условиями места и погоды",
+      "source": {
+        "path": "scripts/mechanics/social_rules.gd",
+        "symbol": "execute",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M179",
+      "category": "Отношения и социальные действия",
+      "name": "Обещания с конкретным сроком",
+      "source": {
+        "path": "scripts/mechanics/social_rules.gd",
+        "symbol": "execute",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M180",
+      "category": "Отношения и социальные действия",
+      "name": "Исполнение обещания реальным действием",
+      "source": {
+        "path": "scripts/mechanics/social_rules.gd",
+        "symbol": "execute",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M181",
+      "category": "Отношения и социальные действия",
+      "name": "Нарушение обещания и последствия",
+      "source": {
+        "path": "scripts/mechanics/social_rules.gd",
+        "symbol": "tick",
+        "line": 298
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M182",
+      "category": "Отношения и социальные действия",
+      "name": "Общий вечер и отношения между гостями",
+      "source": {
+        "path": "scripts/gameplay/player_social_rules.gd",
+        "symbol": "_gathering",
+        "line": 39
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M183",
+      "category": "Отношения и социальные действия",
+      "name": "Ослабление отношений без контакта",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "tick",
+        "line": 321
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M184",
+      "category": "Отношения и социальные действия",
+      "name": "Насыщение социальных наград и ограничения повторений",
+      "source": {
+        "path": "scripts/mechanics/npc_relationships.gd",
+        "symbol": "_gain",
+        "line": 153
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M185",
+      "category": "Диалоги и телефон",
+      "name": "Обмен контактами",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M186",
+      "category": "Диалоги и телефон",
+      "name": "Ветвящаяся переписка",
+      "source": {
+        "path": "scripts/mechanics/npc_dialogue.gd",
+        "symbol": "execute",
+        "line": 278
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M187",
+      "category": "Диалоги и телефон",
+      "name": "Телефонный звонок",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M188",
+      "category": "Диалоги и телефон",
+      "name": "Назначение встречи",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M189",
+      "category": "Диалоги и телефон",
+      "name": "Посещение и пропуск встречи",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "tick",
+        "line": 182
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M190",
+      "category": "Диалоги и телефон",
+      "name": "Приглашение знакомого в текущее место",
+      "source": {
+        "path": "scripts/mechanics/social.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M191",
+      "category": "Диалоги и телефон",
+      "name": "Разговор о прошлом с раскрытием биографии",
+      "source": {
+        "path": "scripts/mechanics/social_rules.gd",
+        "symbol": "execute",
+        "line": 85
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M192",
+      "category": "Диалоги и телефон",
+      "name": "Контекстные диалоги с доступностью тем и выборов",
+      "source": {
+        "path": "scripts/mechanics/npc_dialogue.gd",
+        "symbol": "execute",
+        "line": 278
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M193",
+      "category": "Диалоги и телефон",
+      "name": "Самостоятельное предложение разговора NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_dialogue.gd",
+        "symbol": "local_initiative",
+        "line": 396
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M194",
+      "category": "Диалоги и телефон",
+      "name": "Самостоятельное сообщение NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_dialogue.gd",
+        "symbol": "_message",
+        "line": 384
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M195",
+      "category": "Организации",
+      "name": "Создание организации",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M196",
+      "category": "Организации",
+      "name": "Набор участников",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M197",
+      "category": "Организации",
+      "name": "Исключение участников",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M198",
+      "category": "Организации",
+      "name": "Назначение задач",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M199",
+      "category": "Организации",
+      "name": "Пополнение бюджета организации",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M200",
+      "category": "Организации",
+      "name": "Коллективные проекты",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M201",
+      "category": "Организации",
+      "name": "Ежедневная производительность и производство",
+      "source": {
+        "path": "scripts/mechanics/organizations.gd",
+        "symbol": "tick",
+        "line": 48
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M202",
+      "category": "Организации",
+      "name": "Политика и направление работы коллектива",
+      "source": {
+        "path": "scripts/mechanics/institutions.gd",
+        "symbol": "execute",
+        "line": 11
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M203",
+      "category": "Организации",
+      "name": "Оборудование организации",
+      "source": {
+        "path": "scripts/mechanics/institutions.gd",
+        "symbol": "execute",
+        "line": 11
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M204",
+      "category": "Организации",
+      "name": "Зарплаты и последствия невыплаты",
+      "source": {
+        "path": "scripts/mechanics/institutions.gd",
+        "symbol": "tick",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M205",
+      "category": "Организации",
+      "name": "Многоэтапные коллективные кампании",
+      "source": {
+        "path": "scripts/mechanics/institutions.gd",
+        "symbol": "tick",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M206",
+      "category": "Организации",
+      "name": "Созыв выборов и определение победителя",
+      "source": {
+        "path": "scripts/mechanics/institutions.gd",
+        "symbol": "execute",
+        "line": 11
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M207",
+      "category": "Организации",
+      "name": "Самостоятельное голосование NPC",
+      "source": {
+        "path": "scripts/gameplay/player_institutions.gd",
+        "symbol": "_hold_vote",
+        "line": 14
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M208",
+      "category": "Близость и репродукция",
+      "name": "Цикл и овуляция",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "risk",
+        "line": 198
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M209",
+      "category": "Близость и репродукция",
+      "name": "Фертильность и бесплодие",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "risk",
+        "line": 198
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M210",
+      "category": "Близость и репродукция",
+      "name": "Приглашение к близости с проверкой готовности и приватности",
+      "source": {
+        "path": "scripts/mechanics/intimacy.gd",
+        "symbol": "_begin",
+        "line": 120
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M211",
+      "category": "Близость и репродукция",
+      "name": "Обсуждение намерений и беременности",
+      "source": {
+        "path": "scripts/mechanics/intimacy.gd",
+        "symbol": "execute",
+        "line": 75
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M212",
+      "category": "Близость и репродукция",
+      "name": "Согласование защиты",
+      "source": {
+        "path": "scripts/mechanics/intimacy.gd",
+        "symbol": "execute",
+        "line": 75
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M213",
+      "category": "Близость и репродукция",
+      "name": "Отказ и прерывание встречи",
+      "source": {
+        "path": "scripts/mechanics/intimacy.gd",
+        "symbol": "execute",
+        "line": 75
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M214",
+      "category": "Близость и репродукция",
+      "name": "Завершение встречи и последующая забота",
+      "source": {
+        "path": "scripts/mechanics/intimacy.gd",
+        "symbol": "execute",
+        "line": 75
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M215",
+      "category": "Близость и репродукция",
+      "name": "Риск и отложенное разрешение зачатия",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "expose",
+        "line": 220
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M216",
+      "category": "Близость и репродукция",
+      "name": "Расход барьерной защиты",
+      "source": {
+        "path": "scripts/mechanics/intimacy.gd",
+        "symbol": "execute",
+        "line": 75
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M217",
+      "category": "Близость и репродукция",
+      "name": "Регулярная контрацепция и дозы",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_contraception",
+        "line": 117
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M218",
+      "category": "Близость и репродукция",
+      "name": "Длительная контрацепция и её прекращение",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_contraception",
+        "line": 117
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M219",
+      "category": "Близость и репродукция",
+      "name": "Экстренная контрацепция",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_emergency",
+        "line": 168
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M220",
+      "category": "Близость и репродукция",
+      "name": "Тестирование и обнаружение беременности",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_test",
+        "line": 188
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M221",
+      "category": "Близость и репродукция",
+      "name": "Стерилизация и восстановление",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_procedure",
+        "line": 152
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M222",
+      "category": "Близость и репродукция",
+      "name": "Решение о продолжении или завершении беременности",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_decision",
+        "line": 253
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M223",
+      "category": "Близость и репродукция",
+      "name": "Реакция партнёра на беременность",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_response",
+        "line": 275
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M224",
+      "category": "Близость и репродукция",
+      "name": "Срок и стадии беременности",
+      "source": {
+        "path": "scripts/mechanics/reproductive_lifecycle.gd",
+        "symbol": "tick",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M225",
+      "category": "Близость и репродукция",
+      "name": "Дородовой уход",
+      "source": {
+        "path": "scripts/mechanics/health.gd",
+        "symbol": "prenatal_care",
+        "line": 82
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M226",
+      "category": "Близость и репродукция",
+      "name": "Рождение и регистрация члена семьи",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "on_birth",
+        "line": 287
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M227",
+      "category": "Близость и репродукция",
+      "name": "Решение о родительстве и фактической опеке",
+      "source": {
+        "path": "scripts/mechanics/reproduction.gd",
+        "symbol": "_parenthood",
+        "line": 305
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M228",
+      "category": "Близость и репродукция",
+      "name": "Самостоятельные близкие встречи NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_reproduction.gd",
+        "symbol": "_meetings",
+        "line": 147
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M229",
+      "category": "Близость и репродукция",
+      "name": "Самостоятельные решения NPC о беременности",
+      "source": {
+        "path": "scripts/mechanics/npc_reproduction.gd",
+        "symbol": "_pregnancies",
+        "line": 203
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M230",
+      "category": "Близость и репродукция",
+      "name": "Самостоятельная защита и репродуктивные меры NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_reproduction.gd",
+        "symbol": "_routines",
+        "line": 130
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M231",
+      "category": "Самочувствие при беременности",
+      "name": "Симптомы по срокам с индивидуальной выраженностью",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_wellbeing.gd",
+        "symbol": "_refresh",
+        "line": 80
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M232",
+      "category": "Самочувствие при беременности",
+      "name": "Бытовые эпизоды и последствия для потребностей",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_wellbeing.gd",
+        "symbol": "tick",
+        "line": 167
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M233",
+      "category": "Самочувствие при беременности",
+      "name": "Гигиена после бытового эпизода",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_selfcare.gd",
+        "symbol": "apply",
+        "line": 15
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M234",
+      "category": "Самочувствие при беременности",
+      "name": "Гигиенические средства",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_selfcare.gd",
+        "symbol": "execute",
+        "line": 36
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M235",
+      "category": "Самочувствие при беременности",
+      "name": "Облегчение симптомов отдыхом и перерывами",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_selfcare.gd",
+        "symbol": "apply",
+        "line": 15
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M236",
+      "category": "Самочувствие при беременности",
+      "name": "Поддерживающий разговор о самочувствии",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_selfcare.gd",
+        "symbol": "execute",
+        "line": 36
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M237",
+      "category": "Самочувствие при беременности",
+      "name": "Самостоятельный выбор NPC перерыва и маршрута",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_selfcare.gd",
+        "symbol": "consider",
+        "line": 86
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M238",
+      "category": "Самочувствие при беременности",
+      "name": "Послеродовое восстановление",
+      "source": {
+        "path": "scripts/mechanics/pregnancy_wellbeing.gd",
+        "symbol": "_refresh",
+        "line": 80
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M239",
+      "category": "Семья и уход",
+      "name": "Календарное взросление члена семьи",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_update_stage",
+        "line": 216
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M240",
+      "category": "Семья и уход",
+      "name": "Потребности зависимого члена семьи",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_hour",
+        "line": 226
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M241",
+      "category": "Семья и уход",
+      "name": "Кормление зависимого члена семьи",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_care",
+        "line": 128
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M242",
+      "category": "Семья и уход",
+      "name": "Гигиенический уход за зависимым членом семьи",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_care",
+        "line": 128
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M243",
+      "category": "Семья и уход",
+      "name": "Укладывание зависимого члена семьи спать",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_care",
+        "line": 128
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M244",
+      "category": "Семья и уход",
+      "name": "Совместная игра и внимание",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_care",
+        "line": 128
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M245",
+      "category": "Семья и уход",
+      "name": "Обучающие занятия с зависимым членом семьи",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_care",
+        "line": 128
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M246",
+      "category": "Семья и уход",
+      "name": "Осмотр здоровья зависимого члена семьи",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_care",
+        "line": 128
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M247",
+      "category": "Семья и уход",
+      "name": "Распределение обязанностей между опекунами",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "execute",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M248",
+      "category": "Семья и уход",
+      "name": "Самостоятельный уход NPC",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_autonomy",
+        "line": 172
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M249",
+      "category": "Семья и уход",
+      "name": "Оплата временной помощи семье",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "execute",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M250",
+      "category": "Семья и уход",
+      "name": "Пополнение семейного бюджета",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "execute",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M251",
+      "category": "Семья и уход",
+      "name": "Регулярные семейные расходы и задолженность",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_hour",
+        "line": 226
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M252",
+      "category": "Семья и уход",
+      "name": "Погашение семейной задолженности",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "execute",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M253",
+      "category": "Семья и уход",
+      "name": "Учебное расписание и школьный прогресс ребёнка",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_school",
+        "line": 168
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M254",
+      "category": "Семья и уход",
+      "name": "Развитие привязанности через уход",
+      "source": {
+        "path": "scripts/mechanics/family.gd",
+        "symbol": "_finish_care",
+        "line": 143
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M255",
+      "category": "Алименты",
+      "name": "Назначение алиментов по фактической опеке",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "synchronize",
+        "line": 36
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M256",
+      "category": "Алименты",
+      "name": "Календарное начисление и долг",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "tick",
+        "line": 92
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M257",
+      "category": "Алименты",
+      "name": "Соглашение о размере алиментов",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "execute",
+        "line": 57
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M258",
+      "category": "Алименты",
+      "name": "Автоматическая оплата алиментов",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "execute",
+        "line": 57
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M259",
+      "category": "Алименты",
+      "name": "Ручная выплата алиментов",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "execute",
+        "line": 57
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M260",
+      "category": "Алименты",
+      "name": "Подача на принудительное взыскание",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "execute",
+        "line": 57
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M261",
+      "category": "Алименты",
+      "name": "Принудительное перечисление средств",
+      "source": {
+        "path": "scripts/mechanics/child_support.gd",
+        "symbol": "tick",
+        "line": 92
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M262",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Сюжетные выборы и последствия для дальнейших сцен",
+      "source": {
+        "path": "TimeLine/chapter_one.dtl",
+        "symbol": "choices",
+        "line": 49
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M263",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Исследование объектов с продолжением сцены",
+      "source": {
+        "path": "scripts/gameplay/gameplay.gd",
+        "symbol": "inspect_story_object",
+        "line": 266
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M264",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Исследование сюжетного графа комнат",
+      "source": {
+        "path": "scripts/gameplay/gameplay.gd",
+        "symbol": "guided_travel",
+        "line": 256
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M265",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Личные ветвящиеся истории NPC",
+      "source": {
+        "path": "scripts/mechanics/npc_stories.gd",
+        "symbol": "execute",
+        "line": 39
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M266",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Продвижение личных историй действиями в мире",
+      "source": {
+        "path": "scripts/mechanics/npc_stories.gd",
+        "symbol": "observe",
+        "line": 90
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M267",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Принятие задания",
+      "source": {
+        "path": "scripts/mechanics/events.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M268",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Прогресс целей задания",
+      "source": {
+        "path": "scripts/mechanics/events.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M269",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Провал задания по сроку",
+      "source": {
+        "path": "scripts/mechanics/events.gd",
+        "symbol": "tick",
+        "line": 78
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M270",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Награда за завершённое задание",
+      "source": {
+        "path": "scripts/mechanics/events.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M271",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Условные события с очередью и приоритетами",
+      "source": {
+        "path": "scripts/mechanics/events.gd",
+        "symbol": "poll",
+        "line": 66
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M272",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Достижения с условиями и наградами",
+      "source": {
+        "path": "scripts/mechanics/events.gd",
+        "symbol": "execute",
+        "line": 3
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M273",
+      "category": "Сюжет, задания и коллекции",
+      "name": "Открытие коллекционных записей за игровые результаты",
+      "source": {
+        "path": "scripts/mechanics/collections.gd",
+        "symbol": "poll",
+        "line": 16
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M274",
+      "category": "Планирование действий",
+      "name": "Составление очереди действий",
+      "source": {
+        "path": "scripts/ui/gameplay/action_queue.gd",
+        "symbol": "enqueue",
+        "line": 42
+      },
+      "assessment": "implemented_logic_static_audit"
+    },
+    {
+      "id": "M275",
+      "category": "Планирование действий",
+      "name": "Выполнение плана с остановкой при отказе или событии",
+      "source": {
+        "path": "scripts/ui/gameplay/action_queue.gd",
+        "symbol": "resolve",
+        "line": 93
+      },
+      "assessment": "implemented_logic_static_audit"
+    }
+  ]
+}

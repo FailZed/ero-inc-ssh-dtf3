@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/locations/global/street_exit_16x9.png" id="1_bg"]
+[ext_resource type="Script" path="res://scripts/locations/location_button.gd" id="2_button"]
+[ext_resource type="PackedScene" uid="uid://c18yeu5hisq11" path="res://scenes/ui/HubUI.tscn" id="3_hub_ui"]
+[ext_resource type="Script" path="res://scripts/locations/location_scene.gd" id="4_location_scene"]
+
+[node name="GlobalMap" type="Node2D"]
+script = ExtResource("4_location_scene")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_bg")
+
+[node name="Hud" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="HubUI" parent="Hud" instance=ExtResource("3_hub_ui")]
+open_on_ready = true
+
+[node name="Title" type="Label" parent="Hud"]
+offset_left = 32.0
+offset_top = 28.0
+offset_right = 360.0
+offset_bottom = 72.0
+text = "Глобальная карта"
+
+[node name="ApartmentButton" type="Button" parent="Hud"]
+offset_left = 32.0
+offset_top = 88.0
+offset_right = 260.0
+offset_bottom = 144.0
+text = "Квартира"
+script = ExtResource("2_button")
+target_location_id = "apartment_hall"

@@ -1,0 +1,626 @@
+{
+  "schema": 2,
+  "status": "integrated city geography",
+  "reference_size": [
+    1536,
+    1024
+  ],
+  "orientation": "north at image top",
+  "labeled_texture": "res://assets/textures/world/city-river-v2/city-labeled-v2.png",
+  "clean_texture": "res://assets/textures/world/city-river-v2/city-clean-v2.png",
+  "river": {
+    "flow": "west to east",
+    "banks": "smaller north, larger south"
+  },
+  "locations": [
+    {
+      "id": "student_home",
+      "name": "Дом героя",
+      "bank": "south",
+      "anchor_px": [
+        167,
+        810
+      ],
+      "anchor_uv": [
+        0.108724,
+        0.791016
+      ],
+      "description": "Одноэтажный дом героя с огороженным двором, в 10–15 минутах ходьбы от университета.",
+      "existing_location_candidates": [
+        "bedroom",
+        "apartment_hall",
+        "bathroom",
+        "kitchen"
+      ],
+      "runtime_binding": "active",
+      "runtime_id": "student_home",
+      "label_offset_px": [
+        12,
+        -50
+      ],
+      "storeys": 1
+    },
+    {
+      "id": "university",
+      "name": "Университет",
+      "bank": "south",
+      "anchor_px": [
+        223,
+        521
+      ],
+      "anchor_uv": [
+        0.145182,
+        0.508789
+      ],
+      "description": "Краснокирпичный университет: центральный корпус в шесть этажей и два крыла по три. Перед входом большой парк.",
+      "existing_location_candidates": [
+        "training_center"
+      ],
+      "runtime_binding": "active",
+      "runtime_id": "training_center",
+      "label_offset_px": [
+        12,
+        -50
+      ],
+      "storeys": {
+        "central": 6,
+        "left": 3,
+        "right": 3
+      }
+    },
+    {
+      "id": "south_shops",
+      "name": "Магазины",
+      "bank": "south",
+      "anchor_px": [
+        652,
+        682
+      ],
+      "anchor_uv": [
+        0.424479,
+        0.666016
+      ],
+      "description": "Основная торговая улица южного берега.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "global_map",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "riverside_cafe",
+      "name": "Кафе",
+      "bank": "south",
+      "anchor_px": [
+        672,
+        470
+      ],
+      "anchor_uv": [
+        0.4375,
+        0.458984
+      ],
+      "description": "Кафе с террасой у реки.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "riverside_cafe",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "city_park",
+      "name": "Городской парк",
+      "bank": "south",
+      "anchor_px": [
+        725,
+        901
+      ],
+      "anchor_uv": [
+        0.472005,
+        0.879883
+      ],
+      "description": "Парк с прудом, прогулками и встречами.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "city_park",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "south_promenade",
+      "name": "Набережная",
+      "bank": "south",
+      "anchor_px": [
+        1091,
+        491
+      ],
+      "anchor_uv": [
+        0.710286,
+        0.479492
+      ],
+      "description": "Второй зелёный прогулочный маршрут вдоль воды.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "south_promenade",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "real_estate_agency",
+      "name": "Агентство недвижимости",
+      "bank": "south",
+      "anchor_px": [
+        942,
+        659
+      ],
+      "anchor_uv": [
+        0.613281,
+        0.643555
+      ],
+      "description": "Аренда и покупка жилья; направление за социальной помощью после выселения.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "real_estate_agency",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "detached_house",
+      "name": "Двухэтажный дом",
+      "bank": "south",
+      "anchor_px": [
+        1186,
+        843
+      ],
+      "anchor_uv": [
+        0.772135,
+        0.823242
+      ],
+      "description": "Отдельный двухэтажный дом с участком: аренда или покупка.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "detached_house",
+      "label_offset_px": [
+        12,
+        -50
+      ],
+      "storeys": 2
+    },
+    {
+      "id": "penthouse",
+      "name": "Пентхаус",
+      "bank": "south",
+      "anchor_px": [
+        1386,
+        613
+      ],
+      "anchor_uv": [
+        0.902344,
+        0.598633
+      ],
+      "description": "Верхний этаж жилого комплекса с террасой: аренда или покупка.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "penthouse",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "north_beach",
+      "name": "Пляж",
+      "bank": "north",
+      "anchor_px": [
+        191,
+        174
+      ],
+      "anchor_uv": [
+        0.124349,
+        0.169922
+      ],
+      "description": "Общественный песчаный речной пляж, доступный по дорожке.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "north_beach",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "north_den",
+      "name": "Притон",
+      "bank": "north",
+      "anchor_px": [
+        566,
+        122
+      ],
+      "anchor_uv": [
+        0.36849,
+        0.119141
+      ],
+      "description": "Неблагополучное заведение в глубине старого квартала.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "north_den",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "north_shops",
+      "name": "Старые лавки",
+      "bank": "north",
+      "anchor_px": [
+        778,
+        144
+      ],
+      "anchor_uv": [
+        0.50651,
+        0.140625
+      ],
+      "description": "Дешёвые магазины и услуги в старом районе.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "north_shops",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "north_alleys",
+      "name": "Закаулки",
+      "bank": "north",
+      "anchor_px": [
+        718,
+        208
+      ],
+      "anchor_uv": [
+        0.467448,
+        0.203125
+      ],
+      "description": "Сеть дворов и служебных проулков северного берега.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "north_alleys",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "police_station",
+      "name": "Полиция",
+      "bank": "north",
+      "anchor_px": [
+        984,
+        203
+      ],
+      "anchor_uv": [
+        0.640625,
+        0.198242
+      ],
+      "description": "Участок рядом с северным въездом на центральный мост.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "police_station",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    },
+    {
+      "id": "social_housing",
+      "name": "Социальное жильё",
+      "bank": "north",
+      "anchor_px": [
+        1275,
+        179
+      ],
+      "anchor_uv": [
+        0.830078,
+        0.174805
+      ],
+      "description": "Скромный жилой дом; аварийное размещение после потери студенческого жилья.",
+      "existing_location_candidates": [],
+      "runtime_binding": "active",
+      "runtime_id": "social_housing",
+      "label_offset_px": [
+        12,
+        -50
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "pedestrian_bridge",
+      "name": "Пешеходный мост",
+      "north_anchor_px": [
+        471,
+        248
+      ],
+      "south_anchor_px": [
+        422,
+        382
+      ]
+    },
+    {
+      "id": "central_bridge",
+      "name": "Центральный мост",
+      "north_anchor_px": [
+        948,
+        282
+      ],
+      "south_anchor_px": [
+        869,
+        490
+      ]
+    }
+  ],
+  "route_links": [
+    {
+      "a": "student_home",
+      "b": "training_center",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 14,
+      "status": "active",
+      "minutes": 14
+    },
+    {
+      "a": "student_home",
+      "b": "city_park",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "training_center",
+      "b": "global_map",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 10,
+      "status": "active",
+      "minutes": 10
+    },
+    {
+      "a": "training_center",
+      "b": "pedestrian_bridge_south",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 3,
+      "status": "active",
+      "minutes": 3
+    },
+    {
+      "a": "global_map",
+      "b": "riverside_cafe",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "global_map",
+      "b": "city_park",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "global_map",
+      "b": "real_estate_agency",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "riverside_cafe",
+      "b": "south_promenade",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "riverside_cafe",
+      "b": "pedestrian_bridge_south",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 3,
+      "status": "active",
+      "minutes": 3
+    },
+    {
+      "a": "city_park",
+      "b": "real_estate_agency",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "real_estate_agency",
+      "b": "south_promenade",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "real_estate_agency",
+      "b": "detached_house",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "detached_house",
+      "b": "penthouse",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "penthouse",
+      "b": "south_promenade",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "pedestrian_bridge_south",
+      "b": "pedestrian_bridge_north",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 2,
+      "status": "active",
+      "minutes": 2
+    },
+    {
+      "a": "pedestrian_bridge_north",
+      "b": "north_beach",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 3,
+      "status": "active",
+      "minutes": 3
+    },
+    {
+      "a": "pedestrian_bridge_north",
+      "b": "north_shops",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 3,
+      "status": "active",
+      "minutes": 3
+    },
+    {
+      "a": "north_shops",
+      "b": "north_den",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "north_den",
+      "b": "north_alleys",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "north_alleys",
+      "b": "police_station",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "north_shops",
+      "b": "social_housing",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "police_station",
+      "b": "social_housing",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 4,
+      "status": "active",
+      "minutes": 4
+    },
+    {
+      "a": "real_estate_agency",
+      "b": "central_bridge_south",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 3,
+      "status": "active",
+      "minutes": 3
+    },
+    {
+      "a": "central_bridge_south",
+      "b": "central_bridge_north",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 2,
+      "status": "active",
+      "minutes": 2
+    },
+    {
+      "a": "central_bridge_north",
+      "b": "police_station",
+      "bidirectional": true,
+      "walk_cost": 0,
+      "travel_minutes": 3,
+      "status": "active",
+      "minutes": 3
+    },
+    {
+      "a": "student_home",
+      "b": "global_map",
+      "minutes": 4,
+      "travel_minutes": 4,
+      "status": "active"
+    }
+  ],
+  "housing_design": {
+    "agency": "real_estate_agency",
+    "start": "student_home",
+    "rental_and_purchase": [
+      "detached_house",
+      "penthouse"
+    ],
+    "emergency": {
+      "destination": "social_housing",
+      "eligibility": "no current residence AND student home lost/evicted AND cash < 600 AND no previous social housing grant",
+      "referral": "real_estate_agency",
+      "status": "active main-game agency referral"
+    }
+  },
+  "period_textures": {
+    "morning": "res://assets/textures/world/city-river-v2/city-morning-v2.png",
+    "day": "res://assets/textures/world/city-river-v2/city-day-v2.png",
+    "sunset": "res://assets/textures/world/city-river-v2/city-sunset-v2.png",
+    "night": "res://assets/textures/world/city-river-v2/city-clean-v2.png"
+  }
+}

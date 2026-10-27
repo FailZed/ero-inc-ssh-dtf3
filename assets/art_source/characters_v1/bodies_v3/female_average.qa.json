@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Ai\\ComfyUI-EroInc\\output\\body-drafts-v3\\female_average.png",
+  "source_sha256": "73d23325d28e53df5a713e0edbdeace1097ff83d76e264a95fd9365662868e8d",
+  "operation": "body alpha slice and uniform registration; no anatomical deformation",
+  "source_cut_y": 240,
+  "uniform_scale": 1.0141987829614605,
+  "canvas": [
+    720,
+    1280
+  ],
+  "neck_attach": [
+    354.03,
+    245
+  ],
+  "feet_baseline_y": 1244,
+  "alpha_bounds": [
+    201,
+    245,
+    524,
+    1245
+  ],
+  "head_included": false,
+  "clothes_included": false,
+  "status": "body layer candidate; separate heads, fitted clothing and runtime review remain"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "status": "candidates_for_curated_synthetic_style_dataset",
+  "checkpoint": "DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+  "checkpoint_sha256": "44670E67C55F059116171EE8538875DA3ABF624FBDAACE6D1A7AC2D9617F0211",
+  "source": "https://civitai.red/models/1034922/dasiwa-illustrious-or-anime?modelVersionId=3012006",
+  "license": "https://freedevproject.org/faipl-1.0-sd/",
+  "output_prefix": "characters_v2/fullbody_calibration",
+  "settings": {
+    "width": 832,
+    "height": 1472,
+    "steps": 32,
+    "cfg": 4.5,
+    "sampler_name": "euler_ancestral",
+    "scheduler": "normal"
+  },
+  "positive": "masterpiece, best quality, eincanime, anime screencap, delicate thin lineart, simple cel shading, matte colors, {subject}, solo, adult {person}, age 28, adult proportions, {build}, short brown hair, blue eyes, clean simple anime face, calm neutral expression, {clothes}, (neutral standing pose:1.15), front view, level head, arms relaxed at sides, feet apart, full body, entire head and both feet visible, generous margins, simple light gray background, flat lighting",
+  "negative": "{exclude}, {anatomy_exclude}, {extra_negative}, worst quality, low quality, blurry, bad anatomy, bad hands, extra fingers, extra limbs, text, watermark, signature, logo, 3d, photorealistic, plastic, metallic skin, robot, mask, thick outlines, oily skin, deep face shadows, heavy blush, stubble, beard, wrinkles, long hair, child, teen, loli, shota, chibi, child proportions, cropped head, cropped feet, multiple people, multiple views, seductive pose, arched back, crossed legs, obese, extreme proportions, enormous breasts, giant muscles",
+  "profiles": [
+    {
+      "id": "casual_female",
+      "gender": "female",
+      "person": "woman",
+      "subject": "1girl, adult woman",
+      "build": "ordinary slender adult build, moderate natural proportions",
+      "clothes": "plain white t-shirt, dark straight trousers, simple sneakers",
+      "extra_negative": "nude, nipples, naked, cleavage",
+      "seed": 719001,
+      "split": "fullbody_calibration",
+      "caption": "Original adult full-body anime calibration, casual_female"
+    },
+    {
+      "id": "casual_male",
+      "gender": "male",
+      "person": "man",
+      "subject": "1boy, adult man, male focus",
+      "build": "ordinary average adult male build, modest shoulders, smooth abdomen",
+      "clothes": "plain white t-shirt, dark straight trousers, simple sneakers",
+      "extra_negative": "nude, nipples, naked, cleavage",
+      "seed": 719018,
+      "split": "fullbody_calibration",
+      "caption": "Original adult full-body anime calibration, casual_male"
+    },
+    {
+      "id": "body_female",
+      "gender": "female",
+      "person": "woman",
+      "subject": "1girl, adult woman",
+      "build": "ordinary slender adult build, moderate natural proportions",
+      "clothes": "unclothed nonsexual anatomical body base, natural adult female anatomy, natural nipples, no explicit vulva detail",
+      "extra_negative": "clothes, underwear, bikini, swimsuit, censor bar",
+      "seed": 719101,
+      "split": "fullbody_calibration",
+      "caption": "Original adult full-body anime calibration, body_female"
+    },
+    {
+      "id": "body_male",
+      "gender": "male",
+      "person": "man",
+      "subject": "1boy, adult man, male focus",
+      "build": "ordinary average adult male build, modest shoulders, smooth abdomen",
+      "clothes": "unclothed nonsexual anatomical body base, natural adult male anatomy, natural nipples, visible flaccid external male anatomy",
+      "extra_negative": "clothes, underwear, bikini, swimsuit, censor bar",
+      "seed": 719118,
+      "split": "fullbody_calibration",
+      "caption": "Original adult full-body anime calibration, body_male"
+    }
+  ],
+  "acceptance": [
+    "Adult original characters; no copied anime character identity or costume.",
+    "Thin controlled outlines, expressive eyes, matte skin and limited cel shadows.",
+    "Male and female rendering belong to one family; reject masks and plastic faces.",
+    "Style first. Pose, full body and wardrobe catalogs follow after calibration and LoRA validation."
+  ],
+  "workflow_group": "EroInc_FullBody",
+  "lora": {
+    "enabled": true,
+    "name": "EroInc\\candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength_model": 0.65,
+    "strength_clip": 0.0
+  }
+}

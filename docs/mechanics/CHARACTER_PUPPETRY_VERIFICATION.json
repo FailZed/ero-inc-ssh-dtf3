@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "date": "2026-10-27",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "status": "interactive character module integrated in main and pause menu",
+  "input_asset_authorization": "User explicitly authorized local use of installed MDRG models in this chat",
+  "donor": {
+    "game": "My Dystopian Robot Girlfriend",
+    "version": "0.97.12",
+    "unity": "6000.3.8f1",
+    "author": "Incontinent Cell",
+    "model_count": 6,
+    "character_count": 1,
+    "male_model_available": false,
+    "parameters": 668,
+    "drawables": 1417,
+    "physics_chains": 57,
+    "textures": 12,
+    "source_editor_cmo3_available": false
+  },
+  "implementation": {
+    "own_gameplay_code": true,
+    "renderer": "gd_cubism 0.9.1",
+    "sdk": "Cubism Native 5-r.1",
+    "core": "5.0",
+    "platform": "Windows x64",
+    "interaction_profile": "data/characters/interaction_profile.json",
+    "bound_model": "interaction_model",
+    "bound_regions": [
+      "head",
+      "face",
+      "hand_l",
+      "hand_r",
+      "body"
+    ],
+    "other_models": "native rendering, physics, full parameter and part inspection, clips and editable profiles",
+    "full_mdrg_game_or_behavior_parity_claimed": false,
+    "game_save_schema_changed": false,
+    "game_save_writes_added": false,
+    "old_in_repo_rig_runtimes_removed": true
+  },
+  "tests": {
+    "headless": {
+      "result": {
+        "failed": 0,
+        "models": 6,
+        "passed": 76
+      },
+      "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\verification\\tests-headless.log"
+    },
+    "visible": {
+      "result": {
+        "failed": 0,
+        "models": 6,
+        "passed": 76
+      },
+      "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\verification\\tests-visible.log"
+    },
+    "pack": {
+      "result": {
+        "failed": 0,
+        "models": 6,
+        "passed": 76
+      },
+      "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\verification\\tests-pack.log"
+    },
+    "main_project": {
+      "result": {
+        "failed": 0,
+        "passed": 9
+      },
+      "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\verification\\integration.log"
+    },
+    "main_project_pck": {
+      "result": {
+        "failed": 0,
+        "passed": 9
+      },
+      "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\verification\\main-pack-integration.log"
+    },
+    "android_resource_filter": {
+      "result": {
+        "failed": 0,
+        "passed": 4
+      },
+      "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\verification\\mobile-filter.log"
+    },
+    "mechanics_pack": {
+      "result": {
+        "checks": 2607,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "E:\\GoDot\\.research\\school-0.981\\tests-pack.log"
+    }
+  },
+  "windows_debug_export": {
+    "folder": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\main-build",
+    "exe_sha256": "1b435a196eba3fa39afbfe725a58047ed38ff47d618cef749cfd7d0798c17e4a",
+    "pck_sha256": "e569e4787fb3fe12d7b0dd04ba6315ec8fe3e8f1270e91e6003c3d3246fb640b",
+    "renderer_sha256": "84a0b08adab6c307a044c2919f7e95e620e6d265ae73edd5dfb36749a4b844b5",
+    "core_sha256": "cdd756f99cb9e6824e35009c5c2bf59f512b9544eeb864351c7736969b920ccb",
+    "launch": "CharacterWorkshop.cmd",
+    "native_core_loaded_in_actual_export": true,
+    "screenshot_captured_by_actual_export": true
+  },
+  "visual_review": {
+    "file": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\main-build-workshop.png",
+    "sha256": "03260e1f54d428bbb0c9ba2b3255f4ceab05698221666637492892996a269561",
+    "kind": "actual exported Windows game, workshop overlay, clothed ordinary model",
+    "inspected": true,
+    "renderer": "AMD Radeon RX 7800 XT",
+    "metrics": {
+      "engine": "4.7.2-stable (official)",
+      "godot_static_memory_bytes": 148021554.0,
+      "model": "interaction_model",
+      "renderer": "AMD Radeon RX 7800 XT",
+      "texture_memory_bytes": 308131570,
+      "video_memory_bytes": 317103408
+    },
+    "metrics_scope": "whole process; Godot static memory is not process RSS"
+  },
+  "known_exit_diagnostics": {
+    "isolated_character_tests": "No leaked ObjectDB/resource exit diagnostics",
+    "main_editor_run": "63 ObjectDB instances / 27 resources, matching previously documented main project addon shutdown diagnostics",
+    "main_exported_run": "61 ObjectDB instances / 26 resources",
+    "export_editor_shutdown": "4 ObjectDB instances / 1 resource",
+    "scope": "No new claim that existing main-game addon shutdown leaks are fixed"
+  },
+  "limits": [
+    "One female donor character in six scene-specific models; no male rig",
+    "Detailed pointer profile authored for ordinary interaction_model",
+    "Compiled moc3 can be driven; rebuilding topology/deformers requires an editor source project or new rig",
+    "Android native Live2D not implemented; exclusion of Windows study module tested with Android resource export",
+    "Custom reaction memory is presentation-only; existing NPC relationship services are separate"
+  ]
+}

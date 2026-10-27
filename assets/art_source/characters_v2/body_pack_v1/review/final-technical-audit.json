@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "files_checked": 824,
+  "primary_files_checked": 750,
+  "records": 182,
+  "targets": {
+    "male_frame": 32,
+    "female_builds": 12,
+    "breast_shape": 30,
+    "nipple_areola_forms": 7,
+    "female_external_anatomy": 4,
+    "male_external_anatomy": 8,
+    "female_body_hair": 10,
+    "male_body_hair": 6,
+    "female_poses_with_rest": 9,
+    "male_poses_with_rest": 9,
+    "pregnancy_stages": 9,
+    "anthro_species_by_sex": 6,
+    "skin_palettes": 8,
+    "tan_patterns": 2,
+    "female_tone_with_default": 4,
+    "male_tone_profiles": 3,
+    "thigh_shapes_per_sex": 2,
+    "calf_shapes_per_sex": 2
+  },
+  "actual": {
+    "body_build": 20,
+    "breast_shape": 30,
+    "female_external_anatomy": 4,
+    "nipple_areola_forms": 7,
+    "male_external_anatomy": 8,
+    "female_body_hair": 10,
+    "male_body_hair": 6,
+    "muscle_definition": 6,
+    "thigh_shape": 4,
+    "calf_shape": 4,
+    "arm_pose_families": 16,
+    "pregnancy_stages": 9,
+    "anthro_species_by_sex": 6,
+    "male_frame": 32,
+    "skin_palette": 16,
+    "tan_pattern": 4,
+    "female_builds": 12,
+    "female_poses_with_rest": 9,
+    "male_poses_with_rest": 9,
+    "skin_palettes": 8,
+    "tan_patterns": 2,
+    "female_tone_with_default": 4,
+    "male_tone_profiles": 3,
+    "thigh_shapes_per_sex": 2,
+    "calf_shapes_per_sex": 2
+  },
+  "duplicate_full_images": [
+    [
+      "male_slim",
+      "male_slim_normal"
+    ],
+    [
+      "male_soft",
+      "male_soft_normal"
+    ],
+    [
+      "male_average",
+      "male_average_normal"
+    ],
+    [
+      "male_toned",
+      "male_toned_normal"
+    ],
+    [
+      "male_athletic",
+      "male_athletic_normal"
+    ],
+    [
+      "male_muscular",
+      "male_muscular_normal"
+    ],
+    [
+      "male_broad",
+      "male_broad_normal"
+    ],
+    [
+      "male_solid",
+      "male_solid_normal"
+    ]
+  ],
+  "duplicate_note": "Normal male frame states intentionally alias their source foundations; no duplicates are counted as extra drawings.",
+  "errors": [],
+  "scope": "Technical/pixel and category audit only. Visual inspection and supported-recipe inspection are recorded separately.",
+  "runtime_registered": false
+}

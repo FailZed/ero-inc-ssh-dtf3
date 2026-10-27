@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "engine": "Godot 4.7.2",
+  "focused_portraits": {
+    "checks": 39,
+    "failed": 0
+  },
+  "standalone_mechanics_pack": {
+    "checks": 2394,
+    "failed": 0
+  },
+  "full_gameplay": {
+    "checks": 652,
+    "failed": 1,
+    "failure": "incoming messages do not pull the reader away from older chat history",
+    "scope": "phone chat scroll, unchanged by this work"
+  },
+  "visual_inspection": {
+    "comparison.png": "actual Godot shared portrait render, inspected",
+    "abdomen-detail.png": "actual Godot cropped assembly render, inspected"
+  },
+  "limitations": [
+    "temporary borrowed School art",
+    "dress uses provisional material fit rather than individually drawn pregnancy costumes",
+    "female prototype rig only"
+  ],
+  "existing_exit_warnings": {
+    "ObjectDB": 63,
+    "resources": 27
+  },
+  "save_files_changed": false
+}

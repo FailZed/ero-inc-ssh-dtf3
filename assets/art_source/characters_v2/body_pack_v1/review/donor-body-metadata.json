@@ -1,0 +1,800 @@
+{
+  "method": "Read-only PNG dimensions and pixel hash; no donor image inputs, exports or visual copying.",
+  "archive": "E:\\GoDot\\School-0.981-win\\game\\archive.rpa",
+  "records": [
+    {
+      "path": "images/character/npc/new/body/_chubby.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        775,
+        969,
+        1205,
+        1392
+      ],
+      "png_sha256": "35c874c5fd0c5ee37fdc3f97563738a9e4d814aad2082b45b78e581e9652df28",
+      "pixel_sha256": "370a3ba4c9ef6f79bb0f003c650077f93261c6ae7920f36f2680f2068ed131b3"
+    },
+    {
+      "path": "images/character/npc/new/body/_chubby1.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        980,
+        1205,
+        1297
+      ],
+      "png_sha256": "5acad73451ea0af20a9705326c840de57df69638a083ea5096385f929e97b5e4",
+      "pixel_sha256": "77600979a29c94b80926d57cd95aa18204552e976b29b9cf1627f39d7c9e5f30"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy1.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        980,
+        1205,
+        1391
+      ],
+      "png_sha256": "fdf85e25a1b2c629b2de32745ade268dd7c6987b41c2f9b9de2a935343f443ef",
+      "pixel_sha256": "ada8e44b9342c4be652b55304024ec4f24f765ce8cc9c6502ed7ceddebe5a039"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy2.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        980,
+        1204,
+        1391
+      ],
+      "png_sha256": "bacd78ceafa6b24b81a0bd6cc98bb24be7229a0555fc55b782e9cb3e39e557fb",
+      "pixel_sha256": "e283b610d6a2af2710cfca14567262f2a985f584c1c2a1e29625c5e3d493ee4c"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy3.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        980,
+        1205,
+        1408
+      ],
+      "png_sha256": "1b1a4ca9668045ce7e616c56bc5bea854f00799241fbf0b273f87e1bd8936ebf",
+      "pixel_sha256": "4b70d66e56e37289eabae454687466e4cacf9607f5792630549fe6daea0b0227"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy4.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        965,
+        1205,
+        1396
+      ],
+      "png_sha256": "66d37f62bd577a753bf852ba598f3aa63b658b66288f8f073e72c3f643e4a4ad",
+      "pixel_sha256": "2139bf2b10b8c31ae4cb2242fea12fefc0a88d564d6e6dc39e47684b44d8966c"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy5.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        945,
+        1204,
+        1396
+      ],
+      "png_sha256": "57763fa768d8d9a7f73e1d27a88e743f9f8a6f316e6a4dd3453d353269d491c7",
+      "pixel_sha256": "d5c8ff7b93ad9851e8ad08154b45b6a5c28455f2a2c85bba46f2c4797d52268f"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy6.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        918,
+        1205,
+        1409
+      ],
+      "png_sha256": "7a97642b0981270308198cb187ac04ee72c25b671808b0291c8540af644e25b1",
+      "pixel_sha256": "c8c1702d400e6f6a5d410a2f447a3a458dedcf799853c5e736b2c46461a540eb"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy7.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        899,
+        1205,
+        1444
+      ],
+      "png_sha256": "1354672709adc674349e785cee3769698ab6d12ef4ed36a6e18bdee8997114d9",
+      "pixel_sha256": "449baa975a0600f794c2287ca16e75750bc52ce268e6bb68964528b76541eb2b"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy8.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        946,
+        1205,
+        1398
+      ],
+      "png_sha256": "01be9b68f5de547cc22d90b758c06b6bfe5c5420f9414ea0ce74ae49515342de",
+      "pixel_sha256": "88b20c81eb87f6a732c648fe9e51742c0d83e16feaba4a85adf1a0a93f50c7ac"
+    },
+    {
+      "path": "images/character/npc/new/body/_pregnancy9.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        779,
+        945,
+        1205,
+        1413
+      ],
+      "png_sha256": "25e2948ece614638e8a9c92989df14fdf0694266b0a228da83b0428ac90f25a8",
+      "pixel_sha256": "add65ee5b5ceb77bc20d643b31ae7c55b88b5f4936fc140ef6045567a849b421"
+    },
+    {
+      "path": "images/character/npc/new/body/body_new.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        644,
+        506,
+        1253,
+        2596
+      ],
+      "png_sha256": "f09c2c349ea719962f5d0d63696b2afeb5f990c1a8efeee9d928095ea13509f2",
+      "pixel_sha256": "364d1bb3e9e1dccea3e75d9512e15da4590cb7d0ee507bddaea712f45b0c2cbc"
+    },
+    {
+      "path": "images/character/npc/new/body/body_new_press1.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        644,
+        507,
+        1253,
+        2596
+      ],
+      "png_sha256": "9faf81e3e74e957156a4aeebee321006442c53f1a1faa5b3f6e7fe78eee211e5",
+      "pixel_sha256": "824ed07dc5b4a89db338df6bca84373c3b4194a41655e5011a164c8eae5899b7"
+    },
+    {
+      "path": "images/character/npc/new/body/body_new_press2.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        644,
+        507,
+        1253,
+        2596
+      ],
+      "png_sha256": "1d52320b021c4e72d02274ca831ce046deb60fa08a7a2d7e4faa022e6eaf4cfa",
+      "pixel_sha256": "779554e2255fcd80ba054fd433b8fa16e92a7e6e038e47ad47c4a21a0ee01b3f"
+    },
+    {
+      "path": "images/character/npc/new/body/body_new_press3.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        644,
+        507,
+        1253,
+        2596
+      ],
+      "png_sha256": "dc35b10460d10b715b8b0f4c3e17c6f5b41bf0824811aaddacd0cd015792fa5e",
+      "pixel_sha256": "07851ab38221ac5c0e902399f6cb2cd48adcc7477d2ff623da66e415a53fb983"
+    },
+    {
+      "path": "images/character/npc/new/chubby/body1.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        654,
+        465,
+        1322,
+        2596
+      ],
+      "png_sha256": "f1e83dd3b801d9f14cbda8fa482613c87258b7db37c6d9a718681c1c691e524a",
+      "pixel_sha256": "f9d65fe0c2a62bf004fac06b800b0ca8e75761cd6e4359e837df8ec05e7947f9"
+    },
+    {
+      "path": "images/character/npc/new/chubby/body2.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        608,
+        465,
+        1368,
+        2596
+      ],
+      "png_sha256": "df64446f5ab0d0e96a023c1ed8f7af502ad36838634368f76198211e30322615",
+      "pixel_sha256": "0b915139372e79f8423fd94fc3004326b500df5d30e488088f65784a15e559a0"
+    },
+    {
+      "path": "images/character/npc/new/chubby/body3.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        623,
+        465,
+        1352,
+        2596
+      ],
+      "png_sha256": "57c3278bce1b53d60dc8c09095884b4c5d9748709ec85309d8f2e5c3da91635e",
+      "pixel_sha256": "7f2db0484ee9fcbfe5752df616c2c08ec8e1d874fba32e1614e235d14d0c4567"
+    },
+    {
+      "path": "images/character/npc/new/milfs_body/body_fat.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        669,
+        744,
+        1276,
+        2596
+      ],
+      "png_sha256": "82a42b954289beff33558b591736aff73f6c76bba8163300c73cb3c8cfbb664a",
+      "pixel_sha256": "e06ae1df9aa4403254afa780f036937bb3bcc5e62aca2dc11bbc5498fbf9a185"
+    },
+    {
+      "path": "images/character/npc/new/milfs_body/body_skinny.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        693,
+        744,
+        1259,
+        2596
+      ],
+      "png_sha256": "728b7b700bad9d7f938d076499ae8ffe6125dc7a3a5b29736f1f2375e5d9d350",
+      "pixel_sha256": "1a797823bbdb51b6a6cc50c257fd72cadb13b5cc091531b17f42d9fba9da9936"
+    },
+    {
+      "path": "images/character/npc/npc_m/type2/body_1/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        474,
+        125,
+        1520,
+        1659
+      ],
+      "png_sha256": "1e49074400c61b9fe9f0d8a0ed26b650f3faede57a524f651852259081c3830a",
+      "pixel_sha256": "297084dcd2a28be25ab56a29c2eb2b0444cac60b7adbbf0ac2f79dd9c33a4ce0"
+    },
+    {
+      "path": "images/character/npc/npc_m/type2/body_2/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        537,
+        125,
+        1285,
+        1631
+      ],
+      "png_sha256": "919befb09ed65008f583e2ae1cd882f316be80cf66f5b06db4dfb1c9ad5113d3",
+      "pixel_sha256": "b1092c5b6480a91347e2b8382140f5e050b320ec075f768dcf47c59bba70cfee"
+    },
+    {
+      "path": "images/character/npc/npc_m/type2/body_3/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        544,
+        125,
+        1265,
+        1465
+      ],
+      "png_sha256": "9c265eadbac353ac3de03031211a1fa976f174bac9993cd0c051a905d16c5170",
+      "pixel_sha256": "395c469ad2e6b19e88e195c726990575bcbb4f28c90cce1a10ce41ab1e29c5dc"
+    },
+    {
+      "path": "images/character/npc/npc_m/type2/body_4/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        183,
+        124,
+        1285,
+        1627
+      ],
+      "png_sha256": "3c593c5aa0c680b01237d5fb7cd11a7920e4f122f5c1bb76200f651d676ae46a",
+      "pixel_sha256": "56416d407460d91e3a351fca876e12db3c271263e2d67971931d9e81471b8456"
+    },
+    {
+      "path": "images/character/npc/npc_m/type2/body_5/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        443,
+        125,
+        1285,
+        1628
+      ],
+      "png_sha256": "f1e5c0209c6efb05e809232c92f2135cee899cdeeace0352e08504f594931999",
+      "pixel_sha256": "40f627523b6aefb55b41cd7c087b2d11be9f6bdb3d0cf85220a52a091126127a"
+    },
+    {
+      "path": "images/character/npc/npc_m/type2/body_6/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        537,
+        124,
+        1297,
+        1631
+      ],
+      "png_sha256": "5188c5512c60b7e5100ebca54f0221806bad232564202cb0141c8d3449f53236",
+      "pixel_sha256": "f1c253408bab7dd8cf47354913aa6866277e46971513ca6a4fb74b3178f276b9"
+    },
+    {
+      "path": "images/character/npc/npc_m/type3/body_1/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        475,
+        125,
+        1519,
+        1652
+      ],
+      "png_sha256": "2844f7aca8cdc033d30f6b4ead97c359e36925dba9fdf84b15bbe4083ccb8504",
+      "pixel_sha256": "5a9fc32c332f387e364429f8cc605a6a36e8d5199e30500124cc02afab51126a"
+    },
+    {
+      "path": "images/character/npc/npc_m/type3/body_2/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        517,
+        124,
+        1306,
+        1631
+      ],
+      "png_sha256": "4f73451cf55eaca6ec39a9260770810a4d5126dd5a1259b9dd4f5fed66ee284e",
+      "pixel_sha256": "b5319cc2946bd857b0665c8b14c5b82d2f5ec5a9bd28cada55ef1b613f26c0ba"
+    },
+    {
+      "path": "images/character/npc/npc_m/type3/body_3/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        583,
+        125,
+        1270,
+        1186
+      ],
+      "png_sha256": "9eb24a731b5fed3669114f53cb2a7a2f205b7c920a626507fcb4c7f29dd40512",
+      "pixel_sha256": "33949495c86734d3b637b2efcd507da35158c841f776adf82595d90e58d90ca2"
+    },
+    {
+      "path": "images/character/npc/npc_m/type3/body_4/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        156,
+        124,
+        1306,
+        1627
+      ],
+      "png_sha256": "971eb2ad4ae5bbeda0ceee79a16d791b18d8762e0e02019a7bff8e6a0f367394",
+      "pixel_sha256": "a7f917d6edb6e719693664ebe78b9b066c3cc83c6b6dd3fad8a5820ef3f10a76"
+    },
+    {
+      "path": "images/character/npc/npc_m/type3/body_5/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        413,
+        125,
+        1306,
+        1627
+      ],
+      "png_sha256": "b3b7dda5523d04be7a005c6dfddfb50037d0888c22656b68bc11df3f005a7c0b",
+      "pixel_sha256": "bc9eb75f08f6522928436a9b1ece823f4bf4344aaed03ad755ab0d4a4d45e903"
+    },
+    {
+      "path": "images/character/npc/npc_m/type3/body_6/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        517,
+        124,
+        1314,
+        1631
+      ],
+      "png_sha256": "f55addcff8c319376d57ad63de31249445c41e1c362d099fe247b9bd29cb6cd0",
+      "pixel_sha256": "19febab36822f70ee2249ba08bf67127eeaf8e47b4512c96d137a1bf353863e0"
+    },
+    {
+      "path": "images/character/npc/npc_m/type4/body_1/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        522,
+        120,
+        1531,
+        1669
+      ],
+      "png_sha256": "a40d1c739ae579efc0fc016a449fae4cb23aedbc3bffb7cccb2f15899a16ee81",
+      "pixel_sha256": "0a69fc6f1c815e5c934666c7917dba53b1e8ab1a53a17e54e30dd87505518836"
+    },
+    {
+      "path": "images/character/npc/npc_m/type4/body_2/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        488,
+        121,
+        1330,
+        1630
+      ],
+      "png_sha256": "831750f2b21eeb46b661c4820ec1fad3c54f874e48f3045d3e25cf4a5d558e1d",
+      "pixel_sha256": "d72ed1e315f84ade49dbc50f8e3426d7cfb98313df85812a97d98ec7eeae03df"
+    },
+    {
+      "path": "images/character/npc/npc_m/type4/body_3/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        557,
+        121,
+        1290,
+        1186
+      ],
+      "png_sha256": "9c4fc64613924ec9651fde8838c2f41ba447f7038a678d841c7caf7648db0cfe",
+      "pixel_sha256": "99af01e7f4fdc7dd20d72a4724387e864773479accca4ada72eff8b5fd2dc5dc"
+    },
+    {
+      "path": "images/character/npc/npc_m/type4/body_4/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        102,
+        122,
+        1330,
+        1628
+      ],
+      "png_sha256": "d9ccbf26aa988b3524822a959f5280e030cab8347126c787d2454f4eae03110d",
+      "pixel_sha256": "1cdd8a8ed372eeeb94ba7b2bba447bea6208efd277550d3248b0d206ece8e8de"
+    },
+    {
+      "path": "images/character/npc/npc_m/type4/body_5/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        386,
+        121,
+        1330,
+        1628
+      ],
+      "png_sha256": "9e96c3cf0e4c16f282610e610b852bc062f87849534a88d829cedc7efc5d0554",
+      "pixel_sha256": "6f46e3e589fb5d2d22c4549e8e43520e3ab54603e1bc9144dea0034e92eddc33"
+    },
+    {
+      "path": "images/character/npc/npc_m/type4/body_6/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        488,
+        121,
+        1340,
+        1630
+      ],
+      "png_sha256": "8993eef89fe7afb49d1aa6c64d7648788d3580541981e64c60b5c7cb76c72866",
+      "pixel_sha256": "886d9b414e8b2d6be78945df3bb4ef3362feeb32aa75d79092d6929439c71b5f"
+    },
+    {
+      "path": "images/character/npc/npc_m/type5/body_1/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        451,
+        124,
+        1508,
+        1611
+      ],
+      "png_sha256": "b87e20915aa7210b16c3f9485272a22f27bb3dbbfe358ad04fa1024cfc10a759",
+      "pixel_sha256": "a67f08795eb719caf48e42aa6fe03275b92952fc7a3f050ff24fbacd68b9f50b"
+    },
+    {
+      "path": "images/character/npc/npc_m/type5/body_2/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        533,
+        120,
+        1345,
+        1633
+      ],
+      "png_sha256": "19bf599b296eba9ffa893e33bf5d5c45b341b4e8dc305b1d5962c8dfb1a97a68",
+      "pixel_sha256": "c5441f5c6169759eaccc1ad044dd147978191fdc0aa7e71b067f4b338085c1ac"
+    },
+    {
+      "path": "images/character/npc/npc_m/type5/body_3/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        563,
+        120,
+        1305,
+        1305
+      ],
+      "png_sha256": "8f1db73ffb4662d4e64f92ec70b3b25abd31cb207359610d64220767640ab8e5",
+      "pixel_sha256": "a74695daf380cf4606d1c2727188b757aaa705c3209a4c83c2d216eef051edab"
+    },
+    {
+      "path": "images/character/npc/npc_m/type5/body_4/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        135,
+        120,
+        1345,
+        1633
+      ],
+      "png_sha256": "882f73f52e2636493a946ad5f545435c44280d381e190e2236d847715b344e9b",
+      "pixel_sha256": "4d0c7d433cc27549fd7750d6452e8ecda1081f50f5ffb61715d155b975b0d7f0"
+    },
+    {
+      "path": "images/character/npc/npc_m/type5/body_5/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        404,
+        120,
+        1345,
+        1633
+      ],
+      "png_sha256": "d143e36885e6653e74c437433eb52848a545433b913cd3e02af3449756621035",
+      "pixel_sha256": "3fac7cd2bfc5972045ad29ef50507b56993de7eee3f4906aea1daf320ed41e9c"
+    },
+    {
+      "path": "images/character/npc/npc_m/type5/body_6/main.png",
+      "size": [
+        1920,
+        2596
+      ],
+      "bounds": [
+        534,
+        125,
+        1340,
+        1631
+      ],
+      "png_sha256": "b72e81f920d5b8956a06e552295cf107dcb6654255f603c1d55b60a24cf04b5f",
+      "pixel_sha256": "fb31c3c80dfc7437cc18eae2bd32ccf4f74937e08ed3de41ae8fed70f4a33400"
+    }
+  ],
+  "dedup_groups": [
+    [
+      "images/character/npc/new/body/_chubby.png"
+    ],
+    [
+      "images/character/npc/new/body/_chubby1.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy1.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy2.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy3.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy4.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy5.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy6.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy7.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy8.png"
+    ],
+    [
+      "images/character/npc/new/body/_pregnancy9.png"
+    ],
+    [
+      "images/character/npc/new/body/body_new.png"
+    ],
+    [
+      "images/character/npc/new/body/body_new_press1.png"
+    ],
+    [
+      "images/character/npc/new/body/body_new_press2.png"
+    ],
+    [
+      "images/character/npc/new/body/body_new_press3.png"
+    ],
+    [
+      "images/character/npc/new/chubby/body1.png"
+    ],
+    [
+      "images/character/npc/new/chubby/body2.png"
+    ],
+    [
+      "images/character/npc/new/chubby/body3.png"
+    ],
+    [
+      "images/character/npc/new/milfs_body/body_fat.png"
+    ],
+    [
+      "images/character/npc/new/milfs_body/body_skinny.png"
+    ],
+    [
+      "images/character/npc/npc_m/type2/body_1/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type2/body_2/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type2/body_3/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type2/body_4/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type2/body_5/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type2/body_6/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type3/body_1/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type3/body_2/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type3/body_3/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type3/body_4/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type3/body_5/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type3/body_6/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type4/body_1/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type4/body_2/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type4/body_3/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type4/body_4/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type4/body_5/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type4/body_6/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type5/body_1/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type5/body_2/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type5/body_3/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type5/body_4/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type5/body_5/main.png"
+    ],
+    [
+      "images/character/npc/npc_m/type5/body_6/main.png"
+    ]
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "status": "pose_restart_paused_user_rejected_featureless_probes",
+  "scope": "Original adult 30+ neutral non-graphic body bases without clothing. Pose-specific costume work follows after anatomy acceptance. No game/save modifications.",
+  "rendering": "Preserve established thin brown contour, matte colors and controlled cel shadows. DaSiWa 16/CFG6/Euler/Normal, own style LoRA 0.65, smart memory.",
+  "production": "User requested a restart from the successful existing gallery on 2026-10-19. Whole changing body regions are redrawn against actual non-graphic gallery references; no deformed source limbs. Five candidates per pose and sex. Existing layered rig v2 remains a rejected visual prototype, not a finished animation system.",
+  "target_per_sex": {
+    "arms": 12,
+    "head": 9,
+    "legs": 7,
+    "full_pose": 8
+  },
+  "counting": "72 category entries for two representative adult identities. Front head and neutral legs reuse the accepted resting figure: 68 distinct pose/state designs, not 72 independent pose designs.",
+  "completed_pose_images": 0,
+  "first_acceptance_cases": [
+    "female_arms_folded",
+    "male_arms_folded",
+    "female_full_pose_seated_front",
+    "male_full_pose_seated_front"
+  ],
+  "rejected_or_abandoned": {
+    "pose-anchor-pilot-v1": "Clothed pilot cancelled after explicit request for bases without clothing; interrupted only owned ComfyUI prompt, no final image claimed.",
+    "pose-neutral-pilot-v2": "All four rejected: unintended clothing, rectangular reference/background artifacts; male body drift.",
+    "pose-puppet-pilot-v3": "Technical guides only; discontinuous limb cuts and unnatural sitting projection. Not rendered or exported. User requested complete redraw instead of deformed cutout assembly.",
+    "pose-reference-arms-pilot-v1": "All four rejected after native RGB and RGBA inspection. Old shoulder/finger silhouettes survive replacement masks; original restored hands float at hips. Female folded pose has a bra; shrug has a coat. Material deletion removes clothing together with whole limbs. Not production assets or training data.",
+    "pose-reference-arms-maskfix-v2": "Single male folded-arm case rejected. Larger upper-body mask removes old hands, but model changes requested pose to hands at abdomen and creates a visible protected-region seam. Do not expand.",
+    "pose-reference-arms-maskfix-v3": "Single male case rejected: old source hand landmarks are fully masked, but model misses folded-arm pose, changes body palette and leaves internal protected-region seams. Technical mask coverage is not visual approval.",
+    "pose-reference-arms-refine-v4": "Single repair case rejected: crossed-arm pose retained and upper-torso color seams reduced, but erased old hand regions remain as holes in outer thighs. Hip/leg junctions remain incoherent. No finished asset, no training admission."
+  },
+  "current_index": "E:\\Ai\\ComfyUI-EroInc\\workbenches\\hybrid-rig-v1\\manifest.json",
+  "gates": [
+    "Whole figure, coherent shoulders/elbows/wrists/hips/knees/ankles; no duplicate limb or impossible overlap.",
+    "Visible requested pose; separate posture design from incidental seed variation.",
+    "Neutral non-graphic adult figure-study treatment; no detailed genitals.",
+    "No clothing, rectangular head paste, background remnants or clipped figure.",
+    "Opaque light/dark background inspection and native-scale checks.",
+    "Candidate layers reconstruct the accepted full figure exactly; masks and occlusion order documented.",
+    "No promise of arbitrary cross-pose limb compatibility or final faces/hair."
+  ],
+  "speed": "Whole-figure ControlNet redraw: measured 20-22 seconds/image after sequential VAE decode; masks and anatomy review remain separate.",
+  "alpha_review": "No finished pose pack. Eleven explicitly selected raw candidates exist separately; these are not eleven completed compatible layered poses. The screenshot reference-arms-pilot-v1 is rejected.",
+  "paused_indices": [
+    "E:/Ai/ComfyUI-EroInc/batches/pose-redraw-all-v1/index.json"
+  ],
+  "diagnostic_fixes": [
+    "Read actual official inference_pose implementation: raw COCO WholeBody output; existing COCO-to-OpenPose mapping is appropriate.",
+    "Do not subtract an estimated neck-height head slice from arm masks: it also includes shoulder pixels.",
+    "Cover source hand landmarks, including distal fingers, as well as the target arm corridors.",
+    "New reference cases disable skin-only material deletion: garments must cause visual rejection, never silently remove the garment together with an arm."
+  ],
+  "hybrid_pilot": {
+    "rigged_front_bases": 2,
+    "bones_per_base": 16,
+    "reviewed_small_motion_states_per_base": 3,
+    "whole_pose_references": 4,
+    "technical_checks_passed": 78,
+    "technical_checks_failed": 0,
+    "hand_variants_completed": 0,
+    "wardrobe_completed": 0,
+    "runtime_registered": false,
+    "next": "Complete detached arm/body surfaces with shoulder/elbow/wrist overlaps before increasing arm movement."
+  },
+  "gallery_restart": {
+    "gallery": "http://127.0.0.1:8192/gallery.html",
+    "index": "E:/Ai/ComfyUI-EroInc/batches/gallery-pose-restart-v4/index.json",
+    "review": "E:/Ai/ComfyUI-EroInc/rig-authoring/pose-gallery-restart-v4/index.json",
+    "planned_candidates": 30,
+    "planned_pose_designs": 6,
+    "finished_layered_poses": 0,
+    "render_settings": "DaSiWa16/CFG6/Euler/Normal, own style .65, smart memory, no ControlNet",
+    "reference_input": "Actual approved gallery foundations, stripped of intimate details before sampling; original files unchanged",
+    "current_index": "E:/Ai/ComfyUI-EroInc/batches/gallery-pose-exact-sheet-v1/index.json",
+    "state": "Paused: the user rejected loss of anatomical features. Do not resume featureless candidates automatically. No accepted poses or production-ready layers claimed.",
+    "exact_user_reference": "docs/art/characters-v2/anatomy-variants-review.png",
+    "head_mask_fix": "Protect actual head foreground only; never entire image rows above the shoulders, which clipped raised hands."
+  }
+}

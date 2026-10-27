@@ -1,0 +1,90 @@
+{
+  "status": "reviewed_technical_prototype_not_full_character_pack",
+  "engine": "Godot 4.7.2",
+  "native_capture": "E:\\Ai\\ComfyUI-EroInc\\workbenches\\hybrid-rig-v1\\review-v6",
+  "technical_checks": {
+    "passed": 78,
+    "failed": 0
+  },
+  "rest_match": {
+    "female": {
+      "mean_absolute_channel_error_255": 0.004977856163041348,
+      "pixels_difference_over_8": 0,
+      "max_channel_difference": 3
+    },
+    "male": {
+      "mean_absolute_channel_error_255": 0.007040564373897707,
+      "pixels_difference_over_8": 0,
+      "max_channel_difference": 5
+    }
+  },
+  "independent_pose_references_require_identity_matching": true,
+  "rig_arm_motion_accepted": false,
+  "rig_head_and_spine_small_motion_reviewed": true,
+  "game_saves_unchanged": true,
+  "runtime_catalog_unchanged": true,
+  "local_generation_queue_empty": true,
+  "source_package": "E:\\GoDot\\ero-inc\\assets\\art_source\\characters_v2\\hybrid_rig_v1",
+  "files": [
+    {
+      "path": "hybrid_character.gd",
+      "sha256": "cfa9a842be4e53011fd7232ccf8a7fdf8d2c13f306aa8ac8f6995dc5669d828b"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "014dbdc556c0e058a61134dda66f0f86e62354b2920dee33791fc3f81567dcbb"
+    },
+    {
+      "path": "project.godot",
+      "sha256": "93e392b0b908ec0d2c90a7a94e863cdd6fd81653f60274112a834fec971ea744"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e43875f9597f215863d7561892b6db3958620cdf280525e7a29b2217108fcefa"
+    },
+    {
+      "path": "test_rig.gd",
+      "sha256": "3a50a5e630e976db92bea45f0fa9f3cae15f93432a5dbcc6b8b849cc04890ec6"
+    },
+    {
+      "path": "workbench.gd",
+      "sha256": "1961b912cbba810d4b16b0192d3e694bae08406e77bcfeb3d862c4058669219b"
+    },
+    {
+      "path": "workbench.tscn",
+      "sha256": "ef8d8c7c094a4e871e98e774993cd6fdc5f45b94e8e435eef037e78fce0352cf"
+    },
+    {
+      "path": "rigs/female.json",
+      "sha256": "20cef36ab91b18fa71b52b858e7574a2ea0c8fa7e80f09baad176f4ce114ac33"
+    },
+    {
+      "path": "rigs/male.json",
+      "sha256": "c4a04d574cc9fc7c55e8ecd9ddd74f56549c39fc826f0deaf95196db0097479d"
+    },
+    {
+      "path": "art/female/folded.png",
+      "sha256": "cc645af14f6beb9db3f1bc1955eb73156084d26b97f57c0b372e8d839f37de22"
+    },
+    {
+      "path": "art/female/gesture.png",
+      "sha256": "a53a0939d8826c53ec5e71888ea99ce7059e8438ea3c4dd98260ed8362338f9a"
+    },
+    {
+      "path": "art/female/neutral.png",
+      "sha256": "bf26605e51bb0e6f059d9bdb122757f8051bd236ae393746d8542ce00b7ee0e0"
+    },
+    {
+      "path": "art/female/seated_front.png",
+      "sha256": "b17eb9f15c8367f7c1082b0e189005b48e98b2d56a066611b2890f883e7b0a34"
+    },
+    {
+      "path": "art/male/neutral.png",
+      "sha256": "9a23b9b0caebc56f0b578167a1886dd6ce1ab797d68b03a5019bbca2feac88ca"
+    },
+    {
+      "path": "art/male/seated_front.png",
+      "sha256": "8667776cd2b82589fbaca1ce3d9f2ae1c8f07effdb575691ec74f8b60fd16915"
+    }
+  ]
+}

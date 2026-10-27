@@ -1,0 +1,504 @@
+{
+  "schema": 1,
+  "date": "2026-10-18",
+  "status": "16 body layer candidates, not a complete character pack",
+  "generator": "Local ComfyUI / DaSiWa EpitaphEcstasy",
+  "checkpoint_sha256": "44670E67C55F059116171EE8538875DA3ABF624FBDAACE6D1A7AC2D9617F0211",
+  "checkpoint_included": false,
+  "donor_school_images_used_as_inputs": false,
+  "canvas": [
+    720,
+    1280
+  ],
+  "body_top_y": 245,
+  "feet_baseline_y": 1244,
+  "male_anatomy": "Natural adult male sexual characteristics retained at user request.",
+  "female_builds": "Moderate variants; extreme female_full studies rejected.",
+  "remaining": [
+    "Refine style consistency: slim male and soft/pear female are flatter than the chosen style target.",
+    "Finish independent heads, facial features, front/back hair and clothing fitted to each build.",
+    "Review neck joins, poses and full compositions in game before runtime activation."
+  ],
+  "lora_trained": false,
+  "assets": [
+    {
+      "id": "male_slim",
+      "gender": "male",
+      "label": "Стройное",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_slim.png",
+      "sha256": "285cffa5d912fbbb396b48ccc3cd798741df595223e40a5df0a2761dee0fa131",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\male_slim_00002_.png",
+      "source_sha256": "a1d7de43d46e2dc9b9427f16ecf7e1cce1e3ea70931ac9d53a2ecc6c1c6d027b",
+      "local_run_lineage": [
+        "e2cacbeb-6cc1-4a0b-8f95-8ac8d5caa9ed"
+      ],
+      "neck_attach": [
+        358.09,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        216,
+        245,
+        504,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_average",
+      "gender": "male",
+      "label": "Обычное",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_average.png",
+      "sha256": "1f0acb6d2951f216c4ac757e18c58beafc920a810842d174b9d5b31291acd543",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\head_cleanup\\male_average_00001_.png",
+      "source_sha256": "42effb3c3afaa67cf9c45290fd1e29197dee008d18ab76f54ba4a62b7f7ab65c",
+      "local_run_lineage": [
+        "58e26abb-7ff0-4996-bdf0-ab2770e8c9cc",
+        "52527d21-5376-434f-ba73-b6e10f45150f"
+      ],
+      "neck_attach": [
+        355.82,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        190,
+        245,
+        529,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_toned",
+      "gender": "male",
+      "label": "Подтянутое",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_toned.png",
+      "sha256": "02c2c993618cddcd5d5c9cef20bf0b08458637c0af48f9a8287bc86c13ab7e51",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\body_variants\\male_toned_head_00001_.png",
+      "source_sha256": "cf1ca735a8c7dcc5c1050586a086ff66af7acb269bf62f7fe6c5c64c19ef6a4a",
+      "local_run_lineage": [
+        "e2dbd3ff-e3a1-4030-9f96-642848dc9add",
+        "03ad19d0-4aea-4bf0-8bfb-28d4aa63a210"
+      ],
+      "neck_attach": [
+        360.43,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        195,
+        245,
+        523,
+        1244
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_athletic",
+      "gender": "male",
+      "label": "Спортивное",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_athletic.png",
+      "sha256": "2a1fdf2e17841c6337e55b045876be726cdf9fd88de1feb421d468128011596f",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\head_cleanup\\male_athletic_00001_.png",
+      "source_sha256": "f9302f65a7e7fdb813aadac9dbb09b4d27cdc797863e216481b6620174c0757a",
+      "local_run_lineage": [
+        "b6f6b197-3936-4f0b-a443-95539772dab8",
+        "112dd156-e1e0-44f6-8861-254eeecc0a1f"
+      ],
+      "neck_attach": [
+        357.96,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        196,
+        245,
+        526,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_muscular",
+      "gender": "male",
+      "label": "Сильное",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_muscular.png",
+      "sha256": "580a0ade337b39f46c09950d0a3d48232493e23567caff2b3b2e26a3cf2d1dfd",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\head_cleanup\\male_muscular_00001_.png",
+      "source_sha256": "3821dca2f01ec2d85797f6f0d6d574bde091d2371184a48afd3536b914a7ba01",
+      "local_run_lineage": [
+        "f0abfb59-9d7f-4684-9b92-ba46293f82e5",
+        "cc85a961-cf41-4936-8480-c6ab47ba15d9"
+      ],
+      "neck_attach": [
+        366.62,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        164,
+        245,
+        552,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_broad",
+      "gender": "male",
+      "label": "Широкий каркас",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_broad.png",
+      "sha256": "685da4039367e3851dd470a657d8538d7785bd315b94a8b14057c002d5f5e071",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\head_cleanup\\male_broad_00001_.png",
+      "source_sha256": "9c30d9e3615665ff540005c0e7ae9ee4663693c3b57a6432172922a78c943b3d",
+      "local_run_lineage": [
+        "3747ff70-d438-47d3-a865-ecee05bf2558",
+        "26b8dd33-e7b3-4449-a3df-5b67f6f95ae1"
+      ],
+      "neck_attach": [
+        358.49,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        165,
+        245,
+        554,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_soft",
+      "gender": "male",
+      "label": "Слегка мягкое",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_soft.png",
+      "sha256": "8306046456a955bc09b5de15f9d385a100f6cb26d3f5f1a3c685b799ff40908d",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\head_cleanup\\male_soft_00001_.png",
+      "source_sha256": "965fac85033f1badf145ec6c662c42578106245c4bf1ae27944e823b74bf5272",
+      "local_run_lineage": [
+        "7a5cb5c1-5481-4520-8521-66fe6f19b90e",
+        "fb8e165c-9b43-4cb5-a80f-b94917a5c599"
+      ],
+      "neck_attach": [
+        364.61,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        192,
+        245,
+        531,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "male_solid",
+      "gender": "male",
+      "label": "Крепкое",
+      "file": "assets/art_source/characters_v1/bodies_v2/male_solid.png",
+      "sha256": "3eabc6d9db8bb41918fadd48b7ce92b26ddb72cd1c7ddd90823d171aaabcb0d3",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\head_cleanup\\male_solid_00001_.png",
+      "source_sha256": "4a38c8c83083f0a051fc754667b84c9e5b6627cdb6a0ad42f07556afa0bc2e4c",
+      "local_run_lineage": [
+        "4b596b0c-fd0f-4646-8871-8771b141c227",
+        "3c6aa9dd-3da9-441c-bb2e-532904ce7f15"
+      ],
+      "neck_attach": [
+        361.53,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        169,
+        245,
+        553,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_slim",
+      "gender": "female",
+      "label": "Стройное",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_slim.png",
+      "sha256": "7ad32fdf34ad15256367870ab8c80184398b5c1a7702e3011378407706fa2775",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_slim_00001_.png",
+      "source_sha256": "0d7ba5400e7b971e45ffbb0e763088198be95f2b95dff5dae3e0b93fb4350a34",
+      "local_run_lineage": [
+        "bfa19347-32b5-4037-a48c-51ae5155f731",
+        "a51db077-77ad-420c-925a-c44cb24c7872"
+      ],
+      "neck_attach": [
+        358.16,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        208,
+        245,
+        514,
+        1245
+      ],
+      "main_component_fraction": 0.9999943849561745,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_average",
+      "gender": "female",
+      "label": "Обычное",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_average.png",
+      "sha256": "58ed561a44729351af864e54ff031bd1d1b40aa3d49aae2b9c9cb9f1ea117a02",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_average_00001_.png",
+      "source_sha256": "59c6723900ead2636e452219c229674e51a0fed9afe060c7afa3ed5b2f2208b9",
+      "local_run_lineage": [
+        "c6f99a63-adc9-440a-88d1-300f1146a3a1",
+        "3b87ddcc-352b-43aa-a80b-e76df8fc3e6a"
+      ],
+      "neck_attach": [
+        354.03,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        201,
+        245,
+        524,
+        1245
+      ],
+      "main_component_fraction": 0.9999950627280403,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_toned",
+      "gender": "female",
+      "label": "Подтянутое",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_toned.png",
+      "sha256": "f7a91180b2e15ea4c9ce9534cc37c0b9d4844c9f8513aa0bd86df49143c57399",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_toned_00001_.png",
+      "source_sha256": "9d61eae36608ebcbb911839b8dad0b7e726b9b1137a3fd0340419357bbebe59e",
+      "local_run_lineage": [
+        "5d5e5404-2625-4e67-91cb-ada7f96a1606",
+        "f0270e2a-268c-4364-83c2-3bbfa5d60e9a"
+      ],
+      "neck_attach": [
+        353.13,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        207,
+        245,
+        514,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_athletic",
+      "gender": "female",
+      "label": "Спортивное",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_athletic.png",
+      "sha256": "b821899abc7e18ad67419176078735b6ef5842b24c956198b87ed059957ec7f9",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_athletic_00001_.png",
+      "source_sha256": "bc56fa1b0e38eae468a36f05ff8457297c58902efc5ee4efb57a77f141e3d5ef",
+      "local_run_lineage": [
+        "d1565503-b039-4e01-a4fd-a3195918484c",
+        "0c24fa4d-c00f-4579-a8f8-ca7859000a7c"
+      ],
+      "neck_attach": [
+        357.01,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        202,
+        245,
+        529,
+        1245
+      ],
+      "main_component_fraction": 0.9999899167628775,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_muscular",
+      "gender": "female",
+      "label": "Сильное",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_muscular.png",
+      "sha256": "1d9e42dea00cacf9b2c6d89f085ca97e01b802e6a57ed0fb31859ad891c75821",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_muscular_00001_.png",
+      "source_sha256": "5498b88fc3db3eb827367a9a56992f7e73418fcdb36386acb83d86543da27ddb",
+      "local_run_lineage": [
+        "f6c136f2-7b78-4b95-9d43-6e40179862d3",
+        "76000de2-12e9-4081-ba84-2a498f00a2fd"
+      ],
+      "neck_attach": [
+        354.87,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        195,
+        245,
+        528,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_curvy",
+      "gender": "female",
+      "label": "Выраженная талия",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_curvy.png",
+      "sha256": "527d13ff41ea9056c19fd08c818e4a22edd37016a0e613db497deac3989e9ade",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_curvy_00001_.png",
+      "source_sha256": "672aa7614bb243ac6d195a00ac2b059185a38ca4dc9f97e260813b6efdba56c6",
+      "local_run_lineage": [
+        "9b22b4ad-d229-4b2c-9a3f-a5eaf0089e8b",
+        "813ebff7-f78a-425f-815a-be193d8ef619"
+      ],
+      "neck_attach": [
+        358.8,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        196,
+        245,
+        521,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_soft",
+      "gender": "female",
+      "label": "Слегка мягкое",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_soft.png",
+      "sha256": "b592958ed852d9d5df07f19d4d744f50b9799409a7e52428c17e5eed20cf50e0",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_soft_00001_.png",
+      "source_sha256": "34706068aaa510df9960aa3fd6c4543987921daee2ef59edd9962e7a62111627",
+      "local_run_lineage": [
+        "49d85804-1431-4a64-863f-b9affae046e3",
+        "dadbcaf6-cfaa-4c1d-bb82-8f8315884716"
+      ],
+      "neck_attach": [
+        372.75,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        204,
+        245,
+        522,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    },
+    {
+      "id": "female_pear",
+      "gender": "female",
+      "label": "Шире бёдра",
+      "file": "assets/art_source/characters_v1/bodies_v2/female_pear.png",
+      "sha256": "5692602ae7160421d65f1031bee1f77d1dcd0faacfc645f2b7fc0273bbab1fce",
+      "source": "E:\\Ai\\ComfyUI-EroInc\\output\\characters_v1\\neck_cleanup\\female_pear_00001_.png",
+      "source_sha256": "aa09e7bab455093b75d7b8b8f305a5aba1a730f46eb8d9424b54e35f6d07977b",
+      "local_run_lineage": [
+        "78776a14-a587-4a60-a5a9-52e1d8354376",
+        "3fa87eb3-36e1-4470-bee4-88a0abc57407"
+      ],
+      "neck_attach": [
+        353.85,
+        245
+      ],
+      "feet_baseline_y": 1244,
+      "alpha_bounds": [
+        189,
+        245,
+        530,
+        1245
+      ],
+      "main_component_fraction": 1.0,
+      "head_included": false,
+      "clothes_included": false,
+      "approval": "agent-selected body candidate; only the separate style target was approved by user",
+      "runtime_eligible": false,
+      "training_eligible": false
+    }
+  ]
+}

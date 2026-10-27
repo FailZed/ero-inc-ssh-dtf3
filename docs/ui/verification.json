@@ -1,0 +1,21 @@
+{
+  "gameplay": {
+    "checks": 662,
+    "failed": 0,
+    "failures": []
+  },
+  "game_ui": {
+    "checks": 180,
+    "failed": 0,
+    "failures": []
+  },
+  "mechanics_pack": {
+    "checks": 2477,
+    "failed": 0,
+    "failures": []
+  },
+  "captures": 84,
+  "all_capture_bounds_pass": true,
+  "controller_validation": "Synthetic cancel input and keyboard focus; no physical controller session.",
+  "known_shutdown_output": "The existing runtime reports 63 ObjectDB instances and 27 resources at exit; the same output was observed before UI changes."
+}

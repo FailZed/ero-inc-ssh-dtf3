@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "scope": "Restore user-selected rendering through owned reference edits; review before expansion. Not runtime art.",
+  "output_prefix": "characters_v2/body_reference_v2",
+  "preserve_input_latent": true,
+  "denoise": 0.64,
+  "steps": 16,
+  "cfg": 6.0,
+  "sampler": "euler",
+  "scheduler": "normal",
+  "lora": {
+    "name": "EroInc/candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength": 0.65
+  },
+  "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi",
+  "items": [
+    {
+      "id": "female_slim",
+      "rig": "female_average",
+      "category": "anatomy",
+      "image": "characters_v2/body_reference_v1/female/reference.png",
+      "mask": "characters_v2/body_reference_v1/female/build-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original adult anime character age 30, full body neutral anatomical figure, unclothed, standing relaxed, arms at sides, same pose, same thin brown contour, pale warm skin and light peach cel shadow, matte colors, delicate lineart, limited simple cel shading, evenly lit, flat light gray background, adult woman, short brown bob, blue eyes, natural adult female anatomy, (slim adult build, narrower hips, slender thighs, small natural adult breasts, natural nipples:1.25)",
+      "seed": 9852101,
+      "denoise": 0.64,
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, large breasts, broad hips, thick thighs"
+    },
+    {
+      "id": "male_soft",
+      "rig": "male_toned",
+      "category": "anatomy",
+      "image": "characters_v2/body_reference_v1/male/reference.png",
+      "mask": "characters_v2/body_reference_v1/male/build-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original adult anime character age 30, full body neutral anatomical figure, unclothed, standing relaxed, arms at sides, same pose, same thin brown contour, pale warm skin and light peach cel shadow, matte colors, delicate lineart, limited simple cel shading, evenly lit, flat light gray background, adult man, short brown hair, blue eyes, natural adult male anatomy, natural nipples, (ordinary adult male body, soft smooth chest, soft rounded abdomen, no defined abs, moderate shoulders, average arms:1.25)",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, (six pack:1.3), (defined abs:1.3), muscular, veins, bodybuilder",
+      "seed": 9852201,
+      "denoise": 0.64
+    },
+    {
+      "id": "female_athletic",
+      "rig": "female_average",
+      "category": "anatomy",
+      "image": "characters_v2/body_reference_v1/female/reference.png",
+      "mask": "characters_v2/body_reference_v1/female/build-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original adult anime character age 30, full body neutral anatomical figure, unclothed, standing relaxed, arms at sides, same pose, same thin brown contour, pale warm skin and light peach cel shadow, matte colors, delicate lineart, limited simple cel shading, evenly lit, flat light gray background, adult woman, short brown bob, blue eyes, natural adult female anatomy, (athletic adult build, compact medium breasts, natural nipples, strong shoulders, athletic thighs, subtle muscle definition:1.25)",
+      "seed": 9852102,
+      "denoise": 0.64
+    },
+    {
+      "id": "male_slim",
+      "rig": "male_toned",
+      "category": "anatomy",
+      "image": "characters_v2/body_reference_v1/male/reference.png",
+      "mask": "characters_v2/body_reference_v1/male/build-mask.png",
+      "prompt": "masterpiece, best quality, eincanime, original adult anime character age 30, full body neutral anatomical figure, unclothed, standing relaxed, arms at sides, same pose, same thin brown contour, pale warm skin and light peach cel shadow, matte colors, delicate lineart, limited simple cel shading, evenly lit, flat light gray background, adult man, short brown hair, blue eyes, natural adult male anatomy, natural nipples, (slender adult male body, narrow ribcage, narrow shoulders, slim arms, smooth flat abdomen, no defined abs:1.25)",
+      "negative": "clothes, underwear, bikini, censorship, doll joints, blank body, mannequin, arousal, erection, sexual activity, seductive pose, exaggerated proportions, bodybuilder, huge muscles, obese, deep fat folds, text, watermark, logo, 3d, photorealistic, glossy skin, plastic skin, heavy black contour, comic inking, hatching, extra limbs, extra fingers, missing fingers, deformed hands, crossed legs, child, teen, chibi, (six pack:1.3), (defined abs:1.3), muscular, veins, bodybuilder",
+      "seed": 9852202,
+      "denoise": 0.64
+    }
+  ]
+}

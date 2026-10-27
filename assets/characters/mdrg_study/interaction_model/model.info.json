@@ -1,0 +1,945 @@
+{
+  "id": "interaction_model",
+  "source_name": "interaction_model",
+  "parameters": [
+    {
+      "id": "ParamBrowRY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowLY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeRShock",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeLShock",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowLRot",
+      "min": -30.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowRRot",
+      "min": -30.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowLEmote",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBrowREmote",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeOpen",
+      "min": -1.0,
+      "max": 0.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyesHappy",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamIrisZoom",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeart",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballRX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballRY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballLX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEyeballLY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamMouthOpen",
+      "min": -1.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSaliva",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamMouthForm",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamToungeX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamToungeY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableThumbMouth",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamThumbMouthX",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBlush",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadZ",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmLRot",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmLUp",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmLGesture",
+      "min": 1.0,
+      "max": 3.0,
+      "default": 1.0
+    },
+    {
+      "id": "ParamHandholdingREnable",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHandholdingRY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmRRot",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmRUp",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmRGesture",
+      "min": 1.0,
+      "max": 3.0,
+      "default": 1.0
+    },
+    {
+      "id": "ParamHandholdingLEnable",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHandholdingLY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBodyZ",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBodyX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBodyY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamLegR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamLegL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamChestX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBodyAccessoryPhysics",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHairPhysicsBaseToShort",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHairPhysicsShortToMid",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHairPhysicsMidToLong",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSalivaPhysics",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPupilWiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEarsWiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobXL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobYL",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobXR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPhysicsBoobYR",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBodyFeedback",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableBoobFondleL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobSqueezeL",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamEnableBoobFondleR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobSqueezeR",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadpatX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadpatY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHeadpat",
+      "min": -1.0,
+      "max": 1.0,
+      "default": -1.0
+    },
+    {
+      "id": "ParamShirtEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBraEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPantiesEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSkirtEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamHoodieEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPantsEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamOmegaMeter",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBlanketSitting",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamSkirtUp",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamDress2Enabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPantiesX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamShoeROn",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamShoeLOn",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamPillow",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBlanketCuddle",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBlanketCuddleMove",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "ParamArmLCuddleUp",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBreastCuddleEnabled",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAnonHeadpatForearm",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAnonHeadpatUpperarm",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamArmLCuddleDown",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCuddleHandholdingEnable",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCuddleHandholdingMove",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFaceRubMoveX",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFaceRubMoveY",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFaceRubEnable",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_1_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_2_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_3_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_4_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_5_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_6_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_7_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_8_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "Param_Angle_Rotation_9_TailMain",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamTailWiggle",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamAssSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamThighSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamCalfSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFootLength",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamFootWidth",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "ParamBoobSize",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    }
+  ],
+  "drawables": [
+    "CatearFrontR",
+    "CatearFrontL",
+    "CatearMidL",
+    "CatearMidR",
+    "CatearBackR",
+    "CatearBackL",
+    "blush_2",
+    "blush",
+    "lines",
+    "SkinNose",
+    "BrowL",
+    "BrowR",
+    "SkinFace",
+    "highlight",
+    "Iris2L",
+    "Iris2R",
+    "Iris1L",
+    "Iris1R",
+    "PupilL",
+    "PupilR",
+    "EyeBall",
+    "barcode",
+    "SkinBreastL",
+    "SkinBreastR",
+    "SkinArmL",
+    "SkinArmR",
+    "SkinNeck",
+    "SkinBodyBack",
+    "SkinEyelidClosedL",
+    "SkinEyelidClosedR",
+    "SkinEyelidL",
+    "SkinEyelidR",
+    "SkinEyelid2L",
+    "SkinEyelid2R",
+    "headpet_1",
+    "headpet_2",
+    "headpet_3",
+    "CuteBow",
+    "OmegaMeterMask",
+    "Plainshirt_back",
+    "BlanketFront",
+    "BlanketBack",
+    "Shoe_L",
+    "Shoe_R",
+    "ModdableHairBack",
+    "ModdableHairFront",
+    "ModdableFace",
+    "ModdableBackLower",
+    "ModdableBack",
+    "BellChokerMain",
+    "PointyEarR",
+    "PointyEarL",
+    "BellChokerBell",
+    "WizardHat",
+    "AltBPantsBelt2",
+    "AltBPantsBelt",
+    "BPantsCrotch",
+    "BPantsUpperR",
+    "BPantsUpperL",
+    "BPantsLowerR",
+    "BPantsLowerL",
+    "LongHoodieRaisedArmFrontR",
+    "LongHoodieRaisedArmFrontL",
+    "LongHoodieRaisedArmBackR",
+    "LongHoodieRaisedArmBackL",
+    "AltLongHoodieStringR",
+    "AltLongHoodieStringL",
+    "LongHoodieHoodFront",
+    "LongHoodieChest",
+    "LongHoodieFront",
+    "LongHoodieUppperArmR",
+    "LongHoodieUppperArmL",
+    "LongHoodieLowerArmR",
+    "LongHoodieLowerArmL",
+    "LongHoodieHoodBack",
+    "Plainshirt_front",
+    "Panties_front",
+    "Panties_back",
+    "StockingR",
+    "StockingL",
+    "Skirt",
+    "BraFrontR",
+    "BraFrontL",
+    "BrasUpperL",
+    "BrasUpperR",
+    "BraMid",
+    "BraLower",
+    "PlainShirt_Front",
+    "PlainShirt_FrontNoBras",
+    "PlainShirt_Base",
+    "PlainShirt_SleeveL",
+    "PlainShirt_SleeveR",
+    "PlainShirt_Back",
+    "AttachArmRLowerArmUp",
+    "AttachArmLLowerArmUp",
+    "AttachArmRHandUp3",
+    "AttachArmLHandUp3",
+    "AttachArmRHandUp2",
+    "AttachArmLHandUp2",
+    "AttachArmRHandUp1",
+    "AttachArmLHandUp1",
+    "SkinPelvis",
+    "OmegaMeterInner",
+    "OmegaMeter",
+    "SkinBodyFront",
+    "AttachLegRKnee",
+    "AttachLegLKnee",
+    "AttachLegRLower",
+    "AttachLegLLower",
+    "AttachLegRFeet",
+    "AttachLegLFeet",
+    "SkinThighR",
+    "SkinThighL",
+    "SkinButtL",
+    "SkinButtR",
+    "AttachLegRThigh",
+    "AttachLegLThigh",
+    "AttachArmRLowerArmDown",
+    "AttachArmLLowerArmDown",
+    "AttachArmR2",
+    "AttachArmL",
+    "AttachArmRHandDown1",
+    "AttachArmLHandDown1",
+    "AttachArmRHandDown2",
+    "AttachArmLHandDown2",
+    "NippleR2",
+    "NippleL2",
+    "ModdableShirtLogo",
+    "ModdableHoodieLogo",
+    "ModdableShirtLeftSleeveLogo",
+    "ModdableShirtRightSleeveLogo",
+    "ModdablePantiesLogo",
+    "AttachArmLLowerCuddle",
+    "AttachArmLHandCuddle",
+    "AttachArmLUpperCuddle",
+    "SkinArmLShoulderCuddleDown",
+    "BlanketCuddle",
+    "PillowFront",
+    "PillowBack",
+    "MCHandHolding",
+    "MCHandFaceRubFront",
+    "MCHandFaceRubBack",
+    "AttachArmLLowerCuddleUp",
+    "AttachArmLUpperCuddleUp",
+    "SkinArmLShoulderCuddleUp",
+    "BlanketShadow",
+    "TailMain",
+    "TailMain2",
+    "TailMain3",
+    "TailMain4",
+    "TailMain5",
+    "TailMain6",
+    "TailMain7",
+    "TailMain8",
+    "TailMain9",
+    "TailMain10",
+    "MCHand",
+    "MCForearmHandholding",
+    "MCForearmHandholding2",
+    "MCHand2",
+    "Dress2Chest",
+    "Dress2Middle",
+    "Dress2Back",
+    "Dress2SleeveR",
+    "Dress2SleeveL",
+    "H0_Top_LeafR",
+    "H0_Top_LeafL",
+    "H0_Front_Bang",
+    "H0_Side_BangL",
+    "H0_Side_BangR",
+    "H0_SideAlt_Strand",
+    "H0_Side",
+    "H0_Braid",
+    "H0_Back",
+    "H1_Side_L2",
+    "H1_Front_Bang",
+    "H1_Side_L",
+    "H1_BackL",
+    "ThumbMask",
+    "ThumbSuckThumb",
+    "ThumbSuck",
+    "SkinMouthThumbSuck",
+    "SkinLipUpper",
+    "SkinLipLower",
+    "SkinLipUpperToungeOut",
+    "SkinLipLowerToungeOut",
+    "SharpTeethUpper",
+    "TeethUpper",
+    "Saliva2",
+    "Saliva1",
+    "Tounge",
+    "SharpTeethLower",
+    "TeethLower",
+    "InnerMouthTounge",
+    "InnerMouth",
+    "H1_Side_Top",
+    "H1_Top_Ahoge",
+    "H1_Back_R2",
+    "H1_Back_R1",
+    "HairHologram",
+    "H2_Front_Bang",
+    "H3_Front",
+    "H3_Side",
+    "H3_Back_Top",
+    "H3_Back",
+    "H4_Knot",
+    "H4_Tail",
+    "Dress1_Bottom",
+    "Dress1_String",
+    "Dress1_Chest",
+    "Dress1_Waist",
+    "HitAreaOpenMouth",
+    "HitAreaCloseMouth",
+    "HitAreaHeadpat",
+    "HitAreaFaceStroke",
+    "HitAreaThumbMouth",
+    "CumOutsideBelly",
+    "CumOutsideInnerThighLowerL",
+    "CumOutsideInnerThighL",
+    "CumOutsideInnerThighL2",
+    "CumOutsideBoobL",
+    "CumOutsideBoobLSide",
+    "CumOutsideBellyR",
+    "CumOutsideUnderBoobMiddle",
+    "CumOutsideBoobRSide",
+    "CumOutsideBoobR",
+    "CumOutsideInnerThighR",
+    "CumOutsideInnerThighR2",
+    "CumOutsideFaceRight",
+    "CumOutsideFaceNose",
+    "CumOutsideFaceLeft",
+    "HitAreaBoobL",
+    "HitAreaBoobR",
+    "HitAreaBoobsBoth",
+    "MCRightHandFondle",
+    "MCLeftHandFondle",
+    "SkinBraChestR",
+    "SkinBraChestL",
+    "ShadowBoobL",
+    "ShadowBoobR",
+    "Headband",
+    "NavelPiercing",
+    "NipPiercingRight",
+    "NipPiercingLeft",
+    "H0_FrontClippedUp_Bang",
+    "H0_FrontClippedUp_HairClip",
+    "BikiniBot_A_StrapL",
+    "BikiniBot_A_StrapR",
+    "BikiniBot_A_Outline",
+    "BikiniBot_M_Cloth",
+    "BikiniTop_A_StrapR",
+    "BikiniTop_A_OutlineR",
+    "BikiniTop_M_CupR",
+    "BikiniTop_A_StrapL",
+    "BikiniTop_A_OutlineL",
+    "BikiniTop_M_CupL",
+    "BikiniTop_A_Middle"
+  ],
+  "parts": [
+    "Part5",
+    "Part",
+    "Part11",
+    "Part26",
+    "Part3",
+    "Part30",
+    "Part28",
+    "Part21",
+    "Part14",
+    "Part12",
+    "Part10",
+    "Part15",
+    "Part8",
+    "Part7",
+    "Part32",
+    "Part17",
+    "Part4",
+    "Part13",
+    "Part16",
+    "Part27",
+    "Part25",
+    "Part24",
+    "Part23",
+    "Part22",
+    "Part19",
+    "Part9",
+    "Part6",
+    "Part2",
+    "hair",
+    "face",
+    "body",
+    "Part18",
+    "Part29",
+    "Part31",
+    "TailMain_Skinning",
+    "Part20"
+  ],
+  "provenance": {
+    "source": "My Dystopian Robot Girlfriend 0.97.12, Incontinent Cell",
+    "purpose": "User-authorized local study; imported donor model, not original EroInc art",
+    "source_game": "E:\\factorial-omega-win-64",
+    "moc_sha256": "0c8691d1c0f4b8f43ca0060ab35139a114828b987783af4301aae09f865d066a"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-19",
+  "revision": "named-personality-expansion",
+  "engine": "Godot 4.7.2 stable official ed1daf0bf",
+  "coverage": {
+    "aspirations": 6,
+    "meaning": "All eleven named generator archetypes, not exhaustive donor scenes, reactions or numeric parity",
+    "researched_types": 11,
+    "profiles": 14,
+    "school_version": "0.981",
+    "source_audit": "SCHOOL_PERSONALITY_AUDIT.json",
+    "mapped_types": 11,
+    "legacy_profiles": [
+      "calm",
+      "confident",
+      "reserved"
+    ],
+    "actions": 23
+  },
+  "tests": {
+    "exported_standalone": true,
+    "result": {
+      "checks": 1118,
+      "failed": 0,
+      "failures": []
+    },
+    "proven_behaviors": [
+      "Autonomous humor, real achievements, support and grievance response",
+      "Different social need decay and emotional intensity/duration",
+      "Known third-party information and provenance",
+      "Unverified claims, timed verification and trust consequences",
+      "Mutual attraction, rejection cooldown and content filters",
+      "All eleven profiles generated in a 200 NPC fixture",
+      "Mixed personalities with prior grievances replay after JSON restore and split time",
+      "Original base simulation state and RNG remain unchanged when inactive"
+    ],
+    "focused_personality_checks": 207,
+    "command": "tools/test_mechanics.ps1 -Isolated -Pack",
+    "benchmark": {
+      "actions": {
+        "boast": 38,
+        "connect": 692,
+        "court": 40,
+        "create": 900,
+        "deceive": 116,
+        "eat": 1015,
+        "gossip": 91,
+        "joke": 183,
+        "practice": 2193,
+        "publish": 123,
+        "recreation": 18,
+        "rest": 47,
+        "sleep": 2659,
+        "study": 1082,
+        "support": 38,
+        "verify": 8,
+        "visit": 150,
+        "walk": 144,
+        "wash": 473,
+        "work": 1944
+      },
+      "days": 7,
+      "milestones": 138,
+      "milliseconds": 12896,
+      "npcs": 100
+    }
+  },
+  "independent_probe": {
+    "milliseconds": 12607,
+    "represented_personalities": 11,
+    "failed": 0,
+    "personalities": {
+      "aggressive": 8,
+      "deceitful": 11,
+      "gossip": 5,
+      "haughty": 14,
+      "humorous": 17,
+      "naive": 7,
+      "reclusive": 5,
+      "reliable": 10,
+      "sociable": 15,
+      "uninhibited": 5,
+      "weak": 3
+    },
+    "report": "NPC_PERSONALITIES_STUDY.json",
+    "milestones": 149,
+    "event_counts": {
+      "npc_life_career_progress": 169,
+      "npc_life_claim_made": 170,
+      "npc_life_deception_exposed": 13,
+      "npc_life_gossip": 37,
+      "npc_life_milestone": 149,
+      "npc_life_new_aspiration": 3,
+      "npc_life_social_outcome": 1496
+    },
+    "days": 7,
+    "npcs": 100,
+    "seed": 20261019
+  },
+  "main_game_enabled": false,
+  "main_catalog_changed": false,
+  "existing_save_files_used": false,
+  "art_generation_changed": false,
+  "source_material_copied": "Taxonomy labels and references only; no source code, authored narrative or art",
+  "limits": [
+    "Opt-in headless logic, not FPS or a human playtest",
+    "No automatic conversion of existing NPCs or saves",
+    "Scene presentation and exhaustive School reactions remain separate"
+  ],
+  "source_hashes": {
+    "scripts/mechanics/npc_personalities.gd": "B60A45CD1066EE1E2BE582CF7EEF1D53092A582CFB3992603D9F7C8D76168323",
+    "scripts/mechanics/npc_agency.gd": "D83DAF82517AB752047CBCD5B749B2D2E0B50723988679291AAFB1998200A878",
+    "scripts/mechanics/npc_life_simulation.gd": "91A6F7E8825E5F170D9BE1637FB1305AB0859643AC63FCD7EA5B13C22B2E0DB7",
+    "scripts/mechanics/core/personality_validation.gd": "03101A2708408F0E33A41272C4C18EFB8CCAA7DC8006680BF26AE4A15777A932",
+    "scripts/mechanics/core/agency_validation.gd": "2CDD4461DCC2D739B534E2C55E0801E22FDAB63D94EF891010194FAE2B30DE92",
+    "scripts/mechanics/social.gd": "41BD8B968D8F3750E7E9DA26F1745D1671153AC1A59367253CA308C90A65881E",
+    "scripts/mechanics/social_rules.gd": "106ED8EDE35DF7889CA8C3187845A98B56EBC7CEBC3F12B1F3D389601EA4B420",
+    "scripts/mechanics/debug/npc_life_probe.gd": "BD21C04F87EC51F3B8EB515ECF6557CABC8D7EDD5987D1679E43A74AA9798577",
+    "data/mechanics/npc_personalities.json": "068C60529860843D8A32C2A02171DEA650538435C8B2273D69D966C2CCF556CC",
+    "tests/mechanics/npc_personalities.gd": "6717A4A8F249A6D720A9596356E78976EC4D2E228F5E89332B25493C419FFA4B",
+    "tests/mechanics/npc_life.gd": "16F937852014939099FA16C032EE7C3D148A1507CCA64EAEC9D7927698111EF6",
+    "tests/mechanics/run.gd": "428E0CE0E8066FB5A0A28ABD74E3E3989F1125AFA940891CEDAE0FC389BAFD8E"
+  }
+}

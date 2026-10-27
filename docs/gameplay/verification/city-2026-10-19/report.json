@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-19",
+  "engine": "Godot 4.7.2 stable ed1daf0bf",
+  "revision": "main city map v2, travel, housing and atmosphere",
+  "gameplay": {
+    "checks": 505,
+    "failed": 0,
+    "failures": []
+  },
+  "city": {
+    "checks": 118,
+    "failed": 0,
+    "markers": 15,
+    "periods": 4,
+    "weather": 4
+  },
+  "standalone_pack": {
+    "checks": 1722,
+    "failed": 0,
+    "failures": []
+  },
+  "main_pack": {
+    "checks": 9,
+    "failed": 0,
+    "failures": []
+  },
+  "snapshot_process": [
+    {
+      "mode": "write",
+      "ok": true
+    },
+    {
+      "mode": "read",
+      "ok": true
+    }
+  ],
+  "story_flows": [
+    {
+      "branch": 0,
+      "checks": 33,
+      "difficulty": "easy",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10952,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 1,
+      "checks": 33,
+      "difficulty": "normal",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10885,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "hard",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10897,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 3,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": true,
+      "last": "chapter_one:261",
+      "milliseconds": 7591,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": false
+    },
+    {
+      "branch": 2,
+      "checks": 33,
+      "difficulty": "custom",
+      "failed": 0,
+      "failures": [],
+      "flee": false,
+      "last": "chapter_one:261",
+      "milliseconds": 10895,
+      "stages": [
+        "night",
+        "return_to_bed",
+        "photo",
+        "morning_dress",
+        "morning_wash",
+        "morning_leave",
+        "campus",
+        "classroom",
+        "homecoming"
+      ],
+      "teacher_right": true
+    }
+  ],
+  "visually_inspected": [
+    "city-day-clear.png",
+    "city-morning-clear.png",
+    "city-day-cloudy.png",
+    "city-night-rain.png",
+    "city-night-snow.png",
+    "city-morning-snow-student_home.png",
+    "city-day-clear-training_center.png",
+    "city-sunset-rain-riverside_cafe.png",
+    "city-matrix.png",
+    "city-sunset-rain.png",
+    "city-night-snow-north_beach.png"
+  ],
+  "visual_scope": "Main UI in controlled development worlds; city-matrix is a dedicated native QA grid, not a player screen.",
+  "limitations": [
+    "Exterior location views are focused 2.5D city artwork; new houses share existing room art.",
+    "Snowfall does not accumulate a snow cover.",
+    "Existing main project shutdown reports ObjectDB/resource leaks; no script, test or shader failures in the final checks. Independent packed runtime exits cleanly."
+  ],
+  "pack": {
+    "path": "E:\\GoDot\\.research\\ero-city-main.pck",
+    "bytes": 147973572,
+    "sha256": "28d8445fd527be67a78240bdc7943b2d8fa08fd35cb7b26ab24e9a34f46df871"
+  },
+  "save_files_modified": false
+}

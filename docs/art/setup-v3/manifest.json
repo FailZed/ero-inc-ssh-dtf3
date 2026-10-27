@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-18",
+  "tool": "built-in image_gen",
+  "mode": "edit",
+  "reference_only": true,
+  "production_ui_changed": false,
+  "engine": "Godot 4.6.3",
+  "native_game_viewport": "1920x1080",
+  "model_reference": {
+    "name": "DaSiWa Illustrious | Anime",
+    "version": "EpitaphEcstasy",
+    "model_id": 1034922,
+    "version_id": 3012006,
+    "autov2": "44670E67C5",
+    "url": "https://civitai.red/models/1034922/dasiwa-illustrious-or-anime?modelVersionId=3012006",
+    "evidence": "User screenshot and authenticated browser author page",
+    "checkpoint_locally_executed": false
+  },
+  "previous_references": "../setup-v2/manifest.json",
+  "prompts": "prompts.json",
+  "brief": "README.md",
+  "flow": [
+    "New game: world and NPC composition",
+    "New game: difficulty",
+    "Prologue scene 05: home bathroom mirror character creation"
+  ],
+  "population_preset": {
+    "human": 0.6,
+    "semi_furry": 0.25,
+    "furry": 0.15,
+    "source": "Proposed EroInc preset, not School or canonical scenario demographics"
+  },
+  "story_sources": [
+    "TimeLine/prolog/scene_05_mirror_and_photo.dtl:15-17",
+    "TimeLine/prolog/scene_12_glade_reveal.dtl:32-39"
+  ],
+  "files": [
+    {
+      "path": "character-mirror-v3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2aa0ef750f3062f5dc33da17e3c90310e7961835468377f3093341f44a742443",
+      "status": "design-reference-not-integrated",
+      "visually_inspected": true
+    },
+    {
+      "path": "difficulty-v3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "00a66684133cdbac169c2e7b4bc4bbee01953bfe72c746be88e6628ae4355d21",
+      "status": "design-reference-not-integrated",
+      "visually_inspected": true
+    },
+    {
+      "path": "world-npcs-v3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "02d04bc47ad1aa26f96ddaf603d58d3170aa697c4da05de318be825cf801084d",
+      "status": "design-reference-not-integrated",
+      "visually_inspected": true
+    }
+  ]
+}

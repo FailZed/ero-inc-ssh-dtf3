@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-19",
+  "kind": "2.5D painted river-city map, not a 3D mesh or live gameplay screen",
+  "tool": "built-in image_gen (generation and reference-image edit)",
+  "provenance": "Original generated EroInc geography; School location categories used only as design context",
+  "art_direction": "blue-hour painted city, blue-black and steel-blue labels, amber protagonist pin",
+  "stage": "superseded architectural study; do not use as canonical map",
+  "prompt_files": [
+    "docs/art/city-river-v1/generation-prompt.txt",
+    "docs/art/city-river-v1/clean-background-prompt.txt"
+  ],
+  "geography": "data/world/city-river-v1.json",
+  "assets": [
+    {
+      "id": "city_labeled",
+      "path": "assets/textures/world/city-river-v1/city-labeled-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3659330,
+      "sha256": "b16e18d79b1ba66087bcaf79ab3f800d46ab014fc750314cd826240461d0fac8",
+      "alpha_required": false,
+      "filter": "linear",
+      "purpose": "human-readable overview",
+      "visually_inspected": true,
+      "mode": "RGB",
+      "fully_opaque": true
+    },
+    {
+      "id": "city_clean",
+      "path": "assets/textures/world/city-river-v1/city-clean-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3338303,
+      "sha256": "1fce875be4e24ec31811f476f9930a328f3f7d83972f0c8d7c253ae597b2e2d3",
+      "alpha_required": false,
+      "filter": "linear",
+      "purpose": "clean game background for separate future labels and hotspots",
+      "visually_inspected": true,
+      "mode": "RGB",
+      "fully_opaque": true
+    }
+  ],
+  "main_game_state_changed": false,
+  "user_save_files_changed": false,
+  "native_preview": {
+    "scene": "res://scenes/debug/city_map_preview.tscn",
+    "renders": [
+      {
+        "path": "docs/art/city-river-v1/native-labeled-preview.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "6211536fe07eca017b2d386043db29d66e9d6281cec9c3106e15a714950dee37",
+        "visually_inspected": true,
+        "kind": "native render of an art-preview scene, not live gameplay"
+      },
+      {
+        "path": "docs/art/city-river-v1/native-clean-preview.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "sha256": "9c1a7d8889df7738b6863a283477b94710ed7af9735fa28db91d9b9868037e7b",
+        "visually_inspected": true,
+        "kind": "native render of an art-preview scene, not live gameplay"
+      }
+    ],
+    "engine": "4.7.2 stable ed1daf0bf",
+    "script_errors": false,
+    "known_preexisting_shutdown_warnings": "63 objects / 27 resources"
+  },
+  "layout_checks": {
+    "required_locations": 15,
+    "unique_ids": true,
+    "anchors_within_texture": true,
+    "bridges": 2,
+    "planned_links": 25,
+    "all_locations_reachable": true,
+    "emergency_housing_reachable_without_den_or_alleys": true,
+    "labels_visually_correct": true,
+    "north_is_smaller_than_south": true,
+    "no_live_runtime_integration_claim": true
+  },
+  "superseded_by": "docs/art/city-river-v2/README.md"
+}

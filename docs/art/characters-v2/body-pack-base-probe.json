@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "status": "early_pose_control_style_pilot",
+  "checkpoint": "DasiwaIllustriousAnime_epitaphecstasy.safetensors",
+  "checkpoint_sha256": "44670E67C55F059116171EE8538875DA3ABF624FBDAACE6D1A7AC2D9617F0211",
+  "source": "https://civitai.red/models/1034922/dasiwa-illustrious-or-anime?modelVersionId=3012006",
+  "license": "https://freedevproject.org/faipl-1.0-sd/",
+  "output_prefix": "characters_v2/body_pack_base_probe",
+  "settings": {
+    "width": 768,
+    "height": 1344,
+    "steps": 16,
+    "cfg": 6.0,
+    "sampler_name": "euler",
+    "scheduler": "normal"
+  },
+  "positive": "masterpiece, best quality, anime screencap, thin clean lineart, matte flat colors, two-tone cel shading, {subject}, solo, one person, original adult {person}, 30 years old, mature adult face, adult proportions, {build}, short brown hair, blue eyes, neutral expression, unclothed nonsexual anatomical standing base, {anatomy}, {clothes}, (front view:1.2), level head, symmetrical upright stance, shoulders level, arms lowered slightly separated from torso, relaxed open hands beside hips, both palms facing thighs, straight legs, feet parallel slightly apart, (entire full body from head to toes:1.2), centered figure with ample blank margin above head and below feet, plain solid light gray background, even diffuse light",
+  "negative": "{exclude}, {anatomy_exclude}, {extra_negative}, worst quality, low quality, bad anatomy, deformed limbs, fused fingers, extra fingers, extra limbs, missing limbs, text, watermark, signature, logo, 3d, photorealistic, glossy skin, plastic skin, metallic skin, gradient skin highlights, thick outlines, heavy hatching, deep face shadows, stubble, beard, wrinkles, long hair, child, teen, loli, shota, chibi, child proportions, cropped head, cropped feet, multiple people, duplicate figure, multiple views, turnaround, back view, profile view, seductive pose, arched back, contrapposto, crossed legs, high heels, obese, extreme proportions, enormous breasts, giant muscles, clothes, underwear, swimsuit, shoes, jewelry, gloves, camera, tripod, room, furniture, scenery, platform, stage, horizon line, cast shadow, (thick black outlines:1.25), heavy ink contour, comic inking, hatching",
+  "profiles": [
+    {
+      "id": "male_slim",
+      "gender": "male",
+      "person": "man",
+      "subject": "1boy, adult man, male focus",
+      "build": "(slender narrow adult male frame:1.4), (smooth flat abdomen without visible abs:1.4), narrow shoulders, slim chest, thin arms and legs, modest adult proportions",
+      "clothes": "natural nipples, simple external anatomy, full-body neutral anatomical artwork",
+      "extra_negative": "(six pack:1.5), (defined abs:1.5), muscular, muscle lines, broad shoulders, bodybuilder",
+      "seed": 9841201,
+      "split": "body_pack_canonical_candidate",
+      "caption": "Original adult anime neutral frontal anatomical base, male, slim. Candidate requires anatomy, silhouette and layer QA.",
+      "body_build": "slim"
+    },
+    {
+      "id": "male_average",
+      "gender": "male",
+      "person": "man",
+      "subject": "1boy, adult man, male focus",
+      "build": "(ordinary untrained adult male build:1.4), (smooth chest and flat soft abdomen:1.4), medium shoulders, ordinary arms and thighs, modest balanced frame",
+      "clothes": "natural nipples, simple external anatomy, full-body neutral anatomical artwork",
+      "extra_negative": "(six pack:1.5), (defined abs:1.5), muscular, veins, broad shoulders, bodybuilder",
+      "seed": 9841201,
+      "split": "body_pack_canonical_candidate",
+      "caption": "Original adult anime neutral frontal anatomical base, male, average. Candidate requires anatomy, silhouette and layer QA.",
+      "body_build": "average"
+    }
+  ],
+  "acceptance": [
+    "Adult original characters; no copied anime character identity or costume.",
+    "Thin controlled outlines, expressive eyes, matte skin and limited cel shadows.",
+    "Male and female rendering belong to one family; reject masks and plastic faces.",
+    "Style first. Pose, full body and wardrobe catalogs follow after calibration and LoRA validation."
+  ],
+  "workflow_group": "EroInc_BodyPack_V2",
+  "lora": {
+    "enabled": false,
+    "name": "EroInc\\candidate_400.safetensors",
+    "sha256": "2da68309cba8e4613d0fbf8c15fb64d60fafc5bea3b9b5a791cca8cd3f225cb9",
+    "strength_model": 0.65,
+    "strength_clip": 0.0
+  },
+  "sampling_profile": "DaSiWa16-smart-2026-10-19",
+  "controlnet": {
+    "enabled": true,
+    "model": "xinsir-openpose-sdxl.safetensors",
+    "pose": "characters_v2/body_pose_guides_v1/female_average.png",
+    "male_pose": "characters_v2/body_pose_guides_v1/male_average.png",
+    "build_pose_directory": "characters_v2/body_pose_guides_v1",
+    "strength": 0.65,
+    "end_percent": 0.65
+  }
+}
