@@ -1,5 +1,5 @@
 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
-OpenGL API 3.3.0 Core Profile Context 26.8.1.260810 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon RX 7800 XT
+OpenGL API 3.3.0 Core Profile Context 26.10.1.261008 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon RX 7800 XT
 
 WARNING: [CSM][I]Live2D Cubism Core version: 05.00.0000 (83886080)
 
@@ -10,7 +10,27 @@ WARNING: [CSM][I]CubismFramework::StartUp() is complete.
 WARNING: [CSM][I]CubismFramework::Initialize() is complete.
 
    at: output (src\register_types.cpp:42)
-UI_REVIEW_RESULT {"captures":98,"destination":"E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920"}
+ERROR: UI capture failed bounds/save: story-dialogue
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://scripts/ui/gameplay/ui_review.gd:327)
+ERROR: UI capture failed bounds/save: story-choices
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://scripts/ui/gameplay/ui_review.gd:327)
+ERROR: UI capture failed bounds/save: story-history
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://scripts/ui/gameplay/ui_review.gd:327)
+ERROR: UI capture failed bounds/save: story-text-125
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://scripts/ui/gameplay/ui_review.gd:327)
+ERROR: UI capture failed bounds/save: story-text-input
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://scripts/ui/gameplay/ui_review.gd:327)
+UI_REVIEW_RESULT {"captures":100,"destination":"E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920","failed":5}
 WARNING: [CSM][I]CubismFramework::Dispose() is complete.
 
    at: output (src\register_types.cpp:42)

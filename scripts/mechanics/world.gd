@@ -1,7 +1,13 @@
 extends "res://scripts/mechanics/core/module.gd"
+const Education = preload("res://scripts/mechanics/education_schedule.gd")
 
 func is_open(entry: Dictionary) -> bool:
-	var clock: Dictionary = sim.state.clock
+	return _open_at_clock(entry,sim.state.clock)
+
+func is_open_at(entry: Dictionary, minute: int) -> bool:
+	return _open_at_clock(entry,sim.calendar.snapshot(minute))
+
+func _open_at_clock(entry: Dictionary, clock: Dictionary) -> bool:
 	var window: Array = entry.get("hours", [0, 0])
 	var valid_day := false
 	for weekday in entry.get("weekdays", [1, 2, 3, 4, 5, 6, 7]):
@@ -14,6 +20,15 @@ func availability(id: String) -> Dictionary:
 	if not is_open(location): return Rules.fail("location_closed")
 	if not Rules.check(sim.state, location.get("requirements", {})): return Rules.fail("location_requirements")
 	return Rules.ok(location.duplicate(true))
+
+func actor_availability(id: String, actor_id: String, minute: int, ignore_hours: bool = false, _invited_destination: String = "") -> Dictionary:
+	var location := definition("locations",id)
+	if location.is_empty(): return Rules.fail("unknown_location")
+	if not ignore_hours and not is_open_at(location,minute): return Rules.fail("location_closed")
+	var context: Dictionary = sim.state if actor_id == "player" else sim.services.npc_behavior.context(sim.state.social.npcs[actor_id])
+	context = context.duplicate(true)
+	context.clock = sim.calendar.snapshot(minute)
+	return Rules.ok(location.duplicate(true)) if Rules.check(context,location.get("requirements",{})) else Rules.fail("location_requirements")
 
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	var world: Dictionary = sim.state.world
@@ -64,7 +79,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			world.education.expelled = false
 			world.education.warned = false
 			world.education.absences = 0
-			world.education.grade = maxi(0, int(world.education.grade))
+			world.education.grade = maxf(0.0,float(world.education.grade))
 			emit_event("education_reinstated", {})
 			return sim.advance(30)
 		"homework": return sim.services.education.execute("homework",args)
@@ -88,17 +103,24 @@ func _lesson(id: String) -> Dictionary:
 	if lesson.get("location", "") != sim.state.world.location: return Rules.fail("wrong_location")
 	var key := "%s:%d" % [id, sim.state.clock.day_index]
 	if key in sim.state.world.education.attended: return Rules.fail("lesson_already_attended")
+	if key in sim.state.world.education.missed: return Rules.fail("lesson_already_missed")
+	var attendance := Education.attendance(lesson,sim.state.clock)
+	if not attendance.allowed: return Rules.fail("lesson_too_late")
 	sim.state.world.education.attended.append(key)
-	sim.state.world.education.grade += int(lesson.get("grade", 1))
+	sim.state.world.education.grade += float(attendance.grade)
 	sim.services.education.attend(id)
-	var result: Dictionary = sim.services.character.execute("train", {"skill": lesson.get("skill", "study"), "xp": int(lesson.get("xp", 10))})
+	var result: Dictionary = sim.services.character.execute("train", {"skill": lesson.get("skill", "study"), "xp": int(attendance.xp)})
 	if not result.ok: return result
-	return sim.advance(int(lesson.get("minutes", 60)))
+	result = sim.advance(int(attendance.minutes))
+	if not result.ok: return result
+	emit_event("lesson_attended",{"id":id,"late_minutes":attendance.late_minutes})
+	return Rules.ok(attendance)
 
 func tick(minute: int) -> void:
 	var world: Dictionary = sim.state.world
 	# Penalize only lesson windows that actually close during this session.
 	for id in sim.catalog.lessons:
+		if world.education.get("expelled",false): break
 		var lesson := definition("lessons", id)
 		if not Rules.check(sim.state, lesson.get("requirements", {})): continue
 		var weekdays: Array = lesson.get("weekdays", [1, 2, 3, 4, 5])

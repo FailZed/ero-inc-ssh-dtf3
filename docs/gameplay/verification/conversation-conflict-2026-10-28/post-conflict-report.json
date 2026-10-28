@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "scope": "stale NPC offers, post-fight distance and next actual meeting",
+  "before": {
+    "checks": 752,
+    "failed": 3,
+    "command": "tools/test_mechanics.ps1 -DialogueOnly -RunId post-conflict-before",
+    "log": "E:/GoDot/.research/school-0.981/mechanics-runs/post-conflict-before/tests-integration.log",
+    "defects": [
+      "old offer visible during active combat",
+      "old token accepted after escape",
+      "local invitation revived by departure and return between fifteen-minute ticks"
+    ]
+  },
+  "after": {
+    "exported_isolated_pck": {
+      "checks": 836,
+      "failed": 0,
+      "exit_code": 0,
+      "command": "tools/test_mechanics.ps1 -DialogueOnly -Isolated -Pack -RunId post-conflict-acceptance",
+      "log": "E:/GoDot/.research/school-0.981/mechanics-runs/post-conflict-acceptance/tests-pack.log"
+    },
+    "main_gameplay_headless": {
+      "checks": 19,
+      "failed": 0,
+      "log": "E:/GoDot/.research/school-0.981/post-conflict-gameplay.log"
+    }
+  },
+  "state_schema_changed": false,
+  "gameplay_hooks_changed": false,
+  "save_slot_operations": false,
+  "live2d_actor_or_reactions_changed": false,
+  "native_ui_control_used": false,
+  "full_mechanics_suite_repeated": false,
+  "behavior": [
+    "fight interrupts waiting and opened proposals",
+    "departure invalidates old contact",
+    "memory and channel are rechecked",
+    "invalid offers pruned each world minute; new offers generated every fifteen minutes",
+    "read-only forecasts stay pure",
+    "recent victim can refuse both local and message contact",
+    "new concern initiative uses current grievance without reconciliation",
+    "completed combat outcome and fines are not replayed"
+  ],
+  "limits": [
+    "Post-conflict spacing is original EroInc balance derived from existing dialogue rules and current character, not numeric School parity.",
+    "Late-initiative test prepares NPC availability after actual clock advancement; it does not claim all autonomous calendar combinations.",
+    "Existing phone messages remain historical even when their invitation token is invalid.",
+    "No new native screenshots or NPC performance benchmark; earlier screenshots belong to the preceding phase.",
+    "One intermediate export failed while importing PNGs with Unicode parsing errors. Final independent export and test process exited with 0."
+  ]
+}

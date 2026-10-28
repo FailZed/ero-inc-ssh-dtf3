@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "scope": "conversation -> existing combat -> outcome, portrait NPCs and consequences",
+  "results": {
+    "main_mechanics": {
+      "checks": 732,
+      "failed": 0,
+      "exit_code": 0,
+      "command": "tools/test_mechanics.ps1 -DialogueOnly -RunId dialogue-conflict-accepted-main",
+      "log": "E:/GoDot/.research/school-0.981/mechanics-runs/dialogue-conflict-accepted-main/tests-integration.log"
+    },
+    "exported_isolated_pck": {
+      "checks": 732,
+      "failed": 0,
+      "exit_code": 0,
+      "command": "tools/test_mechanics.ps1 -DialogueOnly -Isolated -Pack -RunId dialogue-conflict-acceptance-v2",
+      "log": "E:/GoDot/.research/school-0.981/mechanics-runs/dialogue-conflict-acceptance-v2/tests-pack.log"
+    },
+    "main_gameplay_headless": {
+      "checks": 15,
+      "failed": 0,
+      "log": "E:/GoDot/.research/school-0.981/dialogue-conflict-gameplay-final.log"
+    },
+    "native_1366x900": {
+      "checks": 18,
+      "failed": 0,
+      "log": "E:/GoDot/.research/school-0.981/dialogue-conflict-native-1366x900.log"
+    },
+    "native_1920x1080": {
+      "checks": 18,
+      "failed": 0,
+      "log": "E:/GoDot/.research/school-0.981/dialogue-conflict-native-1920x1080.log"
+    },
+    "characters": {
+      "checks": 116,
+      "failed": 0,
+      "models": 6,
+      "command": "tools/test_characters.ps1"
+    }
+  },
+  "screenshots": [
+    {
+      "file": "aggression-live2d-1366.png",
+      "kind": "actual Godot test scene",
+      "visually_inspected": true
+    },
+    {
+      "file": "aggression-live2d-1920.png",
+      "kind": "actual Godot test scene",
+      "visually_inspected": true
+    },
+    {
+      "file": "aggression-portrait-1366.png",
+      "kind": "actual Godot test scene",
+      "visually_inspected": true
+    },
+    {
+      "file": "aggression-portrait-1920.png",
+      "kind": "actual Godot test scene",
+      "visually_inspected": true
+    },
+    {
+      "file": "fight-live2d-1366.png",
+      "kind": "actual Godot test scene",
+      "visually_inspected": true
+    },
+    {
+      "file": "fight-live2d-1920.png",
+      "kind": "actual Godot test scene",
+      "visually_inspected": true
+    }
+  ],
+  "save_slot_operations": false,
+  "limits": [
+    "Existing full-suite baseline had 12 failures in NPC employment and health scheduling; those systems were not changed by this task.",
+    "The main project still reports its pre-existing 63 ObjectDB instances / 27 resources on exit. Final isolated PCK exits cleanly.",
+    "One early PCK process exited with -1073741819 after successful assertions. Replaying that PCK and the final independent export both exited with 0.",
+    "Existing portrait art is reused. A bald appearance attribute is stored, but the current Live2D model has no bald visual variant.",
+    "School is a structural reference, not a claim of complete numeric or content parity."
+  ]
+}

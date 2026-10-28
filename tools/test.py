@@ -7,6 +7,7 @@ import re
 import shutil
 import subprocess
 import sys
+import uuid
 from runtime import ROOT, command, host
 
 ARTIFACTS = ROOT / '.artifacts/tests'
@@ -39,16 +40,16 @@ def prepare(kind):
         for name in ['scripts', 'scenes', 'data', 'addons', 'assets', 'Characters', 'TimeLine', 'locations', 'quests', 'styles', 'translation', 'tests']:
             copy_directory(name, target)
         settings = (ROOT / 'project.godot').read_text(encoding='utf-8')
-        settings = settings.replace('[application]', '[application]\nconfig/use_custom_user_dir=true\nconfig/custom_user_dir_name="EroIncAutomatedTests"')
+        settings = settings.replace('[application]', f'[application]\nconfig/use_custom_user_dir=true\nconfig/custom_user_dir_name="EroIncAutomatedTests-{FIXTURE.parent.name}"')
         settings = re.sub(r'config/name="[^"]+"', 'config/name="EroInc Automated Tests"', settings)
         (target / 'project.godot').write_text(settings, encoding='utf-8')
         shutil.copy2(ROOT / 'icon.svg', target / 'icon.svg')
     else:
-        paths = ['scripts/mechanics', 'data/mechanics', 'tests/mechanics', 'assets/textures/portraits/protagonist_layers'] if kind == 'mechanics' else ['scripts/characters', 'scripts/ui/characters', 'data/characters', 'tests/characters', 'scenes/characters', 'assets/characters/mdrg_study', 'addons/gd_cubism']
+        paths = ['scripts/mechanics', 'data/mechanics', 'tests/mechanics', 'assets/textures/portraits/protagonist_layers'] if kind == 'mechanics' else ['scripts/characters', 'scripts/ui/characters', 'scripts/mechanics', 'data/mechanics', 'data/characters', 'tests/characters', 'scenes/characters', 'assets/fonts', 'assets/icons/conversation', 'assets/characters/mdrg_study', 'addons/gd_cubism']
         for name in paths:
             copy_directory(name, target)
         if kind == 'characters':
-            for name in ['scripts/ui/gameplay/ui_factory.gd', 'assets/textures/ui/windows-v2/window_surface.png']:
+            for name in ['scripts/ui/gameplay/ui_factory.gd', 'assets/textures/ui/windows-v2/window_surface.png', 'assets/textures/backgrounds/location_pack_v1/bedroom_night.png']:
                 output = target / name
                 output.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(ROOT / name, output)
@@ -56,7 +57,7 @@ def prepare(kind):
 [application]
 config/name="EroInc {kind} Tests"
 config/use_custom_user_dir=true
-config/custom_user_dir_name="EroIncTests-{kind}"
+config/custom_user_dir_name="EroIncTests-{kind}-{FIXTURE.parent.name}"
 [display]
 window/size/viewport_width=1440
 window/size/viewport_height=900
@@ -91,13 +92,24 @@ def run_process(name, arguments, marker=None, timeout=600):
 
 
 def main():
+    global ARTIFACTS, FIXTURE
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('suite', choices=[*SUITES, 'all', 'snapshots', 'story'])
     parser.add_argument('--isolated', action='store_true')
     parser.add_argument('--pack', action='store_true')
     parser.add_argument('--visible', action='store_true')
     parser.add_argument('--native', action='store_true')
+    parser.add_argument('--run-id', default=uuid.uuid4().hex)
+    focused = parser.add_mutually_exclusive_group()
+    focused.add_argument('--dialogue-only', action='store_true')
+    focused.add_argument('--npc-careers-only', action='store_true')
     args = parser.parse_args()
+    if not re.fullmatch(r'[a-zA-Z0-9_-]+', args.run_id):
+        parser.error('run-id must contain only letters, numbers, underscore or dash')
+    if (args.dialogue_only or args.npc_careers_only) and args.suite != 'mechanics':
+        parser.error('focused mechanics flags require suite mechanics')
+    ARTIFACTS = ROOT / '.artifacts/tests' / args.run_id
+    FIXTURE = ROOT / '.cache/tests' / args.run_id / 'main' 
     if args.pack and (args.suite not in ['mechanics', 'characters'] or not args.isolated):
         parser.error('--pack requires --isolated and suite mechanics or characters')
     kind = args.suite if args.isolated and args.suite in ['mechanics', 'characters'] else 'main'
@@ -130,7 +142,10 @@ custom_template/release=""
         if suite in ['snapshots', 'story']:
             continue
         script, marker = SUITES[suite]
-        extra = ['--', '--unit-only'] if kind == 'mechanics' else []
+        extra = ['--unit-only'] if kind == 'mechanics' else []
+        if args.dialogue_only: extra.append('--dialogue-only')
+        if args.npc_careers_only: extra.append('--npc-careers-only')
+        if extra: extra.insert(0, '--')
         results[suite] = run_process(suite + ('-pack' if args.pack else ''), [*base, '--script', 'res://' + script, *extra], marker)
     if args.suite in ['all', 'snapshots']:
         for snapshot in ['snapshot_process', 'sandbox_snapshot', 'work_expansion_snapshot', 'growth_snapshot', 'livelihood_snapshot', 'remaining_snapshot', 'companion_snapshot']:

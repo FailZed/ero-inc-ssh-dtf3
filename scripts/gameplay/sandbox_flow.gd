@@ -20,7 +20,9 @@ static func begin(gameplay) -> Dictionary:
 	for item in [["meal",3], ["book",1], ["grain",2], ["vegetable",2]]:
 		var given: Dictionary = sim.command("inventory","add",{"id":item[0],"quantity":item[1]})
 		if not given.ok: return given
-	for id in preload("res://scripts/gameplay/curriculum.gd").SUBJECTS: sim.state.world.flags["subject_"+id] = true
+	var education: Dictionary = gameplay.configuration.sandbox.education
+	preload("res://scripts/mechanics/education_schedule.gd").apply_plan(sim.state,education.enrolled,education.subjects)
+	sim.state.world.flags.city_story_home = false
 	sim.state.world.flags.sandbox = true
 	sim.state.world.flags.sandbox_started = true
 	gameplay.story_flags = {"sandbox":true,"modal":""}

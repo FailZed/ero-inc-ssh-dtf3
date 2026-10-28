@@ -9,17 +9,15 @@ const PregnancyWellbeing = preload("res://scripts/mechanics/pregnancy_wellbeing.
 const PregnancyWellbeingCheck = preload("res://scripts/mechanics/core/pregnancy_wellbeing_validation.gd")
 const AdultHealth = preload("res://scripts/mechanics/adult_health.gd")
 const AdultHealthCheck = preload("res://scripts/mechanics/core/adult_health_validation.gd")
-var previous_extended_catalog: Dictionary = {}
 
 func _load_catalog() -> Dictionary:
 	var result := super._load_catalog()
-	previous_extended_catalog = result.duplicate(true)
 	var extra: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/mechanics/reproduction.json"))
 	for group in extra:
 		if not result.has(group): result[group] = {}
 		result[group].merge(extra[group], true)
 	result.locations.bedroom["private"] = true
-	result.locations.global_map.routes.clinic = {"minutes":15}
+	result.locations[str(result.location_roles.trade)].routes.clinic = {"minutes":15}
 	if result.has("shops") and result.shops.has("market"):
 		for item in ["barrier_protection", "contraceptive_pill", "emergency_contraception"]:
 			result.shops.market.stock[item] = 100
@@ -27,12 +25,8 @@ func _load_catalog() -> Dictionary:
 
 func _init(random_seed: int = 1, extensions: Dictionary = {}) -> void:
 	super(random_seed, extensions)
-	for group in extensions:
-		if previous_extended_catalog.has(group) and extensions[group] is Dictionary:
-			previous_extended_catalog[group].merge(extensions[group].duplicate(true), true)
 	# Main presentation extensions replace entire shop/route definitions.
 	catalog.locations.bedroom["private"] = true
-	catalog.locations.global_map.routes.clinic = {"minutes":15}
 	for item in ["barrier_protection", "contraceptive_pill", "emergency_contraception"]:
 		if catalog.shops.has("market"): catalog.shops.market.stock[item] = 100
 	services["reproduction"] = Reproduction.new(self)
@@ -80,17 +74,6 @@ func export_snapshot() -> Dictionary:
 	result.reproduction_schema = 1
 	return result
 
-func prepare_legacy_reproduction(snapshot: Dictionary) -> void:
-	if not snapshot.get("state") is Dictionary: return
-	for pair in [["family", Family.defaults()], ["digital", Digital.defaults()], ["collection", Collections.defaults()], ["reproduction", Reproduction.defaults()], ["intimacy", Intimacy.defaults()], ["child_support", ChildSupport.defaults()]]:
-		if not snapshot.state.has(pair[0]): snapshot.state[pair[0]] = pair[1]
-	snapshot.reproduction_schema = 1
-
 func restore_snapshot(snapshot: Dictionary) -> Dictionary:
-	var prepared := snapshot.duplicate(true)
-	var old_hash := str(prepared.get("catalog_hash", ""))
-	if not prepared.has("reproduction_schema") and old_hash in [JSON.stringify(previous_extended_catalog).sha256_text(), JSON.stringify(previous_catalog).sha256_text()]:
-		prepared.catalog_hash = JSON.stringify(catalog).sha256_text()
-		prepare_legacy_reproduction(prepared)
-	if prepared.get("reproduction_schema") != 1: return Rules.fail("unsupported_reproduction_schema")
-	return super.restore_snapshot(prepared)
+	if snapshot.get("reproduction_schema") != 1: return Rules.fail("unsupported_reproduction_schema")
+	return super.restore_snapshot(snapshot)

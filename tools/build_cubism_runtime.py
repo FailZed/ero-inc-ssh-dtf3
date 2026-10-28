@@ -97,8 +97,9 @@ def main():
         extra = ['use_mingw=yes']
     checked(python, '-m', 'SCons', *extra, f'platform={target_platform}', 'arch=universal' if target_platform == 'macos' else 'arch=x86_64', 'target=template_debug', 'debug_symbols=no', 'optimize=speed', 'build_profile=ero_profile.json', '-j' + str(max(1, args.jobs)), cwd=SOURCE)
     addon = ROOT / 'addons/gd_cubism'
-    binary_dir = addon / 'bin'
-    binary_dir.mkdir(exist_ok=True)
+    binary_root = addon / 'bin'
+    binary_dir = binary_root / 'sdk5' if target_platform == 'windows' else binary_root
+    binary_dir.mkdir(parents=True, exist_ok=True)
     if target_platform == 'macos':
         source = SOURCE / 'demo/addons/gd_cubism/bin/libgd_cubism.macos.debug.framework/libgd_cubism.macos.debug'
         target = binary_dir / 'libgd_cubism.macos.universal.dylib'
@@ -113,7 +114,7 @@ def main():
     shutil.copytree(SOURCE / 'demo/addons/gd_cubism/res', addon / 'res', dirs_exist_ok=True)
     for source_path, name in [(sdk / 'LICENSE.md', 'CUBISM_SDK_LICENSE.md'), (sdk / 'NOTICE.md', 'CUBISM_SDK_NOTICE.md'), (sdk / 'Core/LICENSE.md', 'CUBISM_CORE_LICENSE.md'), (sdk / 'Framework/LICENSE.md', 'CUBISM_FRAMEWORK_LICENSE.md')]:
         shutil.copy2(source_path, addon / name)
-    (binary_dir / f'build-{target_platform}.json').write_text(json.dumps({'renderer_revision': REVISION, 'godot_cpp_revision': CPP_REVISION, 'sdk': SDK_NAME, 'platform': target_platform, 'binary': target.name, 'sha256': digest(target), 'core_linkage': 'dynamic' if extra else 'static'}, indent=2) + '\n', encoding='utf-8')
+    (binary_root / f'build-{target_platform}.json').write_text(json.dumps({'renderer_revision': REVISION, 'godot_cpp_revision': CPP_REVISION, 'sdk': SDK_NAME, 'platform': target_platform, 'binary': target.relative_to(binary_root).as_posix(), 'sha256': digest(target), 'core_linkage': 'dynamic' if extra else 'static'}, indent=2) + '\n', encoding='utf-8')
     print('CUBISM_RUNTIME_READY', target, flush=True)
 
 

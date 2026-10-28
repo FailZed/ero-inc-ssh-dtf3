@@ -5,21 +5,7 @@
     "accident_cooldown": 180,
     "remark_cooldown": 360,
     "postpartum_minutes": 60480,
-    "supplies_cost": 6,
-    "toilet_locations": [
-      "bathroom",
-      "clinic",
-      "global_map",
-      "university",
-      "university_hall",
-      "university_cafeteria",
-      "university_library",
-      "library",
-      "riverside_cafe",
-      "sports_center",
-      "residential_district",
-      "market"
-    ]
+    "supplies_cost": 6
   },
   "symptoms": {
     "nausea": {

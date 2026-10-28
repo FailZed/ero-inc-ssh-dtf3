@@ -1,7 +1,6 @@
 extends "res://scripts/mechanics/core/module.gd"
 const V = preload("res://scripts/mechanics/core/agency_validation.gd")
 const NEED_IDS := ["hydration","satiety","hygiene","bladder","rested","fun","social"]
-const HOME := ["bedroom","bathroom","kitchen","apartment_hall"]
 
 static func defaults() -> Dictionary:
 	return {"version":1,"need_overrides":{},"habits":{},"practice_counts":{}}
@@ -29,7 +28,7 @@ func penalty_factor(id: String) -> float:
 	return 1.0-0.15*int(sim.state.growth.habits.get(id,0))
 
 func level(id: String) -> int:
-	return clampi(int(sqrt(maxf(0,float(sim.state.player.skills.get(id,0)))/10.0)),0,10)
+	return preload("res://scripts/mechanics/core/career_progress.gd").skill_level(float(sim.state.player.skills.get(id,0)))
 
 func job_skill(id: String) -> String:
 	return str(sim.catalog.livelihood_rules.jobs[id].skill)
@@ -54,6 +53,7 @@ func work_assistance(id: String) -> Dictionary:
 	var help := _help(skill,"logic" if sim.catalog.livelihood_rules.jobs[id].kind == "sorting" else "discipline")
 	var kind: String = sim.catalog.livelihood_rules.jobs[id].kind
 	var time_scale := 1.5 if kind in ["sequence","reasoning"] else 1.0
+	if kind in ["sequence","reasoning"]: time_scale *= float(preload("res://scripts/mechanics/work_task_banks.gd").info(sim,id).time_factor)
 	return {"skill":skill,"help":help,"rounds":maxi(ceili(5*float(p.floor)),5-roundi(5*help)) if kind == "memory" else 5,"duration_ms":mini(60000,roundi(float(p.work_ms)*(1+help)*time_scale)),"round_ms":roundi(float(p.round_ms)*(1+help)),"window":minf(0.23,float(p.focus)*(1+2*help))}
 
 func game_assistance(type: String) -> Dictionary:
@@ -74,7 +74,7 @@ func practice_blocked(id: String) -> String:
 	var spec: Dictionary = sim.catalog.skills.get(id,{})
 	if not spec.has("practice"): return "unknown_practice"
 	var location := str(sim.state.world.location)
-	var home_match: bool = "bedroom" in spec.locations and location in HOME
+	var home_match: bool = sim.room_kind(location) in spec.get("home_room_kinds",[]) and sim.is_player_home_location(location)
 	if not location in spec.locations and not home_match: return "practice_location"
 	if spec.has("tool") and not spec.tool in sim.state.world.equipment and int(sim.state.inventory.items.get(spec.tool,0)) < 1: return "missing_work_equipment"
 	if float(sim.state.player.needs.energy) < float(spec.energy)*sim.multiplier("resource_cost"): return "insufficient_energy"
@@ -143,7 +143,7 @@ static func catalog_error(catalog: Dictionary) -> String:
 		if not V.number(p.floor,0.55,0.90) or not V.number(p.help_cap,0,0.40) or not V.integer(p.work_ms,1000,60000) or not V.number(p.focus,0.05,0.23) or not V.integer(p.round_ms,1000,10000): return "invalid_assistance_profile"
 	for id in catalog.skills:
 		var spec: Variant = catalog.skills[id]
-		if not V.shape(spec,{"label":"s","category":"s","practice":"s","locations":"a","minutes":"n","energy":"n","cost":"n","xp":"n"}) or spec.locations.is_empty(): return "invalid_skill_practice"
+		if not V.shape(spec,{"label":"s","category":"s","practice":"s","locations":"a","minutes":"n","energy":"n","cost":"n","xp":"n"}) or (spec.locations.is_empty() and spec.get("home_room_kinds",[]).is_empty()): return "invalid_skill_practice"
 		if not V.integer(spec.minutes,10,120) or not V.number(spec.energy,1,50) or not V.integer(spec.cost,0,100) or not V.integer(spec.xp,1,50): return "invalid_skill_practice"
 		for location in spec.locations:
 			if not catalog.locations.has(location): return "invalid_practice_location"

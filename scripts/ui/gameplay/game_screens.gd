@@ -51,11 +51,12 @@ static func journal(owner: Control, parent: Node) -> void:
 		var cards := W.grid(parent)
 		for id in sim.state.npc_stories.arcs:
 			var story: Dictionary = sim.services.npc_stories.present(id)
+			if story.is_empty(): continue
 			var card := W.panel(cards)
 			UI.label(card, str(story.title), 25)
 			UI.label(card, "Завершено" if story.status == "completed" else "Личная история", 16, UI.MUTED)
 			UI.button(card, "Открыть историю", owner._open_personal_story.bind(str(id)))
-		if cards.get_child_count() == 0: W.empty(parent, "people", "У каждого есть своя история", "Узнавайте людей: личные дела появятся после знакомства.")
+		if cards.get_child_count() == 0: W.empty(parent, "people", "Личных историй пока нет", "Здесь появятся истории, которые вы начали со знакомыми жителями.")
 		UI.button(parent, "Альбом воспоминаний", owner.open_panel.bind("collection"))
 		return
 	if tab == "achievements":
@@ -141,14 +142,22 @@ static func activities(owner: Control, parent: Node) -> void:
 			UI.label(card, {"blackjack":"Двадцать одно","reaction":"Реакция","strength":"Проверка силы","guess":"Угадать число","lockpick":"Учебный замок","timing":"Поймать ритм","pushups":"Отжимания"}[id], 25)
 			UI.button(card, "Попробовать", owner._act.bind("encounters", "game_start", {"type":id, "stake":0}))
 		return
-	UI.label(parent, "Учебный результат %d · пропусков %d" % [sim.state.world.education.grade,sim.state.world.education.absences], 18, UI.MUTED)
+	if not sim.state.world.flags.student_enrolled:
+		UI.label(parent,"Вы не учитесь в университете. Обязательных занятий и штрафов за пропуски нет. Навыки можно развивать в разделе развития и на работе.",20,UI.MUTED)
+		return
+	UI.label(parent, "Учебный результат %.2f · пропусков %d" % [sim.state.world.education.grade,sim.state.world.education.absences], 18, UI.MUTED)
+	UI.label(parent,"Допуск с опозданием до 15 минут. Занятия заканчиваются по расписанию; опоздание уменьшает опыт и учебный результат.",18,UI.MUTED)
 	for id in sim.catalog.lessons:
 		var spec: Dictionary = sim.catalog.lessons[id]
 		if not preload("res://scripts/mechanics/core/rules.gd").check(sim.state,spec.get("requirements",{})): continue
 		var hours: Array = spec.get("hours", [0,0])
 		var days: Array[String] = []
 		for day in spec.get("weekdays", [1,2,3,4,5]): days.append(["вс","пн","вт","ср","чт","пт","сб"][int(day)%7])
-		action(owner, cards, Names.title(id), "%s · %02d:%02d–%02d:%02d\n%s · %d мин" % [", ".join(days),int(hours[0])/60,int(hours[0])%60,int(hours[1])/60,int(hours[1])%60,Names.title(spec.location),spec.get("minutes",60)], "world", "lesson", {"id":id}, "На занятие")
+		var description := "%s · %02d:%02d–%02d:%02d\n%s · %d мин" % [", ".join(days),int(hours[0])/60,int(hours[0])%60,int(hours[1])/60,int(hours[1])%60,Names.title(spec.location),spec.get("minutes",60)]
+		if sim.services.world.is_open(spec):
+			var attendance: Dictionary = preload("res://scripts/mechanics/education_schedule.gd").attendance(spec,sim.state.clock)
+			if attendance.allowed: description += "\nСейчас: %d мин · опыт %d · результат +%.2f" % [attendance.minutes,attendance.xp,attendance.grade]
+		action(owner,cards,Names.title(id),description,"world","lesson",{"id":id},"На занятие")
 	action(owner, cards, "Домашнее задание", "45 мин · заниматься дома", "world", "homework", {}, "Заниматься")
 	if sim.state.world.education.get("expelled", false): action(owner, cards, "Восстановиться в университете", "30 мин · 50 ¤", "world", "appeal", {}, "Подать заявление")
 
@@ -157,7 +166,7 @@ static func work(owner: Control, parent: Node) -> void:
 	var sim = Gameplay.simulation
 	var state: Dictionary = sim.state
 	owner._heading("Дела и заработок")
-	var at_shop: bool = state.world.location in ["global_map", "north_shops"]
+	var at_shop: bool = not _local_shop(sim).is_empty()
 	var tab := tabs(owner, parent, "work_tab", {"projects":"Мои проекты", "jobs":"Работа", "shop":"Магазин", "channel":"Мой канал", "assets":"Имущество"}, "shop" if at_shop else "projects")
 	if tab == "shop": _shop(owner, parent); return
 	var cards := W.grid(parent)
@@ -213,12 +222,12 @@ static func work(owner: Control, parent: Node) -> void:
 
 static func _shop(owner: Control, parent: Node) -> void:
 	var sim = Gameplay.simulation
-	var local: bool = sim.state.world.location in ["global_map", "north_shops"]
+	var local: bool = not _local_shop(sim).is_empty()
 	if not local:
 		W.empty(parent,"inventory","Загляните в магазин","Городские магазины открыты с 08:00 до 22:00.")
 		W.primary(parent,"Найти на карте",owner.open_panel.bind("map"))
 		return
-	var shop := "north_market" if sim.state.world.location == "north_shops" else "market"
+	var shop := _local_shop(sim)
 	var cards := W.grid(parent,3)
 	for id in sim.catalog.shops[shop].stock:
 		var item: Dictionary = sim.catalog.items[id]
@@ -401,7 +410,7 @@ static func family(owner: Control, parent: Node) -> void:
 			var member: Dictionary = data.members.get(str(entry.member),{})
 			if member.is_empty() or not "player" in member.parents: continue
 			count += 1
-			var description: String = {"born":"Появление в семье","care":"Забота","assignment":"Обязанности распределены","support":"Приглашена помощь","milestone":"Новый этап взросления","needs_attention":"Нужна помощь","expenses_due":"Неоплаченные расходы"}.get(str(entry.kind),"Семейное событие")
+			var description: String = {"born":"Появление в семье","care":"Забота","assignment":"Обязанности распределены","care_handoff":"Разовая помощь опекуна","care_interrupted":"Уход прерван","support":"Приглашена помощь","milestone":"Новый этап взросления","needs_attention":"Нужна помощь","expenses_due":"Неоплаченные расходы"}.get(str(entry.kind),"Семейное событие")
 			UI.label(parent,str(member.name) + " · " + description,21)
 		if count == 0: W.empty(parent,"home","История семьи впереди","Важные моменты останутся здесь.")
 		return
@@ -446,6 +455,7 @@ static func family(owner: Control, parent: Node) -> void:
 				if person.assignments[need] == guardians[index]: choice.select(index)
 			choice.item_selected.connect(func(index): owner._act("family","assign",{"id":person.id,"need":need,"caregiver":guardians[index]}))
 			row.add_child(choice)
+		preload("res://scripts/ui/gameplay/family_handoff_panel.gd").populate(owner,detail,person)
 		if person.stage != "adult": UI.button(detail,"Обсудить передачу ухода",Reproductive.confirm.bind(owner,"Передать уход; алиментные обязательства сохранятся","reproduction","parenthood",{"member":person.id,"decision":"relinquish","confirm":true}))
 		return
 	var needs := W.grid(detail,2)
@@ -549,6 +559,7 @@ static func person(owner: Control, parent: Node) -> void:
 		var life := Social.life(sim,id)
 		UI.label(detail,str(life.emotion),24)
 		UI.label(detail,str(life.activity),18,UI.MUTED)
+		SocialStatus.employment(detail,sim,id)
 		UI.label(detail,str(life.goal),22)
 		var bonds := W.grid(detail,3)
 		for spec in [["trust","Доверие","chat"],["affection","Симпатия","health"],["comfort","Комфорт","rest"]]: W.meter(bonds,spec[1],float(bond[spec[0]]),spec[2])
@@ -562,7 +573,8 @@ static func person(owner: Control, parent: Node) -> void:
 			UI.button(detail,"Расстаться",owner._act.bind("social_rules","breakup",{"id":id}))
 		return
 	if tab == "history":
-		UI.button(detail,"Личная история",owner._open_personal_story.bind(id))
+		if not sim.services.npc_stories.arc_for(id).is_empty():
+			UI.button(detail,"Личная история",owner._open_personal_story.bind(id))
 		SocialStatus.recent(detail,sim,id)
 		var more := UI.button(detail,"Характер и знакомства  ▾",func(): pass)
 		var extra := UI.column(detail)
@@ -622,44 +634,59 @@ static func combat(owner: Control, parent: Node) -> void:
 	var turn := UI.row(moves)
 	UI.label(turn,"Ход %d" % state.turn,23,UI.BLUE)
 	UI.label(turn,"%d очков действия" % state.ap,20).horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	var target := UI.row(moves)
-	UI.label(target,"Цель удара",17,UI.MUTED)
+	var defending: bool = state.phase == "defence"
+	var revision := int(state.revision)
+	UI.label(moves,"Выберите защиту · ответ противника %d ОД" % int(state.npc_ap) if defending else "Выберите удар и подтвердите",20,UI.ORANGE)
+	var part: String = str(owner._screen_state.get("combat_target","body"))
 	var parts := OptionButton.new()
 	parts.set_meta("input_id","combat_target")
-	var part: String = str(owner._screen_state.get("combat_target","body"))
-	for id in ["body","head","arms","legs"]:
-		parts.add_item(Names.title(id))
+	for id: String in ["body","head","arms","legs"]:
+		parts.add_item(("Прикрыть: " if defending else "Цель: ")+Names.title(id))
 		parts.set_item_metadata(parts.item_count-1,id)
 		if id == part: parts.select(parts.item_count-1)
 	parts.item_selected.connect(func(index): owner._screen_state.combat_target = parts.get_item_metadata(index); owner._refresh())
-	target.add_child(parts)
-	var attacks := W.grid(moves,2)
-	for id in sim.catalog.combat_moves:
-		var forecast: Dictionary = sim.services.combat.forecast(id,part)
-		if not forecast.ok: continue
-		var button := UI.button(attacks,"%s\n%d ОД · ≈%d урона · %d %%" % [Names.title(id),forecast.data.ap,forecast.data.damage,forecast.data.accuracy*100],owner._act.bind("combat","action",{"action":"attack","move":id,"part":part}))
-		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.custom_minimum_size = Vector2(210,78)
-		button.add_theme_font_size_override("font_size",roundi(17*UI.text_scale))
-		button.disabled = int(state.ap) < int(forecast.data.ap) or float(state.stamina.player) < float(forecast.data.stamina)
-		button.tooltip_text = "Не хватает очков действия или выносливости" if button.disabled else "Прогноз для выбранной цели"
-		button.set_meta("gameplay_action",{"module":"combat","operation":"action","args":{"action":"attack","move":id,"part":part}})
-	var tactics := W.grid(moves,3)
-	for id in ["guard","recover","intimidate","escape","end_turn"]:
-		var caption: String = {"guard":"Прикрыться · 1 ОД","recover":"Перевести дух","intimidate":"Остановить драку · 4 ОД","escape":"Попытаться уйти","end_turn":"Завершить ход"}[id]
-		var button := UI.button(tactics,caption,owner._act.bind("combat","action",{"action":id}))
-		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.add_theme_font_size_override("font_size",roundi(16*UI.text_scale))
-		button.tooltip_text = "Восстановить 25 выносливости и завершить ход" if id == "recover" else caption
-		if id == "guard": button.disabled = int(state.ap) < 1
-		if id == "intimidate": button.disabled = int(state.ap) < 4
-	var stance := OptionButton.new()
-	for id in ["balanced","defensive","aggressive"]:
-		stance.add_item({"balanced":"Обычная стойка","defensive":"Защитная стойка","aggressive":"Агрессивная стойка"}[id] + " · смена 1 ОД")
-		stance.set_item_metadata(stance.item_count-1,id)
-		if state.stances.player == id: stance.select(stance.item_count-1)
-	stance.item_selected.connect(func(index): owner._act("combat","action",{"action":"stance","id":stance.get_item_metadata(index)}))
-	moves.add_child(stance)
+	moves.add_child(parts)
+	if defending:
+		UI.button(moves,"Подтвердить защиту → ответ противника",owner._act.bind("combat","action",{"action":"guard","part":part,"revision":revision}))
+	else:
+		var power := float(owner._screen_state.get("combat_power",1.0))
+		var efforts := OptionButton.new()
+		for value: float in [0.5,0.75,1.0,1.25,1.5]:
+			efforts.add_item("Усилие: %d%%" % roundi(value*100))
+			efforts.set_item_metadata(efforts.item_count-1,value)
+			if is_equal_approx(value,power): efforts.select(efforts.item_count-1)
+		efforts.item_selected.connect(func(index): owner._screen_state.combat_power = efforts.get_item_metadata(index); owner._refresh())
+		moves.add_child(efforts)
+		var selected := str(owner._screen_state.get("combat_move","jab"))
+		var picker := OptionButton.new()
+		for id: String in sim.catalog.combat_moves:
+			if not sim.services.combat.forecast(id,part,"player",power).ok: continue
+			picker.add_item(Names.title(id))
+			picker.set_item_metadata(picker.item_count-1,id)
+			if id == selected: picker.select(picker.item_count-1)
+		if picker.item_count>0: selected = str(picker.get_item_metadata(picker.selected))
+		picker.item_selected.connect(func(index): owner._screen_state.combat_move = picker.get_item_metadata(index); owner._refresh())
+		moves.add_child(picker)
+		var forecast: Dictionary = sim.services.combat.forecast(selected,part,"player",power)
+		if forecast.ok:
+			UI.label(moves,"%s → %s\n%d ОД · попадание %d%% · урон ≈ %.1f\nВыносливость %.1f · крит %d%% · нокдаун %d%%" % [Names.title(selected),Names.title(part),int(forecast.data.ap),roundi(float(forecast.data.accuracy)*100),float(forecast.data.damage),float(forecast.data.stamina),roundi(float(forecast.data.critical)*100),roundi(float(forecast.data.knockdown)*100)],18)
+			var confirm := UI.button(moves,"Подтвердить удар",owner._act.bind("combat","action",{"action":"attack","move":selected,"part":part,"power":power,"revision":revision}))
+			confirm.disabled = int(state.ap)<int(forecast.data.ap) or float(state.stamina.player)<float(forecast.data.stamina)
+		var tactics := W.grid(moves,2)
+		for id: String in ["recover","intimidate","escape","end_turn"]:
+			var caption: String = {"recover":"Перевести дух","intimidate":"Остановить драку · 4 ОД","escape":"Попытаться уйти","end_turn":"Передать ход → защита"}[id]
+			var button := UI.button(tactics,caption,owner._act.bind("combat","action",{"action":id,"revision":revision}))
+			button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			button.add_theme_font_size_override("font_size",roundi(16*UI.text_scale))
+			if id == "intimidate": button.disabled = int(state.ap)<4
+		var stance := OptionButton.new()
+		for id: String in ["balanced","defensive","aggressive"]:
+			stance.add_item({"balanced":"Обычная стойка","defensive":"Защитная стойка","aggressive":"Агрессивная стойка"}[id]+" · смена 1 ОД")
+			stance.set_item_metadata(stance.item_count-1,id)
+			if state.stances.player == id: stance.select(stance.item_count-1)
+		stance.disabled = int(state.ap)<1
+		stance.item_selected.connect(func(index): owner._act("combat","action",{"action":"stance","id":stance.get_item_metadata(index),"revision":revision}))
+		moves.add_child(stance)
 	var opponent := UI.column(arena,12)
 	opponent.custom_minimum_size.x = 220
 	var npc: Dictionary = sim.state.social.npcs[state.npc]
@@ -674,3 +701,8 @@ static func combat(owner: Control, parent: Node) -> void:
 	HUD.quiet_button(details)
 	if owner._screen_state.get("combat_log",false):
 		for entry in state.log.slice(-8): UI.label(parent,Names.combat_log(entry),17,UI.MUTED)
+
+static func _local_shop(sim) -> String:
+	for id in sim.catalog.shops:
+		if sim.catalog.shops[id].get("location","") == sim.state.world.location: return str(id)
+	return ""

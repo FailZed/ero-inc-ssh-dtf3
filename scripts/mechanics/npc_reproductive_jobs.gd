@@ -14,23 +14,29 @@ func schedule(id: String, kind: String, destination: String, minutes: int, paylo
 	var npc: Dictionary = sim.state.social.npcs[id]
 	var route: Dictionary = sim.services.npc_agency._route(npc,str(npc.location),destination)
 	if route.is_empty(): return false
-	var total:=int(route.minutes)+minutes
-	if not Context.schedule_free(sim,npc,total): return false
-	var place: Dictionary = sim.catalog.locations.get(destination,{})
-	var at_end: Dictionary = sim.state.duplicate()
-	at_end.clock=sim.calendar.snapshot(_now()+total)
-	var hours: Array=place.get("hours",[0,0])
-	if not Rules.in_window(int(at_end.clock.minute_of_day),int(hours[0]),int(hours[1])): return false
-	if not int(at_end.clock.weekday) in place.get("weekdays",[1,2,3,4,5,6,7]): return false
 	if kind=="buy":
 		var shop: Dictionary=sim.catalog.shops.get(str(payload.get("shop","")),{})
-		hours=shop.get("hours",[0,0])
-		if not Rules.in_window(int(at_end.clock.minute_of_day),int(hours[0]),int(hours[1])): return false
+		var clock: Dictionary = sim.calendar.snapshot(_now()+int(route.minutes)+minutes)
+		var hours: Array = shop.get("hours",[0,0])
+		if not int(clock.weekday) in shop.get("weekdays",[1,2,3,4,5,6,7]) or not Rules.in_window(int(clock.minute_of_day),int(hours[0]),int(hours[1])): return false
+	var priority := 85 if kind in ["terminate","emergency"] else 75 if kind=="prenatal_care" else 55
+	return sim.services.npc_planner.submit("reproduction",id,kind,destination,minutes,priority,payload)
+
+func start(request: Dictionary) -> bool:
+	var id := str(request.id)
+	var kind := str(request.kind)
+	var destination := str(request.destination)
+	var payload: Dictionary = request.payload
+	var jobs: Dictionary = sim.state.npc_reproduction.jobs
+	if jobs.has(id) or jobs.size()>=int(_manager().rules().max_jobs): return false
+	var npc: Dictionary = sim.state.social.npcs[id]
+	var route: Dictionary = request.route
+	if int(npc.money)<int(route.cost): return false
 	var saved_pin:=int(npc.pinned_until)
 	var saved_activity:=str(npc.activity)
 	sim.services.npc_agency._cancel(npc,"personal_errand")
 	npc.money-=int(route.cost)
-	var due:=_now()+total
+	var due:=_now()+int(route.minutes)+int(request.minutes)
 	jobs[id]={"id":_manager().next_id("npc_job_"),"npc":id,"kind":kind,"destination":destination,
 		"origin":str(npc.location),"created":_now(),"arrival":_now()+int(route.minutes),"due":due,
 		"phase":"travel" if int(route.minutes)>0 else "action","previous_pin":saved_pin,"previous_activity":saved_activity,
@@ -50,7 +56,7 @@ func buy(id: String, item: String, quantity: int) -> bool:
 		if int(stock.get(item,0))<quantity: continue
 		var price:=maxi(0,int(round(float(sim.catalog.items[item].price)*float(shop.get("price_multiplier",1)))))
 		if int(npc.money)<price*quantity: continue
-		var destination:=str(shop.get("location","global_map"))
+		var destination:=str(shop.get("location",""))
 		var route: Dictionary=sim.services.npc_agency._route(npc,str(npc.location),destination)
 		if route.is_empty() or int(npc.money)<price*quantity+int(route.cost): continue
 		choices.append({"id":shop_id,"destination":destination,"minutes":int(route.minutes),"price":price})
@@ -98,7 +104,7 @@ func _complete(job: Dictionary) -> Dictionary:
 	match str(job.kind):
 		"buy":
 			var shop: Dictionary=sim.catalog.shops[payload.shop]
-			if str(shop.get("location","global_map"))!=str(job.destination) or not sim.services.world.is_open(shop): return Rules.fail("shop_closed")
+			if str(shop.get("location",""))!=str(job.destination) or not sim.services.world.is_open(shop): return Rules.fail("shop_closed")
 			if not sim.state.economy.shop_stock.has(payload.shop): sim.state.economy.shop_stock[payload.shop]=shop.stock.duplicate(true)
 			var stock: Dictionary=sim.state.economy.shop_stock[payload.shop]
 			var quantity:=int(payload.quantity)

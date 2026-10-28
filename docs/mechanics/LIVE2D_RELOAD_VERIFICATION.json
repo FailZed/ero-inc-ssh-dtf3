@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "model": "existing MDRG interaction_model",
+  "before": {
+    "failed": 4,
+    "failures": [
+      "rejected reload retains the entire healthy presentation atomically: missing_profile",
+      "rejected reload retains the entire healthy presentation atomically: missing_model",
+      "rejected reload retains the entire healthy presentation atomically: unknown_parameter",
+      "rejected reload retains the entire healthy presentation atomically: invalid_profile"
+    ],
+    "passed": 21
+  },
+  "isolated_reload": {
+    "diagnostics": {
+      "invalid_json": "invalid_reaction_json",
+      "invalid_model_json": "invalid_model_json",
+      "invalid_profile": "invalid_binding_json",
+      "invalid_shape_gestures": "invalid_reaction_parameters",
+      "invalid_shape_idle": "invalid_reaction_parameters",
+      "invalid_shape_line_gestures": "invalid_reaction_parameters",
+      "invalid_shape_model": "invalid_reaction_descriptor",
+      "invalid_shape_speech": "invalid_reaction_parameters",
+      "invalid_speech_style": "invalid_reaction_parameters",
+      "missing_moc": "missing_model_moc",
+      "missing_model": "invalid_model_json",
+      "missing_profile": "invalid_binding_json",
+      "missing_start_expression": "invalid_reaction_parameters",
+      "missing_texture": "missing_model_texture",
+      "unknown_binding_parameter": "invalid_binding_parameters",
+      "unknown_parameter": "invalid_reaction_parameters"
+    },
+    "failed": 0,
+    "failures": [],
+    "invalid_cases": 16,
+    "passed": 135
+  },
+  "packed_reload": {
+    "diagnostics": {
+      "invalid_json": "invalid_reaction_json",
+      "invalid_model_json": "invalid_model_json",
+      "invalid_profile": "invalid_binding_json",
+      "invalid_shape_gestures": "invalid_reaction_parameters",
+      "invalid_shape_idle": "invalid_reaction_parameters",
+      "invalid_shape_line_gestures": "invalid_reaction_parameters",
+      "invalid_shape_model": "invalid_reaction_descriptor",
+      "invalid_shape_speech": "invalid_reaction_parameters",
+      "invalid_speech_style": "invalid_reaction_parameters",
+      "missing_moc": "missing_model_moc",
+      "missing_model": "invalid_model_json",
+      "missing_profile": "invalid_binding_json",
+      "missing_start_expression": "invalid_reaction_parameters",
+      "missing_texture": "missing_model_texture",
+      "unknown_binding_parameter": "invalid_binding_parameters",
+      "unknown_parameter": "invalid_reaction_parameters"
+    },
+    "failed": 0,
+    "failures": [],
+    "invalid_cases": 16,
+    "passed": 135
+  },
+  "packed_speech_conversation_regression": {
+    "failed": 0,
+    "failures": [],
+    "native_parameters": {
+      "ParamBlush": {
+        "default": 0.0,
+        "id": "ParamBlush",
+        "max": 2.0,
+        "min": 0.0
+      },
+      "ParamBrowLEmote": {
+        "default": 0.0,
+        "id": "ParamBrowLEmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowLRot": {
+        "default": 0.0,
+        "id": "ParamBrowLRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowLY": {
+        "default": 0.0,
+        "id": "ParamBrowLY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowREmote": {
+        "default": 0.0,
+        "id": "ParamBrowREmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowRRot": {
+        "default": 0.0,
+        "id": "ParamBrowRRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowRY": {
+        "default": 0.0,
+        "id": "ParamBrowRY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeLShock": {
+        "default": 0.0,
+        "id": "ParamEyeLShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeRShock": {
+        "default": 0.0,
+        "id": "ParamEyeRShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyesHappy": {
+        "default": 0.0,
+        "id": "ParamEyesHappy",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadY": {
+        "default": 0.0,
+        "id": "ParamHeadY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadZ": {
+        "default": 0.0,
+        "id": "ParamHeadZ",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamMouthForm": {
+        "default": 0.0,
+        "id": "ParamMouthForm",
+        "max": 1.0,
+        "min": -1.0
+      }
+    },
+    "passed": 74
+  },
+  "visible_speech_conversation_regression": {
+    "failed": 0,
+    "failures": [],
+    "native_parameters": {
+      "ParamBlush": {
+        "default": 0.0,
+        "id": "ParamBlush",
+        "max": 2.0,
+        "min": 0.0
+      },
+      "ParamBrowLEmote": {
+        "default": 0.0,
+        "id": "ParamBrowLEmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowLRot": {
+        "default": 0.0,
+        "id": "ParamBrowLRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowLY": {
+        "default": 0.0,
+        "id": "ParamBrowLY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowREmote": {
+        "default": 0.0,
+        "id": "ParamBrowREmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowRRot": {
+        "default": 0.0,
+        "id": "ParamBrowRRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowRY": {
+        "default": 0.0,
+        "id": "ParamBrowRY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeLShock": {
+        "default": 0.0,
+        "id": "ParamEyeLShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeRShock": {
+        "default": 0.0,
+        "id": "ParamEyeRShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyesHappy": {
+        "default": 0.0,
+        "id": "ParamEyesHappy",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadY": {
+        "default": 0.0,
+        "id": "ParamHeadY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadZ": {
+        "default": 0.0,
+        "id": "ParamHeadZ",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamMouthForm": {
+        "default": 0.0,
+        "id": "ParamMouthForm",
+        "max": 1.0,
+        "min": -1.0
+      }
+    },
+    "passed": 75
+  },
+  "capture": {
+    "path": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\reactions-reload-render.png",
+    "kind": "actual enlarged verification render of the existing model, not product UI or new art",
+    "visually_inspected": true
+  },
+  "audio_driver": "Dummy",
+  "files": [
+    "scripts/characters/conversation_actor.gd",
+    "tests/characters/reactions.gd",
+    "tests/characters/reload_reactions.gd"
+  ],
+  "scope_limits": [
+    "Arbitrary binary MOC corruption was not fuzzed; Cubism SDK still parses that format.",
+    "No edits to base puppet_view.gd, reaction JSON, social rules, room/options/session, saves, mouse, School, Git or main EXE.",
+    "No edits in E:/GoDot/.research/world-integration-2026-10-28/project."
+  ],
+  "hashes": {
+    "scripts/characters/conversation_actor.gd": "2ca3d3ceee0f445749435f1b990c54c00f9f4f832c72fecad3132433d7176d2a",
+    "tests/characters/reactions.gd": "d995bc324396aaeb8239a4914ac3306eb519beb9ba3aae5353b0039beeffeefb",
+    "tests/characters/reload_reactions.gd": "91c1ceabe47ca5738d7a420c3fe0d223c1f3bb2676084368ca7ab6e16f4765eb"
+  }
+}

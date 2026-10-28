@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "authored_options": 73,
+  "categories": 7,
+  "sexual_content": "inert blank visual regions only",
+  "dialogue_pck": {
+    "checks": 668,
+    "failed": 0,
+    "failures": []
+  },
+  "characters_pck": {
+    "failed": 0,
+    "models": 6,
+    "passed": 119
+  },
+  "characters_visible": {
+    "passed": 116,
+    "failed": 0,
+    "note": "before final modal styling; final exported character test includes 119 checks"
+  },
+  "screenshots": {
+    "kind": "actual Godot runtime captures, visually inspected; not generated references",
+    "aggression": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\conversation-matrix-aggression.png",
+    "topics": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\conversation-matrix-topics.png",
+    "matrix": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\conversation-matrix-relations.png"
+  },
+  "shared_full_run_before_final_fix": {
+    "checks": 3052,
+    "failed": 15,
+    "failures": [
+      "starting an action does not grant its completion rewards",
+      "interrupted project grants no unearned skill",
+      "mandatory shift takes priority over a free-time goal",
+      "shift pays only productive time after travel and stops at its closing boundary",
+      "overnight shift takes priority over default bedtime",
+      "player invitation interrupts work without teleporting or awarding it",
+      "personal debt survives snapshot round trip",
+      "ordinary clinic care does not overlap an imminent mandatory shift",
+      "NPC avoids booking care that would finish after clinic closes",
+      "clinic visit includes the route to the next mandatory shift",
+      "NPC departs for work before the shift begins",
+      "NPC reaches work at its actual scheduled start",
+      "obligation inspection exposes calendar without changing the world",
+      "calendar splits an overnight shift across actual calendar days",
+      "NPC intimacy cannot replace a compulsory shift"
+    ]
+  },
+  "shared_full_run_note": "Personal debt fixture catalog mismatch was fixed and passed in current focused PCK suite. Other 14 failures belong to concurrently changing employment/planning/medical domains; not modified in this task. Full suite not rerun for a score.",
+  "known_shutdown_warning": "Root project still reports the pre-existing 63 ObjectDB / 27 resources at exit; isolated conversation and character PCK checks are clean.",
+  "parity": "independent authored content/rules; not full narrative or numeric School parity",
+  "hashes": {
+    "data/mechanics/conversation_options.json": "7f57bd7e87be700a850d600d35e2b301c29d1d20db5356a17ccbfc37afec900f",
+    "data/mechanics/conversation_menu.json": "72bb055c07b33c7472f90c9a4bcb87e682e5bfc1440a113e804dc87937b5af66",
+    "scripts/characters/conversation_actor.gd": "6176f32b9c18fff8e690bee1324ffa9c7dfda3b73824e28fd8b4e6a8ea156155",
+    "scripts/ui/characters/conversation_room.gd": "16ebd2b81690db6ad2ec808ae7bfbf9f7b849d2b239f24b60a56e73dd082de22",
+    "scripts/mechanics/conversation_options.gd": "5534e27d10fc63adcb6e1363d6c796e01b52a2ccea047d2b2c155edf62309887",
+    "scripts/mechanics/npc_relationships.gd": "6a2e10f82e9ade53d3c4bc9677886c7620e555c56aff3c446be05a1f5d4883ca"
+  },
+  "windows_debug_export": {
+    "exit_code": 0,
+    "path": "E:/Ai/ComfyUI-EroInc/runtime/cubism/main-build/EroInc.exe",
+    "launcher": "E:/Ai/ComfyUI-EroInc/runtime/cubism/main-build/Conversation.cmd",
+    "mouse_review": "not performed; desktop mouse belongs to UI executor; actual runtime captured by test script"
+  }
+}

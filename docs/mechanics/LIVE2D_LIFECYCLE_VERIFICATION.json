@@ -1,0 +1,325 @@
+{
+  "date": "2026-10-28",
+  "scope": "bounded existing actor and conversation lifecycle audit",
+  "runtime_changes": false,
+  "source": {
+    "result": {
+      "baseline": {
+        "nodes": 1,
+        "objects": 1599,
+        "orphans": 0,
+        "resources": 62
+      },
+      "failed": 0,
+      "failures": [],
+      "final": {
+        "nodes": 1,
+        "objects": 1598,
+        "orphans": 0,
+        "resources": 62
+      },
+      "parameter_observation": {
+        "mesh_released": false,
+        "model_released": true,
+        "parameter_class": "GDCubismParameter",
+        "parameter_released": true,
+        "same_parameter": false
+      },
+      "passed": 259,
+      "samples": [
+        {
+          "after": {
+            "nodes": 1,
+            "objects": 1598,
+            "orphans": 0,
+            "resources": 62
+          },
+          "before": {
+            "nodes": 1,
+            "objects": 1599,
+            "orphans": 0,
+            "resources": 62
+          },
+          "cycles": 1,
+          "path": "close_reopen_room"
+        },
+        {
+          "after": {
+            "nodes": 1,
+            "objects": 1598,
+            "orphans": 0,
+            "resources": 62
+          },
+          "before": {
+            "nodes": 1,
+            "objects": 1599,
+            "orphans": 0,
+            "resources": 62
+          },
+          "cycles": 3,
+          "path": "close_reopen_room"
+        },
+        {
+          "after": {
+            "nodes": 1,
+            "objects": 1598,
+            "orphans": 0,
+            "resources": 62
+          },
+          "before": {
+            "nodes": 1,
+            "objects": 1599,
+            "orphans": 0,
+            "resources": 62
+          },
+          "cycles": 10,
+          "path": "close_reopen_room"
+        },
+        {
+          "after": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "before": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "cycles": 1,
+          "path": "live_actor_reload"
+        },
+        {
+          "after": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "before": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "cycles": 3,
+          "path": "live_actor_reload"
+        },
+        {
+          "after": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "before": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "cycles": 10,
+          "path": "live_actor_reload"
+        }
+      ]
+    },
+    "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\actor-lifecycle-final.log",
+    "shutdown_leak_warning": false
+  },
+  "packed": {
+    "result": {
+      "baseline": {
+        "nodes": 1,
+        "objects": 1599,
+        "orphans": 0,
+        "resources": 62
+      },
+      "failed": 0,
+      "failures": [],
+      "final": {
+        "nodes": 1,
+        "objects": 1598,
+        "orphans": 0,
+        "resources": 62
+      },
+      "parameter_observation": {
+        "mesh_released": false,
+        "model_released": true,
+        "parameter_class": "GDCubismParameter",
+        "parameter_released": true,
+        "same_parameter": false
+      },
+      "passed": 259,
+      "samples": [
+        {
+          "after": {
+            "nodes": 1,
+            "objects": 1598,
+            "orphans": 0,
+            "resources": 62
+          },
+          "before": {
+            "nodes": 1,
+            "objects": 1599,
+            "orphans": 0,
+            "resources": 62
+          },
+          "cycles": 1,
+          "path": "close_reopen_room"
+        },
+        {
+          "after": {
+            "nodes": 1,
+            "objects": 1598,
+            "orphans": 0,
+            "resources": 62
+          },
+          "before": {
+            "nodes": 1,
+            "objects": 1599,
+            "orphans": 0,
+            "resources": 62
+          },
+          "cycles": 3,
+          "path": "close_reopen_room"
+        },
+        {
+          "after": {
+            "nodes": 1,
+            "objects": 1598,
+            "orphans": 0,
+            "resources": 62
+          },
+          "before": {
+            "nodes": 1,
+            "objects": 1599,
+            "orphans": 0,
+            "resources": 62
+          },
+          "cycles": 10,
+          "path": "close_reopen_room"
+        },
+        {
+          "after": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "before": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "cycles": 1,
+          "path": "live_actor_reload"
+        },
+        {
+          "after": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "before": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "cycles": 3,
+          "path": "live_actor_reload"
+        },
+        {
+          "after": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "before": {
+            "nodes": 266,
+            "objects": 2551,
+            "orphans": 0,
+            "resources": 75
+          },
+          "cycles": 10,
+          "path": "live_actor_reload"
+        }
+      ]
+    },
+    "log": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\actor-lifecycle-pack.log",
+    "shutdown_leak_warning": false
+  },
+  "accepted_actor_hash_unchanged": true,
+  "deferred_native_release": {
+    "source": "E:/Ai/ComfyUI-EroInc/runtime/cubism/gd_cubism-0.9.1/src/private/internal_cubism_renderer_resource.cpp",
+    "function": "InternalCubismRendererResource::clear",
+    "mechanism": "remove_child plus queue_free",
+    "observed": "native model and parameter released synchronously; mesh released by deferred queue"
+  },
+  "audit_harness_corrections": [
+    "Immediate mesh deletion assertion contradicted the installed renderer queue_free lifecycle. No runtime fix made.",
+    "Global ObjectDB warm baseline may decrease by one; measured steady counters remain identical after 1/3/10 cycles. No growth observed."
+  ],
+  "root_warning_attribution": "Pre-existing main project 63 ObjectDB / 27 resources not audited or attributed to this actor.",
+  "source_fixture_hashes": {
+    "scripts/characters/conversation_actor.gd": {
+      "source": "2ca3d3ceee0f445749435f1b990c54c00f9f4f832c72fecad3132433d7176d2a",
+      "audited_fixture": "2ca3d3ceee0f445749435f1b990c54c00f9f4f832c72fecad3132433d7176d2a",
+      "same": true
+    },
+    "scripts/characters/puppet_view.gd": {
+      "source": "b7c6bee4eb961e1869fdb59f89ce923d311cab6af61ec3ec4407df4e6739455d",
+      "audited_fixture": "b7c6bee4eb961e1869fdb59f89ce923d311cab6af61ec3ec4407df4e6739455d",
+      "same": true
+    },
+    "scripts/characters/parameter_bank.gd": {
+      "source": "d7aaf8f87f2772736ca2789f51c994ca83e219272ae4076a63bb4cc7ebbae925",
+      "audited_fixture": "d7aaf8f87f2772736ca2789f51c994ca83e219272ae4076a63bb4cc7ebbae925",
+      "same": true
+    },
+    "scripts/mechanics/conversation_session.gd": {
+      "source": "b30fd18d3d3710f91c57aa5e82e2b82c6e66b00971416a21304c250a80ff4b9a",
+      "audited_fixture": "b30fd18d3d3710f91c57aa5e82e2b82c6e66b00971416a21304c250a80ff4b9a",
+      "same": true
+    },
+    "scripts/ui/characters/conversation_room.gd": {
+      "source": "16ebd2b81690db6ad2ec808ae7bfbf9f7b849d2b239f24b60a56e73dd082de22",
+      "audited_fixture": "02a16576ee8675a6c115421e58f79987fb7717144f3f25cf61c17012a38184d5",
+      "same": false
+    },
+    "data/characters/conversation_reactions.json": {
+      "source": "2d679ddb83e082429a4fc61f808202b782ee4bfc16ac025d02f8401a09e9b8b2",
+      "audited_fixture": "2d679ddb83e082429a4fc61f808202b782ee4bfc16ac025d02f8401a09e9b8b2",
+      "same": true
+    }
+  },
+  "runtime_dependencies": {
+    "addons/gd_cubism/bin/libgd_cubism.windows.debug.x86_64.dll": {
+      "bytes": 1996288,
+      "sha256": "84a0b08adab6c307a044c2919f7e95e620e6d265ae73edd5dfb36749a4b844b5",
+      "gitignore_note": "bin/.gitignore excludes this DLL; coordinator must include it in handoff separately"
+    },
+    "addons/gd_cubism/bin/Live2DCubismCore.dll": {
+      "bytes": 239240,
+      "sha256": "cdd756f99cb9e6824e35009c5c2bf59f512b9544eeb864351c7736969b920ccb",
+      "gitignore_note": "bin/.gitignore excludes this DLL; coordinator must include it in handoff separately"
+    }
+  },
+  "test_only_external_artifacts": {
+    "pack": "E:/GoDot/.dev-setup/actor-lifecycle-test.pck",
+    "fixture": "E:/GoDot/.dev-setup/reaction-lifecycle-invalid.json",
+    "logs_root": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism"
+  },
+  "limits": [
+    "Closed-loop audit covers 1, 3 and 10 repetitions; not unlimited-duration profiling.",
+    "Godot object/resource/node counters and WeakRef evidence; no complete GPU/Cubism raw allocator instrumentation.",
+    "Isolated room snapshot has two older combat display strings; exercised lifecycle methods are unchanged.",
+    "No game EXE/native rebuild or engine/renderer upgrade. No mouse/School/save/Git/world-integration edits."
+  ],
+  "test_script_sha256": "3feb8c4400834c257fae50cf4d486022ba2ad98a8faf1b1d92562a9f36d052a7"
+}

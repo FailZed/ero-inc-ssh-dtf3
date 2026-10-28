@@ -18,7 +18,7 @@ func _specialization(track: String) -> String: return str(_state().specializatio
 
 func blocked() -> String:
 	if not "computer" in sim.state.world.equipment: return "missing_computer"
-	if sim.state.world.location != "bedroom": return "computer_desk_required"
+	if not sim.is_player_home_location(str(sim.state.world.location)) or sim.room_kind(str(sim.state.world.location)) != "bedroom": return "computer_desk_required"
 	if sim.state.housing.residence.is_empty() and (sim.state.world.flags.get("chapter_one_complete",false) or sim.state.world.flags.get("student_home_lost",false)): return "no_current_home"
 	return ""
 

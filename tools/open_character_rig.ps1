@@ -4,7 +4,7 @@ if ($Test) {
     & (Join-Path $PSScriptRoot 'test_characters.ps1')
     exit $LASTEXITCODE
 }
-$taskArguments = @('--rendering-method', 'gl_compatibility', '--resolution', '1440x900', 'res://scenes/characters/character_workshop.tscn')
+$taskArguments = @('--rendering-method', 'gl_compatibility', '--resolution', '1440x900', 'res://assets/characters/mdrg_study/scenes/browser.tscn')
 if ($Capture) { $taskArguments += @('--', "--capture=$Capture", '--capture-exit') }
 & (Join-Path $PSScriptRoot 'godot.ps1') -EngineArguments $taskArguments
 exit $LASTEXITCODE

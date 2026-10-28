@@ -32,6 +32,11 @@ func command(sim, module_id: String, operation: String, args: Dictionary = {}) -
 	return result
 
 func _run() -> void:
+	if "--npc-careers-only" in OS.get_cmdline_user_args():
+		preload("res://tests/mechanics/npc_careers.gd").new(self).run()
+		print("MECHANICS_RESULT ", JSON.stringify({"checks":checks,"failed":failures.size(),"failures":failures}))
+		quit(0 if failures.is_empty() else 1)
+		return
 	if "--dialogue-only" in OS.get_cmdline_user_args():
 		DialogueTests.new(self).run()
 		print("MECHANICS_RESULT ", JSON.stringify({"checks": checks, "failed": failures.size(), "failures": failures}))
@@ -67,10 +72,16 @@ func _run() -> void:
 	PersonalityTests.new(self).run()
 	DialogueTests.new(self).run()
 	preload("res://tests/mechanics/family.gd").new(self).run()
+	preload("res://tests/mechanics/family_handoff.gd").new(self).run()
 	preload("res://tests/mechanics/digital.gd").new(self).run()
 	preload("res://tests/mechanics/reproduction.gd").new(self).run()
 	preload("res://tests/mechanics/pregnancy_wellbeing.gd").new(self).run()
 	preload("res://tests/mechanics/adult_health.gd").new(self).run()
+	preload("res://tests/mechanics/health_relationships.gd").new(self).run()
+	preload("res://tests/mechanics/health_care_plans.gd").new(self).run()
+	preload("res://tests/mechanics/care_access.gd").new(self).run()
+	preload("res://tests/mechanics/care_homes.gd").new(self).run()
+	preload("res://tests/mechanics/npc_planner.gd").new(self).run()
 	preload("res://tests/mechanics/npc_reproduction.gd").new(self).run()
 	if not "--unit-only" in OS.get_cmdline_user_args(): _test_existing_integration()
 	print("MECHANICS_RESULT ", JSON.stringify({"checks": checks, "failed": failures.size(), "failures": failures}))
@@ -249,13 +260,15 @@ func _test_encounters() -> void:
 	var sim = fresh()
 	command(sim, "social", "generate", {"id": "opponent"})
 	command(sim, "encounters", "combat_start", {"npc": "opponent"})
-	command(sim, "encounters", "combat_action", {"action": "guard"})
 	command(sim, "encounters", "combat_action", {"action": "end_turn"})
+	for response in range(4):
+		if sim.state.encounters.combat.phase != "defence": break
+		command(sim,"encounters","combat_action",{"action":"guard"})
 	_check(sim.state.encounters.combat.turn == 2 and sim.state.encounters.combat.ap == 4, "combat turn restores AP and resolves defense")
 	_check(not sim.command("encounters", "combat_action", {"part": "unknown"}).ok, "unknown hit zone rejected")
 	_check(not sim.command("character", "rest", {"minutes": 60}).ok, "combat cannot be bypassed with rest")
 	while sim.state.encounters.combat.status == "active":
-		command(sim, "encounters", "combat_action", {"action": "escape"})
+		command(sim, "encounters", "combat_action", {"action": "guard" if sim.state.encounters.combat.phase == "defence" else "escape"})
 	_check(sim.services.encounters.score([1, 1, 9]) == 21, "blackjack handles multiple aces")
 	command(sim, "encounters", "game_start", {"type": "blackjack", "stake": 10})
 	command(sim, "encounters", "game_input", {"action": "stand"})

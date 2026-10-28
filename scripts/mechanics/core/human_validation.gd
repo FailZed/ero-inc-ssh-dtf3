@@ -76,9 +76,10 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 				if not known is Dictionary: return "invalid_human_disclosure"
 				for topic in known:
 					if not catalog["human_" + field].has(topic) or not number(known[topic], 0, 100): return "invalid_human_disclosure"
-			if not bond.get("recent") is Dictionary or bond.recent.size() > catalog.agency_actions.size() + 2: return "invalid_human_recency"
+			if bond.has("loan") and not integer(bond.loan,0,1000000): return "invalid_personal_loan"
+			if not bond.get("recent") is Dictionary or bond.recent.size() > catalog.agency_actions.size() + catalog.get("conversation_options",{}).size() + 2: return "invalid_human_recency"
 			for action in bond.recent:
-				if not catalog.agency_actions.has(action) and not action in ["legacy", "romantic_decline"]: return "invalid_human_recent_action"
+				if not catalog.agency_actions.has(action) and not catalog.get("conversation_options",{}).has(action) and not action in ["legacy", "romantic_decline"]: return "invalid_human_recent_action"
 				if not integer(bond.recent[action], 0, now): return "invalid_human_recency_time"
 			if not bond.get("good_days") is Array or bond.good_days.size() > int(catalog.human_social_rules.simulation.repair_days): return "invalid_human_repair"
 			var previous := -1

@@ -16,7 +16,10 @@ func _template(goal: String = "creativity") -> Dictionary:
 func fresh(goal: String = "creativity", count: int = 1):
 	var sim = Life.new(42, _test_catalog(goal))
 	t._check(sim.configuration_error.is_empty(), "life catalog is valid: " + sim.configuration_error)
-	for i in range(count): t.command(sim, "social", "generate", {"id": "life_%d" % i, "template": "free"})
+	for i in range(count):
+		t.command(sim, "social", "generate", {"id": "life_%d" % i, "template": "free"})
+		# Explicit novice fixture; production workers receive age-appropriate starting experience.
+		sim.state.social.npcs["life_%d" % i].skills.study = 0
 	t.command(sim, "npc_agency", "enable")
 	var facets := {}
 	for domain in sim.catalog.human_dimensions.values():
@@ -121,7 +124,7 @@ func needs_and_commitments() -> void:
 	advance(work, 15)
 	t._check(worker.mind.active.action == "work" and worker.decision.committed, "mandatory shift takes priority over a free-time goal")
 	advance(work, 105)
-	t._check(worker.money == 118 and worker.skills.computing == 3, "shift pays only productive time after travel and stops at its closing boundary")
+	t._check(worker.money == 118 and worker.skills.get("journalism",0) == 3, "shift pays only productive time after travel and stops at its closing boundary")
 	var hygiene = fresh()
 	hygiene.state.social.npcs.life_0.needs.hygiene = 0
 	advance(hygiene, 15)

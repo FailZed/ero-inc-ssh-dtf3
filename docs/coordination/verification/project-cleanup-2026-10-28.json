@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-28",
+  "status": "cleanup_applied_to_working_tree_not_yet_pushed",
+  "current_file_audit": {
+    "timestamp_utc": "2026-10-28T19:23:45.177568+00:00",
+    "file_count": 5186,
+    "bytes": 587743313,
+    "large_files": [],
+    "suspicious_paths": [],
+    "credential_findings": [],
+    "read_errors": []
+  },
+  "captures": {
+    "created_utc": "2026-10-28T19:06:09.139401+00:00",
+    "project": "E:\\GoDot\\ero-inc",
+    "local_bytes": 1059342486,
+    "executed": true
+  },
+  "mdrg": {
+    "created_utc": "2026-10-28T19:22:56.934329+00:00",
+    "entry": "res://assets/characters/mdrg_study/scenes/browser.tscn",
+    "retained_resource_files": 114,
+    "retained_resource_bytes": 53349941,
+    "removed_bytes": 50709861,
+    "raw_archive_exists": false,
+    "history_rewritten": false,
+    "native_layout": "addons/gd_cubism/bin/sdk5 on Windows; bin on macOS"
+  },
+  "removed_builtin_manifest": [
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/blowjob_scene.moc3",
+      "bytes": 958336,
+      "sha256": "0c54bee3e174cf349df8f4737cc73c0a7a753b7dbafd1ff8fa5e3a54fdce108b"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/blowjob_scene.model3.json",
+      "bytes": 243,
+      "sha256": "6828dd2011d618fad695674e70c608b2a3356a59ed0ffa560d06bf7d120d5abd"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/blowjob_scene.physics3.json",
+      "bytes": 9625,
+      "sha256": "3b75e94159ff3fa5e3c0dd92b3ba61e154f3c05a3ecaf1595e3277fff3e2b437"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/model.info.json",
+      "bytes": 11519,
+      "sha256": "ddbcf1806bf166b056962863288d93d9bdc69e9eeb9caf372bbda48f4b835194"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/texture_00.png",
+      "bytes": 3594809,
+      "sha256": "bdb6df51f3b87a18d0d391f50e3bb92f24fe1c6dfc3a3337f71031de0d799c5f"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/texture_00.png.import",
+      "bytes": 977,
+      "sha256": "3678937fa36298b00c06c48d05cac424c79456ef15f72a86c3eb9f762465c519"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/texture_01.png",
+      "bytes": 2546821,
+      "sha256": "0bc0efce03cdc73bdc0678d2672bb36e09f4c854782db466fcb3c2a95b05aed3"
+    },
+    {
+      "path": "assets/characters/mdrg_study/blowjob_scene/texture_01.png.import",
+      "bytes": 976,
+      "sha256": "8291b69983969e5213dbb62d327c0e81ec2aae4d9787d584172ff1de774f5a2f"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_doggy/bot_doggy.moc3",
+      "bytes": 491648,
+      "sha256": "9ef366874517afd07c083cf8964098ef15fab5886ce6afc16c5b164257bf8973"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_doggy/bot_doggy.model3.json",
+      "bytes": 210,
+      "sha256": "22a083e29133971563d774098a084186fc91dbff45f934e2be382c7a4d25f01d"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_doggy/bot_doggy.physics3.json",
+      "bytes": 19990,
+      "sha256": "8781d331313c0ddb54e115a562728a75cb06a6155e4194f0c7ef2451e081ec91"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_doggy/model.info.json",
+      "bytes": 17596,
+      "sha256": "c99bbf5f2b6ca5a08dae232c8e0bbcff0a345bd4fec1724b402a330d98847d08"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_doggy/texture_00.png",
+      "bytes": 2816735,
+      "sha256": "30fdd6b508a54b98fa066d8548731330f19b6452a5d04061a31792cabb871fec"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_doggy/texture_00.png.import",
+      "bytes": 973,
+      "sha256": "77df66b294be954fdb076afffa622f2148cdde3cf32276f191f83430e3609e69"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/bot_missionary.moc3",
+      "bytes": 1516928,
+      "sha256": "6ba461bf6de1ab8f5ff11158ba52c7b23520be7f9983ae4aa44203b97ef27757"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/bot_missionary.model3.json",
+      "bytes": 270,
+      "sha256": "25655a69d73146972fb6004c3b95eb20295d122dac06948a3238c60f650d27fd"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/bot_missionary.physics3.json",
+      "bytes": 28545,
+      "sha256": "1dc0dfbeb5982cbe6785faa4c355f9c82f473d4f80b200a26347998f8272ea35"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/model.info.json",
+      "bytes": 27076,
+      "sha256": "1de0e4153f4bb19acae677116ecd3ce820c5866d258ae811661a8425cfc7c0ce"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/texture_00.png",
+      "bytes": 4502023,
+      "sha256": "27fd399c2c098d8f96ad3a245cf951dab9e3dc206d8db2e597e332dd56a84101"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/texture_00.png.import",
+      "bytes": 977,
+      "sha256": "b657e3dc55fa5c894ef580f21652002dfd152539b922b8c4d67d763f26ea3cd1"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/texture_01.png",
+      "bytes": 2981303,
+      "sha256": "17fccc0eea5a5b8fb3241d750a9fd265e01afa188b7425ef5be148a5e316aa3b"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/texture_01.png.import",
+      "bytes": 978,
+      "sha256": "eb262bb8e1c3484d7c58bf2cfe3dbbdc439cbfe4d2ae3d9418bb30b2bf91e9f9"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/texture_02.png",
+      "bytes": 1621022,
+      "sha256": "ac9d756a4b131fcb8b58a8d9d816630304bafb7172fdb6051b8984e5ef9bf0b9"
+    },
+    {
+      "path": "assets/characters/mdrg_study/bot_missionary/texture_02.png.import",
+      "bytes": 978,
+      "sha256": "5842950d249a6b13785fb8a4bcf8db25decad89e4b48237ff059bbe6765aa325"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/cowgirl.moc3",
+      "bytes": 1182528,
+      "sha256": "f4067d67c1fcba5dacef7d6e8c67a72923f98056f13d7e39768d3523500696b2"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/cowgirl.model3.json",
+      "bytes": 231,
+      "sha256": "9de4ff720c8e8e9d81bb88148ffcfaeb488c7e760b397b3804c2b9deaac3c17a"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/cowgirl.physics3.json",
+      "bytes": 21344,
+      "sha256": "30a2afb386f4185d9c25e6bd0698863934e71b67545adc4c95bad3c510834e8b"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/model.info.json",
+      "bytes": 18956,
+      "sha256": "7ac30df5493f9645291ad43f083fe9b6d43080377b84e8ed89c61eddbdc63998"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/texture_00.png",
+      "bytes": 4820919,
+      "sha256": "b6ae3455867532ccfd51af627a8ee6acd1826a445bd0b28b3e50c5f962dc1bc1"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/texture_00.png.import",
+      "bytes": 971,
+      "sha256": "beb0a980a28f61ebfe2ca283d3e5410f692ecf95ad60644b0347e61062b34f05"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/texture_01.png",
+      "bytes": 3445909,
+      "sha256": "7d15d036eacd262d8a88d47a539fe789df47d3f198ab86b872600f4df745400a"
+    },
+    {
+      "path": "assets/characters/mdrg_study/cowgirl/texture_01.png.import",
+      "bytes": 971,
+      "sha256": "71ab7e10d354e0287bbcc0e6ba2bb5317632175623030dfd5b90dce1d307c7c2"
+    },
+    {
+      "path": "assets/characters/mdrg_study/IMPORT_COMPLETE.json",
+      "bytes": 59,
+      "sha256": "6ff3acfad12b3c86a50c0d5e715c7982bf5c5adcbc5cd9a54a9a7e32cfa19db7"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/interaction_model.moc3",
+      "bytes": 1301120,
+      "sha256": "0c8691d1c0f4b8f43ca0060ab35139a114828b987783af4301aae09f865d066a"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/interaction_model.model3.json",
+      "bytes": 276,
+      "sha256": "d26bc3d0c7786f72d388f7b6395fda88e0d6f7930da2b1e139c6f9aae0108de7"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/interaction_model.physics3.json",
+      "bytes": 26072,
+      "sha256": "1bd1e08987fb0ffcd48c38b514d04b5e12b632a7518906aff8aa13a40cd9b7eb"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/model.info.json",
+      "bytes": 18451,
+      "sha256": "041c11dce9cae369755ebe2a34a7f1cb28b288575eff0764d4d18c8859c8c857"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/texture_00.png",
+      "bytes": 5747900,
+      "sha256": "29be376b8ad8ca65942806d929732fc20b4973eb504502b8584e9850a264be22"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/texture_00.png.import",
+      "bytes": 981,
+      "sha256": "4b4d7a5ba19f6aad84991f979b62b8a5fe2d9d7f40df4948e3fb7410b8b13dfb"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/texture_01.png",
+      "bytes": 3080757,
+      "sha256": "6ead2eea99a730e8997499c689eecf4a40ee5fce9d59052c8141eb5037b8af9c"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/texture_01.png.import",
+      "bytes": 980,
+      "sha256": "154c2162c2937f2beb9d7e87e1465fcb62d78da4a28b2cc74dd79fea1f88a610"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/texture_02.png",
+      "bytes": 4249613,
+      "sha256": "45a833542f7111523ab7755547227d90f7f45112c960db9591f7fc03b5e78b4e"
+    },
+    {
+      "path": "assets/characters/mdrg_study/interaction_model/texture_02.png.import",
+      "bytes": 981,
+      "sha256": "4f2b6c7106792b12afc1b054f139f5def46a2e6f0f348e2aad4dc8ec94b70a06"
+    },
+    {
+      "path": "assets/characters/mdrg_study/pack_files.json",
+      "bytes": 7404,
+      "sha256": "84fc254a1b1bf0d8afeed770588d1aa4d62ff52f23258af67188fe282e7b655e"
+    },
+    {
+      "path": "assets/characters/mdrg_study/shower/model.info.json",
+      "bytes": 16494,
+      "sha256": "bce6c43ff99554aabd9c84f8ec4a199df67e52e3d241c67392c13800a5c2436d"
+    },
+    {
+      "path": "assets/characters/mdrg_study/shower/shower.moc3",
+      "bytes": 814848,
+      "sha256": "6b9259c37c494a1f444a1953179230205a5d30ad0be1129e1f221f0434a07112"
+    },
+    {
+      "path": "assets/characters/mdrg_study/shower/shower.model3.json",
+      "bytes": 204,
+      "sha256": "03a2f0c09f1923e091a76d22db7e528f039074aec3e81b6df7eec62313460a2c"
+    },
+    {
+      "path": "assets/characters/mdrg_study/shower/shower.physics3.json",
+      "bytes": 23761,
+      "sha256": "b8f688601c3c9651bc838c8a13cb4a7777a41e9daf48532719e6b475bc4ef6ae"
+    },
+    {
+      "path": "assets/characters/mdrg_study/shower/texture_00.png",
+      "bytes": 4776604,
+      "sha256": "74f86598f9cb519ebf39ac5b3e75de3791ccd0a70b8e953c01f506561416afa6"
+    },
+    {
+      "path": "assets/characters/mdrg_study/shower/texture_00.png.import",
+      "bytes": 969,
+      "sha256": "a960d39c1bec6cc328faeb6db91dacf47fd7f6127973d5d0f32d53f17804cedc"
+    }
+  ],
+  "retained_manifest": "tools/manifests/browser_resources.json",
+  "git_history_rewritten": false,
+  "archive_history_note": "Raw archive removed from current tree. Historical ordinary Git blobs and LFS pointers remain; no force push or history rewrite."
+}

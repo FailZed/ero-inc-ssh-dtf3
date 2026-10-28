@@ -149,7 +149,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/quest_weaver/plugin.cfg", "res://addons/mdrg_study_export/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/quest_weaver/plugin.cfg")
 
 [input]
 

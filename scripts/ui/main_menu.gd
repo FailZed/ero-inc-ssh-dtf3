@@ -68,6 +68,7 @@ enum ContentSection {
 var _settings_page := "game"
 var _active_load_menu_mode: int = LoadMenuScript.PanelMode.LOAD
 var _character_workshop: Control
+var _conversation_room: Control
 
 
 func _ready() -> void:
@@ -100,6 +101,9 @@ func _ready() -> void:
 	_refresh_load_menu()
 	_apply_translations()
 	_show_section(ContentSection.OVERVIEW)
+	if menu_context == MenuContext.START and OS.get_cmdline_user_args().has("--conversation-room") and not get_tree().has_meta("conversation_room_command_used"):
+		get_tree().set_meta("conversation_room_command_used",true)
+		_open_conversation_room.call_deferred()
 	if menu_context == MenuContext.START and not GameSession.last_load_error.is_empty():
 		_show_section(ContentSection.LOAD)
 		_set_feedback(GameSession.last_load_error)
@@ -117,7 +121,7 @@ func show_overview() -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if is_instance_valid(_character_workshop): return
+	if is_instance_valid(_character_workshop) or is_instance_valid(_conversation_room): return
 	if menu_context != MenuContext.IN_GAME or not visible:
 		return
 
@@ -158,6 +162,8 @@ func _on_aside_action_requested(action_name: StringName) -> void:
 			_show_section(ContentSection.GALLERY)
 		"character_workshop":
 			_open_character_workshop()
+		"conversation_room":
+			_open_conversation_room()
 		"return_to_main_menu":
 			_return_to_main_menu()
 		"toggle_language":
@@ -176,14 +182,23 @@ func _on_aside_action_requested(action_name: StringName) -> void:
 			window.end_update()
 
 func _open_character_workshop() -> void:
-	if is_instance_valid(_character_workshop) or not ClassDB.class_exists("GDCubismUserModel"): return
-	var scene := load("res://scenes/characters/character_workshop.tscn") as PackedScene
+	if is_instance_valid(_character_workshop) or is_instance_valid(_conversation_room) or not ClassDB.class_exists("GDCubismUserModel"): return
+	var scene := load("res://assets/characters/mdrg_study/scenes/browser.tscn") as PackedScene
 	if scene == null: return
 	_character_workshop = scene.instantiate()
 	_character_workshop.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(_character_workshop)
 	_character_workshop.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_character_workshop.closed.connect(aside_menu.focus_workshop)
+
+func _open_conversation_room() -> void:
+	if is_instance_valid(_conversation_room) or is_instance_valid(_character_workshop) or not ClassDB.class_exists("GDCubismUserModel"): return
+	var scene := load("res://scenes/characters/conversation_room.tscn") as PackedScene
+	if scene == null: return
+	_conversation_room = scene.instantiate()
+	add_child(_conversation_room)
+	_conversation_room.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_conversation_room.closed.connect(aside_menu.focus_conversation)
 
 
 func _show_section(section: ContentSection) -> void:

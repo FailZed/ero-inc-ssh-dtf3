@@ -115,25 +115,29 @@ func _jobs() -> void:
 		var progress: Dictionary = service.career(id)
 		UI.label(card,job.title,27,UI.BLUE)
 		UI.label(card,job.description,20)
+		var bank: Dictionary = preload("res://scripts/mechanics/work_task_banks.gd").info(Gameplay.simulation,id)
+		if not bank.is_empty():
+			var bank_label := UI.label(card,"Задания: %s · 5 из %d" % [bank.title,bank.count],17,UI.BLUE)
+			bank_label.set_meta("work_task_bank",bank.id)
 		UI.label(card,"%s · ступень %d / 5" % [WorkNames.CAREERS[job.career],progress.level],18,UI.MUTED)
 		UI.label(card,"Навык: %s · уровень %d / 10 · для входа: %d" % [Names.title(str(job.skill)),progress.skill,job.min_skill],18,UI.BLUE)
 		if int(progress.level) < 5:
 			UI.label(card,"Следующая ступень: навык %d. Повышение только через навык." % progress.next_skill if progress.automatic else "Следующая ступень: навык %d и опыт %d / %d. Хорошая мини-игра ускоряет рост после достижения нужного навыка." % [progress.next_skill,progress.xp,progress.next_xp],18,UI.MUTED)
 		else: UI.label(card,"Максимальная ступень этой работы",18,UI.BLUE)
 		var pay_text := "оплата %d ¤" % service.wage(id,0.65) if job.kind == "shift" else "оплата %d–%d ¤" % [service.wage(id,0.0),service.wage(id,1.0)]
-		UI.label(card,"%s · %02d:00–%02d:00 · %d мин · силы −%d · %s" % [Names.title(job.location),int(job.hours[0])/60,int(job.hours[1])/60,job.minutes,ceili(float(job.energy)*Gameplay.simulation.multiplier("resource_cost")),pay_text],18,UI.MUTED)
+		UI.label(card,"%s · %02d:00–%02d:00 · %d мин · силы −%d · %s" % [Names.title(Gameplay.simulation.services.livelihood.job_location(job)),int(job.hours[0])/60,int(job.hours[1])/60,job.minutes,ceili(float(job.energy)*Gameplay.simulation.multiplier("resource_cost")),pay_text],18,UI.MUTED)
 		if float(job.risk) > 0: UI.label(card,"Нелегально · риск задержания %.0f%% · штраф %d ¤ · расход на вход %d ¤" % [service.risk(id)*100,int(job.fine),int(job.get("fee",0))],19,UI.ORANGE)
 		var conflicts: Array = service.study_conflicts(id)
 		if not conflicts.is_empty():
 			for lesson in conflicts:
-				UI.label(card,"Занятие: %s · %02d:%02d–%02d:%02d · дорога до кампуса %d мин" % [Names.title(str(lesson.id)),int(lesson.start)%1440/60,int(lesson.start)%60,int(lesson.end)%1440/60,int(lesson.end)%60,lesson.commute],18,UI.ORANGE)
+				UI.label(card,"%s · %02d:%02d–%02d:%02d\n%s" % [Names.title(str(lesson.id)),int(lesson.start)%1440/60,int(lesson.start)%60,int(lesson.end)%1440/60,int(lesson.end)%60,Names.study_forecast(lesson)],18,UI.ORANGE)
 			var skip := CheckBox.new()
-			skip.text = "Выйти на смену, пропустив занятия"
+			skip.text = "Выйти на смену с риском для учёбы"
 			skip.button_pressed = _skip_classes
 			skip.set_meta("focus_id","skip_classes")
 			skip.toggled.connect(func(value): _skip_classes = value; _refresh())
 			card.add_child(skip)
-			UI.label(card,"Пропуски снижают успеваемость и могут привести к предупреждению или отчислению.",17,UI.MUTED)
+			UI.label(card,"Прогноз предполагает дорогу в кампус сразу после смены. Посещение нужно начать самостоятельно. За опоздание награда ниже; пропуски могут привести к отчислению.",17,UI.MUTED)
 		else: _skip_classes = false
 		var reason: String = service.blocked(id,_skip_classes)
 		if not reason.is_empty(): UI.label(card,Names.error(reason),18,UI.MUTED)
@@ -142,7 +146,8 @@ func _jobs() -> void:
 		var row := UI.row(card)
 		UI.button(row,"СМЕНА · %d ¤" % service.wage(id,0.65 if job.kind == "shift" else 0.55),_act.bind("work",{"id":id,"interactive":false,"skip_classes":_skip_classes})).disabled = not reason.is_empty()
 		if job.kind != "shift": UI.button(row,"РАБОТАТЬ С МИНИ-ИГРОЙ",_act.bind("work",{"id":id,"interactive":true,"skip_classes":_skip_classes})).disabled = not reason.is_empty()
-		if job.location != Gameplay.simulation.state.world.location: UI.button(row,"К РАБОЧЕМУ МЕСТУ",_travel.bind(job.location))
+		var workplace: String = Gameplay.simulation.services.livelihood.job_location(job)
+		if workplace != Gameplay.simulation.state.world.location and not workplace.is_empty(): UI.button(row,"К РАБОЧЕМУ МЕСТУ",_travel.bind(workplace))
 	call_deferred("_reveal_job",index.get_parent(),selected_entry)
 
 func _reveal_job(scroll: ScrollContainer, entry: Button) -> void:
@@ -197,7 +202,7 @@ func _home() -> void:
 		if level < int(spec.max_level):
 			var price := int(spec.price)*(level+1)
 			var buy := UI.button(card,"УЛУЧШИТЬ · %d ¤" % price,_act.bind("upgrade",{"id":id}))
-			buy.disabled = not Gameplay.simulation.state.world.location in ["bedroom","bathroom","kitchen","apartment_hall"] or int(Gameplay.simulation.state.economy.cash) < price
+			buy.disabled = not Gameplay.simulation.is_player_home_location(str(Gameplay.simulation.state.world.location)) or int(Gameplay.simulation.state.economy.cash) < price
 			if buy.disabled: buy.tooltip_text = "Нужно находиться дома и иметь %d ¤." % price
 
 func _game(p: Dictionary) -> void:

@@ -145,7 +145,7 @@ func load_character(item: Dictionary, bindings: Dictionary = {}) -> bool:
   if physics is Dictionary:
     var settings: Variant = physics.get("physics", {})
     if settings is Dictionary and settings.get("parameter_roles", {}) is Dictionary:
-      for name: Variant in settings["parameter_roles"].get("output_ids", []):
+      for name: Variant in settings.get("parameter_roles", {}).get("output_ids", []):
         _physics_output_ids[str(name)] = true
   _build_interaction_zones()
   apply_palette()

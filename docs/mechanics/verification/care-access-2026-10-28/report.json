@@ -1,0 +1,292 @@
+{
+  "date": "2026-10-28",
+  "engine": "4.7.2 stable",
+  "audio": "Dummy",
+  "scope": "H01/H02/H05 and family care after actual household relocation",
+  "checks": [
+    {
+      "log": "model.log",
+      "result": "CARE_ACCESS_RESULT",
+      "checks": 91,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "45a96546b13b3d1f8c814fed9aa08090fd61437422b358570dd21fc0dea697c7"
+    },
+    {
+      "log": "homes.log",
+      "result": "CARE_HOMES_RESULT",
+      "checks": 45,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "07d93590a2d3535b7db760baf5e27949dcc14ba423905df42bc818d2c68595f8"
+    },
+    {
+      "log": "pack-clinical.log",
+      "result": "CARE_ACCESS_RESULT",
+      "checks": 91,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "99080d3027da354dbb27d4cf5f602db02713f5d8a100c2063afa7c31a9b834c6"
+    },
+    {
+      "log": "pack-homes.log",
+      "result": "CARE_HOMES_RESULT",
+      "checks": 45,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "f88ac0cdab2ba4bc7c03bac8aa333c58e918b3f2215bad04661edebf90adeb59"
+    },
+    {
+      "log": "adult-health.log",
+      "result": "ADULT_HEALTH_RESULT",
+      "checks": 128,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "0eabbb165f0397fb18f99fe8cd30654afb78cd6cf5713572ae61e19afc657c4b"
+    },
+    {
+      "log": "relationships.log",
+      "result": "HEALTH_RELATIONSHIPS_RESULT",
+      "checks": 102,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "4dd76d88db9212f1081b8f06606e6a012d9e8d4ba8ab022a42550e7712b01abe"
+    },
+    {
+      "log": "family.log",
+      "result": "FAMILY_RESULT",
+      "checks": 62,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "041b06c7453fcdbb8c8d58cf2ca5894af65cd68133ec013b48f310407e574b2b"
+    },
+    {
+      "log": "family-handoff.log",
+      "result": "FAMILY_HANDOFF_RESULT",
+      "checks": 103,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "d3614ceac2ffbf898427a91140cba03e800029baec5da54887565772fcbb81e6"
+    },
+    {
+      "log": "care-plans.log",
+      "result": "HEALTH_CARE_PLANS_RESULT",
+      "checks": 124,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "267fdd5a6500581b321e92138b37ffe51ee6f7b9e0b3ada4e53bf502782de0fd"
+    },
+    {
+      "log": "planner.log",
+      "result": "NPC_PLANNER_RESULT",
+      "checks": 92,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "7ca9091917360fc1e7ec98a84c701b44c81e3c6eed06e54368e34709cd42d76a"
+    },
+    {
+      "log": "npc-reproduction.log",
+      "result": "NPC_REPRODUCTION_RESULT",
+      "checks": 282,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "0a4d1e6e7b7d1e2f1e10ef961aaae15e2930f3962d3c4f713b8530219a8d4aa0"
+    },
+    {
+      "log": "main-ui.log",
+      "result": "CARE_ACCESS_MAIN_RESULT",
+      "checks": 11,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "edc37bd71f968763c4475e063f5f63c5ab51c398a19ac9a9d3c67e69bd0d6feb"
+    },
+    {
+      "log": "main-family.log",
+      "result": "FAMILY_HANDOFF_MAIN_RESULT",
+      "checks": 11,
+      "failed": 0,
+      "failures": [],
+      "log_sha256": "6b70e0109c1c9011358804df7da1bd6d9e65db7ffda0072d6aa642d66abde436"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "scripts/mechanics/core/service_window.gd",
+      "packed_snapshot_sha256": "20bae9536444e78e437c14d80254396cb46124db0630ddbb7c7380ab78216313",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/care_access.gd",
+      "packed_snapshot_sha256": "e3779c7cd2ef57602d9ae1ae7adb594914425ebbee78fc3560bb555dc2a0f597",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/health.gd",
+      "packed_snapshot_sha256": "2f2090ec208dd6937b6f4ced0d5cc2e2dab07670c13dc50cb05b2532ae4a4cbf",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/adult_health_care.gd",
+      "packed_snapshot_sha256": "6e542c07ee15866dd11c3f23754960d0dd78616bbace233354bb0302596274bb",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/pregnancy_selfcare.gd",
+      "packed_snapshot_sha256": "fc531c51b81bd7051a41416ca461dc996227b472de4b88c082d2dad4bae79d86",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/family.gd",
+      "packed_snapshot_sha256": "c95a9f9e395aa153869292751c71966d2fcd34b44cea35bf41ca98fa5e04948f",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/family_handoff.gd",
+      "packed_snapshot_sha256": "8e9670157c697f1f83fd1f2c4dbb1bcea2b5598419e456d0a9d07b3b1a287164",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/npc_calendar.gd",
+      "packed_snapshot_sha256": "fbfde6df4720f96d94b583f88f077eaf3fd0e4fbbd264068aa6a5cd56c57df7c",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/simulation.gd",
+      "packed_snapshot_sha256": "8a9d075702d0a7ba14b1f473ca1d3ff00143797990de1e05bba13b33b024e9d3",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/mechanics/extended_simulation.gd",
+      "packed_snapshot_sha256": "8dc0b104cd8dc967df8e974eb26304da46bfe6679add278e761c2f4b36ee7df2",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "scripts/gameplay/adult_health_presentation.gd",
+      "packed_snapshot_sha256": null,
+      "note": "PCK snapshot excludes gameplay code; gameplay checks occurred before root world merge."
+    },
+    {
+      "path": "scripts/gameplay/presentation.gd",
+      "packed_snapshot_sha256": null,
+      "note": "PCK snapshot excludes gameplay code; gameplay checks occurred before root world merge."
+    },
+    {
+      "path": "data/mechanics/base.json",
+      "packed_snapshot_sha256": "0711d070a68b06904538efa8e4a25f0789155ecef81aff394333a1e533f17203",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "data/mechanics/advanced.json",
+      "packed_snapshot_sha256": "43013ae5dbc07f2df2d1458c3de9722b7bf994573b3af7d13841b6691bc41cd0",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "data/mechanics/adult_health.json",
+      "packed_snapshot_sha256": "af7a7c2276548bf0f9a1883c9951deecd8b019222e1f2ae3d978bec213b52292",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "data/mechanics/pregnancy_wellbeing.json",
+      "packed_snapshot_sha256": "bf2230ffea75408afb17532ccc94a185edec3ef47048fbd24373c489b99bd6da",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/care_access.gd",
+      "packed_snapshot_sha256": "eb9997658b9b1770d8e12102d8bc1a13d1d84c47573dfaa2bffc1ec3fc9b15f5",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/run_care_access.gd",
+      "packed_snapshot_sha256": "402c49d4a3310131b08c733b5786312f352dba321182c12b119c774ae7cb5c5d",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/care_homes.gd",
+      "packed_snapshot_sha256": "c7a8f047302241c858d6470e5e0b0ccd49cdefe001727765b41745c924353cae",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/care_homes_sim.gd",
+      "packed_snapshot_sha256": "2ee13d6b414dd76a16b89e78d05131994b6fd094fabe4e6ba5e57f07f8729d76",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/run_care_homes.gd",
+      "packed_snapshot_sha256": "87d0f01a6778e4279f1f15109f1ae9d00adaa31d0c2c54f79c154b81af250232",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/adult_health.gd",
+      "packed_snapshot_sha256": "4e80ebd69f21eac26b2b935f7c3f1dd5f90aa4f11deb78dfdaffffa3de4cf549",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/health_care_plans.gd",
+      "packed_snapshot_sha256": "0a931b86a674e5de1de31c39fee1bdaff8b1d187ca07086ed4466bc80215e886",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/advanced.gd",
+      "packed_snapshot_sha256": "2aec1c47456062347de99b6d997b8ff908cc36d6cee23d2c1cf7101d83c4d6e7",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/mechanics/run.gd",
+      "packed_snapshot_sha256": "d350c8786389a5ae064ce7615e7c58caecc96ee425f68cbbc7dad4661606b7e9",
+      "note": "Hash of tested pre-world-merge snapshot, not later root integration."
+    },
+    {
+      "path": "tests/gameplay/care_access.gd",
+      "packed_snapshot_sha256": null,
+      "note": "PCK snapshot excludes gameplay code; gameplay checks occurred before root world merge."
+    },
+    {
+      "path": "tests/gameplay/run_care_access.gd",
+      "packed_snapshot_sha256": null,
+      "note": "PCK snapshot excludes gameplay code; gameplay checks occurred before root world merge."
+    },
+    {
+      "path": "tests/gameplay/run.gd",
+      "packed_snapshot_sha256": null,
+      "note": "PCK snapshot excludes gameplay code; gameplay checks occurred before root world merge."
+    }
+  ],
+  "common_points": [
+    "Only agreed home semantic block in mechanics/simulation.gd, with private-owner guard; no full candidate file copy",
+    "Only settings.home_rooms in base.json",
+    "One family.synchronize_homes after successful housing.move_in in Extended.after_command"
+  ],
+  "fixtures": "Two distinct homes are an authored semantic-API fixture; not a city_graph integration test.",
+  "root_merge": "Root started three-way city integration after these tests. Source/candidate differences and later root hashes are not asserted green here.",
+  "npc_calendar_merge": "Retain candidate site_open(destination,arrival,finish,actor_id=\"player\") and actor_availability at arrival/finish-1; compose with core/service_window full [arrival,finish) time check. Do not restore the three-argument-only candidate caller contract.",
+  "ownership": "Keep source family.gd, family_handoff.gd, adult_health_care.gd, pregnancy_selfcare.gd; spatial-only deltas are covered. Merge npc_calendar actor access separately; preserve source clinical core helpers and ownership checks.",
+  "external_artifacts": {
+    "standalone_pack": "E:/GoDot/.research/care-access-2026-10-28/care-access.pck",
+    "isolated_source_snapshot": "E:\\GoDot\\.research\\care-access-2026-10-28\\homes-project",
+    "required_to_run_project": false,
+    "regeneration": "Use repository scripts/data/tests with tools/godot.ps1, Godot 4.7.2 and its Windows export templates; these external verification copies are not runtime dependencies."
+  },
+  "limitations": [
+    "No full suite repeated",
+    "No native visual QA",
+    "Main pre-merge tests retain known Live2D exit messages: 63 objects/27 resources",
+    "New city integration is verified by coordinator separately",
+    "No medical parameter changes or new doses/procedures"
+  ],
+  "user_saves": "Not read or written",
+  "git": "Not used",
+  "baseline": {
+    "log": "baseline.log",
+    "checks": 72,
+    "failed": 13,
+    "meaning": "Focused pre-fix failures include downstream effects of accepting an invalid action; not thirteen independent defects."
+  },
+  "documentation_files": [
+    "docs/mechanics/CLINICAL_ACCESS_AND_HOME_CARE.md",
+    "docs/mechanics/ADULT_HEALTH.md",
+    "docs/mechanics/FAMILY_HANDOFF.md",
+    "docs/coordination/HEALTH_WORLD_REVIEW.md",
+    "docs/coordination/health-family.md"
+  ],
+  "verification_directory": "docs/mechanics/verification/care-access-2026-10-28/"
+}

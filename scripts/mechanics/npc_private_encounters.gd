@@ -17,17 +17,19 @@ func start(a: String, b: String) -> bool:
 	var second: Dictionary = sim.state.social.npcs[b]
 	if first.location != second.location: return false
 	var venue := str(first.home)
-	if not sim.catalog.locations.has(venue) or venue in ["global_map","training_center","clinic","police_station"]: return false
+	if not sim.catalog.locations.has(venue) or sim.catalog.locations[venue].get("public",false): return false
 	var routes := {}
 	var travel := 0
 	for id in [a,b]:
 		var npc: Dictionary = sim.state.social.npcs[id]
-		var route: Dictionary = sim.services.npc_agency._route(npc,str(npc.location),venue)
+		var route: Dictionary = sim.services.npc_agency._route(npc,str(npc.location),venue,-1,false,venue)
 		if route.is_empty(): return false
 		routes[id] = route
 		travel = maxi(travel,int(route.minutes))
 	var duration := travel + int(sim.catalog.reproduction_rules.simulation.session_minutes) + int(rules.stage_minutes)*6 + 2
 	if not Context.pair_blocked(sim,a,b,duration).is_empty(): return false
+	for actor_id in [a,b]:
+		if not sim.services.npc_planner.calendar.conflict(str(actor_id),venue,duration).is_empty(): return false
 	var id: String = _manager().next_id("npc_encounter_")
 	var pin := _now()+duration+1
 	var saved := {}

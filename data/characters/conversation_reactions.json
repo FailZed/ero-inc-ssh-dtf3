@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "model": {
+    "id": "interaction_model",
+    "title": "Ника",
+    "model": "res://assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/model.model3.json"
+  },
+  "profile": "res://data/characters/interaction_profile.json",
+  "characters_per_second": 38,
+  "mouth": "ParamMouthOpen",
+  "expressions": {
+    "neutral": {
+      "ParamMouthForm": 0,
+      "ParamEyesHappy": 0,
+      "ParamHeadZ": 0,
+      "ParamHeadY": 0,
+      "ParamBrowLY": 0,
+      "ParamBrowRY": 0
+    },
+    "attentive": {
+      "ParamHeadZ": 0.025,
+      "ParamBrowLY": 0.06,
+      "ParamBrowRY": 0.06
+    },
+    "smile": {
+      "ParamMouthForm": 0.65,
+      "ParamEyesHappy": 0.28,
+      "ParamBrowLEmote": 0.2,
+      "ParamBrowREmote": 0.2,
+      "ParamHeadZ": -0.035,
+      "ParamHeadY": 0.03,
+      "ParamBlush": 0.05
+    },
+    "concern": {
+      "ParamMouthForm": -0.22,
+      "ParamEyesHappy": -0.12,
+      "ParamBrowLEmote": -0.25,
+      "ParamBrowREmote": -0.25,
+      "ParamBrowLY": 0.22,
+      "ParamBrowRY": 0.22,
+      "ParamBrowLRot": 9,
+      "ParamBrowRRot": -9,
+      "ParamHeadY": -0.06,
+      "ParamHeadZ": 0.08,
+      "ParamEyeLShock": 0.1,
+      "ParamEyeRShock": 0.1
+    },
+    "angry": {
+      "ParamMouthForm": -0.5,
+      "ParamBrowLEmote": -0.7,
+      "ParamBrowREmote": -0.7,
+      "ParamBrowLY": -0.3,
+      "ParamBrowRY": -0.3
+    },
+    "shy": {
+      "ParamBlush": 0.35,
+      "ParamMouthForm": 0.3,
+      "ParamHeadY": -0.1,
+      "ParamHeadZ": -0.12
+    },
+    "surprised": {
+      "ParamEyeLShock": 0.55,
+      "ParamEyeRShock": 0.55,
+      "ParamBrowLY": 0.4,
+      "ParamBrowRY": 0.4
+    }
+  },
+  "gestures": {
+    "nod": {
+      "parameter": "ParamHeadY",
+      "amplitude": 0.15,
+      "duration": 0.65,
+      "cycles": 1
+    },
+    "shake": {
+      "parameter": "ParamHeadX",
+      "amplitude": 0.16,
+      "duration": 0.75,
+      "cycles": 2
+    },
+    "tilt": {
+      "parameter": "ParamHeadZ",
+      "amplitude": 0.07,
+      "duration": 0.85,
+      "cycles": 0.5
+    }
+  },
+  "idle": {
+    "parameter": "ParamBodyY",
+    "amplitude": 0.025,
+    "period": 4.6
+  },
+  "line_gestures": {
+    "smile": "nod",
+    "concern": "tilt"
+  },
+  "speech": {
+    "closed": 0,
+    "amplitude": 0.3,
+    "frequency": 18,
+    "punctuation_pause": 0.14,
+    "comma_pause": 0.08,
+    "expressions": {
+      "neutral": {
+        "amplitude": 0.24,
+        "frequency": 17
+      },
+      "attentive": {
+        "amplitude": 0.26,
+        "frequency": 18
+      },
+      "smile": {
+        "amplitude": 0.36,
+        "frequency": 20
+      },
+      "concern": {
+        "amplitude": 0.2,
+        "frequency": 14
+      }
+    }
+  }
+}

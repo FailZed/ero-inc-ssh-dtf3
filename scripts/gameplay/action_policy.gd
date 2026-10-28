@@ -1,7 +1,8 @@
 extends RefCounted
 ## Main-game action context. Applied inside Simulation's existing transaction.
 const Rules = preload("res://scripts/mechanics/core/rules.gd")
-const HOME := ["bedroom", "bathroom", "kitchen", "apartment_hall"]
+const City = preload("res://scripts/gameplay/city_layout.gd")
+const Graph = preload("res://scripts/gameplay/city_graph.gd")
 const GAME_MINUTES := {"blackjack": 10, "guess": 5, "reaction": 5, "strength": 5, "lockpick": 5}
 
 static func duration(sim, module_id: String, operation: String, args: Dictionary) -> int:
@@ -40,15 +41,18 @@ static func duration(sim, module_id: String, operation: String, args: Dictionary
 		return maxi(0, mini(int(args.get("minutes", 60)), int(sim.catalog.projects.get(id, {}).get("effort", 0)) - int(sim.state.economy.projects.get(id, {}).get("progress", 0))))
 	if module_id == "social_rules" and operation == "gathering": return 90
 	if module_id == "npc_agency" and operation == "encourage": return 5
-	if module_id == "housing" and operation == "move_in" and args.get("id","") in ["detached_house","penthouse","social_housing"]:
-		var planned: Dictionary = sim.services.world.route(str(args.id))
+	if module_id == "housing" and operation == "move_in" and City.data(sim.catalog).home_units.has(str(args.get("id",""))):
+		var destination := Graph.home_frontage(City.data(sim.catalog),str(args.id))
+		var planned: Dictionary = sim.services.world.route(destination)
 		return int(planned.get("data",{}).get("minutes",0))+1
 	if module_id == "world":
 		if operation == "journey":
 			var planned: Dictionary = sim.services.world.route(str(args.get("id","")))
 			return int(planned.get("data",{}).get("minutes",0))
 		if operation == "travel": return int(sim.services.world.routes_for(str(sim.state.world.location)).get(str(args.get("id", "")), {}).get("minutes", 0))
-		if operation == "lesson": return int(sim.catalog.lessons.get(str(args.get("id", "")), {}).get("minutes", 0))
+		if operation == "lesson":
+			var lesson: Dictionary = sim.catalog.lessons.get(str(args.get("id","")),{})
+			return 0 if lesson.is_empty() else int(preload("res://scripts/mechanics/education_schedule.gd").attendance(lesson,sim.state.clock).minutes)
 		return int({"clean":30,"shower":15,"homework":45,"appeal":30}.get(operation, 0))
 	var groups := {"actions":"actions", "activities":"training_programs", "inventory":"recipes", "economy":"jobs"}
 	if groups.has(module_id): return int(sim.catalog[groups[module_id]].get(str(args.get("id", "")), {}).get("minutes", 0))
@@ -101,7 +105,7 @@ static func describe(sim, module_id: String, operation: String, args: Dictionary
 		"digital": context.exerting = operation in ["scan", "resolve"]
 		"family": context.exerting = operation == "care"
 		"housing":
-			if operation == "move_in" and args.get("id","") in ["detached_house","penthouse","social_housing"]:
+			if operation == "move_in" and City.data(sim.catalog).home_units.has(str(args.get("id",""))):
 				context.exerting = true
 				context.physical = true
 				context.extra_stamina = duration(sim,module_id,operation,args)*0.15
@@ -113,7 +117,7 @@ static func describe(sim, module_id: String, operation: String, args: Dictionary
 		"needs":
 			context.sleeping = operation in ["sleep", "nap"]
 			context.rest_kind = operation
-			context.physical = operation == "leisure" and sim.state.world.location in ["global_map", "city_park", "south_promenade", "north_beach"]
+			context.physical = operation == "leisure" and sim.state.world.location in [sim.location_role("trade"),"city_park","south_promenade","north_beach"]
 			context.exerting = context.physical
 			if context.physical: context.extra_stamina = 3.0
 		"economy": context.exerting = operation in ["work", "project", "stream"]
@@ -130,7 +134,7 @@ static func describe(sim, module_id: String, operation: String, args: Dictionary
 			if operation == "journey": context.extra_stamina = duration(sim,module_id,operation,args) * 0.15
 			elif operation == "travel":
 				context.extra_stamina = duration(sim,module_id,operation,args)*0.15
-			elif operation == "lesson": context.extra_stamina = float(sim.catalog.lessons.get(str(args.get("id", "")), {}).get("minutes", 0)) * 0.05
+			elif operation == "lesson": context.extra_stamina = duration(sim,module_id,operation,args) * 0.05
 		"inventory":
 			context.exerting = operation == "craft"
 			if operation == "craft": context.extra_stamina = float(sim.catalog.recipes.get(str(args.get("id", "")), {}).get("minutes", 0)) * 0.08
@@ -154,18 +158,19 @@ static func check(sim, module_id: String, operation: String, args: Dictionary, c
 		if not args.get("skip_classes",false) is bool: return Rules.fail("invalid_arguments")
 		if not args.get("skip_classes",false) and not preload("res://scripts/mechanics/work_schedule.gd").conflicts(sim,location,duration(sim,module_id,operation,args)).is_empty(): return Rules.fail("work_conflicts_study")
 	if context.get("rest_kind", "rest") not in ["rest", "sleep", "nap", "drink", "toilet", "leisure"]: return Rules.fail("invalid_rest_kind")
-	if context.sleeping and location != "bedroom": return Rules.fail("bed_required")
+	if context.sleeping and location != sim.player_home_room("bedroom"): return Rules.fail("bed_required")
 	if module_id == "world":
-		if operation == "shower" and location != "bathroom": return Rules.fail("bathroom_required")
-		if operation in ["clean", "homework"] and not location in HOME: return Rules.fail("home_required")
+		if operation == "shower" and location != sim.player_home_room("bathroom"): return Rules.fail("bathroom_required")
+		if operation in ["clean", "homework"] and not sim.is_player_home_location(location): return Rules.fail("home_required")
 	if module_id == "inventory" and operation == "craft":
 		var recipe: Dictionary = sim.catalog.recipes.get(str(args.get("id", "")), {})
-		if "stove" in recipe.get("equipment", []) and location != "kitchen": return Rules.fail("kitchen_required")
+		if "stove" in recipe.get("equipment", []) and location != sim.player_home_room("kitchen"): return Rules.fail("kitchen_required")
 	var home_work: bool = module_id == "economy" and operation in ["work", "project", "stream"]
 	home_work = home_work or (module_id == "careers" and operation in ["work_contract", "stream", "investigate", "verify", "publish"])
 	if module_id == "careers" and operation == "shift":
-		home_work = not sim.catalog.professions.get(str(args.get("id", "")), {}).has("location")
-	if home_work and not location in HOME: return Rules.fail("home_workspace_required")
+		var profession: Dictionary = sim.catalog.professions.get(str(args.get("id", "")), {})
+		home_work = profession.has("home_room_kind") or not profession.has("location")
+	if home_work and not sim.is_player_home_location(location): return Rules.fail("home_workspace_required")
 	if module_id == "social" and operation == "call":
 		var person: Dictionary = sim.state.social.npcs.get(str(args.get("id", "")), {})
 		if person.get("activity", "") == "sleep": return Rules.fail("npc_sleeping")
@@ -204,19 +209,24 @@ static func complete(sim, module_id: String, operation: String, args: Dictionary
 		if item.get("category", "") == "food": elapsed = 5
 	var combat_action: bool = (module_id == "combat" and operation == "action") or (module_id == "encounters" and operation == "combat_action")
 	var combat_start: bool = (module_id == "combat" and operation == "start") or (module_id == "encounters" and operation == "combat_start")
+	var dialogue_combat: bool = module_id == "npc_dialogue" and result.get("data",{}).get("outcome",{}).get("combat_started",false)
 	var combat: Dictionary = sim.state.encounters.combat
-	if combat_start:
-		combat.stamina.player = float(sim.state.player.needs.energy)
+	if combat_start or dialogue_combat:
 		var npc: Dictionary = sim.state.social.npcs[combat.npc]
-		combat.stamina.npc = float(npc.needs.energy)
-		combat.previous_pin = int(npc.pinned_until)
+		if dialogue_combat:
+			sim.services.character.adjust_need("energy",float(combat.stamina.player)-float(sim.state.player.needs.energy))
+			npc.needs.energy = float(combat.stamina.npc)
+		else:
+			combat.stamina.player = float(sim.state.player.needs.energy)
+			combat.stamina.npc = float(npc.needs.energy)
+		combat.previous_pin = int(combat.get("conversation",{}).get("pinned_until",npc.pinned_until))
 		if npc.has("mind"): sim.services.npc_agency._cancel(npc, "combat")
-		npc.pinned_until = maxi(int(npc.pinned_until), int(sim.state.clock.total_minutes) + 1440)
+		if combat.status == "active": npc.pinned_until = maxi(int(npc.pinned_until), int(sim.state.clock.total_minutes) + 1440)
 	elif combat_action:
 		sim.services.character.adjust_need("energy", float(combat.stamina.player) - float(sim.state.player.needs.energy))
 		sim.state.social.npcs[combat.npc].needs.energy = clampf(float(combat.stamina.npc), 0.0, 100.0)
 		var previous: Dictionary = before.encounters.combat
-		if int(combat.turn) != int(previous.turn) or combat.status != "active": elapsed = 1
+		if int(combat.turn) != int(previous.turn) or combat.status != "active": elapsed = maxi(0,1-(int(sim.state.clock.total_minutes)-int(before.clock.total_minutes)))
 	if module_id == "encounters" and operation == "game_input":
 		var game: Dictionary = sim.state.encounters.game
 		if game.status != "active" and int(sim.state.clock.total_minutes) == int(before.clock.total_minutes):

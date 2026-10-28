@@ -14,6 +14,7 @@
     }
   },
   "dialogue_pools": {
+    "answer.dispute": {"variants":[{"id":"answer.dispute.0","ru":"Мне неприятен такой тон. Если хочешь разобраться, давай говорить о конкретной ситуации без обвинений."},{"id":"answer.dispute.1","ru":"Я услышала претензию. Но после такого разговора мне нужно время, чтобы успокоиться."}]},
     "greeting.direct": {
       "variants": [
         {
@@ -2112,6 +2113,7 @@
     }
   },
   "dialogue_labels": {
+    "opt.conversation_dispute": {"ru":"Высказать претензию"},
     "opt.day": {
       "ru": "Как проходит твой день?"
     },
@@ -2228,6 +2230,7 @@
     }
   },
   "dialogue_choices": {
+    "conversation_dispute": {"label":"opt.conversation_dispute","to":"answer","action":"dispute","minutes":30},
     "day": {
       "label": "opt.day",
       "to": "day",

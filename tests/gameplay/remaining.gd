@@ -69,7 +69,8 @@ func run() -> void:
 	t.check(not textures.is_empty(), "gallery renders an actual local image")
 	var snapshot: Dictionary = sim.export_snapshot()
 	var restored = t.gameplay.make_simulation()
-	t.check(restored.restore_snapshot(JSON.parse_string(JSON.stringify(snapshot))).ok, "new family, digital history and gallery fit the main snapshot")
+	var loaded: Dictionary = restored.restore_snapshot(JSON.parse_string(JSON.stringify(snapshot)))
+	t.check(loaded.ok, "new family, digital history and gallery fit the main snapshot: "+str(loaded.get("error","")))
 	t.check(JSON.parse_string(JSON.stringify(restored.export_snapshot())) == JSON.parse_string(JSON.stringify(snapshot)), "main snapshot retains all new systems exactly")
 	# Previous main schemas are unsupported.
 	var legacy := snapshot.duplicate(true)

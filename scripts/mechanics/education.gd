@@ -81,7 +81,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		minutes = 60
 		energy = 8
 		xp = 20
-	elif sim.state.world.location not in ["bedroom","kitchen","apartment_hall","bathroom","training_center"]:
+	elif not sim.is_player_home_location(str(sim.state.world.location)) and sim.state.world.location != sim.location_role("study"):
 		return Rules.fail("study_workspace_required")
 	if float(sim.state.player.needs.energy) < energy: return Rules.fail("insufficient_energy")
 	sim.services.character.adjust_need("energy",-energy)

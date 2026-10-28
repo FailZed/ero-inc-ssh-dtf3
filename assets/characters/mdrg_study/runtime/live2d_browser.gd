@@ -1,4 +1,5 @@
 extends Control
+signal closed
 ## A small inspection scene for models imported by unity_to_godot.py.
 ## The native plugin is accessed by live2d_actor.gd; this UI also opens without it.
 
@@ -6,7 +7,7 @@ const ACTOR_SCRIPT = preload("live2d_actor.gd")
 const POINTER_SCRIPT = preload("live2d_pointer.gd")
 const RIG_DEBUG_LABEL := "Без одежды (проверка рига)"
 
-@export_file("*.json") var catalog_path: String = "res://live2d_import/catalog.json"
+@export_file("*.json") var catalog_path: String = "res://assets/characters/mdrg_study/catalog.json"
 
 var _catalog: Dictionary = {}
 var _models: Array = []
@@ -69,6 +70,16 @@ func _ready() -> void:
 	_load_catalog()
 	set_process(true)
 
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		get_viewport().set_input_as_handled()
+		_close()
+
+func _close() -> void:
+	if _pointer != null: _pointer.call("release")
+	closed.emit()
+	queue_free()
 
 func _process(delta: float) -> void:
 	if not _model_ready:
@@ -175,6 +186,7 @@ func _build_ui() -> void:
 	_summary = _label("Загрузка каталога…", 13, Color("92a3b9"))
 	heading.add_child(_summary)
 	header.add_child(_button("Отчёт импорта", _show_report))
+	header.add_child(_button("Закрыть", _close))
 	var columns := HBoxContainer.new()
 	columns.add_theme_constant_override("separation", 14)
 	columns.size_flags_vertical = Control.SIZE_EXPAND_FILL

@@ -32,6 +32,10 @@ func _run() -> void:
 			var steps := 0
 			while sim.state.encounters.combat.status == "active" and steps < 160:
 				var fight: Dictionary = sim.state.encounters.combat
+				if fight.phase == "defence":
+					_command(sim,"combat","action",{"action":"guard","part":"body"})
+					steps += 1
+					continue
 				if fight.stamina.player < 16: _command(sim, "combat", "action", {"action": "recover"})
 				elif fight.ap >= 2: _command(sim, "combat", "action", {"action": "attack", "move": "jab"})
 				else: _command(sim, "combat", "action", {"action": "end_turn"})

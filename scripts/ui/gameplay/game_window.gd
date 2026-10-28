@@ -51,12 +51,17 @@ func _ready() -> void:
 	body = UI.scroller(content)
 	_scroll = body.get_parent()
 	footer = UI.row(content,14)
+	_wire_focus.call_deferred()
 	tree_exiting.connect(func():
 		if _return_focus != null: UI.restore_focus.call_deferred(_return_focus))
 
 func _fit() -> void:
 	panel.size = Vector2(maxf(320,minf(preferred_size.x,size.x-96)),maxf(260,minf(preferred_size.y,size.y-96)))
 	panel.position = (size-panel.size)*0.5
+	if is_node_ready(): _wire_focus.call_deferred()
+
+func _wire_focus() -> void:
+	if is_inside_tree(): UI.focus_loop(panel)
 
 func set_tabs(items: Dictionary, selected: String, callback: Callable) -> void:
 	if selected != _selected_tab: _memory.scroll = 0
@@ -90,6 +95,7 @@ func end_update() -> void:
 
 func _restore() -> void:
 	if not is_inside_tree(): return
+	_wire_focus()
 	_scroll.set_deferred("scroll_vertical",int(_memory.get("scroll",0)))
 	var controls := body.find_children("*","Control",true,false)
 	if _memory.get("key","") == "window_tab": controls = tabs.find_children("*","Control",true,false)
@@ -104,7 +110,7 @@ func _restore() -> void:
 	_close.grab_focus()
 
 func _unhandled_key_input(event: InputEvent) -> void:
-	if event is InputEventKey and event.pressed and event.keycode in [KEY_I,KEY_J,KEY_C,KEY_M,KEY_P,KEY_R,KEY_Q,KEY_H,KEY_F1]: get_viewport().set_input_as_handled()
+	if event is InputEventKey and event.pressed and event.keycode in [KEY_I,KEY_J,KEY_C,KEY_M,KEY_P,KEY_R,KEY_Q,KEY_H,KEY_F1,KEY_B]: get_viewport().set_input_as_handled()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel") or (event is InputEventJoypadButton and event.pressed and event.button_index == JOY_BUTTON_B):

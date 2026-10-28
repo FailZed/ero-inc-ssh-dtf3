@@ -3,11 +3,12 @@ const Simulation = preload("res://scripts/mechanics/simulation.gd")
 const Population = preload("res://scripts/mechanics/population.gd")
 const Preferences = preload("res://scripts/mechanics/preferences.gd")
 const Rules = preload("res://scripts/mechanics/core/rules.gd")
+const Education = preload("res://scripts/mechanics/education_schedule.gd")
 const STATS := ["strength", "agility", "charisma", "intellect", "luck", "endurance", "erudition", "authority", "cunning"]
 
 static func defaults() -> Dictionary:
 	return {"seed": 2026, "mode": "story", "difficulty": "normal", "custom": {}, "needs":{}, "population": Population.defaults(),
-		"sandbox": {"start_cash":250}, "personality": personality_defaults(), "content": {"romance": true, "adult": true, "pregnancy":true},
+		"sandbox": {"start_cash":250,"education":Education.defaults()}, "personality": personality_defaults(), "content": {"romance": true, "adult": true, "pregnancy":true},
 		"profile": {"full_name": "Алекс Ривер", "age": 23, "stats": {"strength": 8, "agility": 7, "charisma": 9, "intellect": 8, "luck": 5, "endurance": 6, "erudition": 7, "authority": 5, "cunning": 5},
 			"appearance": {"gender": "male", "body_type": "slim", "face_id": "soft", "hair_style": "short", "hair_color": "dark", "censorship_enabled": true}}}
 
@@ -26,8 +27,9 @@ static func remaining_points(config: Dictionary) -> int:
 static func validate(config: Variant) -> Dictionary:
 	if not config is Dictionary: return Rules.fail("invalid_setup")
 	if not config.get("mode", "story") in ["story", "sandbox"]: return Rules.fail("invalid_game_mode")
-	var sandbox: Variant = config.get("sandbox", {"start_cash":250})
+	var sandbox: Variant = config.get("sandbox")
 	if not sandbox is Dictionary or not sandbox.get("start_cash") is int or int(sandbox.start_cash) < 100 or int(sandbox.start_cash) > 1000: return Rules.fail("invalid_sandbox_settings")
+	if not Education.valid_plan(sandbox.get("education")): return Rules.fail("invalid_education_plan")
 	if not config.get("seed") is int or int(config.seed) < 0 or int(config.seed) > 2147483647: return Rules.fail("invalid_world_seed")
 	if not config.get("difficulty") in ["easy", "normal", "hard", "custom"] or not Preferences.validate_values(config.get("custom")): return Rules.fail("invalid_difficulty")
 	var content: Variant = config.get("content", {})

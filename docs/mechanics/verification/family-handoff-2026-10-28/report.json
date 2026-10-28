@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "audio": "Dummy",
+  "scope": "One temporary existing family care task performed by the second available guardian",
+  "checks": [
+    {
+      "runner": "tests/mechanics/run_family_handoff.gd",
+      "checks": 103,
+      "failed": 0,
+      "exit_code": 0,
+      "log": "model.log"
+    },
+    {
+      "runner": "tests/mechanics/run_family_handoff.gd",
+      "mode": "isolated exported PCK",
+      "checks": 103,
+      "failed": 0,
+      "exit_code": 0,
+      "log": "pack.log",
+      "pack": "E:/GoDot/.dev-setup/family-handoff-148d9486b31046c2aad665e427350128.pck"
+    },
+    {
+      "runner": "tests/mechanics/run_family.gd",
+      "checks": 61,
+      "failed": 0,
+      "exit_code": 0,
+      "log": "family-regression.log"
+    },
+    {
+      "runner": "tests/mechanics/run_npc_planner.gd",
+      "checks": 92,
+      "failed": 0,
+      "exit_code": 0,
+      "log": "planner.log"
+    },
+    {
+      "runner": "tests/gameplay/run_family_handoff.gd",
+      "mode": "main project headless commands and real buttons",
+      "checks": 11,
+      "failed": 0,
+      "exit_code": 0,
+      "log": "main-ui.log"
+    }
+  ],
+  "full_suite": "Not re-run; scoped contract checks only, per coordination instructions.",
+  "visual_qa": "No native UI or screenshots; native interaction belongs to UI executor.",
+  "existing_shutdown_messages": "Main project retains prior Live2D exit messages: 63 ObjectDB instances, 27 resources. Standalone PCK exits cleanly.",
+  "schema": "Existing family version 1 and task representation retained; no main schema/service changes.",
+  "saved_slots": "No user slots read or written.",
+  "baseline_fixture_update": "Removing a schedule does not cancel a journey already reserved by the planner. Existing family test now cancels the real journey before expecting the guardian to become available.",
+  "boundaries": [
+    "No age progression/A07 changes",
+    "No career, geography, Live2D or combat changes",
+    "No teleportation or care rewards at request time",
+    "Permanent assignment preserved on success and refusal"
+  ],
+  "career_dependency_recheck": {
+    "date": "2026-10-28",
+    "runner": "tests/mechanics/run_family_constraints.gd",
+    "method": "tests/mechanics/family.gd::_care_constraints",
+    "assertion": "available co-parent starts the same care after schedule conflict is removed",
+    "checks": 12,
+    "failed": 0,
+    "exit_code": 0,
+    "audio": "Dummy",
+    "log": "career-dependency.log",
+    "verified": "After the actual scheduled journey is cancelled, the same parent starts wash for 15 minutes; permanent assignments and pre-completion child need remain unchanged.",
+    "production_changes": "None in this recheck.",
+    "fixture_detail": "Removing a schedule does not cancel an already reserved journey. No rejected command or rollback occurs between these steps.",
+    "broad_or_career_suite": "Not re-run; earlier test counts remain historical stage results."
+  }
+}

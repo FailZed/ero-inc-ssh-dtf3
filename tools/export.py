@@ -33,7 +33,7 @@ def main():
             libraries = ['libgd_cubism.macos.universal.dylib']
         else:
             preset, name = 'Windows Desktop', 'EroInc.exe'
-            libraries = ['libgd_cubism.windows.x86_64.dll', 'Live2DCubismCore.dll']
+            libraries = ['sdk5/libgd_cubism.windows.x86_64.dll', 'sdk5/Live2DCubismCore.dll']
         for library in libraries:
             if not (ROOT / 'addons/gd_cubism/bin' / library).is_file():
                 raise RuntimeError(f'Missing {library}; rebuild with tools/build_cubism_runtime.py')

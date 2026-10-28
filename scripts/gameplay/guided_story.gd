@@ -2,11 +2,11 @@ extends RefCounted
 ## Small authored exploration graphs. Goals guide; looking around never consumes a resource.
 const PLACES := {
 	"bedroom":{"title":"Спальня","background":"res://assets/textures/backgrounds/location_pack_v1/bedroom_night.png","exits":["apartment_hall"],"objects":{"clock":"Часы","wardrobe":"Шкаф","photo":"Фотография","bed":"Кровать"}},
-	"apartment_hall":{"title":"Прихожая","background":"res://assets/textures/backgrounds/location_pack_v1/hallway_night.png","exits":["bedroom","bathroom","kitchen","street"],"objects":{"switch":"Выключатель","door":"Входная дверь"}},
+	"apartment_hall":{"title":"Прихожая","background":"res://assets/textures/backgrounds/location_pack_v1/hallway_night.png","exits":["bedroom","bathroom","kitchen","student_home"],"objects":{"switch":"Выключатель","door":"Входная дверь"}},
 	"bathroom":{"title":"Ванная","background":"res://assets/textures/backgrounds/location_pack_v1/bathroom_night.png","exits":["apartment_hall"],"objects":{"sink":"Умывальник","mirror":"Зеркало","washer":"Стиральная машина"}},
 	"kitchen":{"title":"Кухня","background":"res://assets/textures/locations/apartment/kitchen_16x9.png","exits":["apartment_hall"],"objects":{"kettle":"Чайник","window":"Окно","fridge":"Холодильник"}},
-	"street":{"title":"У дома","background":"res://assets/textures/backgrounds/location_pack_v1/home_street_day.png","exits":["apartment_hall","campus_courtyard"],"objects":{"sign":"Дорога к университету"}},
-	"campus_courtyard":{"title":"Двор университета","background":"res://assets/textures/backgrounds/location_pack_v1/home_street_day.png","exits":["campus_hall","street"],"objects":{"notice":"Объявления","entrance":"Главный вход"}},
+	"student_home":{"title":"У дома","background":"res://assets/textures/backgrounds/location_pack_v1/home_street_day.png","exits":["apartment_hall"],"objects":{"sign":"Дорога к университету"}},
+	"campus_courtyard":{"title":"Двор университета","background":"res://assets/textures/backgrounds/location_pack_v1/home_street_day.png","exits":["campus_hall"],"objects":{"notice":"Объявления","entrance":"Главный вход"}},
 	"campus_hall":{"title":"Холл университета","background":"res://assets/textures/locations/apartment/hallway_16x9.png","exits":["campus_courtyard","campus_corridor"],"objects":{"notice":"Указатель аудиторий","bear":"Дежурный"}},
 	"campus_corridor":{"title":"Второй этаж · левое крыло","background":"res://assets/textures/locations/apartment/hallway_16x9.png","exits":["campus_hall"],"objects":{"club":"Косплейный клуб","classroom":"Аудитория 213","bathroom_door":"Мужской туалет"}}
 }
@@ -23,7 +23,7 @@ const STAGES := {
 	"morning_leave":{"title":"Не опоздать","objective":"Выйдите из квартиры через входную дверь.","hint":"Входная дверь находится в прихожей.","start":"bathroom","allowed":["bedroom","apartment_hall","bathroom","kitchen"],"goal_place":"apartment_hall","goal":"door","action":"ОТПРАВИТЬСЯ В УНИВЕРСИТЕТ","timeline":"chapter_one/arrival"},
 	"campus":{"title":"Найти свою аудиторию","objective":"Найдите аудиторию 213 в левом крыле второго этажа.","hint":"Дежурный объяснит нумерацию. Поднимитесь в коридор левого крыла.","start":"campus_hall","allowed":["campus_hall","campus_corridor","campus_courtyard"],"goal_place":"campus_corridor","goal":"classroom","action":"ПОЙТИ К АУДИТОРИИ 213","timeline":"chapter_one/club"},
 	"classroom":{"title":"Знакомство с группой","objective":"Зайдите в аудиторию 213.","hint":"После случившегося пора на встречу с куратором.","start":"campus_corridor","allowed":["campus_hall","campus_corridor","campus_courtyard"],"goal_place":"campus_corridor","goal":"classroom","action":"ВОЙТИ В АУДИТОРИЮ","timeline":"chapter_one/classroom"},
-	"homecoming":{"title":"Длинный первый день","objective":"Вернитесь в квартиру.","hint":"Вход в ваш дом — через прихожую.","start":"street","allowed":["street","apartment_hall","bedroom","kitchen","bathroom"],"goal_place":"apartment_hall","goal":"door","action":"ЗАКОНЧИТЬ ПЕРВЫЙ ДЕНЬ","timeline":"chapter_one/end"}
+	"homecoming":{"title":"Длинный первый день","objective":"Вернитесь в квартиру.","hint":"Вход в ваш дом — через прихожую.","start":"student_home","allowed":["student_home","apartment_hall","bedroom","kitchen","bathroom"],"goal_place":"apartment_hall","goal":"door","action":"ЗАКОНЧИТЬ ПЕРВЫЙ ДЕНЬ","timeline":"chapter_one/end"}
 }
 const INSPECTIONS := {
 	"clock":"На часах 03:20. За окном ещё темно. Стоит умыться и попробовать снова уснуть.",

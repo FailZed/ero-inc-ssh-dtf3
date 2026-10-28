@@ -58,7 +58,9 @@ func _work_contract(id: String, minutes: int) -> Dictionary:
 func _shift(id: String) -> Dictionary:
 	var spec := definition("professions", id)
 	if spec.is_empty() or not sim.services.world.is_open(spec): return Rules.fail("shift_unavailable")
-	if spec.has("location") and spec.location != sim.state.world.location: return Rules.fail("wrong_workplace")
+	if spec.has("home_room_kind"):
+		if not sim.is_player_home_location(str(sim.state.world.location)) or sim.room_kind(str(sim.state.world.location)) != spec.home_room_kind: return Rules.fail("wrong_workplace")
+	elif spec.has("location") and spec.location != sim.state.world.location: return Rules.fail("wrong_workplace")
 	var key := "%s:%d" % [id, sim.state.clock.day_index]
 	if int(sim.state.careers.workdays.get(key, 0)) >= int(spec.get("daily_limit", 1)): return Rules.fail("shift_daily_limit")
 	var energy: float = float(spec.get("energy", 20)) * sim.multiplier("resource_cost")

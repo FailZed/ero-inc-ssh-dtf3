@@ -1,21 +1,40 @@
 {
-  "gameplay": {
-    "checks": 662,
+  "previous_gameplay": {
+    "checks": 703,
     "failed": 0,
     "failures": []
   },
   "game_ui": {
-    "checks": 180,
+    "checks": 216,
     "failed": 0,
     "failures": []
   },
-  "mechanics_pack": {
-    "checks": 2477,
+  "previous_mechanics_pack": {
+    "checks": 2799,
     "failed": 0,
     "failures": []
   },
-  "captures": 84,
+  "captures": 321,
+  "current_interaction_pass": {
+    "1920 × 1080": {
+      "captures": 11,
+      "destination": "E:\\GoDot\\ero-inc\\docs\\ui\\captures\\compact-1920",
+      "failed": 0
+    },
+    "1366 × 768": {
+      "captures": 11,
+      "destination": "E:\\GoDot\\ero-inc\\docs\\ui\\captures\\compact-1366",
+      "failed": 0
+    },
+    "2560 × 1080": {
+      "captures": 11,
+      "destination": "E:\\GoDot\\ero-inc\\docs\\ui\\captures\\compact-ultrawide",
+      "failed": 0
+    }
+  },
+  "scope": "Compact context drawer and inventory are the latest pass. Other screens come from the preceding native 103-state review; no repeated general mechanics run was scheduled.",
   "all_capture_bounds_pass": true,
   "controller_validation": "Synthetic cancel input and keyboard focus; no physical controller session.",
+  "review_source": "All images are native Godot captures from disposable worlds; save cards use in-memory fixtures. No existing save file was modified.",
   "known_shutdown_output": "The existing runtime reports 63 ObjectDB instances and 27 resources at exit; the same output was observed before UI changes."
 }

@@ -105,11 +105,73 @@ func formulas_and_turns() -> void:
 	sim.catalog.combat_moves.jab.stamina = 8
 	t.command(sim, "combat", "start", {"npc": "opponent"})
 	t.command(sim, "combat", "action", {"action": "end_turn"})
+	t._check(sim.state.encounters.combat.phase == "defence" and sim.state.encounters.combat.log.is_empty(), "passing the turn waits for a defence decision")
+	while sim.state.encounters.combat.phase == "defence": t.command(sim,"combat","action",{"action":"guard","part":"head"})
 	var attacks := 0
 	for entry in sim.state.encounters.combat.log:
 		if entry.get("actor") == "npc" and entry.has("move"): attacks += 1
 	t._check(attacks == 2 and sim.state.encounters.combat.npc_ap == 0, "NPC spends a complete four-AP turn and cannot overspend")
 	t._check(not sim.services.combat.forecast("jab", "body", "unknown").ok, "combat forecast rejects a third-party attacker")
+
+	# Two rounds with a controlled move catalog: each confirmation is one response.
+	var combat: Dictionary = sim.state.encounters.combat
+	combat.stamina.player = 100.0
+	combat.stamina.npc = 100.0
+	for id in sim.catalog.combat_moves:
+		sim.catalog.combat_moves[id].knockdown = -1.0
+		sim.catalog.combat_moves[id].critical = -1.0
+	var before: Dictionary = sim.export_snapshot()
+	for effort: float in [0.5,1.0,1.5]: sim.services.combat.forecast("jab","legs","player",effort)
+	t._check(sim.export_snapshot()==before,"changing attack previews preserves the world and RNG")
+	var turn := int(combat.turn)
+	t.command(sim,"combat","action",{"action":"attack","move":"jab"})
+	t.command(sim,"combat","action",{"action":"attack","move":"jab"})
+	t._check(combat.phase=="defence" and combat.turn==turn and combat.npc_ap==4,"two two-AP attacks open defence without executing an NPC attack")
+	before = sim.export_snapshot()
+	t._check(not sim.command("combat","action",{"action":"attack"}).ok and sim.export_snapshot()==before,"attack is rejected atomically in the defence phase")
+	combat = sim.state.encounters.combat
+	var saved: Dictionary = sim.export_snapshot()
+	var restored = t.fresh()
+	restored.catalog = sim.catalog.duplicate(true)
+	t._check(restored.restore_snapshot(saved).ok and restored.state.encounters.combat.phase=="defence","a pending defence restores through the existing snapshot")
+	var response := {"action":"guard","part":"head","revision":int(combat.revision)}
+	var count: int = combat.log.size()
+	t.command(sim,"combat","action",response)
+	t.command(restored,"combat","action",response)
+	t._check(sim.export_snapshot()==restored.export_snapshot(),"the restored defence resolves the same RNG and world state")
+	t._check(combat.log.size()==count+1 and combat.npc_ap==2 and combat.phase=="defence","one defence confirmation resolves exactly one NPC action")
+	before = sim.export_snapshot()
+	t._check(not sim.command("combat","action",response).ok and sim.export_snapshot()==before,"repeated stale confirmation cannot execute the next response")
+	combat = sim.state.encounters.combat
+	t.command(sim,"combat","action",{"action":"guard","part":"body"})
+	t._check(combat.phase=="attack" and combat.turn==turn+1 and combat.ap==4 and combat.npc_ap==0,"the last response restores the player turn once")
+	sim.catalog.combat_moves.heavy.stamina = 15
+	t.command(sim,"combat","action",{"action":"attack","move":"heavy","part":"body"})
+	t._check(combat.ap==1 and combat.phase=="attack","a strong attack leaves the remaining point available")
+	sim.catalog.combat_moves.heavy.stamina = 999
+	t.command(sim,"combat","action",{"action":"end_turn"})
+	t._check(combat.phase=="defence" and combat.turn==turn+1,"passing a remaining point waits for the second round defence")
+	for response_index in range(4):
+		if combat.phase!="defence": break
+		t.command(sim,"combat","action",{"action":"guard","part":"legs"})
+	t._check(combat.turn==turn+2 and combat.ap==4,"second round returns to attack after separate responses")
+	t.command(sim,"combat","action",{"action":"end_turn"})
+	combat.statuses.npc.knockdown = 1
+	t.command(sim,"combat","action",{"action":"guard"})
+	t._check(combat.phase=="attack" and combat.log[-1].action=="stand_up","knocked-down opponent stands up without leaving defence stuck")
+	t.command(sim,"combat","action",{"action":"end_turn"})
+	combat.stamina.npc = 0.0
+	t.command(sim,"combat","action",{"action":"guard"})
+	t._check(combat.phase=="attack" and combat.log[-1].action=="recover","exhausted opponent recovers and returns control")
+	t.command(sim,"combat","action",{"action":"end_turn"})
+	for id in sim.catalog.combat_moves: sim.catalog.combat_moves[id].stamina = 999
+	t.command(sim,"combat","action",{"action":"guard"})
+	t._check(combat.phase=="attack" and combat.log[-1].action=="wait","opponent without any available move cannot lock the battle")
+	t.command(sim,"combat","action",{"action":"end_turn"})
+	sim.services.health.set_hp("opponent",0)
+	count = combat.log.size()
+	t.command(sim,"combat","action",{"action":"guard"})
+	t._check(combat.status=="won" and combat.phase=="finished" and combat.npc_ap==0 and combat.log.size()==count,"incapacitated opponent cannot execute a deferred response")
 
 func _advance_to(sim, minute: int) -> void:
 	while sim.state.clock.total_minutes < minute:

@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-10-28T20:19:28.325585+03:00",
+  "main_schema": 10,
+  "mind_version": 2,
+  "audio": "Dummy",
+  "scope": "A03 and supported authored occupation contract",
+  "status": "occupation_checks_passed_adjacent_care_regression_pending",
+  "user_save_files_modified": false,
+  "results": {
+    "rules": {
+      "audio": "Dummy",
+      "checks": 181,
+      "failed": 0,
+      "failures": []
+    },
+    "snapshot-write": {
+      "audio": "Dummy",
+      "ok": true,
+      "stage": "write"
+    },
+    "snapshot-read": {
+      "audio": "Dummy",
+      "ok": true,
+      "stage": "read"
+    },
+    "targeted-before-author-contract": {
+      "checks": 436,
+      "failed": 0,
+      "failures": []
+    },
+    "targeted-after-author-contract": {
+      "checks": 440,
+      "failed": 1,
+      "failures": [
+        "available co-parent starts the same care after schedule conflict is removed"
+      ]
+    }
+  },
+  "source_sha256": {
+    "scripts/mechanics/npc_employment.gd": "e4bc6d100f8971cbe7dfde5c485a8e1db4614376f0a2f27c27c35133f8e8c292",
+    "scripts/mechanics/core/career_progress.gd": "4f9c159413017262e79b68b9953f9e1475fe56b38292f9e9871bbde927539a86",
+    "scripts/mechanics/npc_agency.gd": "ac8347f10a41cd259bf15c30f3fae371a790826188ff7b27de9d1641051afd66",
+    "scripts/mechanics/npc_calendar.gd": "55897216d7e9f8fc9e98d7e6c4dc8ed8b94a1f46e9f279442e09486cba8e4e82",
+    "scripts/mechanics/human_agency.gd": "1422266d7fe6a335f9c2cfef03a4e383e1af22caec140b4f2ac71c816695f55f",
+    "scripts/mechanics/social.gd": "fa909b05a34bb7840b8e9655fd36fc3d2ac8076e93b0d4087c8fa7cc1c6d9f13",
+    "scripts/mechanics/core/agency_validation.gd": "56186d5c9a2931cc10786af8fd7654969ec9defab6bd18dc21db0b80947e9eda",
+    "scripts/gameplay/main_simulation.gd": "3357e3d9f3a03dfec5d74235c01e783f4d089d3415e6188e222a49882da0c708",
+    "scripts/gameplay/city_agency.gd": "b930e0cf6305b96039b7da4261d07a702d60b01529dc41e3a6ee787c0cfc49ec",
+    "data/mechanics/npc_employment.json": "3cf1a29bdbe8e9f7935abf9a1a456e24ec055294a83f322b5781f026a1a22e3e",
+    "data/mechanics/npc_life.json": "07ed9ea3680412f5b535549cad6f79d9ee36ece08466e119568343464e7f6d69",
+    "tests/gameplay/npc_employment.gd": "0734c540ab98a1805b5badbaca6ff1fe77e69b282c82233e67f6ebcf6eec206e",
+    "tests/mechanics/npc_careers.gd": "4c62b95edd03ed716182e02c643a9062834b0133da57e4f41d6bb44b5fafba99"
+  },
+  "native_ui": "Not launched; UI executor owns the screen. Actual UI controls checked headlessly.",
+  "known_dependency": "Final isolated targeted PCK: 440 checks, one adjacent failure: available co-parent starts the same care after schedule conflict is removed. Earlier targeted PCK passed 436 before concurrent health changes. Career-specific 180 checks and cross-process work continuation pass. No full-game success is claimed.",
+  "latest_focused_checks": 181,
+  "authored_assignment_contract": "npc template or social.generate employment: {job,skill_level,workplace}; schedule is authored separately and retained"
+}

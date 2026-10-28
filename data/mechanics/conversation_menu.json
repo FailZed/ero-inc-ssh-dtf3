@@ -1,0 +1,345 @@
+{
+  "schema": 1,
+  "tabs": [
+    {
+      "id": "dialogue",
+      "title": "Диалоги",
+      "icon": "dialogue",
+      "items": [
+        {
+          "title": "Повседневные темы",
+          "choices": [
+            "day",
+            "work",
+            "study",
+            "home",
+            "money",
+            "ct_weather",
+            "ct_music",
+            "ct_books",
+            "ct_movies",
+            "ct_games",
+            "ct_sport",
+            "ct_travel"
+          ]
+        },
+        {
+          "title": "Романтические темы",
+          "choices": [
+            "romance",
+            "attraction",
+            "expectations",
+            "jealousy"
+          ]
+        },
+        {
+          "title": "Важные темы",
+          "choices": [
+            "ct_stress",
+            "ct_future",
+            "family",
+            "fears",
+            "values"
+          ]
+        },
+        {
+          "title": "Закон и криминальные новости",
+          "choices": [
+            "ct_crime",
+            "ct_justice"
+          ]
+        },
+        {
+          "choice": "ct_cute"
+        },
+        {
+          "choice": "ct_politics"
+        },
+        {
+          "choice": "ct_tech"
+        },
+        {
+          "choice": "ct_fights"
+        },
+        {
+          "choice": "ct_cooking"
+        },
+        {
+          "choice": "ct_cards"
+        },
+        {
+          "choice": "joke"
+        },
+        {
+          "choice": "interests"
+        },
+        {
+          "choice": "goal"
+        },
+        {
+          "choice": "plan"
+        },
+        {
+          "choice": "news"
+        },
+        {
+          "choice": "ct_club"
+        }
+      ]
+    },
+    {
+      "id": "conflict",
+      "title": "Агрессия",
+      "icon": "conflict",
+      "items": [
+        {
+          "title": "Отдай мне…",
+          "choices": [
+            "hg_demand",
+            "hg_item"
+          ]
+        },
+        {
+          "choice": "hg_steal"
+        },
+        {
+          "choice": "hg_taunt"
+        },
+        {
+          "choice": "hg_extort"
+        },
+        {
+          "choice": "hg_beat"
+        },
+        {
+          "choice": "hg_threat"
+        },
+        {
+          "choice": "hg_drive"
+        },
+        {
+          "choice": "hg_pressure"
+        },
+        {
+          "choice": "hg_shave"
+        },
+        {
+          "choice": "hg_fight"
+        },
+        {
+          "choice": "hg_stab"
+        },
+        {
+          "choice": "hg_humiliate"
+        },
+        {
+          "choice": "conversation_dispute"
+        },
+        {
+          "choice": "apologize"
+        },
+        {
+          "choice": "leave"
+        }
+      ]
+    },
+    {
+      "id": "romance",
+      "title": "Романтика",
+      "icon": "romance",
+      "items": [
+        {
+          "choice": "rq_address"
+        },
+        {
+          "choice": "rq_compliment"
+        },
+        {
+          "choice": "rq_gaze"
+        },
+        {
+          "choice": "rq_hand"
+        },
+        {
+          "choice": "rq_headpat"
+        },
+        {
+          "choice": "rq_embrace"
+        },
+        {
+          "choice": "rq_cheek"
+        },
+        {
+          "choice": "rq_kiss"
+        },
+        {
+          "choice": "rq_confess"
+        },
+        {
+          "choice": "rq_miss"
+        },
+        {
+          "choice": "court"
+        },
+        {
+          "choice": "partner"
+        },
+        {
+          "choice": "rq_separate"
+        }
+      ]
+    },
+    {
+      "id": "actions",
+      "title": "Активности",
+      "icon": "activities",
+      "items": [
+        {
+          "choice": "ac_walk"
+        },
+        {
+          "choice": "ac_rest"
+        },
+        {
+          "choice": "ac_silent"
+        },
+        {
+          "choice": "ac_meal"
+        },
+        {
+          "choice": "ac_tea"
+        },
+        {
+          "choice": "ac_cards"
+        },
+        {
+          "choice": "ac_console"
+        },
+        {
+          "choice": "ac_study"
+        },
+        {
+          "choice": "ac_run"
+        },
+        {
+          "choice": "ac_arm"
+        },
+        {
+          "choice": "ac_spar"
+        },
+        {
+          "choice": "ac_massage"
+        },
+        {
+          "choice": "ac_shop"
+        },
+        {
+          "choice": "ac_swim"
+        },
+        {
+          "choice": "ac_volley"
+        },
+        {
+          "choice": "ac_sun"
+        },
+        {
+          "choice": "ac_group"
+        },
+        {
+          "choice": "ac_water"
+        },
+        {
+          "choice": "fn_give"
+        },
+        {
+          "choice": "fn_borrow"
+        },
+        {
+          "choice": "fn_repay"
+        },
+        {
+          "choice": "encourage"
+        },
+        {
+          "choice": "help"
+        },
+        {
+          "choice": "apologize"
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Вопросы",
+      "icon": "questions",
+      "items": [
+        {
+          "title": "Личные вопросы",
+          "choices": [
+            "past",
+            "family",
+            "fears",
+            "feelings",
+            "qu_music",
+            "qu_book",
+            "qu_money",
+            "qu_boundaries"
+          ]
+        },
+        {
+          "title": "Планы и встречи",
+          "choices": [
+            "plan",
+            "goal",
+            "qu_schedule",
+            "qu_home"
+          ]
+        },
+        {
+          "title": "Взгляды и самостоятельность",
+          "choices": [
+            "qu_autonomy",
+            "qu_image",
+            "qu_election",
+            "expectations"
+          ]
+        },
+        {
+          "choice": "qu_support"
+        }
+      ]
+    },
+    {
+      "id": "intimacy",
+      "title": "Близость",
+      "icon": "intimacy",
+      "items": [
+        {
+          "choice": "boundaries"
+        },
+        {
+          "choice": "privacy"
+        },
+        {
+          "choice": "safer_intimacy"
+        }
+      ]
+    },
+    {
+      "id": "boundaries",
+      "title": "Границы и отказ",
+      "icon": "boundaries",
+      "items": [
+        {
+          "choice": "boundaries"
+        },
+        {
+          "choice": "apologize"
+        },
+        {
+          "choice": "leave"
+        }
+      ]
+    }
+  ]
+}

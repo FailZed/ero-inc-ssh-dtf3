@@ -1,58 +1,591 @@
 {
-  "settings": {
-    "start_minutes": 1427, "start_location": "bedroom", "start_cash": 250,
-    "stat_cap": 100, "xp_base": 100, "xp_growth": 50, "xp_multiplier": 1.0,
-    "points_per_level": 2, "base_capacity": 20.0, "rest_per_minute": 0.25,
-    "treatment_cost": 40, "credit_limit": 1000, "weekly_interest": 0.01,
-    "weekly_debt_interest": 0.05, "memory_limit": 64, "max_advance_minutes": 43200,
-    "need_decay_per_hour": {"energy": 1.5, "satiety": 2.0, "hygiene": 1.0},
-    "weather_types": ["clear", "cloudy", "rain"], "disabled_tags": []
+  "achievements": {
+    "first_level": {
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 2
+      },
+      "rewards": [
+        {
+          "kind": "unlock",
+          "id": "milestone_first_level"
+        }
+      ]
+    }
   },
-  "attributes": {"strength": 5, "agility": 5, "charisma": 5, "intellect": 5, "luck": 5, "endurance": 5, "erudition": 5, "authority": 5, "cunning": 5},
-  "difficulties": {"easy": {"xp": 1.1, "need_decay": 0.75, "resource_cost": 0.8}, "normal": {"xp": 1.0, "need_decay": 1.0, "resource_cost": 1.0}, "hard": {"xp": 0.9, "need_decay": 1.25, "resource_cost": 1.25}},
-  "skills": {"study": {}, "cooking": {}, "computing": {}, "fighting": {}, "stealth": {}, "cards": {}, "journalism": {}},
-  "effects": {
-    "focused": {"minutes": 120, "stats": {"intellect": 2}, "multipliers": {}},
-    "energized": {"minutes": 60, "stats": {"endurance": 2}, "multipliers": {"agility": 1.1}}
-  },
-  "perks": {"quick_learner": {"cost": 1, "requirements": {"path": "player.level", "op": "gte", "value": 2}, "stats": {"intellect": 1}, "xp_multiplier": 1.1}},
-  "substances": {"stimulant": {"effect": "energized", "exposure": 10, "withdrawal_after": 1440, "withdrawal_cost": 1}},
-  "items": {
-    "meal": {"weight": 0.4, "price": 20, "category": "food", "restore": {"satiety": 35, "mood": 3}},
-    "grain": {"weight": 0.2, "price": 5, "category": "ingredient"},
-    "vegetable": {"weight": 0.3, "price": 6, "category": "ingredient"},
-    "jacket": {"weight": 1.0, "price": 60, "category": "clothing", "slot": "outerwear", "stats": {"charisma": 1}},
-    "book": {"weight": 0.5, "price": 30, "category": "books"},
-    "lockpick": {"weight": 0.1, "price": 15, "category": "tool"},
-    "computer": {"weight": 3.0, "price": 150, "category": "equipment", "equipment": "computer"},
-    "stove": {"weight": 4.0, "price": 100, "category": "equipment", "equipment": "stove"}
-  },
-  "recipes": {"vegetable_meal": {"ingredients": {"grain": 1, "vegetable": 1}, "outputs": {"meal": 1}, "equipment": ["stove"], "skill": "cooking", "success_chance": 1.0, "xp": 8, "minutes": 20}},
-  "shops": {"market": {"location": "global_map", "hours": [480, 1320], "price_multiplier": 1.0, "sell_ratio": 0.5, "stock": {"meal": 20, "grain": 30, "vegetable": 30, "jacket": 5, "book": 10, "lockpick": 10, "computer": 2, "stove": 2}}},
-  "locations": {
-    "bedroom": {"routes": {"apartment_hall": {"minutes": 1}}},
-    "apartment_hall": {"routes": {"bedroom": {"minutes": 1}, "kitchen": {"minutes": 1}, "bathroom": {"minutes": 1}, "global_map": {"minutes": 5}}},
-    "kitchen": {"routes": {"apartment_hall": {"minutes": 1}}},
-    "bathroom": {"routes": {"apartment_hall": {"minutes": 1}}},
-    "global_map": {"routes": {"apartment_hall": {"minutes": 5}, "training_center": {"minutes": 10}}},
-    "training_center": {"hours": [480, 1200], "weekdays": [1, 2, 3, 4, 5], "routes": {"global_map": {"minutes": 10}}}
-  },
-  "jobs": {"freelance": {"minutes": 60, "energy": 8, "pay": 40, "xp": 10, "skill": "computing", "daily_limit": 3, "requirements": {"path": "world.equipment", "op": "contains", "value": "computer"}}},
-  "assets": {"studio": {"price": 200, "upgrade_cost": 100, "max_level": 3, "daily_income": 20, "daily_expense": 2, "sell_ratio": 0.6}},
-  "properties": {"apartment": {"location": "bedroom", "price": 1500, "monthly_rent": 180, "tenant_rent": 100, "tenant_capacity": 2, "furniture_slots": 8, "sell_ratio": 0.7}},
-  "projects": {"website_order": {"effort": 120, "pay": 100, "requirements": {"path": "world.equipment", "op": "contains", "value": "computer"}}},
-  "lessons": {"computing_class": {"location": "training_center", "hours": [480, 720], "weekdays": [1, 2, 3, 4, 5], "minutes": 60, "skill": "computing", "xp": 20, "grade": 3, "absence_penalty": 1}},
-  "npc_templates": {"resident": {"age": 24, "home": "bedroom", "money": 100, "preferences": ["books"], "personalities": ["calm", "confident", "reserved"], "origins": ["river_district", "city_center", "suburbs"], "goals": ["career", "creativity", "community"], "activities": ["read", "walk"], "stat_min": 3, "stat_max": 10, "schedule": [{"location": "training_center", "activity": "study", "hours": [480, 960], "weekdays": [1, 2, 3, 4, 5]}, {"location": "global_map", "activity": "walk", "hours": [960, 1200]}]}},
-  "npc_activities": {"read": {"locations": ["bedroom"], "weight": 2, "skill": "study", "xp": 1}, "walk": {"locations": ["global_map"], "weight": 1}},
-  "interactions": {"talk": {"minutes": 5, "chance": 0.7, "fatigue": 8, "success": {"affinity": 4, "trust": 2}, "failure": {"affinity": -1}}, "invite_meeting": {"minutes": 5, "chance": 0.5, "fatigue": 12, "success": {"affinity": 6, "attraction": 3}, "failure": {"affinity": -2}}},
-  "organizations": {"creative_collective": {"budget": 100, "capacity": 10}},
-  "group_projects": {"exhibition": {"cost": 30, "effort": 5, "reputation": 10, "reward": 50}},
   "actions": {
-    "exercise": {"minutes": 30, "costs": {"player.needs.energy": 5}, "daily_limit": 4, "effects": [{"kind": "skill", "id": "fighting", "amount": 10}]},
-    "read": {"minutes": 30, "costs": {"player.needs.energy": 2}, "requirements": {"path": "inventory.items.book", "op": "gte", "value": 1}, "effects": [{"kind": "skill", "id": "study", "amount": 10}]}
+    "exercise": {
+      "minutes": 30,
+      "costs": {
+        "player.needs.energy": 5
+      },
+      "daily_limit": 4,
+      "effects": [
+        {
+          "kind": "skill",
+          "id": "fighting",
+          "amount": 10
+        }
+      ]
+    },
+    "read": {
+      "minutes": 30,
+      "costs": {
+        "player.needs.energy": 2
+      },
+      "requirements": {
+        "path": "inventory.items.book",
+        "op": "gte",
+        "value": 1
+      },
+      "effects": [
+        {
+          "kind": "skill",
+          "id": "study",
+          "amount": 10
+        }
+      ]
+    }
   },
-  "quests": {"first_steps": {"objectives": {"practice": 2}, "deadline_minutes": 2880, "rewards": [{"kind": "money", "amount": 50}, {"kind": "xp", "amount": 30}]}},
-  "events": {"first_evening": {"once": true, "priority": 1, "requirements": {"path": "clock.phase", "value": "evening"}, "effects": [{"kind": "flag", "id": "evening_seen", "value": true}]}},
-  "achievements": {"first_level": {"requirements": {"path": "player.level", "op": "gte", "value": 2}, "rewards": [{"kind": "unlock", "id": "milestone_first_level"}]}},
-  "conditions": {"recovery": {"duration": 1440, "stages": [{"after": 60}, {"after": 720}]}, "pregnancy": {"duration": 388800, "stages": [{"after": 43200}, {"after": 129600}, {"after": 259200}]}}
+  "assets": {
+    "studio": {
+      "price": 200,
+      "upgrade_cost": 100,
+      "max_level": 3,
+      "daily_income": 20,
+      "daily_expense": 2,
+      "sell_ratio": 0.6
+    }
+  },
+  "attributes": {
+    "strength": 5,
+    "agility": 5,
+    "charisma": 5,
+    "intellect": 5,
+    "luck": 5,
+    "endurance": 5,
+    "erudition": 5,
+    "authority": 5,
+    "cunning": 5
+  },
+  "conditions": {
+    "recovery": {
+      "duration": 1440,
+      "stages": [
+        {
+          "after": 60
+        },
+        {
+          "after": 720
+        }
+      ]
+    },
+    "pregnancy": {
+      "duration": 388800,
+      "stages": [
+        {
+          "after": 43200
+        },
+        {
+          "after": 129600
+        },
+        {
+          "after": 259200
+        }
+      ]
+    }
+  },
+  "difficulties": {
+    "easy": {
+      "xp": 1.1,
+      "need_decay": 0.75,
+      "resource_cost": 0.8
+    },
+    "normal": {
+      "xp": 1.0,
+      "need_decay": 1.0,
+      "resource_cost": 1.0
+    },
+    "hard": {
+      "xp": 0.9,
+      "need_decay": 1.25,
+      "resource_cost": 1.25
+    }
+  },
+  "effects": {
+    "focused": {
+      "minutes": 120,
+      "stats": {
+        "intellect": 2
+      },
+      "multipliers": {}
+    },
+    "energized": {
+      "minutes": 60,
+      "stats": {
+        "endurance": 2
+      },
+      "multipliers": {
+        "agility": 1.1
+      }
+    }
+  },
+  "events": {
+    "first_evening": {
+      "once": true,
+      "priority": 1,
+      "requirements": {
+        "path": "clock.phase",
+        "value": "evening"
+      },
+      "effects": [
+        {
+          "kind": "flag",
+          "id": "evening_seen",
+          "value": true
+        }
+      ]
+    }
+  },
+  "group_projects": {
+    "exhibition": {
+      "cost": 30,
+      "effort": 5,
+      "reputation": 10,
+      "reward": 50
+    }
+  },
+  "interactions": {
+    "talk": {
+      "minutes": 5,
+      "chance": 0.7,
+      "fatigue": 8,
+      "success": {
+        "affinity": 4,
+        "trust": 2
+      },
+      "failure": {
+        "affinity": -1
+      }
+    },
+    "invite_meeting": {
+      "minutes": 5,
+      "chance": 0.5,
+      "fatigue": 12,
+      "success": {
+        "affinity": 6,
+        "attraction": 3
+      },
+      "failure": {
+        "affinity": -2
+      }
+    }
+  },
+  "items": {
+    "meal": {
+      "weight": 0.4,
+      "price": 20,
+      "category": "food",
+      "restore": {
+        "satiety": 35,
+        "mood": 3
+      }
+    },
+    "grain": {
+      "weight": 0.2,
+      "price": 5,
+      "category": "ingredient"
+    },
+    "vegetable": {
+      "weight": 0.3,
+      "price": 6,
+      "category": "ingredient"
+    },
+    "jacket": {
+      "weight": 1.0,
+      "price": 60,
+      "category": "clothing",
+      "slot": "outerwear",
+      "stats": {
+        "charisma": 1
+      }
+    },
+    "book": {
+      "weight": 0.5,
+      "price": 30,
+      "category": "books"
+    },
+    "lockpick": {
+      "weight": 0.1,
+      "price": 15,
+      "category": "tool"
+    },
+    "computer": {
+      "weight": 3.0,
+      "price": 150,
+      "category": "equipment",
+      "equipment": "computer"
+    },
+    "stove": {
+      "weight": 4.0,
+      "price": 100,
+      "category": "equipment",
+      "equipment": "stove"
+    }
+  },
+  "jobs": {
+    "freelance": {
+      "minutes": 60,
+      "energy": 8,
+      "pay": 40,
+      "xp": 10,
+      "skill": "computing",
+      "daily_limit": 3,
+      "requirements": {
+        "path": "world.equipment",
+        "op": "contains",
+        "value": "computer"
+      }
+    }
+  },
+  "lessons": {
+    "computing_class": {
+      "location": "training_center",
+      "hours": [
+        480,
+        720
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "minutes": 60,
+      "skill": "computing",
+      "xp": 20,
+      "grade": 3,
+      "absence_penalty": 1
+    }
+  },
+  "location_roles": {
+    "trade": "global_map",
+    "study": "training_center",
+    "supply_shop": "global_map",
+    "clinic": "clinic"
+  },
+  "locations": {
+    "bedroom": {
+      "routes": {
+        "apartment_hall": {
+          "minutes": 1
+        }
+      },
+      "facilities": [],
+      "public": false
+    },
+    "apartment_hall": {
+      "routes": {
+        "bedroom": {
+          "minutes": 1
+        },
+        "kitchen": {
+          "minutes": 1
+        },
+        "bathroom": {
+          "minutes": 1
+        },
+        "global_map": {
+          "minutes": 5
+        }
+      },
+      "facilities": [],
+      "public": false
+    },
+    "kitchen": {
+      "routes": {
+        "apartment_hall": {
+          "minutes": 1
+        }
+      },
+      "facilities": [
+        "sink"
+      ],
+      "public": false
+    },
+    "bathroom": {
+      "routes": {
+        "apartment_hall": {
+          "minutes": 1
+        }
+      },
+      "facilities": [
+        "toilet",
+        "sanitary_private",
+        "sink"
+      ],
+      "public": false
+    },
+    "global_map": {
+      "routes": {
+        "apartment_hall": {
+          "minutes": 5
+        },
+        "training_center": {
+          "minutes": 10
+        }
+      },
+      "facilities": [
+        "toilet",
+        "sanitary_private",
+        "supplies"
+      ],
+      "public": true
+    },
+    "training_center": {
+      "hours": [
+        480,
+        1200
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "routes": {
+        "global_map": {
+          "minutes": 10
+        }
+      },
+      "facilities": [],
+      "public": true
+    }
+  },
+  "npc_activities": {
+    "read": {
+      "locations": [
+        "bedroom"
+      ],
+      "weight": 2,
+      "skill": "study",
+      "xp": 1
+    },
+    "walk": {
+      "locations": [
+        "global_map"
+      ],
+      "weight": 1
+    }
+  },
+  "npc_templates": {
+    "resident": {
+      "age": 24,
+      "home": "bedroom",
+      "money": 100,
+      "preferences": [
+        "books"
+      ],
+      "personalities": [
+        "calm",
+        "confident",
+        "reserved"
+      ],
+      "origins": [
+        "river_district",
+        "city_center",
+        "suburbs"
+      ],
+      "goals": [
+        "career",
+        "creativity",
+        "community"
+      ],
+      "activities": [
+        "read",
+        "walk"
+      ],
+      "stat_min": 3,
+      "stat_max": 10,
+      "schedule": [
+        {
+          "location": "training_center",
+          "activity": "study",
+          "hours": [
+            480,
+            960
+          ],
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "location": "global_map",
+          "activity": "walk",
+          "hours": [
+            960,
+            1200
+          ]
+        }
+      ]
+    }
+  },
+  "organizations": {
+    "creative_collective": {
+      "budget": 100,
+      "capacity": 10
+    }
+  },
+  "perks": {
+    "quick_learner": {
+      "cost": 1,
+      "requirements": {
+        "path": "player.level",
+        "op": "gte",
+        "value": 2
+      },
+      "stats": {
+        "intellect": 1
+      },
+      "xp_multiplier": 1.1
+    }
+  },
+  "projects": {
+    "website_order": {
+      "effort": 120,
+      "pay": 100,
+      "requirements": {
+        "path": "world.equipment",
+        "op": "contains",
+        "value": "computer"
+      }
+    }
+  },
+  "properties": {
+    "apartment": {
+      "location": "bedroom",
+      "price": 1500,
+      "monthly_rent": 180,
+      "tenant_rent": 100,
+      "tenant_capacity": 2,
+      "furniture_slots": 8,
+      "sell_ratio": 0.7
+    }
+  },
+  "quests": {
+    "first_steps": {
+      "objectives": {
+        "practice": 2
+      },
+      "deadline_minutes": 2880,
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 50
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        }
+      ]
+    }
+  },
+  "recipes": {
+    "vegetable_meal": {
+      "ingredients": {
+        "grain": 1,
+        "vegetable": 1
+      },
+      "outputs": {
+        "meal": 1
+      },
+      "equipment": [
+        "stove"
+      ],
+      "skill": "cooking",
+      "success_chance": 1.0,
+      "xp": 8,
+      "minutes": 20
+    }
+  },
+  "settings": {
+    "start_minutes": 1427,
+    "start_location": "bedroom",
+    "start_cash": 250,
+    "stat_cap": 100,
+    "xp_base": 100,
+    "xp_growth": 50,
+    "xp_multiplier": 1.0,
+    "points_per_level": 2,
+    "base_capacity": 20.0,
+    "rest_per_minute": 0.25,
+    "treatment_cost": 40,
+    "credit_limit": 1000,
+    "weekly_interest": 0.01,
+    "weekly_debt_interest": 0.05,
+    "memory_limit": 64,
+    "max_advance_minutes": 43200,
+    "need_decay_per_hour": {
+      "energy": 1.5,
+      "satiety": 2.0,
+      "hygiene": 1.0
+    },
+    "weather_types": [
+      "clear",
+      "cloudy",
+      "rain"
+    ],
+    "disabled_tags": [],
+    "home_rooms": {
+      "hall": "apartment_hall",
+      "bedroom": "bedroom",
+      "bathroom": "bathroom",
+      "kitchen": "kitchen"
+    }
+  },
+  "shops": {
+    "market": {
+      "location": "global_map",
+      "hours": [
+        480,
+        1320
+      ],
+      "price_multiplier": 1.0,
+      "sell_ratio": 0.5,
+      "stock": {
+        "meal": 20,
+        "grain": 30,
+        "vegetable": 30,
+        "jacket": 5,
+        "book": 10,
+        "lockpick": 10,
+        "computer": 2,
+        "stove": 2
+      }
+    }
+  },
+  "skills": {
+    "study": {},
+    "cooking": {},
+    "computing": {},
+    "fighting": {},
+    "stealth": {},
+    "cards": {},
+    "journalism": {}
+  },
+  "substances": {
+    "stimulant": {
+      "effect": "energized",
+      "exposure": 10,
+      "withdrawal_after": 1440,
+      "withdrawal_cost": 1
+    }
+  }
 }

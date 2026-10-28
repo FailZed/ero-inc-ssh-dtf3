@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "audio": "Dummy",
+  "scope": "Prescribed care steps, finite supplies, private calendar, misses, follow-up and autonomous NPC execution",
+  "focused": [
+    {
+      "runner": "tests/mechanics/run_health_care_plans.gd",
+      "checks": 120,
+      "failed": 0,
+      "log": "focused.log"
+    },
+    {
+      "runner": "tests/mechanics/run_health_care_plans.gd",
+      "mode": "isolated exported PCK",
+      "checks": 120,
+      "failed": 0,
+      "exit_code": 0,
+      "log": "focused-pack.log",
+      "pack": "E:/GoDot/.dev-setup/health-care-f07a384154534050a6e99adff6dd5cfe.pck"
+    },
+    {
+      "runner": "tests/gameplay/run_health_care_plans.gd",
+      "mode": "main project headless UI and commands",
+      "checks": 11,
+      "failed": 0,
+      "log": "main-ui.log"
+    },
+    {
+      "runner": "tests/mechanics/run_adult_health.gd",
+      "checks": 127,
+      "failed": 0,
+      "log": "adult-health.log"
+    },
+    {
+      "runner": "tests/mechanics/run_health_relationships.gd",
+      "checks": 102,
+      "failed": 0,
+      "log": "health-relationships.log"
+    },
+    {
+      "runner": "tests/mechanics/run_npc_planner.gd",
+      "checks": 92,
+      "failed": 0,
+      "log": "planner.log"
+    },
+    {
+      "runner": "tests/mechanics/run_npc_reproduction.gd",
+      "checks": 282,
+      "failed": 0,
+      "log": "npc-reproduction.log"
+    }
+  ],
+  "broad_run": {
+    "command": "tools/test_mechanics.ps1 -Isolated -Pack",
+    "checks": 3191,
+    "failed": 15,
+    "exit_code": 1,
+    "log": "mechanics-pack.log",
+    "status": "Historical concurrent-work snapshot, not a final green build",
+    "subsequent_verification": "Eight affected medical/calendar/mandatory-obligation assertions now pass in focused suites. The six career assertions and one post-fight assertion belong to other active owners and were not re-run here."
+  },
+  "visual_qa": "No native screenshot taken; current native UI ownership belongs to UI executor. Main-project headless tests exercised real buttons and transactions.",
+  "known_exit_messages": "Main project retains pre-existing Live2D shutdown messages: 63 ObjectDB instances, 27 resources. Focused standalone PCK exits cleanly.",
+  "schema": {
+    "adult_health": 2,
+    "main_snapshot": "Owned by career integration; no change in this stage"
+  },
+  "saves": "No user save slots read or written; obsolete adult_health snapshots reject atomically without migration.",
+  "parity": "Original fictional EroInc care timings and effects; no clinical accuracy or donor numerical parity claimed."
+}

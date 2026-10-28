@@ -15,6 +15,7 @@ var _content: VBoxContainer
 var _chapter_title: Label
 var _tabs: Array[Button] = []
 var _chapter := 0
+var _return_focus: WeakRef
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -92,12 +93,16 @@ func _fit_book() -> void:
 	var narrow := size.x < 900.0 or size.y < 600.0
 	_chapter_title.add_theme_font_size_override("font_size", 20 if narrow else 29)
 	for tab in _tabs: tab.add_theme_font_size_override("font_size", 12 if narrow else 16)
+	_wire_focus.call_deferred()
+
+func _wire_focus() -> void:
+	if is_inside_tree() and is_visible_in_tree(): UI.focus_loop(_book)
 
 func _select_chapter(index: int) -> void:
 	_chapter = index
 	_chapter_title.text = str(CHAPTERS[index].title).to_upper()
 	for tab_index in _tabs.size():
-		_tabs[tab_index].add_theme_stylebox_override("normal", HUD.shortcut_style(tab_index == index))
+		_tabs[tab_index].add_theme_stylebox_override("normal", HUD.button_style(Color(0.05,0.12,0.18,0.65) if tab_index == index else Color.TRANSPARENT,UI.BLUE if tab_index == index else Color.TRANSPARENT))
 	UI.clear(_content)
 	for spec in CHAPTERS[index].items:
 		var button := UI.button(_content, spec[1], _open_screen.bind(spec[0]))
@@ -113,12 +118,15 @@ func _select_chapter(index: int) -> void:
 		HUD.quiet_button(button)
 	if is_visible_in_tree() and not _content.get_children().is_empty():
 		(_content.get_child(0) as Control).grab_focus()
+	_wire_focus.call_deferred()
 
 func _open_screen(id: String) -> void:
 	hide_book()
 	screen_requested.emit(id)
 
 func show_book() -> void:
+	var previous := get_viewport().gui_get_focus_owner()
+	_return_focus = weakref(previous) if previous != null and not is_ancestor_of(previous) else null
 	visible = true
 	_select_chapter(_chapter)
 
@@ -126,3 +134,14 @@ func hide_book() -> void:
 	if not visible: return
 	visible = false
 	closed.emit()
+	if _return_focus != null: UI.restore_focus.call_deferred(_return_focus)
+
+func _unhandled_key_input(event: InputEvent) -> void:
+	if not visible or not event.is_pressed(): return
+	get_viewport().set_input_as_handled()
+	if event.is_action_pressed("ui_cancel") or (event is InputEventKey and event.keycode == KEY_B): hide_book()
+
+func _unhandled_input(event: InputEvent) -> void:
+	if visible and event.is_action_pressed("ui_cancel"):
+		get_viewport().set_input_as_handled()
+		hide_book()

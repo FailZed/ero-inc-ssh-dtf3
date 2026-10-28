@@ -508,7 +508,7 @@ func is_game_time_runtime_active() -> bool:
 		return false
 
 	var scene_path := current_scene.scene_file_path
-	return scene_path == GAME_SCENE_PATH or scene_path.begins_with("res://locations/") or scene_path.begins_with("res://scenes/hub/")
+	return scene_path == GAME_SCENE_PATH or scene_path.begins_with("res://scenes/hub/")
 
 
 func pause_autosave_runtime() -> void:

@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-28",
+  "engine": "Godot 4.7.2 stable",
+  "model": "MDRG interaction_model via existing native Cubism",
+  "visible_isolated": {
+    "failed": 0,
+    "failures": [],
+    "native_parameters": {
+      "ParamBlush": {
+        "default": 0.0,
+        "id": "ParamBlush",
+        "max": 2.0,
+        "min": 0.0
+      },
+      "ParamBrowLEmote": {
+        "default": 0.0,
+        "id": "ParamBrowLEmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowLRot": {
+        "default": 0.0,
+        "id": "ParamBrowLRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowLY": {
+        "default": 0.0,
+        "id": "ParamBrowLY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowREmote": {
+        "default": 0.0,
+        "id": "ParamBrowREmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowRRot": {
+        "default": 0.0,
+        "id": "ParamBrowRRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowRY": {
+        "default": 0.0,
+        "id": "ParamBrowRY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeLShock": {
+        "default": 0.0,
+        "id": "ParamEyeLShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeRShock": {
+        "default": 0.0,
+        "id": "ParamEyeRShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyesHappy": {
+        "default": 0.0,
+        "id": "ParamEyesHappy",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadY": {
+        "default": 0.0,
+        "id": "ParamHeadY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadZ": {
+        "default": 0.0,
+        "id": "ParamHeadZ",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamMouthForm": {
+        "default": 0.0,
+        "id": "ParamMouthForm",
+        "max": 1.0,
+        "min": -1.0
+      }
+    },
+    "passed": 75
+  },
+  "packed_isolated": {
+    "failed": 0,
+    "failures": [],
+    "native_parameters": {
+      "ParamBlush": {
+        "default": 0.0,
+        "id": "ParamBlush",
+        "max": 2.0,
+        "min": 0.0
+      },
+      "ParamBrowLEmote": {
+        "default": 0.0,
+        "id": "ParamBrowLEmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowLRot": {
+        "default": 0.0,
+        "id": "ParamBrowLRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowLY": {
+        "default": 0.0,
+        "id": "ParamBrowLY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowREmote": {
+        "default": 0.0,
+        "id": "ParamBrowREmote",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamBrowRRot": {
+        "default": 0.0,
+        "id": "ParamBrowRRot",
+        "max": 30.0,
+        "min": -30.0
+      },
+      "ParamBrowRY": {
+        "default": 0.0,
+        "id": "ParamBrowRY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeLShock": {
+        "default": 0.0,
+        "id": "ParamEyeLShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyeRShock": {
+        "default": 0.0,
+        "id": "ParamEyeRShock",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamEyesHappy": {
+        "default": 0.0,
+        "id": "ParamEyesHappy",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadY": {
+        "default": 0.0,
+        "id": "ParamHeadY",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamHeadZ": {
+        "default": 0.0,
+        "id": "ParamHeadZ",
+        "max": 1.0,
+        "min": -1.0
+      },
+      "ParamMouthForm": {
+        "default": 0.0,
+        "id": "ParamMouthForm",
+        "max": 1.0,
+        "min": -1.0
+      }
+    },
+    "passed": 74
+  },
+  "capture": {
+    "path": "E:\\Ai\\ComfyUI-EroInc\\runtime\\cubism\\reactions-native-comparison.png",
+    "kind": "actual native render in enlarged verification view; not game UI, not new art",
+    "visually_inspected": true
+  },
+  "audio_driver": "Dummy",
+  "channels": {
+    "wardrobe": 5,
+    "gaze": 10,
+    "idle": 15,
+    "expression": 45,
+    "blink": 50,
+    "gesture": 55,
+    "speech": 70
+  },
+  "changed_files": [
+    "scripts/characters/conversation_actor.gd",
+    "data/characters/conversation_reactions.json",
+    "tests/characters/conversation.gd",
+    "tests/characters/reactions.gd"
+  ],
+  "bounds_confirmed": {
+    "ParamEyeOpen": {
+      "min": -1,
+      "default": 0,
+      "max": 0
+    },
+    "ParamMouthOpen": {
+      "min": -1,
+      "default": 0,
+      "max": 2
+    }
+  },
+  "limits": [
+    "Text paced articulation only; no voice or audio phoneme recognition.",
+    "No new model, deformers, art, product scene or UI.",
+    "Existing shared main-build executable not re-exported in this narrow stage. Source actor and isolated PCK are updated.",
+    "Combat, social catalog, conversation_room/options/session, main saves and desktop mouse untouched."
+  ],
+  "hashes": {
+    "scripts/characters/conversation_actor.gd": "9ddcdeaddc92f4b25c9e4b7df9ad952ebb453aeb48049cfa734981325260041c",
+    "data/characters/conversation_reactions.json": "2d679ddb83e082429a4fc61f808202b782ee4bfc16ac025d02f8401a09e9b8b2",
+    "tests/characters/conversation.gd": "4f85a4c57c8d0a185c0a01094601d49c168822ee4d958150c6a8e54deba6c673",
+    "tests/characters/reactions.gd": "6eaf98e23a6cdb8c17e09859b9b9273977d08b7f96c1c6be99b226bb78c0b447"
+  }
+}

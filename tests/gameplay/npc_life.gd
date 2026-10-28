@@ -79,7 +79,7 @@ func run() -> void:
 	sim.rng.seed = 1
 	for i in range(20):
 		if sim.state.encounters.combat.status != "active": break
-		t.check(game.execute("combat", "action", {"action": "escape"}).ok, "combat escape resolves through the actual encounter")
+		t.check(game.execute("combat", "action", {"action": "guard" if sim.state.encounters.combat.phase == "defence" else "escape"}).ok, "combat escape resolves through the actual encounter")
 	t.check(sim.state.encounters.combat.status != "active" and float(Social.bond(sim, "asuka").grievance) > grievance, "a combat encounter leaves a directed emotional and relationship consequence")
 	var stored: Dictionary = JSON.parse_string(JSON.stringify(t.dialogic.VAR.var_storage.World))
 	var snapshot: Dictionary = JSON.parse_string(JSON.stringify(sim.export_snapshot()))

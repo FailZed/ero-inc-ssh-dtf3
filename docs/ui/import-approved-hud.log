@@ -1,0 +1,49 @@
+ERROR: Failed to open 'E:/GoDot/ero-inc/addons/gd_cubism/bin/~libgd_cubism.windows.debug.x86_64.dll'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Error copying library: E:/GoDot/ero-inc/addons/gd_cubism/bin/libgd_cubism.windows.debug.x86_64.dll
+   at: open_dynamic_library (platform/windows/os_windows.cpp:502)
+ERROR: Can't open GDExtension dynamic library: 'res://addons/gd_cubism/gd_cubism.gdextension'.
+   at: open_library (core/extension/gdextension.cpp:811)
+ERROR: Error loading extension: 'res://addons/gd_cubism/gd_cubism.gdextension'.
+   at: load_extensions (core/extension/gdextension_manager.cpp:333)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Unable to open Android 'build-tools' directory.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Инициализация проекта (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Сканирование структуры файлов…[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Загрузка глобальных имен классов…[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Проверка GDExtensions…[39m[0m
+WARNING: [CSM][I]Live2D Cubism Core version: 05.00.0000 (83886080)
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::StartUp() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::Initialize() is complete.
+
+   at: output (src\register_types.cpp:42)
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Создание скриптов автозагрузки…[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Инициализация плагинов…[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Начало сканирование файлов…[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+WARNING: Canceling suspended execution of "_ready" due to a script reload.
+   at: cancel_pending_functions (modules/gdscript/gdscript.cpp:1497)
+WARNING: Canceling suspended execution of "_ready" due to a script reload.
+   at: cancel_pending_functions (modules/gdscript/gdscript.cpp:1497)
+[   0% ] [90m[1mloading_editor_layout[22m | Started Загрузка редактора (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Загрузка макета редактора…[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Загрузка док-панели…[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Повторное открытие сцен…[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Загрузка макета центрального редактора…[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Загрузка макета окна плагина…[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Макет редактора готов.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+WARNING: [CSM][I]CubismFramework::Dispose() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 1 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

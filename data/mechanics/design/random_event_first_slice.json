@@ -1,0 +1,801 @@
+{
+  "schema": "eroinc.random_event_first_slice.design.v1",
+  "status": "design_prepared_not_executable",
+  "date": "2026-10-28",
+  "coordinator_thread": "01a17e92-142c-7992-ad8e-3e93fa96376d",
+  "catalog_ref": "data/mechanics/design/random_events.json",
+  "catalog_sha256_at_read": "16af6c996242884b2d84dffbb9f27a2a8cf48b019a5dd67850b24b7d85dcbe1f",
+  "selected_root_ids": [
+    "re_phone_message_tone",
+    "re_npc_life_friend_distance"
+  ],
+  "existing_followup_reference_only": "re_phone_tone_reply",
+  "catalog_added_cards": 0,
+  "runtime_modified": false,
+  "saves_modified": false,
+  "new_services": false,
+  "source_evidence": [
+    {
+      "path": "scripts/gameplay/gameplay.gd",
+      "sha256_at_read": "b56373dc1e8a55aa468f3d212a93fc6abb55ef50b0b1b89404b8a32d902bf484",
+      "anchors": [
+        {
+          "anchor": "func execute(module_id: String, operation: String, args: Dictionary = {}) -> Dictionary:",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "path": "scripts/gameplay/main_simulation.gd",
+      "sha256_at_read": "e94dbe9d09e28f7367d909d419eeae944c3d276e659725b3495eb3d7fef69bb2",
+      "anchors": [
+        {
+          "anchor": "const MAIN_SCHEMA :=",
+          "line": 23
+        },
+        {
+          "anchor": "func after_command(",
+          "line": 97
+        },
+        {
+          "anchor": "func restore_snapshot(",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/simulation.gd",
+      "sha256_at_read": "80d8c593cb0bb3a7489887d7b2259f430ec4bb251a472958bddc1b4172b4fb1a",
+      "anchors": [
+        {
+          "anchor": "func command(",
+          "line": 102
+        },
+        {
+          "anchor": "func advance(",
+          "line": 158
+        },
+        {
+          "anchor": "func export_snapshot(",
+          "line": 245
+        },
+        {
+          "anchor": "func restore_snapshot(",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/social.gd",
+      "sha256_at_read": "072ca41f245c71d73b1339a8747d17580218bec25756129f08a8805c4ccf9497",
+      "anchors": [
+        {
+          "anchor": "\"message\", \"call\":",
+          "line": 30
+        },
+        {
+          "anchor": "\"read\":",
+          "line": 35
+        },
+        {
+          "anchor": "\"appointment\":",
+          "line": 41
+        },
+        {
+          "anchor": "func remember(",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/human_social.gd",
+      "sha256_at_read": "305c42a6a868c3ee99e5f985144390d8a58a8fcc9c93bdd60e5819aa03a69adc",
+      "anchors": [
+        {
+          "anchor": "func execute(",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/npc_dialogue.gd",
+      "sha256_at_read": "36c0dbbf766a662b2c1e518437be6bd4ea48e193a761245cffff481ce52dab5a",
+      "anchors": [
+        {
+          "anchor": "func availability(",
+          "line": 281
+        },
+        {
+          "anchor": "func execute(",
+          "line": 331
+        },
+        {
+          "anchor": "func _message(",
+          "line": 479
+        }
+      ]
+    },
+    {
+      "path": "scripts/gameplay/city_dialogue.gd",
+      "sha256_at_read": "ad152aefeaf3302fc798a3d4fb485dd518e35a159c5ee4d160e190516bb26e54",
+      "anchors": [
+        {
+          "anchor": "func local_initiative(",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/npc_relationships.gd",
+      "sha256_at_read": "6a2e10f82e9ade53d3c4bc9677886c7620e555c56aff3c446be05a1f5d4883ca",
+      "anchors": [
+        {
+          "anchor": "func view(",
+          "line": 25
+        },
+        {
+          "anchor": "func blocked(",
+          "line": 108
+        },
+        {
+          "anchor": "func resolve(",
+          "line": 197
+        },
+        {
+          "anchor": "func execute(",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "path": "scripts/gameplay/player_relationships.gd",
+      "sha256_at_read": "ea4c2f55894d07ca1310f3f5b3997df738f64cecc3db79a7aa2c7fc60f1be899",
+      "anchors": [
+        {
+          "anchor": "func response_bias(",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/npc_agency.gd",
+      "sha256_at_read": "53111e3f79cb81578e86fafeb5e627a0ef9bc592875a7d6d59e2d27dcdfab102",
+      "anchors": [
+        {
+          "anchor": "func _log(",
+          "line": 264
+        },
+        {
+          "anchor": "func _partner(",
+          "line": 373
+        },
+        {
+          "anchor": "func _start(",
+          "line": 496
+        },
+        {
+          "anchor": "func _finish(",
+          "line": 553
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/human_agency.gd",
+      "sha256_at_read": "1422266d7fe6a335f9c2cfef03a4e383e1af22caec140b4f2ac71c816695f55f",
+      "anchors": [
+        {
+          "anchor": "func _social_outcome(",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "path": "scripts/gameplay/city_agency.gd",
+      "sha256_at_read": "a1576512e004418e0338d65c0e051e4f873232ddc80f483b4c1f30fbec7ece76",
+      "anchors": [
+        {
+          "anchor": "func _destination(",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/npc_planner.gd",
+      "sha256_at_read": "e66216cc93c44749853e9a68a71bf69e9f952292220d8290f75a3b7870f47fe3",
+      "anchors": [
+        {
+          "anchor": "func submit_pair(",
+          "line": 28
+        },
+        {
+          "anchor": "func resolve(",
+          "line": 80
+        },
+        {
+          "anchor": "func _dispatch(",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/npc_calendar.gd",
+      "sha256_at_read": "0735c0c5f02d7a9e8e63385c71b488b4975465d66e299807b51c3ba871ed42ce",
+      "anchors": [
+        {
+          "anchor": "func conflict(",
+          "line": 38
+        },
+        {
+          "anchor": "func site_open(",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/npc_life_simulation.gd",
+      "sha256_at_read": "5e1766db3e53ff729e0d3c62c14e9c43ba5d10497e031f9ba964ef80a0c4c9f6",
+      "anchors": [
+        {
+          "anchor": "services[\"npc_agency\"] =",
+          "line": 14
+        },
+        {
+          "anchor": "func after_minute(",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/events.gd",
+      "sha256_at_read": "8f0fecf54ad35a7816c74eda4148caa46ef635de409e49db5041e2235d6ca572",
+      "anchors": [
+        {
+          "anchor": "func execute(",
+          "line": 3
+        },
+        {
+          "anchor": "func eligible(",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "path": "scripts/mechanics/core/module.gd",
+      "sha256_at_read": "606c4eaf61f2ad34cc56df56a5d3303438e608758b0263ef1f2b4050592cde1e",
+      "anchors": [
+        {
+          "anchor": "func emit_event(",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "data/mechanics/npc_life.json",
+      "sha256_at_read": "07ed9ea3680412f5b535549cad6f79d9ee36ece08466e119568343464e7f6d69",
+      "anchors": [
+        {
+          "anchor": "\"connect\":",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "data/mechanics/npc_dialogue.json",
+      "sha256_at_read": "024c1ac511b103657a2c69201129e483d964d07ec5f44bc7d746f735d24fb57a",
+      "anchors": [
+        {
+          "anchor": "\"dialogue_choices\":",
+          "line": 2232
+        }
+      ]
+    }
+  ],
+  "command_inventory": [
+    {
+      "id": "gameplay_execute",
+      "kind": "public_main_entry",
+      "path": "scripts/gameplay/gameplay.gd",
+      "signature": "Gameplay.execute(module_id: String, operation: String, args: Dictionary = {}) -> Dictionary",
+      "args": "Forwarded to simulation.command; requires phase=free_roam and no restore_error.",
+      "result": "Rules dictionary; successful call syncs global time, location, checkpoints and changed signal.",
+      "use_in_slice": "Future event input must use the existing main entry after a runtime operation is approved."
+    },
+    {
+      "id": "simulation_command",
+      "kind": "public_transaction",
+      "path": "scripts/mechanics/simulation.gd",
+      "signature": "command(module_id: String, operation: String, args: Dictionary = {}) -> Dictionary",
+      "args": "Existing registered module and operation; validates arguments and before/after hooks.",
+      "result": "{ok:true,data:Dictionary} or {ok:false,error:String}; restores state and rng.state on failure.",
+      "use_in_slice": "One transaction boundary; do not nest command calls or dispatch synchronously from domain_event."
+    },
+    {
+      "id": "social_message",
+      "kind": "public_player_command",
+      "path": "scripts/mechanics/social.gd",
+      "signature": "command(\"social\", \"message\", {\"id\": npc_id, \"text\": body})",
+      "args": "id is existing NPC in player contacts; text nonempty. incoming defaults false; do not spoof incoming=true.",
+      "result": "Rules.ok() with empty data; appends id/npc/text/incoming/read/minute and increments next_message_id.",
+      "minutes_now": 0,
+      "cash_now": 0,
+      "use_in_slice": "Can send a player message, but has no source_message_id, in_reply_to, instance_id or returned message_id. HumanSocial additionally checks contact boundary."
+    },
+    {
+      "id": "social_read",
+      "kind": "public_player_command",
+      "path": "scripts/mechanics/social.gd",
+      "signature": "command(\"social\", \"read\", {\"id\": npc_id})",
+      "args": "Existing NPC; no single-message argument.",
+      "result": "Marks ALL messages whose npc==id read, returns empty Rules.ok().",
+      "minutes_now": 0,
+      "use_in_slice": "Not a message-specific acknowledgement; do not silently mark unrelated messages read."
+    },
+    {
+      "id": "dialogue_open",
+      "kind": "public_player_command",
+      "path": "scripts/mechanics/npc_dialogue.gd",
+      "signature": "command(\"npc_dialogue\", \"open\", {\"id\": npc_id, \"channel\": \"message\"})",
+      "args": "Optional initiative token only for an existing initiative; no arbitrary event node/source message selector.",
+      "result": "Rules.ok(presentation) with node/channel/turn/utterance/choices, or failure; availability checks contact/sleep/busy.",
+      "use_in_slice": "Opens authored root/initiative; cannot claim it clarifies the selected source message."
+    },
+    {
+      "id": "dialogue_choose",
+      "kind": "public_player_command",
+      "path": "scripts/mechanics/npc_dialogue.gd",
+      "signature": "command(\"npc_dialogue\", \"choose\", {\"id\": npc_id, \"choice\": existing_choice_id, \"turn\": current_turn})",
+      "args": "Choice must exist in current presentation, turn must match; alternate choose_menu uses its own menu.",
+      "result": "Rules.ok(reply); topic choices in message channel append player_reply and npc_reply immediately.",
+      "minutes_now": "Owner choice minutes; e.g. day/feelings/goal=3, leave=0; not the proposed4-minute clarification.",
+      "use_in_slice": "Wrong binding for asynchronous tone clarification; cannot invent clarify choice."
+    },
+    {
+      "id": "npc_bond_view",
+      "kind": "internal_read_projection",
+      "path": "scripts/mechanics/npc_relationships.gd",
+      "signature": "sim.services.npc_relationships.view(from: String, toward: String) -> Dictionary",
+      "args": "Use actual directed NPC IDs; require saved npc.mind.bonds.has(other) before using historical fields.",
+      "result": "Copy with scales, last_contact and stage; missing bond synthesizes _new_bond with last_contact=now.",
+      "use_in_slice": "Existing friendship projection; not evidence of cancelled NPC meetings or a newly generated bond."
+    },
+    {
+      "id": "npc_interact_public",
+      "kind": "public_player_command",
+      "path": "scripts/mechanics/npc_relationships.gd",
+      "signature": "command(\"npc_relationships\", \"interact\", {\"id\": npc_id, \"action\": \"connect\", \"other\": \"player\"})",
+      "args": "other defaults player. If other != player, fails use_npc_autonomy.",
+      "result": "For valid player interaction returns Rules.ok({accepted,chance,reason}) after owner time; NPC pair call is rejected.",
+      "use_in_slice": "Explicitly forbidden as NPC→NPC event binding."
+    },
+    {
+      "id": "calendar_conflict",
+      "kind": "internal_read_projection",
+      "path": "scripts/mechanics/npc_calendar.gd",
+      "signature": "calendar.conflict(id: String, destination: String, minutes: int, priority: int = 50, ignore_appointment: int = -1, ignore_schedule: int = -1, forecast: Dictionary = {}) -> String",
+      "args": "Total occupied time includes actual route and owner action; do not pass priority>=100 for optional events.",
+      "result": "Empty string or schedule_conflict/obligation_unreachable/obligation_travel_conflict.",
+      "use_in_slice": "Check both NPCs independently and retain onward travel to next obligation."
+    },
+    {
+      "id": "planner_pair",
+      "kind": "internal_queue_not_public_command",
+      "path": "scripts/mechanics/npc_planner.gd",
+      "signature": "submit_pair(a: String, b: String, action: String = \"\") -> bool",
+      "args": "Known distinct NPCs; empty action means reproductive encounter, not ordinary visit.",
+      "result": "true means request enqueued, not consent, execution, completion or reward; execute only supports inspect.",
+      "use_in_slice": "Do not call with empty action. Not a complete calendar/consent guard; future owner must validate matching case and both schedules."
+    },
+    {
+      "id": "human_social_outcome",
+      "kind": "existing_internal_autonomy_path",
+      "path": "scripts/mechanics/human_agency.gd",
+      "signature": "_social_outcome(npc: Dictionary, active: Dictionary) -> bool",
+      "args": "Called on actual active action completion; partner availability, reciprocal active binding and personality guards required.",
+      "result": "Delegates resolve(actor,target,action), sets last_social, records social_outcome and returns accepted.",
+      "use_in_slice": "This is the running NPC path inherited by CityAgency, not the older base NPC formula."
+    },
+    {
+      "id": "relationship_resolve",
+      "kind": "internal_effectful_helper_not_public_command",
+      "path": "scripts/mechanics/npc_relationships.gd",
+      "signature": "resolve(actor: String, target: String, action: String) -> Dictionary",
+      "args": "Actual existing social action; called by owner after scheduling, not by event preview.",
+      "result": "{accepted,chance,reason}; uses RNG, directed gains/limits and emits pending npc_social_outcome(actor,target,action,accepted). Does not advance time.",
+      "use_in_slice": "Do not invoke directly to skip owner duration, consent/availability or action completion; emitted payload lacks case/action instance ID."
+    },
+    {
+      "id": "social_appointment",
+      "kind": "public_player_command",
+      "path": "scripts/mechanics/social.gd",
+      "signature": "command(\"social\", \"appointment\", {\"id\": npc_id, \"minute\": due, \"location\": location_id})",
+      "args": "NPC+player meeting; future minute, real location, player appointment conflict checks.",
+      "result": "Appends {npc,minute,location,status:pending}; no a/b fields, proposal acceptance record or NPC-pair cancellation archive.",
+      "use_in_slice": "Not a scheduler or factual trigger source for an NPC-only meeting."
+    },
+    {
+      "id": "snapshot",
+      "kind": "public_in_memory_snapshot",
+      "path": "scripts/mechanics/simulation.gd",
+      "signature": "export_snapshot() -> Dictionary; restore_snapshot(snapshot: Dictionary) -> Dictionary",
+      "args": "Schema/catalog hash/state/RNG validated; main runtime adds its own schema and city-home-owner contract.",
+      "result": "Base exports schema/catalog_hash/rng_seed/rng_state/state. Restore rehydrates existing state or rejects.",
+      "use_in_slice": "Current active actions and messages have persistence; proposed random-event instances do not exist in the current state contract."
+    }
+  ],
+  "missing_bindings": [
+    {
+      "id": "instance_commit",
+      "scope": "both",
+      "status": "missing",
+      "needed": "A bounded saved event instance keyed by event_id+owner_incident_id+ordered roles, selected choice, due, result identity and consumed marker, committed inside existing transaction. No new public signature is asserted."
+    },
+    {
+      "id": "tone_source",
+      "scope": "re_phone_message_tone",
+      "status": "missing",
+      "needed": "Author-owned ambiguity/non-refusal semantic tag and source_message_id. Existing kind=npc_reply or message length does not prove tone; do not infer anger from random text."
+    },
+    {
+      "id": "message_correlation",
+      "scope": "re_phone_message_tone",
+      "status": "missing",
+      "needed": "Owner-confirmed outgoing message_id, in_reply_to/source correlation and single-message read semantics; exactly one source-bound reply, no arbitrary incoming injection."
+    },
+    {
+      "id": "tone_atomic_duration",
+      "scope": "re_phone_message_tone",
+      "status": "missing",
+      "needed": "Apply4/2/0 minutes once inside owner-approved instance transaction, revalidate contact after elapsed time, append no automatic NPC answer. Do not compose two external commands with partial success."
+    },
+    {
+      "id": "npc_cancel_evidence",
+      "scope": "re_npc_life_friend_distance",
+      "status": "missing",
+      "needed": "Stable real cancelled/missed commitments between A and B with their roles, accepted plan identity, time, reason and knowledge provenance. last_contact and player appointments are insufficient."
+    },
+    {
+      "id": "npc_invitation_choice",
+      "scope": "re_npc_life_friend_distance",
+      "status": "missing",
+      "needed": "Owner-approved choice a/b/leave attached to the actual A→B case with independent response by B; do not force _start or call player interact."
+    },
+    {
+      "id": "npc_outcome_correlation",
+      "scope": "re_npc_life_friend_distance",
+      "status": "missing",
+      "needed": "Correlate actual start/completion/cancel to event instance, pair, action, started/due and unique owner outcome; ordinary clock.advance success cannot identify this event."
+    },
+    {
+      "id": "npc_phrase_b",
+      "scope": "re_npc_life_friend_distance",
+      "status": "missing",
+      "needed": "A genuine private A→B acknowledgement of distance with8-minute proposed local duration; current player dialogue is not NPC→NPC speech. Do not use romantic separate or apply false friend breakup."
+    },
+    {
+      "id": "reply_continuation",
+      "scope": "re_phone_message_tone",
+      "status": "missing",
+      "needed": "Activate existing re_phone_tone_reply only on actual correlated incoming reply; keep same participants and parent result. No new card is added."
+    }
+  ],
+  "slices": [
+    {
+      "event_id": "re_phone_message_tone",
+      "mode_for_this_slice": "player",
+      "status": "blocked_by_missing_owner_bindings",
+      "canonical_choices": [
+        {
+          "id": "a",
+          "text": "Спокойно уточнить смысл",
+          "local_minutes_proposal": 4
+        },
+        {
+          "id": "b",
+          "text": "Подождать до удобного окна",
+          "local_minutes_proposal": 2
+        },
+        {
+          "id": "leave",
+          "text": "Не брать это необязательное дело",
+          "local_minutes_proposal": 0
+        }
+      ],
+      "required_context": {
+        "actor": "player",
+        "target": "existing adult NPC in player contacts with mind.boundaries.contact=true",
+        "source": "existing state.social.messages record with stable id,npc,incoming=true,read=false,minute",
+        "semantic_source": "author-owned ambiguous-but-not-refusal marker, currently absent",
+        "knowledge": "player is the actual recipient; private to participants",
+        "case_key": [
+          "event_id",
+          "source_message_id",
+          "player",
+          "sender_npc_id"
+        ]
+      },
+      "choice_contracts": {
+        "a": {
+          "minutes_proposed": 4,
+          "cash_delta": 0,
+          "item_delta": 0,
+          "intended_state": "awaiting_correlated_actual_reply",
+          "existing_primitive": "social_message",
+          "missing": [
+            "instance_commit",
+            "tone_source",
+            "message_correlation",
+            "tone_atomic_duration",
+            "reply_continuation"
+          ],
+          "result_rule": "Outgoing message is real success of sending, not proof of tone, reply or relationship gain."
+        },
+        "b": {
+          "minutes_proposed": 2,
+          "cash_delta": 0,
+          "item_delta": 0,
+          "intended_state": "deferred_without_auto_send",
+          "existing_primitive": null,
+          "missing": [
+            "instance_commit",
+            "tone_atomic_duration"
+          ],
+          "result_rule": "No message, appointment or obligation created; same source not reoffered for1440 minutes."
+        },
+        "leave": {
+          "minutes_proposed": 0,
+          "cash_delta": 0,
+          "item_delta": 0,
+          "intended_state": "dismissed",
+          "existing_primitive": null,
+          "missing": [
+            "instance_commit"
+          ],
+          "result_rule": "Dismiss only this offer; do not close the unrelated npc_dialogue session or mark all messages read."
+        }
+      },
+      "walkthrough": {
+        "kind": "fictional_acceptance_walkthrough_not_executed",
+        "fixture": {
+          "absolute_minute": 2880,
+          "player_age": 27,
+          "npc_id": "fixture_npc_42",
+          "npc_age": 31,
+          "source_message_id": 57,
+          "source_incoming": true,
+          "source_read": false,
+          "semantic_tag": "ambiguous_tone_fixture_only",
+          "next_message_id": 58,
+          "player_cash": 120,
+          "target_cash": 80,
+          "free_until_minute": 2920,
+          "same_message_already_handled": false
+        },
+        "steps": [
+          "Read-only eligibility binds source57 and NPC42; preview does not consume RNG/time or mark messages read.",
+          "Future approved choice a validates exact source and contact, consumes4 minutes within one transaction, then owner appends outgoing58 once. Current social.message alone would use0 minutes and return empty data.",
+          "Record one parent result tied to outgoing58; balance120/80 and inventories unchanged. No incoming59 is invented. Event waits for real reply.",
+          "If a genuine correlated incoming59 arrives later, validate same NPC and source/parent then make existing re_phone_tone_reply available once.",
+          "Reopening, repeated click or restoring a post-send snapshot cannot append another58 or replay4 minutes."
+        ],
+        "alternatives": [
+          "b uses2 local minutes once; sends nothing; no automatic future contact.",
+          "leave uses0 minutes; closes only this source offer; no new relation penalty."
+        ],
+        "failure": "Source pruned, boundary revoked, busy owner or invalid commit restores all state/RNG/time; no consumed result or message appears."
+      }
+    },
+    {
+      "event_id": "re_npc_life_friend_distance",
+      "mode_for_this_slice": "npc_only",
+      "status": "blocked_by_missing_trigger_evidence_and_npc_binding",
+      "canonical_choices": [
+        {
+          "id": "a",
+          "text": "Предложить короткий выполнимый визит",
+          "local_minutes_proposal": 6
+        },
+        {
+          "id": "b",
+          "text": "Честно признать временную дистанцию",
+          "local_minutes_proposal": 8
+        },
+        {
+          "id": "leave",
+          "text": "Не брать это необязательное дело",
+          "local_minutes_proposal": 0
+        }
+      ],
+      "required_context": {
+        "actor": "existing adult NPC A, never player",
+        "target": "existing adult NPC B, never player",
+        "source": "two actual accepted pair commitments later cancelled/missed, stable IDs; proposed2 in7days is slice fixture, not current runtime rule",
+        "relationship": "saved directed bonds in both NPCs, adult mutual acquaintance/friend context; view() alone may synthesize defaults",
+        "knowledge": "only A/B actual accepted commitments; player not an observer or recipient",
+        "case_key": [
+          "event_id",
+          "canonical_pair_commitment_failure_ids",
+          "ordered_initiator_A",
+          "recipient_B"
+        ],
+        "place": "example city_park, only if both already there with actual access; do not add routes or force travel"
+      },
+      "choice_contracts": {
+        "a": {
+          "minutes_proposed": 6,
+          "cash_delta_for_local_offer": 0,
+          "item_delta": 0,
+          "intended_state": "accepted_plan_or_independent_refusal_not_completed_visit",
+          "existing_primitive": "human_social_outcome only after real autonomous connect action; no public NPC invitation command",
+          "owner_action_minutes_now": 30,
+          "duration_rule": "6-minute proposal and later30-minute connect are distinct phases only if both really occur; do not count6 as completed meeting or append30 twice. Owner review required.",
+          "missing": [
+            "instance_commit",
+            "npc_cancel_evidence",
+            "npc_invitation_choice",
+            "npc_outcome_correlation"
+          ],
+          "result_rule": "Pair response/plan acceptance gives no completed-meeting reward. Only real owner completion can record success."
+        },
+        "b": {
+          "minutes_proposed": 8,
+          "cash_delta": 0,
+          "item_delta": 0,
+          "intended_state": "distance_acknowledged_privately",
+          "existing_primitive": null,
+          "missing": [
+            "instance_commit",
+            "npc_cancel_evidence",
+            "npc_phrase_b"
+          ],
+          "result_rule": "Do not delete bond, call separate, zero grievance or invent an answered NPC message."
+        },
+        "leave": {
+          "minutes_proposed": 0,
+          "cash_delta": 0,
+          "item_delta": 0,
+          "intended_state": "no_new_contact",
+          "existing_primitive": null,
+          "missing": [
+            "instance_commit"
+          ],
+          "result_rule": "Existing schedules, care, obligations and neglect rules remain; no player notification."
+        }
+      },
+      "walkthrough": {
+        "kind": "fictional_acceptance_walkthrough_not_executed",
+        "fixture": {
+          "absolute_minute": 2880,
+          "A": "fixture_npc_17",
+          "A_age": 28,
+          "B": "fixture_npc_42",
+          "B_age": 35,
+          "accepted_then_cancelled_commitments": [
+            "fixture_pair_plan_11",
+            "fixture_pair_plan_12"
+          ],
+          "source_fact_status": "required_future_binding_not_present_in_current_npc_pair_state",
+          "location": "city_park",
+          "both_already_present": true,
+          "local_route_minutes": 0,
+          "next_mandatory_minute": 2940,
+          "onward_travel_minutes_each": 10,
+          "A_money": 90,
+          "B_money": 70,
+          "player_money": 120,
+          "player_present": false,
+          "connect_owner_duration_minutes": 30,
+          "proposal_duration_minutes": 6
+        },
+        "steps": [
+          "Current build must stop: no authoritative NPC-pair cancellation source and no event instance exist. Do not substitute player appointments or last_contact.",
+          "After future approved bindings, A independently chooses a. B independently agrees or refuses. During6-minute proposal check both calendars including subsequent30-minute connect and10-minute onward route:6+30+10=46 <=60.",
+          "Accepted proposal binds one plan/result, not a completed meeting. No salary, XP or relation gain for invitation. A/B/player money remain90/70/120 for this local case.",
+          "Only if ordinary autonomy actually starts matched connect for the pair: both active records refer to each other; due uses owner catalog30 minutes, and existing CityAgency→HumanAgency path controls interruption/completion.",
+          "At actual completion HumanAgency._social_outcome calls resolve once, which may accept or decline. Record only matching committed owner outcome. Clock advance by a player elsewhere is not itself proof of this meeting.",
+          "No player notification or knowledge is added. Restore mid-action must preserve existing due and event correlation; after completed snapshot no second outcome or relation gain."
+        ],
+        "alternatives": [
+          "B refusal is an independent social outcome; event does not retry until consent appears.",
+          "b would spend8 minutes only through a reviewed NPC-private utterance owner; this binding currently does not exist.",
+          "leave costs0, sends nothing, erases no past cancellation or ordinary neglect."
+        ],
+        "failure": "An urgent task, changed access, unavailable B or calendar conflict ends/blocks the optional plan; no forced _start, player transfer or instant resolve."
+      }
+    }
+  ],
+  "remote_observe": {
+    "commit": "468aa32",
+    "path": "scripts/mechanics/events.gd",
+    "line_at_commit": 67,
+    "remote_file_sha256": "b3dc9eab6415a72e219065ac341976ccb55d371e1dbfe0a590fe54bd028334b7",
+    "signature": "observe(module_id: String, operation: String, args: Dictionary, result: Dictionary) -> void",
+    "remote_command_hook_present": true,
+    "local_observe_present_at_read": false,
+    "local_command_hook_present_at_read": false,
+    "status": "remote_code_read_not_merged_or_tested_by_this_task; coordinator_integration_separate",
+    "actual_scope": "Advances active quest objectives matching module/operation/args/result, optional different_days or unique_arg; does not identify random event instances or NPC action outcomes inside clock.advance.",
+    "not_a_solution": [
+      "source-bound message reply correlation",
+      "NPC pair cancellation facts",
+      "NPC→NPC invitation",
+      "instance dedup/choice/restore",
+      "relation result correlation during autonomy"
+    ]
+  },
+  "acceptance_cases": [
+    {
+      "id": "T1",
+      "case": "same source/choice double click or reopen",
+      "expected": "one outgoing id, one local-time charge, one result"
+    },
+    {
+      "id": "T2",
+      "case": "source message removed or semantic fact absent",
+      "expected": "blocked; no substitute text/NPC or inferred anger"
+    },
+    {
+      "id": "T3",
+      "case": "contact revocation while elapsed4 minutes",
+      "expected": "transaction rollback, no appended message or consumed result"
+    },
+    {
+      "id": "T4",
+      "case": "incoming unrelated same-NPC message",
+      "expected": "does not activate tone reply without actual correlation"
+    },
+    {
+      "id": "T5",
+      "case": "NPC friend trigger without real pair cancellation IDs",
+      "expected": "blocked; last_contact/player appointments insufficient"
+    },
+    {
+      "id": "T6",
+      "case": "NPC B refuses, has urgent task or cannot return to obligation",
+      "expected": "respect refusal/calendar; no forced action or player funds"
+    },
+    {
+      "id": "T7",
+      "case": "planner submit_pair returns true",
+      "expected": "not yet accepted/completed; no outcome/reward"
+    },
+    {
+      "id": "T8",
+      "case": "ordinary clock.advance succeeds while NPC action interrupted",
+      "expected": "no random event success claim"
+    },
+    {
+      "id": "T9",
+      "case": "snapshot before offer, after send, mid-NPC action, after outcome",
+      "expected": "restore same case/status/IDs/RNG/due; no duplicate send/reward; not currently testable for event ledger"
+    },
+    {
+      "id": "T10",
+      "case": "expiry or decline across day boundary",
+      "expected": "case-scoped suppression survives restore; existing obligations persist"
+    },
+    {
+      "id": "T11",
+      "case": "NPC-only private action with player elsewhere",
+      "expected": "no player notification/knowledge/money change"
+    },
+    {
+      "id": "T12",
+      "case": "remote quests.observe becomes locally connected",
+      "expected": "still blocked on missing instance/source/NPC bindings; no automatic parity claim"
+    }
+  ],
+  "checks_performed": [
+    "Static source review with path/hash/anchor snapshots",
+    "Read-only git show of remote468aa32 event observer and hook",
+    "JSON parse and cross-reference checks; no game execution"
+  ],
+  "not_verified": [
+    "actual_game_execution",
+    "owner_binding_approval",
+    "probabilities_balance",
+    "transactional_event_restore",
+    "remote_merge_or_tests",
+    "NPC_pair_meeting_archive",
+    "UI_or_exported_PCK"
+  ]
+}

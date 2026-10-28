@@ -1,0 +1,1063 @@
+{
+  "schema": "eroinc_world_resident_design_v1",
+  "status": "design_only_not_loaded_by_runtime",
+  "authored_date": "2026-10-28",
+  "locale": "ru",
+  "original_content": true,
+  "scope": {
+    "runtime_changed": false,
+    "new_residents_instantiated": false,
+    "current_map_is_binding": false,
+    "geography_rework_authorized_by_root": true,
+    "new_scenario_google_doc_status": "not_read_access_unavailable; local_TimeLine_and_STORY_LOCKS_only",
+    "era": "present_day_free_roam_after_existing_introduction",
+    "flashback_characters_replaced": false,
+    "city_name": null,
+    "university_name_conflict": "timeline mirror says Альтерра; chapter_one and STORY_LOCKS name Институт эволюционной геномики имени Карла Линнея; do not resolve by inventing city name"
+  },
+  "sources": [
+    {
+      "path": "docs/art/city-river-v2/STORY_LOCKS.md",
+      "use": "сюжетные границы, эпохи и жилища"
+    },
+    {
+      "path": "TimeLine/prolog/scene_04_night_wakeup.dtl",
+      "use": "настоящее время и пробуждение"
+    },
+    {
+      "path": "TimeLine/prolog/scene_05_mirror_and_photo.dtl",
+      "use": "23-летний герой и зеркало; конфликт названия университета"
+    },
+    {
+      "path": "TimeLine/chapter_one.dtl",
+      "use": "нынешний институт, социальные конфликты, занятые сюжетные имена"
+    },
+    {
+      "path": "data/mechanics/npc_stories.json",
+      "use": "существующие шесть цепочек и виды целей"
+    },
+    {
+      "path": "scripts/mechanics/npc_stories.gd",
+      "use": "start/choose, observe и границы текущего формата"
+    },
+    {
+      "path": "scripts/gameplay/player_needs.gd",
+      "use": "досуг в city_park действительно занимает 30 минут"
+    },
+    {
+      "path": "data/world/city-river-v2.json",
+      "use": "исходные IDs и время первой петли; не ограничивает новую географию"
+    },
+    {
+      "path": "TimeLine/prolog/scene_06_flashback_park.dtl",
+      "use": "детский парк в Праксии, отдельная эпоха"
+    },
+    {
+      "path": "TimeLine/prolog/scene_12_glade_reveal.dtl",
+      "use": "Лира прибыла из Фраксии; не география нынешнего речного города"
+    },
+    {
+      "path": "docs/world/DISTRICTS_AND_ROUTES.md",
+      "use": "согласованные предлагаемые смысловые места и наружный вход кафе; не работающий граф"
+    }
+  ],
+  "proposed_place_anchors": {
+    "river_cafe": {
+      "current_runtime_id": "riverside_cafe",
+      "intended_location_id": "riverside_cafe",
+      "public_front_intended_id": "riverside_cafe_front",
+      "indoor_access": "opening_hours_required; not_a_through_route"
+    },
+    "south_trade_street": {
+      "current_runtime_id": "global_map",
+      "current_map_id": "south_shops",
+      "intended_location_id": "south_trade_street"
+    },
+    "north_old_shops": {
+      "current_runtime_id": "north_shops",
+      "intended_location_id": "north_shops"
+    },
+    "university": {
+      "current_runtime_id": "training_center",
+      "current_map_id": "university",
+      "intended_location_id": "university",
+      "location_kind": "building_container",
+      "teaching_schedule_requires_specific_room": true
+    },
+    "city_park": {
+      "current_runtime_id": "city_park",
+      "must_distinguish_from_university_forecourt": true,
+      "intended_location_id": "city_park"
+    },
+    "university_forecourt": {
+      "current_runtime_id": "training_center",
+      "subplace_proposed": true,
+      "intended_location_id": "campus_park_gate"
+    },
+    "north_social_courtyard": {
+      "current_runtime_id": "social_housing",
+      "public_access_must_be_defined": true,
+      "intended_location_id": "social_housing",
+      "location_kind": "public_front_of_housing_container",
+      "private_inside_requires_separate_access": true
+    },
+    "north_beach": {
+      "current_runtime_id": "north_beach",
+      "must_not_replace_childhood_seaside_memory": true,
+      "intended_location_id": "north_beach"
+    }
+  },
+  "residents": [
+    {
+      "id": "resident_cafe_shift_lead",
+      "status": "proposed_original_adult",
+      "name": "Селина Вейл",
+      "age": 29,
+      "role": "Старшая смены небольшого кафе",
+      "place_anchors": [
+        {
+          "anchor": "river_cafe",
+          "current_runtime_id": "riverside_cafe",
+          "subplace_proposal": "Боковая дверь и стойка выдачи"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Сделать утреннюю смену предсказуемой и наконец уходить вовремя.",
+      "contradiction": "Просит гостей читать объявления, но сама оставляет слишком длинные инструкции.",
+      "boundary": "Не обещает угощение за знакомство; не обсуждает коллег перед посетителями.",
+      "weekday_routine_proposal": [
+        {
+          "time": "07:30–08:00",
+          "activity": "подготовка смены",
+          "anchor": "river_cafe"
+        },
+        {
+          "time": "08:00–15:30",
+          "activity": "работа, короткие перерывы по загрузке",
+          "anchor": "river_cafe"
+        },
+        {
+          "time": "15:30–16:30",
+          "activity": "передача смены и сверка записей; окно истории",
+          "anchor": "river_cafe"
+        },
+        {
+          "time": "16:30–17:00",
+          "activity": "покупки по дороге домой",
+          "anchor": "south_trade_street"
+        },
+        {
+          "time": "после 17:00",
+          "activity": "личное время вне публичных меток",
+          "anchor": "private_home"
+        }
+      ],
+      "greeting_key": "resident_cafe_shift_lead.greeting"
+    },
+    {
+      "id": "resident_south_grocer",
+      "status": "proposed_original_adult",
+      "name": "Дана Керн",
+      "age": 41,
+      "role": "Продавец продуктовой лавки на торговой улице",
+      "place_anchors": [
+        {
+          "anchor": "south_trade_street",
+          "current_runtime_id": "global_map",
+          "map_id": "south_shops",
+          "subplace_proposal": "Лавка у прохода к реке"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Удержать постоянных покупателей, не превращая каждую покупку в торг.",
+      "contradiction": "Умеет замечать чужую усталость, но из упрямства не признаёт свою.",
+      "boundary": "Скидка зависит от товара и правил магазина; личное расположение не обнуляет цену.",
+      "weekday_routine_proposal": [
+        {
+          "time": "08:00–08:30",
+          "activity": "приём товара",
+          "anchor": "south_trade_street"
+        },
+        {
+          "time": "08:30–13:00",
+          "activity": "торговля",
+          "anchor": "south_trade_street"
+        },
+        {
+          "time": "13:00–13:30",
+          "activity": "перерыв при переданной кассе",
+          "anchor": "south_trade_street"
+        },
+        {
+          "time": "13:30–18:00",
+          "activity": "работа",
+          "anchor": "south_trade_street"
+        },
+        {
+          "time": "18:00–18:20",
+          "activity": "дорога и короткий чай, если кафе открыто",
+          "anchor": "river_cafe"
+        }
+      ],
+      "greeting_key": "resident_south_grocer.greeting"
+    },
+    {
+      "id": "resident_repairer",
+      "status": "proposed_original_adult",
+      "name": "Илья Рен",
+      "age": 34,
+      "role": "Мастер небольшого ремонта в старых лавках",
+      "place_anchors": [
+        {
+          "anchor": "north_old_shops",
+          "current_runtime_id": "north_shops",
+          "subplace_proposal": "Рабочая стойка в существующей лавке"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Брать посильные заказы и не обещать, что любая вещь обязана прослужить вечно.",
+      "contradiction": "Говорит о практичности, но годами хранит свою невыгодную старую лампу.",
+      "boundary": "Не берёт опасную работу по дружбе; помощь игрока не заменяет квалификацию.",
+      "weekday_routine_proposal": [
+        {
+          "time": "09:00–09:30",
+          "activity": "открытие и разбор заказов",
+          "anchor": "north_old_shops"
+        },
+        {
+          "time": "09:30–13:00",
+          "activity": "работа",
+          "anchor": "north_old_shops"
+        },
+        {
+          "time": "13:00–13:30",
+          "activity": "обед без приёма сложных просьб",
+          "anchor": "north_old_shops"
+        },
+        {
+          "time": "13:30–18:00",
+          "activity": "работа, помощь только в обозначенное окно",
+          "anchor": "north_old_shops"
+        },
+        {
+          "time": "18:00–18:30",
+          "activity": "прогулка к пляжу с учётом дороги",
+          "anchor": "north_beach"
+        }
+      ],
+      "greeting_key": "resident_repairer.greeting"
+    },
+    {
+      "id": "resident_working_student",
+      "status": "proposed_original_adult",
+      "name": "Нина Арден",
+      "age": 27,
+      "role": "Работающая магистрантка; часы подработки требуют согласования с карьерной системой",
+      "place_anchors": [
+        {
+          "anchor": "university",
+          "current_runtime_id": "training_center",
+          "map_id": "university"
+        },
+        {
+          "anchor": "river_cafe",
+          "current_runtime_id": "riverside_cafe"
+        },
+        {
+          "anchor": "city_park",
+          "current_runtime_id": "city_park"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Закончить свой небольшой учебный проект, сохранив выходной без отчётов.",
+      "contradiction": "Призывает других к отдыху, но считает собственный перерыв потерянным временем.",
+      "boundary": "Не делает чужую учебную работу и не превращается в бесплатного наставника.",
+      "weekday_routine_proposal": [
+        {
+          "time": "08:30–09:00",
+          "activity": "дорога к занятиям",
+          "anchor": "university"
+        },
+        {
+          "time": "09:00–13:00",
+          "activity": "занятия по индивидуальному плану",
+          "anchor": "university"
+        },
+        {
+          "time": "13:00–14:00",
+          "activity": "обед и самостоятельная работа; реальная доступность зависит от нагрузки",
+          "anchor": "river_cafe"
+        },
+        {
+          "time": "14:00–17:00",
+          "activity": "согласованная подработка либо учёба, не обе одновременно",
+          "anchor": "university"
+        },
+        {
+          "time": "17:30–18:00",
+          "activity": "пауза по дороге домой",
+          "anchor": "city_park"
+        }
+      ],
+      "greeting_key": "resident_working_student.greeting"
+    },
+    {
+      "id": "resident_gardener",
+      "status": "proposed_original_adult",
+      "name": "Павел Сорн",
+      "age": 56,
+      "role": "Работник городского озеленения",
+      "place_anchors": [
+        {
+          "anchor": "city_park",
+          "current_runtime_id": "city_park",
+          "subplace_proposal": "Скамья у прохода; не университетский парк автоматически"
+        },
+        {
+          "anchor": "university_forecourt",
+          "current_runtime_id": "training_center",
+          "binding_status": "предложенная отдельная работа, не текущее место труда"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Сохранить парк пригодным для разных посетителей, а не только удобным для отчёта.",
+      "contradiction": "Не любит таблички с запретами, но начинает с запрета, когда его не слышат.",
+      "boundary": "Не распоряжается всем парком и не может отдать игроку общественную скамью.",
+      "weekday_routine_proposal": [
+        {
+          "time": "07:00–11:00",
+          "activity": "работа в прохладные часы",
+          "anchor": "city_park"
+        },
+        {
+          "time": "11:00–11:30",
+          "activity": "перерыв",
+          "anchor": "city_park"
+        },
+        {
+          "time": "11:30–15:00",
+          "activity": "обход и обслуживание",
+          "anchor": "city_park"
+        },
+        {
+          "time": "15:00–16:00",
+          "activity": "сдача инструмента вне публичной сцены",
+          "anchor": "off_map_workroom"
+        },
+        {
+          "time": "17:00–18:00",
+          "activity": "собственная прогулка; доступен как посетитель",
+          "anchor": "city_park"
+        }
+      ],
+      "greeting_key": "resident_gardener.greeting"
+    },
+    {
+      "id": "resident_courtyard_organizer",
+      "status": "proposed_original_adult",
+      "name": "Рая Фенн",
+      "age": 32,
+      "role": "Жительница социального жилья, добровольно собирающая бытовые вопросы",
+      "place_anchors": [
+        {
+          "anchor": "north_social_courtyard",
+          "current_runtime_id": "social_housing",
+          "subplace_proposal": "Публичный подход; внутренние помещения требуют отдельного доступа"
+        },
+        {
+          "anchor": "north_old_shops",
+          "current_runtime_id": "north_shops"
+        },
+        {
+          "anchor": "city_park",
+          "current_runtime_id": "city_park"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Распределять бытовые дела так, чтобы их не делал один и тот же человек.",
+      "contradiction": "Недовольна ролью постоянного организатора, но без спроса организует даже чужой отдых.",
+      "boundary": "Не раскрывает чужие доходы, медицину и личные обстоятельства; социальное жильё не означает открытый чужой дом.",
+      "weekday_routine_proposal": [
+        {
+          "time": "09:00–16:00",
+          "activity": "личная работа вне разработанного набора локаций",
+          "anchor": "off_map_workplace"
+        },
+        {
+          "time": "16:00–16:30",
+          "activity": "дорога и покупки",
+          "anchor": "north_old_shops"
+        },
+        {
+          "time": "16:30–17:30",
+          "activity": "часть дней: сбор бытовых вопросов; часть дней отсутствует",
+          "anchor": "north_social_courtyard"
+        },
+        {
+          "time": "выходной 12:00–13:00",
+          "activity": "прогулка с маршрутом через мосты, не мгновенное появление",
+          "anchor": "city_park"
+        }
+      ],
+      "greeting_key": "resident_courtyard_organizer.greeting"
+    },
+    {
+      "id": "resident_beach_attendant",
+      "status": "proposed_original_adult",
+      "name": "Лев Терн",
+      "age": 23,
+      "role": "Сезонный работник пляжа; конкретный наниматель пока не закреплён",
+      "place_anchors": [
+        {
+          "anchor": "north_beach",
+          "current_runtime_id": "north_beach",
+          "subplace_proposal": "Сухой навес и место хранения инвентаря без новой точки карты"
+        },
+        {
+          "anchor": "north_old_shops",
+          "current_runtime_id": "north_shops"
+        }
+      ],
+      "private_home": {
+        "status": "unassigned_private_dwelling",
+        "runtime_location_id": null,
+        "must_not_use_player_bedroom": true
+      },
+      "appearance_species": "unassigned_pending_scenario_and_character_catalog",
+      "personal_goal": "Найти постоянную зимнюю работу и перестать представляться человеком на подхвате.",
+      "contradiction": "Любит спокойствие берега, но боится, что окружающие считают его несерьёзным.",
+      "boundary": "Не выдаёт доступ к воде при опасной погоде; никаких наград за риск ради знакомства.",
+      "weekday_routine_proposal": [
+        {
+          "time": "09:00–13:00",
+          "activity": "сезонная работа у берега",
+          "anchor": "north_beach"
+        },
+        {
+          "time": "13:00–13:30",
+          "activity": "перерыв",
+          "anchor": "north_beach"
+        },
+        {
+          "time": "13:30–17:00",
+          "activity": "работа либо закрытие при погоде",
+          "anchor": "north_beach"
+        },
+        {
+          "time": "17:30–18:00",
+          "activity": "разговор с мастером или покупки с учётом пути",
+          "anchor": "north_old_shops"
+        },
+        {
+          "time": "зимой",
+          "activity": "другая работа подбирается карьерной системой; пляж не круглогодичный офис",
+          "anchor": "unassigned_winter_work"
+        }
+      ],
+      "greeting_key": "resident_beach_attendant.greeting"
+    }
+  ],
+  "resident_links": [
+    {
+      "from": "resident_south_grocer",
+      "to": "resident_cafe_shift_lead",
+      "relationship": "соседи по торговому проходу",
+      "tension": "Ящик лавки закрывает кратчайший проход; кафе перекладывает объяснения на продавца.",
+      "ordinary_contact": "Дана покупает чай после смены; Селина сама забирает продукты, не каждый раз посылает героя."
+    },
+    {
+      "from": "resident_repairer",
+      "to": "resident_south_grocer",
+      "relationship": "давние деловые знакомые",
+      "tension": "Дана просит оценить всё сразу; Илья настаивает на реальном окне заказа.",
+      "ordinary_contact": "Обсуждают одну сломанную вещь и расходятся по работе."
+    },
+    {
+      "from": "resident_working_student",
+      "to": "resident_cafe_shift_lead",
+      "relationship": "постоянная посетительница без привилегий",
+      "tension": "Нина задерживается с заметками у закрытия; Селина учится говорить о времени прямо.",
+      "ordinary_contact": "Короткое приветствие и один заказ; не обязательная дружба."
+    },
+    {
+      "from": "resident_gardener",
+      "to": "resident_working_student",
+      "relationship": "знакомые по вечернему парку",
+      "tension": "Павел принимает молчание за недовольство; Нина просто отдыхает.",
+      "ordinary_contact": "Могут сидеть рядом и не обменяться репликами."
+    },
+    {
+      "from": "resident_courtyard_organizer",
+      "to": "resident_gardener",
+      "relationship": "участники редких соседских дел",
+      "tension": "Рая хочет заранее распределить посещения; Павел не хочет превращать парк в расписание.",
+      "ordinary_contact": "Один разговор о бытовом вопросе не делает их начальниками района."
+    },
+    {
+      "from": "resident_beach_attendant",
+      "to": "resident_repairer",
+      "relationship": "работник с вопросами о зимнем заработке и знакомый мастер",
+      "tension": "Лев ищет обещание найма, а Илья может предложить только честный разговор о требованиях.",
+      "ordinary_contact": "Лев приносит свой блокнот, а не получает профессию за посещение."
+    },
+    {
+      "from": "resident_courtyard_organizer",
+      "to": "resident_beach_attendant",
+      "relationship": "живут в одном секторе; точные дома ещё не заданы",
+      "tension": "Лев не хочет, чтобы его свободный день заранее считали общим ресурсом.",
+      "ordinary_contact": "Рая спрашивает, может ли он помочь, и принимает отказ."
+    }
+  ],
+  "story_arcs": [
+    {
+      "id": "rear_door_notice",
+      "title_key": "rear_door_notice.title",
+      "status": "design_not_integrated",
+      "owner_resident_id": "resident_cafe_shift_lead",
+      "place_anchors": [
+        "river_cafe",
+        "south_trade_street"
+      ],
+      "entry": {
+        "voluntary": true,
+        "location_anchor": "river_cafe",
+        "window_proposal": "15:30–16:30 после передачи смены; разговор откладывается при занятости",
+        "requires": "контакт, присутствие, trust >= 5, grievance < 10 и текущая доступность; как действующий npc_stories.blocked",
+        "intended_location_id": "riverside_cafe_front",
+        "intended_presence": "Селина действительно выходит проверить записки после передачи смены; разговор не вытягивает её через стену из зала."
+      },
+      "nodes": {
+        "intro": {
+          "text_key": "rear_door_notice.intro",
+          "choices": [
+            {
+              "id": "accept",
+              "text_key": "rear_door_notice.intro.accept",
+              "next": "walk_check",
+              "minutes_proposal": 4,
+              "energy_proposal": 1
+            },
+            {
+              "id": "decline",
+              "text_key": "rear_door_notice.intro.decline",
+              "next": "declined",
+              "minutes_proposal": 2,
+              "energy_proposal": 0
+            }
+          ]
+        },
+        "walk_check": {
+          "text_key": "rear_door_notice.walk_check",
+          "goal_candidate": {
+            "module": "world",
+            "operation": "journey",
+            "locations": [
+              "global_map",
+              "riverside_cafe"
+            ],
+            "unique": true,
+            "count": 2
+          },
+          "done": "decision",
+          "observation_text_keys": [
+            "rear_door_notice.obs.shop",
+            "rear_door_notice.obs.cafe"
+          ],
+          "new_object_action_required": false,
+          "goal_intended_after_geography": {
+            "module": "world",
+            "operation": "journey",
+            "locations": [
+              "south_trade_street",
+              "riverside_cafe_front"
+            ],
+            "unique": true,
+            "count": 2,
+            "status": "proposal_to_adapt_in_existing_runtime"
+          }
+        },
+        "decision": {
+          "text_key": "rear_door_notice.decision",
+          "choices": [
+            {
+              "id": "clear_notice",
+              "text_key": "rear_door_notice.decision.clear_notice",
+              "next": "clear_end",
+              "minutes_proposal": 10,
+              "energy_proposal": 1
+            },
+            {
+              "id": "oral_route",
+              "text_key": "rear_door_notice.decision.oral_route",
+              "next": "oral_end",
+              "minutes_proposal": 4,
+              "energy_proposal": 0
+            }
+          ]
+        },
+        "clear_end": {
+          "text_key": "rear_door_notice.clear_end",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "cafe_entry_notice_clear",
+              "cafe_neighbour_route_agreed"
+            ],
+            "bond_to_player": {
+              "trust": 2,
+              "respect": 1
+            },
+            "xp_once": 6,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        },
+        "oral_end": {
+          "text_key": "rear_door_notice.oral_end",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "cafe_entry_notice_oral"
+            ],
+            "bond_to_player": {
+              "comfort": 2
+            },
+            "xp_once": 3,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        },
+        "declined": {
+          "text_key": "rear_door_notice.declined",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "cafe_entry_notice_player_declined"
+            ],
+            "bond_to_player": {},
+            "xp_once": 0,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        }
+      },
+      "revisit_variants": [
+        {
+          "when": "clear_end; следующий открытый день",
+          "line_key": "rear_door_notice.repeat.clear",
+          "reward": null
+        },
+        {
+          "when": "oral_end; ближайшая смена",
+          "line_key": "rear_door_notice.repeat.oral",
+          "reward": null
+        },
+        {
+          "when": "declined; после собственной смены NPC",
+          "line_key": "rear_door_notice.repeat.declined",
+          "reward": null
+        },
+        {
+          "when": "не начата; дождь",
+          "line_key": "rear_door_notice.ambient.rain",
+          "reward": null
+        }
+      ],
+      "first_slice": {
+        "start_anchor": "river_cafe",
+        "route_minutes_current_graph": 8,
+        "route": "riverside_cafe → global_map → riverside_cafe",
+        "intro_minutes": 4,
+        "full_resolution_minutes": 10,
+        "total_minutes_if_npc_available": 22,
+        "cost_proposal": 0,
+        "required_purchase": false,
+        "route_measure_source": "data/world/city-river-v2.json: route_links global_map ↔ riverside_cafe = 4",
+        "after_map_revision": "recalculate_using_approved_routes; не переносить 8 минут как канон",
+        "assumptions": [
+          "NPC уже знаком и trust >= 5",
+          "доступен для разговора и реально присутствует",
+          "время первого знакомства и пути к кафе не включено"
+        ],
+        "intended_route": "riverside_cafe_front → south_trade_street → riverside_cafe_front",
+        "intended_route_basis": "docs/world/DISTRICTS_AND_ROUTES.md: торговая улица ↔ наружный вход кафе4минуты, дизайн"
+      },
+      "presentation_handoff": {
+        "unacquainted": "Две записки видны как окружение; обычное знакомство не даёт прогресс/доверие за чтение.",
+        "npc_busy": "Отложить предложение до доступного окна, не отменять смену или задачу NPC.",
+        "late_return": "Сохранить выполненный маршрут; завершить разговор при следующей доступной встрече без скрытого провала.",
+        "absent_grocer": "Не показывать реплику Даны, если её нет; достаточно изменения предметной детали прохода.",
+        "reward_guard": "Только завершённый исход один раз; фоновые реплики и чтение ничего не выдают."
+      }
+    },
+    {
+      "id": "repair_with_limits",
+      "title_key": "repair_with_limits.title",
+      "status": "design_not_integrated",
+      "owner_resident_id": "resident_repairer",
+      "place_anchors": [
+        "north_old_shops"
+      ],
+      "entry": {
+        "voluntary": true,
+        "location_anchor": "north_old_shops",
+        "window_proposal": "13:30–15:00, только когда мастер сам объявил перерыв между заказами",
+        "requires": "обычная доступность и знакомство; никакого доступа к чужим заказам"
+      },
+      "nodes": {
+        "intro": {
+          "text_key": "repair_with_limits.intro",
+          "choices": [
+            {
+              "id": "accept",
+              "text_key": "repair_with_limits.intro.accept",
+              "next": "assist",
+              "minutes_proposal": 4,
+              "energy_proposal": 1
+            },
+            {
+              "id": "decline",
+              "text_key": "repair_with_limits.intro.decline",
+              "next": "declined",
+              "minutes_proposal": 2,
+              "energy_proposal": 0
+            }
+          ]
+        },
+        "assist": {
+          "text_key": "repair_with_limits.assist",
+          "goal_candidate": {
+            "module": "npc_relationships",
+            "operation": "interact",
+            "action": "cooperate",
+            "target_npc": true,
+            "count": 1
+          },
+          "done": "decision",
+          "fictional_scope": "Сверить список и разложить подписанные детали; квалифицированную работу выполняет Илья."
+        },
+        "decision": {
+          "text_key": "repair_with_limits.decision",
+          "choices": [
+            {
+              "id": "usable",
+              "text_key": "repair_with_limits.decision.usable",
+              "next": "usable_end",
+              "minutes_proposal": 6,
+              "energy_proposal": 0
+            },
+            {
+              "id": "parts",
+              "text_key": "repair_with_limits.decision.parts",
+              "next": "parts_end",
+              "minutes_proposal": 5,
+              "energy_proposal": 0
+            }
+          ]
+        },
+        "usable_end": {
+          "text_key": "repair_with_limits.usable_end",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "repairer_lamp_in_use"
+            ],
+            "bond_to_player": {
+              "trust": 2,
+              "comfort": 1
+            },
+            "xp_once": 5,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        },
+        "parts_end": {
+          "text_key": "repair_with_limits.parts_end",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "repairer_lamp_kept_as_memory"
+            ],
+            "bond_to_player": {
+              "respect": 2
+            },
+            "xp_once": 5,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        },
+        "declined": {
+          "text_key": "repair_with_limits.declined",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "repairer_player_declined"
+            ],
+            "bond_to_player": {},
+            "xp_once": 0,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        }
+      },
+      "revisit_variants": [
+        {
+          "when": "usable_end; следующий рабочий день",
+          "line_key": "repair_with_limits.repeat.usable",
+          "reward": null
+        },
+        {
+          "when": "parts_end; следующий рабочий день",
+          "line_key": "repair_with_limits.repeat.parts",
+          "reward": null
+        },
+        {
+          "when": "declined; позднее",
+          "line_key": "repair_with_limits.repeat.declined",
+          "reward": null
+        }
+      ]
+    },
+    {
+      "id": "bench_for_everyone",
+      "title_key": "bench_for_everyone.title",
+      "status": "design_not_integrated",
+      "owner_resident_id": "resident_gardener",
+      "place_anchors": [
+        "city_park"
+      ],
+      "entry": {
+        "voluntary": true,
+        "location_anchor": "city_park",
+        "window_proposal": "17:00–18:00 после работы Павла; при непогоде разговор откладывается",
+        "requires": "обычная доступность; завершение истории не даёт прав владения общественным местом"
+      },
+      "nodes": {
+        "intro": {
+          "text_key": "bench_for_everyone.intro",
+          "choices": [
+            {
+              "id": "pause",
+              "text_key": "bench_for_everyone.intro.pause",
+              "next": "rest",
+              "minutes_proposal": 3,
+              "energy_proposal": 0
+            },
+            {
+              "id": "decline",
+              "text_key": "bench_for_everyone.intro.decline",
+              "next": "declined",
+              "minutes_proposal": 2,
+              "energy_proposal": 0
+            }
+          ]
+        },
+        "rest": {
+          "text_key": "bench_for_everyone.rest",
+          "goal_candidate": {
+            "module": "needs",
+            "operation": "leisure",
+            "locations": [
+              "city_park"
+            ],
+            "count": 1
+          },
+          "duration_current_runtime_minutes": 30,
+          "done": "decision",
+          "owner_may_leave": "Если Павел ушёл по своему расписанию, вернуться к разговору при следующей доступной встрече."
+        },
+        "decision": {
+          "text_key": "bench_for_everyone.decision",
+          "choices": [
+            {
+              "id": "quiet_suggestion",
+              "text_key": "bench_for_everyone.decision.quiet_suggestion",
+              "next": "quiet_end",
+              "minutes_proposal": 7,
+              "energy_proposal": 0
+            },
+            {
+              "id": "no_schedule",
+              "text_key": "bench_for_everyone.decision.no_schedule",
+              "next": "open_end",
+              "minutes_proposal": 5,
+              "energy_proposal": 0
+            }
+          ]
+        },
+        "quiet_end": {
+          "text_key": "bench_for_everyone.quiet_end",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "park_quiet_time_suggested"
+            ],
+            "bond_to_player": {
+              "respect": 2
+            },
+            "xp_once": 5,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        },
+        "open_end": {
+          "text_key": "bench_for_everyone.open_end",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "park_bench_no_reservation"
+            ],
+            "bond_to_player": {
+              "comfort": 2
+            },
+            "xp_once": 5,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        },
+        "declined": {
+          "text_key": "bench_for_everyone.declined",
+          "ending": true,
+          "outcome_proposal": {
+            "flags": [
+              "park_player_declined"
+            ],
+            "bond_to_player": {},
+            "xp_once": 0,
+            "cash": 0,
+            "inventory_items": []
+          },
+          "repeat_rewards": false
+        }
+      },
+      "revisit_variants": [
+        {
+          "when": "quiet_end; предложенное время и Павел/Нина действительно присутствуют",
+          "line_key": "bench_for_everyone.repeat.quiet",
+          "reward": null
+        },
+        {
+          "when": "open_end; обычный вечер",
+          "line_key": "bench_for_everyone.repeat.open",
+          "reward": null
+        },
+        {
+          "when": "declined; любая последующая прогулка",
+          "line_key": "bench_for_everyone.repeat.declined",
+          "reward": null
+        }
+      ]
+    }
+  ],
+  "reward_policy": {
+    "all_values": "proposed_balance_not_runtime_config",
+    "currency_rewards": false,
+    "free_items": false,
+    "decline_penalty": false,
+    "once_scope": "per_story_per_resident_per_world",
+    "revisit_rewards": false,
+    "stale_choice_must_fail": true,
+    "rewards_on_accepted_goal_only": true
+  },
+  "integration_gaps": [
+    "Зарегистрировать явные соответствия нового NPC и его арки: сейчас arc_for принимает имя известной арки или выбирает один из трёх общих шаблонов по hash ID.",
+    "Превратить text_key в локализуемый текст при подключении: нынешний runner требует буквальный text и не читает strings_ru.",
+    "Закрепить смысловые anchors за пересмотренной географией; нынешние runtime IDs — исходные привязки, а не приказ сохранить карту.",
+    "Добавить авторские флаги и реакции повторного визита в текущую модель памяти без нового конкурирующего runtime.",
+    "Уточнить добровольные окна и частные дома через NPC-планировщик; не ставить новых людей в спальню героя и не телепортировать.",
+    "Сверить изменённую географию с полной локальной копией авторского сценария, которую получает root.",
+    "Не применять outcome_proposal как произвольные записи в World; выполнить через общие транзакции существующего runtime после согласования."
+  ],
+  "strings_ru": {
+    "resident_cafe_shift_lead.greeting": "Я не запоминаю заказ с первого раза. Зато со второго уже не переспрашиваю.",
+    "resident_south_grocer.greeting": "На верхней полке дороже упаковка. Внутри крупа та же — решай сам.",
+    "resident_repairer.greeting": "Сначала скажи, что тебе нужно сохранить: вещь или привычку к ней.",
+    "resident_working_student.greeting": "У меня сегодня свободное окно. Пытаюсь не заполнить его ещё одной работой.",
+    "resident_gardener.greeting": "Трава отрастёт. А вот если люди перестанут сюда приходить, это уже сложнее.",
+    "resident_courtyard_organizer.greeting": "Список на двери — это просьбы, а не долги. Я тоже иногда об этом забываю.",
+    "resident_beach_attendant.greeting": "Когда никто не купается, тоже есть работа. Просто её хуже видно с набережной.",
+    "rear_door_notice.title": "Дверь со двора",
+    "rear_door_notice.intro": "Селина кладёт рядом две записки. На одной велено заходить со двора, на другой — с торговой улицы. «Утренние гости каждый раз находят закрытую дверь. Я исправляла часы, а про вход даже не подумала. Если тебе по пути, посмотри на обе стороны. Специально гонять тебя не хочу».",
+    "rear_door_notice.intro.accept": "Я как раз пройдусь и вернусь.",
+    "rear_door_notice.intro.decline": "Сейчас нет времени. Лучше не буду обещать.",
+    "rear_door_notice.walk_check": "Пройдите от кафе до торговой улицы и вернитесь обычным путём. Задача — понять, какую дверь впервые увидит прохожий; осмотр карты без перехода не считается.",
+    "rear_door_notice.obs.shop": "У прохода к реке видна вывеска, но маленькая стрелка теряется за раскрытой дверью лавки.",
+    "rear_door_notice.obs.cafe": "Со стороны воды часы читаются хорошо. Что дверь откроется только после утренней подготовки, не написано.",
+    "rear_door_notice.decision": "«Значит, дело не в людях, которые не умеют читать», — говорит Селина. Она готова поправить инструкцию сама, но не хочет ещё одной стены текста. Вы вместе выбираете, что действительно нужно сообщить.",
+    "rear_door_notice.decision.clear_notice": "Оставить одну короткую инструкцию с направлением и временем.",
+    "rear_door_notice.decision.oral_route": "Пока объяснять короткий путь лично; табличку поправить после смены.",
+    "rear_door_notice.clear_end": "Селина переписывает свою записку двумя короткими строками и просит Дану оставить проход видимым. Никто не становится главным по району: просто две соседние двери наконец перестают спорить друг с другом.",
+    "rear_door_notice.oral_end": "Вы выбираете простую фразу для растерявшихся гостей. Сегодня Селина подсказывает сама; постоянную записку оставляет в списке своих дел, не в вашем журнале долгов.",
+    "rear_door_notice.declined": "«Хорошо, спасибо, что не пообещал на ходу». Селина откладывает две записки вместе: после смены она сама пройдёт к лавке. Обычное общение остаётся доступным.",
+    "rear_door_notice.repeat.clear": "У прохода теперь одна короткая стрелка. Дана переставляет складной ящик чуть дальше от двери.",
+    "rear_door_notice.repeat.oral": "Селина успевает показать гостю нужную дверь жестом. Лист с новой инструкцией всё ещё лежит под её блокнотом.",
+    "rear_door_notice.repeat.declined": "Селина сверяет свои записки у входа. Она здоровается с вами без нового поручения.",
+    "rear_door_notice.ambient.rain": "Под навесом сохнут две почти одинаковые записки. У каждой стрелка смотрит в свою сторону.",
+    "repair_with_limits.title": "Вещь, которую не выбрасывают",
+    "repair_with_limits.intro": "Под стойкой Ильи стоит старая настольная лампа. Он чинит чужие вещи каждый день, а эту всё откладывает. «Поможешь сверить список мелочей? Сам ремонт я сделаю. Только сразу договоримся: может оказаться, что сохранять нужно не всю вещь».",
+    "repair_with_limits.intro.accept": "Могу немного помочь, но обещать результат не буду.",
+    "repair_with_limits.intro.decline": "Сегодня я пришёл по другому делу.",
+    "repair_with_limits.assist": "Предложите Илье практическую помощь через обычное общение. Засчитывается только принятая помощь именно ему; герой не получает профессию ремонтника и не производит лампу из воздуха.",
+    "repair_with_limits.decision": "Илья убирает список. Рабочую часть он способен восстановить, но прежний внешний вид придётся оставить в прошлом. «Я хотел, чтобы всё было как раньше. А пользоваться-то мне сейчас».",
+    "repair_with_limits.decision.usable": "Оставить работающую вещь с заметным следом времени.",
+    "repair_with_limits.decision.parts": "Сохранить корпус на память; рабочие детали использовать в другом деле.",
+    "repair_with_limits.usable_end": "Позже лампа появляется на собственной стойке Ильи. Старый корпус не притворяется новым. Оставшийся небольшой ремонт он заканчивает сам; это его вещь, не наградной предмет героя.",
+    "repair_with_limits.parts_end": "Илья оставляет знакомый корпус на верхней полке, а остальное подписывает для своих будущих работ. Сохранить память не обязательно означает бесконечно откладывать новую жизнь.",
+    "repair_with_limits.declined": "«Нормально. Тогда после закрытия сам спокойно разберусь». Илья возвращает лампу под стойку и занимается вашим обычным вопросом.",
+    "repair_with_limits.repeat.usable": "Лампа освещает только край стойки. Илья передвигает её под свою руку, а не демонстрирует каждому посетителю.",
+    "repair_with_limits.repeat.parts": "На полке остался знакомый корпус. Подписанных пакетов под ним стало меньше: мастер использует то, что решил оставить.",
+    "repair_with_limits.repeat.declined": "Место под стойкой освобождено. Илья не делает из этого упрёка и не выдаёт то же поручение снова.",
+    "bench_for_everyone.title": "Место, где можно ничего не делать",
+    "bench_for_everyone.intro": "Павел снимает со скамьи забытый лист с расписанием встреч. «Хотели, чтобы никто не мешал другим. А вышло, что без записи сюда как будто нельзя». Он предлагает сначала самому посидеть в парке, без обязанности что-либо решать.",
+    "bench_for_everyone.intro.pause": "Я и правда давно не делал обычный перерыв.",
+    "bench_for_everyone.intro.decline": "Я сейчас спешу. Не стану начинать разговор на бегу.",
+    "bench_for_everyone.rest": "Выберите обычный досуг в городском парке. Это настоящий получасовой отдых по нынешним правилам, а не бесплатное ожидание или просто открытое окно.",
+    "bench_for_everyone.decision": "В парке успели смениться несколько людей: одни задерживались, другие присаживались на минуту. Павел спрашивает не о победителе спора, а о том, как оставить место доступным обоим.",
+    "bench_for_everyone.decision.quiet_suggestion": "Предложить короткое тихое время без брони и запрета для остальных.",
+    "bench_for_everyone.decision.no_schedule": "Убрать расписание и договариваться на месте.",
+    "bench_for_everyone.quiet_end": "Павел договаривается с несколькими постоянными посетителями о коротком спокойном промежутке. Это просьба к знакомым, а не закрытый час и не новая власть героя над парком.",
+    "bench_for_everyone.open_end": "Лист с расписанием исчезает. Когда люди встречаются у скамьи, вопрос решается обычным разговором. Иногда приходится подождать — доступность не стала волшебно бесконечной.",
+    "bench_for_everyone.declined": "«Тогда просто приходи, когда захочешь отдохнуть». Павел уносит забытый лист. Отказ не запрещает будущие прогулки.",
+    "bench_for_everyone.repeat.quiet": "Нина убирает рабочие заметки, а Павел говорит тише обычного. Незнакомому посетителю никто не преграждает путь.",
+    "bench_for_everyone.repeat.open": "Рая спрашивает, свободно ли рядом, прежде чем присесть. Ни имени героя, ни списка приглашённых на скамье нет.",
+    "bench_for_everyone.repeat.declined": "Павел узнаёт вас и кивает. Чтобы сидеть в этом парке, не требовалось сначала помочь ему."
+  }
+}

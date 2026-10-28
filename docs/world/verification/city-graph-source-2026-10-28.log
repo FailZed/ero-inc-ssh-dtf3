@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+GENERATED={ "ok": true, "data": { "ids": ["resident_000001", "resident_000002", "resident_000003", "resident_000004", "resident_000005", "resident_000006", "resident_000007", "resident_000008", "resident_000009", "resident_000010", "resident_000011", "resident_000012", "resident_000013", "resident_000014", "resident_000015", "resident_000016", "resident_000017", "resident_000018", "resident_000019", "resident_000020", "resident_000021", "resident_000022", "resident_000023", "resident_000024", "resident_000025", "resident_000026", "resident_000027", "resident_000028", "resident_000029", "resident_000030", "resident_000031", "resident_000032", "resident_000033", "resident_000034", "resident_cafe_shift_lead", "resident_south_grocer"], "count": 36, "morphologies": { "human": 22, "semi_furry": 9, "furry": 5 } } }
+CAMPUS={ "ok": true, "data": { "path": ["residential_district", "campus_park_gate", "campus_courtyard"], "minutes": 14 } }
+RESTORE={ "ok": true, "data": {  } }
+PAIR={ "ok": true, "data": { "ids": ["resident_cafe_shift_lead", "resident_south_grocer"], "count": 2, "morphologies": { "human": 1, "semi_furry": 1, "furry": 0 } } }
+CITY_SMOKE checks=89 failures=0

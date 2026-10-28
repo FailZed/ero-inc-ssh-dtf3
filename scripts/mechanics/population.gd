@@ -60,43 +60,51 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		"generate":
 			var config := defaults()
 			config.merge(sim.state.population.settings, true)
-			if sim.state.social.npcs.size() + int(config.count) > 500: return Rules.fail("population_limit")
-			var genders: Array = []
-			var women := int(round(float(config.count) * float(config.female_ratio)))
-			for i in range(int(config.count)): genders.append("female" if i < women else "male")
-			_shuffle(genders)
-			var counts := morphology_counts(config)
-			var morphologies: Array = []
-			for morphology in MORPHOLOGIES:
-				for i in range(int(counts[morphology])): morphologies.append(morphology)
-			_shuffle(morphologies)
-			var created: Array = []
-			for gender in genders:
-				var template := definition("npc_templates", "resident").duplicate(true)
-				var interests: Array = sim.catalog.get("preference_sets", {}).keys()
-				interests.sort()
-				if not interests.is_empty():
-					template.preferences = definition("preference_sets", str(interests[sim.rng.randi_range(0, interests.size() - 1)])).categories.duplicate()
-				template.gender = gender
-				template.stat_min = config.stat_min
-				template.stat_max = config.stat_max
-				template.traits = {}
-				for trait_id in TRAITS:
-					template.traits[trait_id] = clampi(int(config[trait_id]) + sim.rng.randi_range(-int(config.trait_spread), int(config.trait_spread)), 0, 100)
-				var worker: bool = config.activity_mode == "work" or (config.activity_mode == "mixed" and sim.rng.randf() < 0.6)
-				template.role = "worker" if worker else "learner"
-				template.occupation = "employed" if worker else "student"
-				template.education = "vocational" if worker else "general"
-				template.cohort = template.role
-				template.activities = ["paid_work", "socialize"] if worker else ["read", "train", "socialize"]
-				template.schedule = [{"location": "global_map" if worker else "training_center", "activity": "work" if worker else "study", "hours": [480, 960], "weekdays": [1, 2, 3, 4, 5]}, {"location": "global_map", "activity": "walk", "hours": [960, 1200]}]
-				var id := "resident_%06d" % int(sim.state.social.next_npc_id)
-				var names := ["Марина Ветрова", "Алина Соколова", "Ирина Белова", "Вера Орлова"] if gender == "female" else ["Александр Ветров", "Михаил Соколов", "Илья Белов", "Артём Орлов"]
-				var result: Dictionary = sim.services.social.generate_from_template(id, {"name": names[sim.rng.randi_range(0, names.size() - 1)], "age": sim.rng.randi_range(int(config.age_min), int(config.age_max)), "appearance": {"morphology": morphologies[created.size()], "gender": gender, "body_type": "slim", "face_id": "soft", "hair_style": "long" if gender == "female" else "short", "hair_color": "dark"}}, template)
-				if not result.ok: return result
-				created.append(id)
-			sim.state.population.batches += 1
-			emit_event("population_generated", {"ids": created})
-			return Rules.ok({"ids": created, "count": created.size(), "morphologies": counts})
+			return sim.generate_population(config)
 		_: return Rules.fail("unknown_operation")
 	return Rules.ok()
+
+func generate_batch(config: Dictionary, finalize_batch: bool = true) -> Dictionary:
+	if not valid(config): return Rules.fail("invalid_population_settings")
+	if sim.state.social.npcs.size() + int(config.count) > 500: return Rules.fail("population_limit")
+	var genders: Array = []
+	var women := int(round(float(config.count) * float(config.female_ratio)))
+	for i in range(int(config.count)): genders.append("female" if i < women else "male")
+	_shuffle(genders)
+	var counts := morphology_counts(config)
+	var morphologies: Array = []
+	for morphology in MORPHOLOGIES:
+		for i in range(int(counts[morphology])): morphologies.append(morphology)
+	_shuffle(morphologies)
+	var created: Array = []
+	for gender in genders:
+		var template := definition("npc_templates", "resident").duplicate(true)
+		var interests: Array = sim.catalog.get("preference_sets", {}).keys()
+		interests.sort()
+		if not interests.is_empty():
+			template.preferences = definition("preference_sets", str(interests[sim.rng.randi_range(0, interests.size() - 1)])).categories.duplicate()
+		template.gender = gender
+		template.stat_min = config.stat_min
+		template.stat_max = config.stat_max
+		template.traits = {}
+		for trait_id in TRAITS:
+			template.traits[trait_id] = clampi(int(config[trait_id]) + sim.rng.randi_range(-int(config.trait_spread), int(config.trait_spread)), 0, 100)
+		var worker: bool = config.activity_mode == "work" or (config.activity_mode == "mixed" and sim.rng.randf() < 0.6)
+		template.role = "worker" if worker else "learner"
+		template.occupation = "employed" if worker else "student"
+		template.education = "vocational" if worker else "general"
+		template.cohort = template.role
+		template.activities = ["paid_work", "socialize"] if worker else ["read", "train", "socialize"]
+		template.schedule = [{"location": sim.location_role("trade") if worker else sim.location_role("study"), "activity": "work" if worker else "study", "hours": [480, 960], "weekdays": [1, 2, 3, 4, 5]}, {"location": sim.location_role("trade"), "activity": "walk", "hours": [960, 1200]}]
+		var id := "resident_%06d" % int(sim.state.social.next_npc_id)
+		var names := ["Марина Ветрова", "Алина Соколова", "Ирина Белова", "Вера Орлова"] if gender == "female" else ["Александр Ветров", "Михаил Соколов", "Илья Белов", "Артём Орлов"]
+		var result: Dictionary = sim.services.social.generate_from_template(id, {"name": names[sim.rng.randi_range(0, names.size() - 1)], "age": sim.rng.randi_range(int(config.age_min), int(config.age_max)), "appearance": {"morphology": morphologies[created.size()], "gender": gender, "body_type": "slim", "face_id": "soft", "hair_style": "long" if gender == "female" else "short", "hair_color": "dark"}}, template)
+		if not result.ok: return result
+		created.append(id)
+	if finalize_batch: return finish_batch(created, counts)
+	return Rules.ok({"ids": created, "count": created.size(), "morphologies": counts})
+
+func finish_batch(created: Array, counts: Dictionary) -> Dictionary:
+	sim.state.population.batches += 1
+	emit_event("population_generated", {"ids":created.duplicate()})
+	return Rules.ok({"ids":created.duplicate(),"count":created.size(),"morphologies":counts.duplicate(true)})

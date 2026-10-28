@@ -118,9 +118,9 @@ func _protection_and_interruption() -> void:
 	advance(sim,20)
 	t._check(sim.state.reproduction.exposures.is_empty(),"interrupted NPC encounter awards no unperformed reproductive consequence")
 	sim=fresh()
-	sim.state.social.npcs.a.schedule=[{"activity":"work","location":"global_map","hours":[480,600],"weekdays":[int(sim.state.clock.weekday)]}]
+	sim.state.social.npcs.a.schedule=[{"activity":"study","location":"global_map","hours":[480,600],"weekdays":[int(sim.state.clock.weekday)]}]
 	advance(sim,20)
-	t._check(events(sim,"encounter_started").is_empty(),"NPC intimacy cannot replace a compulsory shift")
+	t._check(events(sim,"encounter_started").is_empty(),"NPC intimacy cannot replace a compulsory class")
 	sim=fresh()
 	sim.command("preferences","content_tag",{"id":"romance","enabled":false})
 	advance(sim,30)
@@ -198,9 +198,9 @@ func _snapshots() -> void:
 		t._check(not sim.restore_snapshot(bad).ok and before==sim.export_snapshot(),"invalid autonomous snapshot is rejected atomically: "+bad_case)
 	var previous=Previous.new(7,config())
 	var legacy: Dictionary=previous.export_snapshot()
-	t._check(legacy.catalog_hash==JSON.stringify(sim.previous_autonomy_catalog).sha256_text(),"previous snapshot hash is reconstructed from the actual previous runtime")
-	t._check(replay.restore_snapshot(legacy).ok and replay.state.npc_reproduction.sessions.is_empty(),"exact previous reproductive snapshot gains empty autonomous state in memory")
-	t._check(not legacy.state.has("npc_reproduction"),"migration never rewrites the supplied old snapshot object")
+	before=replay.export_snapshot()
+	t._check(not replay.restore_snapshot(legacy).ok and before==replay.export_snapshot(),"superseded reproductive snapshot is rejected without conversion")
+	t._check(not legacy.state.has("npc_reproduction"),"rejected reproductive snapshot input remains untouched")
 
 func _parallel_and_clinical_replay() -> void:
 	var sim=fresh()

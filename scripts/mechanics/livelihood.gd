@@ -3,7 +3,6 @@ extends "res://scripts/mechanics/core/module.gd"
 const Check = preload("res://scripts/mechanics/core/livelihood_validation.gd")
 const Challenges = preload("res://scripts/mechanics/work_challenges.gd")
 const Schedule = preload("res://scripts/mechanics/work_schedule.gd")
-const HOME := ["bedroom","bathroom","kitchen","apartment_hall"]
 
 static func defaults() -> Dictionary:
 	return {"version":2,"careers":{},"workdays":{},"pending":{},"serial":1,"orders":{},"goals":{},"active_goal":"","upgrades":{},"totals":{"shifts":0,"earnings":0,"good_games":0,"illicit":0,"deliveries":0,"upgrades":0},"streak":0,"streak_day":-1,"log":[]}
@@ -18,28 +17,20 @@ func career(id: String) -> Dictionary:
 	var job: Dictionary = rules().jobs[id]
 	var skill: int = sim.services.growth.level(str(job.skill))
 	var xp := int(sim.state.livelihood.careers.get(id,{}).get("xp",0))
-	var level := 1
-	for index in range(1,5):
-		if skill < int(rules().promotion.skill_levels[index]): break
-		if job.kind != "shift" and xp < int(rules().promotion.experience[index]): break
-		level = index+1
+	var level := preload("res://scripts/mechanics/core/career_progress.gd").work_rank(float(sim.state.player.skills.get(job.skill,0)),xp,job.kind=="shift",rules().promotion.skill_levels,rules().promotion.experience)
 	return {"level":level,"xp":xp,"automatic":job.kind == "shift","skill":skill,"next_skill":int(rules().promotion.skill_levels[mini(level,4)]),"next_xp":int(rules().promotion.experience[mini(level,4)])}
 
 func skill_rank(id: String) -> int:
-	var skill: int = sim.services.growth.level(id)
-	var rank := 1
-	for threshold in rules().promotion.skill_levels.slice(1):
-		if skill >= int(threshold): rank += 1
-	return rank
+	return preload("res://scripts/mechanics/core/career_progress.gd").rank(float(sim.state.player.skills.get(id,0)),rules().promotion.skill_levels)
 
 func study_conflicts(id: String) -> Array:
 	var job: Dictionary = rules().jobs[id]
 	var start := int(sim.state.clock.total_minutes)
 	var location := str(sim.state.world.location)
-	if location != job.location and not (location in HOME and job.location in HOME):
-		var journey: Dictionary = sim.services.world.route_from(location,str(job.location),start,false)
+	if location != job_location(job) and not (sim.is_player_home_location(location) and job.has("home_room_kind")):
+		var journey: Dictionary = sim.services.world.route_from(location,job_location(job),start,false)
 		if journey.ok: start += int(journey.data.minutes)
-		location = str(job.location)
+		location = job_location(job)
 	return Schedule.conflicts(sim,location,int(job.minutes),start)
 
 func home_level(id: String) -> int:
@@ -47,9 +38,9 @@ func home_level(id: String) -> int:
 
 func wage(id: String, quality: float) -> int:
 	var job: Dictionary = rules().jobs[id]
-	var bonus := 1.0 + 0.08*(int(career(id).level)-1)
+	var bonus := preload("res://scripts/mechanics/core/career_progress.gd").pay_factor(int(career(id).level))
 	if sim.state.world.flags.get("qualified_"+str(job.skill),false): bonus += 0.10
-	if job.location in HOME: bonus += 0.05*home_level("workspace")
+	if job.has("home_room_kind"): bonus += 0.05*home_level("workspace")
 	return roundi(float(job.pay)*bonus*(0.45+0.85*quality))
 
 func risk(id: String) -> float:
@@ -65,8 +56,8 @@ func blocked(id: String, skip_classes: bool = false) -> String:
 	var job: Dictionary = rules().jobs[id]
 	if float(job.risk) > 0 and "crime" in sim.state.preferences.disabled_tags: return "content_disabled"
 	if sim.services.growth.level(str(job.skill)) < int(job.min_skill): return "work_skill_required"
-	var at_home: bool = sim.state.world.location in HOME and job.location in HOME
-	if sim.state.world.location != job.location and not at_home: return "wrong_workplace"
+	var at_home: bool = sim.is_player_home_location(str(sim.state.world.location)) and job.get("home_room_kind","") == sim.room_kind(str(sim.state.world.location))
+	if sim.state.world.location != job_location(job) and not at_home: return "wrong_workplace"
 	var now := int(sim.state.clock.minute_of_day)
 	if now < int(job.hours[0]) or now+int(job.minutes) > int(job.hours[1]): return "work_hours"
 	if not skip_classes and not study_conflicts(id).is_empty(): return "work_conflicts_study"
@@ -124,7 +115,7 @@ func _work(id: String, args: Dictionary) -> Dictionary:
 	sim.state.livelihood.serial += 1
 	if not interactive: return _finish(session,0.65 if job.kind == "shift" else 0.55,false)
 	session.assistance = sim.services.growth.work_assistance(id)
-	session.tasks = Challenges.build(sim,job,session.assistance)
+	session.tasks = Challenges.build(sim,job,session.assistance,id)
 	sim.state.livelihood.pending = session
 	return Rules.ok({"interactive":true})
 
@@ -254,7 +245,7 @@ func goal_view(id: String) -> Dictionary:
 func _upgrade(id: String) -> Dictionary:
 	if not rules().upgrades.has(id): return Rules.fail("unknown_home_upgrade")
 	var home := str(sim.state.housing.residence)
-	if home.is_empty() or not sim.state.world.location in HOME: return Rules.fail("home_required")
+	if home.is_empty() or not sim.is_player_home_location(str(sim.state.world.location)): return Rules.fail("home_required")
 	var spec: Dictionary = rules().upgrades[id]
 	var level := home_level(id)
 	if level >= int(spec.max_level): return Rules.fail("home_upgrade_max")
@@ -287,3 +278,6 @@ func tick(minute: int) -> void:
 func _note(entry: Dictionary) -> void:
 	sim.state.livelihood.log.append(entry)
 	while sim.state.livelihood.log.size() > 64: sim.state.livelihood.log.pop_front()
+
+func job_location(job: Dictionary) -> String:
+	return sim.player_home_room(str(job.home_room_kind)) if job.has("home_room_kind") else str(job.location)

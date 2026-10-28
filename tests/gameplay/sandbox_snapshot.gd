@@ -20,7 +20,9 @@ func _run() -> void:
 	session.pause_autosave_runtime()
 	var mode := ""
 	var path := ""
+	var enrolled := true
 	for arg in OS.get_cmdline_user_args():
+		if arg == "--nonstudent": enrolled = false
 		if arg.begins_with("--write="): mode = "write"; path = arg.trim_prefix("--write=")
 		if arg.begins_with("--read="): mode = "read"; path = arg.trim_prefix("--read=")
 	if mode == "write":
@@ -29,6 +31,7 @@ func _run() -> void:
 		config.difficulty = "hard"
 		config.population.count = 8
 		config.content.pregnancy = false
+		config.sandbox.education = {"enrolled":enrolled,"subjects":["physics","genetics"] if enrolled else []}
 		gameplay._pending_configuration = config
 		dialogic.clear(DialogicGameHandler.ClearFlags.FULL_CLEAR)
 		session.reset_game_time()
@@ -40,6 +43,7 @@ func _run() -> void:
 		# Match normal world generation, which binds stable visual identities.
 		gameplay._bind_npc_art()
 		var sim = gameplay.simulation
+		if bool(sim.state.world.flags.student_enrolled) != enrolled or sim.state.world.flags.subject_computing or bool(sim.state.world.flags.subject_physics) != enrolled: _finish(false,mode,"enrollment"); return
 		var npc: Dictionary = sim.state.social.npcs.newcomer
 		sim.services.npc_agency._cancel(npc,"snapshot_fixture")
 		npc.location = sim.state.world.location
@@ -65,6 +69,7 @@ func _run() -> void:
 		session._sync_game_time_from_dialogic()
 		session._sync_character_profile_from_dialogic()
 		if not gameplay.restore_error.is_empty() or not gameplay.is_sandbox() or gameplay.phase != "free_roam": _finish(false,mode,"restore"); return
+		if bool(gameplay.configuration.sandbox.education.enrolled) != enrolled or bool(gameplay.simulation.state.world.flags.student_enrolled) != enrolled: _finish(false,mode,"enrollment"); return
 		if gameplay.simulation.state.npc_stories.arcs.newcomer.goal.count != 1: _finish(false,mode,"partial_progress"); return
 		var ok := _continue()
 		ok = ok and _normal(gameplay.simulation.export_snapshot()) == packet.expected

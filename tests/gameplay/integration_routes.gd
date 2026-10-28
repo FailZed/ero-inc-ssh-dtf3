@@ -133,7 +133,7 @@ func run() -> void:
 		if button.get_meta("item_id", "") == "desk": button.pressed.emit(); break
 	var install: Button
 	for button in shell._body.find_children("*", "Button", true, false):
-		if button.text == "УСТАНОВИТЬ ДОМА": install = button; break
+		if button.get_meta("gameplay_action",{}).get("module","") == "housing" and button.get_meta("gameplay_action",{}).get("operation","") == "furnish": install = button; break
 	_press(install, "inventory offers installation in the current home")
 	t.check(sim.state.housing.properties.apartment.equipment.has("desk") and not sim.state.inventory.items.has("desk"), "inventory installation transfers the item into the current residence")
 	t.check(t.gameplay.execute("housing", "end_lease", {"id":"apartment"}).ok, "the starting lease can be ended through the main runtime")
@@ -142,7 +142,7 @@ func run() -> void:
 	for button in shell._body.find_children("*", "Button", true, false):
 		if button.get_meta("item_id", "") == "computer": button.pressed.emit(); break
 	for button in shell._body.find_children("*", "Button", true, false):
-		if button.text == "УСТАНОВИТЬ ДОМА": t.check(button.disabled, "installation is unavailable without a current residence")
+		if button.get_meta("gameplay_action",{}).get("module","") == "housing" and button.get_meta("gameplay_action",{}).get("operation","") == "furnish": t.check(button.disabled, "installation is unavailable without a current residence")
 	# Family access uses current human relationships and boundaries, never the old archetype.
 	_ready_people(sim)
 	sim.state.social.npcs.asuka.traits.romantic = 0

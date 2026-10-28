@@ -17,5 +17,8 @@ func tick(_minute: int) -> void:
 func definition(group: String, id: String) -> Dictionary:
 	return sim.catalog.get(group, {}).get(id, {})
 
+func has_facility(location_id: String, facility: String) -> bool:
+	return facility in definition("locations",location_id).get("facilities",[])
+
 func emit_event(kind: String, data: Dictionary = {}) -> void:
 	sim.pending_events.append({"kind": kind, "minute": sim.state.clock.total_minutes, "data": data.duplicate(true)})

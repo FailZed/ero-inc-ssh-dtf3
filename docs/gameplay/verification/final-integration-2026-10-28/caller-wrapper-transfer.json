@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-28T19:23:59.541281+00:00",
+  "files": [
+    {
+      "path": "tools/test_mechanics.ps1",
+      "before": "fd96094237ad39a63eb7483ed6678b58e5f9197f01d2812625b0456926dfa360",
+      "after": "fcd1112eabd816de8c32479f3ebade3306daf956018128bc6bfb1b0c66674cb9"
+    },
+    {
+      "path": "scripts/ui/main_menu.gd",
+      "before": "4461cffbcb8ab5bb24c59f23fd6b4a99fcd15058d3587c6e15e3d63f759c536b",
+      "after": "f28605bba21b0be8deb941a25866544af5310ca5ac3dc882c4d3ef13687850d6"
+    }
+  ],
+  "old_workshop_restored": false,
+  "browser_sha256": "ffb77082718042bb28e718a6c2078cb9d16e485d3bf263cf312be43a7e700d87",
+  "browser_script": "assets/characters/mdrg_study/runtime/live2d_browser.gd"
+}

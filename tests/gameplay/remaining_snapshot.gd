@@ -31,6 +31,7 @@ func _run() -> void:
 		sim.services.family.initialize()
 		sim.state.family.members.family_1.needs.hygiene = 20.0
 		sim.services.family._autonomy(sim.state.family.members.family_1)
+		sim.services.npc_planner.resolve()
 		passed = passed and not sim.state.family.members.family_1.task.is_empty()
 		passed = passed and sim.command("digital", "scan", {"id":"training"}).ok
 		# Prepare one further real care task so restoration includes unfinished work.
@@ -40,6 +41,7 @@ func _run() -> void:
 		sim.state.family.members.family_1.needs.hygiene = 10.0
 		sim.state.family.members.family_1.recent.erase("wash")
 		sim.services.family._autonomy(sim.state.family.members.family_1)
+		sim.services.npc_planner.resolve()
 		var snapshot: Dictionary = _normal(sim.export_snapshot())
 		var args := {"id":"training", "token":sim.state.digital.pending.token}
 		passed = passed and sim.command("digital", "resolve", args).ok

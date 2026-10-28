@@ -25,7 +25,7 @@ func _run() -> void:
 	var workshop: Control = menu._character_workshop
 	check(is_instance_valid(workshop),"opens workshop inside main menu")
 	if not is_instance_valid(workshop): quit(1); return
-	check(workshop.puppet.bank.definitions.size()==106,"integrated model loaded")
+	check(workshop.scene_file_path == "res://assets/characters/mdrg_study/scenes/browser.tscn" and workshop._model_ready and workshop._actor.is_model_loaded(),"menu opens the new workshop with an actual Live2D model")
 	check(paused == initial_pause,"opening preserves pause state")
 	workshop._close()
 	await process_frame
@@ -42,6 +42,21 @@ func _run() -> void:
 	menu._character_workshop._close()
 	await process_frame
 	check(paused,"closing preserves paused game")
+	var gameplay: Node = root.get_node("Gameplay")
+	var main_before := JSON.stringify(gameplay.simulation.export_snapshot())
+	menu.open_action(&"conversation_room")
+	await process_frame
+	check(is_instance_valid(menu._conversation_room),"opens Live2D conversation from menu")
+	if is_instance_valid(menu._conversation_room):
+		check(is_instance_valid(menu._conversation_room.puppet.model),"conversation menu entry loads actual Live2D")
+		check(menu._conversation_room.can_process(),"conversation works while world is paused")
+		menu._conversation_room.puppet.finish_speech()
+		var reply: Dictionary = menu._conversation_room.session.present()
+		menu._conversation_room._choose("day",int(reply.turn))
+		check(JSON.stringify(gameplay.simulation.export_snapshot())==main_before,"learning room leaves main game state untouched")
+		menu._conversation_room._close()
+		await process_frame
+		check(not is_instance_valid(menu._conversation_room) and aside._conversation_button.has_focus(),"conversation closes and restores focus")
 	paused = initial_pause
 	menu.free()
 	await process_frame

@@ -85,8 +85,9 @@ func routine(id: String) -> Dictionary:
 	if sim.state.housing.residence.is_empty() and sim.state.world.flags.get("chapter_one_complete",false): return Rules.fail("no_current_home")
 	var steps: Array = []
 	var location := str(sim.state.world.location)
-	var add := func(room: String, module_id: String, operation: String, args: Dictionary):
-		steps.append({"module":"world","operation":"journey","args":{"id":room},"title":"Перейти: "+str({"bedroom":"спальня","bathroom":"ванная","kitchen":"кухня"}.get(room,room))})
+	var add := func(kind: String, module_id: String, operation: String, args: Dictionary):
+		var room: String = sim.player_home_room(kind)
+		steps.append({"module":"world","operation":"journey","args":{"id":room},"title":"Перейти: "+str({"bedroom":"спальня","bathroom":"ванная","kitchen":"кухня"}.get(kind,kind))})
 		steps.append({"module":module_id,"operation":operation,"args":args,"title":str({"nap":"Вздремнуть","toilet":"Сходить в туалет","shower":"Принять душ","drink":"Выпить воды","use":"Поесть","homework":"Выполнить учебное задание"}.get(operation,operation))})
 	if id == "recovery": add.call("bedroom","needs","nap",{"minutes":30})
 	if id in ["morning","recovery"]:

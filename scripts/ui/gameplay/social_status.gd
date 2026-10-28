@@ -4,6 +4,23 @@ const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const Social = preload("res://scripts/gameplay/social_presentation.gd")
 const Names = preload("res://scripts/gameplay/presentation.gd")
 
+static func employment(parent: Node, sim, id: String) -> void:
+	var view: Dictionary = sim.services.npc_agency.employment_view(id)
+	if view.is_empty():
+		UI.label(parent,"Учится в университете" if sim.state.social.npcs[id].biography.role=="student" else "Сейчас не работает",18,UI.MUTED)
+		return
+	var title := UI.label(parent,"%s · ступень %d / 5" % [view.title,view.rank],21,UI.BLUE)
+	title.set_meta("npc_occupation",view.id)
+	UI.label(parent,"%s · навык %d / 10 · %.2f ¤ в час" % [Names.title(str(view.skill)),view.skill_level,view.hourly_pay],18,UI.MUTED)
+	if int(view.rank)<5: UI.label(parent,"Следующая ступень: навык %d" % view.next_skill,17,UI.MUTED)
+	UI.label(parent,"Работает из дома" if view.location==sim.state.social.npcs[id].home else Names.title(str(view.location)),18,UI.MUTED)
+	if view.schedule.is_empty():
+		UI.label(parent,"Свободный график · сегодня %d / %d мин" % [view.minutes_today,view.daily_limit],17,UI.MUTED)
+	for entry in view.schedule:
+		var days: Array[String] = []
+		for day in entry.get("weekdays",[1,2,3,4,5,6,7]): days.append(["вс","пн","вт","ср","чт","пт","сб"][int(day)%7])
+		UI.label(parent,"%s · %02d:%02d–%02d:%02d" % [", ".join(days),int(entry.hours[0])/60,int(entry.hours[0])%60,int(entry.hours[1])/60,int(entry.hours[1])%60],17,UI.MUTED)
+
 static func life(parent: Node, sim, id: String) -> void:
 	var view := Social.life(sim, id)
 	if view.is_empty(): return

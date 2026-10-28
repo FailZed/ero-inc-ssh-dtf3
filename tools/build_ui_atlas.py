@@ -7,9 +7,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs" / "ui"
 CAPTURES = OUT / "captures"
 DATASETS = {
-    "1920 × 1080": "windows-v2-1920",
-    "1366 × 768": "windows-v2-1366",
-    "2560 × 1080": "windows-v2-ultrawide",
+    "1920 × 1080": "1920",
+    "1366 × 768": "1366",
+    "2560 × 1080": "ultrawide",
 }
 TITLES = {
     "place": "Игровой HUD", "map": "Карта города", "profile": "Персонаж",
@@ -53,6 +53,11 @@ TITLES = {
     "intimacy-invitation":"Личная встреча · предложение", "intimacy-decision":"Личная встреча · решение",
     "guided-room":"Первый день · комната", "guided-journal":"Первый день · журнал",
 }
+TITLES.update({
+    "scene-people":"Люди рядом", "scene-places":"Куда пойти", "scene-apartment_hall":"Прихожая", "scene-bathroom":"Ванная", "scene-kitchen":"Кухня",
+    "inventory-equipped":"Сумка · надетая вещь", "place-text-125":"Сцена · текст 125 %", "work-schedule-conflict":"Работа или занятия?",
+    "story-dialogue":"Сюжетная реплика", "story-choices":"Сюжетный выбор", "story-history":"История диалога", "story-text-input":"Ввод имени", "story-text-125":"Сюжет · текст 125 %",
+})
 NOTES = {
     "place": "Место, время, одна цель, основные ресурсы и небольшие иконки. Пустой план скрыт; Q открывает планирование.",
     "inventory": "Сетка предметов с растровыми иллюстрациями, выбранный предмет справа и одно основное действие. Поиск, категории и сортировка сохраняются при переходах. Просмотр не расходует время.",
@@ -78,22 +83,35 @@ NOTES = {
     "confirmation":"Подтверждения используют игровой стиль. По умолчанию выбрана отмена. Закрытие окна не выполняет действие.",
 }
 
+NOTES.update({
+    "place":"Компактная панель справа переключает действия, людей и выходы. Она сохраняет сцену, прокручивает длинные списки и сворачивается. Команды используют текущее состояние игры.",
+    "scene-people":"Здесь находятся только люди в текущем месте; выбор открывает действующий разговор. Все контакты доступны отдельной строкой. Жители на этих снимках помещены в комнату только для проверки UI.",
+    "scene-places":"Выходы из текущей комнаты и переход к карте находятся в той же панели. Просмотр списка не меняет время или RNG.",
+    "inventory":"Компактный список с названием, количеством и весом. Нет пустых ячеек. Для выбранной вещи появляются её собственные действия. Поиск, категория и выбор сохраняются при возврате.",
+    "inventory-equipped":"Для уже надетой вещи доступно снятие, для оружия — убрать из рук. Использование и экипировка проверены через реальные команды, без изменения пользовательских сохранений.",
+    "inventory-text-125":"Увеличенный текст в компактной сумке. Рисунки предметов остаются небольшими миниатюрами.",
+})
+
 
 def read_reports():
     datasets = {}
-    for label, directory in DATASETS.items():
-        path = CAPTURES / directory / "report.json"
-        if not path.exists():
-            continue
-        report = json.loads(path.read_text(encoding="utf-8-sig"))
-        datasets[label] = {
-            entry["id"]: {
-                "path": f"captures/{directory}/{entry['id']}.png",
-                "bounds_ok": entry["main_window_inside_viewport"],
-                "saved": entry["saved"],
-            }
-            for entry in report["captures"]
-        }
+    for label, suffix in DATASETS.items():
+        merged = {}
+        for directory in (f"approved-scene-{suffix}", f"compact-{suffix}"):
+            path = CAPTURES / directory / "report.json"
+            if not path.exists():
+                continue
+            report = json.loads(path.read_text(encoding="utf-8-sig"))
+            if report.get("failures"):
+                raise ValueError(f"Unaccepted capture report: {path}")
+            for entry in report["captures"]:
+                merged[entry["id"]] = {
+                    "path": f"captures/{directory}/{entry['id']}.png",
+                    "bounds_ok": entry["main_window_inside_viewport"],
+                    "saved": entry["saved"],
+                    "review": directory,
+                }
+        datasets[label] = merged
     return datasets
 
 
@@ -110,20 +128,23 @@ def main():
         {"id": key, "title": TITLES.get(key, key), "note": NOTES.get(key, "Существующий игровой раздел в общей лаконичной теме EroInc.")}
         for key in datasets["1920 × 1080"]
     ]
+    screens.sort(key=lambda item: (["place","scene-people","scene-places","inventory","inventory-equipped","inventory-text-125","place-text-125"].index(item["id"]) if item["id"] in ["place","scene-people","scene-places","inventory","inventory-equipped","inventory-text-125","place-text-125"] else 100))
     research = ROOT.parent / ".research" / "school-0.981"
     verification = {
-        "gameplay": result_from_log(research / "phase5" / "tests.log", "GAMEPLAY_RESULT"),
+        "previous_gameplay": result_from_log(research / "phase5" / "tests.log", "GAMEPLAY_RESULT"),
         "game_ui": result_from_log(OUT / "test-ui.log", "GAME_UI_RESULT"),
-        "mechanics_pack": result_from_log(research / "tests-pack.log", "MECHANICS_RESULT"),
+        "previous_mechanics_pack": result_from_log(research / "tests-pack.log", "MECHANICS_RESULT"),
         "captures": sum(len(items) for items in datasets.values()),
+        "current_interaction_pass": {label: result_from_log(OUT / f"compact-{suffix}.log", "UI_REVIEW_RESULT") for label, suffix in DATASETS.items()},
+        "scope": "Compact context drawer and inventory are the latest pass. Other screens come from the preceding native 103-state review; no repeated general mechanics run was scheduled.",
         "all_capture_bounds_pass": all(item["bounds_ok"] and item["saved"] for data in datasets.values() for item in data.values()),
         "controller_validation": "Synthetic cancel input and keyboard focus; no physical controller session.",
         "review_source": "All images are native Godot captures from disposable worlds; save cards use in-memory fixtures. No existing save file was modified.",
         "known_shutdown_output": "The existing runtime reports 63 ObjectDB instances and 27 resources at exit; the same output was observed before UI changes.",
     }
     specification = {
-        "date": "2026-10-27", "engine": "Godot 4.7.2 stable",
-        "direction": "Собственный лаконичный игровой стиль EroInc: физический телефон, личный дневник, сумка и план комнаты; растровое искусство в ночной палитре и удобные повседневные действия.",
+        "date": "2026-10-28", "engine": "Godot 4.7.2 stable",
+        "direction": "Собственный лаконичный игровой стиль EroInc: ночная сцена, светлая типографика, тонкие прозрачные поверхности и компактные контекстные списки. Телефон сохраняет оформление Android.",
         "rules": [
             "Одна задача на экране. Остальные разделы открываются по F1 или горячим клавишам.",
             "Прозрачные сине-чёрные поверхности, тонкие горизонтальные линии, светлый текст. Выделение — бледно-голубое; оранжевый — для последствий и предупреждений.",
@@ -133,14 +154,15 @@ def main():
             "Текст масштабируется от 90 до 125 процентов. Настройка хранится отдельно в user://interface.cfg.",
             "Телефон использует растровый корпус и сменные обои; настройки и копия своего изображения хранятся в user://phone, отдельно от игровых сохранений.",
             "Предметы, корпус телефона, дневник и обои — оригинальные изображения ImageGen. Текст, кнопки, состояния и простые навигационные пиктограммы остаются кодовыми элементами.",
-            "Все подробные игровые окна используют общую растровую поверхность. Назад возвращает в предыдущий раздел; верхнее окно перехватывает игровые горячие клавиши и восстанавливает фокус при закрытии.",
+            "Подробные окна используют общую прозрачную поверхность с тонкой границей. Назад возвращает в предыдущий раздел; верхнее окно перехватывает игровые горячие клавиши и восстанавливает фокус при закрытии.",
             "Практика, подработки, расписание, личные истории, подтверждения и мини-игры входят в тот же интерфейс. Устаревшие дубли семейного окна и карточек сохранения удалены.",
         ],
         "palette": {"text": "#e4edf4", "secondary": "#9ab1c2", "selection": "#90c6e8", "consequences": "#da9a63"},
         "keys": {"I": "Сумка", "C": "Персонаж", "J": "Журнал", "M": "Карта", "R": "Люди", "P": "Телефон", "Q": "План", "F1": "Разделы", "H": "Скрыть HUD", "Esc / gamepad B": "Назад"},
         "sources": [
-            {"title": "The Sims 4 · горячие клавиши и управление временем", "url": "https://www.ea.com/games/the-sims/tips-and-tricks?isLocalized=true"},
-            {"title": "Black Desert · упрощение интерфейса", "url": "https://www.sa.playblackdesert.com/PT-BR/Wiki?wikiNo=14"},
+            {"title":"Утверждённый пользователем визуальный ориентир", "path":"references/approved-hud.png"},
+            {"title":"Наблюдения UX запущенной School", "path":"../coordination/ui-ux.md"},
+            {"title":"PT Serif · исходник и OFL", "url":"https://github.com/google/fonts/tree/main/ofl/ptserif"},
         ],
         "screens": screens,
         "verification": verification,
@@ -155,7 +177,7 @@ def main():
 <style>
 :root{color-scheme:dark;font:15px/1.5 system-ui,sans-serif;color:#e4edf4;background:#070e15}*{box-sizing:border-box}body{margin:0}button,select,a{font:inherit}button,select{background:transparent;color:inherit;border:0;border-bottom:1px solid #344c5d;padding:10px 14px;cursor:pointer}button:hover,button:focus-visible,a:focus-visible{color:#90c6e8;outline:1px solid #90c6e8}a{color:#90c6e8}header{display:flex;gap:22px;align-items:baseline;padding:24px 32px;border-bottom:1px solid #344c5d}header strong{font-size:24px;font-weight:500}header span{color:#9ab1c2}.layout{display:grid;grid-template-columns:248px 1fr;min-height:calc(100vh - 85px)}nav{border-right:1px solid #223746;padding:20px 16px;max-height:calc(100vh - 85px);overflow:auto}nav input{width:100%;padding:10px;margin-bottom:12px;color:#e4edf4;background:#102332;border:1px solid #344c5d;font:inherit}nav button{display:block;text-align:left;width:100%;border:0;font-size:14px;padding:9px 12px}nav button[aria-current=true]{color:#90c6e8;background:#152b3b;border-left:2px solid #90c6e8}main{padding:20px 30px;min-width:0}.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.toolbar h1{margin:0 auto 0 0;font-size:25px;font-weight:400}.frame{margin-top:22px;max-height:72vh;overflow:auto;background:#03070b;border-top:1px solid #344c5d;border-bottom:1px solid #344c5d}.frame img{display:block;width:100%;height:auto}.frame.actual img{width:auto;max-width:none}p{max-width:900px;color:#9ab1c2}small{color:#9ab1c2}footer{margin-top:24px;color:#9ab1c2;font-size:13px}details{margin-top:22px}summary{cursor:pointer;color:#90c6e8}li{margin:8px 0}.tag{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#90c6e8}@media(max-width:850px){header{display:block;padding:16px}.layout{grid-template-columns:1fr}nav{display:flex;max-height:none;overflow:auto;gap:8px;border-right:0}nav button{width:auto;white-space:nowrap}main{padding:16px}.frame{max-height:none}}
 </style>
-<header><strong>ERO INC</strong><span>Атлас интерфейса · 27 октября 2026</span></header>
+<header><strong>ERO INC</strong><span>Атлас интерфейса · 28 октября 2026</span></header>
 <div class="layout"><nav aria-label="Экраны игры" id="navigation"></nav><main>
 <div class="toolbar"><h1 id="title"></h1><select id="resolution" aria-label="Разрешение"></select><button id="previous" aria-label="Предыдущий экран">←</button><button id="next" aria-label="Следующий экран">→</button><button id="actual">1:1</button></div>
 <div class="frame" id="frame"><img id="screen" alt=""></div>
@@ -164,16 +186,16 @@ def main():
 <li>Одна задача на экране; полная навигация открывается по F1.</li>
 <li>Светлая типографика, прозрачные тёмные поверхности, минимум рамок. Художественная основа EroInc сохранена.</li>
 <li>Q открывает план действий. Shift + действие добавляет его в очередь. Пустой план скрыт.</li>
-<li>Телефон — отдельное устройство с приложениями и сменными обоями. Сумка использует сетку предметов; дневник — разворот с одной выбранной записью.</li>
-<li>Растровые изображения ImageGen встроены в игровые окна. Надписи, кнопки, фокус и действия работают средствами Godot.</li>
+<li>Телефон — отдельное устройство с приложениями и сменными обоями. Сумка использует компактный список вещей; дневник показывает одну выбранную запись.</li>
+<li>Растровые предметы и Android-телефон встроены в игровые окна. Надписи, кнопки, фокус и действия работают средствами Godot.</li>
 <li>Просмотр окон не расходует время. Игровые действия вызывают существующую симуляцию.</li>
 </ul><p><a href="specification.json">Спецификация</a> · <a href="verification.json">Результаты проверок</a></p></details>
-<footer>Настоящие снимки Godot из отдельного тестового мира. Это не художественные макеты и не сохранённое прохождение игрока. Полный обзор содержит игровые окна, дополнительные вкладки, заполненные тестовые слоты и увеличенный текст.</footer>
+<footer>Настоящие снимки Godot из отдельного тестового мира. Это не художественные макеты и не сохранённое прохождение игрока. Последний проход: компактная панель и сумка. Остальные окна сохранены из предшествующего обзора; старые художественные варианты не используются как текущий HUD.</footer>
 </main></div>
 <script>
 const data=__DATA__;
-let index=Math.max(0,data.screens.findIndex(s=>s.id==='growth-skills'));const nav=document.querySelector('#navigation'),resolution=document.querySelector('#resolution');
-const search=document.createElement("input");search.placeholder="Найти окно…";search.setAttribute("aria-label","Поиск окон");nav.append(search);search.oninput=()=>{[...nav.querySelectorAll("button")].forEach((b,n)=>b.hidden=!data.screens[n].title.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))};
+let index=Math.max(0,data.screens.findIndex(s=>s.id==='place'));const nav=document.querySelector('#navigation'),resolution=document.querySelector('#resolution');
+const search=document.createElement("input");search.placeholder="Найти окно…";search.setAttribute("aria-label","Поиск окон");nav.append(search);search.oninput=()=>{[...nav.querySelectorAll("button")].forEach((b,n)=>b.style.display=data.screens[n].title.toLocaleLowerCase().includes(search.value.toLocaleLowerCase())?"block":"none")};
 for(const name of Object.keys(data.datasets)){const o=document.createElement('option');o.textContent=name;resolution.append(o)}
 for(let n=0;n<data.screens.length;n++){const b=document.createElement('button');b.textContent=data.screens[n].title;b.onclick=()=>{index=n;show()};nav.append(b)}
 function show(){const s=data.screens[index],chosen=data.datasets[resolution.value][s.id],capture=chosen||data.datasets['1920 × 1080'][s.id];document.querySelector('#title').textContent=s.title;document.querySelector('#note').textContent=s.note;const img=document.querySelector('#screen');img.src=capture.path;img.alt=s.title+' — реальный экран Godot';document.querySelector('#size').textContent=(chosen?resolution.value:'1920 × 1080 · этот экран доступен в полном обзоре')+' · ← / → переключают экраны';[...nav.querySelectorAll("button")].forEach((b,n)=>b.setAttribute('aria-current',n===index));document.querySelector('#frame').classList.remove('actual')}

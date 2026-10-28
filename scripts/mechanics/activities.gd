@@ -11,7 +11,9 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	var program := definition("training_programs", id)
 	if program.is_empty(): return Rules.fail("unknown_training")
 	if not Rules.check(sim.state, program.get("requirements", {})): return Rules.fail("training_requirements")
-	if program.has("location") and program.location != sim.state.world.location: return Rules.fail("wrong_location")
+	if program.has("home_room_kind"):
+		if not sim.is_player_home_location(str(sim.state.world.location)) or sim.room_kind(str(sim.state.world.location)) != program.home_room_kind: return Rules.fail("wrong_location")
+	elif program.has("location") and program.location != sim.state.world.location: return Rules.fail("wrong_location")
 	var key := "training:%s:%d" % [id, sim.state.clock.day_index]
 	if int(sim.state.counters.get(key, 0)) >= int(program.get("daily_limit", 3)): return Rules.fail("overtraining_limit")
 	var energy: float = float(program.get("energy", 5)) * sim.multiplier("resource_cost")

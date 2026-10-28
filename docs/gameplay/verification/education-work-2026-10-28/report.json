@@ -1,0 +1,243 @@
+{
+  "created_at": "2026-10-28T19:24:31.737630+03:00",
+  "engine": "Godot 4.7.2 stable",
+  "status": "passed",
+  "scope": "Audit A01 and A02: sandbox education choice, attendance and work forecast",
+  "main_schema": 9,
+  "user_save_files_modified": false,
+  "old_schema_migrations": false,
+  "removed_files": [
+    "scripts/gameplay/curriculum.gd",
+    "scripts/gameplay/curriculum.gd.uid"
+  ],
+  "test_runs": [
+    {
+      "id": "education-rules",
+      "command": "tools/godot.ps1 --headless --script res://tests/gameplay/education_work.gd",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "checks": 116,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "education-rules.log",
+      "source_log_modified_at": "2026-10-28T19:23:02.899990+03:00"
+    },
+    {
+      "id": "native-ui",
+      "command": "tools/test_education_work.ps1 -Native",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "captures": 7,
+        "checks": 16,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "native-ui.log",
+      "source_log_modified_at": "2026-10-28T19:13:27.882283+03:00"
+    },
+    {
+      "id": "main-game",
+      "command": "tools/test_gameplay.ps1",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "checks": 703,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "main-game.log",
+      "source_log_modified_at": "2026-10-28T19:13:58.408074+03:00"
+    },
+    {
+      "id": "game-ui",
+      "command": "tools/test_game_ui.ps1",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "checks": 199,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "game-ui.log",
+      "source_log_modified_at": "2026-10-28T19:15:10.858835+03:00"
+    },
+    {
+      "id": "sandbox",
+      "command": "tools/test_sandbox.ps1",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "checks": 77,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "sandbox.log",
+      "source_log_modified_at": "2026-10-28T19:10:57.763312+03:00"
+    },
+    {
+      "id": "sandbox-flow",
+      "command": "tools/test_sandbox.ps1",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "checks": 11,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "sandbox-flow.log",
+      "source_log_modified_at": "2026-10-28T19:10:57.763312+03:00"
+    },
+    {
+      "id": "work-expansion",
+      "command": "tools/test_work_expansion.ps1",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "checks": 92,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "work-expansion.log",
+      "source_log_modified_at": "2026-10-28T19:05:18.353467+03:00"
+    },
+    {
+      "id": "standalone-pack",
+      "command": "tools/test_mechanics.ps1 -Isolated -Pack -RunId education-20261028-final",
+      "engine_audio": "Dummy",
+      "exit_code": 0,
+      "result": {
+        "checks": 2799,
+        "failed": 0,
+        "failures": []
+      },
+      "log": "standalone-pack.log",
+      "source_log_modified_at": "2026-10-28T19:22:26.781359+03:00"
+    },
+    {
+      "id": "snapshot-student-write",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "mode": "write",
+        "ok": true,
+        "stage": "complete"
+      },
+      "log": "snapshot-student-write.log"
+    },
+    {
+      "id": "snapshot-student-read",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "mode": "read",
+        "ok": true,
+        "stage": "complete"
+      },
+      "log": "snapshot-student-read.log"
+    },
+    {
+      "id": "snapshot-nonstudent-write",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "mode": "write",
+        "ok": true,
+        "stage": "complete"
+      },
+      "log": "snapshot-nonstudent-write.log"
+    },
+    {
+      "id": "snapshot-nonstudent-read",
+      "exit_code": 0,
+      "result": {
+        "audio": "Dummy",
+        "mode": "read",
+        "ok": true,
+        "stage": "complete"
+      },
+      "log": "snapshot-nonstudent-read.log"
+    }
+  ],
+  "assertions_across_top_level_runs": 4013,
+  "source_sha256": {
+    "scripts/mechanics/education_schedule.gd": "d26fe12f9c0aa7b1d95c5092f20c3e015b89e4bbb79c07a4b133766b623e7279",
+    "scripts/mechanics/setup_config.gd": "f56a080690e848a9be2877c8efec226eea05f45edaf20868778c45c72dd0d024",
+    "scripts/mechanics/world.gd": "0b572aa2791f0583af8988b046ebf31dbe80bd5f6bbd548d93e659597d263c57",
+    "scripts/mechanics/work_schedule.gd": "4ba3aefe702cb144bc2285f5a157f5d6a2ef3b0c6bc402050d3606ebd9c93ca7",
+    "scripts/gameplay/main_simulation.gd": "7c6cd55d9831ec7f5ef8800816d52dfebd062d45bc37458bf9788a234f8eb7e9",
+    "scripts/gameplay/gameplay.gd": "84aa9676e996308b4a25104829d0cb6ad006e349256eadaaf4c237699a652e4a",
+    "scripts/gameplay/sandbox_flow.gd": "02cad37fcfa3bac5bae6db30f5439393bcf568a1c64b44d4d3491f1d70fea07b",
+    "scripts/gameplay/city_world.gd": "e7d209975f81de8e0f901f8ef3dc31888e51fc11d19ef39575b3986c6d133d32",
+    "scripts/gameplay/action_policy.gd": "a13ae6e0977a95f1d396ab140b55c61fa83c4f91a3b6231c73142b3d9bb1dd94",
+    "scripts/gameplay/presentation.gd": "228b982eb737482c11b177e8ed169a17b42dc1e80b5b5a1a00608d1bf8793b7e",
+    "scripts/ui/gameplay/world_setup.gd": "e33607216c8231e8acd1498db4012723f46af71a26a00d660fcf8c0668c10dff",
+    "scripts/ui/gameplay/curriculum_window.gd": "2d87a75d7f30347e1c822d2a6368056a9fb252ad81cbc3da21a8d8d1ecd2dc40",
+    "scripts/ui/gameplay/work_schedule_window.gd": "0d9fab55f5ebf652bced629900dc2224f063e61132b06f95fb6417430aedb61a",
+    "scripts/ui/gameplay/livelihood_window.gd": "5866a7d442271e6f07e67a814e27a5a9ad5541b8c16c3938db24ac864b4441a1",
+    "scripts/ui/gameplay/game_screens.gd": "2211acdfad97d9cdb249f7b6b0155486a0f33b3379529dad06651175152a1cb8",
+    "scripts/ui/gameplay/gameplay_shell.gd": "7a4818ded6884f51f5d5bf9c1bb97841b2738a8c4ed091469cf6fe996646e35d",
+    "tests/gameplay/education_work.gd": "6bdd36ff2a5d456594b8d83ae5ec1a512aa4ba856bb8b3631cbe6c5a6a9ac3a7",
+    "tests/gameplay/capture_education_work.gd": "8bdbe7dc09fca7e55b569d50b5940c2ea2ccaf7743eb0361d7924bfebd30e202",
+    "tests/gameplay/sandbox_snapshot.gd": "a6e3eb6afca8706750e5fbefa85aae941dffbacbf7a663549bc31881b6232e88",
+    "tests/gameplay/run.gd": "7dedd5e72b5ca6e8793bc37b3f99c73ded4af3bb127f39687a8de1f522faef05",
+    "tools/test_education_work.ps1": "0d6c976cd76f761a88ef641123dacf89ebfd2d114acca6e675db49d0cc11741f",
+    "tools/test_mechanics.ps1": "75f56005ba72bf425917298d6e2873d569fd1e079324da18d4a4fd1b749004d9"
+  },
+  "visual_qa": [
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/forecast-absence.png",
+      "sha256": "8cac579ba78b2f6dcfbbf6a6e89448129aeb3e1b87ad1cc46ee2a8f7fe6eb03a",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/forecast-late.png",
+      "sha256": "2775bdfa813d2c0adbe700d84b71a632861376d1f1bdae2deb7c33c096bd4371",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/late-lesson.png",
+      "sha256": "31a4f66ad2c0693d7e6ed3bb287bc712efe4b87438baa6ef10d14ff487cbfbfe",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/nonstudent-activities.png",
+      "sha256": "77faf68ee69f47fc82482a27a9db33f76320dc09b40bb6bd82bbab0c70de702f",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/nonstudent-settings.png",
+      "sha256": "ba37cea9a2d20b3ca3aeb77b28d9011e3d6a14f910026f9baa58ece5aee72290",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/student-settings.png",
+      "sha256": "89e1d2c79ad782c68b98f13593a71b4db384aa731d3935e4a93ec03224070417",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    },
+    {
+      "path": "E:/GoDot/.research/school-0.981/education-2026-10-28/captures/work-with-commute.png",
+      "sha256": "d05f7063ebdaf544a7de403a607e5dbf37931e3c41d84fd2017acd331c28b8a8",
+      "kind": "actual_game_ui_controlled_test_world",
+      "visually_reviewed": true
+    }
+  ],
+  "notes": [
+    "All launched game processes used Dummy audio.",
+    "Shared workspace: other executor changes were preserved. Source hashes describe the files when this report was collected.",
+    "Existing main-game shutdown ObjectDB/resource warnings remain; checked logs contain no SCRIPT ERROR or FAIL.",
+    "Earlier shared-path pack invocation printed zero failed assertions but its wrapper failed. The final invocation used a separate staging project, pack and log directory and exited 0; the earlier nonzero exit cause was not proven.",
+    "A03-A08 from the audit are not marked complete by this iteration."
+  ]
+}

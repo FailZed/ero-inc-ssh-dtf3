@@ -1,0 +1,474 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Europe/Moscow",
+  "engine": "Godot 4.7.2 stable",
+  "main_schema": 8,
+  "audio_driver": "Dummy",
+  "audit_gameplay_changes": false,
+  "user_save_slots_modified": false,
+  "scope": "Current EroInc implementation, fresh headless checks, local diagnostic worlds and repository parity/history; no new donor source analysis.",
+  "inventory": {
+    "catalog": {
+      "actions": 2,
+      "agency_actions": 27,
+      "agency_aspirations": 6,
+      "combat_moves": 12,
+      "contraceptive_methods": 4,
+      "contracts": 10,
+      "dialogue_nodes": 30,
+      "dialogue_pools": 176,
+      "family_actions": 6,
+      "family_stages": 5,
+      "items": 40,
+      "lessons": 7,
+      "npc_story_arcs": 6,
+      "professions": 3,
+      "properties": 4,
+      "publications": 2,
+      "recipes": 9,
+      "reproductive_procedures": 2,
+      "skills": 30,
+      "stream_topics": 3,
+      "training_programs": 5,
+      "weapons": 6
+    },
+    "services": [
+      "character",
+      "inventory",
+      "world",
+      "economy",
+      "housing",
+      "preferences",
+      "social",
+      "organizations",
+      "lifecycle",
+      "encounters",
+      "actions",
+      "events",
+      "health",
+      "combat",
+      "careers",
+      "security",
+      "social_rules",
+      "institutions",
+      "interior",
+      "activities",
+      "appearance",
+      "population",
+      "npc_behavior",
+      "npc_personalities",
+      "npc_agency",
+      "npc_relationships",
+      "npc_dialogue",
+      "family",
+      "digital",
+      "collections",
+      "reproduction",
+      "intimacy",
+      "child_support",
+      "pregnancy_wellbeing",
+      "adult_health",
+      "npc_reproduction",
+      "npc_stories",
+      "livelihood",
+      "growth",
+      "needs"
+    ],
+    "work": {
+      "goals": 5,
+      "home_upgrades": 3,
+      "jobs": 33,
+      "order_templates": 5
+    }
+  },
+  "observations": [
+    {
+      "absences": 0,
+      "arrival": "10:50",
+      "end": "11:50",
+      "grade": 2,
+      "id": "late_lesson",
+      "result": {
+        "data": {
+          "clock": {
+            "date_text": "APR 13",
+            "day": 13,
+            "day_index": 1,
+            "hour": 11,
+            "minute": 50,
+            "minute_of_day": 710,
+            "month": "APR",
+            "month_number": 4,
+            "phase": "day",
+            "time_text": "11:50",
+            "total_minutes": 2150,
+            "week_index": 0,
+            "weekday": 1,
+            "year": 2026
+          }
+        },
+        "ok": true
+      },
+      "scheduled": "10:00-11:00",
+      "study_skill": 15
+    },
+    {
+      "conflicts": [
+        {
+          "commute": 14,
+          "end": 2100,
+          "id": "common_day",
+          "overlap": false,
+          "start": 2040
+        }
+      ],
+      "id": "commute_guard",
+      "job": "race_marshal",
+      "result": {
+        "error": "work_conflicts_study",
+        "ok": false
+      },
+      "start": "09:00",
+      "work_ends": "10:00"
+    },
+    {
+      "cash": 5099,
+      "completed": true,
+      "craft_skill": 5,
+      "id": "craft_job_outputs",
+      "inventory_after": {},
+      "inventory_before": {}
+    },
+    {
+      "id": "authored_pools",
+      "rounds": 5,
+      "tasks_per_job": {
+        "card_host": 5,
+        "comedy_writer": 5,
+        "community_listener": 5,
+        "copy_editor": 5,
+        "craft_workshop": 5,
+        "dance_assistant": 5,
+        "day_planner": 5,
+        "defence_assistant": 5,
+        "event_host": 5,
+        "fact_checker": 5,
+        "fundraiser": 5,
+        "gym_assistant": 5,
+        "music_arranger": 5,
+        "park_gardener": 5,
+        "puzzle_editor": 5,
+        "security_auditor": 5,
+        "tutor": 5
+      }
+    }
+  ],
+  "timings": [
+    {
+      "advance_ok": true,
+      "milliseconds": 53,
+      "minutes": 60,
+      "npcs": 20,
+      "setup_ok": true
+    },
+    {
+      "advance_ok": true,
+      "milliseconds": 230,
+      "minutes": 60,
+      "npcs": 100,
+      "setup_ok": true
+    }
+  ],
+  "pack_wrapper_process": {
+    "exit_code": 1,
+    "status": "wrapper failed despite zero reported assertion failures; root cause unconfirmed"
+  },
+  "pack_direct_process": {
+    "exit_code": 0
+  },
+  "parallel_changes": {
+    "prior_work_manifest_files_changed": [
+      "scripts/gameplay/main_simulation.gd",
+      "scripts/ui/gameplay/livelihood_window.gd",
+      "scripts/ui/gameplay/work_schedule_window.gd",
+      "scripts/ui/gameplay/gameplay_shell.gd",
+      "scripts/ui/gameplay/curriculum_window.gd",
+      "scripts/ui/gameplay/growth_window.gd",
+      "scripts/mechanics/adult_health.gd"
+    ],
+    "initial_ui_parse_failure": "tests/gameplay/all_windows.gd:52 could not infer focused; source changed during audit, final UI run passed 200/0",
+    "packages_and_counts": "Wrapper and direct PCK runs reported different assertion counts; do not treat them as one identical artifact run.",
+    "shared_logs_changed_at_collection": {
+      "main_collected": 697,
+      "pack_wrapper_collected": 2708,
+      "note": "Copied shared logs are preserved as collected and are not attributed to the earlier observed audit runs. See observed_audit_runs for audit command outcomes."
+    }
+  },
+  "findings": [
+    {
+      "id": "A01",
+      "priority": "P1",
+      "type": "confirmed_consistency_defect",
+      "summary": "Late class entry gives full credit while shift planner requires arrival at class start.",
+      "sources": [
+        "scripts/mechanics/world.gd:87",
+        "scripts/mechanics/work_schedule.gd:4"
+      ],
+      "probe": [
+        "late_lesson",
+        "commute_guard"
+      ]
+    },
+    {
+      "id": "A02",
+      "priority": "P2",
+      "type": "design_gap",
+      "summary": "Sandbox forces all six subjects; normal curriculum changes require story phase.",
+      "sources": [
+        "scripts/gameplay/sandbox_flow.gd",
+        "scripts/gameplay/gameplay.gd:apply_curriculum"
+      ]
+    },
+    {
+      "id": "A03",
+      "priority": "P2",
+      "type": "integration_gap",
+      "summary": "NPC careers use generic work income and computing-based career level rather than thirty-skill player career profiles.",
+      "sources": [
+        "scripts/mechanics/npc_agency.gd:559"
+      ]
+    },
+    {
+      "id": "A04",
+      "priority": "P2",
+      "type": "content_gap",
+      "summary": "Seventeen authored job pools contain exactly five tasks for a five-round shift.",
+      "probe": [
+        "authored_pools"
+      ]
+    },
+    {
+      "id": "A05",
+      "priority": "P2",
+      "type": "depth_gap",
+      "summary": "Crafting job pays and trains but creates no inventory item.",
+      "probe": [
+        "craft_job_outputs"
+      ]
+    },
+    {
+      "id": "A06",
+      "priority": "P2",
+      "type": "content_gap",
+      "summary": "Generic NPC personal arcs use three ID-hash-selected templates.",
+      "sources": [
+        "scripts/mechanics/npc_stories.gd:12"
+      ]
+    },
+    {
+      "id": "A07",
+      "priority": "P2",
+      "type": "depth_and_pacing_gap",
+      "summary": "Family reaches adult stage at 216 months; adulthood does not become a full autonomous social actor in the family layer.",
+      "sources": [
+        "scripts/mechanics/family.gd:216",
+        "data/mechanics/family.json"
+      ]
+    },
+    {
+      "id": "A08",
+      "priority": "P2",
+      "type": "production_art_gap",
+      "summary": "Temporary pregnancy assets and one-character study workshop are not a complete original character/wardrobe/morphology set.",
+      "sources": [
+        "docs/art/PREGNANCY_MATERIALS.md",
+        "docs/mechanics/CHARACTER_PUPPETRY.md"
+      ]
+    }
+  ],
+  "verification_limits": [
+    "Passing rule assertions do not certify long-term economy balance, narrative variety or fun.",
+    "No new native screenshots were made during this audit.",
+    "UI suite initially failed to compile; final source and final passing result are distinguished.",
+    "PCK wrapper failure remains an explicit verification caveat, even though the direct PCK run exited 0.",
+    "Main shutdown still reports baseline 63 ObjectDB instances and 27 addon resources.",
+    "Timing samples are single headless controlled-world samples, not FPS measurements.",
+    "Existing documentation indexes were left unchanged after file-write errors; this report and the new audit document are separate artifacts."
+  ],
+  "source_sha256": {
+    "scripts/gameplay/main_simulation.gd": "641736471e3de13f7526e18e154c5eaf81045a83cf0ab035d20d8e10d3931e41",
+    "scripts/gameplay/gameplay.gd": "7477f099c29aed7fc9e4076f8aaa25d0abb88398508fa06209114accf5ea87bd",
+    "scripts/gameplay/sandbox_flow.gd": "6af29f3100b39fbf7ae22fe7f955c5fb8040c11c558a95d7804e905b61dcc3fb",
+    "scripts/gameplay/curriculum.gd": "7353dcffaf225e3dd65de97892d41049e8c64f19fb9f169d70e80800ad4ed19b",
+    "scripts/gameplay/player_careers.gd": "47fe1c057319fadb8197b622c0f79a21b263ed4a5c2059cc2329cd9976523463",
+    "scripts/gameplay/player_character.gd": "0fc7be0d37764c5a87fa23f1c2231ca7c960a1c277454bacf3f3cd3ad56f3776",
+    "scripts/gameplay/player_needs.gd": "8d73135c7e6deb958911f44148acaf6204a4ab0d32b10d0c32bbec43db1eb5f8",
+    "scripts/mechanics/world.gd": "84b65076280a051483bd031cbe04a906232d93744a410607351b5ded94aa9902",
+    "scripts/mechanics/work_schedule.gd": "65ad15a63f5e3be40b663e9af7fae7f605eb0d383c716c38e5f023a66c34ea9c",
+    "scripts/mechanics/work_challenges.gd": "cc993f2cdb058be2ccab480bf651df1367d1108c73d0427f84077d30b2d99ae3",
+    "scripts/mechanics/livelihood.gd": "1d6c8e109961c89822d6c604e8bada76d51d27038ce0c7146c986b194354d681",
+    "scripts/mechanics/growth.gd": "c4b60ab9c021ee80fa7f80b962a15d13e91ec6b3d3b8ce2896dc976e7087eb01",
+    "scripts/mechanics/npc_agency.gd": "7c36b7a4870046af4d14da82ba3e4582490e81cac3cc46d429f638e5a92ac0e8",
+    "scripts/mechanics/npc_stories.gd": "5102fdcc87c7fcdb45d99511ca8e69e03d9b381863af316e98778d27e6726dc2",
+    "scripts/mechanics/family.gd": "7b281681f88c61514aa86477af3c144adfe84a1541361ff09c22bc5a438eda3d",
+    "scripts/mechanics/adult_health.gd": "78bd59d28dd989a558af4fcebc0c0601d39c0b0ac1f58c1edb63692677804eb1",
+    "scripts/mechanics/pregnancy_wellbeing.gd": "d46c4ea184b3740c434d5cddd874bec09d60c1fbfecf93ed06904235989589d8",
+    "scripts/ui/gameplay/livelihood_window.gd": "124501c3e98f83351910dc4b65aab7ba728999eb1279f82662728ad8f242796e",
+    "scripts/ui/gameplay/gameplay_shell.gd": "9064949e7cce257cf22aac043792a754977b9e19e72382def31dece5eb758e6b",
+    "scripts/ui/gameplay/growth_window.gd": "ef461aad2f4782f354184fa720b12060caca372e9b31b271c53ff377c9b72770",
+    "tests/gameplay/all_windows.gd": "711f49b662fd00818023d2545e7ff478aca2d1892e1af447c5e2e4692937e2ac",
+    "tools/test_mechanics.ps1": "f33b8803e77d7ccb77736bc3799926ee06263d10740342844a5320532b26033a",
+    "tools/test_game_ui.ps1": "9cdf143265e0d0cdbc4400342dafe8377f6c93ac3db5362ddd115ebbc210b3d3",
+    "data/mechanics/livelihood.json": "1ff99c26ce50b8fcd9ddcf770d7461e56a94514cef76a7d4ec3419e4ee66e08f",
+    "data/mechanics/growth.json": "d0780b4f995d7e90f62002ed1ffd9c5fe5125da8c6105cca8606add5d96c125b",
+    "data/mechanics/family.json": "6451f067980fa6a49b2c28e57203fab31104c0ef81565d98a3257503843744f3",
+    "data/mechanics/npc_stories.json": "57c9037b305c5ce314917e186fef88d13c70470897270c8f7f407a53adc94491",
+    "data/mechanics/reproduction.json": "3b57901dd68edda61b6ebf88a45c7a0aee8ada30226cb3f4c746fc4600ce9f4a",
+    "data/mechanics/npc_reproduction.json": "4796721aeddea51462327124d4a90eac0971b63a0f4cd5a64061c8347718080d",
+    "data/mechanics/adult_health.json": "57bf615f4174861e3e4a26d895b9ad52ed632ca6af4d2630eb7066e4b6459edd",
+    "data/mechanics/pregnancy_wellbeing.json": "c391bd8beefef5a4f421df4b19a165fac572e3af26bb99b476e1a3fe7b43983c"
+  },
+  "evidence_sha256": {
+    "probe.gd": "f70299d86c7907382a3ca19942ea1c233d05b65e078e509e23d437ac22d15001",
+    "probe.json": "4d88d7ef2c6d5622b41b1fe1978ff6160071cf1d54634e0c10042af55c9e04c6",
+    "probe.log": "477d97a4bebfcf2051de7745b4d333b4c02b1e97cb5d6af1505327236b1d6dab",
+    "gameplay.log": "79c3a43863d7d9b7fedd3c1f19c33da990f648bc3123ba04c93a98aaf2152d63",
+    "work-rules.log": "8b99830e88e92d56a2aa0362ab86b6723785dee276bfb617b203067e74154806",
+    "work-write.log": "417ffebc4c94ceec21fd9a141f2302e5b9dd2cbb869484453eb9fcb5091bb925",
+    "work-read.log": "c306f88dedeb7fe6967ae903a1761e0d646ef197b80c83469720b54ad02dfc1d",
+    "growth-rules.log": "9232691a96412c1dd3cdc7311ad4ddcc00928db83e705987f3e4e4c384865f4e",
+    "growth-write.log": "0ab63bdd648e58748f2a5240a165a22eabc0594936c8dc7fe60d764ae03cad1f",
+    "growth-read.log": "c9dcc2ea3f4aab3d04dfe648a27675aa1b2b0dbfe12f19032b063631950fe546",
+    "sandbox-rules.log": "797564fb201238eeedc9229afc43d4a4ad96ab1e4f09404d987f68ff7b659eee",
+    "sandbox-flow.log": "429e071db5966faf7a2ae291b344d6de099391d2aa58af2ca86d315f2b86e3ea",
+    "sandbox-write.log": "594ab9dd452312f2f9e0f42011a137fa4783244f02ad1cfb80f10cb7f256325a",
+    "sandbox-read.log": "8ade277e48a19edb0b0ecd808a87d62209b8a2cb39f364980b6a72038441e931",
+    "ui-final.log": "20bcc492a410a4e1de695fd8b011f151a6be3b73ca799465ca60c65eda01daa8",
+    "pack-wrapper.log": "d70e220dffda738bf59980cebf97857057485496b362ad4493363d7165e34ec1",
+    "pack-direct.log": "bb0d4367e78d8ff41e4b43a0403f2aa1fd73af9c1abb2b61b45f2d507b280606",
+    "pack-direct-status.json": "75876e0e3f497cad271143ba85bd4f36569cd81195509043f860dab14265b716"
+  },
+  "collected_shared_log_results": {
+    "main": {
+      "checks": 697,
+      "failed": 0,
+      "failures": []
+    },
+    "work": {
+      "audio": "Dummy",
+      "checks": 92,
+      "failed": 0,
+      "failures": []
+    },
+    "work_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true,
+      "tasks": 3
+    },
+    "work_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true,
+      "tasks": 3
+    },
+    "growth": {
+      "audio": "Dummy",
+      "checks": 92,
+      "failed": 0,
+      "failures": []
+    },
+    "growth_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true
+    },
+    "growth_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true
+    },
+    "sandbox": {
+      "checks": 77,
+      "failed": 0,
+      "failures": []
+    },
+    "sandbox_flow": {
+      "checks": 11,
+      "failed": 0,
+      "failures": []
+    },
+    "sandbox_write": {
+      "audio": "Dummy",
+      "mode": "write",
+      "ok": true,
+      "stage": "complete"
+    },
+    "sandbox_read": {
+      "audio": "Dummy",
+      "mode": "read",
+      "ok": true,
+      "stage": "complete"
+    },
+    "ui_final": {
+      "checks": 200,
+      "failed": 0,
+      "failures": []
+    },
+    "pack_wrapper_assertions": {
+      "checks": 2708,
+      "failed": 0,
+      "failures": []
+    },
+    "pack_direct_assertions": {
+      "checks": 2695,
+      "failed": 0,
+      "failures": []
+    }
+  },
+  "observed_audit_runs": {
+    "main": {
+      "checks": 690,
+      "failed": 0,
+      "process_exit": 0,
+      "source": "captured tool response for this audit; shared log was subsequently overwritten"
+    },
+    "work": {
+      "checks": 92,
+      "failed": 0,
+      "process_exit": 0
+    },
+    "growth": {
+      "checks": 92,
+      "failed": 0,
+      "process_exit": 0
+    },
+    "sandbox": {
+      "checks": 77,
+      "failed": 0,
+      "process_exit": 0
+    },
+    "sandbox_flow": {
+      "checks": 11,
+      "failed": 0,
+      "process_exit": 0
+    },
+    "ui_final": {
+      "checks": 200,
+      "failed": 0,
+      "process_exit": 0
+    },
+    "pack_wrapper": {
+      "checks": 2607,
+      "failed": 0,
+      "wrapper_exit": 1,
+      "source": "captured tool response; shared log was subsequently overwritten"
+    },
+    "pack_direct": {
+      "checks": 2695,
+      "failed": 0,
+      "process_exit": 0,
+      "log": "pack-direct.log"
+    }
+  }
+}

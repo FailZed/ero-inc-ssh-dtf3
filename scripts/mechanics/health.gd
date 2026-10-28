@@ -1,4 +1,5 @@
 extends "res://scripts/mechanics/core/module.gd"
+const Access = preload("res://scripts/mechanics/care_access.gd")
 ## Fictional game health rules. No real-world dosing or medical advice.
 const PARTS := ["head", "body", "arms", "legs"]
 
@@ -84,6 +85,17 @@ func prenatal_care(id: String, payer: String, elapse: bool = true) -> Dictionary
 	if not sim.state.conditions.has(key) or sim.state.conditions[key].status!="active": return Rules.fail("no_active_pregnancy")
 	if int(sim.state.conditions[key].get("next_care",0))>int(sim.state.clock.total_minutes): return Rules.fail("care_already_provided")
 	if actor(payer).is_empty(): return Rules.fail("unknown_patient")
+	if elapse and sim.state.get("npc_reproduction",{}).get("jobs",{}).has(id): return Rules.fail("clinical_visit_in_progress")
+	var clinical: String = Access.clinic_blocked(sim,id,30,not elapse,payer)
+	if not clinical.is_empty(): return Rules.fail(clinical)
+	var funds := int(sim.state.economy.cash) if payer=="player" else int(actor(payer).money)
+	if funds<30: return Rules.fail("insufficient_funds")
+	if elapse:
+		var elapsed: Dictionary = sim.advance(30)
+		if not elapsed.ok: return elapsed
+		if location_changed(id,payer): return Rules.fail("care_patient_moved")
+		if sim.state.conditions.get(key,{}).get("status","")!="active": return Rules.fail("no_active_pregnancy")
+		if int(sim.state.conditions[key].get("next_care",0))>int(sim.state.clock.total_minutes): return Rules.fail("care_already_provided")
 	if payer=="player":
 		if sim.state.economy.cash<30: return Rules.fail("insufficient_funds")
 		sim.state.economy.cash-=30
@@ -93,7 +105,10 @@ func prenatal_care(id: String, payer: String, elapse: bool = true) -> Dictionary
 	sim.state.conditions[key].last_care_day=sim.state.clock.day_index
 	sim.state.conditions[key].next_care=int(sim.state.clock.total_minutes)+1440
 	sim.state.conditions[key].care=mini(100,int(sim.state.conditions[key].get("care",0))+10)
-	return sim.advance(30) if elapse else Rules.ok()
+	return Rules.ok()
+
+func location_changed(patient: String, payer: String) -> bool:
+	return Access.location(sim,patient)!=Access.clinic(sim) or Access.location(sim,payer)!=Access.clinic(sim)
 
 func tick(minute: int) -> void:
 	for id in sim.state.healthcare.records:

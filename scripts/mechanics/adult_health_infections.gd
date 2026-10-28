@@ -49,7 +49,7 @@ func onset(id: String, condition_id: String) -> bool:
 	if spec.get("requires","")=="erections" and not health().capabilities(id).erections: return false
 	var r: Dictionary = health().record(id)
 	if r.is_empty() or r.conditions.get(condition_id,{}).get("status","")=="active": return false
-	r.conditions[condition_id] = {"status":"active","known":false,"started":now(),"severity":45+int(health().unit(id+":"+condition_id+":"+str(now()))*30),"treatment_until":0,"review_at":now()+1440}
+	r.conditions[condition_id] = {"status":"active","known":false,"started":now(),"severity":45+int(health().unit(id+":"+condition_id+":"+str(now()))*30),"treatment_until":0,"review_at":now()+1440,"course":{}}
 	health()._refresh(id)
 	return true
 
@@ -60,11 +60,6 @@ func tick_actor(id: String) -> void:
 		if infection.status=="active" and int(infection.clears_at)>0 and now()>=int(infection.clears_at):
 			infection.status = "cleared"
 			health().log_event("hpv_clearance",{"target":id,"strain":strain})
-	for key in r.conditions:
-		var condition: Dictionary = r.conditions[key]
-		if condition.status=="active" and int(condition.treatment_until)>0 and now()>=int(condition.treatment_until):
-			condition.status = "resolved"
-			health().log_event("treatment_finished",{"target":id,"condition":key,"text":"Назначенный курс завершён. Если симптомы сохраняются, нужен повторный осмотр."})
 	if now()%1440==0:
 		for key in health().config().conditions:
 			var chance := float(health().config().conditions[key].daily_chance)

@@ -25,12 +25,22 @@ func _new_bond() -> Dictionary:
 func view(from: String, toward: String) -> Dictionary:
 	var npc := _npc(from)
 	var result: Dictionary = npc.get("mind", {}).get("bonds", {}).get(toward, _new_bond()).duplicate(true)
+	var fear: Dictionary = npc.get("mind",{}).get("fears",{}).get("person:"+toward,{})
+	result.fear = float(fear.get("strength",0)) if int(fear.get("expires",0))>_now() else 0.0
 	result.stage = "stranger"
 	if float(result.closeness) > 0: result.stage = "acquaintance"
 	if float(result.affection) >= 25 and float(result.trust) >= 20 and float(result.closeness) >= 15: result.stage = "friend"
 	if float(result.trust) >= 50 and float(result.closeness) >= 50: result.stage = "close_friend"
 	if float(result.grievance) >= 20: result.stage = "strained"
+	if result.consent and result.stage != "strained": result.stage = "partner"
 	return result
+
+func matrix(from: String, toward: String = "player") -> Dictionary:
+	var bond := view(from,toward)
+	var rows: Array = []
+	for key: String in ["trust","affection","respect","comfort","closeness","interest","grievance","fear","care_balance"]:
+		rows.append({"id":key,"value":float(bond[key]),"minimum":-100 if key in ["trust","affection","respect","comfort","care_balance"] else 0,"maximum":100})
+	return {"from":from,"toward":toward,"rows":rows,"stage":str(bond.stage),"consent":bool(bond.consent),"acknowledged":bool(bond.acknowledged),"loan":int(bond.get("loan",0)),"gain_remaining":maxf(0,float(rules().daily_gain_budget)-(float(bond.gain_used) if int(bond.gain_day)==int(sim.state.clock.day_index) else 0)),"repair_days":bond.good_days.duplicate()}
 
 func _bond(from: String, toward: String) -> Dictionary:
 	if from == "player": return {}
@@ -105,6 +115,7 @@ func blocked(actor: String, target: String, action: String) -> String:
 		if tag in sim.state.preferences.disabled_tags: return "content_disabled"
 	var incoming := view(target, actor)
 	if action in ["court", "invite_relationship"]:
+		if float(incoming.fear)>=15: return "unresolved_harm"
 		if not npc.mind.boundaries.romance: return "romantic_boundary"
 		if "romance" in sim.state.preferences.disabled_tags: return "content_disabled"
 		if actor != "player" and not _npc(actor).mind.boundaries.romance: return "romantic_boundary"
@@ -237,6 +248,8 @@ func resolve(actor: String, target: String, action: String) -> Dictionary:
 	if not incoming.is_empty(): incoming.last_contact = _now()
 	if not outgoing.is_empty(): outgoing.last_contact = _now()
 	_project(actor, target)
+	if accepted and action in ["support", "cooperate"] and sim.services.has("adult_health"):
+		sim.services.adult_health.relationships.support(actor,target)
 	emit_event("npc_social_outcome", {"actor": actor, "target": target, "action": action, "accepted": accepted})
 	return {"accepted": accepted, "chance": info.chance, "reason": "accepted" if accepted else "declined"}
 
@@ -248,7 +261,7 @@ func _project(a: String, b: String) -> void:
 	relation.trust = minf(float(first.trust), float(second.trust))
 	relation.affinity = minf(float(first.affection), float(second.affection))
 	relation.attraction = minf(float(first.interest), float(second.interest))
-	relation.fear = maxf(0, -minf(float(first.comfort), float(second.comfort)))
+	relation.fear = maxf(float(first.fear),float(second.fear))
 	if relation.status == "partner":
 		if not first.consent or not second.consent:
 			relation.status = "separated"

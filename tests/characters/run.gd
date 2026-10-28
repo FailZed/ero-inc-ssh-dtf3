@@ -83,6 +83,8 @@ func _pure_tests() -> void:
 func _run() -> void:
 	_pure_tests()
 	await process_frame
+	var conversation_suite := preload("res://tests/characters/conversation.gd").new(self)
+	await conversation_suite.run()
 	check(ClassDB.class_exists("GDCubismUserModel"),"native Cubism registered")
 	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/characters/study_catalog.json"))
 	var profile: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/characters/interaction_profile.json"))
@@ -152,30 +154,20 @@ func _run() -> void:
 		check(view.held.is_empty() and not view.bank.channels.has("pointer"),"switch cancels drag")
 	view.free()
 	await process_frame
-	var workshop := load("res://scenes/characters/character_workshop.tscn").instantiate() as Control
+	var workshop := load("res://assets/characters/mdrg_study/scenes/browser.tscn").instantiate() as Control
 	root.add_child(workshop)
 	workshop.set_deferred("size",Vector2(1440,900))
 	await process_frame
-	check(workshop.sliders.size()==106,"workshop parameter inspector")
-	workshop._filter_parameters("HeadX")
-	var visible_rows := 0
-	for row: Control in workshop.rows.values():
-		if row.visible: visible_rows += 1
-	check(visible_rows==1,"parameter search")
-	workshop.puppet.bank.set_target("ParamHeadX",0.4)
-	for i in range(90): workshop.puppet._process(1.0/60.0)
-	var saved := float(workshop.puppet.bank.values.ParamHeadX)
-	workshop.file_action = "save_profile"
-	workshop.puppet.part_values["Part5"] = 0.35
-	workshop._file_selected("user://character_profile_test.json")
-	workshop.puppet.reset_character()
-	workshop.file_action = "load_profile"
-	workshop._file_selected("user://character_profile_test.json")
-	for i in range(90): workshop.puppet._process(1.0/60.0)
-	check(absf(float(workshop.puppet.bank.values.ParamHeadX)-saved)<0.001,"workshop profile round trip")
-	check(is_equal_approx(workshop.puppet.part_values["Part5"],0.35),"part opacity profile round trip")
-	DirAccess.remove_absolute("user://character_profile_test.json")
-	workshop.free()
+	check(workshop._model_ready and workshop._actor.is_model_loaded(),"new workshop loads its native model")
+	check(not workshop._parameter_sliders.is_empty(),"new workshop parameter inspector")
+	if not workshop._parameter_sliders.is_empty():
+		var parameter_id := str(workshop._parameter_sliders.keys()[0])
+		workshop._filter_rows(parameter_id)
+		var found := false
+		for record in workshop._inspector_rows:
+			if record.id == parameter_id and record.row.visible: found = true
+		check(found,"parameter search retains its matching row")
+	workshop._close()
 	await process_frame
 	print("CHARACTERS_RESULT ", JSON.stringify({"passed":passed,"failed":failed,"models":catalog.models.size()}))
 	quit(1 if failed else 0)

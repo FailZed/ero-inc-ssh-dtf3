@@ -1,0 +1,603 @@
+{
+  "schema": "eroinc_story_integration_contract_v1",
+  "status": "design_only_not_loaded_by_runtime",
+  "authored_on": "2026-10-28",
+  "implementation_authorization": "root_will_assign_limited_patch; this_file_does_not_enable_runtime",
+  "scope": {
+    "residents": [
+      "resident_cafe_shift_lead",
+      "resident_south_grocer"
+    ],
+    "new_arcs": [
+      "rear_door_notice"
+    ],
+    "new_runner": false,
+    "existing_six_arcs_retained": true,
+    "external_google_doc_read": false,
+    "runtime_changed": true,
+    "tests_run": false,
+    "git_used": false,
+    "runtime_change_scope": "zero-XP guard/validation, explicit biography.story_arc read/validation, and2 UI callers for empty arc; no cast generation, calendar or graph integration",
+    "tests_added_not_run": [
+      "tests/gameplay/run_sandbox.gd::_test_zero_xp_personal_ending",
+      "tests/gameplay/run_sandbox.gd::_test_explicit_personal_story_binding"
+    ]
+  },
+  "observed_current_schema": {
+    "main_schema": 10,
+    "npc_stories_version": 1,
+    "note": "observed while other agents work; re-read before implementation, do not hardcode next main schema"
+  },
+  "named_story_bindings_proposed": {
+    "asuka": "asuka",
+    "oliver": "oliver",
+    "ellie": "ellie",
+    "resident_cafe_shift_lead": "rear_door_notice",
+    "resident_south_grocer": ""
+  },
+  "generic_assignment_at_creation_proposed": {
+    "source_field": "npc.biography.goal",
+    "rules": {
+      "community": "neighbor",
+      "creativity": "maker",
+      "career": "newcomer",
+      "mastery": "maker",
+      "wellbeing": "newcomer"
+    },
+    "default_arc": "newcomer",
+    "persist_once_as": "npc.biography.story_arc",
+    "rng_used": false,
+    "hash_used": false,
+    "on_revisit": "read persisted assignment; never reassign from changed goals"
+  },
+  "cast_seed_proposal": {
+    "call_site": "scripts/gameplay/gameplay.gd::_start_npc_life before npc_agency.enable, free-roam opening only",
+    "new_helper_target": "scripts/gameplay/city_residents.gd",
+    "new_data_target": "data/world/city_residents.json",
+    "seed_marker": "state.world.flags.city_pair_seeded",
+    "provenance_field": "npc.biography.city_cast_id",
+    "provenance_value": "first_trade_loop",
+    "starts_as_contacts": false,
+    "player_bond_seed": null,
+    "random_population_count_semantics": "count remains the generated random population; these2 are separate authored adult city staff, as chapter cast is separate today; document this product choice",
+    "generate_commands": [
+      {
+        "module": "social",
+        "operation": "generate",
+        "args": {
+          "id": "resident_cafe_shift_lead",
+          "name": "Селина Вейл",
+          "age": 29,
+          "template": "city_cafe_shift_lead"
+        }
+      },
+      {
+        "module": "social",
+        "operation": "generate",
+        "args": {
+          "id": "resident_south_grocer",
+          "name": "Дана Керн",
+          "age": 41,
+          "template": "city_south_grocer"
+        }
+      }
+    ],
+    "templates_in_actual_npc_template_shape": {
+      "city_cafe_shift_lead": {
+        "age": 29,
+        "gender": "female",
+        "home": "city_resident_home_selina",
+        "money": 100,
+        "preferences": [
+          "food",
+          "cooking"
+        ],
+        "personalities": [
+          "calm",
+          "confident",
+          "reserved"
+        ],
+        "origins": [
+          "river_district"
+        ],
+        "goals": [
+          "community"
+        ],
+        "role": "worker",
+        "occupation": "employed",
+        "education": "vocational",
+        "cohort": "workers",
+        "activities": [
+          "paid_work",
+          "socialize"
+        ],
+        "stat_min": 3,
+        "stat_max": 10,
+        "schedule": [
+          {
+            "location": "riverside_cafe",
+            "activity": "work",
+            "hours": [
+              795,
+              925
+            ],
+            "weekdays": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "mandatory": true
+          }
+        ]
+      },
+      "city_south_grocer": {
+        "age": 41,
+        "gender": "female",
+        "home": "city_resident_home_dana",
+        "money": 100,
+        "preferences": [
+          "food",
+          "friends"
+        ],
+        "personalities": [
+          "calm",
+          "confident",
+          "reserved"
+        ],
+        "origins": [
+          "river_district"
+        ],
+        "goals": [
+          "career"
+        ],
+        "role": "worker",
+        "occupation": "employed",
+        "education": "vocational",
+        "cohort": "workers",
+        "activities": [
+          "paid_work",
+          "socialize"
+        ],
+        "stat_min": 3,
+        "stat_max": 10,
+        "schedule": [
+          {
+            "location": "south_trade_street",
+            "activity": "work",
+            "hours": [
+              720,
+              935
+            ],
+            "weekdays": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "mandatory": true
+          }
+        ]
+      }
+    },
+    "template_example_status": "actual template field shape only; career assignment and voluntary meetup scheduling remain external dependencies",
+    "appearance": "Do not set a new canonical species. Use the existing initialized appearance catalog; no new art and no forced MDRG identity.",
+    "partial_seed_policy": "Preflight both IDs/templates/homes/workplaces/routes. Reuse only exact city_cast_id-marked actors on an interrupted initial seed; reserved-ID collision is an error. Set city_pair_seeded only when both actors exist. Never reseed on snapshot restore.",
+    "voluntary_meeting_proposals": [
+      {
+        "template": "city_cafe_shift_lead",
+        "location": "riverside_cafe_front",
+        "hours": [
+          930,
+          990
+        ],
+        "weekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "semantics": "voluntary preselected personal commitment; not yet a ready schedule row",
+        "required_guards": [
+          "active medical/family/appointment owner",
+          "physical route",
+          "finish before next obligation and travel"
+        ],
+        "planner_review_required": true
+      },
+      {
+        "template": "city_south_grocer",
+        "location": "riverside_cafe_front",
+        "hours": [
+          950,
+          980
+        ],
+        "weekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "semantics": "voluntary preselected personal commitment; not yet a ready schedule row",
+        "required_guards": [
+          "active medical/family/appointment owner",
+          "physical route",
+          "finish before next obligation and travel"
+        ],
+        "planner_review_required": true
+      }
+    ]
+  },
+  "main_only_binding_hook_proposed": {
+    "target": "scripts/gameplay/main_simulation.gd::after_command",
+    "when": [
+      {
+        "module": "population",
+        "operation": "generate",
+        "ids_field": "result.data.ids"
+      },
+      {
+        "module": "social",
+        "operation": "generate",
+        "ids_field": "[result.data.id]"
+      }
+    ],
+    "call": "services.npc_stories.assign_created(ids)",
+    "inside_existing_transaction": true,
+    "base_social_and_population_files_changed": false
+  },
+  "npc_stories_catalog_fragment": {
+    "npc_story_bindings": {
+      "asuka": "asuka",
+      "oliver": "oliver",
+      "ellie": "ellie",
+      "resident_cafe_shift_lead": "rear_door_notice",
+      "resident_south_grocer": ""
+    },
+    "npc_story_assignment": {
+      "by_goal": {
+        "community": "neighbor",
+        "creativity": "maker",
+        "career": "newcomer",
+        "mastery": "maker",
+        "wellbeing": "newcomer"
+      },
+      "default_arc": "newcomer"
+    },
+    "npc_story_arcs": {
+      "rear_door_notice": {
+        "title": "world_story.rear_door_notice.title",
+        "nodes": {
+          "intro": {
+            "text": "world_story.rear_door_notice.intro",
+            "choices": [
+              {
+                "id": "accept",
+                "text": "world_story.rear_door_notice.intro.accept",
+                "next": "walk_check",
+                "minutes": 4,
+                "energy": 1
+              },
+              {
+                "id": "decline",
+                "text": "world_story.rear_door_notice.intro.decline",
+                "next": "declined",
+                "minutes": 2,
+                "energy": 0
+              }
+            ]
+          },
+          "walk_check": {
+            "text": "world_story.rear_door_notice.walk_check",
+            "instruction": "world_story.rear_door_notice.walk_check",
+            "goal": {
+              "module": "world",
+              "operation": "journey",
+              "locations": [
+                "south_trade_street",
+                "riverside_cafe_front"
+              ],
+              "unique": true,
+              "count": 2
+            },
+            "done": "decision"
+          },
+          "decision": {
+            "text": "world_story.rear_door_notice.decision",
+            "choices": [
+              {
+                "id": "clear_notice",
+                "text": "world_story.rear_door_notice.decision.clear_notice",
+                "next": "clear_end",
+                "minutes": 10,
+                "energy": 1
+              },
+              {
+                "id": "oral_route",
+                "text": "world_story.rear_door_notice.decision.oral_route",
+                "next": "oral_end",
+                "minutes": 4,
+                "energy": 0
+              }
+            ]
+          },
+          "clear_end": {
+            "text": "world_story.rear_door_notice.clear_end",
+            "ending": true,
+            "xp": 6,
+            "bond": {
+              "trust": 2,
+              "respect": 1
+            },
+            "effects": [
+              {
+                "kind": "flag",
+                "id": "cafe_notice_resolution",
+                "value": "clear"
+              }
+            ]
+          },
+          "oral_end": {
+            "text": "world_story.rear_door_notice.oral_end",
+            "ending": true,
+            "xp": 3,
+            "bond": {
+              "comfort": 2
+            },
+            "effects": [
+              {
+                "kind": "flag",
+                "id": "cafe_notice_resolution",
+                "value": "oral"
+              }
+            ]
+          },
+          "declined": {
+            "text": "world_story.rear_door_notice.declined",
+            "ending": true,
+            "xp": 0,
+            "bond": {},
+            "effects": [
+              {
+                "kind": "flag",
+                "id": "cafe_notice_resolution",
+                "value": "declined"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "schema_additions_required_before_loading_fragment": [
+    "npc_story_bindings and npc_story_assignment are new catalog groups, validated by PersonalStories.catalog_error.",
+    "npc.biography.story_arc and city_cast_id are new persisted fields, assigned only in the main-game transaction hook.",
+    "Ending node.effects is new consumption in npc_stories.execute; use existing sim.apply_effects, initially restrict to valid flag effects.",
+    "npc_story_revisits is a small new pure-query catalog group, not an interpreter or command language."
+  ],
+  "story_revisit_catalog_fragment": {
+    "npc_story_revisits": {
+      "rear_door_notice": {
+        "location": "riverside_cafe_front",
+        "minimum_days_after": 1,
+        "endings": {
+          "clear_end": {
+            "present_actor": "resident_south_grocer",
+            "with_actor": "world_story.rear_door_notice.repeat.clear",
+            "without_actor": "world_story.rear_door_notice.repeat.clear_without_dana"
+          },
+          "oral_end": {
+            "present_actor": "resident_cafe_shift_lead",
+            "with_actor": "world_story.rear_door_notice.repeat.oral",
+            "without_actor": "world_story.rear_door_notice.repeat.oral_without_selina"
+          },
+          "declined": {
+            "present_actor": "resident_cafe_shift_lead",
+            "with_actor": "world_story.rear_door_notice.repeat.declined",
+            "without_actor": ""
+          }
+        }
+      }
+    }
+  },
+  "outcome_flag_contract": {
+    "path": "state.world.flags.cafe_notice_resolution",
+    "allowed_values": [
+      "clear",
+      "oral",
+      "declined"
+    ],
+    "ending_values": {
+      "clear_end": "clear",
+      "oral_end": "oral",
+      "declined": "declined"
+    },
+    "only_mutation_site": "npc_stories.execute inside terminal transition and existing rewarded guard",
+    "no_new_mutation_on_read": true,
+    "memories_are_not_authoritative": "social.remember is bounded by catalog.settings.memory_limit; durable outcome is story.ending plus checked world flag"
+  },
+  "current_runtime_state_fragment_example": {
+    "npc_stories": {
+      "version": 1,
+      "arcs": {
+        "resident_cafe_shift_lead": {
+          "arc": "rear_door_notice",
+          "node": "decision",
+          "status": "active",
+          "started": 930,
+          "updated": 942,
+          "goal": {},
+          "history": [
+            {
+              "node": "intro",
+              "choice": "accept",
+              "minute": 934
+            }
+          ],
+          "ending": "",
+          "rewarded": false
+        }
+      }
+    },
+    "clock": {
+      "total_minutes": 942
+    },
+    "npc_biography_additions": {
+      "resident_cafe_shift_lead": {
+        "story_arc": "rear_door_notice",
+        "city_cast_id": "first_trade_loop"
+      },
+      "resident_south_grocer": {
+        "story_arc": "",
+        "city_cast_id": "first_trade_loop"
+      }
+    },
+    "not_a_loadable_whole_snapshot": true
+  },
+  "presentation_contract": {
+    "localization": "GameSession.localize on existing text/title/instruction/choice.text strings at UI boundary; no parallel text_key fallback branches",
+    "translations_target": "scripts/managers/game_session.gd::TRANSLATIONS ru/en",
+    "language_refresh": "GameSession.language_changed -> personal_story_window._queue_refresh",
+    "empty_arc": "Hide personal-story button for Dana; personal_story_window must handle present()=={} before dereference",
+    "revisit_query": "npc_stories.revisit(id) returns a line key or empty string based on completed ending, current place/day and real actor presence; no commands/RNG/remember/reward",
+    "empty_arc_status": "applied in personal_story_window.gd and only personal-story sections of game_screens.gd; not run visually",
+    "empty_arc_diagnostics": "unassigned is a friendly empty state; unknown NPC hides stale portrait and ends update; unexpectedly empty assigned view shows error and diagnostic, without fake arc"
+  },
+  "translations_proposed": {
+    "ru": {
+      "world_story.resident_cafe_shift_lead.greeting": "Я не запоминаю заказ с первого раза. Зато со второго уже не переспрашиваю.",
+      "world_story.resident_south_grocer.greeting": "На верхней полке дороже упаковка. Внутри крупа та же — решай сам.",
+      "world_story.rear_door_notice.title": "Дверь со двора",
+      "world_story.rear_door_notice.intro": "Селина кладёт рядом две записки. На одной велено заходить со двора, на другой — с торговой улицы. «Утренние гости каждый раз находят закрытую дверь. Я исправляла часы, а про вход даже не подумала. Если тебе по пути, посмотри на обе стороны. Специально гонять тебя не хочу».",
+      "world_story.rear_door_notice.intro.accept": "Я как раз пройдусь и вернусь.",
+      "world_story.rear_door_notice.intro.decline": "Сейчас нет времени. Лучше не буду обещать.",
+      "world_story.rear_door_notice.walk_check": "Пройдите от кафе до торговой улицы и вернитесь обычным путём. Задача — понять, какую дверь впервые увидит прохожий; осмотр карты без перехода не считается.",
+      "world_story.rear_door_notice.obs.shop": "У прохода к реке видна вывеска, но маленькая стрелка теряется за раскрытой дверью лавки.",
+      "world_story.rear_door_notice.obs.cafe": "Со стороны воды часы читаются хорошо. Что дверь откроется только после утренней подготовки, не написано.",
+      "world_story.rear_door_notice.decision": "«Значит, дело не в людях, которые не умеют читать», — говорит Селина. Она готова поправить инструкцию сама, но не хочет ещё одной стены текста. Вы вместе выбираете, что действительно нужно сообщить.",
+      "world_story.rear_door_notice.decision.clear_notice": "Оставить одну короткую инструкцию с направлением и временем.",
+      "world_story.rear_door_notice.decision.oral_route": "Пока объяснять короткий путь лично; табличку поправить после смены.",
+      "world_story.rear_door_notice.clear_end": "Селина переписывает свою записку двумя короткими строками и просит Дану оставить проход видимым. Никто не становится главным по району: просто две соседние двери наконец перестают спорить друг с другом.",
+      "world_story.rear_door_notice.oral_end": "Вы выбираете простую фразу для растерявшихся гостей. Сегодня Селина подсказывает сама; постоянную записку оставляет в списке своих дел, не в вашем журнале долгов.",
+      "world_story.rear_door_notice.declined": "«Хорошо, спасибо, что не пообещал на ходу». Селина откладывает две записки вместе: после смены она сама пройдёт к лавке. Обычное общение остаётся доступным.",
+      "world_story.rear_door_notice.repeat.clear": "У прохода теперь одна короткая стрелка. Дана переставляет складной ящик чуть дальше от двери.",
+      "world_story.rear_door_notice.repeat.oral": "Селина успевает показать гостю нужную дверь жестом. Лист с новой инструкцией всё ещё лежит под её блокнотом.",
+      "world_story.rear_door_notice.repeat.declined": "Селина сверяет свои записки у входа. Она здоровается с вами без нового поручения.",
+      "world_story.rear_door_notice.ambient.rain": "Под навесом сохнут две почти одинаковые записки. У каждой стрелка смотрит в свою сторону.",
+      "world_story.rear_door_notice.repeat.clear_without_dana": "У прохода теперь одна короткая стрелка; складной ящик больше не загораживает вход.",
+      "world_story.rear_door_notice.repeat.oral_without_selina": "Под навесом висит прежняя записка. Разговор о новой инструкции пока остался небольшим решением на один день."
+    },
+    "en": {
+      "world_story.resident_cafe_shift_lead.greeting": "I may ask for your order twice. By the second time, I remember it.",
+      "world_story.resident_south_grocer.greeting": "The top shelf costs more for the packaging. The grain inside is the same. Your choice.",
+      "world_story.rear_door_notice.title": "The Courtyard Door",
+      "world_story.rear_door_notice.intro": "Selina lays two notes side by side. One sends customers through the courtyard; the other points to the shopping street. “Every morning someone finds a locked door. I changed the opening times and forgot about the entrance. If you are walking that way, could you look from both sides? No need to make a special trip.”",
+      "world_story.rear_door_notice.intro.accept": "I was going for a walk anyway. I will come back.",
+      "world_story.rear_door_notice.intro.decline": "I am short on time. Better not to promise.",
+      "world_story.rear_door_notice.walk_check": "Walk from the café to the shopping street and back by the ordinary route. Find out which entrance a newcomer sees first. Looking at the map does not complete the task.",
+      "world_story.rear_door_notice.obs.shop": "You can see the café sign from the passage, but the little arrow disappears behind the shop door when it opens.",
+      "world_story.rear_door_notice.obs.cafe": "The opening times are clear from the riverside. There is nothing saying that the door stays shut during morning preparation.",
+      "world_story.rear_door_notice.decision": "“So it is not that people cannot read,” Selina says. She will change her own notice, but does not want another wall of text. Together, you decide what a visitor really needs to know.",
+      "world_story.rear_door_notice.decision.clear_notice": "Leave one short instruction with the direction and opening time.",
+      "world_story.rear_door_notice.decision.oral_route": "Explain the short route in person for now; change the notice after the shift.",
+      "world_story.rear_door_notice.clear_end": "Selina rewrites her note in two short lines and asks Dana to keep the passage clear. Nobody has become the neighbourhood manager. Two neighbouring doors have simply stopped contradicting one another.",
+      "world_story.rear_door_notice.oral_end": "You settle on a short explanation for confused customers. Selina gives directions herself today. A permanent notice stays on her own list, not in your journal of obligations.",
+      "world_story.rear_door_notice.declined": "“All right. Thanks for not promising in a hurry.” Selina puts the notes together. She plans to walk to the shop after her shift. Ordinary conversation remains available.",
+      "world_story.rear_door_notice.repeat.clear": "There is one short arrow by the passage now. Dana moves a folding crate a little farther from the door.",
+      "world_story.rear_door_notice.repeat.oral": "Selina points a visitor towards the right door. The draft of a new instruction is still tucked beneath her notebook.",
+      "world_story.rear_door_notice.repeat.declined": "Selina compares her notes by the entrance. She greets you without offering the same errand again.",
+      "world_story.rear_door_notice.ambient.rain": "Two almost identical notes are drying under the awning. Their arrows point in different directions.",
+      "world_story.rear_door_notice.repeat.clear_without_dana": "There is one short arrow by the passage now. The folding crate no longer blocks the entrance.",
+      "world_story.rear_door_notice.repeat.oral_without_selina": "The old notice still hangs under the awning. Your conversation about a new one remains a small solution for that day."
+    }
+  },
+  "critical_code_notes": [
+    {
+      "target": "scripts/mechanics/npc_stories.gd::execute",
+      "finding": "Always calls gain_xp; character.execute rejects amount<=0.",
+      "required_change": "Call character.gain_xp only for positive XP; still complete declined ending with rewarded=true and memory once.",
+      "status": "narrow fix applied: XP>0 guard, catalog rejects negative/noninteger/nonnumber XP; targeted scenario added but not run"
+    },
+    {
+      "target": "scripts/mechanics/npc_stories.gd::blocked/execute",
+      "finding": "availability(id,true) alone does not account for future obligation/travel or active medicine tasks.",
+      "required_change": "Use npc_planner.active_owner, partner/receiving state and calendar.conflict before cancel/pin. A currently co-located recreation schedule may be ignored by its start ONLY if the dialogue fits before that window ends; never ignore work/study/medical/appointment/family obligations."
+    },
+    {
+      "target": "scripts/mechanics/npc_stories.gd::arc_for",
+      "finding": "Returns one of3 generic arcs by hash for every unknown named actor.",
+      "required_change": "Explicit field now takes precedence: empty/invalid never use hash. Existing named/generic category without field is unchanged; its assignment-at-creation replacement remains separate A06.",
+      "status": "explicit-field read and state validation applied; generation assignment not applied"
+    },
+    {
+      "target": "scripts/gameplay/main_simulation.gd::_load_catalog/_init",
+      "finding": "Extra groups except skills are currently replaced, not merged.",
+      "required_change": "Do not put a2-template npc_templates group into npc_stories.json; merge authored-city templates explicitly from city_residents.json so resident/story_student and other templates survive."
+    }
+  ],
+  "external_dependencies": [
+    {
+      "owner": "world_geography",
+      "status": "design identifiers agreed; code graph not integrated",
+      "needed": [
+        "south_trade_street",
+        "riverside_cafe_front",
+        "riverside_cafe",
+        "residential_district",
+        "city_resident_home_selina",
+        "city_resident_home_dana"
+      ],
+      "contract": "Actor-aware private entry and NPC routing, no player-bedroom fallback. Home edges2min each as graph proposal."
+    },
+    {
+      "owner": "npc-careers",
+      "status": "needs exact assignment contract",
+      "finding": "NpcEmployment.initialize auto-selects job and rewrites work schedule; cafe_orders is120min at riverside_cafe, shop_assistant180min at north_shops today.",
+      "needed": "Explicit authored job/workplace binding to café and south trade street through the career owner; choose honest shift windows and daily work length, do not fake it by editing mind.employment after initialization."
+    },
+    {
+      "owner": "ui-ux",
+      "status": "shared files busy; narrow presentation change needs coordinator",
+      "needed": [
+        "personal_story_window.gd",
+        "game_screens.gd",
+        "presentation.gd",
+        "game_session.gd"
+      ]
+    },
+    {
+      "owner": "root",
+      "status": "canonical review and final schema coordination",
+      "needed": "External scenario remains unread; proposed names/local details are not canon. Select final main schema after active agents, no migrations or user-save rewrites."
+    },
+    {
+      "owner": "npc-planning via root",
+      "status": "meeting intent proposed; do not ship mere mandatory recreation flag",
+      "needed": "Agree voluntary preselected commitment semantics and ignore only that same co-located time window after medical priority, route and next-work checks."
+    }
+  ],
+  "applied_explicit_binding_contract": {
+    "field": "npc.biography.story_arc",
+    "valid_nonempty": "existing catalog.npc_story_arcs key",
+    "empty_string": "no personal story, not generic assignment",
+    "invalid_type_or_reference": "invalid_personal_story_binding",
+    "blocked_or_execute_without_arc": "personal_story_unassigned",
+    "present_without_or_invalid_arc": {},
+    "started_arc_mismatch": "invalid_personal_story_binding",
+    "without_field": "existing named/generic rules unchanged until separate A06",
+    "generation_hook_added": false,
+    "shared_validation_file_changed": false,
+    "runtime_methods": [
+      "arc_for",
+      "blocked",
+      "present",
+      "execute",
+      "state_error",
+      "_binding_error"
+    ]
+  }
+}

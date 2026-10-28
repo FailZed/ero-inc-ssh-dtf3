@@ -13,6 +13,30 @@ func _relation(a: String, b: String) -> Dictionary:
 	var bond: Dictionary = sim.services.npc_relationships.view(a, b)
 	return {"trust": bond.trust, "affinity": bond.affection, "attraction": bond.interest}
 
+func evaluate(npc: Dictionary) -> Array:
+	var candidates := super.evaluate(npc)
+	var forecast := {"windows":sim.services.npc_planner.calendar.windows(str(npc.id)),"routes":{}}
+	for candidate in candidates:
+		if not candidate.available: continue
+		var reason: String = sim.services.npc_planner.calendar.conflict(str(npc.id),str(candidate.destination),int(candidate.travel_minutes)+action_minutes(npc,str(candidate.id)),50,-1,-1,forecast)
+		if not reason.is_empty(): candidate.available = false; candidate.blocked = reason
+	if not sim.services.has("adult_health") or not sim.services.adult_health.enabled(): return candidates
+	for candidate in candidates:
+		var pressure := 0.0
+		if candidate.id in ["support","cooperate"] and not str(candidate.partner).is_empty():
+			var bond: Dictionary = sim.services.npc_relationships.view(str(npc.id),str(candidate.partner))
+			if float(bond.trust)>=4: pressure = sim.services.adult_health.relationships.distress(str(candidate.partner),str(npc.id))
+		candidate.reasons.health_support = pressure
+		candidate.score = clampf(float(candidate.score)+pressure*0.25,0,1)
+	return candidates
+
+func _partner_context_bias(npc: Dictionary, other: Dictionary, action: String) -> float:
+	if not action in ["support","cooperate"] or not sim.services.has("adult_health"): return 0.0
+	var health = sim.services.adult_health
+	if not health.enabled(): return 0.0
+	var bond: Dictionary = sim.services.npc_relationships.view(str(npc.id),str(other.id))
+	return health.relationships.distress(str(other.id),str(npc.id))*40.0 if float(bond.trust)>=4 else 0.0
+
 func _experience(npc: Dictionary, kind: String, other: String = "") -> void:
 	super._experience(npc, kind, other)
 	if not other.is_empty() and kind in ["betrayed", "misled", "conflict"]:

@@ -52,6 +52,7 @@ const PRESET_CONFIG := {
 var _current_preset: int = MenuPreset.START_GAME
 var _continue_available := false
 var _workshop_button: Button
+var _conversation_button: Button
 
 const EN_MENU_LABELS := {
 	"button.new_game": "NEW GAME",
@@ -75,6 +76,11 @@ func _ready() -> void:
 	$VBoxContainer/MenuButtons.move_child(_workshop_button, gallery_button.get_index())
 	_workshop_button.disabled = not ClassDB.class_exists("GDCubismUserModel")
 	_workshop_button.tooltip_text = "Мастерская персонажей · Live2D" if not _workshop_button.disabled else "Для мастерской требуется установить модуль Live2D. См. инструкцию запуска проекта."
+	_conversation_button = preload("res://scripts/ui/gameplay/ui_factory.gd").button($VBoxContainer/MenuButtons,"ОБЩЕНИЕ",func(): action_requested.emit(&"conversation_room"))
+	minimal.quiet_button(_conversation_button)
+	$VBoxContainer/MenuButtons.move_child(_conversation_button,_workshop_button.get_index())
+	_conversation_button.disabled = not ClassDB.class_exists("GDCubismUserModel")
+	_conversation_button.tooltip_text = "Разговор с Никой · Live2D"
 	GameSession.language_changed.connect(_refresh_localized_ui)
 	apply_preset(initial_preset)
 
@@ -129,6 +135,7 @@ func _set_button_state(button: Button, visible: bool) -> void:
 
 
 func _refresh_localized_ui() -> void:
+	if is_instance_valid(_conversation_button): _conversation_button.text = "CONVERSATION" if GameSession.get_language_code() == GameSession.LANGUAGE_EN else "ОБЩЕНИЕ"
 	if is_instance_valid(_workshop_button): _workshop_button.text = "WORKSHOP" if GameSession.get_language_code() == GameSession.LANGUAGE_EN else "МАСТЕРСКАЯ"
 	new_game_button.text = _menu_label("button.new_game")
 	continue_game_button.text = _menu_label("button.continue")
@@ -150,3 +157,6 @@ func _menu_label(key: String) -> String:
 
 func focus_workshop() -> void:
 	if is_instance_valid(_workshop_button): _workshop_button.grab_focus()
+
+func focus_conversation() -> void:
+	if is_instance_valid(_conversation_button): _conversation_button.grab_focus()

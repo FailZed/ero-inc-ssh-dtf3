@@ -73,6 +73,9 @@ func _generate(id: String, args: Dictionary) -> Dictionary:
 func generate_from_template(id: String, args: Dictionary, template: Dictionary) -> Dictionary:
 	var social: Dictionary = sim.state.social
 	if social.npcs.has(id): return Rules.fail("duplicate_npc")
+	var prepared: Dictionary = sim.prepare_npc_template(id, args, template)
+	if not prepared.ok: return prepared
+	template = prepared.data
 	var personality: Array = template.get("personalities", ["calm", "confident", "reserved"])
 	if sim.services.has("npc_personalities") and sim.services.npc_personalities.enabled(): personality = sim.services.npc_personalities.generation_choices(template)
 	var origins: Array = template.get("origins", ["local"])
@@ -94,6 +97,16 @@ func generate_from_template(id: String, args: Dictionary, template: Dictionary) 
 	sim.services.social_rules.initialize_npc(npc, template)
 	sim.services.npc_behavior.initialize_npc(npc)
 	sim.services.appearance.initialize_npc(npc, template)
+	if args.has("employment") or template.has("employment"):
+		var plan: Variant = args.get("employment",template.get("employment"))
+		var assignment = preload("res://scripts/mechanics/npc_employment.gd")
+		var error: String = assignment.assignment_error(plan,sim.catalog,npc)
+		if not error.is_empty(): return Rules.fail(error)
+		if args.has("employment") and template.has("employment"):
+			error = assignment.assignment_error(template.employment,sim.catalog,npc)
+			if not error.is_empty(): return Rules.fail(error)
+			if plan.job!=template.employment.job or plan.workplace!=template.employment.workplace or int(plan.skill_level)!=int(template.employment.skill_level): return Rules.fail("employment_assignment_conflict")
+		npc.employment_plan = plan.duplicate(true)
 	social.npcs[id] = npc
 	social.next_npc_id += 1
 	_schedule(npc)
@@ -189,23 +202,28 @@ func tick(minute: int) -> void:
 			sim.services.npc_behavior.hourly(npc)
 		elif int(npc.pinned_until) == minute:
 			_schedule(npc)
+	if minute % 1440 == 1080:
+		sim.services.social_rules.autonomy()
+
+func settle_appointments(minute: int) -> void:
 	for appointment in sim.state.social.appointments:
 		if appointment.status != "pending" or minute < int(appointment.minute): continue
 		var npc: Dictionary = sim.state.social.npcs[appointment.npc]
+		var ready: bool = npc.location==appointment.location and (int(npc.pinned_until)<=minute or int(appointment.get("journey",{}).get("pin",-1))==int(npc.pinned_until))
 		if minute >= int(appointment.minute) + 30:
 			appointment.status = "missed"
-			change_relationship(str(appointment.npc), "player", {"trust": -5})
-			remember(str(appointment.npc), "appointment_missed", {})
-			emit_event("appointment_missed", appointment)
+			if ready:
+				change_relationship(str(appointment.npc), "player", {"trust": -5})
+				remember(str(appointment.npc), "appointment_missed", {})
+				emit_event("appointment_missed", appointment)
+			else:
+				appointment.reason = "npc_unavailable"
+				emit_event("appointment_unavailable", appointment)
 			continue
-		npc.location = appointment.location
-		npc.pinned_until = int(appointment.minute) + 30
-		if sim.state.world.location == appointment.location:
+		if ready and sim.state.world.location == appointment.location:
 			appointment.status = "met"
 			change_relationship(str(appointment.npc), "player", {"trust": 5})
 			emit_event("appointment_met", appointment)
-	if minute % 1440 == 1080:
-		sim.services.social_rules.autonomy()
 
 func _has_partner(id: String) -> bool:
 	for key in sim.state.social.relationships:

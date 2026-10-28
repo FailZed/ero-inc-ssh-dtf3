@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-28",
+  "status": "included_in_original_source_v2_coordinator_confirmed",
+  "engine": "4.7.2.stable",
+  "audio": "Dummy",
+  "mode": "exported_PCK_without_autoloads_or_user_saves",
+  "checks": 112,
+  "failed": 0,
+  "main_schema_fixture": 14,
+  "baseline": "final-integration Main13 after career/residents guards",
+  "payload": "E:\\GoDot\\.research\\random-events-runtime-2026-10-28\\PAYLOAD.json",
+  "payload_sha256": "cf222c8c65b3d72f1cbd2957244a2d384912cc4f71f3542bb4f11e815ecda965",
+  "catalog144_modified": false,
+  "original_runtime_modified_by_this_worker": false,
+  "tested": [
+    "player_correlated_message_and_delayed_reply",
+    "automatic_phone_opportunity",
+    "actual_NPC_accepted_contacts_and_cancellations",
+    "autonomous_NPC_choice_and_refusal",
+    "existing_connect_owner_completion",
+    "read_only_preview_and_stale_UI_callback",
+    "reset_configure_generate",
+    "restore_exact_awaiting_proposal_visit_completed",
+    "source_fingerprint_dedup_after_cooldown_removal",
+    "invalid_state_rejection"
+  ],
+  "not_tested": [
+    "native_phone_visual_layout",
+    "long_term_balance",
+    "full_new_game_playthrough"
+  ],
+  "evidence": "packed-focused.log",
+  "main_schema": 14,
+  "main_original_sha256": "b6055b6d6732c561787074f6903d2b917d4cab2303187cbec50b058b91a407a3",
+  "installed_by": "coordinator/world_geography guarded integration",
+  "combined_staging": {
+    "events": {
+      "checks": 112,
+      "failed": 0
+    },
+    "domain": {
+      "checks": 89,
+      "failed": 0
+    },
+    "school": {
+      "checks": 15,
+      "failed": 0
+    }
+  },
+  "original_runtime_included": true,
+  "combined_evidence": "combined-events.log"
+}

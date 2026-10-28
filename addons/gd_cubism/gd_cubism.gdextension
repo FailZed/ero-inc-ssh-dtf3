@@ -4,7 +4,7 @@ compatibility_minimum = "4.3"
 
 [libraries]
 macos = "bin/libgd_cubism.macos.universal.dylib"
-windows.x86_64 = "bin/libgd_cubism.windows.x86_64.dll"
+windows.x86_64 = "bin/sdk5/libgd_cubism.windows.x86_64.dll"
 
 [dependencies]
-windows.x86_64 = { "bin/Live2DCubismCore.dll": "" }
+windows.x86_64 = { "bin/sdk5/Live2DCubismCore.dll": "" }

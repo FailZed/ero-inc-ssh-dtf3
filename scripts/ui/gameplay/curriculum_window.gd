@@ -4,7 +4,7 @@ signal menu_requested
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const W = preload("res://scripts/ui/gameplay/game_widgets.gd")
 const GameFrame = preload("res://scripts/ui/gameplay/game_window.gd")
-const Curriculum = preload("res://scripts/gameplay/curriculum.gd")
+const Curriculum = preload("res://scripts/mechanics/education_schedule.gd")
 var _selected: Array = ["computing","physics","statistics"]
 var _sport := "running"
 var _button: Button
@@ -55,3 +55,4 @@ func _refresh() -> void:
 	_button.disabled = _selected.size() < 2 or _selected.size() > 4
 	_status.text = "Выбрано %d / 4" % _selected.size()
 	for id in _checks: _checks[id].disabled = _selected.size() >= 4 and not id in _selected
+	_window._wire_focus.call_deferred()

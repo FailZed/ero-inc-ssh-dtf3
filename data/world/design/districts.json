@@ -1,0 +1,2437 @@
+{
+  "schema": 1,
+  "status": "design_only_not_integrated",
+  "authored_on": "2026-10-28",
+  "owner": "world_geography",
+  "scope": "Полная переработка города разрешена; текущий пакет не изменяет runtime.",
+  "source_notes": {
+    "external_scenario": {
+      "url": "https://docs.google.com/document/d/17MGdEhAfeDBCamzr-jgrxNOOKDjFBuj_J9Xi0HMJFUQ/edit?usp=sharing",
+      "read": false,
+      "dependency": "Окончательная сверка с доступным текстом авторского сценария"
+    },
+    "local_owner_record": "docs/art/city-river-v2/STORY_LOCKS.md",
+    "baseline_city": "data/world/city-river-v2.json",
+    "excluded_from_canon": [
+      "AppleDouble ._*",
+      "пустой TimeLine/prolog.dtl",
+      "отладочные стенды и экраны настроек как якобы места города"
+    ],
+    "all_authored_details_are_proposals": true
+  },
+  "epochs": [
+    {
+      "id": "present_ellizia",
+      "status": "local_story",
+      "country": "Эллизия",
+      "city_name": null,
+      "time": "31 августа 03:20; 1 сентября, первый учебный день; свободная игра отдельно",
+      "sources": [
+        "TimeLine/prolog/scene_05_mirror_and_photo.dtl:17",
+        "TimeLine/chapter_one.dtl:2",
+        "docs/art/city-river-v2/STORY_LOCKS.md"
+      ]
+    },
+    {
+      "id": "childhood_praksia",
+      "status": "local_story",
+      "country": "Праксия",
+      "city_name": null,
+      "time": "тёплое летнее воспоминание, герою около 12 лет",
+      "sources": [
+        "TimeLine/prolog/scene_05_mirror_and_photo.dtl:31",
+        "TimeLine/prolog/scene_06_flashback_park.dtl:8"
+      ]
+    },
+    {
+      "id": "warehouse_frame",
+      "status": "local_story_chronology_unresolved",
+      "country": null,
+      "city_name": null,
+      "time": "ночь; положение во времени и адрес не определены",
+      "sources": [
+        "TimeLine/prolog/prolog.dtl",
+        "TimeLine/prolog/scene_02_warehouse_confrontation.dtl",
+        "TimeLine/prolog/scene_03_death_reset.dtl"
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "id": "student_courts",
+      "title": "Университетские дворы",
+      "status": "proposal",
+      "bank": "south",
+      "anchors": [
+        "student_home",
+        "residential_district",
+        "pharmacy_house"
+      ],
+      "identity": "Малые дома и соседний дом с аптекой; повседневное соседство вместо одного входа в квартиру.",
+      "return_reasons": [
+        "покупка бытовых мелочей и аптечные услуги",
+        "домашние дела",
+        "знакомые лица по пути"
+      ],
+      "rhythm": {
+        "morning": "сборы и выход на учёбу/работу",
+        "day": "бытовые услуги и доставка",
+        "evening": "возвращение домой",
+        "night": "тихие публичные проходы; частные двери закрыты"
+      },
+      "first_slice": true
+    },
+    {
+      "id": "campus_park",
+      "title": "Кампус за парком",
+      "status": "proposal",
+      "bank": "south",
+      "anchors": [
+        "campus_park_gate",
+        "campus_courtyard"
+      ],
+      "building": "university",
+      "identity": "Большой парк перед соединёнными кирпичными крыльями 6/3/3; ясно расположенные учебные и клубные помещения.",
+      "return_reasons": [
+        "учебный план",
+        "дела группы и клуба",
+        "встречи в общественных частях кампуса"
+      ],
+      "rhythm": {
+        "morning": "поток на занятия",
+        "day": "занятия и работа помещений",
+        "evening": "уход групп и запланированные клубные занятия",
+        "night": "наружный путь; внутренний доступ по фактическим часам"
+      },
+      "first_slice": true
+    },
+    {
+      "id": "south_river_center",
+      "title": "Южная торговая улица и река",
+      "status": "proposal",
+      "bank": "south",
+      "anchors": [
+        "south_trade_street",
+        "city_park",
+        "riverside_cafe_front",
+        "south_promenade",
+        "agency_square",
+        "clinic_forecourt"
+      ],
+      "identity": "Обычные покупки, работа, общественные услуги и спокойная прогулка соединены короткими пешими путями.",
+      "return_reasons": [
+        "покупки по потребности",
+        "смены в кафе",
+        "услуги клиники/агентства",
+        "районная история и парк"
+      ],
+      "rhythm": {
+        "morning": "открытие заведений, подготовка смен",
+        "day": "дела и работа",
+        "evening": "встречи и набережная",
+        "night": "улицы открыты; заведения по расписанию"
+      },
+      "first_slice": true
+    },
+    {
+      "id": "east_terraces",
+      "title": "Восточные жилые террасы",
+      "status": "proposal",
+      "bank": "south",
+      "anchors": [
+        "detached_house",
+        "penthouse"
+      ],
+      "identity": "Различные возможности жилья и уход за домом; не район автоматической вседозволенности.",
+      "return_reasons": [
+        "осмотр вариантов жилья",
+        "собственный дом после законного заселения",
+        "местные поручения"
+      ],
+      "rhythm": {
+        "morning": "дорога жителей по делам",
+        "day": "обслуживание домов",
+        "evening": "домашняя жизнь",
+        "night": "частность и освещённые улицы"
+      },
+      "first_slice": false
+    },
+    {
+      "id": "north_old_quarter",
+      "title": "Старый северный берег",
+      "status": "proposal",
+      "bank": "north",
+      "anchors": [
+        "north_shops",
+        "north_alleys",
+        "north_beach",
+        "north_den",
+        "police_forecourt",
+        "social_housing"
+      ],
+      "identity": "Рабочие лавки, ремонт, жилые дворы и общедоступная вода; рискованное заведение является одним адресом, а не свойством всех соседей.",
+      "return_reasons": [
+        "ремонт и недорогие услуги",
+        "пляж и прогулки",
+        "обычный быт северных жителей",
+        "общественные службы"
+      ],
+      "rhythm": {
+        "morning": "мастерские и снабжение",
+        "day": "покупки, уход и работа",
+        "evening": "отдых дворов и воды",
+        "night": "контекстный риск в отдельных местах, без постоянных нападений"
+      },
+      "first_slice": false
+    }
+  ],
+  "source_matrix": [
+    {
+      "id": "warehouse_frame",
+      "places": [
+        "frame_warehouse_exterior",
+        "frame_warehouse_interior"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/prolog.dtl",
+        "TimeLine/prolog/scene_02_warehouse_confrontation.dtl",
+        "TimeLine/prolog/scene_03_death_reset.dtl",
+        "scenes/hub/WarehouseGateHub.tscn"
+      ],
+      "note": "Hub — отдельный тестовый/опциональный вход; основной DEFAULT_TIMELINE сразу прыгает в пролог."
+    },
+    {
+      "id": "night_house",
+      "places": [
+        "bedroom",
+        "apartment_hall",
+        "bathroom",
+        "kitchen"
+      ],
+      "certainty": "local_story_and_local_implementation",
+      "sources": [
+        "TimeLine/prolog/scene_04_night_wakeup.dtl",
+        "TimeLine/prolog/scene_05_mirror_and_photo.dtl",
+        "scripts/gameplay/guided_story.gd"
+      ],
+      "protected_objects": {
+        "bedroom": [
+          "clock",
+          "wardrobe",
+          "photo",
+          "bed"
+        ],
+        "apartment_hall": [
+          "switch",
+          "door"
+        ],
+        "bathroom": [
+          "sink",
+          "mirror",
+          "washer"
+        ],
+        "kitchen": [
+          "kettle",
+          "window",
+          "fridge"
+        ]
+      },
+      "note": "Кухня подтверждена текущим guided-миром; обязательное создание героя только перед зеркалом."
+    },
+    {
+      "id": "present_house_exterior",
+      "places": [
+        "student_home"
+      ],
+      "certainty": "owner_record_and_local_story",
+      "sources": [
+        "docs/art/city-river-v2/STORY_LOCKS.md",
+        "TimeLine/chapter_one.dtl:12"
+      ],
+      "facts": {
+        "above_ground_floors": 1,
+        "fenced_yard": true,
+        "walk_to_university_min": 10,
+        "walk_to_university_max": 15
+      }
+    },
+    {
+      "id": "neighbors",
+      "places": [
+        "pharmacy_house",
+        "asuka_home_door",
+        "oliver_home_entry"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/chapter_one.dtl:223",
+        "TimeLine/chapter_one.dtl:225"
+      ],
+      "facts": {
+        "asuka_four_houses_away": true,
+        "oliver_adjacent_entrance": true
+      },
+      "note": "Точное размещение фасадов и число подъездов — дизайн, не текст."
+    },
+    {
+      "id": "campus_architecture",
+      "places": [
+        "university",
+        "campus_park_gate",
+        "campus_courtyard",
+        "campus_hall",
+        "campus_auditorium",
+        "campus_corridor",
+        "classroom_213"
+      ],
+      "certainty": "owner_record_and_local_story",
+      "sources": [
+        "docs/art/city-river-v2/STORY_LOCKS.md",
+        "TimeLine/chapter_one.dtl:13",
+        "TimeLine/chapter_one.dtl:20",
+        "TimeLine/chapter_one.dtl:35"
+      ],
+      "facts": {
+        "connected_wings": 3,
+        "central_floors": 6,
+        "left_floors": 3,
+        "right_floors": 3,
+        "material": "красный кирпич",
+        "park_in_front": true,
+        "classroom_floor": 2,
+        "classroom_wing": "left"
+      }
+    },
+    {
+      "id": "campus_social_and_help",
+      "places": [
+        "campus_corridor",
+        "cosplay_clubroom",
+        "campus_mens_washroom",
+        "campus_teacher_classroom",
+        "campus_empty_classroom"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/chapter_one.dtl:37",
+        "TimeLine/chapter_one.dtl:73",
+        "TimeLine/chapter_one.dtl:104",
+        "TimeLine/chapter_one.dtl:115"
+      ],
+      "note": "Две ветки поиска помощи сохраняются пространственно различными; туалет не домашняя ванная."
+    },
+    {
+      "id": "present_homecoming",
+      "places": [
+        "campus_courtyard",
+        "campus_park_gate",
+        "residential_district",
+        "student_home"
+      ],
+      "certainty": "local_story_route_proposal",
+      "sources": [
+        "TimeLine/chapter_one.dtl:189",
+        "TimeLine/chapter_one.dtl:223",
+        "TimeLine/chapter_one.dtl:231"
+      ],
+      "note": "Вечер18:00 и соседство — факт; разбивка ходьбы по рёбрам — предложение."
+    },
+    {
+      "id": "flashback_park",
+      "places": [
+        "fb_park_gate",
+        "fb_themis_square",
+        "fb_seaside_alley"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/scene_06_flashback_park.dtl",
+        "TimeLine/prolog/scene_07_thomas.dtl"
+      ],
+      "facts": {
+        "country": "Праксия",
+        "holiday": "День мира",
+        "themis_statue": true
+      }
+    },
+    {
+      "id": "flashback_coast",
+      "places": [
+        "fb_peace_arch",
+        "fb_sea_embankment",
+        "fb_beach_view"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/scene_08_embankment.dtl"
+      ],
+      "facts": {
+        "water": "sea",
+        "objects": [
+          "автомат с напитками",
+          "белые перила"
+        ],
+        "beach_view_only": true,
+        "beach_reopened_after_accident": true
+      }
+    },
+    {
+      "id": "flashback_choice",
+      "places": [
+        "fb_park_thicket",
+        "fb_themis_square"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/scene_09_lyra_choice_point.dtl",
+        "TimeLine/prolog/scene_10_intervene_and_escape.dtl",
+        "TimeLine/prolog/scene_11_first_trust.dtl",
+        "TimeLine/prolog/flashback_flee.dtl"
+      ],
+      "note": "Помощь ведёт к площади; уход возвращает к дому/будильнику, без автоматической награды дружбы."
+    },
+    {
+      "id": "flashback_glade",
+      "places": [
+        "fb_old_park_glade"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/scene_11_first_trust.dtl:27",
+        "TimeLine/prolog/scene_12_glade_reveal.dtl"
+      ],
+      "facts": {
+        "minutes_from_square": 5,
+        "chapel_outside_only": true,
+        "objects": [
+          "камень",
+          "грунтовые дорожки"
+        ]
+      }
+    },
+    {
+      "id": "flashback_address",
+      "places": [
+        "fb_frankfurt_avenue",
+        "fb_building_entrance",
+        "fb_floor4",
+        "fb_floor8",
+        "fb_lyra_door"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/scene_13_way_home.dtl",
+        "TimeLine/prolog/scene_14_lyra_father.dtl"
+      ],
+      "facts": {
+        "protagonist_floor": 4,
+        "protagonist_apartment": 72,
+        "lyra_floor": 8,
+        "lift_out_of_order": true,
+        "entrance_phone_access": true
+      }
+    },
+    {
+      "id": "flashback_family",
+      "places": [
+        "fb_family_hall",
+        "fb_family_bathroom",
+        "fb_family_kitchen",
+        "fb_family_bedroom",
+        "fb_half_landing"
+      ],
+      "certainty": "local_story",
+      "sources": [
+        "TimeLine/prolog/scene_15_home_evening.dtl",
+        "TimeLine/prolog/flashback_flee.dtl"
+      ],
+      "note": "Мусороприёмник на один пролёт ниже, не обязательно на полный этаж ниже."
+    },
+    {
+      "id": "offscreen_references",
+      "places": [
+        "fb_school_40"
+      ],
+      "certainty": "local_story_referenced_only",
+      "sources": [
+        "TimeLine/prolog/scene_11_first_trust.dtl:15",
+        "TimeLine/prolog/scene_12_glade_reveal.dtl:40"
+      ],
+      "facts": {
+        "school": 40,
+        "lyra_previous_country": "Фраксия"
+      },
+      "note": "Нет основания строить посещённый маршрут в школу или в Фраксию."
+    },
+    {
+      "id": "runtime_services_not_on_v2_markers",
+      "places": [
+        "clinic",
+        "residential_district"
+      ],
+      "certainty": "implementation_only",
+      "sources": [
+        "data/mechanics/reproduction.json",
+        "scripts/mechanics/reproductive_simulation.gd",
+        "scripts/gameplay/presentation.gd"
+      ],
+      "note": "Уже используются основными системами, но не имеют собственных меток в v2."
+    }
+  ],
+  "locations": [
+    {
+      "id": "city_resident_home_selina",
+      "title": "Жильё Селины",
+      "kind": "private_npc_home",
+      "epoch": "present_ellizia",
+      "district": "student_courts",
+      "parent": "residential_district",
+      "status": "proposal_for_first_resident_pair",
+      "resident_id": "resident_cafe_shift_lead",
+      "resident_source": "data/world/design/neighborhood_stories.json",
+      "map_marker": false,
+      "rendering": "offscreen_unit",
+      "access": "owner_npc_or_explicit_invitation",
+      "player_access_default": false,
+      "not_player_bedroom": true
+    },
+    {
+      "id": "city_resident_home_dana",
+      "title": "Жильё Даны",
+      "kind": "private_npc_home",
+      "epoch": "present_ellizia",
+      "district": "student_courts",
+      "parent": "residential_district",
+      "status": "proposal_for_first_resident_pair",
+      "resident_id": "resident_south_grocer",
+      "resident_source": "data/world/design/neighborhood_stories.json",
+      "map_marker": false,
+      "rendering": "offscreen_unit",
+      "access": "owner_npc_or_explicit_invitation",
+      "player_access_default": false,
+      "not_player_bedroom": true
+    },
+    {
+      "id": "student_home",
+      "title": "Двор нынешнего дома",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "student_courts",
+      "status": "retained",
+      "note": "Одноэтажный дом; ограждённый двор и выход на улицу.",
+      "arrival_boundary": "outside_private_gate_or_building_door",
+      "private_access": "current_residence_or_invitation",
+      "public_transit": false,
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "residential_district",
+      "title": "Жилые дворы",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "student_courts",
+      "status": "retained_redefined",
+      "note": "Конкретный местный квартал вместо невидимого дома всех NPC.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "pharmacy_house",
+      "title": "Дом с аптекой",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "student_courts",
+      "status": "new_story_required",
+      "note": "Фасад дома Асуки и соседнего подъезда Оливера; частные двери отдельно.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "campus_park_gate",
+      "title": "Вход в парк перед институтом",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "campus_park",
+      "status": "new_story_required",
+      "note": "Большая парковая зона перед главным входом.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "campus_courtyard",
+      "title": "Главный вход института",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "campus_park",
+      "status": "retained_guided_promoted",
+      "note": "Открытая часть кампуса перед главным холлом.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "south_trade_street",
+      "title": "Южная торговая улица",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "south_river_center",
+      "status": "replaces_global_map",
+      "note": "Реальное место магазина/покупок; карта является отдельным экраном.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "city_park",
+      "title": "Городской парк",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "south_river_center",
+      "status": "retained",
+      "note": "Парк с прудом, отдельный от парка перед институтом.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "riverside_cafe_front",
+      "title": "У входа в кафе",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "south_river_center",
+      "status": "new_frontage",
+      "note": "Общественный проход не закрывается вслед за залом кафе.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "south_promenade",
+      "title": "Южная набережная",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "south_river_center",
+      "status": "retained",
+      "note": "Обычный прогулочный маршрут у реки.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "agency_square",
+      "title": "Площадка у агентства",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "south_river_center",
+      "status": "new_frontage",
+      "note": "Проход и ожидание снаружи офиса.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "clinic_forecourt",
+      "title": "Перед клиникой",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "south_river_center",
+      "status": "new_frontage",
+      "note": "Видимый адрес существующей клиники; доступ к срочной помощи отдельный.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "detached_house",
+      "title": "Двор двухэтажного дома",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "east_terraces",
+      "status": "retained",
+      "note": "Два полных этажа, другой дом, не стартовое жильё.",
+      "arrival_boundary": "outside_private_gate_or_building_door",
+      "private_access": "current_residence_or_invitation",
+      "public_transit": false,
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "penthouse",
+      "title": "Вход в жилой комплекс с пентхаусом",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "east_terraces",
+      "status": "retained",
+      "note": "Частный пентхаус расположен наверху, а не на уличном проходе.",
+      "arrival_boundary": "outside_private_gate_or_building_door",
+      "private_access": "current_residence_or_invitation",
+      "public_transit": false,
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "north_beach",
+      "title": "Речной пляж",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "north_old_quarter",
+      "status": "retained",
+      "note": "Северный общественный речной пляж, не морской пляж воспоминания.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "north_shops",
+      "title": "Северные лавки",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "north_old_quarter",
+      "status": "retained",
+      "note": "Улица мастерских и доступных услуг, не один клонированный магазин.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "north_alleys",
+      "title": "Старые дворы и служебные проходы",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "north_old_quarter",
+      "status": "retained",
+      "note": "Рабочие и жилые связи с понятными выходами.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "police_forecourt",
+      "title": "Перед полицейским участком",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "north_old_quarter",
+      "status": "new_frontage",
+      "note": "Публичный подход, не транзит через служебный кабинет.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "social_housing",
+      "title": "Двор социального жилья",
+      "kind": "public_exterior",
+      "epoch": "present_ellizia",
+      "district": "north_old_quarter",
+      "status": "retained",
+      "note": "Общий двор и отдельные частные жилища; получение жилья по действующим правилам.",
+      "public_route_hours": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "pedestrian_bridge_south",
+      "title": "Южный сход пешеходного моста",
+      "kind": "bridge_landing",
+      "epoch": "present_ellizia",
+      "status": "retained",
+      "public_route_hours": [
+        0,
+        0
+      ],
+      "map_marker": false
+    },
+    {
+      "id": "pedestrian_bridge_north",
+      "title": "Северный сход пешеходного моста",
+      "kind": "bridge_landing",
+      "epoch": "present_ellizia",
+      "status": "retained",
+      "public_route_hours": [
+        0,
+        0
+      ],
+      "map_marker": false
+    },
+    {
+      "id": "central_bridge_south",
+      "title": "Южный сход центрального моста",
+      "kind": "bridge_landing",
+      "epoch": "present_ellizia",
+      "status": "retained",
+      "public_route_hours": [
+        0,
+        0
+      ],
+      "map_marker": false
+    },
+    {
+      "id": "central_bridge_north",
+      "title": "Северный сход центрального моста",
+      "kind": "bridge_landing",
+      "epoch": "present_ellizia",
+      "status": "retained",
+      "public_route_hours": [
+        0,
+        0
+      ],
+      "map_marker": false
+    },
+    {
+      "id": "university",
+      "title": "Университет",
+      "kind": "building_container",
+      "epoch": "present_ellizia",
+      "district": "campus_park",
+      "status": "proposal_canonical_container",
+      "entry": "campus_courtyard",
+      "architecture": {
+        "central_floors": 6,
+        "left_floors": 3,
+        "right_floors": 3,
+        "material": "красный кирпич",
+        "wings_connected": true,
+        "park_in_front": true
+      },
+      "official_name": null,
+      "name_conflict": [
+        "университет Альтерра",
+        "Институт эволюционной геномики имени Карла Линнея"
+      ],
+      "not_a_traversal_node": true
+    },
+    {
+      "id": "apartment_hall",
+      "title": "Прихожая нынешнего дома",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "student_home",
+      "access": "private_residence",
+      "status": "retained",
+      "public_transit": false
+    },
+    {
+      "id": "bedroom",
+      "title": "Спальня нынешнего дома",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "student_home",
+      "access": "private_residence",
+      "status": "retained",
+      "public_transit": false
+    },
+    {
+      "id": "bathroom",
+      "title": "Ванная нынешнего дома",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "student_home",
+      "access": "private_residence",
+      "status": "retained",
+      "public_transit": false
+    },
+    {
+      "id": "kitchen",
+      "title": "Кухня нынешнего дома",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "student_home",
+      "access": "private_residence",
+      "status": "retained",
+      "public_transit": false
+    },
+    {
+      "id": "pharmacy",
+      "title": "Аптека",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "pharmacy_house",
+      "access": "service_hours",
+      "status": "new_story_implied_service",
+      "public_transit": false
+    },
+    {
+      "id": "asuka_home_door",
+      "title": "Дверь дома Асуки",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "pharmacy_house",
+      "access": "invitation_and_presence",
+      "status": "new_story_address_only",
+      "public_transit": false
+    },
+    {
+      "id": "oliver_home_entry",
+      "title": "Соседний подъезд Оливера",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "pharmacy_house",
+      "access": "invitation_and_presence",
+      "status": "new_story_address_only",
+      "public_transit": false
+    },
+    {
+      "id": "campus_hall",
+      "title": "Главный холл",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "institution_hours",
+      "status": "retained_guided_promoted",
+      "public_transit": false
+    },
+    {
+      "id": "campus_auditorium",
+      "title": "Актовый зал",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "event_or_permission",
+      "status": "new_story_required",
+      "public_transit": false
+    },
+    {
+      "id": "campus_corridor",
+      "title": "Второй этаж левого крыла",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "institution_hours",
+      "status": "retained_guided_promoted",
+      "public_transit": false
+    },
+    {
+      "id": "classroom_213",
+      "title": "Аудитория213",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "lesson_or_permission",
+      "status": "new_story_required",
+      "public_transit": false
+    },
+    {
+      "id": "campus_mens_washroom",
+      "title": "Мужской туалет левого крыла",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "institution_hours_and_privacy",
+      "status": "new_story_required",
+      "public_transit": false
+    },
+    {
+      "id": "cosplay_clubroom",
+      "title": "Косплейная клубная комната",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "club_hours_and_permission",
+      "status": "new_story_door_required",
+      "public_transit": false
+    },
+    {
+      "id": "campus_teacher_classroom",
+      "title": "Аудитория с преподавателем",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "story_or_lesson",
+      "status": "new_story_required",
+      "public_transit": false
+    },
+    {
+      "id": "campus_empty_classroom",
+      "title": "Аудитория другого направления",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "university",
+      "access": "story_or_permission",
+      "status": "new_story_required",
+      "public_transit": false
+    },
+    {
+      "id": "riverside_cafe",
+      "title": "Зал кафе",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "riverside_cafe_front",
+      "access": "service_hours",
+      "status": "retained_scoped_to_interior",
+      "public_transit": false
+    },
+    {
+      "id": "real_estate_agency",
+      "title": "Офис агентства",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "agency_square",
+      "access": "service_hours",
+      "status": "retained_scoped_to_interior",
+      "public_transit": false
+    },
+    {
+      "id": "clinic",
+      "title": "Клиника",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "clinic_forecourt",
+      "access": "service_hours_or_urgent_care",
+      "status": "retained",
+      "public_transit": false
+    },
+    {
+      "id": "police_station",
+      "title": "Приёмная полиции",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "police_forecourt",
+      "access": "service_hours_or_emergency",
+      "status": "retained_scoped_to_interior",
+      "public_transit": false
+    },
+    {
+      "id": "north_den",
+      "title": "Закрытое заведение старого квартала",
+      "kind": "interior_or_door",
+      "epoch": "present_ellizia",
+      "parent": "north_alleys",
+      "access": "venue_access_and_hours",
+      "status": "retained_optional_leaf",
+      "public_transit": false
+    },
+    {
+      "id": "frame_warehouse_exterior",
+      "title": "Ночной склад снаружи",
+      "kind": "story_frame",
+      "epoch": "warehouse_frame",
+      "status": "story_required_proposed_id",
+      "city_attachment": null
+    },
+    {
+      "id": "frame_warehouse_interior",
+      "title": "Ночной склад внутри",
+      "kind": "story_frame",
+      "epoch": "warehouse_frame",
+      "status": "story_required_proposed_id",
+      "city_attachment": null
+    },
+    {
+      "id": "fb_park_gate",
+      "title": "Вход центрального парка",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_themis_square",
+      "title": "Площадь у Фемиды",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_seaside_alley",
+      "title": "Аллея к морю",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_peace_arch",
+      "title": "Арка мира",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_sea_embankment",
+      "title": "Морская набережная",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_beach_view",
+      "title": "Вид на открытый пляж",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "view_only",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_park_thicket",
+      "title": "Заросли у арки",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_old_park_glade",
+      "title": "Поляна с часовней",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked_help_branch",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_frankfurt_avenue",
+      "title": "Франкфуртский проспект",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_building_entrance",
+      "title": "Общий подъезд детства",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_floor4",
+      "title": "Четвёртый этаж",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_floor8",
+      "title": "Восьмой этаж",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked_help_branch",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_lyra_door",
+      "title": "Дверь квартиры Лиры",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked_help_branch",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_family_hall",
+      "title": "Прихожая квартиры72",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_family_bathroom",
+      "title": "Ванная семьи героя",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked_help_branch",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_family_kitchen",
+      "title": "Кухня семьи героя",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_family_bedroom",
+      "title": "Комната героя в детстве",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_half_landing",
+      "title": "Полупролёт с мусороприёмником и окном",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "walked_help_branch",
+      "public_present_city_access": false
+    },
+    {
+      "id": "fb_school_40",
+      "title": "Школа№40",
+      "kind": "flashback_place",
+      "epoch": "childhood_praksia",
+      "status": "local_story_proposed_id",
+      "scene_presence": "referenced_only",
+      "public_present_city_access": false
+    }
+  ],
+  "route_links": [
+    {
+      "a": "residential_district",
+      "b": "city_resident_home_selina",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "private_resident_access",
+      "access": "owner_npc_or_explicit_invitation",
+      "owner_npc": "resident_cafe_shift_lead",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "residential_district",
+      "b": "city_resident_home_dana",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "private_resident_access",
+      "access": "owner_npc_or_explicit_invitation",
+      "owner_npc": "resident_south_grocer",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "student_home",
+      "b": "pharmacy_house",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false,
+      "note": "Короткая соседская ветвь мимо четырёх домов, не проход через частные дворы."
+    },
+    {
+      "a": "student_home",
+      "b": "residential_district",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "residential_district",
+      "b": "pharmacy_house",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "residential_district",
+      "b": "campus_park_gate",
+      "minutes": 8,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "campus_park_gate",
+      "b": "campus_courtyard",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "residential_district",
+      "b": "south_trade_street",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "campus_courtyard",
+      "b": "south_trade_street",
+      "minutes": 8,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "campus_park_gate",
+      "b": "city_park",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "south_trade_street",
+      "b": "city_park",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "south_trade_street",
+      "b": "riverside_cafe_front",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "riverside_cafe_front",
+      "b": "south_promenade",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "south_trade_street",
+      "b": "agency_square",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "south_trade_street",
+      "b": "clinic_forecourt",
+      "minutes": 6,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "clinic_forecourt",
+      "b": "agency_square",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "agency_square",
+      "b": "detached_house",
+      "minutes": 6,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "detached_house",
+      "b": "penthouse",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "penthouse",
+      "b": "south_promenade",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "riverside_cafe_front",
+      "b": "pedestrian_bridge_south",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "campus_courtyard",
+      "b": "pedestrian_bridge_south",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "pedestrian_bridge_south",
+      "b": "pedestrian_bridge_north",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "pedestrian_bridge_north",
+      "b": "north_beach",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "pedestrian_bridge_north",
+      "b": "north_shops",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "north_shops",
+      "b": "north_alleys",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "north_alleys",
+      "b": "police_forecourt",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "north_shops",
+      "b": "social_housing",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "police_forecourt",
+      "b": "social_housing",
+      "minutes": 4,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "agency_square",
+      "b": "central_bridge_south",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "south_promenade",
+      "b": "central_bridge_south",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "central_bridge_south",
+      "b": "central_bridge_north",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "central_bridge_north",
+      "b": "police_forecourt",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "public_walk",
+      "requires_open_business": false
+    },
+    {
+      "a": "student_home",
+      "b": "apartment_hall",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "current_residence",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "apartment_hall",
+      "b": "bedroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "current_residence",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "apartment_hall",
+      "b": "bathroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "current_residence",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "apartment_hall",
+      "b": "kitchen",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "current_residence",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "pharmacy_house",
+      "b": "pharmacy",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "service_hours",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "pharmacy_house",
+      "b": "asuka_home_door",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "invitation_and_presence",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "pharmacy_house",
+      "b": "oliver_home_entry",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "invitation_and_presence",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_courtyard",
+      "b": "campus_hall",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "institution_hours",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_hall",
+      "b": "campus_auditorium",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "event_or_permission",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_hall",
+      "b": "campus_corridor",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "institution_hours",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_corridor",
+      "b": "classroom_213",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "lesson_or_permission",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_corridor",
+      "b": "campus_mens_washroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "institution_hours_and_privacy",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_corridor",
+      "b": "cosplay_clubroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "club_hours_and_permission",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_corridor",
+      "b": "campus_teacher_classroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "story_or_lesson",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "campus_corridor",
+      "b": "campus_empty_classroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "story_or_permission",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "riverside_cafe_front",
+      "b": "riverside_cafe",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "service_hours",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "agency_square",
+      "b": "real_estate_agency",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "service_hours",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "clinic_forecourt",
+      "b": "clinic",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "service_hours_or_urgent_care",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "police_forecourt",
+      "b": "police_station",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "service_hours_or_emergency",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "north_alleys",
+      "b": "north_den",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "present_ellizia",
+      "status": "proposal",
+      "route_kind": "entry_or_interior",
+      "access": "venue_access_and_hours",
+      "not_for_through_routing": true
+    },
+    {
+      "a": "fb_park_gate",
+      "b": "fb_themis_square",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_themis_square",
+      "b": "fb_seaside_alley",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_seaside_alley",
+      "b": "fb_peace_arch",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_peace_arch",
+      "b": "fb_sea_embankment",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_peace_arch",
+      "b": "fb_park_thicket",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_park_thicket",
+      "b": "fb_themis_square",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_themis_square",
+      "b": "fb_old_park_glade",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "local_story_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_park_gate",
+      "b": "fb_frankfurt_avenue",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_frankfurt_avenue",
+      "b": "fb_building_entrance",
+      "minutes": 5,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_building_entrance",
+      "b": "fb_floor4",
+      "minutes": 2,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_floor4",
+      "b": "fb_floor8",
+      "minutes": 3,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_floor8",
+      "b": "fb_lyra_door",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_floor4",
+      "b": "fb_family_hall",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_family_hall",
+      "b": "fb_family_bathroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_family_hall",
+      "b": "fb_family_kitchen",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_family_hall",
+      "b": "fb_family_bedroom",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "fb_floor4",
+      "b": "fb_half_landing",
+      "minutes": 1,
+      "bidirectional": true,
+      "epoch": "childhood_praksia",
+      "status": "proposal_duration",
+      "route_kind": "flashback_walk",
+      "chronicle_time_not_simulated": true
+    },
+    {
+      "a": "frame_warehouse_exterior",
+      "b": "frame_warehouse_interior",
+      "minutes": null,
+      "bidirectional": false,
+      "epoch": "warehouse_frame",
+      "status": "story_presentation_optional_hub",
+      "route_kind": "scripted_gate",
+      "not_present_city_route": true
+    }
+  ],
+  "chronology_transitions": [
+    {
+      "from": "frame_warehouse_interior",
+      "to": "bedroom",
+      "kind": "narrative_reset",
+      "walkable": false,
+      "source": "TimeLine/prolog/scene_03_death_reset.dtl:18"
+    },
+    {
+      "from": "bedroom",
+      "to": "fb_park_gate",
+      "kind": "memory_after_photo",
+      "walkable": false,
+      "source": "TimeLine/prolog/scene_05_mirror_and_photo.dtl:37"
+    },
+    {
+      "from": "fb_family_bedroom",
+      "to": "bedroom",
+      "kind": "wake_to_chapter_one",
+      "walkable": false,
+      "source": "TimeLine/prolog/scene_15_home_evening.dtl:20"
+    },
+    {
+      "from": "fb_family_kitchen",
+      "to": "bedroom",
+      "kind": "flee_branch_wake",
+      "walkable": false,
+      "source": "TimeLine/prolog/flashback_flee.dtl:9"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "university_name",
+      "facts": [
+        "университет Альтерра в scene05",
+        "Институт эволюционной геномики имени Карла Линнея в chapter_one/STORY_LOCKS"
+      ],
+      "temporary_label": "Университет"
+    },
+    {
+      "id": "current_city_name",
+      "facts": [],
+      "decision": "Оставить null; не называть город Альтеррой без сценарного подтверждения."
+    },
+    {
+      "id": "warehouse_address_and_date",
+      "facts": [
+        "ночной заброшенный склад"
+      ],
+      "decision": "Не соединять с нынешним городом."
+    },
+    {
+      "id": "two_cities_relation",
+      "facts": [
+        "Праксия в детстве",
+        "Эллизия в настоящем",
+        "Фраксия — прошлое Лиры"
+      ],
+      "decision": "Не создавать физическое ребро между эпохами и не делать море рекой."
+    },
+    {
+      "id": "wake_date_gap",
+      "facts": [
+        "31августа03:20",
+        "1сентября11:00"
+      ],
+      "decision": "Редакционная сверка, не географическая правка."
+    }
+  ],
+  "callsite_replacement_plan": [
+    {
+      "old_id": "global_map",
+      "replacement": "south_trade_street",
+      "kind": "direct_semantic_replacement",
+      "rules": [
+        "Экран карты не является world.location.",
+        "Одновременно обновить рынок, профессии, маршруты, социальные действия и данные историй.",
+        "Не добавлять alias/adapter старого ID."
+      ]
+    },
+    {
+      "old_id": "training_center",
+      "replacement_by_purpose": {
+        "map_travel": "campus_courtyard",
+        "building_reference": "university",
+        "first_group_class": "classroom_213",
+        "other_activities": "выбрать реальное помещение по назначению"
+      },
+      "kind": "contextual_semantic_replacement",
+      "rules": [
+        "Не заменять все виды деятельности на одну аудиторию213.",
+        "Прочие учебные/рабочие помещения уточняет автор мест.",
+        "Убрать старый ID после обновления потребителей."
+      ]
+    },
+    {
+      "old_id": "street",
+      "replacement": "student_home",
+      "kind": "guided_city_identity_unification",
+      "rules": [
+        "В нынешнем сценарии это фронт того же дома, а не отдельная параллельная улица."
+      ]
+    },
+    {
+      "old_id": "street_exit",
+      "replacement": "student_home",
+      "kind": "scene_registry_cleanup_candidate",
+      "rules": [
+        "Сейчас это дублирующий сценовый выход; проверить оставшиеся вызовы перед удалением."
+      ]
+    },
+    {
+      "old_id": "riverside_cafe",
+      "replacement_by_purpose": {
+        "map_arrival": "riverside_cafe_front",
+        "indoor_action": "riverside_cafe"
+      },
+      "kind": "scope_location",
+      "rules": [
+        "Общественный путь не проходит через закрытый зал."
+      ]
+    },
+    {
+      "old_id": "clinic",
+      "replacement_by_purpose": {
+        "map_arrival": "clinic_forecourt",
+        "medical_action": "clinic"
+      },
+      "kind": "scope_location",
+      "rules": [
+        "Срочная помощь имеет свой разрешённый вход; ожидание снаружи не считается проведённой процедурой."
+      ]
+    },
+    {
+      "old_id": "real_estate_agency",
+      "replacement_by_purpose": {
+        "map_arrival": "agency_square",
+        "housing_service": "real_estate_agency"
+      },
+      "kind": "scope_location"
+    },
+    {
+      "old_id": "police_station",
+      "replacement_by_purpose": {
+        "map_arrival": "police_forecourt",
+        "public_service": "police_station"
+      },
+      "kind": "scope_location"
+    }
+  ],
+  "narrative_invariants": [
+    "Нынешний дом одноэтажный, отдельный от квартиры4-гоэтажа детского воспоминания.",
+    "Университет имеет соединённые крылья6/3/3 и большой парк перед главным входом.",
+    "Дом→главный вход университета должен занимать10–15минут пешком.",
+    "Актовый зал прямо из главного холла; аудитория213 на второмэтаже левого крыла.",
+    "Создание героя запускается только отражением у зеркала в нужной фазе истории.",
+    "Настройки мира/сложности до пролога; свободная песочница не создаёт сюжетных соседей автоматически.",
+    "Страны и моря детского слоя не меняются от нынешней речной карты.",
+    "В чужие квартиры нельзя входить лишь потому, что видна метка.",
+    "Публичный обход не зависит от часов работы промежуточного бизнеса."
+  ],
+  "daily_loops": [
+    {
+      "id": "student_day",
+      "path": [
+        "student_home",
+        "residential_district",
+        "campus_park_gate",
+        "campus_courtyard",
+        "south_trade_street",
+        "residential_district",
+        "student_home"
+      ],
+      "walk_minutes": 29,
+      "note": "14минут до кампуса,8 до торговойулицы,7 домой; внутренние входы/занятия считаются отдельно."
+    },
+    {
+      "id": "cafe_workday",
+      "path": [
+        "student_home",
+        "residential_district",
+        "south_trade_street",
+        "riverside_cafe_front",
+        "riverside_cafe"
+      ],
+      "walk_minutes": 12,
+      "note": "11минут до фронта плюс1 на вход; длительность смены по существующим правилам."
+    },
+    {
+      "id": "north_errands",
+      "path": [
+        "student_home",
+        "residential_district",
+        "south_trade_street",
+        "riverside_cafe_front",
+        "pedestrian_bridge_south",
+        "pedestrian_bridge_north",
+        "north_shops"
+      ],
+      "walk_minutes": 20,
+      "note": "Ремонт/покупка; обратный путь возможен через центральныймост. Пляж не обязателен."
+    }
+  ],
+  "first_hour": {
+    "status": "proposal",
+    "start": "student_home",
+    "start_scope": "С момента выхода в свой двор, вне создания героя/сцены; без скорой пары/смены.",
+    "steps": [
+      {
+        "kind": "walk",
+        "a": "student_home",
+        "b": "residential_district",
+        "minutes": 2
+      },
+      {
+        "kind": "optional_activity",
+        "location": "residential_district",
+        "minutes": 5,
+        "description": "Ориентиры и контакт, без гарантированного сюжетного состава."
+      },
+      {
+        "kind": "walk",
+        "a": "residential_district",
+        "b": "south_trade_street",
+        "minutes": 5
+      },
+      {
+        "kind": "optional_activity",
+        "location": "south_trade_street",
+        "minutes": 8,
+        "description": "Покупка нужных вещей/план; просто чтение меню само по себе время не расходует."
+      },
+      {
+        "kind": "walk",
+        "a": "south_trade_street",
+        "b": "riverside_cafe_front",
+        "minutes": 4
+      },
+      {
+        "kind": "optional_activity",
+        "location": "riverside_cafe_front",
+        "minutes": 10,
+        "description": "Добровольное знакомство или отдых; не бесконечная награда."
+      },
+      {
+        "kind": "walk",
+        "a": "riverside_cafe_front",
+        "via": [
+          "south_trade_street"
+        ],
+        "b": "city_park",
+        "minutes": 8
+      },
+      {
+        "kind": "optional_activity",
+        "location": "city_park",
+        "minutes": 7,
+        "description": "Пауза/выбор собственного плана; не обязательный квест."
+      },
+      {
+        "kind": "walk",
+        "a": "city_park",
+        "via": [
+          "south_trade_street",
+          "residential_district"
+        ],
+        "b": "student_home",
+        "minutes": 11
+      }
+    ],
+    "total_minutes": 60,
+    "walk_minutes": 30,
+    "activity_minutes": 30
+  },
+  "first_slice": {
+    "id": "student_courts_daily_life",
+    "districts": [
+      "student_courts",
+      "campus_park",
+      "south_river_center"
+    ],
+    "required_locations": [
+      "student_home",
+      "residential_district",
+      "pharmacy_house",
+      "campus_park_gate",
+      "campus_courtyard",
+      "campus_hall",
+      "campus_auditorium",
+      "campus_corridor",
+      "classroom_213",
+      "campus_mens_washroom",
+      "south_trade_street",
+      "riverside_cafe_front",
+      "riverside_cafe"
+    ],
+    "depends_on": [
+      "places.json первого района",
+      "одна связанная районная история",
+      "согласованный формат нового каталога"
+    ],
+    "not_enough": [
+      "одни новые подписи",
+      "одни концепты вместо подключённых действий"
+    ]
+  },
+  "interior_plans": {
+    "status": "proposal_not_runtime_geometry",
+    "home": {
+      "address": "student_home",
+      "above_ground_floors": 1,
+      "orientation": "Предложение: улица и калитка с юга, вход в прихожую. Стороны света не заданы сценарием.",
+      "rooms": [
+        {
+          "id": "apartment_hall",
+          "position": "centre_front",
+          "doors": [
+            "student_home",
+            "bedroom",
+            "bathroom",
+            "kitchen"
+          ],
+          "protected_objects": [
+            "switch",
+            "door"
+          ],
+          "view": "Из входа видны двери спальни, ванной и кухни; путь к зеркалу не требует прохода через другую комнату."
+        },
+        {
+          "id": "bedroom",
+          "position": "west",
+          "doors": [
+            "apartment_hall"
+          ],
+          "protected_objects": [
+            "clock",
+            "wardrobe",
+            "photo",
+            "bed"
+          ],
+          "view": "Кровать и фото в одном ракурсе; шкаф различим как отдельный предмет."
+        },
+        {
+          "id": "bathroom",
+          "position": "east_front",
+          "doors": [
+            "apartment_hall"
+          ],
+          "protected_objects": [
+            "sink",
+            "mirror",
+            "washer"
+          ],
+          "view": "Зеркало над умывальником; стиральная машина рядом, не закрывает отражение."
+        },
+        {
+          "id": "kitchen",
+          "position": "east_back",
+          "doors": [
+            "apartment_hall"
+          ],
+          "protected_objects": [
+            "kettle",
+            "window",
+            "fridge"
+          ],
+          "view": "Плита/стол/холодильник читаются как домашние рабочие зоны."
+        }
+      ],
+      "entry_path": [
+        "student_home",
+        "apartment_hall"
+      ],
+      "mirror_path": [
+        "bedroom",
+        "apartment_hall",
+        "bathroom"
+      ],
+      "return_to_photo_path": [
+        "bathroom",
+        "apartment_hall",
+        "bedroom"
+      ],
+      "private_space": true,
+      "non_goals": [
+        "второй этаж",
+        "многоквартирный подъезд нынешнего дома",
+        "перенос детской квартиры в нынешний интерьер"
+      ]
+    },
+    "campus": {
+      "building": "university",
+      "orientation": "Предложение: парк/главный вход с юга; центральное крыло вытянуто к северу, боковые ниже.",
+      "floors": {
+        "central": 6,
+        "left": 3,
+        "right": 3
+      },
+      "first_implemented_extent": "Главный вход, холл/актовый зал и второй этаж левого крыла; остальные этажи остаются частью здания.",
+      "ground_floor": [
+        {
+          "id": "campus_courtyard",
+          "position": "south_outside",
+          "doors": [
+            "campus_hall"
+          ],
+          "landmark": "Сразу видна разница центрального и боковых крыльев."
+        },
+        {
+          "id": "campus_hall",
+          "position": "centre_ground",
+          "doors": [
+            "campus_courtyard",
+            "campus_auditorium",
+            "campus_corridor"
+          ],
+          "landmark": "Актовый зал прямо, лестница к левому крылу обозначена."
+        },
+        {
+          "id": "campus_auditorium",
+          "position": "north_of_hall_ground",
+          "doors": [
+            "campus_hall"
+          ],
+          "landmark": "Отдельный общий зал со сценой; не аудитория213."
+        }
+      ],
+      "left_second_floor": [
+        {
+          "id": "campus_corridor",
+          "position": "left_wing_floor2",
+          "landmarks": [
+            "Лестница/начало у восточного соединения",
+            "Клуб и спортивная группа ближе к началу",
+            "Туалет в средней части",
+            "213 ближе к концу крыла"
+          ]
+        },
+        {
+          "id": "campus_mens_washroom",
+          "position": "south_of_mid_corridor",
+          "door_facing": "north",
+          "source": "Положение по стороне света — предложение; это позволяет буквально выполнить сюжетный выбор налево/направо."
+        },
+        {
+          "id": "campus_teacher_classroom",
+          "position": "west_of_washroom_exit",
+          "source": "При выходе из туалета налево находится преподаватель в сюжетной ветке."
+        },
+        {
+          "id": "campus_empty_classroom",
+          "position": "east_of_washroom_exit",
+          "source": "Направо герой теряет время в аудитории без преподавателя; не считать вечной пустотой во всех расписаниях."
+        },
+        {
+          "id": "classroom_213",
+          "position": "towards_west_end",
+          "source": "Левое крыло, второй этаж, ближе к концу — обязательные факты."
+        },
+        {
+          "id": "cosplay_clubroom",
+          "position": "near_start_of_corridor",
+          "source": "Сценарий задаёт клубную комнату и бланк с адресом; точная дверь — предложение."
+        }
+      ],
+      "sightlines": [
+        "Указатель213 различим от лестницы",
+        "Туалет имеет собственную дверь и не совпадает с домашней ванной",
+        "Зал прямо по оси холла",
+        "Ширина прохода не заставляет протискиваться через статичную толпу"
+      ],
+      "scope_rules": [
+        "Нельзя объявлять все шесть этажей построенными по одному коридору.",
+        "Учебные/рабочие комнаты для иных назначений уточняются отдельно.",
+        "Текущая сцена1-гоучебногодня не назначает всем занятиям комнаты213."
+      ]
+    }
+  },
+  "story_runtime_boundary": {
+    "current_implementation": "guided_travel меняет guide_location и не расходует игровое время; сценарные сигналы отдельно выставляют дату.",
+    "proposal": "Новые минуты графа предназначены для согласованной будущей навигации, а не автоматического добавления времени к нынешним сценам.",
+    "rules": [
+      "Один и тот же путь не учитывается дважды: в таймлайне и в симуляции.",
+      "Флешбэк не запускает нынешнее взросление/календарь NPC.",
+      "Перемещение по рамочному складу не меняет адрес свободной игры."
+    ]
+  },
+  "verification": {
+    "runtime_tests_run": false,
+    "git_operations": false,
+    "method": "Чтение локальных источников; статическое сопоставление собственного графа.",
+    "screenshots_created": false
+  }
+}

@@ -1,7 +1,6 @@
 extends "res://scripts/mechanics/core/module.gd"
 ## Motive, opportunity, warning, response and consequence. Main-game only.
 const Check = preload("res://scripts/mechanics/core/validation.gd")
-const PRIVATE := ["bedroom","bathroom","kitchen","apartment_hall"]
 var forecast_mode := false
 
 static func defaults() -> Dictionary:
@@ -50,7 +49,7 @@ func opportunity(actor: String, target: String, kind: String) -> Dictionary:
 	if spec.tag in sim.state.preferences.disabled_tags: return {"blocked":"content_disabled","score":0.0}
 	if spec.physical and "violence" in sim.state.preferences.disabled_tags: return {"blocked":"content_disabled","score":0.0}
 	if not sim.state.encounters.combat.is_empty() and sim.state.encounters.combat.get("status","") == "active": return {"blocked":"active_combat","score":0.0}
-	if _location(actor) in PRIVATE or _location(actor) != _location(target): return {"blocked":"no_opportunity","score":0.0}
+	if _private_location(_location(actor)) or _location(actor) != _location(target): return {"blocked":"no_opportunity","score":0.0}
 	if _npc(actor).activity in ["sleep","work","study","eat","travel"] or _npc(actor).decision.get("committed",false) or float(_npc(actor).needs.energy)<30 or int(_npc(actor).pinned_until) > _now(): return {"blocked":"actor_busy","score":0.0}
 	if target == "player" and (not sim.state.livelihood.pending.is_empty() or not sim.state.companion.active.is_empty()): return {"blocked":"target_busy","score":0.0}
 	if kind == "sabotage" and (target != "player" or _project().is_empty() or not actor in sim.state.social.contacts): return {"blocked":"no_known_project","score":0.0}
@@ -126,7 +125,7 @@ func _consequence(c: Dictionary) -> void:
 	if spec.tag in sim.state.preferences.disabled_tags or (spec.physical and "violence" in sim.state.preferences.disabled_tags):
 		c.status = "cancelled"; c.result = "Событие отключено настройками содержания."; c.ended = _now(); return
 	if spec.physical:
-		if _location(str(c.actor)) != _location(str(c.target)) or _location(str(c.target)) in PRIVATE:
+		if _location(str(c.actor)) != _location(str(c.target)) or _private_location(_location(str(c.target))):
 			_finish(c,"Нападающий не нашёл удобного момента: встреча сорвалась."); return
 		var protection := 5 if not str(c.ally).is_empty() and _location(c.ally) == _location(c.target) else 0
 		var accomplices := 0
@@ -166,7 +165,7 @@ func _response_block(c: Dictionary,choice: String,ally: String = "") -> String:
 	if choice in c.used: return "pressure_response_used"
 	if choice == "pay" and (c.kind != "extortion" or c.target != "player"): return "pressure_payment_unavailable"
 	if choice == "pay" and int(sim.state.economy.cash) < int(rules().kinds[c.kind].amount): return "insufficient_funds"
-	if choice == "secure" and (c.kind != "sabotage" or sim.state.world.location != "bedroom" or not "computer" in sim.state.world.equipment): return "computer_desk_required"
+	if choice == "secure" and (c.kind != "sabotage" or (not sim.is_player_home_location(str(sim.state.world.location)) or sim.room_kind(str(sim.state.world.location)) != "bedroom") or not "computer" in sim.state.world.equipment): return "computer_desk_required"
 	if choice in ["report","expose"] and int(c.evidence) < 2: return "pressure_evidence_required"
 	if choice == "expose" and c.witnesses.is_empty(): return "pressure_no_audience"
 	if choice == "refuse" and not rules().kinds[c.kind].physical: return "pressure_response_unavailable"
@@ -278,3 +277,6 @@ func tick(minute: int) -> void:
 				if str(possible.blocked).is_empty() and float(possible.score) > score:
 					score = float(possible.score); best = {"actor":actor,"target":target,"kind":kind}
 	if not best.is_empty() and sim.rng.randf() < float(rules().chance): _start(best.actor,best.target,best.kind)
+
+func _private_location(location: String) -> bool:
+	return not bool(sim.catalog.locations.get(location,{}).get("public",false))

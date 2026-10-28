@@ -1,7 +1,8 @@
 extends RefCounted
 ## Player-facing names and errors. Domain IDs never appear as the interface.
+const City = preload("res://scripts/gameplay/city_layout.gd")
 const NAMES := {
-	"bedroom":"Спальня", "apartment_hall":"Прихожая", "bathroom":"Ванная", "kitchen":"Кухня", "global_map":"Город", "training_center":"Университет Альтерра",
+	"bedroom":"Спальня", "apartment_hall":"Прихожая", "bathroom":"Ванная", "kitchen":"Кухня",
 	"meal":"Готовый обед", "grain":"Крупа", "vegetable":"Овощи", "jacket":"Куртка", "book":"Книга", "lockpick":"Отмычка", "computer":"Компьютер", "stove":"Плита", "desk":"Стол", "chair":"Стул", "bookshelf":"Книжный шкаф", "camera":"Камера", "bandage":"Бинт", "medicine":"Лекарство", "knuckles":"Кастет", "blade":"Нож", "bat":"Бита", "spiked_knuckles":"Шипованный кастет", "folding_blade":"Складной нож",
 	"strength":"Сила", "agility":"Ловкость", "charisma":"Харизма", "intellect":"Интеллект", "luck":"Удача", "endurance":"Выносливость", "erudition":"Эрудиция", "authority":"Авторитет", "cunning":"Хитрость",
 	"energy":"Выносливость", "satiety":"Сытость", "health":"Здоровье", "hygiene":"Гигиена", "mood":"Настроение", "hydration":"Запас воды", "bladder":"Туалет", "rested":"Выспанность", "fun":"Досуг", "social":"Общение",
@@ -13,6 +14,11 @@ const NAMES := {
 }
 static var _content_labels: Dictionary = {}
 static func title(id: String) -> String:
+	var graph := City.source()
+	var location: Dictionary = graph.get("locations", {}).get(id, {})
+	if not location.is_empty(): return str(location.title)
+	for template in graph.get("resident_home_templates", {}).values():
+		if id.begins_with(str(template.location_prefix)): return "Жильё жителя"
 	var skill_label := preload("res://scripts/gameplay/growth_presentation.gd").label(id)
 	if not skill_label.is_empty(): return skill_label
 	var reproductive_names := {"clinic":"Клиника","barrier_protection":"Барьерная защита","contraceptive_pill":"Регулярная контрацепция","emergency_contraception":"Экстренная контрацепция","private_time":"Проводит время наедине"}
@@ -22,8 +28,6 @@ static func title(id: String) -> String:
 		var source: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/mechanics/remaining_content.json"))
 		_content_labels = source.get("content_labels", {})
 	if _content_labels.has(id): return str(_content_labels[id].label)
-	var city := preload("res://scripts/gameplay/city_layout.gd").point(id)
-	if not city.is_empty(): return str(city.name)
 	if id == "apartment": return "Дом героя"
 	var conditions := {"focused":"Сосредоточенность", "energized":"Бодрость", "stimulant":"Бодрящий тоник"}
 	if conditions.has(id): return str(conditions[id])
@@ -31,8 +35,8 @@ static func title(id: String) -> String:
 	if life_names.has(id): return str(life_names[id])
 	var extra := {"residential_district":"Жилой район", "knife":"Нож", "casual_top":"Повседневная рубашка", "work_top":"Рабочая рубашка", "training_top":"Спортивная футболка", "trousers":"Брюки", "efficient_worker":"Эффективная работа", "resilient":"Стойкость", "persuasive":"Убедительность", "fighter":"Боец", "scholar":"Эрудит", "common_day":"Общий день группы", "neighborhood_report":"Жизнь района", "club_report":"Жизнь клуба"}
 	if extra.has(id): return str(extra[id])
-	for subject in preload("res://scripts/gameplay/curriculum.gd").SUBJECTS:
-		if id == subject+"_class": return str(preload("res://scripts/gameplay/curriculum.gd").SUBJECTS[subject].title)
+	for subject in preload("res://scripts/mechanics/education_schedule.gd").SUBJECTS:
+		if id == subject+"_class": return str(preload("res://scripts/mechanics/education_schedule.gd").SUBJECTS[subject].title)
 	return str(NAMES.get(id, "Новый объект"))
 
 static func extensions() -> Dictionary:
@@ -54,10 +58,8 @@ static func extensions() -> Dictionary:
 	student.occupation = "student"
 	student.gender = "female"
 	student.education = "general"
-	student.schedule = [{"location": "training_center", "activity": "study", "hours": [480, 960], "weekdays": [1, 2, 3, 4, 5]}]
-	var city: Dictionary = base.locations.global_map.duplicate(true)
-	city.routes.residential_district = {"minutes":10}
-	return {"shops": {"market": {"location": "global_map", "hours": [480, 1320], "price_multiplier": 1.0, "sell_ratio": 0.5, "stock": stock}}, "npc_templates":{"resident":resident,"story_student":student}, "locations":{"global_map":city,"residential_district":{"routes":{"global_map":{"minutes":10}}}}, "lessons":preload("res://scripts/gameplay/curriculum.gd").lessons()}
+	student.schedule = [{"location": "campus_study_room", "activity": "study", "hours": [480, 960], "weekdays": [1, 2, 3, 4, 5]}]
+	return {"shops": {"market": {"location": "south_market", "hours": [480, 1320], "price_multiplier": 1.0, "sell_ratio": 0.5, "stock": stock}}, "npc_templates":{"resident":resident,"story_student":student}, "lessons":preload("res://scripts/mechanics/education_schedule.gd").lessons(City.source().capability_bindings.lessons)}
 
 static func combat_log(entry: Dictionary) -> String:
 	var actor := "Вы" if entry.get("actor", "") == "player" else "Противник"
@@ -66,6 +68,9 @@ static func combat_log(entry: Dictionary) -> String:
 	return actor + (" поднимается" if entry.get("action","") == "stand_up" else " восстанавливает выносливость")
 
 static func error(id: String) -> String:
+	if preload("res://scripts/gameplay/family_handoff_presentation.gd").ERRORS.has(id): return preload("res://scripts/gameplay/family_handoff_presentation.gd").ERRORS[id]
+	var education := {"invalid_education_plan":"Для студента выберите 2–4 разных предмета.","education_not_enrolled":"Вы не учитесь в университете.","lesson_not_selected":"Этот предмет не входит в ваше расписание.","lesson_too_late":"Допуск закрыт: опоздание больше 15 минут. Пропуск будет учтён в конце занятия.","lesson_already_missed":"Это занятие уже пропущено."}
+	if education.has(id): return education[id]
 	var pressure_errors := {"unknown_pressure_case":"Этот случай недоступен.","pressure_case_closed":"Этот случай уже закрыт для выбранного ответа.","pressure_response_used":"Этот ответ уже использован. Выберите другой способ действовать.","pressure_evidence_required":"Сначала соберите как минимум два подтверждения.","pressure_no_audience":"Нет свидетелей, которым можно предъявить доказательства.","leave_threat_location_first":"Сначала покиньте место, где находится агрессор.","supporter_unwilling":"Этот знакомый не готов поддержать вас.","supporter_afraid":"Этот знакомый боится последствий вмешательства.","unknown_supporter":"Этот человек сейчас недоступен для поддержки.","pressure_deadline_too_close":"До срока осталось слишком мало времени для этого ответа.","pressure_payment_unavailable":"В этом случае откуп недоступен.","pressure_response_unavailable":"Этот ответ не подходит к угрозе.","pressure_already_active":"Между этими участниками уже развивается конфликт.","antagonist_cooldown":"Повторное давление пока недоступно.","insufficient_motive":"У персонажа нет достаточного мотива для такого поступка.","unavailable_antagonist":"Участник конфликта недоступен.","no_opportunity":"Для этой угрозы сейчас нет подходящей ситуации.","no_known_project":"Нет известного проекта, на который можно воздействовать.","no_social_history":"Участников не связывает нужная история отношений.","actor_busy":"Персонаж сейчас занят.","target_busy":"Сначала завершите текущее взаимодействие.","pressure_capacity":"Уже развивается несколько угроз.","unknown_pressure_response":"Этот способ ответа недоступен.","unknown_pressure_kind":"Этот вид угрозы недоступен."}
 	if pressure_errors.has(id): return str(pressure_errors[id])
 	var companion_errors := {"companion_needs_trust":"Нужно больше доверия и близости.","companion_cooldown":"Собеседнику нужно время. Вернитесь к этому через несколько часов.","finish_companion_moment":"Завершите или остановите встречу с персонажем.","stale_companion_moment":"Этот момент уже завершён. Предложите новую встречу.","unagreed_companion_gesture":"Выберите только согласованный жест.","unknown_companion_gesture":"Этот жест недоступен.","invalid_companion_duration":"Удерживайте прикосновение немного дольше.","adult_required":"Это действие доступно только взрослым персонажам.","unsupported_main_schema":"Сохранение создано другой версией игры. Для этого обновления начните новую игру.","catalog_mismatch":"Сохранение использует другой набор игровых правил. Выберите совместимое сохранение или начните новую игру."}
@@ -81,6 +86,7 @@ static func error(id: String) -> String:
 	var extended := {"unknown_family_member":"Этот член семьи недоступен.", "not_family_guardian":"Уход доступен родителям и опекунам.", "family_home_required":"Для ухода нужно вернуться к семье домой.", "family_care_in_progress":"Сейчас уход уже выполняется.", "family_care_cooldown":"Эту заботу недавно уже оказали. Можно выбрать другое дело.", "family_member_at_school":"Сейчас идут занятия. Член семьи вернётся после 14:00.", "family_support_active":"Помощь с уходом уже оплачена и действует.", "npc_caring_for_family":"Сейчас этот человек занят уходом за ребёнком.", "digital_skill_required":"Для этой операции нужен более высокий навык программирования.", "digital_cooldown":"Эта цифровая задача пока недоступна повторно.", "finish_digital_report":"Сначала завершите или отмените подготовленную задачу.", "stale_digital_report":"Подготовка устарела. Начните её заново.", "collection_locked":"Это воспоминание пока не открыто."}
 	if extended.has(id): return str(extended[id])
 	var city_errors := {"agency_required":"Оформить жильё можно в агентстве недвижимости.","agency_closed":"Агентство работает с 09:00 до 18:00.","social_housing_ineligible":"Социальное жильё доступно после потери ученического дома, если нет денег на обычную аренду.","city_route_unavailable":"Сейчас путь закрыт. Проверьте часы работы места назначения.","no_current_home":"Сначала найдите новое жильё в агентстве недвижимости."}
+	city_errors.merge({"city_service_closed":"Услуга сейчас закрыта. Публичный подход остаётся доступен.","city_private_access_required":"Это частное помещение. Нужны право проживания или приглашение.","city_activity_access_required":"Вход связан с занятием или рабочей обязанностью.","personal_story_city_closed":"Эта история откроется после завершения вступления.","city_notice_already_sheltered":"Афиша уже укрыта от дождя."})
 	if city_errors.has(id): return str(city_errors[id])
 	if id == "tonic_vendor_required": return "Тоник можно купить и выпить у городского продавца."
 	if id == "guest_schedule_conflict": return "На это время у гостя уже запланированы учёба, работа или встреча."
@@ -109,6 +115,12 @@ static func error(id: String) -> String:
 	if id.contains("ap") or id.contains("stamina"): return "Недостаточно очков действия или выносливости. Завершите ход или восстановитесь."
 	if id.contains("equipment") or id.contains("furniture"): return "Нужного снаряжения или мебели пока нет."
 	return "Сейчас это действие недоступно. Ресурсы не потрачены."
+
+static func study_forecast(lesson: Dictionary) -> String:
+	var arrival := int(lesson.arrival)
+	var deadline := int(lesson.deadline)
+	var consequence := "Опоздание на %d мин · допуск до %02d:%02d" % [lesson.late_minutes,deadline%1440/60,deadline%60] if lesson.can_attend else "Не успеть на занятие · допуск до %02d:%02d" % [deadline%1440/60,deadline%60]
+	return "%s\nДорога %d мин · прибытие %02d:%02d" % [consequence,lesson.commute,arrival%1440/60,arrival%60]
 
 static func actor_name(sim, id: String) -> String:
 	return "вы" if id == "player" else str(sim.state.social.npcs.get(id, {}).get("name", "знакомый"))
@@ -151,9 +163,14 @@ static func event_text(event: Dictionary, sim) -> String:
 			"family_born": return "В семье появился ребёнок. Уход и обязанности доступны в разделе «Моя семья»."
 			"family_milestone": return str(member.name) + ": новый этап — " + str(sim.catalog.family_stages[member.stage].label) + "."
 			"family_needs_attention": return str(member.name) + ": нужна помощь с повседневными потребностями."
+			"family_home_changed": return str(member.name)+": семейный уход теперь доступен в новом доме."
+			"family_care_handoff": return actor_name(sim,str(data.details.caregiver))+" берёт на себя одно дело по уходу. Постоянные обязанности сохраняются."
+			"family_care_interrupted": return str(member.name)+": уход прерван, помощь ещё нужна."
 			"family_expenses_due": return "Не хватило денег на семейные расходы. Задолженность видна в разделе семьи."
 		return ""
 	match str(event.get("kind", "")):
+		"appointment_cancelled": return actor_name(sim,str(data.npc))+": встречу пришлось отменить из-за срочного дела."
+		"appointment_unavailable": return actor_name(sim,str(data.npc))+" не смог добраться до встречи. Это не ухудшило ваши отношения."
 		"effect_expired": return "Закончился эффект: " + title(str(data.id)) + "."
 		"project_completed": return "Проект «%s» завершён. Оплата поступила." % title(str(data.id))
 		"gathering_completed": return "Встреча компанией завершилась. Участники отдохнули и узнали друг друга лучше."

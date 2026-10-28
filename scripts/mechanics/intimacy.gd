@@ -34,19 +34,14 @@ func blocked(id: String, check_pin: bool = true) -> String:
 	if float(sim.state.player.needs.energy) < float(rules().session_energy) or float(npc.needs.energy) < float(rules().session_energy): return "insufficient_energy"
 	if float(npc.health) < 30 or float(sim.state.player.needs.health) < 30: return "npc_needs_recovery"
 	for participant in ["player", id]:
-		var wellbeing: String = sim.services.adult_health.intimate_blocked(participant)
+		var wellbeing: String = sim.services.adult_health.intimate_blocked(participant,id if participant=="player" else "player")
 		if not wellbeing.is_empty(): return wellbeing
 		var medical: Dictionary = sim.state.healthcare.records.get(participant, {})
 		if float(medical.get("intoxication", 0)) >= 30 or int(medical.get("unconscious_until", 0)) > _now(): return "participant_unavailable"
 		if int(sim.services.reproduction.view(participant).recovery_until) > _now(): return "reproductive_recovery"
 	if npc.activity in ["sleep", "recover", "eat", "work", "study", "family_care"]: return "npc_busy"
 	if check_pin and int(npc.pinned_until) > _now(): return "npc_busy"
-	for offset in range(int(rules().session_minutes) + 1):
-		var clock: Dictionary = sim.calendar.snapshot(_now() + offset)
-		for entry in npc.schedule:
-			if not entry.get("mandatory", entry.get("activity", "") in ["work", "study"]): continue
-			var hours: Array = entry.get("hours", [0, 0])
-			if int(clock.weekday) in entry.get("weekdays", [1,2,3,4,5,6,7]) and Rules.in_window(int(clock.minute_of_day), int(hours[0]), int(hours[1])): return "npc_busy"
+	if not sim.services.npc_planner.calendar.conflict(id,str(npc.location),int(rules().session_minutes)).is_empty(): return "npc_busy"
 	return ""
 
 func choices() -> Array:

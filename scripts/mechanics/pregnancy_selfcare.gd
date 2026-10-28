@@ -1,5 +1,6 @@
 extends "res://scripts/mechanics/core/module.gd"
 ## Short NPC breaks use real route time and shared reservations, never teleporting.
+const Access = preload("res://scripts/mechanics/care_access.gd")
 
 func service():
 	return sim.services.pregnancy_wellbeing
@@ -8,9 +9,7 @@ func _now() -> int:
 	return int(sim.state.clock.total_minutes)
 
 func toilet_available(id: String) -> bool:
-	var subject: Dictionary = service().actor(id)
-	var location := str(sim.state.world.location) if id=="player" else str(subject.get("location",""))
-	return bool(sim.catalog.locations.get(location,{}).get("toilet",false)) or location in service().config().rules.toilet_locations or (id!="player" and location==subject.get("home",""))
+	return Access.sanitary(sim,id)
 
 func apply(id: String, kind: String) -> void:
 	var record: Dictionary = sim.state.pregnancy_wellbeing.records.get(id,{})
@@ -62,7 +61,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		service()._log("support",{"target":id,"listener":"player","text":"Спасибо. Мне легче, когда можно попросить о небольшом перерыве и помощи."})
 		return Rules.ok({"minutes":5})
 	if operation=="supplies":
-		if not sim.state.world.location in ["clinic","global_map","market"]: return Rules.fail("hygiene_supplies_shop_required")
+		if not Access.supplies_available(sim,id): return Rules.fail("hygiene_supplies_shop_required")
 		var cost := int(service().config().rules.supplies_cost)
 		if int(sim.state.economy.cash)<cost: return Rules.fail("insufficient_funds")
 		if int(record.supplies)>96: return Rules.fail("supplies_limit")
@@ -70,7 +69,6 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		record.supplies += 3
 		return sim.advance(5)
 	if operation=="checkup":
-		if sim.state.world.location!="clinic": return Rules.fail("clinic_required")
 		var result: Dictionary = sim.services.health.prenatal_care(id,"player")
 		if result.ok: record.relief_until = _now()+720; service()._refresh(id,record)
 		return result
@@ -94,12 +92,23 @@ func consider(id: String, record: Dictionary) -> void:
 	if kind.is_empty(): return
 	var destination := str(npc.location)
 	if kind in ["toilet","cleanup"] and not toilet_available(id): destination = str(npc.home)
-	if kind=="supplies": destination = "clinic"
+	if kind=="supplies": destination = Access.clinic(sim)
 	var route: Dictionary = sim.services.npc_agency._route(npc,str(npc.location),destination)
 	if route.is_empty() or int(npc.money)<int(route.cost)+(int(service().config().rules.supplies_cost) if kind=="supplies" else 0): return
 	var duration := 15 if kind=="rest" else 10 if kind=="cleanup" else 5
+	sim.services.npc_planner.submit("pregnancy",id,kind,destination,duration,65)
+
+func start(request: Dictionary) -> bool:
+	var id := str(request.id)
+	var kind := str(request.kind)
+	var record: Dictionary = sim.state.pregnancy_wellbeing.records.get(id,{})
+	var npc: Dictionary = service().actor(id)
+	if record.is_empty() or not record.selfcare.is_empty(): return false
+	var route: Dictionary = request.route
+	if int(npc.money)<int(route.cost)+(int(service().config().rules.supplies_cost) if kind=="supplies" else 0): return false
+	var destination := str(request.destination)
 	var arrival := _now()+int(route.minutes)
-	var due := arrival+duration
+	var due := arrival+int(request.minutes)
 	var old_pin := int(npc.pinned_until)
 	sim.services.npc_agency._cancel(npc,"pregnancy_break")
 	npc.money -= int(route.cost)
@@ -109,6 +118,7 @@ func consider(id: String, record: Dictionary) -> void:
 	npc.activity = "personal_travel" if int(route.minutes)>0 else "rest"
 	npc.decision = {"reason":"pregnancy_"+kind,"committed":true}
 	service()._log("break_started",{"target":id,"action":kind,"destination":destination})
+	return true
 
 func cancel(id: String, record: Dictionary) -> void:
 	var job: Dictionary = record.selfcare

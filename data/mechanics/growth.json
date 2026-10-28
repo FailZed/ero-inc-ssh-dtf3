@@ -11,7 +11,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "cooking": {
       "label": "Кулинария",
@@ -23,7 +26,8 @@
       "minutes": 30,
       "energy": 5,
       "cost": 6,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "computing": {
       "label": "Программирование",
@@ -36,7 +40,10 @@
       "energy": 4,
       "cost": 0,
       "xp": 8,
-      "tool": "computer"
+      "tool": "computer",
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "fighting": {
       "label": "Самооборона",
@@ -49,7 +56,8 @@
       "minutes": 30,
       "energy": 10,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "stealth": {
       "label": "Скрытность",
@@ -61,7 +69,8 @@
       "minutes": 30,
       "energy": 7,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "cards": {
       "label": "Карточные игры",
@@ -74,7 +83,10 @@
       "minutes": 30,
       "energy": 3,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "journalism": {
       "label": "Журналистика",
@@ -87,7 +99,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "cybersecurity": {
       "label": "Цифровая безопасность",
@@ -100,7 +115,10 @@
       "energy": 5,
       "cost": 0,
       "xp": 8,
-      "tool": "computer"
+      "tool": "computer",
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "logic": {
       "label": "Логика",
@@ -113,7 +131,10 @@
       "minutes": 30,
       "energy": 3,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "research": {
       "label": "Исследование",
@@ -126,7 +147,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "writing": {
       "label": "Писательство",
@@ -139,7 +163,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "public_speaking": {
       "label": "Ораторское мастерство",
@@ -152,7 +179,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "empathy": {
       "label": "Эмпатия",
@@ -165,7 +195,10 @@
       "minutes": 30,
       "energy": 3,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "persuasion": {
       "label": "Убеждение",
@@ -178,7 +211,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "fitness": {
       "label": "Физическая форма",
@@ -191,7 +227,8 @@
       "minutes": 30,
       "energy": 10,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "athletics": {
       "label": "Атлетика",
@@ -204,7 +241,8 @@
       "minutes": 30,
       "energy": 10,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "handiness": {
       "label": "Ремонт",
@@ -216,7 +254,10 @@
       "minutes": 30,
       "energy": 5,
       "cost": 5,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "painting": {
       "label": "Рисование",
@@ -229,7 +270,10 @@
       "minutes": 30,
       "energy": 3,
       "cost": 3,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "photography": {
       "label": "Фотография",
@@ -243,7 +287,8 @@
       "energy": 4,
       "cost": 0,
       "xp": 8,
-      "tool": "camera"
+      "tool": "camera",
+      "home_room_kinds": []
     },
     "music": {
       "label": "Музыка",
@@ -255,7 +300,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "performance": {
       "label": "Сценическое мастерство",
@@ -268,7 +316,10 @@
       "minutes": 30,
       "energy": 6,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "comedy": {
       "label": "Юмор",
@@ -281,7 +332,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "dancing": {
       "label": "Танцы",
@@ -294,7 +348,10 @@
       "minutes": 30,
       "energy": 8,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "gardening": {
       "label": "Садоводство",
@@ -306,7 +363,8 @@
       "minutes": 30,
       "energy": 6,
       "cost": 3,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "fishing": {
       "label": "Рыбалка",
@@ -319,7 +377,8 @@
       "minutes": 30,
       "energy": 5,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": []
     },
     "crafting": {
       "label": "Ремесло",
@@ -331,7 +390,10 @@
       "minutes": 30,
       "energy": 5,
       "cost": 5,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "sales": {
       "label": "Торговля",
@@ -344,7 +406,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "logistics": {
       "label": "Логистика",
@@ -357,7 +422,10 @@
       "minutes": 30,
       "energy": 4,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "leadership": {
       "label": "Организация людей",
@@ -370,7 +438,10 @@
       "minutes": 30,
       "energy": 5,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     },
     "discipline": {
       "label": "Самоорганизация",
@@ -382,7 +453,10 @@
       "minutes": 30,
       "energy": 3,
       "cost": 0,
-      "xp": 8
+      "xp": 8,
+      "home_room_kinds": [
+        "bedroom"
+      ]
     }
   },
   "growth_rules": {

@@ -3,11 +3,15 @@ extends "res://scripts/mechanics/core/module.gd"
 const PATH := "res://data/mechanics/adult_health.json"
 const Cycle = preload("res://scripts/mechanics/adult_health_cycle.gd")
 const Infections = preload("res://scripts/mechanics/adult_health_infections.gd")
+const Plans = preload("res://scripts/mechanics/health_care_plans.gd")
 const Care = preload("res://scripts/mechanics/adult_health_care.gd")
+const Relationships = preload("res://scripts/mechanics/adult_health_relationships.gd")
 static var _config: Dictionary = {}
 var cycle
 var infections
 var care
+var relationships
+var plans
 
 static func config() -> Dictionary:
 	if _config.is_empty():
@@ -16,13 +20,15 @@ static func config() -> Dictionary:
 	return _config
 
 static func defaults() -> Dictionary:
-	return {"version":1,"rules_hash":JSON.stringify(config()).sha256_text(),"records":{},"contacts":[],"history":[]}
+	return {"version":2,"rules_hash":JSON.stringify(config()).sha256_text(),"records":{},"contacts":[],"history":[]}
 
 func _init(simulation) -> void:
 	super(simulation)
 	cycle = Cycle.new(simulation)
 	infections = Infections.new(simulation)
 	care = Care.new(simulation)
+	relationships = Relationships.new(simulation)
+	plans = Plans.new(simulation)
 
 func _now() -> int:
 	return int(sim.state.clock.total_minutes)
@@ -55,7 +61,7 @@ func new_record(id: String) -> Dictionary:
 		"cycle":{"active":false,"day":0,"flow":0.0,"product":"none","fill":0.0,"changed":0,"leaks":0,"last_leak":-10080,
 			"supplies":{"pad":6,"night_pad":2,"cup":0}},
 		"erection":{"started":0,"until":0,"painful":false,"persistent":false,"episodes":0,"last_event":-10080,"difficulty_until":0,"difficulties":0},
-		"hpv":{},"conditions":{},"vaccine":{"doses":0,"next_dose":0},"screening":{"last":-10080,"next":0,"result":"none","followup":false},"selfcare":{}}
+		"hpv":{},"conditions":{},"care_notices":{},"vaccine":{"doses":0,"next_dose":0},"screening":{"last":-10080,"next":0,"result":"none","followup":false},"selfcare":{}}
 
 func initialize() -> void:
 	if not sim.state.has("adult_health"): sim.state.adult_health = defaults()
@@ -91,6 +97,11 @@ func _refresh(id: String) -> void:
 			r.symptoms[symptom] = maxi(int(r.symptoms.get(symptom,0)),int(condition.severity))
 	infections.refresh_symptoms(id)
 	var erection: Dictionary = r.erection
+	if not capabilities(id).erections:
+		erection.until = 0
+		erection.persistent = false
+		erection.painful = false
+		erection.difficulty_until = 0
 	if int(erection.until)>_now():
 		r.symptoms["painful_erection" if erection.painful else "spontaneous_erection"] = 75 if erection.painful else 25
 	if int(erection.difficulty_until)>_now(): r.symptoms.erectile_difficulty = 50
@@ -98,7 +109,8 @@ func _refresh(id: String) -> void:
 		for key in r.symptoms:
 			if not key in ["painful_erection","spontaneous_erection"]: r.symptoms[key] = roundi(int(r.symptoms[key])*0.7)
 	var discomfort := 0
-	for value in r.symptoms.values(): discomfort = maxi(discomfort,int(value))
+	for key in r.symptoms:
+		if key!="spontaneous_erection": discomfort = maxi(discomfort,int(r.symptoms[key]))
 	var maternal: Dictionary = sim.state.get("pregnancy_wellbeing",{}).get("records",{}).get(id,{})
 	if maternal.get("phase","") in ["pregnancy","postpartum"]:
 		for value in maternal.get("symptoms",{}).values(): discomfort = maxi(discomfort,int(value))
@@ -115,7 +127,7 @@ func view(id: String = "player") -> Dictionary:
 	var result := {"capabilities":capabilities(id),"symptoms":r.symptoms.duplicate(true),"soiled":r.soiled,
 		"desire":r.desire.duplicate(true),
 		"cycle":r.cycle.duplicate(true),"erection":r.erection.duplicate(true),"vaccine":r.vaccine.duplicate(true),
-		"screening":r.screening.duplicate(true),"diagnoses":[],"symptom_list":[],"selfcare":r.selfcare.duplicate(true)}
+		"screening":r.screening.duplicate(true),"diagnoses":[],"symptom_list":[],"selfcare":r.selfcare.duplicate(true),"care_plan":plans.view(id)}
 	for key in r.conditions:
 		if r.conditions[key].known and r.conditions[key].status=="active": result.diagnoses.append({"id":key,"label":config().conditions[key].label})
 	for strain in r.hpv:
@@ -123,7 +135,7 @@ func view(id: String = "player") -> Dictionary:
 		if infection.known and infection.last_result!="negative": result.diagnoses.append({"id":"hpv_"+str(strain),"label":config().hpv.strains[strain].label})
 	for key in r.symptoms:
 		result.symptom_list.append({"id":key,"label":config().symptoms[key].label,"severity":int(r.symptoms[key])})
-	result.symptom_list.sort_custom(func(a,b): return a.severity>b.severity if a.severity!=b.severity else a.id<b.id)
+	result.symptom_list.sort_custom(func(a,b): return a.severity>b.severity if a.severity!=b.severity else str(a.id)<str(b.id))
 	result.urgent = (bool(r.erection.persistent) and int(r.erection.until)>_now() and _now()-int(r.erection.started)>=int(config().rules.erection_urgent_minutes)) or int(r.symptoms.get("acute_pelvic_pain",0))>=80
 	result.seek_care = result.urgent or int(r.erection.difficulties)>=3 or int(r.symptoms.get("heavy_flow",0))>=70 or int(r.symptoms.get("urinary_burning",0))>=35 or int(r.symptoms.get("visible_growths",0))>0 or bool(r.screening.followup)
 	return result
@@ -158,16 +170,17 @@ func start_erection(id: String, persistent: bool = false, painful: bool = false)
 	log_event("erection",{"target":id,"text":"Возникла болезненная эрекция. Нужно обсудить это с врачом." if painful else "Внезапная физиологическая реакция. Можно сделать короткий перерыв."})
 	return true
 
-func readiness(id: String) -> Dictionary:
+func readiness(id: String, partner: String = "") -> Dictionary:
 	var r := record(id)
 	if r.is_empty() or not capabilities(id).get("erections",false): return {"difficulty":false}
 	var needs: Dictionary = actor(id).needs
 	var intoxication := float(sim.state.healthcare.records.get(id,{}).get("intoxication",0))
 	var stress := maxf(0,35-float(needs.mood))+maxf(0,35-float(needs.energy))+intoxication*0.5
+	if not partner.is_empty(): stress += relationships.worry(id,partner)
 	return {"difficulty":int(r.erection.difficulty_until)>_now() or (stress>=20 and unit(id+":readiness:"+str(_now()))<minf(0.75,stress/140.0))}
 
-func note_readiness(id: String) -> void:
-	if not readiness(id).difficulty: return
+func note_readiness(id: String, partner: String = "") -> void:
+	if not readiness(id,partner).difficulty: return
 	var r := record(id)
 	if int(r.erection.difficulty_until)<=_now():
 		r.erection.difficulties += 1
@@ -175,11 +188,12 @@ func note_readiness(id: String) -> void:
 		log_event("difficulty",{"target":id,"text":"Из-за самочувствия возникли трудности с эрекцией. Можно отложить планы и отдохнуть."})
 	_refresh(id)
 
-func intimate_blocked(id: String) -> String:
+func intimate_blocked(id: String, partner: String = "") -> String:
 	var status := view(id)
 	if status.is_empty(): return ""
 	if status.urgent: return "adult_health_urgent_care"
 	if status.desire.intent=="not_now" or (id!="player" and int(status.desire.libido)<10): return "adult_health_no_desire"
+	if not partner.is_empty() and relationships.desire_for(id,partner).get("reason","")!="": return "adult_health_no_desire"
 	if int(status.symptoms.get("genital_irritation",0))>=70 or int(status.symptoms.get("urinary_burning",0))>=70: return "adult_health_painful_discomfort"
 	return ""
 
@@ -187,7 +201,8 @@ func try_intimacy(first: String, second: String) -> bool:
 	if not enabled(): return true
 	var failed := false
 	for id in [first,second]:
-		if readiness(id).difficulty: note_readiness(id); failed = true
+		var partner := second if id==first else first
+		if readiness(id,partner).difficulty: note_readiness(id,partner); failed = true
 		var r := record(id)
 		var pain := 0
 		for key in ["period_cramps","painful_erection","urinary_burning","genital_irritation","pelvic_discomfort"]: pain = maxi(pain,int(r.get("symptoms",{}).get(key,0)))
@@ -204,6 +219,7 @@ func try_intimacy(first: String, second: String) -> bool:
 		r.desire.satisfaction = maxf(0,float(r.desire.satisfaction)-loss)
 		r.desire.last_failure = _now()
 		r.desire.failures += 1
+		relationships.setback(id,second if id==first else first,loss)
 		log_event("setback",{"target":id,"partner":second if id==first else first,"mood_loss":loss,"text":"Хотелось близости, но самочувствие помешало. Это расстроило; сейчас помогут спокойствие и поддержка."})
 	return false
 
@@ -219,9 +235,11 @@ func contact(first: String, second: String, protection: String, key: String) -> 
 		d.satisfaction = minf(100,float(d.satisfaction)+5+int(d.libido)*0.04)
 		d.frustration = maxf(0,float(d.frustration)-5)
 
-func conversation_line(id: String, candid: bool = false) -> Dictionary:
+func conversation_line(id: String, candid: bool = false, partner: String = "player") -> Dictionary:
 	var status := view(id)
 	if status.is_empty(): return {}
+	var remembered: Dictionary = relationships.conversation_line(id,partner,candid)
+	if not remembered.is_empty(): return remembered
 	var key := ""
 	if status.soiled: key = "privacy"
 	elif candid and status.erection.until>_now(): key = "spontaneous_erection"
@@ -254,6 +272,7 @@ func tick(minute: int) -> void:
 		r.updated = minute
 		r.desire.frustration = snappedf(maxf(0,float(r.desire.frustration)-elapsed/30.0),0.0001)
 		cycle.tick_actor(id,elapsed)
+		plans.tick_actor(id)
 		infections.tick_actor(id)
 		if minute%60==0 and capabilities(id).erections and minute-int(r.erection.last_event)>=180:
 			if unit(id+":spontaneous:"+str(minute))<float(config().rules.spontaneous_hourly_chance): start_erection(id)
@@ -272,14 +291,6 @@ func observe(module_id: String, operation: String, args: Dictionary, _before: Di
 	if module_id=="character" and operation=="rest" or module_id=="needs" and operation in ["sleep","nap"]:
 		care.apply("player","rest")
 		if operation=="sleep" or int(args.get("minutes",0))>=120: start_erection("player")
-	if module_id=="intimacy" and operation=="choose" and args.get("choice","")=="start" and not sim.state.intimacy.active.is_empty():
-		for id in ["player",str(sim.state.intimacy.active.npc)]: note_readiness(id)
-	if operation in ["interact","choose"] and (args.get("choice","") in ["support","listen"] or args.get("action","") in ["support","listen","offer_help"]) and result.get("data",{}).get("accepted",false):
-		for id in ["player",str(args.get("id",""))]:
-			var r := record(id)
-			if not r.is_empty() and float(r.desire.frustration)>0:
-				adjust(id,"mood",3)
-				r.desire.frustration = maxf(0,float(r.desire.frustration)-8)
 
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	var id := str(args.get("target","player"))
@@ -287,6 +298,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	if not enabled(): return Rules.fail("content_disabled")
 	if operation=="inspect": return Rules.ok(view(id))
 	if id!="player": return Rules.fail("patient_decision_required")
+	if operation=="snooze_care": return plans.snooze(id,str(args.get("id","")))
 	if operation=="desire":
 		var intent := str(args.get("intent","context"))
 		if not intent in ["context","want_intimacy","not_now"]: return Rules.fail("invalid_intimacy_intention")

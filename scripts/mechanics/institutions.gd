@@ -13,7 +13,7 @@ func initialize_group(group: Dictionary) -> void:
 	group.equipment = []
 	group.campaigns = {}
 	group.election = {}
-	group.work = ClubWork.defaults()
+	group.work = ClubWork.defaults(sim.location_role("study"))
 
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	var id := str(args.get("id", ""))

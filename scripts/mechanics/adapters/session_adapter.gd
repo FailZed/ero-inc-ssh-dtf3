@@ -89,7 +89,7 @@ func _on_profile_changed(profile: Dictionary) -> void:
 		if simulation.state.player.stats.has(stat): simulation.state.player.stats[stat] = profile.stats[stat]
 
 func _on_location_changed(id: String) -> void:
-	var canonical := "global_map" if id == "street_exit" else id
+	var canonical := id
 	if simulation != null and simulation.catalog.locations.has(canonical):
 		simulation.state.world.previous_location = simulation.state.world.location
 		simulation.state.world.location = canonical

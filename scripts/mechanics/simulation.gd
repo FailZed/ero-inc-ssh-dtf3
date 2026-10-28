@@ -134,6 +134,7 @@ func command(module_id: String, operation: String, args: Dictionary = {}) -> Dic
 		state = before
 		rng.state = rng_before
 		pending_events.clear()
+		rollback_command()
 	var emitted := pending_events.duplicate(true)
 	pending_events.clear()
 	finish_command()
@@ -164,7 +165,11 @@ func advance(minutes: int) -> Dictionary:
 		var minute := int(state.clock.total_minutes) + 1
 		state.clock = calendar.snapshot(minute)
 		for id in services: services[id].tick(minute)
+		after_minute(minute)
 	return Rules.ok({"clock": state.clock.duplicate(true)})
+
+func after_minute(minute: int) -> void:
+	services.social.settle_appointments(minute)
 
 func apply_effects(effects: Array) -> Dictionary:
 	for effect in effects:
@@ -198,6 +203,46 @@ func multiplier(id: String) -> float:
 	var result := float(services.preferences.rule(id, 1.0))
 	for perk in state.player.perks: result *= float(catalog.perks[perk].get("multipliers", {}).get(id, 1.0))
 	return result
+
+func location_role(id: String) -> String:
+	return str(catalog.get("location_roles", {}).get(id, ""))
+
+func player_home_room(kind: String) -> String:
+	return str(catalog.settings.get("home_rooms", {}).get(kind, ""))
+
+func player_home() -> String:
+	return player_home_room("bedroom")
+
+func room_kind(id: String) -> String:
+	for kind in catalog.settings.get("home_rooms", {}):
+		if catalog.settings.home_rooms[kind] == id: return str(kind)
+	return str(catalog.locations.get(id, {}).get("room_kind", ""))
+
+func is_player_home_location(id: String) -> bool:
+	return id in catalog.settings.get("home_rooms", {}).values()
+
+func actor_home(id: String = "player") -> String:
+	return player_home() if id == "player" else str(state.social.npcs.get(id, {}).get("home", ""))
+
+func is_actor_home_location(id: String, location: String) -> bool:
+	if id == "player": return is_player_home_location(location)
+	var home := actor_home(id)
+	var home_entry: Dictionary = catalog.locations.get(home,{})
+	var entry: Dictionary = catalog.locations.get(location,{})
+	if home_entry.get("kind","")=="private_residence" and home_entry.get("owner_actor_id","")!=id: return false
+	if entry.get("kind","")=="private_residence" and entry.get("owner_actor_id","")!=id: return false
+	if location == home: return not home.is_empty()
+	var property_id := str(home_entry.get("residence_property_id",""))
+	return not property_id.is_empty() and entry.get("kind","")=="private_room" and entry.get("residence_property_id") == property_id
+
+func prepare_npc_template(_id: String, _args: Dictionary, template: Dictionary) -> Dictionary:
+	return Rules.ok(template.duplicate(true))
+
+func generate_population(config: Dictionary) -> Dictionary:
+	return services.population.generate_batch(config)
+
+func rollback_command() -> void:
+	pass
 
 func export_snapshot() -> Dictionary:
 	return {"schema": SCHEMA, "catalog_hash": JSON.stringify(catalog).sha256_text(),

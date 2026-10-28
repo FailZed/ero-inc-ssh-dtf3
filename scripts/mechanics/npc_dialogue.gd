@@ -1,5 +1,55 @@
 extends "res://scripts/mechanics/core/module.gd"
+const Options = preload("res://scripts/mechanics/conversation_options.gd")
 ## Contextual authored conversations and autonomous invitations; no UI or network dependency.
+var _menu_catalog: Dictionary = {}
+
+func menu_catalog() -> Dictionary:
+	if _menu_catalog.is_empty():
+		var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/mechanics/conversation_menu.json"))
+		if parsed is Dictionary: _menu_catalog = parsed
+	return _menu_catalog.duplicate(true)
+
+func _menu_ids() -> Array[String]:
+	var ids: Array[String] = []
+	for tab: Dictionary in menu_catalog().get("tabs",[]):
+		for item: Dictionary in tab.get("items",[]):
+			var entries: Array = item.get("choices",[]) if item.has("choices") else [item.get("choice","")]
+			for key in entries:
+				if not str(key).is_empty() and not str(key) in ids: ids.append(str(key))
+	return ids
+
+func menu(id: String) -> Dictionary:
+	var npc: Dictionary = sim.state.social.npcs.get(id,{})
+	if not npc.has("mind"): return {}
+	var choices: Array = []
+	for key: String in _menu_ids():
+		if not sim.catalog.dialogue_choices.has(key): continue
+		var view := _choice_view(npc,key)
+		if not view.is_empty(): choices.append(view)
+	return {"turn":int(npc.mind.dialogue.turn),"choices":choices,"tabs":menu_catalog().get("tabs",[])}
+
+func _choice_view(npc: Dictionary, key: String) -> Dictionary:
+	var spec := definition("dialogue_choices",key)
+	var blocked := _choice_blocked(npc,spec)
+	if not sim.state.encounters.combat.is_empty() and sim.state.encounters.combat.status == "active": blocked = "finish_active_combat"
+	if blocked in ["content_disabled","adults_only"]: return {}
+	var action := str(spec.action)
+	if blocked.is_empty() and npc.mind.dialogue.channel == "message" and not action.is_empty(): blocked = "npc_not_present"
+	elif blocked.is_empty() and not action.is_empty(): blocked = sim.services.npc_relationships.blocked("player",str(npc.id),action)
+	if key == "apologize" and blocked == "no_unacknowledged_harm": return {}
+	if key == "court" and "romance" in sim.state.preferences.disabled_tags: return {}
+	if key in ["accept","decline","stop"] and blocked.is_empty(): blocked = _offer_valid(npc,str(npc.mind.dialogue.pending.get("token","")))
+	if not key in ["leave","decline","stop"] and blocked.is_empty(): blocked = availability(npc,str(npc.mind.dialogue.channel))
+	if key == "hg_shave" and npc.location == sim.state.world.location and npc.mind.dialogue.channel == "face": blocked = ""
+	var minutes := int(sim.catalog.agency_actions[action].minutes) if not action.is_empty() else int(spec.minutes)
+	var chance := -1.0
+	if not action.is_empty() and blocked.is_empty(): chance = float(sim.services.npc_relationships.forecast("player",str(npc.id),action).chance)
+	var forecast := {}
+	if spec.has("interaction"):
+		forecast = Options.new(sim).preview(npc,str(spec.interaction))
+		if blocked.is_empty(): blocked = str(forecast.blocked)
+		chance = float(forecast.chance)
+	return {"id":key,"text":str(definition("dialogue_labels",str(spec.label)).ru),"blocked":blocked,"minutes":minutes,"chance":chance,"action":action,"forecast":forecast}
 
 func enabled() -> bool:
 	return sim.services.npc_agency.enabled()
@@ -229,7 +279,9 @@ func _choice_blocked(npc: Dictionary, spec: Dictionary) -> String:
 	return ""
 
 func availability(npc: Dictionary, channel: String = "face") -> String:
+	if sim.state.encounters.combat.get("status","") == "active": return "finish_active_combat"
 	if not npc.mind.boundaries.contact: return "contact_boundary"
+	if _now() < conflict_space_until(npc): return "contact_boundary"
 	if channel == "message":
 		if not str(npc.id) in sim.state.social.contacts: return "missing_contact"
 		if npc.activity == "sleep": return "npc_sleeping"
@@ -239,6 +291,17 @@ func availability(npc: Dictionary, channel: String = "face") -> String:
 	if not str(npc.mind.active.get("partner", "")).is_empty(): return "npc_busy"
 	var available: Dictionary = sim.services.social_rules.availability(str(npc.id), true)
 	return "" if available.ok else str(available.error)
+
+func conflict_space_until(npc: Dictionary) -> int:
+	var last_conflict := -1
+	for item: Dictionary in npc.memories:
+		if item.kind == "violence" and item.data.get("actor","") == "player": last_conflict = maxi(last_conflict,int(item.minute))
+	if last_conflict < 0: return 0
+	var bond: Dictionary = sim.services.npc_relationships.view(str(npc.id),"player")
+	if float(bond.grievance)<=0: return 0
+	var reserve: float = 1.0-sim.services.npc_personalities.f(npc,"social_boldness")
+	var reluctance := clampf(reserve*0.5+maxf(float(bond.fear),float(bond.grievance))/100.0,0,1)
+	return last_conflict+int(rules().session_duration)+ceili(float(rules().npc_cooldown)*reluctance)
 
 func present(id: String) -> Dictionary:
 	var npc: Dictionary = sim.state.social.npcs.get(id, {})
@@ -251,18 +314,8 @@ func present(id: String) -> Dictionary:
 		if d.node != "root": ids.append("back")
 		ids.append("leave")
 	for key in ids:
-		var spec := definition("dialogue_choices", str(key))
-		var blocked := _choice_blocked(npc, spec)
-		if blocked == "content_disabled" or blocked == "adults_only": continue
-		var action := str(spec.action)
-		if blocked.is_empty() and d.channel == "message" and not action.is_empty(): blocked = "npc_not_present"
-		elif blocked.is_empty() and not action.is_empty():
-			blocked = sim.services.npc_relationships.blocked("player", id, action)
-		if key == "apologize" and blocked == "no_unacknowledged_harm": continue
-		if key == "court" and "romance" in sim.state.preferences.disabled_tags: continue
-		if key == "accept" and blocked.is_empty(): blocked = _offer_valid(npc, str(d.pending.get("token", "")))
-		if not key in ["leave", "decline", "stop"] and blocked.is_empty(): blocked = availability(npc, str(d.channel))
-		choices.append({"id": key, "text": str(definition("dialogue_labels", str(spec.label)).ru), "blocked": blocked, "minutes": int(spec.minutes)})
+		var choice := _choice_view(npc,str(key))
+		if not choice.is_empty(): choices.append(choice)
 	return {"utterance": d.utterance.duplicate(true), "choices": choices, "node": d.node, "channel": d.channel, "turn": d.turn}
 
 func _advance_talk(npc: Dictionary, minutes: int) -> Dictionary:
@@ -300,17 +353,20 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 				d.utterance = d.pending.utterance.duplicate(true)
 				d.expires = _now() + int(rules().session_duration)
 				return Rules.ok(present(str(npc.id)))
+			d.pending = {}
 			var reason := availability(npc, channel)
 			if not reason.is_empty():
 				if channel == "message" or reason == "npc_not_present": return Rules.fail(reason)
 				var pool := "busy.boundary" if reason == "contact_boundary" else "gone" if reason == "npc_not_present" else "busy.social" if not str(npc.mind.active.get("partner", "")).is_empty() else "busy." + str(npc.activity)
 				if not sim.catalog.dialogue_pools.has(pool): pool = "busy.generic"
-				return Rules.ok(_speak(npc, "end", pool))
+				return Rules.ok(_speak(npc, "end", pool,"memory.violence" if _now()<conflict_space_until(npc) else ""))
 			return Rules.ok(_topic(npc, "root"))
-		"choose":
+		"choose", "choose_menu":
 			var key := str(args.get("choice", ""))
+			if d.node == "end": return Rules.fail("dialogue_ended")
+			if operation == "choose_menu" and d.node == "initiative": return Rules.fail("answer_initiative_first")
 			if _now() >= int(d.expires): return Rules.fail("dialogue_expired")
-			var available := present(str(npc.id))
+			var available := menu(str(npc.id)) if operation == "choose_menu" else present(str(npc.id))
 			if int(args.get("turn", -1)) != int(d.turn): return Rules.fail("stale_dialogue_turn")
 			var selected := {}
 			for choice in available.get("choices", []):
@@ -325,6 +381,16 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 				destination = "feelings" if d.pending.kind == "concern" else "romance" if d.pending.kind == "romance" else "day" if d.pending.kind in ["lonely", "gratitude"] else "goal"
 				d.pending = {}
 			var spec := definition("dialogue_choices", key)
+			if spec.has("interaction"):
+				var outcome: Dictionary = Options.new(sim).execute("choose",{"id":str(npc.id),"choice":str(spec.interaction)})
+				if not outcome.ok: return outcome
+				var combat_finished: bool = outcome.data.get("combat_started",false) and sim.state.encounters.combat.get("status","") != "active"
+				var option_reply := present(str(npc.id)) if combat_finished else _speak(npc,"end" if outcome.data.get("ended",false) else "answer",str(outcome.data.pool))
+				option_reply.accepted = outcome.data.accepted
+				npc.mind.dialogue.utterance.narrated = definition("conversation_options",key).kind in ["hostile","activity","finance"] or bool(definition("conversation_options",key).get("narrated",false))
+				option_reply.utterance = npc.mind.dialogue.utterance.duplicate(true)
+				option_reply.outcome = outcome.data.duplicate(true)
+				return Rules.ok(option_reply)
 			var action := str(spec.action)
 			if not action.is_empty():
 				var before: Dictionary = sim.services.npc_relationships.view(str(npc.id), "player")
@@ -345,9 +411,37 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			return Rules.ok(reply)
 	return Rules.fail("unknown_operation")
 
+func interrupt_contact(id: String) -> void:
+	var npc: Dictionary = sim.state.social.npcs.get(id,{})
+	if not npc.has("mind"): return
+	npc.mind.dialogue.pending = {}
+	npc.mind.dialogue.node = "end"
+	npc.mind.dialogue.expires = 0
+
+func interrupt_conflict(id: String) -> void:
+	# The player's attention has been interrupted, including an unrelated phone offer.
+	for npc: Dictionary in sim.state.social.npcs.values():
+		if npc.has("mind"): _invalidate_offer(npc)
+	interrupt_contact(id)
+
+func _invalidate_offer(npc: Dictionary) -> void:
+	var d: Dictionary = npc.mind.dialogue
+	d.pending = {}
+	if d.node == "initiative":
+		d.node = "end"
+		d.expires = 0
+
+func finish_conflict(id: String, status: String) -> void:
+	var npc: Dictionary = sim.state.social.npcs.get(id,{})
+	if not npc.has("mind"): return
+	_speak(npc,"answer" if status in ["won","surrendered"] else "end","conflict."+status)
+	npc.mind.dialogue.utterance.narrated = true
+
 func _offer_valid(npc: Dictionary, token: String) -> String:
 	var pending: Dictionary = npc.mind.dialogue.pending
 	if pending.is_empty() or token != str(pending.token) or _now() >= int(pending.expires): return "stale_initiative"
+	if str(pending.utterance.memory) != memory(npc): return "stale_initiative"
+	if pending.channel == "message" and local_initiative(npc): return "stale_initiative"
 	var bond: Dictionary = sim.services.npc_relationships.view(str(npc.id), "player")
 	match str(pending.kind):
 		"goal":
@@ -373,7 +467,8 @@ func offers() -> Array:
 
 func _decline(npc: Dictionary, token: String, stop: bool) -> Dictionary:
 	var d: Dictionary = npc.mind.dialogue
-	if d.pending.is_empty() or str(d.pending.token) != token: return Rules.fail("stale_initiative")
+	var invalid := _offer_valid(npc,token)
+	if not invalid.is_empty(): return Rules.fail(invalid)
 	var remote: bool = d.pending.channel == "message"
 	d.pending = {}
 	d.quiet_until = _now() + int(rules().stop_cooldown if stop else rules().refusal_cooldown)
@@ -397,14 +492,14 @@ func local_initiative(npc: Dictionary) -> bool:
 	return npc.location == sim.state.world.location and npc.location in ["global_map", "training_center", "residential_district"]
 
 func tick(minute: int) -> void:
-	if not enabled() or minute % 15 != 0: return
+	if not enabled(): return
 	var occupied := false
 	for npc in sim.state.social.npcs.values():
 		var d: Dictionary = npc.mind.dialogue
 		if not d.pending.is_empty():
-			if not _offer_valid(npc, str(d.pending.token)).is_empty(): d.pending = {}
+			if not _offer_valid(npc, str(d.pending.token)).is_empty(): _invalidate_offer(npc)
 			else: occupied = true
-	if occupied or minute < int(sim.state.social.dialogue.next_contact): return
+	if minute % 15 != 0 or occupied or minute < int(sim.state.social.dialogue.next_contact): return
 	var hour := int(sim.state.clock.minute_of_day) / 60
 	if hour < 7 or hour >= 22: return
 	if not sim.state.encounters.combat.is_empty() and sim.state.encounters.combat.status == "active": return
@@ -424,6 +519,7 @@ func tick(minute: int) -> void:
 		if npc.activity in ["sleep", "eat", "recover", "travel"] or not str(npc.mind.active.get("partner", "")).is_empty(): continue
 		var local: bool = local_initiative(npc)
 		if not local and not str(id) in sim.state.social.contacts: continue
+		if not availability(npc,"face" if local else "message").is_empty(): continue
 		var p = sim.services.npc_personalities
 		var bond: Dictionary = sim.services.npc_relationships.view(str(id), "player")
 		if not local and float(bond.trust) < 4: continue

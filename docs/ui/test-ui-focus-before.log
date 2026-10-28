@@ -1,0 +1,203 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: [CSM][I]Live2D Cubism Core version: 05.00.0000 (83886080)
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::StartUp() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::Initialize() is complete.
+
+   at: output (src\register_types.cpp:42)
+ERROR: Neighbor focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: _get_focus_neighbor (scene/gui/control.cpp:3298)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:55)
+       [2] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+FAIL: Up from people tab reaches its rebuilt list
+FAIL: Up from places tab reaches its rebuilt list
+ERROR: Neighbor focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: _get_focus_neighbor (scene/gui/control.cpp:3298)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:55)
+       [2] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+FAIL: Up from actions tab reaches its rebuilt list
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+ERROR: Next focus node path is invalid: '../../@ScrollContainer@42/@VBoxContainer@43/@Button@166'.
+   at: find_next_valid_focus (scene/gui/control.cpp:3068)
+   GDScript backtrace (most recent call first):
+       [0] _key (res://tests/gameplay/run_ui_focus.gd:14)
+       [1] _run (res://tests/gameplay/run_ui_focus.gd:63)
+       [2] _key (res://tests/gameplay/run_ui_focus.gd:19)
+       [3] _frames (res://tests/gameplay/run_ui_focus.gd:7)
+FAIL: Tab visits contextual actions after switching pages
+UI_FOCUS_RESULT {"checks":14,"failed":4,"failures":["Up from people tab reaches its rebuilt list","Up from places tab reaches its rebuilt list","Up from actions tab reaches its rebuilt list","Tab visits contextual actions after switching pages"]}
+WARNING: [CSM][I]CubismFramework::Dispose() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: 63 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 27 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

@@ -20,6 +20,8 @@ static func life(sim, id: String) -> Dictionary:
 	var action := str(active.get("action", npc.activity))
 	var activity := str(sim.catalog.agency_actions.get(action, {}).get("label", Names.title(str(npc.activity))))
 	if active.get("phase", "") == "travel": activity = "В пути: " + Names.title(str(active.destination))
+	if npc.activity=="appointment_travel": activity = "В пути на назначенную встречу"
+	elif npc.activity=="appointment": activity = "Ожидает на месте встречи"
 	if not str(active.get("partner", "")).is_empty(): activity += " · " + actor_name(sim, str(active.partner))
 	return {"goal": definition.label, "stage": mini(stage + 1, definition.stages.size()), "stages": definition.stages.size(),
 		"progress": progress * 100.0, "completed": aspiration.completed, "activity": activity,
@@ -72,6 +74,8 @@ static func history(sim, id: String) -> Array:
 			"experience":
 				var experiences := {"betrayed": "Переживание предательства", "misled": "Обнаружен обман", "conflict": "Остался конфликт", "supported": "Поддержка", "romantic_interest": "Романтический интерес", "witnessed_harm": "Свидетель происшествия"}
 				if experiences.has(detail.kind): text = str(experiences[detail.kind]) + " · " + actor_name(sim, str(detail.other))
+			"work_paid": text = "Работа: %d мин · заработано %d ¤" % [detail.minutes,detail.paid]
+			"career_progress": text = "Карьерная ступень %d · %s" % [detail.level,Names.title(str(detail.skill))]
 			"milestone": text = "Продвинулся к цели: " + str(sim.catalog.agency_aspirations[detail.goal].label)
 			"new_aspiration": text = "Новая цель: " + str(sim.catalog.agency_aspirations[detail.goal].label)
 		if not text.is_empty():

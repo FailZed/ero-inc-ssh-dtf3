@@ -1,0 +1,4297 @@
+{
+  "schema": 1,
+  "graph_id": "ellizia_city",
+  "scope": "prepared_city_backbone",
+  "epoch": "present_ellizia",
+  "country": "Эллизия",
+  "city_name": null,
+  "integration_status": "isolated_runtime_candidate",
+  "activation": {
+    "ready_for_main_world": true,
+    "reason": "Isolated integration candidate: current city replaces the main-world source; external author scenario review remains explicitly pending.",
+    "blocking_dependency_ids": [
+      "campus_and_school",
+      "medical_access",
+      "remaining_city_and_housing",
+      "single_runtime_switch"
+    ],
+    "data_backbone_complete": true,
+    "consumer_switch_complete": true
+  },
+  "provenance": {
+    "local_design": "data/world/design/districts.json",
+    "local_story": "docs/world/DISTRICTS_AND_ROUTES.md",
+    "external_author_scenario_read": false,
+    "route_minutes_status": "authored_proposals_except_10_to_15_minute_story_bound_to_campus",
+    "not_numeric_parity_claim": true,
+    "backbone_note": "Full present-day geographic backbone; deep authored place content is limited to four first-district exterior scenes. No runtime consumer has been switched.",
+    "deep_content_location_ids": [
+      "residential_district",
+      "pharmacy_house",
+      "south_trade_street",
+      "riverside_cafe_front"
+    ]
+  },
+  "map": {
+    "projection": "schematic",
+    "reference_size_px": [
+      1600,
+      1000
+    ],
+    "position_unit": "normalized_uv",
+    "orientation": "north_up; river separates smaller north bank from larger south bank",
+    "meters_per_pixel": null,
+    "route_minutes_independent_of_coordinates": true,
+    "background_asset": null,
+    "art_status": "Whole-city schematic positions only, not fitted to city-river-v2 or new street-level artwork.",
+    "scale_note": "Finite diagram extent only; no claim of surveyed distance.",
+    "river_band_uv": [
+      0.4,
+      0.49
+    ]
+  },
+  "districts": {
+    "student_courts": {
+      "id": "student_courts",
+      "title": "Университетские дворы"
+    },
+    "south_river_center": {
+      "id": "south_river_center",
+      "title": "Южная торговая улица и река"
+    },
+    "campus_park": {
+      "id": "campus_park",
+      "title": "Кампус за парком"
+    },
+    "east_terraces": {
+      "id": "east_terraces",
+      "title": "Восточные жилые террасы"
+    },
+    "north_old_quarter": {
+      "id": "north_old_quarter",
+      "title": "Старый северный берег"
+    }
+  },
+  "buildings": {
+    "student_home_building": {
+      "id": "student_home_building",
+      "title": "Нынешний дом героя",
+      "entry_location_id": "student_home",
+      "location_ids": [
+        "student_home",
+        "apartment_hall",
+        "bedroom",
+        "bathroom",
+        "kitchen"
+      ],
+      "above_ground_floors": 1,
+      "architecture_status": "owner_story_lock",
+      "residence_property_id": "apartment"
+    },
+    "pharmacy_house_building": {
+      "id": "pharmacy_house_building",
+      "title": "Дом с аптекой",
+      "entry_location_id": "pharmacy_house",
+      "location_ids": [
+        "pharmacy_house",
+        "asuka_home_door",
+        "oliver_home_entry",
+        "asuka_home",
+        "oliver_home"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "facade_and_neighbor_relation_in_local_story; exact_plan_pending",
+      "private_entries_pending": [],
+      "pharmacy_service_pending": true
+    },
+    "riverside_cafe_building": {
+      "id": "riverside_cafe_building",
+      "title": "Кафе у реки",
+      "entry_location_id": "riverside_cafe_front",
+      "location_ids": [
+        "riverside_cafe_front",
+        "riverside_cafe"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "existing_venue; frontage_plan_approximate"
+    },
+    "city_resident_home_selina_building": {
+      "id": "city_resident_home_selina_building",
+      "title": "Жильё Селины",
+      "entry_location_id": "city_resident_home_selina",
+      "location_ids": [
+        "city_resident_home_selina"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "offscreen_private_unit_no_art_or_map_pin",
+      "owner_actor_id": "resident_cafe_shift_lead"
+    },
+    "city_resident_home_dana_building": {
+      "id": "city_resident_home_dana_building",
+      "title": "Жильё Даны",
+      "entry_location_id": "city_resident_home_dana",
+      "location_ids": [
+        "city_resident_home_dana"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "offscreen_private_unit_no_art_or_map_pin",
+      "owner_actor_id": "resident_south_grocer"
+    },
+    "university": {
+      "id": "university",
+      "title": "Университет",
+      "entry_location_id": "campus_courtyard",
+      "location_ids": [
+        "campus_park_gate",
+        "campus_courtyard",
+        "campus_hall",
+        "campus_auditorium",
+        "campus_corridor",
+        "classroom_213",
+        "campus_mens_washroom",
+        "cosplay_clubroom",
+        "campus_teacher_classroom",
+        "campus_empty_classroom",
+        "campus_study_room",
+        "campus_computer_lab",
+        "campus_physics_lab",
+        "campus_research_lab",
+        "campus_maintenance_room",
+        "campus_training_hall",
+        "campus_gym",
+        "campus_dance_studio",
+        "campus_student_support"
+      ],
+      "above_ground_floors": 6,
+      "architecture_status": "owner_story_lock",
+      "wings": {
+        "central_floors": 6,
+        "left_floors": 3,
+        "right_floors": 3,
+        "connected": true
+      },
+      "material": "red_brick",
+      "park_in_front": true,
+      "official_name": null
+    },
+    "clinic_building": {
+      "id": "clinic_building",
+      "title": "Клиника",
+      "entry_location_id": "clinic_forecourt",
+      "location_ids": [
+        "clinic_forecourt",
+        "clinic"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal"
+    },
+    "agency_building": {
+      "id": "agency_building",
+      "title": "Агентство недвижимости",
+      "entry_location_id": "agency_square",
+      "location_ids": [
+        "agency_square",
+        "real_estate_agency"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal"
+    },
+    "police_building": {
+      "id": "police_building",
+      "title": "Полицейский участок",
+      "entry_location_id": "police_forecourt",
+      "location_ids": [
+        "police_forecourt",
+        "police_station"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal"
+    },
+    "detached_house_building": {
+      "id": "detached_house_building",
+      "title": "Двухэтажный дом",
+      "entry_location_id": "detached_house",
+      "location_ids": [
+        "detached_house",
+        "detached_house_hall",
+        "detached_house_bedroom",
+        "detached_house_bathroom",
+        "detached_house_kitchen",
+        "detached_house_stairs"
+      ],
+      "above_ground_floors": 2,
+      "architecture_status": "owner_story_lock"
+    },
+    "penthouse_building": {
+      "id": "penthouse_building",
+      "title": "Жилой комплекс с пентхаусом",
+      "entry_location_id": "penthouse",
+      "location_ids": [
+        "penthouse",
+        "penthouse_hall",
+        "penthouse_bedroom",
+        "penthouse_bathroom",
+        "penthouse_kitchen"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "owner_record_top_floor; total_floors_unspecified"
+    },
+    "social_housing_building": {
+      "id": "social_housing_building",
+      "title": "Социальное жильё",
+      "entry_location_id": "social_housing",
+      "location_ids": [
+        "social_housing",
+        "social_housing_hall",
+        "social_housing_bedroom",
+        "social_housing_bathroom",
+        "social_housing_kitchen"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal"
+    },
+    "south_market_building": {
+      "id": "south_market_building",
+      "title": "Продуктовая лавка",
+      "entry_location_id": "south_market",
+      "location_ids": [
+        "south_market"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal",
+      "public_frontage_location_id": "south_trade_street"
+    },
+    "north_market_building": {
+      "id": "north_market_building",
+      "title": "Северный магазин",
+      "entry_location_id": "north_market",
+      "location_ids": [
+        "north_market"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal",
+      "public_frontage_location_id": "north_shops"
+    },
+    "north_repair_building": {
+      "id": "north_repair_building",
+      "title": "Ремонтная мастерская",
+      "entry_location_id": "north_repair_workshop",
+      "location_ids": [
+        "north_repair_workshop"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal",
+      "public_frontage_location_id": "north_shops"
+    },
+    "north_logistics_building": {
+      "id": "north_logistics_building",
+      "title": "Склад и сортировка посылок",
+      "entry_location_id": "north_logistics_depot",
+      "location_ids": [
+        "north_logistics_depot"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal",
+      "public_frontage_location_id": "north_shops"
+    },
+    "north_venue_building": {
+      "id": "north_venue_building",
+      "title": "Закрытое заведение старого квартала",
+      "entry_location_id": "north_den",
+      "location_ids": [
+        "north_den"
+      ],
+      "above_ground_floors": null,
+      "architecture_status": "authored_backbone_proposal"
+    }
+  },
+  "locations": {
+    "student_home": {
+      "id": "student_home",
+      "title": "У калитки дома",
+      "kind": "public_exterior",
+      "district_id": "student_courts",
+      "building_id": "student_home_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.1,
+          0.85
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "arrival_boundary": "public_side_of_private_gate"
+    },
+    "residential_district": {
+      "id": "residential_district",
+      "title": "Жилые дворы",
+      "kind": "public_exterior",
+      "district_id": "student_courts",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.23,
+          0.79
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "pharmacy_house": {
+      "id": "pharmacy_house",
+      "title": "Дом с аптекой",
+      "kind": "public_exterior",
+      "district_id": "student_courts",
+      "building_id": "pharmacy_house_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.12,
+          0.75
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "scope": "facade_only_no_access_to_shop_or_private_entries"
+    },
+    "south_trade_street": {
+      "id": "south_trade_street",
+      "title": "Торговая улица",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.45,
+          0.74
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "riverside_cafe_front": {
+      "id": "riverside_cafe_front",
+      "title": "Перед кафе",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "riverside_cafe_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.39,
+          0.5
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "riverside_cafe": {
+      "id": "riverside_cafe",
+      "title": "Кафе у реки · зал",
+      "kind": "service_interior",
+      "district_id": "south_river_center",
+      "building_id": "riverside_cafe_building",
+      "access_policy_id": "cafe_public_entry",
+      "map": {
+        "position_uv": [
+          0.39,
+          0.5
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "city_resident_home_selina": {
+      "id": "city_resident_home_selina",
+      "title": "Жильё Селины",
+      "kind": "private_residence",
+      "district_id": "student_courts",
+      "building_id": "city_resident_home_selina_building",
+      "access_policy_id": "selina_residence",
+      "map": {
+        "position_uv": [
+          0.23,
+          0.79
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": true
+      },
+      "hours_source": "service_definition_only",
+      "owner_actor_id": "resident_cafe_shift_lead"
+    },
+    "city_resident_home_dana": {
+      "id": "city_resident_home_dana",
+      "title": "Жильё Даны",
+      "kind": "private_residence",
+      "district_id": "student_courts",
+      "building_id": "city_resident_home_dana_building",
+      "access_policy_id": "dana_residence",
+      "map": {
+        "position_uv": [
+          0.23,
+          0.79
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": true
+      },
+      "hours_source": "service_definition_only",
+      "owner_actor_id": "resident_south_grocer"
+    },
+    "apartment_hall": {
+      "id": "apartment_hall",
+      "title": "Прихожая",
+      "kind": "private_room",
+      "district_id": "student_courts",
+      "building_id": "student_home_building",
+      "access_policy_id": "player_residence",
+      "map": {
+        "position_uv": [
+          0.1,
+          0.85
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "apartment",
+      "room_kind": "hall"
+    },
+    "bedroom": {
+      "id": "bedroom",
+      "title": "Спальня",
+      "kind": "private_room",
+      "district_id": "student_courts",
+      "building_id": "student_home_building",
+      "access_policy_id": "player_residence",
+      "map": {
+        "position_uv": [
+          0.1,
+          0.85
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "apartment",
+      "room_kind": "bedroom"
+    },
+    "bathroom": {
+      "id": "bathroom",
+      "title": "Ванная",
+      "kind": "private_room",
+      "district_id": "student_courts",
+      "building_id": "student_home_building",
+      "access_policy_id": "player_residence",
+      "map": {
+        "position_uv": [
+          0.1,
+          0.85
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "apartment",
+      "room_kind": "bathroom"
+    },
+    "kitchen": {
+      "id": "kitchen",
+      "title": "Кухня",
+      "kind": "private_room",
+      "district_id": "student_courts",
+      "building_id": "student_home_building",
+      "access_policy_id": "player_residence",
+      "map": {
+        "position_uv": [
+          0.1,
+          0.85
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "apartment",
+      "room_kind": "kitchen"
+    },
+    "campus_park_gate": {
+      "id": "campus_park_gate",
+      "title": "Парк перед институтом",
+      "kind": "public_exterior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.18,
+          0.63
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "campus_courtyard": {
+      "id": "campus_courtyard",
+      "title": "Главный вход института",
+      "kind": "public_exterior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "city_park": {
+      "id": "city_park",
+      "title": "Городской парк",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.56,
+          0.89
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "south_promenade": {
+      "id": "south_promenade",
+      "title": "Южная набережная",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.73,
+          0.52
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "agency_square": {
+      "id": "agency_square",
+      "title": "Перед агентством недвижимости",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "agency_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.66,
+          0.72
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "clinic_forecourt": {
+      "id": "clinic_forecourt",
+      "title": "Перед клиникой",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "clinic_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.54,
+          0.75
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "detached_house": {
+      "id": "detached_house",
+      "title": "У калитки двухэтажного дома",
+      "kind": "public_exterior",
+      "district_id": "east_terraces",
+      "building_id": "detached_house_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.79,
+          0.84
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "penthouse": {
+      "id": "penthouse",
+      "title": "У входа в комплекс с пентхаусом",
+      "kind": "public_exterior",
+      "district_id": "east_terraces",
+      "building_id": "penthouse_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.9,
+          0.62
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "north_beach": {
+      "id": "north_beach",
+      "title": "Речной пляж",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.13,
+          0.28
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "north_shops": {
+      "id": "north_shops",
+      "title": "Северные лавки",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.45,
+          0.25
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "north_alleys": {
+      "id": "north_alleys",
+      "title": "Старые дворы и проулки",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.53,
+          0.2
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "police_forecourt": {
+      "id": "police_forecourt",
+      "title": "Перед полицейским участком",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "police_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.66,
+          0.31
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "social_housing": {
+      "id": "social_housing",
+      "title": "Двор социального жилья",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "social_housing_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.83,
+          0.23
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only"
+    },
+    "pedestrian_bridge_south": {
+      "id": "pedestrian_bridge_south",
+      "title": "Пешеходный мост · юг",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.31,
+          0.5
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "subtype": "bridge_landing"
+    },
+    "pedestrian_bridge_north": {
+      "id": "pedestrian_bridge_north",
+      "title": "Пешеходный мост · север",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.31,
+          0.37
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "subtype": "bridge_landing"
+    },
+    "central_bridge_south": {
+      "id": "central_bridge_south",
+      "title": "Центральный мост · юг",
+      "kind": "public_exterior",
+      "district_id": "south_river_center",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.68,
+          0.53
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "subtype": "bridge_landing"
+    },
+    "central_bridge_north": {
+      "id": "central_bridge_north",
+      "title": "Центральный мост · север",
+      "kind": "public_exterior",
+      "district_id": "north_old_quarter",
+      "building_id": "",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.68,
+          0.36
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "subtype": "bridge_landing"
+    },
+    "clinic": {
+      "id": "clinic",
+      "title": "Клиника",
+      "kind": "service_interior",
+      "district_id": "south_river_center",
+      "building_id": "clinic_building",
+      "access_policy_id": "clinic_access",
+      "map": {
+        "position_uv": [
+          0.54,
+          0.75
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "real_estate_agency": {
+      "id": "real_estate_agency",
+      "title": "Офис агентства недвижимости",
+      "kind": "service_interior",
+      "district_id": "south_river_center",
+      "building_id": "agency_building",
+      "access_policy_id": "real_estate_agency_access",
+      "map": {
+        "position_uv": [
+          0.66,
+          0.72
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "police_station": {
+      "id": "police_station",
+      "title": "Приёмная полиции",
+      "kind": "service_interior",
+      "district_id": "north_old_quarter",
+      "building_id": "police_building",
+      "access_policy_id": "police_station_access",
+      "map": {
+        "position_uv": [
+          0.66,
+          0.31
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_hall": {
+      "id": "campus_hall",
+      "title": "Главный холл",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_hall_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_auditorium": {
+      "id": "campus_auditorium",
+      "title": "Актовый зал",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_auditorium_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address",
+      "floor": 1,
+      "axis": "straight_from_main_hall"
+    },
+    "campus_corridor": {
+      "id": "campus_corridor",
+      "title": "Второй этаж · левое крыло",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_corridor_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address",
+      "floor": 2,
+      "wing": "left"
+    },
+    "classroom_213": {
+      "id": "classroom_213",
+      "title": "Аудитория213",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "classroom_213_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address",
+      "floor": 2,
+      "wing": "left"
+    },
+    "campus_mens_washroom": {
+      "id": "campus_mens_washroom",
+      "title": "Мужской туалет левого крыла",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_mens_washroom_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "cosplay_clubroom": {
+      "id": "cosplay_clubroom",
+      "title": "Косплейная клубная комната",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "cosplay_clubroom_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_teacher_classroom": {
+      "id": "campus_teacher_classroom",
+      "title": "Аудитория с преподавателем",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_teacher_classroom_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_empty_classroom": {
+      "id": "campus_empty_classroom",
+      "title": "Аудитория другой ветки",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_empty_classroom_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_study_room": {
+      "id": "campus_study_room",
+      "title": "Учебная комната",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_study_room_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_computer_lab": {
+      "id": "campus_computer_lab",
+      "title": "Компьютерный практикум",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_computer_lab_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_physics_lab": {
+      "id": "campus_physics_lab",
+      "title": "Учебная лаборатория физики",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_physics_lab_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_research_lab": {
+      "id": "campus_research_lab",
+      "title": "Исследовательский практикум",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_research_lab_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_maintenance_room": {
+      "id": "campus_maintenance_room",
+      "title": "Мастерская обслуживания кампуса",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_maintenance_room_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_training_hall": {
+      "id": "campus_training_hall",
+      "title": "Зал самообороны",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_training_hall_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_gym": {
+      "id": "campus_gym",
+      "title": "Тренажёрный зал",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_gym_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_dance_studio": {
+      "id": "campus_dance_studio",
+      "title": "Танцевальная студия",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_dance_studio_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "campus_student_support": {
+      "id": "campus_student_support",
+      "title": "Комната студенческой поддержки",
+      "kind": "service_interior",
+      "district_id": "campus_park",
+      "building_id": "university",
+      "access_policy_id": "campus_student_support_access",
+      "map": {
+        "position_uv": [
+          0.2,
+          0.56
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "south_market": {
+      "id": "south_market",
+      "title": "Продуктовая лавка",
+      "kind": "service_interior",
+      "district_id": "south_river_center",
+      "building_id": "south_market_building",
+      "access_policy_id": "south_market_access",
+      "map": {
+        "position_uv": [
+          0.45,
+          0.74
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address",
+      "shop_id": "market"
+    },
+    "north_market": {
+      "id": "north_market",
+      "title": "Северный магазин",
+      "kind": "service_interior",
+      "district_id": "north_old_quarter",
+      "building_id": "north_market_building",
+      "access_policy_id": "north_market_access",
+      "map": {
+        "position_uv": [
+          0.45,
+          0.25
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address",
+      "shop_id": "north_market"
+    },
+    "north_repair_workshop": {
+      "id": "north_repair_workshop",
+      "title": "Ремонтная мастерская",
+      "kind": "service_interior",
+      "district_id": "north_old_quarter",
+      "building_id": "north_repair_building",
+      "access_policy_id": "north_repair_workshop_access",
+      "map": {
+        "position_uv": [
+          0.45,
+          0.25
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "north_logistics_depot": {
+      "id": "north_logistics_depot",
+      "title": "Склад и сортировка посылок",
+      "kind": "service_interior",
+      "district_id": "north_old_quarter",
+      "building_id": "north_logistics_building",
+      "access_policy_id": "north_logistics_depot_access",
+      "map": {
+        "position_uv": [
+          0.45,
+          0.25
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "north_den": {
+      "id": "north_den",
+      "title": "Закрытое заведение старого квартала",
+      "kind": "service_interior",
+      "district_id": "north_old_quarter",
+      "building_id": "north_venue_building",
+      "access_policy_id": "north_den_access",
+      "map": {
+        "position_uv": [
+          0.36,
+          0.13
+        ],
+        "marker": true,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "service_scope": "existing_function_address"
+    },
+    "asuka_home_door": {
+      "id": "asuka_home_door",
+      "title": "У двери Асуки",
+      "kind": "public_exterior",
+      "district_id": "student_courts",
+      "building_id": "pharmacy_house_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.12,
+          0.75
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "scope": "public_threshold_not_private_home"
+    },
+    "oliver_home_entry": {
+      "id": "oliver_home_entry",
+      "title": "У соседнего подъезда Оливера",
+      "kind": "public_exterior",
+      "district_id": "student_courts",
+      "building_id": "pharmacy_house_building",
+      "access_policy_id": "public",
+      "map": {
+        "position_uv": [
+          0.12,
+          0.75
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "scope": "public_threshold_not_private_home"
+    },
+    "asuka_home": {
+      "id": "asuka_home",
+      "title": "Жильё Асуки",
+      "kind": "private_residence",
+      "district_id": "student_courts",
+      "building_id": "pharmacy_house_building",
+      "access_policy_id": "asuka_home_access",
+      "map": {
+        "position_uv": [
+          0.12,
+          0.75
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": true
+      },
+      "hours_source": "service_definition_only",
+      "owner_actor_id": "asuka"
+    },
+    "oliver_home": {
+      "id": "oliver_home",
+      "title": "Жильё Оливера",
+      "kind": "private_residence",
+      "district_id": "student_courts",
+      "building_id": "pharmacy_house_building",
+      "access_policy_id": "oliver_home_access",
+      "map": {
+        "position_uv": [
+          0.12,
+          0.75
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": true
+      },
+      "hours_source": "service_definition_only",
+      "owner_actor_id": "oliver"
+    },
+    "detached_house_hall": {
+      "id": "detached_house_hall",
+      "title": "Дом · Прихожая",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "detached_house_building",
+      "access_policy_id": "detached_house_residence_access",
+      "map": {
+        "position_uv": [
+          0.79,
+          0.84
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "detached_house",
+      "room_kind": "hall"
+    },
+    "detached_house_bedroom": {
+      "id": "detached_house_bedroom",
+      "title": "Дом · Спальня",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "detached_house_building",
+      "access_policy_id": "detached_house_residence_access",
+      "map": {
+        "position_uv": [
+          0.79,
+          0.84
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "detached_house",
+      "room_kind": "bedroom",
+      "floor": 2
+    },
+    "detached_house_bathroom": {
+      "id": "detached_house_bathroom",
+      "title": "Дом · Ванная",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "detached_house_building",
+      "access_policy_id": "detached_house_residence_access",
+      "map": {
+        "position_uv": [
+          0.79,
+          0.84
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "detached_house",
+      "room_kind": "bathroom"
+    },
+    "detached_house_kitchen": {
+      "id": "detached_house_kitchen",
+      "title": "Дом · Кухня",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "detached_house_building",
+      "access_policy_id": "detached_house_residence_access",
+      "map": {
+        "position_uv": [
+          0.79,
+          0.84
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "detached_house",
+      "room_kind": "kitchen"
+    },
+    "detached_house_stairs": {
+      "id": "detached_house_stairs",
+      "title": "Дом · лестница на второй этаж",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "detached_house_building",
+      "access_policy_id": "detached_house_residence_access",
+      "map": {
+        "position_uv": [
+          0.79,
+          0.84
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "detached_house",
+      "room_kind": "stairs"
+    },
+    "penthouse_hall": {
+      "id": "penthouse_hall",
+      "title": "Пентхаус · Прихожая",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "penthouse_building",
+      "access_policy_id": "penthouse_residence_access",
+      "map": {
+        "position_uv": [
+          0.9,
+          0.62
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "penthouse",
+      "room_kind": "hall",
+      "floor": "top"
+    },
+    "penthouse_bedroom": {
+      "id": "penthouse_bedroom",
+      "title": "Пентхаус · Спальня",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "penthouse_building",
+      "access_policy_id": "penthouse_residence_access",
+      "map": {
+        "position_uv": [
+          0.9,
+          0.62
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "penthouse",
+      "room_kind": "bedroom",
+      "floor": "top"
+    },
+    "penthouse_bathroom": {
+      "id": "penthouse_bathroom",
+      "title": "Пентхаус · Ванная",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "penthouse_building",
+      "access_policy_id": "penthouse_residence_access",
+      "map": {
+        "position_uv": [
+          0.9,
+          0.62
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "penthouse",
+      "room_kind": "bathroom",
+      "floor": "top"
+    },
+    "penthouse_kitchen": {
+      "id": "penthouse_kitchen",
+      "title": "Пентхаус · Кухня",
+      "kind": "private_room",
+      "district_id": "east_terraces",
+      "building_id": "penthouse_building",
+      "access_policy_id": "penthouse_residence_access",
+      "map": {
+        "position_uv": [
+          0.9,
+          0.62
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "penthouse",
+      "room_kind": "kitchen",
+      "floor": "top"
+    },
+    "social_housing_hall": {
+      "id": "social_housing_hall",
+      "title": "Социальное жильё · Прихожая",
+      "kind": "private_room",
+      "district_id": "north_old_quarter",
+      "building_id": "social_housing_building",
+      "access_policy_id": "social_housing_residence_access",
+      "map": {
+        "position_uv": [
+          0.83,
+          0.23
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "social_housing",
+      "room_kind": "hall"
+    },
+    "social_housing_bedroom": {
+      "id": "social_housing_bedroom",
+      "title": "Социальное жильё · Спальня",
+      "kind": "private_room",
+      "district_id": "north_old_quarter",
+      "building_id": "social_housing_building",
+      "access_policy_id": "social_housing_residence_access",
+      "map": {
+        "position_uv": [
+          0.83,
+          0.23
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "social_housing",
+      "room_kind": "bedroom"
+    },
+    "social_housing_bathroom": {
+      "id": "social_housing_bathroom",
+      "title": "Социальное жильё · Ванная",
+      "kind": "private_room",
+      "district_id": "north_old_quarter",
+      "building_id": "social_housing_building",
+      "access_policy_id": "social_housing_residence_access",
+      "map": {
+        "position_uv": [
+          0.83,
+          0.23
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "social_housing",
+      "room_kind": "bathroom"
+    },
+    "social_housing_kitchen": {
+      "id": "social_housing_kitchen",
+      "title": "Социальное жильё · Кухня",
+      "kind": "private_room",
+      "district_id": "north_old_quarter",
+      "building_id": "social_housing_building",
+      "access_policy_id": "social_housing_residence_access",
+      "map": {
+        "position_uv": [
+          0.83,
+          0.23
+        ],
+        "marker": false,
+        "coordinate_status": "schematic_approximation",
+        "offscreen": false
+      },
+      "hours_source": "service_definition_only",
+      "residence_property_id": "social_housing",
+      "room_kind": "kitchen"
+    }
+  },
+  "access_policies": {
+    "public": {
+      "kind": "public"
+    },
+    "player_residence": {
+      "kind": "residence",
+      "owner_actor_id": "player",
+      "residence_property_id": "apartment",
+      "allow_story_entry": true,
+      "allow_invitation": true
+    },
+    "selina_residence": {
+      "kind": "private_home",
+      "owner_actor_id": "resident_cafe_shift_lead",
+      "allow_invitation": true
+    },
+    "dana_residence": {
+      "kind": "private_home",
+      "owner_actor_id": "resident_south_grocer",
+      "allow_invitation": true
+    },
+    "cafe_public_entry": {
+      "kind": "service",
+      "service_id": "riverside_cafe_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false
+    },
+    "clinic_access": {
+      "kind": "service",
+      "service_id": "clinic_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": true,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "real_estate_agency_access": {
+      "kind": "service",
+      "service_id": "real_estate_agency_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "police_station_access": {
+      "kind": "service",
+      "service_id": "police_station_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": true,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "campus_hall_access": {
+      "kind": "service",
+      "service_id": "campus_hall_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": false
+    },
+    "campus_auditorium_access": {
+      "kind": "service",
+      "service_id": "campus_auditorium_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": true
+    },
+    "campus_corridor_access": {
+      "kind": "service",
+      "service_id": "campus_corridor_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": false
+    },
+    "classroom_213_access": {
+      "kind": "service",
+      "service_id": "classroom_213_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": true
+    },
+    "campus_mens_washroom_access": {
+      "kind": "service",
+      "service_id": "campus_mens_washroom_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": false
+    },
+    "cosplay_clubroom_access": {
+      "kind": "service",
+      "service_id": "cosplay_clubroom_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": true
+    },
+    "campus_teacher_classroom_access": {
+      "kind": "service",
+      "service_id": "campus_teacher_classroom_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": true
+    },
+    "campus_empty_classroom_access": {
+      "kind": "service",
+      "service_id": "campus_empty_classroom_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": true,
+      "require_activity": true
+    },
+    "campus_study_room_access": {
+      "kind": "service",
+      "service_id": "campus_study_room_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "campus_computer_lab_access": {
+      "kind": "service",
+      "service_id": "campus_computer_lab_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_physics_lab_access": {
+      "kind": "service",
+      "service_id": "campus_physics_lab_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_research_lab_access": {
+      "kind": "service",
+      "service_id": "campus_research_lab_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_maintenance_room_access": {
+      "kind": "service",
+      "service_id": "campus_maintenance_room_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_training_hall_access": {
+      "kind": "service",
+      "service_id": "campus_training_hall_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_gym_access": {
+      "kind": "service",
+      "service_id": "campus_gym_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_dance_studio_access": {
+      "kind": "service",
+      "service_id": "campus_dance_studio_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "campus_student_support_access": {
+      "kind": "service",
+      "service_id": "campus_student_support_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "south_market_access": {
+      "kind": "service",
+      "service_id": "south_market_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "north_market_access": {
+      "kind": "service",
+      "service_id": "north_market_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "north_repair_workshop_access": {
+      "kind": "service",
+      "service_id": "north_repair_workshop_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "north_logistics_depot_access": {
+      "kind": "service",
+      "service_id": "north_logistics_depot_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": true
+    },
+    "north_den_access": {
+      "kind": "service",
+      "service_id": "north_den_service",
+      "allow_duty_entry": true,
+      "allow_urgent_entry": false,
+      "allow_story_entry": false,
+      "require_activity": false
+    },
+    "asuka_home_access": {
+      "kind": "private_home",
+      "owner_actor_id": "asuka",
+      "allow_invitation": true
+    },
+    "oliver_home_access": {
+      "kind": "private_home",
+      "owner_actor_id": "oliver",
+      "allow_invitation": true
+    },
+    "detached_house_residence_access": {
+      "kind": "residence",
+      "owner_actor_id": "player",
+      "residence_property_id": "detached_house",
+      "allow_invitation": true,
+      "allow_story_entry": false
+    },
+    "penthouse_residence_access": {
+      "kind": "residence",
+      "owner_actor_id": "player",
+      "residence_property_id": "penthouse",
+      "allow_invitation": true,
+      "allow_story_entry": false
+    },
+    "social_housing_residence_access": {
+      "kind": "residence",
+      "owner_actor_id": "player",
+      "residence_property_id": "social_housing",
+      "allow_invitation": true,
+      "allow_story_entry": false
+    }
+  },
+  "services": {
+    "riverside_cafe_service": {
+      "id": "riverside_cafe_service",
+      "location_id": "riverside_cafe",
+      "hours": [
+        480,
+        1380
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_covering_existing_08_to_23_work_content",
+      "source_jobs": [
+        "cafe_orders",
+        "card_host",
+        "event_host",
+        "comedy_writer"
+      ],
+      "staff_entry": "caller_verified_duty_location_ids; not a client supplied privilege",
+      "urgent_entry": false,
+      "public_frontage_location_id": "riverside_cafe_front"
+    },
+    "clinic_service": {
+      "id": "clinic_service",
+      "location_id": "clinic",
+      "hours": [
+        480,
+        1200
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "existing_runtime_hours",
+      "source": "data/mechanics/reproduction.json",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": true,
+      "public_frontage_location_id": "clinic_forecourt"
+    },
+    "real_estate_agency_service": {
+      "id": "real_estate_agency_service",
+      "location_id": "real_estate_agency",
+      "hours": [
+        540,
+        1080
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "existing_housing_service_hours",
+      "source": "scripts/gameplay/city_housing.gd::execute",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "agency_square"
+    },
+    "police_station_service": {
+      "id": "police_station_service",
+      "location_id": "police_station",
+      "hours": [
+        0,
+        0
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "preserves_existing_unrestricted_hours",
+      "source": "city-river-v2 station has no restricted hours; emergency handling remains with existing service",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": true,
+      "public_frontage_location_id": "police_forecourt"
+    },
+    "campus_hall_service": {
+      "id": "campus_hall_service",
+      "location_id": "campus_hall",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_auditorium_service": {
+      "id": "campus_auditorium_service",
+      "location_id": "campus_auditorium",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_corridor_service": {
+      "id": "campus_corridor_service",
+      "location_id": "campus_corridor",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "classroom_213_service": {
+      "id": "classroom_213_service",
+      "location_id": "classroom_213",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_mens_washroom_service": {
+      "id": "campus_mens_washroom_service",
+      "location_id": "campus_mens_washroom",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "cosplay_clubroom_service": {
+      "id": "cosplay_clubroom_service",
+      "location_id": "cosplay_clubroom",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_teacher_classroom_service": {
+      "id": "campus_teacher_classroom_service",
+      "location_id": "campus_teacher_classroom",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_empty_classroom_service": {
+      "id": "campus_empty_classroom_service",
+      "location_id": "campus_empty_classroom",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_study_room_service": {
+      "id": "campus_study_room_service",
+      "location_id": "campus_study_room",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_computer_lab_service": {
+      "id": "campus_computer_lab_service",
+      "location_id": "campus_computer_lab",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_physics_lab_service": {
+      "id": "campus_physics_lab_service",
+      "location_id": "campus_physics_lab",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_research_lab_service": {
+      "id": "campus_research_lab_service",
+      "location_id": "campus_research_lab",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_maintenance_room_service": {
+      "id": "campus_maintenance_room_service",
+      "location_id": "campus_maintenance_room",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_training_hall_service": {
+      "id": "campus_training_hall_service",
+      "location_id": "campus_training_hall",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_gym_service": {
+      "id": "campus_gym_service",
+      "location_id": "campus_gym",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_dance_studio_service": {
+      "id": "campus_dance_studio_service",
+      "location_id": "campus_dance_studio",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "campus_student_support_service": {
+      "id": "campus_student_support_service",
+      "location_id": "campus_student_support",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "proposal_extends_common_access_to_current_22h_jobs; course_and_duty_windows_still_apply",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "campus_courtyard"
+    },
+    "south_market_service": {
+      "id": "south_market_service",
+      "location_id": "south_market",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "covers_existing_shop_or_work_hours",
+      "source": "presentation.extensions market08–22",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "south_trade_street"
+    },
+    "north_market_service": {
+      "id": "north_market_service",
+      "location_id": "north_market",
+      "hours": [
+        480,
+        1320
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "covers_existing_shop_or_work_hours",
+      "source": "city_layout.apply_catalog copies market hours08–22",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "north_shops"
+    },
+    "north_repair_workshop_service": {
+      "id": "north_repair_workshop_service",
+      "location_id": "north_repair_workshop",
+      "hours": [
+        540,
+        1200
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "covers_existing_shop_or_work_hours",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "north_shops"
+    },
+    "north_logistics_depot_service": {
+      "id": "north_logistics_depot_service",
+      "location_id": "north_logistics_depot",
+      "hours": [
+        420,
+        1260
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "covers_existing_shop_or_work_hours",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "north_shops"
+    },
+    "north_den_service": {
+      "id": "north_den_service",
+      "location_id": "north_den",
+      "hours": [
+        1080,
+        120
+      ],
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "schedule_status": "authored_night_venue_schedule",
+      "source": "data/mechanics/livelihood.json and local story",
+      "staff_entry": "caller_verified_duty_location_ids",
+      "urgent_entry": false,
+      "public_frontage_location_id": "north_alleys"
+    }
+  },
+  "routes": [
+    {
+      "from_id": "student_home",
+      "to_id": "residential_district",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "student_home",
+      "to_id": "pharmacy_house",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "residential_district",
+      "to_id": "pharmacy_house",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "residential_district",
+      "to_id": "south_trade_street",
+      "minutes": 5,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "south_trade_street",
+      "to_id": "riverside_cafe_front",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "riverside_cafe_front",
+      "to_id": "riverside_cafe",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "residential_district",
+      "to_id": "city_resident_home_selina",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "residential_district",
+      "to_id": "city_resident_home_dana",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "student_home",
+      "to_id": "apartment_hall",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "apartment_hall",
+      "to_id": "bedroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "apartment_hall",
+      "to_id": "bathroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "apartment_hall",
+      "to_id": "kitchen",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "residential_district",
+      "to_id": "campus_park_gate",
+      "minutes": 8,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_park_gate",
+      "to_id": "campus_courtyard",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_courtyard",
+      "to_id": "south_trade_street",
+      "minutes": 8,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_park_gate",
+      "to_id": "city_park",
+      "minutes": 5,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "south_trade_street",
+      "to_id": "city_park",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "riverside_cafe_front",
+      "to_id": "south_promenade",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "south_trade_street",
+      "to_id": "agency_square",
+      "minutes": 3,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "south_trade_street",
+      "to_id": "clinic_forecourt",
+      "minutes": 6,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "clinic_forecourt",
+      "to_id": "agency_square",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "agency_square",
+      "to_id": "detached_house",
+      "minutes": 6,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "detached_house",
+      "to_id": "penthouse",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "penthouse",
+      "to_id": "south_promenade",
+      "minutes": 5,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "riverside_cafe_front",
+      "to_id": "pedestrian_bridge_south",
+      "minutes": 3,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_courtyard",
+      "to_id": "pedestrian_bridge_south",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "pedestrian_bridge_south",
+      "to_id": "pedestrian_bridge_north",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "pedestrian_bridge_north",
+      "to_id": "north_beach",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "pedestrian_bridge_north",
+      "to_id": "north_shops",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_shops",
+      "to_id": "north_alleys",
+      "minutes": 3,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_alleys",
+      "to_id": "police_forecourt",
+      "minutes": 5,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_shops",
+      "to_id": "social_housing",
+      "minutes": 5,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "police_forecourt",
+      "to_id": "social_housing",
+      "minutes": 4,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "agency_square",
+      "to_id": "central_bridge_south",
+      "minutes": 3,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "south_promenade",
+      "to_id": "central_bridge_south",
+      "minutes": 3,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "central_bridge_south",
+      "to_id": "central_bridge_north",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "central_bridge_north",
+      "to_id": "police_forecourt",
+      "minutes": 3,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "walk",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "clinic_forecourt",
+      "to_id": "clinic",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "agency_square",
+      "to_id": "real_estate_agency",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "police_forecourt",
+      "to_id": "police_station",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_courtyard",
+      "to_id": "campus_hall",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_hall",
+      "to_id": "campus_auditorium",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_hall",
+      "to_id": "campus_corridor",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_hall",
+      "to_id": "campus_maintenance_room",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_hall",
+      "to_id": "campus_training_hall",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_hall",
+      "to_id": "campus_gym",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_hall",
+      "to_id": "campus_dance_studio",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "south_trade_street",
+      "to_id": "south_market",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_shops",
+      "to_id": "north_market",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_shops",
+      "to_id": "north_repair_workshop",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_shops",
+      "to_id": "north_logistics_depot",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "north_alleys",
+      "to_id": "north_den",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "pharmacy_house",
+      "to_id": "asuka_home_door",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "pharmacy_house",
+      "to_id": "oliver_home_entry",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "classroom_213",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_mens_washroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "cosplay_clubroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_teacher_classroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_empty_classroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_study_room",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_computer_lab",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_physics_lab",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_research_lab",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "campus_corridor",
+      "to_id": "campus_student_support",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "asuka_home_door",
+      "to_id": "asuka_home",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "oliver_home_entry",
+      "to_id": "oliver_home",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "detached_house",
+      "to_id": "detached_house_hall",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "detached_house_hall",
+      "to_id": "detached_house_bathroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "detached_house_hall",
+      "to_id": "detached_house_kitchen",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "detached_house_hall",
+      "to_id": "detached_house_stairs",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "detached_house_stairs",
+      "to_id": "detached_house_bedroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "penthouse",
+      "to_id": "penthouse_hall",
+      "minutes": 2,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "penthouse_hall",
+      "to_id": "penthouse_bathroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "penthouse_hall",
+      "to_id": "penthouse_kitchen",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "penthouse_hall",
+      "to_id": "penthouse_bedroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "social_housing",
+      "to_id": "social_housing_hall",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "private_entry",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "social_housing_hall",
+      "to_id": "social_housing_bathroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "social_housing_hall",
+      "to_id": "social_housing_kitchen",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    },
+    {
+      "from_id": "social_housing_hall",
+      "to_id": "social_housing_bedroom",
+      "minutes": 1,
+      "cost": 0,
+      "bidirectional": true,
+      "kind": "interior",
+      "access_at": "destination_actor_policy",
+      "time_status": "authored_proposal"
+    }
+  ],
+  "actor_contract": {
+    "required": [
+      "id"
+    ],
+    "optional": [
+      "residence_id",
+      "story_location_ids",
+      "invited_location_ids",
+      "duty_location_ids",
+      "urgent_location_ids",
+      "activity_location_ids"
+    ],
+    "trust": "Context is constructed by the existing Simulation/World caller from current state; not accepted as UI privilege arguments.",
+    "fields": {
+      "id": "player or the real social.npcs key",
+      "residence_id": "current housing property key, e.g. apartment; not an old location alias",
+      "story_location_ids": "current authorized guide-stage home locations, only while the existing story flow grants occupancy before lease initialization",
+      "invited_location_ids": "valid invitation to this exact location, supplied by caller",
+      "duty_location_ids": "verified current work destination and duty window, supplied by employment/calendar",
+      "urgent_location_ids": "verified urgent-care destination only; cafe policy does not grant urgent entry",
+      "activity_location_ids": "current verified lesson, club membership/event, training or booked use of this exact room; built by the caller"
+    },
+    "rules": [
+      "NPC access checks receive the NPC's own actor context, never player context.",
+      "A private residence owner enters without a player residence or invitation.",
+      "Public frontage has no service hours.",
+      "Service hours are start-inclusive/end-exclusive. For a window crossing midnight weekdays refer to its start day.",
+      "Equal hour endpoints mean 24 hours on declared weekdays."
+    ]
+  },
+  "story_bindings": [
+    {
+      "id": "night_bedroom",
+      "current_reference": "bedroom",
+      "target_location_id": "bedroom",
+      "status": "mapped",
+      "source": "TimeLine/prolog/scene_04_night_wakeup.dtl"
+    },
+    {
+      "id": "night_hall",
+      "current_reference": "apartment_hall",
+      "target_location_id": "apartment_hall",
+      "status": "mapped",
+      "source": "TimeLine/prolog/scene_05_mirror_and_photo.dtl"
+    },
+    {
+      "id": "mirror",
+      "current_reference": "bathroom",
+      "target_location_id": "bathroom",
+      "status": "mapped",
+      "source": "TimeLine/prolog/scene_05_mirror_and_photo.dtl",
+      "event": "open_character_creator",
+      "object_id": "mirror"
+    },
+    {
+      "id": "house_kitchen",
+      "current_reference": "kitchen",
+      "target_location_id": "kitchen",
+      "status": "mapped",
+      "source": "scripts/gameplay/guided_story.gd"
+    },
+    {
+      "id": "return_to_bed_and_photo",
+      "current_reference": "bedroom",
+      "target_location_id": "bedroom",
+      "status": "mapped",
+      "source": "TimeLine/prolog/scene_05_mirror_and_photo.dtl"
+    },
+    {
+      "id": "morning_dress_and_wash",
+      "current_reference": "bedroom/bathroom",
+      "target_location_ids": [
+        "bedroom",
+        "bathroom"
+      ],
+      "status": "mapped",
+      "source": "TimeLine/chapter_one.dtl:8"
+    },
+    {
+      "id": "home_street",
+      "current_reference": "street",
+      "target_location_id": "student_home",
+      "status": "mapped_replace_guided_identity",
+      "source": "TimeLine/chapter_one.dtl:9"
+    },
+    {
+      "id": "neighbor_facade",
+      "target_location_id": "pharmacy_house",
+      "status": "mapped_facade_only",
+      "source": "TimeLine/chapter_one.dtl:223"
+    },
+    {
+      "id": "asuka_and_oliver_private_doors",
+      "target_location_ids": [
+        "asuka_home_door",
+        "oliver_home_entry"
+      ],
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:225"
+    },
+    {
+      "id": "campus_park_arrival",
+      "target_location_ids": [
+        "campus_park_gate",
+        "campus_courtyard"
+      ],
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:13",
+      "walk_bound_from_home_minutes": [
+        10,
+        15
+      ]
+    },
+    {
+      "id": "campus_building",
+      "target_building_id": "university",
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "docs/art/city-river-v2/STORY_LOCKS.md",
+      "architecture": {
+        "central": 6,
+        "left": 3,
+        "right": 3,
+        "material": "red_brick",
+        "park_in_front": true
+      },
+      "display_name": "Университет",
+      "official_name": null
+    },
+    {
+      "id": "hall_and_auditorium",
+      "target_location_ids": [
+        "campus_hall",
+        "campus_auditorium"
+      ],
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:20"
+    },
+    {
+      "id": "left_wing_corridor",
+      "target_location_id": "campus_corridor",
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:35"
+    },
+    {
+      "id": "club_and_sports_group",
+      "target_location_ids": [
+        "campus_corridor",
+        "cosplay_clubroom"
+      ],
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:37"
+    },
+    {
+      "id": "oliver_washroom_and_help_branches",
+      "target_location_ids": [
+        "campus_mens_washroom",
+        "campus_teacher_classroom",
+        "campus_empty_classroom"
+      ],
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:73"
+    },
+    {
+      "id": "classroom_213",
+      "target_location_id": "classroom_213",
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:134"
+    },
+    {
+      "id": "evening_return",
+      "target_location_id": "student_home",
+      "status": "mapped",
+      "dependency_id": "campus_and_school",
+      "source": "TimeLine/chapter_one.dtl:189"
+    },
+    {
+      "id": "chapter_homecoming",
+      "target_location_id": "apartment_hall",
+      "status": "mapped",
+      "source": "TimeLine/chapter_one.dtl:231"
+    },
+    {
+      "id": "warehouse_frame",
+      "status": "outside_present_graph",
+      "target_graph": null,
+      "source": "TimeLine/prolog/prolog.dtl",
+      "note": "Exterior, gate and one interior are a separate chronology; no current-city route asserted."
+    },
+    {
+      "id": "childhood_praksia_park_and_sea",
+      "status": "outside_present_graph",
+      "target_graph": null,
+      "source": "TimeLine/prolog/scene_06_flashback_park.dtl",
+      "design_reference": "data/world/design/districts.json:childhood_praksia",
+      "note": "Themis square, seaside alley, Peace Arch, sea embankment, beach view, thicket and old glade remain in childhood."
+    },
+    {
+      "id": "childhood_praksia_family_address",
+      "status": "outside_present_graph",
+      "target_graph": null,
+      "source": "TimeLine/prolog/scene_13_way_home.dtl",
+      "design_reference": "data/world/design/districts.json:childhood_praksia",
+      "note": "Frankfurt avenue, shared entrance, floors4/8, apartment72, Lyra door, family rooms and refuse landing are not current housing."
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "campus_and_school",
+      "status": "resolved",
+      "required_location_ids": [
+        "campus_park_gate",
+        "campus_courtyard",
+        "campus_hall",
+        "campus_auditorium",
+        "campus_corridor",
+        "classroom_213",
+        "campus_mens_washroom",
+        "cosplay_clubroom",
+        "campus_teacher_classroom",
+        "campus_empty_classroom",
+        "asuka_home_door",
+        "oliver_home_entry"
+      ],
+      "required_building_ids": [
+        "university"
+      ],
+      "callers": [
+        "guided_story.PLACES/STAGES",
+        "education_schedule.lessons",
+        "presentation.extensions",
+        "population.execute(generate)",
+        "livelihood_rules.jobs",
+        "npc_employment.from_player_jobs"
+      ],
+      "condition": "Resolve each training_center reference by purpose; no old-ID alias, preserve the10–15minute bound.",
+      "data_complete": true,
+      "note": "Data prepared where data_complete=true; consumer switching and author review are not completed."
+    },
+    {
+      "id": "medical_access",
+      "status": "resolved",
+      "required_location_ids": [
+        "clinic_forecourt",
+        "clinic"
+      ],
+      "callers": [
+        "reproductive_simulation._load_catalog/_init",
+        "adult_health_care",
+        "npc_agency._route/_location_open",
+        "npc_calendar.site_open",
+        "pregnancy_selfcare"
+      ],
+      "condition": "Connect clinic outside and inside, preserve normal hours and actor-verified urgent access; never remove clinic while its services remain.",
+      "data_complete": true,
+      "note": "Data prepared where data_complete=true; consumer switching and author review are not completed."
+    },
+    {
+      "id": "remaining_city_and_housing",
+      "status": "resolved",
+      "required_location_ids": [
+        "city_park",
+        "south_promenade",
+        "agency_square",
+        "real_estate_agency",
+        "detached_house",
+        "penthouse",
+        "north_shops",
+        "north_beach",
+        "north_den",
+        "north_alleys",
+        "police_forecourt",
+        "police_station",
+        "social_housing",
+        "pedestrian_bridge_south",
+        "pedestrian_bridge_north",
+        "central_bridge_south",
+        "central_bridge_north"
+      ],
+      "callers": [
+        "city_housing.execute/tick",
+        "city_agency._destination",
+        "city_dialogue.local_initiative",
+        "npc_stories objectives",
+        "growth/livelihood/health data"
+      ],
+      "condition": "No live location, property, objective or NPC schedule may point to a removed node.",
+      "data_complete": true,
+      "note": "Data prepared where data_complete=true; consumer switching and author review are not completed."
+    },
+    {
+      "id": "single_runtime_switch",
+      "status": "resolved",
+      "required_location_ids": [],
+      "callers": [
+        "main_simulation._init",
+        "city_layout",
+        "city_world",
+        "npc_agency._route",
+        "city_view",
+        "LocationManager/session_adapter"
+      ],
+      "condition": "One graph source, existing World transaction and NPC planner; remove superseded source/callers, never introduce a second runner or fallback to v2.",
+      "data_complete": false,
+      "note": "Non-geographic work remains pending; empty required-location lists do not imply this dependency is complete."
+    },
+    {
+      "id": "author_scenario_review",
+      "status": "pending",
+      "required_location_ids": [],
+      "condition": "External Google Doc not yet read. Preserve confirmed local architecture and author text; disputed institution name remains neutral.",
+      "data_complete": false,
+      "note": "Non-geographic work remains pending; empty required-location lists do not imply this dependency is complete."
+    }
+  ],
+  "home_units": {
+    "apartment": {
+      "property_id": "apartment",
+      "frontage_id": "student_home",
+      "room_ids": {
+        "hall": "apartment_hall",
+        "bedroom": "bedroom",
+        "bathroom": "bathroom",
+        "kitchen": "kitchen"
+      },
+      "access_policy_id": "player_residence",
+      "above_ground_floors": 1
+    },
+    "detached_house": {
+      "property_id": "detached_house",
+      "frontage_id": "detached_house",
+      "room_ids": {
+        "hall": "detached_house_hall",
+        "bedroom": "detached_house_bedroom",
+        "bathroom": "detached_house_bathroom",
+        "kitchen": "detached_house_kitchen",
+        "stairs": "detached_house_stairs"
+      },
+      "access_policy_id": "detached_house_residence_access",
+      "above_ground_floors": 2
+    },
+    "penthouse": {
+      "property_id": "penthouse",
+      "frontage_id": "penthouse",
+      "room_ids": {
+        "hall": "penthouse_hall",
+        "bedroom": "penthouse_bedroom",
+        "bathroom": "penthouse_bathroom",
+        "kitchen": "penthouse_kitchen"
+      },
+      "access_policy_id": "penthouse_residence_access",
+      "above_ground_floors": null
+    },
+    "social_housing": {
+      "property_id": "social_housing",
+      "frontage_id": "social_housing",
+      "room_ids": {
+        "hall": "social_housing_hall",
+        "bedroom": "social_housing_bedroom",
+        "bathroom": "social_housing_bathroom",
+        "kitchen": "social_housing_kitchen"
+      },
+      "access_policy_id": "social_housing_residence_access",
+      "above_ground_floors": null
+    }
+  },
+  "resident_home_templates": {
+    "default": {
+      "location_prefix": "city_resident_home_",
+      "policy_suffix": "_access",
+      "building_suffix": "_building",
+      "district_id": "student_courts",
+      "frontage_id": "residential_district",
+      "minutes": 2,
+      "cost": 0,
+      "map_marker": false,
+      "offscreen": true,
+      "scope": "one real private unit per actor; factory creates records only; caller registers in the same graph/catalog before NPC generation"
+    }
+  },
+  "authored_resident_homes": {
+    "resident_cafe_shift_lead": "city_resident_home_selina",
+    "resident_south_grocer": "city_resident_home_dana",
+    "asuka": "asuka_home",
+    "oliver": "oliver_home"
+  },
+  "capability_bindings": {
+    "status": "prepared_bindings_not_applied_to_runtime",
+    "jobs": {
+      "shop_assistant": {
+        "scope": "fixed_location",
+        "target_location_id": "north_market",
+        "hours": [
+          480,
+          1200
+        ]
+      },
+      "warehouse_shift": {
+        "scope": "fixed_location",
+        "target_location_id": "north_logistics_depot",
+        "hours": [
+          420,
+          1200
+        ]
+      },
+      "campus_assistant": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_maintenance_room",
+        "hours": [
+          480,
+          1080
+        ]
+      },
+      "cafe_orders": {
+        "scope": "fixed_location",
+        "target_location_id": "riverside_cafe",
+        "hours": [
+          480,
+          1320
+        ]
+      },
+      "parcel_sorting": {
+        "scope": "fixed_location",
+        "target_location_id": "north_logistics_depot",
+        "hours": [
+          480,
+          1260
+        ]
+      },
+      "repair_bench": {
+        "scope": "fixed_location",
+        "target_location_id": "north_repair_workshop",
+        "hours": [
+          540,
+          1200
+        ]
+      },
+      "street_performer": {
+        "scope": "fixed_location",
+        "target_location_id": "south_promenade",
+        "hours": [
+          600,
+          1320
+        ]
+      },
+      "studio_session": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          480,
+          1320
+        ]
+      },
+      "lead_shift": {
+        "scope": "fixed_location",
+        "target_location_id": "north_market",
+        "hours": [
+          480,
+          1140
+        ]
+      },
+      "underground_courier": {
+        "scope": "fixed_location",
+        "target_location_id": "north_alleys",
+        "hours": [
+          1080,
+          1440
+        ]
+      },
+      "unlicensed_stall": {
+        "scope": "fixed_location",
+        "target_location_id": "north_shops",
+        "hours": [
+          600,
+          1320
+        ]
+      },
+      "shadow_commission": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          600,
+          1440
+        ]
+      },
+      "tutor": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_study_room",
+        "hours": [
+          780,
+          1320
+        ]
+      },
+      "defence_assistant": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_training_hall",
+        "hours": [
+          780,
+          1320
+        ]
+      },
+      "card_host": {
+        "scope": "fixed_location",
+        "target_location_id": "riverside_cafe",
+        "hours": [
+          900,
+          1380
+        ]
+      },
+      "fact_checker": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "security_auditor": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "puzzle_editor": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "lab_assistant": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_research_lab",
+        "hours": [
+          780,
+          1200
+        ]
+      },
+      "copy_editor": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "event_host": {
+        "scope": "fixed_location",
+        "target_location_id": "riverside_cafe",
+        "hours": [
+          900,
+          1320
+        ]
+      },
+      "community_listener": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_student_support",
+        "hours": [
+          780,
+          1260
+        ]
+      },
+      "fundraiser": {
+        "scope": "fixed_location",
+        "target_location_id": "south_promenade",
+        "hours": [
+          780,
+          1320
+        ]
+      },
+      "gym_assistant": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_gym",
+        "hours": [
+          780,
+          1320
+        ]
+      },
+      "race_marshal": {
+        "scope": "fixed_location",
+        "target_location_id": "city_park",
+        "hours": [
+          360,
+          600
+        ]
+      },
+      "photo_reviewer": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "music_arranger": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "comedy_writer": {
+        "scope": "fixed_location",
+        "target_location_id": "riverside_cafe",
+        "hours": [
+          900,
+          1380
+        ]
+      },
+      "dance_assistant": {
+        "scope": "fixed_location",
+        "target_location_id": "campus_dance_studio",
+        "hours": [
+          780,
+          1320
+        ]
+      },
+      "park_gardener": {
+        "scope": "fixed_location",
+        "target_location_id": "city_park",
+        "hours": [
+          360,
+          600
+        ]
+      },
+      "fish_supplier": {
+        "scope": "fixed_location",
+        "target_location_id": "north_beach",
+        "hours": [
+          300,
+          600
+        ]
+      },
+      "craft_workshop": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      },
+      "day_planner": {
+        "scope": "actor_home",
+        "player_room_kind": "bedroom",
+        "npc_destination": "actual_npc_home_unit",
+        "hours": [
+          420,
+          1380
+        ]
+      }
+    },
+    "shops": {
+      "market": {
+        "target_location_id": "south_market",
+        "frontage_location_id": "south_trade_street"
+      },
+      "north_market": {
+        "target_location_id": "north_market",
+        "frontage_location_id": "north_shops"
+      }
+    },
+    "lessons": {
+      "common_day": "classroom_213",
+      "computing_class": "campus_computer_lab",
+      "physics_class": "campus_physics_lab",
+      "statistics_class": "classroom_213",
+      "genetics_class": "campus_research_lab",
+      "bioengineering_class": "campus_research_lab",
+      "behavior_class": "classroom_213"
+    },
+    "professions": {
+      "retail": {
+        "target_location_id": "south_market"
+      },
+      "other_home_professions": {
+        "scope": "actor_home",
+        "note": "Use the actor's actual private home room/unit, not the old fixed bedroom for every resident."
+      }
+    },
+    "medical": {
+      "routine_location_id": "clinic",
+      "public_approach_id": "clinic_forecourt",
+      "urgent_location_id": "clinic",
+      "routine_hours": [
+        480,
+        1200
+      ],
+      "urgent_context_source": "existing accepted urgent job/patient; never client claimed",
+      "product_shop_location_ids": [
+        "south_market",
+        "north_market"
+      ]
+    },
+    "housing": {
+      "properties": [
+        "apartment",
+        "detached_house",
+        "penthouse",
+        "social_housing"
+      ],
+      "service_location_id": "real_estate_agency",
+      "public_approach_id": "agency_square"
+    },
+    "first_deep_place_content_location_ids": [
+      "residential_district",
+      "pharmacy_house",
+      "south_trade_street",
+      "riverside_cafe_front"
+    ],
+    "skill_practice": {
+      "study": {
+        "fixed_location_ids": [
+          "campus_study_room"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "cooking": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "kitchen"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "computing": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "fighting": {
+        "fixed_location_ids": [
+          "city_park",
+          "campus_training_hall"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "stealth": {
+        "fixed_location_ids": [
+          "city_park"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "cards": {
+        "fixed_location_ids": [
+          "riverside_cafe"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "journalism": {
+        "fixed_location_ids": [
+          "south_promenade"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "cybersecurity": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "logic": {
+        "fixed_location_ids": [
+          "city_park"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "research": {
+        "fixed_location_ids": [
+          "campus_research_lab"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "writing": {
+        "fixed_location_ids": [
+          "riverside_cafe"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "public_speaking": {
+        "fixed_location_ids": [
+          "city_park"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "empathy": {
+        "fixed_location_ids": [
+          "riverside_cafe"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "persuasion": {
+        "fixed_location_ids": [
+          "campus_study_room"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "fitness": {
+        "fixed_location_ids": [
+          "city_park",
+          "campus_gym"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "athletics": {
+        "fixed_location_ids": [
+          "city_park",
+          "north_beach"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "handiness": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "painting": {
+        "fixed_location_ids": [
+          "city_park"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "photography": {
+        "fixed_location_ids": [
+          "city_park",
+          "south_promenade"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "music": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "performance": {
+        "fixed_location_ids": [
+          "south_promenade"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "comedy": {
+        "fixed_location_ids": [
+          "riverside_cafe"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "dancing": {
+        "fixed_location_ids": [
+          "city_park"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "gardening": {
+        "fixed_location_ids": [
+          "city_park"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "fishing": {
+        "fixed_location_ids": [
+          "north_beach",
+          "south_promenade"
+        ],
+        "actor_home_room_kinds": [],
+        "npc_home_is_actual_private_unit": true
+      },
+      "crafting": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "sales": {
+        "fixed_location_ids": [
+          "north_shops"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "logistics": {
+        "fixed_location_ids": [
+          "north_shops"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "leadership": {
+        "fixed_location_ids": [
+          "campus_study_room"
+        ],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      },
+      "discipline": {
+        "fixed_location_ids": [],
+        "actor_home_room_kinds": [
+          "bedroom"
+        ],
+        "npc_home_is_actual_private_unit": true
+      }
+    },
+    "sports": {
+      "running": "city_park",
+      "strength": "campus_gym",
+      "combat": "campus_training_hall"
+    },
+    "social_meetings": {
+      "public_location_ids": [
+        "residential_district",
+        "riverside_cafe_front",
+        "riverside_cafe",
+        "city_park",
+        "south_promenade",
+        "north_beach"
+      ],
+      "private_meetings": "actor access and explicit invitation only; public affiliation is a place property, never an old ID blacklist"
+    }
+  }
+}

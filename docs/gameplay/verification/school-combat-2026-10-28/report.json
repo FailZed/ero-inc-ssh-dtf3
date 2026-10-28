@@ -1,0 +1,118 @@
+{
+  "status": "included in actual original; coordinator confirmed guarded apply",
+  "checks": [
+    {
+      "log": "minimal-main13.log",
+      "checks": 47,
+      "failed": 0
+    },
+    {
+      "log": "ui-minimal-v2.log",
+      "checks": 8,
+      "failed": 0
+    },
+    {
+      "log": "main-minimal-v1.log",
+      "checks": 15,
+      "failed": 0
+    }
+  ],
+  "delivery": "E:\\GoDot\\.research\\agent-coordination\\school-combat\\delivery.json",
+  "snapshot_sha256": "c2d60fc8d707880dac2ec6da53254bcba6a9a66eeb9a35aef8b9f4b91345e6cb",
+  "baseline": "E:\\GoDot\\.research\\agent-coordination\\final-integration\\project",
+  "runtime_files": [
+    {
+      "path": "scripts/mechanics/combat.gd",
+      "preimage_sha256": "99bc8fbe71d75f48879ff81ed4b1e50cc0e093f32ace0a6316da7c0192c87995",
+      "payload_sha256": "517ac7a7895fa5600eaa801ad3283dc65bd5d77261b0d2aafec98f0e0a523e4b"
+    },
+    {
+      "path": "scripts/ui/characters/conversation_room.gd",
+      "preimage_sha256": "16ebd2b81690db6ad2ec808ae7bfbf9f7b849d2b239f24b60a56e73dd082de22",
+      "payload_sha256": "6e6ab9d94af7cbe8e432912b11654bc468795d827fbf391acd1165458cda7827"
+    },
+    {
+      "path": "scripts/ui/gameplay/game_screens.gd",
+      "preimage_sha256": "f958f9357733dda2c4dc335de6c8401b581d17820a06006eaa489fe4cf169a3a",
+      "payload_sha256": "24ea3f1e9b8a7726d4e75ea9df8fcd3a950b0ea39fabcef46975439aee788a2d"
+    },
+    {
+      "path": "tests/mechanics/advanced.gd",
+      "preimage_sha256": "ff7d7ed7a5e26081117e09f4d82a54bed9daca477c323a18ab66e313ae21bf39",
+      "payload_sha256": "9b18c1046c3e3c61b284f4353c5f489975885abac21a31699e26d34b363822cf"
+    },
+    {
+      "path": "tests/mechanics/parity.gd",
+      "preimage_sha256": "0ab76a631cab572e5d1bd5fd1a4e5940d0b896d8d4905be91a3ec9068be4f342",
+      "payload_sha256": "5a8f8aa268ff0e0949710a998da2ed1644e40dbcec892cfba3b29dd9561f257b"
+    },
+    {
+      "path": "tests/mechanics/conversation_conflict.gd",
+      "preimage_sha256": "0e90110d908b434fa483b0f3d20f19e3175639c00f2b6a32545984c529b85100",
+      "payload_sha256": "c2ead4d3334c99cd6958db4c338f5eaaf282118d6a2e4b850eca43bb88b5b70a"
+    },
+    {
+      "path": "tests/mechanics/post_conflict_dialogue.gd",
+      "preimage_sha256": "6a525e46cbb85de68d37fc031cbd26935a77805a3d43a473b4e9a052c08ed10b",
+      "payload_sha256": "e6f801cbccb3a158b3b9d8b78a3955d87af82fe8ad78c08f2c8d5ef8b6ecb3f6"
+    },
+    {
+      "path": "tests/gameplay/conversation_conflict.gd",
+      "preimage_sha256": "cbef2becc0453b7ae9bc8a31002212b3f722369c660e89b01112c581563e0d00",
+      "payload_sha256": "78ebca88fc6731eff4bb5a4a90b97663399752cba563997e6616829fc2765f8e"
+    },
+    {
+      "path": "tests/gameplay/systems.gd",
+      "preimage_sha256": "ec4772df20d2c682b69e29df7acdec6bf06bd96df9e75ee85b2d3eac58f37c2c",
+      "payload_sha256": "4c0d8c125e63b2c07659429da9fd8561dc61ddf226897132c07272ca43c09eee"
+    },
+    {
+      "path": "tests/gameplay/npc_life.gd",
+      "preimage_sha256": "e12b56377340c49dd2c2fa968f807ba5671c2f95bf9b08ec7820c2e51eec5f4e",
+      "payload_sha256": "86c57c003f041c2c84d57fcd3d8b3ba6bdc6d18fc8b8f029331ba963af36abd5"
+    },
+    {
+      "path": "tests/mechanics/run.gd",
+      "preimage_sha256": "2fbe9893f489a6e454e7a64364d5ffd577805f24012c989d9a57fe68ed8ef749",
+      "payload_sha256": "2acaa64d01edb6cc33411aa6e5329244dfeee920b0a9e1f90df445fbd37d20a4"
+    },
+    {
+      "path": "tests/mechanics/balance_probe.gd",
+      "preimage_sha256": "caada73bb1b24f93571103b31348dfc4dea956987f8db8c812ccbd1b89c590fd",
+      "payload_sha256": "05bbc7c3add40c621b006199f0dd257097079e20a723bb9ed6bd32df016649f2"
+    },
+    {
+      "path": "tests/mechanics/conversation_options.gd",
+      "preimage_sha256": "ab00290ef0f8c2ecf6de1cbab1803e4c764cc2978c017c33062f6d074a782e7f",
+      "payload_sha256": "1492a97c75fc5fe4fc83b68e76a98fc8edd1456214d8ae8c4a7ce5820cf87970"
+    }
+  ],
+  "not_verified": [
+    "final combined native/UI layout",
+    "Live2D rig after integration"
+  ],
+  "limits": "No native windows, School, CUA, user saves or Git. Earlier broad attempts were rejected, not accepted checks.",
+  "integration": {
+    "reported_by": "coordinator 01a17e92-142c-7992-ad8e-3e93fa96376d",
+    "revision": "Main14",
+    "sha256": "b6055b6d6732c561787074f6903d2b917d4cab2303187cbec50b058b91a407a3",
+    "checks_reported": [
+      {
+        "scope": "Main",
+        "checks": 15,
+        "failed": 0
+      },
+      {
+        "scope": "domain",
+        "checks": 89,
+        "failed": 0
+      },
+      {
+        "scope": "events",
+        "checks": 112,
+        "failed": 0
+      }
+    ],
+    "final_native_ui_verified": false
+  }
+}

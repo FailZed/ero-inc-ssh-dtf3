@@ -1,7 +1,7 @@
 *
 !.gitignore
 !libgd_cubism.macos.universal.dylib
-!libgd_cubism.windows.x86_64.dll
-!Live2DCubismCore.dll
 !build-macos.json
 !build-windows.json
+!sdk5/
+!sdk5/**

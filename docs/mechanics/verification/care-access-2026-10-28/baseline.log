@@ -1,0 +1,32 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: [CSM][I]Live2D Cubism Core version: 05.00.0000 (83886080)
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::StartUp() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::Initialize() is complete.
+
+   at: output (src\register_types.cpp:42)
+FAIL: clinical refusal preserves state, time, funds and RNG: clinic_visit_window
+FAIL: clinical refusal preserves state, time, funds and RNG: clinic_required
+FAIL: present patient completes a valid prenatal visit
+FAIL: prenatal visit grants care only after its full duration and charges once
+FAIL: clinical refusal preserves state, time, funds and RNG: clinic_required
+FAIL: clinical refusal preserves state, time, funds and RNG: care_payer_not_present
+FAIL: a present companion may pay for the actual present patient's visit
+FAIL: the declared payer funds the visit exactly once
+FAIL: clinical refusal preserves state, time, funds and RNG: clinic_visit_window
+FAIL: clinical refusal preserves state, time, funds and RNG: clinic_visit_window
+FAIL: prenatal cooldown starts at completed care, not before the examination
+FAIL: clinical refusal preserves state, time, funds and RNG: location_closed
+FAIL: completed NPC visit uses its own funds and actual presence
+CARE_ACCESS_RESULT {"checks":72,"failed":13,"failures":["clinical refusal preserves state, time, funds and RNG: clinic_visit_window","clinical refusal preserves state, time, funds and RNG: clinic_required","present patient completes a valid prenatal visit","prenatal visit grants care only after its full duration and charges once","clinical refusal preserves state, time, funds and RNG: clinic_required","clinical refusal preserves state, time, funds and RNG: care_payer_not_present","a present companion may pay for the actual present patient's visit","the declared payer funds the visit exactly once","clinical refusal preserves state, time, funds and RNG: clinic_visit_window","clinical refusal preserves state, time, funds and RNG: clinic_visit_window","prenatal cooldown starts at completed care, not before the examination","clinical refusal preserves state, time, funds and RNG: location_closed","completed NPC visit uses its own funds and actual presence"]}
+WARNING: [CSM][I]CubismFramework::Dispose() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: 63 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 27 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

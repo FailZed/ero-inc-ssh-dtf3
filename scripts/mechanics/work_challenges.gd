@@ -1,5 +1,6 @@
 extends RefCounted
 const V = preload("res://scripts/mechanics/core/agency_validation.gd")
+const Banks = preload("res://scripts/mechanics/work_task_banks.gd")
 const KINDS := ["memory","sorting","focus","reasoning","comparison","sequence"]
 
 static func shuffled(sim, count: int) -> Array:
@@ -11,9 +12,9 @@ static func shuffled(sim, count: int) -> Array:
 		result[other] = saved
 	return result
 
-static func build(sim, job: Dictionary, assistance: Dictionary) -> Array:
+static func build(sim, job: Dictionary, assistance: Dictionary, job_id: String) -> Array:
 	var result: Array = []
-	var order := shuffled(sim,job.tasks.size()) if job.has("tasks") else []
+	var sources := Banks.deal(sim,job_id,int(assistance.rounds)) if job.kind in ["reasoning","sequence"] else []
 	for index in range(int(assistance.rounds)):
 		match str(job.kind):
 			"memory", "sorting": result.append({"answer":sim.rng.randi_range(0,job.choices.size()-1)})
@@ -26,7 +27,7 @@ static func build(sim, job: Dictionary, assistance: Dictionary) -> Array:
 				candidate[answer] = (int(candidate[answer])+sim.rng.randi_range(1,3))%4
 				result.append({"reference":reference,"candidate":candidate,"answer":answer})
 			"reasoning":
-				var source: Dictionary = job.tasks[int(order[index])]
+				var source: Dictionary = sources[index]
 				var choices := shuffled(sim,source.options.size())
 				var options: Array = []
 				for choice in choices: options.append(source.options[int(choice)])
@@ -37,7 +38,7 @@ static func build(sim, job: Dictionary, assistance: Dictionary) -> Array:
 						if int(choice) != answer: excluded = int(choice); break
 				result.append({"prompt":source.prompt,"options":options,"answer":answer,"explanation":source.explanation,"excluded":excluded})
 			"sequence":
-				var source: Dictionary = job.tasks[int(order[index])]
+				var source: Dictionary = sources[index]
 				var choices := shuffled(sim,source.steps.size())
 				var options: Array = []
 				var solution: Array = []
@@ -83,31 +84,26 @@ static func submit(session: Dictionary, job: Dictionary, args: Dictionary) -> Di
 			if job.kind == "reasoning": result.feedback = str(task.explanation)
 	return result
 
-static func catalog_error(job: Dictionary) -> String:
+static func catalog_error(job: Dictionary, catalog: Dictionary) -> String:
 	if job.kind in ["memory","sorting"]:
 		if not job.get("choices") is Array or job.choices.size() != (3 if job.kind == "sorting" else 5): return "invalid_work_choices"
 		if not _strings(job.choices): return "invalid_work_choices"
-	if job.kind in ["reasoning","sequence"]:
-		if not job.get("tasks") is Array or job.tasks.size() < 5: return "missing_work_tasks"
-		for task in job.tasks:
-			if not V.shape(task,{"prompt":"s"}): return "invalid_work_task"
-			if job.kind == "reasoning":
-				if not V.shape(task,{"options":"a","answer":"n","explanation":"s"}) or task.options.size() != 4 or not V.integer(task.answer,0,3): return "invalid_work_task"
-				if not _strings(task.options): return "invalid_work_task"
-			else:
-				if not V.shape(task,{"steps":"a"}) or task.steps.size() != 3: return "invalid_work_task"
-				if not _strings(task.steps): return "invalid_work_task"
+	if job.kind in ["reasoning","sequence"]: return Banks.job_error(job,catalog)
 	return ""
 
-static func state_error(session: Dictionary, job: Dictionary) -> String:
+static func state_error(session: Dictionary, job: Dictionary, catalog: Dictionary, career_rank: int) -> String:
 	if not session.get("tasks") is Array or not session.get("selection") is Array or session.tasks.size() != int(session.assistance.rounds): return "invalid_work_tasks"
 	if (job.kind != "sequence" and not session.selection.is_empty()) or session.selection.size() > 2: return "invalid_work_selection"
 	var selected: Array = []
 	for choice in session.selection:
 		if not V.integer(choice,0,2) or int(choice) in selected: return "invalid_work_selection"
 		selected.append(int(choice))
+	var seen_prompts: Array = []
 	for task in session.tasks:
 		if not task is Dictionary: return "invalid_work_task"
+		if job.kind in ["reasoning","sequence"]:
+			if not task.get("prompt") is String or task.prompt in seen_prompts: return "invalid_work_task"
+			seen_prompts.append(task.prompt)
 		match str(job.kind):
 			"memory", "sorting":
 				if not V.integer(task.get("answer"),0,job.choices.size()-1): return "invalid_work_task"
@@ -121,7 +117,7 @@ static func state_error(session: Dictionary, job: Dictionary) -> String:
 				if not V.shape(task,{"prompt":"s","options":"a","answer":"n","explanation":"s","excluded":"n"}) or task.options.size() != 4 or not V.integer(task.answer,0,3) or not V.integer(task.excluded,-1,3) or int(task.excluded) == int(task.answer): return "invalid_work_task"
 				if not _strings(task.options): return "invalid_work_task"
 				var known := false
-				for original in job.tasks:
+				for original in Banks.bank(job,catalog,career_rank).tasks:
 					if task.prompt == original.prompt and task.explanation == original.explanation and task.options[int(task.answer)] == original.options[int(original.answer)] and _same_options(task.options,original.options): known = true
 				if not known: return "invalid_work_task"
 			"sequence":
@@ -134,7 +130,7 @@ static func state_error(session: Dictionary, job: Dictionary) -> String:
 					values.append(int(choice))
 					solution.append(task.options[int(choice)])
 				var known := false
-				for original in job.tasks:
+				for original in Banks.bank(job,catalog,career_rank).tasks:
 					if task.prompt == original.prompt and solution == original.steps: known = true
 				if not known: return "invalid_work_task"
 	return ""

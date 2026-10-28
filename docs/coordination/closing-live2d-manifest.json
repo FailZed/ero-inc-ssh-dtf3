@@ -1,0 +1,807 @@
+{
+  "schema": 1,
+  "purpose": "Portable retained Live2D browser dependency inventory, not a whole-game parity declaration.",
+  "engine": "4.7.2",
+  "browser_entry": "res://assets/characters/mdrg_study/scenes/browser.tscn",
+  "snapshot_sha256": "3baf0e520f7fec3a0a02916867519ca511956c3d1d104de16b6d79c50898d4ab",
+  "retain_repo_files": {
+    "addons/gd_cubism/res/shader/2d_cubism_mask.gdshader": {
+      "sha256": "37c1ac0ded56a184432db3f258db7a77690f5aeb5be9e8197e6f6005ffb18fe3",
+      "bytes": 332
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask.gdshader.uid": {
+      "sha256": "274f3566891a9f8bea46b8db99cb92cb4e914aac8af8298eed9aa57a43a4add5",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_add.gdshader": {
+      "sha256": "1c50f64f1d82d557e4a6b67c234641fd0e7ea6160e3cdf5fc25bb682234ecd7f",
+      "bytes": 1358
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_add.gdshader.uid": {
+      "sha256": "29031009b5d55f2c8e48c9fcff0736fbc7ddf1d1a0d4058a957c122af922438d",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_add_inv.gdshader": {
+      "sha256": "a52a9042d8d70d04b65d740b61c395ec1b7e07904fa1cb97d8ddd804007f83c9",
+      "bytes": 1369
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_add_inv.gdshader.uid": {
+      "sha256": "4f13528da84a710a9de8c40c6b9c12908dfca230ed7d6ce8edb4749a9ac357f2",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mix.gdshader": {
+      "sha256": "86b6845df1d36b84411d52bb32cd57f817071879cfed5cde284830159acb2de5",
+      "bytes": 1335
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mix.gdshader.uid": {
+      "sha256": "1cbd7977738e570178a981ff2f367947df1d04d624b938232e9c85e9e8f15b49",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mix_inv.gdshader": {
+      "sha256": "020548997746808802ac48ebfb6b54314a8d2b07d952d0278390778e3c28bbdb",
+      "bytes": 1346
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mix_inv.gdshader.uid": {
+      "sha256": "8bdac31d9ea09707d01485d7853062436e1c9e2e1f1b73cfc41d1e85bbfb8b11",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mul.gdshader": {
+      "sha256": "1079f3ce82b3ea990c3025959e6cd0c80e4eeffa4575c83fb5924d112de29cbe",
+      "bytes": 1494
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mul.gdshader.uid": {
+      "sha256": "b0e26f4ca1c9c8ab36873163320475fb7820425c9a293df9d1f381e6afcbc175",
+      "bytes": 19
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mul_inv.gdshader": {
+      "sha256": "239227b85ca35a5218a103782e45515307ce94e13c9620a390a3b6f530d8c309",
+      "bytes": 1505
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_mask_mul_inv.gdshader.uid": {
+      "sha256": "3f1463b69b419596904f12c8be5034017e933a3527d5b2e90e5c8427a566693e",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_norm_add.gdshader": {
+      "sha256": "7b3b690e0121f7f4ef04143aef4296ca284cd66f450228e07d22108915543016",
+      "bytes": 791
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_norm_add.gdshader.uid": {
+      "sha256": "ecad86a075342f810a141e88aa6ec9afec748afdf65b37b632bde5802389e029",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_norm_mix.gdshader": {
+      "sha256": "689a4fe160ef60b9504e59d666d8cc874da0e9b3e089a3722263da6367af8115",
+      "bytes": 795
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_norm_mix.gdshader.uid": {
+      "sha256": "0e4a3f6fa3df994b8033acdf32346b21a3163e3be9aad6f5fe470d27e59432b8",
+      "bytes": 20
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_norm_mul.gdshader": {
+      "sha256": "e06aa8dd89e19788dd0db802f1369a1ad0787139d0a1568e3c51eb749612e365",
+      "bytes": 795
+    },
+    "addons/gd_cubism/res/shader/2d_cubism_norm_mul.gdshader.uid": {
+      "sha256": "ee20e2eaccd4eb194aedcb67c447ecc39d4a4e613d4c2c929c97026149d348e6",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/catalog.json": {
+      "sha256": "a1174802d85e8a962a572e6724f893c7aed117fc975619f33832b46e1b64a959",
+      "bytes": 7637
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/BlowJob_Scene__714017f09d7b7c24_20234.moc3": {
+      "sha256": "0c54bee3e174cf349df8f4737cc73c0a7a753b7dbafd1ff8fa5e3a54fdce108b",
+      "bytes": 958336
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/BlowJob_Scene__714017f09d7b7c24_20234.model3.json": {
+      "sha256": "2692957378ebbcf8c9223672288aaa8f41ffa185a7d4971049d4f2d0300e4372",
+      "bytes": 251
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/model.info.json": {
+      "sha256": "2178cd942a27146df0129749dac5ce0b0a15ee14ecf17f3851caf99247cfefd1",
+      "bytes": 30466
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/physics_00.physics3.json": {
+      "sha256": "fe619d3abea8b9d878ad0ce2d9720021a86ba59d1e0cd916dbeee706759f9341",
+      "bytes": 9224
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/snapshot.json": {
+      "sha256": "4451d9f3b4673519da9474f6dc4a79f0a24bd57658d7c665017971021b0be03e",
+      "bytes": 186631
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/texture_00.png": {
+      "sha256": "bdb6df51f3b87a18d0d391f50e3bb92f24fe1c6dfc3a3337f71031de0d799c5f",
+      "bytes": 3594809
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/texture_00.png.import": {
+      "sha256": "9ba4d48c904304cddf0e4de38d568b4c893f14836b3c2760259450af195266fe",
+      "bytes": 1016
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/texture_01.png": {
+      "sha256": "0bc0efce03cdc73bdc0678d2672bb36e09f4c854782db466fcb3c2a95b05aed3",
+      "bytes": 2546821
+    },
+    "assets/characters/mdrg_study/content/models/BlowJob_Scene__714017f09d7b7c24_20234/texture_01.png.import": {
+      "sha256": "bbdc6547669e3e23ab7cc83352fbf14fc4fefc6efc58187f90cd6824a60ab037",
+      "bytes": 1016
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/bot_doggy__714017f09d7b7c24_20179.moc3": {
+      "sha256": "9ef366874517afd07c083cf8964098ef15fab5886ce6afc16c5b164257bf8973",
+      "bytes": 491648
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/bot_doggy__714017f09d7b7c24_20179.model3.json": {
+      "sha256": "06b8a6341a940ea21ca7098dbf1616ea25d6c57eb1e29795ffb3d05b7a9f2a45",
+      "bytes": 223
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/model.info.json": {
+      "sha256": "ad7257d82e2dc99eb95c1a45f5fb7b721ed3a7de05505cb26542115294f1dd64",
+      "bytes": 43056
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/physics_00.physics3.json": {
+      "sha256": "81012aa8c9bc6dc4d1c5784f9141071f13dc2a988d4c1a309f2dcad54a30ec0d",
+      "bytes": 19125
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/snapshot.json": {
+      "sha256": "d7123894988ed66997997d157b7795bf05f28d94a205a29a86275ea7284bcfdf",
+      "bytes": 256439
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/texture_00.png": {
+      "sha256": "30fdd6b508a54b98fa066d8548731330f19b6452a5d04061a31792cabb871fec",
+      "bytes": 2816735
+    },
+    "assets/characters/mdrg_study/content/models/bot_doggy__714017f09d7b7c24_20179/texture_00.png.import": {
+      "sha256": "aa4ea56dc1c9f6bfa243f9278d0c304f5f5eaee36d4c2e389f229109bb279496",
+      "bytes": 1012
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/bot_missionary__714017f09d7b7c24_21362.moc3": {
+      "sha256": "6ba461bf6de1ab8f5ff11158ba52c7b23520be7f9983ae4aa44203b97ef27757",
+      "bytes": 1516928
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/bot_missionary__714017f09d7b7c24_21362.model3.json": {
+      "sha256": "77971c72cca7eafdb62709265acf7edef083e1dfe2d9a745762e3ec580dd4e46",
+      "bytes": 276
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/model.info.json": {
+      "sha256": "f0da07b3146f8f911bec212784398c22bc738062f936079fa24d512ec657dc27",
+      "bytes": 67286
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/physics_00.physics3.json": {
+      "sha256": "121cb52f19eff1382e7855d4175d4d3bc80afad7c56eb452b2136096ecd32f7f",
+      "bytes": 27299
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/snapshot.json": {
+      "sha256": "e6936fd5cdadb98b4e3100a9317a572adbae49fb398e88a26137e8b68a243402",
+      "bytes": 389229
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/texture_00.png": {
+      "sha256": "27fd399c2c098d8f96ad3a245cf951dab9e3dc206d8db2e597e332dd56a84101",
+      "bytes": 4502023
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/texture_00.png.import": {
+      "sha256": "5d5216b77d9d7baeb6db0f8f9cb4d0c4d5b1de085ec6b8ce12018f7e33f52040",
+      "bytes": 1017
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/texture_01.png": {
+      "sha256": "17fccc0eea5a5b8fb3241d750a9fd265e01afa188b7425ef5be148a5e316aa3b",
+      "bytes": 2981303
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/texture_01.png.import": {
+      "sha256": "492e5508fa7a8f5677ff190219705104e0d67a4b84a33056fbd0b02f373fda98",
+      "bytes": 1017
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/texture_02.png": {
+      "sha256": "ac9d756a4b131fcb8b58a8d9d816630304bafb7172fdb6051b8984e5ef9bf0b9",
+      "bytes": 1621022
+    },
+    "assets/characters/mdrg_study/content/models/bot_missionary__714017f09d7b7c24_21362/texture_02.png.import": {
+      "sha256": "0928bbe2edea642c3778b17637ee8621b312c54b534f52b6db5279b1c689782e",
+      "bytes": 1016
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/cowgirl__714017f09d7b7c24_20668.moc3": {
+      "sha256": "f4067d67c1fcba5dacef7d6e8c67a72923f98056f13d7e39768d3523500696b2",
+      "bytes": 1182528
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/cowgirl__714017f09d7b7c24_20668.model3.json": {
+      "sha256": "8c92e0e31c2cbff574ab8d2835508b9df05cbd0c5cf628847ec6227d2ecafadf",
+      "bytes": 245
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/model.info.json": {
+      "sha256": "7586869d7644bf2158b4963cc7294257ea209a438bef1804519fcb4db3f702a9",
+      "bytes": 47836
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/physics_00.physics3.json": {
+      "sha256": "bbdd766d334e4c4791f5d31951e4ce1b6a4812f21647be3d1bce30e1a50423c8",
+      "bytes": 20414
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/snapshot.json": {
+      "sha256": "627c3d3fc0f0b56aa679c00e9bf51d6ebbd908a56f8d013aaffc3e1d65a354a8",
+      "bytes": 286865
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/texture_00.png": {
+      "sha256": "b6ae3455867532ccfd51af627a8ee6acd1826a445bd0b28b3e50c5f962dc1bc1",
+      "bytes": 4820919
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/texture_00.png.import": {
+      "sha256": "112cb77418392906d5e18a6a42e0a8099f5de6afdbbc401b625e83d459865f35",
+      "bytes": 1010
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/texture_01.png": {
+      "sha256": "7d15d036eacd262d8a88d47a539fe789df47d3f198ab86b872600f4df745400a",
+      "bytes": 3445909
+    },
+    "assets/characters/mdrg_study/content/models/cowgirl__714017f09d7b7c24_20668/texture_01.png.import": {
+      "sha256": "3a4c4a202bc5f480524273eb9f48745f29c4c32321a2939d04acc2189ddefa7c",
+      "bytes": 1010
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/interaction_model__714017f09d7b7c24_21238.moc3": {
+      "sha256": "0c8691d1c0f4b8f43ca0060ab35139a114828b987783af4301aae09f865d066a",
+      "bytes": 1301120
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/interaction_model__714017f09d7b7c24_21238.model3.json": {
+      "sha256": "f32e7a09663ec6cc3535fd67c049db418af6fb5233f96fb75dc9836f4516b5aa",
+      "bytes": 279
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/model.info.json": {
+      "sha256": "17a411a419507affb71b4b79dd412d7605fb34b738d514291f65f5b3d4107dd3",
+      "bytes": 48062
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/physics_00.physics3.json": {
+      "sha256": "49da5d2c06e1635e0e1f689b87d68062aaa46431f59b9623c2e40536ee581949",
+      "bytes": 24942
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/snapshot.json": {
+      "sha256": "c8487fe20023132dfe1b13b76526f1bd73f1ac7ef11ae3627906f05db1d235f8",
+      "bytes": 292258
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/texture_00.png": {
+      "sha256": "29be376b8ad8ca65942806d929732fc20b4973eb504502b8584e9850a264be22",
+      "bytes": 5747900
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/texture_00.png.import": {
+      "sha256": "764771ee4f6141e2d26d6309df715527207bebd5144a2aa25c53bb94bf869979",
+      "bytes": 1019
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/texture_01.png": {
+      "sha256": "6ead2eea99a730e8997499c689eecf4a40ee5fce9d59052c8141eb5037b8af9c",
+      "bytes": 3080757
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/texture_01.png.import": {
+      "sha256": "8e1863ed6eb41489446c59ce6285b9751793af992763bd0528a5a8e59753e00b",
+      "bytes": 1020
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/texture_02.png": {
+      "sha256": "45a833542f7111523ab7755547227d90f7f45112c960db9591f7fc03b5e78b4e",
+      "bytes": 4249613
+    },
+    "assets/characters/mdrg_study/content/models/interaction_model__714017f09d7b7c24_21238/texture_02.png.import": {
+      "sha256": "13367770d23905bf332b09cc131e5d138620488cbcc80be7ff7b349bd743155c",
+      "bytes": 1020
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/model.info.json": {
+      "sha256": "29141ce61c5e53a9ef18076cc6cfd7ae9d37cb503bbd188fc37520773a1a92bf",
+      "bytes": 42818
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/physics_00.physics3.json": {
+      "sha256": "add0eb4874be978c426528a654a8d587f2b017195f02586e340ab6a8aa1ae741",
+      "bytes": 22705
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/shower__714017f09d7b7c24_17054.moc3": {
+      "sha256": "6b9259c37c494a1f444a1953179230205a5d30ad0be1129e1f221f0434a07112",
+      "bytes": 814848
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/shower__714017f09d7b7c24_17054.model3.json": {
+      "sha256": "fcca47028dc55ace404141151cc498983650d813b5ea8776ebc5e8ce92ab37d4",
+      "bytes": 453
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/snapshot.json": {
+      "sha256": "7670fe1541e611ae28b90076933f111b72fa96f6bdaa5f790117ba8b5d7aacc9",
+      "bytes": 248609
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/texture_00.png": {
+      "sha256": "74f86598f9cb519ebf39ac5b3e75de3791ccd0a70b8e953c01f506561416afa6",
+      "bytes": 4776604
+    },
+    "assets/characters/mdrg_study/content/models/shower__714017f09d7b7c24_17054/texture_00.png.import": {
+      "sha256": "627577c70fb1a9e3778b82b907a5a2186dda8da89780333043a6b1e1da05865e",
+      "bytes": 1009
+    },
+    "assets/characters/mdrg_study/import_report.json": {
+      "sha256": "a45dd2559644fc3a91b681cbcf5d0ec0893bfa74f8e672f9ec98da18ab8faf2b",
+      "bytes": 1730
+    },
+    "assets/characters/mdrg_study/instances/BlowJob_Scene__714017f09d7b7c24_20234_838d9c7a1468/initial_state.motion3.json": {
+      "sha256": "0296634739f9212669fe2a9d093c412d249cd87e0ca3d5a16e99e96bdba4abf9",
+      "bytes": 19519
+    },
+    "assets/characters/mdrg_study/instances/BlowJob_Scene__714017f09d7b7c24_20234_838d9c7a1468/initial_state.motion3.json.uid": {
+      "sha256": "8ea7e11f04bb12df5d47967855a93bd3625511764914b22314c7be1bd2b7e884",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/instances/BlowJob_Scene__714017f09d7b7c24_20234_838d9c7a1468/model.model3.json": {
+      "sha256": "7d6a4a3c4fb75e4f04d2c427227c2cfe1277527c0cd3ea88b67fb4331cd9e1b0",
+      "bytes": 723
+    },
+    "assets/characters/mdrg_study/instances/BlowJob_Scene__714017f09d7b7c24_20234_838d9c7a1468/workshop.profile.json": {
+      "sha256": "1244631d1eafa5068dd9a5d8028e032e8c36636b79849e26f7cf74f54148022d",
+      "bytes": 76738
+    },
+    "assets/characters/mdrg_study/instances/bot_doggy__714017f09d7b7c24_20179_b0512c5142e0/initial_state.motion3.json": {
+      "sha256": "254004692cd5c27cc1629fd97bd086cfe4d42da4558708c03609341ff4cbfdfe",
+      "bytes": 31785
+    },
+    "assets/characters/mdrg_study/instances/bot_doggy__714017f09d7b7c24_20179_b0512c5142e0/initial_state.motion3.json.uid": {
+      "sha256": "94918768d8deba26b343be65a145bbd9057dec413ef19b2e537784c79ba6b1bd",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/instances/bot_doggy__714017f09d7b7c24_20179_b0512c5142e0/model.model3.json": {
+      "sha256": "672a80fd37f2d92138e04dac33344cabfb66c7ae0c21150446b8b916a4401814",
+      "bytes": 620
+    },
+    "assets/characters/mdrg_study/instances/bot_doggy__714017f09d7b7c24_20179_b0512c5142e0/workshop.profile.json": {
+      "sha256": "b8f0e8ec93ca329d0a730b5568130333f468bd8d8f99f5583c4e0f7eb96be048",
+      "bytes": 80798
+    },
+    "assets/characters/mdrg_study/instances/bot_missionary__714017f09d7b7c24_21362_971d44710234/initial_state.motion3.json": {
+      "sha256": "9a0e64c97a41ace5854cc5a427beb25addc78c02b1fcafa566c2c02e85789645",
+      "bytes": 44486
+    },
+    "assets/characters/mdrg_study/instances/bot_missionary__714017f09d7b7c24_21362_971d44710234/initial_state.motion3.json.uid": {
+      "sha256": "954f879d607d9e1d5ad0ee02e37a7699a06d78b8a630a06797f42930b9151e9b",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/instances/bot_missionary__714017f09d7b7c24_21362_971d44710234/model.model3.json": {
+      "sha256": "c32f2c944e46134fbcd0f6402bd80a46c75c55afe27828fce37524d35fb3fe03",
+      "bytes": 813
+    },
+    "assets/characters/mdrg_study/instances/bot_missionary__714017f09d7b7c24_21362_971d44710234/workshop.profile.json": {
+      "sha256": "00dddce4dc57a849c774007fa61ba9f7aef088a546ae5249209464c27d8dee92",
+      "bytes": 86219
+    },
+    "assets/characters/mdrg_study/instances/cowgirl__714017f09d7b7c24_20668_55229fc547b8/initial_state.motion3.json": {
+      "sha256": "1b61396d226249ee34c8b8a6f7b020f2efc3c225e002f687ac8853fef8618c88",
+      "bytes": 32690
+    },
+    "assets/characters/mdrg_study/instances/cowgirl__714017f09d7b7c24_20668_55229fc547b8/initial_state.motion3.json.uid": {
+      "sha256": "a045621045eefa33dc0b85194c14773f0611943746e55d92b39072b4f6a6a6f6",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/instances/cowgirl__714017f09d7b7c24_20668_55229fc547b8/model.model3.json": {
+      "sha256": "323e769f26c764714c58e6ec48cd0ed92b76a14e2a5a205a2ae00e5598bde319",
+      "bytes": 687
+    },
+    "assets/characters/mdrg_study/instances/cowgirl__714017f09d7b7c24_20668_55229fc547b8/workshop.profile.json": {
+      "sha256": "71da65141104b255d1c00ee7b486134f07e3344f92597d6e3c653a6fa52b1e2b",
+      "bytes": 81400
+    },
+    "assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/initial_state.motion3.json": {
+      "sha256": "ca9968e1e41b5dfc16e65edc55b431d7e19af8327fada30cd926c3855bca9306",
+      "bytes": 30959
+    },
+    "assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/initial_state.motion3.json.uid": {
+      "sha256": "91f6f363e41cc5269108d663933102243cb4ab21e21f7cdc58d0f9df9092466d",
+      "bytes": 19
+    },
+    "assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/model.model3.json": {
+      "sha256": "db4b70146d0b49f04744b1c103c4d44e13be0665974f377c62f6d67a5adb39a2",
+      "bytes": 834
+    },
+    "assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/workshop.profile.json": {
+      "sha256": "faca9c1d9b69c87e663994418dd25761643a1883396514628ed5b6ce3133d268",
+      "bytes": 80468
+    },
+    "assets/characters/mdrg_study/instances/shower__714017f09d7b7c24_17054_b41a51ab64a0/initial_state.motion3.json": {
+      "sha256": "1d556cb61b494a8ec2d91bdcc367458c090d136d5298aff83fbb33f0bf75342c",
+      "bytes": 24084
+    },
+    "assets/characters/mdrg_study/instances/shower__714017f09d7b7c24_17054_b41a51ab64a0/initial_state.motion3.json.uid": {
+      "sha256": "8902e7169670c235f09ea63603513cd24f59253a2407d001ef7a0f91c1972615",
+      "bytes": 19
+    },
+    "assets/characters/mdrg_study/instances/shower__714017f09d7b7c24_17054_b41a51ab64a0/model.model3.json": {
+      "sha256": "8cd7310011e27003463b314ed04a86fabc3a6e14ce76fe3d41966bb085d4fd65",
+      "bytes": 838
+    },
+    "assets/characters/mdrg_study/instances/shower__714017f09d7b7c24_17054_b41a51ab64a0/workshop.profile.json": {
+      "sha256": "3675a21bfadf7dc0679218be18c615a341d4c008fe80c76929612bfc5aa162a3",
+      "bytes": 78994
+    },
+    "assets/characters/mdrg_study/interaction_profile.json": {
+      "sha256": "7528833dfbc1bdd7c4012e67247ca81f292f59cadab7a18e73306ef835c0de5e",
+      "bytes": 64793
+    },
+    "assets/characters/mdrg_study/runtime/live2d_actor.gd": {
+      "sha256": "73dd3c82c2de9bc143a461358a0524686be92465ab803c21e86ef6a20e1e2701",
+      "bytes": 15875
+    },
+    "assets/characters/mdrg_study/runtime/live2d_actor.gd.uid": {
+      "sha256": "bfc46db0882f1d18a59fe51d6806f75983a8c418635976c9f1a8125719775296",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/runtime/live2d_browser.gd": {
+      "sha256": "ffb77082718042bb28e718a6c2078cb9d16e485d3bf263cf312be43a7e700d87",
+      "bytes": 31321
+    },
+    "assets/characters/mdrg_study/runtime/live2d_browser.gd.uid": {
+      "sha256": "d1eeea74d0ba327fc90f484b44fcd9ac49e12220909d568d3cf066a28fcbbad9",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/runtime/live2d_pointer.gd": {
+      "sha256": "1d572244abba1b310d1a33525af58fb2bb13e09e8f961677be02841b39576697",
+      "bytes": 15379
+    },
+    "assets/characters/mdrg_study/runtime/live2d_pointer.gd.uid": {
+      "sha256": "932c7549e5c49eefe052a96fe1203965565a885603fe2b8c4ffd61ba20516925",
+      "bytes": 20
+    },
+    "assets/characters/mdrg_study/scenes/BlowJob_Scene__714017f09d7b7c24_20234_838d9c7a1468.tscn": {
+      "sha256": "d7e2b02809d7f20c83d2e2595c301b3df5aedb8482f4c3fc3b3ca62cf44e9abf",
+      "bytes": 335
+    },
+    "assets/characters/mdrg_study/scenes/bot_doggy__714017f09d7b7c24_20179_b0512c5142e0.tscn": {
+      "sha256": "b050dc30af26a20a384397be9bcea8ff4afdc25881b670c6b69f34f2e132b212",
+      "bytes": 331
+    },
+    "assets/characters/mdrg_study/scenes/bot_missionary__714017f09d7b7c24_21362_971d44710234.tscn": {
+      "sha256": "59011bd567b288116392f1a77fc755f6e1b798ad274a1fcfed07b0e43f015ed7",
+      "bytes": 336
+    },
+    "assets/characters/mdrg_study/scenes/browser.tscn": {
+      "sha256": "05f3b60adebac230ba7e6696abd128bf2140cfb9f8d394f42cd3e848ee515fc7",
+      "bytes": 386
+    },
+    "assets/characters/mdrg_study/scenes/cowgirl__714017f09d7b7c24_20668_55229fc547b8.tscn": {
+      "sha256": "0e5ad0989f3012037ed633b4934da2dbd0166cce421e173d34ec66f1c985f0d3",
+      "bytes": 329
+    },
+    "assets/characters/mdrg_study/scenes/interaction_model__714017f09d7b7c24_21238_87279d912cf8.tscn": {
+      "sha256": "00fe6437fb046b8265e93b32df1b604e06715d5f93b3c4f180eb8b54748d6dc8",
+      "bytes": 339
+    },
+    "assets/characters/mdrg_study/scenes/shower__714017f09d7b7c24_17054_b41a51ab64a0.tscn": {
+      "sha256": "2260c44731e98ffc040e96977164af792993c5f1391c457a62a5fb8397d0e1d6",
+      "bytes": 328
+    }
+  },
+  "native_required_files": {
+    "addons/gd_cubism/CUBISM_CORE_LICENSE.md": {
+      "sha256": "b81e37048010ef1d336106151201a0323c3309cae44aecdedf57831fe88fa991",
+      "bytes": 520
+    },
+    "addons/gd_cubism/CUBISM_FRAMEWORK_LICENSE.md": {
+      "sha256": "b367cb8009a392894796baac33dc43e4918462f457574b4a81ceb7bbf7c86803",
+      "bytes": 2254
+    },
+    "addons/gd_cubism/CUBISM_SDK_LICENSE.md": {
+      "sha256": "3b1b519272fa30fe0fbce44c5fe490655a950689feeca9d015e92b753c18f8ed",
+      "bytes": 3036
+    },
+    "addons/gd_cubism/CUBISM_SDK_NOTICE.md": {
+      "sha256": "13cbcb1d8d9e9d011b115894e5a13d8773b6b79f648b9bf30f02aef82caa5595",
+      "bytes": 4239
+    },
+    "addons/gd_cubism/LICENSE.adoc": {
+      "sha256": "21189174d5465d3f92b608f85733d964209401b70a4b8a05c16eb69a7301979d",
+      "bytes": 3558
+    },
+    "addons/gd_cubism/LICENSE.en.adoc": {
+      "sha256": "94ad86502760b4e5e7e8381b9ceb6fdc2b29ccf7db026e9442f233fc287c9411",
+      "bytes": 3554
+    },
+    "addons/gd_cubism/bin/.gitignore": {
+      "sha256": "6993f6f4744cef03fe613431ee758f0356e56d93cd1d1196139a5f41f8b37ac7",
+      "bytes": 111
+    },
+    "addons/gd_cubism/bin/build-macos.json": {
+      "sha256": "f2aa61171d442d90297b4ecb7b571cd20752c6e473b75924c95966d1f3ef9ac0",
+      "bytes": 356
+    },
+    "addons/gd_cubism/bin/build-windows.json": {
+      "sha256": "6eabbd460d7510e321a86a6f461148bdae5326e8f7f5effef0099650a567af46",
+      "bytes": 370
+    },
+    "addons/gd_cubism/bin/libgd_cubism.macos.universal.dylib": {
+      "sha256": "38eb97344e4e48787b07b1d3e0b0d1b01710e1460360d641bc56b4bb0ce35a52",
+      "bytes": 1605776
+    },
+    "addons/gd_cubism/bin/sdk5/Live2DCubismCore.dll": {
+      "sha256": "ba94f85875baa408d85e0deafc0e6c3dd5ba1792842f608738a127c35c7f157b",
+      "bytes": 239240
+    },
+    "addons/gd_cubism/bin/sdk5/libgd_cubism.windows.x86_64.dll": {
+      "sha256": "a3550d51d04926e443c55b39a2759e266be8c4102cddafc5d15dfef81ddf485f",
+      "bytes": 2349056
+    },
+    "addons/gd_cubism/gd_cubism.gdextension": {
+      "sha256": "df777dc9e98c1e8ec2bfa2fdbc0ce22937016023a4155305aa5a1603d0903015",
+      "bytes": 291
+    },
+    "addons/gd_cubism/gd_cubism.gdextension.uid": {
+      "sha256": "b5fbbfd7c2c6a317f97cc5e4abaf0939fbd6eaebfb3c7e730ed935b9f77200b8",
+      "bytes": 20
+    },
+    "addons/gd_cubism/provenance.json": {
+      "sha256": "2ffbc2894afce45871aeaff5871d330d638c6939c95148e92b8d8a3b293ad01d",
+      "bytes": 1453
+    }
+  },
+  "counts": {
+    "browser_and_shader_files_with_sidecars": 114,
+    "browser_and_shader_bytes_with_sidecars": 53350267,
+    "native_and_license_files": 15,
+    "total_unique_files": 129,
+    "total_bytes": 57564101
+  },
+  "root_final_overrides": {
+    "assets/characters/mdrg_study/runtime/live2d_browser.gd": {
+      "prepared": {
+        "sha256": "99dbf0d3856ac877f5267ad8a95894f01dd1c0426b8642baf08f3215f540a5fb",
+        "bytes": 30995
+      },
+      "accepted_current": {
+        "sha256": "ffb77082718042bb28e718a6c2078cb9d16e485d3bf263cf312be43a7e700d87",
+        "bytes": 31321
+      },
+      "reason": "Keep caller-owned closed signal, Close/Esc and actual retained catalog path."
+    }
+  },
+  "builtin_to_retained": [
+    {
+      "id": "interaction_model",
+      "old_model3": "res://assets/characters/mdrg_study/interaction_model/interaction_model.model3.json",
+      "retained_model3": "res://assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/model.model3.json",
+      "old_moc_sha256": "0c8691d1c0f4b8f43ca0060ab35139a114828b987783af4301aae09f865d066a",
+      "retained_moc_sha256": "0c8691d1c0f4b8f43ca0060ab35139a114828b987783af4301aae09f865d066a",
+      "same_moc": true
+    },
+    {
+      "id": "blowjob_scene",
+      "old_model3": "res://assets/characters/mdrg_study/blowjob_scene/blowjob_scene.model3.json",
+      "retained_model3": "res://assets/characters/mdrg_study/instances/BlowJob_Scene__714017f09d7b7c24_20234_838d9c7a1468/model.model3.json",
+      "old_moc_sha256": "0c54bee3e174cf349df8f4737cc73c0a7a753b7dbafd1ff8fa5e3a54fdce108b",
+      "retained_moc_sha256": "0c54bee3e174cf349df8f4737cc73c0a7a753b7dbafd1ff8fa5e3a54fdce108b",
+      "same_moc": true
+    },
+    {
+      "id": "bot_doggy",
+      "old_model3": "res://assets/characters/mdrg_study/bot_doggy/bot_doggy.model3.json",
+      "retained_model3": "res://assets/characters/mdrg_study/instances/bot_doggy__714017f09d7b7c24_20179_b0512c5142e0/model.model3.json",
+      "old_moc_sha256": "9ef366874517afd07c083cf8964098ef15fab5886ce6afc16c5b164257bf8973",
+      "retained_moc_sha256": "9ef366874517afd07c083cf8964098ef15fab5886ce6afc16c5b164257bf8973",
+      "same_moc": true
+    },
+    {
+      "id": "bot_missionary",
+      "old_model3": "res://assets/characters/mdrg_study/bot_missionary/bot_missionary.model3.json",
+      "retained_model3": "res://assets/characters/mdrg_study/instances/bot_missionary__714017f09d7b7c24_21362_971d44710234/model.model3.json",
+      "old_moc_sha256": "6ba461bf6de1ab8f5ff11158ba52c7b23520be7f9983ae4aa44203b97ef27757",
+      "retained_moc_sha256": "6ba461bf6de1ab8f5ff11158ba52c7b23520be7f9983ae4aa44203b97ef27757",
+      "same_moc": true
+    },
+    {
+      "id": "cowgirl",
+      "old_model3": "res://assets/characters/mdrg_study/cowgirl/cowgirl.model3.json",
+      "retained_model3": "res://assets/characters/mdrg_study/instances/cowgirl__714017f09d7b7c24_20668_55229fc547b8/model.model3.json",
+      "old_moc_sha256": "f4067d67c1fcba5dacef7d6e8c67a72923f98056f13d7e39768d3523500696b2",
+      "retained_moc_sha256": "f4067d67c1fcba5dacef7d6e8c67a72923f98056f13d7e39768d3523500696b2",
+      "same_moc": true
+    },
+    {
+      "id": "shower",
+      "old_model3": "res://assets/characters/mdrg_study/shower/shower.model3.json",
+      "retained_model3": "res://assets/characters/mdrg_study/instances/shower__714017f09d7b7c24_17054_b41a51ab64a0/model.model3.json",
+      "old_moc_sha256": "6b9259c37c494a1f444a1953179230205a5d30ad0be1129e1f221f0434a07112",
+      "retained_moc_sha256": "6b9259c37c494a1f444a1953179230205a5d30ad0be1129e1f221f0434a07112",
+      "same_moc": true
+    }
+  ],
+  "required_patches": [
+    {
+      "path": "data/characters/study_catalog.json",
+      "preimage_sha256": "6340a2ff83a52831b2e507a3678bb8a509ec0566eb18a56d12ee9b2ad0b474ff",
+      "after_sha256": "790f568392c75336f7eadd6c8d18676834f26f0d551e7fee5bbb6c4c8c55cf9e"
+    },
+    {
+      "path": "data/characters/conversation_reactions.json",
+      "preimage_sha256": "2d679ddb83e082429a4fc61f808202b782ee4bfc16ac025d02f8401a09e9b8b2",
+      "after_sha256": "52da41887be563d1211dca7d539fa5ca3f0560c039f21f5cc7d19e1b7366be34"
+    },
+    {
+      "path": "scripts/characters/puppet_view.gd",
+      "preimage_sha256": "72d57861d98aeff4cd242f16321e67b91e9e058ce64cf63be68769062ad592be",
+      "after_sha256": "277b021ed3ae17f7672e870dd81ce9498b93b9d584b2d58e38079c3f12e9a255"
+    }
+  ],
+  "removal": {
+    "raw_archive_prefix": "assets/characters/mdrg_study/archive/",
+    "archive_needed_by_browser": false,
+    "legacy_builtin_prefixes_after_required_patches": [
+      "assets/characters/mdrg_study/interaction_model/",
+      "assets/characters/mdrg_study/blowjob_scene/",
+      "assets/characters/mdrg_study/bot_doggy/",
+      "assets/characters/mdrg_study/bot_missionary/",
+      "assets/characters/mdrg_study/cowgirl/",
+      "assets/characters/mdrg_study/shower/"
+    ],
+    "known_unavailable_lfs_object": {
+      "path": "assets/characters/mdrg_study/archive/unity/objects/0d211999bfd2a8d5_1259.json",
+      "oid_sha256": "7a451797109a400e857aac9ac569cabcaa1a05d2907cbe58df72073913e98c80",
+      "bytes": 114485752,
+      "body_inspected": false,
+      "needed_by_browser_or_pack_manifest": false,
+      "claims_lossless_archive_equivalence": false
+    },
+    "excluded_native_paths": [
+      "addons/gd_cubism/bin/Live2DCubismCore.dll",
+      "addons/gd_cubism/bin/libgd_cubism.windows.x86_64.dll",
+      "addons/gd_cubism/bin/libgd_cubism.windows.debug.x86_64.dll"
+    ]
+  },
+  "verification": {
+    "mode": "Isolated Windows headless, Dummy audio; no export or native build.",
+    "result": {
+      "actor_active_zones": 0,
+      "actor_physics_output_ids": 0,
+      "class_registered": true,
+      "core_version": {
+        "major": 5,
+        "minor": 0,
+        "patch": 0,
+        "version": 83886080
+      },
+      "engine": "4.7.2-stable (official)",
+      "failed": 0,
+      "failures": [],
+      "load_errors": [],
+      "load_return_type": 1,
+      "meshes": 257,
+      "moc_version": 5,
+      "model_path": "res://assets/characters/mdrg_study/instances/interaction_model__714017f09d7b7c24_21238_87279d912cf8/model.model3.json",
+      "mouth_during_speech": 0.126183892972813,
+      "native_api": {
+        "advance": true,
+        "csm_get_moc_version": true,
+        "csm_get_version": true,
+        "get_canvas_info": true,
+        "get_meshes": true,
+        "get_parameters": true,
+        "get_part_opacities": true,
+        "is_initialized": true,
+        "set_assets": true,
+        "set_parameter_mode": true,
+        "set_process_callback": true
+      },
+      "parameters": 106,
+      "passed": 13
+    },
+    "log_sha256": "6eada27d3781ae1c86e91bcac7995f25a40a2795fbce31218687bac3dcaeb3ca",
+    "probe_sha256": "5701efd8680c8fedfbb80e5e38ea04cfe989d0a9b9eee4917e2bdb2aa2540f34",
+    "harness_extension_sha256": "df777dc9e98c1e8ec2bfa2fdbc0ce22937016023a4155305aa5a1603d0903015",
+    "harness_contains_archive": false,
+    "harness_contains_legacy_builtin_models": false,
+    "harness_contains_root_bin_core_dll": false,
+    "windows_renderer_pe": "AMD64; Windows/UCRT and Live2DCubismCore.dll imports; no MinGW runtime imports.",
+    "windows_core_pe": "AMD64; KERNEL32.dll import.",
+    "macos_binary": "Fat Mach-O x86_64 + arm64; hashed and header-inspected only, not executed.",
+    "limits": [
+      "One ordinary clothed conversation actor tested.",
+      "Not a whole-game smoke.",
+      "No macOS execution.",
+      "Export helper audited statically; no EXE/PCK export in closing stage."
+    ]
+  },
+  "notes": [
+    "All paths are repository-relative; no external research folders are needed at runtime.",
+    "Hashes describe this audit. Future intentional source edits require a new audit, not old-file fallback.",
+    "Keep existing .import/.uid sidecars. Generated .godot caches are not package sources.",
+    "Conversation reactions deliberately retain their own clothed profile, without imported Unity snapshot override.",
+    "The browser graph and all 63 raw-export entries are archive-free."
+  ],
+  "canonical_runtime_inventory": {
+    "path": "tools/manifests/browser_resources.json",
+    "sha256": "aac8fbb1e22347ace00506c733bc7b5b9fbbaf387e614323e6c209e1e905c246",
+    "files": 129,
+    "notes": "Standalone packager uses this integrator-owned repo manifest. This closing JSON records audit/removal evidence only."
+  },
+  "standalone_packager": {
+    "schema": 1,
+    "path": "tools/build_live2d_study.py",
+    "prepared_preimage_sha256": "5faa18278ac4060a99146ad23e974923ea577042f085160953e86c2ed271337b",
+    "original_exists": false,
+    "original_preimage_sha256": null,
+    "after_sha256": "7c351a0e8ce4182c7ba55c6d37a942ba5f78f91873254c3ca2133d73d2fcb7f9",
+    "canonical_resource_manifest": "tools/manifests/browser_resources.json",
+    "resource_manifest_sha256": "aac8fbb1e22347ace00506c733bc7b5b9fbbaf387e614323e6c209e1e905c246",
+    "resource_manifest_files": 129,
+    "all_current_resource_hashes_match": true,
+    "checked": "Python syntax and source/model/native/launcher composition only; no build/download/engine execution",
+    "removed_cli": [
+      "--model",
+      "--windows"
+    ],
+    "new_cli": [
+      "--platform windows|macos|both",
+      "--windows-runtime DIRECTORY",
+      "--macos-runtime Godot.app",
+      "--check"
+    ],
+    "composition": {
+      "syntax": "ok",
+      "runs_no_engine": true,
+      "plans": {
+        "windows": {
+          "engine": "4.7.2",
+          "files": 127,
+          "bytes": 55957969,
+          "archive": false,
+          "old_workshop": false,
+          "sdk5_windows": true
+        },
+        "macos": {
+          "engine": "4.7.2",
+          "files": 126,
+          "bytes": 54975435,
+          "archive": false,
+          "old_workshop": false,
+          "sdk5_windows": false
+        },
+        "both": {
+          "engine": "4.7.2",
+          "files": 129,
+          "bytes": 57564101,
+          "archive": false,
+          "old_workshop": false,
+          "sdk5_windows": true
+        }
+      },
+      "launcher_audio_commands_checked": 4
+    },
+    "application": {
+      "status": "applied_by_integrator",
+      "path": "tools/build_live2d_study.py",
+      "sha256": "7c351a0e8ce4182c7ba55c6d37a942ba5f78f91873254c3ca2133d73d2fcb7f9",
+      "resource_manifest_guard_accepted": true,
+      "composition_evidence_accepted": true,
+      "post_application_build_or_run": false
+    }
+  },
+  "export_support_scope": "Historical frozen-snapshot evidence only. Obsolete raw-export plugin is excluded from the applied project and current inventory.",
+  "required_patches_applied_by_integrator_postimages_verified": true,
+  "historical_frozen_export_support": {
+    "excluded_by_integrator": true,
+    "reason": "Obsolete raw-export plugin excluded during cleanup; not a current dependency or standalone package input.",
+    "files": {
+      "addons/mdrg_study_export/plugin.cfg": {
+        "sha256": "fe89eb0004037f7d4601bd06fc041b14f94ae839e08ee7e35c2b903291bec40b",
+        "bytes": 166
+      },
+      "addons/mdrg_study_export/plugin.gd": {
+        "sha256": "bd443303f140bfed73852c8a1e8cc391396471f6ba37c130e11ec90d34ffc9f9",
+        "bytes": 290
+      },
+      "addons/mdrg_study_export/plugin.gd.uid": {
+        "sha256": "34b42b7c554e7867813b12da901035c468e8ba9fd54110498d9bb10dc9cbdbf7",
+        "bytes": 20
+      },
+      "addons/mdrg_study_export/raw_export.gd": {
+        "sha256": "6ea499d8b00d98bfb9b103a46fbdc0a1d4d867d2816f322a201bc1717e0f52cc",
+        "bytes": 1139
+      },
+      "addons/mdrg_study_export/raw_export.gd.uid": {
+        "sha256": "c3e935f007bfde62483946c2faa7684b244332d1cd8aab321950f9fa12955a86",
+        "bytes": 20
+      },
+      "assets/characters/mdrg_study/pack_files.json": {
+        "sha256": "84fc254a1b1bf0d8afeed770588d1aa4d62ff52f23258af67188fe282e7b655e",
+        "bytes": 7404
+      }
+    },
+    "raw_export_manifest_resources_statically_audited": 63
+  },
+  "final_integration": {
+    "renderer": "GL Compatibility",
+    "obsolete_raw_export_plugin": "excluded_by_integrator",
+    "legacy_editor_and_raw_archive": "excluded_by_integrator",
+    "final_step": "Report update only; no new engine runs, builds, downloads or runtime changes.",
+    "status": "idle"
+  }
+}

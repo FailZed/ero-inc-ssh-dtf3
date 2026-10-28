@@ -1,0 +1,62 @@
+{
+  "status": "complete_original_code_data_ready_idle",
+  "completed_utc": "2026-10-28T19:29:06.593627+00:00",
+  "original": "E:\\GoDot\\ero-inc",
+  "staging_project": "E:\\GoDot\\.research\\agent-coordination\\final-integration\\project",
+  "main_schema": 14,
+  "actual_source_main_sha256": "b6055b6d6732c561787074f6903d2b917d4cab2303187cbec50b058b91a407a3",
+  "frozen_plan_sha256": "3baf0e520f7fec3a0a02916867519ca511956c3d1d104de16b6d79c50898d4ab",
+  "final_events_packet_sha256": "cf222c8c65b3d72f1cbd2957244a2d384912cc4f71f3542bb4f11e815ecda965",
+  "accepted_packets": [
+    "closing-health",
+    "closing-ui",
+    "closing-careers",
+    "Residents/Education validation retained",
+    "school-combat",
+    "two-events revision2",
+    "closing-live2d",
+    "portable events test routing",
+    "new browser caller plus remote load-error"
+  ],
+  "source_transfer": {
+    "files": 107,
+    "backup": "original-code-backup-final",
+    "guards": "all preimages/postimages matched",
+    "additional_scoped_files": [
+      "tools/test_mechanics.ps1",
+      "scripts/ui/main_menu.gd"
+    ],
+    "old_workshop_restored": false
+  },
+  "checks": {
+    "integrated_domain": {
+      "checks": 89,
+      "failed": 0
+    },
+    "integrated_events_v2": {
+      "checks": 112,
+      "failed": 0
+    },
+    "integrated_school_main": {
+      "checks": 15,
+      "failed": 0
+    },
+    "actual_source_health": {
+      "checks": 155,
+      "failed": 0,
+      "source_hashes": 306
+    },
+    "main_menu_isolated_parser": {
+      "passed": true,
+      "runtime_started": false
+    }
+  },
+  "source_resources": "root-owned ASSET_READY retained114/53349941bytes + canonical Windows SDK5; no resource writes by integrator",
+  "git_performed_by_integrator": false,
+  "user_saves_modified": false,
+  "native_windows_opened_by_integrator": false,
+  "mass_suites_run": false,
+  "next_action_owner": "root; preserve remote history and perform Git; no new executor tasks tonight",
+  "repo_handoff": "docs/gameplay/FINAL_INTEGRATION_HANDOFF.md",
+  "repo_evidence": "docs/gameplay/verification/final-integration-2026-10-28"
+}

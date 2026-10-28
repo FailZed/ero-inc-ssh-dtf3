@@ -1,7 +1,6 @@
 extends "res://scripts/mechanics/core/module.gd"
 ## Abstract game checks only. No network, commands, files or real exploit techniques.
 const CHECK = preload("res://scripts/mechanics/core/validation.gd")
-const HOME := ["bedroom", "kitchen", "bathroom", "apartment_hall"]
 
 static func defaults() -> Dictionary:
 	return {"serial":0, "pending":{}, "cooldowns":{}, "trace":0.0, "history":[], "leads":[]}
@@ -22,7 +21,7 @@ func blocked(id: String) -> String:
 	var spec := definition("digital_operations", id)
 	if spec.is_empty(): return "unknown_digital_operation"
 	if not "computer" in sim.state.world.equipment: return "missing_equipment"
-	if not str(sim.state.world.location) in HOME: return "home_workspace_required"
+	if not sim.is_player_home_location(str(sim.state.world.location)): return "home_workspace_required"
 	if float(spec.risk) > 0 and "crime" in sim.state.preferences.disabled_tags: return "content_disabled"
 	if int(sim.state.player.skills.get("computing", 0)) < int(spec.level): return "digital_skill_required"
 	if int(sim.state.digital.cooldowns.get(id, 0)) > int(sim.state.clock.total_minutes): return "digital_cooldown"

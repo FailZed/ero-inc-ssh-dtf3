@@ -44,6 +44,9 @@ func pool(reply: Dictionary, prefix: String) -> bool:
 	return false
 
 func run() -> void:
+	preload("res://tests/mechanics/conversation_options.gd").new(t).run()
+	preload("res://tests/mechanics/conversation_conflict.gd").new(t).run()
+	preload("res://tests/mechanics/post_conflict_dialogue.gd").new(t,world).run()
 	context_and_voice()
 	causal_memory_and_repair()
 	branching_and_costs()

@@ -10,12 +10,30 @@ static func restore_focus(target: WeakRef) -> void:
 	var control = target.get_ref()
 	if is_instance_valid(control) and control.is_inside_tree() and control.is_visible_in_tree() and not control.is_queued_for_deletion(): control.grab_focus()
 
-static func surface(padding: int = 24) -> StyleBoxTexture:
-	var result := StyleBoxTexture.new()
-	result.texture = preload("res://assets/textures/ui/windows-v2/window_surface.png")
-	for side in [SIDE_LEFT,SIDE_TOP,SIDE_RIGHT,SIDE_BOTTOM]: result.set_texture_margin(side,24)
+static func focus_loop(root: Control) -> void:
+	# Keep Tab and directional navigation inside the active window.
+	var controls: Array[Control] = []
+	for node in root.find_children("*","Control",true,false):
+		if node.focus_mode == Control.FOCUS_ALL and node.is_visible_in_tree() and not node.is_queued_for_deletion() and not (node is BaseButton and node.disabled): controls.append(node)
+	for index in range(controls.size()):
+		var source := controls[index]
+		source.focus_next = source.get_path_to(controls[(index+1)%controls.size()])
+		source.focus_previous = source.get_path_to(controls[(index+controls.size()-1)%controls.size()])
+		for direction in [Vector2.LEFT,Vector2.UP,Vector2.RIGHT,Vector2.DOWN]:
+			var closest: Control = source
+			var best := INF
+			for candidate in controls:
+				var delta := candidate.get_global_rect().get_center()-source.get_global_rect().get_center()
+				var forward := delta.dot(direction)
+				if forward <= 1: continue
+				var distance := forward+absf(delta.cross(direction))*3.0
+				if distance < best: best = distance; closest = candidate
+			source.set("focus_neighbor_"+{Vector2.LEFT:"left",Vector2.UP:"top",Vector2.RIGHT:"right",Vector2.DOWN:"bottom"}[direction],source.get_path_to(closest))
+
+static func surface(padding: int = 24) -> StyleBoxFlat:
+	var result := style(Color(0.012,0.025,0.036,0.92),Color(0.40,0.59,0.70,0.4))
+	result.set_border_width_all(1)
 	result.set_content_margin_all(padding)
-	result.modulate_color = Color(0.50,0.64,0.82,0.97)
 	return result
 
 static func set_text_scale(value: float) -> void:
@@ -46,6 +64,7 @@ static func skin() -> Theme:
 		var config := ConfigFile.new()
 		if config.load("user://interface.cfg") == OK: text_scale = clampf(float(config.get_value("interface", "text_scale", 1.0)), 0.9, 1.25)
 	var result := Theme.new()
+	result.default_font = preload("res://assets/fonts/pt-serif/PT_Serif-Web-Regular.ttf")
 	result.default_font_size = roundi(20 * text_scale)
 	for type in ["Label", "Button", "CheckBox", "OptionButton", "LineEdit", "RichTextLabel", "SpinBox"]:
 		result.set_color("font_color", type, INK)

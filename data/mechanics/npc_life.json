@@ -20,7 +20,7 @@
     "practice": {"label": "Развивать навык", "minutes": 60, "destination": "home", "restore": {"fun": 8}, "skill": "study", "xp": 4, "base": 0.12, "traits": {"responsibility": 0.5}, "emotion": "focused"},
     "create": {"label": "Работать над личным проектом", "minutes": 60, "destination": "home", "restore": {"fun": 18}, "skill": "journalism", "xp": 4, "base": 0.10, "traits": {"bravery": 0.2}, "emotion": "inspired"},
     "publish": {"label": "Опубликовать свою работу", "minutes": 60, "destination": "home", "restore": {"fun": 10}, "skill": "journalism", "xp": 2, "requires_skill": {"journalism": 8}, "income": 12, "base": 0.06, "traits": {"bravery": 0.4}, "emotion": "confident"},
-    "work": {"label": "Заработать на свою цель", "minutes": 60, "destination": "global_map", "restore": {}, "skill": "computing", "xp": 2, "income": 12, "roles": ["worker"], "base": 0.08, "traits": {"responsibility": 0.4}, "emotion": "focused"},
+    "work": {"label": "Заработать на свою цель", "minutes": 60, "destination": "global_map", "restore": {}, "roles": ["worker"], "base": 0.08, "traits": {"responsibility": 0.4}, "emotion": "focused"},
     "study": {"label": "Учиться", "minutes": 60, "destination": "training_center", "restore": {}, "skill": "study", "xp": 4, "base": 0.08, "traits": {"responsibility": 0.4}, "emotion": "focused"},
     "connect": {"label": "Пообщаться с человеком", "minutes": 30, "destination": "global_map", "restore": {"social": 35, "fun": 10}, "social": true, "base": 0.04, "traits": {"sociability": 0.6}, "emotion": "happy"},
     "support": {"label": "Поддержать знакомого", "minutes": 30, "destination": "global_map", "restore": {"social": 25}, "social": true, "minimum_trust": 4, "base": 0.03, "traits": {"loyalty": 0.6}, "emotion": "content"},

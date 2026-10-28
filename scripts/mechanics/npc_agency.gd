@@ -1,6 +1,7 @@
 extends "res://scripts/mechanics/core/module.gd"
 ## Original, opt-in life simulation. All durable decisions live in the snapshot.
 const Utility = preload("res://scripts/mechanics/core/utility_ai.gd")
+const Employment = preload("res://scripts/mechanics/npc_employment.gd")
 const FLAG := "npc_agency_enabled"
 var _by_location: Dictionary = {}
 
@@ -72,21 +73,35 @@ func initialize_npc(npc: Dictionary) -> void:
 	if goal == "career" and npc.biography.role != "worker": goal = "mastery"
 	goal = sim.services.npc_personalities.choose_goal(npc, goal)
 	npc.needs.merge({"hygiene": 85.0, "social": 70.0, "fun": 75.0})
-	npc.mind = {"version": 1, "aspiration": _aspiration(goal), "active": {},
+	npc.mind = {"version": 2, "aspiration": _aspiration(goal), "active": {},
 		"updated_at": _now(), "last_progress": _now(), "last_social": -1440,
 		"moodlets": [], "sentiments": {}, "fears": {}, "wants": [], "history": [],
 		"recent_actions": [], "completed_actions": {}, "satisfaction": 0,
 		"want_day": -1, "fulfilled_today": [], "emotion": {"id": "content", "strength": 0.0},
-		"decision": {}, "career_level": 0, "skill_remainders": {}, "income_remainder": 0.0,
+		"decision": {}, "skill_remainders": {}, "income_remainder": 0.0,
 		"completed_at": 0, "aspiration_history": []}
+	Employment.initialize(npc,sim.catalog,int(sim.state.clock.day_index))
 	sim.services.npc_personalities.initialize_mind(npc)
 	_refresh_wants(npc)
+
+func _action_spec(npc: Dictionary, id: String) -> Dictionary:
+	return Employment.action(npc,id,sim.catalog,sim.state.clock)
+
+func action_minutes(npc: Dictionary, id: String) -> int:
+	var duration := int(sim.catalog.agency_actions[id].minutes)
+	if id != "work": return duration
+	return mini(duration,Employment.available_minutes(npc,sim.catalog,sim.state.clock))
+
+func employment_view(id: String) -> Dictionary:
+	var npc: Dictionary = sim.state.social.npcs.get(id,{})
+	return Employment.view(npc,sim.catalog,sim.state.clock) if npc.has("mind") else {}
 
 func inspect(id: String) -> Dictionary:
 	var npc: Dictionary = sim.state.social.npcs.get(id, {})
 	if not npc.has("mind"): return {}
 	_build_index()
 	return {"id": id, "needs": npc.needs.duplicate(true), "mind": npc.mind.duplicate(true),
+		"employment":employment_view(id),"calendar":sim.services.npc_planner.calendar.windows(id),"obligation":sim.services.npc_planner.active_owner(id),
 		"personality": sim.services.npc_personalities.describe(npc),
 		"plan": _agenda(npc), "candidates": evaluate(npc), "location": npc.location, "activity": npc.activity}
 
@@ -152,10 +167,6 @@ func tick(minute: int) -> void:
 		elif not active.is_empty() and not schedule.is_empty() and active.action != schedule.activity:
 			_cancel(npc, "schedule")
 		active = npc.mind.active
-	_build_index()
-	for id in ids:
-		var npc: Dictionary = sim.state.social.npcs[id]
-		if npc.mind.active.is_empty() and int(npc.pinned_until) <= minute: _choose(npc)
 
 func _age(npc: Dictionary, minute: int) -> void:
 	var mind: Dictionary = npc.mind
@@ -255,7 +266,7 @@ func _log(npc: Dictionary, kind: String, data: Dictionary) -> void:
 	npc.mind.history.append(record)
 	while npc.mind.history.size() > int(rules().history_limit): npc.mind.history.pop_front()
 	# Routine details remain inspectable per NPC; presenters receive meaningful changes.
-	if not kind in ["intent", "action_completed"]: emit_event("npc_life_" + kind, {"npc": npc.id, "details": data})
+	if not kind in ["intent", "action_completed", "work_paid"]: emit_event("npc_life_" + kind, {"npc": npc.id, "details": data})
 
 func _stage(npc: Dictionary) -> Dictionary:
 	var aspiration: Dictionary = npc.mind.aspiration
@@ -266,7 +277,7 @@ func _agenda(npc: Dictionary) -> Array:
 	var stage := _stage(npc)
 	if stage.is_empty(): return []
 	var action := str(stage.action)
-	var spec := definition("agency_actions", action)
+	var spec := _action_spec(npc,action)
 	var agenda: Array = []
 	for skill in spec.get("requires_skill", {}):
 		if int(npc.skills.get(skill, 0)) < int(spec.requires_skill[skill]):
@@ -308,6 +319,7 @@ func _commitment(npc: Dictionary) -> Dictionary:
 	for entry in npc.schedule:
 		var action := str(entry.get("activity", "rest"))
 		if not bool(entry.get("mandatory", action in ["work", "study"])): continue
+		if action == "work" and not Employment.blocked(npc,sim.catalog,sim.state.clock).is_empty(): continue
 		if not sim.services.world.is_open(entry) or not Rules.check(sim.services.npc_behavior.context(npc), entry.get("requirements", {})): continue
 		var destination := str(entry.get("location", npc.home))
 		if not _location_open(npc, destination): continue
@@ -317,12 +329,13 @@ func _commitment(npc: Dictionary) -> Dictionary:
 func _destination(npc: Dictionary, spec: Dictionary) -> String:
 	return str(npc.home) if spec.destination == "home" else str(spec.destination)
 
-func _location_open(npc: Dictionary, location: String) -> bool:
-	var spec := definition("locations", location)
-	return not spec.is_empty() and sim.services.world.is_open(spec) and Rules.check(sim.services.npc_behavior.context(npc), spec.get("requirements", {}))
+func _location_open(npc: Dictionary, location: String, minute: int = -1, ignore_hours: bool = false, invited_destination: String = "") -> bool:
+	if minute < 0: minute = _now()
+	return sim.services.world.actor_availability(location,str(npc.id),minute,ignore_hours,invited_destination).ok
 
-func _route(npc: Dictionary, start: String, destination: String) -> Dictionary:
+func _route(npc: Dictionary, start: String, destination: String, minute: int = -1, urgent_destination: bool = false, invited_destination: String = "") -> Dictionary:
 	if start == destination: return {"minutes": 0, "cost": 0}
+	if minute<0: minute = _now()
 	# Preserve time/money alternatives: the fastest intermediate path may be unaffordable later.
 	var remaining: Array = [{"node": start, "minutes": 0.0, "cost": 0.0}]
 	var labels := {start: [{"minutes": 0.0, "cost": 0.0}]}
@@ -335,7 +348,9 @@ func _route(npc: Dictionary, start: String, destination: String) -> Dictionary:
 			return {"minutes": maxi(int(rules().travel_minimum), int(ceil(float(current.minutes) / step)) * step), "cost": int(ceil(float(current.cost)))}
 		for next in definition("locations", str(current.node)).get("routes", {}):
 			var edge: Dictionary = definition("locations", str(current.node)).routes[next]
-			if not _location_open(npc, str(next)) or not Rules.check(context, edge.get("requirements", {})): continue
+			var arrival := minute+maxi(int(rules().travel_minimum),ceili((float(current.minutes)+float(edge.get("minutes",0)))/int(rules().decision_minutes))*int(rules().decision_minutes))
+			context.clock = sim.calendar.snapshot(arrival)
+			if not _location_open(npc,str(next),arrival,urgent_destination and next==destination,invited_destination) or not Rules.check(context,edge.get("requirements",{})): continue
 			var price := float(current.cost) + float(edge.get("cost", 0))
 			if price > float(npc.money): continue
 			var duration := float(current.minutes) + float(edge.get("minutes", 0))
@@ -381,6 +396,7 @@ func _partner(npc: Dictionary, action: Dictionary, action_id: String = "") -> St
 		if not action.get("negative_sentiment", false) and sentiment < -35: continue
 		var affinity := float(relation.get("affinity", 0)) + sentiment
 		affinity += sim.services.npc_personalities.partner_bias(npc, other, relation)
+		affinity += _partner_context_bias(npc,other,action_id)
 		if action.get("negative_sentiment", false): affinity = -sentiment
 		if action.get("minimum_trust", 0) > 0: affinity += 100 - float(other.needs.mood)
 		if affinity > best:
@@ -388,12 +404,15 @@ func _partner(npc: Dictionary, action: Dictionary, action_id: String = "") -> St
 			winner = id
 	return winner
 
+func _partner_context_bias(_npc: Dictionary, _other: Dictionary, _action: String) -> float:
+	return 0.0
+
 func evaluate(npc: Dictionary) -> Array:
 	var result: Array = []
 	var agenda := _agenda(npc)
 	var routes := {}
 	for id in sim.catalog.agency_actions:
-		var spec := definition("agency_actions", str(id))
+		var spec := _action_spec(npc,str(id))
 		var destination := _destination(npc, spec)
 		if not routes.has(destination): routes[destination] = _route(npc, str(npc.location), destination)
 		var reason := ""
@@ -409,6 +428,7 @@ func evaluate(npc: Dictionary) -> Array:
 			if float(npc.traits.get(trait_id, 50)) > float(spec.trait_max[trait_id]): reason = "personality"
 		for tag in spec.get("tags", []):
 			if tag in sim.state.preferences.disabled_tags: reason = "content_disabled"
+		if id == "work" and not Employment.blocked(npc,sim.catalog,sim.state.clock).is_empty(): reason = Employment.blocked(npc,sim.catalog,sim.state.clock)
 		var partner := _partner(npc, spec, str(id)) if spec.get("social", false) else ""
 		if spec.get("social", false) and partner.is_empty() and reason.is_empty(): reason = "no_available_partner"
 		var personality_block: String = sim.services.npc_personalities.blocked(npc, str(id), partner)
@@ -433,6 +453,7 @@ func evaluate(npc: Dictionary) -> Array:
 		var archetype: float = sim.services.npc_personalities.bias(npc, str(id))
 		var score := clampf(float(spec.base) + Utility.curve(pressure, "sigmoid") * 0.65 + goal * 0.30 + personality * 0.12 + novelty * 0.04 + feeling + archetype, 0, 1)
 		result.append({"id": id, "score": score, "available": reason.is_empty(), "blocked": reason,
+			"travel_minutes":int(routes[destination].get("minutes",0)),"travel_cost":int(routes[destination].get("cost",0)),
 			"partner": partner, "destination": destination,
 			"reasons": {"need": pressure, "goal": goal, "personality": personality, "archetype": archetype, "novelty": novelty, "emotion": feeling}})
 	return result
@@ -462,7 +483,7 @@ func _choose(npc: Dictionary) -> void:
 		partner = str(choice.get("partner", ""))
 		reason = "aspiration" if float(choice.get("reasons", {}).get("goal", 0)) > 0 else "needs_and_personality"
 	if not sim.catalog.agency_actions.has(activity): activity = "rest"
-	var spec := definition("agency_actions", activity)
+	var spec := _action_spec(npc,activity)
 	if destination.is_empty(): destination = _destination(npc, spec)
 	if not _location_open(npc, destination) or _route(npc, str(npc.location), destination).is_empty():
 		activity = "rest"
@@ -473,16 +494,25 @@ func _choose(npc: Dictionary) -> void:
 	_start(npc, activity, destination, partner, reason)
 
 func _start(npc: Dictionary, action: String, destination: String, partner: String, reason: String) -> void:
+	if action == "work":
+		var job := Employment.profile(npc,sim.catalog)
+		if job.is_empty() or destination != Employment.location(npc,job):
+			npc.decision = {"reason":"wrong_workplace","committed":false}
+			return
 	var route := _route(npc, str(npc.location), destination)
 	if route.is_empty():
 		npc.activity = "rest"
 		npc.decision = {"reason": "unreachable", "committed": false}
 		return
 	var travel := int(route.minutes)
+	if action == "work" and travel == 0 and not Employment.blocked(npc,sim.catalog,sim.state.clock).is_empty():
+		npc.activity = "rest"
+		npc.decision = {"reason":Employment.blocked(npc,sim.catalog,sim.state.clock),"committed":false}
+		return
 	if travel > 0: npc.money -= int(route.cost)
-	var spec := definition("agency_actions", action)
+	var spec := _action_spec(npc,action)
 	var phase := "travel" if travel > 0 else "action"
-	var duration := travel if travel > 0 else int(spec.minutes)
+	var duration := travel if travel > 0 else action_minutes(npc,action)
 	if travel == 0 and reason == "schedule":
 		for entry in npc.schedule:
 			if str(entry.get("activity", "")) != action or not sim.services.world.is_open(entry): continue
@@ -507,6 +537,11 @@ func _start(npc: Dictionary, action: String, destination: String, partner: Strin
 func _cancel(npc: Dictionary, reason: String) -> void:
 	var active: Dictionary = npc.mind.active
 	if active.is_empty(): return
+	if active.get("action","")=="work" and active.get("phase","")=="action" and _now()>int(active.started):
+		var worked: Dictionary = active.duplicate(true)
+		worked.due = mini(_now(),int(active.due))
+		_productive(npc,"work",_action_spec(npc,"work"),worked)
+		_progress(npc,"work",int(worked.due)-int(worked.started))
 	var other: Dictionary = sim.state.social.npcs.get(str(active.get("partner", "")), {})
 	if other.has("mind") and other.mind.active.get("partner", "") == npc.id:
 		other.mind.active = {}
@@ -518,7 +553,7 @@ func _cancel(npc: Dictionary, reason: String) -> void:
 func _finish(npc: Dictionary) -> void:
 	var active: Dictionary = npc.mind.active.duplicate(true)
 	var action := str(active.action)
-	var spec := definition("agency_actions", action)
+	var spec := _action_spec(npc,action)
 	if active.phase == "travel":
 		npc.location = active.destination
 		npc.mind.active = {}
@@ -553,22 +588,7 @@ func _finish(npc: Dictionary) -> void:
 			return
 	for need in spec.restore: npc.needs[need] = clampf(float(npc.needs[need]) + float(spec.restore[need]), 0, 100)
 	var productive_minutes := int(active.due) - int(active.started)
-	var fraction := productive_minutes / float(spec.minutes)
-	if spec.has("skill"):
-		var skill := str(spec.skill)
-		var growth := float(npc.mind.skill_remainders.get(skill, 0)) + int(spec.get("xp", 0)) * fraction
-		npc.skills[skill] = int(npc.skills.get(skill, 0)) + int(floor(growth + 0.000001))
-		npc.mind.skill_remainders[skill] = maxf(0.0, growth - floor(growth + 0.000001))
-	var income := float(npc.mind.income_remainder) + int(spec.get("income", 0)) * fraction
-	npc.money += int(floor(income + 0.000001))
-	npc.mind.income_remainder = maxf(0.0, income - floor(income + 0.000001))
-	if float(npc.money) >= 50: npc.mind.fears.erase("poverty")
-	npc.health = minf(100, float(npc.health) + float(spec.get("health", 0)))
-	if action == "work":
-		var level := mini(10, int(npc.skills.get("computing", 0)) / 20)
-		if level > int(npc.mind.career_level):
-			npc.mind.career_level = level
-			_log(npc, "career_progress", {"level": level})
+	_productive(npc,action,spec,active)
 	npc.mind.completed_actions[action] = int(npc.mind.completed_actions.get(action, 0)) + 1
 	npc.mind.recent_actions.append(action)
 	while npc.mind.recent_actions.size() > 6: npc.mind.recent_actions.pop_front()
@@ -583,6 +603,27 @@ func _finish(npc: Dictionary) -> void:
 	npc.mind.active = {}
 	npc.decision = {"reason": "completed", "committed": false}
 	_log(npc, "action_completed", {"action": action, "minutes": productive_minutes})
+
+func _productive(npc: Dictionary, action: String, spec: Dictionary, active: Dictionary) -> void:
+	var fraction := (int(active.due)-int(active.started)) / float(spec.minutes)
+	var rank_before := Employment.rank(npc,sim.catalog)
+	if spec.has("skill"):
+		var skill := str(spec.skill)
+		var growth := float(npc.mind.skill_remainders.get(skill, 0)) + int(spec.get("xp", 0)) * fraction
+		npc.skills[skill] = int(npc.skills.get(skill, 0)) + int(floor(growth + 0.000001))
+		npc.mind.skill_remainders[skill] = maxf(0.0, growth - floor(growth + 0.000001))
+	var income := float(npc.mind.income_remainder) + float(spec.get("income", 0)) * fraction
+	var paid := int(floor(income + 0.000001))
+	npc.money += paid
+	npc.mind.income_remainder = maxf(0.0, income - floor(income + 0.000001))
+	if float(npc.money) >= 50: npc.mind.fears.erase("poverty")
+	npc.health = minf(100, float(npc.health) + float(spec.get("health", 0)))
+	if action == "work":
+		Employment.settle(npc,active,paid,sim.state.clock)
+		_log(npc,"work_paid",{"job":npc.mind.employment.job,"minutes":int(active.due)-int(active.started),"paid":paid})
+	var rank_after := Employment.rank(npc,sim.catalog)
+	if rank_after > rank_before:
+		_log(npc,"career_progress",{"job":npc.mind.employment.job,"level":rank_after,"skill":Employment.profile(npc,sim.catalog).skill})
 
 func _partner_valid(npc: Dictionary, id: String) -> bool:
 	var other: Dictionary = sim.state.social.npcs.get(id, {})

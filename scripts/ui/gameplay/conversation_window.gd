@@ -22,14 +22,38 @@ var _refresh_pending := false
 var _initiative := ""
 var _rendered_turn := -1
 var _closing := false
+var _live2d_profile := ""
+var _live_stage: Control
+
+func configure_live2d(reaction_profile: String = "res://data/characters/conversation_reactions.json") -> void:
+	_live2d_profile = reaction_profile
 
 func configure(id: String, conversation_mode: String, background: String, initiative: String = "") -> void:
 	npc_id = id
 	mode = conversation_mode
 	background_path = background
 	_initiative = initiative
+	if OS.has_feature("windows"):
+		var bindings: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/characters/conversation_bindings.json"))
+		if bindings is Dictionary:
+			var spec: Dictionary = bindings.get("windows",{}).get(id,{})
+			if conversation_mode in spec.get("channels",[]): _live2d_profile = str(spec.get("reactions",""))
 
 func _ready() -> void:
+	if mode == "free":
+		set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		var settings: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/mechanics/conversation_room.json"))
+		var resident: Dictionary = Gameplay.simulation.state.social.npcs[npc_id]
+		settings.merge({"name":str(resident.name),"age":int(resident.age),"background":background_path,"place":Names.title(str(resident.location)),"reaction_profile":_live2d_profile,"initiative":_initiative},true)
+		var context := preload("res://scripts/mechanics/conversation_session.gd").new(Gameplay.simulation,npc_id,Gameplay.execute)
+		_live_stage = load("res://scripts/ui/characters/conversation_room.gd").new()
+		_live_stage.configure_context(context,settings)
+		_live_stage.closed.connect(_close)
+		_live_stage.details_requested.connect(details_requested.emit)
+		add_child(_live_stage)
+		_live_stage.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		Gameplay.changed.connect(_queue_refresh)
+		return
 	theme = UI.skin()
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	mouse_filter = Control.MOUSE_FILTER_STOP
@@ -103,6 +127,7 @@ func _queue_refresh() -> void:
 func _refresh() -> void:
 	_refresh_pending = false
 	if not is_inside_tree() or _closing: return
+	if is_instance_valid(_live_stage): _live_stage._render(); return
 	if not Gameplay.simulation.state.social.npcs.has(npc_id): _close(); return
 	_actor = Gameplay.simulation.state.social.npcs[npc_id]
 	var previous := get_viewport().gui_get_focus_owner()
@@ -129,8 +154,6 @@ func _refresh() -> void:
 				var button := _choice(caption, _dialogue_choice.bind(str(choice.id), int(dialogue.turn)))
 				button.disabled = not str(choice.blocked).is_empty()
 				button.tooltip_text = Names.error(str(choice.blocked)) if button.disabled else ""
-		if mode == "free" and _actor.location == Gameplay.simulation.state.world.location and not npc_id in Gameplay.simulation.state.social.contacts:
-			_choice("Обменяться контактами", _contact)
 		_choice("Подарки, встречи и отношения…",func(): details_requested.emit(npc_id); _close())
 	_choice("Закрыть переписку" if mode == "message" else "Попрощаться",_close)
 	for button in _options.find_children("*","Button",true,false):
@@ -154,6 +177,7 @@ func _story_topic(topic: String) -> void:
 	else: _say(Names.error(str(result.error)))
 
 func _dialogue_choice(choice: String, turn: int) -> void:
+	if is_instance_valid(_live_stage): _live_stage._choose(choice,turn); return
 	var before := Social.bond(Gameplay.simulation, npc_id)
 	var result := Gameplay.execute("npc_dialogue", "choose", {"id": npc_id, "choice": choice, "turn": turn})
 	if not result.ok: _say(Names.error(str(result.error))); return
@@ -161,23 +185,23 @@ func _dialogue_choice(choice: String, turn: int) -> void:
 	var changes := Social.change_summary(before, Social.bond(Gameplay.simulation, npc_id))
 	if not changes.is_empty(): _text.text += "\n" + changes
 
-func _contact() -> void:
-	var result := Gameplay.execute("social", "contact", {"id": npc_id})
-	if not result.ok: _say(Names.error(str(result.error))); return
-	_say("Вы обменялись контактами. Теперь можно написать или договориться о встрече.")
-
 func _say(text: String) -> void:
 	_text.text = text
 	_text.scroll_to_line(0)
 
 func _close() -> void:
 	if _closing: return
+	if is_instance_valid(_live_stage) and _live_stage.session.combat_active():
+		_live_stage._close()
+		return
 	_closing = true
-	if mode != "story" and Gameplay.simulation.state.social.npcs.has(npc_id): Gameplay.execute("npc_dialogue", "close", {"id": npc_id})
+	if is_instance_valid(_live_stage): _live_stage.session.close(); _live_stage._cancel_speech()
+	if not is_instance_valid(_live_stage) and mode != "story" and Gameplay.simulation.state.social.npcs.has(npc_id): Gameplay.execute("npc_dialogue", "close", {"id": npc_id})
 	closed.emit()
 	queue_free()
 
 func _unhandled_input(event: InputEvent) -> void:
+	if is_instance_valid(_live_stage): return
 	if event.is_action_pressed("ui_cancel"):
 		get_viewport().set_input_as_handled()
 		_close()

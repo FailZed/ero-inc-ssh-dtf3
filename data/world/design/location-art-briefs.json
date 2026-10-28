@@ -1,0 +1,968 @@
+{
+  "schema": "eroinc_location_art_briefs_1",
+  "status": "briefs_only_no_images_generated",
+  "date": "2026-10-28",
+  "owner": "world_places",
+  "source_boundary": "Локальные TimeLine, STORY_LOCKS и согласование с world_geography. Выходы сверены с подготовленным полным city-graph.json. Новые формы, материалы и размеры — предложения, не факты непрочитанного Google Doc.",
+  "scope": "Ровно 4 вида с уровня улицы и отдельная разметка 16 объектов; не приближение обзорной карты.",
+  "technical_frame": {
+    "engine": "Godot 4.7.2",
+    "rendering": "Рисованные двухмерные фоны окружения; без новой реализации камеры или runtime",
+    "master_size_px": [
+      2560,
+      1440
+    ],
+    "aspect_ratio": "16:9",
+    "reference_viewport_px": [
+      1920,
+      1080
+    ],
+    "coordinate_space": "UV исходного полного изображения, начало сверху слева; rect_uv=[x,y,width,height]",
+    "important_content_safe_rect_uv": [
+      0.035,
+      0.18,
+      0.91,
+      0.62
+    ],
+    "crop_note": "Центрированный cover на 16:9 и 21:9 должен сохранять предметные области. Фактическое расположение под UI проверяется при интеграции. UV принадлежат исходному изображению, а не всему viewport.",
+    "low_detail_ui_bands": [
+      {
+        "rect_uv": [
+          0,
+          0,
+          1,
+          0.18
+        ],
+        "role": "Верхняя полоса под HUD; без важных интерактивных деталей"
+      },
+      {
+        "rect_uv": [
+          0,
+          0.82,
+          1,
+          0.18
+        ],
+        "role": "Нижняя полоса под возможную панель; спокойный передний план"
+      }
+    ],
+    "pixel_format": "Полные чистые фоны PNG RGB/sRGB; отдельные маски и состояния RGBA. Редактируемый KRA/PSD-мастер.",
+    "alpha_policy": "Чистый полный фон непрозрачен; прозрачность только у отдельного локального слоя",
+    "filtering_proposal": "Линейная фильтрация живописного фона; финальные импорт/сжатие утверждать при подключении, сейчас не менялись",
+    "file_naming": "{location_id}_{day_dry|night_dry|day_rain|night_rain}_clean.png",
+    "painted_text": "В чистом источнике нет букв, цен, стрелок, логотипов, UI, водяных знаков и имён NPC; поля под надписи читаются силуэтом."
+  },
+  "visual_system": {
+    "direction": "Сдержанная рисованная ночная среда EroInc; пространственные массы и материалы, не фотоколлаж/изометрический макет",
+    "palette_roles": {
+      "night_structure": "#101c2b",
+      "steel_midtones": "#4e6880",
+      "pale_readable_surfaces": "#dce0dd",
+      "restrained_warm_light": "#c6864b",
+      "muted_brick": "#6f4d49",
+      "wet_ground": "#394c5c",
+      "quiet_foliage": "#344c46"
+    },
+    "day_note": "День естественно светлый и матовый; ночной синий не накладывается одинаковым фильтром на все состояния.",
+    "shape_language": "Простые прямые архитектурные линии, умеренно неровный старый камень и мягкие массы листвы; без панелей UI внутри мира.",
+    "edges": "Чётче у дверей и опорных предметов, мягче вдали; без толстого комиксного контура.",
+    "detail_density": "Узнаваемый средний план и спокойное пространство для NPC; без повторяющихся мелких вывесок на каждой стене.",
+    "scale": "Обычная городская среда для людей и антро; разумные различия мебели без карикатурного гигантизма.",
+    "lighting": "Один понятный световой рисунок на вариант; окна и фонари локальны, мокрые блики не выжигают предметы."
+  },
+  "inspected_references": [
+    {
+      "path": "assets/textures/backgrounds/location_pack_v1/home_street_dusk.png",
+      "size_px": [
+        1672,
+        941
+      ],
+      "inspection": "Визуально просмотрен 28 октября 2026",
+      "use": "Ночная палитра, матовые фасады, локальные тёплые окна и влажная улица",
+      "restriction": "Многоэтажный фасад на этом ориентире нельзя использовать как одноэтажный дом героя"
+    },
+    {
+      "path": "assets/textures/world/city-river-v2/city-clean-v2.png",
+      "size_px": [
+        1536,
+        1024
+      ],
+      "inspection": "Визуально просмотрен 28 октября 2026",
+      "use": "Только общее отношение берегов, реки и двух мостов, цветовая семья",
+      "restriction": "Не окончательная новая география и не камера с уровня улицы; не увеличивать обзорную карту вместо нового вида"
+    }
+  ],
+  "layer_stack": [
+    {
+      "order": 0,
+      "name": "sky_and_distant_air",
+      "role": "Небо и дальние мягкие массы"
+    },
+    {
+      "order": 10,
+      "name": "distant_world",
+      "role": "Дальний фасад/деревья/вода/мост в соответствующей сцене"
+    },
+    {
+      "order": 20,
+      "name": "ground_and_architecture",
+      "role": "Основание улицы, фасады, двери и стабильные крупные объекты"
+    },
+    {
+      "order": 30,
+      "name": "interactive_objects",
+      "role": "Те же 16 объектов с устойчивым силуэтом, без UI и надписей"
+    },
+    {
+      "order": 35,
+      "name": "local_object_state",
+      "role": "При необходимости угол афиши/закрытая створка; тот же размер и привязка"
+    },
+    {
+      "order": 40,
+      "name": "runtime_people",
+      "role": "Персонажи добавляются отдельно; в чистом фоне нет постоянных NPC"
+    },
+    {
+      "order": 50,
+      "name": "limited_foreground_occluders",
+      "role": "Край ограды/листья; не перекрывают безопасные области предметов"
+    },
+    {
+      "order": 60,
+      "name": "weather_overlay",
+      "role": "Дождь и локальные брызги под UI; не сплошная белая завеса"
+    },
+    {
+      "order": 70,
+      "name": "runtime_text_and_hotspots",
+      "role": "Разметка/подписи и клики кодом, никогда не запекать в фон"
+    },
+    {
+      "order": 80,
+      "name": "existing_game_ui",
+      "role": "Действующий HUD/предметная панель выше мировых эффектов"
+    }
+  ],
+  "variant_contract": {
+    "states": [
+      "day_dry",
+      "night_dry",
+      "day_rain",
+      "night_rain"
+    ],
+    "geometry_invariant": [
+      "Камера и горизонт",
+      "Фасады и двери",
+      "Выходы графа",
+      "Все 16 hotspot областей",
+      "Положение и размер афиши"
+    ],
+    "weather_invariant": "Дождь меняет свет/материал/осадки, а не планировку; под навесом есть логичная сухая полоса",
+    "not_yet_covered": [
+      "Отдельная зимняя серия",
+      "Рассвет/закат как отдельные окончательные экспорты"
+    ],
+    "source_policy": "Один редактируемый чистый мастер каждого вида со слоями состояний; варианты сохраняют одну и ту же геометрию."
+  },
+  "views": {
+    "residential_district": {
+      "title": "Жилые дворы: развилка от дома",
+      "camera": {
+        "position": "На общей дорожке за пределом собственного двора, взгляд к развилке между оградами",
+        "eye_height_m": 1.65,
+        "lens_equivalent_mm": 38,
+        "perspective": "Две точки схода; вертикали параллельны; не изометрия и не вид сверху",
+        "horizon_v": 0.42,
+        "primary_vanishing_point_uv": [
+          0.6,
+          0.42
+        ],
+        "framing": "Часть калитки своего одноэтажного дома у левого нижнего края; улица раскрывается дальше, а не показывает интерьер"
+      },
+      "canonical_locks": [
+        "Свой нынешний дом имеет один надземный этаж и ограждённый двор",
+        "Детская многоэтажная квартира не используется вместо этого дома",
+        "Узкие студенческие улицы и соседи существуют по сценарию",
+        "Путь к кампусу идёт через отдельный парк; двор не является университетом"
+      ],
+      "proposed_geometry": {
+        "main_path_width_m": 3.5,
+        "pedestrian_clear_width_m": 1.5,
+        "own_gate_height_m": 1.15,
+        "own_door_height_m": 2.15,
+        "scale_reference": "Небольшая калитка и высота входной двери; соседние многоквартирные дома не приписываются герою",
+        "building_note": "Фасад/кровля собственного дома только фрагментом, с одним рядом окон; формы и материалы остаются художественным предложением"
+      },
+      "materials": [
+        "Матовая светлая штукатурка небольшого дома",
+        "Низкая металлическая ограда с тонкими вертикалями",
+        "Старый камень дорожки с умеренным износом",
+        "Небольшой кустарник крупными живописными массами"
+      ],
+      "landmarks": [
+        "Два простых фонаря на развилке разного расстояния, без лишнего декоративного неона",
+        "Заметный поворот к аптечной вывеске",
+        "Выше дальних деревьев можно дать только намёк на красный кирпич кампуса; не втиснуть весь институт во двор"
+      ],
+      "exits": [
+        {
+          "to_location_id": "student_home",
+          "type": "public_path",
+          "screen_sector": "За левым нижним краем к собственной калитке",
+          "visual_anchor_object_id": "home_path",
+          "entry_rule": "Это двор дома, не немедленный вход в спальню",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "pharmacy_house",
+          "type": "public_path",
+          "screen_sector": "Средняя ветвь развилки, у поворота к вывеске",
+          "visual_anchor_object_id": "pharmacy_turn",
+          "entry_rule": "Выход на публичный фасад",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "south_trade_street",
+          "type": "public_path",
+          "screen_sector": "Общая дорожка начинается в переднем плане и поворачивает вправо вдоль домов",
+          "visual_anchor_object_id": "home_path",
+          "entry_rule": "Не входить в частные дворы для прохода",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "campus_park_gate",
+          "type": "public_path",
+          "screen_sector": "Верхняя правая ветвь за указателем",
+          "visual_anchor_object_id": "campus_sign",
+          "entry_rule": "Продолжение пути в парк перед институтом, не дверь аудитории",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "city_resident_home_selina",
+          "type": "private_branch",
+          "screen_sector": "Небольшое ответвление за оградами в глубине",
+          "entry_rule": "Безымянная закрытая частная калитка; реальный доступ по правам/приглашению",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "city_resident_home_dana",
+          "type": "private_branch",
+          "screen_sector": "Другое короткое ответвление в глубине, не общий проход",
+          "entry_rule": "Без крупной публичной двери или именной надписи",
+          "topology_status": "present_in_prepared_backbone"
+        }
+      ],
+      "npc_reserved_rect_uv": [
+        0.33,
+        0.5,
+        0.11,
+        0.28
+      ],
+      "variants": {
+        "day": "Нейтральное мягкое дневное освещение, светлая штукатурка не белая; читаемая тень ограды",
+        "night": "Сине-чёрные массы, два тёплых локальных фонаря, одно небольшое окно дома; калитка остаётся читаемой",
+        "rain": "Тонкие мокрые блики вдоль дорожки и капли с ограды; тот же план и высота камеры, свободный проход"
+      },
+      "forbidden_geometry": [
+        "Второй жилой этаж/мансарда у дома героя",
+        "Домашний коридор вместо наружного двора",
+        "Калитки, превращённые в сквозной путь через частное жильё"
+      ],
+      "status": "art_brief_proposal_not_produced",
+      "source_master": {
+        "proposed_path": "assets/art_source/world-first-district/residential_district/residential_district_master.kra",
+        "created": false,
+        "clean_source": true,
+        "no_text_or_ui": true
+      },
+      "clean_exports": [
+        {
+          "state": "day_dry",
+          "proposed_path": "assets/textures/world/first-district/residential_district_day_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_dry",
+          "proposed_path": "assets/textures/world/first-district/residential_district_night_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "day_rain",
+          "proposed_path": "assets/textures/world/first-district/residential_district_day_rain_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_rain",
+          "proposed_path": "assets/textures/world/first-district/residential_district_night_rain_clean.png",
+          "created": false
+        }
+      ],
+      "hotspot_scheme": {
+        "status": "data_only_not_a_screenshot",
+        "coordinate_space": "source_art_uv",
+        "objects": {
+          "fence_corner": {
+            "content_title_key": "city.courts.fence.title",
+            "anchor_uv": [
+              0.22,
+              0.62
+            ],
+            "safe_rect_uv": [
+              0.15,
+              0.55,
+              0.14,
+              0.14
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "campus_sign": {
+            "content_title_key": "city.courts.sign.title",
+            "anchor_uv": [
+              0.71,
+              0.36
+            ],
+            "safe_rect_uv": [
+              0.65,
+              0.285,
+              0.12,
+              0.15
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "pharmacy_turn": {
+            "content_title_key": "city.courts.pharmacy.title",
+            "anchor_uv": [
+              0.53,
+              0.51
+            ],
+            "safe_rect_uv": [
+              0.46,
+              0.45,
+              0.14,
+              0.12
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "home_path": {
+            "content_title_key": "city.courts.home.title",
+            "anchor_uv": [
+              0.1,
+              0.75
+            ],
+            "safe_rect_uv": [
+              0.055,
+              0.69,
+              0.12,
+              0.11
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          }
+        }
+      }
+    },
+    "pharmacy_house": {
+      "title": "Дом с аптекой: публичный фасад и отдельные подъезды",
+      "camera": {
+        "position": "С противоположного края спокойной улицы, в 7–9 метрах от фасада, взгляд слегка вдоль него",
+        "eye_height_m": 1.65,
+        "lens_equivalent_mm": 45,
+        "perspective": "Умеренная двухточечная перспектива, фасад повёрнут примерно на 18 градусов; ровные вертикали",
+        "horizon_v": 0.42,
+        "primary_vanishing_point_uv": [
+          1.7,
+          0.42
+        ],
+        "framing": "Публичная витрина и вывеска справа, две отдельные жилые двери слева; верх фасада частично выходит из кадра"
+      },
+      "canonical_locks": [
+        "Дом с аптекой упомянут в chapter_one",
+        "Асука живёт через четыре дома; Оливер связан с соседним подъездом",
+        "Вход в магазин не является входом в чужую квартиру",
+        "Точные этажность, материалы, часы и ассортимент аптеки источником не заданы"
+      ],
+      "proposed_geometry": {
+        "building_storeys": 3,
+        "storey_count_status": "Только предложение для стабильной художественной геометрии; не новый факт сценария",
+        "door_height_m": 2.2,
+        "private_door_clear_width_m": 1.1,
+        "public_window_width_m": 2.4,
+        "street_clear_width_m": 3.2,
+        "scale_reference": "Двери и подоконник; не гигантская витрина торгового центра"
+      },
+      "materials": [
+        "Сдержанная песочно-серая штукатурка",
+        "Тёмные матовые деревянные или металлические жилые двери",
+        "Стекло витрины с неброским отражением улицы",
+        "Бледная стальная оправа вывески с пустым полем под отдельную надпись"
+      ],
+      "landmarks": [
+        "Один узнаваемый знак/форма аптечной вывески без названия реальной сети",
+        "Жилые двери отличаются формой обрамления, а не гигантскими именами жильцов",
+        "В отражении видны ограды дворов, а не выдуманная клиника через дорогу"
+      ],
+      "exits": [
+        {
+          "to_location_id": "residential_district",
+          "type": "public_path",
+          "screen_sector": "Левый нижний край улицы",
+          "visual_anchor_object_id": "street_return",
+          "entry_rule": "Возврат наружу, не через аптеку",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "student_home",
+          "type": "public_path",
+          "screen_sector": "Короткая соседская дорожка за передним левым краем",
+          "visual_anchor_object_id": "street_return",
+          "entry_rule": "Отдельная двухминутная соседская ветвь по графу; не заставлять обходить дворы",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": null,
+          "type": "closed_service_door",
+          "screen_sector": "Справа у витрины, отдельная дверь магазина",
+          "entry_rule": "Архитектурная дверь без придуманного runtime помещения/услуги; часы и торговлю зададут отдельно",
+          "topology_status": "not_a_route_in_this_slice"
+        },
+        {
+          "to_location_id": null,
+          "type": "private_door_group",
+          "screen_sector": "Слева две жилые двери",
+          "visual_anchor_object_id": "private_entrances",
+          "entry_rule": "Осмотр с улицы; внутренние квартиры не показываются и не открываются",
+          "topology_status": "not_public_routes"
+        }
+      ],
+      "npc_reserved_rect_uv": [
+        0.43,
+        0.5,
+        0.12,
+        0.28
+      ],
+      "variants": {
+        "day": "Матовая штукатурка и спокойные отражения витрины; достаточно света на двух жилых дверях",
+        "night": "Малые плафоны у подъездов и сдержанный свет витрины; вывеска не превращается в кислотный зелёный неон",
+        "rain": "Мокрый цоколь и тонкая полоса воды у бордюра; ступени, двери и пустое поле часов остаются в тех же местах"
+      },
+      "forbidden_geometry": [
+        "Открытая квартира за прозрачной магазинной витриной",
+        "Одна общая дверь, из которой мгновенно попадают и в аптеку и к жильцам",
+        "Крупная надпись о круглосуточной торговле/лечении без сценарного основания"
+      ],
+      "status": "art_brief_proposal_not_produced",
+      "source_master": {
+        "proposed_path": "assets/art_source/world-first-district/pharmacy_house/pharmacy_house_master.kra",
+        "created": false,
+        "clean_source": true,
+        "no_text_or_ui": true
+      },
+      "clean_exports": [
+        {
+          "state": "day_dry",
+          "proposed_path": "assets/textures/world/first-district/pharmacy_house_day_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_dry",
+          "proposed_path": "assets/textures/world/first-district/pharmacy_house_night_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "day_rain",
+          "proposed_path": "assets/textures/world/first-district/pharmacy_house_day_rain_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_rain",
+          "proposed_path": "assets/textures/world/first-district/pharmacy_house_night_rain_clean.png",
+          "created": false
+        }
+      ],
+      "hotspot_scheme": {
+        "status": "data_only_not_a_screenshot",
+        "coordinate_space": "source_art_uv",
+        "objects": {
+          "pharmacy_sign": {
+            "content_title_key": "city.pharmacy.sign.title",
+            "anchor_uv": [
+              0.62,
+              0.29
+            ],
+            "safe_rect_uv": [
+              0.53,
+              0.225,
+              0.18,
+              0.105
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "public_window": {
+            "content_title_key": "city.pharmacy.window.title",
+            "anchor_uv": [
+              0.68,
+              0.54
+            ],
+            "safe_rect_uv": [
+              0.58,
+              0.43,
+              0.2,
+              0.2
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "private_entrances": {
+            "content_title_key": "city.pharmacy.doors.title",
+            "anchor_uv": [
+              0.3,
+              0.63
+            ],
+            "safe_rect_uv": [
+              0.19,
+              0.52,
+              0.22,
+              0.21
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "street_return": {
+            "content_title_key": "city.pharmacy.return.title",
+            "anchor_uv": [
+              0.09,
+              0.73
+            ],
+            "safe_rect_uv": [
+              0.055,
+              0.68,
+              0.12,
+              0.11
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          }
+        }
+      }
+    },
+    "south_trade_street": {
+      "title": "Южная торговая улица: близкие повседневные дела",
+      "camera": {
+        "position": "На широком краю торгового прохода рядом с прилавком, взгляд вдоль улицы к повороту в сторону реки",
+        "eye_height_m": 1.65,
+        "lens_equivalent_mm": 38,
+        "perspective": "Двухточечная перспектива; прилавок в левой средней зоне, правая дорожка открывает глубину",
+        "horizon_v": 0.4,
+        "primary_vanishing_point_uv": [
+          0.62,
+          0.4
+        ],
+        "framing": "Коробки внизу ближе к центру, рабочая доска справа выше; дальние услуги не стоят вплотную за прилавком"
+      },
+      "canonical_locks": [
+        "Это физическая торговая улица, а не нарисованное окно глобальной карты",
+        "Публичный проход остаётся наружным после закрытия магазинов",
+        "Кафе — соседняя точка по маршруту, не тот же прилавок"
+      ],
+      "proposed_geometry": {
+        "clear_public_path_width_m": 3.0,
+        "counter_height_m": 0.95,
+        "crate_height_m": 0.55,
+        "storey_count": 2,
+        "storey_count_status": "Предложение для показанных ближайших фасадов, не канон всего района",
+        "scale_reference": "Небольшие прилавки, дверь около 2.2 м и коробки; не огромный торговый центр"
+      },
+      "materials": [
+        "Потёртая древесина прилавка и коробок",
+        "Матовые тканевые навесы",
+        "Приглушённая кирпично-штукатурная стена",
+        "Тёмный камень проезжей/пешеходной полосы с отдельными сухими участками"
+      ],
+      "landmarks": [
+        "Чёткий край ценовой планки над прилавком",
+        "Коробки двух-трёх размеров, без множества интерактивно выглядящих дублей",
+        "Доска рабочих объявлений и отдельное общее направление к кампусу/услугам; сами тексты вне чистого фона"
+      ],
+      "exits": [
+        {
+          "to_location_id": "residential_district",
+          "type": "public_path",
+          "screen_sector": "Продолжение улицы за передним левым краем",
+          "entry_rule": "Дорога во дворы без прохода через магазин",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "riverside_cafe_front",
+          "type": "public_path",
+          "screen_sector": "Правый проход, поворачивающий в глубину к реке",
+          "visual_anchor_object_id": "river_direction",
+          "entry_rule": "Публичный внешний вход кафе",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "campus_courtyard",
+          "type": "public_path_direction",
+          "screen_sector": "Дальнее продолжение улицы у общего указателя",
+          "visual_anchor_object_id": "work_board",
+          "entry_rule": "Поход к кампусу, не мгновенный вход на пару",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "city_park",
+          "type": "public_path_direction",
+          "screen_sector": "Зелёное ответвление в средней глубине, не парк перед институтом",
+          "entry_rule": "Направление к отдельному городскому парку",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "clinic_forecourt",
+          "type": "public_path_direction",
+          "screen_sector": "Общее направление городских услуг за правым дальним поворотом",
+          "entry_rule": "Не рисовать доступную клинику прямо вплотную к прилавку",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "agency_square",
+          "type": "public_path_direction",
+          "screen_sector": "То же общее направление услуг, другой конечный адрес по графу",
+          "entry_rule": "Не совмещать дверь агентства с дверью магазина",
+          "topology_status": "present_in_prepared_backbone"
+        }
+      ],
+      "npc_reserved_rect_uv": [
+        0.58,
+        0.48,
+        0.1,
+        0.3
+      ],
+      "variants": {
+        "day": "Светлый воздух под навесом, товары читаются силуэтом, доски отделены от стены тоном",
+        "night": "Часть створок закрыта, свет локален у ещё работающего прилавка; наружный проход светлее самых тёмных фасадов",
+        "rain": "Вода стекает с навеса за пределом коробок; мокрый проход отражает отдельные огни, но не залит сплошным зеркальным бликом"
+      },
+      "forbidden_geometry": [
+        "Клиника, университет и агентство в одном фасаде рядом с ценниками",
+        "Закрытый магазин как единственный проход через квартал",
+        "Готовый UI кошелька, корзины или цены, запечённые в изображение"
+      ],
+      "status": "art_brief_proposal_not_produced",
+      "source_master": {
+        "proposed_path": "assets/art_source/world-first-district/south_trade_street/south_trade_street_master.kra",
+        "created": false,
+        "clean_source": true,
+        "no_text_or_ui": true
+      },
+      "clean_exports": [
+        {
+          "state": "day_dry",
+          "proposed_path": "assets/textures/world/first-district/south_trade_street_day_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_dry",
+          "proposed_path": "assets/textures/world/first-district/south_trade_street_night_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "day_rain",
+          "proposed_path": "assets/textures/world/first-district/south_trade_street_day_rain_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_rain",
+          "proposed_path": "assets/textures/world/first-district/south_trade_street_night_rain_clean.png",
+          "created": false
+        }
+      ],
+      "hotspot_scheme": {
+        "status": "data_only_not_a_screenshot",
+        "coordinate_space": "source_art_uv",
+        "objects": {
+          "price_board": {
+            "content_title_key": "city.market.prices.title",
+            "anchor_uv": [
+              0.21,
+              0.43
+            ],
+            "safe_rect_uv": [
+              0.14,
+              0.34,
+              0.14,
+              0.18
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "delivery_crate": {
+            "content_title_key": "city.market.crate.title",
+            "anchor_uv": [
+              0.47,
+              0.7
+            ],
+            "safe_rect_uv": [
+              0.38,
+              0.62,
+              0.18,
+              0.16
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "work_board": {
+            "content_title_key": "city.market.work.title",
+            "anchor_uv": [
+              0.76,
+              0.38
+            ],
+            "safe_rect_uv": [
+              0.69,
+              0.29,
+              0.14,
+              0.18
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "river_direction": {
+            "content_title_key": "city.market.river.title",
+            "anchor_uv": [
+              0.88,
+              0.71
+            ],
+            "safe_rect_uv": [
+              0.82,
+              0.64,
+              0.11,
+              0.14
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          }
+        }
+      }
+    },
+    "riverside_cafe_front": {
+      "title": "Вход кафе у реки: зал справа, общественная дорожка слева",
+      "camera": {
+        "position": "С наружного подхода от торговой улицы, взгляд в три четверти на фасад и край речной дорожки",
+        "eye_height_m": 1.65,
+        "lens_equivalent_mm": 42,
+        "perspective": "Умеренная двухточечная перспектива без изометрии; фасад справа, вода читается в левой средней/дальней зоне",
+        "horizon_v": 0.41,
+        "primary_vanishing_point_uv": [
+          -0.55,
+          0.41
+        ],
+        "framing": "Дверь целиком справа, доска левее, лавка ниже слева; река и направление пешеходного моста видны, но не занимают весь кадр"
+      },
+      "canonical_locks": [
+        "Кафе и речная терраса существуют в текущем городе",
+        "Это внешняя сцена, не публичный полноэкранный вид внутреннего зала",
+        "Речная набережная настоящего не является морской набережной детства"
+      ],
+      "proposed_geometry": {
+        "door_height_m": 2.2,
+        "door_width_m": 1.15,
+        "canopy_lower_edge_m": 2.6,
+        "public_walk_width_m": 2.8,
+        "bench_seat_height_m": 0.48,
+        "storey_count": 1,
+        "storey_count_status": "Рабочее предложение для кафе, отдельное от канонической этажности дома героя",
+        "scale_reference": "Входная дверь и лавка с зазором для хвоста; ни гигантский зал, ни миниатюрный кукольный дом"
+      },
+      "materials": [
+        "Тёплая матовая штукатурка/тёмная древесина фасада",
+        "Сдержанный стальной каркас навеса",
+        "Прозрачная защита общей доски",
+        "Каменный сухой край под навесом и мокрый наружный путь"
+      ],
+      "landmarks": [
+        "Цельная дверь и небольшая тёплая полоса света за стеклом без показа чужих столов крупным планом",
+        "Небольшая доска с единым листом и заметным свободным нижним углом",
+        "Слева фрагмент речных перил и узнаваемое направление пешеходного моста вдали, без нового моста"
+      ],
+      "exits": [
+        {
+          "to_location_id": "riverside_cafe",
+          "type": "service_door",
+          "screen_sector": "Правая дверь в зал",
+          "visual_anchor_object_id": "entrance_door",
+          "entry_rule": "Вход по отдельным часам/доступу зала, не сквозной путь к реке",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "south_trade_street",
+          "type": "public_path",
+          "screen_sector": "Наружная дорожка возвращается к переднему левому краю",
+          "visual_anchor_object_id": "riverside_path",
+          "entry_rule": "Не заходить за стойку для возвращения",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "south_promenade",
+          "type": "public_path_direction",
+          "screen_sector": "Левая дорожка продолжается вдоль воды",
+          "visual_anchor_object_id": "riverside_path",
+          "entry_rule": "Открытый наружный маршрут независимо от обслуживания кафе",
+          "topology_status": "present_in_prepared_backbone"
+        },
+        {
+          "to_location_id": "pedestrian_bridge_south",
+          "type": "public_path_direction",
+          "screen_sector": "Та же прибрежная линия уходит к видимому направлению существующего пешеходного моста в глубине слева",
+          "visual_anchor_object_id": "riverside_path",
+          "entry_rule": "Это путь к мосту, не дверь террасы и не мгновенный переход на северный берег",
+          "topology_status": "present_in_prepared_backbone"
+        }
+      ],
+      "npc_reserved_rect_uv": [
+        0.46,
+        0.48,
+        0.12,
+        0.28
+      ],
+      "variants": {
+        "day": "Читаемый сухой навес и спокойная речная даль; интерьер только неглубокой полосой за стеклом",
+        "night": "Малый тёплый источник у двери, синий тон воды и тонкие отражения; доска читается силуэтом без встроенного текста",
+        "rain": "Капли за наружным краем навеса, доска частично под защитой; состояние листа before/tucked отличается в той же области"
+      },
+      "reaction_overlay": {
+        "flag_id": "city_cafe_notice_sheltered",
+        "object_id": "notice_case",
+        "initial": "Свободный угол листа выступает из прозрачного края",
+        "remembered": "Тот же лист и крепёж; угол заправлен под защиту, без нового листа/награды",
+        "geometry_lock": "Положение рамки, текста будущего отдельного слоя и hotspot не меняется",
+        "art_status": "Два состояния одного объекта подготовить слоями, изображения ещё не созданы"
+      },
+      "forbidden_geometry": [
+        "Полноэкранный внутренний зал вместо наружного подхода",
+        "Дорожка к воде через служебную дверь или закрытый зал",
+        "Третий мост или морские волны/пляж из флешбэка"
+      ],
+      "status": "art_brief_proposal_not_produced",
+      "source_master": {
+        "proposed_path": "assets/art_source/world-first-district/riverside_cafe_front/riverside_cafe_front_master.kra",
+        "created": false,
+        "clean_source": true,
+        "no_text_or_ui": true
+      },
+      "clean_exports": [
+        {
+          "state": "day_dry",
+          "proposed_path": "assets/textures/world/first-district/riverside_cafe_front_day_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_dry",
+          "proposed_path": "assets/textures/world/first-district/riverside_cafe_front_night_dry_clean.png",
+          "created": false
+        },
+        {
+          "state": "day_rain",
+          "proposed_path": "assets/textures/world/first-district/riverside_cafe_front_day_rain_clean.png",
+          "created": false
+        },
+        {
+          "state": "night_rain",
+          "proposed_path": "assets/textures/world/first-district/riverside_cafe_front_night_rain_clean.png",
+          "created": false
+        }
+      ],
+      "hotspot_scheme": {
+        "status": "data_only_not_a_screenshot",
+        "coordinate_space": "source_art_uv",
+        "objects": {
+          "entrance_door": {
+            "content_title_key": "city.cafe.door.title",
+            "anchor_uv": [
+              0.71,
+              0.55
+            ],
+            "safe_rect_uv": [
+              0.635,
+              0.385,
+              0.15,
+              0.29
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "notice_case": {
+            "content_title_key": "city.cafe.notice.title",
+            "anchor_uv": [
+              0.34,
+              0.41
+            ],
+            "safe_rect_uv": [
+              0.265,
+              0.31,
+              0.15,
+              0.2
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "outside_bench": {
+            "content_title_key": "city.cafe.bench.title",
+            "anchor_uv": [
+              0.19,
+              0.71
+            ],
+            "safe_rect_uv": [
+              0.095,
+              0.64,
+              0.22,
+              0.15
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          },
+          "riverside_path": {
+            "content_title_key": "city.cafe.path.title",
+            "anchor_uv": [
+              0.08,
+              0.49
+            ],
+            "safe_rect_uv": [
+              0.035,
+              0.41,
+              0.11,
+              0.18
+            ],
+            "rect_status": "proposed_safe_object_region_unverified_on_final_art",
+            "visibility": "Силуэт и якорь читаемы; непрозрачная листва, персонаж или дождевой блик не перекрывают безопасную область.",
+            "hit_behavior": "Осмотр через существующий content helper; рисунок не определяет доступность runtime."
+          }
+        }
+      }
+    }
+  },
+  "production_state": {
+    "images_generated": false,
+    "comfyui_started": false,
+    "runtime_changed": false,
+    "new_art_ordered": false,
+    "in_engine_verified": false,
+    "hotspot_overlay_rendered": false
+  },
+  "handoff": "По отдельному назначению root сначала произвести один представитель семьи и сверить с действующим UI в исходном размере. После этого принять решение о партии четырёх фонов. Этот пакет не генерирует изображения и не расширяет число сцен."
+}

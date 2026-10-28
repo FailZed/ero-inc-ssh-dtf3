@@ -2,7 +2,17 @@ extends "res://scripts/mechanics/core/module.gd"
 ## Household simulation. Family members stay separate from the adult social population.
 const CHECK = preload("res://scripts/mechanics/core/validation.gd")
 const NEEDS := ["food", "hygiene", "rest", "attention", "health"]
-const HOME_ROOMS := ["bedroom", "kitchen", "bathroom", "apartment_hall"]
+const Handoff = preload("res://scripts/mechanics/family_handoff.gd")
+var handoff
+
+func _init(simulation) -> void:
+	super(simulation)
+	handoff = Handoff.new(simulation)
+
+func care_options(id: String, need: String) -> Array:
+	var member: Dictionary = sim.state.family.members.get(id,{})
+	if member.is_empty() or not "player" in member.get("guardians",member.parents): return []
+	return handoff.options(member,need)
 
 static func defaults() -> Dictionary:
 	return {"version": 1, "members": {}, "next_id": 1, "imported_births": 0, "budget": 0, "arrears": 0, "spent": 0, "history": []}
@@ -57,8 +67,7 @@ func _sync_births() -> void:
 		for parent in [str(birth.get("parent", "")), str(birth.get("partner", ""))]:
 			if (parent == "player" or sim.state.social.npcs.has(parent)) and not parent in parents: parents.append(parent)
 		var guardian: String = str(birth.get("parent", "player"))
-		var home: String = str(sim.state.social.npcs.get(guardian, {}).get("home", "bedroom"))
-		if "player" in parents: home = "bedroom"
+		var home: String = _initial_home("player" if "player" in parents else guardian)
 		var assignments := {"food": "player" if "player" in parents else guardian, "hygiene": guardian, "rest": guardian, "attention": "player" if "player" in parents else guardian}
 		family.members[id] = {"id": id, "name": "Ребёнок %d" % int(family.next_id - 1), "birth_index": index,
 			"born": int(birth.minute), "parents": parents, "home": home, "stage": "infant", "development": 0.0,
@@ -75,14 +84,43 @@ func _sync_births() -> void:
 			family.members[id].custody = "other_parent" if not guardians.is_empty() else "public_care"
 			if not guardians.is_empty():
 				guardian = str(guardians[0])
-				family.members[id].home = "bedroom" if guardian == "player" else str(sim.state.social.npcs[guardian].home)
+				family.members[id].home = _initial_home(guardian)
 				for need in family.members[id].assignments: family.members[id].assignments[need] = guardian
 		_log("born", id)
 		_update_stage(family.members[id])
 
-func _at_home(member: Dictionary) -> bool:
-	var location := str(sim.state.world.location)
-	return location == str(member.home) or (member.home == "bedroom" and location in HOME_ROOMS)
+func _initial_home(guardian: String) -> String:
+	var home: String = sim.actor_home(guardian)
+	if not home.is_empty(): return home
+	return str(sim.state.world.location) if guardian=="player" else str(sim.state.social.npcs[guardian].location)
+
+func _household_guardian(member: Dictionary) -> String:
+	var guardians: Array = member.get("guardians",member.parents)
+	return "player" if "player" in guardians else "" if guardians.is_empty() else str(guardians[0])
+
+func synchronize_homes() -> void:
+	for member in sim.state.family.members.values(): _synchronize_home(member)
+
+func _synchronize_home(member: Dictionary) -> void:
+	var guardian := _household_guardian(member)
+	if guardian.is_empty(): return
+	var home: String = sim.actor_home(guardian)
+	if home.is_empty() or home==member.home: return
+	var location: String = str(sim.state.world.location) if guardian=="player" else str(sim.state.social.npcs[guardian].location)
+	if not sim.is_actor_home_location(guardian,location): return
+	if not member.task.is_empty():
+		_release_caregiver(member.task)
+		member.task = {}
+		_log("care_interrupted",str(member.id),{"reason":"household_moved"})
+	var previous := str(member.home)
+	member.home = home
+	_log("home_changed",str(member.id),{"previous":previous,"home":home,"guardian":guardian})
+
+func _at_home(member: Dictionary, caregiver: String = "player") -> bool:
+	var location: String = str(sim.state.world.location) if caregiver=="player" else str(sim.state.social.npcs.get(caregiver,{}).get("location",""))
+	if location==str(member.home): return true
+	var guardian := _household_guardian(member)
+	return not guardian.is_empty() and member.home==sim.actor_home(guardian) and sim.is_actor_home_location(guardian,location)
 
 func _charge(amount: int) -> bool:
 	if int(sim.state.family.budget) + int(sim.state.economy.cash) < amount: return false
@@ -142,6 +180,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			member.support_until = _now() + int(sim.catalog.family_rules.household.support_minutes)
 			_log("support", id)
 		"care": return _care(member, str(args.get("action", "")))
+		"delegate": return handoff.delegate(member,str(args.get("need","")),str(args.get("caregiver","")))
 		_:
 			return Rules.fail("unknown_operation")
 	return Rules.ok()
@@ -165,11 +204,15 @@ func _finish_care(member: Dictionary) -> void:
 	var task: Dictionary = member.task
 	if task.caregiver != "player":
 		var person: Dictionary = sim.state.social.npcs.get(str(task.caregiver), {})
-		if person.is_empty() or person.location != member.home or person.health < 30 or person.activity != "family_care" or int(person.pinned_until) != int(task.due) + 1:
+		if person.is_empty() or not _at_home(member,str(task.caregiver)) or handoff.unwell(str(task.caregiver)) or person.activity != "family_care" or int(person.pinned_until) != int(task.due) + 1:
 			_release_caregiver(task)
 			member.task = {}
 			_log("care_interrupted", str(member.id))
 			return
+	if task.caregiver=="player" and not _at_home(member):
+		member.task = {}
+		_log("care_interrupted",str(member.id))
+		return
 	var spec := definition("family_actions", str(task.action))
 	for need in spec.needs: member.needs[need] = minf(100, float(member.needs[need]) + float(spec.needs[need]))
 	var previous_development := float(member.development)
@@ -203,34 +246,37 @@ func _autonomy(member: Dictionary) -> void:
 	var spec := definition("family_actions", action)
 	if not member.stage in spec.stages: return
 	if _now() - int(member.recent.get(action, -10080)) < int(sim.catalog.family_rules.household.care_interval): return
-	var id := str(member.assignments[selected])
-	if id == "player" or not sim.state.social.npcs.has(id): return
+	var id: String = handoff.choose(member,selected)
+	if id.is_empty(): return
+	sim.services.npc_planner.submit("family",id,action,str(sim.state.social.npcs[id].location),int(spec.minutes),65,{"member":str(member.id),"need":selected})
+
+func start_care(request: Dictionary) -> bool:
+	var member: Dictionary = sim.state.family.members.get(str(request.payload.member),{})
+	if member.is_empty() or not member.task.is_empty(): return false
+	var id := str(request.id)
+	var need := str(request.payload.need)
+	if not handoff.blocked(member,need,id).is_empty(): return false
 	var npc: Dictionary = sim.state.social.npcs[id]
-	if npc.location != member.home or npc.health < 30 or float(npc.needs.energy) < 25 or npc.activity in ["sleep", "recover", "eat", "work", "study", "travel"]: return
-	if int(npc.pinned_until) > _now(): return
-	# Do not start care across an upcoming compulsory shift or lesson.
-	var context: Dictionary = sim.services.npc_behavior.context(npc)
-	for offset in range(int(spec.minutes)):
-		var clock: Dictionary = sim.calendar.snapshot(_now() + offset)
-		context.clock = clock
-		for entry in npc.schedule:
-			if not entry.get("mandatory", entry.get("activity", "") in ["work", "study"]): continue
-			var hours: Array = entry.get("hours", [0, 0])
-			if int(clock.weekday) in entry.get("weekdays", [1,2,3,4,5,6,7]) and Rules.in_window(int(clock.minute_of_day), int(hours[0]), int(hours[1])) and Rules.check(context, entry.get("requirements", {})): return
-	if "player" in member.get("guardians", member.parents):
-		if not _charge(int(spec.cost)): return
+	var action := str(request.kind)
+	if action!=handoff.ACTIONS[need] or request.destination!=npc.location: return false
+	var spec := definition("family_actions",action)
+	if "player" in member.get("guardians",member.parents):
+		if not _charge(int(spec.cost)): return false
 	else:
-		if int(npc.money) < int(spec.cost): return
+		if int(npc.money)<int(spec.cost): return false
 		npc.money -= int(spec.cost)
 	if npc.has("mind"): sim.services.npc_agency._cancel(npc, "family_care")
 	member.task = {"caregiver": id, "action": action, "due": _now() + int(spec.minutes), "previous_pin": int(npc.pinned_until)}
 	npc.pinned_until = _now() + int(spec.minutes) + 1
 	npc.activity = "family_care"
 	npc.needs.energy = maxf(0, float(npc.needs.energy) - float(spec.energy))
+	if id!=str(member.assignments[need]): _log("care_handoff",str(member.id),{"from":str(member.assignments[need]),"caregiver":id,"need":need})
+	return true
 
 func tick(minute: int) -> void:
 	_sync_births()
 	for member in sim.state.family.members.values():
+		_synchronize_home(member)
 		if int(member.next_stage) > 0 and minute >= int(member.next_stage): _update_stage(member)
 		if member.get("guardians", member.parents).is_empty(): continue
 		if not member.task.is_empty() and minute >= int(member.task.due): _finish_care(member)

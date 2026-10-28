@@ -1,6 +1,7 @@
 extends SceneTree
 const Setup = preload("res://scripts/mechanics/setup_config.gd")
 const VisualState = preload("res://scripts/portraits/character_state.gd")
+const PersonalStories = preload("res://scripts/mechanics/npc_stories.gd")
 var checks := 0
 var failures: Array[String] = []
 var gameplay
@@ -23,6 +24,8 @@ func _run() -> void:
 	_test_setup()
 	_test_sandbox()
 	_test_personal_stories()
+	_test_zero_xp_personal_ending()
+	_test_explicit_personal_story_binding()
 	_test_all_personal_arcs()
 	_test_current_validation()
 	_test_visual_state()
@@ -129,6 +132,64 @@ func _test_personal_stories() -> void:
 	var bad := before.duplicate(true)
 	bad.state.npc_stories.arcs.oliver.node = "missing"
 	check(not sim.restore_snapshot(bad).ok and before == sim.export_snapshot(), "malformed personal story rejected atomically")
+
+func _test_zero_xp_personal_ending() -> void:
+	var sim = _personal_world()
+	sim.catalog.npc_story_arcs.oliver.nodes.declined.xp = 0
+	check(PersonalStories.catalog_error(sim.catalog).is_empty(), "personal ending may deliberately award zero XP")
+	for invalid: Variant in [-1, 0.5, "0"]:
+		var bad_catalog: Dictionary = sim.catalog.duplicate(true)
+		bad_catalog.npc_story_arcs.oliver.nodes.declined.xp = invalid
+		check(PersonalStories.catalog_error(bad_catalog) == "invalid_personal_story_xp", "invalid personal ending XP is rejected: " + str(invalid))
+	check(sim.command("npc_stories","start",{"id":"oliver"}).ok, "zero-XP personal story can start")
+	var xp_before := int(sim.state.player.xp)
+	var level_before := int(sim.state.player.level)
+	var choice := {"id":"oliver","node":"intro","choice":"decline"}
+	check(sim.command("npc_stories","choose",choice).ok, "honest refusal with zero XP completes instead of rolling back")
+	var story: Dictionary = sim.state.npc_stories.arcs.oliver
+	check(story.status == "completed" and story.ending == "declined" and story.rewarded, "zero-XP refusal is permanently consumed as a completed ending")
+	check(int(sim.state.player.xp) == xp_before and int(sim.state.player.level) == level_before, "honest refusal grants no XP or level")
+	var memories := 0
+	for memory: Dictionary in sim.state.social.npcs.oliver.memories:
+		if memory.kind == "personal_story" and memory.data.get("arc","") == "oliver" and memory.data.get("ending","") == "declined": memories += 1
+	check(memories == 1, "zero-XP refusal still records its ending memory exactly once")
+	var before: Dictionary = sim.export_snapshot()
+	var repeated: Dictionary = sim.command("npc_stories","choose",choice)
+	check(not repeated.ok and repeated.error == "personal_story_finished" and before == sim.export_snapshot(), "repeated zero-XP refusal changes neither state, memory nor RNG")
+
+func _test_explicit_personal_story_binding() -> void:
+	var authored = _personal_world("authored_story_npc")
+	authored.state.social.npcs.authored_story_npc.biography.story_arc = "oliver"
+	var before: Dictionary = authored.export_snapshot()
+	var view: Dictionary = authored.services.npc_stories.present("authored_story_npc")
+	check(view.get("arc","") == "oliver" and before == authored.export_snapshot(), "explicit authored arc overrides generic selection without changing state or RNG on preview")
+	var restored = gameplay.make_simulation()
+	check(restored.restore_snapshot(before).ok and restored.services.npc_stories.arc_for("authored_story_npc") == "oliver", "explicit story assignment survives the current snapshot without a generation hook")
+	check(authored.command("npc_stories","start",{"id":"authored_story_npc"}).ok and authored.state.npc_stories.arcs.authored_story_npc.arc == "oliver", "explicit authored assignment starts its selected existing arc")
+	var mismatch: Dictionary = authored.export_snapshot()
+	mismatch.state.social.npcs.authored_story_npc.biography.story_arc = "neighbor"
+	check(PersonalStories.state_error(mismatch.state,authored.catalog) == "invalid_personal_story_binding", "started personal arc cannot be silently replaced by another explicit assignment")
+	var unassigned = _personal_world("authored_without_story")
+	unassigned.state.social.npcs.authored_without_story.biography.story_arc = ""
+	before = unassigned.export_snapshot()
+	check(unassigned.services.npc_stories.present("authored_without_story").is_empty() and unassigned.services.npc_stories.blocked("authored_without_story") == "personal_story_unassigned" and before == unassigned.export_snapshot(), "explicit absence of an arc is an honest pure empty state, never a generic story")
+	for operation: String in ["start","choose"]:
+		var result: Dictionary = unassigned.command("npc_stories",operation,{"id":"authored_without_story","node":"intro","choice":"decline"})
+		check(not result.ok and result.error == "personal_story_unassigned" and before == unassigned.export_snapshot(), "unassigned personal story rejects command atomically: " + operation)
+	var invalid = _personal_world("authored_invalid_binding")
+	var valid_snapshot: Dictionary = invalid.export_snapshot()
+	for assignment: Variant in ["missing_authored_arc", 7, null]:
+		invalid.state.social.npcs.authored_invalid_binding.biography.story_arc = assignment
+		before = invalid.export_snapshot()
+		check(PersonalStories.state_error(invalid.state,invalid.catalog) == "invalid_personal_story_binding" and invalid.services.npc_stories.present("authored_invalid_binding").is_empty(), "invalid explicit story assignment fails validation and offers no substituted view: " + str(assignment))
+		var result: Dictionary = invalid.command("npc_stories","start",{"id":"authored_invalid_binding"})
+		check(not result.ok and result.error == "invalid_personal_story_binding" and before == invalid.export_snapshot(), "invalid explicit story assignment refuses start without changing state or RNG: " + str(assignment))
+		var clean = gameplay.make_simulation()
+		check(clean.restore_snapshot(valid_snapshot).ok and not clean.restore_snapshot(before).ok and clean.export_snapshot() == valid_snapshot, "invalid story assignment cannot enter through snapshot restore: " + str(assignment))
+	var named = _personal_world("oliver")
+	var ordinary = _personal_world("ordinary_resident")
+	check(named.services.npc_stories.arc_for("oliver") == "oliver", "known NPC without explicit binding retains the existing authored arc")
+	check(ordinary.services.npc_stories.arc_for("ordinary_resident") in ["neighbor","maker","newcomer"], "ordinary generated NPC without explicit binding retains the current generic assignment rule")
 
 func _test_visual_state() -> void:
 	var actor := {"age":23,"health":100,"needs":{"energy":100,"mood":60,"hygiene":100},"appearance":{},"injuries":{}}

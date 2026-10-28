@@ -1,0 +1,584 @@
+{
+  "schema": 1,
+  "status": "isolated_ui_candidate",
+  "date": "2026-10-28",
+  "owner": "world_places",
+  "source_boundary": "Сценарные адреса сверены с локальными TimeLine и STORY_LOCKS. Обстановка, предметы, реплики и события — оригинальные предложения; полный внешний Google Doc не прочитан.",
+  "graph_path": "res://data/world/city-graph.json",
+  "layout_status": "Нормализованные координаты — предложенная компоновка. Это не проверенные позиции на новом фоне и не снимки игры.",
+  "context_contract": {
+    "phase": "free_roam",
+    "state": "Текущее состояние симуляции, только чтение",
+    "access": "Dictionary location_id → фактический результат CityGraph.can_enter для этого героя и часов",
+    "availability": "Dictionary authority_key → результат существующего запроса actions.availability / world.route / доступности магазина; отсутствие записи блокирует выбор"
+  },
+  "reaction": {
+    "flag_id": "city_cafe_notice_sheltered",
+    "action_id": "wp_rain_margin",
+    "location_id": "riverside_cafe_front",
+    "object_id": "notice_case",
+    "text_key": "city.cafe.notice.remembered",
+    "storage": "Существующий world.flags; значение ставит эффект существующего actions.perform, не helper",
+    "reward": "none",
+    "journal_note": "Не добавляется новый обязательный квест или ready event. Существующая транзакция уже сообщает action_completed; при желании UI может показать локализованную строку успешного действия без нового сохранения."
+  },
+  "catalogue_patch": {
+    "actions": {
+      "wp_last_crate": {
+        "minutes": 2,
+        "locations": [
+          "south_trade_street"
+        ],
+        "hours": [
+          480,
+          1320
+        ],
+        "daily_limit": 1,
+        "costs": {},
+        "requirements": {
+          "path": "world.location",
+          "value": "south_trade_street"
+        },
+        "effects": []
+      },
+      "wp_rain_margin": {
+        "minutes": 2,
+        "locations": [
+          "riverside_cafe_front"
+        ],
+        "hours": [
+          0,
+          0
+        ],
+        "daily_limit": 1,
+        "costs": {},
+        "requirements": {
+          "all": [
+            {
+              "path": "world.location",
+              "value": "riverside_cafe_front"
+            },
+            {
+              "path": "world.weather",
+              "value": "rain"
+            },
+            {
+              "not": {
+                "path": "world.flags.city_cafe_notice_sheltered",
+                "value": true
+              }
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "flag",
+            "id": "city_cafe_notice_sheltered",
+            "value": true
+          }
+        ]
+      }
+    }
+  },
+  "small_scenes": {
+    "wp_last_crate": {
+      "location_id": "south_trade_street",
+      "object_id": "delivery_crate",
+      "choice_id": "check_crate",
+      "success_key": "city.market.crate.result",
+      "decline_key": "city.market.crate.decline",
+      "repeat_key": "city.market.crate.repeat",
+      "requires_npc": false,
+      "explanation": "Сценка переработана в самостоятельный осмотр открытого прилавка: не выдумывает реплику или присутствие продавца. Чтение цены бесплатно; двухминутное действие — добровольное сверение покупок без награды."
+    },
+    "wp_rain_margin": {
+      "location_id": "riverside_cafe_front",
+      "object_id": "notice_case",
+      "choice_id": "shelter_notice",
+      "success_key": "city.cafe.notice.result",
+      "decline_key": "city.cafe.notice.decline",
+      "repeat_key": "city.cafe.notice.remembered",
+      "requires_npc": false,
+      "explanation": "Игрок сам заправляет свободный угол общественной афиши под прозрачный край защиты. Не перемещает чужого NPC, не требует входа в зал и не поднимает отношения. Это единственная сохраняемая реакция пакета."
+    }
+  },
+  "scenes": {
+    "residential_district": {
+      "title_key": "city.courts.title",
+      "description_key": "city.courts.description",
+      "access": "public_exterior",
+      "source_status": "Адрес и характер улиц из сценария; предметные детали предложены",
+      "objects": {
+        "fence_corner": {
+          "title_key": "city.courts.fence.title",
+          "inspection_key": "city.courts.fence.inspect",
+          "anchor_uv": [
+            0.22,
+            0.62
+          ],
+          "choices": {}
+        },
+        "campus_sign": {
+          "title_key": "city.courts.sign.title",
+          "inspection_key": "city.courts.sign.inspect",
+          "anchor_uv": [
+            0.71,
+            0.36
+          ],
+          "choices": {
+            "walk_campus": {
+              "label_key": "city.choice.campus_park",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:campus_park_gate",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "campus_park_gate"
+                }
+              }
+            }
+          }
+        },
+        "pharmacy_turn": {
+          "title_key": "city.courts.pharmacy.title",
+          "inspection_key": "city.courts.pharmacy.inspect",
+          "anchor_uv": [
+            0.53,
+            0.51
+          ],
+          "choices": {
+            "walk_pharmacy": {
+              "label_key": "city.choice.pharmacy",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:pharmacy_house",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "pharmacy_house"
+                }
+              }
+            }
+          }
+        },
+        "home_path": {
+          "title_key": "city.courts.home.title",
+          "inspection_key": "city.courts.home.inspect",
+          "anchor_uv": [
+            0.1,
+            0.75
+          ],
+          "choices": {
+            "walk_home": {
+              "label_key": "city.choice.home",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:student_home",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "student_home"
+                }
+              }
+            },
+            "walk_market": {
+              "label_key": "city.choice.market",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:south_trade_street",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "south_trade_street"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pharmacy_house": {
+      "title_key": "city.pharmacy.title",
+      "description_key": "city.pharmacy.description",
+      "access": "public_exterior",
+      "source_status": "Дом с аптекой и соседние подъезды из chapter_one; часы/товары аптеки неизвестны",
+      "objects": {
+        "pharmacy_sign": {
+          "title_key": "city.pharmacy.sign.title",
+          "inspection_key": "city.pharmacy.sign.inspect",
+          "anchor_uv": [
+            0.62,
+            0.29
+          ],
+          "choices": {}
+        },
+        "public_window": {
+          "title_key": "city.pharmacy.window.title",
+          "inspection_key": "city.pharmacy.window.inspect",
+          "anchor_uv": [
+            0.68,
+            0.54
+          ],
+          "choices": {}
+        },
+        "private_entrances": {
+          "title_key": "city.pharmacy.doors.title",
+          "inspection_key": "city.pharmacy.doors.inspect",
+          "anchor_uv": [
+            0.3,
+            0.63
+          ],
+          "choices": {}
+        },
+        "street_return": {
+          "title_key": "city.pharmacy.return.title",
+          "inspection_key": "city.pharmacy.return.inspect",
+          "anchor_uv": [
+            0.09,
+            0.73
+          ],
+          "choices": {
+            "walk_courts": {
+              "label_key": "city.choice.courts",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:residential_district",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "residential_district"
+                }
+              }
+            },
+            "walk_home": {
+              "label_key": "city.choice.home",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:student_home",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "student_home"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "south_trade_street": {
+      "title_key": "city.market.title",
+      "description_key": "city.market.description",
+      "access": "public_exterior",
+      "source_status": "Переосмысление прежней торговой точки; не функция интерфейса global_map",
+      "objects": {
+        "price_board": {
+          "title_key": "city.market.prices.title",
+          "inspection_key": "city.market.prices.inspect",
+          "anchor_uv": [
+            0.21,
+            0.43
+          ],
+          "choices": {
+            "enter_market": {
+              "label_key": "city.choice.shop_enter",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:south_market",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "south_market"
+                }
+              }
+            }
+          },
+          "service_availability": {
+            "authority_key": "world.journey:south_market",
+            "title_key": "city.market.service.title",
+            "open_key": "city.ui.service_open",
+            "closed_key": "city.ui.service_closed"
+          }
+        },
+        "delivery_crate": {
+          "title_key": "city.market.crate.title",
+          "inspection_key": "city.market.crate.inspect",
+          "anchor_uv": [
+            0.47,
+            0.7
+          ],
+          "choices": {
+            "check_crate": {
+              "label_key": "city.choice.crate",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "catalogue_action",
+              "authority_key": "actions.perform:wp_last_crate",
+              "command": {
+                "module": "actions",
+                "operation": "perform",
+                "args": {
+                  "id": "wp_last_crate"
+                }
+              }
+            }
+          },
+          "daily_repeat_action_id": "wp_last_crate",
+          "daily_repeat_key": "city.market.crate.repeat"
+        },
+        "work_board": {
+          "title_key": "city.market.work.title",
+          "inspection_key": "city.market.work.inspect",
+          "anchor_uv": [
+            0.76,
+            0.38
+          ],
+          "choices": {}
+        },
+        "river_direction": {
+          "title_key": "city.market.river.title",
+          "inspection_key": "city.market.river.inspect",
+          "anchor_uv": [
+            0.88,
+            0.71
+          ],
+          "choices": {
+            "walk_cafe": {
+              "label_key": "city.choice.cafe_front",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:riverside_cafe_front",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "riverside_cafe_front"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "riverside_cafe_front": {
+      "title_key": "city.cafe.title",
+      "description_key": "city.cafe.description",
+      "access": "public_exterior",
+      "source_status": "Кафе существует; публичная доска/подробности входа — оригинальные предложения",
+      "objects": {
+        "entrance_door": {
+          "title_key": "city.cafe.door.title",
+          "inspection_key": "city.cafe.door.inspect",
+          "anchor_uv": [
+            0.71,
+            0.55
+          ],
+          "choices": {
+            "enter_cafe": {
+              "label_key": "city.choice.cafe_enter",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:riverside_cafe",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "riverside_cafe"
+                }
+              }
+            }
+          },
+          "service_availability": {
+            "authority_key": "world.journey:riverside_cafe",
+            "title_key": "city.cafe.service.title",
+            "open_key": "city.ui.service_open",
+            "closed_key": "city.ui.service_closed"
+          }
+        },
+        "notice_case": {
+          "title_key": "city.cafe.notice.title",
+          "inspection_key": "city.cafe.notice.inspect",
+          "anchor_uv": [
+            0.34,
+            0.41
+          ],
+          "inspection_variants": [
+            {
+              "requirements": {
+                "path": "world.flags.city_cafe_notice_sheltered",
+                "value": true
+              },
+              "text_key": "city.cafe.notice.remembered"
+            },
+            {
+              "requirements": {
+                "path": "world.weather",
+                "value": "rain"
+              },
+              "text_key": "city.cafe.notice.rain"
+            }
+          ],
+          "choices": {
+            "shelter_notice": {
+              "label_key": "city.choice.shelter_notice",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "catalogue_action",
+              "authority_key": "actions.perform:wp_rain_margin",
+              "command": {
+                "module": "actions",
+                "operation": "perform",
+                "args": {
+                  "id": "wp_rain_margin"
+                }
+              }
+            }
+          }
+        },
+        "outside_bench": {
+          "title_key": "city.cafe.bench.title",
+          "inspection_key": "city.cafe.bench.inspect",
+          "anchor_uv": [
+            0.19,
+            0.71
+          ],
+          "choices": {}
+        },
+        "riverside_path": {
+          "title_key": "city.cafe.path.title",
+          "inspection_key": "city.cafe.path.inspect",
+          "anchor_uv": [
+            0.08,
+            0.49
+          ],
+          "choices": {
+            "walk_market": {
+              "label_key": "city.choice.market",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:south_trade_street",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "south_trade_street"
+                }
+              }
+            },
+            "walk_river": {
+              "label_key": "city.choice.river",
+              "kind": "command",
+              "confirmation": true,
+              "time_source": "availability",
+              "authority_key": "world.journey:south_promenade",
+              "command": {
+                "module": "world",
+                "operation": "journey",
+                "args": {
+                  "id": "south_promenade"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "strings": {
+    "ru": {
+      "city.courts.title": "Университетские дворы",
+      "city.courts.description": "Невысокие дома стоят за оградами. Между ними легко запомнить три направления: к университетскому парку, торговой улице и дому с аптекой.",
+      "city.courts.fence.title": "Поворот у ограды",
+      "city.courts.fence.inspect": "Калитки отличаются ручками и номерами, но линия оград ведёт к одной развилке. Из чужих окон слышен обычный домашний шум. Заходить туда без приглашения незачем.",
+      "city.courts.sign.title": "Путь к институту",
+      "city.courts.sign.inspect": "За домами видны верхние этажи краснокирпичного корпуса. До входа нужно пройти парковую зону; отсюда не попасть прямо в аудиторию.",
+      "city.courts.pharmacy.title": "Вывеска за поворотом",
+      "city.courts.pharmacy.inspect": "За соседними домами видна аптечная вывеска. Отдельные жилые подъезды выходят рядом с ней, а не через торговый зал.",
+      "city.courts.home.title": "Знакомая дорожка",
+      "city.courts.home.inspect": "Дорога возвращает к собственному двору. В другую сторону продолжаются небольшие магазины: за покупками не обязательно пересекать весь город.",
+      "city.pharmacy.title": "Дом с аптекой",
+      "city.pharmacy.description": "Аптечная витрина смотрит на улицу, а двери жилых подъездов стоят в стороне. Адрес узнаётся с дороги; публичный фасад не даёт права входить к жильцам.",
+      "city.pharmacy.sign.title": "Аптечная вывеска",
+      "city.pharmacy.sign.inspect": "Знакомый знак аптеки виден ещё с поворота. Над входом остаётся место для объявления с часами, а жилые двери стоят отдельно.",
+      "city.pharmacy.window.title": "Публичная витрина",
+      "city.pharmacy.window.inspect": "В стекле отражаются улица и ограды напротив. За витриной не видно жилых комнат: к ним ведут отдельные подъезды.",
+      "city.pharmacy.doors.title": "Двери подъездов",
+      "city.pharmacy.doors.inspect": "Две отдельные двери ведут в жилую часть. Сейчас они закрыты. Если сюда назначена встреча, лучше дождаться человека у входа.",
+      "city.pharmacy.return.title": "Обратно на улицу",
+      "city.pharmacy.return.inspect": "В сторону дворов видны те же ограды. К собственному дому есть короткая соседская дорожка; время перехода покажет маршрут.",
+      "city.market.title": "Южная торговая улица",
+      "city.market.description": "У прилавков быстро решают повседневные дела. Пустая корзина, свежий ценник и коробки у двери говорят о прошедшем дне больше, чем одинаковые вывески.",
+      "city.market.prices.title": "Цены у прилавка",
+      "city.market.prices.inspect": "Перед входом видны ценники и край прилавка. Купить продукты можно внутри лавки, когда она открыта; уличный проход остаётся свободным.",
+      "city.market.crate.title": "Коробки поставки",
+      "city.market.crate.inspect": "Перевязанные коробки стоят рядом с уже пустыми. Можно на минуту задержаться и сверить покупки на день, прежде чем выбирать товары.",
+      "city.market.crate.result": "Вы ещё раз прикидываете, что понадобится на день. Теперь можно выбрать продукты у прилавка или оставить покупки на потом.",
+      "city.market.crate.decline": "Можно пройти дальше. За вами не закрепляется товар или чужое поручение.",
+      "city.market.crate.repeat": "Покупки на сегодня уже сверены. Цены и настоящий остаток можно посмотреть бесплатно.",
+      "city.market.work.title": "Рабочие объявления",
+      "city.market.work.inspect": "В рабочих объявлениях разные адреса и часы. Стоит сверить длительность смены и дорогу, прежде чем соглашаться на дело.",
+      "city.market.river.title": "В сторону реки",
+      "city.market.river.inspect": "Торговый проход продолжается к кафе. С этой стороны уже слышны вода и хлопок террасной двери.",
+      "city.cafe.title": "Перед кафе у реки",
+      "city.cafe.description": "У двери становится слышно воду и приглушённый звон посуды. Публичный проход, наружная доска и вход в зал — разные части одного места.",
+      "city.cafe.door.title": "Дверь в зал",
+      "city.cafe.door.inspect": "За дверью видны столы и стойка. Открыт ли зал сейчас, можно проверить перед входом; проход вдоль здания остаётся снаружи.",
+      "city.cafe.notice.title": "Общая доска у навеса",
+      "city.cafe.notice.inspect": "Объявление лежит под прозрачной защитой. Нижний край чуть выбился наружу. Читать его можно с улицы, не входя в кафе.",
+      "city.cafe.notice.rain": "Дождь достаёт до свободного угла афиши. Можно заправить его под прозрачный край защиты или просто продолжить путь.",
+      "city.cafe.notice.result": "Вы аккуратно заправляете край листа под защиту. Теперь капли стекают поверх, а текст остаётся сухим.",
+      "city.cafe.notice.decline": "Можно идти дальше. Никто не ставит вам в вину чужую промокшую афишу.",
+      "city.cafe.notice.remembered": "Край афиши по-прежнему заправлен под прозрачную защиту. Небольшая перемена осталась после прошлого визита; делать это заново незачем.",
+      "city.cafe.bench.title": "Лавка под стеной",
+      "city.cafe.bench.inspect": "Лавка стоит под стеной, оставляя проход свободным. У сиденья есть место для хвоста, а рядом помещается сумка.",
+      "city.cafe.path.title": "Проход вдоль воды",
+      "city.cafe.path.inspect": "Дорожка огибает кафе: вода остаётся с одной стороны, торговая улица — с другой. Для прохода не нужно заходить за стойку.",
+      "city.choice.campus_park": "К парку перед институтом",
+      "city.choice.pharmacy": "К дому с аптекой",
+      "city.choice.home": "К своему двору",
+      "city.choice.market": "На торговую улицу",
+      "city.choice.courts": "В жилые дворы",
+      "city.choice.shop": "Посмотреть товары",
+      "city.choice.crate": "Сверить покупки на день",
+      "city.choice.cafe_front": "К входу кафе",
+      "city.choice.cafe_enter": "Войти в зал",
+      "city.choice.shelter_notice": "Заправить край афиши под защиту",
+      "city.choice.river": "На набережную",
+      "city.choice.shop_enter": "Войти в продуктовую лавку",
+      "city.market.service.title": "Продуктовая лавка",
+      "city.cafe.service.title": "Зал кафе",
+      "city.ui.service_open": "Открыто",
+      "city.ui.service_closed": "Сейчас недоступно",
+      "city.ui.objects": "Осмотреть",
+      "city.ui.free_inspection": "Осмотр · бесплатно",
+      "city.ui.minutes": "%d мин",
+      "city.ui.action_unavailable": "Действие сейчас недоступно",
+      "city.ui.closed": "Закрыто в это время",
+      "city.ui.done_today": "На сегодня уже сделано",
+      "city.ui.notice_done": "Край афиши уже защищён",
+      "city.ui.rain_needed": "Это нужно только во время дождя",
+      "city.ui.access_denied": "Нет доступа",
+      "city.ui.no_route": "Сейчас сюда не пройти",
+      "city.ui.authority_missing": "Доступность пока не определена",
+      "city.ui.story_locked": "Сейчас продолжается сюжетная сцена"
+    }
+  }
+}

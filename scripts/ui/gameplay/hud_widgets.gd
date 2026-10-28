@@ -6,21 +6,25 @@ static var _icons: Dictionary = {}
 static func icon(id: String) -> Texture2D:
 	if _icons.has(id): return _icons[id]
 	var paths := {
+		"book": '<path d="M16 7C11 4 6 4 2 6v21c5-2 9-2 14 1 5-3 9-3 14-1V6c-4-2-9-2-14 1zM16 7v21M6 11h6M20 11h6"/>',
+		"marker": '<circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="5" fill="#90c6e8"/>',
+		"estate": '<path d="M2 15L16 3l14 12M6 12v17h20V12M13 29V18h7v11"/>',
+		"cook": '<path d="M4 12h24v8a10 10 0 01-10 10h-4A10 10 0 014 20zM2 12h28M10 7c0-2 2-3 2-5M17 7c0-2 2-3 2-5M24 7c0-2 2-3 2-5"/>',
+		"market": '<path d="M4 12h24v17H4zM2 12l3-8h22l3 8M8 12v5M16 12v5M24 12v5M10 29v-9h12v9"/>',
+		"study": '<path d="M3 7c5-2 9-2 13 1 4-3 8-3 13-1v20c-5-2-9-2-13 1-4-3-8-3-13-1zM16 8v20M7 12h5M20 12h5"/>',
 		"map": '<path d="M3 6l8-3 10 3 8-3v23l-8 3-10-3-8 3zM11 3v23M21 6v23"/>',
 		"people": '<circle cx="12" cy="10" r="5"/><path d="M3 28v-4a9 9 0 0118 0v4M22 6a5 5 0 010 10M25 20a8 8 0 014 8"/>',
 		"phone": '<rect x="8" y="2" width="16" height="28" rx="2"/><path d="M12 6h8M14 26h4"/>',
 		"inventory": '<rect x="6" y="8" width="20" height="21" rx="4"/><path d="M12 8V5h8v3M10 12h12M10 21h12v6H10zM3 14v11M29 14v11"/>',
-		"journal": '<path d="M7 3h20v26H7a3 3 0 010-6h20M7 3a3 3 0 00-3 3v20M11 9h11M11 14h8"/>',
+		"journal": '<path d="M16 7C11 3 6 3 2 5v23c5-2 10-2 14 1 4-3 9-3 14-1V5c-4-2-9-2-14 2zM16 7v22"/>',
 		"profile": '<circle cx="16" cy="10" r="6"/><path d="M4 29v-3a12 12 0 0124 0v3"/>',
 		"sections": '<path d="M4 5h9v9H4zM19 5h9v9h-9zM4 20h9v9H4zM19 20h9v9h-9z"/>',
 		"clock": '<circle cx="16" cy="16" r="13"/><path d="M16 7v10l6 4"/>',
-		"calendar": '<rect x="4" y="6" width="24" height="23" rx="2"/><path d="M4 12h24M10 3v6M22 3v6M10 17h3M19 17h3M10 23h3M19 23h3"/>',
-		"book": '<path d="M16 7C11 4 6 4 2 6v21c5-2 9-2 14 1 5-3 9-3 14-1V6c-4-2-9-2-14 1zM16 7v21M6 11h6M20 11h6"/>',
-		"marker": '<circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="5" fill="#90c6e8"/>',
+		"calendar": '<rect x="3" y="6" width="26" height="24" rx="2"/><path d="M3 12h26M9 2v7M23 2v7M9 17h1M16 17h1M23 17h1M9 24h1M16 24h1M23 24h1"/>',
 		"health": '<path d="M16 28S2 20 2 11C2 2 13 1 16 8c3-7 14-6 14 3 0 9-14 17-14 17z" fill="#da9a63" fill-opacity=".18"/>',
 		"energy": '<path d="M18 2L5 19h10l-1 11 13-18H17z" fill="#90c6e8" fill-opacity=".16"/>',
 		"satiety": '<path d="M6 3v10M11 3v10M3 3v8a5 5 0 0010 0V3M8 16v14M24 3v27M24 3c-6 5-6 14 0 14"/>',
-		"hygiene": '<path d="M16 2S5 15 5 21a11 11 0 0022 0C27 15 16 2 16 2zM10 21a6 6 0 006 6"/>',
+		"hygiene": '<path d="M10 10h17M12 10V6a5 5 0 00-10 0M10 14v3M18 14v3M26 14v3M10 23v3M18 23v3M26 23v3"/>',
 		"menu": '<path d="M5 8h22M5 16h22M5 24h22"/>',
 		"eye": '<path d="M2 16S7 7 16 7s14 9 14 9-5 9-14 9S2 16 2 16z"/><circle cx="16" cy="16" r="4"/>',
 		"close": '<path d="M7 7l18 18M25 7L7 25"/>'}
@@ -33,14 +37,10 @@ static func icon(id: String) -> Texture2D:
 		"wallet": '<path d="M4 9l20-5v5M4 9h24v19H4zM21 16h9v7h-9z"/><circle cx="25" cy="19.5" r=".8"/>'})
 	paths.merge({
 		"home": '<path d="M2 15L16 3l14 12M6 12v17h20V12M13 29V18h7v11"/>',
-		"estate": '<path d="M2 15L16 3l14 12M6 12v17h20V12M13 29V18h7v11"/>',
-		"cook": '<path d="M4 12h24v8a10 10 0 01-10 10h-4A10 10 0 014 20zM2 12h28M10 7c0-2 2-3 2-5M17 7c0-2 2-3 2-5M24 7c0-2 2-3 2-5"/>',
-		"market": '<path d="M4 12h24v17H4zM2 12l3-8h22l3 8M8 12v5M16 12v5M24 12v5M10 29v-9h12v9"/>',
-		"study": '<path d="M3 7c5-2 9-2 13 1 4-3 8-3 13-1v20c-5-2-9-2-13 1-4-3-8-3-13-1zM16 8v20M7 12h5M20 12h5"/>',
 		"outfit": '<path d="M10 3l6 4 6-4 8 9-6 5-3-3v16H11V14l-3 3-6-5z"/>',
 		"play": '<path d="M10 4l18 12-18 12z"/>',
 		"pause": '<path d="M10 5v22M22 5v22"/>',
-		"thirst": '<path d="M7 5h18l-3 24H10zM9 12h14M12 8h2M20 4l3-3"/>',
+		"thirst": '<path d="M16 2S5 15 5 21a11 11 0 0022 0C27 15 16 2 16 2z"/>',
 		"toilet": '<path d="M5 3h11v10H5zM7 13v5h22a11 11 0 01-11 10h-6v-5M16 10h12v8M18 28v3h9"/>',
 		"leisure": '<path d="M9 10h14c5 0 7 13 5 15s-6-4-7-4H11c-1 0-5 6-7 4S4 10 9 10zM10 13v7M7 16h6"/><circle cx="22" cy="14" r="1"/><circle cx="25" cy="18" r="1"/>',
 		"chat": '<path d="M3 4h25v18H13l-7 6v-6H3zM8 10h15M8 15h10"/>'})
@@ -68,50 +68,6 @@ static func panel_style(background: Color = Color(0.018, 0.045, 0.065, 0.90)) ->
 	style.shadow_offset = Vector2(0, 5)
 	return style
 
-static func hud_surface(background: Color = Color(0.018, 0.045, 0.072, 0.88)) -> StyleBoxFlat:
-	var style := UI.style(background, Color(0.43, 0.62, 0.73, 0.48))
-	style.set_border_width_all(1)
-	style.set_corner_radius_all(6)
-	style.shadow_color = Color(0.0, 0.01, 0.025, 0.32)
-	style.shadow_size = 10
-	style.shadow_offset = Vector2(0, 4)
-	return style
-
-static func shortcut_style(selected: bool = false, hovered: bool = false) -> StyleBoxFlat:
-	var background := Color(0.11, 0.23, 0.32, 0.94) if selected else Color(0.045, 0.11, 0.17, 0.92) if hovered else Color(0.026, 0.067, 0.105, 0.86)
-	var border := UI.BLUE if selected or hovered else Color(0.48, 0.67, 0.78, 0.50)
-	var style := hud_surface(background)
-	style.border_color = border
-	style.set_corner_radius_all(14)
-	style.shadow_size = 0
-	style.set_content_margin_all(8)
-	return style
-
-static func minimal_shortcut_style(selected: bool = false, hovered: bool = false) -> StyleBoxFlat:
-	var style := UI.style(Color(0.03, 0.09, 0.14, 0.50) if selected or hovered else Color.TRANSPARENT, UI.BLUE if selected or hovered else Color.TRANSPARENT)
-	style.set_border_width_all(0)
-	style.border_width_bottom = 1 if selected or hovered else 0
-	style.set_corner_radius_all(0)
-	style.set_content_margin_all(3)
-	return style
-
-static func labeled_shortcut(parent: Node, title: String, key: String, kind: String, callback: Callable) -> Button:
-	var column := UI.column(parent, 4)
-	column.custom_minimum_size.x = 80
-	var button := dock_button(column, title, key, kind, callback)
-	button.custom_minimum_size = Vector2(66, 58)
-	button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	button.add_theme_constant_override("icon_max_width", 29)
-	button.add_theme_stylebox_override("normal", minimal_shortcut_style())
-	button.add_theme_stylebox_override("hover", minimal_shortcut_style(false, true))
-	button.add_theme_stylebox_override("pressed", minimal_shortcut_style(true))
-	button.add_theme_stylebox_override("focus", minimal_shortcut_style(true))
-	var caption := UI.label(column, title, 17, UI.INK)
-	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	caption.autowrap_mode = TextServer.AUTOWRAP_OFF
-	return button
-
 static func quiet_button(button: Button) -> void:
 	button.add_theme_stylebox_override("normal", button_style())
 	button.add_theme_stylebox_override("hover", button_style(Color(0.08,0.16,0.22,0.86), UI.BLUE))
@@ -132,6 +88,21 @@ static func dock_button(parent: Node, title: String, key: String, kind: String, 
 	quiet_button(button)
 	return button
 
+static func labeled_button(parent: Node, title: String, key: String, kind: String, callback: Callable) -> Button:
+	var button := dock_button(parent,title,key,kind,callback)
+	button.custom_minimum_size = Vector2(96,96)
+	button.add_theme_constant_override("icon_max_width",32)
+	for state in ["normal","hover","pressed","focus","disabled"]:
+		var skin := button.get_theme_stylebox(state).duplicate() as StyleBoxFlat
+		skin.content_margin_bottom = 34
+		button.add_theme_stylebox_override(state,skin)
+	var caption := UI.label(button,title,18)
+	caption.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+	caption.offset_top = -30
+	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	return button
+
 static func rail(parent: Node, height: int, color: Color) -> ProgressBar:
 	var bar := ProgressBar.new()
 	bar.show_percentage = false
@@ -147,3 +118,4 @@ static func rail(parent: Node, height: int, color: Color) -> ProgressBar:
 	bar.add_theme_stylebox_override("fill", fill)
 	parent.add_child(bar)
 	return bar
+

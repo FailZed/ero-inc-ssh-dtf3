@@ -180,12 +180,14 @@ func _meetings() -> void:
 				var duration:=int(sim.catalog.agency_actions[action].minutes)
 				if not _free(a,duration) or not _free(b,duration): continue
 				if not str(sim.services.npc_relationships.forecast(a,b,action).blocked).is_empty(): continue
-				sim.services.npc_agency._start(first,action,str(first.location),b,"relationship_intention")
+				sim.services.npc_planner.submit_pair(a,b,action)
 				log_event("courtship_started",{"a":a,"b":b,"action":action})
 				break
 			if not Context.pair_blocked(sim,a,b,0).is_empty(): continue
-			if sim.rng.randf()>float(rules().initiative_chance): continue
-			if encounters.start(a,b): break
+			var health = sim.services.adult_health
+			var mutual := minf(float(health.relationships.desire_for(a,b).get("score",50)),float(health.relationships.desire_for(b,a).get("score",50)))
+			if sim.rng.randf()>float(rules().initiative_chance)*clampf(mutual/50.0,0.25,1): continue
+			if sim.services.npc_planner.submit_pair(a,b): break
 	sim.state.npc_reproduction.cursor=(start+int(rules().actor_budget))%ids.size()
 
 func _response(p: Dictionary) -> void:

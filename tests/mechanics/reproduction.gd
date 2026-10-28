@@ -264,7 +264,8 @@ func _snapshots() -> void:
 		t._check(not sim.restore_snapshot(bad).ok and before==sim.export_snapshot(),"corrupt reproductive snapshot rejected atomically: "+bad_case)
 	var old=Old.new(1,config())
 	var legacy:Dictionary=old.export_snapshot()
-	t._check(replay.restore_snapshot(legacy).ok and replay.state.reproduction.exposures.is_empty(),"exact previous extended catalog adds new state only in memory")
+	var current:Dictionary=replay.export_snapshot()
+	t._check(not replay.restore_snapshot(legacy).ok and current==replay.export_snapshot(),"superseded extended snapshot is rejected without conversion")
 	t._check(not legacy.state.has("reproduction"),"old snapshot input remains untouched")
 
 func _parental_roles() -> void:

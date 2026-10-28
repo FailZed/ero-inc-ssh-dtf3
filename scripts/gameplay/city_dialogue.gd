@@ -51,4 +51,4 @@ func execute(operation: String,args: Dictionary) -> Dictionary:
 	return Rules.ok(view)
 
 func local_initiative(npc: Dictionary) -> bool:
-	return npc.location == sim.state.world.location and (not City.point(str(npc.location)).is_empty() or npc.location == "residential_district")
+	return npc.location == sim.state.world.location and bool(sim.catalog.locations.get(str(npc.location),{}).get("public",false))

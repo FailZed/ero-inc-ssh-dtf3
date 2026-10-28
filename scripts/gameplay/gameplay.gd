@@ -31,7 +31,6 @@ func _ready() -> void:
 	_new_simulation()
 	GameSession.game_time_reset.connect(_on_time_reset)
 	GameSession.game_time_advanced.connect(_on_time_advanced)
-	LocationManager.set_travel_guard(_guard_legacy_travel)
 	Dialogic.signal_event.connect(_on_story_signal)
 	GameSession.set_game_time_mode("actions")
 
@@ -176,15 +175,11 @@ func open_sandbox() -> Dictionary:
 	return SandboxFlow.begin(self)
 
 func apply_curriculum(subjects: Array, sport: String) -> bool:
-	var Curriculum = preload("res://scripts/gameplay/curriculum.gd")
-	if phase != "story" or subjects.size() < 2 or subjects.size() > 4 or not sport in Curriculum.SPORTS: return false
-	var unique := {}
-	for id in subjects:
-		if not id in Curriculum.SUBJECTS or unique.has(id): return false
-		unique[id] = true
+	var Curriculum = preload("res://scripts/mechanics/education_schedule.gd")
+	if phase != "story" or is_sandbox() or not Curriculum.valid_subjects(subjects) or not sport in Curriculum.SPORTS: return false
 	story_flags.subjects = subjects.duplicate()
 	story_flags.sport = sport
-	for id in Curriculum.SUBJECTS: simulation.state.world.flags["subject_"+id] = id in subjects
+	Curriculum.apply_plan(simulation.state,true,subjects)
 	_checkpoint()
 	return true
 
@@ -292,11 +287,12 @@ func inspect_story_object(id: String) -> Dictionary:
 
 func story_crowd(location: String) -> Array:
 	# Reuse the initial population. Selection is stable and consumes no simulation RNG.
-	if not location in ["street","campus_hall","campus_corridor","campus_courtyard"]: return []
+	if not location in ["student_home","campus_hall","campus_corridor","campus_courtyard"]: return []
 	var eligible: Array = []
 	for id in simulation.state.social.npcs:
 		if not str(id).begins_with("resident_"): continue
 		var npc: Dictionary = simulation.state.social.npcs[id]
+		if npc.biography.get("city_cast_id","") == "first_trade_loop": continue
 		if location in ["campus_hall","campus_corridor"] and npc.cohort != "learner": continue
 		eligible.append(id)
 	eligible.sort()
@@ -345,6 +341,7 @@ func complete_chapter_one() -> void:
 	# Starting apartment is paid for by parents in the script. Next bill is a month away.
 	var property := {"owned": false, "equipment": {"stove": 1}, "tenants": [], "next_bill": Simulation.calendar.add_months(int(simulation.state.clock.total_minutes), 1), "arrears": 0, "rent_income": 0, "tenant_arrears": {}, "original_homes": {}, "layout": {}}
 	simulation.state.housing = {"properties": {"apartment": property}, "residence": "apartment"}
+	simulation.state.world.flags.city_story_home = false
 	simulation.state.world.location = "bedroom"
 	simulation.state.world.equipment = ["stove"]
 	simulation.command("inventory", "add", {"id": "meal", "quantity": 3})
@@ -411,10 +408,6 @@ func _seed_story_contacts() -> void:
 	simulation.command("social","contact",{"id":"ellie"})
 	simulation.command("social","relationship",{"id":"ellie","changes":{"trust":10,"affinity":5}})
 	_bind_npc_art()
-
-func _guard_legacy_travel(_id: String) -> Dictionary:
-	# The free-play map stays inside game.tscn so narrative and save context survive travel.
-	return {"ok": false, "error": "use_gameplay_map" if phase == "free_roam" else "story_locked"}
 
 func _on_domain_event(event: Dictionary) -> void:
 	if event.get("kind", "") == "intimacy_scene_requested": intimacy_scene_requested.emit(event.data.duplicate(true))

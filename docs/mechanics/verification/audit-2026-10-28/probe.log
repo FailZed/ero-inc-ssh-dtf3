@@ -1,0 +1,19 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: [CSM][I]Live2D Cubism Core version: 05.00.0000 (83886080)
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::StartUp() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: [CSM][I]CubismFramework::Initialize() is complete.
+
+   at: output (src\register_types.cpp:42)
+MECHANICS_AUDIT_PROBE {"audio":"Dummy","date":"2026-10-28","inventory":{"catalog":{"actions":2,"agency_actions":27,"agency_aspirations":6,"combat_moves":12,"contraceptive_methods":4,"contracts":10,"dialogue_nodes":30,"dialogue_pools":176,"family_actions":6,"family_stages":5,"items":40,"lessons":7,"npc_story_arcs":6,"professions":3,"properties":4,"publications":2,"recipes":9,"reproductive_procedures":2,"skills":30,"stream_topics":3,"training_programs":5,"weapons":6},"services":["character","inventory","world","economy","housing","preferences","social","organizations","lifecycle","encounters","actions","events","health","combat","careers","security","social_rules","institutions","interior","activities","appearance","population","npc_behavior","npc_personalities","npc_agency","npc_relationships","npc_dialogue","family","digital","collections","reproduction","intimacy","child_support","pregnancy_wellbeing","adult_health","npc_reproduction","npc_stories","livelihood","growth","needs"],"work":{"goals":5,"home_upgrades":3,"jobs":33,"order_templates":5}},"observations":[{"absences":0,"arrival":"10:50","end":"11:50","grade":2,"id":"late_lesson","result":{"data":{"clock":{"date_text":"APR 13","day":13,"day_index":1,"hour":11,"minute":50,"minute_of_day":710,"month":"APR","month_number":4,"phase":"day","time_text":"11:50","total_minutes":2150,"week_index":0,"weekday":1,"year":2026}},"ok":true},"scheduled":"10:00-11:00","study_skill":15},{"conflicts":[{"commute":14,"end":2100,"id":"common_day","overlap":false,"start":2040}],"id":"commute_guard","job":"race_marshal","result":{"error":"work_conflicts_study","ok":false},"start":"09:00","work_ends":"10:00"},{"cash":5099,"completed":true,"craft_skill":5,"id":"craft_job_outputs","inventory_after":{},"inventory_before":{}},{"id":"authored_pools","rounds":5,"tasks_per_job":{"card_host":5,"comedy_writer":5,"community_listener":5,"copy_editor":5,"craft_workshop":5,"dance_assistant":5,"day_planner":5,"defence_assistant":5,"event_host":5,"fact_checker":5,"fundraiser":5,"gym_assistant":5,"music_arranger":5,"park_gardener":5,"puzzle_editor":5,"security_auditor":5,"tutor":5}}],"timings":[{"advance_ok":true,"milliseconds":53,"minutes":60,"npcs":20,"setup_ok":true},{"advance_ok":true,"milliseconds":230,"minutes":60,"npcs":100,"setup_ok":true}],"user_save_slots_modified":false}
+WARNING: [CSM][I]CubismFramework::Dispose() is complete.
+
+   at: output (src\register_types.cpp:42)
+WARNING: 63 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 27 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

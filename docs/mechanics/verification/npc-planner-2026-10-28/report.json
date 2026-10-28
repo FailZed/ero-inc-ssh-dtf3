@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-28",
+  "godot": "4.7.2.stable",
+  "main_schema": 9,
+  "main_services": 41,
+  "implementation": {
+    "calendar_horizon_minutes": 1440,
+    "decision_phase": "Resolve competing requests after every simulated minute; continue Utility AI for unreserved NPCs.",
+    "durable_task_owners": [
+      "adult_health",
+      "pregnancy_wellbeing",
+      "family",
+      "npc_reproduction",
+      "appointment.journey"
+    ],
+    "new_save_migrations": false,
+    "user_save_files_written": false,
+    "rendered_assets_changed": false
+  },
+  "tests": {
+    "pack": {
+      "checks": 2800,
+      "failed": 0,
+      "failures": []
+    },
+    "main": {
+      "checks": 703,
+      "failed": 0,
+      "failures": []
+    },
+    "focused": {
+      "checks": 92,
+      "failed": 0,
+      "failures": []
+    },
+    "main_focused": {
+      "checks": 24,
+      "failed": 0,
+      "failures": []
+    },
+    "profile_before": {
+      "conflicts_us": 117050,
+      "evaluate_us": 1661606,
+      "npcs": 100,
+      "queries": 300,
+      "windows_us": 11690
+    },
+    "profile_after": {
+      "conflicts_us": 67848,
+      "evaluate_us": 666420,
+      "npcs": 100,
+      "queries": 300,
+      "windows_us": 7257
+    },
+    "benchmark": {
+      "actions": {
+        "connect": 518,
+        "cooperate": 110,
+        "create": 838,
+        "deceive": 102,
+        "dispute": 9,
+        "eat": 1030,
+        "gossip": 17,
+        "joke": 109,
+        "practice": 2158,
+        "publish": 35,
+        "recreation": 4,
+        "rest": 187,
+        "sleep": 2661,
+        "study": 1392,
+        "support": 1,
+        "verify": 4,
+        "visit": 430,
+        "walk": 264,
+        "wash": 483,
+        "work": 1752
+      },
+      "days": 7,
+      "milestones": 138,
+      "milliseconds": 75046,
+      "npcs": 100
+    },
+    "services": [
+      "character",
+      "inventory",
+      "world",
+      "economy",
+      "housing",
+      "preferences",
+      "social",
+      "organizations",
+      "lifecycle",
+      "encounters",
+      "actions",
+      "events",
+      "health",
+      "combat",
+      "careers",
+      "security",
+      "social_rules",
+      "institutions",
+      "interior",
+      "activities",
+      "appearance",
+      "population",
+      "npc_behavior",
+      "npc_personalities",
+      "npc_agency",
+      "npc_relationships",
+      "npc_dialogue",
+      "npc_planner",
+      "family",
+      "digital",
+      "collections",
+      "reproduction",
+      "intimacy",
+      "child_support",
+      "pregnancy_wellbeing",
+      "adult_health",
+      "npc_reproduction",
+      "npc_stories",
+      "livelihood",
+      "growth",
+      "needs"
+    ],
+    "logs": [
+      {
+        "path": "mechanics-pack.log",
+        "sha256": "389b70abed0fdca8e56a9fe5de78d48c7c919a0b42f15ac3554bdc09560542d0"
+      },
+      {
+        "path": "gameplay.log",
+        "sha256": "155e5519cfaf95eabce0a5faef07a0b79bad6a3493fa373c697467916070e81c"
+      },
+      {
+        "path": "focused.log",
+        "sha256": "7ca9091917360fc1e7ec98a84c701b44c81e3c6eed06e54368e34709cd42d76a"
+      },
+      {
+        "path": "main-focused.log",
+        "sha256": "2fb566a683556daf68c1ee1ff4b1113ecc6f35c1de31ddb13eecd36fc15c817e"
+      },
+      {
+        "path": "profile-before.log",
+        "sha256": "c8baaa4bf5f13f939769ed95b6a84fa7737201d942d052822dd6ef96faf30b67"
+      },
+      {
+        "path": "profile-after.log",
+        "sha256": "35944dfcb99f39790f56694bf88626ae06c9b5e70710f1f6f198ce9e7162a85f"
+      },
+      {
+        "path": "import.log",
+        "sha256": "5d62851ae8268e60d97e516f75cc5e4450d43d770ac72b5b4237e1d871c2a276"
+      }
+    ],
+    "commands": [
+      "tools/test_mechanics.ps1 -Isolated -Pack",
+      "tools/test_gameplay.ps1",
+      "tools/godot.ps1 --headless --script res://tests/mechanics/run_npc_planner.gd",
+      "tools/godot.ps1 --headless --script res://tests/gameplay/run_npc_planner.gd"
+    ],
+    "passed_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "coverage": [
+    "submission order does not change winning task or payment",
+    "losing intent spends no money and grants no benefit",
+    "travel to next obligation and boundary equality",
+    "future opening hours and proactive shift departure",
+    "meeting travel without teleportation",
+    "JSON replay during meeting travel",
+    "duplicate, conflicting and corrupt reservations rejected atomically",
+    "medical meeting cancellation without player blame",
+    "night emergency route and actual treatment duration",
+    "unknown script reservation preserved",
+    "failed command discards deferred requests",
+    "decision forecasts preserve snapshot and RNG"
+  ],
+  "performance": {
+    "measurement": "Godot --headless --profiling, 100 NPCs, 300 read-only evaluations",
+    "before_evaluate_us": 1661606,
+    "after_evaluate_us": 666420,
+    "whole_week_npc_life_benchmark_ms": 75046,
+    "note": "Local CPU measurements vary with system load. The full NPC-life benchmark does not include every health domain."
+  },
+  "limits": [
+    "Mandatory departures use the existing 15-minute NPC decision cadence; appointments and urgent physiology are checked each minute.",
+    "Forecasts use known current resources and world conditions.",
+    "Routine active jobs retain ownership; emergency care may interrupt recognized owners.",
+    "Known main-game exit messages: 63 ObjectDB instances and 27 resources; standalone pack exits cleanly."
+  ],
+  "source_files": [
+    {
+      "path": "scripts/mechanics/npc_planner.gd",
+      "sha256": "98465842111882461f2a4e38127cc5a1dc024da8786dc3a3a72c1fc8f6bb885e"
+    },
+    {
+      "path": "scripts/mechanics/npc_calendar.gd",
+      "sha256": "6eb1a959f580a9b4930176c40403d0bfe1788bc2d997c8238c9ede909731b497"
+    },
+    {
+      "path": "scripts/mechanics/npc_life_simulation.gd",
+      "sha256": "33d2c08fb1a2b35b9506c0d8ebe414440c918124f95381ea03d2d1b60a5f1b37"
+    },
+    {
+      "path": "scripts/mechanics/simulation.gd",
+      "sha256": "f746f897c7577271975748d7b1ec882bb11cd2b3ac947f2253b93c7989dba9d0"
+    },
+    {
+      "path": "scripts/mechanics/npc_agency.gd",
+      "sha256": "53253b3656aae873c40ebd8a643a91efaebb44764720b3646340c8cb3950d80b"
+    },
+    {
+      "path": "scripts/mechanics/human_agency.gd",
+      "sha256": "38fc7e0721d719d5eb17bd08b800904b2f434e988a3c801d72020b58b7703928"
+    },
+    {
+      "path": "scripts/mechanics/adult_health_care.gd",
+      "sha256": "a3b2e664d5833130e4a7a0b8ab97095e4d701d22104eb555e908c5b65b34f3f4"
+    },
+    {
+      "path": "scripts/mechanics/pregnancy_selfcare.gd",
+      "sha256": "77e08627cbcb1fd6590aad22b95e17aedce5c919a1d35b1d9695efce48ca3380"
+    },
+    {
+      "path": "scripts/mechanics/npc_reproductive_jobs.gd",
+      "sha256": "d1d0745a8e46ddd3899180429c28f8fa9919740faff5b12457786313040dd21b"
+    },
+    {
+      "path": "scripts/mechanics/npc_reproductive_context.gd",
+      "sha256": "ea5441b59e912901e5f48ee48941b305d2dcbc88307b58b1236581a8cef4f04f"
+    },
+    {
+      "path": "scripts/mechanics/npc_reproduction.gd",
+      "sha256": "370094d61bb2ed310df218804f46f778b5ab0ad3e083064a3df67d51c0c9eeb9"
+    },
+    {
+      "path": "scripts/mechanics/npc_private_encounters.gd",
+      "sha256": "afcad21ed94c07094b5848e997c8b44277607c93e4b08668296af4d2d71e7737"
+    },
+    {
+      "path": "scripts/mechanics/family.gd",
+      "sha256": "2246f1f703d8e2180d82f7bd9dc25fe4d4bec4ca394a229ac6e92d65bff81473"
+    },
+    {
+      "path": "scripts/mechanics/intimacy.gd",
+      "sha256": "f535ca57733de1640e465899678db095eb35a731e3d9bc173355f11f9978d843"
+    },
+    {
+      "path": "scripts/mechanics/world.gd",
+      "sha256": "0b572aa2791f0583af8988b046ebf31dbe80bd5f6bbd548d93e659597d263c57"
+    },
+    {
+      "path": "scripts/gameplay/main_simulation.gd",
+      "sha256": "7c6cd55d9831ec7f5ef8800816d52dfebd062d45bc37458bf9788a234f8eb7e9"
+    },
+    {
+      "path": "scripts/gameplay/presentation.gd",
+      "sha256": "228b982eb737482c11b177e8ed169a17b42dc1e80b5b5a1a00608d1bf8793b7e"
+    },
+    {
+      "path": "scripts/gameplay/social_presentation.gd",
+      "sha256": "51f109ff80569d50878a712407b336cdabfa33af0b896fb2693cf4508fda95a3"
+    },
+    {
+      "path": "tests/mechanics/npc_planner.gd",
+      "sha256": "73d02c75e91559c3b6091a44964be7362a91c550f5a95b39307ca32ff04042b6"
+    },
+    {
+      "path": "tests/mechanics/profile_npc_planner.gd",
+      "sha256": "4f660442099c0e06408b56bb04a820a526589952d3d72260c02be74ce5ae105a"
+    },
+    {
+      "path": "tests/gameplay/npc_planner.gd",
+      "sha256": "44aaba9c4fa22e8942b2158fa94686a044412a7f3e61d7869a9193f71bee528b"
+    },
+    {
+      "path": "tests/gameplay/run.gd",
+      "sha256": "7dedd5e72b5ca6e8793bc37b3f99c73ded4af3bb127f39687a8de1f522faef05"
+    },
+    {
+      "path": "docs/mechanics/NPC_PLANNING.md",
+      "sha256": "8962dd73879c59be2d2b88adf00c373f794d938cb5be7031c46c2dcda1c3e345"
+    }
+  ]
+}

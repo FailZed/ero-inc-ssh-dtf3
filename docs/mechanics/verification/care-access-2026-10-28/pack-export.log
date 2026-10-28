@@ -1,0 +1,524 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Инициализация проекта (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Сканирование структуры файлов…[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Загрузка глобальных имен классов…[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Проверка GDExtensions…[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Создание скриптов автозагрузки…[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Инициализация плагинов…[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Начало сканирование файлов…[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Регистрация глобальных классов… (137 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   1% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   2% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   2% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   3% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   4% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   5% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   5% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   6% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   7% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   7% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   8% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   9% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  11% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  12% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  13% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  13% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  15% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  15% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  17% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  19% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  21% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  21% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  23% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  23% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  24% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  26% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  26% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  27% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  29% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  30% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  31% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  31% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  32% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  34% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  34% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  35% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  36% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  36% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  37% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  38% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  39% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  39% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  40% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  41% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  43% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  45% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  46% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  47% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  47% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  48% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  49% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  51% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  52% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  52% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  53% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  54% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  56% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  58% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  59% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  61% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  62% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  63% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  63% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  64% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  65% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  65% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  67% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  68% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  68% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  69% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  70% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  72% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  73% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  73% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  74% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  75% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  76% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  76% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  78% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  78% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  79% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  80% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  82% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  83% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  84% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  84% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  85% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  86% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  86% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  87% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  88% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  90% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  91% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  92% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  92% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  93% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  94% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  94% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  95% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  96% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  97% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  97% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  98% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Сканирование действий… (10 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | body_female_athletic.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | body_female_slim.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | body_male_athletic.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | body_male_slim.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | censor_underwear_female.png[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | censor_underwear_male.png[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | face_sharp.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | face_soft.png[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | hair_long_dark.png[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | hair_short_dark.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started Импорт или повторный импорт ассетов (10 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   9% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  18% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  27% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  36% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  45% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  54% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  63% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  72% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  81% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   0% ] [90m[1mreimport[22m | Выполнение предимпортных операций…[39m[0m
+[   0% ] [90m[1mreimport[22m | body_female_athletic.png[39m[0m
+[   9% ] [90m[1mreimport[22m | body_female_slim.png[39m[0m
+[  18% ] [90m[1mreimport[22m | body_male_athletic.png[39m[0m
+[  27% ] [90m[1mreimport[22m | body_male_slim.png[39m[0m
+[  36% ] [90m[1mreimport[22m | censor_underwear_female.png[39m[0m
+[  45% ] [90m[1mreimport[22m | censor_underwear_male.png[39m[0m
+[  54% ] [90m[1mreimport[22m | face_sharp.png[39m[0m
+[  63% ] [90m[1mreimport[22m | face_soft.png[39m[0m
+[  72% ] [90m[1mreimport[22m | hair_long_dark.png[39m[0m
+[  81% ] [90m[1mreimport[22m | hair_short_dark.png[39m[0m
+[  90% ] [90m[1mreimport[22m | Завершение импорта активов…[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started Импорт или повторный импорт ассетов (10 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Выполнение операций после реимпорта…[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started Упаковывание (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/body_female_athletic.png-a3cf6bc402b7307a6700661b27ba7c0e.ctex[39m[0m
+[   1% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/body_female_athletic.png.import[39m[0m
+[   1% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/body_female_slim.png-c145cafe1aacc44aeec4f7b315cc1dad.ctex[39m[0m
+[   1% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/body_female_slim.png.import[39m[0m
+[   2% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/body_male_athletic.png-8819778b6792bba12377308c290ab8dc.ctex[39m[0m
+[   2% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/body_male_athletic.png.import[39m[0m
+[   2% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/body_male_slim.png-c38e4a473e2d8ee3132a1f5c1071c725.ctex[39m[0m
+[   2% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/body_male_slim.png.import[39m[0m
+[   3% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/censor_underwear_female.png-9350269f16f51171ad062a80723193aa.ctex[39m[0m
+[   3% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/censor_underwear_female.png.import[39m[0m
+[   3% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/censor_underwear_male.png-abfc7f7a1bd6663eb22140f7d238cc9b.ctex[39m[0m
+[   3% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/censor_underwear_male.png.import[39m[0m
+[   4% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/face_sharp.png-3ad71953ece0db2daf2247a09916cc61.ctex[39m[0m
+[   4% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/face_sharp.png.import[39m[0m
+[   5% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/face_soft.png-e5a25c67995b7fa97423f98b9fceb1a8.ctex[39m[0m
+[   5% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/face_soft.png.import[39m[0m
+[   5% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/hair_long_dark.png-05e293cdf9888a1297fa4bad64a40368.ctex[39m[0m
+[   5% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/hair_long_dark.png.import[39m[0m
+[   6% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/imported/hair_short_dark.png-6750d488ad7db12f79f861c373de6685.ctex[39m[0m
+[   6% ] [90m[1msavepack[22m | Сохранение файла: res://assets/textures/portraits/protagonist_layers/hair_short_dark.png.import[39m[0m
+[   6% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/design/random_events.json[39m[0m
+[   7% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/adult_health.json[39m[0m
+[   7% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/advanced.json[39m[0m
+[   8% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/balance.json[39m[0m
+[   9% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/base.json[39m[0m
+[   9% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/collections.json[39m[0m
+[  10% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/conversation_menu.json[39m[0m
+[  10% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/conversation_options.json[39m[0m
+[  11% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/conversation_room.json[39m[0m
+[  11% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/digital.json[39m[0m
+[  12% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/family.json[39m[0m
+[  13% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/growth.json[39m[0m
+[  13% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/human_social.json[39m[0m
+[  14% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/livelihood.json[39m[0m
+[  14% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/npc_dialogue.json[39m[0m
+[  15% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/npc_employment.json[39m[0m
+[  15% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/npc_life.json[39m[0m
+[  16% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/npc_personalities.json[39m[0m
+[  17% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/npc_reproduction.json[39m[0m
+[  17% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/npc_stories.json[39m[0m
+[  18% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/parity.json[39m[0m
+[  18% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/pregnancy_wellbeing.json[39m[0m
+[  19% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/remaining_content.json[39m[0m
+[  19% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/reproduction.json[39m[0m
+[  20% ] [90m[1msavepack[22m | Сохранение файла: res://data/mechanics/work_banks.json[39m[0m
+[  21% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/exported/133200997/export-e9b75a1a0c9c2c0d0303ff63d2d1f297-interior_lab.scn[39m[0m
+[  21% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/exported/133200997/export-b1fdedee82186e1fb48556ae4eb3978b-mechanics_lab.scn[39m[0m
+[  22% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/exported/133200997/export-a71ddc2dec46e2bf78c19a9b5a5edc70-world_setup.scn[39m[0m
+[  22% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adapters/quest_inventory_controller.gdc[39m[0m
+[  23% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adapters/session_adapter.gdc[39m[0m
+[  23% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/adult_health_validation.gdc[39m[0m
+[  24% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/advanced_validation.gdc[39m[0m
+[  25% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/agency_validation.gdc[39m[0m
+[  25% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/calendar.gdc[39m[0m
+[  26% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/career_progress.gdc[39m[0m
+[  26% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/dialogue_validation.gdc[39m[0m
+[  27% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/formulas.gdc[39m[0m
+[  27% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/human_validation.gdc[39m[0m
+[  28% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/livelihood_validation.gdc[39m[0m
+[  29% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/module.gdc[39m[0m
+[  29% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/npc_reproductive_validation.gdc[39m[0m
+[  30% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/personality_validation.gdc[39m[0m
+[  30% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/pregnancy_wellbeing_validation.gdc[39m[0m
+[  31% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/reproductive_validation.gdc[39m[0m
+[  31% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/rules.gdc[39m[0m
+[  32% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/service_window.gdc[39m[0m
+[  33% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/utility_ai.gdc[39m[0m
+[  33% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/validation.gdc[39m[0m
+[  33% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/interior_lab.gdc[39m[0m
+[  33% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/mechanics_lab.gdc[39m[0m
+[  34% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/npc_life_probe.gdc[39m[0m
+[  34% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/setup_portrait.gdc[39m[0m
+[  35% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/world_setup.gdc[39m[0m
+[  36% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/actions.gdc[39m[0m
+[  36% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/activities.gdc[39m[0m
+[  37% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health.gdc[39m[0m
+[  37% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_care.gdc[39m[0m
+[  38% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_cycle.gdc[39m[0m
+[  38% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_infections.gdc[39m[0m
+[  39% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_relationships.gdc[39m[0m
+[  40% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/appearance.gdc[39m[0m
+[  40% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/autonomous_reproductive_simulation.gdc[39m[0m
+[  41% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/careers.gdc[39m[0m
+[  41% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/care_access.gdc[39m[0m
+[  42% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/character.gdc[39m[0m
+[  42% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/child_support.gdc[39m[0m
+[  43% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/collections.gdc[39m[0m
+[  44% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/combat.gdc[39m[0m
+[  44% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/conversation_options.gdc[39m[0m
+[  45% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/conversation_room.gdc[39m[0m
+[  45% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/conversation_session.gdc[39m[0m
+[  46% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/digital.gdc[39m[0m
+[  46% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/economy.gdc[39m[0m
+[  47% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/education_schedule.gdc[39m[0m
+[  48% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/encounters.gdc[39m[0m
+[  48% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/events.gdc[39m[0m
+[  49% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/extended_simulation.gdc[39m[0m
+[  49% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/family.gdc[39m[0m
+[  50% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/family_handoff.gdc[39m[0m
+[  50% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/family_lifecycle.gdc[39m[0m
+[  51% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/growth.gdc[39m[0m
+[  52% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/health.gdc[39m[0m
+[  52% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/health_care_plans.gdc[39m[0m
+[  53% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/housing.gdc[39m[0m
+[  53% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/human_agency.gdc[39m[0m
+[  54% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/human_social.gdc[39m[0m
+[  54% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/human_social_rules.gdc[39m[0m
+[  55% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/institutions.gdc[39m[0m
+[  56% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/interior.gdc[39m[0m
+[  56% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/intimacy.gdc[39m[0m
+[  57% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/inventory.gdc[39m[0m
+[  57% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/lifecycle.gdc[39m[0m
+[  58% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/livelihood.gdc[39m[0m
+[  58% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_agency.gdc[39m[0m
+[  59% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_behavior.gdc[39m[0m
+[  60% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_calendar.gdc[39m[0m
+[  60% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_dialogue.gdc[39m[0m
+[  61% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_employment.gdc[39m[0m
+[  61% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_life_simulation.gdc[39m[0m
+[  62% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_personalities.gdc[39m[0m
+[  62% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_planner.gdc[39m[0m
+[  63% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_private_encounters.gdc[39m[0m
+[  64% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_relationships.gdc[39m[0m
+[  64% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_reproduction.gdc[39m[0m
+[  65% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_reproductive_context.gdc[39m[0m
+[  65% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_reproductive_jobs.gdc[39m[0m
+[  66% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_stories.gdc[39m[0m
+[  66% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/organizations.gdc[39m[0m
+[  66% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/population.gdc[39m[0m
+[  67% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/preferences.gdc[39m[0m
+[  67% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/pregnancy_selfcare.gdc[39m[0m
+[  68% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/pregnancy_wellbeing.gdc[39m[0m
+[  68% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/reproduction.gdc[39m[0m
+[  69% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/reproductive_lifecycle.gdc[39m[0m
+[  69% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/reproductive_simulation.gdc[39m[0m
+[  70% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/security.gdc[39m[0m
+[  71% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/setup_config.gdc[39m[0m
+[  71% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/simulation.gdc[39m[0m
+[  72% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/social.gdc[39m[0m
+[  72% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/social_rules.gdc[39m[0m
+[  73% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/work_challenges.gdc[39m[0m
+[  73% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/work_schedule.gdc[39m[0m
+[  74% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/work_task_banks.gdc[39m[0m
+[  75% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/world.gdc[39m[0m
+[  75% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/adult_health.gdc[39m[0m
+[  76% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/advanced.gdc[39m[0m
+[  76% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/balance.gdc[39m[0m
+[  77% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/balance_probe.gdc[39m[0m
+[  77% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/care_access.gdc[39m[0m
+[  78% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/care_homes.gdc[39m[0m
+[  79% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/care_homes_sim.gdc[39m[0m
+[  79% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/conversation_conflict.gdc[39m[0m
+[  80% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/conversation_options.gdc[39m[0m
+[  80% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/dialogue.gdc[39m[0m
+[  81% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/digital.gdc[39m[0m
+[  81% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/family.gdc[39m[0m
+[  82% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/family_handoff.gdc[39m[0m
+[  83% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/health_care_plans.gdc[39m[0m
+[  83% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/health_relationships.gdc[39m[0m
+[  84% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/human_social.gdc[39m[0m
+[  84% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_careers.gdc[39m[0m
+[  85% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_life.gdc[39m[0m
+[  85% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_planner.gdc[39m[0m
+[  86% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_reproduction.gdc[39m[0m
+[  87% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_reproduction_snapshot.gdc[39m[0m
+[  87% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/parity.gdc[39m[0m
+[  88% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/post_conflict_dialogue.gdc[39m[0m
+[  88% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/pregnancy_wellbeing.gdc[39m[0m
+[  89% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/profile_npc_planner.gdc[39m[0m
+[  89% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/reproduction.gdc[39m[0m
+[  90% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/reproduction_snapshot.gdc[39m[0m
+[  91% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run.gdc[39m[0m
+[  91% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_adult_health.gdc[39m[0m
+[  92% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_care_access.gdc[39m[0m
+[  92% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_care_homes.gdc[39m[0m
+[  93% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_extended.gdc[39m[0m
+[  93% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_family.gdc[39m[0m
+[  94% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_family_constraints.gdc[39m[0m
+[  95% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_family_handoff.gdc[39m[0m
+[  95% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_health_care_plans.gdc[39m[0m
+[  96% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_health_relationships.gdc[39m[0m
+[  96% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_npc_planner.gdc[39m[0m
+[  97% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_npc_reproduction.gdc[39m[0m
+[  97% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_pregnancy_wellbeing.gdc[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_reproduction.gdc[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scenes/debug/interior_lab.tscn.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scenes/debug/mechanics_lab.tscn.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scenes/debug/world_setup.tscn.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adapters/quest_inventory_controller.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adapters/session_adapter.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/adult_health_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/advanced_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/agency_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/calendar.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/career_progress.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/dialogue_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/formulas.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/human_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/livelihood_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/module.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/npc_reproductive_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/personality_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/pregnancy_wellbeing_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/reproductive_validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/rules.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/service_window.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/utility_ai.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/core/validation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/interior_lab.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/mechanics_lab.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/npc_life_probe.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/setup_portrait.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/debug/world_setup.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/actions.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/activities.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_care.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_cycle.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_infections.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/adult_health_relationships.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/appearance.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/autonomous_reproductive_simulation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/careers.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/care_access.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/character.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/child_support.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/collections.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/combat.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/conversation_options.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/conversation_room.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/conversation_session.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/digital.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/economy.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/education_schedule.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/encounters.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/events.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/extended_simulation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/family.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/family_handoff.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/family_lifecycle.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/growth.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/health.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/health_care_plans.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/housing.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/human_agency.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/human_social.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/human_social_rules.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/institutions.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/interior.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/intimacy.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/inventory.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/lifecycle.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/livelihood.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_agency.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_behavior.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_calendar.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_dialogue.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_employment.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_life_simulation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_personalities.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_planner.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_private_encounters.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_relationships.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_reproduction.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_reproductive_context.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_reproductive_jobs.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/npc_stories.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/organizations.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/population.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/preferences.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/pregnancy_selfcare.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/pregnancy_wellbeing.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/reproduction.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/reproductive_lifecycle.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/reproductive_simulation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/security.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/setup_config.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/simulation.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/social.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/social_rules.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/work_challenges.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/work_schedule.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/work_task_banks.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://scripts/mechanics/world.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/adult_health.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/advanced.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/balance.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/balance_probe.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/care_access.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/care_homes.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/care_homes_sim.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/conversation_conflict.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/conversation_options.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/dialogue.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/digital.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/family.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/family_handoff.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/health_care_plans.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/health_relationships.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/human_social.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_careers.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_life.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_planner.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_reproduction.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/npc_reproduction_snapshot.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/parity.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/post_conflict_dialogue.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/pregnancy_wellbeing.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/profile_npc_planner.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/reproduction.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/reproduction_snapshot.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_adult_health.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_care_access.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_care_homes.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_extended.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_family.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_family_constraints.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_family_handoff.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_health_care_plans.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_health_relationships.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_npc_planner.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_npc_reproduction.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_pregnancy_wellbeing.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://tests/mechanics/run_reproduction.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/global_script_class_cache.cfg[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://.godot/uid_cache.bin[39m[0m
+[  98% ] [90m[1msavepack[22m | Сохранение файла: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m

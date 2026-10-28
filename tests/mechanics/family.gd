@@ -67,8 +67,9 @@ func run() -> void:
 		t._check(not sim.restore_snapshot(bad).ok and before == sim.export_snapshot(), "malformed family snapshot is rejected without changing live world: " + corrupt)
 	var old = Life.new(42, _config())
 	var old_snapshot: Dictionary = old.export_snapshot()
-	t._check(replay.restore_snapshot(old_snapshot).ok and replay.state.family.members.is_empty(), "exact previous catalog gains an empty family section in memory")
-	t._check(not old_snapshot.state.has("family"), "old snapshot object is never rewritten by migration")
+	before = replay.export_snapshot()
+	t._check(not replay.restore_snapshot(old_snapshot).ok and before==replay.export_snapshot(), "superseded catalog is rejected without automatic conversion")
+	t._check(not old_snapshot.state.has("family"), "rejected historical snapshot input remains untouched")
 	birth(sim)
 	t._check(sim.state.family.members.size() == 2, "completed family state permits a later sibling")
 	_autonomous_care()
@@ -89,6 +90,7 @@ func _autonomous_care() -> void:
 	member.needs.hygiene = 20.0
 	# Start between AI decision boundaries; family must reserve actual caregiver time.
 	sim.services.family._autonomy(member)
+	sim.services.npc_planner.resolve()
 	t._check(member.task.get("caregiver", "") == "parent" and npc.pinned_until > int(sim.state.clock.total_minutes), "assigned NPC starts and reserves actual care work")
 	var snapshot: Dictionary = sim.export_snapshot()
 	var replay = Extended.new(1, _config())
@@ -130,13 +132,21 @@ func _care_constraints() -> void:
 	npc.activity = "rest"
 	npc.needs.energy = 90.0
 	member.needs.hygiene = 20.0
+	var assignments: Dictionary = member.assignments.duplicate(true)
 	var minute := int(sim.state.clock.minute_of_day)
 	npc.schedule = [{"location":"global_map","activity":"work","hours":[minute+5,minute+65],"weekdays":[int(sim.state.clock.weekday)]}]
 	sim.services.family._autonomy(member)
+	sim.services.npc_planner.resolve()
 	t._check(member.task.is_empty(), "care never starts across an imminent mandatory shift")
 	npc.schedule = []
 	sim.services.family._autonomy(member)
-	t._check(not member.task.is_empty(), "available co-parent starts the same care after schedule conflict is removed")
+	t._check(member.task.is_empty(), "removing a schedule does not make an already travelling guardian instantly available")
+	sim.services.npc_planner.interrupt("parent","fixture_schedule_removed")
+	npc.activity = "rest"
+	sim.services.family._autonomy(member)
+	sim.services.npc_planner.resolve()
+	t._check(member.task.get("caregiver", "") == "parent" and member.task.get("action", "") == "wash" and int(member.task.get("due", 0)) == int(sim.state.clock.total_minutes) + 15, "available co-parent starts the same care after schedule conflict is removed")
+	t._check(member.assignments == assignments and member.needs.hygiene == 20.0, "resumed care preserves the permanent responsible guardian and grants no early result")
 	npc.location = "global_map"
 	sim.command("clock", "advance", {"minutes":15})
 	t._check(member.task.is_empty() and member.needs.hygiene <= 20, "interrupted care grants no remote or unperformed reward")
@@ -146,13 +156,13 @@ func _care_constraints() -> void:
 	sim.state.clock = sim.calendar.snapshot(day * 1440 + 1439)
 	sim.command("clock", "advance", {"minutes":1})
 	t._check(sim.state.family.arrears == 6 and sim.state.economy.cash == 0, "unpaid daily family cost becomes bounded debt rather than negative cash")
-	var old = Life.new(42, _config())
+	var old = Extended.new(42, _config())
 	old.command("social","generate",{"id":"parent","age":28})
 	old.state.clock = old.calendar.snapshot(old.calendar.add_months(480, 24))
 	old.state.healthcare.family.append({"parent":"parent","partner":"player","minute":480,"care":0,"status":"dependent"})
 	var replay = Extended.new(1, _config())
-	t._check(replay.restore_snapshot(JSON.parse_string(JSON.stringify(old.export_snapshot()))).ok and replay.state.family.members.family_1.stage == "toddler", "historical family results migrate directly to their current age stage")
-	t._check(replay.command("clock","advance",{"minutes":1}).ok, "migrated historical birth continues with a valid family state")
+	t._check(replay.restore_snapshot(JSON.parse_string(JSON.stringify(old.export_snapshot()))).ok and replay.state.family.members.family_1.stage == "toddler", "current-schema authored birth is synchronized to its current age stage")
+	t._check(replay.command("clock","advance",{"minutes":1}).ok, "current-schema authored birth continues with a valid family state")
 
 func _same(a: Variant, b: Variant) -> bool:
 	return JSON.parse_string(JSON.stringify(a)) == JSON.parse_string(JSON.stringify(b))

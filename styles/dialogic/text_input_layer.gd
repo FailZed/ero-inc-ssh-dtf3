@@ -1,6 +1,22 @@
 @tool
 extends "res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.gd"
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
+var _shade: ColorRect
+
+func _ready() -> void:
+	super._ready()
+	if Engine.is_editor_hint(): return
+	_shade = ColorRect.new()
+	_shade.name = "InputBackdrop"
+	_shade.color = Color(0.005,0.012,0.024,0.8)
+	_shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	add_child(_shade)
+	move_child(_shade,0)
+	var input: Control = get_node("DialogicNode_TextInput")
+	input.visibility_changed.connect(func():
+		_shade.visible = input.visible
+		if input.visible: UI.focus_loop.call_deferred(input))
+	_shade.visible = input.visible
 
 func _apply_export_overrides() -> void:
 	super._apply_export_overrides()

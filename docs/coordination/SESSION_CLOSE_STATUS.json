@@ -1,0 +1,49 @@
+{
+  "updated_utc": "2026-10-28T19:39:39.381374+00:00",
+  "status": "FINAL_HANDOFF_READY",
+  "integration": {
+    "status": "source_complete_all_executors_finished",
+    "report": "E:\\GoDot\\.research\\agent-coordination\\final-integration\\integration-status.json",
+    "mainSchema": 14,
+    "mainSha256": "b6055b6d6732c561787074f6903d2b917d4cab2303187cbec50b058b91a407a3",
+    "sourceTransferDeltas": 107,
+    "stagingEvidence": {
+      "domain": "89/0",
+      "eventsV2": "112/0",
+      "schoolMain": "15/0"
+    },
+    "actualSourceHealth": "155/0 actual-source,306hashes stable; repo final report saved",
+    "fullMergedGameSuite": false,
+    "portableToolsReport": "E:\\GoDot\\.research\\agent-coordination\\portable-tools-installed.json",
+    "nativeResourceReport": "E:\\GoDot\\.research\\agent-coordination\\resources-installed.json",
+    "mainMenuSha256": "f28605bba21b0be8deb941a25866544af5310ca5ac3dc882c4d3ef13687850d6"
+  },
+  "cleanup": {
+    "captures": "E:\\GoDot\\.research\\agent-coordination\\capture-cleanup.json",
+    "mdrg": "E:\\GoDot\\.research\\agent-coordination\\mdrg-cleanup.json",
+    "retainedBrowserFiles": 114,
+    "retainedBrowserBytes": 53349941,
+    "rawArchiveInSource": false,
+    "currentTipNeedsArchiveLfs": false,
+    "oldHistoryLfsUnavailable": true,
+    "windowsNativeDirectory": "addons/gd_cubism/bin/sdk5",
+    "doctor": "pinned4.7.2 and matched library paths pass",
+    "legacyWorkbenchDeleted": true,
+    "browserOverrideSha256": "ffb77082718042bb28e718a6c2078cb9d16e485d3bf263cf312be43a7e700d87"
+  },
+  "gitPublication": "Authorized and scheduled after all workers idle; not yet committed/pushed.",
+  "limits": [
+    "No full merged gameplay/native/macOS acceptance yet",
+    "Google Doc scenario unread401",
+    "Historical raw archive LFS quota inaccessible; current workshop does not depend on it"
+  ],
+  "next": "Read NEXT_SESSION.md on the next computer; no new agent work tonight.",
+  "gitAccess": {
+    "public": true,
+    "collaboratorVladZvezdin": "write verified",
+    "publicationUnit": "Containing main commit; coordinator verifies remote/local HEAD after push."
+  },
+  "packager": "Applied7c351a0e; AST/composition only, no standalone build.",
+  "allAppExecutorsIdle": 7,
+  "allWorldAgentsCompleted": 3
+}

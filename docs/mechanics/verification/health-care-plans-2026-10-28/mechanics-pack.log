@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+MECHANICS_BENCHMARK {"days":7,"milliseconds":1507,"npcs":100}
+FAIL: starting an action does not grant its completion rewards
+FAIL: interrupted project grants no unearned skill
+FAIL: mandatory shift takes priority over a free-time goal
+FAIL: shift pays only productive time after travel and stops at its closing boundary
+FAIL: overnight shift takes priority over default bedtime
+FAIL: player invitation interrupts work without teleporting or awarding it
+NPC_LIFE_BENCHMARK {"actions":{"boast":1,"connect":559,"cooperate":168,"create":807,"deceive":103,"dispute":8,"eat":1113,"gossip":17,"joke":119,"practice":1882,"publish":31,"reconcile":1,"recreation":4,"rest":4193,"sleep":2705,"study":1409,"support":1,"verify":1,"visit":461,"walk":334,"wash":552},"days":7,"milestones":116,"milliseconds":86413,"npcs":100}
+FAIL: post-fight action changes actual NPC appearance
+FAIL: ordinary clinic care does not overlap an imminent mandatory shift
+FAIL: NPC avoids booking care that would finish after clinic closes
+FAIL: clinic visit includes the route to the next mandatory shift
+FAIL: NPC departs for work before the shift begins
+FAIL: NPC reaches work at its actual scheduled start
+FAIL: obligation inspection exposes calendar without changing the world
+FAIL: calendar splits an overnight shift across actual calendar days
+FAIL: NPC intimacy cannot replace a compulsory shift
+MECHANICS_RESULT {"checks":3191,"failed":15,"failures":["starting an action does not grant its completion rewards","interrupted project grants no unearned skill","mandatory shift takes priority over a free-time goal","shift pays only productive time after travel and stops at its closing boundary","overnight shift takes priority over default bedtime","player invitation interrupts work without teleporting or awarding it","post-fight action changes actual NPC appearance","ordinary clinic care does not overlap an imminent mandatory shift","NPC avoids booking care that would finish after clinic closes","clinic visit includes the route to the next mandatory shift","NPC departs for work before the shift begins","NPC reaches work at its actual scheduled start","obligation inspection exposes calendar without changing the world","calendar splits an overnight shift across actual calendar days","NPC intimacy cannot replace a compulsory shift"]}

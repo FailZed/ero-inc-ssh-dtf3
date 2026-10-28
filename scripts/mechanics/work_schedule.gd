@@ -1,5 +1,6 @@
 extends RefCounted
 const Rules = preload("res://scripts/mechanics/core/rules.gd")
+const Education = preload("res://scripts/mechanics/education_schedule.gd")
 
 static func conflicts(sim, location: String, minutes: int, start: int = -1) -> Array:
 	var result: Array = []
@@ -7,7 +8,8 @@ static func conflicts(sim, location: String, minutes: int, start: int = -1) -> A
 	if start < 0: start = int(sim.state.clock.total_minutes)
 	var ending := start+minutes
 	var day := int(sim.calendar.snapshot(start).day_index)
-	for day_index in range(day,day+2):
+	var last_day := int(sim.calendar.snapshot(ending+1440).day_index)
+	for day_index in range(day,last_day+1):
 		var date: Dictionary = sim.calendar.snapshot(day_index*1440)
 		for id in sim.catalog.lessons:
 			var lesson: Dictionary = sim.catalog.lessons[id]
@@ -18,12 +20,15 @@ static func conflicts(sim, location: String, minutes: int, start: int = -1) -> A
 			for weekday in lesson.get("weekdays",[1,2,3,4,5]):
 				if int(weekday) == int(date.weekday): scheduled = true
 			if not scheduled: continue
-			var begins := day_index*1440+int(lesson.hours[0])
-			var closes := day_index*1440+int(lesson.hours[1])
+			var window := Education.slot(lesson,day_index)
+			var begins := int(window.start)
+			var closes := int(window.end)
 			if start >= closes: continue
 			var journey: Dictionary = sim.services.world.route_from(location,str(lesson.location),ending,false)
 			var commute := int(journey.data.minutes) if journey.ok else 1440
 			if ending+commute > begins and start < closes:
-				result.append({"id":id,"start":begins,"end":closes,"commute":commute,"overlap":ending > begins})
+				var forecast := Education.forecast(lesson,day_index,ending+commute)
+				forecast.merge({"id":id,"commute":commute,"overlap":ending > begins})
+				result.append(forecast)
 	result.sort_custom(func(a: Dictionary,b: Dictionary): return int(a.start) < int(b.start))
 	return result

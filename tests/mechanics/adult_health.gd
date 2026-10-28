@@ -68,6 +68,8 @@ func _cycle() -> void:
 	t._check(sim.command("clock","advance",{"minutes":15}).ok and health.view().soiled,"saturated protection can leak")
 	sim.state.world.location = "global_map"
 	t._check(sim.command("adult_health","buy_products",{"product":"cup"}).ok,"reusable product can be purchased")
+	reject(sim,"change_product",{"product":"cup"},"public supply counter is not a private hygiene facility")
+	sim.state.world.location = "bathroom"
 	t._check(sim.command("adult_health","change_product",{"product":"cup"}).ok,"reusable product can be equipped")
 	var cup_stock := int(health.record("player").cycle.supplies.cup)
 	t._check(sim.command("adult_health","change_product",{"product":"cup"}).ok and health.record("player").cycle.supplies.cup==cup_stock,"emptying reusable protection does not consume another cup")
@@ -168,7 +170,13 @@ func _clinic() -> void:
 	t._check(sim.command("adult_health","consult").ok,"provider evaluates common symptoms")
 	t._check(sim.command("adult_health","treat",{"condition":"candidiasis"}).ok,"diagnosed candidiasis uses a scheduled course")
 	t._check(health.record("player").conditions.candidiasis.status=="active","course does not cure symptoms instantly")
-	var finish := int(health.record("player").conditions.candidiasis.treatment_until)
+	while int(health.record("player").conditions.candidiasis.course.completed)<int(health.record("player").conditions.candidiasis.course.required):
+		var due := int(health.record("player").conditions.candidiasis.course.next_due)
+		while int(sim.state.clock.total_minutes)<due:
+			t._check(sim.command("clock","advance",{"minutes":mini(1440,due-int(sim.state.clock.total_minutes))}).ok,"scheduled care date advances")
+		sim.state.world.location = "bedroom"
+		t._check(sim.command("adult_health","care_step",{"condition":"candidiasis"}).ok,"scheduled course requires actual prescribed care")
+	var finish := int(health.record("player").conditions.candidiasis.treatment_until)+15
 	while int(sim.state.clock.total_minutes)<finish:
 		var minutes := mini(1440,finish-int(sim.state.clock.total_minutes))
 		t._check(sim.command("clock","advance",{"minutes":minutes}).ok,"scheduled course advances")

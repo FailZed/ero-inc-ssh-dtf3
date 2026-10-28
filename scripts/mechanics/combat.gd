@@ -7,13 +7,16 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	return Rules.fail("unknown_operation")
 
 func start(id: String) -> Dictionary:
+	if not sim.state.encounters.combat.is_empty() and sim.state.encounters.combat.status == "active": return Rules.fail("finish_active_combat")
 	if not sim.state.social.npcs.has(id): return Rules.fail("unknown_npc")
 	var npc: Dictionary = sim.state.social.npcs[id]
 	if npc.location != sim.state.world.location: return Rules.fail("npc_not_present")
 	if sim.services.health.hp("player") <= 0.0 or float(npc.health) <= 0.0: return Rules.fail("combatant_incapacitated")
-	sim.state.encounters.combat = {"npc": id, "status": "active", "ap": 4, "turn": 1,
+	if sim.services.has("npc_dialogue"): sim.services.npc_dialogue.interrupt_conflict(id)
+	if sim.services.has("npc_agency") and sim.services.npc_agency.enabled(): sim.services.npc_agency._cancel(npc,"combat")
+	sim.state.encounters.combat = {"npc": id, "status": "active", "phase": "attack", "revision": 0, "npc_ap": 0, "ap": 4, "turn": 1,
 		"player_hp": sim.services.health.hp("player"), "npc_hp": float(npc.health), "guard": false,
-		"injuries": npc.injuries.duplicate(true), "log": [], "stamina": {"player": 100.0, "npc": 100.0},
+		"injuries": npc.injuries.duplicate(true), "log": [], "stamina": {"player": float(sim.state.player.needs.energy), "npc": float(npc.needs.energy)},
 		"stances": {"player": "balanced", "npc": str(npc.get("combat_style", "balanced"))},
 		"statuses": {"player": {}, "npc": {}}, "last_target": "body", "rewarded": false}
 	return Rules.ok()
@@ -61,6 +64,17 @@ func action(args: Dictionary) -> Dictionary:
 	var combat: Dictionary = sim.state.encounters.combat
 	if combat.is_empty() or combat.status != "active": return Rules.fail("no_active_combat")
 	var action_id := str(args.get("action", "attack"))
+	if args.has("revision") and (not args.revision is int or args.revision != combat.revision): return Rules.fail("stale_combat_action")
+	if combat.phase == "defence":
+		if action_id != "guard": return Rules.fail("choose_combat_defence")
+		if not str(args.get("part", "body")) in ["head", "body", "arms", "legs"]: return Rules.fail("invalid_guard_part")
+		combat.guard = not combat.statuses.player.has("knockdown")
+		combat.statuses.player.guard_part = str(args.get("part", "body"))
+		var response := _enemy_response()
+		if not response.ok: return response
+		combat.revision += 1
+		return Rules.ok({"status": combat.status, "ap": combat.ap, "phase": combat.phase})
+	if action_id == "guard": return Rules.fail("defence_not_pending")
 	match action_id:
 		"attack":
 			var move := str(args.get("move", "heavy" if bool(args.get("heavy", false)) else "jab"))
@@ -73,12 +87,6 @@ func action(args: Dictionary) -> Dictionary:
 			if float(combat.stamina.player) < float(preview.data.stamina): return Rules.fail("insufficient_stamina")
 			combat.ap -= int(preview.data.ap)
 			_strike("player", str(combat.npc), move, part, power)
-		"guard":
-			if not str(args.get("part", "body")) in ["head", "body", "arms", "legs"]: return Rules.fail("invalid_guard_part")
-			if combat.ap < 1: return Rules.fail("insufficient_action_points")
-			combat.ap -= 1
-			combat.guard = true
-			combat.statuses.player.guard_part = str(args.get("part", "body"))
 		"stance":
 			var stance := str(args.get("id", "balanced"))
 			if not stance in ["balanced", "defensive", "aggressive"]: return Rules.fail("unknown_stance")
@@ -100,9 +108,11 @@ func action(args: Dictionary) -> Dictionary:
 		"end_turn": combat.ap = 0
 		_: return Rules.fail("unknown_combat_action")
 	_update_outcome()
-	if combat.status == "active" and combat.ap <= 0: _enemy_turn()
-	_update_outcome()
-	return Rules.ok({"status": combat.status, "ap": combat.ap})
+	if combat.status == "active" and combat.ap <= 0:
+		combat.phase = "defence"
+		combat.npc_ap = 4
+	combat.revision += 1
+	return Rules.ok({"status": combat.status, "ap": combat.ap, "phase": combat.phase})
 
 func _strike(attacker: String, defender: String, move_id: String, part: String, power: float = 1.0) -> void:
 	var combat: Dictionary = sim.state.encounters.combat
@@ -137,34 +147,58 @@ func _strike(attacker: String, defender: String, move_id: String, part: String, 
 	combat.injuries = sim.state.social.npcs[combat.npc].injuries.duplicate(true)
 	combat.last_target = part
 
-func _enemy_turn() -> void:
+func _has_enemy_move() -> bool:
+	var combat: Dictionary = sim.state.encounters.combat
+	for id: String in sim.catalog.combat_moves:
+		var possible := forecast(id, "body", str(combat.npc))
+		if not possible.ok or int(possible.data.ap) > int(combat.npc_ap) or float(possible.data.stamina) > float(combat.stamina.npc): continue
+		if definition("combat_moves", id).get("special", "") == "disarm" and weapon("player").get("class", "unarmed") == "unarmed": continue
+		return true
+	return false
+
+func _enemy_response() -> Dictionary:
 	var combat: Dictionary = sim.state.encounters.combat
 	var npc_id := str(combat.npc)
-	combat.npc_ap = 0
+	# Recheck real health before resolving a deferred response.
+	combat.player_hp = sim.services.health.hp("player")
+	combat.npc_hp = sim.services.health.hp(npc_id)
+	_update_outcome()
+	if combat.status != "active": return Rules.ok()
 	if int(combat.statuses.npc.get("knockdown", 0)) > 0:
 		combat.statuses.npc.erase("knockdown")
 		combat.log.append({"actor": "npc", "action": "stand_up"})
-	elif float(combat.stamina.npc) < 15.0:
+		combat.npc_ap = 0
+	elif float(combat.stamina.npc) < 15.0 and int(combat.npc_ap) == 4:
 		combat.stamina.npc = minf(100.0, float(combat.stamina.npc) + 30.0)
 		combat.log.append({"actor": "npc", "action": "recover"})
+		combat.npc_ap = 0
+	elif _has_enemy_move():
+		var selection := _enemy_move(npc_id, int(combat.npc_ap))
+		combat.npc_ap -= int(definition("combat_moves", selection).get("ap", 2))
+		_strike(npc_id, "player", selection, _enemy_target(npc_id, selection))
+		_update_outcome()
 	else:
-		var npc_ap := 4
-		combat.npc_ap = npc_ap
-		while npc_ap > 0 and combat.status == "active":
-			var selection := _enemy_move(npc_id, npc_ap)
-			if selection.is_empty(): break
-			npc_ap -= int(definition("combat_moves", selection).get("ap", 2))
-			combat.npc_ap = npc_ap
-			_strike(npc_id, "player", selection, _enemy_target(npc_id, selection))
-			_update_outcome()
+		combat.log.append({"actor": "npc", "action": "wait"})
+		combat.npc_ap = 0
 	combat.guard = false
-	combat.turn += 1
-	combat.ap = 4
-	combat.stamina.player = minf(100.0, float(combat.stamina.player) + 8.0)
-	combat.stamina.npc = minf(100.0, float(combat.stamina.npc) + 5.0)
-	if int(combat.statuses.player.get("knockdown", 0)) > 0:
-		combat.ap = 2
-		combat.statuses.player.erase("knockdown")
+	if combat.status == "active" and _has_enemy_move(): return Rules.ok()
+	combat.npc_ap = 0
+	if combat.status == "active":
+		combat.phase = "attack"
+		combat.turn += 1
+		combat.ap = 4
+		combat.stamina.player = minf(100.0, float(combat.stamina.player) + 8.0)
+		combat.stamina.npc = minf(100.0, float(combat.stamina.npc) + 5.0)
+		if int(combat.statuses.player.get("knockdown", 0)) > 0:
+			combat.ap = 2
+			combat.statuses.player.erase("knockdown")
+	if combat.has("conversation"):
+		var elapsed: Dictionary = sim.advance(1)
+		if not elapsed.ok: return elapsed
+		combat.player_hp = sim.services.health.hp("player")
+		combat.npc_hp = sim.services.health.hp(npc_id)
+	_update_outcome()
+	return Rules.ok()
 
 func _enemy_move(npc_id: String, available_ap: int) -> String:
 		var candidates: Array = []
@@ -225,14 +259,21 @@ func _enemy_target(npc_id: String, move: String = "jab") -> String:
 
 func _update_outcome() -> void:
 	var combat: Dictionary = sim.state.encounters.combat
+	if combat.rewarded: return
 	if combat.npc_hp <= 0.0: combat.status = "won"
 	elif combat.player_hp <= 0.0: combat.status = "lost"
-	if combat.status == "active" or combat.rewarded: return
+	if combat.status == "active": return
 	combat.rewarded = true
+	combat.phase = "finished"
+	combat.npc_ap = 0
+	combat.guard = false
 	var npc: Dictionary = sim.state.social.npcs[combat.npc]
 	npc.skills.fighting = int(npc.skills.get("fighting", 0)) + 5
 	sim.services.social.change_relationship(str(combat.npc), "player", {"fear": 10 if combat.status in ["won", "surrendered"] else -2, "affinity": -5})
 	if sim.services.has("npc_agency") and sim.services.npc_agency.enabled():
 		sim.services.social.remember(str(combat.npc), "violence", {"actor": "player", "status": combat.status})
 	if combat.status == "won": sim.services.character.execute("train", {"skill": "fighting", "xp": 15})
+	if combat.has("conversation"):
+		npc.pinned_until = int(combat.conversation.pinned_until)
+		sim.services.npc_dialogue.finish_conflict(str(combat.npc),str(combat.status))
 	emit_event("combat_finished", {"status": combat.status, "npc": combat.npc})

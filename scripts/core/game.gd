@@ -287,13 +287,6 @@ func _open_warehouse_gate_hub() -> void:
 	Dialogic.paused = true
 
 
-func _open_apartment_locations() -> void:
-	_set_dialog_ui_hidden(true)
-	GameSession.pause_autosave_runtime()
-	Dialogic.paused = true
-	LocationManager.go_to("apartment_hall")
-
-
 func _on_hub_gate_requested() -> void:
 	QuestWeaverGlobal.complete_objective(WAREHOUSE_ENTER_OBJECTIVE_ID)
 	QuestWeaverGlobal.complete_quest_id(WAREHOUSE_ENTER_QUEST_ID)

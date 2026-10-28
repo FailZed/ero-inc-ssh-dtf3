@@ -43,6 +43,7 @@ static func populate(owner: Control, parent: Node) -> void:
 		if status.cycle.product!="none": UI.label(menstrual,"Используется: "+str(sim.services.adult_health.config().cycle.products[status.cycle.product].label),18,UI.MUTED)
 	var medical := W.panel(columns)
 	UI.label(medical,"Клиника и профилактика",24,UI.BLUE)
+	preload("res://scripts/ui/gameplay/health_care_plan_panel.gd").populate(owner,medical,status.care_plan)
 	if status.urgent:
 		UI.label(medical,"Нужна срочная медицинская помощь. Прервите обычные дела и обратитесь в клинику.",20,UI.ORANGE)
 		owner._offer(medical,"Срочная помощь","30 мин · в клинике · без оплаты","adult_health","emergency")

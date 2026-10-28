@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-10-28T20:50:20.247021+03:00",
+  "status": "targeted_checks_passed",
+  "audio": "Dummy",
+  "scope": "A04 first content set: tutor, copy_editor, craft_workshop",
+  "main_schema": 10,
+  "pending_format_changed": false,
+  "user_save_files_modified": false,
+  "authored_tasks_total": 160,
+  "jobs_with_bank_format": 17,
+  "jobs_with_three_tiers": 3,
+  "expanded_tasks_per_job": 30,
+  "remaining_jobs_to_expand": 14,
+  "results": {
+    "rules": [
+      {
+        "audio": "Dummy",
+        "checks": 146,
+        "failed": 0,
+        "failures": []
+      }
+    ],
+    "snapshot-write": [
+      {
+        "audio": "Dummy",
+        "cases": 3,
+        "ok": true,
+        "stage": "write"
+      }
+    ],
+    "snapshot-read": [
+      {
+        "audio": "Dummy",
+        "cases": 3,
+        "ok": true,
+        "stage": "read"
+      }
+    ],
+    "work-regression": [
+      {
+        "audio": "Dummy",
+        "checks": 92,
+        "failed": 0,
+        "failures": []
+      },
+      {
+        "audio": "Dummy",
+        "mode": "write",
+        "ok": true,
+        "tasks": 3
+      },
+      {
+        "audio": "Dummy",
+        "mode": "read",
+        "ok": true,
+        "tasks": 3
+      }
+    ]
+  },
+  "source_sha256": {
+    "data/mechanics/work_banks.json": "07a773c766f7f0fbd1508f0b20768698033e1c9ffabcfb904d6e5eca205645d5",
+    "data/mechanics/livelihood.json": "aff237bb0c47f9d7a9c5be3625a12b26c28881bf1fcaf8b342f8f8b281d94496",
+    "tools/build_work_catalog.py": "ce0bac08c4f4ec3094e90e9da197638ba0f6c7b0dc7f8fe183f5e53f98af813c",
+    "scripts/mechanics/work_task_banks.gd": "36455e632f3ade9785aa5455767e02c073dbb4e2a74810b071276ad3cb742b4b",
+    "scripts/mechanics/work_challenges.gd": "25f041ab3666b34e2dc4fffe71a71130eecb2f9eab1a891d6c56c9bc134b8886",
+    "scripts/mechanics/livelihood.gd": "e9c3f35fc6df3e85a38d5f77660509100c3330287bea62e6fba685ba328142a4",
+    "scripts/mechanics/growth.gd": "d891830316d01aab3691eeb52d06b784b7f65a3af1de5a06b41a60ad1969de68",
+    "scripts/mechanics/core/livelihood_validation.gd": "ebf6003d89ad39b76801ce3eb400caa68b7e24293abb6b79eef22d5f965f3f62",
+    "scripts/mechanics/core/career_progress.gd": "6f8a91c7493855dcbc64b5cd2dd1903048adaba692b62cd97ffeeb5ff32bf186",
+    "scripts/gameplay/main_simulation.gd": "01f197a44a789238ff1109f0eb70246c5b6141034ba35fba12c16ce061b09a9f",
+    "scripts/ui/gameplay/livelihood_window.gd": "059ddac93eb4b3815ad92f1863df89a13acc2fa8a041c4302924cb79558bb138",
+    "tests/gameplay/work_banks.gd": "775902f300a9c7712a4af6ad6f22d1673d6fba38651641e91feb29468200c035",
+    "tests/gameplay/work_banks_snapshot.gd": "abe76aefbc2b0fe7dd948ece463fed471292fc2cd400e0bd79ce35017a8c792b"
+  },
+  "notes": [
+    "No native windows or mouse control; actual UI nodes verified headlessly while UI executor owns the screen.",
+    "Old flat job.tasks are removed and rejected; the task data is canonical in work_banks.json.",
+    "Same-day consecutive shifts deal disjoint five-question sets from each expanded ten-question bank. Calendar rotation is finite and does not guarantee endless unique content.",
+    "Advanced editing distractors were revised after the work regression; the final bank-specific 146 checks and three expert cross-process continuations ran after that content revision.",
+    "No full-game all-green claim: see the adjacent family-care dependency in the A03 coordination report."
+  ]
+}

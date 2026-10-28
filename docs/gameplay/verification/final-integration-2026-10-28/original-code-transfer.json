@@ -1,0 +1,655 @@
+{
+  "status": "complete_after_explicit_ASSET_READY",
+  "created_utc": "2026-10-28T19:22:14.924679+00:00",
+  "main_schema": 14,
+  "excluded_workshop_callers": [
+    "scripts/ui/characters/character_workshop.gd",
+    "scripts/ui/main_menu.gd"
+  ],
+  "tools_scope": "only new reviewed test_random_events.ps1; test_mechanics hooks wait for root portable-wrapper transfer",
+  "files": [
+    {
+      "path": "data/characters/conversation_reactions.json",
+      "before": "2d679ddb83e082429a4fc61f808202b782ee4bfc16ac025d02f8401a09e9b8b2",
+      "after": "52da41887be563d1211dca7d539fa5ca3f0560c039f21f5cc7d19e1b7366be34",
+      "action": "modify"
+    },
+    {
+      "path": "data/characters/study_catalog.json",
+      "before": "6340a2ff83a52831b2e507a3678bb8a509ec0566eb18a56d12ee9b2ad0b474ff",
+      "after": "790f568392c75336f7eadd6c8d18676834f26f0d551e7fee5bbb6c4c8c55cf9e",
+      "action": "modify"
+    },
+    {
+      "path": "data/mechanics/antagonism.json",
+      "before": null,
+      "after": "d9d5fdc0e62b132da0b5642ff6afc96c8129e7f2f527386f378cc87c763ad746",
+      "action": "add"
+    },
+    {
+      "path": "data/mechanics/computer.json",
+      "before": null,
+      "after": "73eb93835b13da950af1ad5398673d3b0d24a066d858193d5547b7cf963bbc32",
+      "action": "add"
+    },
+    {
+      "path": "data/mechanics/livelihood.json",
+      "before": "f9f8b03ffb517b0f2ce8ee9354176113da49e81b32a53018b16e1f889908505f",
+      "after": "a52b9d809fcbcf6e7522775e3ed923f5f5d68e5cf848b2286bb1f096c8c6385e",
+      "action": "modify"
+    },
+    {
+      "path": "data/mechanics/remaining_content.json",
+      "before": "2e24b64d2987c0ffde66127e60528f878dad4f39ffd12554296a27b9410d7513",
+      "after": "2f933301bd6f00966def65eb81f89e108d6ee040f4ce0793a072e0b1806d2ac2",
+      "action": "modify"
+    },
+    {
+      "path": "data/mechanics/work_banks.json",
+      "before": "d4ccd339264b35fa09fa04c19b45b1ea5674ee82f4b6eb65a284be8338dfe055",
+      "after": "c9c5c91a136a06c9ed3e3169d6e07974bb10ec7038f55ac57acdfd5dcfb93460",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/characters/puppet_view.gd",
+      "before": "b7c6bee4eb961e1869fdb59f89ce923d311cab6af61ec3ec4407df4e6739455d",
+      "after": "277b021ed3ae17f7672e870dd81ce9498b93b9d584b2d58e38079c3f12e9a255",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/core/game.gd",
+      "before": "3034508f65ec93e4a6132963905afd684cc3b8d0446d485870e40a29d8beaaa9",
+      "after": "5308f69d0b9710de953236620bf0478f0dfb1bf3820b814d074d12d7acb81af7",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/action_policy.gd",
+      "before": "86ac4bc3f5af4c96041bb726c99b862433b601c94717b5540757bfcf8f238975",
+      "after": "a4bd04589e887ddb0bd1d3044e7794dcfb08ba74f8e2b1ec90036e20f214b53f",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/city_dialogue.gd",
+      "before": "ad152aefeaf3302fc798a3d4fb485dd518e35a159c5ee4d160e190516bb26e54",
+      "after": "a2cd71ef9a56e245457e06b0e5c51de31518de489da4cfd117c299e56d6fa4be",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/companion_interactions.gd",
+      "before": null,
+      "after": "d7e9319fe79c9b95aafe8ed3fd0272e3702286229968f0a5b8babac6ed8b3c31",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/companion_interactions.gd.uid",
+      "before": null,
+      "after": "eb936208531605323339547d06c5637626c3f9771c1cbf05efd99a41658c26d9",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/day_planning.gd",
+      "before": null,
+      "after": "e233780cb880ab4c535ed5e5ee7c6be53c09a778fb646b0b1c027b9b2458500a",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/day_planning.gd.uid",
+      "before": null,
+      "after": "8ccb01d1c45c3b0423fcc390c527029cca489123f25b1309334814d26c8bdfcb",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/gameplay.gd",
+      "before": "b56373dc1e8a55aa468f3d212a93fc6abb55ef50b0b1b89404b8a32d902bf484",
+      "after": "4291a38792a8c9e7703c88feefeede5c8b72b35cecdf5bdb671f1101177fb49d",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/main_simulation.gd",
+      "before": "e94dbe9d09e28f7367d909d419eeae944c3d276e659725b3495eb3d7fef69bb2",
+      "after": "b6055b6d6732c561787074f6903d2b917d4cab2303187cbec50b058b91a407a3",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/player_relationships.gd",
+      "before": "ea4c2f55894d07ca1310f3f5b3997df738f64cecc3db79a7aa2c7fc60f1be899",
+      "after": "7bba96e00b237e6c1b2c3a046e83f0fb00e40e68260ddf75b53790efb49f4c81",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/presentation.gd",
+      "before": "1e79a2a77adcd2b974114697482130cd20df2d59b80a7ebfb0d059319d364613",
+      "after": "00bf4095357de34d735d15316cf2fe5a5817d2de2667aee4972c8191d3652d12",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/gameplay/random_event_agency.gd",
+      "before": null,
+      "after": "7438c2c7d3352f94e7b279e1e57eeab999ad072beb685fa2b9cc0e2cd064ce2c",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/random_event_social.gd",
+      "before": null,
+      "after": "1c61dc00d08d732f8b5f2462d52b0f7abdf094c23711b648d33cfccd94ae3c78",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/random_events.gd",
+      "before": null,
+      "after": "43c37db114df34ea75c026497728dedd5aca88a054913cc67d5ae3ea354187ef",
+      "action": "add"
+    },
+    {
+      "path": "scripts/gameplay/social_presentation.gd",
+      "before": "506efa5ee939fcae9e7f1b896b3ba0bbb196fa4f6248d599ed3cab21470f637a",
+      "after": "7ec080a85b0ac47b2221ed0f8f66dd845bbade6421fd401a24e02c634c5190ea",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/managers/game_session.gd",
+      "before": "76d546a6c27fc9f9983a19530b4690d196c92b2328d0d055a4779b82ec1b7c66",
+      "after": "5c8e54928ae11f7dc2c4607b510e7de58b317383b710d4d811b2dab338e4ae62",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/adult_health.gd",
+      "before": "5e6bcac003424bba8ef8e2aac7b1c8a11683267f65e68aa65e4e9cf1a3d8a3d4",
+      "after": "71d021c956555a3c4a41b7d109425b2d25bf4099c5d3ff13c3e9cb1e4266fe39",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/antagonism.gd",
+      "before": null,
+      "after": "d8c2e0a7ea0e6d9f033c09b0f7cb9cce64d78de96ba558424570278e52ad1bfd",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/careers.gd",
+      "before": "8e3cc9a3f730d82039f527652039453baba6fc59ca5dbf9370d3fb9ff9d3a8a8",
+      "after": "458a16cfab6a274004384838cbf5fc8d0bf69ad13b1dba8dd9d781efed2a73b9",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/club_work.gd",
+      "before": null,
+      "after": "dd91d8ac62c2b1a6a1392dc9eb5b3e3e05f5c73820673b455adf463dc3698d46",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/club_work.gd.uid",
+      "before": null,
+      "after": "8f37775f20a5d6b0cf361097cc3d40ab5817d48daaabd515ba2488cd2599afcd",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/combat.gd",
+      "before": "99bc8fbe71d75f48879ff81ed4b1e50cc0e093f32ace0a6316da7c0192c87995",
+      "after": "517ac7a7895fa5600eaa801ad3283dc65bd5d77261b0d2aafec98f0e0a523e4b",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/computer.gd",
+      "before": null,
+      "after": "3c38a24005358d24f7b7104b1302abd193cc66dad868101de5b9c0d169b8062e",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/computer.gd.uid",
+      "before": null,
+      "after": "b6bf9e34581de90b0889e319b42e30b799f33cb94f524c112231e7feb433f260",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/core/antagonism_validation.gd",
+      "before": null,
+      "after": "bb1d60d66b9014d2163a88852fe73ebdec56cb472026f97b12c3fa2126cafa1a",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/core/computer_validation.gd",
+      "before": null,
+      "after": "04f75da335fca503b3679a0dffcea9ba8cefe3c573262784f94e42c6761c3f03",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/core/computer_validation.gd.uid",
+      "before": null,
+      "after": "5764d7c2ed53be15f79a615652b9201ad7a7828896b00d7bcb7ffb8c9f71ec81",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/core/validation.gd",
+      "before": "f5ee58ef577c92a20548020330e26d6bc0bdfb42c7c583be14e766def5333638",
+      "after": "eba1be676d7709f362ca5a0359782974355e703d19f22e9ff7d42fa7fee6c3b2",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/digital.gd",
+      "before": "56eeab8c7e8c23db939fec78a8d3e2f2cbb5a6b452a8f868cdb02bd48e230f02",
+      "after": "9928f9493d4b8e10faab52649cd6226871f0b2696351c68c511e93c873d9f9c6",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/economy.gd",
+      "before": "519ecd8aa100f1d6bc9586594c8314b67efb65eddd3481739900cf0ef48351f8",
+      "after": "4db9c9a3291873da04877fee463592076ccbd5ffa884606a87cadb7e49bf03a1",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/education.gd",
+      "before": null,
+      "after": "11df630b1536df22ae8589fc6ee193925ef026cd5ab21337ae7c534620ea7d2d",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/education.gd.uid",
+      "before": null,
+      "after": "39653b7345a6aae4d3ee71fdf4b5f0790b8a5bb1cffb4dda872d5075597b0a4f",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/events.gd",
+      "before": "8f0fecf54ad35a7816c74eda4148caa46ef635de409e49db5041e2235d6ca572",
+      "after": "b3dc9eab6415a72e219065ac341976ccb55d371e1dbfe0a590fe54bd028334b7",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/family.gd",
+      "before": "c95a9f9e395aa153869292751c71966d2fcd34b44cea35bf41ca98fa5e04948f",
+      "after": "313e6432372d52727fa5e7d260f1986dbcbd08ec2abf7c2e63f94fefeddecef3",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/institutions.gd",
+      "before": "1cd2be04d6381028e18df3975f72a1e7ed74a30b9be69ae09c35f80995173d7a",
+      "after": "ae03e42a645e71557f65ea0c6e69cc5a099396f4036f5e9804faed90d2578d47",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/livelihood.gd",
+      "before": "3fd77058c982e0453f91237c1ffab3d9423bcff5449eec8306f3d1c117b403e9",
+      "after": "0d680c2a9965f698b3684864e0efc2c5c87909252ecbf9627315082e758d825d",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/npc_stories.gd",
+      "before": "f035521efeb8066e407723a5272d563de2ff50e605624b4e768b662a872720f2",
+      "after": "6083be85cfdb1ab80641b453fe4bd89c3b7fd661ceba8632c2b202de139247f6",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/organizations.gd",
+      "before": "9da0125238b3f773a39404d317e0d7c32dfcf5d00e25ea4ed65dead49b61f648",
+      "after": "adf0c2755de53def6512f3cb1b7b0df24ca4ab8dfb27ae047b977d40eb59b3d0",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/planning.gd.uid",
+      "before": null,
+      "after": "7b4bd7a9203bcc1bb370ad7b491746e65c685d8d6cf934b9a96e9285f460b597",
+      "action": "add"
+    },
+    {
+      "path": "scripts/mechanics/pregnancy_wellbeing.gd",
+      "before": "d46c4ea184b3740c434d5cddd874bec09d60c1fbfecf93ed06904235989589d8",
+      "after": "5448be8ff11a8632359679e0dd7f46b4361247c85fc6483c4f77fdd0d6b22eac",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/simulation.gd",
+      "before": "80d8c593cb0bb3a7489887d7b2259f430ec4bb251a472958bddc1b4172b4fb1a",
+      "after": "1d459c58a2ab9d14db5f146ccba7affb31c19d494ad83b3581d42ea55843f71b",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/mechanics/world.gd",
+      "before": "1bfcdcfd97c3ae093664cff9456a549bd4ddf06c571b16001b75fb3947fa500f",
+      "after": "6e958b0bfe1bc8c7ac9e901431171bafeb7c41cb391d0dc63df61952b66e6fd0",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/aside_menu.gd",
+      "before": "ad2c4e1bbea35859ba4f3ea01371b8e0bf2cc14c84a718719138e2ef7254d2ed",
+      "after": "62c53b41885946d91dbf72b467dec7bdb34671ccc86312cbf55b16a8739b672d",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/characters/conversation_room.gd",
+      "before": "16ebd2b81690db6ad2ec808ae7bfbf9f7b849d2b239f24b60a56e73dd082de22",
+      "after": "6e6ab9d94af7cbe8e432912b11654bc468795d827fbf391acd1165458cda7827",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/book_overlay.gd",
+      "before": null,
+      "after": "c6031664f6a63ef65e23067a8491fcd2343270478fbecbc87fe8b453878ace15",
+      "action": "add"
+    },
+    {
+      "path": "scripts/ui/gameplay/book_overlay.gd.uid",
+      "before": null,
+      "after": "fab27c33e8503beca087ec93b60d26b6c728fc93ddebee5a59f7838aa79ae58e",
+      "action": "add"
+    },
+    {
+      "path": "scripts/ui/gameplay/companion_window.gd",
+      "before": null,
+      "after": "4c90b978cc38a8737e87f876c0886e0957a79ed3d973360785abe0ae0499330a",
+      "action": "add"
+    },
+    {
+      "path": "scripts/ui/gameplay/companion_window.gd.uid",
+      "before": null,
+      "after": "2e5c7e3ccd08ebbcd97ec9d77d3351cb5a50ab6d422daf276828462aa6bb14fc",
+      "action": "add"
+    },
+    {
+      "path": "scripts/ui/gameplay/game_screens.gd",
+      "before": "eebb34477f3936d96c374c059478ef4ff5961fcdc522a0a7dc00336c13398e28",
+      "after": "24ea3f1e9b8a7726d4e75ea9df8fcd3a950b0ea39fabcef46975439aee788a2d",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/game_window.gd",
+      "before": "2f68ee6f37b09de086bbfcbfd09b6b7f568c78a62b6cdd26855bdf8b04bf346b",
+      "after": "e3e06cd521d7024372cd141d5802988cbcbc34760a18c040f609514031a48243",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/gameplay_shell.gd",
+      "before": "4f639bca53331eb9c022f4edcc05ffffd3787d4d78cfa24505e6e8a2b47db91f",
+      "after": "b2c82406e21c24e3b1af141502f69ca0fadeb1d22dbe44383767cb4295d40394",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/hud_widgets.gd",
+      "before": "85d52d7c02986f5be1d90be2d924b15e955e4748d6cfedd69a87c314d52115b3",
+      "after": "819222e30b37374cdf4687c139a4223adb13cd2a998de486a3c930e375e7cf17",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/phone.gd",
+      "before": "c2e6da3f390fdaecd8e70c4272a890d9ecfcffa1b7864a0a5ff66a0287b084fc",
+      "after": "1d765965891e892b62e525b464755bc579905c8e803d6d192d205c1cb967c7f5",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/player_hud.gd",
+      "before": "84795eb53ea5c584d4d021b4439c22ada74761d0e71cd0f80b4491aac10967cc",
+      "after": "fc31eb856540e7723a8b150767c3e687388ce60a23abb42d0c6b8fcb31a1e6a9",
+      "action": "modify"
+    },
+    {
+      "path": "scripts/ui/gameplay/random_event_offer.gd",
+      "before": null,
+      "after": "a95bfc5db65c55bbbe02d4124e605253417f902d09caa32cb932f6ba1b260ad1",
+      "action": "add"
+    },
+    {
+      "path": "tests/characters/browser_interaction.gd",
+      "before": null,
+      "after": "45f6cbc15f879fc692dcddf6e0dd08ad821c1830ad1ed75277d26a41d0719e4e",
+      "action": "add"
+    },
+    {
+      "path": "tests/characters/browser_interaction.gd.uid",
+      "before": null,
+      "after": "7c05f4ce8e1f67a7354ef9013b7f2efc004a07a6d7f8304eb4e753942357e689",
+      "action": "add"
+    },
+    {
+      "path": "tests/characters/imported_browser.gd",
+      "before": null,
+      "after": "4779a441cec4ffe463450b1d6f39e6d980ed8eb400d6ecd3c4cba4e7950bcdb4",
+      "action": "add"
+    },
+    {
+      "path": "tests/characters/imported_browser.gd.uid",
+      "before": null,
+      "after": "2acbe3e831ee90c4fb19259ff78264423e5065f71e6084e291f9451de3df26a4",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/antagonism.gd",
+      "before": null,
+      "after": "08621ea334099fd5c7c1421615cf7ed6d4a3459f5d40677336bebdd543336a2e",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/capture_companion.gd",
+      "before": null,
+      "after": "be71bde0ab28d4d877c2f71fc958268ae1375eeb4cb62438513126022187d9da",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/capture_companion.gd.uid",
+      "before": null,
+      "after": "d232d1b2683bf176e92990eab4361f050872e6a2d5d50863b4780df43e924545",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/capture_growth.gd",
+      "before": "4b38f9478f40e834e5cfcd3bb62a07908cf325a86edbede56d79cac7a4d049b3",
+      "after": "de4542ade796527799103865acf0129767f7fd34dab2fc37b113f5485b8f8714",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/capture_livelihood.gd",
+      "before": "8009c5297a1fab6acb097e10e0251666ec5dca63d1ffe4af3036b102f47b9e99",
+      "after": "62701848dd252452f9de54e83de6c709558a0b7329701a069c71c749b4fd60e8",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/capture_sandbox.gd",
+      "before": "cf11a1b3de7138fb7411dedfc772fc99af11ace671815fcb8b20d91be4f24425",
+      "after": "97a945d712ca36b7784949c9e179f0850875c9355b8f75aaa9d5bf683e3cd4d2",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/capture_work_expansion.gd",
+      "before": "471309e9aaf1497bec7416ee256cc6656817b9229f15b41b036ba4b16b19c25f",
+      "after": "dfca6109e4a60cf5550ce2758d82785d61a7ebe1f11810b8c373ac0a82acdc76",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/closing_health.gd",
+      "before": null,
+      "after": "fa4bf613b9e9fda28ce4d4f872bbe685271dba5828fef77182af5e2a15809f32",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/companion.gd",
+      "before": null,
+      "after": "168a64f6c5d12a1e76563f50b22a09b3419e1de5f5e6fc641a064096a64ab388",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/companion.gd.uid",
+      "before": null,
+      "after": "c6095e321ff37a5e0bd608fcaad59a5df4c08c649e3712042fbe5294c87755e9",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/companion_fixture.gd",
+      "before": null,
+      "after": "c6a1efeca5dd0b29f745a50988ff3c908921707f0243b9becde072809c5b94cf",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/companion_fixture.gd.uid",
+      "before": null,
+      "after": "44688cf3896d2a1f087dfbf44b96781289901d972623963f3f09d133fbcd8ece",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/companion_snapshot.gd",
+      "before": null,
+      "after": "3d1c5143117e4716803a49ba59211b6b0bb88dbeb49503235cad33b18d074880",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/companion_snapshot.gd.uid",
+      "before": null,
+      "after": "01815d2e550f39eea3d56fb41438fb37b9206df5882dcdd13e9f665b2a0e8e01",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/computer.gd",
+      "before": null,
+      "after": "b26c315fb56a8db93641056cdbecb8d62ca8f7acd681d9190c328b4ceccf70a5",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/computer.gd.uid",
+      "before": null,
+      "after": "2325f19fb6ef367cacececa097431a01968ead98b7c2862855fc632e77b0b618",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/conversation_conflict.gd",
+      "before": "cbef2becc0453b7ae9bc8a31002212b3f722369c660e89b01112c581563e0d00",
+      "after": "78ebca88fc6731eff4bb5a4a90b97663399752cba563997e6616829fc2765f8e",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/hud.gd",
+      "before": "13b3514c2221d561c4491a6629e5dc1bc9bebb8c6ad3a25fd5f192b0e5b95709",
+      "after": "1d2fff83cf6366edee544d26caf9c58cd6fed61fedaa7278ca2c28f9d7fccfb3",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/livelihood.gd",
+      "before": "1d75650975c77d511a3fe180188fed07e8f41e56831f5dd877ec9b85e33692ad",
+      "after": "0b868945df13c0b2f2b282f1dbdb9c40171d9522828709c7a06e7d6e9b586e91",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/mechanics_depth.gd",
+      "before": null,
+      "after": "da595557ec48832a275dc55db30545df3b994b2a1ad49832e1627208d03f4b63",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/mechanics_depth.gd.uid",
+      "before": null,
+      "after": "795a85731fc28d92968fcc78dad55b6ae14d1f0d873f98a31d0336ab4f5c9fb4",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/npc_life.gd",
+      "before": "e12b56377340c49dd2c2fa968f807ba5671c2f95bf9b08ec7820c2e51eec5f4e",
+      "after": "86c57c003f041c2c84d57fcd3d8b3ba6bdc6d18fc8b8f029331ba963af36abd5",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/random_events_runtime.gd",
+      "before": null,
+      "after": "84c1a70b01ba6265a4384b40120604d9f76238a5297b9cbdeead247263c34652",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/run_closing_health_postmerge.gd",
+      "before": null,
+      "after": "c98952eb545e4ed7fcbea93d57e8afec8d24b4755d3e2326bcbb0f3264264238",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/save_compatibility.gd",
+      "before": null,
+      "after": "b8123f1edeb791f24029c28fb5e250e6b12f0cd6a76e2ea54d2056a3a9f9251b",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/save_compatibility.gd.uid",
+      "before": null,
+      "after": "e983d4925e8936f105f3f8f8b2cf495ec7a2fee783d7eb382220dab3c76dc31b",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/startup.gd",
+      "before": null,
+      "after": "c77e1b9467f920aeeeb49a12130c39a176c47b98cf8095aa43ec9111d3111695",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/startup.gd.uid",
+      "before": null,
+      "after": "8f6d8dfe84dd2c4af59fb84440a6994c7e965c6c038d55a9a31c1264dce85ef9",
+      "action": "add"
+    },
+    {
+      "path": "tests/gameplay/systems.gd",
+      "before": "ec4772df20d2c682b69e29df7acdec6bf06bd96df9e75ee85b2d3eac58f37c2c",
+      "after": "4c0d8c125e63b2c07659429da9fd8561dc61ddf226897132c07272ca43c09eee",
+      "action": "modify"
+    },
+    {
+      "path": "tests/gameplay/work_expansion.gd",
+      "before": "127ce413d879cf08e4793d37cab1790a67b0fc91cd9c69f549c3cfe8666a0bc4",
+      "after": "35f69939886774d61ee18c828e478ffaef7d9ac8877a327522fcf7b3528e7194",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/advanced.gd",
+      "before": "2aec1c47456062347de99b6d997b8ff908cc36d6cee23d2c1cf7101d83c4d6e7",
+      "after": "9b18c1046c3e3c61b284f4353c5f489975885abac21a31699e26d34b363822cf",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/balance_probe.gd",
+      "before": "caada73bb1b24f93571103b31348dfc4dea956987f8db8c812ccbd1b89c590fd",
+      "after": "05bbc7c3add40c621b006199f0dd257097079e20a723bb9ed6bd32df016649f2",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/conversation_conflict.gd",
+      "before": "0e90110d908b434fa483b0f3d20f19e3175639c00f2b6a32545984c529b85100",
+      "after": "c2ead4d3334c99cd6958db4c338f5eaaf282118d6a2e4b850eca43bb88b5b70a",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/conversation_options.gd",
+      "before": "ab00290ef0f8c2ecf6de1cbab1803e4c764cc2978c017c33062f6d074a782e7f",
+      "after": "1492a97c75fc5fe4fc83b68e76a98fc8edd1456214d8ae8c4a7ce5820cf87970",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/depth.gd",
+      "before": null,
+      "after": "bd526487e4bbaf6d4fa11713e68dc86f45df764c82288a6e3d8039374ae0f4bc",
+      "action": "add"
+    },
+    {
+      "path": "tests/mechanics/depth.gd.uid",
+      "before": null,
+      "after": "0ef2f95cf6470aa0a92e4d9caa86539fa3f7a4817d29156006b96a4f76269681",
+      "action": "add"
+    },
+    {
+      "path": "tests/mechanics/parity.gd",
+      "before": "e3fd520bf255897b6032b027b22ac4d00c3f721d74e0e24048a6be5d0fffc2b6",
+      "after": "5a8f8aa268ff0e0949710a998da2ed1644e40dbcec892cfba3b29dd9561f257b",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/post_conflict_dialogue.gd",
+      "before": "6a525e46cbb85de68d37fc031cbd26935a77805a3d43a473b4e9a052c08ed10b",
+      "after": "e6f801cbccb3a158b3b9d8b78a3955d87af82fe8ad78c08f2c8d5ef8b6ecb3f6",
+      "action": "modify"
+    },
+    {
+      "path": "tests/mechanics/run.gd",
+      "before": "d350c8786389a5ae064ce7615e7c58caecc96ee425f68cbbc7dad4661606b7e9",
+      "after": "2acaa64d01edb6cc33411aa6e5329244dfeee920b0a9e1f90df445fbd37d20a4",
+      "action": "modify"
+    },
+    {
+      "path": "tools/test_random_events.ps1",
+      "before": null,
+      "after": "685bc56f564f9577d83f1b17546c3fd38a6fdc256c06ffdc710a470bb4ce1668",
+      "action": "add"
+    }
+  ],
+  "completed_utc": "2026-10-28T19:22:15.414143+00:00"
+}

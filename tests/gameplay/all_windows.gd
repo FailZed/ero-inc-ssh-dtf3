@@ -42,6 +42,16 @@ func run() -> void:
 	growth._window._tab_buttons.skills.pressed.emit()
 	for frame in range(2): await t.process_frame
 	t.check(t.root.get_viewport().gui_get_focus_owner() == growth._window._tab_buttons.skills,"a rebuilt modal tab preserves keyboard focus")
+	var focus_stays_inside := true
+	for step in range(16):
+		var next := InputEventAction.new()
+		next.action = "ui_focus_next"
+		next.pressed = true
+		Input.parse_input_event(next)
+		await t.process_frame
+		var focused: Control = t.root.get_viewport().gui_get_focus_owner()
+		focus_stays_inside = focus_stays_inside and focused != null and growth._window.is_ancestor_of(focused)
+	t.check(focus_stays_inside,"Tab navigation remains inside the open game window")
 	growth.queue_free()
 	await t.process_frame
 	var work = load("res://scripts/ui/gameplay/livelihood_window.gd").new()

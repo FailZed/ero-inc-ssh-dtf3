@@ -150,10 +150,10 @@ def doctor():
         print('Godot:', engine())
     except RuntimeError as error:
         failures.append(str(error))
-    library = ROOT / 'addons/gd_cubism/bin' / ('libgd_cubism.macos.universal.dylib' if host() == 'macos' else 'libgd_cubism.windows.x86_64.dll')
+    library = ROOT / 'addons/gd_cubism/bin' / ('libgd_cubism.macos.universal.dylib' if host() == 'macos' else 'sdk5/libgd_cubism.windows.x86_64.dll')
     if library.is_file():
         print('Live2D:', library)
-        manifest = library.parent / f'build-{host()}.json'
+        manifest = ROOT / 'addons/gd_cubism/bin' / f'build-{host()}.json'
         if manifest.is_file() and digest(library) != json.loads(manifest.read_text(encoding='utf-8'))['sha256']:
             failures.append('Live2D binary does not match its build manifest')
         if host() == 'windows' and not (library.parent / 'Live2DCubismCore.dll').is_file():

@@ -1,0 +1,207 @@
+{
+  "created_at": "2026-10-28T21:29:45.522793+03:00",
+  "status": "targeted_checks_passed",
+  "scope": "A04.2: expand all remaining 14 authored-work professions",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "audio": "Dummy",
+  "native_windows_launched": false,
+  "main_schema": 10,
+  "runtime_code_changed_in_this_stage": false,
+  "pending_format_changed": false,
+  "user_save_files_modified": false,
+  "tasks_before": 160,
+  "tasks_added": 350,
+  "authored_tasks_total": 510,
+  "jobs_with_three_tiers": 17,
+  "banks_total": 51,
+  "tasks_per_bank": 10,
+  "tasks_per_job": 30,
+  "tasks_per_shift": 5,
+  "remaining_authored_jobs_to_expand": 0,
+  "expanded_jobs": [
+    {
+      "id": "defence_assistant",
+      "title": "Ассистент самообороны",
+      "skill": "fighting",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "card_host",
+      "title": "Ведущий карточного клуба",
+      "skill": "cards",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "fact_checker",
+      "title": "Проверка редакционных фактов",
+      "skill": "journalism",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "security_auditor",
+      "title": "Аудитор учебных цифровых стендов",
+      "skill": "cybersecurity",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "puzzle_editor",
+      "title": "Редактор головоломок",
+      "skill": "logic",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "event_host",
+      "title": "Ведущий городских встреч",
+      "skill": "public_speaking",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "community_listener",
+      "title": "Собеседник общественного центра",
+      "skill": "empathy",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "fundraiser",
+      "title": "Координатор городского сбора",
+      "skill": "persuasion",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "gym_assistant",
+      "title": "Ассистент тренера",
+      "skill": "fitness",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "music_arranger",
+      "title": "Монтажёр ритмических партитур",
+      "skill": "music",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "comedy_writer",
+      "title": "Автор комедийных номеров",
+      "skill": "comedy",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "dance_assistant",
+      "title": "Ассистент танцевальной студии",
+      "skill": "dancing",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "park_gardener",
+      "title": "Садовник городского парка",
+      "skill": "gardening",
+      "new_tasks": 25,
+      "total_tasks": 30
+    },
+    {
+      "id": "day_planner",
+      "title": "Помощник по расписаниям",
+      "skill": "discipline",
+      "new_tasks": 25,
+      "total_tasks": 30
+    }
+  ],
+  "bank_gates": [
+    {
+      "id": "foundation",
+      "min_rank": 1
+    },
+    {
+      "id": "professional",
+      "min_rank": 3,
+      "min_skill_level": 4,
+      "min_career_xp": 180
+    },
+    {
+      "id": "expert",
+      "min_rank": 5,
+      "min_skill_level": 8,
+      "min_career_xp": 600
+    }
+  ],
+  "results": {
+    "rules": {
+      "audio": "Dummy",
+      "checks": 1241,
+      "failed": 0,
+      "failures": []
+    },
+    "snapshot-write": {
+      "audio": "Dummy",
+      "cases": 17,
+      "ok": true,
+      "stage": "write"
+    },
+    "snapshot-read": {
+      "audio": "Dummy",
+      "cases": 17,
+      "ok": true,
+      "stage": "read"
+    }
+  },
+  "checks_covered": [
+    "All 17 professions and both sides of tier thresholds",
+    "Skill alone and experience alone cannot unlock advanced content",
+    "Ten-task pools and five distinct tasks per shift",
+    "Two disjoint same-day shifts and next-day rotation",
+    "Incorrect choices fail in every bank tier",
+    "Help/time caps on easy, normal and hard; choices remain required",
+    "Read-only preview does not consume state or RNG",
+    "Partial session restore and atomic duplicate/locked-bank rejection",
+    "17 expert sessions write/read in different processes; frozen content, order, result, pay and RNG agree",
+    "Actual job card node contains professional bank metadata and five-of-ten pool label"
+  ],
+  "content_review": {
+    "unique_prompts": 510,
+    "original_foundation_tasks_preserved": true,
+    "previous_three_banks_unchanged": true,
+    "all_task_shapes_valid": true,
+    "reviewed_new_reasoning_tasks": 200,
+    "reviewed_new_sequence_tasks": 150,
+    "expert_distractors_revised": true,
+    "clarifications": [
+      "Explicit implication premise for green-button puzzle",
+      "Retest on the fixed version",
+      "Minimum allocated slot for bounded duration",
+      "Explicit two-path graph and explicit card-round tie rule"
+    ]
+  },
+  "source_sha256": {
+    "data/mechanics/work_banks.json": "d4ccd339264b35fa09fa04c19b45b1ea5674ee82f4b6eb65a284be8338dfe055",
+    "data/mechanics/livelihood.json": "f9f8b03ffb517b0f2ce8ee9354176113da49e81b32a53018b16e1f889908505f",
+    "scripts/mechanics/work_task_banks.gd": "36455e632f3ade9785aa5455767e02c073dbb4e2a74810b071276ad3cb742b4b",
+    "scripts/mechanics/work_challenges.gd": "25f041ab3666b34e2dc4fffe71a71130eecb2f9eab1a891d6c56c9bc134b8886",
+    "scripts/mechanics/core/career_progress.gd": "6f8a91c7493855dcbc64b5cd2dd1903048adaba692b62cd97ffeeb5ff32bf186",
+    "scripts/gameplay/main_simulation.gd": "e94dbe9d09e28f7367d909d419eeae944c3d276e659725b3495eb3d7fef69bb2",
+    "tests/gameplay/work_banks.gd": "8cf0e9c4f3c230b439a5eca58e02e89f513225ca6894fc8e333b0a3dd6d2fffe",
+    "tests/gameplay/work_banks_snapshot.gd": "5b77582c80e446db71277a565dd29169c1d1f07f56ad950fde0b4b550509e020",
+    "tools/test_work_banks.ps1": "ab319f2eb3eb9f2bbb0efb2fd22d0e399ee0c9d6ad04e73869b6a6feb131687b"
+  },
+  "verification_command": "./tools/test_work_banks.ps1",
+  "notes": [
+    "Three headless processes launched through tools/godot.ps1 with Dummy audio; exit 0.",
+    "Main-game baseline shutdown diagnostics remain: 63 ObjectDB objects and 27 resources in use. No script errors or bank test failures.",
+    "No native visual verification, PCK export or whole-project all-green claim in this content stage.",
+    "Previous 146-bank-check and 92-work-regression results remain historical in work-banks-2026-10-28; they were not rerun for a new count.",
+    "Adjacent A03 family-care dependency remains separately recorded in docs/coordination/npc-careers.md; its current status is owned by the care executor.",
+    "All canonical content and tests are inside the repository. External authoring drafts and generated snapshot fixtures are not runtime dependencies.",
+    "Calendar rotation is finite. No promise of indefinitely unique questions. No donor narrative, code or art used."
+  ]
+}

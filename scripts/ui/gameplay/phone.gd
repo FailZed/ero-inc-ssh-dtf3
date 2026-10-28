@@ -46,6 +46,7 @@ func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	name = "Phone"
 	theme = UI.skin()
+	theme.default_font = ThemeDB.fallback_font
 	preferences.load_settings()
 	var veil := ColorRect.new()
 	veil.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -138,6 +139,7 @@ func _rebuild() -> void:
 	_pending = false
 	if not is_inside_tree(): return
 	theme = UI.skin()
+	theme.default_font = ThemeDB.fallback_font
 	var restore_caret := -1
 	var old_scroll := _saved_scroll
 	var following := _saved_follow
@@ -459,6 +461,7 @@ func _chat() -> void:
 			greeted = true
 		_bubble(thread, str(message.text), bool(message.incoming), int(message.minute))
 	if show_greeting and not greeted: _bubble(thread,str(_greeting.text),true,int(_greeting.minute))
+	_random_event_choices(thread)
 	var dialogue: Dictionary = Gameplay.simulation.services.npc_dialogue.present(contact) if _session == contact else {}
 	if messages.is_empty() and dialogue.is_empty(): W.empty(thread, "chat", "Начните разговор", "Можно написать своё сообщение или выбрать тему ниже.")
 	var active: bool = not dialogue.is_empty() and dialogue.get("node","end") != "end" and int(Gameplay.simulation.state.social.npcs[contact].mind.dialogue.expires) > int(Gameplay.simulation.state.clock.total_minutes)
@@ -519,6 +522,19 @@ func _send() -> void:
 	_rebuild()
 	if is_instance_valid(_composer): _composer.grab_focus()
 
+func _random_event_choices(parent: Node) -> void:
+	for offer: Dictionary in Gameplay.simulation.services.events.random_offers(contact):
+		var card := W.panel(parent,10)
+		var content := preload("res://scripts/ui/gameplay/random_event_offer.gd").new()
+		card.add_child(content)
+		content.setup(offer,_choose_random_event)
+
+func _choose_random_event(instance: String, choice: String) -> void:
+	var result := Gameplay.execute("events","random_choose",{"id":instance,"choice":choice})
+	_error = "" if result.ok else "Ситуация уже изменилась. Проверьте сообщение или вернитесь позже."
+	_scroll_request = 1
+	_rebuild()
+
 func _begin_topics(initiative: String = "") -> void:
 	var result := Gameplay.execute("npc_dialogue", "open", {"id":contact, "channel":"message", "initiative":initiative})
 	if result.ok:
@@ -567,7 +583,7 @@ func _meeting() -> void:
 	_body.add_child(delay)
 	UI.label(_body, "Где?", 18, UI.MUTED)
 	var place := OptionButton.new()
-	for id in ["global_map", "riverside_cafe", "city_park", "south_promenade"]:
+	for id in ["south_trade_street", "riverside_cafe_front", "city_park", "south_promenade"]:
 		place.add_item(Names.title(id))
 		place.set_item_metadata(place.item_count - 1, id)
 	_body.add_child(place)

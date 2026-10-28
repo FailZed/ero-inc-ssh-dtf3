@@ -13,6 +13,7 @@ func _run() -> void:
 	await preload("res://tests/gameplay/ui_redesign.gd").new(self).run()
 	await preload("res://tests/gameplay/game_ui.gd").new(self).run()
 	await preload("res://tests/gameplay/all_windows.gd").new(self).run()
+	await preload("res://tests/gameplay/inventory_interaction.gd").new(self).run()
 	await preload("res://tests/gameplay/integration_routes.gd").new(self).run()
 	print("GAME_UI_RESULT ",JSON.stringify({"checks":checks,"failed":failures.size(),"failures":failures}))
 	quit(0 if failures.is_empty() else 1)

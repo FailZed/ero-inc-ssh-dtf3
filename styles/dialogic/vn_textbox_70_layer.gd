@@ -17,24 +17,6 @@ const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 ## Show a custom side menu with dialog actions.
 @export var show_side_controls: bool = true
 
-## Width of the custom side controls panel.
-@export_range(120.0, 320.0, 1.0) var side_controls_width: float = 200.0
-
-## Gap between the controls panel and the textbox.
-@export_range(0.0, 80.0, 1.0) var side_controls_gap: float = 12.0
-
-## Offset of the custom controls panel relative to the textbox top-left corner.
-## X is applied after the panel is placed outside the textbox on the left.
-@export var side_controls_offset: Vector2 = Vector2(0, 12)
-
-## If disabled, the side controls panel is pinned to the screen edge
-## instead of following the dialog textbox.
-@export var side_controls_follow_textbox: bool = false
-
-## Margin from the bottom-left viewport corner when the controls panel
-## is detached from the textbox.
-@export var side_controls_screen_margin: Vector2 = Vector2(24, 24)
-
 ## Default delay between letters in seconds.
 ## Smaller value = faster typing.
 @export_range(0.0, 0.2, 0.001) var text_letter_speed: float = 0.01
@@ -77,6 +59,7 @@ var _textbox_hidden := false
 func _apply_export_overrides() -> void:
 	super._apply_export_overrides()
 	_apply_dialogic_runtime_settings()
+	_apply_box_settings.call_deferred()
 
 
 func _ready() -> void:
@@ -84,6 +67,7 @@ func _ready() -> void:
 	set("theme",UI.skin())
 	dialog_text_panel.add_theme_stylebox_override("panel",UI.surface(26))
 	controls_panel.add_theme_stylebox_override("panel",UI.style(Color(0.01,0.025,0.04,0.8),Color("38576d")))
+	name_label_panel.add_theme_stylebox_override("panel",UI.style(Color("0a1723"),UI.BLUE))
 	if Engine.is_editor_hint():
 		return
 
@@ -117,6 +101,8 @@ func _apply_box_settings() -> void:
 		return
 
 	var viewport_size := viewport.get_visible_rect().size
+	var toolbar_height := maxf(48,controls_panel.get_combined_minimum_size().y) if controls_panel != null and show_side_controls else 0.0
+	var bottom_margin := maxf(box_margin_bottom,toolbar_height+44)
 
 	# Final pixel size of the dialog box.
 	# Width  = viewport width  * box_width_ratio
@@ -130,26 +116,29 @@ func _apply_box_settings() -> void:
 	var sizer: Control = %Sizer
 	sizer.custom_minimum_size = resolved_box_size
 	sizer.size = resolved_box_size
-	sizer.position = resolved_box_size * Vector2(-0.5, -1) + Vector2(0, -box_margin_bottom)
+	sizer.position = resolved_box_size * Vector2(-0.5,-1)+Vector2(0,-bottom_margin)
 	dialog_text_panel_node.custom_minimum_size = resolved_box_size
 
 	if controls_panel != null:
 		controls_panel.visible = show_side_controls
 		controls_panel.custom_minimum_size = Vector2.ZERO
-		controls_panel.size = Vector2(resolved_box_size.x,46)
-		controls_panel.position = Vector2(-resolved_box_size.x*0.5,-80)
+		controls_panel.size = Vector2(resolved_box_size.x,toolbar_height)
+		controls_panel.position = Vector2(-resolved_box_size.x*0.5,-24-toolbar_height)
 
 
 func _apply_text_settings() -> void:
 	var dialog_text_node = %DialogicNode_DialogText
 	dialog_text_node.alignment = text_alignment
 	for font in ["normal_font_size","bold_font_size","italics_font_size","bold_italics_font_size"]: dialog_text_node.add_theme_font_size_override(font,roundi(29*UI.text_scale))
+	for button in [history_button,hide_button,save_button,load_button,menu_button]:
+		if button != null: button.add_theme_font_size_override("font_size",roundi(20*UI.text_scale))
 
 
 func _apply_name_label_settings() -> void:
 	var name_label_node = %DialogicNode_NameLabel
 	name_label_node.use_character_color = false
 	name_label_node.add_theme_color_override("font_color",Color("90c6e8"))
+	name_label_node.add_theme_font_size_override("font_size",roundi(26*UI.text_scale))
 
 	var name_panel: PanelContainer = %NameLabelPanel
 	var text_panel: PanelContainer = %DialogTextPanel

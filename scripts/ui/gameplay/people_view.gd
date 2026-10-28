@@ -85,6 +85,7 @@ func _present() -> void:
 	UI.label(info,str(life.emotion),18,UI.MUTED)
 	UI.label(info,str(life.location),18,UI.MUTED)
 	UI.label(info,str(life.activity),18,UI.MUTED)
+	preload("res://scripts/ui/gameplay/social_status.gd").employment(info,sim,_selected)
 	if npc.location == sim.state.world.location: W.primary(info,"Поговорить",owner_ui._open_npc.bind(_selected))
 	elif _selected in sim.state.social.contacts: W.primary(info,"Написать",owner_ui._open_conversation.bind(_selected,"message"))
 	else: UI.button(info,"Открыть карту",owner_ui.open_panel.bind("map"))

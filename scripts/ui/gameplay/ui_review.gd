@@ -4,11 +4,14 @@ const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 var destination := "res://docs/ui/captures/review"
 var report: Array[Dictionary] = []
 var quick := false
+var interaction_only := false
+var failures: Array[String] = []
 
 func _ready() -> void:
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--capture="): destination = arg.trim_prefix("--capture=")
 		if arg == "--quick": quick = true
+		if arg == "--interaction-only": interaction_only = true
 	GameSession.pause_autosave_runtime()
 	var config := preload("res://scripts/mechanics/setup_config.gd").defaults()
 	config.population.count = 12
@@ -24,10 +27,21 @@ func _ready() -> void:
 	shell._phone_view.preferences.selected = "city"
 	shell._phone_view.preferences.dimming = 0.22
 	var original_scale: float = UI.text_scale
+	if interaction_only:
+		await _review_interaction(shell)
+		return
 	for id in ["place","map","profile","inventory","people","phone","journal","activities","work","club","home","health","family","digital","collection","interface"]:
 		if quick and not id in ["place","profile","inventory","people","phone","journal","health","interface"]: continue
 		shell.open_panel(id)
 		await _capture(id, shell)
+		if id == "place" and not quick:
+			var original_location: String = Gameplay.simulation.state.world.location
+			for room in ["apartment_hall","bathroom","kitchen"]:
+				Gameplay.simulation.state.world.location = room
+				shell.open_panel("place")
+				await _capture("scene-"+room,shell)
+			Gameplay.simulation.state.world.location = original_location
+			shell.open_panel("place")
 		if id == "profile" and not quick:
 			for tab in ["skills", "perks"]:
 				shell._select_profile_tab(tab)
@@ -94,6 +108,12 @@ func _ready() -> void:
 			work._refresh()
 			await _capture("livelihood-"+tab,work)
 		work.queue_free()
+		await get_tree().process_frame
+		var schedule := preload("res://scripts/ui/gameplay/work_schedule_window.gd").new()
+		schedule.conflicts = [{"id":"computing","start":600,"end":720,"commute":30,"arrival":630,"deadline":615,"late_minutes":30,"can_attend":false},{"id":"physics","start":780,"end":900,"commute":30,"arrival":810,"deadline":795,"late_minutes":30,"can_attend":false}]
+		shell.add_child(schedule)
+		await _capture("work-schedule-conflict",schedule)
+		schedule.queue_free()
 		await get_tree().process_frame
 		var story := preload("res://scripts/ui/gameplay/personal_story_window.gd").new()
 		story.npc_id = "asuka"
@@ -244,13 +264,10 @@ func _ready() -> void:
 	timeline.from_text("Город постепенно погружается в вечер. Впереди — новые знакомства и собственные планы.\nКуда отправиться сегодня?\n- Осмотреться в городе\n\tСамое время выбрать, куда отправиться.\n- Вернуться домой\n\tДома можно спокойно спланировать следующий день.")
 	Dialogic.Styles.load_style("",self)
 	var layout := Dialogic.start(timeline)
-	# Text begins after the textbox entrance animation, not on the first frame.
-	await get_tree().create_timer(0.8).timeout
-	Dialogic.Text.skip_text_reveal()
+	await _settle_story_text("Город постепенно")
 	await _capture("story-dialogue",layout)
 	Dialogic.handle_next_event()
-	await get_tree().create_timer(0.4).timeout
-	Dialogic.Text.skip_text_reveal()
+	await _settle_story_text("Куда отправиться")
 	await _capture("story-choices",layout)
 	var history: Control
 	for child in layout.find_children("*","Control",true,false):
@@ -259,6 +276,11 @@ func _ready() -> void:
 		history.show_history()
 		await _capture("story-history",layout)
 		history._on_hide_history_pressed()
+	UI.text_scale = 1.25
+	for child in layout.get_children():
+		if child.has_method("apply_export_overrides"): child.apply_export_overrides()
+	await _capture("story-text-125",layout)
+	UI.text_scale = original_scale
 	await Dialogic.clear()
 	var input_timeline := DialogicTimeline.new()
 	input_timeline.from_text('[text_input text="Как к вам обращаться?" default="Алекс"]')
@@ -267,6 +289,18 @@ func _ready() -> void:
 	await _capture("story-text-input",layout)
 	await Dialogic.clear()
 	_finish()
+
+func _settle_story_text(prefix: String) -> void:
+	# Wait for the actual text event, including its entrance animation.
+	for frame in range(360):
+		for text in get_tree().get_nodes_in_group("dialogic_dialog_text"):
+			if text.is_visible_in_tree() and text.get_parsed_text().begins_with(prefix):
+				text.finish_text()
+				for settle in range(3): await get_tree().process_frame
+				if text.visible_characters >= text.get_total_character_count() or text.visible_characters == -1: return
+		await get_tree().process_frame
+	failures.append("Story text did not settle: "+prefix)
+	push_error(failures[-1])
 
 func _preview_slots(menu: Control, saving: bool) -> void:
 	var entries: Array = []
@@ -277,9 +311,9 @@ func _preview_slots(menu: Control, saving: bool) -> void:
 
 func _finish() -> void:
 	var file := FileAccess.open(destination.path_join("report.json"), FileAccess.WRITE)
-	file.store_string(JSON.stringify({"source":"Godot runtime; disposable test world, not a user playthrough", "viewport":str(get_viewport_rect().size), "captures":report}, "\t"))
-	print("UI_REVIEW_RESULT ", JSON.stringify({"captures":report.size(), "destination":destination}))
-	get_tree().quit()
+	file.store_string(JSON.stringify({"source":"Godot runtime; disposable test world, not a user playthrough", "viewport":str(get_viewport_rect().size), "captures":report,"failures":failures}, "\t"))
+	print("UI_REVIEW_RESULT ", JSON.stringify({"captures":report.size(),"failed":failures.size(), "destination":destination}))
+	get_tree().quit(0 if failures.is_empty() else 1)
 
 func _capture(id: String, surface: Node) -> void:
 	get_viewport().warp_mouse(Vector2(5, 5))
@@ -290,11 +324,72 @@ func _capture(id: String, surface: Node) -> void:
 		bounds_ok = get_viewport_rect().grow(1).encloses(surface._main_panel.get_global_rect())
 	elif surface.has_method("open_panel") and surface.current_panel == "phone":
 		bounds_ok = get_viewport_rect().grow(1).encloses(surface._phone_view._frame.get_global_rect())
+	elif surface.has_method("open_panel") and surface.current_panel == "place":
+		for control in [surface._header,surface._hero,surface._bottom]+[surface._scene_actions.panel]:
+			if control.is_visible_in_tree(): bounds_ok = bounds_ok and get_viewport_rect().grow(1).encloses(control.get_global_rect())
 	else:
 		var modal := surface.find_child("GameWindow",true,false)
 		if modal is Control: bounds_ok = get_viewport_rect().grow(1).encloses(modal.get_global_rect())
+	if id.begins_with("story-"):
+		for child in surface.find_children("*","Control",true,false):
+			if child.is_visible_in_tree() and child.name in ["DialogTextPanel","DialogControlsPanel","ResponsePanel","TextInputPanel","HistoryBox"]:
+				bounds_ok = bounds_ok and get_viewport_rect().grow(1).encloses(child.get_global_rect())
 	DirAccess.make_dir_recursive_absolute(destination)
 	var path := destination.path_join(id + ".png")
 	var result := get_viewport().get_texture().get_image().save_png(path)
 	report.append({"id":id, "path":path, "saved":result == OK, "main_window_inside_viewport":bounds_ok})
-	if result != OK or not bounds_ok: push_error("UI capture failed bounds/save: " + id)
+	if result != OK or not bounds_ok:
+		failures.append("UI capture failed bounds/save: " + id)
+		push_error(failures[-1])
+
+func _review_interaction(shell: Control) -> void:
+	var sim = Gameplay.simulation
+	for id in ["asuka","ellie"]:
+		var npc: Dictionary = sim.state.social.npcs[id]
+		sim.services.npc_agency._cancel(npc,"ui_review")
+		npc.location = "bedroom"
+		npc.activity = "idle"
+		npc.schedule = []
+		npc.pinned_until = int(sim.state.clock.total_minutes)+1440
+	shell.open_panel("place")
+	await _capture("place",shell)
+	for page in ["people","places"]:
+		shell._scene_actions.select_page(page)
+		await _capture("scene-"+page,shell)
+	for room in ["apartment_hall","bathroom","kitchen"]:
+		sim.state.world.location = room
+		shell.open_panel("place")
+		shell._scene_actions.select_page("actions" if room != "apartment_hall" else "places")
+		await _capture("scene-"+room,shell)
+	sim.state.world.location = "bedroom"
+	var clothing := ""
+	for id in sim.catalog.items:
+		var item: Dictionary = sim.catalog.items[id]
+		if item.has("slot") and str(item.slot) != "weapon" and preload("res://scripts/mechanics/core/rules.gd").check(sim.state,item.get("requirements",{})):
+			clothing = id; break
+	if not clothing.is_empty(): Gameplay.execute("inventory","add",{"id":clothing})
+	shell.open_panel("inventory")
+	await _capture("inventory",shell)
+	if not clothing.is_empty():
+		sim.state.inventory.equipped[str(sim.catalog.items[clothing].slot)] = clothing
+		shell._inventory_state.selected = clothing
+		shell.open_panel("inventory")
+		await _capture("inventory-equipped",shell)
+	var scale_before: float = UI.text_scale
+	UI.text_scale = 1.25
+	shell.theme = UI.skin()
+	UI.apply_text_scale(shell)
+	shell.open_panel("inventory")
+	await _capture("inventory-text-125",shell)
+	shell.open_panel("place")
+	shell._scene_actions.select_page("actions")
+	await _capture("place-text-125",shell)
+	UI.text_scale = scale_before
+	shell.theme = UI.skin()
+	UI.apply_text_scale(shell)
+	shell.open_panel("place")
+	shell._scene_actions.select_page("actions")
+	shell._queue.planning = true
+	shell._queue.enqueue({"title":"Отдохнуть · 1 час","module":"character","operation":"rest","args":{"minutes":60}})
+	await _capture("queue",shell)
+	_finish()

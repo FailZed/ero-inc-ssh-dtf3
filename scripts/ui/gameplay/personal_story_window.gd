@@ -28,6 +28,7 @@ func _ready() -> void:
 	_body = UI.column(root,20)
 	_body.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	Gameplay.changed.connect(_queue_refresh)
+	GameSession.language_changed.connect(_queue_refresh)
 	_refresh()
 
 func _queue_refresh() -> void:
@@ -40,12 +41,27 @@ func _refresh() -> void:
 	if not is_inside_tree(): return
 	UI.clear(_body)
 	var npc: Dictionary = Gameplay.simulation.state.social.npcs.get(npc_id,{})
-	if npc.is_empty(): return
+	if npc.is_empty():
+		_portrait.hide()
+		W.empty(_body,"people","Житель недоступен","Сведения об этом человеке больше не доступны.")
+		_window.end_update()
+		return
+	_portrait.show()
 	_portrait.set_actor(npc)
-	var view: Dictionary = Gameplay.simulation.services.npc_stories.present(npc_id)
+	var view: Dictionary = Gameplay.simulation.services.npc_stories.present(npc_id,GameSession.get_language_code())
 	UI.label(_body,str(npc.name),32,UI.BLUE)
+	if view.is_empty():
+		var reason: String = Gameplay.simulation.services.npc_stories.blocked(npc_id)
+		if reason == "personal_story_unassigned":
+			UI.label(_body,"У этого жителя пока нет отдельной личной истории.",23,UI.MUTED)
+		else:
+			UI.label(_body,"Не удалось открыть личную историю.",23,UI.ORANGE)
+			push_error("Empty personal-story view for assigned NPC %s: %s" % [npc_id,reason])
+		_window.end_update()
+		return
 	UI.label(_body,str(view.title),26)
 	UI.label(_body,str(view.text),23)
+	if not str(view.revisit).is_empty(): UI.label(_body,str(view.revisit),20,UI.BLUE)
 	if not str(view.instruction).is_empty(): UI.label(_body,str(view.instruction),20,UI.ORANGE)
 	if int(view.required) > 1: UI.label(_body,"Выполнено: %d / %d" % [int(view.goal.get("count",0)),int(view.required)],19,UI.BLUE)
 	var blocked := str(view.blocked)

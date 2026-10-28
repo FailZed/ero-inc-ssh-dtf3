@@ -1,0 +1,2646 @@
+{
+  "conversation_options": {
+    "ct_weather": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "nature",
+      "message": true
+    },
+    "ct_cute": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "nature",
+      "message": true
+    },
+    "ct_politics": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "message": true
+    },
+    "ct_justice": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "message": true
+    },
+    "ct_crime": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "message": true
+    },
+    "ct_tech": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "science",
+      "message": true
+    },
+    "ct_fights": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "message": true
+    },
+    "ct_cooking": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "arts",
+      "message": true
+    },
+    "ct_cards": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "games",
+      "message": true
+    },
+    "ct_books": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "arts",
+      "message": true
+    },
+    "ct_music": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "arts",
+      "message": true
+    },
+    "ct_movies": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "arts",
+      "message": true
+    },
+    "ct_games": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "games",
+      "message": true
+    },
+    "ct_sport": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "message": true
+    },
+    "ct_travel": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "nature",
+      "message": true
+    },
+    "ct_stress": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "message": true
+    },
+    "ct_future": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "science",
+      "message": true
+    },
+    "ct_club": {
+      "kind": "topic",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "message": true
+    },
+    "rq_address": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ]
+    },
+    "rq_compliment": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ]
+    },
+    "rq_gaze": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "narrated": true
+    },
+    "rq_hand": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 12,
+      "closeness": 10,
+      "narrated": true
+    },
+    "rq_headpat": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 18,
+      "closeness": 15,
+      "narrated": true
+    },
+    "rq_embrace": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 18,
+      "closeness": 15,
+      "narrated": true
+    },
+    "rq_cheek": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 22,
+      "closeness": 20,
+      "narrated": true
+    },
+    "rq_kiss": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 30,
+      "closeness": 25,
+      "narrated": true
+    },
+    "rq_confess": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 10
+    },
+    "rq_miss": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "affection": 2,
+        "comfort": 2,
+        "closeness": 1.5,
+        "interest": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "trust": 10
+    },
+    "rq_separate": {
+      "kind": "romance",
+      "minutes": 30,
+      "changes": {
+        "comfort": -2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "tags": [
+        "romance"
+      ],
+      "effect": "separate",
+      "certain": true,
+      "narrated": true
+    },
+    "ac_walk": {
+      "kind": "activity",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "nature",
+      "restore": {
+        "fun": 10,
+        "social": 12
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_rest": {
+      "kind": "activity",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "restore": {
+        "energy": 10,
+        "social": 8
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_silent": {
+      "kind": "activity",
+      "minutes": 15,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "nature",
+      "restore": {
+        "energy": 5,
+        "social": 6
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_meal": {
+      "kind": "activity",
+      "minutes": 45,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "restore": {
+        "satiety": 25,
+        "social": 12
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0,
+      "cost": 10
+    },
+    "ac_tea": {
+      "kind": "activity",
+      "minutes": 20,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "restore": {
+        "social": 10,
+        "fun": 5
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0,
+      "cost": 2
+    },
+    "ac_cards": {
+      "kind": "activity",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "games",
+      "restore": {
+        "fun": 20,
+        "social": 15
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_console": {
+      "kind": "activity",
+      "minutes": 45,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "games",
+      "restore": {
+        "fun": 25,
+        "social": 15
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_study": {
+      "kind": "activity",
+      "minutes": 60,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "science",
+      "restore": {
+        "social": 10
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_run": {
+      "kind": "activity",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "restore": {
+        "fun": 12,
+        "social": 10
+      },
+      "energy": 6,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_arm": {
+      "kind": "activity",
+      "minutes": 15,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "restore": {
+        "fun": 10,
+        "social": 8
+      },
+      "energy": 6,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_spar": {
+      "kind": "activity",
+      "minutes": 30,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "restore": {
+        "fun": 12,
+        "social": 10
+      },
+      "energy": 6,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_shop": {
+      "kind": "activity",
+      "minutes": 20,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "restore": {
+        "social": 8
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_swim": {
+      "kind": "activity",
+      "minutes": 10,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "restore": {
+        "social": 6
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_volley": {
+      "kind": "activity",
+      "minutes": 10,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "sport",
+      "restore": {
+        "social": 6
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_sun": {
+      "kind": "activity",
+      "minutes": 15,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "nature",
+      "restore": {
+        "fun": 6,
+        "social": 8
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_group": {
+      "kind": "activity",
+      "minutes": 10,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "restore": {
+        "social": 8
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_water": {
+      "kind": "activity",
+      "minutes": 5,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "games",
+      "restore": {
+        "fun": 8,
+        "social": 6
+      },
+      "energy": 0,
+      "trust": 0,
+      "closeness": 0
+    },
+    "ac_massage": {
+      "kind": "activity",
+      "minutes": 15,
+      "changes": {
+        "affection": 1.5,
+        "comfort": 2,
+        "closeness": 1,
+        "trust": 0.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "interest": "community",
+      "restore": {
+        "energy": 6,
+        "social": 8
+      },
+      "energy": 0,
+      "trust": 15,
+      "closeness": 10
+    },
+    "fn_give": {
+      "kind": "finance",
+      "minutes": 30,
+      "changes": {
+        "comfort": 2,
+        "affection": 1
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "effect": "give_money",
+      "money": 25,
+      "trust": 5
+    },
+    "fn_borrow": {
+      "kind": "finance",
+      "minutes": 30,
+      "changes": {
+        "care_balance": 3
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "effect": "borrow",
+      "money": 25,
+      "trust": 30
+    },
+    "fn_repay": {
+      "kind": "finance",
+      "minutes": 30,
+      "changes": {
+        "trust": 2,
+        "respect": 2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "effect": "repay",
+      "certain": true
+    },
+    "hg_demand": {
+      "kind": "hostile",
+      "minutes": 2,
+      "changes": {
+        "trust": -7.2,
+        "affection": -5.04,
+        "respect": -3.6,
+        "comfort": -7.2,
+        "closeness": -2,
+        "grievance": 7.2
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "take_money",
+      "fear": 6,
+      "fine": 10
+    },
+    "hg_item": {
+      "kind": "hostile",
+      "minutes": 2,
+      "changes": {
+        "trust": -7.6,
+        "affection": -5.319999999999999,
+        "respect": -3.8,
+        "comfort": -7.6,
+        "closeness": -2,
+        "grievance": 7.6
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "take_item",
+      "fear": 8,
+      "fine": 15
+    },
+    "hg_steal": {
+      "kind": "hostile",
+      "minutes": 10,
+      "changes": {
+        "trust": -6.0,
+        "affection": -4.199999999999999,
+        "respect": -3.0,
+        "comfort": -6.0,
+        "closeness": -2,
+        "grievance": 6.0
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "steal",
+      "fear": 0,
+      "fine": 0
+    },
+    "hg_taunt": {
+      "kind": "hostile",
+      "minutes": 2,
+      "changes": {
+        "trust": -6.6,
+        "affection": -4.619999999999999,
+        "respect": -3.3,
+        "comfort": -6.6,
+        "closeness": -2,
+        "grievance": 6.6
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "",
+      "fear": 3,
+      "fine": 0
+    },
+    "hg_extort": {
+      "kind": "hostile",
+      "minutes": 3,
+      "changes": {
+        "trust": -9.0,
+        "affection": -6.3,
+        "respect": -4.5,
+        "comfort": -9.0,
+        "closeness": -2,
+        "grievance": 9.0
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "take_money",
+      "fear": 15,
+      "fine": 25
+    },
+    "hg_beat": {
+      "kind": "hostile",
+      "minutes": 1,
+      "changes": {
+        "trust": -15.6,
+        "affection": -10.92,
+        "respect": -7.8,
+        "comfort": -15.6,
+        "closeness": -2,
+        "grievance": 15.6
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "combat",
+      "fear": 18,
+      "fine": 30,
+      "opening": "heavy"
+    },
+    "hg_threat": {
+      "kind": "hostile",
+      "minutes": 1,
+      "changes": {
+        "trust": -8.8,
+        "affection": -6.16,
+        "respect": -4.4,
+        "comfort": -8.8,
+        "closeness": -2,
+        "grievance": 8.8
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "",
+      "fear": 14,
+      "fine": 15
+    },
+    "hg_drive": {
+      "kind": "hostile",
+      "minutes": 2,
+      "changes": {
+        "trust": -8.0,
+        "affection": -5.6,
+        "respect": -4.0,
+        "comfort": -8.0,
+        "closeness": -2,
+        "grievance": 8.0
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "drive_away",
+      "fear": 10,
+      "fine": 5
+    },
+    "hg_humiliate": {
+      "kind": "hostile",
+      "minutes": 3,
+      "changes": {
+        "trust": -8.0,
+        "affection": -5.6,
+        "respect": -4.0,
+        "comfort": -8.0,
+        "closeness": -2,
+        "grievance": 8.0
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "",
+      "fear": 10,
+      "fine": 0
+    },
+    "hg_pressure": {
+      "kind": "hostile",
+      "minutes": 5,
+      "changes": {
+        "trust": -11.0,
+        "affection": -7.699999999999999,
+        "respect": -5.5,
+        "comfort": -11.0,
+        "closeness": -2,
+        "grievance": 11.0
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "",
+      "fear": 25,
+      "fine": 10
+    },
+    "hg_shave": {
+      "kind": "hostile",
+      "minutes": 10,
+      "changes": {
+        "trust": -9.6,
+        "affection": -6.72,
+        "respect": -4.8,
+        "comfort": -9.6,
+        "closeness": -2,
+        "grievance": 9.6
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "shave",
+      "fear": 18,
+      "fine": 30,
+      "weapon": "blade"
+    },
+    "hg_fight": {
+      "kind": "hostile",
+      "minutes": 1,
+      "changes": {
+        "trust": -12.8,
+        "affection": -8.959999999999999,
+        "respect": -6.4,
+        "comfort": -12.8,
+        "closeness": -2,
+        "grievance": 12.8
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "combat",
+      "fear": 14,
+      "fine": 25
+    },
+    "hg_stab": {
+      "kind": "hostile",
+      "minutes": 1,
+      "changes": {
+        "trust": -24.5,
+        "affection": -17.15,
+        "respect": -12.25,
+        "comfort": -24.5,
+        "closeness": -2,
+        "grievance": 24.5
+      },
+      "rejected": {
+        "comfort": -1
+      },
+      "hostile": true,
+      "effect": "combat",
+      "fear": 30,
+      "fine": 70,
+      "weapon": "blade",
+      "opening": "thrust"
+    },
+    "qu_music": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_book": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_schedule": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_support": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_boundaries": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_money": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_image": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_autonomy": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_election": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    },
+    "qu_home": {
+      "kind": "question",
+      "minutes": 5,
+      "changes": {},
+      "rejected": {
+        "comfort": -1
+      },
+      "message": true,
+      "certain": true
+    }
+  },
+  "dialogue_choices": {
+    "ct_weather": {
+      "label": "opt.ct_weather",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_weather"
+    },
+    "ct_cute": {
+      "label": "opt.ct_cute",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_cute"
+    },
+    "ct_politics": {
+      "label": "opt.ct_politics",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_politics"
+    },
+    "ct_justice": {
+      "label": "opt.ct_justice",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_justice"
+    },
+    "ct_crime": {
+      "label": "opt.ct_crime",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_crime"
+    },
+    "ct_tech": {
+      "label": "opt.ct_tech",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_tech"
+    },
+    "ct_fights": {
+      "label": "opt.ct_fights",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_fights"
+    },
+    "ct_cooking": {
+      "label": "opt.ct_cooking",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_cooking"
+    },
+    "ct_cards": {
+      "label": "opt.ct_cards",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_cards"
+    },
+    "ct_books": {
+      "label": "opt.ct_books",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_books"
+    },
+    "ct_music": {
+      "label": "opt.ct_music",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_music"
+    },
+    "ct_movies": {
+      "label": "opt.ct_movies",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_movies"
+    },
+    "ct_games": {
+      "label": "opt.ct_games",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_games"
+    },
+    "ct_sport": {
+      "label": "opt.ct_sport",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_sport"
+    },
+    "ct_travel": {
+      "label": "opt.ct_travel",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_travel"
+    },
+    "ct_stress": {
+      "label": "opt.ct_stress",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_stress"
+    },
+    "ct_future": {
+      "label": "opt.ct_future",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_future"
+    },
+    "ct_club": {
+      "label": "opt.ct_club",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ct_club"
+    },
+    "rq_address": {
+      "label": "opt.rq_address",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_address"
+    },
+    "rq_compliment": {
+      "label": "opt.rq_compliment",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_compliment"
+    },
+    "rq_gaze": {
+      "label": "opt.rq_gaze",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_gaze"
+    },
+    "rq_hand": {
+      "label": "opt.rq_hand",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_hand"
+    },
+    "rq_headpat": {
+      "label": "opt.rq_headpat",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_headpat"
+    },
+    "rq_embrace": {
+      "label": "opt.rq_embrace",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_embrace"
+    },
+    "rq_cheek": {
+      "label": "opt.rq_cheek",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_cheek"
+    },
+    "rq_kiss": {
+      "label": "opt.rq_kiss",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_kiss"
+    },
+    "rq_confess": {
+      "label": "opt.rq_confess",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_confess"
+    },
+    "rq_miss": {
+      "label": "opt.rq_miss",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_miss"
+    },
+    "rq_separate": {
+      "label": "opt.rq_separate",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "rq_separate"
+    },
+    "ac_walk": {
+      "label": "opt.ac_walk",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ac_walk"
+    },
+    "ac_rest": {
+      "label": "opt.ac_rest",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ac_rest"
+    },
+    "ac_silent": {
+      "label": "opt.ac_silent",
+      "to": "answer",
+      "action": "",
+      "minutes": 15,
+      "interaction": "ac_silent"
+    },
+    "ac_meal": {
+      "label": "opt.ac_meal",
+      "to": "answer",
+      "action": "",
+      "minutes": 45,
+      "interaction": "ac_meal"
+    },
+    "ac_tea": {
+      "label": "opt.ac_tea",
+      "to": "answer",
+      "action": "",
+      "minutes": 20,
+      "interaction": "ac_tea"
+    },
+    "ac_cards": {
+      "label": "opt.ac_cards",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ac_cards"
+    },
+    "ac_console": {
+      "label": "opt.ac_console",
+      "to": "answer",
+      "action": "",
+      "minutes": 45,
+      "interaction": "ac_console"
+    },
+    "ac_study": {
+      "label": "opt.ac_study",
+      "to": "answer",
+      "action": "",
+      "minutes": 60,
+      "interaction": "ac_study"
+    },
+    "ac_run": {
+      "label": "opt.ac_run",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ac_run"
+    },
+    "ac_arm": {
+      "label": "opt.ac_arm",
+      "to": "answer",
+      "action": "",
+      "minutes": 15,
+      "interaction": "ac_arm"
+    },
+    "ac_spar": {
+      "label": "opt.ac_spar",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "ac_spar"
+    },
+    "ac_shop": {
+      "label": "opt.ac_shop",
+      "to": "answer",
+      "action": "",
+      "minutes": 20,
+      "interaction": "ac_shop"
+    },
+    "ac_swim": {
+      "label": "opt.ac_swim",
+      "to": "answer",
+      "action": "",
+      "minutes": 10,
+      "interaction": "ac_swim"
+    },
+    "ac_volley": {
+      "label": "opt.ac_volley",
+      "to": "answer",
+      "action": "",
+      "minutes": 10,
+      "interaction": "ac_volley"
+    },
+    "ac_sun": {
+      "label": "opt.ac_sun",
+      "to": "answer",
+      "action": "",
+      "minutes": 15,
+      "interaction": "ac_sun"
+    },
+    "ac_group": {
+      "label": "opt.ac_group",
+      "to": "answer",
+      "action": "",
+      "minutes": 10,
+      "interaction": "ac_group"
+    },
+    "ac_water": {
+      "label": "opt.ac_water",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "ac_water"
+    },
+    "ac_massage": {
+      "label": "opt.ac_massage",
+      "to": "answer",
+      "action": "",
+      "minutes": 15,
+      "interaction": "ac_massage"
+    },
+    "fn_give": {
+      "label": "opt.fn_give",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "fn_give"
+    },
+    "fn_borrow": {
+      "label": "opt.fn_borrow",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "fn_borrow"
+    },
+    "fn_repay": {
+      "label": "opt.fn_repay",
+      "to": "answer",
+      "action": "",
+      "minutes": 30,
+      "interaction": "fn_repay"
+    },
+    "hg_demand": {
+      "label": "opt.hg_demand",
+      "to": "answer",
+      "action": "",
+      "minutes": 2,
+      "interaction": "hg_demand"
+    },
+    "hg_item": {
+      "label": "opt.hg_item",
+      "to": "answer",
+      "action": "",
+      "minutes": 2,
+      "interaction": "hg_item"
+    },
+    "hg_steal": {
+      "label": "opt.hg_steal",
+      "to": "answer",
+      "action": "",
+      "minutes": 10,
+      "interaction": "hg_steal"
+    },
+    "hg_taunt": {
+      "label": "opt.hg_taunt",
+      "to": "answer",
+      "action": "",
+      "minutes": 2,
+      "interaction": "hg_taunt"
+    },
+    "hg_extort": {
+      "label": "opt.hg_extort",
+      "to": "answer",
+      "action": "",
+      "minutes": 3,
+      "interaction": "hg_extort"
+    },
+    "hg_beat": {
+      "label": "opt.hg_beat",
+      "to": "answer",
+      "action": "",
+      "minutes": 1,
+      "interaction": "hg_beat"
+    },
+    "hg_threat": {
+      "label": "opt.hg_threat",
+      "to": "answer",
+      "action": "",
+      "minutes": 1,
+      "interaction": "hg_threat"
+    },
+    "hg_drive": {
+      "label": "opt.hg_drive",
+      "to": "answer",
+      "action": "",
+      "minutes": 2,
+      "interaction": "hg_drive"
+    },
+    "hg_humiliate": {
+      "label": "opt.hg_humiliate",
+      "to": "answer",
+      "action": "",
+      "minutes": 3,
+      "interaction": "hg_humiliate"
+    },
+    "hg_pressure": {
+      "label": "opt.hg_pressure",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "hg_pressure"
+    },
+    "hg_shave": {
+      "label": "opt.hg_shave",
+      "to": "answer",
+      "action": "",
+      "minutes": 10,
+      "interaction": "hg_shave"
+    },
+    "hg_fight": {
+      "label": "opt.hg_fight",
+      "to": "answer",
+      "action": "",
+      "minutes": 1,
+      "interaction": "hg_fight"
+    },
+    "hg_stab": {
+      "label": "opt.hg_stab",
+      "to": "answer",
+      "action": "",
+      "minutes": 1,
+      "interaction": "hg_stab"
+    },
+    "qu_music": {
+      "label": "opt.qu_music",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_music"
+    },
+    "qu_book": {
+      "label": "opt.qu_book",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_book"
+    },
+    "qu_schedule": {
+      "label": "opt.qu_schedule",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_schedule"
+    },
+    "qu_support": {
+      "label": "opt.qu_support",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_support"
+    },
+    "qu_boundaries": {
+      "label": "opt.qu_boundaries",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_boundaries"
+    },
+    "qu_money": {
+      "label": "opt.qu_money",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_money"
+    },
+    "qu_image": {
+      "label": "opt.qu_image",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_image"
+    },
+    "qu_autonomy": {
+      "label": "opt.qu_autonomy",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_autonomy"
+    },
+    "qu_election": {
+      "label": "opt.qu_election",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_election"
+    },
+    "qu_home": {
+      "label": "opt.qu_home",
+      "to": "answer",
+      "action": "",
+      "minutes": 5,
+      "interaction": "qu_home"
+    }
+  },
+  "dialogue_labels": {
+    "opt.ct_weather": {
+      "ru": "Обсудить погоду"
+    },
+    "opt.ct_cute": {
+      "ru": "Поговорить о милых вещах"
+    },
+    "opt.ct_politics": {
+      "ru": "Обсудить общественные решения"
+    },
+    "opt.ct_justice": {
+      "ru": "Обсудить закон и справедливость"
+    },
+    "opt.ct_crime": {
+      "ru": "Обсудить криминальные новости"
+    },
+    "opt.ct_tech": {
+      "ru": "Поговорить о компьютерах"
+    },
+    "opt.ct_fights": {
+      "ru": "Обсудить драки и самообладание"
+    },
+    "opt.ct_cooking": {
+      "ru": "Поговорить о готовке"
+    },
+    "opt.ct_cards": {
+      "ru": "Обсудить карточные игры"
+    },
+    "opt.ct_books": {
+      "ru": "Обсудить книги"
+    },
+    "opt.ct_music": {
+      "ru": "Поговорить о музыке"
+    },
+    "opt.ct_movies": {
+      "ru": "Обсудить кино"
+    },
+    "opt.ct_games": {
+      "ru": "Поговорить об играх"
+    },
+    "opt.ct_sport": {
+      "ru": "Обсудить спорт"
+    },
+    "opt.ct_travel": {
+      "ru": "Обсудить путешествия"
+    },
+    "opt.ct_stress": {
+      "ru": "Обсудить тревоги и поддержку"
+    },
+    "opt.ct_future": {
+      "ru": "Поговорить о будущем"
+    },
+    "opt.ct_club": {
+      "ru": "Обсудить кружки и сообщества"
+    },
+    "opt.rq_address": {
+      "ru": "Уточнить удобное обращение"
+    },
+    "opt.rq_compliment": {
+      "ru": "Сделать комплимент внешности"
+    },
+    "opt.rq_gaze": {
+      "ru": "Встретиться взглядами"
+    },
+    "opt.rq_hand": {
+      "ru": "Предложить взяться за руки"
+    },
+    "opt.rq_headpat": {
+      "ru": "Спросить разрешение погладить по голове"
+    },
+    "opt.rq_embrace": {
+      "ru": "Предложить объятие"
+    },
+    "opt.rq_cheek": {
+      "ru": "Попросить поцелуй в щёку"
+    },
+    "opt.rq_kiss": {
+      "ru": "Предложить поцелуй"
+    },
+    "opt.rq_confess": {
+      "ru": "Признаться в симпатии"
+    },
+    "opt.rq_miss": {
+      "ru": "Сказать, что скучал"
+    },
+    "opt.rq_separate": {
+      "ru": "Завершить романтические отношения"
+    },
+    "opt.ac_walk": {
+      "ru": "Предложить прогулку"
+    },
+    "opt.ac_rest": {
+      "ru": "Отдохнуть вместе"
+    },
+    "opt.ac_silent": {
+      "ru": "Посидеть в тишине"
+    },
+    "opt.ac_meal": {
+      "ru": "Пообедать вместе"
+    },
+    "opt.ac_tea": {
+      "ru": "Предложить чай"
+    },
+    "opt.ac_cards": {
+      "ru": "Сыграть в карты без ставок"
+    },
+    "opt.ac_console": {
+      "ru": "Поиграть в кооперативную игру"
+    },
+    "opt.ac_study": {
+      "ru": "Позаниматься вместе"
+    },
+    "opt.ac_run": {
+      "ru": "Предложить совместную разминку"
+    },
+    "opt.ac_arm": {
+      "ru": "Помериться силой за столом"
+    },
+    "opt.ac_spar": {
+      "ru": "Предложить тренировочный спарринг"
+    },
+    "opt.ac_shop": {
+      "ru": "Обсудить совместные покупки"
+    },
+    "opt.ac_swim": {
+      "ru": "Обсудить поход в бассейн"
+    },
+    "opt.ac_volley": {
+      "ru": "Обсудить командную игру"
+    },
+    "opt.ac_sun": {
+      "ru": "Поговорить об отдыхе на природе"
+    },
+    "opt.ac_group": {
+      "ru": "Обсудить встречу компанией"
+    },
+    "opt.ac_water": {
+      "ru": "Предложить водную шутку"
+    },
+    "opt.ac_massage": {
+      "ru": "Предложить расслабить плечи"
+    },
+    "opt.fn_give": {
+      "ru": "Предложить финансовую помощь: 25"
+    },
+    "opt.fn_borrow": {
+      "ru": "Попросить взаймы: 25"
+    },
+    "opt.fn_repay": {
+      "ru": "Вернуть личный долг"
+    },
+    "opt.hg_demand": {
+      "ru": "Отдай мне…"
+    },
+    "opt.hg_item": {
+      "ru": "Потребовать вещь"
+    },
+    "opt.hg_steal": {
+      "ru": "Украсть деньги"
+    },
+    "opt.hg_taunt": {
+      "ru": "Издеваться"
+    },
+    "opt.hg_extort": {
+      "ru": "Вымогать деньги"
+    },
+    "opt.hg_beat": {
+      "ru": "Избить"
+    },
+    "opt.hg_threat": {
+      "ru": "Угрожать"
+    },
+    "opt.hg_drive": {
+      "ru": "Прогнать отсюда"
+    },
+    "opt.hg_humiliate": {
+      "ru": "Унизить"
+    },
+    "opt.hg_pressure": {
+      "ru": "Сломать личность"
+    },
+    "opt.hg_shave": {
+      "ru": "Побрить налысо"
+    },
+    "opt.hg_fight": {
+      "ru": "Драться"
+    },
+    "opt.hg_stab": {
+      "ru": "Пырнуть ножом"
+    },
+    "opt.qu_music": {
+      "ru": "Спросить о любимой музыке"
+    },
+    "opt.qu_book": {
+      "ru": "Спросить о любимых историях"
+    },
+    "opt.qu_schedule": {
+      "ru": "Спросить о ближайших планах"
+    },
+    "opt.qu_support": {
+      "ru": "Уточнить, какая помощь нужна"
+    },
+    "opt.qu_boundaries": {
+      "ru": "Уточнить комфортный формат общения"
+    },
+    "opt.qu_money": {
+      "ru": "Спросить об отношении к долгам"
+    },
+    "opt.qu_image": {
+      "ru": "Обсудить смену образа"
+    },
+    "opt.qu_autonomy": {
+      "ru": "Спросить об общении с другими"
+    },
+    "opt.qu_election": {
+      "ru": "Обсудить участие в общественной жизни"
+    },
+    "opt.qu_home": {
+      "ru": "Обсудить приглашение в гости"
+    }
+  },
+  "dialogue_pools": {
+    "option.ct_weather": {
+      "variants": [
+        {
+          "id": "option.ct_weather.0",
+          "ru": "Мне нравится, когда погода даёт повод немного замедлиться. А тебе проще собраться в солнечный или пасмурный день?"
+        }
+      ]
+    },
+    "option.ct_cute": {
+      "variants": [
+        {
+          "id": "option.ct_cute.0",
+          "ru": "Иногда небольшая добрая вещь помогает больше длинных советов. Особенно если ею хочется поделиться."
+        }
+      ]
+    },
+    "option.ct_politics": {
+      "variants": [
+        {
+          "id": "option.ct_politics.0",
+          "ru": "Мне важно, чтобы решения можно было обсуждать открыто и чтобы правила были понятны всем."
+        }
+      ]
+    },
+    "option.ct_justice": {
+      "variants": [
+        {
+          "id": "option.ct_justice.0",
+          "ru": "Я различаю объяснение поступка и оправдание вреда. Ответственность всё равно остаётся за человеком."
+        }
+      ]
+    },
+    "option.ct_crime": {
+      "variants": [
+        {
+          "id": "option.ct_crime.0",
+          "ru": "Такие новости напоминают, насколько важны безопасность и помощь пострадавшим. Сенсации меня интересуют меньше последствий."
+        }
+      ]
+    },
+    "option.ct_tech": {
+      "variants": [
+        {
+          "id": "option.ct_tech.0",
+          "ru": "Мне интересны технологии, которые избавляют от рутины. Но я хочу понимать, что они делают и какие данные используют."
+        }
+      ]
+    },
+    "option.ct_fights": {
+      "variants": [
+        {
+          "id": "option.ct_fights.0",
+          "ru": "Для меня умение вовремя остановить конфликт важнее готовности драться по любому поводу."
+        }
+      ]
+    },
+    "option.ct_cooking": {
+      "variants": [
+        {
+          "id": "option.ct_cooking.0",
+          "ru": "В готовке мне нравится превращать обычные продукты во что-то, что можно разделить с близкими."
+        }
+      ]
+    },
+    "option.ct_cards": {
+      "variants": [
+        {
+          "id": "option.ct_cards.0",
+          "ru": "В карточных играх меня занимают решения при неполной информации. Предпочитаю играть без денежных ставок."
+        }
+      ]
+    },
+    "option.ct_books": {
+      "variants": [
+        {
+          "id": "option.ct_books.0",
+          "ru": "Мне запоминаются истории, после которых начинаешь замечать что-то новое в обычной жизни."
+        }
+      ]
+    },
+    "option.ct_music": {
+      "variants": [
+        {
+          "id": "option.ct_music.0",
+          "ru": "Музыку я выбираю под настроение. Иногда хочется знакомого звучания, иногда — совершенно нового."
+        }
+      ]
+    },
+    "option.ct_movies": {
+      "variants": [
+        {
+          "id": "option.ct_movies.0",
+          "ru": "Меня привлекают персонажи, чьи решения можно понять, даже если с ними не согласен."
+        }
+      ]
+    },
+    "option.ct_games": {
+      "variants": [
+        {
+          "id": "option.ct_games.0",
+          "ru": "Мне нравится, когда игра позволяет пробовать разные решения и честно показывает их последствия."
+        }
+      ]
+    },
+    "option.ct_sport": {
+      "variants": [
+        {
+          "id": "option.ct_sport.0",
+          "ru": "Мне ближе занятия, после которых чувствуешь себя лучше, а не обязанность постоянно с кем-то соревноваться."
+        }
+      ]
+    },
+    "option.ct_travel": {
+      "variants": [
+        {
+          "id": "option.ct_travel.0",
+          "ru": "Мне было бы интересно познакомиться с местом через его повседневную жизнь, а не только через достопримечательности."
+        }
+      ]
+    },
+    "option.ct_stress": {
+      "variants": [
+        {
+          "id": "option.ct_stress.0",
+          "ru": "Когда всё наваливается, мне помогает конкретная поддержка и возможность самой выбрать следующий шаг."
+        }
+      ]
+    },
+    "option.ct_future": {
+      "variants": [
+        {
+          "id": "option.ct_future.0",
+          "ru": "Я хочу строить планы, которые можно менять по мере того, как узнаёшь себя и мир лучше."
+        }
+      ]
+    },
+    "option.ct_club": {
+      "variants": [
+        {
+          "id": "option.ct_club.0",
+          "ru": "Мне интересно сообщество, где можно заниматься общим делом и при этом сохранять собственное мнение."
+        }
+      ]
+    },
+    "option.rq_address": {
+      "variants": [
+        {
+          "id": "option.rq_address.0",
+          "ru": "Спасибо, что спрашиваешь. Пока можно обращаться ко мне по имени."
+        }
+      ]
+    },
+    "option.rq_compliment": {
+      "variants": [
+        {
+          "id": "option.rq_compliment.0",
+          "ru": "Спасибо. Мне приятно, что ты обращаешь внимание на детали."
+        }
+      ]
+    },
+    "option.rq_gaze": {
+      "variants": [
+        {
+          "id": "option.rq_gaze.0",
+          "ru": "Собеседница ненадолго задерживает взгляд. В разговоре появляется тёплая пауза."
+        }
+      ]
+    },
+    "option.rq_hand": {
+      "variants": [
+        {
+          "id": "option.rq_hand.0",
+          "ru": "Предложение принято. Вы некоторое время держитесь за руки."
+        }
+      ]
+    },
+    "option.rq_headpat": {
+      "variants": [
+        {
+          "id": "option.rq_headpat.0",
+          "ru": "После согласия вы ненадолго сближаетесь. Личная граница соблюдена."
+        }
+      ]
+    },
+    "option.rq_embrace": {
+      "variants": [
+        {
+          "id": "option.rq_embrace.0",
+          "ru": "Собеседница принимает объятие. Это спокойный момент взаимной поддержки."
+        }
+      ]
+    },
+    "option.rq_cheek": {
+      "variants": [
+        {
+          "id": "option.rq_cheek.0",
+          "ru": "После взаимного согласия вы обмениваетесь коротким поцелуем в щёку."
+        }
+      ]
+    },
+    "option.rq_kiss": {
+      "variants": [
+        {
+          "id": "option.rq_kiss.0",
+          "ru": "Предложение принято. Вы обмениваетесь коротким поцелуем."
+        }
+      ]
+    },
+    "option.rq_confess": {
+      "variants": [
+        {
+          "id": "option.rq_confess.0",
+          "ru": "Спасибо за откровенность. Мне важно, чтобы мы могли говорить о чувствах без давления."
+        }
+      ]
+    },
+    "option.rq_miss": {
+      "variants": [
+        {
+          "id": "option.rq_miss.0",
+          "ru": "Мне приятно это слышать. Я тоже ценю время, которое мы проводим вместе."
+        }
+      ]
+    },
+    "option.rq_separate": {
+      "variants": [
+        {
+          "id": "option.rq_separate.0",
+          "ru": "Вы обсуждаете расставание. Романтические отношения завершены."
+        }
+      ]
+    },
+    "option.ac_walk": {
+      "variants": [
+        {
+          "id": "option.ac_walk.0",
+          "ru": "Вы проводите время за спокойной прогулкой и разговором."
+        }
+      ]
+    },
+    "option.ac_rest": {
+      "variants": [
+        {
+          "id": "option.ac_rest.0",
+          "ru": "Вы делаете перерыв в делах и проводите немного времени вместе."
+        }
+      ]
+    },
+    "option.ac_silent": {
+      "variants": [
+        {
+          "id": "option.ac_silent.0",
+          "ru": "Вы проводите несколько спокойных минут рядом, не требуя разговора."
+        }
+      ]
+    },
+    "option.ac_meal": {
+      "variants": [
+        {
+          "id": "option.ac_meal.0",
+          "ru": "Вы делаете перерыв на совместный обед."
+        }
+      ]
+    },
+    "option.ac_tea": {
+      "variants": [
+        {
+          "id": "option.ac_tea.0",
+          "ru": "Вы пьёте чай и спокойно общаетесь."
+        }
+      ]
+    },
+    "option.ac_cards": {
+      "variants": [
+        {
+          "id": "option.ac_cards.0",
+          "ru": "Вы заканчиваете небольшую дружескую партию в карты."
+        }
+      ]
+    },
+    "option.ac_console": {
+      "variants": [
+        {
+          "id": "option.ac_console.0",
+          "ru": "Вы проводите время за совместной игрой."
+        }
+      ]
+    },
+    "option.ac_study": {
+      "variants": [
+        {
+          "id": "option.ac_study.0",
+          "ru": "Вы вместе разбираете учебный материал и помогаете друг другу с вопросами."
+        }
+      ]
+    },
+    "option.ac_run": {
+      "variants": [
+        {
+          "id": "option.ac_run.0",
+          "ru": "Вы заканчиваете лёгкую совместную разминку."
+        }
+      ]
+    },
+    "option.ac_arm": {
+      "variants": [
+        {
+          "id": "option.ac_arm.0",
+          "ru": "Вы завершаете короткое дружеское состязание и обмениваетесь впечатлениями."
+        }
+      ]
+    },
+    "option.ac_spar": {
+      "variants": [
+        {
+          "id": "option.ac_spar.0",
+          "ru": "Тренировочный спарринг закончен. Вы соблюдаете договорённость остановиться по первому требованию."
+        }
+      ]
+    },
+    "option.ac_shop": {
+      "variants": [
+        {
+          "id": "option.ac_shop.0",
+          "ru": "Вы сравниваете варианты покупок. Денежных обязательств этот разговор не создаёт."
+        }
+      ]
+    },
+    "option.ac_swim": {
+      "variants": [
+        {
+          "id": "option.ac_swim.0",
+          "ru": "Вы обсуждаете удобное время для бассейна. Для реальной встречи нужно отдельно выбрать время и место."
+        }
+      ]
+    },
+    "option.ac_volley": {
+      "variants": [
+        {
+          "id": "option.ac_volley.0",
+          "ru": "Вы обсуждаете состав команды и удобный день. Приглашение остальных участников ещё предстоит."
+        }
+      ]
+    },
+    "option.ac_sun": {
+      "variants": [
+        {
+          "id": "option.ac_sun.0",
+          "ru": "Вы делитесь идеями для спокойного отдыха на свежем воздухе."
+        }
+      ]
+    },
+    "option.ac_group": {
+      "variants": [
+        {
+          "id": "option.ac_group.0",
+          "ru": "Вы обсуждаете формат встречи. Другие люди пока не получили приглашений."
+        }
+      ]
+    },
+    "option.ac_water": {
+      "variants": [
+        {
+          "id": "option.ac_water.0",
+          "ru": "Собеседница соглашается на безобидную игру с водой. Шутка заканчивается общим смехом."
+        }
+      ]
+    },
+    "option.ac_massage": {
+      "variants": [
+        {
+          "id": "option.ac_massage.0",
+          "ru": "После согласия вы делаете короткий массаж плеч поверх одежды."
+        }
+      ]
+    },
+    "option.fn_give": {
+      "variants": [
+        {
+          "id": "option.fn_give.0",
+          "ru": "Собеседница принимает помощь. Деньги переданы без дополнительных обязательств."
+        }
+      ]
+    },
+    "option.fn_borrow": {
+      "variants": [
+        {
+          "id": "option.fn_borrow.0",
+          "ru": "Собеседница соглашается одолжить деньги. Сумма записана как личный долг."
+        }
+      ]
+    },
+    "option.fn_repay": {
+      "variants": [
+        {
+          "id": "option.fn_repay.0",
+          "ru": "Вы полностью возвращаете личный долг. Финансовое обязательство закрыто."
+        }
+      ]
+    },
+    "option.hg_demand": {
+      "variants": [
+        {
+          "id": "option.hg_demand.0",
+          "ru": "«Считай, что ты забрал деньги. Уважение купить не получится». Купюры падают между вами."
+        },
+        {
+          "id": "option.hg_demand.1",
+          "ru": "«Забирай. Теперь отойди». Взгляд остаётся на твоих руках."
+        }
+      ]
+    },
+    "option.hg_item": {
+      "variants": [
+        {
+          "id": "option.hg_item.0",
+          "ru": "Вещь оказывается у тебя. «Запомню, кому она досталась»."
+        }
+      ]
+    },
+    "option.hg_steal": {
+      "variants": [
+        {
+          "id": "option.hg_steal.0",
+          "ru": "Кража удалась. Деньги перемещены из кошелька NPC."
+        }
+      ]
+    },
+    "option.hg_taunt": {
+      "variants": [
+        {
+          "id": "option.hg_taunt.0",
+          "ru": "Смех обрывается. «Тебе обязательно нужен зритель, чтобы чувствовать себя сильнее?»"
+        },
+        {
+          "id": "option.hg_taunt.1",
+          "ru": "«Продолжай. Только не называй это шуткой, когда вспомнишь завтра»."
+        }
+      ]
+    },
+    "option.hg_extort": {
+      "variants": [
+        {
+          "id": "option.hg_extort.0",
+          "ru": "«Вот деньги. Это последнее, что ты от меня получишь». В голосе злость, а не благодарность."
+        }
+      ]
+    },
+    "option.hg_beat": {
+      "variants": [
+        {
+          "id": "option.hg_beat.0",
+          "ru": "Ты сокращаешь расстояние и бросаешься вперёд. Собеседник поднимает руки, прикрываясь. Начинается драка."
+        }
+      ]
+    },
+    "option.hg_threat": {
+      "variants": [
+        {
+          "id": "option.hg_threat.0",
+          "ru": "«Я услышал достаточно». Между вами становится на шаг больше пустого места."
+        },
+        {
+          "id": "option.hg_threat.1",
+          "ru": "«Ты сейчас сказал это вслух. При свидетелях или без — я запомню»."
+        }
+      ]
+    },
+    "option.hg_drive": {
+      "variants": [
+        {
+          "id": "option.hg_drive.0",
+          "ru": "«Хорошо. Это место — твоё». Собеседник уходит, не прощаясь."
+        }
+      ]
+    },
+    "option.hg_humiliate": {
+      "variants": [
+        {
+          "id": "option.hg_humiliate.0",
+          "ru": "«Всё? Можешь рассказать потом, как победил в разговоре». Ответ звучит тихо и холодно."
+        }
+      ]
+    },
+    "option.hg_pressure": {
+      "variants": [
+        {
+          "id": "option.hg_pressure.0",
+          "ru": "«Хочешь решить, кем мне быть? Не выйдет». Разговор оставляет страх и обиду, но чужая воля тебе не принадлежит."
+        },
+        {
+          "id": "option.hg_pressure.1",
+          "ru": "Пауза тянется слишком долго. «Больше ни слова обо мне. Ты меня не знаешь»."
+        }
+      ]
+    },
+    "option.hg_shave": {
+      "variants": [
+        {
+          "id": "option.hg_shave.0",
+          "ru": "Пряди остаются на полу. «Волосы отрастут. А вот это я тебе припомню»."
+        }
+      ]
+    },
+    "option.hg_fight": {
+      "variants": [
+        {
+          "id": "option.hg_fight.0",
+          "ru": "«Ну давай. Только потом не делай вид, что это случайность». Собеседник принимает стойку."
+        }
+      ]
+    },
+    "option.hg_stab": {
+      "variants": [
+        {
+          "id": "option.hg_stab.0",
+          "ru": "В руке блеснул клинок. Собеседник отшатывается и пытается защититься. Начинается вооружённая драка."
+        }
+      ]
+    },
+    "option.qu_music": {
+      "variants": [
+        {
+          "id": "option.qu_music.0",
+          "ru": "Музыку я выбираю скорее под настроение. А что сейчас чаще всего слушаешь ты?"
+        }
+      ]
+    },
+    "option.qu_book": {
+      "variants": [
+        {
+          "id": "option.qu_book.0",
+          "ru": "Мне интересны истории, в которых люди меняются через собственные решения."
+        }
+      ]
+    },
+    "option.qu_schedule": {
+      "variants": [
+        {
+          "id": "option.qu_schedule.0",
+          "ru": "Мне нужно свериться со своими делами. Для встречи лучше договориться о конкретном времени."
+        }
+      ]
+    },
+    "option.qu_support": {
+      "variants": [
+        {
+          "id": "option.qu_support.0",
+          "ru": "Спасибо, что спрашиваешь. Мне удобнее сначала объяснить, с чем именно возникли трудности."
+        }
+      ]
+    },
+    "option.qu_boundaries": {
+      "variants": [
+        {
+          "id": "option.qu_boundaries.0",
+          "ru": "Мне подходит разговор, в котором можно спокойно отказаться от темы или попросить паузу."
+        }
+      ]
+    },
+    "option.qu_money": {
+      "variants": [
+        {
+          "id": "option.qu_money.0",
+          "ru": "Я предпочитаю заранее понимать сумму и договорённость о возврате. Это помогает не смешивать дружбу с обязательствами."
+        }
+      ]
+    },
+    "option.qu_image": {
+      "variants": [
+        {
+          "id": "option.qu_image.0",
+          "ru": "Я могу выслушать идеи, но окончательное решение о моей внешности остаётся за мной."
+        }
+      ]
+    },
+    "option.qu_autonomy": {
+      "variants": [
+        {
+          "id": "option.qu_autonomy.0",
+          "ru": "Мне важно сохранять возможность выбирать друзей и собеседников самостоятельно."
+        }
+      ]
+    },
+    "option.qu_election": {
+      "variants": [
+        {
+          "id": "option.qu_election.0",
+          "ru": "Я предпочитаю разбираться в предложениях самостоятельно. Готова обсудить доводы, но решение приму сама."
+        }
+      ]
+    },
+    "option.qu_home": {
+      "variants": [
+        {
+          "id": "option.qu_home.0",
+          "ru": "В гости я предпочитаю договариваться заранее. Важно, чтобы место и время устраивали нас обоих."
+        }
+      ]
+    },
+    "option.declined": {
+      "variants": [
+        {
+          "id": "option.declined.0",
+          "ru": "Сейчас мне это не подходит. Давай выберем другой формат или сделаем паузу."
+        }
+      ]
+    },
+    "option.hostile_resisted": {
+      "variants": [
+        {
+          "id": "option.hostile_resisted.0",
+          "ru": "«Нет. И второй раз я отвечать не собираюсь». Собеседник не уступает."
+        },
+        {
+          "id": "option.hostile_resisted.1",
+          "ru": "«Ты неправильно выбрал человека». Требование остаётся без ответа."
+        }
+      ]
+    },
+    "option.theft_failed": {
+      "variants": [
+        {
+          "id": "option.theft_failed.0",
+          "ru": "Ладонь перехвачена прежде, чем ты успеваешь отвести взгляд. «Что ты там ищешь?»"
+        }
+      ]
+    },
+    "conflict.escalated": {
+      "variants": [
+        {
+          "id": "conflict.escalated.0",
+          "ru": "«Хватит». Собеседник резко приближается. Слов больше не будет — начинается драка."
+        }
+      ]
+    },
+    "conflict.left": {
+      "variants": [
+        {
+          "id": "conflict.left.0",
+          "ru": "«С меня достаточно». Собеседник уходит; продолжать разговор здесь уже не с кем."
+        }
+      ]
+    },
+    "conflict.won": {
+      "variants": [
+        {
+          "id": "conflict.won.0",
+          "ru": "Драка закончилась. Собеседник больше не может продолжать. Остаются травмы, свидетели и память о том, кто начал."
+        }
+      ]
+    },
+    "conflict.lost": {
+      "variants": [
+        {
+          "id": "conflict.lost.0",
+          "ru": "Ноги подводят раньше, чем заканчивается злость. Теперь продолжать не можешь ты. Разговор окончен."
+        }
+      ]
+    },
+    "conflict.surrendered": {
+      "variants": [
+        {
+          "id": "conflict.surrendered.0",
+          "ru": "«Всё. Хватит». Руки опускаются. Это конец драки, но не примирение."
+        }
+      ]
+    },
+    "conflict.escaped": {
+      "variants": [
+        {
+          "id": "conflict.escaped.0",
+          "ru": "Ты разрываешь дистанцию и уходишь. Последние слова летят вслед; случившееся никуда не исчезло."
+        }
+      ]
+    }
+  }
+}

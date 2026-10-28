@@ -6,7 +6,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	if operation != "substance": return super.execute(operation, args)
 	var id := str(args.get("id", ""))
 	if not SUBSTANCE_PRICES.has(id): return Rules.fail("unknown_substance")
-	if sim.state.world.location != "global_map": return Rules.fail("tonic_vendor_required")
+	if sim.state.world.location != sim.location_role("supply_shop"): return Rules.fail("tonic_vendor_required")
 	if not sim.services.world.is_open(sim.catalog.shops.market): return Rules.fail("shop_closed")
 	var price := int(SUBSTANCE_PRICES[id])
 	if int(sim.state.economy.cash) < price: return Rules.fail("insufficient_funds")

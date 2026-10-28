@@ -1,5 +1,6 @@
 extends RefCounted
 ## Optional extension validation; the production simulation keeps its old catalog/hash.
+const Employment = preload("res://scripts/mechanics/npc_employment.gd")
 const NEEDS := ["energy", "satiety", "hygiene", "social", "fun"]
 const TRAITS := ["bravery", "responsibility", "sociability", "romantic", "loyalty", "cunning"]
 const Personalities = preload("res://scripts/mechanics/core/personality_validation.gd")
@@ -66,7 +67,8 @@ static func catalog_error(catalog: Dictionary) -> String:
 			if not shape(stage, {"action": "s"}) or not catalog.agency_actions.has(stage.action) or not integer(stage.get("minutes"), 1, 43200): return "invalid_aspiration_stage"
 	for experience in catalog.agency_experiences.values():
 		if not shape(experience, {"emotion": "s"}) or not number(experience.get("strength"), 0, 100) or not integer(experience.get("duration"), 1, 43200) or not number(experience.get("sentiment"), -100, 100): return "invalid_agency_experience"
-	return Personalities.catalog_error(catalog)
+	var work_error := Employment.catalog_error(catalog)
+	return work_error if not work_error.is_empty() else Personalities.catalog_error(catalog)
 
 static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 	if not catalog.has("agency_rules"): return ""
@@ -79,9 +81,12 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 			continue
 		var mind: Variant = npc.mind
 		if not shape(mind, {"aspiration": "d", "active": "d", "moodlets": "a", "sentiments": "d", "fears": "d", "wants": "a", "history": "a", "recent_actions": "a", "completed_actions": "d", "fulfilled_today": "a", "emotion": "d", "decision": "d", "skill_remainders": "d", "aspiration_history": "a"}): return "invalid_npc_mind"
-		if mind.get("version") != 1: return "unsupported_npc_mind"
-		for field in ["updated_at", "last_progress", "satisfaction", "career_level", "completed_at"]:
+		if mind.get("version") != 2: return "unsupported_npc_mind"
+		for field in ["updated_at", "last_progress", "satisfaction", "completed_at"]:
 			if not integer(mind.get(field)): return "invalid_npc_mind_number"
+		if mind.has("career_level"): return "superseded_npc_career_field"
+		var work_error := Employment.state_error(npc,catalog,state.clock)
+		if not work_error.is_empty(): return work_error
 		if not integer(mind.get("last_social"), -1440) or not integer(mind.get("want_day"), -1): return "invalid_npc_mind_time"
 		if int(mind.updated_at) > int(state.clock.total_minutes) or int(mind.last_progress) > int(state.clock.total_minutes) or int(mind.completed_at) > int(state.clock.total_minutes): return "future_npc_mind"
 		if not number(mind.get("income_remainder"), 0, 0.999999): return "invalid_npc_income_remainder"

@@ -1,5 +1,6 @@
 extends "res://scripts/mechanics/housing.gd"
 const City = preload("res://scripts/gameplay/city_layout.gd")
+const Graph = preload("res://scripts/gameplay/city_graph.gd")
 const CITY_PROPERTIES := ["detached_house","penthouse","social_housing"]
 
 func emergency_available() -> bool:
@@ -18,28 +19,35 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 				sim.state.housing.properties.social_housing.equipment.stove = 1
 				emit_event("social_housing_granted",{})
 			return granted
-	if id in CITY_PROPERTIES and operation == "move_in":
+	if City.data(sim.catalog).home_units.has(id) and operation == "move_in":
 		var property: Dictionary = sim.state.housing.properties.get(id,{})
 		if property.is_empty() or property.get("evicted",false): return Rules.fail("property_not_acquired")
-		var travel: Dictionary = sim.services.world.execute("journey",{"id":id})
+		var frontage := Graph.home_frontage(City.data(sim.catalog),id)
+		if frontage.is_empty(): return Rules.fail("unknown_property")
+		var travel: Dictionary = sim.services.world.execute("journey",{"id":frontage})
 		if not travel.ok: return travel
 		var entered: Dictionary = sim.advance(1)
 		if not entered.ok: return entered
-	var previous_home := City.home(sim.state)
+	var previous_home := City.home(sim.catalog,sim.state)
 	var had_home: bool = not sim.state.housing.residence.is_empty()
+	var was_inside: bool = sim.is_player_home_location(str(sim.state.world.location))
 	var result := super.execute(operation,args)
-	if result.ok and operation == "move_in" and id in CITY_PROPERTIES: sim.state.world.location = "apartment_hall"
-	if result.ok and had_home and sim.state.housing.residence.is_empty() and str(sim.state.world.location) in City.ROOMS:
-		sim.state.world.previous_location = sim.state.world.location
-		sim.state.world.location = previous_home
+	if result.ok and operation == "move_in": sim.state.world.flags.city_story_home = false
+	if result.ok and had_home and sim.state.housing.residence.is_empty():
+		sim.state.world.flags.city_story_home = false
+		if was_inside:
+			sim.state.world.previous_location = sim.state.world.location
+			sim.state.world.location = previous_home
 	return result
 
 func tick(minute: int) -> void:
-	var previous_home := City.home(sim.state)
+	var previous_home := City.home(sim.catalog,sim.state)
 	var had_home: bool = not sim.state.housing.residence.is_empty()
 	var previous_location := str(sim.state.world.location)
+	var was_inside: bool = sim.is_player_home_location(previous_location)
 	super.tick(minute)
 	if had_home and sim.state.housing.residence.is_empty():
 		sim.state.world.flags.student_home_lost = true
-		sim.state.world.location = previous_home if previous_location in City.ROOMS else previous_location
+		sim.state.world.flags.city_story_home = false
+		sim.state.world.location = previous_home if was_inside else previous_location
 		sim.state.world.previous_location = previous_location

@@ -8,7 +8,17 @@ __pycache__/
 *.pyc
 dist/
 builds/
-.cache/
-.artifacts/
 .DS_Store
 ._*
+
+# Local artifacts and curated screenshot evidence only
+.cache/
+.artifacts/
+/docs/ui/captures/*
+!/docs/ui/captures/compact-1920/
+!/docs/ui/captures/compact-1366/
+!/docs/ui/captures/compact-ultrawide/
+/docs/gameplay/captures/
+
+# Raw Unity extraction is not part of the workshop runtime
+/assets/characters/mdrg_study/archive/

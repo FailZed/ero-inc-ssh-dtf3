@@ -185,7 +185,14 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 		if not fields(condition, {"id": "s", "target": "s", "started": "n", "stage": "n", "status": "s"}) or not catalog.conditions.has(condition.id): return "invalid_condition"
 	var combat: Dictionary = state.encounters.combat
 	if not combat.is_empty():
-		if not fields(combat, {"npc": "s", "status": "s", "ap": "n", "player_hp": "n", "npc_hp": "n", "guard": "b", "turn": "n", "injuries": "d", "log": "a"}) or not state.social.npcs.has(combat.npc): return "invalid_combat"
+		if not fields(combat, {"npc": "s", "status": "s", "ap": "n", "player_hp": "n", "npc_hp": "n", "guard": "b", "turn": "n", "injuries": "d", "log": "a", "phase": "s", "revision": "n", "npc_ap": "n"}) or not state.social.npcs.has(combat.npc): return "invalid_combat"
+		if not combat.phase in ["attack", "defence", "finished"]: return "invalid_combat_phase"
+		for key in ["revision", "npc_ap", "ap", "turn"]:
+			if float(combat[key]) != int(combat[key]) or int(combat[key]) < 0: return "invalid_combat_counter"
+		if combat.ap > 4 or combat.npc_ap > 4 or combat.turn < 1: return "invalid_combat_counter"
+		if combat.status == "active":
+			if combat.phase == "finished" or (combat.phase == "defence" and (combat.ap != 0 or combat.npc_ap <= 0)) or (combat.phase == "attack" and (combat.npc_ap != 0 or combat.ap <= 0)): return "invalid_combat_phase"
+		elif combat.phase != "finished" or combat.npc_ap != 0: return "invalid_combat_phase"
 	var game: Dictionary = state.encounters.game
 	if not game.is_empty():
 		if not fields(game, {"type": "s", "status": "s", "stake": "n", "progress": "n", "attempts": "n", "limit": "n", "target": "n"}): return "invalid_game"

@@ -138,6 +138,11 @@ func _run() -> void:
 	preload("res://tests/gameplay/npc_reproduction.gd").new(self).run()
 	await preload("res://tests/gameplay/pregnancy_wellbeing.gd").new(self).run()
 	await preload("res://tests/gameplay/adult_health.gd").new(self).run()
+	preload("res://tests/gameplay/health_relationships.gd").new(self).run()
+	await preload("res://tests/gameplay/health_care_plans.gd").new(self).run()
+	await preload("res://tests/gameplay/care_access.gd").new(self).run()
+	await preload("res://tests/gameplay/family_handoff.gd").new(self).run()
+	preload("res://tests/gameplay/npc_planner.gd").new(self).run()
 	gameplay.story_requested.disconnect(callback)
 	print("GAMEPLAY_RESULT ",JSON.stringify({"checks":checks,"failed":failures.size(),"failures":failures}))
 	quit(0 if failures.is_empty() else 1)
@@ -180,7 +185,7 @@ func _test_selected_lessons() -> void:
 	var sim = Simulation.new(41,Names.extensions())
 	check(sim.configuration_error.is_empty(),"extended lesson catalog validates")
 	sim.state.clock = Simulation.calendar.snapshot(2*1440+599) # Tuesday 09:59
-	sim.state.world.flags.subject_computing = true
+	preload("res://scripts/mechanics/education_schedule.gd").apply_plan(sim.state,true,["computing","statistics"])
 	sim.command("clock","advance",{"minutes":182})
 	check(sim.state.world.education.absences == 1,"unselected lessons cause no absences")
 	var before: Dictionary = sim.export_snapshot()
@@ -203,6 +208,8 @@ func _test_timeline_links() -> void:
 					check(target_text.contains("label " + event.label_name),"jump label exists: " + event.label_name)
 
 func _test_windows() -> void:
+	fresh_world()
+	gameplay.complete_chapter_one()
 	var scene := Control.new()
 	root.add_child(scene)
 	var setup = load("res://scenes/ui/WorldSetup.tscn").instantiate()
@@ -240,16 +247,26 @@ func _test_windows() -> void:
 	scene.add_child(shell)
 	for panel in ["place","map","profile","inventory","people","phone","journal","activities","work","club","home","health"]:
 		shell.open_panel(panel)
-		check(shell._phone_view.visible if panel == "phone" else shell._body.get_child_count() > 0,"main panel renders: " + panel)
+		var rendered: bool = shell._phone_view.visible if panel == "phone" else shell._scene_actions.visible and shell._hero.visible if panel == "place" else shell._body.get_child_count() > 0
+		check(rendered,"main panel renders: " + panel)
 	var before_social_ui: Dictionary = gameplay.simulation.export_snapshot()
 	shell._show_npc_details("asuka")
 	var social_buttons: Array = shell._body.find_children("*", "Button", true, false)
 	check(social_buttons.any(func(button): return button.get_meta("gameplay_action", {}).get("module", "") == "npc_agency") and shell._title.text == str(gameplay.simulation.state.social.npcs.asuka.name), "real NPC profile identifies the person and exposes goal support")
 	check(before_social_ui == gameplay.simulation.export_snapshot(), "opening NPC profile leaves world state and random stream unchanged")
 	var conversation = load("res://scripts/ui/gameplay/conversation_window.gd").new()
+	var speaker: Dictionary = gameplay.simulation.state.social.npcs.asuka
+	gameplay.simulation.services.npc_agency._cancel(speaker,"conversation_ui_fixture")
+	speaker.location = gameplay.simulation.state.world.location
+	speaker.schedule = []
+	speaker.activity = "rest"
+	speaker.pinned_until = 0
 	conversation.configure("asuka", "free", "res://assets/textures/backgrounds/campus_v1/hall.tres")
 	scene.add_child(conversation)
-	check(not conversation._relationship.text.is_empty(), "conversation screen shows directed relationship state")
+	var directed_panel: bool = conversation._relationship!=null and not conversation._relationship.text.is_empty()
+	if conversation._live_stage!=null:
+		directed_panel = not conversation._live_stage._stats.text.is_empty() and conversation._live_stage.session.bond()==gameplay.simulation.services.npc_relationships.view("asuka","player")
+	check(directed_panel, "conversation screen shows directed relationship state")
 	conversation.queue_free()
 	gameplay.execute("organizations","create",{"id":"creative_collective"})
 	shell.open_panel("club")

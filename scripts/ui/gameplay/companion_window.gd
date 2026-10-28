@@ -68,6 +68,7 @@ func _refresh_moment() -> void:
 		complete.set_meta("companion_complete",true)
 		UI.label(_choices,"Кнопка и прикосновение дают одинаковый результат.",16,UI.MUTED)
 		UI.button(_choices,"Остановиться",_cancel_moment)
+		_restore.call_deferred()
 		return
 	for gesture: String in Companion.GESTURES:
 		var info: Dictionary = Gameplay.simulation.services.companion.preview(npc_id,gesture)
@@ -76,6 +77,7 @@ func _refresh_moment() -> void:
 		button.disabled = not str(info.blocked).is_empty()
 		if button.disabled: UI.label(_choices,Names.error(str(info.blocked)),16,UI.MUTED)
 		else: UI.label(_choices,"Предложение · 1 мин. Ответ зависит от собеседника.",16,UI.MUTED)
+	_restore.call_deferred()
 
 func _offer_gesture(gesture: String) -> void:
 	var result := Gameplay.execute("companion","offer",{"id":npc_id,"gesture":gesture})

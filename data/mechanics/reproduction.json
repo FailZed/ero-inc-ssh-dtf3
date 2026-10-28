@@ -1,42 +1,193 @@
 {
   "reproduction_rules": {
     "simulation": {
-      "cycle_days": 28, "period_days": 5, "ovulation_day": 14,
-      "fertile_before": 5, "fertile_after": 1, "conception_chance": 0.35,
-      "exposure_minutes": 4320, "detection_minutes": 10080,
-      "emergency_minutes": 4320, "emergency_residual": 0.2,
-      "minimum_trust": 35, "minimum_comfort": 20, "minimum_interest": 30,
-      "session_minutes": 20, "invitation_minutes": 60, "session_energy": 8,
-      "cooldown_minutes": 240, "termination_limit_days": 84,
-      "test_cost": 10, "test_minutes": 5, "termination_cost": 120,
-      "termination_minutes": 60, "recovery_minutes": 1440,
-      "vasectomy_delay_minutes": 10080, "history_limit": 128
+      "cycle_days": 28,
+      "period_days": 5,
+      "ovulation_day": 14,
+      "fertile_before": 5,
+      "fertile_after": 1,
+      "conception_chance": 0.35,
+      "exposure_minutes": 4320,
+      "detection_minutes": 10080,
+      "emergency_minutes": 4320,
+      "emergency_residual": 0.2,
+      "minimum_trust": 35,
+      "minimum_comfort": 20,
+      "minimum_interest": 30,
+      "session_minutes": 20,
+      "invitation_minutes": 60,
+      "session_energy": 8,
+      "cooldown_minutes": 240,
+      "termination_limit_days": 84,
+      "test_cost": 10,
+      "test_minutes": 5,
+      "termination_cost": 120,
+      "termination_minutes": 60,
+      "recovery_minutes": 1440,
+      "vasectomy_delay_minutes": 10080,
+      "history_limit": 128
     }
   },
   "contraceptive_methods": {
-    "none": {"label":"Нет постоянной контрацепции", "residual":1.0, "cost":0, "minutes":0, "onset":0, "duration":0, "daily":false, "item":""},
-    "pill": {"label":"Регулярная контрацепция", "residual":0.05, "cost":0, "minutes":1, "onset":4320, "duration":1440, "daily":true, "item":"contraceptive_pill"},
-    "iud": {"label":"Внутриматочная контрацепция", "residual":0.01, "cost":180, "minutes":45, "onset":1440, "duration":525600, "daily":false, "item":""},
-    "implant": {"label":"Контрацептивный имплант", "residual":0.01, "cost":200, "minutes":45, "onset":1440, "duration":525600, "daily":false, "item":""}
+    "none": {
+      "label": "Нет постоянной контрацепции",
+      "residual": 1.0,
+      "cost": 0,
+      "minutes": 0,
+      "onset": 0,
+      "duration": 0,
+      "daily": false,
+      "item": ""
+    },
+    "pill": {
+      "label": "Регулярная контрацепция",
+      "residual": 0.05,
+      "cost": 0,
+      "minutes": 1,
+      "onset": 4320,
+      "duration": 1440,
+      "daily": true,
+      "item": "contraceptive_pill"
+    },
+    "iud": {
+      "label": "Внутриматочная контрацепция",
+      "residual": 0.01,
+      "cost": 180,
+      "minutes": 45,
+      "onset": 1440,
+      "duration": 525600,
+      "daily": false,
+      "item": ""
+    },
+    "implant": {
+      "label": "Контрацептивный имплант",
+      "residual": 0.01,
+      "cost": 200,
+      "minutes": 45,
+      "onset": 1440,
+      "duration": 525600,
+      "daily": false,
+      "item": ""
+    }
   },
   "reproductive_procedures": {
-    "tubal_ligation": {"label":"Перевязка маточных труб", "cost":500, "minutes":120, "capability":"can_gestate"},
-    "vasectomy": {"label":"Вазэктомия", "cost":400, "minutes":90, "capability":"produces_sperm"}
+    "tubal_ligation": {
+      "label": "Перевязка маточных труб",
+      "cost": 500,
+      "minutes": 120,
+      "capability": "can_gestate"
+    },
+    "vasectomy": {
+      "label": "Вазэктомия",
+      "cost": 400,
+      "minutes": 90,
+      "capability": "produces_sperm"
+    }
   },
   "intimacy_stages": {
-    "invitation": {"hook":"intimacy.invitation", "choices":["accept","decline"]},
-    "discussion": {"hook":"intimacy.discussion", "choices":["non_reproductive","pregnancy_possible","plan_pregnancy","stop"]},
-    "protection": {"hook":"intimacy.protection", "choices":["barrier","regular_method","unprotected","stop"]},
-    "ready": {"hook":"intimacy.ready", "choices":["start","stop"]},
-    "active": {"hook":"intimacy.private_scene", "choices":["finish","stop"]},
-    "aftercare": {"hook":"intimacy.aftercare", "choices":["close","stop"]}
+    "invitation": {
+      "hook": "intimacy.invitation",
+      "choices": [
+        "accept",
+        "decline"
+      ]
+    },
+    "discussion": {
+      "hook": "intimacy.discussion",
+      "choices": [
+        "non_reproductive",
+        "pregnancy_possible",
+        "plan_pregnancy",
+        "stop"
+      ]
+    },
+    "protection": {
+      "hook": "intimacy.protection",
+      "choices": [
+        "barrier",
+        "regular_method",
+        "unprotected",
+        "stop"
+      ]
+    },
+    "ready": {
+      "hook": "intimacy.ready",
+      "choices": [
+        "start",
+        "stop"
+      ]
+    },
+    "active": {
+      "hook": "intimacy.private_scene",
+      "choices": [
+        "finish",
+        "stop"
+      ]
+    },
+    "aftercare": {
+      "hook": "intimacy.aftercare",
+      "choices": [
+        "close",
+        "stop"
+      ]
+    }
   },
   "items": {
-    "barrier_protection": {"name":"Барьерная защита", "category":"medical", "price":5, "weight":0.01, "stackable":true},
-    "contraceptive_pill": {"name":"Регулярная контрацепция", "category":"medical", "price":3, "weight":0.01, "stackable":true},
-    "emergency_contraception": {"name":"Экстренная контрацепция", "category":"medical", "price":25, "weight":0.01, "stackable":true}
+    "barrier_protection": {
+      "name": "Барьерная защита",
+      "category": "medical",
+      "price": 5,
+      "weight": 0.01,
+      "stackable": true
+    },
+    "contraceptive_pill": {
+      "name": "Регулярная контрацепция",
+      "category": "medical",
+      "price": 3,
+      "weight": 0.01,
+      "stackable": true
+    },
+    "emergency_contraception": {
+      "name": "Экстренная контрацепция",
+      "category": "medical",
+      "price": 25,
+      "weight": 0.01,
+      "stackable": true
+    }
   },
-  "reproduction_protection": {"barrier":{"residual":0.08,"item":"barrier_protection"}},
-  "child_support_rules": {"simulation":{"monthly_amount":120,"enforcement_delay":4320,"filing_cost":30,"adult_months":216}},
-  "locations": {"clinic":{"name":"Клиника","hours":[480,1200],"routes":{"global_map":{"minutes":15}}}}
+  "reproduction_protection": {
+    "barrier": {
+      "residual": 0.08,
+      "item": "barrier_protection"
+    }
+  },
+  "child_support_rules": {
+    "simulation": {
+      "monthly_amount": 120,
+      "enforcement_delay": 4320,
+      "filing_cost": 30,
+      "adult_months": 216
+    }
+  },
+  "locations": {
+    "clinic": {
+      "name": "Клиника",
+      "hours": [
+        480,
+        1200
+      ],
+      "routes": {
+        "global_map": {
+          "minutes": 15
+        }
+      },
+      "facilities": [
+        "toilet",
+        "sanitary_private",
+        "sink",
+        "supplies"
+      ],
+      "public": true
+    }
+  }
 }

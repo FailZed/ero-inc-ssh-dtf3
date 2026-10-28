@@ -25,16 +25,16 @@ func execute(operation: String, _args: Dictionary) -> Dictionary:
 	var minutes := 0
 	match operation:
 		"drink":
-			if not location in ["kitchen", "bathroom"]: return Rules.fail("water_source_required")
+			if not _sanitary_facility(location,"sink"): return Rules.fail("water_source_required")
 			minutes = 2
 		"toilet":
-			if location != "bathroom": return Rules.fail("toilet_required")
+			if not _sanitary_facility(location,"toilet"): return Rules.fail("toilet_required")
 			minutes = 5
 		"leisure":
-			if not location in ["bedroom", "global_map", "riverside_cafe", "city_park", "south_promenade", "north_beach"]: return Rules.fail("leisure_place_required")
+			if not location in [sim.player_home_room("bedroom"),sim.location_role("trade"),"riverside_cafe","city_park","south_promenade","north_beach"]: return Rules.fail("leisure_place_required")
 			minutes = 30
 		"sleep", "nap":
-			if location != "bedroom": return Rules.fail("bed_required")
+			if location != sim.player_home_room("bedroom"): return Rules.fail("bed_required")
 			minutes = int(_args.get("minutes", 480 if operation == "sleep" else 30))
 			if minutes < 15 or minutes > 720: return Rules.fail("invalid_rest_duration")
 			return sim.services.character.execute("rest", {"minutes": minutes})
@@ -52,6 +52,11 @@ func execute(operation: String, _args: Dictionary) -> Dictionary:
 			sim.services.character.adjust_need("fun", 40.0)
 			sim.services.character.adjust_need("mood", 8.0)
 	return Rules.ok({"minutes": minutes})
+
+func _sanitary_facility(location: String, facility: String) -> bool:
+	if not has_facility(location,facility): return false
+	if not sim.room_kind(location).is_empty() and not sim.is_player_home_location(location): return false
+	return sim.services.world.availability(location).ok
 
 func recovery_factor() -> float:
 	var factor := 1.0

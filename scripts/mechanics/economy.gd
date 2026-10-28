@@ -29,7 +29,9 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 func _work(id: String) -> Dictionary:
 	var job := definition("jobs", id)
 	if job.is_empty() or not Rules.check(sim.state, job.get("requirements", {})): return Rules.fail("job_requirements")
-	if job.has("location") and job.location != sim.state.world.location: return Rules.fail("wrong_location")
+	if job.has("home_room_kind"):
+		if not sim.is_player_home_location(str(sim.state.world.location)) or sim.room_kind(str(sim.state.world.location)) != job.home_room_kind: return Rules.fail("wrong_location")
+	elif job.has("location") and job.location != sim.state.world.location: return Rules.fail("wrong_location")
 	if not sim.services.world.is_open(job): return Rules.fail("job_closed")
 	var key := "%s:%d" % [id, sim.state.clock.day_index]
 	var count := int(sim.state.economy.job_counts.get(key, 0))

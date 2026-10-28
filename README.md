@@ -1,24 +1,24 @@
 # EroInc
 
-Godot 4.7.2 · macOS (Apple Silicon/Intel) · Windows x86_64.
+Godot **4.7.2 stable**, Windows x86_64 и macOS universal.
 
-Для получения полного архива ресурсов нужен [Git LFS](https://git-lfs.com/).
-После его установки в папке клонированного проекта выполните:
-
-```sh
-git lfs install --local
-git lfs pull
-```
-
-На macOS из папки проекта:
+Инструкции для следующего рабочего дня: [NEXT_SESSION.md](NEXT_SESSION.md).
+Установка: [docs/DEVELOPMENT_SETUP.md](docs/DEVELOPMENT_SETUP.md).
 
 ```sh
 python3 tools/runtime.py setup
+python3 tools/runtime.py doctor
 python3 tools/runtime.py run -- --editor
 ```
 
-На Windows используйте `py -3` вместо `python3`. В редакторе нажмите **F5**. Live2D-библиотеки включены в проект.
+На Windows используйте `py -3` вместо `python3`. Запускатели используют Dummy audio.
+Нативные библиотеки Live2D уже включены; обычный запуск не требует компилятора.
 
-[Запуск Live2D, проверки, сборки и настройка среды](docs/DEVELOPMENT_SETUP.md).
+Мастерская: `res://assets/characters/mdrg_study/scenes/browser.tscn`.
+Сырой MDRG-архив и старые скриншоты удалены из текущей версии по поручению
+владельца. Текущая мастерская использует сохранённые модели, атласы, физику,
+профили и снимки параметров; скачивать архив через Git LFS для неё не требуется.
+Старая история Git сохранена и может иметь недоступные архивные LFS-объекты.
 
-[Что изменилось и как проверено](docs/gameplay/COMPANION_AND_DESKTOP.md).
+Сохранения игрока, окружения, кэши и локальные сборки в репозиторий не входят.
+Наличие исходников и workflow не означает полную приёмку игры на обеих ОС.

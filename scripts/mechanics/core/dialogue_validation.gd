@@ -1,5 +1,6 @@
 extends RefCounted
 const Human = preload("res://scripts/mechanics/core/human_validation.gd")
+const Options = preload("res://scripts/mechanics/conversation_options.gd")
 const NODES := ["root", "day", "goal", "plan", "interests", "feelings", "answer", "initiative", "end", "more", "everyday", "personal", "work", "study", "home", "money", "past", "family", "fears", "news", "romance", "attraction", "expectations", "jealousy", "adult", "desire", "intimacy", "boundaries", "privacy", "safer_intimacy"]
 
 static func line_ids(catalog: Dictionary) -> Array:
@@ -67,7 +68,7 @@ static func catalog_error(catalog: Dictionary) -> String:
 		if not choice.get("tags", []) is Array: return "invalid_dialogue_tags"
 		for tag in choice.get("tags", []):
 			if not tag in ["romance", "adult"]: return "invalid_dialogue_tag"
-	return ""
+	return Options.catalog_error(catalog)
 
 static func utterance_error(value: Variant, ids: Array, npc_id: String, now: int) -> bool:
 	if not value is Dictionary or not value.get("text") is String or value.text.is_empty() or value.text.length() > 2500: return true

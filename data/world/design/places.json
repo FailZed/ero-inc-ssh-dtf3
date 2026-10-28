@@ -1,0 +1,1745 @@
+{
+  "schema": "eroinc_place_design_1",
+  "status": "design_proposal_not_loaded_by_runtime",
+  "date": "2026-10-28",
+  "owner": "/root/world_places",
+  "language": "ru",
+  "scope": "Самостоятельная проработка мест и событий. Прежние runtime ID служат исходной привязкой и не ограничивают переработку карты под сценарий.",
+  "scenario_boundaries": {
+    "present": "Эллизия; дом героя и нынешний университет",
+    "flashback_excluded": "Детский парк и морской берег Праксии не являются нынешним речным парком/пляжем",
+    "home": "Один этаж, ограда, спальня/прихожая/ванная/кухня; зеркало сохраняет свой сюжетный момент",
+    "campus": "Три краснокирпичных крыла 6/3/3, парк перед входом, актовый зал от холла, аудитория 213 во втором этаже левого крыла",
+    "external_script": "Google Doc не прочитан этим исполнителем; опора на локальные TimeLine и STORY_LOCKS"
+  },
+  "sources": [
+    "TimeLine/chapter_one.dtl",
+    "TimeLine/prolog/scene_05_mirror_and_photo.dtl",
+    "TimeLine/prolog/scene_06_flashback_park.dtl",
+    "TimeLine/prolog/scene_08_embankment.dtl",
+    "docs/art/city-river-v2/STORY_LOCKS.md",
+    "data/world/city-river-v2.json",
+    "scripts/gameplay/city_layout.gd",
+    "scripts/gameplay/action_policy.gd",
+    "scripts/gameplay/city_housing.gd",
+    "data/mechanics/base.json",
+    "data/mechanics/growth.json",
+    "data/mechanics/livelihood.json"
+  ],
+  "global_contract": {
+    "all_new_details_are_proposals": true,
+    "new_residents_are_proposals": true,
+    "existing_services_are_not_a_loader_for_this_file": true,
+    "preview_changes_time_or_rng": false,
+    "npc_presence": "Проверяется фактическая локация, занятость, согласие и доступность. Не создавать и не телепортировать персонажа ради меню.",
+    "rewards": "Ни осмотр, ни повторный визит не создают деньги/предметы/опыт. Обычная покупка, практика и работа используют собственную транзакцию.",
+    "repeat": "Память привязана к конкретному решению; просмотр читает исход, не применяет его снова.",
+    "event_density": "Не более одного нового малого события за визит; отказ без штрафа; остальные события остаются для следующих визитов.",
+    "ui": "Место сохраняет сцену и компактные группы действий, людей и подмест; цена/время/причина блокировки видны до подтверждения.",
+    "weather": "Обстановка реагирует на существующую погоду; описательный мокрый пол не вводит скрытый урон и не блокирует основной маршрут.",
+    "text_origin": "Все описания и события написаны для EroInc. Код, строки, изображения и истории School не копируются."
+  },
+  "school_observations": [
+    {
+      "id": "school_place_layers",
+      "evidence": "location/park.rpy:252-264",
+      "observation": "Раздельные действия, фактические NPC и переход к подместу",
+      "adaptation": "Сцена с короткими действиями и смысловыми подместами, без новых пустых меток"
+    },
+    {
+      "id": "school_campus_rooms",
+      "evidence": "location/school.rpy:308-354",
+      "observation": "Помещения кампуса и занятия с условиями",
+      "adaptation": "Канонический холл, актовый зал, левое крыло/213 и клубная дверь"
+    },
+    {
+      "id": "school_activity_cost",
+      "evidence": "location/park.rpy:410-439,463-480",
+      "observation": "Тренировка и отдых различаются требованиями и временем",
+      "adaptation": "Короткое наблюдение не выдаёт награду полноценной практики"
+    },
+    {
+      "id": "school_beach_context",
+      "evidence": "location/beach.rpy:79-94,614-648",
+      "observation": "Занятия берега и временные условия работы/досуга",
+      "adaptation": "Существующие рыболовная практика и работа плюс отдельный описательный осмотр"
+    },
+    {
+      "id": "school_domestic_rooms",
+      "evidence": "location/kitchen_and_bathroom.rpy:230-240",
+      "observation": "Домашнее действие связано с нужной комнатой",
+      "adaptation": "Прихожая, кухня, ванная и зеркало не превращаются в удалённые универсальные кнопки"
+    },
+    {
+      "id": "school_store_loop",
+      "evidence": "location/product_store.rpy:568-620,637-657,721-738",
+      "observation": "Покупки, NPC и работа связаны с магазином",
+      "adaptation": "Настоящие цена и остаток, хозяин и объявление о работе в одной сцене"
+    },
+    {
+      "id": "school_return_visit",
+      "evidence": "location/real_estate_agency.rpy:121-137",
+      "observation": "Разговор агентства учитывает прежнее обсуждение жилья",
+      "adaptation": "Возврат к выбранному вопросу без повторной награды и повторного вступления"
+    },
+    {
+      "id": "school_presence_rules",
+      "evidence": "system/module_moving_to_location.rpy:28-44",
+      "observation": "Для мест NPC используются разные условия и время",
+      "adaptation": "Роли жителей поддерживаются существующим планировщиком, не декоративными постоянными фигурами"
+    },
+    {
+      "id": "school_outdoor_context",
+      "evidence": "system/module_moving_to_location.rpy:5-7",
+      "observation": "Наружные места выделены для погодного контекста",
+      "adaptation": "Дождь различает открытый берег, навес и помещение; конкретный эффект предлагается EroInc"
+    }
+  ],
+  "places": [
+    {
+      "place_anchor": "home_frontage",
+      "current_runtime_id": "student_home",
+      "current_map_id": "student_home",
+      "name": "Домашний двор",
+      "basis": "Канонический одноэтажный нынешний дом; детали двора предлагаются",
+      "purpose": "Домашняя опора между внешними делами; понятный выход к городу",
+      "return_reason": "Быт, отдых и подготовка к следующему дню",
+      "subplaces": [
+        {
+          "id": "front_gate",
+          "name": "Калитка",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "front_step",
+          "name": "Крыльцо",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "home_hall",
+          "name": "Прихожая",
+          "status": "existing_room",
+          "runtime_id": "apartment_hall"
+        }
+      ],
+      "layout": "Узкая улица → ограда/калитка → дорожка → одноэтажная дверь; никакой чужой подъезд вместо дома",
+      "sensory": {
+        "morning": "Калитки соседей и свет на мокром газоне",
+        "evening": "Тёплый прямоугольник света у двери, посуда за окном",
+        "weather": "Дождь барабанит по козырьку; снег виден за оградой"
+      },
+      "visitors": [
+        {
+          "role": "Проходящие совершеннолетние соседи и знакомые",
+          "windows": "Предложение: утренний выход, вечерний возврат",
+          "condition": "Только фактический планировщик; никто не стоит постоянно"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "home_enter",
+          "label": "Войти домой",
+          "implementation": "Существующий переход",
+          "requires": "Текущее право проживания"
+        },
+        {
+          "id": "home_next_task",
+          "label": "Сверить ближайшее дело",
+          "implementation": "Существующие журнал/календарь; только просмотр",
+          "minutes": 0
+        },
+        {
+          "id": "home_weather",
+          "label": "Посмотреть на улицу",
+          "implementation": "Предлагаемый описательный осмотр",
+          "reward": "Нет"
+        },
+        {
+          "id": "home_greeting",
+          "label": "Поздороваться с проходящим знакомым",
+          "implementation": "Существующий разговор при доступности",
+          "requires": "NPC здесь и свободен"
+        }
+      ],
+      "connections": [
+        {
+          "to": "market_street",
+          "current_minutes": 4
+        },
+        {
+          "to": "city_garden",
+          "current_minutes": 4
+        },
+        {
+          "to": "campus_core",
+          "current_minutes": 14
+        }
+      ],
+      "revisit": "След прожитого дня и реплика знакомого без нового открытия/награды",
+      "never": "Не читать чужие письма и не подменять детскую квартиру нынешним домом",
+      "intended_geography_nodes": [
+        "student_home"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "campus_core",
+      "current_runtime_id": "training_center",
+      "current_map_id": "university",
+      "name": "Университет и его внутренний путь",
+      "basis": "STORY_LOCKS и chapter_one; новые учебные помещения только предложения",
+      "purpose": "Учёба, клубы и знакомства в пространстве, которое можно запомнить",
+      "return_reason": "Фактические пары, клубное дело и изменяющиеся объявления",
+      "subplaces": [
+        {
+          "id": "campus_park_gate",
+          "name": "Парк перед главным входом",
+          "status": "canonical_place_needs_binding"
+        },
+        {
+          "id": "main_hall",
+          "name": "Главный холл",
+          "status": "canonical_place"
+        },
+        {
+          "id": "assembly_hall_path",
+          "name": "Коридор к актовому залу",
+          "status": "canonical_path"
+        },
+        {
+          "id": "left_wing_floor2",
+          "name": "Второй этаж левого крыла",
+          "status": "canonical_place"
+        },
+        {
+          "id": "classroom_213",
+          "name": "Аудитория 213",
+          "status": "canonical_place"
+        },
+        {
+          "id": "cosplay_door",
+          "name": "Клубная дверь с костюмами",
+          "status": "canonical_story_context"
+        }
+      ],
+      "layout": "Парковая зона → холл; актовый зал прямо по коридору; аудитория 213 наверху в левом крыле",
+      "sensory": {
+        "morning": "Шаги и разговоры разных видов студентов, холодный свет на кирпиче",
+        "evening": "Тише в коридорах, свет в части помещений",
+        "weather": "Мокрые следы заканчиваются у входного коврика; наружный парк не становится закрытой аудиторией"
+      },
+      "visitors": [
+        {
+          "role": "Студенты, сотрудники и клубные участники",
+          "proposed_resident": "resident_working_student",
+          "windows": "По действующему расписанию",
+          "condition": "Нина Арден — только предложенная взрослая роль"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "campus_lesson",
+          "label": "Пройти на свою пару",
+          "implementation": "Существующий world.lesson",
+          "requires": "Запись, день, время и допуск по текущим правилам"
+        },
+        {
+          "id": "campus_route",
+          "label": "Сверить аудиторию и путь",
+          "implementation": "Предлагаемое представление уже канонического маршрута",
+          "minutes": 0
+        },
+        {
+          "id": "campus_club_notice",
+          "label": "Посмотреть клубное объявление",
+          "implementation": "Новый оригинальный контент на существующей клубной основе",
+          "reward": "Нет опыта за осмотр"
+        },
+        {
+          "id": "campus_meet",
+          "label": "Поговорить с одногруппником",
+          "implementation": "Существующие диалоги",
+          "requires": "Собеседник здесь и доступен"
+        }
+      ],
+      "availability": {
+        "current_location": "08:00–20:00, дни1–5 в base.json",
+        "service_note": "Отдельные вакансии объявлены позднее; согласовать доступ помещения с ними, не продлевать всё здание молча"
+      },
+      "connections": [
+        {
+          "to": "home_frontage",
+          "current_minutes": 14
+        },
+        {
+          "to": "market_street",
+          "current_minutes": 10
+        },
+        {
+          "to": "pedestrian_bridge_south",
+          "current_minutes": 3
+        }
+      ],
+      "revisit": "Своя пара, реальная клубная работа и последствия истории первой главы",
+      "never": "Не смешивать городской парк, университетский парк и парк воспоминания",
+      "intended_geography_nodes": [
+        "university",
+        "campus_park_gate",
+        "campus_courtyard",
+        "campus_hall",
+        "campus_auditorium",
+        "campus_corridor",
+        "classroom_213",
+        "cosplay_clubroom"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "market_street",
+      "current_runtime_id": "global_map",
+      "current_map_id": "south_shops",
+      "name": "Торговая улица",
+      "basis": "Существующая южная торговая точка; смысловой ID переживёт замену global_map при переработке",
+      "purpose": "Повседневные покупки рядом с домом и мост к заработку/соседям",
+      "return_reason": "Реальные продукты и запас, знакомый продавец, новая поставка",
+      "subplaces": [
+        {
+          "id": "market_forecourt",
+          "name": "Открытый проход",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "market_counter",
+          "name": "Прилавок с ценниками",
+          "status": "existing_shop_needs_scene"
+        },
+        {
+          "id": "market_notice",
+          "name": "Доска рабочих объявлений",
+          "status": "proposed_content"
+        },
+        {
+          "id": "market_service_door",
+          "name": "Служебная дверь",
+          "status": "proposed_closed_detail"
+        }
+      ],
+      "layout": "Открытый проход → читаемая цена → прилавок; служебный вход отдельно",
+      "sensory": {
+        "morning": "Доставка, звонок и мел на ценниках",
+        "evening": "Часть корзин пуста, соседние окна теплеют",
+        "weather": "Под навесом сухо, за его краем капает вода"
+      },
+      "visitors": [
+        {
+          "role": "Продавец и покупатели",
+          "proposed_resident": "resident_south_grocer",
+          "windows": "Предложение: утренний бытовой поток, студенты между парами, вечерние покупки",
+          "condition": "Дана Керн — предложенный персонаж; магазин не зависит от её обязательного спавна"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "market_compare",
+          "label": "Сверить цену и остаток",
+          "implementation": "Существующие данные магазина; предложенный контекст сцены",
+          "minutes": 0
+        },
+        {
+          "id": "market_buy",
+          "label": "Купить продукты",
+          "implementation": "Существующий inventory.buy, shop=market",
+          "requires": "Часы, деньги, запас, вместимость"
+        },
+        {
+          "id": "market_sell",
+          "label": "Продать разрешённую вещь",
+          "implementation": "Существующий inventory.sell, shop=market",
+          "requires": "Товар есть в ассортименте и в сумке"
+        },
+        {
+          "id": "market_job_notice",
+          "label": "Сверить объявление о работе",
+          "implementation": "Предложенный вход в существующие вакансии",
+          "reward": "Не выдаёт работу, деньги или опыт за чтение"
+        }
+      ],
+      "availability": {
+        "current_shop": "08:00–22:00",
+        "current_prices": {
+          "meal": 20,
+          "grain": 5,
+          "vegetable": 6
+        },
+        "price_status": "Прочитанные текущие значения base.json, не новый баланс"
+      },
+      "connections": [
+        {
+          "to": "home_frontage",
+          "current_minutes": 4
+        },
+        {
+          "to": "river_cafe",
+          "current_minutes": 4
+        },
+        {
+          "to": "city_garden",
+          "current_minutes": 4
+        },
+        {
+          "to": "campus_core",
+          "current_minutes": 10
+        }
+      ],
+      "revisit": "Только реальный запас и конкретная память о вопросе; осмотр не пополняет товар",
+      "events": [
+        "wp_last_crate"
+      ],
+      "intended_geography_nodes": [
+        "south_trade_street"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "river_cafe",
+      "current_runtime_id": "riverside_cafe",
+      "current_map_id": "riverside_cafe",
+      "name": "Кафе у реки",
+      "basis": "Существующее кафе; интерьер и хозяйские детали предлагаются",
+      "purpose": "Небольшая пауза, встреча и отдельная от магазина форма общения",
+      "return_reason": "Назначенные встречи, работа и знакомый ритм заведения",
+      "subplaces": [
+        {
+          "id": "cafe_vestibule",
+          "name": "Тамбур",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "cafe_counter",
+          "name": "Стойка",
+          "status": "proposed_service_scene"
+        },
+        {
+          "id": "cafe_tables",
+          "name": "Внутренние столы",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "cafe_terrace",
+          "name": "Терраса",
+          "status": "existing_description_needs_scene"
+        }
+      ],
+      "layout": "Дверь → стойка → столы; терраса за отдельной дверью, без прохода через служебную кухню",
+      "sensory": {
+        "morning": "Короткий звон чашек и пар у стойки",
+        "evening": "Тёплые островки света и приглушённые голоса",
+        "weather": "Ветер за террасой; капли слышны в тамбуре, внутри сухо"
+      },
+      "visitors": [
+        {
+          "role": "Старшая смены, работающие посетители, студенты",
+          "proposed_resident": "resident_cafe_shift_lead",
+          "windows": "Селина Вейл предлагается как занятая взрослая сотрудница, не постоянный собеседник",
+          "condition": "Фактический график, свободное время и доступность"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "cafe_talk",
+          "label": "Коротко поговорить",
+          "implementation": "Существующая система общения",
+          "requires": "NPC здесь, не занят и согласен"
+        },
+        {
+          "id": "cafe_meeting",
+          "label": "Выбрать кафе для встречи",
+          "implementation": "Существующее назначение встречи; не создавать NPC на месте"
+        },
+        {
+          "id": "cafe_practice",
+          "label": "Практиковать писательство или эмпатию",
+          "implementation": "Существующий growth.practice",
+          "current_minutes": 30
+        },
+        {
+          "id": "cafe_job",
+          "label": "Посмотреть условия смены",
+          "implementation": "Существующий livelihood; cafe_orders=120мин, card_host=90мин",
+          "reward": "Справка не оплачивается"
+        }
+      ],
+      "availability": {
+        "proposed_service": "08:00–22:00",
+        "unresolved": "card_host допускает начало до23:00; нужны отдельные часы вечернего мероприятия, не скрытое продление всего сервиса",
+        "new_food_sale": "Продажа кофе/еды у стойки пока не подключена"
+      },
+      "connections": [
+        {
+          "to": "market_street",
+          "current_minutes": 4
+        },
+        {
+          "to": "river_walk",
+          "current_minutes": 4
+        },
+        {
+          "to": "city_garden",
+          "current_minutes": 8,
+          "via": [
+            "global_map"
+          ]
+        }
+      ],
+      "revisit": "Изменение небольшой детали и возвращение к конкретному делу без повторной награды",
+      "events": [
+        "wp_rain_margin",
+        "wp_shift_card"
+      ],
+      "resident_arc_reference": "rear_door_notice — пакет world_residents; отдельная более длинная история",
+      "intended_geography_nodes": [
+        "riverside_cafe_front",
+        "riverside_cafe"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "city_garden",
+      "current_runtime_id": "city_park",
+      "current_map_id": "city_park",
+      "name": "Городской парк с прудом",
+      "basis": "Существующий городской парк; не заменяет два других сценарных парка",
+      "purpose": "Доступный досуг и практика рядом с домом",
+      "return_reason": "Уход за посадками, тренировка и знакомые посетители",
+      "subplaces": [
+        {
+          "id": "garden_fork",
+          "name": "Входная развилка",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "pond_loop",
+          "name": "Петля вокруг пруда",
+          "status": "existing_description_needs_scene"
+        },
+        {
+          "id": "teaching_bed",
+          "name": "Учебная клумба",
+          "status": "existing_practice_needs_scene"
+        },
+        {
+          "id": "garden_bench",
+          "name": "Лавка с местом для хвоста",
+          "status": "proposed_detail"
+        }
+      ],
+      "layout": "Развилка даёт вид на пруд и клумбу; короткий обход возвращает к выходу",
+      "sensory": {
+        "morning": "Рабочий инструмент садовника и шаги бегунов",
+        "evening": "Низкий свет у воды и редкие голоса",
+        "weather": "Мокрая лавка — описание, а не блокировка всех обязательств"
+      },
+      "visitors": [
+        {
+          "role": "Садовник, бегуны и отдыхающие",
+          "proposed_resident": "resident_gardener",
+          "windows": "Павел Сорн предлагается утром на работе, позже по личному графику",
+          "condition": "Читает реальную занятость"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "garden_rest",
+          "label": "Передохнуть",
+          "implementation": "Существующий отдых/досуг с действующими затратами"
+        },
+        {
+          "id": "garden_fitness",
+          "label": "Тренировать общую выносливость",
+          "implementation": "Существующий growth.practice fitness",
+          "current_minutes": 30
+        },
+        {
+          "id": "garden_work",
+          "label": "Ухаживать за учебными посадками",
+          "implementation": "Существующий growth.practice gardening",
+          "current_minutes": 30,
+          "current_cost": 3
+        },
+        {
+          "id": "garden_observe",
+          "label": "Поговорить у клумбы",
+          "implementation": "Предлагаемая короткая сцена",
+          "proposed_minutes": 3,
+          "reward": "Нет опыта садовой практики"
+        }
+      ],
+      "connections": [
+        {
+          "to": "home_frontage",
+          "current_minutes": 4
+        },
+        {
+          "to": "market_street",
+          "current_minutes": 4
+        },
+        {
+          "to": "housing_office",
+          "current_minutes": 4
+        }
+      ],
+      "revisit": "След реального ухода и конкретное выполненное обещание; неизменная клумба не даёт новую награду",
+      "events": [
+        "wp_seed_label"
+      ],
+      "intended_geography_nodes": [
+        "city_park"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "river_walk",
+      "current_runtime_id": "south_promenade",
+      "current_map_id": "south_promenade",
+      "name": "Речная прогулочная линия",
+      "basis": "Существующая речная точка настоящего, не морская набережная воспоминания",
+      "purpose": "Открытое место встречи, выступления и наблюдения за городом",
+      "return_reason": "Свет, погода, выступающие и собственная практика",
+      "subplaces": [
+        {
+          "id": "walk_lane",
+          "name": "Сквозная дорожка",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "small_pitch",
+          "name": "Небольшая площадка выступлений",
+          "status": "existing_job_needs_scene"
+        },
+        {
+          "id": "river_rail",
+          "name": "Перила у воды",
+          "status": "proposed_detail"
+        }
+      ],
+      "layout": "Прямой проход остаётся свободным; выступление сбоку; кафе доступно по отдельному короткому пути",
+      "sensory": {
+        "morning": "Вода и быстрые шаги по делам",
+        "evening": "Два светильника разного тона и звук короткой репетиции",
+        "weather": "Ветер сильнее на открытом участке; дождь слышен с навеса, встреча сама не телепортируется"
+      },
+      "visitors": [
+        {
+          "role": "Проходящие работники, фотографы и выступающие",
+          "windows": "Предложение: дневной поток и вечерний досуг",
+          "condition": "Настоящее присутствие, инструменты и время"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "walk_perform",
+          "label": "Репетировать номер",
+          "implementation": "Существующий growth.practice performance",
+          "current_minutes": 30
+        },
+        {
+          "id": "walk_photo",
+          "label": "Практиковать кадр",
+          "implementation": "Существующий growth.practice photography",
+          "current_minutes": 30,
+          "requires": "Камера"
+        },
+        {
+          "id": "walk_fishing",
+          "label": "Практиковать заброс",
+          "implementation": "Существующий growth.practice fishing",
+          "current_minutes": 30
+        },
+        {
+          "id": "walk_listen",
+          "label": "Послушать короткий отрывок",
+          "implementation": "Предлагаемая сцена",
+          "proposed_minutes": 3,
+          "reward": "Нет чаевых и опыта выступающего"
+        }
+      ],
+      "connections": [
+        {
+          "to": "river_cafe",
+          "current_minutes": 4
+        },
+        {
+          "to": "housing_office",
+          "current_minutes": 4
+        },
+        {
+          "to": "penthouse",
+          "current_minutes": 4
+        }
+      ],
+      "revisit": "Иной свет и реплика на уже услышанное, без бесконечного бонуса настроения",
+      "events": [
+        "wp_blue_hour"
+      ],
+      "intended_geography_nodes": [
+        "south_promenade"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "housing_office",
+      "current_runtime_id": "real_estate_agency",
+      "current_map_id": "real_estate_agency",
+      "name": "Жилищная контора",
+      "basis": "Существующий сервис жилья; интерьер/краткие разговоры предлагаются",
+      "purpose": "Принять понятное финансовое решение о жилье",
+      "return_reason": "Сравнить варианты, вернуться к вопросу, действительно переехать",
+      "subplaces": [
+        {
+          "id": "housing_board",
+          "name": "Стенд вариантов",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "housing_counter",
+          "name": "Стойка",
+          "status": "existing_service_needs_scene"
+        },
+        {
+          "id": "contract_table",
+          "name": "Стол договора",
+          "status": "proposed_detail"
+        }
+      ],
+      "layout": "Обзор вариантов перед стойкой; договор отдельно от просмотра",
+      "sensory": {
+        "day": "Холодный свет и образцы ключей",
+        "evening": "Закрытая стойка и читаемые часы на двери",
+        "weather": "У входа сушатся зонты, варианты жилья от погоды не меняют цену"
+      },
+      "visitors": [
+        {
+          "role": "Сотрудник и клиенты по реальным делам",
+          "windows": "Оформление09:00–18:00",
+          "condition": "Доступность операции не зависит от декоративного NPC"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "housing_compare",
+          "label": "Сравнить полную стоимость",
+          "implementation": "Существующие данные жилья; новое представление",
+          "minutes": 0
+        },
+        {
+          "id": "housing_contract",
+          "label": "Оформить доступный вариант",
+          "implementation": "Существующие housing.rent/buy через city_housing",
+          "requires": "Деньги, условия, агентство и часы"
+        },
+        {
+          "id": "housing_emergency",
+          "label": "Уточнить экстренное размещение",
+          "implementation": "Существующее housing.emergency",
+          "requires": "Настоящие условия утраты жилья/денег"
+        },
+        {
+          "id": "housing_return",
+          "label": "Вернуться к выбранному вопросу",
+          "implementation": "Предлагаемая память разговора",
+          "reward": "Не выдаёт ключи и жильё за повторный визит"
+        }
+      ],
+      "availability": {
+        "current_operations": "09:00–18:00",
+        "current_monthly_rent": {
+          "detached_house": 600,
+          "penthouse": 1400
+        }
+      },
+      "connections": [
+        {
+          "to": "market_street",
+          "current_minutes": 4
+        },
+        {
+          "to": "city_garden",
+          "current_minutes": 4
+        },
+        {
+          "to": "river_walk",
+          "current_minutes": 4
+        },
+        {
+          "to": "detached_house",
+          "current_minutes": 4
+        }
+      ],
+      "revisit": "Краткое продолжение выбранного вопроса, а не повтор вступления",
+      "intended_geography_nodes": [
+        "agency_square",
+        "real_estate_agency"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "old_shops",
+      "current_runtime_id": "north_shops",
+      "current_map_id": "north_shops",
+      "name": "Старые лавки",
+      "basis": "Существующие северные магазины; разные хозяева/мастерские пока проработка",
+      "purpose": "Работающие услуги старого района и повседневная экономия",
+      "return_reason": "Покупки, практика, рабочие дела и местные связи",
+      "subplaces": [
+        {
+          "id": "old_arcade",
+          "name": "Общий проход",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "old_counter",
+          "name": "Лавочный прилавок",
+          "status": "existing_shop_needs_scene"
+        },
+        {
+          "id": "repair_bench",
+          "name": "Ремонтный стол",
+          "status": "existing_job_needs_scene"
+        },
+        {
+          "id": "unloading_bay",
+          "name": "Разгрузочный карман",
+          "status": "proposed_detail"
+        }
+      ],
+      "layout": "Открытый проход с разными вывесками, ремонт за своим столом, разгрузка не перекрывает единственный выход",
+      "sensory": {
+        "morning": "Тележки и короткий стук инструмента",
+        "evening": "Часть витрин закрыта, у хозяев заканчивается смена",
+        "weather": "Капли под карнизом; закрытая лавка не торгует через окно"
+      },
+      "visitors": [
+        {
+          "role": "Мастера, поставщики и соседи",
+          "proposed_resident": "resident_repairer",
+          "windows": "Илья Рен — предложенный работающий взрослый",
+          "condition": "Рабочий график важнее сценки"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "old_trade",
+          "label": "Купить в северной лавке",
+          "implementation": "Существующий inventory.buy, shop=north_market"
+        },
+        {
+          "id": "old_repair_job",
+          "label": "Сверить условия ремонтной смены",
+          "implementation": "Существующая вакансия repair_bench",
+          "current_minutes": 150
+        },
+        {
+          "id": "old_practice",
+          "label": "Разобрать потребности покупателей",
+          "implementation": "Существующий growth.practice sales",
+          "current_minutes": 30
+        },
+        {
+          "id": "old_limits",
+          "label": "Уточнить предел помощи",
+          "implementation": "Оригинальная история world_residents; не новый сервис выдачи предмета"
+        }
+      ],
+      "availability": {
+        "current_north_market": "Копия market, множитель0.9, часы08:00–22:00",
+        "unresolved": "Индивидуальный ассортимент, сроки ремонта и вещи после ремонта ещё требуют реализации"
+      },
+      "connections": [
+        {
+          "to": "north_den",
+          "current_minutes": 4
+        },
+        {
+          "to": "shared_residence",
+          "current_minutes": 4
+        },
+        {
+          "to": "pedestrian_bridge_north",
+          "current_minutes": 3
+        }
+      ],
+      "revisit": "Настоящий запас и стадия согласованного дела, а не одинаковый магазин со скидкой",
+      "events": [
+        "wp_clear_passage"
+      ],
+      "intended_geography_nodes": [
+        "north_shops"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "river_beach",
+      "current_runtime_id": "north_beach",
+      "current_map_id": "north_beach",
+      "name": "Северный речной берег",
+      "basis": "Речной пляж настоящего; не смешивать с морем Праксии",
+      "purpose": "Утреннее дело у воды и дневной досуг",
+      "return_reason": "Рыболовная практика, работа и перемена погоды/света",
+      "subplaces": [
+        {
+          "id": "beach_path",
+          "name": "Дорожка от моста",
+          "status": "existing_description_needs_scene"
+        },
+        {
+          "id": "beach_board",
+          "name": "Табличка берега",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "dry_deck",
+          "name": "Сухой настил",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "sand_edge",
+          "name": "Песчаный край",
+          "status": "existing_description_needs_scene"
+        }
+      ],
+      "layout": "Открытый путь → видимая информация → настил → берег; обход не требует купания",
+      "sensory": {
+        "morning": "Снасти и шаги по доскам",
+        "day": "Ветер, тихие разговоры и обычный семейный досуг",
+        "weather": "Ветер и осадки меняют обстановку, не наносят скрытый урон за просмотр"
+      },
+      "visitors": [
+        {
+          "role": "Рыболовы, отдыхающие и работник берега",
+          "proposed_resident": "resident_beach_attendant",
+          "windows": "Лев Терн — предложенный взрослый помощник; прокат пока не механика",
+          "condition": "Фактическое присутствие"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "beach_fishing",
+          "label": "Практиковать заброс",
+          "implementation": "Существующий growth.practice fishing",
+          "current_minutes": 30
+        },
+        {
+          "id": "beach_work",
+          "label": "Выйти на смену поставщика рыбы",
+          "implementation": "Существующая вакансия fish_supplier",
+          "current_minutes": 90,
+          "hours": "05:00–10:00"
+        },
+        {
+          "id": "beach_walk",
+          "label": "Пройтись вдоль берега",
+          "implementation": "Существующий досуг при соблюдении правил; отдельное короткое описание предложено"
+        },
+        {
+          "id": "beach_notice",
+          "label": "Уточнить условия берега",
+          "implementation": "Предлагаемый осмотр",
+          "proposed_minutes": 1,
+          "reward": "Нет улова, предмета или навыка"
+        }
+      ],
+      "connections": [
+        {
+          "to": "pedestrian_bridge_north",
+          "current_minutes": 3
+        }
+      ],
+      "revisit": "Смена времени и реальное завершение работы; новый улов не выдумывается",
+      "events": [
+        "wp_wind_notice"
+      ],
+      "never": "Не объявлять реализованными прокат, купание и предметный результат рыбалки",
+      "intended_geography_nodes": [
+        "north_beach"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "service_lanes",
+      "current_runtime_id": "north_alleys",
+      "current_map_id": "north_alleys",
+      "name": "Служебные проходы",
+      "basis": "Существующие дворы/переулки; бытовая логистика предлагается как их основной контекст",
+      "purpose": "Понятный проход и работающая изнанка квартала",
+      "return_reason": "Путь по делу, доставка и знакомые работники",
+      "subplaces": [
+        {
+          "id": "lit_lane",
+          "name": "Освещённая дорожка",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "loading_yard",
+          "name": "Двор разгрузки",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "locked_backroom",
+          "name": "Закрытая служебная дверь",
+          "status": "proposed_closed_detail"
+        }
+      ],
+      "layout": "Сквозной светлый путь остаётся открыт; разгрузка в кармане, чужая дверь не универсальный вход",
+      "sensory": {
+        "day": "Тележка и просьба оставить проход",
+        "evening": "Отражение светильника в мокром камне",
+        "weather": "Никакого скрытого урона или обязательного нападения"
+      },
+      "visitors": [
+        {
+          "role": "Работники доставки, владельцы лавок, проходящие жители",
+          "windows": "Предлагаемый рабочий день и отдельная вечерняя активность",
+          "condition": "Существующая нелегальная вакансия не делает всех жителей преступниками"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "lane_pass",
+          "label": "Пройти по обозначенному пути",
+          "implementation": "Существующий маршрут; новый план подмест предлагается"
+        },
+        {
+          "id": "lane_talk",
+          "label": "Поговорить с работником",
+          "implementation": "Существующий разговор при доступности"
+        },
+        {
+          "id": "lane_job",
+          "label": "Узнать условия задания",
+          "implementation": "Существующие вакансии, в том числе underground_courier",
+          "requires": "Все действующие риски/ограничения видны заранее"
+        },
+        {
+          "id": "lane_decline",
+          "label": "Отказаться от сомнительного предложения",
+          "implementation": "Предложенная короткая ветвь",
+          "reward": "Без штрафа и без блокировки пути домой"
+        }
+      ],
+      "connections": [
+        {
+          "to": "north_den",
+          "current_minutes": 4
+        },
+        {
+          "to": "police_desk",
+          "current_minutes": 4
+        }
+      ],
+      "revisit": "После разгрузки меняется проход и занятость людей, не открывается новая награда",
+      "intended_geography_nodes": [
+        "north_alleys"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "police_desk",
+      "current_runtime_id": "police_station",
+      "current_map_id": "police_station",
+      "name": "Публичная приёмная полиции",
+      "basis": "Существующая точка; публичные и служебные зоны требуют отдельной проработки",
+      "purpose": "Понятный доступ к информации и помощи по существующему делу",
+      "return_reason": "Своё реальное обязательство или изменившийся статус обращения",
+      "subplaces": [
+        {
+          "id": "public_entry",
+          "name": "Публичный вход",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "information_board",
+          "name": "Информационная стойка",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "duty_desk",
+          "name": "Дежурный стол",
+          "status": "proposed_service_scene"
+        }
+      ],
+      "layout": "Вход → информация → дежурный; служебный коридор закрыт",
+      "sensory": {
+        "day": "Короткие вопросы у стойки и бумага под стеклом",
+        "night": "Отдельный дежурный свет, не все окна открыты",
+        "weather": "Сухая зона у входа; обращение не зависит от красивой погоды"
+      },
+      "visitors": [
+        {
+          "role": "Жители по обращениям и сотрудники",
+          "windows": "Часы дежурного/административных услуг пока требуют определения",
+          "condition": "Точка на карте не доказывает круглосуточность любого сервиса"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "police_info",
+          "label": "Узнать порядок обращения",
+          "implementation": "Предложенный осмотр информации",
+          "minutes": 0
+        },
+        {
+          "id": "police_obligation",
+          "label": "Проверить своё дело",
+          "implementation": "Контекст существующей системы безопасности, без выдуманной новой команды"
+        },
+        {
+          "id": "police_statement",
+          "label": "Сообщить факт по доступному событию",
+          "implementation": "Будущая авторская ветвь после назначения конкретного события"
+        }
+      ],
+      "connections": [
+        {
+          "to": "service_lanes",
+          "current_minutes": 4
+        },
+        {
+          "to": "shared_residence",
+          "current_minutes": 4
+        },
+        {
+          "to": "central_bridge_north",
+          "current_minutes": 3
+        }
+      ],
+      "revisit": "Статус своего дела, никакой платы за чтение информации и штрафа за вход",
+      "intended_geography_nodes": [
+        "police_forecourt",
+        "police_station"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "shared_residence",
+      "current_runtime_id": "social_housing",
+      "current_map_id": "social_housing",
+      "name": "Общий жилой дом",
+      "basis": "Существующий вариант жилья; общие пространства и соседи предлагаются",
+      "purpose": "Нормальный быт нескольких людей с разными ритмами",
+      "return_reason": "Своё жильё, уход и достигнутые бытовые договорённости",
+      "subplaces": [
+        {
+          "id": "shared_porch",
+          "name": "Крыльцо",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "shared_hall",
+          "name": "Общий проход",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "household_corner",
+          "name": "Хозяйственный угол",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "private_room_door",
+          "name": "Дверь жилой комнаты",
+          "status": "private_detail"
+        }
+      ],
+      "layout": "Публичное крыльцо → разрешённый общий проход → приватная дверь; чужая комната не раскрывается по клику",
+      "sensory": {
+        "morning": "Собранные к смене вещи и негромкие шаги",
+        "evening": "Лампа над подписанной полкой и сохнущий плащ",
+        "weather": "Влага остаётся у входа, жизнь дома не сводится к нужде"
+      },
+      "visitors": [
+        {
+          "role": "Жильцы и согласованные гости",
+          "proposed_resident": "resident_courtyard_organizer",
+          "windows": "Рая Фенн — предложенная взрослая координатор быта",
+          "condition": "Доступ по проживанию/приглашению; не выдавать чужие частные данные"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "shared_enter",
+          "label": "Войти к себе или по приглашению",
+          "implementation": "Существующие жилищные ограничения",
+          "requires": "Действительное право доступа"
+        },
+        {
+          "id": "shared_chores",
+          "label": "Выполнить свой быт",
+          "implementation": "Существующие домашние действия в нужном помещении"
+        },
+        {
+          "id": "shared_agree",
+          "label": "Договориться о времени общего пространства",
+          "implementation": "Предлагаемый разговор",
+          "requires": "Другая сторона доступна и согласна"
+        },
+        {
+          "id": "shared_remember",
+          "label": "Вернуться к договорённости",
+          "implementation": "Предлагаемая разовая память решения",
+          "reward": "Нет нового жилья/денег/личной информации"
+        }
+      ],
+      "connections": [
+        {
+          "to": "old_shops",
+          "current_minutes": 4
+        },
+        {
+          "to": "police_desk",
+          "current_minutes": 4
+        }
+      ],
+      "revisit": "Соблюдённая договорённость видна на следующий день, без новой награды за окно",
+      "events": [
+        "wp_next_morning"
+      ],
+      "intended_geography_nodes": [
+        "social_housing"
+      ],
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "residential_courtyards",
+      "current_runtime_id": "residential_district",
+      "current_map_id": null,
+      "name": "Жилые дворы",
+      "intended_geography_nodes": [
+        "residential_district"
+      ],
+      "basis": "Узкие улицы и дома нынешнего учебного района из chapter_one; план и детали предлагаются",
+      "purpose": "Узнаваемый повседневный путь, связывающий дом, соседей, покупки и кампус",
+      "return_reason": "Домашние ориентиры остаются постоянными, занятость жителей меняется",
+      "subplaces": [
+        {
+          "id": "courtyard_fork",
+          "name": "Развилка у двух фонарей",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "fence_walk",
+          "name": "Проход вдоль оград",
+          "status": "proposed_detail"
+        },
+        {
+          "id": "pharmacy_turn",
+          "name": "Поворот к дому с аптекой",
+          "status": "canonical_address_needs_scene"
+        }
+      ],
+      "layout": "Двор дома → небольшая развилка → путь к кампусу; боковой проход к аптеке и торговой улице",
+      "sensory": {
+        "morning": "Разные калитки и сборы на день",
+        "evening": "Постоянные окна и фонари помогают узнавать путь",
+        "weather": "Отражения и звук меняются; маршрут и чужие двери не исчезают"
+      },
+      "visitors": [
+        {
+          "role": "Соседи по реальному графику",
+          "windows": "Предложение: утренний выход/вечерний возврат",
+          "condition": "Не создавать сюжетных персонажей в песочнице ради заполнения"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "courtyard_orientation",
+          "label": "Осмотреть общие ориентиры",
+          "implementation": "Предложенный физический обход",
+          "proposed_minutes": 2,
+          "reward": "Нет XP за осмотр"
+        },
+        {
+          "id": "courtyard_route",
+          "label": "Выбрать путь к институту",
+          "implementation": "Переход по согласованному новому графу"
+        },
+        {
+          "id": "courtyard_address",
+          "label": "Сверить знакомый адрес",
+          "implementation": "Предложенное бесплатное чтение карты/журнала",
+          "minutes": 0
+        },
+        {
+          "id": "courtyard_greeting",
+          "label": "Приветствовать соседа",
+          "implementation": "Существующий разговор при фактической доступности"
+        }
+      ],
+      "connections": [
+        {
+          "to": "home_frontage",
+          "proposed_minutes": 2
+        },
+        {
+          "to": "pharmacy_address",
+          "proposed_minutes": 2
+        },
+        {
+          "to": "market_street",
+          "proposed_minutes": 5
+        },
+        {
+          "to": "campus_park_gate",
+          "proposed_minutes": 8
+        }
+      ],
+      "revisit": "Тот же читаемый план двора, иная занятость людей и свет",
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    },
+    {
+      "place_anchor": "pharmacy_address",
+      "current_runtime_id": null,
+      "current_map_id": null,
+      "name": "Дом с аптекой",
+      "intended_geography_nodes": [
+        "pharmacy_house"
+      ],
+      "basis": "Проверенный адрес chapter_one:223–225; точные услуги и интерьер не заданы",
+      "purpose": "Сделать соседство Асуки/Оливера реальным узнаваемым адресом",
+      "return_reason": "Постоянный ориентир, согласованная встреча и обычный путь домой",
+      "subplaces": [
+        {
+          "id": "pharmacy_front",
+          "name": "Публичный фасад аптеки",
+          "status": "canonical_address_needs_scene"
+        },
+        {
+          "id": "residents_entrances",
+          "name": "Отдельные частные подъезды",
+          "status": "canonical_address_needs_scene"
+        }
+      ],
+      "layout": "Доступный с улицы фасад и вывеска; жилые входы отдельно, без свободного входа в чужую квартиру",
+      "sensory": {
+        "morning": "Свет витрины и шаги жильцов",
+        "evening": "Один узнаваемый адрес вместо случайной декорации",
+        "weather": "Навес у общей двери, прохожие не становятся пациентами автоматически"
+      },
+      "visitors": [
+        {
+          "role": "Жители дома; Асука/Оливер только если существуют в этом режиме",
+          "windows": "По реальному графику",
+          "condition": "Сюжетное знакомство не даёт права входить в квартиру"
+        }
+      ],
+      "interactions": [
+        {
+          "id": "pharmacy_recognize",
+          "label": "Узнать дом по вывеске",
+          "implementation": "Предлагаемое описание публичного адреса",
+          "minutes": 0
+        },
+        {
+          "id": "pharmacy_notice",
+          "label": "Посмотреть публичную информацию",
+          "implementation": "Новый контент после определения часов/услуг",
+          "minutes": 0
+        },
+        {
+          "id": "pharmacy_meet",
+          "label": "Встретиться у подъезда",
+          "implementation": "Существующая встреча только с доступным NPC и согласием"
+        },
+        {
+          "id": "pharmacy_pass",
+          "label": "Пройти дальше",
+          "implementation": "Открытый уличный маршрут"
+        }
+      ],
+      "availability": {
+        "unknown": [
+          "Ассортимент аптеки",
+          "Часы обслуживания",
+          "Точная планировка",
+          "Связь с действующим лечением"
+        ],
+        "never": "Не объявлять существующей круглосуточную торговлю/лечение по одной вывеске"
+      },
+      "connections": [
+        {
+          "to": "residential_courtyards",
+          "proposed_minutes": 2
+        }
+      ],
+      "revisit": "Постоянство фасада и адреса; никаких новых наград или гарантированных NPC",
+      "binding_status": "design_only; no runtime fallback or compatibility layer"
+    }
+  ],
+  "events": [
+    {
+      "id": "wp_rain_margin",
+      "place_anchor": "river_cafe",
+      "name": "Край афиши под дождём",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Дождь",
+        "Взрослый посетитель действительно у двери и доступен",
+        "Не закрыто ранее по этому решению"
+      ],
+      "choices": [
+        {
+          "id": "point_out",
+          "label": "Обратить внимание на капли",
+          "proposed_minutes": 2,
+          "outcome": "Посетитель сам убирает лист; запоминается факт"
+        },
+        {
+          "id": "pass",
+          "label": "Пройти внутрь",
+          "proposed_minutes": 0,
+          "outcome": "Без обиды и долга"
+        }
+      ],
+      "repeat": "Лист под стеклом, если решение состоялось; только короткое описание",
+      "reward": "Нет",
+      "memory_key": "wp_rain_margin:decision"
+    },
+    {
+      "id": "wp_last_crate",
+      "place_anchor": "market_street",
+      "name": "Что осталось после поставки",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Рабочие часы магазина",
+        "Есть факт поставки или неполного запаса, не выдуманный повторным осмотром",
+        "Продавец фактически доступен"
+      ],
+      "choices": [
+        {
+          "id": "ask_stock",
+          "label": "Уточнить остаток",
+          "proposed_minutes": 2,
+          "outcome": "Открывает реальные сведения о запасе; покупка отдельно"
+        },
+        {
+          "id": "leave",
+          "label": "Посмотреть позже",
+          "proposed_minutes": 0,
+          "outcome": "Товар не резервируется"
+        }
+      ],
+      "repeat": "Показать реальный остаток; сам вопрос не пополняет и не дублирует товар",
+      "reward": "Нет",
+      "memory_key": "wp_last_crate:supply_cycle:decision"
+    },
+    {
+      "id": "wp_shift_card",
+      "place_anchor": "river_cafe",
+      "name": "Смена и ближайшая пара",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Реальная вакансия и актуальное объявление",
+        "Сотрудник здесь и доступен"
+      ],
+      "choices": [
+        {
+          "id": "ask_timing",
+          "label": "Сверить время смены и дорогу",
+          "proposed_minutes": 3,
+          "outcome": "Понятное объяснение и существующая карточка вакансии"
+        },
+        {
+          "id": "read_only",
+          "label": "Посмотреть карточку самостоятельно",
+          "proposed_minutes": 0,
+          "outcome": "Обычная бесплатная справка"
+        },
+        {
+          "id": "decline",
+          "label": "Не брать работу",
+          "proposed_minutes": 0,
+          "outcome": "Нет штрафа и трудоустройства"
+        }
+      ],
+      "repeat": "Краткая справка о выбранном вопросе; нет карьерного опыта",
+      "reward": "Нет",
+      "memory_key": "wp_shift_card:job_id:decision"
+    },
+    {
+      "id": "wp_seed_label",
+      "place_anchor": "city_garden",
+      "name": "Что растёт у дорожки",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Садовник присутствует и может говорить",
+        "Деталь посадок соответствует погоде/сезону",
+        "Не состоялось аналогичное обсуждение сегодня"
+      ],
+      "choices": [
+        {
+          "id": "ask_bed",
+          "label": "Спросить об уходе",
+          "proposed_minutes": 3,
+          "outcome": "Короткий ответ и память о вопросе без XP практики"
+        },
+        {
+          "id": "practice",
+          "label": "Выбрать настоящую садовую практику",
+          "outcome": "Существующий growth.practice gardening, 30мин и3¤, отдельная транзакция"
+        },
+        {
+          "id": "pass",
+          "label": "Идти дальше",
+          "proposed_minutes": 0,
+          "outcome": "Без штрафа"
+        }
+      ],
+      "repeat": "Реплика о текущем уходе, без второй практической награды",
+      "reward": "Только настоящий результат отдельно выполненной практики",
+      "memory_key": "wp_seed_label:planting_context:decision"
+    },
+    {
+      "id": "wp_blue_hour",
+      "place_anchor": "river_walk",
+      "name": "Когда включаются фонари",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Закат",
+        "Есть свободный совершеннолетний фотограф/выступающий или обычное описательное наблюдение без NPC",
+        "Проход остаётся свободным"
+      ],
+      "choices": [
+        {
+          "id": "watch",
+          "label": "Немного посмотреть",
+          "proposed_minutes": 3,
+          "outcome": "Описание смены света; нет навыка, фото или чаевых"
+        },
+        {
+          "id": "practice",
+          "label": "Начать свою практику",
+          "outcome": "Существующая30-минутная практика с настоящими требованиями"
+        },
+        {
+          "id": "pass",
+          "label": "Не задерживаться",
+          "proposed_minutes": 0,
+          "outcome": "Без штрафа"
+        }
+      ],
+      "repeat": "Другой свет и короткая память, без бесконечного бонуса настроения",
+      "reward": "Нет у короткой сцены",
+      "memory_key": "wp_blue_hour:first_observation"
+    },
+    {
+      "id": "wp_clear_passage",
+      "place_anchor": "old_shops",
+      "name": "Место для тележки",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Реальный этап разгрузки по предложенному расписанию",
+        "Основной путь не заблокирован навсегда"
+      ],
+      "choices": [
+        {
+          "id": "wait",
+          "label": "Подождать",
+          "proposed_minutes": 2,
+          "outcome": "Локальная смена обстановки без обязательного поручения"
+        },
+        {
+          "id": "bypass",
+          "label": "Пройти обходом",
+          "outcome": "Сначала показать фактическое время согласованного обхода"
+        },
+        {
+          "id": "leave",
+          "label": "Вернуться позже",
+          "proposed_minutes": 0,
+          "outcome": "Без штрафа"
+        }
+      ],
+      "repeat": "Разгрузка завершена по времени мира; сцена не запускается с начала при входе",
+      "reward": "Нет",
+      "memory_key": "wp_clear_passage:delivery_id:decision"
+    },
+    {
+      "id": "wp_wind_notice",
+      "place_anchor": "river_beach",
+      "name": "Условия на берегу",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Ветер или осадки",
+        "Предлагаемая табличка соответствует текущему состоянию берега"
+      ],
+      "choices": [
+        {
+          "id": "read_first",
+          "label": "Прочитать условия",
+          "proposed_minutes": 1,
+          "outcome": "Контекст допустимых занятий; не запускает купание"
+        },
+        {
+          "id": "continue",
+          "label": "Остаться на открытой дорожке",
+          "proposed_minutes": 0,
+          "outcome": "Без скрытого урона"
+        }
+      ],
+      "repeat": "Проверка уже знакомой информации бесплатна; никаких новых предметов",
+      "reward": "Нет",
+      "memory_key": "wp_wind_notice:weather_context:seen"
+    },
+    {
+      "id": "wp_next_morning",
+      "place_anchor": "shared_residence",
+      "name": "Обещанное на следующее утро",
+      "status": "original_event_proposal",
+      "conditions": [
+        "Действительное право доступа",
+        "Есть конкретная состоявшаяся бытовая договорённость",
+        "Прошёл игровой день",
+        "Доступная сторона для разговора либо только открытая бытовая деталь"
+      ],
+      "choices": [
+        {
+          "id": "notice",
+          "label": "Заметить результат",
+          "proposed_minutes": 2,
+          "outcome": "Конкретная память об исходе"
+        },
+        {
+          "id": "clarify",
+          "label": "Спокойно уточнить",
+          "outcome": "Только при доступном согласном собеседнике; время берётся из настоящего разговора"
+        },
+        {
+          "id": "pass",
+          "label": "Заняться своими делами",
+          "proposed_minutes": 0,
+          "outcome": "Без штрафа"
+        }
+      ],
+      "repeat": "Не входить в чужую комнату и не применять эффект отношений заново",
+      "reward": "Нет",
+      "memory_key": "wp_next_morning:agreement_id:observed"
+    }
+  ],
+  "first_slice": {
+    "name": "Жилые дворы и торговый путь к реке",
+    "status": "proposal_aligned_with_new_geography_waiting_for_scenario_review",
+    "places": [
+      "home_frontage",
+      "residential_courtyards",
+      "pharmacy_address",
+      "market_street",
+      "river_cafe"
+    ],
+    "intended_route_nodes": [
+      "student_home",
+      "residential_district",
+      "pharmacy_house",
+      "residential_district",
+      "south_trade_street",
+      "riverside_cafe_front",
+      "south_trade_street",
+      "residential_district",
+      "student_home"
+    ],
+    "proposed_route_legs_minutes": [
+      2,
+      2,
+      2,
+      5,
+      4,
+      4,
+      5,
+      2
+    ],
+    "proposed_travel_total_minutes": 26,
+    "example_actions": [
+      {
+        "id": "courtyard_orientation",
+        "proposed_minutes": 2,
+        "note": "Физический обход; чтение карты0мин"
+      },
+      {
+        "id": "wp_last_crate.ask_stock",
+        "proposed_minutes": 2
+      },
+      {
+        "id": "inventory.use.meal",
+        "current_minutes": 5,
+        "requires": "Настоящая еда в сумке"
+      }
+    ],
+    "example_total_minutes": 35,
+    "optional_conversation": {
+      "example_budget_minutes": 5,
+      "with_total_minutes": 40,
+      "requires": "Фактически доступный взрослый NPC; настоящее время выбранного действия берётся из каталога"
+    },
+    "money": "Начальный обед либо обычная необязательная покупка meal за текущие20¤; новых выплат нет",
+    "branches": {
+      "student": "Дворы→парковый вход8→кампус4; дом→дворы2 даёт14мин до кампуса, потом нужное помещение",
+      "worker": "Реальная карточка вакансии, полная смена планируется отдельно",
+      "social": "Сцена знакомства или отдельная история residents, не все истории вместе"
+    },
+    "skip": "Отказ и отсутствие людей сокращают время, не блокируют город",
+    "first_implementation_events": [
+      "wp_last_crate",
+      "wp_rain_margin"
+    ],
+    "first_return": "Одна конкретная деталь и одна память без повторной награды",
+    "next_slice": [
+      "city_garden",
+      "wp_seed_label"
+    ],
+    "not_in_short_loop": [
+      "Полная смена",
+      "30-минутная практика",
+      "Вся история rear_door_notice",
+      "Городской парк без пересчёта дополнительной дороги"
+    ],
+    "handoff": [
+      "Сверить новый граф и смысловые ID с world_geography",
+      "Разделить вход кафе и зал, площадь агентства и офис, улицу и интерфейс карты",
+      "Подготовить осмотр предметов у UI-исполнителя",
+      "Добавить собственные строки и однократные исходы у исполнителя диалогов",
+      "Читать реальную доступность NPC",
+      "Не менять пользовательские сохранения"
+    ]
+  },
+  "verification": {
+    "method": "Чтение локальных источников и редакторская сверка; игровые и автоматические тесты не запускались",
+    "runtime_integrated": false,
+    "school_ui_executed_by_this_agent": false,
+    "external_scenario_verified": false,
+    "remaining_dependencies": [
+      "Исправленная география",
+      "Сверка полного сценария Google Doc",
+      "UI-наблюдения текущего пользователя/исполнителя",
+      "Конкретный будущий контракт загрузки контента"
+    ],
+    "json_editorial_read": "JSON прочитан стандартным парсером; 14карточек,8событий. Это проверка файла дизайна, не запуск игры или игровых тестов."
+  },
+  "current_v2_reference_loop": {
+    "status": "Read-only comparison baseline, not a second implementation mode",
+    "route_runtime_ids": [
+      "student_home",
+      "global_map",
+      "riverside_cafe",
+      "global_map",
+      "city_park",
+      "student_home"
+    ],
+    "travel_legs_minutes": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "travel_total_minutes": 20,
+    "example_total_minutes": 35,
+    "note": "Этот расчёт описывает нынешние рёбра v2 до предлагаемой переработки"
+  }
+}

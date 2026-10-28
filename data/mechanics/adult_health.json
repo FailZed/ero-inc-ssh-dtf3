@@ -1,27 +1,17 @@
 {
-  "schema": 1,
+  "schema": 2,
+  "relationships": {
+    "memory_minutes": 10080,
+    "worry_gain": 1.5,
+    "worry_cap": 24,
+    "minimum_desire": 15,
+    "support_cooldown": 180
+  },
   "rules": {
     "history_limit": 128,
     "remark_cooldown": 480,
     "spontaneous_hourly_chance": 0.08,
-    "erection_urgent_minutes": 240,
-    "private_locations": [
-      "bathroom",
-      "clinic",
-      "global_map",
-      "university",
-      "university_hall",
-      "university_library",
-      "library",
-      "riverside_cafe",
-      "sports_center",
-      "residential_district"
-    ],
-    "supply_locations": [
-      "global_map",
-      "market",
-      "clinic"
-    ]
+    "erection_urgent_minutes": 240
   },
   "symptoms": {
     "period_cramps": {
@@ -241,6 +231,14 @@
     "emergency": {
       "minutes": 30,
       "cost": 0
+    },
+    "care_step": {
+      "minutes": 3,
+      "cost": 0
+    },
+    "care_review": {
+      "minutes": 20,
+      "cost": 15
     }
   },
   "lines": {
@@ -300,5 +298,13 @@
     "visible_growths": [
       "Заметил необычное изменение кожи. Хочу показать врачу, а не гадать о причине."
     ]
+  },
+  "care_plans": {
+    "interval_minutes": 1440,
+    "window_minutes": 720,
+    "misses_before_review": 2,
+    "review_delay_minutes": 1440,
+    "reminder_minutes": 1440,
+    "snooze_minutes": 120
   }
 }

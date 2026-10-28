@@ -25,7 +25,7 @@ func plan(npc: Dictionary) -> Dictionary:
 		if not sim.services.world.is_open(entry) or not Rules.check(context(npc), entry.get("requirements", {})): continue
 		var destination := str(entry.get("location", npc.home))
 		var spec := definition("locations", destination)
-		if spec.is_empty() or not sim.services.world.is_open(spec) or not Rules.check(context(npc), spec.get("requirements", {})): continue
+		if spec.is_empty() or not sim.services.world.actor_availability(destination,str(npc.id),int(sim.state.clock.total_minutes)).ok or not Rules.check(context(npc), spec.get("requirements", {})): continue
 		var activity := str(entry.get("activity", "idle"))
 		return {"activity": activity, "location": destination, "reason": "schedule", "committed": bool(entry.get("mandatory", activity in ["work", "study"]))}
 	return {"activity": "rest", "location": npc.home, "reason": "free_time", "committed": false}
@@ -34,7 +34,10 @@ func candidates(npc: Dictionary, previous: String = "") -> Array:
 	var result: Array = []
 	for id in npc.activities:
 		var activity := definition("npc_activities", str(id))
-		if activity.is_empty() or not npc.location in activity.get("locations", [npc.location]): continue
+		if activity.is_empty(): continue
+		if activity.get("home_activity",false):
+			if not sim.is_actor_home_location(str(npc.id),str(npc.location)): continue
+		elif not npc.location in activity.get("locations", [npc.location]): continue
 		if not str(npc.biography.role) in activity.get("roles", [npc.biography.role]): continue
 		if not sim.services.world.is_open(activity) or not Rules.check(context(npc), activity.get("requirements", {})): continue
 		var weight := maxf(0.0, float(activity.get("weight", 1)))

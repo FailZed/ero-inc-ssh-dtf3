@@ -19,7 +19,7 @@ static func catalog_error(catalog: Dictionary) -> String:
 		if not catalog.locations.has(job.location) or not catalog.skills.has(job.skill) or not job.kind in Challenges.KINDS+["shift"]: return "invalid_livelihood_job"
 		if not integer(job.minutes,15,480) or not V.number(job.energy,1,100) or not integer(job.pay,1,1000) or not integer(job.min_skill,0,10) or not V.number(job.risk,0,0.9): return "invalid_livelihood_job"
 		if job.hours.size() != 2 or not integer(job.hours[0],0,1439) or not integer(job.hours[1],1,1440) or int(job.hours[1])-int(job.hours[0]) < int(job.minutes): return "invalid_livelihood_hours"
-		var task_error := Challenges.catalog_error(job)
+		var task_error := Challenges.catalog_error(job,catalog)
 		if not task_error.is_empty(): return task_error
 	for order in rules.orders.values():
 		if not V.shape(order,{"title":"s","item":"s","quantity":"n","pay":"n"}) or not catalog.items.has(order.item) or not integer(order.quantity,1,10) or not integer(order.pay,1,1000): return "invalid_livelihood_order"
@@ -79,7 +79,7 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 		var rounds := int(assist.rounds)
 		if not integer(p.round,0,rounds-1) or not integer(p.correct,0,int(p.round)) or not integer(p.elapsed,0,int(assist.duration_ms)-1) or not integer(p.last,0,int(p.elapsed)): return "invalid_work_session_progress"
 		if p.preview and (int(p.round) != 0 or rules.jobs[p.id].kind != "memory"): return "invalid_work_session_progress"
-		var task_error := Challenges.state_error(p,rules.jobs[p.id])
+		var task_error := Challenges.state_error(p,rules.jobs[p.id],catalog,preload("res://scripts/mechanics/work_task_banks.gd").rank(state,catalog,str(p.id)))
 		if not task_error.is_empty(): return task_error
 	for entry in s.log:
 		if not V.shape(entry,{"kind":"s","id":"s","minute":"n","pay":"n"}) or not integer(entry.minute,0,int(state.clock.total_minutes)) or not integer(entry.pay): return "invalid_work_log"

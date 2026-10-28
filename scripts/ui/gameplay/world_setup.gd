@@ -6,6 +6,7 @@ const Population = preload("res://scripts/mechanics/population.gd")
 const Preferences = preload("res://scripts/mechanics/preferences.gd")
 const Portrait = preload("res://scripts/ui/gameplay/resident_preview.gd")
 const W = preload("res://scripts/ui/gameplay/game_widgets.gd")
+const Education = preload("res://scripts/mechanics/education_schedule.gd")
 var configuration: Dictionary = Setup.defaults()
 var page := 0
 var _body: VBoxContainer
@@ -20,6 +21,8 @@ var _morph_labels: Array[Label] = []
 var _count: SpinBox
 var _semi: SpinBox
 var _furry: SpinBox
+var _subject_checks: Dictionary = {}
+var _education_status: Label
 
 func _ready() -> void:
 	var seed_source := RandomNumberGenerator.new()
@@ -152,6 +155,7 @@ func _difficulty_page() -> void:
 		_body.add_child(content_toggle)
 	if configuration.get("mode","story") == "sandbox":
 		_number(_body, "Деньги на начало жизни", 100, 1000, configuration.get("sandbox",{}).get("start_cash",250), func(v): configuration.sandbox.start_cash = int(v))
+		_education_settings()
 	var choices := W.grid(_body,3)
 	for id in ["easy", "normal", "hard"]:
 		var card := W.panel(choices,18)
@@ -190,6 +194,47 @@ func _difficulty_page() -> void:
 		_body.add_child(toggle)
 	UI.label(_body, "Внешность и имя героя вы выберете дома, перед зеркалом.", 19, UI.BLUE)
 
+func _education_settings() -> void:
+	UI.label(_body,"Учёба и свободное время",26,UI.BLUE)
+	var plan: Dictionary = configuration.sandbox.education
+	var enrolled := CheckBox.new()
+	enrolled.text = "Я учусь в университете"
+	enrolled.button_pressed = plan.enrolled
+	enrolled.set_meta("education_enrolled",true)
+	enrolled.toggled.connect(func(value):
+		configuration.sandbox.education = Education.defaults() if value else {"enrolled":false,"subjects":[]}
+		_show_page())
+	_body.add_child(enrolled)
+	_subject_checks.clear()
+	if not plan.enrolled:
+		UI.label(_body,"Свободная жизнь без обязательных занятий, пропусков и отчисления. Развивать навыки и пользоваться городом можно в обычном порядке.",19,UI.MUTED)
+		return
+	UI.label(_body,"Выберите 2–4 предмета. Понедельник: общий день группы, 10:00–11:00. Учёбу придётся совмещать с работой; дорога тоже занимает время.",19,UI.MUTED)
+	var grid := W.grid(_body,2)
+	for id in Education.SUBJECTS:
+		var spec: Dictionary = Education.SUBJECTS[id]
+		var card := W.panel(grid,14)
+		var subject := CheckBox.new()
+		subject.text = str(spec.title)
+		subject.button_pressed = id in plan.subjects
+		subject.set_meta("education_subject",id)
+		subject.toggled.connect(func(value):
+			if value and not id in plan.subjects: plan.subjects.append(id)
+			elif not value: plan.subjects.erase(id)
+			_refresh_education()
+			_refresh())
+		card.add_child(subject)
+		_subject_checks[id] = subject
+		UI.label(card,"%s · %02d:00–%02d:00" % ["Вт, чт" if spec.days == [2,4] else "Ср, пт",int(spec.hours[0])/60,int(spec.hours[1])/60],17,UI.MUTED)
+	_education_status = UI.label(_body,"",19,UI.BLUE)
+	_refresh_education()
+	UI.label(_body,"Допуск с опозданием — до 15 минут включительно. Занятие закончится по расписанию; опыт и учебный результат будут ниже. Позже допуск закрыт, пропуск фиксируется в конце занятия.",18,UI.MUTED)
+
+func _refresh_education() -> void:
+	var selected: Array = configuration.sandbox.education.subjects
+	_education_status.text = "Выбрано %d / 4 · нужно минимум 2" % selected.size()
+	for id in _subject_checks: _subject_checks[id].disabled = selected.size() >= 4 and not id in selected
+
 func _refresh() -> void:
 	var pop: Dictionary = configuration.population
 	var counts := Population.morphology_counts(pop)
@@ -203,6 +248,9 @@ func _refresh() -> void:
 	_summary.text = "%d жителей\n%d людей · %d полуфурри · %d фурри\n\n%d начальных очков" % [int(pop.count), counts.human, counts.semi_furry, counts.furry, Setup.point_budget(configuration)]
 	var valid := Population.valid(pop) and Preferences.validate_values(configuration.custom)
 	_status.text = "" if valid else "Проверьте диапазоны возраста и характеристик."
+	if page == 1 and not Education.valid_plan(configuration.sandbox.education):
+		valid = false
+		_status.text = "Для студента выберите от 2 до 4 разных предметов."
 	_next.disabled = not valid
 
 func _go_back() -> void:

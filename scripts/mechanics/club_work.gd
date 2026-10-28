@@ -2,8 +2,8 @@ extends "res://scripts/mechanics/core/module.gd"
 ## Reserved travel/work sessions. Production and pay follow actual attendance.
 const Check = preload("res://scripts/mechanics/core/validation.gd")
 
-static func defaults() -> Dictionary:
-	return {"location":"training_center","hour":18,"weekdays":[1,2,3,4,5],"sessions":{},"minutes":{},"day":-1,"history":[]}
+static func defaults(location: String) -> Dictionary:
+	return {"location":location,"hour":18,"weekdays":[1,2,3,4,5],"sessions":{},"minutes":{},"day":-1,"history":[]}
 
 func _log(group: Dictionary, npc: String, worked: int, paid: int, reason: String) -> void:
 	group.work.history.append({"npc":npc,"minute":sim.state.clock.total_minutes,"worked":worked,"paid":paid,"reason":reason})
@@ -21,7 +21,7 @@ func _route(npc: Dictionary, destination: String) -> Dictionary:
 			var edge: Dictionary = definition("locations",str(current.id)).routes[id]
 			var duration := int(current.minutes)+int(edge.get("minutes",0))
 			var cost := int(current.cost)+int(edge.get("cost",0))
-			if cost > int(npc.money) or not _open_at(str(id),int(sim.state.clock.total_minutes)+duration): continue
+			if cost > int(npc.money) or not _open_at(str(id),int(sim.state.clock.total_minutes)+duration,str(npc.id)): continue
 			context.clock = sim.calendar.snapshot(int(sim.state.clock.total_minutes)+duration)
 			if not Rules.check(context,edge.get("requirements",{})) or not Rules.check(context,definition("locations",str(id)).get("requirements",{})): continue
 			if not labels.has(id): labels[id] = []
@@ -38,13 +38,16 @@ func _weekday(days: Array, day: int) -> bool:
 		if int(value) == day: return true
 	return false
 
-func _open_at(location: String, minute: int) -> bool:
-	var spec := definition("locations",location)
-	var clock: Dictionary = sim.calendar.snapshot(minute)
-	var hours: Array = spec.get("hours",[0,0])
-	return _weekday(spec.get("weekdays",[1,2,3,4,5,6,7]),int(clock.weekday)) and Rules.in_window(int(clock.minute_of_day),int(hours[0]),int(hours[1]))
+func _open_at(location: String, minute: int, actor_id: String) -> bool:
+	return sim.services.world.actor_availability(location,actor_id,minute).ok
+
+func _care_reserved(npc: Dictionary) -> bool:
+	var id := str(npc.id)
+	if sim.services.has("npc_planner") and not sim.services.npc_planner.active_owner(id).is_empty(): return true
+	return sim.services.has("adult_health") and sim.services.adult_health.enabled() and sim.services.adult_health.view(id).get("urgent",false)
 
 func _free(npc: Dictionary, now: int, end: int) -> bool:
+	if _care_reserved(npc): return false
 	if npc.health <= 30 or float(npc.needs.energy) < 30 or float(npc.needs.satiety) < 30: return false
 	if int(npc.pinned_until) > now or npc.activity in ["sleep","recover","eat","family_care"]: return false
 	var context: Dictionary = sim.services.npc_behavior.context(npc)
@@ -81,6 +84,9 @@ func tick_group(id: String, group: Dictionary, minute: int) -> void:
 	for npc_id in participants:
 		var npc: Dictionary = sim.state.social.npcs[npc_id]
 		var session: Dictionary = work.sessions[npc_id]
+		if _care_reserved(npc):
+			cancel(group,str(npc_id),"care_priority")
+			continue
 		if not group.members.has(npc_id) or group.members[npc_id].task != session.task or int(npc.pinned_until) != int(session.ends)+1 or float(npc.health) <= 30 or minf(float(npc.needs.energy),float(npc.needs.satiety)) < 15:
 			cancel(group,str(npc_id),"interrupted")
 			continue
@@ -89,7 +95,7 @@ func tick_group(id: String, group: Dictionary, minute: int) -> void:
 				cancel(group,str(npc_id),"travel_interrupted")
 				continue
 			if minute < int(session.arrival): continue
-			if not sim.services.world.is_open(definition("locations",str(work.location))):
+			if not _open_at(str(work.location),minute,str(npc_id)):
 				cancel(group,str(npc_id),"location_closed")
 				continue
 			npc.location = str(work.location)
@@ -118,7 +124,8 @@ func tick_group(id: String, group: Dictionary, minute: int) -> void:
 		if route.is_empty(): continue
 		var arrival := minute+int(route.minutes)
 		var ending := arrival+60
-		if not _open_at(str(work.location),arrival) or not _open_at(str(work.location),ending-1): continue
+		if not _open_at(str(work.location),arrival,str(npc_id)) or not _open_at(str(work.location),ending-1,str(npc_id)): continue
+		if not preload("res://scripts/mechanics/core/service_window.gd").is_open(sim,definition("locations",str(work.location)),arrival,ending): continue
 		if int(sim.calendar.snapshot(ending).minute_of_day) > (int(work.hour)+2)*60 or not _free(npc,minute,ending): continue
 		var wage := int(group.policies.wage)
 		if int(group.budget) < wage:

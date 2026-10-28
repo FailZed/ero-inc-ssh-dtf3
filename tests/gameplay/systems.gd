@@ -142,6 +142,7 @@ func _combat_and_games() -> void:
 	sim.command("combat", "action", {"action":"attack", "move":"jab"})
 	t.check(sim.state.player.needs.energy < 36.0 and sim.state.encounters.combat.stamina.player == sim.state.player.needs.energy, "a combat attack changes the same resource the HUD displays")
 	sim.command("combat", "action", {"action":"end_turn"})
+	while sim.state.encounters.combat.phase == "defence": sim.command("combat","action",{"action":"guard"})
 	t.check(int(sim.state.clock.total_minutes) == minute + 1 and npc.location == sim.state.world.location, "completed combat rounds consume world time while the opponent remains in the encounter")
 	var replay = _new()
 	t.check(replay.restore_snapshot(sim.export_snapshot()).ok and replay.state.encounters.combat.stamina.player == replay.state.player.needs.energy, "mid-combat stamina and encounter state survive loading together")
@@ -159,7 +160,7 @@ func _combat_and_games() -> void:
 	sim.state.player.stats.agility = 100
 	for i in range(20):
 		if sim.state.encounters.combat.status != "active": break
-		sim.command("combat", "action", {"action":"escape"})
+		sim.command("combat", "action", {"action":"guard" if sim.state.encounters.combat.phase == "defence" else "escape"})
 	t.check(sim.state.encounters.combat.status != "active" and npc.pinned_until == 0, "ending a fight releases the NPC to their own schedule")
 	sim = _new()
 	sim.state.player.needs.fun = 20.0

@@ -355,6 +355,12 @@
 			"saved": true
 		},
 		{
+			"id": "work-schedule-conflict",
+			"main_window_inside_viewport": true,
+			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/work-schedule-conflict.png",
+			"saved": true
+		},
+		{
 			"id": "personal-story",
 			"main_window_inside_viewport": true,
 			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/personal-story.png",
@@ -566,28 +572,41 @@
 		},
 		{
 			"id": "story-dialogue",
-			"main_window_inside_viewport": true,
+			"main_window_inside_viewport": false,
 			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/story-dialogue.png",
 			"saved": true
 		},
 		{
 			"id": "story-choices",
-			"main_window_inside_viewport": true,
+			"main_window_inside_viewport": false,
 			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/story-choices.png",
 			"saved": true
 		},
 		{
 			"id": "story-history",
-			"main_window_inside_viewport": true,
+			"main_window_inside_viewport": false,
 			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/story-history.png",
 			"saved": true
 		},
 		{
+			"id": "story-text-125",
+			"main_window_inside_viewport": false,
+			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/story-text-125.png",
+			"saved": true
+		},
+		{
 			"id": "story-text-input",
-			"main_window_inside_viewport": true,
+			"main_window_inside_viewport": false,
 			"path": "E:/GoDot/ero-inc/docs/ui/captures/windows-v2-1920/story-text-input.png",
 			"saved": true
 		}
+	],
+	"failures": [
+		"UI capture failed bounds/save: story-dialogue",
+		"UI capture failed bounds/save: story-choices",
+		"UI capture failed bounds/save: story-history",
+		"UI capture failed bounds/save: story-text-125",
+		"UI capture failed bounds/save: story-text-input"
 	],
 	"source": "Godot runtime; disposable test world, not a user playthrough",
 	"viewport": "(1920.0, 1080.0)"
