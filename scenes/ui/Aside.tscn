@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c5trandlt3ey7"]
 
 [ext_resource type="Script" uid="uid://mtrepodlqqcn" path="res://scripts/ui/aside_menu.gd" id="1_aside_menu"]
+[ext_resource type="Texture2D" path="res://assets/icons/menu/new_game.svg" id="2_new_game"]
 [ext_resource type="Texture2D" uid="uid://ck2oxcqpousoy" path="res://assets/icons/menu/continue.svg" id="3_continue"]
 [ext_resource type="Texture2D" uid="uid://d2lhbm7bct5b5" path="res://assets/icons/menu/load.svg" id="4_load"]
 [ext_resource type="Texture2D" uid="uid://csmnrhxvyb01t" path="res://assets/icons/menu/save.svg" id="5_save"]
@@ -43,9 +44,6 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.21, 0.62, 0.95, 0.9)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l4gg2"]
-load_path = "res://.godot/imported/new_game.svg-23368bfc177e2061a2ed2c6685d2f64f.ctex"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_button_normal"]
 content_margin_left = 15.0
@@ -164,7 +162,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_button_pressed")
 theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
 theme_override_styles/focus = SubResource("StyleBoxFlat_button_active")
 text = "NEW GAME"
-icon = SubResource("CompressedTexture2D_l4gg2")
+icon = ExtResource("2_new_game")
 alignment = 0
 
 [node name="MarkerDots" type="Label" parent="VBoxContainer/MenuButtons/NewGameButton" unique_id=1951951872]

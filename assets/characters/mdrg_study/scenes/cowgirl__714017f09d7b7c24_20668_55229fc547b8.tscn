@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://assets/characters/mdrg_study/runtime/live2d_actor.gd" id="1"]
+
+[node name="ImportedLive2D" type="Node2D"]
+script = ExtResource("1")
+catalog_path = "res://assets/characters/mdrg_study/catalog.json"
+model_id = "cowgirl__714017f09d7b7c24_20668_55229fc547b8"

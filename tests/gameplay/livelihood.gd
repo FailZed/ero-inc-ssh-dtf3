@@ -182,7 +182,7 @@ func _test_ui() -> void:
 	var window = load("res://scripts/ui/gameplay/livelihood_window.gd").new()
 	root.add_child(window)
 	await process_frame
-	check(window._body.find_children("*","Button",true,false).filter(func(node): return node.has_meta("job_id")).size() == 33,"work UI renders all current jobs")
+	check(window._body.find_children("*","Button",true,false).filter(func(node): return node.has_meta("job_id")).size() == 35,"work UI renders all current jobs")
 	for page in ["orders","goals","home"]:
 		window.page = page
 		window._refresh()

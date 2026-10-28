@@ -1,0 +1,30 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 45348814848
+  },
+  "m_Name": "",
+  "itemId": 15923,
+  "indentLevel": 0,
+  "description": "",
+  "targetObject": {
+    "m_FileID": 0,
+    "m_PathID": 119
+  },
+  "targetComponentAssemblyName": "FungusEnumerators, GameAssembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "targetComponentFullname": "UnityEngine.Component[]",
+  "targetComponentText": "FungusEnumerators",
+  "targetMethod": "PayRent",
+  "targetMethodText": "PayRent(): Void",
+  "methodParameters": [],
+  "saveReturnValue": 0,
+  "returnValueVariableKey": "",
+  "returnValueType": "System.Void",
+  "showInherited": 0,
+  "callMode": 0
+}

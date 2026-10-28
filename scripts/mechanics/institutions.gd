@@ -1,4 +1,10 @@
 extends "res://scripts/mechanics/core/module.gd"
+const ClubWork = preload("res://scripts/mechanics/club_work.gd")
+var attendance
+
+func _init(simulation) -> void:
+	super(simulation)
+	attendance = ClubWork.new(simulation)
 
 func initialize_group(group: Dictionary) -> void:
 	group.policies = {"focus": "balanced", "wage": 0}
@@ -7,11 +13,25 @@ func initialize_group(group: Dictionary) -> void:
 	group.equipment = []
 	group.campaigns = {}
 	group.election = {}
+	group.work = ClubWork.defaults()
 
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	var id := str(args.get("id", ""))
 	if not sim.state.organizations.has(id): return Rules.fail("unknown_organization")
 	var group: Dictionary = sim.state.organizations[id]
+	if operation == "inspect": return Rules.ok(group.work.duplicate(true))
+	if operation == "schedule":
+		var hour: Variant = args.get("hour",18)
+		var days: Variant = args.get("weekdays",[1,2,3,4,5])
+		var location := str(args.get("location",group.work.location))
+		if not (hour is int or hour is float) or int(hour) != hour or hour < 6 or hour > 20 or not days is Array or days.is_empty() or not sim.catalog.locations.has(location): return Rules.fail("invalid_club_schedule")
+		for day in days:
+			if not (day is int or day is float) or int(day) != day or day < 1 or day > 7: return Rules.fail("invalid_club_schedule")
+		for npc in group.work.sessions.keys(): attendance.cancel(group,str(npc),"rescheduled")
+		group.work.hour = hour
+		group.work.weekdays = days.duplicate()
+		group.work.location = location
+		return Rules.ok(group.work.duplicate(true))
 	match operation:
 		"policy":
 			var focus := str(args.get("focus", "balanced"))
@@ -74,6 +94,9 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	return Rules.ok()
 
 func roster_changed(id: String) -> void:
+	var group: Dictionary = sim.state.organizations[id]
+	for npc in group.work.sessions.keys():
+		if not group.members.has(npc): attendance.cancel(group,str(npc),"membership_changed")
 	var election: Dictionary = sim.state.organizations[id].election
 	if not election.is_empty() and election.status == "active":
 		election.status = "cancelled"
@@ -88,30 +111,8 @@ func productivity(group: Dictionary, npc_id: String) -> float:
 	return result
 
 func tick(minute: int) -> void:
-	if minute % 1440 != 0: return
 	for id in sim.state.organizations:
 		var group: Dictionary = sim.state.organizations[id]
-		var wages: int = int(group.policies.wage) * group.members.size()
-		if group.budget >= wages:
-			group.budget -= wages
-			for npc in group.members: sim.state.social.npcs[npc].money += int(group.policies.wage)
-			group.morale = minf(100.0, float(group.morale) + 1.0)
-		else:
-			group.morale = maxf(0.0, float(group.morale) - 15.0)
-			emit_event("club_wages_unpaid", {"id": id, "required": wages})
-		group.authority = clampf(float(group.authority) + (float(group.cleanliness) - 50.0) * 0.01, 0.0, 100.0)
-		for campaign_id in group.campaigns:
-			var progress: Dictionary = group.campaigns[campaign_id]
-			if progress.status != "active": continue
-			var campaign := definition("campaigns", campaign_id)
-			var stages: Array = campaign.get("stages", [])
-			var effort := 0.0
-			for npc in group.members:
-				if group.members[npc].task != "idle": effort += productivity(group, str(npc))
-			if group.policies.focus == campaign.get("focus", "festival"): effort *= 1.25
-			progress.progress += effort
-			while int(progress.stage) < stages.size() and float(progress.progress) >= float(stages[int(progress.stage)].effort):
-				progress.progress -= float(stages[int(progress.stage)].effort)
-				progress.stage += 1
-				emit_event("club_campaign_stage", {"id": id, "campaign": campaign_id, "stage": progress.stage})
-			if int(progress.stage) >= stages.size(): progress.status = "completed"
+		attendance.tick_group(str(id),group,minute)
+		if minute % 1440 != 0: continue
+		group.authority = clampf(float(group.authority)+(float(group.cleanliness)-50.0)*0.01,0,100)

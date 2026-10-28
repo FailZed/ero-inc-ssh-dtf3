@@ -1,0 +1,2142 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_da",
+  "m_LocaleId": {
+    "m_Code": "da"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 8363390524344257444
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Prøv at sige hendes navn",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655817
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Tal med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655818
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Prøv at ringe til hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655819
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Prøv at tale med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655820
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Sig hej",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655821
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Jeg føler en underlig trang til at tale med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655822
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Lad os tale med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655823
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Hvor gemmer jeg hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655824
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Lad os se på botten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655825
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "Prøv at kommunikere",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655826
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "Hvad med min husleje?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655827
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Jeg er bekymret...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655828
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "Hvad var det?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655829
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Hvor meget er hun værd?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655830
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Mit sexliv",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655831
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Tal med botten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655832
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Tal med botten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655833
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Tal med botten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655834
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Spørg hende om mit værelse",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655835
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Jeg spekulerer på, hvad hun synes om mig...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655836
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Måske kan hun matematik?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655837
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Spørg hende, hvordan man tjener hurtige penge",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655838
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Spørg hende om vejret",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655839
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Spørg hende, hvad hun synes om størrelsen på min...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655840
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "Hvad med det der med kaffe",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655841
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655842
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Hun gør mig sur...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655843
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Hun er irriterende...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655844
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Lad os prøve at tale med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655845
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Tag en lille snak",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655846
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Tal med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655847
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Bed hende om at tale med dig",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655848
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Bed hende om at tale blidt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655849
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "jeg keder mig...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655850
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Lad os bruge lidt tid sammen med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655851
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Lad os chatte!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655852
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Stil bot nogle eksistentielle spørgsmål",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655853
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Spørg hende om noget uvæsentligt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655854
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Spørg hende om politik",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Spørg hende om kilden til al lidelse",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655856
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Jeg er i humør til at spille nogle spil",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655857
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Lad os spille med kort",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655858
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "Det er tid til ordkæde!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Det er lidt sent, men jeg vil gerne tale med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655860
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": " Jeg tror, ​​bot vil tale...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655861
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Fortæl hende, at du elsker hende!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Flirt med bot <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Jeg burde være pænere mod hende...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Spørg om hendes følelser",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Har en sexbot nogen interesser?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Bliver en sexbot nogensinde sulten?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Jeg vil røre ved hende...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Har jeg glemt noget?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "Om bots intelligensniveau...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Kan en bot spille skak?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Skal jeg prøve et andet spil?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655872
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Jeg tror, ​​jeg ved, i hvilket spil jeg kan slå hende...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Bot virker mærkeligt...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655874
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Jeg spekulerer på, hvordan hun har det med mig...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655875
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Bot ser ud til at tænke dybt...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Jeg tror, ​​hun vil have noget af mig",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655877
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Nu hvor hun har begge ben...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655878
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": " Jeg burde spørge bot om risikoen ved at gå udenfor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655879
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Jeg er nødt til at spørge om muligheden for, at hun går udenfor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655881
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "Om sexbots",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655882
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Måske kan hun alligevel tale?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655883
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Lad os tale igen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655884
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Noget føles dårligt...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655885
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Hvad er hendes mening om kæledyr?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655886
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Jeg burde invitere hende på en date",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655887
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Jeg vil se en film med hende",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655888
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Hvad er det for en mærkelig lugt?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655889
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Spørg om Halloween-dekorationerne",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655890
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "Hvad med det søde edderkopplys?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655891
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Jeg burde spørge hende, om Shanice kan komme over",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655892
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "Hvad med karaoke?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655893
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655894
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Spørg hende, hvad hun skal gøre ved kassereren",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655895
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Prøv at tale med hende igen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655896
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Spørg om Melissa og hendes \"manglende\" dele",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655897
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Diskuter hobos holdning til bots",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655898
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Spørg hende, hvordan hun har det efter reparationerne",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655899
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Se nyheder med {f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257444
+          },
+          {
+            "rid": 7996671569124655900
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Hvilken superkraft vil du have?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655901
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "En anden gyserhistorie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655902
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Hvad gør du, når jeg er ude?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655903
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Hvis du kunne få et job, hvad ville det så være?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "Vil du blive til et menneske?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655905
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Hævn på udlejeren",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655906
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Spørg hende, hvordan hun skal håndtere den problematiske nabo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655907
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Hvad tror du, der sker efter døden?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655908
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Har du en plan i tilfælde af en zombieapokalypse?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655909
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Lad os prøve et rollespil",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Skal Annalie nogensinde finde en kæreste?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655911
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569124655817,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655818,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655819,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655820,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655821,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655822,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655823,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655824,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655825,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655826,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655827,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655828,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655829,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655830,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655831,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655832,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655833,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655834,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655835,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655836,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655837,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655838,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655839,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655840,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655841,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655842,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655843,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655844,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655845,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655846,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655847,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655848,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655849,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655850,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655851,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655852,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655853,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655854,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655855,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655856,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655857,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655858,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655859,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655860,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655861,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655862,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655863,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655864,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655865,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655866,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655867,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655868,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655869,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655870,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655871,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655872,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655873,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655874,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655875,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655876,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655877,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655878,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655879,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655880,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655881,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655882,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655883,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655884,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655885,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655886,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655887,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655888,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655889,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655890,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655891,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655892,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655893,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655894,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655895,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655896,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655897,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655898,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655899,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655900,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655901,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655902,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655903,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655904,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655905,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655906,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655907,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655908,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655909,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655910,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655911,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 8363390524344257444,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13195,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.ArmBoth.DownNormal\r\nYou: Do you want to go to Annalie?\r\n#bot.Expression.Clear\r\nBot: Sure, last time we visited her was before riots, right?\r\nYou: Yes.\r\n#bot.Expression.Sad\r\nYou: I went to help Annalie with her shop, but it might still not be open so don’t get your hopes up.\r\nBot: Alright.\r\n#bot.Expression.angry\r\nBot: If only I was there to eliminate these threats to Annalie’s property.\r\n#bot.Expression.Clear\r\nYou: Please, don’t ever go eliminating threats. Especially on your own. Ok?\r\n#bot.Expression.Sad\r\nBot: Alright…\r",
+    "localizedLines": [
+      {
+        "KeyId": 198908617217150976
+      },
+      {
+        "KeyId": 198908617225539584
+      },
+      {
+        "KeyId": 198908617225539585
+      },
+      {
+        "KeyId": 198908617225539586
+      },
+      {
+        "KeyId": 198908617225539587
+      },
+      {
+        "KeyId": 198908617225539588
+      },
+      {
+        "KeyId": 198908617225539589
+      },
+      {
+        "KeyId": 198908617225539590
+      }
+    ]
+  }
+}

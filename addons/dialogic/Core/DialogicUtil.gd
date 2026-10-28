@@ -91,7 +91,7 @@ static func _update_autoload_subsystem_access() -> void:
 	)
 
 	for subsystem: Dictionary in subsystems_sorted:
-		new_subsystem_access_list += '\nvar {name} := preload("{script}").new():\n\tget: return get_subsystem("{name}")\n'.format(subsystem)
+		new_subsystem_access_list += '\nconst {name}Subsystem = preload("{script}")\nvar {name}: {name}Subsystem:\n\tget: return get_subsystem("{name}")\n'.format(subsystem)
 
 	new_subsystem_access_list += "\n#endregion"
 	script.source_code = RegEx.create_from_string(r"#region SUBSYSTEMS\n#*\n((?!#endregion)(.*\n))*#endregion").sub(script.source_code, new_subsystem_access_list)

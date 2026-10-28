@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 5804.30908203125,
+    "y": 7881.07275390625,
+    "width": 184.07000732421875,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 5717,
+  "blockName": "Outside/Clothier/event1",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 4872
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2992
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4866
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

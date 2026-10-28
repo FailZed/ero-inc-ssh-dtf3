@@ -90,7 +90,7 @@ func _on_time_reset(_snapshot: Dictionary) -> void:
 		var restored: Dictionary = simulation.restore_snapshot(saved)
 		if not restored.ok:
 			restore_error = str(restored.error)
-			notification.emit("Не удалось восстановить состояние мира. Загрузите совместимое сохранение.")
+			notification.emit(Presentation.error(restore_error))
 			phase = "story"
 			phase_changed.emit(phase)
 			return

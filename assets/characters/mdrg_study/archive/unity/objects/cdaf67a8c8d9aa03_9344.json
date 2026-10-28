@@ -1,0 +1,82 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14962,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "You: It went faster than I expected. \r\nBot: Even small stalls like this one can be heavily automated these days.\r\nYou: Isn’t it expensive to buy and operate all this machinery?\r\nBot: It is, but in places like this, with high demand and high prices, it’s more profitable.\r\nBot: Just like you weren’t thrilled about waiting for an hour in a queue, other potential clients are the same. Long service time will result in a low rating.\r\nYou: It’s kinda sad to hear. I remember going to some rural festivals when I was younger and all the food there was handmade.\r\nBot: I’m sure there are still places like that. Automatization of these food stalls like this isn’t cheap, after all.\r\nBot: It’s our turn. What flavor will you order? \r\nYou: Something basic. Strawberry and chocolate, I think.\r\n#bot.Expression.Happy\r\nBot: I will get the same, we will match! \r\nYou: You could do that, but how about you take something different? That way we could share with each other, right?\r\nBot: That’s a good idea! Each of us could have a taste of two different crepes! It was unexpected of you to come up with something like that.\r\n#bot.Expression.veryHappy\r\nYou: Hey! I also have some good ideas from time to time!\r\nBot: You sure do <i>giggles</i>.\r\nThat’s just plain rude…\r\n#bot.Expression.clear\r\n#bot.Expression.Happy\r\nYou: Anyway, what will you get?\r\nBot: Mushroom and blue cheese crepe.\r\nYou: W-What?\r\nBot: It’s a savory crepe. You ordered a sweet one so I chose this. \r\nYou: That’s pretty unorthodox. I’m surprised that it’s possible to order something like that in an amusement park.\r\nBot: I’m sure you’re gonna like it.",
+    "localizedLines": [
+      {
+        "KeyId": 323195602629287936
+      },
+      {
+        "KeyId": 323195602629287937
+      },
+      {
+        "KeyId": 323195602629287938
+      },
+      {
+        "KeyId": 323195602629287939
+      },
+      {
+        "KeyId": 323195602629287940
+      },
+      {
+        "KeyId": 323195602629287941
+      },
+      {
+        "KeyId": 323195602629287942
+      },
+      {
+        "KeyId": 323195602629287943
+      },
+      {
+        "KeyId": 323195602629287944
+      },
+      {
+        "KeyId": 323195602629287945
+      },
+      {
+        "KeyId": 323195602629287946
+      },
+      {
+        "KeyId": 323195602629287947
+      },
+      {
+        "KeyId": 323195602629287948
+      },
+      {
+        "KeyId": 323195602629287949
+      },
+      {
+        "KeyId": 323195602629287950
+      },
+      {
+        "KeyId": 323195602629287951
+      },
+      {
+        "KeyId": 323195602629287952
+      },
+      {
+        "KeyId": 323195602629287953
+      },
+      {
+        "KeyId": 323195602629287954
+      },
+      {
+        "KeyId": 323195602629287955
+      },
+      {
+        "KeyId": 323195602629287956
+      }
+    ]
+  }
+}

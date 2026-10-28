@@ -1,0 +1,47 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": -1323.2281494140625,
+    "y": 2527.6171875,
+    "width": 189.00999450683594,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 15886,
+  "blockName": "RE/Rent/SecondDayLate",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 10189
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10188
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10187
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10185
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

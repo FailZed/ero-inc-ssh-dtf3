@@ -1,0 +1,223 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 8787,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Sexy nun: I’m here! I’m here! I was just laying on a bench a few rows further. \r\nYou: Laying? Why?\r\nSexy nun: Even servants of God must sometimes rest, right? Nothing weird about that!\r\n...Her explanation is kinda off, but whatever. More important thing is WHY THE HELL IS SHE DRESSED LIKE THAT! \r\nYou: Um…{{wi}} Sister?\r\nSexy nun: Yes, my brother?{{wi}} Uhm I meant child! Child! What’s your question?\r\n…She is really young and seems like an airhead. Maybe that’s why she’s being like that.\r\nYou: It’s about your ‘uniform’. Is this a new standard right now? \r\n#Nun.Face.nunFaceHappy\r\nSexy nun: Hehe. That’s a good question!\r\n#Nun.Face.nunFaceNormal\r\nSexy nun: No it’s not a normal nun ‘habit’, {{wi}}that’s how you call it by the way{{wi}}, but it’s alright! \r\n#Nun.Face.nunFaceHappy\r\nSexy nun: I’m a Super Nun so it’s alright!\r\n…{{wi}} Really? Super nun?\r\n#Nun.Face.nunFaceNormal\r\nSexy nun: Oh come on! Don’t be such a party pooper! It was just a joke!\r\nSexy nun: Huh? I think I forgot about something important…\r\n#Nun.Face.nunFaceThinking\r\nYou: Is…{{wi}} everything alright? \r\nSexy nun: Gimme a second… Not many visitors come here, you see. I was supposed to do something if any guests arrive. \r\nLet’s give her a second. \r\nSexy nun: Oi, you came through the front door, right?\r\nYou: Yeah… Is there a problem?\r\nSexy nun: You pushed the door all the way to the side?\r\nYou: I-I think so. Is there a problem?\r\nSexy nun: Well, someone annoying may arrive soon. I will go to the door really quick, alright?\r\n#Nun.animate(TransparencyTo0,1)\r\n#Nun.Face.nunFaceNormal(instant)\r\nWhat’s going on here? Calling her weird is an understatement. The most outrageous thing is that she is out here in this outfit although it’s freezing cold!\r\nLet’s just observe her for a second. She went to the front door and now is doing something near them. \r\nShe is... {{wi}} placing a plank near the door? Why? \r\nSexy nun: Okey dokey! We are safe! \r\n#Nun.animate(TransparencyTo1,1)\r\nYou: What exactly was that all about?\r\nSexy nun: You see that plank I have put there? There is a motion sensor that is triggered when someone opens the door. When it’s triggered, an annoying Priestcan will come. You gotta be careful though! If we are too loud he will hear us!\r\nYou: Priestcan? \r\nSexy nun: That’s how I call him. It’s real name is Eklasie… Ecclisi… Arghhh! I can never get pronunciation right!\r\nSexy nun:  Ecclesiasticalot FF! Uff, I finally got it right. {{wi}} This ‘eccle’i part means ‘church related’  and ‘ot’ stands for bot. Basically it’s a robo-priest, but we aren’t exactly on good terms so sometimes I just hang around here alone.\r\nYou: Wait, there is no real priest in this parish? \r\nSexy nun: Of course not! In this neighbourhood there are Czech Republic levels of atheism and the rest of the people are muslim! {{wi}}Oh! That reminds me. Are you new here? Never seen you before.\r\nYou: Well… {{wi}}I’m not exactly new. I've been living here for a few years. \r\nSexy nun: How come you never came before? \r\n…{{wi}} I just admitted that I wasn’t coming to church much. What should I tell her now?\r\nYou: Crisis of faith or something like that haha… {{wi}}ha…\r\n…\r\nSexy nun: …\r\nYou: …\r\n#Nun.Face.nunFaceHappy\r\nSexy nun: No! No! No! No! I wasn’t asking about faith stuff! I meant that I live here and I never saw you around, that’s all! \r\nSexy nun: You made it pretty awkward for a second there lol.\r\n#Nun.Face.nunFaceNormal\r\n... \r\nWell, that was embarrassing.\r\nYou: I just thought that a nun would want to talk about ‘faith stuff’.\r\nSexy nun: This is one of the biggest misconceptions about the Church these days, y’know? The Church got more liberal and now we can talk about and do everything!\r\nYou: Is this really true? My family was religious and it's pretty hard for me to believe that things changed so much. \r\n#Nun.Face.nunFaceAngry\r\nSexy nun: Wha?! You don’t believe me?! Y-ou even questioned my habit earlier. A-are you suspicious of me? I-I'm a totally legit nun, y’know?\r\nYou: You got awfully nervous… {{wi}}And as far as I remember I never doubted that you are a nun.\r\nYou: Pretty suspicious, if you ask me.\r\n#Nun.animate(Shake,0.1)\r\nSexy nun: Mhmhmhmhmhmhmhmhm! \r\n#Nun.Face.nunFaceThinking\r\nSexy nun: Eh… You are no fun man… \r\nSexy nun: I’m not a real nun…\r\n#Nun.Face.nunFaceNormal\r\nSexy nun: For now! I'm really thinking about this stuff and all. There are few things in this religion that are kinda weird and some of the old books are making me go ‘huuuuh?’, but most of the principles are kinda neat. \r\nWow…\r\nSexy nun: But the best thing about this faith is the aesthetics! \r\nHuh?\r\nSexy nun: I’m not talking mainly about cute outfits like this one on me. Architecture, interior design and art. It’s all so freaking awesome! Technology is also a big part of it.\r\nYou: Alright. But what about Jesus Christ?\r\n\n#Nun.Face.nunFaceHappy\r\nSexy nun: This guy is alright too! \r\n#Nun.Face.nunFaceNormal\r\n‘This guy’ she says…\r\nYou: It kinda seems like you like culture, which is alright, but faith is on a sidetrack. \r\n#Nun.Face.nunFaceThinking\r\nSexy nun: Says someone with a ‘crisis of faith’...\r\nYou: Wha?!\r\nSexy nun: It’s funny because the vending machine priest said something similar…\r\nSexy nun: Maybe I’m really not suitable to be a nun…\r\nOh great… I made her sad. \r\nIt’s not fair! She was the one lying to me about being a nun, but now I’m the one destroying her dreams?! {{wi}}Stop making me feel guilty!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538824507953157
+      },
+      {
+        "KeyId": 191538824512147456
+      },
+      {
+        "KeyId": 191538824512147457
+      },
+      {
+        "KeyId": 191538824512147458
+      },
+      {
+        "KeyId": 191538824512147459
+      },
+      {
+        "KeyId": 191538824512147460
+      },
+      {
+        "KeyId": 191538824512147461
+      },
+      {
+        "KeyId": 191538824512147462
+      },
+      {
+        "KeyId": 191538824512147463
+      },
+      {
+        "KeyId": 191538824512147464
+      },
+      {
+        "KeyId": 191538824512147465
+      },
+      {
+        "KeyId": 191538824512147466
+      },
+      {
+        "KeyId": 191538824512147467
+      },
+      {
+        "KeyId": 191538824512147468
+      },
+      {
+        "KeyId": 191538824516341760
+      },
+      {
+        "KeyId": 191538824516341761
+      },
+      {
+        "KeyId": 191538824516341762
+      },
+      {
+        "KeyId": 191538824516341763
+      },
+      {
+        "KeyId": 191538824516341764
+      },
+      {
+        "KeyId": 191538824516341765
+      },
+      {
+        "KeyId": 191538824516341766
+      },
+      {
+        "KeyId": 191538824516341767
+      },
+      {
+        "KeyId": 191538824516341768
+      },
+      {
+        "KeyId": 191538824516341769
+      },
+      {
+        "KeyId": 191538824516341770
+      },
+      {
+        "KeyId": 191538824516341771
+      },
+      {
+        "KeyId": 191538824520536064
+      },
+      {
+        "KeyId": 191538824520536065
+      },
+      {
+        "KeyId": 191538824520536066
+      },
+      {
+        "KeyId": 191538824520536067
+      },
+      {
+        "KeyId": 191538824520536068
+      },
+      {
+        "KeyId": 191538824520536069
+      },
+      {
+        "KeyId": 191538824520536070
+      },
+      {
+        "KeyId": 191538824520536071
+      },
+      {
+        "KeyId": 191538824520536072
+      },
+      {
+        "KeyId": 191538824520536073
+      },
+      {
+        "KeyId": 191538824520536074
+      },
+      {
+        "KeyId": 191538824520536075
+      },
+      {
+        "KeyId": 191538824520536076
+      },
+      {
+        "KeyId": 191538824520536077
+      },
+      {
+        "KeyId": 191538824520536078
+      },
+      {
+        "KeyId": 191538824520536079
+      },
+      {
+        "KeyId": 191538824524730368
+      },
+      {
+        "KeyId": 191538824524730369
+      },
+      {
+        "KeyId": 191538824524730370
+      },
+      {
+        "KeyId": 191538824524730371
+      },
+      {
+        "KeyId": 191538824524730372
+      },
+      {
+        "KeyId": 191538824524730373
+      },
+      {
+        "KeyId": 191538824524730374
+      },
+      {
+        "KeyId": 191538824524730375
+      },
+      {
+        "KeyId": 191538824524730376
+      },
+      {
+        "KeyId": 191538824524730377
+      },
+      {
+        "KeyId": 191538824524730378
+      },
+      {
+        "KeyId": 191538824524730379
+      },
+      {
+        "KeyId": 191538824524730380
+      },
+      {
+        "KeyId": 191538824524730381
+      },
+      {
+        "KeyId": 191538824528924672
+      },
+      {
+        "KeyId": 191538824528924673
+      },
+      {
+        "KeyId": 191538824528924674
+      },
+      {
+        "KeyId": 191538824528924675
+      },
+      {
+        "KeyId": 191538824528924676
+      },
+      {
+        "KeyId": 191538824528924677
+      },
+      {
+        "KeyId": 191538824528924678
+      },
+      {
+        "KeyId": 191538824528924679
+      },
+      {
+        "KeyId": 191538824528924680
+      },
+      {
+        "KeyId": 191538824528924681
+      },
+      {
+        "KeyId": 191538824528924682
+      },
+      {
+        "KeyId": 191538824528924683
+      }
+    ]
+  }
+}

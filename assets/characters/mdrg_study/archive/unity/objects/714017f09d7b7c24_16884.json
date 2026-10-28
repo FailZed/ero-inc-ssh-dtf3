@@ -1,0 +1,77 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2357
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 469762048
+  },
+  "m_Name": "",
+  "<Unique>k__BackingField": 1,
+  "<DefaultId>k__BackingField": "Priestbot",
+  "yoffest": -0.5,
+  "defaultActiveItems": [],
+  "comboSlots": [],
+  "_slotCaches": [
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 5949
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5951
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10709
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5954
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10713
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5952
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10710
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5950
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10708
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5953
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10711
+          }
+        }
+      ]
+    }
+  ]
+}

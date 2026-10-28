@@ -1,0 +1,34 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14932,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.clear\r\nYou: Since you liked the amusement park date so much, I bought tickets for today.\r\n#bot.Expression.happy\r\nBot: Really?!\r\nYou: It should be fun, right?\r\nBot: Yes! Of course! I was waiting for this!\r\nYou: Alright then, let’s go.",
+    "localizedLines": [
+      {
+        "KeyId": 323194233675571200
+      },
+      {
+        "KeyId": 323194233675571201
+      },
+      {
+        "KeyId": 323194233675571202
+      },
+      {
+        "KeyId": 323194233675571203
+      },
+      {
+        "KeyId": 323194233675571204
+      }
+    ]
+  }
+}

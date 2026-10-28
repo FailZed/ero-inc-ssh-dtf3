@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13737,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Hello there.\r\nCashier: …\r\nNo response, huh… {{wi}}I guess she’s still mad at me…\r\n#bot.Expression.Clear\r\n#Cashier.Eyes.normal\r\nUh…{{wi}} What is happening? \r\n#bot.Expression.VeryAngry\r\nThe cashier and {f_botName} are staring at each other intensely…\r\nYou: Is something wrong, {f_botName}?\r\nNo reaction, huh.\r\nOther people are starting to notice since the cashier even stopped checking our groceries…\r\nYou: Come on, we need to go!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209930642680438784
+      },
+      {
+        "KeyId": 209930642684633088
+      },
+      {
+        "KeyId": 209930642684633089
+      },
+      {
+        "KeyId": 209930642684633090
+      },
+      {
+        "KeyId": 209930642684633091
+      },
+      {
+        "KeyId": 209930642684633092
+      },
+      {
+        "KeyId": 209930642684633093
+      },
+      {
+        "KeyId": 209930642684633094
+      },
+      {
+        "KeyId": 209930642684633095
+      }
+    ]
+  }
+}

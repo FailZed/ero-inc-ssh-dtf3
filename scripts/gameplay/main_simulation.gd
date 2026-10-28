@@ -15,12 +15,17 @@ const PersonalStories = preload("res://scripts/mechanics/npc_stories.gd")
 const Livelihood = preload("res://scripts/mechanics/livelihood.gd")
 const LivelihoodCheck = preload("res://scripts/mechanics/core/livelihood_validation.gd")
 const Growth = preload("res://scripts/mechanics/growth.gd")
-const MAIN_SCHEMA := 8
+const Companion = preload("res://scripts/gameplay/companion_interactions.gd")
+const Computer = preload("res://scripts/mechanics/computer.gd")
+const ComputerCheck = preload("res://scripts/mechanics/core/computer_validation.gd")
+const Antagonism = preload("res://scripts/mechanics/antagonism.gd")
+const AntagonismCheck = preload("res://scripts/mechanics/core/antagonism_validation.gd")
+const MAIN_SCHEMA := 12
 var action_context: Dictionary = {}
 
 func _load_catalog() -> Dictionary:
 	var result := super._load_catalog()
-	for file in ["npc_stories","livelihood","growth"]:
+	for file in ["npc_stories","livelihood","growth","computer","antagonism"]:
 		var extra: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/mechanics/%s.json" % file))
 		for key in extra:
 			if key == "skills": result.skills.merge(extra.skills,true)
@@ -28,6 +33,8 @@ func _load_catalog() -> Dictionary:
 	result.difficulties.custom.minigame_floor = 0.70
 	result.difficulties.custom.skill_help_cap = 0.28
 	result.professions.journalism.publication_slots_at = [0,2,3,4,5]
+	result.quests.home_with_purpose.bindings.project.append({"module":"computer","operation":"deliver_project","result":{"completed":true}})
+	result.quests.home_with_purpose.bindings.furnish.append({"module":"computer","operation":"upgrade"})
 	return result
 
 func _init(random_seed: int = 1, extensions: Dictionary = {}) -> void:
@@ -40,6 +47,14 @@ func _init(random_seed: int = 1, extensions: Dictionary = {}) -> void:
 		state_restored.connect(services[id].initialize)
 		services[id].initialize()
 	services["needs"] = PlayerNeeds.new(self)
+	services["companion"] = Companion.new(self)
+	services["computer"] = Computer.new(self)
+	state_restored.connect(services.computer.initialize)
+	services.computer.initialize()
+	services["antagonism"] = Antagonism.new(self)
+	state_restored.connect(services.antagonism.initialize)
+	services.antagonism.initialize()
+	services["planning"] = preload("res://scripts/gameplay/day_planning.gd").new(self)
 	services.character = PlayerCharacter.new(self)
 	services.encounters = preload("res://scripts/gameplay/player_encounters.gd").new(self)
 	services.preferences = preload("res://scripts/gameplay/player_preferences.gd").new(self)
@@ -51,10 +66,14 @@ func _init(random_seed: int = 1, extensions: Dictionary = {}) -> void:
 	services.housing = CityHousing.new(self)
 	services.npc_agency = CityAgency.new(self)
 	services.npc_dialogue = CityDialogue.new(self)
-	for error in [Validation.catalog_error(catalog),PersonalStories.catalog_error(catalog),LivelihoodCheck.catalog_error(catalog),Growth.catalog_error(catalog)]:
+	for error in [Validation.catalog_error(catalog),PersonalStories.catalog_error(catalog),LivelihoodCheck.catalog_error(catalog),Growth.catalog_error(catalog),ComputerCheck.catalog_error(catalog),AntagonismCheck.catalog_error(catalog)]:
 		if not error.is_empty(): configuration_error = error
 
 func before_command(module_id: String, operation: String, args: Dictionary) -> Dictionary:
+	if (not state.computer.hack.is_empty() or not state.computer.broadcast.is_empty()) and module_id in ["digital","careers","economy","livelihood"]:
+		return Rules.fail("computer_session_active")
+	if not state.companion.active.is_empty() and not (module_id == "companion" and operation in ["finish","cancel"]) and not (module_id == "npc_relationships" and operation == "boundary"):
+		return Rules.fail("finish_companion_moment")
 	if not state.livelihood.pending.is_empty() and not (module_id == "livelihood" and operation in ["input","cancel"]): return Rules.fail("finish_work_session")
 	var inherited := super.before_command(module_id, operation, args)
 	if not inherited.ok: return inherited
@@ -73,6 +92,7 @@ func after_command(module_id: String, operation: String, args: Dictionary, resul
 	services.npc_stories.observe(module_id,operation,args,result)
 	services.livelihood.observe(module_id,operation,args,result,before)
 	services.growth.observe(module_id,operation,before)
+	services.computer.observe(module_id,operation,args,result,before)
 	services.careers.synchronize()
 	services.pregnancy_wellbeing.observe(module_id,operation,args,before)
 	services.adult_health.observe(module_id,operation,args,before,result)
@@ -82,6 +102,8 @@ func finish_command() -> void:
 	action_context = {}
 
 func allowed_during_recovery(module_id: String, operation: String) -> bool:
+	if module_id == "computer" and operation in ["hack_abort","stream_finish"]: return true
+	if module_id == "companion" and operation in ["cancel","finish"]: return true
 	return (module_id == "livelihood" and operation in ["input","cancel"]) or (module_id == "growth" and operation == "need_toggle") or super.allowed_during_recovery(module_id, operation) or (module_id == "needs" and operation in ["sleep", "nap"])
 
 func export_snapshot() -> Dictionary:
@@ -97,8 +119,10 @@ func restore_snapshot(snapshot: Dictionary) -> Dictionary:
 func validate_state(candidate: Dictionary) -> Dictionary:
 	var result := super.validate_state(candidate)
 	if not result.ok: return result
-	for check in [PersonalStories.state_error(candidate,catalog),LivelihoodCheck.state_error(candidate,catalog),Growth.state_error(candidate)]:
+	for check in [PersonalStories.state_error(candidate,catalog),LivelihoodCheck.state_error(candidate,catalog),Growth.state_error(candidate),ComputerCheck.state_error(candidate,catalog),AntagonismCheck.state_error(candidate,catalog)]:
 		if not check.is_empty(): return Rules.fail(check)
+	var companion_error := Companion.state_error(candidate)
+	if not companion_error.is_empty(): return Rules.fail(companion_error)
 	for id in PlayerNeeds.DEFAULTS:
 		if not candidate.player.needs.has(id): return Rules.fail("missing_need:"+id)
 		var value: Variant = candidate.player.needs[id]

@@ -1,0 +1,2768 @@
+{
+  "id": "cowgirl__714017f09d7b7c24_20668",
+  "core_version": 83886080,
+  "moc_version": 4,
+  "parameters": [
+    {
+      "id": "Param_Angle_Rotation_1_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_2_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_3_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_4_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_5_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_6_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_7_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_8_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "Param_Angle_Rotation_9_TailMain",
+      "minimum": -45.0,
+      "maximum": 45.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -45.0,
+        0.0,
+        45.0
+      ]
+    },
+    {
+      "id": "ParamTailWiggle",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowRY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeRShock",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeLShock",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowLRot",
+      "minimum": -30.0,
+      "maximum": 30.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -30.0,
+        0.0,
+        30.0
+      ]
+    },
+    {
+      "id": "ParamBrowRRot",
+      "minimum": -30.0,
+      "maximum": 30.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -30.0,
+        0.0,
+        30.0
+      ]
+    },
+    {
+      "id": "ParamBrowLEmote",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -30.0,
+        -1.0,
+        0.0,
+        1.0,
+        30.0
+      ]
+    },
+    {
+      "id": "ParamBrowREmote",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeOpen",
+      "minimum": -1.0,
+      "maximum": 0.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.6000000238418579,
+        0.0
+      ]
+    },
+    {
+      "id": "ParamEyesHappy",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamIrisZoom",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeart",
+      "minimum": -0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -0.0,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballRX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballRY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballLX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamMouthOpen",
+      "minimum": -1.0,
+      "maximum": 2.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.10000000149011612,
+        0.0,
+        0.5,
+        0.800000011920929,
+        0.8999999761581421,
+        0.949999988079071,
+        1.0,
+        1.850000023841858,
+        2.0
+      ]
+    },
+    {
+      "id": "ParamSaliva",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamMouthForm",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamToungeX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamToungeY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBlush",
+      "minimum": 0.0,
+      "maximum": 2.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "id": "ParamHeadZ",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEarL",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEarR",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamChestX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSalivaPhysics",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHairX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPupilWiggle",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEarsWiggle",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadpatX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.800000011920929,
+        -0.699999988079071,
+        -0.4000000059604645,
+        0.0,
+        0.4000000059604645,
+        0.699999988079071,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadpatY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadpat",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": -1.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHairPhysicsBaseToShort",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHairPhysicsShortToMid",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHairPhysicsMidToLong",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPhysicsBoobXL",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPhysicsBoobYL",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPhysicsBoobXR",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPhysicsBoobYR",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHoodieStringL",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHoodieStringR",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSkirtYPhysics",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamGrabBoobLEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobSqueezeL",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamGrabBoobREnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobSqueezeR",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamNippleREnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamNippleRSqueeze",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamNippleLEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamNippleLSqueeze",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamGrabLegREnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamGrabLegLEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFingeringEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFingeringThrust",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFingeringHandWet",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.20000000298023224,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFingeringAngleX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitRubEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitRubX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitRubY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitMoveX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitMoveY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaPush",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR0",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR1",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR2",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR3",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR4",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR5",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR6",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagR7",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL0",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL1",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL2",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL3",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL4",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL5",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL6",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXRayVagL7",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaSpread",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPhysicsCumWomb",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamMCBodyVisible",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCockAngleX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCockAngleY",
+      "minimum": -1.0,
+      "maximum": 0.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "ParamCumShotAnim",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.05000000074505806,
+        0.15000000596046448,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFlacidity",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.15000000596046448,
+        0.30000001192092896,
+        0.4000000059604645,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumShotLengthY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHideCumShot",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBotBodyMovementY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamInsertableInside",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamOmegaMeter",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamMoveMc",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamXray",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamOrgasm",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.10000000149011612,
+        0.20000000298023224,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumInsideWomb",
+      "minimum": 0.0,
+      "maximum": 2.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        1.0,
+        1.2999999523162842,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "id": "ParamCumInside",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.05000000074505806,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamLegsQuiver",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSkirtEnabled",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHoodieEnabled",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamToSide",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPantsToSide",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFlattenNipples",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFlattenBoobs",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": []
+    },
+    {
+      "id": "ParamAssSize",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobSize",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThighSize",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "Part16",
+      "opacity": 1.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part2",
+      "opacity": 0.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part21",
+      "opacity": 1.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part13",
+      "opacity": 1.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part24",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part17",
+      "opacity": 0.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part22",
+      "opacity": 0.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part11",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part10",
+      "opacity": 0.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part9",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part8",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part7",
+      "opacity": 0.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part31",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part32",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part5",
+      "opacity": 0.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part4",
+      "opacity": 0.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part29",
+      "opacity": 0.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part28",
+      "opacity": 0.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part27",
+      "opacity": 0.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part26",
+      "opacity": 0.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part25",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part19",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part23",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part12",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part14",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part6",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part15",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "Part3",
+      "opacity": 1.0,
+      "parent_index": 3
+    },
+    {
+      "id": "TailMain_Skinning",
+      "opacity": 1.0,
+      "parent_index": 21
+    },
+    {
+      "id": "Part20",
+      "opacity": 1.0,
+      "parent_index": 21
+    },
+    {
+      "id": "Part18",
+      "opacity": 1.0,
+      "parent_index": 24
+    }
+  ],
+  "drawables": [
+    {
+      "id": "CumOutsideBellyR",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighL2",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighLowerL",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighR2",
+      "texture_index": 0
+    },
+    {
+      "id": "StockingR",
+      "texture_index": 0
+    },
+    {
+      "id": "StockingL",
+      "texture_index": 0
+    },
+    {
+      "id": "PantiesFront",
+      "texture_index": 0
+    },
+    {
+      "id": "PantiesBack",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDick1",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDick2",
+      "texture_index": 0
+    },
+    {
+      "id": "DickSkin",
+      "texture_index": 0
+    },
+    {
+      "id": "DickMain",
+      "texture_index": 0
+    },
+    {
+      "id": "MCBody",
+      "texture_index": 1
+    },
+    {
+      "id": "PlainShirtChest",
+      "texture_index": 0
+    },
+    {
+      "id": "PlainShirtFront",
+      "texture_index": 0
+    },
+    {
+      "id": "PlainShirtSleeveR",
+      "texture_index": 0
+    },
+    {
+      "id": "PlainShirtSleeveL",
+      "texture_index": 0
+    },
+    {
+      "id": "PlainShirtBack",
+      "texture_index": 0
+    },
+    {
+      "id": "BraChest",
+      "texture_index": 0
+    },
+    {
+      "id": "BraTop",
+      "texture_index": 0
+    },
+    {
+      "id": "BraBottom",
+      "texture_index": 0
+    },
+    {
+      "id": "SkirtLowerFront",
+      "texture_index": 0
+    },
+    {
+      "id": "SkirtUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "SkirtLowerBack",
+      "texture_index": 0
+    },
+    {
+      "id": "AltBPantsBelt2",
+      "texture_index": 0
+    },
+    {
+      "id": "AltBPantsBelt",
+      "texture_index": 0
+    },
+    {
+      "id": "BPantsCrotch",
+      "texture_index": 0
+    },
+    {
+      "id": "BPantsThighL",
+      "texture_index": 0
+    },
+    {
+      "id": "BPantsThighR",
+      "texture_index": 0
+    },
+    {
+      "id": "AltLongHoodieStringR",
+      "texture_index": 0
+    },
+    {
+      "id": "AltLongHoodieStringL",
+      "texture_index": 0
+    },
+    {
+      "id": "LongHoodieHood",
+      "texture_index": 0
+    },
+    {
+      "id": "LongHoodieChest",
+      "texture_index": 0
+    },
+    {
+      "id": "LongHoodieFront",
+      "texture_index": 0
+    },
+    {
+      "id": "LongHoodieUppperArmL",
+      "texture_index": 0
+    },
+    {
+      "id": "LongHoodieUppperArmR",
+      "texture_index": 0
+    },
+    {
+      "id": "LongHoodieBack",
+      "texture_index": 0
+    },
+    {
+      "id": "AltBPantsBeltBehind",
+      "texture_index": 0
+    },
+    {
+      "id": "BPantsBehind",
+      "texture_index": 0
+    },
+    {
+      "id": "BellChokerMain",
+      "texture_index": 1
+    },
+    {
+      "id": "PointyEarL",
+      "texture_index": 1
+    },
+    {
+      "id": "PointyEarR",
+      "texture_index": 1
+    },
+    {
+      "id": "BellChokerBell",
+      "texture_index": 1
+    },
+    {
+      "id": "headpet_1",
+      "texture_index": 1
+    },
+    {
+      "id": "headpet_2",
+      "texture_index": 1
+    },
+    {
+      "id": "headpet_3",
+      "texture_index": 1
+    },
+    {
+      "id": "HairHologram",
+      "texture_index": 0
+    },
+    {
+      "id": "CatearFrontR",
+      "texture_index": 0
+    },
+    {
+      "id": "CatearFrontL",
+      "texture_index": 0
+    },
+    {
+      "id": "CatearMidL",
+      "texture_index": 0
+    },
+    {
+      "id": "CatearMidR",
+      "texture_index": 0
+    },
+    {
+      "id": "CatearBackR",
+      "texture_index": 0
+    },
+    {
+      "id": "CatearBackL",
+      "texture_index": 0
+    },
+    {
+      "id": "blush_2",
+      "texture_index": 0
+    },
+    {
+      "id": "blush",
+      "texture_index": 0
+    },
+    {
+      "id": "lines",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinNose",
+      "texture_index": 0
+    },
+    {
+      "id": "BrowL",
+      "texture_index": 0
+    },
+    {
+      "id": "BrowR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLipUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLipLower",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLipUpperToungeOut",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLipLowerToungeOut",
+      "texture_index": 0
+    },
+    {
+      "id": "SharpTeethUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "TeethUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "Saliva2",
+      "texture_index": 0
+    },
+    {
+      "id": "Saliva1",
+      "texture_index": 0
+    },
+    {
+      "id": "Tounge",
+      "texture_index": 0
+    },
+    {
+      "id": "SharpTeethLower",
+      "texture_index": 0
+    },
+    {
+      "id": "TeethLower",
+      "texture_index": 0
+    },
+    {
+      "id": "InnerMouthTounge",
+      "texture_index": 0
+    },
+    {
+      "id": "InnerMouth",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinFace",
+      "texture_index": 0
+    },
+    {
+      "id": "highlight",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris2L",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris2R",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris1L",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris1R",
+      "texture_index": 0
+    },
+    {
+      "id": "PupilL",
+      "texture_index": 0
+    },
+    {
+      "id": "PupilR",
+      "texture_index": 0
+    },
+    {
+      "id": "EyeBall",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelidClosedL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelidClosedR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelidL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelidR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelid2L",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelid2R",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinNeck2",
+      "texture_index": 0
+    },
+    {
+      "id": "ModdableHairBack",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdableFace",
+      "texture_index": 1
+    },
+    {
+      "id": "NippleL",
+      "texture_index": 0
+    },
+    {
+      "id": "NippleR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinBoobL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinBoobR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinVaginaL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinVaginaR",
+      "texture_index": 0
+    },
+    {
+      "id": "VaginaClit",
+      "texture_index": 0
+    },
+    {
+      "id": "VaginaInner",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinPalvisTop",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachLegL",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachLegR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinThighL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinThighR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinPelvis",
+      "texture_index": 0
+    },
+    {
+      "id": "OmegaSignInside",
+      "texture_index": 0
+    },
+    {
+      "id": "OmegaSign",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinWaist",
+      "texture_index": 0
+    },
+    {
+      "id": "Barcode",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinRibcage",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperArmL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperArmR",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmL",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmR",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmLForearm",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRForearm",
+      "texture_index": 0
+    },
+    {
+      "id": "CockMask",
+      "texture_index": 0
+    },
+    {
+      "id": "ModdableBack",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdableShirtLogo",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdableShirtRightSleeveLogo",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdableShirtLeftSleeveLogo",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdableHoodieLogo",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdablePantiesLogo",
+      "texture_index": 1
+    },
+    {
+      "id": "SkinCumflation",
+      "texture_index": 0
+    },
+    {
+      "id": "TailMain10",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain9",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain8",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain7",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain6",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain5",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain4",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain3",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain2",
+      "texture_index": 1
+    },
+    {
+      "id": "TailMain",
+      "texture_index": 1
+    },
+    {
+      "id": "CumOutsideInnerThighL",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighR",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2BottomFront",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2BottomBack",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2Chest",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2AltWaist",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2AltUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2RArm",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress2LArm",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceRight",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceNose",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceLeft",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideBoobLSide",
+      "texture_index": 0
+    },
+    {
+      "id": "CumWombLv8",
+      "texture_index": 1
+    },
+    {
+      "id": "CumWombLv7",
+      "texture_index": 1
+    },
+    {
+      "id": "CumWombLv6",
+      "texture_index": 0
+    },
+    {
+      "id": "CumWombLv5",
+      "texture_index": 0
+    },
+    {
+      "id": "XrayBase2",
+      "texture_index": 1
+    },
+    {
+      "id": "XrayWomb2",
+      "texture_index": 0
+    },
+    {
+      "id": "Xrayouter2",
+      "texture_index": 1
+    },
+    {
+      "id": "XrayInnerL2",
+      "texture_index": 1
+    },
+    {
+      "id": "XrayInnerR3",
+      "texture_index": 1
+    },
+    {
+      "id": "CumOutsideBoobRSide",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideBoobR",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideBoobL",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideUnderBoobMiddle",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideBelly",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaBoobL",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaBoobR",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaLegR",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaLegL",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaBothBoobs",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaFingering",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaClit",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaBothNipples",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaNippleL",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaNippleR",
+      "texture_index": 0
+    },
+    {
+      "id": "OmegaMask",
+      "texture_index": 0
+    },
+    {
+      "id": "VagWetMCFinger",
+      "texture_index": 1
+    },
+    {
+      "id": "MCFinger",
+      "texture_index": 1
+    },
+    {
+      "id": "MCRubClit",
+      "texture_index": 1
+    },
+    {
+      "id": "MCGrabThighR",
+      "texture_index": 1
+    },
+    {
+      "id": "MCGrabThighL",
+      "texture_index": 1
+    },
+    {
+      "id": "MCGrabNippleR",
+      "texture_index": 1
+    },
+    {
+      "id": "MCGrabNippleL",
+      "texture_index": 1
+    },
+    {
+      "id": "MCGrabBoobL",
+      "texture_index": 1
+    },
+    {
+      "id": "MCGrabBoobR",
+      "texture_index": 1
+    },
+    {
+      "id": "CumVagina2",
+      "texture_index": 1
+    },
+    {
+      "id": "Dress1_Chest",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress1_StringR",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress1_LowerFront",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress1_Waist",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress1_Ribcage",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress1_LowerBack",
+      "texture_index": 0
+    },
+    {
+      "id": "Dress1_StringL",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Top_LeafR",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Top_LeafL",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Side",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Braid",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Back",
+      "texture_index": 0
+    },
+    {
+      "id": "H1_Top_Ahoge",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_Side_Top",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_Side_L2",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_Front_Bang",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_Side_L",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_BackL",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_Back_R1",
+      "texture_index": 1
+    },
+    {
+      "id": "H1_Back_R2",
+      "texture_index": 1
+    },
+    {
+      "id": "H3_Side",
+      "texture_index": 1
+    },
+    {
+      "id": "H3_Back_Top",
+      "texture_index": 1
+    },
+    {
+      "id": "H3_Back",
+      "texture_index": 1
+    },
+    {
+      "id": "H4_Knot",
+      "texture_index": 1
+    },
+    {
+      "id": "H4_Tail",
+      "texture_index": 1
+    },
+    {
+      "id": "HitAreaHeadpat",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaOpenMouth",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaCloseMouth",
+      "texture_index": 0
+    },
+    {
+      "id": "ShadowBoobL",
+      "texture_index": 0
+    },
+    {
+      "id": "ShadowBoobR",
+      "texture_index": 0
+    },
+    {
+      "id": "NipPiercingLeft",
+      "texture_index": 1
+    },
+    {
+      "id": "NipPiercingRight",
+      "texture_index": 1
+    },
+    {
+      "id": "NavelPiercing",
+      "texture_index": 1
+    },
+    {
+      "id": "ModdableHairFront",
+      "texture_index": 1
+    },
+    {
+      "id": "CuteBow",
+      "texture_index": 1
+    },
+    {
+      "id": "Headband",
+      "texture_index": 1
+    },
+    {
+      "id": "WizardHat",
+      "texture_index": 1
+    },
+    {
+      "id": "H0_FrontClippedUp_Bang",
+      "texture_index": 1
+    },
+    {
+      "id": "H0_FrontClippedUp_HairClip",
+      "texture_index": 1
+    },
+    {
+      "id": "H0_Front_Bang",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Side_BangL",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Side_BangR",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_SideAlt_Strand",
+      "texture_index": 0
+    },
+    {
+      "id": "H2_Front_Bang",
+      "texture_index": 1
+    },
+    {
+      "id": "H3_Front",
+      "texture_index": 1
+    },
+    {
+      "id": "BikiniBot_A_BowL",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniBot_A_BowR",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniBot_M_Cloth",
+      "texture_index": 1
+    },
+    {
+      "id": "BikiniBot_A_Outline",
+      "texture_index": 1
+    },
+    {
+      "id": "BikiniTop_A_OutlineL",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniTop_M_CupL",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniTop_A_OutlineR",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniTop_M_CupR",
+      "texture_index": 1
+    },
+    {
+      "id": "BikiniTop_A_StrapL",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniTop_A_StrapR",
+      "texture_index": 0
+    },
+    {
+      "id": "BikiniTop_A_Middle",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaPanties",
+      "texture_index": 0
+    }
+  ],
+  "texture_slots": {
+    "CumOutsideBellyR": 0,
+    "CumOutsideInnerThighL2": 0,
+    "CumOutsideInnerThighLowerL": 0,
+    "CumOutsideInnerThighR2": 0,
+    "StockingR": 0,
+    "StockingL": 0,
+    "PantiesFront": 0,
+    "PantiesBack": 0,
+    "CumDick1": 0,
+    "CumDick2": 0,
+    "DickSkin": 0,
+    "DickMain": 0,
+    "MCBody": 1,
+    "PlainShirtChest": 0,
+    "PlainShirtFront": 0,
+    "PlainShirtSleeveR": 0,
+    "PlainShirtSleeveL": 0,
+    "PlainShirtBack": 0,
+    "BraChest": 0,
+    "BraTop": 0,
+    "BraBottom": 0,
+    "SkirtLowerFront": 0,
+    "SkirtUpper": 0,
+    "SkirtLowerBack": 0,
+    "AltBPantsBelt2": 0,
+    "AltBPantsBelt": 0,
+    "BPantsCrotch": 0,
+    "BPantsThighL": 0,
+    "BPantsThighR": 0,
+    "AltLongHoodieStringR": 0,
+    "AltLongHoodieStringL": 0,
+    "LongHoodieHood": 0,
+    "LongHoodieChest": 0,
+    "LongHoodieFront": 0,
+    "LongHoodieUppperArmL": 0,
+    "LongHoodieUppperArmR": 0,
+    "LongHoodieBack": 0,
+    "AltBPantsBeltBehind": 0,
+    "BPantsBehind": 0,
+    "BellChokerMain": 1,
+    "PointyEarL": 1,
+    "PointyEarR": 1,
+    "BellChokerBell": 1,
+    "headpet_1": 1,
+    "headpet_2": 1,
+    "headpet_3": 1,
+    "HairHologram": 0,
+    "CatearFrontR": 0,
+    "CatearFrontL": 0,
+    "CatearMidL": 0,
+    "CatearMidR": 0,
+    "CatearBackR": 0,
+    "CatearBackL": 0,
+    "blush_2": 0,
+    "blush": 0,
+    "lines": 0,
+    "SkinNose": 0,
+    "BrowL": 0,
+    "BrowR": 0,
+    "SkinLipUpper": 0,
+    "SkinLipLower": 0,
+    "SkinLipUpperToungeOut": 0,
+    "SkinLipLowerToungeOut": 0,
+    "SharpTeethUpper": 0,
+    "TeethUpper": 0,
+    "Saliva2": 0,
+    "Saliva1": 0,
+    "Tounge": 0,
+    "SharpTeethLower": 0,
+    "TeethLower": 0,
+    "InnerMouthTounge": 0,
+    "InnerMouth": 0,
+    "SkinFace": 0,
+    "highlight": 0,
+    "Iris2L": 0,
+    "Iris2R": 0,
+    "Iris1L": 0,
+    "Iris1R": 0,
+    "PupilL": 0,
+    "PupilR": 0,
+    "EyeBall": 0,
+    "SkinEyelidClosedL": 0,
+    "SkinEyelidClosedR": 0,
+    "SkinEyelidL": 0,
+    "SkinEyelidR": 0,
+    "SkinEyelid2L": 0,
+    "SkinEyelid2R": 0,
+    "SkinNeck2": 0,
+    "ModdableHairBack": 1,
+    "ModdableFace": 1,
+    "NippleL": 0,
+    "NippleR": 0,
+    "SkinBoobL": 0,
+    "SkinBoobR": 0,
+    "SkinVaginaL": 0,
+    "SkinVaginaR": 0,
+    "VaginaClit": 0,
+    "VaginaInner": 0,
+    "SkinPalvisTop": 0,
+    "AttachLegL": 0,
+    "AttachLegR": 0,
+    "SkinThighL": 0,
+    "SkinThighR": 0,
+    "SkinButtL": 0,
+    "SkinButtR": 0,
+    "SkinPelvis": 0,
+    "OmegaSignInside": 0,
+    "OmegaSign": 0,
+    "SkinWaist": 0,
+    "Barcode": 0,
+    "SkinRibcage": 0,
+    "SkinUpperArmL": 0,
+    "SkinUpperArmR": 0,
+    "AttachArmL": 0,
+    "AttachArmR": 0,
+    "AttachArmLForearm": 0,
+    "AttachArmRForearm": 0,
+    "CockMask": 0,
+    "ModdableBack": 1,
+    "ModdableShirtLogo": 1,
+    "ModdableShirtRightSleeveLogo": 1,
+    "ModdableShirtLeftSleeveLogo": 1,
+    "ModdableHoodieLogo": 1,
+    "ModdablePantiesLogo": 1,
+    "SkinCumflation": 0,
+    "TailMain10": 1,
+    "TailMain9": 1,
+    "TailMain8": 1,
+    "TailMain7": 1,
+    "TailMain6": 1,
+    "TailMain5": 1,
+    "TailMain4": 1,
+    "TailMain3": 1,
+    "TailMain2": 1,
+    "TailMain": 1,
+    "CumOutsideInnerThighL": 0,
+    "CumOutsideInnerThighR": 0,
+    "Dress2BottomFront": 0,
+    "Dress2BottomBack": 0,
+    "Dress2Chest": 0,
+    "Dress2AltWaist": 0,
+    "Dress2AltUpper": 0,
+    "Dress2RArm": 0,
+    "Dress2LArm": 0,
+    "CumOutsideFaceRight": 0,
+    "CumOutsideFaceNose": 0,
+    "CumOutsideFaceLeft": 0,
+    "CumOutsideBoobLSide": 0,
+    "CumWombLv8": 1,
+    "CumWombLv7": 1,
+    "CumWombLv6": 0,
+    "CumWombLv5": 0,
+    "XrayBase2": 1,
+    "XrayWomb2": 0,
+    "Xrayouter2": 1,
+    "XrayInnerL2": 1,
+    "XrayInnerR3": 1,
+    "CumOutsideBoobRSide": 0,
+    "CumOutsideBoobR": 0,
+    "CumOutsideBoobL": 0,
+    "CumOutsideUnderBoobMiddle": 0,
+    "CumOutsideBelly": 0,
+    "HitAreaBoobL": 0,
+    "HitAreaBoobR": 0,
+    "HitAreaLegR": 0,
+    "HitAreaLegL": 0,
+    "HitAreaBothBoobs": 0,
+    "HitAreaFingering": 0,
+    "HitAreaClit": 0,
+    "HitAreaBothNipples": 0,
+    "HitAreaNippleL": 0,
+    "HitAreaNippleR": 0,
+    "OmegaMask": 0,
+    "VagWetMCFinger": 1,
+    "MCFinger": 1,
+    "MCRubClit": 1,
+    "MCGrabThighR": 1,
+    "MCGrabThighL": 1,
+    "MCGrabNippleR": 1,
+    "MCGrabNippleL": 1,
+    "MCGrabBoobL": 1,
+    "MCGrabBoobR": 1,
+    "CumVagina2": 1,
+    "Dress1_Chest": 0,
+    "Dress1_StringR": 0,
+    "Dress1_LowerFront": 0,
+    "Dress1_Waist": 0,
+    "Dress1_Ribcage": 0,
+    "Dress1_LowerBack": 0,
+    "Dress1_StringL": 0,
+    "H0_Top_LeafR": 0,
+    "H0_Top_LeafL": 0,
+    "H0_Side": 0,
+    "H0_Braid": 0,
+    "H0_Back": 0,
+    "H1_Top_Ahoge": 1,
+    "H1_Side_Top": 1,
+    "H1_Side_L2": 1,
+    "H1_Front_Bang": 1,
+    "H1_Side_L": 1,
+    "H1_BackL": 1,
+    "H1_Back_R1": 1,
+    "H1_Back_R2": 1,
+    "H3_Side": 1,
+    "H3_Back_Top": 1,
+    "H3_Back": 1,
+    "H4_Knot": 1,
+    "H4_Tail": 1,
+    "HitAreaHeadpat": 0,
+    "HitAreaOpenMouth": 0,
+    "HitAreaCloseMouth": 0,
+    "ShadowBoobL": 0,
+    "ShadowBoobR": 0,
+    "NipPiercingLeft": 1,
+    "NipPiercingRight": 1,
+    "NavelPiercing": 1,
+    "ModdableHairFront": 1,
+    "CuteBow": 1,
+    "Headband": 1,
+    "WizardHat": 1,
+    "H0_FrontClippedUp_Bang": 1,
+    "H0_FrontClippedUp_HairClip": 1,
+    "H0_Front_Bang": 0,
+    "H0_Side_BangL": 0,
+    "H0_Side_BangR": 0,
+    "H0_SideAlt_Strand": 0,
+    "H2_Front_Bang": 1,
+    "H3_Front": 1,
+    "BikiniBot_A_BowL": 0,
+    "BikiniBot_A_BowR": 0,
+    "BikiniBot_M_Cloth": 1,
+    "BikiniBot_A_Outline": 1,
+    "BikiniTop_A_OutlineL": 0,
+    "BikiniTop_M_CupL": 0,
+    "BikiniTop_A_OutlineR": 0,
+    "BikiniTop_M_CupR": 1,
+    "BikiniTop_A_StrapL": 0,
+    "BikiniTop_A_StrapR": 0,
+    "BikiniTop_A_Middle": 0,
+    "HitAreaPanties": 0
+  },
+  "source_object": "714017f09d7b7c24:20668"
+}

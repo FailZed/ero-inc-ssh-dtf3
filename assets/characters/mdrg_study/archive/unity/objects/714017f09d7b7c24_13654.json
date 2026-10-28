@@ -1,0 +1,64 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 22867345408
+  },
+  "m_Name": "FontDataGenerated",
+  "TextPrefabs": {
+    "Commissioner_Commissioner_Text": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/ResourcesOutside/Fonts/Commissioner/Commissioner Text",
+        "assetGuid": "0f753389eca6c1f468b382272a24175b",
+        "assetLocalId": 1261862177258002317,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    },
+    "Fonarto_Fonarto_Text": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/ResourcesOutside/Fonts/Fonarto/Fonarto Text",
+        "assetGuid": "8bfff622c46370345a0c9a2a634653de",
+        "assetLocalId": 1580566046622385676,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    },
+    "Main_Font_Main_Text": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/ResourcesOutside/Fonts/Main Font/Main Text",
+        "assetGuid": "bae3ebc17ca36cf4babcf43cbe6f16dc",
+        "assetLocalId": 4705695362714572507,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    },
+    "Monospace_Font_Monospace_Text": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/ResourcesOutside/Fonts/Monospace Font/Monospace Text",
+        "assetGuid": "8866d0fd954facf4bb883d088c1fe81d",
+        "assetLocalId": 1261862177258002317,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    },
+    "Noto_Sans_NotoSans_Text": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/ResourcesOutside/Fonts/Noto Sans/NotoSans Text",
+        "assetGuid": "cc58da662a4b75a43bff44d2002dd13c",
+        "assetLocalId": 3321541041449130457,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    }
+  }
+}

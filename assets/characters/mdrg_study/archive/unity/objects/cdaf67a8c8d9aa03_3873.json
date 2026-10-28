@@ -1,0 +1,49 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 8990,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: I’m not an expert in this matter, but if Ecclesiasticalot says he can’t go, then he can’t go. Simple as.\r\n\r\n'Nun' Shanice: !\r\n'Nun' Shanice: You are against me too?!\r\nYou: It’s not that I’m against you. I just think the priest is right. You can’t just go and argue with the pope, you know?\r\n'Nun' Shanice: Isn’t PriestCan your friend too? \r\nYou: Oh, well… {{wi}}I don’t hate him that’s for sure. It’s just that we met only a few times. \r\n#Nun.Face.nunFaceSerious\r\n'Nun' Shanice: …\r\n'Nun' Shanice: PriestCan… Do you really want to disappear… Just like that?\r\nEcclesiasticalot FF: …{{wi}} I’m afraid so… {{wi}}And stop calling me PriestCan please.\r\n'Nun' Shanice: I-I don’t wanna watch this so… I will just leave…\r\n#Nun.animate(TransparencyTo0,1)\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538825044824065
+      },
+      {
+        "KeyId": 191538825044824066
+      },
+      {
+        "KeyId": 191538825044824067
+      },
+      {
+        "KeyId": 191538825044824068
+      },
+      {
+        "KeyId": 191538825044824069
+      },
+      {
+        "KeyId": 191538825044824070
+      },
+      {
+        "KeyId": 191538825044824071
+      },
+      {
+        "KeyId": 191538825044824072
+      },
+      {
+        "KeyId": 191538825044824073
+      },
+      {
+        "KeyId": 191538825044824074
+      }
+    ]
+  }
+}

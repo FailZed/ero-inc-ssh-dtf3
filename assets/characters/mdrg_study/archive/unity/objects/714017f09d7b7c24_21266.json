@@ -1,0 +1,73 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4644
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 469762048
+  },
+  "m_Name": "",
+  "<Unique>k__BackingField": 1,
+  "<DefaultId>k__BackingField": "Paradisium1",
+  "yoffest": 0.0,
+  "defaultActiveItems": [],
+  "comboSlots": [],
+  "_slotCaches": [
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 5875
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6276
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10785
+          }
+        }
+      ]
+    },
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 5611
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6838
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10671
+          }
+        }
+      ]
+    },
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 6328
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5812
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10683
+          }
+        }
+      ]
+    }
+  ]
+}

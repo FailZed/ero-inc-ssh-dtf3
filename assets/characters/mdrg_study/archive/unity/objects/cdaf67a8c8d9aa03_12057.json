@@ -1,0 +1,49 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17996,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Sorry, {f_playerName}, it’s my fault…\r\nYou: Don’t worry about it, you only tried your best.\r\nBot: But your account now has a mark of a cheater…\r\nYou: It does?! {{punch}}\r\nYou: Ah- Oh… \r\nYou: D-Don’t worry about it… I don’t play that much multiplayer games anyway…\r\nBot: If you want we can file an appeal…\r\nYou: Let’s try that…\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nYou: I’m not mad at you, so don’t be sad, ok?\r\nBot: O-Ok…\r\n\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 498637587011735552
+      },
+      {
+        "KeyId": 498637587011735553
+      },
+      {
+        "KeyId": 498637587011735554
+      },
+      {
+        "KeyId": 498637587011735555
+      },
+      {
+        "KeyId": 498637587011735556
+      },
+      {
+        "KeyId": 498637587011735557
+      },
+      {
+        "KeyId": 498637587011735558
+      },
+      {
+        "KeyId": 498637587011735559
+      },
+      {
+        "KeyId": 498637616241840128
+      },
+      {
+        "KeyId": 498637616241840129
+      }
+    ]
+  }
+}

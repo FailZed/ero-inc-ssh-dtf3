@@ -1,0 +1,63 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": -738.7962646484375,
+    "y": -408.080078125,
+    "width": 127.86000061035156,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "useCustomTint": 1,
+  "itemId": 4405,
+  "blockName": "RE/HealthEnd",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 6368
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3593
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2304
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3592
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2094
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2292
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2306
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2142
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

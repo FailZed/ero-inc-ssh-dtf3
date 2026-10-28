@@ -780,6 +780,647 @@
     },
     "digital_student": {
       "label": "Цифровой исследователь"
+    },
+    "city_connections": "Свой маршрут",
+    "steady_rhythm": "День без спешки",
+    "first_certificate": "Дело, которым можно гордиться",
+    "reliable_specialist": "Надёжный специалист",
+    "digital_reputation": "Цифровая репутация",
+    "table_for_friends": "Стол для друзей",
+    "home_with_purpose": "Дом под свой образ жизни",
+    "collective_result": "Наш общий результат",
+    "care_and_recovery": "Вернуться в форму",
+    "family_presence": "Время для семьи",
+    "personal_style": "Свой стиль",
+    "healthy_boundaries": "Доверие через поступки",
+    "public_workshop": "Открытая мастерская",
+    "neighborhood_archive": "Архив района",
+    "mutual_aid": "День взаимопомощи"
+  },
+  "quests": {
+    "city_connections": {
+      "label": "Свой маршрут",
+      "description": "Найти места, где можно отдохнуть, освоить дело и познакомиться с людьми.",
+      "objectives": {
+        "places": 3,
+        "practice": 1,
+        "contact": 1
+      },
+      "objective_labels": {
+        "places": "Посетить три разных места",
+        "practice": "Попрактиковаться в навыке",
+        "contact": "Обменяться контактами"
+      },
+      "bindings": {
+        "places": [
+          {
+            "module": "world",
+            "operation": "journey",
+            "unique_arg": "id"
+          },
+          {
+            "module": "world",
+            "operation": "travel",
+            "unique_arg": "id"
+          }
+        ],
+        "practice": [
+          {
+            "module": "growth",
+            "operation": "practice"
+          }
+        ],
+        "contact": [
+          {
+            "module": "social",
+            "operation": "contact"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 60
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_city_connections",
+          "value": true
+        }
+      ]
+    },
+    "steady_rhythm": {
+      "label": "День без спешки",
+      "description": "Найти устойчивое сочетание полезного дела и отдыха в разные дни.",
+      "objectives": {
+        "study": 2,
+        "rest": 2
+      },
+      "objective_labels": {
+        "study": "Заниматься в два разных дня",
+        "rest": "Выделить время на досуг в два разных дня"
+      },
+      "bindings": {
+        "study": [
+          {
+            "module": "education",
+            "operation": "homework",
+            "different_days": true
+          },
+          {
+            "module": "world",
+            "operation": "homework",
+            "different_days": true
+          }
+        ],
+        "rest": [
+          {
+            "module": "needs",
+            "operation": "leisure",
+            "different_days": true
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 60
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_steady_rhythm",
+          "value": true
+        }
+      ]
+    },
+    "first_certificate": {
+      "label": "Дело, которым можно гордиться",
+      "description": "Завершить учебный проект и подтвердить подготовку.",
+      "objectives": {
+        "project": 3,
+        "assessment": 1
+      },
+      "objective_labels": {
+        "project": "Пройти три этапа проекта",
+        "assessment": "Получить сертификат"
+      },
+      "bindings": {
+        "project": [
+          {
+            "module": "education",
+            "operation": "project",
+            "different_days": true
+          }
+        ],
+        "assessment": [
+          {
+            "module": "education",
+            "operation": "assess"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 100
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_first_certificate",
+          "value": true
+        }
+      ]
+    },
+    "reliable_specialist": {
+      "label": "Надёжный специалист",
+      "description": "Создать устойчивый рабочий ритм и вложиться в будущее.",
+      "objectives": {
+        "shifts": 3,
+        "savings": 1
+      },
+      "objective_labels": {
+        "shifts": "Отработать в три разных дня",
+        "savings": "Отложить деньги в банке"
+      },
+      "bindings": {
+        "shifts": [
+          {
+            "module": "livelihood",
+            "operation": "work",
+            "result": {
+              "completed": true,
+              "caught": false
+            },
+            "different_days": true
+          },
+          {
+            "module": "livelihood",
+            "operation": "input",
+            "result": {
+              "completed": true,
+              "caught": false
+            },
+            "different_days": true
+          },
+          {
+            "module": "careers",
+            "operation": "shift",
+            "different_days": true
+          }
+        ],
+        "savings": [
+          {
+            "module": "economy",
+            "operation": "deposit"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 90
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_reliable_specialist",
+          "value": true
+        }
+      ]
+    },
+    "digital_reputation": {
+      "label": "Цифровая репутация",
+      "description": "Учебная подготовка должна привести к реальной помощи клиенту.",
+      "objectives": {
+        "training": 1,
+        "recovery": 1
+      },
+      "objective_labels": {
+        "training": "Успешно пройти цифровую тренировку",
+        "recovery": "Успешно восстановить клиентский архив"
+      },
+      "bindings": {
+        "training": [
+          {
+            "module": "digital",
+            "operation": "resolve",
+            "args": {
+              "id": "training"
+            },
+            "result": {
+              "success": true
+            }
+          }
+        ],
+        "recovery": [
+          {
+            "module": "digital",
+            "operation": "resolve",
+            "args": {
+              "id": "recovery"
+            },
+            "result": {
+              "success": true
+            }
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 80
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_digital_reputation",
+          "value": true
+        }
+      ]
+    },
+    "table_for_friends": {
+      "label": "Стол для друзей",
+      "description": "Приготовить собственную еду и поделиться ею с окружающими.",
+      "objectives": {
+        "cook": 2,
+        "gift": 1
+      },
+      "objective_labels": {
+        "cook": "Успешно приготовить два разных блюда",
+        "gift": "Вручить подарок знакомому"
+      },
+      "bindings": {
+        "cook": [
+          {
+            "module": "inventory",
+            "operation": "craft",
+            "unique_arg": "id",
+            "result": {
+              "crafted": true
+            }
+          }
+        ],
+        "gift": [
+          {
+            "module": "social",
+            "operation": "gift"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 60
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_table_for_friends",
+          "value": true
+        }
+      ]
+    },
+    "home_with_purpose": {
+      "label": "Дом под свой образ жизни",
+      "description": "Обустроить жильё и использовать открывшуюся возможность.",
+      "objectives": {
+        "furnish": 1,
+        "project": 1
+      },
+      "objective_labels": {
+        "furnish": "Установить оборудование или мебель",
+        "project": "Поработать над личным проектом"
+      },
+      "bindings": {
+        "furnish": [
+          {
+            "module": "world",
+            "operation": "install"
+          },
+          {
+            "module": "housing",
+            "operation": "furnish"
+          },
+          {
+            "module": "interior",
+            "operation": "place"
+          }
+        ],
+        "project": [
+          {
+            "module": "economy",
+            "operation": "project",
+            "result": {
+              "completed": true
+            }
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 60
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_home_with_purpose",
+          "value": true
+        }
+      ]
+    },
+    "collective_result": {
+      "label": "Наш общий результат",
+      "description": "Собрать людей вокруг дела и довести кампанию до результата.",
+      "objectives": {
+        "recruit": 2,
+        "campaign": 1
+      },
+      "objective_labels": {
+        "recruit": "Пригласить двух разных участников",
+        "campaign": "Подвести итоги кампании"
+      },
+      "bindings": {
+        "recruit": [
+          {
+            "module": "organizations",
+            "operation": "recruit",
+            "unique_arg": "npc"
+          }
+        ],
+        "campaign": [
+          {
+            "module": "institutions",
+            "operation": "claim_campaign"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 100
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_collective_result",
+          "value": true
+        }
+      ]
+    },
+    "care_and_recovery": {
+      "label": "Вернуться в форму",
+      "description": "Пройти помощь и дать себе время на восстановление.",
+      "objectives": {
+        "care": 1,
+        "rest": 2
+      },
+      "objective_labels": {
+        "care": "Пройти лечение",
+        "rest": "Отдохнуть в два разных дня"
+      },
+      "bindings": {
+        "care": [
+          {
+            "module": "health",
+            "operation": "treat"
+          }
+        ],
+        "rest": [
+          {
+            "module": "needs",
+            "operation": "nap",
+            "different_days": true
+          },
+          {
+            "module": "needs",
+            "operation": "sleep",
+            "different_days": true
+          },
+          {
+            "module": "character",
+            "operation": "rest",
+            "different_days": true
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 40
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_care_and_recovery",
+          "value": true
+        }
+      ]
+    },
+    "family_presence": {
+      "label": "Время для семьи",
+      "description": "Сочетать внимание, обучение и распределение заботы.",
+      "objectives": {
+        "time": 2,
+        "learning": 1,
+        "care": 1
+      },
+      "objective_labels": {
+        "time": "Провести время вместе в два разных дня",
+        "learning": "Помочь освоить новое",
+        "care": "Распределить обязанность"
+      },
+      "bindings": {
+        "time": [
+          {
+            "module": "family",
+            "operation": "care",
+            "args": {
+              "action": "play"
+            },
+            "different_days": true
+          }
+        ],
+        "learning": [
+          {
+            "module": "family",
+            "operation": "care",
+            "args": {
+              "action": "teach"
+            }
+          }
+        ],
+        "care": [
+          {
+            "module": "family",
+            "operation": "assign"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 50
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_family_presence",
+          "value": true
+        }
+      ]
+    },
+    "personal_style": {
+      "label": "Свой стиль",
+      "description": "Собрать комплект и найти занятие, в котором удобно быть собой.",
+      "objectives": {
+        "outfit": 1,
+        "practice": 2
+      },
+      "objective_labels": {
+        "outfit": "Надеть комплект",
+        "practice": "Попробовать два разных навыка"
+      },
+      "bindings": {
+        "outfit": [
+          {
+            "module": "appearance",
+            "operation": "outfit"
+          }
+        ],
+        "practice": [
+          {
+            "module": "growth",
+            "operation": "practice",
+            "unique_arg": "id"
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 40
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_personal_style",
+          "value": true
+        }
+      ]
+    },
+    "healthy_boundaries": {
+      "label": "Доверие через поступки",
+      "description": "Поддерживать связь последовательно и уважать личные границы.",
+      "objectives": {
+        "support": 2,
+        "cooperate": 1
+      },
+      "objective_labels": {
+        "support": "Поддержать человека в два разных дня",
+        "cooperate": "Помочь с делом"
+      },
+      "bindings": {
+        "support": [
+          {
+            "module": "npc_relationships",
+            "operation": "interact",
+            "args": {
+              "action": "support"
+            },
+            "different_days": true,
+            "result": {
+              "accepted": true
+            }
+          }
+        ],
+        "cooperate": [
+          {
+            "module": "npc_relationships",
+            "operation": "interact",
+            "args": {
+              "action": "cooperate"
+            },
+            "result": {
+              "accepted": true
+            }
+          }
+        ]
+      },
+      "rewards": [
+        {
+          "kind": "money",
+          "amount": 40
+        },
+        {
+          "kind": "xp",
+          "amount": 30
+        },
+        {
+          "kind": "flag",
+          "id": "completed_healthy_boundaries",
+          "value": true
+        }
+      ]
+    }
+  },
+  "group_projects": {
+    "public_workshop": {
+      "label": "Открытая мастерская",
+      "cost": 60,
+      "effort": 12,
+      "reputation": 18,
+      "reward": 100
+    },
+    "neighborhood_archive": {
+      "label": "Архив района",
+      "cost": 90,
+      "effort": 18,
+      "reputation": 25,
+      "reward": 150
+    },
+    "mutual_aid": {
+      "label": "День взаимопомощи",
+      "cost": 40,
+      "effort": 9,
+      "reputation": 15,
+      "reward": 65
     }
   }
 }

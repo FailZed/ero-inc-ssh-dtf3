@@ -1,0 +1,51 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 2100.72900390625,
+    "y": 634.7921752929688,
+    "width": 142.88999938964844,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 1985,
+  "blockName": "Sleep/End Sleep",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 8079
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7309
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5286
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5289
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3097
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

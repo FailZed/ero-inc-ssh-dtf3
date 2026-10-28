@@ -197,6 +197,6 @@ func _deep_duplicate_condition_recursively(
 			var dup = _deep_duplicate_condition_recursively(sub_con)
 			if is_instance_valid(dup):
 				new_sub_conditions.append(dup)
-		new_condition.sub_conditions = new_sub_conditions
+		new_condition.sub_conditions.assign(new_sub_conditions)
 
 	return new_condition

@@ -1,0 +1,808 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_sk",
+  "m_LocaleId": {
+    "m_Code": "sk"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180670
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Skús vysloviť jej meno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Porozprávaj sa s ňou",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Skús na ňu zavolať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Skús sa s ňou porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Povedz ahoj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Cítim zvláštne nutkanie sa s ňou porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Poďme sa s ňou porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Kde ju schovám",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Poďme sa na toho robota pozrieť",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "Skús komunikovať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "A čo môj nájom?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Mám obavy...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "Čo to bolo?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Koľko asi stojí?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Môj sexuálny život",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Porozprávaj sa s robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Porozprávaj sa s robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Porozprávaj sa s robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Opýtaj sa jej na moju izbu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Zaujímalo by ma, čo si o mne myslí...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Možno vie počítať?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Opýtaj sa jej, ako rýchlo zarobiť peniaze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Opýtaj sa jej na počasie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Opýtaj sa jej, čo si myslí o veľkosti môjho...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "A čo tá vec s kávou?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Štve ma...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Je otravná...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Skúsme sa s ňou porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Porozprávajme sa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Porozprávaj sa s ňou",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Povedz jej, aby sa s tebou porozprávala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Požiadaj ju, aby rozprávala nežne",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Nudím sa…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Strávme s ňou nejaký čas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Poďme četovať!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Opýtaj sa robota na existenčné otázky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Opýtaj sa jej na niečo nedôležité",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Opýtaj sa jej na politiku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Opýtaj sa jej na zdroj všetkého utrpenia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Mám náladu hrať nejaké hry",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Poďme si zahrať karty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "Je čas na slovný futbal!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Je trochu neskoro, ale chcem sa s ňou porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": "Myslím, že sa chce porozprávať...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Povedz jej, že ju miluješ!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Flirtuj s robotom <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Mal by som byť k nej milší...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Opýtaj sa na jej emócie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Má sexbot nejaké záujmy?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Má niekedy sexbot hlad?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Chcem sa jej dotknúť...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Zabudol som na niečo?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "O úrovni inteligencie robota...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Vie robot hrať šach?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Mám skúsiť inú hru?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Myslím, že viem, v ktorej hre ju môžem poraziť...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Bot vyzerá zvláštne...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Zaujímalo by ma, čo ku mne cíti...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Zdá sa, že Bot je hlboko zamyslený...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Myslím, že odo mňa niečo chce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Teraz, keď má obe nohy...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": "Mal by som sa opýtať robota na riziká chodenia von",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Musím sa jej opýtať ohľadom možnosti, že by mohla ísť von",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "O sexbotoch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Možno nakoniec predsa len dokáže rozprávať?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Poďme sa znova porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Niečo mi tu nesedí…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Aký je jej názor na domáce zvieratá?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Mal by som ju pozvať na rande",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Chcem si s ňou pozrieť film",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Čo je to za podivný zápach?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Spýtaj sa jej na halloweenske dekorácie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "A čo ten roztomilý plyšový pavúčik?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Mal by som sa jej opýtať, či ku nám môže prísť Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "A čo tak karaoke?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Opýtaj sa jej, čo robiť s tou predavačkou",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Skús sa s ňou znova porozprávať",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Opýtaj sa na Melissu a jej „chýbajúce“ časti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Prediskutujte postoj bezdomovca voči robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Spýtaj sa jej, ako sa cíti po opravách",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Sledujte správy s {f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Akú superschopnosť by si chcela?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Ďalší hororový príbeh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Čo robíš, keď tu nie som?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Ak by si si mohla nájsť prácu, aká by to bola?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "Chcela by si sa zmeniť na človeka?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Pomsta prenajímateľovi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655125
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Opýtajte sa jej, ako sa vysporiadať s problematickou susedkou",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655126
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Čo si myslíte, že sa stane po smrti?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655127
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Máte plán pre prípad zombie apokalypsy?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655128
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Skúsme hru na hranie rolí",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655129
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Nájde si Annalie niekedy priateľa?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655130
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6437392580223180670,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124655125,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655126,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655127,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655128,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655129,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655130,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

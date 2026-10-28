@@ -1,0 +1,4562 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Polyglot_vi",
+  "m_LocaleId": {
+    "m_Code": "vi"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 3020549575994940229
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 740631321567561848
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 907575955456,
+      "m_Localized": "viVi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126754480
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907601121280,
+      "m_Localized": "Vietnamese",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1066867232768,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315585,
+      "m_Localized": "Lớp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315586,
+      "m_Localized": "Xóa nhân vật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315587,
+      "m_Localized": "Nhân vật mới",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315588,
+      "m_Localized": "Trí tuệ nhân tạo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315589,
+      "m_Localized": "Người ngoài hành tinh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315590,
+      "m_Localized": "Bản sao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315591,
+      "m_Localized": "Người máy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315592,
+      "m_Localized": "Vị thần",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315593,
+      "m_Localized": "Con quỷ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315594,
+      "m_Localized": "Nữ quỷ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315595,
+      "m_Localized": "Rồng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315596,
+      "m_Localized": "Những con rồng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315597,
+      "m_Localized": "Bóng ma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315598,
+      "m_Localized": "Chúa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315599,
+      "m_Localized": "Các vị thần",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315600,
+      "m_Localized": "Nữ thần",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315601,
+      "m_Localized": "pháp sư",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315602,
+      "m_Localized": "Cứu thương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315603,
+      "m_Localized": "Quái vật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315604,
+      "m_Localized": "Ninja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315605,
+      "m_Localized": "Cướp biển",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315606,
+      "m_Localized": "Linh mục",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315607,
+      "m_Localized": "Hoàng tử",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315608,
+      "m_Localized": "Công chúa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315609,
+      "m_Localized": "Người máy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315610,
+      "m_Localized": "Bộ xương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315611,
+      "m_Localized": "Bắn tỉa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315612,
+      "m_Localized": "Người lính",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315613,
+      "m_Localized": "Tên trộm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315614,
+      "m_Localized": "Chiến binh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315615,
+      "m_Localized": "Phù thủy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315616,
+      "m_Localized": "Thây ma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315617,
+      "m_Localized": "Bầy thây ma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315618,
+      "m_Localized": "Vị trí đầu tiên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315619,
+      "m_Localized": "Địa điểm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315620,
+      "m_Localized": "Vị trí thứ hai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315621,
+      "m_Localized": "Vị trí thứ ba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315622,
+      "m_Localized": "Đang cháy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315623,
+      "m_Localized": "Chí mạng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315624,
+      "m_Localized": "Chết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315625,
+      "m_Localized": "Đông lạnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315626,
+      "m_Localized": "Ngộ độc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315627,
+      "m_Localized": "Chậm lại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315628,
+      "m_Localized": "Choáng váng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315629,
+      "m_Localized": "vô thức, mất ý thức",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315630,
+      "m_Localized": "Không bị thương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315631,
+      "m_Localized": "Ướt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315632,
+      "m_Localized": "Bị thương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315633,
+      "m_Localized": "Lớn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315634,
+      "m_Localized": "khổng lồ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315635,
+      "m_Localized": "Nhỏ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315636,
+      "m_Localized": "Nhỏ xíu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315637,
+      "m_Localized": "Không khí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315638,
+      "m_Localized": "Đất",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315639,
+      "m_Localized": "Lửa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315640,
+      "m_Localized": "Kim loại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315641,
+      "m_Localized": "Nước",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315642,
+      "m_Localized": "Cược",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315643,
+      "m_Localized": "Loại bỏ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315644,
+      "m_Localized": "Giải độc đắc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315645,
+      "m_Localized": "Tối đa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315646,
+      "m_Localized": "tối thiểu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315647,
+      "m_Localized": "Áo giáp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315648,
+      "m_Localized": "Mũi tên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315649,
+      "m_Localized": "Những mũi tên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315650,
+      "m_Localized": "Bảng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509888,
+      "m_Localized": "Bom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509889,
+      "m_Localized": "Sách",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509890,
+      "m_Localized": "Ủng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509891,
+      "m_Localized": "Nơ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509892,
+      "m_Localized": "Thẻ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509893,
+      "m_Localized": "Thẻ bài",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509894,
+      "m_Localized": "Ngực",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509895,
+      "m_Localized": "Phép thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509896,
+      "m_Localized": "Rỉ sét",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509897,
+      "m_Localized": "Dao găm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509898,
+      "m_Localized": "Chết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509899,
+      "m_Localized": "Xúc xắc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509900,
+      "m_Localized": "Cửa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509901,
+      "m_Localized": "Găng tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509902,
+      "m_Localized": "Đá quý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509903,
+      "m_Localized": "Quà tặng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509904,
+      "m_Localized": "Quà tặng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509905,
+      "m_Localized": "Bao tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509906,
+      "m_Localized": "Súng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509907,
+      "m_Localized": "búa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509908,
+      "m_Localized": "Mũ bảo hiểm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509909,
+      "m_Localized": "Chìa khoá",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509910,
+      "m_Localized": "Con dao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509911,
+      "m_Localized": "Khóa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509912,
+      "m_Localized": "Tình yêu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509913,
+      "m_Localized": "Súng máy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509914,
+      "m_Localized": "Phép thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509915,
+      "m_Localized": "Súng lục",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509916,
+      "m_Localized": "Nhiệm vụ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509917,
+      "m_Localized": "Xếp hạng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509918,
+      "m_Localized": "Súng trường",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509919,
+      "m_Localized": "Súng phóng tên lửa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509920,
+      "m_Localized": "Nhập vai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509921,
+      "m_Localized": "Cuộn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509922,
+      "m_Localized": "Lá chắn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509923,
+      "m_Localized": "Lá chắn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509924,
+      "m_Localized": "Lá chắn năng lượng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509925,
+      "m_Localized": "Lá chắn năng lượng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509926,
+      "m_Localized": "Súng ngắn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509927,
+      "m_Localized": "Súng trường bắn tỉa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509928,
+      "m_Localized": "Phép",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509929,
+      "m_Localized": "Trượng phép",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509930,
+      "m_Localized": "Kiếm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509931,
+      "m_Localized": "Kho báu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509932,
+      "m_Localized": "Sử thi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509933,
+      "m_Localized": "Rác",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509934,
+      "m_Localized": "Cây đũa phép",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509935,
+      "m_Localized": "Gỗ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704192,
+      "m_Localized": "Độ cao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704193,
+      "m_Localized": "Phanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704194,
+      "m_Localized": "Khung gầm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704195,
+      "m_Localized": "Độ sâu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704196,
+      "m_Localized": "Nhiên liệu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704197,
+      "m_Localized": "Thiết bị",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704198,
+      "m_Localized": "Xử lý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704199,
+      "m_Localized": "Tốc độ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704200,
+      "m_Localized": "Lái",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704201,
+      "m_Localized": "Bộ giảm xóc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704202,
+      "m_Localized": "Bánh xe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704203,
+      "m_Localized": "Cánh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704204,
+      "m_Localized": "Huy chương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704205,
+      "m_Localized": "Huy chương đồng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704206,
+      "m_Localized": "Huy chương vàng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704207,
+      "m_Localized": "Huy chương bạc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704208,
+      "m_Localized": "Đồng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704209,
+      "m_Localized": "Đồng xu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704210,
+      "m_Localized": "Vàng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704211,
+      "m_Localized": "thỏi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704212,
+      "m_Localized": "Bạch kim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704213,
+      "m_Localized": "Bạc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704214,
+      "m_Localized": "Lâu đài",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704215,
+      "m_Localized": "Hang động",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704216,
+      "m_Localized": "Ngục tối",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704217,
+      "m_Localized": "Quán trọ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704218,
+      "m_Localized": "Hành tinh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704219,
+      "m_Localized": "trái đất",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704220,
+      "m_Localized": "Không gian",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704221,
+      "m_Localized": "Tàu vũ trụ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704222,
+      "m_Localized": "Câu chuyện",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704223,
+      "m_Localized": "Phiêu lưu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704224,
+      "m_Localized": "Chương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704225,
+      "m_Localized": "Trang",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704226,
+      "m_Localized": "Trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704227,
+      "m_Localized": "Phát triển trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704228,
+      "m_Localized": "Nhà phát triển trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704229,
+      "m_Localized": "Được phát triển bởi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704230,
+      "m_Localized": "Sản xuất",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704231,
+      "m_Localized": "Nhà sản xuất",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704232,
+      "m_Localized": "Nhà xuất bản",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704233,
+      "m_Localized": "Giám đốc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704234,
+      "m_Localized": "Chỉ đạo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704235,
+      "m_Localized": "Trợ lý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704236,
+      "m_Localized": "Cộng tác viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704237,
+      "m_Localized": "Cao hơn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704238,
+      "m_Localized": "Thấp hơn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704239,
+      "m_Localized": "Giám đốc kỹ thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704240,
+      "m_Localized": "Giám đốc kỹ thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704241,
+      "m_Localized": "Giám đốc sáng tạo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704242,
+      "m_Localized": "Đạo diễn hoạt hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704243,
+      "m_Localized": "Giám đốc nghệ thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704244,
+      "m_Localized": "Giám đốc âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704245,
+      "m_Localized": "Giám đốc thiết kế",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704246,
+      "m_Localized": "Quản lý chương trình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704247,
+      "m_Localized": "Quản lý dự án",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704248,
+      "m_Localized": "Thiết kế trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704249,
+      "m_Localized": "Nhà thiết kế trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704250,
+      "m_Localized": "Mã",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704251,
+      "m_Localized": "Lập trình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704252,
+      "m_Localized": "Lập trình viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704253,
+      "m_Localized": "Các lập trình viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704254,
+      "m_Localized": "Trưởng ban lập trình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704255,
+      "m_Localized": "Nhà thiết kế đồ họa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704256,
+      "m_Localized": "Nghệ sĩ kỹ thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704257,
+      "m_Localized": "nghệ sĩ lên ý tưởng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704258,
+      "m_Localized": "Nhà thiết kế nhân vật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704259,
+      "m_Localized": "Nghệ thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704260,
+      "m_Localized": "Nghệ sĩ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704261,
+      "m_Localized": "Nghệ sĩ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704262,
+      "m_Localized": "Thiết kế màn chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704263,
+      "m_Localized": "Nhà thiết kế màn chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704264,
+      "m_Localized": "Đạo diễn điện ảnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704265,
+      "m_Localized": "Nhà làm phim hoạt hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704266,
+      "m_Localized": "Nghệ sĩ giao diện",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704267,
+      "m_Localized": "Nhà soạn nhạc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704268,
+      "m_Localized": "Nhạc sĩ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704269,
+      "m_Localized": "Lời cảm ơn đặc biệt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704270,
+      "m_Localized": "Đặc biệt cảm ơn ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898496,
+      "m_Localized": "Hình ảnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898497,
+      "m_Localized": "Hình ảnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898498,
+      "m_Localized": "Phông chữ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898499,
+      "m_Localized": "Phông chữ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898500,
+      "m_Localized": "Nhạc nền (nhạc game)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898501,
+      "m_Localized": "Nhà văn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898502,
+      "m_Localized": "Bản thảo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898503,
+      "m_Localized": "Biên kịch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898504,
+      "m_Localized": "Hoạt hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898505,
+      "m_Localized": "Người làm phim hoạt hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898506,
+      "m_Localized": "Lồng tiếng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898507,
+      "m_Localized": "Diễn viên lồng tiếng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898508,
+      "m_Localized": "Nhà thiết kế âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898509,
+      "m_Localized": "Kỹ sư âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898510,
+      "m_Localized": "Hiệu ứng âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898511,
+      "m_Localized": "Hiệu ứng hình ảnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898512,
+      "m_Localized": "Người ghi âm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898513,
+      "m_Localized": "Nghệ sĩ Foley",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898514,
+      "m_Localized": "Quản lý kiểm tra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898515,
+      "m_Localized": "Chỉ đạo kiểm tra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898516,
+      "m_Localized": "Người kiểm tra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898517,
+      "m_Localized": "Quản trị cơ sở dữ liệu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898518,
+      "m_Localized": "Mô hình 3D",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898519,
+      "m_Localized": "Người mẫu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898520,
+      "m_Localized": "Nội địa hóa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898521,
+      "m_Localized": "Bản dịch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898522,
+      "m_Localized": "Được dịch bởi Polyglot Project.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898523,
+      "m_Localized": "Trò chơi hành động",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898524,
+      "m_Localized": "Trò chơi phiêu lưu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898525,
+      "m_Localized": "Thẻ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898526,
+      "m_Localized": "Trò chơi thông thường",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898527,
+      "m_Localized": "Trò chơi giả tưởng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898528,
+      "m_Localized": "Trò chơi hạng nặng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898529,
+      "m_Localized": "Độc lập",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898530,
+      "m_Localized": "Trò chơi thời trung cổ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898531,
+      "m_Localized": "Khác",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898532,
+      "m_Localized": "Nhiều người chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898533,
+      "m_Localized": "Thể loại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898534,
+      "m_Localized": "Trò chơi dạng Platform",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898535,
+      "m_Localized": "Trò chơi giải đố",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898536,
+      "m_Localized": "Trò chơi đố vui",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898537,
+      "m_Localized": "Cuộc đua",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898538,
+      "m_Localized": "Trò chơi cổ điển",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898539,
+      "m_Localized": "Trò chơi nhập vai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898540,
+      "m_Localized": "Chiến lược thời gian thực",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898541,
+      "m_Localized": "Trò chơi khoa học viễn tưởng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898542,
+      "m_Localized": "Trò chơi bắn súng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898543,
+      "m_Localized": "Trò chơi mô phỏng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898544,
+      "m_Localized": "Chơi đơn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898545,
+      "m_Localized": "Trò chơi thể thao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898546,
+      "m_Localized": "Trò chơi chiến lược",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898547,
+      "m_Localized": "Chiến lược theo lượt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898548,
+      "m_Localized": "Trò chơi thủ thành",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898549,
+      "m_Localized": "Không phát hiện thấy {0}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 740631321567561848
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907617898550,
+      "m_Localized": "Rời khỏi khu vực theo dõi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898551,
+      "m_Localized": "Không phát hiện thấy HMD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898552,
+      "m_Localized": "Mã lỗi:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898553,
+      "m_Localized": "Đã xảy ra lỗi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898554,
+      "m_Localized": "Tên không hợp lệ.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898555,
+      "m_Localized": "CD Key không hợp lệ.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898556,
+      "m_Localized": "Đã phát hiện gian lận!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898557,
+      "m_Localized": "Mất kết nối.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898558,
+      "m_Localized": "Đối thủ của bạn đã ngắt kết nối.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898559,
+      "m_Localized": "Người chơi khác đã ngắt kết nối.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898560,
+      "m_Localized": "Đồng đội của bạn đã ngắt kết nối.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898561,
+      "m_Localized": "Không thể kết nối với server",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898562,
+      "m_Localized": "File lưu hỏng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898563,
+      "m_Localized": "Không tìm thấy trò chơi nào.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092800,
+      "m_Localized": "Không có trò chơi nào đang mở.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092801,
+      "m_Localized": "Tấn công",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092802,
+      "m_Localized": "Tăng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092803,
+      "m_Localized": "Bản dựng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092804,
+      "m_Localized": "Truyền",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092805,
+      "m_Localized": "Truyền",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092806,
+      "m_Localized": "Nhận",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092807,
+      "m_Localized": "Leo lên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092808,
+      "m_Localized": "Đóng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092809,
+      "m_Localized": "Thu thập",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092810,
+      "m_Localized": "Nấu ăn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092811,
+      "m_Localized": "Chế tạo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092812,
+      "m_Localized": "Cúi người",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092813,
+      "m_Localized": "Né tránh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092814,
+      "m_Localized": "Lái ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092815,
+      "m_Localized": "Bay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092816,
+      "m_Localized": "Tốc độ tối đa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092817,
+      "m_Localized": "Đi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092818,
+      "m_Localized": "đi đến ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092819,
+      "m_Localized": "Nửa tốc độ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092820,
+      "m_Localized": "hồi phục",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092821,
+      "m_Localized": "Nhảy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092822,
+      "m_Localized": "Hạ cánh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092823,
+      "m_Localized": "Nhìn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092824,
+      "m_Localized": "Trộn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092825,
+      "m_Localized": "Mở",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092826,
+      "m_Localized": "Nhặt lên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092827,
+      "m_Localized": "Cuộc đua",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092828,
+      "m_Localized": "Đọc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092829,
+      "m_Localized": "Thay thế",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092830,
+      "m_Localized": "Chạy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092831,
+      "m_Localized": "Chạy trốn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092832,
+      "m_Localized": "Bắn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092833,
+      "m_Localized": "lẻn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092834,
+      "m_Localized": "Quay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092835,
+      "m_Localized": "chạy nước rút/ chạy nhanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092836,
+      "m_Localized": "lái",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092837,
+      "m_Localized": "Cất cánh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092838,
+      "m_Localized": "nói chuyện",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092839,
+      "m_Localized": "Ném",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092840,
+      "m_Localized": "Đi bộ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092841,
+      "m_Localized": "Độ bền",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092842,
+      "m_Localized": "Điểm kinh nghiệm /EXP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092843,
+      "m_Localized": "Nữ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092844,
+      "m_Localized": "Máu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092845,
+      "m_Localized": "Trái tim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092846,
+      "m_Localized": "Trái tim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092847,
+      "m_Localized": "Cấp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092848,
+      "m_Localized": "Lên cấp!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092849,
+      "m_Localized": "Mạng sống",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092850,
+      "m_Localized": "Nam",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092851,
+      "m_Localized": "Đàn ông",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092852,
+      "m_Localized": "nhưng người đàn ông",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092853,
+      "m_Localized": "Hồi sinh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092854,
+      "m_Localized": "Hồi sinh trong:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092855,
+      "m_Localized": "Hồi sinh?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092856,
+      "m_Localized": "đang hồi sinh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092857,
+      "m_Localized": "Kỹ năng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092858,
+      "m_Localized": "Điểm xuất hiện",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092859,
+      "m_Localized": "Người chuyển giới",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092860,
+      "m_Localized": "Phụ nữ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092861,
+      "m_Localized": "những người phụ nữ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092862,
+      "m_Localized": "Thiệt hại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092863,
+      "m_Localized": "đòn chí mạng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092864,
+      "m_Localized": "đòn chí mạng bị hụt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092865,
+      "m_Localized": "đánh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092866,
+      "m_Localized": "HP/ thanh máu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092867,
+      "m_Localized": "trượt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092868,
+      "m_Localized": "Sát thương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092869,
+      "m_Localized": "Sát thương",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092870,
+      "m_Localized": "Kẻ thù",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092871,
+      "m_Localized": "Kẻ thù",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092872,
+      "m_Localized": "những tên kẻ thù",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092873,
+      "m_Localized": "những tên kẻ thù",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092874,
+      "m_Localized": "túi đồ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092875,
+      "m_Localized": "băng đạn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092876,
+      "m_Localized": "Đạn dược",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092877,
+      "m_Localized": "viên đạn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092878,
+      "m_Localized": "những viên đạn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092879,
+      "m_Localized": "Mua",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092880,
+      "m_Localized": "giới hạn túi đồ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092881,
+      "m_Localized": "Thả",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092882,
+      "m_Localized": "Trở ngại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092883,
+      "m_Localized": "túi đồ đầy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092884,
+      "m_Localized": "vật phẩm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092885,
+      "m_Localized": "chìa khoá",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092886,
+      "m_Localized": "Tăng sức mạnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287104,
+      "m_Localized": "Bán",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287105,
+      "m_Localized": "Sử dụng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287106,
+      "m_Localized": "Vũ khí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287107,
+      "m_Localized": "Vũ khí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287108,
+      "m_Localized": "Bạn không thể mang được thêm nữa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287109,
+      "m_Localized": "Hãy cẩn thận!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287110,
+      "m_Localized": "Hãy cẩn thận.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287111,
+      "m_Localized": "Chiến thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287112,
+      "m_Localized": "Mục tiêu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287113,
+      "m_Localized": "Hỗ trợ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287114,
+      "m_Localized": "Hỗ trợ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287115,
+      "m_Localized": "Tấn công",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287116,
+      "m_Localized": "thưởng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287117,
+      "m_Localized": "Chụp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287118,
+      "m_Localized": "Hoàn thành",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287119,
+      "m_Localized": "Cái chết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287120,
+      "m_Localized": "lần chết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287121,
+      "m_Localized": "Bảo vệ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287122,
+      "m_Localized": "Hủy diệt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287123,
+      "m_Localized": "Trốn thoát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287124,
+      "m_Localized": "Kết Thúc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287125,
+      "m_Localized": "Trò chơi kết thúc!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287126,
+      "m_Localized": "TRÒ CHƠI KẾT THÚC!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287127,
+      "m_Localized": "Điểm cao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287128,
+      "m_Localized": "Chưa hoàn thành",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287129,
+      "m_Localized": "Giết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287130,
+      "m_Localized": "Hỗ trợ tiêu diệt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287131,
+      "m_Localized": "Giết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287132,
+      "m_Localized": "mạng giết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287133,
+      "m_Localized": "Đã khóa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287134,
+      "m_Localized": "Tổn thất",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287135,
+      "m_Localized": "trận đấu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287136,
+      "m_Localized": "Nhiệm vụ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287137,
+      "m_Localized": "Mục tiêu nhiệm vụ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287138,
+      "m_Localized": "Mục tiêu nhiệm vụ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287139,
+      "m_Localized": "Hệ số",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287140,
+      "m_Localized": "Mục tiêu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287141,
+      "m_Localized": "Vị trí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287142,
+      "m_Localized": "Vòng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287143,
+      "m_Localized": "Vòng đua",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287144,
+      "m_Localized": "Vòng đấu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287145,
+      "m_Localized": "Điểm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287146,
+      "m_Localized": "Thời gian",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287147,
+      "m_Localized": "Thời gian còn lại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287148,
+      "m_Localized": "Giải đấu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287149,
+      "m_Localized": "các giải đấu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287150,
+      "m_Localized": "Thắng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287151,
+      "m_Localized": "thua",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287152,
+      "m_Localized": "Bạn đã bị đánh bại.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287153,
+      "m_Localized": "Kẻ thất bại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287154,
+      "m_Localized": "Đội của bạn đã thua!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287155,
+      "m_Localized": "Đội của bạn đã thắng!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287156,
+      "m_Localized": "Chiến thắng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287157,
+      "m_Localized": "Người chiến thắng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287158,
+      "m_Localized": "Bạn đã chết.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287159,
+      "m_Localized": "Bạn đã chết.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287160,
+      "m_Localized": "Bạn thua!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287161,
+      "m_Localized": "Bạn đã thua!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287162,
+      "m_Localized": "Bạn thắng!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287163,
+      "m_Localized": "Bạn đã thắng!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287164,
+      "m_Localized": "Máy ảnh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287165,
+      "m_Localized": "Đảo ngược",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287166,
+      "m_Localized": "Bình thường",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287167,
+      "m_Localized": "Trục X tầm nhìn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287168,
+      "m_Localized": "Trục Y tầm nhìn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287169,
+      "m_Localized": "Nút",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287170,
+      "m_Localized": "Nhấp vào",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287171,
+      "m_Localized": "Vùng chết",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287172,
+      "m_Localized": "Nhấp đúp vào ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287173,
+      "m_Localized": "Kéo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287174,
+      "m_Localized": "Kéo và thả",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287175,
+      "m_Localized": "Ngón tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287176,
+      "m_Localized": "Tay cầm chơi game",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287177,
+      "m_Localized": "Con quay hồi chuyển",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287178,
+      "m_Localized": "chìa khoá",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287179,
+      "m_Localized": "Bàn phím",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287180,
+      "m_Localized": "Chuột",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287181,
+      "m_Localized": "Độ nhạy của chuột",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287182,
+      "m_Localized": "Chụm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287183,
+      "m_Localized": "Xoay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287184,
+      "m_Localized": "Cuộn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287185,
+      "m_Localized": "Lắc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481408,
+      "m_Localized": "Phóng to",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481409,
+      "m_Localized": "Vuốt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481410,
+      "m_Localized": "Nhấn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481411,
+      "m_Localized": "cái nút",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481412,
+      "m_Localized": "Chìa khóa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481413,
+      "m_Localized": "Nghiêng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481414,
+      "m_Localized": "Cánh tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481415,
+      "m_Localized": "đôi tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481416,
+      "m_Localized": "Ngực",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481417,
+      "m_Localized": "Cằm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481418,
+      "m_Localized": "Màu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481419,
+      "m_Localized": "Tai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481420,
+      "m_Localized": "đôi tai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481421,
+      "m_Localized": "Mắt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481422,
+      "m_Localized": "đôi mắt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481423,
+      "m_Localized": "đôi bàn chân",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481424,
+      "m_Localized": "bàn chân",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481425,
+      "m_Localized": "Tóc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481426,
+      "m_Localized": "râu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481427,
+      "m_Localized": "Lông",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481428,
+      "m_Localized": "Tóc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481429,
+      "m_Localized": "bàn tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481430,
+      "m_Localized": "đôi bàn tay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481431,
+      "m_Localized": "Đầu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481432,
+      "m_Localized": "Hông",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481433,
+      "m_Localized": "Chân",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481434,
+      "m_Localized": "đôi chân",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481435,
+      "m_Localized": "Miệng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481436,
+      "m_Localized": "Cổ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481437,
+      "m_Localized": "Mũi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481438,
+      "m_Localized": "Da",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481439,
+      "m_Localized": "Ngực",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481440,
+      "m_Localized": "Độ khó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481441,
+      "m_Localized": "Dễ dàng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481442,
+      "m_Localized": "Khó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481443,
+      "m_Localized": "Không thể",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481444,
+      "m_Localized": "Điên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481445,
+      "m_Localized": "Trung bình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481446,
+      "m_Localized": "Rất dễ dàng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481447,
+      "m_Localized": "Rất Khó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481448,
+      "m_Localized": "Xuống",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481449,
+      "m_Localized": "Trái",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481450,
+      "m_Localized": "Phải",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481451,
+      "m_Localized": "Lên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481452,
+      "m_Localized": "Tải",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481453,
+      "m_Localized": "Tải trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481454,
+      "m_Localized": "Đang tải...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481455,
+      "m_Localized": "Vui lòng đợi...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481456,
+      "m_Localized": "Reset dữ liệu đã lưu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481457,
+      "m_Localized": "Lưu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481458,
+      "m_Localized": "Lưu dữ liệu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481459,
+      "m_Localized": "Lưu trò chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481460,
+      "m_Localized": "Đang lưu...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481461,
+      "m_Localized": "Tất cả",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481462,
+      "m_Localized": "Tuổi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481463,
+      "m_Localized": "Bạn có thực sự chắc chắn không?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481464,
+      "m_Localized": "Bạn có chắc không?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481465,
+      "m_Localized": "Quay lại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481466,
+      "m_Localized": "Nhạc nền",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481467,
+      "m_Localized": "Hủy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481468,
+      "m_Localized": "Đóng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481469,
+      "m_Localized": "Xác nhận",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481470,
+      "m_Localized": "Tiếp tục",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481471,
+      "m_Localized": "Tiếp tục?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481472,
+      "m_Localized": "credits",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481473,
+      "m_Localized": "Thoát ra màn hình chính",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481474,
+      "m_Localized": "Thoát ra màn hình chính?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481475,
+      "m_Localized": "DLC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481476,
+      "m_Localized": "Tải xuống",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481477,
+      "m_Localized": "Nội dung có thể tải xuống",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481478,
+      "m_Localized": "Thoát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481479,
+      "m_Localized": "Thoát?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481480,
+      "m_Localized": "Tiện ích bổ sung",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481481,
+      "m_Localized": "FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481482,
+      "m_Localized": "Phòng trưng bày nghệ thuật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481483,
+      "m_Localized": "Tạm biệt!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481484,
+      "m_Localized": "Đồ họa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481485,
+      "m_Localized": "Mua hàng trong ứng dụng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481486,
+      "m_Localized": "Ngôn ngữ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481487,
+      "m_Localized": "Cấp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481488,
+      "m_Localized": "Thư",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481489,
+      "m_Localized": "Thực đơn chính",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481490,
+      "m_Localized": "Thêm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481491,
+      "m_Localized": "Âm nhạc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481492,
+      "m_Localized": "Trình phát nhạc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675712,
+      "m_Localized": "Trò chơi mới",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675713,
+      "m_Localized": "Tiếp theo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675714,
+      "m_Localized": "Bản nhạc tiếp theo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675715,
+      "m_Localized": "Không",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675716,
+      "m_Localized": "KHÔNG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675717,
+      "m_Localized": "Không",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675718,
+      "m_Localized": "Ok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675719,
+      "m_Localized": "Tạm dừng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675720,
+      "m_Localized": "Đã tạm dừng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675721,
+      "m_Localized": "Chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504832,
+      "m_Localized": "Chơi lại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504833,
+      "m_Localized": "Nhấn phím bất kỳ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504834,
+      "m_Localized": "Nhấn phím bất kỳ để tiếp tục",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504835,
+      "m_Localized": "Nhấn Bắt đầu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504836,
+      "m_Localized": "Nhấn Bắt đầu để tiếp tục",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504837,
+      "m_Localized": "Trước",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504838,
+      "m_Localized": "Bản nhạc trước",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699136,
+      "m_Localized": "Giá",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699137,
+      "m_Localized": "miễn phí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699138,
+      "m_Localized": "Mua hàng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699139,
+      "m_Localized": "Thoát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699140,
+      "m_Localized": "Bạn có chắc chắn muốn thoát không?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699141,
+      "m_Localized": "Thoát?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699142,
+      "m_Localized": "Phát lại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699143,
+      "m_Localized": "Trả lại",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699144,
+      "m_Localized": "Quay lại Menu chính",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699145,
+      "m_Localized": "Quay lại Menu chính?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699146,
+      "m_Localized": "Chia sẻ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699147,
+      "m_Localized": "Bỏ qua",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699148,
+      "m_Localized": "Âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699149,
+      "m_Localized": "Xin cảm ơn!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699150,
+      "m_Localized": "Mở khóa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699151,
+      "m_Localized": "Video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699152,
+      "m_Localized": "Giọng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699153,
+      "m_Localized": "Cảnh báo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699154,
+      "m_Localized": "Chào mừng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699155,
+      "m_Localized": "Thế giới",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699156,
+      "m_Localized": "Vâng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699157,
+      "m_Localized": "Có",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699158,
+      "m_Localized": "CÓ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699159,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699160,
+      "m_Localized": "Tiếng Việt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699161,
+      "m_Localized": "Vietnamese",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699162,
+      "m_Localized": "Đăng nhập",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699163,
+      "m_Localized": "Email",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699164,
+      "m_Localized": "Quên mật khẩu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699165,
+      "m_Localized": "Mật khẩu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699166,
+      "m_Localized": "Đăng ký",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699167,
+      "m_Localized": "Nhớ mật khẩu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699168,
+      "m_Localized": "Thử thách",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699169,
+      "m_Localized": "Chế độ thử thách",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699170,
+      "m_Localized": "Hợp tác",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699171,
+      "m_Localized": "phối hợp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699172,
+      "m_Localized": "Trận tử chiến",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699173,
+      "m_Localized": "Trợ giúp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699174,
+      "m_Localized": "Hướng dẫn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699175,
+      "m_Localized": "Nhiều người chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699176,
+      "m_Localized": "Nhiều người chơi cục bộ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699177,
+      "m_Localized": "Nhiều người chơi trực tuyến",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699178,
+      "m_Localized": "Chơi trực tuyến",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699179,
+      "m_Localized": "Chơi đơn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699180,
+      "m_Localized": "Đào tạo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699181,
+      "m_Localized": "Hướng dẫn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699182,
+      "m_Localized": "So với",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699183,
+      "m_Localized": "Tên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699184,
+      "m_Localized": "Tên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699185,
+      "m_Localized": "Họ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699186,
+      "m_Localized": "Tên người dùng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699187,
+      "m_Localized": "Tùy chọn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699188,
+      "m_Localized": "Đồ họa nâng cao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699189,
+      "m_Localized": "bỏ răng cưa đồ hoạ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699190,
+      "m_Localized": "Hoa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699191,
+      "m_Localized": "Điều khiển",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699192,
+      "m_Localized": "Tùy chọn độ khó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699193,
+      "m_Localized": "Hiển thị",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699194,
+      "m_Localized": "Chế độ xem thứ nhất",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699195,
+      "m_Localized": "FOV",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699196,
+      "m_Localized": "Toàn màn hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699197,
+      "m_Localized": "Tùy chọn lối chơi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699198,
+      "m_Localized": "Tùy chọn đồ họa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699199,
+      "m_Localized": "HUD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699200,
+      "m_Localized": "Âm lượng nhạc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699201,
+      "m_Localized": "Tinh chỉnh mạng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699202,
+      "m_Localized": "Chất lượng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699203,
+      "m_Localized": "Độ phân giải",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699204,
+      "m_Localized": "Âm lượng hiệu ứng âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699205,
+      "m_Localized": "Bóng tối",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699206,
+      "m_Localized": "Bóng tối",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893440,
+      "m_Localized": "Kích thước",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893441,
+      "m_Localized": "Tùy chọn âm thanh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893442,
+      "m_Localized": "âm lượng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893443,
+      "m_Localized": "Chia đôi màn hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893444,
+      "m_Localized": "Chế độ xem thứ ba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893445,
+      "m_Localized": "Tùy chọn video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893446,
+      "m_Localized": "Chất lượng video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893447,
+      "m_Localized": "Âm lượng giọng nói",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893448,
+      "m_Localized": "Đồng bộ hóa V",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893449,
+      "m_Localized": "Có cửa sổ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893450,
+      "m_Localized": "Chi tiết bóng đổ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893451,
+      "m_Localized": "Chi tiết kết cấu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893452,
+      "m_Localized": "Kết xuất đa lõi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893453,
+      "m_Localized": "Chi tiết mô hình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893454,
+      "m_Localized": "Màn ảnh rộng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893455,
+      "m_Localized": "Chi tiết hiệu ứng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893456,
+      "m_Localized": "Dị hướng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893457,
+      "m_Localized": "Song tuyến",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893458,
+      "m_Localized": "Tam tuyến tính",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893459,
+      "m_Localized": "Chế độ lọc",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893460,
+      "m_Localized": "Cực cao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893461,
+      "m_Localized": "Rất Cao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893462,
+      "m_Localized": "Cao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893463,
+      "m_Localized": "Trung bình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893464,
+      "m_Localized": "Thấp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893465,
+      "m_Localized": "Phiên bản",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893466,
+      "m_Localized": "Bản thử nghiệm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893467,
+      "m_Localized": "miễn phí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893468,
+      "m_Localized": "Đầy đủ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893469,
+      "m_Localized": "một phần",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893470,
+      "m_Localized": "Cao cấp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893471,
+      "m_Localized": "Phần mềm chia sẻ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893472,
+      "m_Localized": "Dùng thử",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893473,
+      "m_Localized": "Chế độ thoải mái VR",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893474,
+      "m_Localized": "Đặt lại hướng HMD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893475,
+      "m_Localized": "Thực tế ảo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 740631321567561848,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 907617898549
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569126754480,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Proof-read 100%\nby tatsuya110sao\ndone 03/01/26"
+        }
+      }
+    ]
+  }
+}

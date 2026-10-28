@@ -64,6 +64,10 @@ static func history(sim, id: String) -> Array:
 		var detail: Dictionary = entry.data
 		var text := ""
 		match str(entry.kind):
+			"companion":
+				var moment_labels := {"hand":"Держались за руки","head":"Тёплый жест","face":"Ласковое прикосновение"}
+				var outcome_labels := {"completed":"приятный момент вместе","declined":"предложение отклонено","cancelled":"встреча остановлена","interrupted":"планы изменились"}
+				text = "%s · %s" % [moment_labels.get(detail.gesture,"Время вместе"),outcome_labels.get(detail.outcome,"")]
 			"social_outcome": text = "%s · %s · %s" % [sim.catalog.agency_actions[detail.action].label, actor_name(sim, str(detail.other)), "удачно" if detail.accepted else "отказ"]
 			"experience":
 				var experiences := {"betrayed": "Переживание предательства", "misled": "Обнаружен обман", "conflict": "Остался конфликт", "supported": "Поддержка", "romantic_interest": "Романтический интерес", "witnessed_harm": "Свидетель происшествия"}

@@ -1,0 +1,67 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16233,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "After that the game was very close. {{wi}}Mostly because {f_botName} insisted on banning teammates from helping each other.\r\nNow is time for my last throw.\r\nWe are a few points behind and since {f_botName} and Melissa are going to make a perfect throw anyway, the result of this game depends on me.\r\nIf I score a strike, we will win, If I don’t, we lose.\r\nMy hands are getting sweaty, and I can feel how {f_botName} is staring daggers into my back…\r\nI need to somehow fight off this pressure…\r\nLady Annalie: Just throw already! We don’t have the whole day!\r\nMelissa: I need to be going soon, so please, make it quick.\r\n#bot.Expression.clear\r\n#bot.Expression.angry\r\nBot: He needs to focus! Shut up!\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nYou: Alright, here I go! \r\n…\r\nDamn it…{{wi}} I wasn’t good enough.\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Pervy\r\nLady Annalie: Yay! We actually won! \r\nMelissa: {f_botName} and I are yet to throw. If I do bad, we can still lose.\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Pervy\r\nLady Annalie: Yeah, like that’s gonna happen. You are in top form!\r\nWe lost, but at least it seems like {f_botName} is taking it well.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473287944332894208
+      },
+      {
+        "KeyId": 473287944337088512
+      },
+      {
+        "KeyId": 473287944337088513
+      },
+      {
+        "KeyId": 473287944337088514
+      },
+      {
+        "KeyId": 473287944337088515
+      },
+      {
+        "KeyId": 473287944337088516
+      },
+      {
+        "KeyId": 473287944337088517
+      },
+      {
+        "KeyId": 473287944337088518
+      },
+      {
+        "KeyId": 473287944337088519
+      },
+      {
+        "KeyId": 473287944337088520
+      },
+      {
+        "KeyId": 473287944337088521
+      },
+      {
+        "KeyId": 473287944337088522
+      },
+      {
+        "KeyId": 473287944337088523
+      },
+      {
+        "KeyId": 473287944337088524
+      },
+      {
+        "KeyId": 473287944337088525
+      },
+      {
+        "KeyId": 473287944337088526
+      }
+    ]
+  }
+}

@@ -145,6 +145,7 @@ func difficulty_branches() -> void:
 	var student = t.fresh({"settings": {"start_minutes": 0}, "lessons": {"daily": {"hours": [0, 1], "weekdays": [1,2,3,4,5,6,7]}}})
 	_advance_to(student, 8 * 1440)
 	t._check(student.state.world.education.get("expelled", false), "repeated missed classes cause a distinct disciplinary state")
+	t.command(student, "character", "rest", {"minutes":120})
 	t.command(student, "world", "homework")
 	t.command(student, "world", "appeal")
 	t._check(not student.state.world.education.expelled and student.state.world.education.absences == 0, "prepared appeal provides a paid path back into education")

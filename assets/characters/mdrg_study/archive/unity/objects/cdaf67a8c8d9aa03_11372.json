@@ -1,0 +1,34 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17255,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#FashionShowJun.Jun.Normal\r\nLooks like {f_botName} is doing a last walk across the runway. Let’s cheer on her!\r\nYou: {f_botName}!!! You look great!!!\r\n#FashionShowJun.Jun.Looking\n#FashionShowJun.animate(MoveToRight)\r\nYou: … She’s so cute.\n...\n#FashionShowJun.Jun.Normal\n#FashionShowJun.animate(MoveToRight)\n...",
+    "localizedLines": [
+      {
+        "KeyId": 482638044028985344
+      },
+      {
+        "KeyId": 482638044033179648
+      },
+      {
+        "KeyId": 482638044033179649
+      },
+      {
+        "KeyId": 482640161963761664
+      },
+      {
+        "KeyId": 482640225994006528
+      }
+    ]
+  }
+}

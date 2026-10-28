@@ -1,0 +1,287 @@
+{
+  "computer_rules": {
+    "tracks": {
+      "programmer": {
+        "label": "Программист",
+        "skill": "computing"
+      },
+      "hacker": {
+        "label": "Хакер и специалист по безопасности",
+        "skill": "cybersecurity"
+      },
+      "streamer": {
+        "label": "Стример",
+        "skill": "journalism"
+      }
+    },
+    "upgrades": {
+      "processor": {
+        "label": "Процессор и память",
+        "cost": 120,
+        "max_level": 3,
+        "description": "Быстрее выполнять этапы программирования."
+      },
+      "network": {
+        "label": "Рабочая сеть",
+        "cost": 100,
+        "max_level": 3,
+        "description": "Лучше подготовка цифровых операций и стабильнее эфиры."
+      },
+      "studio": {
+        "label": "Микрофон и свет",
+        "cost": 100,
+        "max_level": 3,
+        "description": "Качество эфира и удержание аудитории."
+      }
+    },
+    "specializations": {
+      "web": {
+        "label": "Веб-разработка",
+        "track": "programmer",
+        "description": "Бонус к сайтам и интерфейсам."
+      },
+      "tools": {
+        "label": "Инструменты и автоматизация",
+        "track": "programmer",
+        "description": "Бонус к приложениям и обработке данных."
+      },
+      "defense": {
+        "label": "Аудит и восстановление",
+        "track": "hacker",
+        "description": "Выше качество легальных клиентских операций."
+      },
+      "covert": {
+        "label": "Рискованные заказы",
+        "track": "hacker",
+        "description": "Меньше следа у рискованных операций; последствия остаются."
+      },
+      "educator": {
+        "label": "Обучающий канал",
+        "track": "streamer",
+        "description": "Лучше эфиры на образовательные темы."
+      },
+      "entertainer": {
+        "label": "Развлекательный канал",
+        "track": "streamer",
+        "description": "Лучше игровые и творческие эфиры."
+      }
+    },
+    "projects": {
+      "shop_page": {
+        "label": "Страница маленькой мастерской",
+        "kind": "web",
+        "skill": 0,
+        "pay": 90,
+        "deadline": 4320,
+        "brief": "Клиенту нужна понятная страница с услугами и контактами."
+      },
+      "event_form": {
+        "label": "Регистрация на городской вечер",
+        "kind": "web",
+        "skill": 0,
+        "pay": 100,
+        "deadline": 4320,
+        "brief": "Форма должна корректно обрабатывать повторную регистрацию."
+      },
+      "archive_tool": {
+        "label": "Каталог семейного архива",
+        "kind": "tools",
+        "skill": 0,
+        "pay": 105,
+        "deadline": 4320,
+        "brief": "Нужно упорядочить коллекцию и не потерять исходные записи."
+      },
+      "schedule_tool": {
+        "label": "Планировщик клуба",
+        "kind": "tools",
+        "skill": 50,
+        "pay": 155,
+        "deadline": 4320,
+        "brief": "Участники хотят видеть занятость и пересечения встреч."
+      },
+      "accessible_portal": {
+        "label": "Доступный городской портал",
+        "kind": "web",
+        "skill": 100,
+        "pay": 190,
+        "deadline": 4320,
+        "brief": "Интерфейс должен работать с клавиатурой и понятными ошибками."
+      },
+      "study_app": {
+        "label": "Приложение для повторения материала",
+        "kind": "tools",
+        "skill": 150,
+        "pay": 230,
+        "deadline": 4320,
+        "brief": "Прогресс обучения должен сохраняться и восстанавливаться."
+      }
+    },
+    "project_choices": {
+      "design": {
+        "clarify": {
+          "label": "Уточнить задачу у клиента",
+          "minutes": 30,
+          "quality": 15,
+          "bugs": -1
+        },
+        "prototype": {
+          "label": "Показать быстрый прототип",
+          "minutes": 20,
+          "quality": 7,
+          "bugs": 1
+        }
+      },
+      "build": {
+        "robust": {
+          "label": "Сделать устойчивую реализацию",
+          "minutes": 50,
+          "quality": 17,
+          "bugs": 0
+        },
+        "reuse": {
+          "label": "Собрать из готовых компонентов",
+          "minutes": 30,
+          "quality": 9,
+          "bugs": 2
+        }
+      },
+      "test": {
+        "coverage": {
+          "label": "Проверить обычные и крайние случаи",
+          "minutes": 35,
+          "quality": 15,
+          "bugs": -3
+        },
+        "smoke": {
+          "label": "Проверить основной сценарий",
+          "minutes": 15,
+          "quality": 6,
+          "bugs": -1
+        }
+      }
+    },
+    "hack_choices": {
+      "careful": {
+        "label": "Разобрать данные и проверить предположение",
+        "minutes": 20,
+        "intel": 2,
+        "pressure": -1
+      },
+      "balanced": {
+        "label": "Проверить наиболее вероятный вариант",
+        "minutes": 12,
+        "intel": 1,
+        "pressure": 1
+      },
+      "fast": {
+        "label": "Продвинуться без дополнительной проверки",
+        "minutes": 6,
+        "intel": 0,
+        "pressure": 3
+      }
+    },
+    "hack_scenarios": [
+      {
+        "id": "noise",
+        "text": "В отчёте много противоречивых сигналов. Как отделить полезную информацию?"
+      },
+      {
+        "id": "integrity",
+        "text": "Промежуточный результат неполон. Стоит ли потратить время на проверку целостности?"
+      },
+      {
+        "id": "handoff",
+        "text": "Основная работа выполнена. Нужно подготовить проверяемый результат для передачи."
+      }
+    ],
+    "formats": {
+      "focused": {
+        "label": "Тематический эфир",
+        "description": "Больше содержания; вопросы лучше собирать в отдельный блок."
+      },
+      "community": {
+        "label": "Общение с аудиторией",
+        "description": "Зрители ценят ответы и участие."
+      },
+      "showcase": {
+        "label": "Показ проекта",
+        "description": "Подходит при наличии опубликованной работы в портфолио."
+      }
+    },
+    "stream_choices": {
+      "content": {
+        "label": "Продолжить основную тему",
+        "quality": 4,
+        "engagement": 0
+      },
+      "chat": {
+        "label": "Ответить зрителям",
+        "quality": 1,
+        "engagement": 5
+      },
+      "moderate": {
+        "label": "Навести порядок в чате",
+        "quality": 0,
+        "engagement": 2
+      },
+      "stabilize": {
+        "label": "Проверить качество трансляции",
+        "quality": 3,
+        "engagement": -1
+      }
+    },
+    "stream_events": [
+      {
+        "id": "questions",
+        "text": "В чате накопились вопросы по текущей теме.",
+        "best": "chat"
+      },
+      {
+        "id": "noise",
+        "text": "Несколько сообщений мешают остальным следить за эфиром.",
+        "best": "moderate"
+      },
+      {
+        "id": "signal",
+        "text": "Звук стал нестабильным, зрители это заметили.",
+        "best": "stabilize"
+      },
+      {
+        "id": "momentum",
+        "text": "Тема заинтересовала зрителей: сейчас хороший момент раскрыть её глубже.",
+        "best": "content"
+      }
+    ],
+    "lessons": {
+      "code_review": {
+        "label": "Разбор чужого учебного проекта",
+        "track": "programmer",
+        "skill": "computing"
+      },
+      "security_lab": {
+        "label": "Учебная лаборатория безопасности",
+        "track": "hacker",
+        "skill": "cybersecurity"
+      },
+      "broadcast_practice": {
+        "label": "Репетиция подачи и общения",
+        "track": "streamer",
+        "skill": "journalism"
+      }
+    },
+    "sponsors": {
+      "local": {
+        "label": "Местный партнёр",
+        "followers": 40,
+        "pay": 45,
+        "quality": 55
+      },
+      "studio": {
+        "label": "Партнёрская студия",
+        "followers": 150,
+        "pay": 100,
+        "quality": 70
+      }
+    }
+  }
+}

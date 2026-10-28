@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 1805.615478515625,
+    "y": -707.2083129882812,
+    "width": 198.60000610351562,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 745,
+  "blockName": "ReturnHome/Coffee event",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 5006
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2242
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5003
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2663
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2621
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2619
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

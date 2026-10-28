@@ -8,5 +8,7 @@ __pycache__/
 *.pyc
 dist/
 builds/
+.cache/
+.artifacts/
 .DS_Store
 ._*

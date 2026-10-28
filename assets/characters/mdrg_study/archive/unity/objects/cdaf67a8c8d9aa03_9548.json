@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15158,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.Happy\r\n#bot.ArmBoth.UpHi\r\nBot: Are you ready, {f_playerName}?\r\nYou: Hello- Wait, ready for what? And what’s up with your arms? \r\n#bot.ArmBoth.DownNormal\r\nBot: Oh, nothing. I just wanted to gesticulate my intentions to you.\r\nYou: Which are?\r\nBot: I want to give you a massage. \r\nYou: Oh, right. How did you come up with that idea?\r\nBot: According to my data you have been stressed recently so I thought that I could help you relax with some massaging techniques I researched on the web.\r\nBot: Do I have your permission to proceed?\r\nYou: Sure, but please, be careful. I wouldn’t want to be strangled by accident…\r\n#bot.Expression.clear\r\n#bot.Expression.Angry\r\nBot: Come on! There’s no way I would do something like that!\r\n#bot.Expression.clear\r\n#bot.Expression.Happy\r\nBot: Just lay down on the couch, close your eyes, relax and let me get to work, ok?\r\nYou: Sure, sure, but I warn you! I’m not really a massage guy, they never really worked on me.\r\nBot: Duly noted. ",
+    "localizedLines": [
+      {
+        "KeyId": 323543553398530048
+      },
+      {
+        "KeyId": 323543553419501568
+      },
+      {
+        "KeyId": 323543553419501569
+      },
+      {
+        "KeyId": 323543553419501570
+      },
+      {
+        "KeyId": 323543553419501571
+      },
+      {
+        "KeyId": 323543553419501572
+      },
+      {
+        "KeyId": 323543553419501573
+      },
+      {
+        "KeyId": 323543553419501574
+      },
+      {
+        "KeyId": 323543553419501575
+      },
+      {
+        "KeyId": 323543553419501576
+      },
+      {
+        "KeyId": 323543553419501577
+      },
+      {
+        "KeyId": 323543553419501578
+      },
+      {
+        "KeyId": 323543553419501579
+      }
+    ]
+  }
+}

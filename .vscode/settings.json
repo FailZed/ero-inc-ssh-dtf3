@@ -1,6 +1,4 @@
 {
-    "godotTools.editorPath.godot4": "${env:LOCALAPPDATA}/Programs/Godot/4.6.3/Godot_v4.6.3-stable_win64.exe",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
     "files.exclude": {
         "**/._*": true,
         "**/.DS_Store": true,

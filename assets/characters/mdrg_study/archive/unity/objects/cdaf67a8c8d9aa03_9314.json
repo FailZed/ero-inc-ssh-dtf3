@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14884,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.clear\r\nI won! I guess I still got it.\r\nYou: It was a good match. \r\nBot: I must admit that you throwing with both hands at the same time was quite impressive. Unfortunately, my hands are too small to grab a ball with one hand so I was at a disadvantage.\r\nUh…{{wi}} Did I sweat in an arcade game? I feel kinda bad now…\r\n#bot.Expression.happy",
+    "localizedLines": [
+      {
+        "KeyId": 323187431370121216
+      },
+      {
+        "KeyId": 323187431370121217
+      },
+      {
+        "KeyId": 323187431370121218
+      },
+      {
+        "KeyId": 323187431370121219
+      }
+    ]
+  }
+}

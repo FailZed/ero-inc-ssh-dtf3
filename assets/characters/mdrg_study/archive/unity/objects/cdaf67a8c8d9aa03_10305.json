@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16021,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "You: On a second thought…\r\nYou: Lawyer fees will be probably higher than what I would save on getting the rent lower.\r\n#bot.Expression.happy\r\nBot: Short term, you are right! \r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nBot: Besides, the landlord is kinda scary…{{wi}} He screams a lot.\r\nYou: Y-Yeah…\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nYou: I just need to be more careful from now on and everything will be ok.\r\nBot: Yes!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 455833650931425280
+      },
+      {
+        "KeyId": 455833650931425281
+      },
+      {
+        "KeyId": 455833650931425282
+      },
+      {
+        "KeyId": 455833650931425283
+      },
+      {
+        "KeyId": 455833650931425284
+      },
+      {
+        "KeyId": 455833650931425285
+      },
+      {
+        "KeyId": 455833650931425286
+      }
+    ]
+  }
+}

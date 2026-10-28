@@ -1,0 +1,1865 @@
+{
+  "Version": 3,
+  "Meta": {
+    "Duration": 0.001,
+    "Fps": 30.0,
+    "Loop": false,
+    "AreBeziersRestricted": true,
+    "FadeInTime": 0.0,
+    "FadeOutTime": 0.0,
+    "CurveCount": 142,
+    "TotalSegmentCount": 142,
+    "TotalPointCount": 284,
+    "UserDataCount": 0,
+    "TotalUserDataSize": 0
+  },
+  "Curves": [
+    {
+      "Target": "Parameter",
+      "Id": "ParamAnonHeadpatForearm",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamAnonHeadpatUpperarm",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmLCuddleDown",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmLCuddleUp",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmLGesture",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmLRot",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmLUp",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmRGesture",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmRRot",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamArmRUp",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamAssSize",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBlanketCuddle",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBlanketCuddleMove",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBlanketSitting",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBlush",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBodyAccessoryPhysics",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBodyFeedback",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBodyX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBodyY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBodyZ",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBoobSize",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBoobSqueezeL",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBoobSqueezeR",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBraEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBreastCuddleEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBrowLEmote",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBrowLRot",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBrowLY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBrowREmote",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBrowRRot",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamBrowRY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamCalfSize",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamChestX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamCuddleHandholdingEnable",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamCuddleHandholdingMove",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamDress2Enabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEarL",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEarR",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEarsWiggle",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEnableBoobFondleL",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEnableBoobFondleR",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEnableThumbMouth",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeLShock",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeOpen",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeRShock",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeballLX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeballLY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeballRX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyeballRY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamEyesHappy",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamFaceRubEnable",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamFaceRubMoveX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamFaceRubMoveY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamFootLength",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamFootWidth",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHairPhysicsBaseToShort",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHairPhysicsMidToLong",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHairPhysicsShortToMid",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHandholdingLEnable",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHandholdingLY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHandholdingREnable",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHandholdingRY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeadX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeadY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeadZ",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeadpat",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        -1.0,
+        0,
+        0.001,
+        -1.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeadpatX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeadpatY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHeart",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamHoodieEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamIrisZoom",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamLegL",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamLegR",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamMouthForm",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamMouthOpen",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamOmegaMeter",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPantiesEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPantiesX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPantsEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPhysicsBoobXL",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPhysicsBoobXR",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPhysicsBoobYL",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPhysicsBoobYR",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPillow",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamPupilWiggle",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamSaliva",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamSalivaPhysics",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamShirtEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamShoeLOn",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamShoeROn",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamSkirtEnabled",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamSkirtUp",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamTailWiggle",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamThighSize",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamThumbMouthX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamToungeX",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "ParamToungeY",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_1_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_2_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_3_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_4_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_5_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_6_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_7_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_8_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "Param_Angle_Rotation_9_TailMain",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part10",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part11",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part12",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part13",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part14",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part15",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part16",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part17",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part18",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part19",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part2",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part20",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part21",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part22",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part23",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part24",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part25",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part26",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part27",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part28",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part29",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        0.0,
+        0,
+        0.001,
+        0.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part3",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part30",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part31",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part32",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part4",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part5",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part6",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part7",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part8",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "Part9",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "TailMain_Skinning",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "body",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "face",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    },
+    {
+      "Target": "PartOpacity",
+      "Id": "hair",
+      "FadeInTime": 0.0,
+      "FadeOutTime": 0.0,
+      "Segments": [
+        0.0,
+        1.0,
+        0,
+        0.001,
+        1.0
+      ]
+    }
+  ],
+  "UserData": []
+}

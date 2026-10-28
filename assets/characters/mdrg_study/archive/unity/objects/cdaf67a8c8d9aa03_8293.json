@@ -1,0 +1,88 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13748,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "I pulled her away forcefully, took our stuff and left the money…\r\nYou: What was that about?! You can’t just freeze like that in front of people! Acting weird like that is just begging to be exposed!\r\nBot: Sorry {f_playerName}, but I had to defend your honour!\r\nYou: My honour? What do you mean?\r\nBot: That stupid cashier started saying many rude things about you! \r\nYou: Like what?!\r\nBot: That you are a creep and a stalker!{{punch}}\r\nYou: Ugh!\r\n#bot.Expression.Sad\r\nBot: Are you alright, {f_playerName}?!\r\nYou: I-I’m fine…\r\nHearing her calling me a creep and stalker caused me some physical pain…\r\n#bot.Expression.clear\r\nYou: More importantly, how did the two of you communicate without saying a word?\r\nBot: That’s because she’s a bot.{{punch}}\r\nYou: What?!\r\nI can’t believe this…\r\nI can’t believe she fooled me like that! I was feeling so guilty after ambushing her in that dark alleyway…\r\nA-Anyway, what am I supposed to do now? This caught me completely off guard.\r\nNow that I know for sure she’s a bot, I can try talking with her again.\r\nYou: Listen {f_botName}, I think we should wait until that cashier finishes her work and try to have a conversation with her.\r\n#bot.Expression.sad\r\nBot: Are you sure it’s a good idea? She doesn’t seem very nice…\r\nYou: I heard what she told you, but she’s probably reacting this way because she feels threatened.\r\nBot: If you say so…\r\nYou: Alright then, let’s go.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209930915041763328
+      },
+      {
+        "KeyId": 209930915041763329
+      },
+      {
+        "KeyId": 209930915041763330
+      },
+      {
+        "KeyId": 209930915041763331
+      },
+      {
+        "KeyId": 209930915041763332
+      },
+      {
+        "KeyId": 209930915041763333
+      },
+      {
+        "KeyId": 209930915041763334
+      },
+      {
+        "KeyId": 209930915041763335
+      },
+      {
+        "KeyId": 209930915045957632
+      },
+      {
+        "KeyId": 209930915045957633
+      },
+      {
+        "KeyId": 209930915045957634
+      },
+      {
+        "KeyId": 209930915045957635
+      },
+      {
+        "KeyId": 209930915045957636
+      },
+      {
+        "KeyId": 209930915045957637
+      },
+      {
+        "KeyId": 209930915045957638
+      },
+      {
+        "KeyId": 209930915045957639
+      },
+      {
+        "KeyId": 209930915045957640
+      },
+      {
+        "KeyId": 209930915045957641
+      },
+      {
+        "KeyId": 209930915045957642
+      },
+      {
+        "KeyId": 209930915045957643
+      },
+      {
+        "KeyId": 209930915045957644
+      },
+      {
+        "KeyId": 209930915045957645
+      },
+      {
+        "KeyId": 209930915045957646
+      }
+    ]
+  }
+}

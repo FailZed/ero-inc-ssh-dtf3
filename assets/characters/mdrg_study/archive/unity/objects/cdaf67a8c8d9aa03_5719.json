@@ -1,0 +1,47 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 5792.58056640625,
+    "y": 7586.71142578125,
+    "width": 222.4199981689453,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 8035,
+  "blockName": "Outside/Clothier/MentalHealth",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 2271
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5717
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2269
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5718
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

@@ -1,0 +1,772 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Common_vi",
+  "m_LocaleId": {
+    "m_Code": "vi"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": -593790824102937619
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 280313597952,
+      "m_Localized": "bigdaddyhurt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 283585155072,
+      "m_Localized": "Lady Annalie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285984296960,
+      "m_Localized": "Chủ nhà",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6160727567896576,
+      "m_Localized": "Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8386212125347840,
+      "m_Localized": "Bạn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8386212137930752,
+      "m_Localized": "Bot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893851684864,
+      "m_Localized": "Nữ cảnh sát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893902016512,
+      "m_Localized": "Cảnh sát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210816,
+      "m_Localized": "Mẹ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210817,
+      "m_Localized": "Hàng xóm khó chịu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210818,
+      "m_Localized": "TTS của cảnh sát(text to speech)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210819,
+      "m_Localized": "TTS của cảnh sát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405120,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405121,
+      "m_Localized": "???2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405122,
+      "m_Localized": "Thug",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405123,
+      "m_Localized": "Người đàn ông bí ẩn trong bộ đồ màu hồng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599424,
+      "m_Localized": "Ecclesiasticalot FF",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599425,
+      "m_Localized": "Nữ tu gợi cảm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599426,
+      "m_Localized": "'Sơ' Shanice",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131587
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599427,
+      "m_Localized": "Sơ Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793728,
+      "m_Localized": "Priestcan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793729,
+      "m_Localized": "Sơ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793730,
+      "m_Localized": "Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793731,
+      "m_Localized": "Nữ tu Shanice tương lai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988032,
+      "m_Localized": "Priestbot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988033,
+      "m_Localized": "Ecclesiasticalot FF & Bạn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988034,
+      "m_Localized": "Goku đệ nhị",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988035,
+      "m_Localized": "Bo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182336,
+      "m_Localized": "Nigevchenko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182337,
+      "m_Localized": "Jamie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182338,
+      "m_Localized": "Phát thanh viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182339,
+      "m_Localized": "Phụ nữ nào đó\n\n\n\n\n\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376640,
+      "m_Localized": "Máy phát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376641,
+      "m_Localized": "???1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376642,
+      "m_Localized": "Thư ký của Blaubleim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376643,
+      "m_Localized": "Blaubleim ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570944,
+      "m_Localized": "dAdDy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570945,
+      "m_Localized": "yOU",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570947,
+      "m_Localized": "Priestbot Mark",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765248,
+      "m_Localized": "Hobo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765250,
+      "m_Localized": "Annalie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765251,
+      "m_Localized": "Bạn và Bot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959552,
+      "m_Localized": "Người lạ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959553,
+      "m_Localized": "Người lạ 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959554,
+      "m_Localized": "Người lạ 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959555,
+      "m_Localized": "Người lạ 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153856,
+      "m_Localized": "Cô bé nào đó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153857,
+      "m_Localized": "Mẹ của cô gái",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153858,
+      "m_Localized": "Bà già nào đó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153859,
+      "m_Localized": "Cảnh sát 3 và 4",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153860,
+      "m_Localized": "Cảnh sát 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348161,
+      "m_Localized": "Nữ cảnh sát và Nữ cảnh sát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348162,
+      "m_Localized": "??? 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348163,
+      "m_Localized": "??? 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542464,
+      "m_Localized": "??? 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542465,
+      "m_Localized": "Josh?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542466,
+      "m_Localized": "Josh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542467,
+      "m_Localized": "Nhân viên lễ tân",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736768,
+      "m_Localized": "Thám tử",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736769,
+      "m_Localized": "Bồi bàn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736770,
+      "m_Localized": "Ngài Ma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736771,
+      "m_Localized": "Cầu thủ bóng chày",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931072,
+      "m_Localized": "Death",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931073,
+      "m_Localized": "Ma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931074,
+      "m_Localized": "Anh chàng bận rộn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931075,
+      "m_Localized": "Bà cô nào đó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125377,
+      "m_Localized": "Ecclesiasticalot FF ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125379,
+      "m_Localized": "Người trợ giúp mới",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893973319680,
+      "m_Localized": "Người hướng dẫn khách Leonardo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893973319681,
+      "m_Localized": "Big Daddy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197348848315654144,
+      "m_Localized": "Dược sĩ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197348848403734528,
+      "m_Localized": "Một số nữ thư ký",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168577,
+      "m_Localized": "Nhân viên thu ngân",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168576,
+      "m_Localized": "Leonardo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852338282496,
+      "m_Localized": "Melissa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899521212416,
+      "m_Localized": "Người dẫn chương trình",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899592515584,
+      "m_Localized": "Phóng viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899592515585,
+      "m_Localized": "Kẻ bạo loạn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734682095616,
+      "m_Localized": "Người phụ nữ giàu có trong chiếc áo khoác màu hồng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734682095617,
+      "m_Localized": "Người phụ nữ giàu có với cặp loa quá khổ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734589820928,
+      "m_Localized": "Loa cửa hàng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319409216818241536,
+      "m_Localized": "Little_Richard",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319409216914710528,
+      "m_Localized": "AbuseTenant (Bạn)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732238696448,
+      "m_Localized": "Cô câu cá",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445184,
+      "m_Localized": "Nhân viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445185,
+      "m_Localized": "Nhân viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445186,
+      "m_Localized": "DAK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445187,
+      "m_Localized": "Quản trị viên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400360382465,
+      "m_Localized": "Người phụ nữ trẻ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400360382464,
+      "m_Localized": "Bà già",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400263913472,
+      "m_Localized": "Lucy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 471117888949837824,
+      "m_Localized": "Amei",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 471117889046306816,
+      "m_Localized": "Melissa thật",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 471117889046306817,
+      "m_Localized": "Jacobi E. Wunderanwalt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348160,
+      "m_Localized": "Nữ cảnh sát & Nữ cảnh sát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479127667148316672,
+      "m_Localized": "Britannia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479859701739151360,
+      "m_Localized": "Người phụ nữ ngẫu nhiên",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479127667198648320,
+      "m_Localized": "Người phụ nữ xa lạ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481728203517321216,
+      "m_Localized": "Ông già",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777896128514,
+      "m_Localized": "???5",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777896128513,
+      "m_Localized": "???4",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777896128512,
+      "m_Localized": "???3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777795465216,
+      "m_Localized": "???2&3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542258247985258496,
+      "m_Localized": "Bản ghi âm",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569124131587,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Proof-read 100%\nby tatsuya110sao\ndone 08/01/26"
+        }
+      }
+    ]
+  }
+}

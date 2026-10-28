@@ -1,0 +1,4637 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Polyglot_fil",
+  "m_LocaleId": {
+    "m_Code": "fil"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 3020549575994940229
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 907575955456,
+      "m_Localized": "filFIL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907601121280,
+      "m_Localized": "Filipino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1066867232768,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315585,
+      "m_Localized": "Klase",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315586,
+      "m_Localized": "Tanggalin ang character",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315587,
+      "m_Localized": "Bagong karakter",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315588,
+      "m_Localized": "Artipisyal na katalinuhan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315589,
+      "m_Localized": "Alien",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315590,
+      "m_Localized": "Clone",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315591,
+      "m_Localized": "Cyborg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315592,
+      "m_Localized": "Diyos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315593,
+      "m_Localized": "Demonyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315594,
+      "m_Localized": "Demoness",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315595,
+      "m_Localized": "Dragon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315596,
+      "m_Localized": "Mga dragon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315597,
+      "m_Localized": "Multo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315598,
+      "m_Localized": "Diyos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315599,
+      "m_Localized": "Mga diyos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315600,
+      "m_Localized": "Diyosa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315601,
+      "m_Localized": "Mage",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315602,
+      "m_Localized": "Medik",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126753835
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907605315603,
+      "m_Localized": "Halimaw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315604,
+      "m_Localized": "Ninja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315605,
+      "m_Localized": "Pirata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315606,
+      "m_Localized": "Pari",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315607,
+      "m_Localized": "Prinsipe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315608,
+      "m_Localized": "Princessa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315609,
+      "m_Localized": "Robot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315610,
+      "m_Localized": "Kalansay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315611,
+      "m_Localized": "Sniper",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315612,
+      "m_Localized": "Sundalo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315613,
+      "m_Localized": "Magnanakaw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315614,
+      "m_Localized": "Mandirigma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315615,
+      "m_Localized": "Salamangkero",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315616,
+      "m_Localized": "Zombie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315617,
+      "m_Localized": "Zombies",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315618,
+      "m_Localized": "Unang lugar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315619,
+      "m_Localized": "Lugar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315620,
+      "m_Localized": "Pangalawang pwesto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315621,
+      "m_Localized": "Pangatlong pwesto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315622,
+      "m_Localized": "Nasusunog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315623,
+      "m_Localized": "Mapanganib",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315624,
+      "m_Localized": "Patay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315625,
+      "m_Localized": "Nagyelo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315626,
+      "m_Localized": "Lason",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315627,
+      "m_Localized": "Mabagal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315628,
+      "m_Localized": "Tigalgal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315629,
+      "m_Localized": "Walang malay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315630,
+      "m_Localized": "Hindi nasaktan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315631,
+      "m_Localized": "Basa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315632,
+      "m_Localized": "Nasugatan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315633,
+      "m_Localized": "Malaki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315634,
+      "m_Localized": "Napakalaki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315635,
+      "m_Localized": "Maliit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315636,
+      "m_Localized": "Mikmik",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126753836
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907605315637,
+      "m_Localized": "Hangin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315638,
+      "m_Localized": "Lupa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315639,
+      "m_Localized": "Apoy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315640,
+      "m_Localized": "Metal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315641,
+      "m_Localized": "Tubig",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315642,
+      "m_Localized": "Taya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315643,
+      "m_Localized": "Itapon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315644,
+      "m_Localized": "Dyákpat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315645,
+      "m_Localized": "Max",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315646,
+      "m_Localized": "Min",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315647,
+      "m_Localized": "Baluti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315648,
+      "m_Localized": "Pana",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315649,
+      "m_Localized": "Mga pana",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315650,
+      "m_Localized": "Tabla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509888,
+      "m_Localized": "Bomba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509889,
+      "m_Localized": "Libro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509890,
+      "m_Localized": "Botas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509891,
+      "m_Localized": "Palaso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509892,
+      "m_Localized": "Baraha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509893,
+      "m_Localized": "Mga baraha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509894,
+      "m_Localized": "Dibdib",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126753837
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907609509895,
+      "m_Localized": "Salamangka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509896,
+      "m_Localized": "Kalawangin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509897,
+      "m_Localized": "Punyal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509898,
+      "m_Localized": "Dai",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509899,
+      "m_Localized": "Dais",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509900,
+      "m_Localized": "Pintuan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509901,
+      "m_Localized": "Gauntlets",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509902,
+      "m_Localized": "Hiyas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509903,
+      "m_Localized": "Regalo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509904,
+      "m_Localized": "Mga regalo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509905,
+      "m_Localized": "Guwantes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509906,
+      "m_Localized": "Baril",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509907,
+      "m_Localized": "Martilyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509908,
+      "m_Localized": "Helmet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509909,
+      "m_Localized": "Susi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509910,
+      "m_Localized": "Kutsilyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509911,
+      "m_Localized": "Kandado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509912,
+      "m_Localized": "Pag-ibig",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509913,
+      "m_Localized": "Machine gun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509914,
+      "m_Localized": "Mahika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509915,
+      "m_Localized": "Pistol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509916,
+      "m_Localized": "Gagawin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509917,
+      "m_Localized": "Ranggo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509918,
+      "m_Localized": "Riple",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509919,
+      "m_Localized": "Raket launcher ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509920,
+      "m_Localized": "RPG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509921,
+      "m_Localized": "Iskroll",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509922,
+      "m_Localized": "Kalasag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509923,
+      "m_Localized": "Mga kalasag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509924,
+      "m_Localized": "Enerhiyang kalasag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509925,
+      "m_Localized": "Mga enerhiyang kalasag ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509926,
+      "m_Localized": "Shotgun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509927,
+      "m_Localized": "Sniper riple",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509928,
+      "m_Localized": "Spell",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509929,
+      "m_Localized": "Mga tauhan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509930,
+      "m_Localized": "Espada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509931,
+      "m_Localized": "Kayamanan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509932,
+      "m_Localized": "Epic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509933,
+      "m_Localized": "Basura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509934,
+      "m_Localized": "Wand",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509935,
+      "m_Localized": "Kahoy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704192,
+      "m_Localized": "Ugali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704193,
+      "m_Localized": "Preno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704194,
+      "m_Localized": "Tsasis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704195,
+      "m_Localized": "Lalim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704196,
+      "m_Localized": "Gasolina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704197,
+      "m_Localized": "Kambiyada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704198,
+      "m_Localized": "Paghawak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704199,
+      "m_Localized": "Bilis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704200,
+      "m_Localized": "Pagpiloto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704201,
+      "m_Localized": "Suspensyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704202,
+      "m_Localized": "Gulong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704203,
+      "m_Localized": "Pakpak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704204,
+      "m_Localized": "Medalya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704205,
+      "m_Localized": "Tansong medalya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704206,
+      "m_Localized": "Gintong medalya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704207,
+      "m_Localized": "Pilak medalya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704208,
+      "m_Localized": "Tanso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704209,
+      "m_Localized": "Barya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704210,
+      "m_Localized": "Ginto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704211,
+      "m_Localized": "Ingot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704212,
+      "m_Localized": "Platino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704213,
+      "m_Localized": "Pilak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704214,
+      "m_Localized": "Kastilyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704215,
+      "m_Localized": "Yungib",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704216,
+      "m_Localized": "Bartolina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704217,
+      "m_Localized": "Ponda",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704218,
+      "m_Localized": "Planeta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704219,
+      "m_Localized": "Mundo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704220,
+      "m_Localized": "Kalawakan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704221,
+      "m_Localized": "Spaceship",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704222,
+      "m_Localized": "Kwento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704223,
+      "m_Localized": "Adbentura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704224,
+      "m_Localized": "Kabanata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704225,
+      "m_Localized": "Pahina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704226,
+      "m_Localized": "Laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704227,
+      "m_Localized": "Pagbuo ng laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704228,
+      "m_Localized": "Mga gumawa sa laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704229,
+      "m_Localized": "Binuo nila",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704230,
+      "m_Localized": "Produksiyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704231,
+      "m_Localized": "Tagagawa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704232,
+      "m_Localized": "Publisher",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704233,
+      "m_Localized": "Direktor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704234,
+      "m_Localized": "Tingga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704235,
+      "m_Localized": "Katulong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704236,
+      "m_Localized": "Associate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704237,
+      "m_Localized": "Senior",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704238,
+      "m_Localized": "Junior",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704239,
+      "m_Localized": "Chief Technical Officer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704240,
+      "m_Localized": "Teknikal na Direktor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704241,
+      "m_Localized": "Creative Director",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704242,
+      "m_Localized": "Direktor ng Animation",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704243,
+      "m_Localized": "Art Director",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704244,
+      "m_Localized": "Direktor ng Audio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704245,
+      "m_Localized": "Direktor ng Disenyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704246,
+      "m_Localized": "Tagapamahala ng Program",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704247,
+      "m_Localized": "Tagapamahala ng proyekto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704248,
+      "m_Localized": "Disenyo ng laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704249,
+      "m_Localized": "Taga -disenyo ng laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704250,
+      "m_Localized": "Code",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704251,
+      "m_Localized": "Programming",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704252,
+      "m_Localized": "Programmer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704253,
+      "m_Localized": "Mga Programmer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704254,
+      "m_Localized": "Lead programmer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704255,
+      "m_Localized": "Grapikong taga-disenyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704256,
+      "m_Localized": "Teknikal na Artist",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704257,
+      "m_Localized": "Konsepto ng Konsepto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704258,
+      "m_Localized": "Character Designer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704259,
+      "m_Localized": "Sining",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704260,
+      "m_Localized": "Artista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704261,
+      "m_Localized": "Mga Artista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704262,
+      "m_Localized": "Antas ng disenyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704263,
+      "m_Localized": "Level Designer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704264,
+      "m_Localized": "Direktor ng Cinematics",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704265,
+      "m_Localized": "Cinematic Animator",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704266,
+      "m_Localized": "Interface Artist",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704267,
+      "m_Localized": "Kompositor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704268,
+      "m_Localized": "Musikero",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704269,
+      "m_Localized": "Espesyal na pasasalamat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704270,
+      "m_Localized": "Espesyal na salamat kay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898496,
+      "m_Localized": "Imahe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898497,
+      "m_Localized": "Mga imahe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898498,
+      "m_Localized": "Font",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898499,
+      "m_Localized": "Mga font",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898500,
+      "m_Localized": "Soundtrack",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898501,
+      "m_Localized": "Manunulat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898502,
+      "m_Localized": "Manuskrito",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898503,
+      "m_Localized": "Manunulat ng script",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898504,
+      "m_Localized": "Animation",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898505,
+      "m_Localized": "Animator",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898506,
+      "m_Localized": "Kumikilos ang boses",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898507,
+      "m_Localized": "Boses artista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898508,
+      "m_Localized": "Tunog na taga -disenyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898509,
+      "m_Localized": "Sound Engineer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898510,
+      "m_Localized": "Mga Epekto ng Tunog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898511,
+      "m_Localized": "Visual effects",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898512,
+      "m_Localized": "Recordist",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898513,
+      "m_Localized": "Foley Artist",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898514,
+      "m_Localized": "Test Manager",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898515,
+      "m_Localized": "Tingga ng pagsubok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898516,
+      "m_Localized": "Tester",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898517,
+      "m_Localized": "Database admin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898518,
+      "m_Localized": "Pagmomodelo ng 3D",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898519,
+      "m_Localized": "Mga modelo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898520,
+      "m_Localized": "Lokalisasyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898521,
+      "m_Localized": "Pagsasalin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898522,
+      "m_Localized": "Isinalin ng Polyglot Project.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898523,
+      "m_Localized": "Laro ng aksyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898524,
+      "m_Localized": "Laro ng Pakikipagsapalaran",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898525,
+      "m_Localized": "Card",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898526,
+      "m_Localized": "Kaswal na laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898527,
+      "m_Localized": "Laro ng pantasya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898528,
+      "m_Localized": "Hardcore Game",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898529,
+      "m_Localized": "Indie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898530,
+      "m_Localized": "Medieval Game",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898531,
+      "m_Localized": "Misc.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898532,
+      "m_Localized": "Multiplayer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898533,
+      "m_Localized": "Genre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898534,
+      "m_Localized": "Platformer Game",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898535,
+      "m_Localized": "Laro ng Puzzle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898536,
+      "m_Localized": "Laro ng pagsusulit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898537,
+      "m_Localized": "Karera",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898538,
+      "m_Localized": "Retro Game",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898539,
+      "m_Localized": "Laro ng roleplaying",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898540,
+      "m_Localized": "Diskarte sa real-time",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898541,
+      "m_Localized": "Laro sa Fiction ng Science",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898542,
+      "m_Localized": "Game ng tagabaril",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898543,
+      "m_Localized": "Simulation Game",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898544,
+      "m_Localized": "Singleplayer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898545,
+      "m_Localized": "Laro ng palakasan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898546,
+      "m_Localized": "Diskarte sa Laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898547,
+      "m_Localized": "Diskarte na batay sa turn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898548,
+      "m_Localized": "Laro sa pagtatanggol ng tower",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898549,
+      "m_Localized": "Walang napansin na {0}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907617898550,
+      "m_Localized": "Umaalis sa lugar ng pagsubaybay.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898551,
+      "m_Localized": "Walang napansin na HMD.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898552,
+      "m_Localized": "Error code:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898553,
+      "m_Localized": "May naganap na error.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898554,
+      "m_Localized": "Hindi wastong pangalan.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898555,
+      "m_Localized": "Di -wastong CD key.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898556,
+      "m_Localized": "Nakita ang mga cheats!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898557,
+      "m_Localized": "Nawala ang koneksyon.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898558,
+      "m_Localized": "Ang iyong kalaban ay naka -disconnect.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898559,
+      "m_Localized": "Ang iba pang manlalaro ay naka -disconnect.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898560,
+      "m_Localized": "Ang iyong kapareha ay naka -disconnect.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898561,
+      "m_Localized": "Hindi makakonekta sa server.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898562,
+      "m_Localized": "I -save ang file na nasira.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898563,
+      "m_Localized": "Walang nahanap na mga laro.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092800,
+      "m_Localized": "Walang bukas na mga laro.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092801,
+      "m_Localized": "Pag -atake",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092802,
+      "m_Localized": "Mapalakas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092803,
+      "m_Localized": "Bumuo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092804,
+      "m_Localized": "Cast",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092805,
+      "m_Localized": "Cast",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092806,
+      "m_Localized": "Paghahabol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092807,
+      "m_Localized": "Umakyat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092808,
+      "m_Localized": "Malapit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092809,
+      "m_Localized": "Mangolekta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092810,
+      "m_Localized": "Lutuin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092811,
+      "m_Localized": "Craft",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092812,
+      "m_Localized": "Crouch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092813,
+      "m_Localized": "Dodge",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092814,
+      "m_Localized": "Magmaneho",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092815,
+      "m_Localized": "Lumipad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092816,
+      "m_Localized": "Buong bilis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092817,
+      "m_Localized": "Pumunta ka na",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092818,
+      "m_Localized": "Pumunta sa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092819,
+      "m_Localized": "Kalahating bilis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092820,
+      "m_Localized": "Pagalingin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092821,
+      "m_Localized": "Tumalon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092822,
+      "m_Localized": "Landing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092823,
+      "m_Localized": "Tumingin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092824,
+      "m_Localized": "Paghaluin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092825,
+      "m_Localized": "Buksan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092826,
+      "m_Localized": "Pulutin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092827,
+      "m_Localized": "Lahi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092828,
+      "m_Localized": "Basahin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092829,
+      "m_Localized": "Palitan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092830,
+      "m_Localized": "Tumakbo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092831,
+      "m_Localized": "Takbo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092832,
+      "m_Localized": "Shoot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092833,
+      "m_Localized": "Sneak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092834,
+      "m_Localized": "Paikutin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092835,
+      "m_Localized": "Sprint",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092836,
+      "m_Localized": "Steer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092837,
+      "m_Localized": "Tangalin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092838,
+      "m_Localized": "Makipag -usap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092839,
+      "m_Localized": "Itapon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092840,
+      "m_Localized": "Maglakad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092841,
+      "m_Localized": "Pagtitiis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092842,
+      "m_Localized": "Karanasan ng mga puntos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092843,
+      "m_Localized": "Babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092844,
+      "m_Localized": "Kalusugan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092845,
+      "m_Localized": "Puso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092846,
+      "m_Localized": "Mga puso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092847,
+      "m_Localized": "Antas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092848,
+      "m_Localized": "Level Up!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092849,
+      "m_Localized": "Buhay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092850,
+      "m_Localized": "Lalaki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092851,
+      "m_Localized": "Lalaki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092852,
+      "m_Localized": "Mga kalalakihan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092853,
+      "m_Localized": "Respawn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092854,
+      "m_Localized": "Respawn In:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092855,
+      "m_Localized": "Respawn?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092856,
+      "m_Localized": "Respawning",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092857,
+      "m_Localized": "Kasanayan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092858,
+      "m_Localized": "Spawn Point",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092859,
+      "m_Localized": "Transgender",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092860,
+      "m_Localized": "Babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092861,
+      "m_Localized": "Babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092862,
+      "m_Localized": "Pinsala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092863,
+      "m_Localized": "Kritikal na tama",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092864,
+      "m_Localized": "Kritikal na miss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092865,
+      "m_Localized": "Tumama",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092866,
+      "m_Localized": "Hit Points",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092867,
+      "m_Localized": "MISS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092868,
+      "m_Localized": "Pinsala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092869,
+      "m_Localized": "Pinsala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092870,
+      "m_Localized": "Kaaway",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092871,
+      "m_Localized": "Kaaway",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092872,
+      "m_Localized": "Mga Kaaway",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092873,
+      "m_Localized": "Mga Kaaway",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092874,
+      "m_Localized": "Imbentaryo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092875,
+      "m_Localized": "Munisyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092876,
+      "m_Localized": "Bala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092877,
+      "m_Localized": "Bullet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092878,
+      "m_Localized": "Mga Bullet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092879,
+      "m_Localized": "Bilhin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092880,
+      "m_Localized": "Kapasidad ng imbentaryo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092881,
+      "m_Localized": "Bumagsak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092882,
+      "m_Localized": "Encumbrance",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092883,
+      "m_Localized": "Buo ang imbentaryo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092884,
+      "m_Localized": "Item",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092885,
+      "m_Localized": "Susi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092886,
+      "m_Localized": "Pag lakas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287104,
+      "m_Localized": "Ibenta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287105,
+      "m_Localized": "Gumamit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287106,
+      "m_Localized": "Sandata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287107,
+      "m_Localized": "Armas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287108,
+      "m_Localized": "Hindi ka na maaaring magdala pa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287109,
+      "m_Localized": "Mag-ingat ka!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287110,
+      "m_Localized": "Mag ingat ka.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287111,
+      "m_Localized": "Taktika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287112,
+      "m_Localized": "Layunin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287113,
+      "m_Localized": "Tumulong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287114,
+      "m_Localized": "Tumutulong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287115,
+      "m_Localized": "Pag -atake",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287116,
+      "m_Localized": "Bonus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287117,
+      "m_Localized": "Kumuha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287118,
+      "m_Localized": "Kumpleto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287119,
+      "m_Localized": "Kamatayan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287120,
+      "m_Localized": "Mga pagkamatay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287121,
+      "m_Localized": "Ipagtanggol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287122,
+      "m_Localized": "Sirain",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287123,
+      "m_Localized": "Makatakas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287124,
+      "m_Localized": "Wakas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287125,
+      "m_Localized": "Tapos na ang laro!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287126,
+      "m_Localized": "TAPOS NA ANG LARO!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287127,
+      "m_Localized": "Mataas na iskor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287128,
+      "m_Localized": "Hindi kumpleto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287129,
+      "m_Localized": "Patayin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287130,
+      "m_Localized": "Pumatay ng tulong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287131,
+      "m_Localized": "Patayin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287132,
+      "m_Localized": "Pumapatay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287133,
+      "m_Localized": "Naka -lock",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287134,
+      "m_Localized": "Pagkalugi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287135,
+      "m_Localized": "Tugma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287136,
+      "m_Localized": "Misyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287137,
+      "m_Localized": "Mga Layunin ng Misyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287138,
+      "m_Localized": "Layunin ng misyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287139,
+      "m_Localized": "Multiplier",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287140,
+      "m_Localized": "Mga layunin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287141,
+      "m_Localized": "Posisyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287142,
+      "m_Localized": "Lap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287143,
+      "m_Localized": "Laps",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287144,
+      "m_Localized": "Bilog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287145,
+      "m_Localized": "Iskor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287146,
+      "m_Localized": "Oras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287147,
+      "m_Localized": "Natitirang oras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287148,
+      "m_Localized": "Paligsahan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287149,
+      "m_Localized": "Mga paligsahan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287150,
+      "m_Localized": "Panalo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287151,
+      "m_Localized": "Talunin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287152,
+      "m_Localized": "Natalo ka.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287153,
+      "m_Localized": "Talunan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287154,
+      "m_Localized": "Nawala ang iyong koponan!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287155,
+      "m_Localized": "Nanalo ang iyong koponan!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287156,
+      "m_Localized": "Tagumpay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287157,
+      "m_Localized": "Nagwagi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287158,
+      "m_Localized": "Patay ka na.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287159,
+      "m_Localized": "Namatay ka.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287160,
+      "m_Localized": "Talo ka!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287161,
+      "m_Localized": "Natalo ka!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287162,
+      "m_Localized": "Ikaw ang nanalo!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287163,
+      "m_Localized": "Nanalo ka!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287164,
+      "m_Localized": "Camera",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287165,
+      "m_Localized": "Baligtad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287166,
+      "m_Localized": "Normal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287167,
+      "m_Localized": "Camera x-axis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287168,
+      "m_Localized": "Camera y-axis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287169,
+      "m_Localized": "Pindutan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287170,
+      "m_Localized": "Mag -click",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287171,
+      "m_Localized": "Patay na zone",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287172,
+      "m_Localized": "Double-click",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287173,
+      "m_Localized": "I -drag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287174,
+      "m_Localized": "I -drag at i -drop",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287175,
+      "m_Localized": "Daliri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287176,
+      "m_Localized": "Gamepad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287177,
+      "m_Localized": "Gyroscope",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287178,
+      "m_Localized": "Susi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287179,
+      "m_Localized": "Keyboard",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287180,
+      "m_Localized": "Mouse",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287181,
+      "m_Localized": "Pagiging sensitibo ng mouse",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287182,
+      "m_Localized": "Kurot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287183,
+      "m_Localized": "Paikutin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287184,
+      "m_Localized": "Mag -scroll",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287185,
+      "m_Localized": "Iling",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481408,
+      "m_Localized": "Paglaganap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481409,
+      "m_Localized": "Mag -swipe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481410,
+      "m_Localized": "Tapikin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481411,
+      "m_Localized": "Ang pindutan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481412,
+      "m_Localized": "Ang susi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481413,
+      "m_Localized": "Ikiling",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481414,
+      "m_Localized": "Braso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481415,
+      "m_Localized": "Mga braso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481416,
+      "m_Localized": "Dibdib",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481417,
+      "m_Localized": "Chin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481418,
+      "m_Localized": "Kulay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481419,
+      "m_Localized": "Tainga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481420,
+      "m_Localized": "Tainga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481421,
+      "m_Localized": "Mata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481422,
+      "m_Localized": "Mata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481423,
+      "m_Localized": "Paa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481424,
+      "m_Localized": "Paa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481425,
+      "m_Localized": "Buhok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481426,
+      "m_Localized": "Balbas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481427,
+      "m_Localized": "Balahibo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481428,
+      "m_Localized": "Buhok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481429,
+      "m_Localized": "Kamay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481430,
+      "m_Localized": "Mga kamay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481431,
+      "m_Localized": "Ulo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481432,
+      "m_Localized": "Hips",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481433,
+      "m_Localized": "Binti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481434,
+      "m_Localized": "Mga binti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481435,
+      "m_Localized": "Bibig",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481436,
+      "m_Localized": "Leeg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481437,
+      "m_Localized": "Ilong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481438,
+      "m_Localized": "Balat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481439,
+      "m_Localized": "Thorax",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481440,
+      "m_Localized": "Kahirapan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481441,
+      "m_Localized": "Madali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481442,
+      "m_Localized": "Mahirap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481443,
+      "m_Localized": "Imposible",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481444,
+      "m_Localized": "Mabaliw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481445,
+      "m_Localized": "Katamtaman",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481446,
+      "m_Localized": "Napakadaling",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481447,
+      "m_Localized": "Napakahirap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481448,
+      "m_Localized": "Pababa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481449,
+      "m_Localized": "Kaliwa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481450,
+      "m_Localized": "Tama",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481451,
+      "m_Localized": "Pataas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481452,
+      "m_Localized": "Mag -load",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481453,
+      "m_Localized": "Mag -load ng laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481454,
+      "m_Localized": "Naglo -load ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481455,
+      "m_Localized": "Mangyaring maghintay ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481456,
+      "m_Localized": "I -reset ang I -save ang Data?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481457,
+      "m_Localized": "I -save",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481458,
+      "m_Localized": "I -save ang data",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481459,
+      "m_Localized": "I-save ang laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481460,
+      "m_Localized": "Saving ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481461,
+      "m_Localized": "Lahat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481462,
+      "m_Localized": "Edad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481463,
+      "m_Localized": "Sigurado ka ba talaga?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481464,
+      "m_Localized": "Sigurado ka ba?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481465,
+      "m_Localized": "Balik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481466,
+      "m_Localized": "Background Music",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481467,
+      "m_Localized": "Kanselahin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481468,
+      "m_Localized": "Malapit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481469,
+      "m_Localized": "Kumpirmahin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481470,
+      "m_Localized": "Magpatuloy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481471,
+      "m_Localized": "Magpatuloy?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481472,
+      "m_Localized": "Mga kredito",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481473,
+      "m_Localized": "Lumabas sa desktop",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481474,
+      "m_Localized": "Lumabas sa desktop?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481475,
+      "m_Localized": "DLC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481476,
+      "m_Localized": "I -download",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481477,
+      "m_Localized": "Kontent na pwedeng idownload",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481478,
+      "m_Localized": "Lumabas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481479,
+      "m_Localized": "Lumabas?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481480,
+      "m_Localized": "Extras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481481,
+      "m_Localized": "Fps",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481482,
+      "m_Localized": "Galerya ng sining",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481483,
+      "m_Localized": "Paalam!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481484,
+      "m_Localized": "Graphics",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481485,
+      "m_Localized": "Sa pagbili ng app",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481486,
+      "m_Localized": "Wika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481487,
+      "m_Localized": "Antas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481488,
+      "m_Localized": "Mail",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481489,
+      "m_Localized": "Pangunahing menu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481490,
+      "m_Localized": "Higit pa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481491,
+      "m_Localized": "Musika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481492,
+      "m_Localized": "Music Player",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675712,
+      "m_Localized": "Bagong laro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675713,
+      "m_Localized": "Susunod",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675714,
+      "m_Localized": "Susunod na track",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675715,
+      "m_Localized": "Hindi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675716,
+      "m_Localized": "HINDI",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675717,
+      "m_Localized": "Nope",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675718,
+      "m_Localized": "OK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675719,
+      "m_Localized": "I -pause",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675720,
+      "m_Localized": "Huminto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675721,
+      "m_Localized": "Maglaro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504832,
+      "m_Localized": "Maglaro ulit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504833,
+      "m_Localized": "Pindutin ang anumang susi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504834,
+      "m_Localized": "Pindutin ang anumang susi upang magpatuloy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504835,
+      "m_Localized": "pindutin ang simula",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504836,
+      "m_Localized": "Pindutin ang pagsisimula upang magpatuloy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504837,
+      "m_Localized": "Nakaraan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504838,
+      "m_Localized": "Nakaraang track",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699136,
+      "m_Localized": "Presyo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699137,
+      "m_Localized": "Libre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699138,
+      "m_Localized": "Bumili",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699139,
+      "m_Localized": "Huminto ka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699140,
+      "m_Localized": "Sigurado ka bang nais mong huminto?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699141,
+      "m_Localized": "Huminto?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699142,
+      "m_Localized": "Replay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699143,
+      "m_Localized": "Bumalik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699144,
+      "m_Localized": "Bumalik sa pangunahing menu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699145,
+      "m_Localized": "Bumalik sa pangunahing menu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699146,
+      "m_Localized": "Ibahagi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699147,
+      "m_Localized": "Laktawan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699148,
+      "m_Localized": "Tunog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699149,
+      "m_Localized": "Salamat!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699150,
+      "m_Localized": "I -unlock",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699151,
+      "m_Localized": "Video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699152,
+      "m_Localized": "Mga tinig",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699153,
+      "m_Localized": "Babala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699154,
+      "m_Localized": "Maligayang pagdating",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699155,
+      "m_Localized": "Mundo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699156,
+      "m_Localized": "Oo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699157,
+      "m_Localized": "Oo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699158,
+      "m_Localized": "Oo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699159,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699160,
+      "m_Localized": "Pilipino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699161,
+      "m_Localized": "Filipino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699162,
+      "m_Localized": "Mag log in",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699163,
+      "m_Localized": "E-mail",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699164,
+      "m_Localized": "Nakalimutan ang password",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699165,
+      "m_Localized": "Password",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699166,
+      "m_Localized": "Magrehistro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699167,
+      "m_Localized": "Tandaan?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699168,
+      "m_Localized": "Hamon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699169,
+      "m_Localized": "Mode ng hamon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699170,
+      "m_Localized": "Co-op",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699171,
+      "m_Localized": "Kooperatiba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699172,
+      "m_Localized": "Deathmatch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699173,
+      "m_Localized": "Tulong",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699174,
+      "m_Localized": "Mga tagubilin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699175,
+      "m_Localized": "Multiplayer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699176,
+      "m_Localized": "Lokal na Multiplayer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699177,
+      "m_Localized": "Online Multiplayer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699178,
+      "m_Localized": "Maglaro ng online",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699179,
+      "m_Localized": "Singleplayer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699180,
+      "m_Localized": "Pagsasanay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699181,
+      "m_Localized": "Pagtuturo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699182,
+      "m_Localized": "Laban sa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699183,
+      "m_Localized": "Pangalan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699184,
+      "m_Localized": "Pangalan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699185,
+      "m_Localized": "Huling pangalan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699186,
+      "m_Localized": "Username",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699187,
+      "m_Localized": "Mga pagpipilian",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699188,
+      "m_Localized": "Advanced na graphics",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699189,
+      "m_Localized": "Anti aliasing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699190,
+      "m_Localized": "Pamumulaklak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699191,
+      "m_Localized": "Mga kontrol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699192,
+      "m_Localized": "Mga pagpipilian sa kahirapan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699193,
+      "m_Localized": "Ipakita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699194,
+      "m_Localized": "Unang view ng tao",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699195,
+      "m_Localized": "Fov",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699196,
+      "m_Localized": "Fullscreen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699197,
+      "m_Localized": "Mga pagpipilian sa gameplay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699198,
+      "m_Localized": "Mga pagpipilian sa graphics",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699199,
+      "m_Localized": "HUD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699200,
+      "m_Localized": "Dami ng musika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699201,
+      "m_Localized": "Mga pagpipilian sa network",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699202,
+      "m_Localized": "Kalidad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699203,
+      "m_Localized": "Paglutas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699204,
+      "m_Localized": "Dami ng epekto ng tunog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699205,
+      "m_Localized": "Anino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699206,
+      "m_Localized": "Mga anino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893440,
+      "m_Localized": "Laki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893441,
+      "m_Localized": "Mga pagpipilian sa tunog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893442,
+      "m_Localized": "Dami",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893443,
+      "m_Localized": "Splitscreen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893444,
+      "m_Localized": "Pangatlong tao view",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893445,
+      "m_Localized": "Mga pagpipilian sa video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893446,
+      "m_Localized": "Kalidad ng video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893447,
+      "m_Localized": "Dami ng boses",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893448,
+      "m_Localized": "V-sync",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893449,
+      "m_Localized": "Windowed",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893450,
+      "m_Localized": "Detalye ng Shader",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893451,
+      "m_Localized": "Detalye ng texture",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893452,
+      "m_Localized": "Multicore Rendering",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893453,
+      "m_Localized": "Detalye ng modelo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893454,
+      "m_Localized": "Widescreen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893455,
+      "m_Localized": "Detalye ng Epekto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893456,
+      "m_Localized": "Anisotropic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893457,
+      "m_Localized": "Bilinear",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893458,
+      "m_Localized": "Trilinear",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893459,
+      "m_Localized": "Mode ng pag -filter",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893460,
+      "m_Localized": "Ultra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893461,
+      "m_Localized": "Napakataas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893462,
+      "m_Localized": "Mataas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893463,
+      "m_Localized": "Katamtaman",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893464,
+      "m_Localized": "Mababa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893465,
+      "m_Localized": "Bersyon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893466,
+      "m_Localized": "Demo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893467,
+      "m_Localized": "Libre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893468,
+      "m_Localized": "Puno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893469,
+      "m_Localized": "Lite",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893470,
+      "m_Localized": "Premium",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893471,
+      "m_Localized": "Shareware",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893472,
+      "m_Localized": "Pagsubok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893473,
+      "m_Localized": "VR Comfort Mode",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893474,
+      "m_Localized": "HMD Orientation Reset",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893475,
+      "m_Localized": "Virtual reality",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 907617898549
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569126753835,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Mediko - Male Medika - Female"
+        }
+      },
+      {
+        "rid": 7996671569126753836,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "or pinaka maliit"
+        }
+      },
+      {
+        "rid": 7996671569126753837,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Dibdib= heart Kahon= chest"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9727,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "We bought some things and now are waiting in a checkout queue.\r\nBot: Why are we standing here for so long? It’s so inefficient.\r\nYou: Don’t worry {f_botName}, soon it will be our turn.\r\n#bot.Expression.Angry\r\nSome little girl: Mommy! Why is this girl made of plastic?\nWhat?! This girl is unto us!\nGirl's mother: Honey! Stop goofing around.\n#bot.Expression.NoAngry\r\n#bot.Expression.Happy\r\nGirl's mother: I’m really sorry for my daughter, she’s a really curious child, you see.\r\n#bot.Expression.NoHappy\r\n#bot.Expression.Angry\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826777071616
+      },
+      {
+        "KeyId": 191538826777071617
+      },
+      {
+        "KeyId": 191538826777071618
+      },
+      {
+        "KeyId": 191538826777071619
+      },
+      {
+        "KeyId": 191538826777071620
+      },
+      {
+        "KeyId": 191538826777071621
+      },
+      {
+        "KeyId": 191538826777071622
+      }
+    ]
+  }
+}

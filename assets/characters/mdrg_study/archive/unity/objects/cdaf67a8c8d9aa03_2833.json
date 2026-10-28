@@ -1,0 +1,70 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9520,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Annalie.Face.shocked\r\nLady Annalie: No way! You actually came here with a girl?!\r\n#bot.Expression.NoAngry\r\nYou: Y-yeah, let me introduce my girlfriend to you. This is {f_botName}.\r\nLady Annalie: Hi {f_botName}! I’m Lady Annalie.\r\nBot: Hi Lady Annalie. Are you a part of some monarchy that you are introducing yourself as a Lady?\r\nR-Rude! What’s going on with {f_botName} today?!\r\n#Annalie.Face.normal\r\nLady Annalie: W-well, no. It’s just a nickname. \r\nLady Annalie: I don’t mind if you call me just Annalie, so no worries.\r\nBot: So why didn’t you introduce yourself like that from the beginning?\r\n#Annalie.Face.shocked\r\nAnnalie: Uh… {{wi}}well…\r\n#Annalie.Face.sad\r\nAnnalie: Sorry, I-I just thought…{{wi}} Nevermind…\r\nAhhh! This is terrible! I need to work this out somehow!\r\n#Annalie.Face.normal\r\nYou: I think we started off on the wrong foot…\r\nI need to talk some sense into {f_botName}.\r\nYou: Could you give us a moment, Annalie?\r\nAnnalie: Sure!\r\n#Annalie.Face.pervyGrin\r\nLady Annalie: But I don’t remember allowing you to drop the Lady part.\r\nThis girl… {{wi}}It seems she’s alright after all if she can joke like that.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826529607681
+      },
+      {
+        "KeyId": 191538826529607682
+      },
+      {
+        "KeyId": 191538826529607683
+      },
+      {
+        "KeyId": 191538826529607684
+      },
+      {
+        "KeyId": 191538826529607685
+      },
+      {
+        "KeyId": 191538826529607686
+      },
+      {
+        "KeyId": 191538826529607687
+      },
+      {
+        "KeyId": 191538826529607688
+      },
+      {
+        "KeyId": 191538826529607689
+      },
+      {
+        "KeyId": 191538826533801984
+      },
+      {
+        "KeyId": 191538826533801985
+      },
+      {
+        "KeyId": 191538826533801986
+      },
+      {
+        "KeyId": 191538826533801987
+      },
+      {
+        "KeyId": 191538826533801988
+      },
+      {
+        "KeyId": 191538826533801989
+      },
+      {
+        "KeyId": 191538826533801990
+      },
+      {
+        "KeyId": 191538826533801991
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "m_Name": "74c204a1da58eeb114fc3e39c66746da.bundle",
+  "m_PreloadTable": [
+    {
+      "m_FileID": 1,
+      "m_PathID": -5966623838819636877
+    },
+    {
+      "m_FileID": 1,
+      "m_PathID": -4826179110787420926
+    },
+    {
+      "m_FileID": 2,
+      "m_PathID": -5580333156058306113
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6626363092952802213
+    }
+  ],
+  "m_Container": [
+    [
+      "Assets/Game/Localization/Tables/UI/UI_Assets_lv.asset",
+      {
+        "preloadIndex": 0,
+        "preloadSize": 4,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": 6626363092952802213
+        }
+      }
+    ]
+  ],
+  "m_MainAsset": {
+    "preloadIndex": 0,
+    "preloadSize": 0,
+    "asset": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_RuntimeCompatibility": 1,
+  "m_AssetBundleName": "74c204a1da58eeb114fc3e39c66746da.bundle",
+  "m_Dependencies": [
+    "cab-3a613cbb4002999fb41cda8dd9de246c",
+    "cab-d00f50aad4cc1dfb0577dbe2a97a78ef"
+  ],
+  "m_IsStreamedSceneAssetBundle": false,
+  "m_ExplicitDataLayout": 1,
+  "m_PathFlags": 0,
+  "m_SceneHashes": []
+}

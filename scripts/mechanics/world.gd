@@ -67,11 +67,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			world.education.grade = maxi(0, int(world.education.grade))
 			emit_event("education_reinstated", {})
 			return sim.advance(30)
-		"homework":
-			var result: Dictionary = sim.advance(45)
-			if not result.ok: return result
-			world.education.homework = true
-			world.education.grade += 2
+		"homework": return sim.services.education.execute("homework",args)
 		"flag":
 			var id := str(args.get("id", ""))
 			if id.is_empty(): return Rules.fail("invalid_flag")
@@ -94,6 +90,7 @@ func _lesson(id: String) -> Dictionary:
 	if key in sim.state.world.education.attended: return Rules.fail("lesson_already_attended")
 	sim.state.world.education.attended.append(key)
 	sim.state.world.education.grade += int(lesson.get("grade", 1))
+	sim.services.education.attend(id)
 	var result: Dictionary = sim.services.character.execute("train", {"skill": lesson.get("skill", "study"), "xp": int(lesson.get("xp", 10))})
 	if not result.ok: return result
 	return sim.advance(int(lesson.get("minutes", 60)))
@@ -114,6 +111,7 @@ func tick(minute: int) -> void:
 			world.education.missed.append(key)
 			world.education.absences += 1
 			world.education.grade -= int(lesson.get("absence_penalty", 1))
+			sim.services.education.attend(str(id),true)
 			if sim.services.preferences.rule("education_failure", true):
 				var discipline := definition("formula_rules", "discipline")
 				if world.education.absences >= int(discipline.get("warning_absences", 3)) and not world.education.get("warned", false):

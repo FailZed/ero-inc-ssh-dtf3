@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15168,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: The massage is over!\r\n#bot.Expression.clear\r\r\nBot: Huh? Are you okay?\r\nYou: Y-Yeah, I’m fine. It seems like I fell asleep for a moment there.\r\nMore like passed out, but saying it would be embarrassing…\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: How would you rate your experience?\r\nYou: Y-Yeah, it was pretty good, yeah.\r\nYou: Sorry, give me a moment, my head is spinning a little…\r\nSomehow, I feel much better, but I will never admit it. I have my pride!",
+    "localizedLines": [
+      {
+        "KeyId": 323544070627516416
+      },
+      {
+        "KeyId": 323544070627516417
+      },
+      {
+        "KeyId": 323544070627516418
+      },
+      {
+        "KeyId": 323544070627516419
+      },
+      {
+        "KeyId": 323544070627516420
+      },
+      {
+        "KeyId": 323544070627516421
+      },
+      {
+        "KeyId": 323544070627516422
+      },
+      {
+        "KeyId": 323544070627516423
+      }
+    ]
+  }
+}

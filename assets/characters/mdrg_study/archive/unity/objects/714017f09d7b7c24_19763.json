@@ -1,0 +1,283 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 3840
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 469762048
+  },
+  "m_Name": "",
+  "<Unique>k__BackingField": 1,
+  "<DefaultId>k__BackingField": "Nun",
+  "yoffest": -1.0,
+  "defaultActiveItems": [
+    {
+      "SlotId": "Face",
+      "ItemId": "nunFaceNormal"
+    },
+    {
+      "SlotId": "ArmL",
+      "ItemId": "Down"
+    }
+  ],
+  "comboSlots": [
+    {
+      "Id": "Face",
+      "Items": [
+        {
+          "Id": "nunFaceSerious",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "Serious"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "Angry"
+            }
+          ]
+        },
+        {
+          "Id": "nunFaceThinking",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "StaringIntoDistance"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "Ummm"
+            }
+          ]
+        },
+        {
+          "Id": "nunFaceAngry",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "VeryAngry"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "Angry"
+            }
+          ]
+        },
+        {
+          "Id": "nunFaceNormal",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "Normal"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "Normal"
+            }
+          ]
+        },
+        {
+          "Id": "nunFaceHappy",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "HappyClosed"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "Smile"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_slotCaches": [
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 6903
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6901
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10778
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6904
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10780
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6902
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10779
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6900
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10777
+          }
+        }
+      ]
+    },
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 6097
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5809
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10728
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5932
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10752
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6872
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10799
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7788
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10701
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5586
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10750
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7576
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10759
+          }
+        }
+      ]
+    },
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 6247
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6268
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10673
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5340
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10695
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5885
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10757
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5936
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10798
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7165
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10693
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6868
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10680
+          }
+        }
+      ]
+    }
+  ]
+}

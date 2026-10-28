@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14960,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "You: I’m in the mood for a corndog.\r\nBot: Corndog? That’s an unusual choice. I don’t think you can buy something like that near our home.\r\nYou: It’s a typical carnival food. I haven't eaten it in ages and that’s why I want to take one.\r\n#bot.Expression.Happy\r\nBot: Then I’m gonna take one too!\r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nBot: I had prepared some recommendations regarding which stall we chose, but I wasn’t prepared for the possibility of corndogs…\r\n#bot.Expression.clear\r\nYou: Corndog is not complicated, it’s just a sausage with batter. Any stall serving it will do.\r\nBot: If you say so.\r\nYou: This one looks good, let’s order.",
+    "localizedLines": [
+      {
+        "KeyId": 323196735523381248
+      },
+      {
+        "KeyId": 323196735527575552
+      },
+      {
+        "KeyId": 323196735527575553
+      },
+      {
+        "KeyId": 323196735527575554
+      },
+      {
+        "KeyId": 323196735527575555
+      },
+      {
+        "KeyId": 323196735527575556
+      },
+      {
+        "KeyId": 323196735527575557
+      },
+      {
+        "KeyId": 323196735527575558
+      }
+    ]
+  }
+}

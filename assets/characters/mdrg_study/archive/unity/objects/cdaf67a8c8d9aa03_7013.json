@@ -1,0 +1,50 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 38033948672
+  },
+  "m_Name": "",
+  "itemId": 12082,
+  "indentLevel": 0,
+  "characterRef": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Characters/BigDaddyHurt/BigDaddyHurt",
+      "assetGuid": "f1027972ed5656143bbc0f61fc120d27",
+      "assetLocalId": 8740258125377763355,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 0
+    }
+  },
+  "setInvisible": {
+    "booleanRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "booleanVal": 0
+  },
+  "offset": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "scale": 1.0,
+  "targetView": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "transitionAnimation": 0,
+  "time": 0.5,
+  "forceId": "",
+  "fadeData": [
+    {
+      "SlotId": "Face",
+      "ItemId": "bdhSmile",
+      "instant": 1
+    }
+  ]
+}

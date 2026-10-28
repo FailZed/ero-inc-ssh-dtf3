@@ -1,0 +1,51 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 11011.791015625,
+    "y": 2011.4058837890625,
+    "width": 223.24000549316406,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 11864,
+  "blockName": "Outside/Walk/WalkWithBotEnd",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 5281
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5280
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5279
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5278
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5277
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

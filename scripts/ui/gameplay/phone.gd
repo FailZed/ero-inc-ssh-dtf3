@@ -119,6 +119,9 @@ func present() -> void:
 	show()
 	_rebuild()
 
+func open_calendar() -> void:
+	_open_app("calendar")
+
 func focus_default() -> void:
 	if app == "chat" and is_instance_valid(_composer): _composer.grab_focus()
 	else:

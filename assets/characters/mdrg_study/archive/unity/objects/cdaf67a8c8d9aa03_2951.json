@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9443,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "Lady Annalie: Uoohhhhhh!\r\nLady Annalie: So after all this looking you didn’t buy anything after all! Is my shop lacking something?\r\nOh man… {{wi}}She’s kinda a pain to deal with…\r\nYou: I-It’s not like that! Everything is great, it’s just…{{wi}} I’m sure I will buy something next time. {{wi}}Probably.\r\n#Annalie.Face.normal\r\nLady Annalie: So there will be a next time! That’s great to hear!\r\n#Annalie.Face.sad\r\nLady Annalie: I don’t know why but not many people visit my shop. Especially the second time.\r\nLady Annalie: Maybe I’m not up to date with the newest trends? I read all the fashion magazines though?\r\nI think I know the reason.{{wi}} You are scaring people off, you weirdo!\r\nYou: You are doing great! People these days just can’t appreciate good service.\r\nLady Annalie: *sniff* Do you really think so?\r\nYou: Sure!\r\n#Annalie.Face.normal\r\nLady Annalie: Hahaha, maybe I was wrong about you after all. Please come again. Bye~\nYou: Bye!\n#Annalie.animate(TransparencyTo0,0.4)\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826013708296
+      },
+      {
+        "KeyId": 191538826013708297
+      },
+      {
+        "KeyId": 191538826013708298
+      },
+      {
+        "KeyId": 191538826013708299
+      },
+      {
+        "KeyId": 191538826013708300
+      },
+      {
+        "KeyId": 191538826017902592
+      },
+      {
+        "KeyId": 191538826017902593
+      },
+      {
+        "KeyId": 191538826017902594
+      },
+      {
+        "KeyId": 191538826017902595
+      },
+      {
+        "KeyId": 191538826017902596
+      },
+      {
+        "KeyId": 191538826017902597
+      },
+      {
+        "KeyId": 191538826017902598
+      },
+      {
+        "KeyId": 191538826017902599
+      }
+    ]
+  }
+}

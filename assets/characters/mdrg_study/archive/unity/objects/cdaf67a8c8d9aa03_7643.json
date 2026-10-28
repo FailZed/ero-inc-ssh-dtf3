@@ -1,0 +1,67 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13029,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Do you need my help with something?\r\nLady Annalie: I-I don’t even know how to start… Everything is wrecked and my stuff is gone…\r\nLady Annalie: All these clothes…{{wi}} My head hurts just from thinking how much money I lost…\r\nLady Annalie: Business wasn’t going so well either way because of the online shopping and opening of a big shopping centre nearby, but this is pretty much a nail in the coffin…\r\nYou: …\r\nLady Annalie: I have been sitting here, crying… {{wi}}I don’t…{{wi}} Why did this happen?\r\nYou: Listen Annalie, if you want I can help you, just tell me what to do.\r\nLady Annalie: Right…{{wi}} There’s no point being a crybaby. I need to start trying to fix things here.\r\n#Annalie.Eyes.sad+Annalie.Mouth.surprised\r\nLady Annalie: Do you really want to help? It’s going to be a lot of work and I wouldn’t want to bother you.\r\nYou: It’s alright! I have the time to help.\r\nYou: You are a good girl, I’m sure you would help me too if I was in a situation like this.\r\n#Annalie.Eyes.pervy+Annalie.Mouth.normal\r\nLady Annalie: Thanks! \r\nYou: What should we start with?\r\n#Annalie.face.sad\r\nLady Annalie: Uh…{{wi}} No idea…\r\nLady Annalie: I think we should throw out all the broken stuff and clean this place up.\r\nYou: Good idea.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 197146499257196544
+      },
+      {
+        "KeyId": 197146499257196545
+      },
+      {
+        "KeyId": 197146499257196546
+      },
+      {
+        "KeyId": 197146499257196547
+      },
+      {
+        "KeyId": 197146499257196548
+      },
+      {
+        "KeyId": 197146499257196549
+      },
+      {
+        "KeyId": 197146499257196550
+      },
+      {
+        "KeyId": 197146499257196551
+      },
+      {
+        "KeyId": 197146499257196552
+      },
+      {
+        "KeyId": 197146499257196553
+      },
+      {
+        "KeyId": 197146499257196554
+      },
+      {
+        "KeyId": 197146499257196555
+      },
+      {
+        "KeyId": 197146499257196556
+      },
+      {
+        "KeyId": 197146499257196557
+      },
+      {
+        "KeyId": 197146499257196558
+      },
+      {
+        "KeyId": 197146499257196559
+      }
+    ]
+  }
+}

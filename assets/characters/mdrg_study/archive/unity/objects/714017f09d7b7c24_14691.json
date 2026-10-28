@@ -1,0 +1,109 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2404
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 30500978688
+  },
+  "m_Name": "",
+  "listed": 1,
+  "<GameUrl>k__BackingField": {
+    "<Domain>k__BackingField": "slots.casino.ic",
+    "<Rest>k__BackingField": ""
+  },
+  "OnTokensChange": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  },
+  "laneCount": 3,
+  "slotTypes": [
+    {
+      "name": "leaf",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 1130
+      },
+      "tripleWinningMultiplier": 0,
+      "doubleWinningMultiplier": 0,
+      "singleWinningMultiplier": 0,
+      "rate": 5
+    },
+    {
+      "name": "10",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 1055
+      },
+      "tripleWinningMultiplier": 3,
+      "doubleWinningMultiplier": 0,
+      "singleWinningMultiplier": 0,
+      "rate": 8
+    },
+    {
+      "name": "jack",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 1113
+      },
+      "tripleWinningMultiplier": 4,
+      "doubleWinningMultiplier": 0,
+      "singleWinningMultiplier": 0,
+      "rate": 7
+    },
+    {
+      "name": "queen",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 1056
+      },
+      "tripleWinningMultiplier": 8,
+      "doubleWinningMultiplier": 0,
+      "singleWinningMultiplier": 0,
+      "rate": 6
+    },
+    {
+      "name": "king",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 1073
+      },
+      "tripleWinningMultiplier": 10,
+      "doubleWinningMultiplier": 0,
+      "singleWinningMultiplier": 0,
+      "rate": 5
+    },
+    {
+      "name": "dollar",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 1123
+      },
+      "tripleWinningMultiplier": 50,
+      "doubleWinningMultiplier": 10,
+      "singleWinningMultiplier": 1,
+      "rate": 1
+    },
+    {
+      "name": "dollar",
+      "sprite": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "tripleWinningMultiplier": 7,
+      "doubleWinningMultiplier": 0,
+      "singleWinningMultiplier": 0,
+      "rate": 0
+    }
+  ],
+  "slotClick": {
+    "m_FileID": 0,
+    "m_PathID": 708
+  },
+  "sumOfRates": 32,
+  "spriteWidth": 300,
+  "spriteHeight": 300
+}

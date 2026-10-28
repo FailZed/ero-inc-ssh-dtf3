@@ -1,0 +1,39 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 5464.1728515625,
+    "y": 5013.49951171875,
+    "width": 129.04000854492188,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 15320,
+  "blockName": "Fisher/Bluegill",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 9711
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 9735
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

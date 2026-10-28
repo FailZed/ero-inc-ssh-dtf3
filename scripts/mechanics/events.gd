@@ -4,6 +4,15 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	var journal: Dictionary = sim.state.journal
 	var id := str(args.get("id", ""))
 	match operation:
+		"inspect":
+			var quests: Array = []
+			for quest_id in sim.catalog.quests:
+				var spec := definition("quests",str(quest_id))
+				var filtered := false
+				for tag in spec.get("tags",[]): filtered = filtered or tag in sim.state.preferences.disabled_tags
+				if filtered: continue
+				quests.append({"id":quest_id,"title":spec.get("label",quest_id),"description":spec.get("description",""),"objectives":spec.objectives.duplicate(true),"objective_labels":spec.get("objective_labels",{}).duplicate(true),"progress":journal.quests.get(quest_id,{}).duplicate(true),"available":Rules.check(sim.state,spec.get("requirements",{}))})
+			return Rules.ok({"quests":quests})
 		"poll":
 			poll()
 			return Rules.ok({"ready": journal.ready_events.duplicate()})
@@ -19,6 +28,8 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		"start_quest":
 			var quest := definition("quests", id)
 			if quest.is_empty() or journal.quests.has(id) or not Rules.check(sim.state, quest.get("requirements", {})): return Rules.fail("quest_unavailable")
+			for tag in quest.get("tags",[]):
+				if tag in sim.state.preferences.disabled_tags: return Rules.fail("content_disabled")
 			var deadline := int(quest.get("deadline_minutes", 0))
 			journal.quests[id] = {"status": "active", "objectives": {}, "claimed": false,
 				"deadline": int(sim.state.clock.total_minutes) + deadline if deadline > 0 else 0}
@@ -52,6 +63,33 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		_:
 			return Rules.fail("unknown_operation")
 	return Rules.ok()
+
+func observe(module_id: String, operation: String, args: Dictionary, result: Dictionary) -> void:
+	if module_id == "events": return
+	for id in sim.state.journal.quests:
+		var progress: Dictionary = sim.state.journal.quests[id]
+		if progress.status != "active": continue
+		var spec := definition("quests",str(id))
+		for objective in spec.get("bindings",{}):
+			if int(progress.objectives.get(objective,0)) >= int(spec.objectives[objective]): continue
+			for binding in spec.bindings[objective]:
+				if binding.module != module_id or binding.operation != operation: continue
+				var matches := true
+				for key in binding.get("args",{}): matches = matches and args.get(key) == binding.args[key]
+				for key in binding.get("result",{}): matches = matches and result.get("data",{}).get(key) == binding.result[key]
+				if not matches: continue
+				var unique := ""
+				if binding.get("different_days",false): unique = str(sim.state.clock.day_index)
+				elif binding.has("unique_arg"):
+					unique = str(args.get(binding.unique_arg,""))
+					if unique.is_empty(): continue
+				if not unique.is_empty():
+					if not progress.has("seen"): progress.seen = {}
+					if not progress.seen.has(objective): progress.seen[objective] = []
+					if unique in progress.seen[objective]: continue
+					progress.seen[objective].append(unique)
+				execute("progress",{"id":str(id),"objective":str(objective)})
+				break
 
 func eligible(id: String) -> bool:
 	var event := definition("events", id)

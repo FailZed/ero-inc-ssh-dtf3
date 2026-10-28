@@ -1,0 +1,37 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9122,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: {f_playerName}, do you have any plans for this evening?\r\nYou: I don’t know yet.\r\nBot: So…\r\n#bot.Expression.Blush\r\nBot: Would you like to spend it together? \r\nYou: S-sure.\r\nWell, it’s not like I have anything better to do here.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538825216790532
+      },
+      {
+        "KeyId": 191538825216790533
+      },
+      {
+        "KeyId": 191538825216790534
+      },
+      {
+        "KeyId": 191538825216790535
+      },
+      {
+        "KeyId": 191538825216790536
+      },
+      {
+        "KeyId": 191538825216790537
+      }
+    ]
+  }
+}

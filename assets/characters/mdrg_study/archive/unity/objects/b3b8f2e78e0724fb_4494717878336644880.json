@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 5017138534136241537
+  },
+  "m_Name": "Latvian (lv)",
+  "m_Identifier": {
+    "m_Code": "lv"
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 8363390523026178061
+      },
+      {
+        "rid": 8363390523026178064
+      },
+      {
+        "rid": 8363390524344257439
+      },
+      {
+        "rid": 8363390524344257440
+      },
+      {
+        "rid": 8363390562235318280
+      }
+    ]
+  },
+  "m_LocaleName": "Latvian (lv)",
+  "m_CustomFormatCultureCode": "",
+  "m_UseCustomFormatter": 0,
+  "m_SortOrder": 26,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 8363390523026178061,
+        "type": {
+          "class": "FallbackLocale",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Locale": {
+            "m_FileID": 0,
+            "m_PathID": 7096932738371413085
+          }
+        }
+      },
+      {
+        "rid": 8363390523026178064,
+        "type": {
+          "class": "LocaleFontMetadata",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "mainFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "commisionerFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "notoSansFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "fontartoFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "Assets/ResourcesOutside/Fonts/Fonarto/Fontaro2",
+              "assetGuid": "3e92723e69058f4459a20319931c1215",
+              "assetLocalId": 11400000,
+              "isEmpty": 0,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 1
+            }
+          },
+          "monospaceFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          }
+        }
+      },
+      {
+        "rid": 8363390524344257439,
+        "type": {
+          "class": "LocaleName",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "name": "Latviešu",
+          "nameInEnglish": "Latvian"
+        }
+      },
+      {
+        "rid": 8363390524344257440,
+        "type": {
+          "class": "LocaleTranslationProgress",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "fullProgress": 1.0,
+          "fullProgressMT": 0.986430823802948
+        }
+      },
+      {
+        "rid": 8363390562235318280,
+        "type": {
+          "class": "Characters",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "characters": "AĀBCČDEĒFGĢHIĪJKĶLĻMNŅOPRSŠTUŪVZŽ\naābcčdeēfgģhiījkķlļmnņoprsštuūvzž"
+        }
+      }
+    ]
+  }
+}

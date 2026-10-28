@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9109,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: …{{wi}}{f_playerName}?\r\nYou: Is there something on your mind {f_botName}?\r\nBot: Actually, there is something...\r\n{f_botName} started talking about ‘anomalies’ on the stock market.\r",
+    "localizedLines": [
+      {
+        "KeyId": 191538825204207620
+      },
+      {
+        "KeyId": 191538825204207621
+      },
+      {
+        "KeyId": 191538825204207622
+      },
+      {
+        "KeyId": 191538825204207623
+      }
+    ]
+  }
+}

@@ -1,0 +1,928 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180668
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Zkus říct její jméno",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655226
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Promluv si sní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Zkus na ni zavolat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Zkus si sní promluvit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Pozdrav ji",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Cítím divnou potřebu si sní promluvit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Pojďme si sní promluvit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Kam ji mám schovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Pojďme se na toho bota podívat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "Zkus komunikovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "A co můj nájem?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Jsem znepokojen... ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "Co to bylo?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Kolik asi stojí?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Můj sexuální život",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Promluv s botem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Promluv s botem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Promluv s botem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Zeptej se jí na svůj pokoj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Zajímá mě, co si o mně myslí...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Možná umí počítat?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Zeptej se jí, jak na rychlý prachy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Zeptej se jí na počasí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Zeptej se jí, co si myslím o délce tvého...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "A co ta věc s kávou",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Nasírá mě...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Je otravná...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Zkusme si sní promluvit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Prohoďte malou řeč ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Mluv s ní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Řekni jí, aby s tebou mluvila",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Zeptej se jí, aby mluvila jemně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Jsem znuděný...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Pojďme s ní ztrávit trochu času",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Pojďme pokecat!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Zeptej se bota na existenční otázky ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Zeptej se jí na něco nedůležitého",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Zeptej se ji na politiku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Zeptej se jí na zdroj všeho trápení ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Mám náladu si něco zahrát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Pojďme si zahrát karty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "Čas na slovní řetěz!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Je trochu pozdě, ale chci s ní promluvit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": "Myslím, že bot chce mluvit...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Řekni jí, že jí miluješ!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Zaflirtuj s botem <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Měl bych být k ní hodný",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Zeptej se jí na její emoce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Má sexbot nějaké zájmy?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 666365931687772914
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Může mít sexbot vůbec hlad?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Chci se jí dotknout...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Zapomněl jsem na něco? ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "Něco o inteligenci bota",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Může hrát bot šachy?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Měl bych zkusit další hru?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Myslím, že vím ve které hře ji můžu porazit...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Bot vypadá zvláštně...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Zajímá mě, jaký má na mě názor...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Bot vypadá pohlcen myšlenkou...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Myslím, že po mně něco chce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Teď když má obě nohy...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": "Měl bych se zeptat bota na rizika chození ven",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Musím se jí zeptat, jestli by se mnou jít ven",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 666365931687772915
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "O sexbotech",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Možná nakonec může mluvit?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Pojďme promluvit znova",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Něco tu nesedí...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Jaký je její názor na domácí mazlíčky?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Měl bych ji pozvat na rande? ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Chci se s ní dívat na film",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Co je to za zvláštní vůni?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Zeptejte se na halloweenské dekorace",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "A co ten roztomilý pavoučí plyšák?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Měl bych se jí zeptat, jestli může Šanice přijít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "Co takhle karaoke?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Zeptejte se jí, co dělat s pokladní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Zkuste si s ní promluvit znovu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Zeptejte se na Melissu a její ‚chybějící‘ části",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Diskutujte o sentimentu tuláka vůči robotům",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Zeptejte se jí, jak se cítí po opravách",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Sledujte zprávy s {f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Jakou superschopnost bys chtěla mít?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655227
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Další hororový příběh",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655228
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Co děláš, když jsem pryč?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655229
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Kdybys mohla sehnat práci, jaká by to byla?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655230
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "Chtěla by ses proměnit v člověka?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655231
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Pomsta na domácího",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655232
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Zeptej se jí, jak se vypořádat s problematickým sousedem",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655233
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Co si myslíš, že se stane po smrti?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655234
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Máš plán pro případ zombie apokalypsy?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655235
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Zkusíme roleplay hru",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655236
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Najde si Annalie někdy přítele?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655237
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 666365931687772914,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 666365931687772915,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 6437392580223180668,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124655226,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Done!"
+        }
+      },
+      {
+        "rid": 7996671569124655227,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655228,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human verified"
+        }
+      },
+      {
+        "rid": 7996671569124655229,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655230,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655231,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655232,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655233,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655234,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655235,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655236,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human translated"
+        }
+      },
+      {
+        "rid": 7996671569124655237,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Human verified"
+        }
+      }
+    ]
+  }
+}

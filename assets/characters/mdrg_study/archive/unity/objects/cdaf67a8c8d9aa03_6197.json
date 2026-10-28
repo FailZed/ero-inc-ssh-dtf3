@@ -1,0 +1,37 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 10637,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Who was that?\r\nYou: That was Big daddy hurt, he helps me with some…{{wi}} things.\r\nBot: So your acquaintance, then?\r\nYou: Yeah, something like that. \r\nYou: Well, let’s wrap it up and go home. I think we saw everything already.\r\n#bot.Expression.Happy\r\nBot: Sure!",
+    "localizedLines": [
+      {
+        "KeyId": 191538827674652672
+      },
+      {
+        "KeyId": 191538827674652673
+      },
+      {
+        "KeyId": 191538827674652674
+      },
+      {
+        "KeyId": 191538827674652675
+      },
+      {
+        "KeyId": 191538827674652676
+      },
+      {
+        "KeyId": 191538827674652677
+      }
+    ]
+  }
+}

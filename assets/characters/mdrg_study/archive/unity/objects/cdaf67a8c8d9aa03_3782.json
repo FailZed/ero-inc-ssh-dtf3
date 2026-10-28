@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 641.584228515625,
+    "y": 3465.945068359375,
+    "width": 257.010009765625,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 2915,
+  "blockName": "Church/Spotyka bota + crash koniec",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 4103
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3811
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3756
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4101
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3968
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3779
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

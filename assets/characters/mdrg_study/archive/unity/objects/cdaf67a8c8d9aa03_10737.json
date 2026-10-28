@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 25585254400
+  },
+  "m_Name": "",
+  "itemId": 16482,
+  "indentLevel": 0,
+  "duration": 1.0,
+  "fadeOut": 1,
+  "waitUntilFinished": 1,
+  "fadeColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "spriteSerializable": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Sprites/Backgrounds/dystopia",
+      "assetGuid": "701bb32a41f53514e8ed876214f86421",
+      "assetLocalId": 21300000,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 0
+    }
+  },
+  "subView": 0,
+  "color": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  }
+}

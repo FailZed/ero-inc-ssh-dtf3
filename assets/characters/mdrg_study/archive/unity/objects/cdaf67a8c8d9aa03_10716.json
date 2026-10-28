@@ -1,0 +1,91 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16452,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: What a mess. \r\n#Cashier.Eyes.normal+Cashier.Mouth.hmmm\r\nLady Annalie: We got to beat them.\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Normal\r\nYou: Did you ever drive a go-kart before?\r\n#Cashier.Face.shocked\r\nLady Annalie: No.\r\nYou: …\r\nLady Annalie: What? It can’t be that hard!\r\nYou: Do you have a driver’s license at least? \r\nLady Annalie: Why should I? There's great public transport here.\r\nThis won’t be easy…\r\n#Cashier.Eyes.normal+Cashier.Mouth.hmmm\r\nYou: Melissa, {f_botName}, all hope is in you two.\r\n#Cashier.Eyes.closed+Cashier.Mouth.normal\r\nMelissa: I understand.\r\nBot: We will destroy them! \r\n#Cashier.Face.normal\r\nYou: {f_botName}, you can start doing that thing we talked about before Melissa and Annalie came.\r\n#bot.Expression.veryhappy\r\nBot: Are you sure?! Won’t that be, you know.\r\nYou: I will allow it since there’s a lot on stake. \r\n#bot.Expression.happy\r\nLady Annalie: It looks like we already have a plan. It will be a walk in a park. \r\nNot thanks to you…\r\nMelissa: Should me and {f_botName} go all out?\r\nYou: Go a little slower than the world record pace, ok?\r\nBot: Their teamwork may be a problem. If they try to block us out I won’t be able to guarantee victory.\r\nYou: Do what you gotta do.\r\nLady Annalie: I don’t get it, but I will go all out too!\r\nYou: Thanks Annalie…\r\nSeems like the other team is ready. It’s time to roll.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473658913887084544
+      },
+      {
+        "KeyId": 473658913887084545
+      },
+      {
+        "KeyId": 473658913887084546
+      },
+      {
+        "KeyId": 473658913887084547
+      },
+      {
+        "KeyId": 473658913887084548
+      },
+      {
+        "KeyId": 473658913887084549
+      },
+      {
+        "KeyId": 473658913887084550
+      },
+      {
+        "KeyId": 473658913887084551
+      },
+      {
+        "KeyId": 473658913887084552
+      },
+      {
+        "KeyId": 473658913891278848
+      },
+      {
+        "KeyId": 473658913891278849
+      },
+      {
+        "KeyId": 473658913891278850
+      },
+      {
+        "KeyId": 473658913891278851
+      },
+      {
+        "KeyId": 473658913891278852
+      },
+      {
+        "KeyId": 473658913891278853
+      },
+      {
+        "KeyId": 473658913891278854
+      },
+      {
+        "KeyId": 473658913891278855
+      },
+      {
+        "KeyId": 473658913891278856
+      },
+      {
+        "KeyId": 473658913891278857
+      },
+      {
+        "KeyId": 473658913891278858
+      },
+      {
+        "KeyId": 473658913891278859
+      },
+      {
+        "KeyId": 473658913891278860
+      },
+      {
+        "KeyId": 473658913891278861
+      },
+      {
+        "KeyId": 473658913891278862
+      }
+    ]
+  }
+}

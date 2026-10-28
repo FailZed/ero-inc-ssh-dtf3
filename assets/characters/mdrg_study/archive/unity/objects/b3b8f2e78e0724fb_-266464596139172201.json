@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 5017138534136241537
+  },
+  "m_Name": "Danish (da)",
+  "m_Identifier": {
+    "m_Code": "da"
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 8363390524344257490
+      },
+      {
+        "rid": 8363390524344257491
+      },
+      {
+        "rid": 8363390524344257492
+      },
+      {
+        "rid": 8363390524344257493
+      },
+      {
+        "rid": 8363390562235318287
+      }
+    ]
+  },
+  "m_LocaleName": "Danish (da)",
+  "m_CustomFormatCultureCode": "",
+  "m_UseCustomFormatter": 0,
+  "m_SortOrder": 29,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 8363390524344257490,
+        "type": {
+          "class": "LocaleName",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "name": "Dansk",
+          "nameInEnglish": "Danish"
+        }
+      },
+      {
+        "rid": 8363390524344257491,
+        "type": {
+          "class": "LocaleFontMetadata",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "mainFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "commisionerFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "notoSansFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "fontartoFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "monospaceFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          }
+        }
+      },
+      {
+        "rid": 8363390524344257492,
+        "type": {
+          "class": "FallbackLocale",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Locale": {
+            "m_FileID": 0,
+            "m_PathID": 7096932738371413085
+          }
+        }
+      },
+      {
+        "rid": 8363390524344257493,
+        "type": {
+          "class": "LocaleTranslationProgress",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "fullProgress": 1.0,
+          "fullProgressMT": 0.9939073920249939
+        }
+      },
+      {
+        "rid": 8363390562235318287,
+        "type": {
+          "class": "Characters",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "characters": "ÆØÅ"
+        }
+      }
+    ]
+  }
+}

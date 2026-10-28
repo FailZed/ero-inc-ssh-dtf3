@@ -28,8 +28,28 @@ func blocked(id: String) -> String:
 	if int(sim.state.digital.cooldowns.get(id, 0)) > int(sim.state.clock.total_minutes): return "digital_cooldown"
 	return ""
 
+func preview(id: String, approach: String = "balanced") -> Dictionary:
+	var spec := definition("digital_operations",id)
+	if spec.is_empty(): return Rules.fail("unknown_digital_operation")
+	var styles := {"careful":{"time":1.5,"chance":0.12,"trace":0.5,"pay":0.85},"balanced":{"time":1.0,"chance":0.0,"trace":1.0,"pay":1.0},"fast":{"time":0.65,"chance":-0.12,"trace":1.5,"pay":1.15}}
+	if not styles.has(approach): return Rules.fail("invalid_digital_approach")
+	var style: Dictionary = styles[approach]
+	var computing := float(sim.state.player.skills.get("computing",0))
+	var security := float(sim.state.player.skills.get("cybersecurity",0))
+	var chance := clampf(0.5+computing/(computing+150)*0.35+security/(security+100)*0.15-float(spec.risk)*0.006-float(sim.state.digital.trace)*0.003+float(style.chance),0.1,0.95)
+	var modifiers: Dictionary = sim.services.computer.digital_modifiers(id) if sim.services.has("computer") else {"chance":0.0,"trace_scale":1.0}
+	chance = clampf(chance+float(modifiers.chance),0.1,0.95)
+	return Rules.ok({"id":id,"approach":approach,"minutes":ceili(float(spec.minutes)*float(style.time)),"chance":chance,"trace_scale":float(style.trace)*float(modifiers.trace_scale),"reward":roundi(float(spec.reward)*float(style.pay)),"blocked":blocked(id),"partial_possible":spec.outcome in ["practice","work"]})
+
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	var state: Dictionary = sim.state.digital
+	if operation == "inspect":
+		var options: Array = []
+		for id in sim.catalog.digital_operations:
+			var approaches: Array = []
+			for approach in ["careful","balanced","fast"]: approaches.append(preview(str(id),approach).data)
+			options.append({"id":id,"label":sim.catalog.digital_operations[id].label,"approaches":approaches})
+		return Rules.ok({"operations":options,"pending":state.pending.duplicate(true),"trace":state.trace})
 	if operation == "cancel":
 		if state.pending.is_empty(): return Rules.fail("no_digital_report")
 		state.pending = {}
@@ -50,20 +70,23 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	if operation != "resolve": return Rules.fail("unknown_operation")
 	if state.pending.is_empty() or state.pending.id != id or not CHECK.number(args.get("token")) or int(args.token) != float(args.token) or int(args.token) != int(state.pending.token): return Rules.fail("stale_digital_report")
 	if int(state.pending.expires) <= int(sim.state.clock.total_minutes): return Rules.fail("stale_digital_report")
-	var cost := float(spec.minutes) / 10.0
+	var forecast := preview(id,str(args.get("approach","balanced")))
+	if not forecast.ok: return forecast
+	var plan: Dictionary = forecast.data
+	var cost := float(plan.minutes) / 10.0
 	if float(sim.state.player.needs.energy) < cost: return Rules.fail("insufficient_energy")
-	var computing := float(sim.state.player.skills.get("computing", 0))
-	var security := float(sim.state.player.skills.get("cybersecurity", 0))
-	var chance := clampf(0.5 + computing / (computing + 150) * 0.35 + security / (security + 100) * 0.15 - float(spec.risk) * 0.006 - float(state.trace) * 0.003, 0.1, 0.95)
-	var success: bool = sim.rng.randf() < chance
+	var chance := float(plan.chance)
+	var roll: float = sim.rng.randf()
+	var success: bool = roll < chance
+	var partial: bool = not success and bool(plan.partial_possible) and roll < minf(1.0,chance+0.15)
+	var reward := int(plan.reward) if success else floori(float(plan.reward)*0.25) if partial else 0
 	sim.services.character.adjust_need("energy", -cost)
 	state.pending = {}
-	var result: Dictionary = sim.advance(int(spec.minutes))
+	var result: Dictionary = sim.advance(int(plan.minutes))
 	if not result.ok: return result
 	state.cooldowns[id] = int(sim.state.clock.total_minutes) + int(spec.cooldown)
 	if success:
 		sim.state.world.flags.digital_job_completed = true
-		sim.state.economy.cash += int(spec.reward)
 		if spec.outcome == "grades": sim.state.world.education.grade += 3
 		if spec.outcome == "directory":
 			var candidates: Array = sim.state.social.npcs.keys()
@@ -72,17 +95,18 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 				if not npc_id in state.leads and not npc_id in sim.state.social.contacts:
 					state.leads.append(npc_id)
 					break
+	sim.state.economy.cash += reward
 	if float(spec.risk) > 0:
-		state.trace = minf(100, float(state.trace) + float(spec.risk) * (0.4 if success else 1.0))
+		state.trace = minf(100, float(state.trace) + float(spec.risk) * float(plan.trace_scale) * (0.4 if success else 1.0))
 		if not success:
 			sim.state.security.fine += int(spec.risk) * 2
 			sim.state.world.heat = minf(100, float(sim.state.world.heat) + float(spec.risk))
 	var trained: Dictionary = sim.services.character.execute("train", {"skill":"cybersecurity", "xp":8 if success else 3})
 	if not trained.ok: return trained
-	state.history.append({"id":id,"success":success,"minute":sim.state.clock.total_minutes,"reward":int(spec.reward) if success else 0})
+	state.history.append({"id":id,"success":success,"minute":sim.state.clock.total_minutes,"reward":reward,"approach":plan.approach,"partial":partial})
 	while state.history.size() > 32: state.history.pop_front()
 	emit_event("digital_completed", {"id":id,"success":success})
-	return Rules.ok({"success":success, "chance":chance, "reward":int(spec.reward) if success else 0})
+	return Rules.ok({"success":success,"partial":partial,"chance":chance,"reward":reward,"approach":plan.approach,"description":"Задача выполнена. Результат и оплата получены." if success else "Восстановлена часть результата; выплачено 25% вознаграждения." if partial else "Попытка не удалась. Получен опыт; отчёт объясняет риск следующей попытки."})
 
 func tick(minute: int) -> void:
 	if minute % 60 == 0: sim.state.digital.trace = snappedf(maxf(0, float(sim.state.digital.trace) - 0.5), 0.001)

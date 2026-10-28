@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 11956,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Are you alright {f_botName}? You froze back in the ruins for a second. Is something wrong?\r\n#bot.Expression.Sad\r\nBot: I don’t know…{{wi}} I just…\r\nBot: It was probably just a visual bug.\r\nYou: Visual bug? How could that happen? Are you broken?\r\nBot: No. I’m not broken. It was something different. Something that shouldn’t have happened.\r\nYou: What do you mean? \r\nBot: I don’t know. I have no understanding of what happened and I don’t want it to happen again.\r\nBot: I should be able to process everything and now I know there are things that I can’t.\r\nYou: Whatever is happening to you, remember that I’m here for you.\r\n#bot.Expression.NoHappy\r\nBot: Thanks {f_playerName}. I appreciate this.\r\nYou: Let’s go home now. It was a long day.\r\nBot: Sure…\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538828089888775
+      },
+      {
+        "KeyId": 191538828094083072
+      },
+      {
+        "KeyId": 191538828094083073
+      },
+      {
+        "KeyId": 191538828094083074
+      },
+      {
+        "KeyId": 191538828094083075
+      },
+      {
+        "KeyId": 191538828094083076
+      },
+      {
+        "KeyId": 191538828094083077
+      },
+      {
+        "KeyId": 191538828094083078
+      },
+      {
+        "KeyId": 191538828094083079
+      },
+      {
+        "KeyId": 191538828094083080
+      },
+      {
+        "KeyId": 191538828094083081
+      },
+      {
+        "KeyId": 191538828094083082
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17886,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: I wonder what kind of person they are. A bitter old man? A jealous woman?\r\nLandlord: <i>I will remember this!</i>\r\nYou: Who knows. I hope they are reasonable enough that we will be able to reach some compromise.\r\n#bot.Expression.angry\r\nBot: Right! I already reduced my moan volume at night by 15% and they still were not satisfied! \r\n#bot.Expression.clear\r\n#bot.Expression.shock\r\nYou: Worst-case scenario, you will have to go mute…\r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nBot: I guess I could, but it wouldn’t be the same…\r\nYou: I-It’s only the worst-case scenario! Don’t worry about it right now.\r\nYou: Alright then, I will be going now. Wish me luck!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 498577534040805376
+      },
+      {
+        "KeyId": 498577534044999680
+      },
+      {
+        "KeyId": 498577534044999681
+      },
+      {
+        "KeyId": 498577534044999682
+      },
+      {
+        "KeyId": 498577534044999683
+      },
+      {
+        "KeyId": 498577534044999684
+      },
+      {
+        "KeyId": 498577534044999685
+      },
+      {
+        "KeyId": 498577534044999686
+      }
+    ]
+  }
+}

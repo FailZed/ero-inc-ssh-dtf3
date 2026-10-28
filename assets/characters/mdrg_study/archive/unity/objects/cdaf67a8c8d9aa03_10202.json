@@ -1,0 +1,28 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15912,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: B-But that’s my apartment!\r\nLandlord: Argh!\r\n#Landlord.animate(TransparencyTo0,0.5)\r\nNext time he mentions his daughter I’m gonna scram.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 455478535187849216
+      },
+      {
+        "KeyId": 455478535187849217
+      },
+      {
+        "KeyId": 455478535187849218
+      }
+    ]
+  }
+}

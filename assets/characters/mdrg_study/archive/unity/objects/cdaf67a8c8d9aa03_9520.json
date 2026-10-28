@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15131,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: H-Here you go…\r\n#Landlord.Misc.money\r\nLandlord: It was a pleasure making business with you! I’m sure that piece of shit- I mean that stove will last you for decades to come.\r\n#Landlord.animate(TransparencyTo0,0.4)\nIt’s…{{wi}} It’s really heavy…\r\nI guess quality comes with weight.",
+    "localizedLines": [
+      {
+        "KeyId": 323540420836450304
+      },
+      {
+        "KeyId": 323540420836450305
+      },
+      {
+        "KeyId": 323540544715218944
+      },
+      {
+        "KeyId": 323540544715218945
+      }
+    ]
+  }
+}

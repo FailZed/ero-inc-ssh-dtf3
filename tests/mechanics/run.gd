@@ -47,6 +47,7 @@ func _run() -> void:
 		print("MECHANICS_RESULT ", JSON.stringify({"checks": checks, "failed": failures.size(), "failures": failures}))
 		quit(0 if failures.is_empty() else 1)
 		return
+	preload("res://tests/mechanics/depth.gd").new(self).run()
 	_test_calendar_and_rules()
 	_test_progression()
 	_test_inventory_and_crafting()
@@ -199,7 +200,7 @@ func _test_world_and_education() -> void:
 	sim.state.clock = Calendar.snapshot(1440 + 480)
 	sim.state.world.location = "training_center"
 	command(sim, "world", "lesson", {"id": "computing_class"})
-	_check(sim.state.world.education.grade >= 3 and sim.state.player.skills.computing == 20, "lesson advances grade and skill")
+	_check(sim.state.world.education.grade >= 3 and sim.state.player.skills.computing == 25, "lesson advances grade and skill")
 	_check(not sim.command("world", "lesson", {"id": "computing_class"}).ok, "lesson cannot repeat on same day")
 	command(sim, "social", "generate", {"id": "worker"})
 	_check(sim.state.social.npcs.worker.location == "training_center", "weekday NPC schedule")

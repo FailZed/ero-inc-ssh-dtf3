@@ -1,0 +1,4592 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Polyglot_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 3020549575994940229
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 907575955456,
+      "m_Localized": "zhTW zhHK zhMO",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907601121280,
+      "m_Localized": "Traditional Chinese",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1066867232768,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315585,
+      "m_Localized": "角色類",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315586,
+      "m_Localized": "刪除角色",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315587,
+      "m_Localized": "創新角色",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315588,
+      "m_Localized": "人工智能",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315589,
+      "m_Localized": "外星人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315590,
+      "m_Localized": "複製人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315591,
+      "m_Localized": "機器人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315592,
+      "m_Localized": "神靈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315593,
+      "m_Localized": "魔鬼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315594,
+      "m_Localized": "女魔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315595,
+      "m_Localized": "龍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315596,
+      "m_Localized": "龍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315597,
+      "m_Localized": "鬼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315598,
+      "m_Localized": "神",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315599,
+      "m_Localized": "神",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315600,
+      "m_Localized": "女神",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315601,
+      "m_Localized": "魔法師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315602,
+      "m_Localized": "軍醫",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315603,
+      "m_Localized": "怪物",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315604,
+      "m_Localized": "忍者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315605,
+      "m_Localized": "海盜",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315606,
+      "m_Localized": "祭師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315607,
+      "m_Localized": "王子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315608,
+      "m_Localized": "公主",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315609,
+      "m_Localized": "機器人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315610,
+      "m_Localized": "骷髏",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315611,
+      "m_Localized": "狙擊手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315612,
+      "m_Localized": "戰士",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315613,
+      "m_Localized": "盜賊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315614,
+      "m_Localized": "武士",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315615,
+      "m_Localized": "巫師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315616,
+      "m_Localized": "殭屍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315617,
+      "m_Localized": "殭屍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315618,
+      "m_Localized": "第一名",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315619,
+      "m_Localized": "名次",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315620,
+      "m_Localized": "第二名",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315621,
+      "m_Localized": "第三名",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315622,
+      "m_Localized": "燃燒中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315623,
+      "m_Localized": "瀕死",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315624,
+      "m_Localized": "死亡",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315625,
+      "m_Localized": "凍結",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315626,
+      "m_Localized": "中毒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315627,
+      "m_Localized": "減速",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315628,
+      "m_Localized": "眩暈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315629,
+      "m_Localized": "失去知覺",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315630,
+      "m_Localized": "未受傷",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315631,
+      "m_Localized": "濕",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315632,
+      "m_Localized": "受傷",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315633,
+      "m_Localized": "大",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315634,
+      "m_Localized": "極大",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315635,
+      "m_Localized": "小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315636,
+      "m_Localized": "極小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315637,
+      "m_Localized": "風",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315638,
+      "m_Localized": "地",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315639,
+      "m_Localized": "火",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315640,
+      "m_Localized": "金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315641,
+      "m_Localized": "水",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315642,
+      "m_Localized": "賭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315643,
+      "m_Localized": "拋棄",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315644,
+      "m_Localized": "頭獎",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315645,
+      "m_Localized": "最高限度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315646,
+      "m_Localized": "最低限度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315647,
+      "m_Localized": "護甲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315648,
+      "m_Localized": "箭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315649,
+      "m_Localized": "箭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315650,
+      "m_Localized": "遊戲盤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509888,
+      "m_Localized": "炸彈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509889,
+      "m_Localized": "書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509890,
+      "m_Localized": "靴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509891,
+      "m_Localized": "弓",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509892,
+      "m_Localized": "卡片",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509893,
+      "m_Localized": "卡片",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509894,
+      "m_Localized": "箱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509895,
+      "m_Localized": "魔法的",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509896,
+      "m_Localized": "生銹的",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509897,
+      "m_Localized": "短劍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509898,
+      "m_Localized": "骰子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509899,
+      "m_Localized": "骰子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509900,
+      "m_Localized": "門",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509901,
+      "m_Localized": "鐵手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509902,
+      "m_Localized": "寶石",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509903,
+      "m_Localized": "贈品",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509904,
+      "m_Localized": "贈品",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509905,
+      "m_Localized": "手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509906,
+      "m_Localized": "槍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509907,
+      "m_Localized": "鐵錘",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509908,
+      "m_Localized": "鋼盔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509909,
+      "m_Localized": "鑰匙",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509910,
+      "m_Localized": "小刀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509911,
+      "m_Localized": "鎖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509912,
+      "m_Localized": "愛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509913,
+      "m_Localized": "機關槍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509914,
+      "m_Localized": "魔法",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509915,
+      "m_Localized": "手槍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509916,
+      "m_Localized": "任務",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509917,
+      "m_Localized": "軍階",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509918,
+      "m_Localized": "步槍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509919,
+      "m_Localized": "火箭炮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509920,
+      "m_Localized": "RPG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509921,
+      "m_Localized": "卷",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509922,
+      "m_Localized": "盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509923,
+      "m_Localized": "盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509924,
+      "m_Localized": "能量護盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509925,
+      "m_Localized": "能量護盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509926,
+      "m_Localized": "散彈槍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509927,
+      "m_Localized": "狙擊步槍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509928,
+      "m_Localized": "咒語",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509929,
+      "m_Localized": "杖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509930,
+      "m_Localized": "劍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509931,
+      "m_Localized": "財寶",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509932,
+      "m_Localized": "特級的",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509933,
+      "m_Localized": "沒用的",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509934,
+      "m_Localized": "魔杖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509935,
+      "m_Localized": "木頭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704192,
+      "m_Localized": "高度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704193,
+      "m_Localized": "煞車閘",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704194,
+      "m_Localized": "馬車",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704195,
+      "m_Localized": "深度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704196,
+      "m_Localized": "燃料",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704197,
+      "m_Localized": "檔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704198,
+      "m_Localized": "操縱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704199,
+      "m_Localized": "速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704200,
+      "m_Localized": "轉向",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704201,
+      "m_Localized": "懸吊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704202,
+      "m_Localized": "輪",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704203,
+      "m_Localized": "翅膀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704204,
+      "m_Localized": "徽章",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704205,
+      "m_Localized": "銅徽章",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704206,
+      "m_Localized": "金徽章",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704207,
+      "m_Localized": "銀徽章",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704208,
+      "m_Localized": "青銅",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704209,
+      "m_Localized": "硬幣",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704210,
+      "m_Localized": "金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704211,
+      "m_Localized": "金屬塊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704212,
+      "m_Localized": "白金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704213,
+      "m_Localized": "銀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704214,
+      "m_Localized": "城堡",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704215,
+      "m_Localized": "洞穴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704216,
+      "m_Localized": "地下城",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704217,
+      "m_Localized": "旅舍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704218,
+      "m_Localized": "行星",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704219,
+      "m_Localized": "地球",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704220,
+      "m_Localized": "太空",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704221,
+      "m_Localized": "太空船",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704222,
+      "m_Localized": "故事",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704223,
+      "m_Localized": "冒險",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704224,
+      "m_Localized": "章",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704225,
+      "m_Localized": "頁",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704226,
+      "m_Localized": "遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704227,
+      "m_Localized": "遊戲開發",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704228,
+      "m_Localized": "遊戲開發者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704229,
+      "m_Localized": "遊戲開發由",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704230,
+      "m_Localized": "製作",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704231,
+      "m_Localized": "監制",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704232,
+      "m_Localized": "出版商",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704233,
+      "m_Localized": "導演",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704234,
+      "m_Localized": "領頭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704235,
+      "m_Localized": "助理",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704236,
+      "m_Localized": "副",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704237,
+      "m_Localized": "高級",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704238,
+      "m_Localized": "初級",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704239,
+      "m_Localized": "首席技術官",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704240,
+      "m_Localized": "技術主任",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704241,
+      "m_Localized": "創意總監",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704242,
+      "m_Localized": "動畫總監",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704243,
+      "m_Localized": "美術總監",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704244,
+      "m_Localized": "音樂總監",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704245,
+      "m_Localized": "設計總監",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704246,
+      "m_Localized": "規劃經理",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704247,
+      "m_Localized": "項目經理",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704248,
+      "m_Localized": "遊戲設計",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704249,
+      "m_Localized": "遊戲設計師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704250,
+      "m_Localized": "寫程式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704251,
+      "m_Localized": "程式設計",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704252,
+      "m_Localized": "程式設計師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704253,
+      "m_Localized": "程式設計師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704254,
+      "m_Localized": "主要程式設計師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704255,
+      "m_Localized": "圖像設計",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704256,
+      "m_Localized": "技術設計",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704257,
+      "m_Localized": "觀念美術",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704258,
+      "m_Localized": "角色設計",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704259,
+      "m_Localized": "美術",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704260,
+      "m_Localized": "美術師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704261,
+      "m_Localized": "美術師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704262,
+      "m_Localized": "關卡設計",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704263,
+      "m_Localized": "關卡設計師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704264,
+      "m_Localized": "影片導演",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704265,
+      "m_Localized": "影片動畫",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704266,
+      "m_Localized": "影片美術",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704267,
+      "m_Localized": "作曲家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704268,
+      "m_Localized": "音樂家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704269,
+      "m_Localized": "特別感謝",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704270,
+      "m_Localized": "特別感謝",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898496,
+      "m_Localized": "圖片",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898497,
+      "m_Localized": "圖片",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898498,
+      "m_Localized": "字型",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898499,
+      "m_Localized": "字型",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898500,
+      "m_Localized": "原聲音樂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898501,
+      "m_Localized": "寫作人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898502,
+      "m_Localized": "原稿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898503,
+      "m_Localized": "劇本寫作人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898504,
+      "m_Localized": "動畫",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898505,
+      "m_Localized": "動畫師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898506,
+      "m_Localized": "配音員",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898507,
+      "m_Localized": "配音演員",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898508,
+      "m_Localized": "音響設計師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898509,
+      "m_Localized": "錄音師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898510,
+      "m_Localized": "音響效果",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898511,
+      "m_Localized": "視覺效果",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898512,
+      "m_Localized": "錄音師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898513,
+      "m_Localized": "擬音藝術家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898514,
+      "m_Localized": "測試經理",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898515,
+      "m_Localized": "測試領導",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898516,
+      "m_Localized": "測試儀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898517,
+      "m_Localized": "數據庫管理員",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898518,
+      "m_Localized": "三維建模",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898519,
+      "m_Localized": "模型",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898520,
+      "m_Localized": "本土化",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898521,
+      "m_Localized": "翻譯",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898522,
+      "m_Localized": "翻譯由Polyglot Project 提供",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898523,
+      "m_Localized": "動作遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898524,
+      "m_Localized": "冒險遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898525,
+      "m_Localized": "卡牌遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898526,
+      "m_Localized": "休閒遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898527,
+      "m_Localized": "魔幻遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898528,
+      "m_Localized": "硬核遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898529,
+      "m_Localized": "獨立製作",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898530,
+      "m_Localized": "中世紀式遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898531,
+      "m_Localized": "其它",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898532,
+      "m_Localized": "多人遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898533,
+      "m_Localized": "類型",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898534,
+      "m_Localized": "平台遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898535,
+      "m_Localized": "智力遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898536,
+      "m_Localized": "問答遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898537,
+      "m_Localized": "競速遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898538,
+      "m_Localized": "復古遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898539,
+      "m_Localized": "角色扮演遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898540,
+      "m_Localized": "即時戰略遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898541,
+      "m_Localized": "科幻遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898542,
+      "m_Localized": "射擊遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898543,
+      "m_Localized": "模擬遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898544,
+      "m_Localized": "單人遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898545,
+      "m_Localized": "體育遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898546,
+      "m_Localized": "戰略遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898547,
+      "m_Localized": "回合戰略遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898548,
+      "m_Localized": "塔防遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898549,
+      "m_Localized": "未檢測到{0}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907617898550,
+      "m_Localized": "無信號。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898551,
+      "m_Localized": "未檢測到HMD。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898552,
+      "m_Localized": "錯誤代碼：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898553,
+      "m_Localized": "發生了錯誤。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898554,
+      "m_Localized": "名稱無效。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898555,
+      "m_Localized": "無效的遊戲序號。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898556,
+      "m_Localized": "已偵測到作弊！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898557,
+      "m_Localized": "網路連接失敗。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898558,
+      "m_Localized": "你的對手斷線。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898559,
+      "m_Localized": "另一個玩家斷線。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898560,
+      "m_Localized": "你的隊友斷線。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898561,
+      "m_Localized": "無法連接至伺服器。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898562,
+      "m_Localized": "存檔文件已被破壞。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898563,
+      "m_Localized": "找不到遊戲。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092800,
+      "m_Localized": "沒有招募中的遊戲。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092801,
+      "m_Localized": "攻擊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092802,
+      "m_Localized": "提升",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092803,
+      "m_Localized": "建設",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092804,
+      "m_Localized": "投",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092805,
+      "m_Localized": "施放",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092806,
+      "m_Localized": "索取",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092807,
+      "m_Localized": "爬上",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092808,
+      "m_Localized": "關閉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092809,
+      "m_Localized": "收集",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092810,
+      "m_Localized": "煮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092811,
+      "m_Localized": "製造",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092812,
+      "m_Localized": "蹲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092813,
+      "m_Localized": "閃避",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092814,
+      "m_Localized": "駕駛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092815,
+      "m_Localized": "飛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092816,
+      "m_Localized": "急速",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092817,
+      "m_Localized": "前往",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092818,
+      "m_Localized": "去",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092819,
+      "m_Localized": "半速",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092820,
+      "m_Localized": "治療",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092821,
+      "m_Localized": "跳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092822,
+      "m_Localized": "降落",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092823,
+      "m_Localized": "看",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092824,
+      "m_Localized": "混合",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092825,
+      "m_Localized": "開",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092826,
+      "m_Localized": "拾起",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092827,
+      "m_Localized": "競賽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092828,
+      "m_Localized": "讀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092829,
+      "m_Localized": "更換",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092830,
+      "m_Localized": "奔跑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092831,
+      "m_Localized": "逃跑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092832,
+      "m_Localized": "射擊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092833,
+      "m_Localized": "潛行",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092834,
+      "m_Localized": "旋轉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092835,
+      "m_Localized": "衝刺",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092836,
+      "m_Localized": "轉向",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092837,
+      "m_Localized": "起飛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092838,
+      "m_Localized": "談話",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092839,
+      "m_Localized": "扔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092840,
+      "m_Localized": "步行",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092841,
+      "m_Localized": "耐力",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092842,
+      "m_Localized": "經驗值",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092843,
+      "m_Localized": "女性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092844,
+      "m_Localized": "健康值",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092845,
+      "m_Localized": "心",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092846,
+      "m_Localized": "心",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092847,
+      "m_Localized": "等級",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092848,
+      "m_Localized": "升級",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092849,
+      "m_Localized": "生命",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092850,
+      "m_Localized": "男性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092851,
+      "m_Localized": "男人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092852,
+      "m_Localized": "男人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092853,
+      "m_Localized": "重生",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092854,
+      "m_Localized": "重生時間：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092855,
+      "m_Localized": "重生？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092856,
+      "m_Localized": "重生中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092857,
+      "m_Localized": "技能",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092858,
+      "m_Localized": "重生點",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092859,
+      "m_Localized": "跨性別",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092860,
+      "m_Localized": "女人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092861,
+      "m_Localized": "女人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092862,
+      "m_Localized": "傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092863,
+      "m_Localized": "爆擊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092864,
+      "m_Localized": "嚴重失誤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092865,
+      "m_Localized": "擊中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092866,
+      "m_Localized": "生命值",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092867,
+      "m_Localized": "失誤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092868,
+      "m_Localized": "破壞值",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092869,
+      "m_Localized": "破壞率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092870,
+      "m_Localized": "敵人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092871,
+      "m_Localized": "敵人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092872,
+      "m_Localized": "敵人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092873,
+      "m_Localized": "敵人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092874,
+      "m_Localized": "裝備",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092875,
+      "m_Localized": "彈藥",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092876,
+      "m_Localized": "彈藥值",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092877,
+      "m_Localized": "子彈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092878,
+      "m_Localized": "子彈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092879,
+      "m_Localized": "購買",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092880,
+      "m_Localized": "裝備容量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092881,
+      "m_Localized": "放下",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092882,
+      "m_Localized": "負擔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092883,
+      "m_Localized": "裝備已滿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092884,
+      "m_Localized": "物品",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092885,
+      "m_Localized": "鑰匙",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092886,
+      "m_Localized": "提升功率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287104,
+      "m_Localized": "銷售",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287105,
+      "m_Localized": "使用",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287106,
+      "m_Localized": "武器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287107,
+      "m_Localized": "武器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287108,
+      "m_Localized": "你拿不起了。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287109,
+      "m_Localized": "注意",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287110,
+      "m_Localized": "請注意！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287111,
+      "m_Localized": "戰術",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287112,
+      "m_Localized": "目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287113,
+      "m_Localized": "協助",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287114,
+      "m_Localized": "協助",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287115,
+      "m_Localized": "攻擊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287116,
+      "m_Localized": "獎金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287117,
+      "m_Localized": "捉取",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287118,
+      "m_Localized": "完成",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287119,
+      "m_Localized": "死亡",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287120,
+      "m_Localized": "死亡",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287121,
+      "m_Localized": "防守",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287122,
+      "m_Localized": "消滅",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287123,
+      "m_Localized": "逃生",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287124,
+      "m_Localized": "結束",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287125,
+      "m_Localized": "遊戲結束！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287126,
+      "m_Localized": "遊戲結束！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287127,
+      "m_Localized": "最高分",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287128,
+      "m_Localized": "未完成",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287129,
+      "m_Localized": "殺",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287130,
+      "m_Localized": "助殺",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287131,
+      "m_Localized": "擊殺",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287132,
+      "m_Localized": "擊殺",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287133,
+      "m_Localized": "鎖定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287134,
+      "m_Localized": "失敗",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287135,
+      "m_Localized": "比賽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287136,
+      "m_Localized": "任務",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287137,
+      "m_Localized": "任務目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287138,
+      "m_Localized": "任務目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287139,
+      "m_Localized": "倍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287140,
+      "m_Localized": "目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287141,
+      "m_Localized": "位置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287142,
+      "m_Localized": "全程",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287143,
+      "m_Localized": "圈數",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287144,
+      "m_Localized": "回合",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287145,
+      "m_Localized": "評分",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287146,
+      "m_Localized": "時間",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287147,
+      "m_Localized": "剩餘時間",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287148,
+      "m_Localized": "比賽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287149,
+      "m_Localized": "比賽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287150,
+      "m_Localized": "獲勝",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287151,
+      "m_Localized": "失敗",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287152,
+      "m_Localized": "你被擊敗了。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287153,
+      "m_Localized": "輸家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287154,
+      "m_Localized": "你的團隊失敗",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287155,
+      "m_Localized": "你的團隊勝利",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287156,
+      "m_Localized": "勝利",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287157,
+      "m_Localized": "贏家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287158,
+      "m_Localized": "你死了。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287159,
+      "m_Localized": "你死了。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287160,
+      "m_Localized": "你輸了！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287161,
+      "m_Localized": "你輸了！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287162,
+      "m_Localized": "你贏了！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287163,
+      "m_Localized": "你贏了！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287164,
+      "m_Localized": "攝影機",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287165,
+      "m_Localized": "反轉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287166,
+      "m_Localized": "正常",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287167,
+      "m_Localized": "攝影機X坐標軸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287168,
+      "m_Localized": "攝影機Y坐標軸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287169,
+      "m_Localized": "按鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287170,
+      "m_Localized": "點擊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287171,
+      "m_Localized": "危險地區",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287172,
+      "m_Localized": "雙擊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287173,
+      "m_Localized": "拖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287174,
+      "m_Localized": "拖放",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287175,
+      "m_Localized": "手指",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287176,
+      "m_Localized": "游戲控制器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287177,
+      "m_Localized": "回轉儀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287178,
+      "m_Localized": "鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287179,
+      "m_Localized": "鍵盤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287180,
+      "m_Localized": "滑鼠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287181,
+      "m_Localized": "滑鼠靈敏度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287182,
+      "m_Localized": "捏",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287183,
+      "m_Localized": "環繞",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287184,
+      "m_Localized": "滾動",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287185,
+      "m_Localized": "震動",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481408,
+      "m_Localized": "擴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481409,
+      "m_Localized": "滑動",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481410,
+      "m_Localized": "觸摸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481411,
+      "m_Localized": "按鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481412,
+      "m_Localized": "關鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481413,
+      "m_Localized": "傾斜",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481414,
+      "m_Localized": "臂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481415,
+      "m_Localized": "雙臂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481416,
+      "m_Localized": "胸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481417,
+      "m_Localized": "下巴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481418,
+      "m_Localized": "顏色",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481419,
+      "m_Localized": "耳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481420,
+      "m_Localized": "耳朵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481421,
+      "m_Localized": "眼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481422,
+      "m_Localized": "雙眼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481423,
+      "m_Localized": "雙腳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481424,
+      "m_Localized": "腳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481425,
+      "m_Localized": "毛髮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481426,
+      "m_Localized": "鬍子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481427,
+      "m_Localized": "毛皮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481428,
+      "m_Localized": "頭髮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481429,
+      "m_Localized": "手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481430,
+      "m_Localized": "雙手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481431,
+      "m_Localized": "頭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481432,
+      "m_Localized": "臀部",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481433,
+      "m_Localized": "腿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481434,
+      "m_Localized": "雙腿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481435,
+      "m_Localized": "嘴巴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481436,
+      "m_Localized": "頸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481437,
+      "m_Localized": "鼻子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481438,
+      "m_Localized": "皮膚",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481439,
+      "m_Localized": "胸部",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481440,
+      "m_Localized": "難度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481441,
+      "m_Localized": "簡單",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481442,
+      "m_Localized": "困難",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481443,
+      "m_Localized": "不可能",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481444,
+      "m_Localized": "瘋狂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481445,
+      "m_Localized": "中等",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481446,
+      "m_Localized": "非常簡單",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481447,
+      "m_Localized": "非常困難",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481448,
+      "m_Localized": "下",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481449,
+      "m_Localized": "左",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481450,
+      "m_Localized": "右",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481451,
+      "m_Localized": "上",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481452,
+      "m_Localized": "讀取",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481453,
+      "m_Localized": "讀取遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481454,
+      "m_Localized": "正在登錄中...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481455,
+      "m_Localized": "請等待...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481456,
+      "m_Localized": "重設已保存數據",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481457,
+      "m_Localized": "保存",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481458,
+      "m_Localized": "保存數據",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481459,
+      "m_Localized": "保存遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481460,
+      "m_Localized": "保存中…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481461,
+      "m_Localized": "全部",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481462,
+      "m_Localized": "年齡",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481463,
+      "m_Localized": "你是否確認？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481464,
+      "m_Localized": "你確定嗎？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481465,
+      "m_Localized": "返回",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481466,
+      "m_Localized": "背景音樂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481467,
+      "m_Localized": "取消",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481468,
+      "m_Localized": "關閉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481469,
+      "m_Localized": "確認",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481470,
+      "m_Localized": "繼續",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481471,
+      "m_Localized": "繼續？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481472,
+      "m_Localized": "製作群",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481473,
+      "m_Localized": "退出至桌面",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481474,
+      "m_Localized": "退出至桌面？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481475,
+      "m_Localized": "DLC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481476,
+      "m_Localized": "下載",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481477,
+      "m_Localized": "下載內容",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481478,
+      "m_Localized": "退出",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481479,
+      "m_Localized": "退出？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481480,
+      "m_Localized": "額外",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481481,
+      "m_Localized": "FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481482,
+      "m_Localized": "藝術館",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481483,
+      "m_Localized": "再見！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481484,
+      "m_Localized": "圖形設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481485,
+      "m_Localized": "在應用程式內購買",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481486,
+      "m_Localized": "語言",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481487,
+      "m_Localized": "級別",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481488,
+      "m_Localized": "郵件",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481489,
+      "m_Localized": "主選單",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481490,
+      "m_Localized": "更多",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481491,
+      "m_Localized": "音樂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481492,
+      "m_Localized": "音樂播放器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675712,
+      "m_Localized": "新遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675713,
+      "m_Localized": "下一個",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675714,
+      "m_Localized": "下一個曲目",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675715,
+      "m_Localized": "否",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675716,
+      "m_Localized": "否",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675717,
+      "m_Localized": "不行",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675718,
+      "m_Localized": "OK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675719,
+      "m_Localized": "暫停",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675720,
+      "m_Localized": "暫停中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675721,
+      "m_Localized": "開始",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504832,
+      "m_Localized": "再玩一次",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504833,
+      "m_Localized": "按下任意鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504834,
+      "m_Localized": "按下任意鍵以繼續",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504835,
+      "m_Localized": "按下開始",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504836,
+      "m_Localized": "按下開始以繼續",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504837,
+      "m_Localized": "返回",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504838,
+      "m_Localized": "上一曲目",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699136,
+      "m_Localized": "價錢",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699137,
+      "m_Localized": "免費",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699138,
+      "m_Localized": "購買",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699139,
+      "m_Localized": "離開",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699140,
+      "m_Localized": "你確定你想離開嗎？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699141,
+      "m_Localized": "離開？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699142,
+      "m_Localized": "重播",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699143,
+      "m_Localized": "返回",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699144,
+      "m_Localized": "返回至主界面",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699145,
+      "m_Localized": "返回至主選單？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699146,
+      "m_Localized": "分享",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699147,
+      "m_Localized": "跳過",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699148,
+      "m_Localized": "聲音",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699149,
+      "m_Localized": "謝謝！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699150,
+      "m_Localized": "開鎖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699151,
+      "m_Localized": "影片設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699152,
+      "m_Localized": "聲音",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699153,
+      "m_Localized": "注意",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699154,
+      "m_Localized": "歡迎",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699155,
+      "m_Localized": "世界",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699156,
+      "m_Localized": "好的",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699157,
+      "m_Localized": "是",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699158,
+      "m_Localized": "是",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699159,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699160,
+      "m_Localized": "繁體中文",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699161,
+      "m_Localized": "Traditional Chinese",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699162,
+      "m_Localized": "登入",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699163,
+      "m_Localized": "電子郵件",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699164,
+      "m_Localized": "忘記密碼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699165,
+      "m_Localized": "密碼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699166,
+      "m_Localized": "註冊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699167,
+      "m_Localized": "記住",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699168,
+      "m_Localized": "挑戰",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699169,
+      "m_Localized": "挑戰模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699170,
+      "m_Localized": "團隊合作",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699171,
+      "m_Localized": "合作模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699172,
+      "m_Localized": "死亡競賽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699173,
+      "m_Localized": "幫助",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699174,
+      "m_Localized": "說明",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699175,
+      "m_Localized": "多人模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699176,
+      "m_Localized": "本地聯機",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699177,
+      "m_Localized": "在線聯機",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699178,
+      "m_Localized": "在線遊戲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699179,
+      "m_Localized": "單人模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699180,
+      "m_Localized": "訓練",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699181,
+      "m_Localized": "教程",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699182,
+      "m_Localized": "對抗模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699183,
+      "m_Localized": "名稱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699184,
+      "m_Localized": "名字",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699185,
+      "m_Localized": "姓",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699186,
+      "m_Localized": "用戶名",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699187,
+      "m_Localized": "設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699188,
+      "m_Localized": "高级圖形",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699189,
+      "m_Localized": "抗鋸齒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699190,
+      "m_Localized": "高光",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699191,
+      "m_Localized": "操作模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699192,
+      "m_Localized": "難度設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699193,
+      "m_Localized": "顯示",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699194,
+      "m_Localized": "第一人稱視角",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699195,
+      "m_Localized": "視場角",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699196,
+      "m_Localized": "全螢幕",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699197,
+      "m_Localized": "遊戲設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699198,
+      "m_Localized": "圖形設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699199,
+      "m_Localized": "抬頭顯示器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699200,
+      "m_Localized": "音樂音量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699201,
+      "m_Localized": "網路設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699202,
+      "m_Localized": "品質",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699203,
+      "m_Localized": "解析度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699204,
+      "m_Localized": "音效音量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699205,
+      "m_Localized": "影子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699206,
+      "m_Localized": "陰影效果",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893440,
+      "m_Localized": "大小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893441,
+      "m_Localized": "聲音設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893442,
+      "m_Localized": "音量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893443,
+      "m_Localized": "分割畫面",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893444,
+      "m_Localized": "第三人稱視角",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893445,
+      "m_Localized": "影片設置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893446,
+      "m_Localized": "影片品質",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893447,
+      "m_Localized": "聲音音量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893448,
+      "m_Localized": "垂直同步",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893449,
+      "m_Localized": "視窗模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893450,
+      "m_Localized": "光影細節",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893451,
+      "m_Localized": "材質細節",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893452,
+      "m_Localized": "多核心渲染",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893453,
+      "m_Localized": "模型細節",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893454,
+      "m_Localized": "寬螢幕",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893455,
+      "m_Localized": "效果細節",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893456,
+      "m_Localized": "異向",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893457,
+      "m_Localized": "雙線性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893458,
+      "m_Localized": "三線性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893459,
+      "m_Localized": "過濾模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893460,
+      "m_Localized": "最高",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893461,
+      "m_Localized": "最高",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893462,
+      "m_Localized": "高",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893463,
+      "m_Localized": "中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893464,
+      "m_Localized": "低",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893465,
+      "m_Localized": "版本",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893466,
+      "m_Localized": "試玩版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893467,
+      "m_Localized": "免費版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893468,
+      "m_Localized": "完整版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893469,
+      "m_Localized": "精簡版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893470,
+      "m_Localized": "超值版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893471,
+      "m_Localized": "共享軟體",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893472,
+      "m_Localized": "試用版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893473,
+      "m_Localized": "虛擬現實舒適模式",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893474,
+      "m_Localized": "HMD方向重置",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893475,
+      "m_Localized": "虛擬現實",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 907617898549
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

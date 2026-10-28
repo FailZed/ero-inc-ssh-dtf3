@@ -1,0 +1,44 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 38033948672
+  },
+  "m_Name": "",
+  "itemId": 16196,
+  "indentLevel": 0,
+  "characterRef": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Characters/policewoman/Policewoman",
+      "assetGuid": "a1133ab917b6620489765fd0303043f3",
+      "assetLocalId": 7648268744867039800,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 0
+    }
+  },
+  "setInvisible": {
+    "booleanRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "booleanVal": 1
+  },
+  "offset": {
+    "x": -6.0,
+    "y": 0.0
+  },
+  "scale": 1.0,
+  "targetView": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "transitionAnimation": 7,
+  "time": 0.5,
+  "forceId": "",
+  "fadeData": []
+}

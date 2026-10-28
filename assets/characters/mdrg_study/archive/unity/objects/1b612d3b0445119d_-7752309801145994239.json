@@ -1,0 +1,1177 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Common_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": -593790824102937619
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 280313597952,
+      "m_Localized": "บิ๊กแด๊ดดี้เฮิร์ท",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 283585155072,
+      "m_Localized": "คุณแอนนาลีย์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285984296960,
+      "m_Localized": "เจ้าของตึก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6160727567896576,
+      "m_Localized": "ชุน",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131320
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8386212125347840,
+      "m_Localized": "คุณ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8386212137930752,
+      "m_Localized": "บอท",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131321
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893851684864,
+      "m_Localized": "ตำรวจหญิง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893902016512,
+      "m_Localized": "ตำรวจ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210816,
+      "m_Localized": "แม่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210817,
+      "m_Localized": "เพื่อนบ้านชวนปวดหัว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131322
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893906210818,
+      "m_Localized": "ข้อความเสียงตำรวจ (แปลงข้อความเป็นเสียงพูด)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131323
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893906210819,
+      "m_Localized": "ข้อความเสียงตำรวจ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405120,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405121,
+      "m_Localized": "??? 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405122,
+      "m_Localized": "อันธพาล",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405123,
+      "m_Localized": "ชายลึกลับในชุดชมพู",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131324
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599424,
+      "m_Localized": "ผู้เผยแผ่แห่งคริสตจักร ร.ร.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599425,
+      "m_Localized": "แม่ชีสุดเซ็กซี่",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131325
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599426,
+      "m_Localized": "\"แม่ชี\" ชานิส",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131326
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599427,
+      "m_Localized": "แม่ชีชานิส",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793728,
+      "m_Localized": "บาทหลวงหุ่นกระป๋อง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793729,
+      "m_Localized": "แม่ชี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793730,
+      "m_Localized": "ชานิส",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793731,
+      "m_Localized": "ว่าที่แม่ชี ชานิส",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131327
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893922988032,
+      "m_Localized": "หุ่นบาทหลวง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988033,
+      "m_Localized": "ผู้เผยแผ่แห่งคริสตจักร ร.ร.และคุณ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988034,
+      "m_Localized": "โกคูที่สอง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988035,
+      "m_Localized": "โบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182336,
+      "m_Localized": "นิเกฟเชนโก้",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182337,
+      "m_Localized": "เจมี่",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131328
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893927182338,
+      "m_Localized": "ผู้บรรยาย",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131329
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893927182339,
+      "m_Localized": "ผู้หญิง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376640,
+      "m_Localized": "ตู้กด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376641,
+      "m_Localized": "??? 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376642,
+      "m_Localized": "เลขาของหมอเบลาว์ไบลม์",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131330
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893931376643,
+      "m_Localized": "หมอเบลาว์ไบลม์",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131331
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893935570944,
+      "m_Localized": "ป๊ะป๋๋๋๋๋๋๋๋๋๋๋าๅๅๅ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131332
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893935570945,
+      "m_Localized": "คุุุุุุณณณ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131333
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893935570947,
+      "m_Localized": "หุ่นบาทหลวง มาร์ค",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765248,
+      "m_Localized": "คนจรจัด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765250,
+      "m_Localized": "แอนนาลีย์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765251,
+      "m_Localized": "คุณและหุ่นเซ็กส์บอท",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131334
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893943959552,
+      "m_Localized": "คนแปลกหน้า",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959553,
+      "m_Localized": "คนแปลกหน้า 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959554,
+      "m_Localized": "คนแปลกหน้า 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959555,
+      "m_Localized": "คนแปลกหน้า 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153856,
+      "m_Localized": "สาวน้อย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153857,
+      "m_Localized": "แม่ของเด็กสาว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153858,
+      "m_Localized": "หญิงสูงวัย",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131335
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893948153859,
+      "m_Localized": "ตำรวจ 3 และ 4",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153860,
+      "m_Localized": "ตำรวจ 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348161,
+      "m_Localized": "ตำรวจหญิง และ ตำรวจ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348162,
+      "m_Localized": "??? 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348163,
+      "m_Localized": "??? 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542464,
+      "m_Localized": "??? 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542465,
+      "m_Localized": "จอช ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131336
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893956542466,
+      "m_Localized": "จอช",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542467,
+      "m_Localized": "พนักงานต้อนรับ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131337
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893960736768,
+      "m_Localized": "นักสืบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736769,
+      "m_Localized": "บริกร",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736770,
+      "m_Localized": "คุณโกสต์",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131338
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893960736771,
+      "m_Localized": "นักเบสบอล",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931072,
+      "m_Localized": "ยมทูต",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131339
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893964931073,
+      "m_Localized": "น้องผี",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131340
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893964931074,
+      "m_Localized": "ชายชุดสูทท่าทางยุ่งๆ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931075,
+      "m_Localized": "หญิงชรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131341
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893969125377,
+      "m_Localized": "ผู้เผยแผ่แห่งคริสตจักร ร.ร.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125379,
+      "m_Localized": "ผู้ช่วยพิเศษคนใหม่",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131342
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893973319680,
+      "m_Localized": "ผู้ช่วยพิเศษ ลีโอนาร์โด",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131343
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893973319681,
+      "m_Localized": "บิ๊กแด๊ดดี้",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197348848315654144,
+      "m_Localized": "เภสัชกร",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131344
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 197348848403734528,
+      "m_Localized": "พนักงานหญิง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168577,
+      "m_Localized": "พนักงานคิดเงิน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168576,
+      "m_Localized": "ลีโอนาร์โด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852338282496,
+      "m_Localized": "เมลิสซ่า",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899521212416,
+      "m_Localized": "ผู้ประกาศข่าว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899592515584,
+      "m_Localized": "ผู้สื่อข่าว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131345
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 230535899592515585,
+      "m_Localized": "ผู้ประท้วง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734682095616,
+      "m_Localized": "หญิงรวยในชุดแจ็คเก็ตสีชมพู",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734682095617,
+      "m_Localized": "หญิงรวยกับหน้าอกไซส์บ๊ะลั่กกั้ก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734589820928,
+      "m_Localized": "ลำโพงร้าน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319409216818241536,
+      "m_Localized": "ลิตเติ้ล_ริชาร์ด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319409216914710528,
+      "m_Localized": "ผู้เช่าห้องที่ถูกบูลลี่(คุณ)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732238696448,
+      "m_Localized": "คุณนายฟิชเชอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445184,
+      "m_Localized": "พนักงาน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445185,
+      "m_Localized": "พนักงาน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445186,
+      "m_Localized": "แด็ค",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131346
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326769732276445187,
+      "m_Localized": "ผู้ดูแลระบบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400360382465,
+      "m_Localized": "หญิงสาว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131347
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 328532400360382464,
+      "m_Localized": "หญิงชรา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400263913472,
+      "m_Localized": "ลูซี่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 471117888949837824,
+      "m_Localized": "อาเหมย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 471117889046306816,
+      "m_Localized": "เมลิสซ่าตัวจริง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 471117889046306817,
+      "m_Localized": "จาโคบี้ อี. วุนเดอรันวอลต์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348160,
+      "m_Localized": "ตำรวจหญิง และ ตำรวจ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479127667148316672,
+      "m_Localized": "บริแทนเนีย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479859701739151360,
+      "m_Localized": "หญิงสาวแถวนั้น",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479127667198648320,
+      "m_Localized": "ผู้หญิงไม่ทราบชื่อ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481728203517321216,
+      "m_Localized": "ชายชรา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777896128514,
+      "m_Localized": "??? 5",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777896128513,
+      "m_Localized": "??? 4",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777896128512,
+      "m_Localized": "??? 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 481727777795465216,
+      "m_Localized": "??? 2&3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542258247985258496,
+      "m_Localized": "บันทึกข้อมูล",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569124131320,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/12/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131321,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Original way to call (Sex)Bot in thai : (หุ่นเซ็กส์)บอท"
+        }
+      },
+      {
+        "rid": 7996671569124131322,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "16/10/24 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131323,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "07/06/25 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131324,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "24/02/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131325,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "06/10/25 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131326,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Done !\n\n14/09/26 :\nProofreading : Done !"
+        }
+      },
+      {
+        "rid": 7996671569124131327,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "22/12/24 :"
+        }
+      },
+      {
+        "rid": 7996671569124131328,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "24/02/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131329,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "29/03/24 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131330,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "18/01/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131331,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "18/01/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131332,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "08/12/23 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131333,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "22/12/24 :"
+        }
+      },
+      {
+        "rid": 7996671569124131334,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "29/01/24 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131335,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "11/11/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131336,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "11/11/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131337,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/07/25 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131338,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "22/12/24 :"
+        }
+      },
+      {
+        "rid": 7996671569124131339,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "16/08/24 :\n\nTypo Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131340,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/12/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131341,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "11/11/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131342,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "16/10/24 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131343,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "16/10/24 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131344,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/10/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131345,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/10/24 :\n\nSmall Fix\n"
+        }
+      },
+      {
+        "rid": 7996671569124131346,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/06/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124131347,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "22/12/24 :"
+        }
+      }
+    ]
+  }
+}

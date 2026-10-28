@@ -1,0 +1,2420 @@
+{
+  "id": "shower__714017f09d7b7c24_17054",
+  "core_version": 83886080,
+  "moc_version": 5,
+  "parameters": [
+    {
+      "id": "ParamBoobHandX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobHandY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobHandGrab",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobHandEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAssHandLX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAssHandLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAssHandLGrab",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAssHandLEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitRubEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamClitRubZ",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaClitMoveX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaClitMoveY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamWaistGrabLEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamWaistGrabREnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpreadPussyEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpreadAnusEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpankLEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpankLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpankLAnim",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        0.25,
+        0.5,
+        0.6000000238418579,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpankREnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpankRY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamSpankRAnim",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        0.25,
+        0.5,
+        0.6000000238418579,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaFingeringEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaFingeringInsert",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaFingeringRotation",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAnusFingeringEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAnusFingeringInsert",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAnusFingeringRotation",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadpat",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadpatX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadpatY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballLX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBlush",
+      "minimum": 0.0,
+      "maximum": 2.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "id": "Bluescreen",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.15000000596046448,
+        0.25,
+        0.3499999940395355,
+        0.4000000059604645,
+        0.44999998807907104,
+        0.5,
+        0.550000011920929,
+        0.6000000238418579,
+        0.6499999761581421,
+        0.699999988079071,
+        0.75,
+        0.800000011920929,
+        0.8500000238418579,
+        0.8999999761581421,
+        0.949999988079071,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballRX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeballRY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamMouthOpen",
+      "minimum": 0.0,
+      "maximum": 2.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        0.5,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0
+      ]
+    },
+    {
+      "id": "ParamMouthForm",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeLShock",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 1.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.5,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamTense",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeRShock",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 1.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.5,
+        -0.25,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeart",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.49000000953674316,
+        0.5099999904632568,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamEyeExpression",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowRY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowLRot",
+      "minimum": -30.0,
+      "maximum": 30.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -30.0,
+        0.0,
+        30.0
+      ]
+    },
+    {
+      "id": "ParamBrowRRot",
+      "minimum": -30.0,
+      "maximum": 30.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -30.0,
+        0.0,
+        30.0
+      ]
+    },
+    {
+      "id": "ParamBrowLEmote",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBrowREmote",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.5,
+        -0.25,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHeadZ",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumInside",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumInsideWomb",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumInsideAnal",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumLeakSource",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumLeakAnim",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.05000000074505806,
+        0.10000000149011612,
+        0.15000000596046448,
+        0.30000001192092896,
+        0.6000000238418579,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumLeakSize",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamDick",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThrust",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": -1.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThrustAnal",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": -1.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.5,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumShotLengthY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumOutsideX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumOutsideY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamFlacidity",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamHideCumShot",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamCumShotAnim",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.05000000074505806,
+        0.10000000149011612,
+        0.15000000596046448,
+        0.800000011920929,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAnalCockAngle",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaCockAngle",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamVaginaOpen",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAnusOpen",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamOrgasm",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.10000000149011612,
+        0.20000000298023224,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThighjobEnable",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThrustThighjob",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": -1.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThighjobCockAngle",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThighjobOpen",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "TonguePhysics",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamButtPhysicsLY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamButtPhysicsLZ",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamButtPhysicsLX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamButtPhysicsRY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamButtPhysicsRZ",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamButtPhysicsRX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "BoobPhysicsX",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "BoobPhysicsY",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "RibcagePhysicsRotation",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "HairPhysics",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "CumPhysics",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamAssSize",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamThighSize",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 1,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamBoobSize",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 1.0,
+      "type": 1,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ParamPerspectiveToggle",
+      "minimum": 0.0,
+      "maximum": 2.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "id": "ParamBotBodyStraighten",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "id": "ButtMovement",
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ButtPressed",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "default": 0.0,
+      "type": 0,
+      "key_values": [
+        0.0,
+        0.25,
+        1.0
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "Part7",
+      "opacity": 1.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part",
+      "opacity": 1.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part17",
+      "opacity": 1.0,
+      "parent_index": -1
+    },
+    {
+      "id": "Part2",
+      "opacity": 1.0,
+      "parent_index": 0
+    },
+    {
+      "id": "Part11",
+      "opacity": 0.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part13",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part4",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Part3",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Arms",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Lower",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Torso",
+      "opacity": 1.0,
+      "parent_index": 2
+    },
+    {
+      "id": "Hair2",
+      "opacity": 1.0,
+      "parent_index": 7
+    },
+    {
+      "id": "Head2",
+      "opacity": 1.0,
+      "parent_index": 7
+    },
+    {
+      "id": "ButtMask",
+      "opacity": 1.0,
+      "parent_index": 10
+    }
+  ],
+  "drawables": [
+    {
+      "id": "AttachArmLHand",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinArm",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmLLower",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmLUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtSeamline",
+      "texture_index": 0
+    },
+    {
+      "id": "Thighs",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachLegLThigh",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButt",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinPelvis",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachChargeHole",
+      "texture_index": 0
+    },
+    {
+      "id": "Thighs2",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinArm2",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinBoob2",
+      "texture_index": 0
+    },
+    {
+      "id": "NippleL",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtOutline",
+      "texture_index": 0
+    },
+    {
+      "id": "ButtReverseMask",
+      "texture_index": 0
+    },
+    {
+      "id": "HairHologram",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Front_Bang",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_SideLeft",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_BackLeft",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Back",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelidR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinEyelidL",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashL2",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashLMid4",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashLLow2",
+      "texture_index": 0
+    },
+    {
+      "id": "EyeWhiteL2",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashR2",
+      "texture_index": 0
+    },
+    {
+      "id": "EyeLashRMid3",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashRMid2",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashRLow2",
+      "texture_index": 0
+    },
+    {
+      "id": "EyeWhiteR2",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinNose",
+      "texture_index": 0
+    },
+    {
+      "id": "HairShadowL",
+      "texture_index": 0
+    },
+    {
+      "id": "HairShadowR",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinFace2",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinNeck2",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_BackRight",
+      "texture_index": 0
+    },
+    {
+      "id": "DickSkin",
+      "texture_index": 0
+    },
+    {
+      "id": "DickMain",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDick1",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDick2",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinRibcage",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinWaistLower",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRHandBack",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachLegRThigh",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_SideAlt_Strand",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaBoob",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaEyeL",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaEyeR",
+      "texture_index": 0
+    },
+    {
+      "id": "EyelashLMid3",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssSide2",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssBottom",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAss2",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAss",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideThighBack",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssSide",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssUp",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideBelly",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssUp2",
+      "texture_index": 0
+    },
+    {
+      "id": "DickMask",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaAss",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaMouth",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaMC",
+      "texture_index": 0
+    },
+    {
+      "id": "MCthigh",
+      "texture_index": 0
+    },
+    {
+      "id": "MCbelly",
+      "texture_index": 0
+    },
+    {
+      "id": "MCPalm",
+      "texture_index": 0
+    },
+    {
+      "id": "MCPinky",
+      "texture_index": 0
+    },
+    {
+      "id": "MCThumb",
+      "texture_index": 0
+    },
+    {
+      "id": "MCMiddleFinger",
+      "texture_index": 0
+    },
+    {
+      "id": "MCRingFinger",
+      "texture_index": 0
+    },
+    {
+      "id": "MCIndexFinger",
+      "texture_index": 0
+    },
+    {
+      "id": "MCIndexFinger2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCRingFinger2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCMiddleFinger2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCThumb2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCPinky2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCPalm2",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRLower",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris2L",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris1L",
+      "texture_index": 0
+    },
+    {
+      "id": "PupilL3",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris2R",
+      "texture_index": 0
+    },
+    {
+      "id": "Iris1R",
+      "texture_index": 0
+    },
+    {
+      "id": "PupilR",
+      "texture_index": 0
+    },
+    {
+      "id": "BrowR",
+      "texture_index": 0
+    },
+    {
+      "id": "BrowL",
+      "texture_index": 0
+    },
+    {
+      "id": "LowerLipMask",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLowerLip",
+      "texture_index": 0
+    },
+    {
+      "id": "UpperLipMask",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperLip",
+      "texture_index": 0
+    },
+    {
+      "id": "SharpTeethUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "Tongue",
+      "texture_index": 0
+    },
+    {
+      "id": "InnerMouth",
+      "texture_index": 0
+    },
+    {
+      "id": "TeethUpper",
+      "texture_index": 0
+    },
+    {
+      "id": "TeethLower",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinMouth3",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinMouth2Lower",
+      "texture_index": 0
+    },
+    {
+      "id": "Tongue3",
+      "texture_index": 0
+    },
+    {
+      "id": "InnerMask",
+      "texture_index": 0
+    },
+    {
+      "id": "InnerMouth2",
+      "texture_index": 0
+    },
+    {
+      "id": "Blush",
+      "texture_index": 0
+    },
+    {
+      "id": "BluescreenOld",
+      "texture_index": 0
+    },
+    {
+      "id": "NipPiercingLeft",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSeamlineButtR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSeamlineButtL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "Anus_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinVaginaR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinVaginaL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "DickMask_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDick1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDick2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaButtL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "DickShadow",
+      "texture_index": 0
+    },
+    {
+      "id": "DickMain_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "VaginaInner_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinAnusTop_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AnusInnerAndBottom_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSeamlineThighR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "ThighR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSeamlineThighL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "ThighL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachLegRThigh_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachLegLThigh_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachChargeHole_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinPelvis2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinScapulaL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinScapulaR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinShoulderL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinShoulderR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinRibcageBase_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Back1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinNeck_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperArmL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperArmR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmLUpper_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRUpper_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmLLower_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRLower_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmLHand_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "AttachArmRHand_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLowerWaist_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperWaist_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinLowerWaistBase_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinUpperWaistBase_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "Shadow_ThighL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "Shadow_ThighR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "Shadow_AssL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "Shadow_AssR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpreadL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpread_ThumbL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpreadR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpread_ThumbR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpankL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpankR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCAnusHandWrist_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCAnusHandMain_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCAnusHandFinger_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCAnusHandThumb_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCWaistGrabL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCWaistGrabL2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCWaistGrabR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCWaistGrabR2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumAnal1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumDrip1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumVagina1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_SideLeftMask_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_SideLeft_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinFaceSeamline_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSideUpperLip_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSideLowerLip_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSideFace_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "H0_Front_Bang_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCPet_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCVaginaHandMain_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCVaginaHandInside_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaMC_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaButtR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaWaist_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaVaginaSpread_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaAnusSide_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaAnusCenter_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaVaginaCenter_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpread_ThumbL_POV2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpreadL_POV2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpread_ThumbR_POV2",
+      "texture_index": 0
+    },
+    {
+      "id": "MCSpreadR_POV2",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinVaginaTop_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinButtBase_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitArea_HeadpatPOV",
+      "texture_index": 0
+    },
+    {
+      "id": "Tongue_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "Blush_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "DickSkin_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "HitArea_Eyes_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumWomb1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumLeakStretchTop",
+      "texture_index": 0
+    },
+    {
+      "id": "CumLeakStretchBottom",
+      "texture_index": 0
+    },
+    {
+      "id": "SkinSmirk",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceNose_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceLeft_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighR2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighLowerL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideInnerThighL2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAss2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAss_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideThighBack_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssUp_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssSide2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssR2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssUp2_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceNose",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceLeft",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssCenterR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssCenterL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideScapulaR_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideThighL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideWaistUpperCenter_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssBottom_POV2",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideBack1_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssR3_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideAssL_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "CumOutsideFaceRight",
+      "texture_index": 0
+    },
+    {
+      "id": "HitAreaVaginaClit_POV",
+      "texture_index": 0
+    },
+    {
+      "id": "ClitRub",
+      "texture_index": 0
+    },
+    {
+      "id": "VaginaInner",
+      "texture_index": 0
+    }
+  ],
+  "texture_slots": {
+    "AttachArmLHand": 0,
+    "SkinArm": 0,
+    "AttachArmLLower": 0,
+    "AttachArmLUpper": 0,
+    "SkinButtSeamline": 0,
+    "Thighs": 0,
+    "AttachLegLThigh": 0,
+    "SkinButt": 0,
+    "SkinPelvis": 0,
+    "AttachChargeHole": 0,
+    "Thighs2": 0,
+    "SkinArm2": 0,
+    "SkinBoob2": 0,
+    "NippleL": 0,
+    "SkinButtOutline": 0,
+    "ButtReverseMask": 0,
+    "HairHologram": 0,
+    "H0_Front_Bang": 0,
+    "H0_SideLeft": 0,
+    "H0_BackLeft": 0,
+    "H0_Back": 0,
+    "SkinEyelidR": 0,
+    "SkinEyelidL": 0,
+    "EyelashL2": 0,
+    "EyelashLMid4": 0,
+    "EyelashLLow2": 0,
+    "EyeWhiteL2": 0,
+    "EyelashR2": 0,
+    "EyeLashRMid3": 0,
+    "EyelashRMid2": 0,
+    "EyelashRLow2": 0,
+    "EyeWhiteR2": 0,
+    "SkinNose": 0,
+    "HairShadowL": 0,
+    "HairShadowR": 0,
+    "SkinFace2": 0,
+    "SkinNeck2": 0,
+    "H0_BackRight": 0,
+    "DickSkin": 0,
+    "DickMain": 0,
+    "CumDick1": 0,
+    "CumDick2": 0,
+    "SkinRibcage": 0,
+    "SkinWaistLower": 0,
+    "AttachArmRHandBack": 0,
+    "AttachLegRThigh": 0,
+    "H0_SideAlt_Strand": 0,
+    "HitAreaBoob": 0,
+    "HitAreaEyeL": 0,
+    "HitAreaEyeR": 0,
+    "EyelashLMid3": 0,
+    "CumOutsideAssSide2": 0,
+    "CumOutsideAssBottom": 0,
+    "CumOutsideAss2": 0,
+    "CumOutsideAss": 0,
+    "CumOutsideThighBack": 0,
+    "CumOutsideAssSide": 0,
+    "CumOutsideAssUp": 0,
+    "CumOutsideBelly": 0,
+    "CumOutsideAssUp2": 0,
+    "DickMask": 0,
+    "HitAreaAss": 0,
+    "HitAreaMouth": 0,
+    "HitAreaMC": 0,
+    "MCthigh": 0,
+    "MCbelly": 0,
+    "MCPalm": 0,
+    "MCPinky": 0,
+    "MCThumb": 0,
+    "MCMiddleFinger": 0,
+    "MCRingFinger": 0,
+    "MCIndexFinger": 0,
+    "MCIndexFinger2": 0,
+    "MCRingFinger2": 0,
+    "MCMiddleFinger2": 0,
+    "MCThumb2": 0,
+    "MCPinky2": 0,
+    "MCPalm2": 0,
+    "AttachArmRLower": 0,
+    "AttachArmRUpper": 0,
+    "Iris2L": 0,
+    "Iris1L": 0,
+    "PupilL3": 0,
+    "Iris2R": 0,
+    "Iris1R": 0,
+    "PupilR": 0,
+    "BrowR": 0,
+    "BrowL": 0,
+    "LowerLipMask": 0,
+    "SkinLowerLip": 0,
+    "UpperLipMask": 0,
+    "SkinUpperLip": 0,
+    "SharpTeethUpper": 0,
+    "Tongue": 0,
+    "InnerMouth": 0,
+    "TeethUpper": 0,
+    "TeethLower": 0,
+    "SkinMouth3": 0,
+    "SkinMouth2Lower": 0,
+    "Tongue3": 0,
+    "InnerMask": 0,
+    "InnerMouth2": 0,
+    "Blush": 0,
+    "BluescreenOld": 0,
+    "NipPiercingLeft": 0,
+    "SkinSeamlineButtR_POV": 0,
+    "SkinButtR_POV": 0,
+    "SkinSeamlineButtL_POV": 0,
+    "SkinButtL_POV": 0,
+    "Anus_POV": 0,
+    "SkinVaginaR_POV": 0,
+    "SkinVaginaL_POV": 0,
+    "DickMask_POV": 0,
+    "CumDick1_POV": 0,
+    "CumDick2_POV": 0,
+    "HitAreaButtL_POV": 0,
+    "DickShadow": 0,
+    "DickMain_POV": 0,
+    "VaginaInner_POV": 0,
+    "SkinAnusTop_POV": 0,
+    "AnusInnerAndBottom_POV": 0,
+    "SkinSeamlineThighR_POV": 0,
+    "ThighR_POV": 0,
+    "SkinSeamlineThighL_POV": 0,
+    "ThighL_POV": 0,
+    "AttachLegRThigh_POV": 0,
+    "AttachLegLThigh_POV": 0,
+    "AttachChargeHole_POV": 0,
+    "SkinPelvis2_POV": 0,
+    "SkinScapulaL_POV": 0,
+    "SkinScapulaR_POV": 0,
+    "SkinShoulderL_POV": 0,
+    "SkinShoulderR_POV": 0,
+    "SkinRibcageBase_POV": 0,
+    "H0_Back1_POV": 0,
+    "SkinNeck_POV": 0,
+    "SkinUpperArmL_POV": 0,
+    "SkinUpperArmR_POV": 0,
+    "AttachArmLUpper_POV": 0,
+    "AttachArmRUpper_POV": 0,
+    "AttachArmLLower_POV": 0,
+    "AttachArmRLower_POV": 0,
+    "AttachArmLHand_POV": 0,
+    "AttachArmRHand_POV": 0,
+    "SkinLowerWaist_POV": 0,
+    "SkinUpperWaist_POV": 0,
+    "SkinLowerWaistBase_POV": 0,
+    "SkinUpperWaistBase_POV": 0,
+    "Shadow_ThighL_POV": 0,
+    "Shadow_ThighR_POV": 0,
+    "Shadow_AssL_POV": 0,
+    "Shadow_AssR_POV": 0,
+    "MCSpreadL_POV": 0,
+    "MCSpread_ThumbL_POV": 0,
+    "MCSpreadR_POV": 0,
+    "MCSpread_ThumbR_POV": 0,
+    "MCSpankL_POV": 0,
+    "MCSpankR_POV": 0,
+    "MCAnusHandWrist_POV": 0,
+    "MCAnusHandMain_POV": 0,
+    "MCAnusHandFinger_POV": 0,
+    "MCAnusHandThumb_POV": 0,
+    "MCWaistGrabL_POV": 0,
+    "MCWaistGrabL2_POV": 0,
+    "MCWaistGrabR_POV": 0,
+    "MCWaistGrabR2_POV": 0,
+    "CumAnal1_POV": 0,
+    "CumDrip1_POV": 0,
+    "CumVagina1_POV": 0,
+    "H0_SideLeftMask_POV": 0,
+    "H0_SideLeft_POV": 0,
+    "SkinFaceSeamline_POV": 0,
+    "SkinSideUpperLip_POV": 0,
+    "SkinSideLowerLip_POV": 0,
+    "SkinSideFace_POV": 0,
+    "H0_Front_Bang_POV": 0,
+    "MCPet_POV": 0,
+    "MCVaginaHandMain_POV": 0,
+    "MCVaginaHandInside_POV": 0,
+    "HitAreaMC_POV": 0,
+    "HitAreaButtR_POV": 0,
+    "HitAreaWaist_POV": 0,
+    "HitAreaVaginaSpread_POV": 0,
+    "HitAreaAnusSide_POV": 0,
+    "HitAreaAnusCenter_POV": 0,
+    "HitAreaVaginaCenter_POV": 0,
+    "MCSpread_ThumbL_POV2": 0,
+    "MCSpreadL_POV2": 0,
+    "MCSpread_ThumbR_POV2": 0,
+    "MCSpreadR_POV2": 0,
+    "SkinVaginaTop_POV": 0,
+    "SkinButtBase_POV": 0,
+    "HitArea_HeadpatPOV": 0,
+    "Tongue_POV": 0,
+    "Blush_POV": 0,
+    "DickSkin_POV": 0,
+    "HitArea_Eyes_POV": 0,
+    "CumWomb1_POV": 0,
+    "CumLeakStretchTop": 0,
+    "CumLeakStretchBottom": 0,
+    "SkinSmirk": 0,
+    "CumOutsideFaceNose_POV": 0,
+    "CumOutsideFaceLeft_POV": 0,
+    "CumOutsideInnerThighR_POV": 0,
+    "CumOutsideInnerThighR2_POV": 0,
+    "CumOutsideInnerThighLowerL_POV": 0,
+    "CumOutsideInnerThighL_POV": 0,
+    "CumOutsideInnerThighL2_POV": 0,
+    "CumOutsideAss2_POV": 0,
+    "CumOutsideAss_POV": 0,
+    "CumOutsideThighBack_POV": 0,
+    "CumOutsideAssUp_POV": 0,
+    "CumOutsideAssSide2_POV": 0,
+    "CumOutsideAssR2_POV": 0,
+    "CumOutsideAssUp2_POV": 0,
+    "CumOutsideFaceNose": 0,
+    "CumOutsideFaceLeft": 0,
+    "CumOutsideAssR_POV": 0,
+    "CumOutsideAssCenterR_POV": 0,
+    "CumOutsideAssCenterL_POV": 0,
+    "CumOutsideScapulaR_POV": 0,
+    "CumOutsideThighL_POV": 0,
+    "CumOutsideWaistUpperCenter_POV": 0,
+    "CumOutsideAssBottom_POV2": 0,
+    "CumOutsideBack1_POV": 0,
+    "CumOutsideAssR3_POV": 0,
+    "CumOutsideAssL_POV": 0,
+    "CumOutsideFaceRight": 0,
+    "HitAreaVaginaClit_POV": 0,
+    "ClitRub": 0,
+    "VaginaInner": 0
+  },
+  "source_object": "714017f09d7b7c24:17054"
+}

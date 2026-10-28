@@ -1,0 +1,135 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 37127979008
+  },
+  "m_Name": "",
+  "itemId": 11487,
+  "indentLevel": 3,
+  "output": {
+    "m_FileID": 0,
+    "m_PathID": 2159
+  },
+  "options": [
+    {
+      "text": {
+        "KeyId": 112259623099961344
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    },
+    {
+      "text": {
+        "KeyId": 112259623099961345
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    },
+    {
+      "text": {
+        "KeyId": 112259835432407040
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    },
+    {
+      "text": {
+        "KeyId": 112259835432407041
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    },
+    {
+      "text": {
+        "KeyId": 112259835432407042
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    }
+  ]
+}

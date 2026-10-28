@@ -1,0 +1,37 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15974,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Landlord.Misc.money\r\nYou hand him the money.\r\nHe flipped through it.\r\nLandlord: Looks good. \r\n#Landlord.animate(TransparencyTo0,0.5)\r\nLandlord: Don't forget about the money next week Anon!\r\nHe shouted from the bottom of the stairs.\r\nYou: Of course Mr. Landlord!",
+    "localizedLines": [
+      {
+        "KeyId": 455520746722025472
+      },
+      {
+        "KeyId": 455520746722025473
+      },
+      {
+        "KeyId": 455520746722025474
+      },
+      {
+        "KeyId": 455520746726219776
+      },
+      {
+        "KeyId": 455520746726219777
+      },
+      {
+        "KeyId": 455520746726219778
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17093,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Annalie_Outside.Eyes.Normal+Annalie_Outside.Mouth.Hmm\r\n#bot.Expression.sad\r\nBot: Is everything alright, Annalie? You look sad…\r\nLady Annalie: Sorry. My guy friend got sick on the plane and they had to go to the hospital.\r\nBot: That’s horrible! What happened?\r\nLady Annalie: His stomach started to hurt all of a sudden. They will run some tests and tell me more when they can.\r\nYou: Is the show in danger? \r\nLady Annalie: I was assured that she would come no matter what and I decided to believe her. \r\nYou: Sure, no worries. Things like that happen and health takes the priority.\r\nLady Annalie: Yeah…\r\nLady Annalie: Sorry, I lost my mood for today. How about we cut this short and meet another time?\r\n???: Oh? Do I hear trouble?\r\n#Annalie_Outside.animate(MoveToLeft)",
+    "localizedLines": [
+      {
+        "KeyId": 479706613011177472
+      },
+      {
+        "KeyId": 479706613011177473
+      },
+      {
+        "KeyId": 479706613011177474
+      },
+      {
+        "KeyId": 479706613011177475
+      },
+      {
+        "KeyId": 479706613015371776
+      },
+      {
+        "KeyId": 479706613015371777
+      },
+      {
+        "KeyId": 479706613015371778
+      },
+      {
+        "KeyId": 479706613015371779
+      },
+      {
+        "KeyId": 479706613015371780
+      },
+      {
+        "KeyId": 479706613015371781
+      }
+    ]
+  }
+}

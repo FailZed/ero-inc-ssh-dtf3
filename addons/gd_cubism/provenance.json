@@ -3,13 +3,12 @@
   "source": "https://github.com/MizunagiKB/gd_cubism/tree/v0.9.1",
   "godot_cpp_revision": "fbbf9ec4efd8f1055d00edb8d926eef8ba4c2cce",
   "sdk_headers": "Live2D Cubism SDK for Native 5-r.1",
-  "core_source": "E:\\factorial-omega-win-64\\My Dystopian Robot Girlfriend_Data\\Plugins\\x86_64\\Live2DCubismCore.dll",
-  "core_sha256": "cdd756f99cb9e6824e35009c5c2bf59f512b9544eeb864351c7736969b920ccb",
+  "core_source": "https://cubism.live2d.com/sdk-native/bin/CubismSdkForNative-5-r.1.zip",
   "local_changes": [
-    "Windows MinGW import library for the supplied Core DLL",
-    "Expose is_initialized() to GDScript"
+    "Expose is_initialized() to GDScript",
+    "macOS universal Core library and standalone dylib",
+    "Windows MinGW import library for the official Native SDK Core DLL"
   ],
-  "platform": "Windows x86_64",
   "build_profile": [
     "Animation",
     "ArrayMesh",
@@ -46,5 +45,11 @@
     "Texture2D",
     "ViewportTexture",
     "Window"
-  ]
+  ],
+  "sdk_archive_sha256": "073f623fc3fb06c192e68bb5287fdb9dab1952164c2a956dec6d4b45fd342ffb",
+  "platforms": [
+    "macOS arm64 + x86_64",
+    "Windows x86_64"
+  ],
+  "build": "python tools/build_cubism_runtime.py; binary hashes in bin/build-*.json"
 }

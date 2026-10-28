@@ -1,0 +1,145 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 10057,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Policeman: Dear citizen, what are you doing at this hour? In this area?\r\nYou: Uhh… Just walking around?\r\nPoliceman: ‘Just walking around’ he says. Get a load of this guy!\r\nPolicewoman: Sir, it’s freezing cold and it’s {gv_Hour} at night. Are you sure you are just walking around?\r\nYou: Yeah?\r\n#Policeman.Face.lookateachother\r\n#Policewoman.Face.lookateachother\r\nI don’t get it, is it really that weird?\r\nPoliceman and Policewoman: …\r\n#Policeman.Face.normal\r\n#Policewoman.Face.normal\r\nPoliceman: Please turn around with your hands behind your back.\r\nYou: W-why?!\r\nPolicewoman: Woah, woah, calm down, it’s too fast for that partner. We wouldn’t want any civil rights issues now wouldn’t we?\r\nPoliceman: Y-yeah, good call. I just thought that you agreed with me during that long, silent stare.\r\nPolicewoman: No no no, it was a ‘proceed with caution’ stare. Besides, you should know better, aren’t you on your third misconduct case?\r\n#Policeman.Face.angry\r\nPoliceman: You don’t have to tell me, ok?! \r\n#Policeman.Face.normal\r\nPoliceman: I’m just…{{wi}} not very good at working under pressure. Sometimes I even get twitchy and stuff.\r\nPolicewoman: …\r\nPolicewoman: Well, let’s talk about it later.\r\nPolicewoman: Sir, your name please.\r\nYou: Anon [Redacted].\r\nPoliceman: Anon [Redacted]?! What kind of name is that?! Is that even a real name?\r\nYou: …\r\nPolicewoman: Anyway, do you live nearby?\r\nYou: Yes, just a few minutes away.\r\nPoliceman: Oh really? I don’t remember your face at all.\r\nYou: W-what? We literally talked not so long ago!\r\nPoliceman: Oh, uh, right. I was just testing you.\r\nPolicewoman: Excuse my partner, he’s not good at remembering faces. You live in that big complex nearby, if I remember correctly.\r\nPolicewoman: Would you mind showing us your ID sir?\r\nUh, I forgot if I’m forced to show my ID in this state or not. Let’s just cooperate to get this thing over with.\r\nYou: Here.\r\nPolicewoman: …\r\nPolicewoman: Everything seems alright. \r\nPolicewoman: Please sir, go back to your home, there’s a little disturbance down the road and we don’t want you to hinder our investigation.\r\nYou: Did something bad happen?\r\nPolicewoman: Nothing you should be concerned with, but please close your windows upon your arrival.\r\nPolicewoman: Also, you can experience a little headache and nosebleed in the coming hours, but it’s a normal occurrence. The weather is acting up, you see.\r\nYou: O-ok?\r\nThat seems strange\r\nPoliceman: Are you letting him go just like that? You know, he might be one of them.\r\nPolicewoman: There’s nothing much we can do, it’s not like we have any well-grounded suspicion.\r\nPoliceman: Can I at least pat him down? I always wanted to try it once!\r\nPolicewoman: Alright alright, just do it quickly. I don’t want to breathe it in any longer.\r\nPoliceman: Turn around and hands on the wall, scum! I will now pat you down in search of dangerous weapons.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826911289351
+      },
+      {
+        "KeyId": 191538826911289352
+      },
+      {
+        "KeyId": 191538826911289353
+      },
+      {
+        "KeyId": 191538826911289354
+      },
+      {
+        "KeyId": 191538826911289355
+      },
+      {
+        "KeyId": 191538826915483648
+      },
+      {
+        "KeyId": 191538826915483649
+      },
+      {
+        "KeyId": 191538826915483650
+      },
+      {
+        "KeyId": 191538826915483651
+      },
+      {
+        "KeyId": 191538826915483652
+      },
+      {
+        "KeyId": 191538826915483653
+      },
+      {
+        "KeyId": 191538826915483654
+      },
+      {
+        "KeyId": 191538826915483655
+      },
+      {
+        "KeyId": 191538826915483656
+      },
+      {
+        "KeyId": 191538826915483657
+      },
+      {
+        "KeyId": 191538826915483658
+      },
+      {
+        "KeyId": 191538826915483659
+      },
+      {
+        "KeyId": 191538826915483660
+      },
+      {
+        "KeyId": 191538826915483661
+      },
+      {
+        "KeyId": 191538826915483662
+      },
+      {
+        "KeyId": 191538826915483663
+      },
+      {
+        "KeyId": 191538826915483664
+      },
+      {
+        "KeyId": 191538826915483665
+      },
+      {
+        "KeyId": 191538826915483666
+      },
+      {
+        "KeyId": 191538826915483667
+      },
+      {
+        "KeyId": 191538826915483668
+      },
+      {
+        "KeyId": 191538826915483669
+      },
+      {
+        "KeyId": 191538826915483670
+      },
+      {
+        "KeyId": 191538826915483671
+      },
+      {
+        "KeyId": 191538826915483672
+      },
+      {
+        "KeyId": 191538826915483673
+      },
+      {
+        "KeyId": 191538826915483674
+      },
+      {
+        "KeyId": 191538826915483675
+      },
+      {
+        "KeyId": 191538826915483676
+      },
+      {
+        "KeyId": 191538826915483677
+      },
+      {
+        "KeyId": 191538826919677952
+      },
+      {
+        "KeyId": 191538826919677953
+      },
+      {
+        "KeyId": 191538826919677954
+      },
+      {
+        "KeyId": 191538826919677955
+      },
+      {
+        "KeyId": 191538826919677956
+      },
+      {
+        "KeyId": 191538826919677957
+      },
+      {
+        "KeyId": 191538826919677958
+      }
+    ]
+  }
+}

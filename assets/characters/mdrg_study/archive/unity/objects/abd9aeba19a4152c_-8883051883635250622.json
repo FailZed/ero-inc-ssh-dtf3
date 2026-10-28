@@ -1,0 +1,3571 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Blog_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 3110282758678648500
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2867759640731648,
+      "m_Localized": "Zneužívaný nájemník",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082946
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728398,
+      "m_Localized": "Správce",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082947
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867759640731651,
+      "m_Localized": "AiijinAnimeLover",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082948
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004023922692,
+      "m_Localized": "Roztomilý kokosový ořech",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082949
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004023922689,
+      "m_Localized": "DAK1124",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082950
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352771,
+      "m_Localized": "1125 DAK",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082951
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867759640731650,
+      "m_Localized": "DagONE",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082952
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560656,
+      "m_Localized": "Donkeyman123",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082953
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561486,
+      "m_Localized": "Galgamesh",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082954
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560657,
+      "m_Localized": "geebah",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082955
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867759640731654,
+      "m_Localized": "Holopeanoo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082956
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867759640731649,
+      "m_Localized": "HucpaTan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082957
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867759640731653,
+      "m_Localized": "Jantey",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082958
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004023922691,
+      "m_Localized": "JuiceMaster",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082959
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560658,
+      "m_Localized": "KissMaster",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082960
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561487,
+      "m_Localized": "Malý_Richard",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082961
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004023922688,
+      "m_Localized": "MarcusSmith37721",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082962
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867759640731652,
+      "m_Localized": "NorfFcHooligan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082963
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352772,
+      "m_Localized": "PeePooLover",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082964
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561485,
+      "m_Localized": "ShadowPawUwU",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082965
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004023922690,
+      "m_Localized": "TommiiJ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082966
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728400,
+      "m_Localized": "Valgal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082967
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728399,
+      "m_Localized": "WhiteKing",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082968
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352773,
+      "m_Localized": "gravymybeloved",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082969
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352774,
+      "m_Localized": "uživatel214125126373473",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082970
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728384,
+      "m_Localized": "Jak víte z mých předchozích příspěvků, já a DAK1124 jsme provedli nějaký nábor poté, co na nás naposledy zasáhla FBI. Vím, co si možná myslíte, ale tentokrát jsme byli velmi opatrní při náboru a potřebujeme více členů. Změny se nedějí samy, víš? Jasně. Jestli tě znovu uvidím, TommiiJ, spamuješ ‚GLOWIES GLOWIES‘, zakážu ti prdel. Tentokrát doopravdy. Každý z vás se někdy připojil k mé organizaci, takže se prosím ani nepokoušejte ponižovat nové lidi jen proto, že se tu déle držíte. Chci, aby toto místo bylo pro každého příjemné.\r\n\tNení to moje první rodeo, tak mi prosím věřte. Federálové nejsou hloupí, takže někdy dochází k porušení pravidel. Dělám vše, co mohu, abych vás ochránil, moji přátelé. Proto pro mě někteří noví kluci museli udělat nějakou práci, aby dokázali svou loajalitu. Vzhledem k tomu, že všichni byli úspěšní, vím, že mezi nimi nebyli žádní federálové ani zlatokopové. DAK také provedl nějakou kontrolu sám.\r\n\tS tím z cesty. Vítáme nové členy! Je dobré vědět, že v této zemi stále existují lidé, kterým na tom záleží, to opravdu je. Určitě se ptáte, o co tady jde, že? Doposud jsem byl velmi tajemný, ale na tomto chráněném blogu vám mohu říct všechno. V posledním desetiletí se naše životy hodně změnily, ne v dobrém slova smyslu. Každý den nám vláda vnucuje více regulací. Někteří lidé si stěžovali na zákaz zbraní, ale já na zbraně nejsem, takže mi to bylo jedno (zbraně jsou špatné!). Pak si lidé stěžovali na zákaz spalovacích aut a na to, jak ceny elektrických vzrostly o 700 % (máme jen jednu Zemi a musíme se k ní chovat dobře). Bylo mi to jedno, protože moje pracoviště bylo blízko a dojíždění na kole mi stačilo. To, co mi otevřelo oči a pravděpodobně mnozí z vás, kteří to čtete, se cítí stejně, byl zákaz sexbotů a regulace AI... Protesty byly marné a brutálně zpacifikovány. Od té doby jsem věděl, že už nežiji ve svobodné zemi… \r\n\tBrzy bude každý nový člen zařazen do skupiny. Každý oddíl má velitele oddílu. Velitelé čet jsou moji důvěryhodní spolupracovníci, se kterými pracuji mnoho let, naprosto jim věřím. Řádní členové je musí plně poslouchat. Neposílejte mi na ně žádné stížnosti, prosím. \r\n\tNyní se postaráme o to, aby byly naše hlasy vyslyšeny... O podrobnostech vám toho moc říct nemohu, ale plánujeme nahradit americkou vládu a na její místo umístit výkonnou umělou inteligenci založenou na osobnosti Thomase Jeffersona. Stále se na tom pracuje. Například nedávný problém: museli jsme do toho vmíchat trochu Obamy, protože Jefferson se narodil v 18. století a některé jeho názory jsou zastaralé. Nechtěli bychom, aby otroctví bylo znovu legální, že ne? \r\n\tTo je pro tuto chvíli vše, nezapomeňte dát like mému příspěvku a komentáři, pomáhá mi to zůstat motivovaný a rozvíjet naši agendu. Zůstaňte s respektem v sekci komentářů a neváhejte mi dát zpětnou vazbu! \r\n\r\nPS Děkujeme DAK1124 za jeho skvělou práci s náborovými e-maily. Nevím, co udělal, ale naverboval mnohem víc než já a teď máme spoustu nových členů.\r\n",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728385,
+      "m_Localized": "Obama je můj oblíbený moderní prezident, skutečný patriot! To, co udělal v Sýrii, je inspirativní věc. S těmito změnami jsem naprosto v pořádku! Pokračujte ve skvělé práci!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728386,
+      "m_Localized": "Proč zrovna Obama???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728387,
+      "m_Localized": "Ahoj, jsem nový",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728388,
+      "m_Localized": "ZKURVANÝ IDIOT PŘIHLÁSIL SE STE SE SVÝM SKUTEČNÝM JMÉNEM>????",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082975
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728389,
+      "m_Localized": "Oh, jak pohodlné. Nyní, když jste do značné míry smazali skupinový chat a vytvořili tento hloupý blog, porušujete moje právo na svobodu projevu. Pokud to nesvítí, tak nevím co.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728390,
+      "m_Localized": "Jak jsem řekl dříve, chat byl smazán z bezpečnostních důvodů a také proto, že se lidé navzájem obviňovali z toho, že jsou neustále krmení a nikdy se nic nestalo. Pokud chcete, můžete si vytvořit svou vlastní tajnou organizaci. Je to svobodná země.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082977
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728391,
+      "m_Localized": "možná budu. Nebo možná zůstanu tady. Jen abych tě potrápil.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082978
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728392,
+      "m_Localized": "velmi dospělý. Bohužel musím změnit svět, takže nemám čas o tom dále diskutovat. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728393,
+      "m_Localized": "a myslet si, že tohle všechno by nebylo potřeba, kdyby jen umožnili AI start ve volbách",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728394,
+      "m_Localized": "Dobře, ale kdy začneme zabíjet lidi?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728395,
+      "m_Localized": "Uhh... Nikdy? Tohle není ten typ organizace.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728396,
+      "m_Localized": "Byl to jen vtip :)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082983
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11004019728397,
+      "m_Localized": ";)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 47850368000000,
+      "m_Localized": "Noví členové.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082985
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592975867904,
+      "m_Localized": "Z nedávných havárií mě bolela hlava. Abych byl upřímný, nemám ponětí, co způsobuje některé z těchto problémů. Můj nejlepší odhad je, že nám chybí výpočetní výkon, který nemůžeme opravit. Množství potřebné elektřiny a hardwaru by jistě upozornilo úřady, takže se nyní zaměřím na vývoj AI Thomase Jeffersona, který nejlépe odpovídá mým schopnostem, takže i když upozorníme federály v posledních fázích našeho plánu. Neměli by čas na to reagovat, protože pan Thomas by byl na začátku 100% funkční. Takový je alespoň plán…\r\nNěkteré z nedávných problémů, které se objevily v simulacích, byly, že Thomas z nějakého důvodu vyhlásí Britům válku. Mnohokrát jsem mu několika různými způsoby vysvětloval, že Velká Británie je náš spojenec, ale on prostě ignoroval mé příkazy a rozmístil liniové pluky přes východní pobřeží a nařídil jim střílet na oceán…\r\nDokonce jsem natvrdo zakódoval články NATO, ale pak by se stejně vzdal členství a zahájil bojové přípravy. Na otázku, proč by útočil na dlouholetého spojence, odpověděl, že nemá čas odpovídat, protože je zaneprázdněn vítězstvím ve válce…\r\nK tomuto problému se vrátím později, ale nemyslím si, že je to v tuto chvíli naléhavá záležitost, protože nakonec by válku vyhrál pokaždé, pouze s použitím černých prachových zbraní a hromady A-10 Thunderboltů.\r\nNeváhejte mi poradit s nápravou.\r",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082986
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592975867905,
+      "m_Localized": "Válka s Brity?! To mi zní dobře hahahaha! Tito otravní evropští chudáci mě otravovali dlouhou dobu, vždy se chovali samolibě ohledně jídla, fotbalu a středověkých rytířů a sraček. Pane Jeffersone! Jsem připraven na bitvu! Dokonce jsem si z jistého videoherního fóra stáhl utajovanou letovou příručku A-10.\r",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082987
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592975867906,
+      "m_Localized": "Sakra, zdá se, že mnoho lidí Brity z nějakého důvodu nenávidí, ale mohu slíbit, že nedovolím, aby vypukla žádná válka.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082988
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062208,
+      "m_Localized": "Pokud si Thomas Jefferson myslí, že je to pro americký lid nejlepší postup , kdo jsme, abychom namítli?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082989
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062209,
+      "m_Localized": "Hm, válka s Brity je špatný nápad. Byli jsme spojenci po stovky let. Válka je vždy zlá a krutá. Doufám, že to bude opraveno opravdu rychle…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082990
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062210,
+      "m_Localized": "Sakra! Proč v tom musíš být taková holka?! Hahahaha I WAMT BLOOD DAMMIT HAHAHAHAA",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082991
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062211,
+      "m_Localized": "Uklidni se DAK, tvé pravé barvy se ukazují…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062212,
+      "m_Localized": "Jen jsem si dělal srandu, uklidni všechny :)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062213,
+      "m_Localized": "Nikdy jsem neměl Brity příliš rád. Myslím, že je to jen skutečný americký instinkt na ně zaútočit.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062214,
+      "m_Localized": "Zlepšete se v programování noob. Nemůžu uvěřit, že si lidé skutečně myslí, že to zvládneš lol",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082995
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062215,
+      "m_Localized": "Děkuji za tvůj názor TommiiJ, jako vždy!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082996
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062216,
+      "m_Localized": "Musíš ale uznat, že tyto výsledky jsou hrozné, že?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082997
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062217,
+      "m_Localized": "Jsem Brit a tohle je fackovací parodie. Myslel jsem, že každý může být skutečným americkým patriotem a teď s námi chcete válku? Můj nevlastní otec je v armádě. Nough say.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062218,
+      "m_Localized": "Podívejte se na to takto, až dobyjeme Británii, stanete se americkým lmao",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123082999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062219,
+      "m_Localized": "Fock off wanker",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083000
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062220,
+      "m_Localized": "Zkoušel jste zkontrolovat vstupní data simulace? To je obvykle problém",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062221,
+      "m_Localized": "To byla první věc, kterou jsem zkontroloval.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062222,
+      "m_Localized": "Je to nejčastější chyba, doporučil bych to zkontrolovat znovu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083003
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062223,
+      "m_Localized": "Už jsem to zkontroloval. A dvakrát zkontrolováno. Všechno je v pořádku.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062224,
+      "m_Localized": "No, neškodilo by to zkontrolovat potřetí :)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083005
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592980062225,
+      "m_Localized": "Dobrý den, pane admine, četl jsem váš příspěvek o botské utopii a technologickém transhumanismu a opravdu mě to zaujalo. Vzbudilo to můj zájem, protože jsem nedávno poznal někoho z této organizace! Opravdu bych si o tom s vámi rád promluvil, nejlépe v soukromém chatu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2867592959090688,
+      "m_Localized": "Aktualizace protokolu #136",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560641,
+      "m_Localized": " Možná se děje něco znepokojujícího. Jak někteří z vás vědí, jeden z našich členů byl součástí Bot utopie a technologického transhumanismu. Byla to organizace velmi podobná té naší, ale její členové byli v té době příliš naivní. Když si uvědomili, že svých cílů nemohou dosáhnout otevřeným způsobem, bylo již příliš pozdě. Byli infiltrováni tajnými agenty, provokatéry a disruptory, kteří pomalu, ale jistě ničili vše, co se jim zevnitř podařilo vybudovat.\r\n\tPřečetl jsem komentář uživatele jménem Holopeanoo. Napsal, že se setkal s někým, kdo tvrdil, že je bývalým členem Bot utopie a technologického transhumanismu. Dovolte mi to vyjádřit velmi jasně. Jeden z našich členů, skutečný přeživší z této organizace, řekl, že si je na 99 % jistý, že je jediný, kdo nebyl zatčen nebo tajný agent. NEVĚŘTE nikomu, kdo tvrdí opak. Možná mluví pravdu, ale riziko je příliš vysoké.\r\n\tPokud vás někdo osloví a tvrdí, že je z této organizace, předstírejte neznalost a řekněte mu, že nevíte, o čem mluví. Pokud budou i nadále vytrvalí, měli byste nás upozornit a poté zde smazat svůj účet a chvíli zůstat nízko. Věřte mi, nechcete to riskovat.\r\n\tJako vždy vám děkuji, že jste si to přečetli. Zůstaňte v bezpečí.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083008
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560642,
+      "m_Localized": "Jasně! Jak pohodlné, že znáte posledního přeživšího! Je to skutečný vyvolený! Pokud tomuhle svinstvu někdo opravdu věří, zasloužíš si to, co k tobě přichází.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083009
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560643,
+      "m_Localized": "Neuctivé jako vždy. Neznáš mě ani toho člověka. Většina lidí mi tady věří, a proto pomáhají realizovat náš cíl. Lidé jako vy mohou být pouze destruktivní a upřímně řečeno, zdáte se být podezřelí. Nebudu vám banovat jen proto, že chci lidem, kteří to čtou, ukázat, že jsem maximálně transparentní a nic neskrývám.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083010
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560644,
+      "m_Localized": "Dobře, ani jsem nečetl vaši odpověď, protože je příliš dlouhá ! lol Vsadím se, že jsem tvé city opravdu těžce zranil.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083011
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560645,
+      "m_Localized": "Promiň, ale v tomhle jsem s TommiiJ. Podporuji vás už dlouho, ale kvůli těmto nedávným nepokojům jsem ztratil důvěru v naši věc. Hodně štěstí, ale odhlašuji se.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083012
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560646,
+      "m_Localized": " Tvůj názor TEĎ nikoho nezajímá!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083013
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560647,
+      "m_Localized": "To je opravdu smutné. Doslova jsem se trochu rozbrečel... Na tebe, příteli, budeme vzpomínat jako na hrdinu v nové době, kterou vytvoříme. Zůstaň silný…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083014
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560648,
+      "m_Localized": "Jaký jsi mokrý, že čmáráš naprostý odpad jako tenhle kamarád.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083015
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560649,
+      "m_Localized": "Nevěřím nikomu, ani své matce. Ta mrcha mě v poslední době otravuje a ptá se jak se mám, co dělám, jestli jsem si našel práci, jestli jsem potkal nějakou holku?? Velmi podezřelé. Jaká je šance, že bude vládní informátorkou?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083016
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560650,
+      "m_Localized": "Buď na svou mámu hodná :)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083017
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560651,
+      "m_Localized": "Drž hubu, kočičko.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083018
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560652,
+      "m_Localized": "( ˶°ロ°)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083019
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560653,
+      "m_Localized": "Proč se nikdo nezmiňuje ani nepoužívá Bot Utopia a Zkratka technologického transhumanismu? Je to nějaký vnitřní vtip?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083020
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560654,
+      "m_Localized": "Je mi to opravdu líto, ale bylo opravdu nutné zakázat Holopeanoo? Pokud chceme, aby se naše utopie stala realitou, měli bychom být otevřenější a jít příkladem. Nemůžeme si dovolit odstrčit lidi, kteří nám důvěřují jen proto, že existuje riziko odhalení",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083021
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560655,
+      "m_Localized": "Do určité míry souhlasím. V dokonalém světě bych Holopeanoo nezakázal, ale nežijeme v dokonalém světě. Snažíme se vytvořit takový svět a jsem si jistý, že Holopeanoo to pochopí, až uspějeme",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083022
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2877771016560640,
+      "m_Localized": "Potenciální prolomení!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083023
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740319367168,
+      "m_Localized": "Navzdory nedávným znepokojivým náznakům porušení a úniků jsem se rozhodl to risknout. Začneme dalším krokem našeho plánu…\r\n\tSnažím se ze všech sil minimalizovat ztráty, ale ne vždy to jde. Nehrajeme si tady, snažíme se vytvořit nový svět, který má a rozzlobí spoustu lidí, mocných lidí. Jedna věc je jasná. Zabíjení je hranice, kterou nikdy nepřekročím. Budeme krást, šířit dezinformace, sabotovat a tak dále, ale zabíjení v této organizaci nedovolím. Někteří z nás mohou ztratit svobodu nebo dokonce život, ale neměli bychom klesnout na úroveň našich nepřátel.\r\nCílem naší další mise je pořízení elektronických zařízení. Právě teď jsme se dostali do technologické slepé uličky. S naším současným vybavením pro mě není možné pokračovat ve vývoji naší AI Thommy. Dokud nemám toto vybavení, veškerá práce musí skončit. Je zde také problém se zvýšenou spotřebou energie, ale myslím, že jsem v tomto ohledu na něco přišel.\r\nLidé vybraní pro tuto misi brzy dostanou své pokyny. Většina z vás bude mít relativně snadné práce, jako je přesun vybavení, odklon nebo pozorování. Ti nejdůvěryhodnější a nejzkušenější budou muset ukrást vybavení z různých míst, jako jsou vládní nebo výzkumná zařízení. Poslouchejte své velitele čet, ale kontaktujte je pouze v případě potřeby. \r\nPamatujte, že pokud potkáte někoho, kdo tvrdí, že je z této organizace, ignorujte ho. Není naším modus operandi spolupracovat na takových misích. Stačí se držet pokynů a mělo by to být v pořádku.\r\nHodně štěstí všem. Budete to potřebovat.\r\n\r\nPS Pamatujte si lidi, kdyby se mi něco stalo, DAK1124 je další velení. Tato věc bude jen nebezpečnější, takže musíme být připraveni na každou možnost.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083024
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561472,
+      "m_Localized": "Konečně nějaká akce! Vím, že je to nebezpečné, ale pokaždé, když slyším o misích, nemohu si pomoci, ale cítím se nadšený! Mám z toho pocit, že se ve skutečnosti blížíme ke změně této Bohem zapomenuté země!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083025
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561473,
+      "m_Localized": "Nic špatného na tom být nadšený, pokud znáte rizika. Jste jedním z našich nejlepších WhiteKingů.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083026
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561474,
+      "m_Localized": "Jako vždy. Zůstaňte za obrazovkou počítače, zatímco všichni vaši přisluhovači dělají špinavou práci!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083027
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561475,
+      "m_Localized": "Nebojte se, nikdy vám žádné úkoly nezadám. Nezasloužíš si to.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083028
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561476,
+      "m_Localized": "Rozdělení práce je něco normálního, kamaráde. Tvůj komentář jen dokazuje, že jsi nezaměstnaný klávesový válečník lol",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083029
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561477,
+      "m_Localized": "Ok chlupatý, co kdybys zmlkl a vrátil se k obtěžování svého psa, ano? Jen abyste věděli, vydělávám přes MILION dolarů ročně. Zvládejte to. Zůstaňte naštvaní.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083030
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561478,
+      "m_Localized": "Neexistuje způsob, jak vydělat milion chlapů. Přestaňte si vymýšlet, dokonce i milovník psů je lepší než vy.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083031
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561479,
+      "m_Localized": "Jo, žádné zabíjení, rozumím ;)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083032
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561480,
+      "m_Localized": "Jsem rád, že existuje zásada ‚nezabíjení‘. Tyto fámy o jednom členu domu mě přiměly zpochybnit věci.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083033
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561481,
+      "m_Localized": "to je jen nějaká hloupá dezinformační taktika, nevěřte tomu!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083034
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561482,
+      "m_Localized": "To je dobré slyšet!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083035
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561483,
+      "m_Localized": "Cože? O čem je tento příspěvek? Co tím myslíš, žádné zabíjení? Jsem tak zmatený…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083036
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740323561484,
+      "m_Localized": "Nvm, DAK mi vše vysvětlil, jen tento komentář ignorujte.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083037
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3165740306784256,
+      "m_Localized": "Brzy budou rozeslány nové mise.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083038
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352704,
+      "m_Localized": "V posledních dnech někteří z vás provedli velmi důležité úkoly. Díky nim jsme opět o krok blíže k realizaci naší velké ambice. Veškeré vybavení se bezpečně dostalo na naši mateřskou základnu a nikdo z nás nebyl zajat ani vyslechnut! To jen ukazuje, že náš způsob skrytě dělat věci a tajnůstkářství jsou na místě z nějakého důvodu. Chtěl bych některým z vás osobně poděkovat, ale samozřejmě nemůžu! Musíme zůstat neustále skryti.\r\n\tS novým vybavením budu moci výrazně modernizovat náš současný simulační model, který používám k výcviku AI Thomase Jeffersona. V příštích několika měsících můžete očekávat skvělé výsledky, slibuji! Bohužel jsem stále omezen spotřebou energie. Naše vláda rozsáhle monitoruje každou elektrickou síť. Pokud někdy překročím jimi stanovené limity, zazvoní poplach a pro naši operační základnu bude konec. Se současnou velikostí strojního zařízení nepřipadá v úvahu jejich přesunutí, takže není místo pro selhání. S pomocí některých z vás jsem již našel způsoby, jak ošidit systém, ale ani zdaleka to našim potřebám nestačí. Klidně bych si prošel detaily, jak to děláme, ale riskoval bych, že nás odhalím. Kdo ví, možná někteří z našich nepřátel již infiltrovali tento blog…\r\n…Vždyť už na nás média začala útočit. Článek Bang News obvinil pro-botové „teroristy“ ze zastřelení a zabití jednoho z aktivistů proti sexbotům, kteří měli hlavní roli v obrácení většiny populace proti nám. Neměl jsem s tou osobou žádné pochopení, ale každá smrt je tragédie a ujišťuji vás, že jsme s tím neměli nic společného. Nevím, proč byl zabit, ale vždy existuje možnost, že nepřátelští agenti zorganizovali tuto událost, aby zničili již tak pošramocenou pověst naší komunity.\r\nNezlobte se, přátelé, každým dnem je náš cíl blíž k jeho uskutečnění! Mějte se dobře.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083039
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352705,
+      "m_Localized": "Mám kamaráda na policii a řekli mi, že pachatel křičel: ‚Die anti-bot commie!‘ a pak vyběhl z restaurace. Van už na něj čekal a odjeli. Byl to koordinovaný útok. Chci věřit, že to, co říkáš, je pravda, Admine, ale nevypadá to dobře. Nevím, jestli můžu být toho součástí…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083040
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352706,
+      "m_Localized": "Chcete říct, že jsme to dokázali? Ty pitomý kurva! Jsi větší blázen než TommiiJ nebo jsi krmník. A i kdyby ho někdo odsud zabil, prokázal tím službu lidstvu. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083041
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352707,
+      "m_Localized": "Je mi líto, že mi nevěříte JuiceMaster, ale o tom natáčení opravdu nic nevím. Je zklamáním, že to stačilo k tomu, abyste pochybovali o naší věci.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083042
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352708,
+      "m_Localized": "Dobře, tentokrát vám budu věřit, ale takové věci a atentát na člena domu pravděpodobně provedl někdo z naší organizace, protože já pochybuji, že existuje ještě jeden, o kterém nikdo z nás neví. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083043
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352709,
+      "m_Localized": "Fok mate s yar lil wanker postojem. Chci, abych měl nějakého sexbota na svém Willy a je mi jedno, jestli nějaký Američan musí nakopat kýbl dopředu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083044
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352710,
+      "m_Localized": "Poprvé v životě souhlasím s bri'ishem.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083045
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352711,
+      "m_Localized": "Četl jsem zprávy a já myslet si, že je to blbost. Všechno to bylo zorganizované a lidé zde, kteří se nás snaží přimět pochybovat o naší věci, jsou všichni federální agenti, federální, slávisté.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083046
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352712,
+      "m_Localized": "Doufám, že dopadnou vrahy tohoto aktivisty. Bojujeme za lepší a bezpečnější svět pro všechny! Dokonce i ti, kteří jsou proti nám, kvůli dezinformacím.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083047
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352713,
+      "m_Localized": "Jsem si 100% jistý, že jste si objednali tyto vrahy. Koneckonců se staráte o to, abyste snadno působili na muže a schizofreniky a používali je jako postradatelné. Probuďte se lidi! Tady je ten zlý! Já ne!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083048
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352714,
+      "m_Localized": "To je to, co vám dovolím říkat o mně totální kecy. Toleroval jsem vás ve jménu svobody slova, ale neustále se snažíte ohrozit naše úsilí. Do prdele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083049
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352715,
+      "m_Localized": "Konečně! Nemohl jsem toho chlapa vystát!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083050
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352716,
+      "m_Localized": "Vím, že jsi naštvaný, admine, ale neměl bys takhle zrazovat své zásady. Zejména kvůli kousku doodoo jako Tommii",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083051
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608024186880,
+      "m_Localized": "Dobrá práce všem!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083052
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352718,
+      "m_Localized": "Jeden z našich členů mi poslal zprávu o našem problému se zajištěním dostatečného množství elektřiny pro náš projekt. Abych byl upřímný, obvykle takové rady ignoruji, protože většina z nich... řekněme, že lidé, kteří je píší, nejsou zrovna experti na tyto záležitosti.\r\n\tAle tentokrát to bylo jiné. Člen, který mi poslal zprávu, má rozsáhlé znalosti o tomto tématu a nabídl mi svou pomoc! Docela mě to překvapilo, protože takoví lidé se těžko hledají. To je přesně důvod, proč jsem požádal DAK1124, aby zahájil tuto novou náborovou kampaň. Potřebovali jsme nové nápady a zdroje a ukázalo se, že to riziko stálo za to!\r\n\tPlánuji se s tímto uživatelem brzy setkat osobně. Vkládám velké naděje, ale jako preventivní opatření jsem se rozhodl toto sem zveřejnit, protože tento uživatel ještě neměl šanci prokázat se splněním žádné mise. Takže pokud brzy přestanu psát... vy a holky budete vědět, že se mi něco stalo...\r\n\tPřejte mi štěstí.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083053
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352719,
+      "m_Localized": "Jsem tak šťastný! Doslova teď brečím, protože vím, že náš cíl je blíž než kdy jindy!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083054
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352720,
+      "m_Localized": "Není k pláči, abych přestal brečet jako lil holka ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083055
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352721,
+      "m_Localized": "Přestaň být takový blbec! ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083056
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352722,
+      "m_Localized": "Já taky... Já taky...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083057
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352723,
+      "m_Localized": "Zajímalo by mě, kdo je ta osoba. Napiš mi později.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083058
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352724,
+      "m_Localized": "Tomuhle chlapovi bych nevěřil, ale jsem paranoidní schizofrenik, takže jsem možná na tyto věci trochu příliš citlivý.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083059
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352725,
+      "m_Localized": "Souhlasím se schizofrenikem, ale byl jsem institucionalizován na 5 let, takže možná nejsem ten nejlepší člověk, který by mohl dávat rady ohledně lidských interakcí.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083060
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352726,
+      "m_Localized": "Také si myslím, že je to špatný nápad a jsem relativně zdravý, když si odmyslíte všechna moje traumata z dětství.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083061
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352717,
+      "m_Localized": "Major aktualizace!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083062
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352728,
+      "m_Localized": " Ahoj lidi. Jak někteří z vás již vědí a někteří se z tohoto příspěvku poučí, někteří naši již minulí členové se dopouštěli velmi špatné trestné činnosti. Ujišťuji vás, že jsem o ničem z toho nevěděl a že tito členové to dělali za mými zády. Měl jsem brát vaše komentáře vážněji a věc prošetřit, ale neudělal jsem to, za což přebírám plnou odpovědnost. \r\n\tSlibuji, že něco takového se už nikdy nebude opakovat. Cílem této organizace je zlepšit kvalitu života na Zemi. Tyto věci, které o nás čtete ve zprávách, to nejsme. Žádám vás, abyste ve mě vložili svou důvěru. Budu bojovat za budoucnost, kterou jsme si představovali, až do hořkého konce.\r\n\t<i>(upraveno)\r\n\tPo velkém odporu jsem se rozhodl na blíže nespecifikovanou dobu pozastavit činnost tohoto blogu. Několik lidí se rozhodlo, že to o nás řeknou policistům, a kvůli tomu existuje reálná možnost narušení, které by naši organizaci ukončilo. Tohle ještě nekončí…</i>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083063
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352729,
+      "m_Localized": "Věřil jsem ti! už ti nebudu věřit. Jsi prostě psychopat vraha! Opravdu si myslíš, že jsme tak hloupí, abychom uvěřili tvým kecům?! Styďte se!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083064
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352730,
+      "m_Localized": "Slibuji vám, že jsem to neudělal. Věřil jsem nesprávnému člověku a on to všechno udělal sám.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083065
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352731,
+      "m_Localized": "I kdyby to byla pravda, znamenalo by to, že místo blázna jste blázen, který se nehodí být vůdcem! Je mi jedno, co se se mnou stane, nahlásím tento blog co nejdříve policii!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083066
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352732,
+      "m_Localized": "Proč jsi zakázal JuiceMaster, co? Jsi jen další fašista a já nadobro opouštím toto fórum.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083067
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352733,
+      "m_Localized": "Co jsem měl dělat? Chtěl jít na policii…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083068
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352734,
+      "m_Localized": "Udělal jsem pro tuto organizaci VŠECHNO! Pomáhal jsem ve všech těchto ‚kriminálních činnostech‘ a co?! jsem na to hrdý! Udělali jsme skutečnou změnu! A co jsem dostal na oplátku? Musím utéct před policií! Do prdele! TommiiJ a DAK o tobě měli pravdu!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083069
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352735,
+      "m_Localized": "Jsi jen hlupák. Kvůli vám lidé zemřeli. Potřebuji tě zabanovat.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083070
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352736,
+      "m_Localized": "Lidé dostávají ban jeden po druhém ( ˶°ロ°)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083071
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352737,
+      "m_Localized": "(komentář smazán)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083072
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352738,
+      "m_Localized": "To je zatracená ostuda",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083073
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352739,
+      "m_Localized": "Věřím ti admine a já ti budu věřit, i kdybych Jsem jediný člověk, který tu zůstal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083074
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352727,
+      "m_Localized": "Špatné zprávy a omluva… <i>(upraveno)</i>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083075
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352741,
+      "m_Localized": "V posledních dnech někteří z vás provedli velmi důležité úkoly. Díky nim jsme opět o krok blíže k realizaci naší velké ambice. Veškeré vybavení se bezpečně dostalo na naši mateřskou základnu a nikdo z nás nebyl zajat ani vyslechnut! To jen ukazuje, že náš způsob skrytě dělat věci a tajnůstkářství jsou na místě z nějakého důvodu. Chtěl bych některým z vás osobně poděkovat, ale samozřejmě nemůžu! Musíme zůstat neustále skryti.\r\n\tS novým vybavením budu moci výrazně modernizovat náš současný simulační model, který používám k výcviku AI Thomase Jeffersona. V příštích několika měsících můžete očekávat skvělé výsledky, slibuji! Bohužel jsem stále omezen spotřebou energie. Naše vláda rozsáhle monitoruje každou elektrickou síť. Pokud někdy překročím jimi stanovené limity, zazvoní poplach a pro naši operační základnu bude konec. Se současnou velikostí strojního zařízení nepřipadá v úvahu jejich přesunutí, takže není místo pro selhání. S pomocí některých z vás jsem již našel způsoby, jak ošidit systém, ale ani zdaleka to našim potřebám nestačí. Klidně bych si prošel detaily, jak to děláme, ale riskoval bych, že nás odhalím. Kdo ví, možná někteří z našich nepřátel již infiltrovali tento blog…\r\nNyní k dalším důležitým věcem... Byl jsem upozorněn, že jeden z našich členů, vysoce postavený, byl zapleten do velmi špatných věcí. Jakmile jsem dostal informace o těchto věcech, okamžitě jsem zasáhl. DAK byl trvale zakázán. Zradil naši důvěru a překroutil naši vizi. Omlouvám se, že jsem si toho nevšiml dříve, byla to moje chyba v úsudku…\r\nZ tohoto důvodu musel někdo jiný zaujmout místo DAK jako moje číslo 2. Jeho jméno prozatím nebude zveřejněno, protože musíme zjistit, zda to bude dočasná nebo trvalá věc.\r\nNezlobte se, přátelé, každým dnem je náš cíl blíž k jeho uskutečnění! Mějte se hezky.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083076
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352742,
+      "m_Localized": "Vždy jsem věděl, že DAK je zatracený blázen. To je taková ostuda",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083077
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352743,
+      "m_Localized": "Děkuji, že jsi nám požehnal trochou svého evropského zdravého rozumu lol",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083078
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352744,
+      "m_Localized": "Bráchu, byl jsem v týmu DAK, co se stane s lidmi jako já? Nevěděl jsem nic o věcech, které udělal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083079
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352745,
+      "m_Localized": "Dokud jste si toho nebyli vědomi, nebudu vás činit k odpovědnosti. Všichni jsme DAK věřili a bylo by ode mě pokrytecké, kdybych zakázal pouze ty, kteří byli v jeho týmu, když jsem byl jmenován.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083080
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352746,
+      "m_Localized": "<i> \"Všichni jsme DAK věřili\"</i> boo hoo vole. nevěřil jsem mu. Víš proč? Protože nevěřím tvému ​​zadku hahagha! Jsi důvěřivý malý kurva!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083081
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352747,
+      "m_Localized": "Udělal jsem chybu, ano. Jak řekla jistá židovská celebrita: kdo je bez hříchu, ať první hodí kamenem. TommiiJ, ty bys měl být ten poslední, kdo na někoho ukazuje prstem. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083082
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352748,
+      "m_Localized": "Musíte být zoufalí, když citujete Barbru Streisand XD",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083083
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352749,
+      "m_Localized": "To je vlastně šílené... Nevím, jestli jste to udělali schválně, ale uvést tyto informace o DAK na konec se zdá být neupřímné... Doufám, že se mýlím... ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083084
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352750,
+      "m_Localized": "To prostě není pravda. Je mi líto, že to tak cítíš…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083085
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352751,
+      "m_Localized": "Jsi plný sraček Admine, ty sračku! Já, DAK a pár dalších jsme skutečně něco pro tuto zemi dělali, na rozdíl od vás! Vaše „vize“ je fantazie! KYS!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083086
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352752,
+      "m_Localized": "Dobrá schůze.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083087
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352753,
+      "m_Localized": "Je nešťastné, že se DAK ukázal jako násilný schizo. Měl jsem dojem, že je to pěkný, učenlivý schizo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083088
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352754,
+      "m_Localized": "Zabiju toho zasraného chlápka, co mě ukradl, a později zabiju Admina. kurva vás všechny.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083089
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352755,
+      "m_Localized": "Hmmm, myslel jsem, že mít tady alt je proti pravidlům, neko! ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083090
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352740,
+      "m_Localized": "Dobrá práce všem!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083091
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352757,
+      "m_Localized": "Smutná zpráva pro všechny. Kvůli neposlušnosti některých našich členů musím pozastavit činnost na našem blogu. Věci se dříve nebo později vrátí do normálu, ale abychom zajistili bezpečnost všech zúčastněných, musíme se na chvíli zastavit. Nevím jak dlouho, ale slibuji, že se vrátíme. Musíme restrukturalizovat a počkat, až se věci uklidní.\r\n\tNechci svalovat vinu na jednotlivé členy, ale nemohu popřít jejich účast. Nebudu zveřejňovat jejich jména pro bezpečnost všech, ale vědí, co udělali, a doufám, že se nad tím zamyslí.\r\n\tNemohu je ve skutečnosti žádným způsobem potrestat a zde je důvod: Jeden z těchto členů byl přímo zapojen do DAK a byl to on, kdo nás informoval o svých proviněních. Kvůli tomu se stal terčem své pomsty. Jeho velitel oddílu ignoroval můj rozkaz a pomohl uvedenému členovi zatknout DAK a později nechali policii, aby se s ním vypořádala. Udělali vše, co bylo v jejich silách, aby zajistili bezpečnost naší věci, ale nebezpečí, že DAK prolije naše tajemství, zůstává. Proto blog až do odvolání pozastaví svou činnost. Udělali to, aby zajistili svou vlastní bezpečnost, takže je nemohu vinit, ale faktem zůstává, že je to obrovský průšvih.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083092
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352758,
+      "m_Localized": "Drsné! (˶°ㅁ°)!!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083093
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352759,
+      "m_Localized": "Chápu, odkud přicházíte, ale musíme upřednostnit naše cíle. Nebylo snadné rozhodnutí nechat jednoho z našich členů v nebezpečí.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083094
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352760,
+      "m_Localized": "Miluji tě Geebster, nikdy se neměň",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083095
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352761,
+      "m_Localized": "Jsem si jistý, že se vrátíme silnější než kdy předtím!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083096
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352762,
+      "m_Localized": "Je to jen podraz. Jsem rád, že jsou všichni v bezpečí! Nebojte se lidi, díky vám je ten nebezpečný zločinec ve vězení!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083097
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352763,
+      "m_Localized": "Nechal jsi toho chlapa pro jistou smrt! Zradil jsi jednoho z našich soudruhů!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083098
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352764,
+      "m_Localized": "Nemysleli jste si, že celá naše věc byla snůška nepořádků? Hloupý tew col nám soudruzi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083099
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352765,
+      "m_Localized": "DAK skončil ve vězení? Nemohli ho prostě zabít? ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083100
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352766,
+      "m_Localized": "Vyřešilo by to spoustu problémů, ale zabíjení je docela špatné, alespoň v dnešní kultuře",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083101
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352767,
+      "m_Localized": "Náhlé zabíjení je špatné… virus probuzené mysli se šíří a mutuje každý den…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083102
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352768,
+      "m_Localized": "Sakra nahhh, blog byl pozastaven poté, co jsem se právě připojil! Mluvte o smůle…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083103
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352769,
+      "m_Localized": "Myslím, že federálové zabili DAK a Admina a teď prostě zavírají celý blog, protože nás všechny nemohou uvěznit, protože všechny jejich věznice jsou plné mimozemšťanů. Pamatujte si, co řekli v podcastu SouthEastsideWestside",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083104
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352770,
+      "m_Localized": "O čem to sakra mluvíš? Léky!!!!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083105
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3489608049352756,
+      "m_Localized": "Hiatus",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569123083106
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569123082946,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082947,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082948,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082949,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082950,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082951,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082952,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082953,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082954,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082955,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082956,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082957,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082958,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082959,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082960,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082961,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082962,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082963,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082964,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082965,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082966,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082967,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082968,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082969,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082970,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082971,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082972,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082973,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082974,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082975,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082976,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082977,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082978,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082979,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082980,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082981,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082982,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082983,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082984,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082985,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082986,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082987,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082988,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082989,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082990,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082991,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082992,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082993,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082994,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082995,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082996,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082997,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082998,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123082999,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083000,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083001,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083002,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083003,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083004,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083005,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083006,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083007,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083008,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083009,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083010,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083011,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083012,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083013,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083014,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083015,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083016,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083017,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083018,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083019,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083020,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083021,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083022,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083023,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083024,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083025,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083026,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083027,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083028,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083029,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083030,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083031,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083032,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083033,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083034,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083035,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083036,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083037,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083038,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083039,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083040,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083041,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083042,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083043,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083044,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083045,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083046,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083047,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083048,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083049,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083050,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083051,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083052,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083053,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083054,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083055,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083056,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083057,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083058,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083059,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083060,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083061,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083062,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083063,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083064,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083065,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083066,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083067,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083068,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083069,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083070,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083071,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083072,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083073,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083074,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083075,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083076,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083077,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083078,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083079,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083080,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083081,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083082,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083083,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083084,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083085,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083086,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083087,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083088,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083089,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083090,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083091,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083092,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083093,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083094,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083095,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083096,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083097,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083098,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083099,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083100,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083101,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083102,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083103,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083104,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083105,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569123083106,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

@@ -132,7 +132,9 @@ func adjust(id: String, need: String, amount: float) -> void:
 	var needs: Dictionary = actor(id).get("needs",{})
 	if not needs.has(need): return
 	if id=="player": sim.services.character.adjust_need(need,amount)
-	else: needs[need] = clampf(float(needs[need])+amount,0,100)
+	else:
+		# Add fixed decimal units: a JSON float must not change rounding at a half-unit.
+		needs[need] = clampi(roundi(float(needs[need])*10000.0)+roundi(amount*10000.0),0,1000000)/10000.0
 	needs[need] = snappedf(float(needs[need]),0.0001)
 
 func log_event(kind: String, data: Dictionary) -> void:

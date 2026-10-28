@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14767,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Yes?\r\nBot: Since you are always planning and inviting me to all these dates, I would want to return a favor!\r\nYou: Wha…\r\nDid I just get invited to a date?\r\nThat’s the first time something like this has happened. \r\n#bot.Expression.clear\r\n#bot.Expression.VeryHappy\r\nYou: It’s a big surprise, I don’t know what to say…\r\nBot: Are you ready to go? \r\nYou: I would love to, but isn’t it kinda late? Where do you want to go?\r\nBot: It’s a secret!\r\nYou: Oh, ok. It’s just that it would be a bummer if that place was already closed.\r\n#bot.Expression.Happy\r\nBot: Don’t worry! I set up everything perfectly!\r\nYou: If you say so…\r\nBot: Let’s go then!",
+    "localizedLines": [
+      {
+        "KeyId": 322843563801960448
+      },
+      {
+        "KeyId": 322843563801960449
+      },
+      {
+        "KeyId": 322843563801960450
+      },
+      {
+        "KeyId": 322843563801960451
+      },
+      {
+        "KeyId": 322843563801960452
+      },
+      {
+        "KeyId": 322843563801960453
+      },
+      {
+        "KeyId": 322843563801960454
+      },
+      {
+        "KeyId": 322843563801960455
+      },
+      {
+        "KeyId": 322843563801960456
+      },
+      {
+        "KeyId": 322843563801960457
+      },
+      {
+        "KeyId": 322843563801960458
+      },
+      {
+        "KeyId": 322843563801960459
+      },
+      {
+        "KeyId": 322843563801960460
+      }
+    ]
+  }
+}

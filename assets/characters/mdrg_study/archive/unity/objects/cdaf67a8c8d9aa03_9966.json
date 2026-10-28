@@ -1,0 +1,28 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15667,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "You: If you are scared that much I guess I will give up.\r\n#bot.Expression.clear\r\n#bot.Expression.Angry\r\nBot: I-I’m not scared! I’m just not a fan of scary stories…\r\nYou: Sure, Sure…\r\n#bot.Expression.clear\r",
+    "localizedLines": [
+      {
+        "KeyId": 331324455503519744
+      },
+      {
+        "KeyId": 331324469478940672
+      },
+      {
+        "KeyId": 331324469478940673
+      }
+    ]
+  }
+}

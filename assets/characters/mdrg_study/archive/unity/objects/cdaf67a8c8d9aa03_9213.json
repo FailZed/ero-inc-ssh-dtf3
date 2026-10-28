@@ -1,0 +1,52 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14780,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: It appears that the integrity of this hall has been compromised. Please watch out for falling elements of the roof and make an appropriate dodge.\r\n#bot.Expression.shock\r\nYou: Like hell that’s possible! \r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nYou: Sorry {f_botName}, but I must say that this wasn’t a very good date idea…\r\n#bot.Expression.clear\r\nYou: I’m glad that you prepared this for me, but I would rather go somewhere safe and have fun. You are welcome to try to prepare a date again, but please choose something more ordinary next time, ok?\r\n#bot.Expression.happy\r\nBot: I will do my best!\r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nBot: Sorry it turned out this way. I thought it would be interesting coming here, but I can see why potentially sustaining an injury at a place like this would qualify as a bad date…\r\nBot: A person on the internet said it’s completely safe. I should’ve been more distrustful when I found out that it was their last message ever sent.\r\nYou: …\r\n#bot.Expression.clear\r\nYou: I couldn't agree more.\r\n#bot.Expression.happy\r\nYou: Let’s go home then. I will be waiting for your next idea with anticipation! \r\n#bot.Expression.Veryhappy\r\nBot: Sure! \r",
+    "localizedLines": [
+      {
+        "KeyId": 322846994381922304
+      },
+      {
+        "KeyId": 322846994381922305
+      },
+      {
+        "KeyId": 322846994381922306
+      },
+      {
+        "KeyId": 322846994381922307
+      },
+      {
+        "KeyId": 322846994381922308
+      },
+      {
+        "KeyId": 322846994381922309
+      },
+      {
+        "KeyId": 322846994386116608
+      },
+      {
+        "KeyId": 322846994386116609
+      },
+      {
+        "KeyId": 322846994386116610
+      },
+      {
+        "KeyId": 322846994386116611
+      },
+      {
+        "KeyId": 322846994386116612
+      }
+    ]
+  }
+}

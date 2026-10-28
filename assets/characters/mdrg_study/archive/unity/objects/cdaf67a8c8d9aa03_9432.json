@@ -1,0 +1,417 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 47815065600
+  },
+  "m_Name": "",
+  "itemId": 15033,
+  "indentLevel": 0,
+  "anyVar": {
+    "variable": {
+      "m_FileID": 0,
+      "m_PathID": 3366
+    },
+    "data": {
+      "animatorData": {
+        "animatorRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animatorVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "audioSourceData": {
+        "audioSourceRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "audioSourceVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "booleanData": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      },
+      "collectionData": {
+        "collectionRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "collectionVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "collider2DData": {
+        "collider2DRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "collider2DVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "colliderData": {
+        "colliderRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "colliderVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "colorData": {
+        "colorRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "colorVal": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        }
+      },
+      "floatData": {
+        "floatRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatVal": 0.0
+      },
+      "gameObjectData": {
+        "gameObjectRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "gameObjectVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "integerData": {
+        "integerRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "integerVal": 0
+      },
+      "materialData": {
+        "materialRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "materialVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "matrix4x4Data": {
+        "matrix4x4Ref": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "matrix4x4Val": {
+          "m00": 0.0,
+          "m10": 0.0,
+          "m20": 0.0,
+          "m30": 0.0,
+          "m01": 0.0,
+          "m11": 0.0,
+          "m21": 0.0,
+          "m31": 0.0,
+          "m02": 0.0,
+          "m12": 0.0,
+          "m22": 0.0,
+          "m32": 0.0,
+          "m03": 0.0,
+          "m13": 0.0,
+          "m23": 0.0,
+          "m33": 0.0
+        }
+      },
+      "objectData": {
+        "objectRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "objectVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "quaternionData": {
+        "quaternionRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "quaternionVal": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        }
+      },
+      "rigidbody2DData": {
+        "rigidbody2DRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "rigidbody2DVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rigidbodyData": {
+        "rigidbodyRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "rigidbodyVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "spriteData": {
+        "spriteRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "spriteVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "stringData": {
+        "stringRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "stringVal": ""
+      },
+      "textureData": {
+        "textureRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "textureVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "transformData": {
+        "transformRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "transformVal": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "vector2Data": {
+        "vector2Ref": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "vector2Val": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "vector3Data": {
+        "vector3Ref": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "vector3Val": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "vector4Data": {
+        "vector4Ref": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "vector4Val": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        }
+      }
+    }
+  },
+  "setOperator": 0,
+  "variable": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "booleanData": {
+    "booleanRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "booleanVal": 0
+  },
+  "integerData": {
+    "integerRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "integerVal": 0
+  },
+  "floatData": {
+    "floatRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "floatVal": 0.0
+  },
+  "stringData": {
+    "stringRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "stringVal": ""
+  },
+  "animatorData": {
+    "animatorRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "animatorVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "audioSourceData": {
+    "audioSourceRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "audioSourceVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "colorData": {
+    "colorRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "colorVal": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "gameObjectData": {
+    "gameObjectRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "gameObjectVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "materialData": {
+    "materialRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "materialVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "objectData": {
+    "objectRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "objectVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "rigidbody2DData": {
+    "rigidbody2DRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "rigidbody2DVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "spriteData": {
+    "spriteRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "spriteVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "textureData": {
+    "textureRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "textureVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "transformData": {
+    "transformRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "transformVal": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "vector2Data": {
+    "vector2Ref": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "vector2Val": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "vector3Data": {
+    "vector3Ref": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "vector3Val": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  }
+}

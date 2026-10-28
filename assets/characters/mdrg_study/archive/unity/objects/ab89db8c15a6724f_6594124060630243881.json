@@ -1,0 +1,4664 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Polyglot_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 3020549575994940229
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 907575955456,
+      "m_Localized": "jaJP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907601121280,
+      "m_Localized": "Japanese",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1066867232768,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315585,
+      "m_Localized": "クラス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315586,
+      "m_Localized": "キャラクター削除",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315587,
+      "m_Localized": "新規キャラクター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315588,
+      "m_Localized": "人工知能",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315589,
+      "m_Localized": "エイリアン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315590,
+      "m_Localized": "クローン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315591,
+      "m_Localized": "サイボーグ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315592,
+      "m_Localized": "神",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315593,
+      "m_Localized": "悪魔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315594,
+      "m_Localized": "女悪魔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315595,
+      "m_Localized": "ドラゴン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315596,
+      "m_Localized": "ドラゴン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315597,
+      "m_Localized": "幽霊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315598,
+      "m_Localized": "神",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315599,
+      "m_Localized": "神々",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315600,
+      "m_Localized": "女神",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315601,
+      "m_Localized": "魔法使い",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315602,
+      "m_Localized": "メディック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315603,
+      "m_Localized": "モンスター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315604,
+      "m_Localized": "忍者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315605,
+      "m_Localized": "海賊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315606,
+      "m_Localized": "僧侶",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315607,
+      "m_Localized": "王子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315608,
+      "m_Localized": "姫",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315609,
+      "m_Localized": "ロボット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315610,
+      "m_Localized": "スケルトン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315611,
+      "m_Localized": "狙撃手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315612,
+      "m_Localized": "ソルジャー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315613,
+      "m_Localized": "盗賊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315614,
+      "m_Localized": "戦士",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315615,
+      "m_Localized": "魔術師",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315616,
+      "m_Localized": "ゾンビ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315617,
+      "m_Localized": "ゾンビ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315618,
+      "m_Localized": "一位",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315619,
+      "m_Localized": "順位",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315620,
+      "m_Localized": "二位",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315621,
+      "m_Localized": "三位",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315622,
+      "m_Localized": "炎上",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315623,
+      "m_Localized": "瀕死",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315624,
+      "m_Localized": "死亡",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315625,
+      "m_Localized": "凍結",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315626,
+      "m_Localized": "毒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315627,
+      "m_Localized": "減速",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315628,
+      "m_Localized": "スタン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315629,
+      "m_Localized": "気絶",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315630,
+      "m_Localized": "無傷",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315631,
+      "m_Localized": "濡れている",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315632,
+      "m_Localized": "負傷",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315633,
+      "m_Localized": "大",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315634,
+      "m_Localized": "巨大",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315635,
+      "m_Localized": "小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315636,
+      "m_Localized": "極小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315637,
+      "m_Localized": "風",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315638,
+      "m_Localized": "地",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315639,
+      "m_Localized": "火",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315640,
+      "m_Localized": "金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315641,
+      "m_Localized": "水",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315642,
+      "m_Localized": "ベット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315643,
+      "m_Localized": "捨てる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315644,
+      "m_Localized": "ジャックポット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315645,
+      "m_Localized": "最大",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315646,
+      "m_Localized": "最低",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315647,
+      "m_Localized": "鎧",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315648,
+      "m_Localized": "矢",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315649,
+      "m_Localized": "矢",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315650,
+      "m_Localized": "盤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509888,
+      "m_Localized": "爆弾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509889,
+      "m_Localized": "本",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509890,
+      "m_Localized": "靴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509891,
+      "m_Localized": "弓",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509892,
+      "m_Localized": "カード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509893,
+      "m_Localized": "カード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509894,
+      "m_Localized": "箱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509895,
+      "m_Localized": "魔法の",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509896,
+      "m_Localized": "錆びた",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509897,
+      "m_Localized": "短刀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509898,
+      "m_Localized": "サイコロ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509899,
+      "m_Localized": "サイコロ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509900,
+      "m_Localized": "扉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509901,
+      "m_Localized": "籠手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509902,
+      "m_Localized": "ジェム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509903,
+      "m_Localized": "ギフト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509904,
+      "m_Localized": "ギフト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509905,
+      "m_Localized": "手袋",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509906,
+      "m_Localized": "銃",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509907,
+      "m_Localized": "戦鎚",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509908,
+      "m_Localized": "兜",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509909,
+      "m_Localized": "鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509910,
+      "m_Localized": "ナイフ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509911,
+      "m_Localized": "鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509912,
+      "m_Localized": "愛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509913,
+      "m_Localized": "マシンガン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509914,
+      "m_Localized": "魔法",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509915,
+      "m_Localized": "ピストル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509916,
+      "m_Localized": "クエスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509917,
+      "m_Localized": "ランク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509918,
+      "m_Localized": "ライフル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509919,
+      "m_Localized": "ロケットランチャー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509920,
+      "m_Localized": "RPG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509921,
+      "m_Localized": "巻物",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509922,
+      "m_Localized": "盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509923,
+      "m_Localized": "盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509924,
+      "m_Localized": "エネルギーシールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509925,
+      "m_Localized": "エネルギーシールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509926,
+      "m_Localized": "ショットガン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509927,
+      "m_Localized": "スナイパーライフル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509928,
+      "m_Localized": "呪文",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509929,
+      "m_Localized": "杖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509930,
+      "m_Localized": "剣",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509931,
+      "m_Localized": "財宝",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509932,
+      "m_Localized": "壮麗な",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509933,
+      "m_Localized": "がらくたの",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509934,
+      "m_Localized": "魔法の杖",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509935,
+      "m_Localized": "木",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704192,
+      "m_Localized": "高度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704193,
+      "m_Localized": "ブレーキ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704194,
+      "m_Localized": "シャシ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704195,
+      "m_Localized": "深度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704196,
+      "m_Localized": "燃料",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704197,
+      "m_Localized": "ギア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704198,
+      "m_Localized": "ハンドリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704199,
+      "m_Localized": "速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704200,
+      "m_Localized": "ステアリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704201,
+      "m_Localized": "サスペンション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704202,
+      "m_Localized": "乗り物",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704203,
+      "m_Localized": "ウィング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704204,
+      "m_Localized": "メダル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704205,
+      "m_Localized": "ブロンズメダル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704206,
+      "m_Localized": "ゴールドメダル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704207,
+      "m_Localized": "シルバーメダル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704208,
+      "m_Localized": "銅",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704209,
+      "m_Localized": "硬貨",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704210,
+      "m_Localized": "金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704211,
+      "m_Localized": "延べ棒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704212,
+      "m_Localized": "白金",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704213,
+      "m_Localized": "銀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704214,
+      "m_Localized": "城",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704215,
+      "m_Localized": "洞窟",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704216,
+      "m_Localized": "ダンジョン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704217,
+      "m_Localized": "宿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704218,
+      "m_Localized": "惑星",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704219,
+      "m_Localized": "地球",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704220,
+      "m_Localized": "宇宙",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704221,
+      "m_Localized": "宇宙船",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704222,
+      "m_Localized": "ストーリー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704223,
+      "m_Localized": "アドベンチャー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704224,
+      "m_Localized": "チャプター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704225,
+      "m_Localized": "ページ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704226,
+      "m_Localized": "ゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704227,
+      "m_Localized": "ゲーム開発",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704228,
+      "m_Localized": "ゲーム開発者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704229,
+      "m_Localized": "開発",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704230,
+      "m_Localized": "製作",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704231,
+      "m_Localized": "プロデューサー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704232,
+      "m_Localized": "著作",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704233,
+      "m_Localized": "監督",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704234,
+      "m_Localized": "リード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704235,
+      "m_Localized": "アシスタント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704236,
+      "m_Localized": "協力",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704237,
+      "m_Localized": "シニア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704238,
+      "m_Localized": "ジュニア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704239,
+      "m_Localized": "最高技術責任者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704240,
+      "m_Localized": "技術監督",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704241,
+      "m_Localized": "クリエイティブディレクター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704242,
+      "m_Localized": "アニメーション監督",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704243,
+      "m_Localized": "美術監督",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704244,
+      "m_Localized": "音響監督",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704245,
+      "m_Localized": "デザイン監督",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704246,
+      "m_Localized": "番組担当",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704247,
+      "m_Localized": "企画担当",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704248,
+      "m_Localized": "ゲームデザイン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704249,
+      "m_Localized": "ゲームデザイナー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704250,
+      "m_Localized": "コード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704251,
+      "m_Localized": "プログラミング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704252,
+      "m_Localized": "プログラマー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704253,
+      "m_Localized": "プログラマー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704254,
+      "m_Localized": "リードプログラマー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704255,
+      "m_Localized": "グラフィックデザイナー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704256,
+      "m_Localized": "テクニカルアーティスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704257,
+      "m_Localized": "コンセプトアーティスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704258,
+      "m_Localized": "キャラクターデザイナー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704259,
+      "m_Localized": "アート",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704260,
+      "m_Localized": "アーティスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704261,
+      "m_Localized": "アーティスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704262,
+      "m_Localized": "レベルデザイン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704263,
+      "m_Localized": "レベルデザイナー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704264,
+      "m_Localized": "シネマティックディレクター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704265,
+      "m_Localized": "シネマティックアニメーター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704266,
+      "m_Localized": "インターフェイスアーティスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704267,
+      "m_Localized": "編曲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704268,
+      "m_Localized": "演奏",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704269,
+      "m_Localized": "謝辞",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704270,
+      "m_Localized": "謝辞",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898496,
+      "m_Localized": "画像",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898497,
+      "m_Localized": "画像",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898498,
+      "m_Localized": "フォント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898499,
+      "m_Localized": "フォント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898500,
+      "m_Localized": "サウンドトラック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898501,
+      "m_Localized": "脚本家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898502,
+      "m_Localized": "脚本",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898503,
+      "m_Localized": "脚本家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898504,
+      "m_Localized": "アニメーション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898505,
+      "m_Localized": "アニメーター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898506,
+      "m_Localized": "声優",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898507,
+      "m_Localized": "声優",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898508,
+      "m_Localized": "サウンドデザイナー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898509,
+      "m_Localized": "サウンドエンジニア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898510,
+      "m_Localized": "SE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898511,
+      "m_Localized": "視覚効果",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898512,
+      "m_Localized": "録音",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898513,
+      "m_Localized": "フォーリーアーティスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898514,
+      "m_Localized": "テスト管理者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898515,
+      "m_Localized": "テスト管理総指揮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898516,
+      "m_Localized": "テスター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898517,
+      "m_Localized": "データベースアドミン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898518,
+      "m_Localized": "3Dモデリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898519,
+      "m_Localized": "モデル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898520,
+      "m_Localized": "ローカリゼーション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898521,
+      "m_Localized": "翻訳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898522,
+      "m_Localized": "翻訳提供：Polyglotプロジェクト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898523,
+      "m_Localized": "アクションゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898524,
+      "m_Localized": "アドベンチャーゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898525,
+      "m_Localized": "カード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898526,
+      "m_Localized": "カジュアルゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898527,
+      "m_Localized": "ファンタジーゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898528,
+      "m_Localized": "ハードコアゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898529,
+      "m_Localized": "独立系開発会社",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898530,
+      "m_Localized": "中世風ゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898531,
+      "m_Localized": "その他",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898532,
+      "m_Localized": "マルチプレイヤー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898533,
+      "m_Localized": "ジャンル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898534,
+      "m_Localized": "プラットフォームゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898535,
+      "m_Localized": "パズルゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898536,
+      "m_Localized": "クイズゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898537,
+      "m_Localized": "レース",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898538,
+      "m_Localized": "レトロゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898539,
+      "m_Localized": "ロールプレイングゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898540,
+      "m_Localized": "リアルタイムシミュレーション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898541,
+      "m_Localized": "SFゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898542,
+      "m_Localized": "シューティングゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898543,
+      "m_Localized": "シミュレーションゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898544,
+      "m_Localized": "シングルプレイヤー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898545,
+      "m_Localized": "スポーツゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898546,
+      "m_Localized": "ストラテジーゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898547,
+      "m_Localized": "ターン制シミュレーション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898548,
+      "m_Localized": "タワーディフェンスゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898549,
+      "m_Localized": "{0} が接続されていません。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907617898550,
+      "m_Localized": "通信圏外です。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898551,
+      "m_Localized": "HMDが接続されていません。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898552,
+      "m_Localized": "エラーコード：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898553,
+      "m_Localized": "エラーが発生しました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898554,
+      "m_Localized": "無効な名前です。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898555,
+      "m_Localized": "無効なCDキーです。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898556,
+      "m_Localized": "チート検出！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898557,
+      "m_Localized": "接続が切断されました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898558,
+      "m_Localized": "相手プレイヤーが接続を切断しました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898559,
+      "m_Localized": "他のプレイヤーが接続を切断しました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898560,
+      "m_Localized": "味方プレイヤーが接続を切断しました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898561,
+      "m_Localized": "サーバーに接続できません。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898562,
+      "m_Localized": "セーブデータが破損しています。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898563,
+      "m_Localized": "セーブデータが見つかりません。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092800,
+      "m_Localized": "参加可能なゲームがありません。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092801,
+      "m_Localized": "攻める",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092802,
+      "m_Localized": "ブーストする",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092803,
+      "m_Localized": "建築",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092804,
+      "m_Localized": "釣り糸を投げる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092805,
+      "m_Localized": "詠唱する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092806,
+      "m_Localized": "入手する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092807,
+      "m_Localized": "登る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092808,
+      "m_Localized": "閉じる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092809,
+      "m_Localized": "集める",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092810,
+      "m_Localized": "調理",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092811,
+      "m_Localized": "作成",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092812,
+      "m_Localized": "しゃがむ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092813,
+      "m_Localized": "避ける",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092814,
+      "m_Localized": "運転する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092815,
+      "m_Localized": "飛ぶ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092816,
+      "m_Localized": "全速力",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092817,
+      "m_Localized": "移動する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092818,
+      "m_Localized": "へ移動する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092819,
+      "m_Localized": "半速力",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092820,
+      "m_Localized": "回復する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092821,
+      "m_Localized": "ジャンプする",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092822,
+      "m_Localized": "着陸する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092823,
+      "m_Localized": "見る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092824,
+      "m_Localized": "調合",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092825,
+      "m_Localized": "開く",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092826,
+      "m_Localized": "拾う",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092827,
+      "m_Localized": "競争する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092828,
+      "m_Localized": "読む",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092829,
+      "m_Localized": "入れ替え",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092830,
+      "m_Localized": "走る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092831,
+      "m_Localized": "逃げる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092832,
+      "m_Localized": "撃つ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092833,
+      "m_Localized": "忍ぶ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092834,
+      "m_Localized": "回転させる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092835,
+      "m_Localized": "走る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092836,
+      "m_Localized": "操舵する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092837,
+      "m_Localized": "離陸する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092838,
+      "m_Localized": "話す",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092839,
+      "m_Localized": "投げる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092840,
+      "m_Localized": "歩く",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092841,
+      "m_Localized": "生命力",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092842,
+      "m_Localized": "経験値",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092843,
+      "m_Localized": "女",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092844,
+      "m_Localized": "ヘルス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092845,
+      "m_Localized": "ハート",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092846,
+      "m_Localized": "ハート",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092847,
+      "m_Localized": "レベル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092848,
+      "m_Localized": "レベルアップ！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092849,
+      "m_Localized": "ライフ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092850,
+      "m_Localized": "男",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092851,
+      "m_Localized": "男",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092852,
+      "m_Localized": "男",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092853,
+      "m_Localized": "復活",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092854,
+      "m_Localized": "復活まで：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092855,
+      "m_Localized": "復活しますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092856,
+      "m_Localized": "復活中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092857,
+      "m_Localized": "スキル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092858,
+      "m_Localized": "復活ポイント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092859,
+      "m_Localized": "トランスジェンダー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092860,
+      "m_Localized": "女",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092861,
+      "m_Localized": "女",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092862,
+      "m_Localized": "ダメージ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092863,
+      "m_Localized": "クリティカルヒット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092864,
+      "m_Localized": "クリティカルミス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092865,
+      "m_Localized": "ヒット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092866,
+      "m_Localized": "ヒットポイント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092867,
+      "m_Localized": "ミス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092868,
+      "m_Localized": "ダメージ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092869,
+      "m_Localized": "ダメージ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092870,
+      "m_Localized": "敵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092871,
+      "m_Localized": "敵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092872,
+      "m_Localized": "敵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092873,
+      "m_Localized": "敵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092874,
+      "m_Localized": "インベントリ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092875,
+      "m_Localized": "弾薬",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092876,
+      "m_Localized": "弾薬",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092877,
+      "m_Localized": "弾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092878,
+      "m_Localized": "弾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092879,
+      "m_Localized": "買う",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092880,
+      "m_Localized": "インベントリ容量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092881,
+      "m_Localized": "捨てる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092882,
+      "m_Localized": "持ち運べる量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092883,
+      "m_Localized": "インベントリがいっぱいです",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092884,
+      "m_Localized": "アイテム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092885,
+      "m_Localized": "鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092886,
+      "m_Localized": "パワーアップ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287104,
+      "m_Localized": "売る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287105,
+      "m_Localized": "使用する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287106,
+      "m_Localized": "武器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287107,
+      "m_Localized": "武器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287108,
+      "m_Localized": "これ以上持てません。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287109,
+      "m_Localized": "気をつけて！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287110,
+      "m_Localized": "気をつけてください。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287111,
+      "m_Localized": "作戦",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287112,
+      "m_Localized": "目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287113,
+      "m_Localized": "アシスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287114,
+      "m_Localized": "アシスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287115,
+      "m_Localized": "攻める",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287116,
+      "m_Localized": "ボーナス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287117,
+      "m_Localized": "確保する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287118,
+      "m_Localized": "完了済",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287119,
+      "m_Localized": "デス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287120,
+      "m_Localized": "デス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287121,
+      "m_Localized": "守る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287122,
+      "m_Localized": "破壊する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287123,
+      "m_Localized": "逃走する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287124,
+      "m_Localized": "終わり",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287125,
+      "m_Localized": "ゲームオーバー！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287126,
+      "m_Localized": "ゲームオーバー！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287127,
+      "m_Localized": "ハイスコア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287128,
+      "m_Localized": "未完了",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287129,
+      "m_Localized": "キル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287130,
+      "m_Localized": "キルアシスト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287131,
+      "m_Localized": "キル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287132,
+      "m_Localized": "キル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287133,
+      "m_Localized": "ロック中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287134,
+      "m_Localized": "敗北",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287135,
+      "m_Localized": "マッチ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287136,
+      "m_Localized": "ミッション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287137,
+      "m_Localized": "ミッション目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287138,
+      "m_Localized": "ミッション目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287139,
+      "m_Localized": "倍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287140,
+      "m_Localized": "目標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287141,
+      "m_Localized": "ポジション",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287142,
+      "m_Localized": "ラップ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287143,
+      "m_Localized": "ラップ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287144,
+      "m_Localized": "ラウンド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287145,
+      "m_Localized": "スコア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287146,
+      "m_Localized": "タイム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287147,
+      "m_Localized": "残り時間",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287148,
+      "m_Localized": "トーナメント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287149,
+      "m_Localized": "トーナメント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287150,
+      "m_Localized": "勝利",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287151,
+      "m_Localized": "敗北",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287152,
+      "m_Localized": "敗北しました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287153,
+      "m_Localized": "敗者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287154,
+      "m_Localized": "チームの敗北！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287155,
+      "m_Localized": "チームの勝利！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287156,
+      "m_Localized": "勝利",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287157,
+      "m_Localized": "勝者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287158,
+      "m_Localized": "死にました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287159,
+      "m_Localized": "死にました。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287160,
+      "m_Localized": "敗北！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287161,
+      "m_Localized": "敗北！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287162,
+      "m_Localized": "勝利！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287163,
+      "m_Localized": "勝利！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287164,
+      "m_Localized": "カメラ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287165,
+      "m_Localized": "反転",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287166,
+      "m_Localized": "通常",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287167,
+      "m_Localized": "カメラ操作：左右",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287168,
+      "m_Localized": "カメラ操作：上下",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287169,
+      "m_Localized": "ボタン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287170,
+      "m_Localized": "クリック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287171,
+      "m_Localized": "デッドゾーン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287172,
+      "m_Localized": "ダブルクリック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287173,
+      "m_Localized": "ドラッグ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287174,
+      "m_Localized": "ドラッグ・アンド・ドロップ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287175,
+      "m_Localized": "フィンガー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287176,
+      "m_Localized": "ゲームパッド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287177,
+      "m_Localized": "ジャイロ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287178,
+      "m_Localized": "キー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287179,
+      "m_Localized": "キーボード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287180,
+      "m_Localized": "マウス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287181,
+      "m_Localized": "マウス感度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287182,
+      "m_Localized": "ピンチ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287183,
+      "m_Localized": "回転",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287184,
+      "m_Localized": "スクロール",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287185,
+      "m_Localized": "シェイク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481408,
+      "m_Localized": "スプレッド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481409,
+      "m_Localized": "スワイプ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481410,
+      "m_Localized": "タップ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481411,
+      "m_Localized": "ボタン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481412,
+      "m_Localized": "キー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481413,
+      "m_Localized": "ティルト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481414,
+      "m_Localized": "腕",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481415,
+      "m_Localized": "腕",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481416,
+      "m_Localized": "胸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481417,
+      "m_Localized": "顎",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481418,
+      "m_Localized": "色",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481419,
+      "m_Localized": "耳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481420,
+      "m_Localized": "耳",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481421,
+      "m_Localized": "目",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481422,
+      "m_Localized": "目",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481423,
+      "m_Localized": "足",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481424,
+      "m_Localized": "足",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481425,
+      "m_Localized": "毛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481426,
+      "m_Localized": "髭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481427,
+      "m_Localized": "毛皮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481428,
+      "m_Localized": "髪",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481429,
+      "m_Localized": "手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481430,
+      "m_Localized": "手",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481431,
+      "m_Localized": "頭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481432,
+      "m_Localized": "腰",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481433,
+      "m_Localized": "脚",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481434,
+      "m_Localized": "脚",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481435,
+      "m_Localized": "口",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481436,
+      "m_Localized": "首",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481437,
+      "m_Localized": "鼻",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481438,
+      "m_Localized": "肌",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481439,
+      "m_Localized": "胸郭",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481440,
+      "m_Localized": "難易度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481441,
+      "m_Localized": "易しい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481442,
+      "m_Localized": "難しい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481443,
+      "m_Localized": "クリア不可能",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481444,
+      "m_Localized": "マニアック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481445,
+      "m_Localized": "普通",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481446,
+      "m_Localized": "とても易しい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481447,
+      "m_Localized": "とても難しい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481448,
+      "m_Localized": "下",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481449,
+      "m_Localized": "左",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481450,
+      "m_Localized": "右",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481451,
+      "m_Localized": "上",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481452,
+      "m_Localized": "ロード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481453,
+      "m_Localized": "ゲームデータをロード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481454,
+      "m_Localized": "ローディング中…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481455,
+      "m_Localized": "お待ちください…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481456,
+      "m_Localized": "セーブデータを消去しますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481457,
+      "m_Localized": "セーブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481458,
+      "m_Localized": "セーブデータ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481459,
+      "m_Localized": "ゲームデータをセーブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481460,
+      "m_Localized": "セーブ中…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481461,
+      "m_Localized": "すべて",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481462,
+      "m_Localized": "年齢",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481463,
+      "m_Localized": "本当によろしいですか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481464,
+      "m_Localized": "よろしいですか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481465,
+      "m_Localized": "戻る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481466,
+      "m_Localized": "BGM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481467,
+      "m_Localized": "キャンセル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481468,
+      "m_Localized": "閉じる",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481469,
+      "m_Localized": "決定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481470,
+      "m_Localized": "続ける",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481471,
+      "m_Localized": "続けますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481472,
+      "m_Localized": "クレジット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481473,
+      "m_Localized": "終了してデスクトップへ戻る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481474,
+      "m_Localized": "終了してデスクトップへ戻りますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481475,
+      "m_Localized": "DLC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481476,
+      "m_Localized": "ダウンロード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481477,
+      "m_Localized": "ダウンロードコンテンツ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481478,
+      "m_Localized": "終了する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481479,
+      "m_Localized": "終了しますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481480,
+      "m_Localized": "エキストラ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481481,
+      "m_Localized": "FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481482,
+      "m_Localized": "アートギャラリー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481483,
+      "m_Localized": "さようなら！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481484,
+      "m_Localized": "グラフィック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481485,
+      "m_Localized": "アプリ内購入",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481486,
+      "m_Localized": "言語",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481487,
+      "m_Localized": "ステージ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481488,
+      "m_Localized": "メール",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481489,
+      "m_Localized": "メインメニュー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481490,
+      "m_Localized": "詳細",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481491,
+      "m_Localized": "音楽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481492,
+      "m_Localized": "音楽プレーヤー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675712,
+      "m_Localized": "新しいゲーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675713,
+      "m_Localized": "次へ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675714,
+      "m_Localized": "次の曲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675715,
+      "m_Localized": "いいえ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675716,
+      "m_Localized": "いいえ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675717,
+      "m_Localized": "だめ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675718,
+      "m_Localized": "OK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675719,
+      "m_Localized": "ポーズ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675720,
+      "m_Localized": "ポーズ中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675721,
+      "m_Localized": "プレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504832,
+      "m_Localized": "再プレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504833,
+      "m_Localized": "いずれかのキーを押す",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504834,
+      "m_Localized": "続けるにはいずれかのキーを押す",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504835,
+      "m_Localized": "STARTボタンを押す",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504836,
+      "m_Localized": "続けるにはSTARTボタンを押す",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504837,
+      "m_Localized": "前へ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504838,
+      "m_Localized": "前の曲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699136,
+      "m_Localized": "価格",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699137,
+      "m_Localized": "無料",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699138,
+      "m_Localized": "購入",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699139,
+      "m_Localized": "終了する",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699140,
+      "m_Localized": "本当に終了しますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699141,
+      "m_Localized": "終了しますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699142,
+      "m_Localized": "リプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699143,
+      "m_Localized": "戻る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699144,
+      "m_Localized": "メインメニューに戻る",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699145,
+      "m_Localized": "メインメニューに戻りますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699146,
+      "m_Localized": "共有",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699147,
+      "m_Localized": "スキップ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699148,
+      "m_Localized": "サウンド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699149,
+      "m_Localized": "ありがとう！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699150,
+      "m_Localized": "アンロック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699151,
+      "m_Localized": "ビデオクオリティ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699152,
+      "m_Localized": "ボイス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699153,
+      "m_Localized": "警告",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699154,
+      "m_Localized": "ようこそ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699155,
+      "m_Localized": "ワールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699156,
+      "m_Localized": "いいよ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699157,
+      "m_Localized": "はい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699158,
+      "m_Localized": "はい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699159,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699160,
+      "m_Localized": "日本語",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699161,
+      "m_Localized": "Japanese",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699162,
+      "m_Localized": "ログイン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699163,
+      "m_Localized": "Eメール",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699164,
+      "m_Localized": "パスワードを忘れた",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699165,
+      "m_Localized": "パスワード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699166,
+      "m_Localized": "登録",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699167,
+      "m_Localized": "保存しますか？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699168,
+      "m_Localized": "チャレンジ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699169,
+      "m_Localized": "チャレンジモード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699170,
+      "m_Localized": "協力",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699171,
+      "m_Localized": "協力モード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699172,
+      "m_Localized": "デスマッチ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699173,
+      "m_Localized": "ヘルプ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699174,
+      "m_Localized": "説明",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699175,
+      "m_Localized": "マルチプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699176,
+      "m_Localized": "ローカルマルチプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699177,
+      "m_Localized": "オンラインマルチプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699178,
+      "m_Localized": "オンラインでプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699179,
+      "m_Localized": "シングルプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699180,
+      "m_Localized": "トレーニング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699181,
+      "m_Localized": "チュートリアル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699182,
+      "m_Localized": "対戦",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699183,
+      "m_Localized": "名前",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699184,
+      "m_Localized": "名前",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699185,
+      "m_Localized": "苗字",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699186,
+      "m_Localized": "ユーザーネーム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699187,
+      "m_Localized": "設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699188,
+      "m_Localized": "グラフィック詳細設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699189,
+      "m_Localized": "アンチエイリアス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699190,
+      "m_Localized": "ブルーム効果",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699191,
+      "m_Localized": "操作方法",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699192,
+      "m_Localized": "難易度設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699193,
+      "m_Localized": "ディスプレイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699194,
+      "m_Localized": "一人称視点",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699195,
+      "m_Localized": "視野角",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699196,
+      "m_Localized": "フルスクリーン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699197,
+      "m_Localized": "ゲームプレイ設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699198,
+      "m_Localized": "グラフィック設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699199,
+      "m_Localized": "HUD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699200,
+      "m_Localized": "BGM音量 ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699201,
+      "m_Localized": "ネットワーク設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699202,
+      "m_Localized": "クオリティ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699203,
+      "m_Localized": "解像度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699204,
+      "m_Localized": "SE音量 ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699205,
+      "m_Localized": "シャドウ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699206,
+      "m_Localized": "シャドウ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893440,
+      "m_Localized": "サイズ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893441,
+      "m_Localized": "サウンド設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893442,
+      "m_Localized": "ボリューム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893443,
+      "m_Localized": "画面分割",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893444,
+      "m_Localized": "三人称視点",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893445,
+      "m_Localized": "ビデオ設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893446,
+      "m_Localized": "ビデオクオリティ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893447,
+      "m_Localized": "ボイス音量 ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893448,
+      "m_Localized": "垂直同期",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893449,
+      "m_Localized": "ウィンドウモード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893450,
+      "m_Localized": "シェーダーの詳細",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893451,
+      "m_Localized": "テクスチャの詳細",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893452,
+      "m_Localized": "マルチコアレンダリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893453,
+      "m_Localized": "モデルの詳細",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893454,
+      "m_Localized": "ワイドスクリーン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893455,
+      "m_Localized": "エフェクト詳細設定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893456,
+      "m_Localized": "異方性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893457,
+      "m_Localized": "バイリニア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893458,
+      "m_Localized": "トライリニア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893459,
+      "m_Localized": "フィルタリング モード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893460,
+      "m_Localized": "ウルトラ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893461,
+      "m_Localized": "最高",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893462,
+      "m_Localized": "高",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893463,
+      "m_Localized": "中",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893464,
+      "m_Localized": "低",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893465,
+      "m_Localized": "バージョン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893466,
+      "m_Localized": "デモ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893467,
+      "m_Localized": "無料版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893468,
+      "m_Localized": "完全版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893469,
+      "m_Localized": "Lite版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893470,
+      "m_Localized": "プレミアム",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893471,
+      "m_Localized": "シェアウェア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893472,
+      "m_Localized": "体験版",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893473,
+      "m_Localized": "VR向けモード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893474,
+      "m_Localized": "HMDの画面位置設定をリセット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893475,
+      "m_Localized": "バーチャルリアリティ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 907617898549
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

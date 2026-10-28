@@ -1,0 +1,30 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 19713228800
+  },
+  "m_Name": "",
+  "itemId": 12688,
+  "indentLevel": 0,
+  "description": "",
+  "targetObject": {
+    "m_FileID": 0,
+    "m_PathID": 119
+  },
+  "targetComponentAssemblyName": "FungusEnumerators, GameAssembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "targetComponentFullname": "UnityEngine.Component[]",
+  "targetComponentText": "FungusEnumerators",
+  "targetMethod": "StartPlayerNaming",
+  "targetMethodText": "StartPlayerNaming (): IEnumerator",
+  "methodParameters": [],
+  "saveReturnValue": 0,
+  "returnValueVariableKey": "",
+  "returnValueType": "System.Collections.IEnumerator",
+  "showInherited": 0,
+  "callMode": 2
+}

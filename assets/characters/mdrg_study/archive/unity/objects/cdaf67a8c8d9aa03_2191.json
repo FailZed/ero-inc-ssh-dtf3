@@ -1,0 +1,39 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 135.53570556640625,
+    "y": -3883.87548828125,
+    "width": 133.36000061035156,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 225,
+  "blockName": "Stage1/Linear1",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 5107
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3059
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

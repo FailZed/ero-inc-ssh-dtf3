@@ -1,0 +1,70 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14724,
+  "indentLevel": 2,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: You were acting suspiciously for a while now so I was monitoring you a little more than usual.\r\nYou: ‘More than usual’? Does that mean…{{wi}} Never mind that!\r\nYou: Dangerous man is after me! He could be here anytime now! We need to run!\r\n#bot.ArmL.UpLecture\r\nBot: Oh, you mean the guy I knocked unconscious some time ago back there?\r\n#bot.ArmL.DownNormal\r\nBot: I saw him through the window of our apartment, sneaking around. I deemed that suspicious and followed him!\r\nYou: You followed him only because of such a small hint?\r\n#bot.Expression.Blush\r\nBot: Well, I <i>might</i> have hacked a few security cameras to confirm my suspicions…\r\nYou: …\r\n#bot.Expression.veryhappy\r\nYou: I’m glad you saved me and I’m somehow relieved that you made sure there was something going on before going alone…\r\nBot: At your service!\r\n#bot.Expression.clear\r\nYou: Shit! I almost forgot!\r\nI got like a dozen messages from Little Richard asking if I’m still alive…\r\nThe last one says…\r\nLittle_Richard: Hold on a little longer! I'm very close!\r\n#bot.Expression.shock\r\nYou: W-We need to run! Someone else is coming here!\r\n#bot.Expression.veryshock\r\nBot: Should I take care of him too?\r\n#bot.Expression.clear\r\nYou: No! He’s a friend! Let’s just go back to our apartment! ",
+    "localizedLines": [
+      {
+        "KeyId": 322581795468992512
+      },
+      {
+        "KeyId": 322581795468992513
+      },
+      {
+        "KeyId": 322581795468992514
+      },
+      {
+        "KeyId": 322581795468992515
+      },
+      {
+        "KeyId": 322581795468992516
+      },
+      {
+        "KeyId": 322581795468992517
+      },
+      {
+        "KeyId": 322581795468992518
+      },
+      {
+        "KeyId": 322581795468992519
+      },
+      {
+        "KeyId": 322581795468992520
+      },
+      {
+        "KeyId": 322581795468992521
+      },
+      {
+        "KeyId": 322581795468992522
+      },
+      {
+        "KeyId": 322581795468992523
+      },
+      {
+        "KeyId": 322581795468992524
+      },
+      {
+        "KeyId": 322581795468992525
+      },
+      {
+        "KeyId": 322581795468992526
+      },
+      {
+        "KeyId": 322581795468992527
+      },
+      {
+        "KeyId": 322581795468992528
+      }
+    ]
+  }
+}

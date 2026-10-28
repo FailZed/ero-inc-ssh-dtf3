@@ -1,0 +1,52 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 12679,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Who is {f_botName}?\r\nOh, she was “unresponsive” back when I used that name. I should explain it to her first.\r\nYou: It is a name I gave you.\r\nBot: My name? My database disagrees.\r\nYou: It’s probably not in your database. I gave it to you when you were offline.\r\nBot: Affirmative. No entry of “{f_botName}” in my database.\r\nYou: {f_botName}?\r\nBot: Who is {f_botName}?\r\n…\r\nGuess I shouldn’t expect too much.\r\nHow should I proceed?\r",
+    "localizedLines": [
+      {
+        "KeyId": 191538824319209489
+      },
+      {
+        "KeyId": 191538824319209490
+      },
+      {
+        "KeyId": 191538824319209491
+      },
+      {
+        "KeyId": 191538824319209492
+      },
+      {
+        "KeyId": 191538824319209493
+      },
+      {
+        "KeyId": 191538824319209494
+      },
+      {
+        "KeyId": 191538824319209495
+      },
+      {
+        "KeyId": 191538824319209496
+      },
+      {
+        "KeyId": 191538824319209497
+      },
+      {
+        "KeyId": 191538824319209498
+      },
+      {
+        "KeyId": 191538824323403776
+      }
+    ]
+  }
+}

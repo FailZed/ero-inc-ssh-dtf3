@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 19
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 1442840576
+  },
+  "m_Name": "",
+  "characterId": "bot",
+  "Path": "Live2D/Shower/shower",
+  "SourcePrefab": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Live2D/Shower/shower",
+      "assetGuid": "36c2d488c5a7ecb409c83b6bfa260b6b",
+      "assetLocalId": 1856522926473531972,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 1
+    }
+  },
+  "ControllerTypeName": "Live2DShowerController"
+}

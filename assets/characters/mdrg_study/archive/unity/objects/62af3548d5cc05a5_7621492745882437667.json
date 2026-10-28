@@ -1,0 +1,1732 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Common_fil",
+  "m_LocaleId": {
+    "m_Code": "fil"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": -593790824102937619
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 280313597952,
+      "m_Localized": "bigdaddyhurt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 283585155072,
+      "m_Localized": "Lady Annalie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131418
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 285984296960,
+      "m_Localized": "Tagapangasiwa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6160727567896576,
+      "m_Localized": "Jun",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131419
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8386212125347840,
+      "m_Localized": "Ikaw",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131420
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8386212137930752,
+      "m_Localized": "Bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131421
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893851684864,
+      "m_Localized": "Babaeng Pulis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893902016512,
+      "m_Localized": "Lalaking Pulis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210816,
+      "m_Localized": "Nanay",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131422
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893906210817,
+      "m_Localized": "Nakakainis na kapitbahay",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131423
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893906210818,
+      "m_Localized": "TTS ng Pulis(text to speech)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210819,
+      "m_Localized": "TTS ng Pulisya",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131424
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893910405120,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131425
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893910405121,
+      "m_Localized": "???2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131426
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893910405122,
+      "m_Localized": "Tulisan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405123,
+      "m_Localized": "Misteryosong kulay Rosas  na lalaki",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131427
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599424,
+      "m_Localized": "Eklesiastiko FF",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599425,
+      "m_Localized": "Shawty Madre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599426,
+      "m_Localized": "'Madre'' Shanice",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131428
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599427,
+      "m_Localized": "Madre Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793728,
+      "m_Localized": "Priestcan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793729,
+      "m_Localized": "Madre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793730,
+      "m_Localized": "Shanice",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131429
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893918793731,
+      "m_Localized": "Hinaharap na Madreng Shanice",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131430
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893922988032,
+      "m_Localized": "Robot na Pari",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131431
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893922988033,
+      "m_Localized": "Eklesiastiko FF at Ikaw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988034,
+      "m_Localized": "Goku Ikalawa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131432
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893922988035,
+      "m_Localized": "Bo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131433
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893927182336,
+      "m_Localized": "Nigevchenko",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131434
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893927182337,
+      "m_Localized": "Jamie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893927182338,
+      "m_Localized": "Tagapag Announsyo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131436
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893927182339,
+      "m_Localized": "Isa sa mga babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376640,
+      "m_Localized": "Dispenser",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893931376641,
+      "m_Localized": "???1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893931376642,
+      "m_Localized": "Sekretarya ni Blaubleim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376643,
+      "m_Localized": "Blaubleim ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131439
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893935570944,
+      "m_Localized": "dAdDy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570945,
+      "m_Localized": "ikAW",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570947,
+      "m_Localized": "Pari na Robot Mark",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765248,
+      "m_Localized": "Pulubi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765250,
+      "m_Localized": "Annalie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131440
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893939765251,
+      "m_Localized": "Ikaw at si Bot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959552,
+      "m_Localized": "Estranghero",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959553,
+      "m_Localized": "Estranghero 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959554,
+      "m_Localized": "Estranghero 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959555,
+      "m_Localized": "Estranghero 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153856,
+      "m_Localized": "Munting batang babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153857,
+      "m_Localized": "Nanay ng babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153858,
+      "m_Localized": "Matandang Babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153859,
+      "m_Localized": "Pangatlong Pulis at Pang apat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153860,
+      "m_Localized": "Pangalawang Pulis",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131441
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893952348161,
+      "m_Localized": "Babaeng Pulis at Babaeng Pulis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348162,
+      "m_Localized": "??? Isa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893952348163,
+      "m_Localized": "??? Dalawa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893956542464,
+      "m_Localized": "??? Tatlo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131444
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893956542465,
+      "m_Localized": "Josh?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131445
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893956542466,
+      "m_Localized": "Josh",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131446
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893956542467,
+      "m_Localized": "Tagapagtanggap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736768,
+      "m_Localized": "Detektib",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736769,
+      "m_Localized": "Serbador",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736770,
+      "m_Localized": "Lalaking Multo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131447
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893960736771,
+      "m_Localized": "Baseball Player",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893964931072,
+      "m_Localized": "Kamatayan ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931073,
+      "m_Localized": "Multo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893964931074,
+      "m_Localized": "Nagmamadaling Lalake",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931075,
+      "m_Localized": "Ilan matandang babae",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125377,
+      "m_Localized": "Eklesiastiko FF",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125379,
+      "m_Localized": "Bagong Tagapagsilbi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893973319680,
+      "m_Localized": "Tagapagsilbing Leonardo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893973319681,
+      "m_Localized": "Padrino",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131451
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 197348848315654144,
+      "m_Localized": "Parmasyutiko",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131452
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 197348848403734528,
+      "m_Localized": "Ilang babaeng clerk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168577,
+      "m_Localized": "Kahera",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131453
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 207821852422168576,
+      "m_Localized": "Leonardo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131454
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 207821852338282496,
+      "m_Localized": "Melissa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131455
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 230535899521212416,
+      "m_Localized": "Nagtatanghal ng Balita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899592515584,
+      "m_Localized": "Tagapag Balita",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131456
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 230535899592515585,
+      "m_Localized": "Rioter",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131457
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 296908734682095616,
+      "m_Localized": "Mayamang babae na naka-pink na jacket",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131458
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 296908734682095617,
+      "m_Localized": "Mayamang babae na may  malaking dede",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131459
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 296908734589820928,
+      "m_Localized": "Tagapag salita sa tindahan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131460
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 319409216818241536,
+      "m_Localized": "Little_Richard",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131461
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 319409216914710528,
+      "m_Localized": "AbusedTenant (Ikaw)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131462
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326769732238696448,
+      "m_Localized": "Misis. Fisher",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131463
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326769732276445184,
+      "m_Localized": "Tauhan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131464
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326769732276445185,
+      "m_Localized": "Tauhan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131465
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326769732276445186,
+      "m_Localized": "DAK",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131466
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326769732276445187,
+      "m_Localized": "Admin",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131467
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 328532400360382465,
+      "m_Localized": "Batang Binibini",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131468
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 328532400360382464,
+      "m_Localized": "Matandang Babae",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131469
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 328532400263913472,
+      "m_Localized": "Lucy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131470
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 471117888949837824,
+      "m_Localized": "Amei",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131471
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 471117889046306816,
+      "m_Localized": "Tunay na Melissa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131472
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 471117889046306817,
+      "m_Localized": "Jacobi E. Wunderanwalt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131473
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893952348160,
+      "m_Localized": "Babaeng Pulis at Babaeng Pulis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 479127667148316672,
+      "m_Localized": "Britannia",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131474
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 479859701739151360,
+      "m_Localized": "Random na babae",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131475
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 479127667198648320,
+      "m_Localized": "Hindi kilalang babae",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131476
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481728203517321216,
+      "m_Localized": "Matanda",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131477
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777896128514,
+      "m_Localized": "???5",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131478
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777896128513,
+      "m_Localized": "???4",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777896128512,
+      "m_Localized": "???3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131480
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777795465216,
+      "m_Localized": "???2&3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 542258247985258496,
+      "m_Localized": "Pagre-record",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131482
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569124131418,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Could also be Misis."
+        }
+      },
+      {
+        "rid": 7996671569124131419,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Jun is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131420,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "(=)"
+        }
+      },
+      {
+        "rid": 7996671569124131421,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "(=)"
+        }
+      },
+      {
+        "rid": 7996671569124131422,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Could also be inay, or Ina."
+        }
+      },
+      {
+        "rid": 7996671569124131423,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Correct"
+        }
+      },
+      {
+        "rid": 7996671569124131424,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Pulis is good, but it's only singular"
+        }
+      },
+      {
+        "rid": 7996671569124131425,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"???\" in Filipino = Tanong"
+        }
+      },
+      {
+        "rid": 7996671569124131426,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"???\" in Filipino = Tanong"
+        }
+      },
+      {
+        "rid": 7996671569124131427,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Misteryosong Lalaking Rosas +"
+        }
+      },
+      {
+        "rid": 7996671569124131428,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Shanice is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131429,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Shanice is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131430,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Hinaharap means future and \"Ng\" is a filler words in filipino"
+        }
+      },
+      {
+        "rid": 7996671569124131431,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Pari na robot also can be use"
+        }
+      },
+      {
+        "rid": 7996671569124131432,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "ikalawa means the second"
+        }
+      },
+      {
+        "rid": 7996671569124131433,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "No translation "
+        }
+      },
+      {
+        "rid": 7996671569124131434,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Any names is normal in Tagalog"
+        }
+      },
+      {
+        "rid": 7996671569124131435,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": " Jamie is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131436,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"Announce\" in Filipino = Announsyo."
+        }
+      },
+      {
+        "rid": 7996671569124131437,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "No translation "
+        }
+      },
+      {
+        "rid": 7996671569124131438,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"???\" in Filipino = Tanong"
+        }
+      },
+      {
+        "rid": 7996671569124131439,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Name in English = Filipino also."
+        }
+      },
+      {
+        "rid": 7996671569124131440,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Annalie is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131441,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "pangalawa means the second otr just second"
+        }
+      },
+      {
+        "rid": 7996671569124131442,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"???\" in Filipino = Tanong"
+        }
+      },
+      {
+        "rid": 7996671569124131443,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"???\" in Filipino = Tanong"
+        }
+      },
+      {
+        "rid": 7996671569124131444,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "If \"???\" in Filipino = Tanong"
+        }
+      },
+      {
+        "rid": 7996671569124131445,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Josh is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131446,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Josh is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131447,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Could also be Mister Multo."
+        }
+      },
+      {
+        "rid": 7996671569124131448,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Player could be Manglalaro."
+        }
+      },
+      {
+        "rid": 7996671569124131449,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Could also be Maligno"
+        }
+      },
+      {
+        "rid": 7996671569124131450,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Leonardo  is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131451,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Padrino, use to call someone like a mafia boss"
+        }
+      },
+      {
+        "rid": 7996671569124131452,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Common word for pharmacist in filipino"
+        }
+      },
+      {
+        "rid": 7996671569124131453,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "kahera is the direct translation of cashier"
+        }
+      },
+      {
+        "rid": 7996671569124131454,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Leonardo is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131455,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Melissa is a name in Filipino."
+        }
+      },
+      {
+        "rid": 7996671569124131456,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Tagapag Balita is use to call reporters"
+        }
+      },
+      {
+        "rid": 7996671569124131457,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Technically Rioter means manggugulo but it's not quite right for it's word."
+        }
+      },
+      {
+        "rid": 7996671569124131458,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131459,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "boobs are dede in tagalog"
+        }
+      },
+      {
+        "rid": 7996671569124131460,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "same meaning in english"
+        }
+      },
+      {
+        "rid": 7996671569124131461,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131462,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131463,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Misis means Mrs in filipino"
+        }
+      },
+      {
+        "rid": 7996671569124131464,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131465,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131466,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131467,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131468,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Woman means binibini"
+        }
+      },
+      {
+        "rid": 7996671569124131469,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "that;s the translation"
+        }
+      },
+      {
+        "rid": 7996671569124131470,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Lucy has no translation since it's a name"
+        }
+      },
+      {
+        "rid": 7996671569124131471,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131472,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131473,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131474,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131475,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131476,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131477,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131478,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131479,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131480,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131481,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131482,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": -1347.1444091796875,
+    "y": 2180.7880859375,
+    "width": 228.1999969482422,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 15872,
+  "blockName": "RE/Rent/FirstAfterBotDiscovery",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 10216
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10214
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10215
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10174
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

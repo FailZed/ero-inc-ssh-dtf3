@@ -1,0 +1,37 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -4826179110787420926
+  },
+  "m_Name": "UI_Assets Shared Data",
+  "m_TableCollectionName": "UI_Assets",
+  "m_TableCollectionNameGuidString": "4452e7fd62143804eb065c6f7326889f",
+  "m_Entries": [],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 0
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CustomEpoch": 1655318998220
+        }
+      }
+    ]
+  }
+}

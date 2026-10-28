@@ -1,0 +1,29 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 22011707392
+  },
+  "m_Name": "",
+  "itemId": 11394,
+  "indentLevel": 0,
+  "luaEnvironment": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "luaFile": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "luaScript": "browser.ChangeWebsite(\"bang.ic/email\")\ncoroutine.yield(GameUtilities.WaitForSecondsYield(1))\n",
+  "runAsCoroutine": 1,
+  "waitUntilFinished": 1,
+  "returnVariable": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  }
+}

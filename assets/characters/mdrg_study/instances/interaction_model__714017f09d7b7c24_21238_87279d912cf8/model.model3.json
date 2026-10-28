@@ -1,0 +1,23 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "../../content/models/interaction_model__714017f09d7b7c24_21238/interaction_model__714017f09d7b7c24_21238.moc3",
+    "Textures": [
+      "../../content/models/interaction_model__714017f09d7b7c24_21238/texture_00.png",
+      "../../content/models/interaction_model__714017f09d7b7c24_21238/texture_01.png",
+      "../../content/models/interaction_model__714017f09d7b7c24_21238/texture_02.png"
+    ],
+    "Physics": "../../content/models/interaction_model__714017f09d7b7c24_21238/physics_00.physics3.json",
+    "Motions": {
+      "__UnitySnapshot_interaction_model__714017f09d7b7c24_21238_87279d912cf8": [
+        {
+          "File": "initial_state.motion3.json",
+          "FadeInTime": 0.0,
+          "FadeOutTime": 0.0
+        }
+      ]
+    }
+  },
+  "Groups": [],
+  "HitAreas": []
+}

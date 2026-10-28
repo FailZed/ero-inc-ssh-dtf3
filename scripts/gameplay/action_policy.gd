@@ -5,6 +5,10 @@ const HOME := ["bedroom", "bathroom", "kitchen", "apartment_hall"]
 const GAME_MINUTES := {"blackjack": 10, "guess": 5, "reaction": 5, "strength": 5, "lockpick": 5}
 
 static func duration(sim, module_id: String, operation: String, args: Dictionary) -> int:
+	if module_id == "antagonism": return int(sim.catalog.antagonism_rules.responses.get(str(args.get("choice","")),{}).get("minutes",0)) if operation == "respond" else 0
+	if module_id == "computer": return sim.services.computer.duration(operation,args)
+	if module_id == "education": return int({"homework":45,"practice":30,"project":60,"assess":60}.get(operation,0))
+	if module_id == "companion": return 1 if operation == "offer" else 5 if operation == "finish" else 0
 	if module_id == "careers":
 		if operation == "shift": return int(sim.catalog.professions.get(str(args.get("id","")),{}).get("minutes",120))
 		if operation == "stream": return int(args.get("minutes",60))
@@ -25,7 +29,7 @@ static func duration(sim, module_id: String, operation: String, args: Dictionary
 		var node: Dictionary = sim.catalog.npc_story_arcs.get(story.get("arc",""),{}).get("nodes",{}).get(story.get("node",""),{})
 		for choice in node.get("choices",[]):
 			if choice.id == args.get("choice",""): return int(choice.get("minutes",5))
-	if module_id == "digital": return 15 if operation == "scan" else int(sim.catalog.digital_operations.get(str(args.get("id", "")), {}).get("minutes", 0)) if operation == "resolve" else 0
+	if module_id == "digital": return 15 if operation == "scan" else int(sim.services.digital.preview(str(args.get("id","")),str(args.get("approach","balanced"))).get("data",{}).get("minutes",0)) if operation == "resolve" else 0
 	if module_id == "family" and operation == "care": return int(sim.catalog.family_actions.get(str(args.get("action", "")), {}).get("minutes", 0))
 	if module_id == "clock": return int(args.get("minutes", 0))
 	if module_id == "character" and operation == "rest": return int(args.get("minutes", 60))
@@ -53,6 +57,13 @@ static func duration(sim, module_id: String, operation: String, args: Dictionary
 static func commitments(state: Dictionary, ending: int) -> Array:
 	var result: Array = []
 	var now := int(state.clock.total_minutes)
+	for c in state.get("antagonism",{}).get("cases",{}).values():
+		if c.status == "open" and (c.observed or c.target == "player") and int(c.deadline) <= ending:
+			result.append({"kind":"pressure","id":c.id,"minute":int(c.deadline)})
+	for id in state.get("computer",{}).get("projects",{}):
+		var project: Dictionary = state.computer.projects[id]
+		if project.status == "active" and int(project.deadline) >= now and int(project.deadline) <= ending:
+			result.append({"kind":"computer_project","id":str(id),"minute":int(project.deadline)})
 	for meeting in state.social.appointments:
 		if meeting.status == "pending" and int(meeting.minute) >= now and int(meeting.minute) <= ending:
 			result.append({"kind":"appointment", "id":str(meeting.npc), "minute":int(meeting.minute)})
@@ -78,6 +89,8 @@ static func commitments(state: Dictionary, ending: int) -> Array:
 static func describe(sim, module_id: String, operation: String, args: Dictionary) -> Dictionary:
 	var context := {"exerting": false, "physical": false, "sleeping": false, "extra_stamina": 0.0}
 	match module_id:
+		"computer": context.exerting = operation in ["project_step","revise_project","lesson","hack_start","hack_step","stream_start","stream_step","publish_highlight","upgrade"]
+		"education": context.exerting = operation in ["homework","practice","project","assess"]
 		"growth":
 			context.exerting = operation == "practice"
 			context.physical = context.exerting and sim.catalog.skills.get(str(args.get("id","")),{}).get("category","") == "body"
@@ -117,7 +130,6 @@ static func describe(sim, module_id: String, operation: String, args: Dictionary
 			if operation == "journey": context.extra_stamina = duration(sim,module_id,operation,args) * 0.15
 			elif operation == "travel":
 				context.extra_stamina = duration(sim,module_id,operation,args)*0.15
-			elif operation == "homework": context.extra_stamina = 3.0
 			elif operation == "lesson": context.extra_stamina = float(sim.catalog.lessons.get(str(args.get("id", "")), {}).get("minutes", 0)) * 0.05
 		"inventory":
 			context.exerting = operation == "craft"
@@ -138,7 +150,7 @@ static func describe(sim, module_id: String, operation: String, args: Dictionary
 
 static func check(sim, module_id: String, operation: String, args: Dictionary, context: Dictionary) -> Dictionary:
 	var location := str(sim.state.world.location)
-	if context.get("auto_work",false) and module_id != "livelihood":
+	if (context.get("auto_work",false) and module_id != "livelihood") or (module_id == "computer" and context.exerting):
 		if not args.get("skip_classes",false) is bool: return Rules.fail("invalid_arguments")
 		if not args.get("skip_classes",false) and not preload("res://scripts/mechanics/work_schedule.gd").conflicts(sim,location,duration(sim,module_id,operation,args)).is_empty(): return Rules.fail("work_conflicts_study")
 	if context.get("rest_kind", "rest") not in ["rest", "sleep", "nap", "drink", "toilet", "leisure"]: return Rules.fail("invalid_rest_kind")

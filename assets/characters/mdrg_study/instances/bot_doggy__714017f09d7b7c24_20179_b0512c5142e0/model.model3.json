@@ -1,0 +1,21 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "../../content/models/bot_doggy__714017f09d7b7c24_20179/bot_doggy__714017f09d7b7c24_20179.moc3",
+    "Textures": [
+      "../../content/models/bot_doggy__714017f09d7b7c24_20179/texture_00.png"
+    ],
+    "Physics": "../../content/models/bot_doggy__714017f09d7b7c24_20179/physics_00.physics3.json",
+    "Motions": {
+      "__UnitySnapshot_bot_doggy__714017f09d7b7c24_20179_b0512c5142e0": [
+        {
+          "File": "initial_state.motion3.json",
+          "FadeInTime": 0.0,
+          "FadeOutTime": 0.0
+        }
+      ]
+    }
+  },
+  "Groups": [],
+  "HitAreas": []
+}

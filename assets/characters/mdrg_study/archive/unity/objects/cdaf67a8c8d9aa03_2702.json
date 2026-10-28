@@ -1,0 +1,77 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 19713228800
+  },
+  "m_Name": "",
+  "itemId": 5126,
+  "indentLevel": 1,
+  "description": "",
+  "targetObject": {
+    "m_FileID": 0,
+    "m_PathID": 119
+  },
+  "targetComponentAssemblyName": "GameScript, GameAssembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "targetComponentFullname": "UnityEngine.Component[]",
+  "targetComponentText": "GameScript",
+  "targetMethod": "AddTime",
+  "targetMethodText": "AddTime (Int32): Void",
+  "methodParameters": [
+    {
+      "objValue": {
+        "typeAssemblyname": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "typeFullname": "System.Int32",
+        "intValue": 1440,
+        "boolValue": 0,
+        "floatValue": 0.0,
+        "stringValue": "",
+        "colorValue": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "gameObjectValue": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "materialValue": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "objectValue": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "spriteValue": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "textureValue": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "vector2Value": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "vector3Value": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "variableKey": ""
+    }
+  ],
+  "saveReturnValue": 0,
+  "returnValueVariableKey": "",
+  "returnValueType": "System.Void",
+  "showInherited": 0,
+  "callMode": 0
+}

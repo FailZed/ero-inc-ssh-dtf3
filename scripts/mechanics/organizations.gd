@@ -27,6 +27,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			var task := str(args.get("task", "idle"))
 			if not group.members.has(npc): return Rules.fail("not_member")
 			if not task in ["idle", "clean", "fundraise", "article"] and not group.projects.has(task): return Rules.fail("unknown_task")
+			sim.services.institutions.attendance.cancel(group,npc,"reassigned")
 			group.members[npc].task = task
 			group.members[npc].role = str(args.get("role", "member"))
 		"fund":
@@ -47,27 +48,5 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 
 func tick(minute: int) -> void:
 	if minute % 1440 != 0: return
-	for id in sim.state.organizations:
-		var group: Dictionary = sim.state.organizations[id]
-		group.cleanliness = maxf(0.0, float(group.cleanliness) - group.members.size())
-		for npc_id in group.members:
-			var task := str(group.members[npc_id].task)
-			var npc: Dictionary = sim.state.social.npcs[npc_id]
-			var contribution: float = (1.0 + float(npc.stats.get("intellect", 5)) / 10.0) * sim.services.institutions.productivity(group, str(npc_id))
-			match task:
-				"clean": group.cleanliness = minf(100.0, float(group.cleanliness) + contribution * 5.0)
-				"fundraise": group.budget += int(contribution * 10.0)
-				"article":
-					group.articles += 1
-					group.reputation += contribution
-				_:
-					if group.projects.has(task) and not group.projects[task].completed:
-						group.projects[task].progress += contribution
-		for project_id in group.projects:
-			var progress: Dictionary = group.projects[project_id]
-			var project := definition("group_projects", project_id)
-			if not progress.completed and float(progress.progress) >= float(project.get("effort", 10)):
-				progress.completed = true
-				group.reputation += float(project.get("reputation", 10))
-				group.budget += int(project.get("reward", 0))
-				emit_event("group_project_completed", {"organization": id, "project": project_id})
+	for group in sim.state.organizations.values():
+		group.cleanliness = maxf(0,float(group.cleanliness)-group.members.size())

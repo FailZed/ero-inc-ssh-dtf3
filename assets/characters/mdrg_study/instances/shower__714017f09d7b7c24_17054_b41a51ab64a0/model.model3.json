@@ -1,0 +1,36 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "../../content/models/shower__714017f09d7b7c24_17054/shower__714017f09d7b7c24_17054.moc3",
+    "Textures": [
+      "../../content/models/shower__714017f09d7b7c24_17054/texture_00.png"
+    ],
+    "Physics": "../../content/models/shower__714017f09d7b7c24_17054/physics_00.physics3.json",
+    "Motions": {
+      "__UnitySnapshot_shower__714017f09d7b7c24_17054_b41a51ab64a0": [
+        {
+          "File": "initial_state.motion3.json",
+          "FadeInTime": 0.0,
+          "FadeOutTime": 0.0
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLShock"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthForm"
+      ]
+    }
+  ],
+  "HitAreas": []
+}

@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 174
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 1442840576
+  },
+  "m_Name": "",
+  "characterId": "bot",
+  "Path": "Live2D/Doggy/bot_doggy",
+  "SourcePrefab": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Live2D/Doggy/bot_doggy",
+      "assetGuid": "0ed9219f70eb5ec4596afb8d905a9e98",
+      "assetLocalId": 6178407854138238668,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 1
+    }
+  },
+  "ControllerTypeName": "Live2DDoggyFuckController"
+}

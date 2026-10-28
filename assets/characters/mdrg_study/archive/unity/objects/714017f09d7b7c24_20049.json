@@ -1,0 +1,142 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 3993
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 24847056896
+  },
+  "m_Name": "",
+  "_color": {
+    "r": 1.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "Setup": {
+    "ShowRgb": 1,
+    "ShowHsv": 0,
+    "ShowAlpha": 0,
+    "ShowColorBox": 1,
+    "ShowColorSliderToggle": 1,
+    "ShowHeader": 3,
+    "RgbSliders": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13144
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 13153
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 13151
+        }
+      ]
+    },
+    "HsvSliders": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13145
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 13146
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 13136
+        }
+      ]
+    },
+    "ColorToggleElement": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13152
+        }
+      ]
+    },
+    "AlphaSlidiers": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13147
+        }
+      ]
+    },
+    "ColorHeader": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13159
+        }
+      ]
+    },
+    "ColorCode": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 12549
+        }
+      ]
+    },
+    "ColorPreview": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13159
+        }
+      ]
+    },
+    "ColorBox": {
+      "Elements": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 13148
+        }
+      ]
+    },
+    "SliderToggleButtonText": {
+      "m_FileID": 0,
+      "m_PathID": 19805
+    },
+    "PresetColorsId": "default",
+    "DefaultPresetColors": [
+      {
+        "r": 0.7647059559822083,
+        "g": 0.1882353127002716,
+        "b": 0.1882353127002716,
+        "a": 1.0
+      },
+      {
+        "r": 0.21176472306251526,
+        "g": 0.7647059559822083,
+        "b": 0.30588236451148987,
+        "a": 1.0
+      },
+      {
+        "r": 0.7176470756530762,
+        "g": 0.5686274766921997,
+        "b": 0.1725490242242813,
+        "a": 1.0
+      },
+      {
+        "r": 0.0,
+        "g": 0.7868185043334961,
+        "b": 1.0,
+        "a": 1.0
+      }
+    ]
+  },
+  "onValueChanged": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

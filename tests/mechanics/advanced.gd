@@ -181,7 +181,7 @@ func clubs_and_interiors() -> void:
 	t.command(sim, "institutions", "policy", {"id": "creative_collective", "focus": "festival", "wage": 10})
 	var total := int(sim.state.organizations.creative_collective.budget) + int(sim.state.social.npcs.a.money) + int(sim.state.social.npcs.b.money)
 	t.command(sim, "clock", "advance", {"minutes": 13})
-	t._check(sim.state.organizations.creative_collective.budget == 80 and sim.state.social.npcs.a.money == 110, "club payroll transfers budget to members")
+	t._check(sim.state.organizations.creative_collective.budget == 100 and sim.state.social.npcs.a.money == 100, "idle membership does not pay an unworked wage")
 	t._check(total == sim.state.organizations.creative_collective.budget + sim.state.social.npcs.a.money + sim.state.social.npcs.b.money, "payroll conserves funds")
 	t.command(sim, "institutions", "election", {"id": "creative_collective", "candidates": ["a", "b"]})
 	t.command(sim, "institutions", "vote", {"id": "creative_collective", "npc": "a", "candidate": "b"})

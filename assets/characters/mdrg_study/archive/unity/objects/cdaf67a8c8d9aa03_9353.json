@@ -1,0 +1,89 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 37127979008
+  },
+  "m_Name": "",
+  "itemId": 14953,
+  "indentLevel": 0,
+  "output": {
+    "m_FileID": 0,
+    "m_PathID": 2159
+  },
+  "options": [
+    {
+      "text": {
+        "KeyId": 323194871151058944
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    },
+    {
+      "text": {
+        "KeyId": 323194899181592576
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    },
+    {
+      "text": {
+        "KeyId": 323194899181592577
+      },
+      "targetBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "interactable": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 1
+      },
+      "hideThisOption": {
+        "booleanRef": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "booleanVal": 0
+      }
+    }
+  ]
+}

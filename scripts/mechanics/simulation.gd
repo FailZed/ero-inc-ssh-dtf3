@@ -10,6 +10,7 @@ const Rules = preload("res://scripts/mechanics/core/rules.gd")
 const Validation = preload("res://scripts/mechanics/core/validation.gd")
 const calendar = preload("res://scripts/mechanics/core/calendar.gd")
 const MODULES := {
+	"education": preload("res://scripts/mechanics/education.gd"),
 	"character": preload("res://scripts/mechanics/character.gd"),
 	"inventory": preload("res://scripts/mechanics/inventory.gd"),
 	"world": preload("res://scripts/mechanics/world.gd"),
@@ -34,7 +35,7 @@ const MODULES := {
 	"population": preload("res://scripts/mechanics/population.gd"),
 	"npc_behavior": preload("res://scripts/mechanics/npc_behavior.gd"),
 }
-const SCHEMA := 1
+const SCHEMA := 2
 var state: Dictionary = {}
 var catalog: Dictionary = {}
 var services: Dictionary = {}
@@ -85,7 +86,7 @@ func reset(profile: Dictionary = {}) -> void:
 			"assets": {}, "job_counts": {}, "projects": {}, "shop_stock": {}, "channel": {"followers": 0}},
 		"world": {"location": str(catalog.settings.start_location), "previous_location": "", "flags": {},
 			"weather": "clear", "temperature": 22, "cleanliness": 100.0, "heat": 0.0,
-			"equipment": [], "visits": {}, "unlocked": [], "education": {"grade": 0, "absences": 0, "homework": false, "attended": [], "missed": []}},
+			"equipment": [], "visits": {}, "unlocked": [], "education": preload("res://scripts/mechanics/education.gd").defaults()},
 		"social": {"npcs": {}, "relationships": {}, "contacts": [], "messages": [], "appointments": [], "promises": {}, "next_npc_id": 1, "next_message_id": 1},
 		"organizations": {}, "journal": {"quests": {}, "achievements": [], "fired": {}, "cooldowns": {}, "ready_events": []},
 		"encounters": {"combat": {}, "game": {}}, "conditions": {}, "counters": {},
@@ -125,6 +126,7 @@ func command(module_id: String, operation: String, args: Dictionary = {}) -> Dic
 			result = services[module_id].execute(operation, args)
 	if result.ok: result = after_command(module_id, operation, args, result, before)
 	if result.ok:
+		services.events.observe(module_id,operation,args,result)
 		services.events.poll()
 		var valid := validate_state(state)
 		if not valid.ok: result = valid
@@ -221,6 +223,10 @@ func restore_snapshot(snapshot: Dictionary) -> Dictionary:
 func validate_state(candidate: Dictionary) -> Dictionary:
 	var structural_error := Validation.state_error(candidate, catalog)
 	if not structural_error.is_empty(): return Rules.fail(structural_error)
+	var education_error := preload("res://scripts/mechanics/education.gd").state_error(candidate,catalog)
+	if not education_error.is_empty(): return Rules.fail(education_error)
+	var club_error := preload("res://scripts/mechanics/club_work.gd").state_error(candidate,catalog)
+	if not club_error.is_empty(): return Rules.fail(club_error)
 	# Check the complete container shape before accessing nested values.
 	var shape := {"clock": ["total_minutes"], "player": ["stats", "skills", "needs", "effects", "perks", "injuries", "addictions", "level", "xp", "points"],
 		"inventory": ["items", "equipped"], "economy": ["cash", "bank", "debt", "assets", "job_counts", "projects", "shop_stock", "channel"],

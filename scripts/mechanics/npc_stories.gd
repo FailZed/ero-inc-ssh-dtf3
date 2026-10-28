@@ -9,11 +9,20 @@ func initialize() -> void:
 	if not sim.state.has("npc_stories"): sim.state.npc_stories = defaults()
 
 func arc_for(id: String) -> String:
+	if sim.state.npc_stories.arcs.has(id): return str(sim.state.npc_stories.arcs[id].arc)
 	if sim.catalog.npc_story_arcs.has(id): return id
 	var npc: Dictionary = sim.state.social.npcs.get(id, {})
 	if npc.is_empty(): return ""
-	var types := ["neighbor", "maker", "newcomer"]
-	return types[posmod(id.hash(), types.size())]
+	var goal := str(npc.get("mind",{}).get("aspiration",{}).get("id",npc.biography.goal))
+	var scores := {"neighbor":0.0,"maker":0.0,"newcomer":0.0}
+	if goal in ["community","relationship"]: scores.neighbor += 3
+	if goal in ["mastery","creativity","career","wealth"]: scores.maker += 3
+	if goal in ["exploration","wellbeing","independence"]: scores.newcomer += 3
+	for skill in ["crafting","art","computing","journalism"]: scores.maker += minf(0.5,float(npc.skills.get(skill,0))/200.0)
+	var candidates: Array = scores.keys()
+	# Stable identity breaks ties without consuming a gameplay random draw.
+	candidates.sort_custom(func(a,b): return posmod((id+str(a)).hash(),100000) < posmod((id+str(b)).hash(),100000) if scores[a] == scores[b] else scores[a] > scores[b])
+	return str(candidates[0])
 
 func blocked(id: String) -> String:
 	var npc: Dictionary = sim.state.social.npcs.get(id, {})

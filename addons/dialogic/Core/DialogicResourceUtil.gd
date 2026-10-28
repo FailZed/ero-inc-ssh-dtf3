@@ -46,7 +46,9 @@ static func update_directory(extension:String) -> void:
 
 	var keys_to_remove := []
 	for key in directory:
-		if not ResourceLoader.exists(directory[key]):
+		# Custom loaders may not be registered during a fresh editor import.
+		# Keep authored identifiers while their source files still exist.
+		if not FileAccess.file_exists(directory[key]) and not ResourceLoader.exists(directory[key]):
 			keys_to_remove.append(key)
 	for key in keys_to_remove:
 		directory.erase(key)

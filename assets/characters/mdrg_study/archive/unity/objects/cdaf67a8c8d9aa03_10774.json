@@ -1,0 +1,229 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16532,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Lady Annalie: Heyo! We are here!\r\nWe can see you, Annalie…{{wi}} There really isn’t a reason to scream, everyone is looking at us now…\r\nLady Annalie: We waited quite a bit for you two!\r\nYou: What do you mean! We are 5 minutes early!\r\nLady Annalie: Jeez, calm down. This place is not a fast food, act accordingly.\r\nYou: …\r\nThis girl…\r\nMelissa: I can’t believe you actually fell for that, Anon. She’s just messing with you. Like always.\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Open\r\nLady Annalie: Come on now, Melissa. Why did you tell him? You spoiled my fun.\r\nMelissa: Could you remind me why your friends cancelled this brunch again? I think I forgot.\r\n#Annalie_Outside.Eyes.Pervy+Annalie_Outside.Mouth.Open\r\nLady Annalie: You don’t remember because I didn’t tell you, but nice try. \r\n#Annalie_Outside.face.pervy\r\nLady Annalie: You and Anon both seem on edge since you found out that you all are just my plan B. Jealousy is not a good look on you, you know?\r\nYou: It’s more like we are still in shock that you actually have other friends.\r\nLady Annalie: Oh, really?\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Pervy\r\nLady Annalie: And you, {f_botName}, why do you keep smiling like that, huh? Aren’t you bothered like the rest?\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Hmm\r\nBot: I don’t really care since I’m pretty sure Annalie enjoys hanging out with us the most.\r\n#Annalie_Outside.face.normal\r\nLady Annalie: There <i>might</i> be some truth to it, but don’t think I would ever admit it!\r\nYou: Are you done with your teasing, Annalie? Can we order already?\r\nLady Annalie: Fine! But are you really sure it’s such a good idea to rush things?\r\nYou: What do you mean? \r\nLady Annalie: I’m pretty sure that you three, unlike me, aren’t familiar with this restaurant’s brunch menu.\r\nLady Annalie: I’m sure it wouldn’t be very nice to buy a very expensive dish that you don’t like and be stuck with it!\r\nYou: I’m sure everything here is pretty good, it’s a fancy restaurant, after all.\r\nLady Annalie: Normally you would be right, but as a sales expert…\r\nCome on, Annalie… Your shop is almost always empty, you are no expert!\r\nLady Annalie: You see, this restaurant does something called ‘ingredient management,’ and since the owner is one of these environmentally conscious types, he’s very strict about it.\r\nLady Annalie: Nothing goes to waste here, but how do they manage it?\r\nLady Annalie: Some of the items are in the menu only to get rid of the unused ingredients from other dishes!\r\nLady Annalie: They have attractive prices compared to others, but it’s just a trap! \r\nLady Annalie: For example, the Roasted Vegetable Frittata. It’s made of leftover vegetables from other dishes.\r\nBot: Is it really that bad? Isn’t it a good thing they are trying to be environmentally friendly? Besides, only because vegetables come from other dishes doesn’t mean that it impacts the taste in a negative way, right? They are still fresh. \r\nLady Annalie: You are right. Normally it wouldn’t be a big deal, but this freak of an owner took it to the extreme. He puts everything in there, even vegetables that do not fit into the dish. Proportions of the vegetables can also vary by a lot. \r\nMelissa: Wouldn’t it hurt the restaurant's reputation in the long run? \r\nLady Annalie: The menu isn’t very long, but one mediocre dish won’t be a deal breaker for most of the people.\r\nMelissa: I guess being stingy does not always pay off.\r\nYou: Since Annalie’s explanation is over, can we order now? \r\nLady Annalie: I still didn’t tell you about all the tricks here, but I guess it’s fine. What are you going to order?\r\nBot: I will go with Eggs Benedict.\r\nLady Annalie: Good choice, it’s very tasty!\r\n#Annalie_Outside.Eyes.Pervy+Annalie_Outside.Mouth.Hmm\r\nYou: Burrito with scrambled eggs.\r\nLady Annalie: That’s…{{wi}} very much like you.\r\nYou: What do you mean?! Is there something wrong with it?\r\n#Annalie_Outside.face.normal\r\nLady Annalie: No, nothing! \r\nLady Annalie: And what will you order, Melissa?\r\nMelissa: I’m not really hungry today. \r\n#bot.Expression.clear\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Open\r\nLady Annalie: Again with this? Come on now, it’s my treat. \r\nNot good. Annalie seems to be suspecting something…\r\nMelissa: Sorry, but I can’t accept it. \r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Awww\r\nLady Annalie: I know you aren’t saving for a boob job, I was only joking last time, but now I’m getting really concerned about your health.\r\nLady Annalie: Is it some hardcore diet or something? If it is, I’m going to be pissed off!\r\nMelissa: It’s nothing like that, don’t worry. \r\nBot: I’m sure Melissa has her reasons, let’s not pry too much into it, ok?\r\nNice one! Good save!\r\nLady Annalie: Huh? But I wanna pry! \r\nThank you, Annalie, for being so nosy.\r\nMelissa: Don’t worry, {f_botName}, I don’t mind telling.\r\n#Annalie_Outside.face.suprised\r\nMelissa: The truth is I have a really bad case of GERD, and it’s very embarrassing for me to eat in public since it makes me burp.\r\n#Annalie_Outside.Eyes.Normal+Annalie_Outside.Mouth.Hmm\r\nLady Annalie: S-Sorry, Melissa! I didn’t know it was something like that. If I knew, I wouldn’t try to be so forceful about it!\r\nMelissa: I know you wouldn’t. Don’t worry, I’m not mad at you.\r\nLady Annalie: It really won’t bother me if you burp like crazy! I promise I will accept you no matter how much you burp!\r\nThat’s… {{wi}}a little unnecessarily dramatic…\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: Alright, that’s enough. People are staring. Do you want everyone here to know that I burp a lot?\r\n#Annalie_Outside.face.smileEyeClosed\r\nLady Annalie: I-I’m shutting my mouth now…\r\n#Cashier.Eyes.closed+Cashier.Mouth.normal\r\nMelissa: Good.\r\n#Cashier.Face.normal\r\n#Annalie_Outside.face.normal\r\n#bot.Expression.Happy\r\nYou: I’m starving, let’s call for the waiter already!\r\nLady Annalie: Sure, sure…\r\nIn the end Melissa managed to fool Annalie, although it seemed for a second that Annalie felt truly bad about forcing her friend to say an embarrassing secret in public.\r\nThe rest of our brunch was pretty much uneventful. We talked about many things and had a couple of good laughs.\r\nShortly after we finished eating, we decided to end the brunch. \r\nIt was one of the shorter meetings, but both Annalie and Melissa were working that day, so it couldn’t be helped.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473874656708780032
+      },
+      {
+        "KeyId": 473874656708780033
+      },
+      {
+        "KeyId": 473874656708780034
+      },
+      {
+        "KeyId": 473874656708780035
+      },
+      {
+        "KeyId": 473874656708780036
+      },
+      {
+        "KeyId": 473874656708780037
+      },
+      {
+        "KeyId": 473874656708780038
+      },
+      {
+        "KeyId": 473874656708780039
+      },
+      {
+        "KeyId": 473874656708780040
+      },
+      {
+        "KeyId": 473874656708780041
+      },
+      {
+        "KeyId": 473874656708780042
+      },
+      {
+        "KeyId": 473874656708780043
+      },
+      {
+        "KeyId": 473874656708780044
+      },
+      {
+        "KeyId": 473874656708780045
+      },
+      {
+        "KeyId": 473874656708780046
+      },
+      {
+        "KeyId": 473874656708780047
+      },
+      {
+        "KeyId": 473874656708780048
+      },
+      {
+        "KeyId": 473874656708780049
+      },
+      {
+        "KeyId": 473874656708780050
+      },
+      {
+        "KeyId": 473874656708780051
+      },
+      {
+        "KeyId": 473874656708780052
+      },
+      {
+        "KeyId": 473874656708780053
+      },
+      {
+        "KeyId": 473874656708780054
+      },
+      {
+        "KeyId": 473874656708780055
+      },
+      {
+        "KeyId": 473874656708780056
+      },
+      {
+        "KeyId": 473874656708780057
+      },
+      {
+        "KeyId": 473874656708780058
+      },
+      {
+        "KeyId": 473874656708780059
+      },
+      {
+        "KeyId": 473874656708780060
+      },
+      {
+        "KeyId": 473874656708780061
+      },
+      {
+        "KeyId": 473874656708780062
+      },
+      {
+        "KeyId": 473874656712974336
+      },
+      {
+        "KeyId": 473874656712974337
+      },
+      {
+        "KeyId": 473874656712974338
+      },
+      {
+        "KeyId": 473874656712974339
+      },
+      {
+        "KeyId": 473874656712974340
+      },
+      {
+        "KeyId": 473874656712974341
+      },
+      {
+        "KeyId": 473874656712974342
+      },
+      {
+        "KeyId": 473874656712974343
+      },
+      {
+        "KeyId": 473874656712974344
+      },
+      {
+        "KeyId": 473874656712974345
+      },
+      {
+        "KeyId": 473874656712974346
+      },
+      {
+        "KeyId": 473874656712974347
+      },
+      {
+        "KeyId": 473874656712974348
+      },
+      {
+        "KeyId": 473874656712974349
+      },
+      {
+        "KeyId": 473874656712974350
+      },
+      {
+        "KeyId": 473874656712974351
+      },
+      {
+        "KeyId": 473874656712974352
+      },
+      {
+        "KeyId": 473874656712974353
+      },
+      {
+        "KeyId": 473874656712974354
+      },
+      {
+        "KeyId": 473874656712974355
+      },
+      {
+        "KeyId": 473874656712974356
+      },
+      {
+        "KeyId": 473874656712974357
+      },
+      {
+        "KeyId": 473874656712974358
+      },
+      {
+        "KeyId": 473874656712974359
+      },
+      {
+        "KeyId": 473874656712974360
+      },
+      {
+        "KeyId": 473874656712974361
+      },
+      {
+        "KeyId": 473874656712974362
+      },
+      {
+        "KeyId": 473874656712974363
+      },
+      {
+        "KeyId": 473874656712974364
+      },
+      {
+        "KeyId": 473874656712974365
+      },
+      {
+        "KeyId": 473874656712974366
+      },
+      {
+        "KeyId": 473874656712974367
+      },
+      {
+        "KeyId": 473874656712974368
+      },
+      {
+        "KeyId": 473874656712974369
+      },
+      {
+        "KeyId": 473874656712974370
+      },
+      {
+        "KeyId": 473874656712974371
+      },
+      {
+        "KeyId": 473874656712974372
+      },
+      {
+        "KeyId": 473874656712974373
+      },
+      {
+        "KeyId": 473874656712974374
+      }
+    ]
+  }
+}

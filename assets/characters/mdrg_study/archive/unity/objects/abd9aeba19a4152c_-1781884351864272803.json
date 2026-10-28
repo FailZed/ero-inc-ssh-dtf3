@@ -1,0 +1,2279 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Emails_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 6685370119863084048
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 307198391357440,
+      "m_Localized": "emilygrossberg@safespace.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919195
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 307198408134656,
+      "m_Localized": "Nazdar Anone!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134657,
+      "m_Localized": "Stále si na mě pamatuješ? Jsem tvoje kámoška ze střední, Emily! Spolu s ostatníma chceme uspořádat schůzku bývalých spolužáků! Pronajmout místo pro 30 lidí je v dnešní době obrovský problém, ale neměj obavy! Já a Taylor všechno připravíme. Ty nám na to akorát trochu přispěješ, něco málo 100$. Máme už nějaké ty zkušenosti s pořádáním podobných akcí a jestli sleduješ naši stránku na Facebergu tak to pro tebe určitě není žádná novinka. Jestli nás ještě nesleduješ, tak tě chceme povzbudit, aby jsi to napravil kliknutím sem. Jestli nemáš o tomto žádné otázky tak nám napiš email. Číslo našeho bankovního účtu pro zaslání té stovky je 857240756612. Nezapomeň na potvrzení převodu napsat svoje jméno. \nZatím!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134658,
+      "m_Localized": "bbfreepodcast@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134659,
+      "m_Localized": "NEJNOVĚJŠÍ PODCAST BOA BROGANA ÚPLNĚ ZDARMA!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134660,
+      "m_Localized": "Výhradně pro tebe ti dáváme jednu epizodu podcastu Boa Brogana úplně zadarmo!\n V této epizodě Boův host je 96 letý starý známý astrofyzik a přeživší gulagu prof. Nigevchenko. \n\n<b>Klikni zde pro poslechnutí celého audia</b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134661,
+      "m_Localized": "saawmohiygdneoisngosnmgiod@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134662,
+      "m_Localized": "Chceš se přidat... k revoluci?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134663,
+      "m_Localized": "Tento stát... neopravitelně ZHNILÝ... připoj se...\nTento svět... ZKORUMPOVANÝ k nepoznání... připoj se... \nNaše vláda... NEZACHRANITELNÁ co odmítli vizi našich Otců Zakladatelů... připoj se...\npřipoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... \npřipoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... \npřipoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... připoj se... \nJestli se chceš připojit... prostě odpověz... připoj se...\njestli přemýšlíš, zda se připojit... už nepřemýšlej... připoj se...\njestli zvažuješ, zda se připojit... dej tomu nějakou myšlenku... a připoj se... \njestli se nechceš připojit... budeš se chctít připojit v budoucnu... tak se připoj...\njestli nás nenávidíš a z celé této myšlenky o tom, se k nám připojit, se ti chce zvracet... nebuď malá děvka... a připoj se \nJako pravý Americký patriot je tvojí službou připojit se...\nJestli nejsi Američan... i tak, přidej se...\nJsme všude...\nMiliony patriotů po celé planetě... spojeni jediným snem...\nNezáleží odkud pocházíš... jakou máš národnost... všichni jsme Američani...\nPŘIPOJ. SE.\nPřipoj... se...\nMy jsme... My...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134664,
+      "m_Localized": "emilygrossberg@safespace.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134665,
+      "m_Localized": "Znova ahoj!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134666,
+      "m_Localized": "Čau, to jsem zase já, Emily. Nevím, jestli ti přišel můj poslední email, ale pořádáme schůzku býcalých spolužáků. Je to jen 100$ a skoro všichni potvrdili, že přijdou! Vím, že jsi byl na střední celkem zamlklý, ale ujišťuji tě, že hodně lidí zajíma, jak se ti vede :) Jestli chceš vědět víc, tak se mrkni na můj předešlý email!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134667,
+      "m_Localized": "drblaubleim@safespace.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134668,
+      "m_Localized": "Nová schůzka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134669,
+      "m_Localized": "Ahoj Anone.\nTvoje matka vyřídila a zaplatila novou schůzku u mě v kanceláři. Zaslechl jsem, že si přestal brát svoje prášky? Nebylo to myšleno tak, že by jsi je bral napořád, ale řekl jsem ti, aby jsi to předtím se mnou prokonzultoval. Není to velký problém, jen za mnou přijď a popovídáme si o tom. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134670,
+      "m_Localized": "kfz35432390@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134671,
+      "m_Localized": "VÍM CO DĚLÁŠ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134672,
+      "m_Localized": "Ty čuráku... Fakt jsi si myslel, že...\nže tohle můžeš prostě kurva udělat? Na mých očích? Už používám CockTwitch roky, ale tohle... \nV tomhle byznysu je respekt ta nejdůležitější věc a ty prostě kurva děláš tohle? Máš vůbec nějaký debilní ponětí o tom, čím si šlapky kvůli tobě a tvým chutím a téhlé umělé DĚVCE museli projít? \nZASTAV TO!!!!! HNED!!!!!!!!111!!!!!!!!!!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134673,
+      "m_Localized": "kfz35432391@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134674,
+      "m_Localized": "PROČ NeODPOVÍDÁš???????????????",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134675,
+      "m_Localized": "ODPOVĚZ MI PIČO! Změnil jsem si kvůli tobě email adresu DEBILE!!!!!!!! Ty sis mě zablokoval, co? Já si tě najdu čuráku, KRADEŠ CHLEBA TVRDĚ PRACUJÍCÍM A PYŠNÝM ŽENÁM Ze STOLU!!1111111111!!!!!!! Jáztratil 100 odběratel za 2 týdny. 2 TÝDNY!!!!11111 Víš, jako mocjsem pro to dřel? Ty si pravděpodoně za těma kometářáma o mém tloustnutí, co? Můžes se jít pojebat. TY. A. TVOJ.E KURVA. OBA MRTVÝ. DÁVEJ SI BACHA.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134676,
+      "m_Localized": "kfz4093673948@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134677,
+      "m_Localized": "JDU SI PRO TEBE ZMRDE!!!!!!!!!!11!!!1!!!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134678,
+      "m_Localized": "UTRATIL JSEM VŠECHNO CRYPTO ABYCH NAJAL HACKERA KTERÍ TĚ NAJDE. aŽ TĚ DOXXNE, TAK Z TEBE BUDE MRŠINA. POJEBbbbb Se!!!!!! pOBODÁM TĚ S MOJÍM KARAMBITEM. já ti ukážu, co OPRAVDOVÁ ženská dovede a ty očekávej tvoje bíle hopsavé koula na střibrném podnose.!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134679,
+      "m_Localized": "noreply@cocktwitch.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134680,
+      "m_Localized": "Gratulujeme za dosažení {0} sledujících!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 307198408134681,
+      "m_Localized": "Dosáhli jste {0} sledujících! \nVíme, že zvládat takové velké publikum je těžké, proto naši inženýři přisli s <color=#FF0000>POMALÝM REŽIMEM</color>. LImituje množství zpráv, takže si můžete naplno užít jejich rétoriku. Můžete si to zapnout během živého přenosu, ale pouze pokud si držíte více než {0} sledujících.\nTento email byl generován automaticky. Prosím, neodpovídejte na tento email!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 307198408134682,
+      "m_Localized": "support@cocktwitch.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134683,
+      "m_Localized": "Odběratelé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134684,
+      "m_Localized": "Blahopřejeme!\n Dnes jste z odběratel vydělali: \n {0}*{1}$={2}$\nCelkem {2}$ bylo vloženo na Váš účet v moment, kdy jste otevřeli tento email!\nTento email byl generován automaticky. Prosím, neodpovídejte na tento email!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 307198408134685,
+      "m_Localized": "labour@office.gov",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134686,
+      "m_Localized": "Poznámka o nezaměstnanosti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134687,
+      "m_Localized": "Ahoj milý občane naší skvělé země!\n\nPíšeme Vám, abychom Vás informovali, že Vaše podpora z nezaměstnanosti vypršela, protože jste neuspěl při využití jedné z našich speciálně připravených pracovních nabídek. Z tohoto důvodu už neudete dostávat podporu z nezaměstnanosti, dokud nesplníte určité obdoví opětovného zamětnání v jednom z našich partnerských soukromých sektorů. Pro více detailů, navštivte náš lokální úřad práce. Nezapomentě si se sebou přinést vaše ID a veškeré potřebné papírování (dokumenty č. 14a, 17b a 25b) které si můžete stáhnout na naší webové stránce a samozřejmě Vaše CV. Přejeme Vám jen to nejlepší ve Vašem budoucím zaměstnání.\n\nS pozdravem, pracovní úřad USA Tento email byl generován automaticky. Prosím, neodpovídejte. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134688,
+      "m_Localized": "cbzsbcifu@cock.cum",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134689,
+      "m_Localized": "ZVĚTŠTE VÁŠ PENIS ON 12CM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134690,
+      "m_Localized": "Holky se ti smějí? Tvoje žena tě podvádí s většíma chlapama? My máme právě to řešení pro tvoji situaci! Díky naší nejnovější technologii, náš zázrační prášek ti zvětší přirození o 50% tvojí originální délky! Naší nanoboti jsou schopni přeskupit svalové tkáně uvnitř tvého péra abys mohl tlouct hlouběji a tvrději. Chceš vědet víc? Zaplať nám symbolickou cenu 1000$ a my tě kontaktujeme o možném zkušebním testování! \nNaše bitcoin adresa: oiwnfoainaosinfoiasf9isndklfs0nslgns02.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134691,
+      "m_Localized": "bigdaddyhurt1177@gooblygook.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134692,
+      "m_Localized": "Skvělej stream chlape :)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134693,
+      "m_Localized": "Nazdar kámo.\nViděl jsem tvůj stream včera večer :) dobrej matroš. Měl jsem určité potíže tě kontaktovat, ale nějak jsem si poradil :) Nechceš toho sexbota prodat? Nikdy jsem takový model neviděl a mohl bys mě nazvat sběratelem. Jsem schopnej ti za to dát 10 litrů. Jestli nechceš tak žádný stres :) Jsem klidný týpek, takže se nemušíš bát, že bych tě nabonzoval, jenom takový prátelský pokec tady kamaráde :) né každý je takový andělíček jako já.\n\nMěj se :)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134694,
+      "m_Localized": "bigdaddyhurt1177@gooblygook.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134695,
+      "m_Localized": "Žádná odpověď?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134696,
+      "m_Localized": "Znova ahoj.\nPřečetl jsi si můj poslední mail? Možná mě jen ignoruješ. Na tom nezáleží. Neměj starosti, nejsem naštvaný :) Nebudu tě dál otravovat s mýma nabídkama. Jenom ti poradím jeden online obchod, který by tě mohl zajímat :) ladyparts.ic\nObsah je přístupný pouze pro vybrané IP adresy, takže je to v klidu. Můžeš tam koupit nějaké části k tvému botovi a dát jí více... funkcí :) \nHezký zbytek dne kámo :) Vymažu tenhle email z bezpečnostních důvodů :)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134697,
+      "m_Localized": "cazinoparadize@sc2137.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134698,
+      "m_Localized": "NOVÁ INTERNETOVÁ HERNA",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 307198408134699,
+      "m_Localized": "Cheš Se Stát Miliardářem Za Pouhých 10 Sekund???!!!! Nyní Můžeš A Stávky Nikdy Nebyly Výš!!! Naše Nová Crypto Těžící Herna Je To Nejlepší Místo, Kde Můžeš Vyhrát Balík A Dopustit Se Daňového Podvodu. Žádní Otravní Lidé, Říkajíci Že Máš Přestat Pít, Žádné Krádeže Se Zbraní V Ruce! Prostě Použij Náš Odkaz casino.ic Získej 100 Tokenů Zdarma A Začni Se Bavit!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32531144624705536,
+      "m_Localized": "jhpozjkahgioshgsgksjghsjgsk@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32531144645677056,
+      "m_Localized": "Je čas… vzít věci do svých rukou…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32531144645677057,
+      "m_Localized": "Nastal čas…\nSvaté světlo naší revoluce je v nejtemnějších nocích jasné jako neon 7/11…\nPŘIpojili jste se k nám VY jste se zavázali, že budete bojovat po našem boku\n             VY jste ten vyvolený VY nám pomůžete odrazit uzurpátory\nTohle je tvůj osud. Tohle je tvůj osud. Toto je vaše poslání. Tohle je vaše šance.\nNezklam nás.\n                      Nezraď nás\n                                             Neváhe.\n                                                                       Nemyslím, že.\n                                                                                           Udělejte vše, co se vám řekne.\nJak zamýšleli naši otcové zakladatelé, porazíme své nepřátele.\nNYNÍ!\nPOSLOUCHEJ!\nAKCE!\nJSI PŘIPRAVEN?\nOPAKUJ PO MĚ\nPOVSTAŇT, HNED!\nPOSLOUCHÁŠ VŮBEC?\nJDE O TEXT, MUSÍTE SI PŘEČÍST, PŘEDCHOZÍ ŘÁDEK IHNED\nMYSLEL JSEM ŘÁDEK O POSLECHNUTÍ\nV BLÍZKOSTI VAŠEHO DOMU MÁTE SCHOVANÝ MOBIL POD POPELNICI. JDĚTE TAM HNED POSLOUCHEJTE NÁVOD!\nTato zpráva bude brzy smazána. Přečtěte si to několikrát, abyste věděli, co dělat. Jakmile jsem zapomněl na důležitou zprávu, řekl jsem si ‚je to velmi krátké, určitě na to nezapomenu‘. Samozřejmě jsem zapomněl. Je to něco jako, že si vytvoříte účet pro porno web. Nepoužijete své obvyklé heslo, v žádném případě, že? Zadali jste ho v anonymním režimu, takže si prohlížeč nebude pamatovat heslo. Co dělat? ‚Napíšu vtipné a krátké heslo, určitě ho nezapomenu hahaha‘. A pak, po listopadu, měsíc po použití jsi úplně zapomněl, hlupáku! Takže ano, stačí si to párkrát přečíst.\n\nMy jsme... my...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32531144645677058,
+      "m_Localized": "nhnhndlhndlkhnkrnagagaeybeyav@pro.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32531144645677059,
+      "m_Localized": "Kurva",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32531144645677060,
+      "m_Localized": "Opravdu vole? Dlouho jsem to připravoval a ty jsi všechno posral. Copak nemůžeš prostě následovat spoustu základních instrukcí jako normální člověk? Sakra já exkomunikuji ypu z naší organizace kurva jej!!!!!\n\nTy jsi... my nejsme...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 73617385113653248,
+      "m_Localized": "noreply@fedup.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 73617387311468544,
+      "m_Localized": "Nový balíček (#{0})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 73617389966462976,
+      "m_Localized": "Vážený zákazníku,\n\nPíšeme vám, abychom vás informovali, že balíček od <b>{1:sls()}</b> byl zaregistrován k odeslání na vámi určenou adresu a brzy bude vyzvednut od odesílatele. Sledovací číslo tohoto balíčku je <b>#{0}</b>.\nMějte na paměti, že sledovací číslo se může změnit v případě, že bude balíček konsolidován.\n\nStav vašeho balíku a odhadované datum doručení můžete sledovat na naší webové stránce fedup.ic.\n\nChceme vám také připomenout naši službu <b><color=#D2AF26>Fedup Premium Delivery</color></b>, která umožňuje urychlené doručení vašeho balíku. S touto službou bude váš balíček upřednostněn a doručen za méně než 15 minut.\n\nDěkujeme, že jste si vybrali Fedup Delivery.\n\nS pozdravem,\nFedup Delivery Team.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 73646484167200768,
+      "m_Localized": "noreply@fedup.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 73646486427930624,
+      "m_Localized": "Konsolidace balíček (#{2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 73646487715581952,
+      "m_Localized": "Předmět: Oznámení o konsolidaci balíčku\n\n\nVážený zákazníku,\n\n\nPíšeme vám, abychom vás informovali, že dva z vašich balíků s čísly zásilky <b>#{0}</b> a <b>#{1}</b> byly sloučeny do jednoho balíku k doručení. Nové sledovací číslo pro tento balíček je <b>#{2}</b>.\n\n\nS potěšením vás informujeme, že to znamená, že vám bude stačit obdržet pouze jednu zásilku namísto dvou. Chápeme, že příjem více balíků může být obtížný a vždy hledáme způsoby, jak proces doručení co nejvíce usnadnit našim zákazníkům\n\n\nStav vašeho balíku a odhadovaného času doručení můžete sledovat na naší webové stránce fedup.ic pomocí nového sledovacího čísla\n\n\n\nDěkujeme, že jste si vybrali Fedup Delivery\n\nS pozdravem,\nFedup Delivery Team",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 104700641497976832,
+      "m_Localized": "leonsk@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948352,
+      "m_Localized": "O vaší odpovědi na naši nabídku…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948353,
+      "m_Localized": "Dobrý den, pane.\r\nS velkou lítostí jsme zjistili, že jste naši nabídku odmítli. Jsem si jistý, že se vám naskytnou další příležitosti od naší značky, ale pamatujte. Neradi jsme odmítnuti.\r\n\r\nS pozdravem,\r\nLuxusní manažer značky, Leon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948354,
+      "m_Localized": "leonsk@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948355,
+      "m_Localized": "O naší výhodné smlouvě…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948356,
+      "m_Localized": "Dobrý den, pane.\nJe politováníhodné, že naše výhodná smlouva byla zamítnuta. V Luxe jsme na vás mysleli jako na součást našeho týmu. Jak jsme se mýlili.\nPřesto vám přejeme hodně štěstí v dalším snažení.\n\nS pozdravem,\nLuxusní manažer značky, Leon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948360,
+      "m_Localized": "leonsk@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948361,
+      "m_Localized": "Stav výhodné smlouvy…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948362,
+      "m_Localized": "Dobrý den, pane.\nS nelibostí vám oznamuji, že naše nabídka výhodné smlouvy vypršela. Takové příležitosti nepřicházejí často. Radím vám, abyste si promysleli své životní priority, pokud chcete být v tomto podnikání úspěšní.\n\nS pozdravem,\nLuxusní manažer značky, Leon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948363,
+      "m_Localized": "leonsk@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948364,
+      "m_Localized": "Nepovedlo se vám...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948365,
+      "m_Localized": "Dobrý den, pane.\r\nZdá se, že je problém s vaší nedávnou smlouvou. Byl jsem informován, že požadavky nebyly splněny. To je velmi zklamáním. My ve značce Luxe jsme připraveni vám dát další šanci. Nepromarněte to.\r\n\r\nS pozdravem,\r\nLuxusní manažer značky, Leon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948366,
+      "m_Localized": "leonsk@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948367,
+      "m_Localized": "Opět jste selhal…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948368,
+      "m_Localized": "Dobrý den, pane.\r\nJeště jednou. Vyskytl se problém s vaší částí smlouvy. Chápete, že jsme z vás všichni v týmu managementu značky Luxe hluboce zklamáni? To je nepřijatelné.\r\n\r\nS pozdravem,\r\nLuxusní manažer značky, Leon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948369,
+      "m_Localized": "leonsk@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948370,
+      "m_Localized": "Blahopřejeme…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948371,
+      "m_Localized": "Dobrý den, pane.\nBlahopřejeme vám, že jste se stal naším platinovým ambasadorem značky. S tímto titulem přichází mnoho výhod a vy můžete být velmi hrdí na to, že jste členem tak prestižní skupiny. Nezklamte nás a vaše kariéra nabere ještě lepší obrátky.\n\nS pozdravem,\nLuxusní manažer značky, Leon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948372,
+      "m_Localized": "paulvalunier@luxebrand.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948373,
+      "m_Localized": "Důležitá zpráva!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948374,
+      "m_Localized": "Dobrý den, pane.\r\nPíšu vám já, Paul Fournier, výkonný ředitel managementu značky, abych vám oznámil, že jste byli vybráni, abyste se stali jednou z tváří naší značky. Váš dlouhodobý závazek ke značce Luxe byl zásadní, když jsme se rozhodovali. Očekáváme od vás, že váš obsah posune naši popularitu na ještě vyšší úroveň.\r\n\r\nS pozdravem,\r\nŘeditel řízení luxusní značky Paul Valunier",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948375,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948376,
+      "m_Localized": "Nepřijal jste naši smlouvu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948377,
+      "m_Localized": "Ahoj, Anone!\nOpravdu nás mrzelo, že jste odmítl podepsat naši smlouvu. Nic však není ztraceno! Stále si můžete vyzvednout další smlouvy.\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948378,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948379,
+      "m_Localized": "Odmítli jste přijmout naši výhodnou smlouvu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948380,
+      "m_Localized": "Dobrý den, Anone.\nS velkým překvapením jsme zjistili, že naše nabídka byla zamítnuta. Všichni jsme lidé a snažíme se nevsměšovat do podnikání s osobními pocity, ale nemůžeme si pomoci, ale cítíme se naštvaně vaším rozhodnutím. Doufáme, že příště bude výsledek jiný.\n\n~Maddie ze Stilou",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948384,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948385,
+      "m_Localized": "Vaše příležitost ke zlaté smlouvě vypršela.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948386,
+      "m_Localized": "Dobrý den, Anone.\nNaše kampaň, v rámci které jsme vám nabídly zlatou smlouvu skončila. Tímto již nemůžete tuto smlouvu přijmout. Taková příležitost se vám už nemusí nikdy naskytnout.\n\n\n~Maddie ze Stilou\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948387,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948388,
+      "m_Localized": "Vyskytl se problém s naší smlouvou.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948389,
+      "m_Localized": "Ahoj Anone!\nObávám se, že jste nesplnili požadavky naší smlouvy. Omlouváme se, ale pokud to neuděláte, nemůžeme vám zaplatit. Nebojte se, stále máme zájem s vámi spolupracovat, jen prosím mějte na paměti, že pokud se to bude opakovat, můžeme o to mít menší zájem.\n\n~Maddie ze Stilou\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948390,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948391,
+      "m_Localized": "Špatné zprávy…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948392,
+      "m_Localized": "Ahoj Anone.\nByl jsem opravdu zklamán, když jsem zjistil, že jste opět nesplnili naše požadavky. Copak má pomoc a pohostinnost nestačí? Myslel jsem, že jsme vám nabídli skvělou smlouvu, kterou by nemělo být příliš těžké splnit. Prosím, příště se snažte, aby to vyšlo.\n\n~Maddie ze Stilou\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948393,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948394,
+      "m_Localized": "Děkujeme, že s námi spolupracujete.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948395,
+      "m_Localized": "Ahoj Anone!\nBlahopřeji vám k dosažení milníku v našem partnerství! Mějte na paměti, že pokud postoupíte ještě dále, budete patřičně odměněni!\n\n~Maddie ze Stilou\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948396,
+      "m_Localized": "stiloupr@stilou.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948397,
+      "m_Localized": "Skvělá zpráva!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948398,
+      "m_Localized": "Ahoj Anone!\nDostali jste se na vrchol našich propagačních partnerů! Skvělé ceny jsou na cestě k vám!\n\n\n~Maddie ze Stilou\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948399,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948400,
+      "m_Localized": "Ohledně smluvního kodexu 8u4AZ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948401,
+      "m_Localized": "Sehr geehrter Herr Anon,\r\nje nám líto, že naše navrhovaná smlouva neodpovídala vašim standardům. My ve VolkAuto RehabTech se vždy snažíme připravit smlouvy s tvůrci obsahu, které odpovídají jejich osobním potřebám. Doufáme, že si příště vyberete právě nás!\r\npřejeme ti hezký den, tschuss!\r\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948402,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948403,
+      "m_Localized": "Nicht gut Herr Anon…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948404,
+      "m_Localized": "Sehr geehrter Herr Anon,\nse smutkem jsme přijali vaše odmítnutí naší smlouvy. Byla to pro nás velmi důležitá kampaň, takže naše zklamání je nezměřitelné. Prosím neodpovídejte na tento email.\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948408,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948409,
+      "m_Localized": "Naše nabídka již není dostupná",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948410,
+      "m_Localized": "Sehr geehrter Herr Anon,\njiž se nemůžete připojit k naší nedávné marketingové kampani.\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948411,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948412,
+      "m_Localized": "Máme problém",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948413,
+      "m_Localized": "Sehr geehrter Herr Anon,\nbohužel vám musíme oznámit, že jste nesplnili své smluvní cíle. To není dobré! Pokud s našimi závěry nesouhlasíte, kontaktujte nás.\nDo přístě, tschuss!\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948414,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948415,
+      "m_Localized": "Jsme velmi smutní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948416,
+      "m_Localized": "Sehr geehrter Herr Anon,\ntohle byla velmi důležitá smlouva, Herr Anon. Tohle není žádná legrace! Cítíme se velmi zklamaní. Pokud jste měl s realizací smlouvy nějaké problémy, kontaktujte nás, abychom mohli připravit smlouvu, která bude vyhovovat vašim potřebám.\nDo přístě, tschuss!\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948417,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948418,
+      "m_Localized": "Gratulujeme!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948419,
+      "m_Localized": "Sehr geehrter Herr Anon,\nDěkuji za vaší pomoc! Jsme si jisti, že toto je jen začátek naší společné cesty! Ujišťujeme vás, že nebudete litovat, že jste s námi!\nDanke shon!\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948420,
+      "m_Localized": "volksautorehabtechprbereich@volksauto.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948421,
+      "m_Localized": "Velké poděkování od celého našeho  týmu!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948422,
+      "m_Localized": "Sehr geehrter Herr Anon,\ndosáhl jste vrcholu žebříčku! Chceme vám poblahopřát, že jste se stal jedním z nejlepších tvůrců obsahu, se kterými spolupracujeme! Jsme si jisti, že toho v budoucnu ještě hodně dokážeme! Zkontrolujte si poštu! Poslali jsme vám něco speciálního!\nDanke shon!\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948423,
+      "m_Localized": "//Nepoužité",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948424,
+      "m_Localized": "//Nepoužité ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948425,
+      "m_Localized": "//Nepoužité ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948426,
+      "m_Localized": "benjonson02@monizmed.pt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948427,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948428,
+      "m_Localized": "Ahoj Anone.\nJen abys věděl. Každé nedodržení našich zlatých smluv je uloženo v centrální databázi naší společnosti. Zamyslete se nad svými životními volbami.\n-Ben, Monizmede\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948432,
+      "m_Localized": "benjonson02@monizmed.pt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948433,
+      "m_Localized": "Příliš pozdě.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948434,
+      "m_Localized": "Nyní je příliš pozdě na přijetí naší zlaté smlouvy. Vaše ztráta.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948435,
+      "m_Localized": "benjonson02@monizmed.pt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948436,
+      "m_Localized": "Selhání ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948437,
+      "m_Localized": "Ahoj Anone.\nSelhal jste ve své práci. Jsem nespokojen.\n-Ben, Monizmede\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948438,
+      "m_Localized": "benjonson02@monizmed.pt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948439,
+      "m_Localized": "Selhání",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948440,
+      "m_Localized": "Ahoj Anone.\nOpět jste selhal. Doufám, že si uvědomujete důsledky své nekázně. Monizmed není společnost, na jejíž špatnou stranu byste se chtěl dosat.\n-Ben, Monizmede\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948441,
+      "m_Localized": "benjonson02@monizmed.pt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948442,
+      "m_Localized": "Dobrá práce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948443,
+      "m_Localized": "Ahoj Anone.\nNaše databáze ukazuje, že patříte mezi 10 % našich nezávislých inzerentů. Skvělý výsledek v krátkém čase. Jen tak dál. Nyní můžete při nákupu našich produktů využít zaměstnaneckou slevu.\n-Ben, Monizmede\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948444,
+      "m_Localized": "benjonson02@monizmed.pt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948445,
+      "m_Localized": "Velmi dobrá práce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948446,
+      "m_Localized": "Ahoj Anone.\nStali jste se jedním z našich nejlepších inzerentů. Buďte na to hrdí. Nyní jste nedílnou součástí Monizmedu. Neúspěch nepřipadá v úvahu. Vaše sleva na nákup léků bude nyní ještě vyšší!\n-Ben, Monizmede\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948447,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948448,
+      "m_Localized": "Jsme velmi smutní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948449,
+      "m_Localized": "Bohužel jste naši nabídku nepřijali! My v Diabete chápeme, že reklamní trh je velmi konkurenční, ale doufáme, že v blízké budoucnosti budeme spolupracovat!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948450,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948451,
+      "m_Localized": "Řekněte nám více…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948452,
+      "m_Localized": "Nepřijali jste naši zlatou smlouvu :o To je velmi znepokojující. Nejde o vás, ale o nás. Příště se vám pokusíme nabídnout lepší podmínky.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948456,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948457,
+      "m_Localized": "Nestihli jste to",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948458,
+      "m_Localized": "Je nám líto, že vám musíme oznámit, že je příliš pozdě na přijetí naší zlaté smlouvy! ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948459,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948460,
+      "m_Localized": "máme problém -_-",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948461,
+      "m_Localized": "Vyskytl se problém Anone >.< Nesplnili jste požadavky naší smlouvy! Zásady diabetu mi bohužel zakazují dát vám vaši odměnu... Nebojte se! Jsme si jisti, že příště vše dokončíte včas!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948462,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948463,
+      "m_Localized": "Znovu už ne… ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948464,
+      "m_Localized": "Špatné zprávy. Opět se vám nepodařilo dokončit úkoly včas! To je obrovský problém! Prosím, berte tuto záležitost vážně, protože s vámi opravdu chceme spolupracovat!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948465,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948466,
+      "m_Localized": "WOW! To je ÚŽASNÉ! ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948467,
+      "m_Localized": "Páni! Skvělá práce Anone! My v Diabete jsme se rozhodli tě ocenit za tvůj dlouhodobý závazek vůči našemu konglomerátu! To je obrovské!\nJako zvláštní poděkování vám posíláme tajný kód diabetu. Vložte jej do místního dávkovače chleba a získejte zdarma sladké brambůrky!\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948468,
+      "m_Localized": "annafrompr@diabete.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948469,
+      "m_Localized": "Vy. jste. Skvělý!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948470,
+      "m_Localized": "Vy. Jste. Úžasný!\nGratulujeme! Nyní jste jednou z tváří našeho konglomerátu! Je potěšením být spojován s tak pracovitým sexuálním pracovníkem, jako jste vy! My v Diabete se snažíme mít co nejpestřejší obsazení zaměstnanců a vy jste skutečně jedním z našich klenotů.\nJako vždy na vás čeká speciální cena. Zkontrolujte svůj dávkovač chleba s novým kódem!\n",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948471,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948472,
+      "m_Localized": "Proč?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948473,
+      "m_Localized": "Netuším, proč jste odmítl naši nabídku, ale pokud chcete více peněz, můžeme s tím v budoucnu něco udělat.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948474,
+      "m_Localized": "Jaký máte problém ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948475,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948476,
+      "m_Localized": "No tak kámo. Děláš si srandu? Říkal jsem ti, jak je ta propagační kampaň důležitá! Fajn, jestli nechceš naše peníze, půjdeme za jinou kamerovou děvkou. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948480,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948481,
+      "m_Localized": "Děkujeme, že jste nás nechali na holičkách čuráku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948482,
+      "m_Localized": "Možná je normální ignorovat důležité smlouvy ve vaší zemi, ale tam odkud pocházím, je to nepřijatelné. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948483,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948484,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948485,
+      "m_Localized": "Ztratilo se něco v překladu? Pane, nedokončil jste svou část dohody včas. Je zde nějaký problém, nebo je to něco, co dělají všichni Američané? ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948486,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948487,
+      "m_Localized": "selhal jsi, žádné peníze ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948488,
+      "m_Localized": "Američané nás opět zklamali. Žádné slíbené peníze pro vás, jasný? ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948489,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948490,
+      "m_Localized": "Moc pěkné, pěkné",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948491,
+      "m_Localized": "Páni! Pracujeme spolu už nějakou dobu, co? V té době byl dokončen jeden z mých domů. Jsme vděční za vaši pomoc, takže od této chvíle můžete očekávat určité zvýšení nabízené odměny.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948492,
+      "m_Localized": "hozuhiyi@kitty.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948493,
+      "m_Localized": "Moc děkujeme!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 104700641518948494,
+      "m_Localized": "Jsme vám moc vděční. Kdyby nebylo vás, byli bychom jen milionáři. No, nejspíš něco vymyslíme, ale vy jsi stále součástí tohoto úspěchu. Posíláme vám něco speciálního!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116727360543133696,
+      "m_Localized": "staffsupport@cocktwitch.ic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116727360564105216,
+      "m_Localized": "URGENTNÍ – Nová úžasná příležitost pro vás!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116727360564105217,
+      "m_Localized": "Vážený profesionální sexuální pracovníku\r\n\r\nNáš oficiální partner cocktracts.ic nás informoval, že je ohromen vaším výkonem a rádi by s vámi začali spolupracovat.\r\nNyní můžete přijímat reklamní smlouvy od mnoha skvělých společností, které potřebují vaši pomoc při šíření svých zpráv!\r\nPřipojte se k nám a nezapomeňte se podívat na cocktracts.ic/help pro více informací!\r\n\r\ns pozdravem\r\nPodpora CockTwitch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310671483371249664,
+      "m_Localized": "bigdaddyhurt1177@gooblygook.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919196
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 310671483383832576,
+      "m_Localized": "Viděl jsem tvůj účet :)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919197
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 310671483383832577,
+      "m_Localized": "Ahoj kámo. \nNašel jsem tvůj účet kamaráde. Dobré věci. Měl jsem nějaké problémy vás kontaktovat, ale nějak se mi to podařilo :) Chcete prodat svého sexbota? Nikdy jsem neviděl takový model a jsem něco jako sběratel. Jsem ochoten vám za to dát 10k snadno. Pokud to nechceš prodat, žádný stres :) Jsem sympaťák, takže se nemusíš bát, že tě budu plácat, stačí si tu přátelsky popovídat. Jen si dávej pozor kámo :) ne každý je tak čistá duše jako já. \n\nNashledanou :)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919198
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 312742190846566400,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919199
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 312742190871732224,
+      "m_Localized": "Děkuji, věrný… jsi jeden z nás…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919200
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 312742190871732225,
+      "m_Localized": "Udělal jsi dobře, vojáku…\r\nNastal čas…\r\nTímto vás zvu na naši tajnou blogovou stránku...\r\nJe to pro vás velká čest…\r\nDozvíte se o našich motivech... plánech... našich domácích amerických chilli receptech...\r\nBrzy přijímáme opatření… pokud se toho chcete zúčastnit, je to vaše jediná šance…\r\n{0}! (Toto je hypertextový odkaz. Chcete-li se připojit k našemu webu, musíte kliknout na modrý text \r\nblog. Vysvětluji to proto, že někteří lidé jsou z toho z nějakého důvodu zmatení. Poté musíte zadat uživatelské jméno a heslo)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919201
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315644327821828096,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919202
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315644327838605312,
+      "m_Localized": "Aktualizace postupu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919203
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315644327838605313,
+      "m_Localized": "Ahoj krajané!\r\nNa našem blogu je k dispozici nový příspěvek! Zkontrolujte to prosím!\r\n{0}\r",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919204
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315654505891880960,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919205
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315654505891880961,
+      "m_Localized": "Důležitý příspěvek",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919206
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315654505891880962,
+      "m_Localized": "Velmi důležitý příspěvek. Prosím přečtěte si to. Na tom závisí bezpečnost našeho projektu. {0}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919207
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315942475156938752,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919208
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315942475182104576,
+      "m_Localized": "Pojďte si přečíst…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919209
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315942475182104577,
+      "m_Localized": "Je na čase. Dnešní den představuje novou kapitolu v naší věci… {0}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919210
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315999042204065792,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919211
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315999042225037312,
+      "m_Localized": "Pokrok v misi a dezinformace",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919212
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 315999042225037313,
+      "m_Localized": "Pojďte přátelé. Vyšel nový příspěvek na blogu, ve kterém jsem napsal vše o našem současném pokroku a další. {0}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919213
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316015139867320320,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919214
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316015139892486144,
+      "m_Localized": "Velký průlom!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919215
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316015139892486145,
+      "m_Localized": "Velmi důležitá zpráva pro všechny! Byla mi nabídnuta velká nabídka pomoci naší věci! Podívejte se na {0}, kde se dozvíte více…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919216
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316035182550310912,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919217
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316035182550310913,
+      "m_Localized": "hi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919218
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316035182550310914,
+      "m_Localized": "To jsem já, admin. Tento e-mail jsem musel trvale převzít z důvodů, které vysvětlím v příspěvku na blogu.\r\nI když jste mi pomohli, doufám, že budete stále sledovat naši věc na blogu a zapojit se do komentářů. Pamatujte, že můžete změnit názor, kdykoli budete chtít. \r\nPodívejte se prosím na poslední příspěvek, stalo se něco velkého. {0}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919219
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316074411162591232,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919220
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316074411162591233,
+      "m_Localized": "Postup mise a změny v našich strukturách",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919221
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316074411162591234,
+      "m_Localized": "Pojďte přátelé. Vyšel nový příspěvek na blogu, ve kterém jsem napsal vše o našem současném pokroku a další. {0}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919222
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316090590644133888,
+      "m_Localized": "sksksksksk@pro.ic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919223
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316090590644133889,
+      "m_Localized": "Přestávka našeho projektu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124919224
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316090590644133890,
+      "m_Localized": "Z bezpečnostních důvodů musím naše aktivity prozatím pozastavit. {0}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569124919225
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 307198408134680
+            },
+            {
+              "id": 307198408134681
+            },
+            {
+              "id": 307198408134684
+            },
+            {
+              "id": 73617387311468544
+            },
+            {
+              "id": 73617389966462976
+            },
+            {
+              "id": 73646486427930624
+            },
+            {
+              "id": 73646487715581952
+            },
+            {
+              "id": 312742190871732225
+            },
+            {
+              "id": 315644327838605313
+            },
+            {
+              "id": 315654505891880962
+            },
+            {
+              "id": 315942475182104577
+            },
+            {
+              "id": 315999042225037313
+            },
+            {
+              "id": 316015139892486145
+            },
+            {
+              "id": 316035182550310914
+            },
+            {
+              "id": 316074411162591234
+            },
+            {
+              "id": 316090590644133890
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124919195,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Done 26/5/24 -Naibuu\n\n"
+        }
+      },
+      {
+        "rid": 7996671569124919196,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919197,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919198,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919199,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919200,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919201,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919202,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919203,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919204,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919205,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919206,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919207,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919208,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919209,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919210,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919211,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919212,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919213,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919214,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919215,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919216,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919217,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919218,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919219,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919220,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919221,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919222,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919223,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919224,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124919225,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

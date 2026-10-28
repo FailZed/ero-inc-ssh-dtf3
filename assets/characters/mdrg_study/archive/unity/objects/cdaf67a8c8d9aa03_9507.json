@@ -1,0 +1,169 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15129,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Landlord: …\r\nLandlord: What the hell are you doing? Standing before your apartment like an idiot!\r\nLandlord: Did you lose your keys? Just so you know, it’s 20$ for me to have a spare made, so if you want one, you need to pay 300$! \r\nGood thing that it won’t be needed…\r\nYou: Don’t worry Mr Landlord. Everything is fine on my end.\r\nLandlord: Oh yeah? If it’s true, stop acting like a creep and make space! I have some trash to dispose of and you are blocking my way!\r\nThis corridor is wide enough for him to pass through with no trouble, even though he’s holding something huge in his arms. It’s in a trash bag, so I can’t say what it is.\r\nLandlord: You are still standing here? Move away! This piece of shit stove is heavy!\r\nYou: Oh, right, sorry.\n#Landlord.animate(TransparencyTo0,0.4)\nWait a minute. Did he just say ‘stove’?\r\nI was supposed to get one so me and {f_botName} could cook some real meals in our room.\r\nLucky me! After he throws it out, I will go to pick it up!\r\nLandlord: Oya? {{wi}}Oya, Oya?\r\r\n#Landlord.animate(TransparencyTo1,0.4)\nFor some reason, Landlord turned around and walked up to me again…\r\nLandlord: Hmmmm…\r\nF-For some reason, he’s staring at me intensely…\r\nYou: W-What is it? \r\nLandlord: …\r\nHe continues to stare at me, w-what is his problem?\r\nLandlord: Ah, nothing much. I just sensed something.\r\nYou: What did you sense, exactly? \r\nLandlord: I sensed that there’s money to be made nearby…\r\nWhat kind of superpower is that?! \r\nAfter a while, he brought his face closer to mine, inevitably putting most of the weight of the stove he was holding on my chest.\r\nLandlord: *Sniff* *Sniff* *Sniff* *Sniff*\r\nUgh! Disgusting! With his nose all over my cheeks he’s trying to sniff something out like a pig hunting for truffles!\r\nLandlord: Ah, yes. Now I understand.\r\nLandlord: You are interested in the stove I want to throw out, right?\r\nHow did he know?!\r\nLandlord: Oh, don’t act surprised! I’m a man of business, after all! \r\nLandlord: For a small price, I can sell it to you!\r\nDoes he really want me to pay for something he was going to throw out? Is he crazy? I can just wait and get it from the trash can later.\r\nLandlord: You probably thought something like <i>‘ What the Heck?! D–does he really want me to pay for s-something he was going to t-throw out? Is he freaking c-crazy? I can just w-wait and get it from the trash can’</i>. Am I right?\r\nYou: !\r\nLandlord: That stupid look on your face tells me that I’m spot on.\r\nLandlord: It’s true that I wanted to throw out this perfectly functional stove, but if there’s a buyer, that’s no longer the case, hehehe~\r\nLandlord: Here are two options. You can buy the stove for a small price of 200$ or! Before throwing it out, I will go full monkey style on it so that it won’t be usable ever again.\r\nYou: 200$?! That's almost the price of a new one!\r\nLandlord: Listen kiddo, this stove might be old, heavy, not energy efficient or esthetically pleasing, but they don't make them like they used to, you know? You buy one of these new and shiny ones and they will break in a year!\r\nYou: Really?\r\nLandlord: Of course! You can’t even trust the warranty! They will give you 2, maybe 3 years and when you go to them when something breaks they gonna tell you ‘sorry sir, but warranty does not cover this part’!\r\nLandlord: Smart decision would be taking this off my hands- I mean, buying this great, <i>vintage</i> stove from me!\r\nI feel like he’s bullshiting me, but I know for a fact that quality has dropped down in recent years…\r\nYou: Alright, I will buy it…\r\nLandlord: Good decision! How much was it? 250$?\r\nYou: 200$...\r\nLandlord: Ah right, hehe~ Here, hold it for me.\r\nYou: Ugh!{{punch}}\r\nI-It’s really heavy! \r\nLandlord: Now, the money.",
+    "localizedLines": [
+      {
+        "KeyId": 323539812184219648
+      },
+      {
+        "KeyId": 323539812184219649
+      },
+      {
+        "KeyId": 323539812184219650
+      },
+      {
+        "KeyId": 323539812184219651
+      },
+      {
+        "KeyId": 323539812184219652
+      },
+      {
+        "KeyId": 323539812184219653
+      },
+      {
+        "KeyId": 323539812184219654
+      },
+      {
+        "KeyId": 323539812184219655
+      },
+      {
+        "KeyId": 323539812184219656
+      },
+      {
+        "KeyId": 323551477890015232
+      },
+      {
+        "KeyId": 323551477902598144
+      },
+      {
+        "KeyId": 323551477902598145
+      },
+      {
+        "KeyId": 323551477902598146
+      },
+      {
+        "KeyId": 323539812184219657
+      },
+      {
+        "KeyId": 323539812184219658
+      },
+      {
+        "KeyId": 323539812184219659
+      },
+      {
+        "KeyId": 323539812184219660
+      },
+      {
+        "KeyId": 323539812184219661
+      },
+      {
+        "KeyId": 323539812184219662
+      },
+      {
+        "KeyId": 323539812184219663
+      },
+      {
+        "KeyId": 323539812184219664
+      },
+      {
+        "KeyId": 323539812184219665
+      },
+      {
+        "KeyId": 323539812184219666
+      },
+      {
+        "KeyId": 323539812184219667
+      },
+      {
+        "KeyId": 323539812188413952
+      },
+      {
+        "KeyId": 323539812188413953
+      },
+      {
+        "KeyId": 323539812188413954
+      },
+      {
+        "KeyId": 323539812188413955
+      },
+      {
+        "KeyId": 323539812188413956
+      },
+      {
+        "KeyId": 323539812188413957
+      },
+      {
+        "KeyId": 323539812188413958
+      },
+      {
+        "KeyId": 323539812188413959
+      },
+      {
+        "KeyId": 323539812188413960
+      },
+      {
+        "KeyId": 323539812188413961
+      },
+      {
+        "KeyId": 323539812188413962
+      },
+      {
+        "KeyId": 323539812188413963
+      },
+      {
+        "KeyId": 323539812188413964
+      },
+      {
+        "KeyId": 323539812188413965
+      },
+      {
+        "KeyId": 323539812188413966
+      },
+      {
+        "KeyId": 323539812188413967
+      },
+      {
+        "KeyId": 323539812188413968
+      },
+      {
+        "KeyId": 323539812188413969
+      },
+      {
+        "KeyId": 323539812188413970
+      },
+      {
+        "KeyId": 323539812188413971
+      },
+      {
+        "KeyId": 323539812188413972
+      },
+      {
+        "KeyId": 323539812188413973
+      },
+      {
+        "KeyId": 323539812188413974
+      },
+      {
+        "KeyId": 323539812188413975
+      },
+      {
+        "KeyId": 323539812188413976
+      },
+      {
+        "KeyId": 323539812188413977
+      }
+    ]
+  }
+}

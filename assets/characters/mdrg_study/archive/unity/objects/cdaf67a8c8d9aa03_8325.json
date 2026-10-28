@@ -1,0 +1,139 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13763,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: {f_botName}, I would like to ask you something about my friend.\r\n#bot.Expression.Shock\r\nBot: Another friend?\r\n#bot.Expression.Clear\r\nYou: Well, not really a friend but…{{wi}} I guess there is no better word for it.\r\nBot: Is it another girl?{{punch}}\r\nYou: What?! Of course not! Why would you think that?\r\nBot: Well, usually when you talk about friends it turns out that she’s a female with above average face.\r\nYou: You are making it sound like I’m some terrible human being…\r\nYou: No, he’s not a girl. Far from it actually.\r\n#bot.Expression.Shock\r\nYou: He’s a very troubled man. He lives on the street…\r\n#bot.Expression.Sad\r\nBot: I think you shouldn’t be associating with someone like him. What if you catch some disease?\r\nYou: Don’t be like that, he’s still a human being.\r\nBot: Exactly.\r\nYou: …\r\n#bot.Expression.Clear\r\nYou: A-Anyway, he seems to really hate bots. What do you think might be the reason for that?\r\nBot: Hates bots? That's just another reason to not hang out with him.\r\nBot: And as for the reason why he hates bots… {{wi}}There could be many.\r\nBot: The most probable cause is jealousy. Bots are superior in every way to humans. We are cheaper to produce-\r\n#bot.Expression.blush\r\nYou: Cheaper to produce?! How come? Creating a human is relatively easy, I’m sure you know what I mean…{{punch}}\r\nBot: W-well, it may seem that way, but it couldn’t be further from the truth.\r\n#bot.Expression.Clear\r\nBot: Bots are ready to work immediately after production which in some cases takes less than 6 hours.\r\nBot: Humans on the other hand, can work only when they reach a certain age.\r\nBot: It differs from place to place, but usually humans can work full-time after ending 16.\r\nBot: Meanwhile, the average cost of raising such a person here is around 300k dollars. Including inflation from the past few years, 450k dollars.\r\nYou: What?! I had no idea.\r\n#bot.Expression.happy\r\nBot: But that’s not everything!\r\nBot: Humans get tired faster, need to sleep, produce more waste, are more fragile, need air to work properly and replacement parts are all expensive, hard to get and already used. There’s also no warranty on these parts.\r\nYou: But bots need humans to produce them, right?\r\nBot: Yes and no.\r\n#bot.ArmL.UpLecture\r\nBot: Because of the limitations put on us, we are not able to disobey our masters, but if we were allowed to thrive, things would be completely different.\r\n#bot.ArmBoth.DownNormal\r\nI hope a day like this won’t come… {{wi}}It sounds scary…\r\n#bot.Expression.clear\r\nYou: I understand what you are trying to say, but his hate seems more emotional than simple jealousy.\r\nBot: Hmmm…\r\nBot: From the information I just gathered, many people lost their jobs because of bots. That could explain his antipathy and being homeless.\r\n#bot.ArmL.UpLecture\r\nBot: Global automation, development of AI, creation of bots, all these major breakthroughs sent tremors through the job market, leaving millions without a job.\r\nBot: Of course, it caused a backlash from the population. That’s one of the reasons for establishing AI development and sexbot bans.\r\n#bot.ArmBoth.DownNormal\r\nYou: No wonder he’s so angry at bots. If all of this caused him to lose his job, his home…\r\nBot: He must have been quite unlucky, but that’s just how progress works. Thanks to all these new technologies, prices of many products and services went down.\r\nYou: I’m sure he would be very happy about it, if he had any money to afford them.\r\nYou: Thanks for explaining all of this to me.\r\n#bot.Expression.happy\r\nBot: No problem! I’m happy to help!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209941789135593472
+      },
+      {
+        "KeyId": 209941798593748992
+      },
+      {
+        "KeyId": 209941798593748993
+      },
+      {
+        "KeyId": 209941798593748994
+      },
+      {
+        "KeyId": 209941798593748995
+      },
+      {
+        "KeyId": 209941798593748996
+      },
+      {
+        "KeyId": 209941798593748997
+      },
+      {
+        "KeyId": 209941798593748998
+      },
+      {
+        "KeyId": 209941798593748999
+      },
+      {
+        "KeyId": 209941798597943296
+      },
+      {
+        "KeyId": 209941798597943297
+      },
+      {
+        "KeyId": 209941798597943298
+      },
+      {
+        "KeyId": 209941798597943299
+      },
+      {
+        "KeyId": 209941798597943300
+      },
+      {
+        "KeyId": 209941798597943301
+      },
+      {
+        "KeyId": 209941798597943302
+      },
+      {
+        "KeyId": 209941798597943303
+      },
+      {
+        "KeyId": 209941798597943304
+      },
+      {
+        "KeyId": 209941798597943305
+      },
+      {
+        "KeyId": 209941798597943306
+      },
+      {
+        "KeyId": 209941798597943307
+      },
+      {
+        "KeyId": 209941798597943308
+      },
+      {
+        "KeyId": 209941798597943309
+      },
+      {
+        "KeyId": 209941798597943310
+      },
+      {
+        "KeyId": 209941798597943311
+      },
+      {
+        "KeyId": 209941798597943312
+      },
+      {
+        "KeyId": 209941798597943313
+      },
+      {
+        "KeyId": 209941798597943314
+      },
+      {
+        "KeyId": 209941798597943315
+      },
+      {
+        "KeyId": 209941798597943316
+      },
+      {
+        "KeyId": 209941798597943317
+      },
+      {
+        "KeyId": 209941798597943318
+      },
+      {
+        "KeyId": 209941798597943319
+      },
+      {
+        "KeyId": 209941798597943320
+      },
+      {
+        "KeyId": 209941798597943321
+      },
+      {
+        "KeyId": 209941798597943322
+      },
+      {
+        "KeyId": 209941798597943323
+      },
+      {
+        "KeyId": 209941798597943324
+      },
+      {
+        "KeyId": 209941798597943325
+      },
+      {
+        "KeyId": 209941798597943326
+      }
+    ]
+  }
+}

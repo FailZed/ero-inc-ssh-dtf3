@@ -1,0 +1,2142 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_fi",
+  "m_LocaleId": {
+    "m_Code": "fi"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 8363390524344257481
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Yritä sanoa hänen nimensä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655352
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Puhu hänelle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655353
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Koita hänelle soittamista",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655354
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Koita hänelle puhumista",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655355
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Sano hei",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655356
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Tunnen oudon halun puhua hänelle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655357
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Puhutaan hänen kanssaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655358
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Mihin piilotan hänet",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655359
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Katsotaan bottia",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655360
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "Yritä kommunikoida",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655361
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "Entä vuokrani?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655362
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Olen huolissani...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655363
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "Mikä se oli?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655364
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Kuinka paljon hän on arvoinen?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655365
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Seksielämäni",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655366
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Puhu botin kanssa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655367
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Puhu botin kanssa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655368
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Puhu botin kanssa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655369
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Kysy häneltä huoneestani",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655370
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Ihmettelen mitä hän ajattelee minusta...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655371
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Ehkä hän osaa laskea?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655372
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Kysy häneltä kuinka ansaita nopeasti rahaa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655373
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Kysy häneltä säästä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655374
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Kysy häneltä, mitä hän ajattelee minun...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655375
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "Entä se kahvijuttu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655376
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655377
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Hän saa minut raivostumaan...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655378
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Hän on ärsyttävä...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655379
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Yritetään puhua hänelle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655380
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Keskustele vähän",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655381
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Puhu hänen kanssaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655382
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Pyydä häntä puhumaan kanssasi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655383
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Pyydä häntä puhumaan lempeästi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655384
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Olen tylsistynyt…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655385
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Vietetään aikaa hänen kanssaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655386
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Jutellaan!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655387
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Kysy botilta eksistentiaalisia kysymyksiä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655388
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Kysy häneltä jostain merkityksettömästä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655389
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Kysy häneltä politiikasta",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655390
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Kysy häneltä kaiken kärsimyksen lähteestä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655391
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Olen innostunut pelaamaan pelejä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655392
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Pelataan korteilla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655393
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "On sanaketjun aika!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655394
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "On vähän myöhäistä, mutta haluan puhua hänen kanssaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655395
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": " Luulen, että botti haluaa puhua…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655396
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Kerro hänelle, että rakastat häntä!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655397
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Flirttaile botin kanssa <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655398
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Minun pitäisi olla mukavampi häntä kohtaan...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655399
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Kysy hänen tunteistaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655400
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Onko seksibotilla kiinnostuksen kohteita?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655401
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Tuleeko seksibotille koskaan nälkä?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655402
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Haluan koskettaa häntä...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655403
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Unohdinko jotain?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655404
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "Tietoja botin älykkyydestä...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655405
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Voiko botti pelata shakkia?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655406
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Pitäisikö minun kokeilla toista peliä?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655407
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Luulen tietäväni, missä pelissä voin voittaa hänet...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655408
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Botti näyttää oudolta...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655409
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Ihmettelen, mitä hän tuntee minua kohtaan…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655410
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Bot näyttää olevan syvästi ajatuksissa...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655411
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Luulen, että hän haluaa minulta jotain",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655412
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Nyt kun hänellä on molemmat jalat...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655413
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": " Minun pitäisi kysyä botilta ulkona menemisen riskeistä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655414
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Minun täytyy kysyä mahdollisuudesta mennä ulos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655415
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655416
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "Tietoja seksiboteista",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655417
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Ehkä hän kuitenkin osaa puhua?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655418
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Jutellaan taas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655419
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Jokin tuntuu pahalta…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655420
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Mitä mieltä hän on lemmikeistä?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655421
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Minun pitäisi kutsua hänet treffeille",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655422
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Haluan katsoa elokuvan hänen kanssaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655423
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Mikä tuo outo haju on?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655424
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Kysy Halloween-koristeista",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655425
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "Entä se suloinen hämähäkkipehmo?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655426
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Minun pitäisi kysyä häneltä, voiko Shanice tulla luokseen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655427
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "Entä karaoke?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655428
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655429
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Kysy häneltä, mitä tehdä kassalle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655430
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Yritä puhua hänelle uudelleen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655431
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Kysy Melissasta ja hänen \"puuttuneista\" osistaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655432
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Keskustele kulkurien suhtautumisesta boteihin",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655433
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Kysy häneltä, miltä hänestä tuntuu korjauksen jälkeen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655434
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Katso uutisia käyttäjän {f_botName} kanssa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257481
+          },
+          {
+            "rid": 7996671569124655435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Minkä supervoiman haluaisit?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655436
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Toinen kauhutarina",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Mitä teet, kun olen poissa?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Jos saisit työpaikan, mikä se olisi?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655439
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "Haluaisitko muuttua ihmiseksi?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655440
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Kosto vuokranantajalle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655441
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Kysy häneltä, kuinka käsitellä ongelmallista naapuria",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Mitä luulet tapahtuvan kuoleman jälkeen?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Onko sinulla suunnitelma zombi-apokalypsin varalta?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655444
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Kokeillaan roolipeliä",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655445
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Löytääkö Annalie koskaan poikaystävää?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655446
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569124655352,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655353,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655354,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✓\r\n"
+        }
+      },
+      {
+        "rid": 7996671569124655355,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✓\r\n"
+        }
+      },
+      {
+        "rid": 7996671569124655356,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✓\r\n"
+        }
+      },
+      {
+        "rid": 7996671569124655357,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655358,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655359,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655360,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655361,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655362,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655363,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655364,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655365,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655366,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655367,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655368,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655369,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655370,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655371,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655372,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655373,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655374,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655375,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655376,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655377,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655378,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✓\r\n"
+        }
+      },
+      {
+        "rid": 7996671569124655379,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✓"
+        }
+      },
+      {
+        "rid": 7996671569124655380,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655381,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655382,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655383,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655384,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655385,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655386,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655387,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655388,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655389,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655390,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655391,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655392,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655393,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655394,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655395,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655396,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655397,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655398,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655399,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655400,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655401,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655402,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655403,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655404,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655405,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655406,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655407,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655408,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655409,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655410,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655411,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655412,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655413,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655414,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655415,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655416,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655417,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655418,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655419,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655420,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655421,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655422,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655423,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655424,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655425,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655426,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655427,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655428,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655429,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655430,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655431,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655432,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655433,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655434,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655435,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655436,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655437,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655438,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655439,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655440,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655441,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655442,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655443,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655444,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655445,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124655446,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 8363390524344257481,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

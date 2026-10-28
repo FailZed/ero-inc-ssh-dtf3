@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16390,
+  "indentLevel": 2,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.clear\r\n#bot.Expression.Happy \r\nBot: Welcome back! Did you talk with Melissa?\r\nYou: I did.\r\nBot: And?\r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nYou: We decided to part ways. Forever.\r\nBot: What do you mean?\r\nYou: I thought that she could be a good friend for you after I’m gone, but I was wrong.\r\nBot: What happened? Did she insult you again?\r\nYou: Something like that. You should stay away from her. She’s not someone you want to deal with.\r\nBot: Alright. {{wi}}If you say so…\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473600727574372352
+      },
+      {
+        "KeyId": 473600727574372353
+      },
+      {
+        "KeyId": 473600727574372354
+      },
+      {
+        "KeyId": 473600727574372355
+      },
+      {
+        "KeyId": 473600727574372356
+      },
+      {
+        "KeyId": 473600727574372357
+      },
+      {
+        "KeyId": 473600727574372358
+      },
+      {
+        "KeyId": 473600727574372359
+      },
+      {
+        "KeyId": 473600727574372360
+      }
+    ]
+  }
+}

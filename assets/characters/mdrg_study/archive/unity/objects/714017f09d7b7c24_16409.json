@@ -1,0 +1,1168 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2295
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 33906753536
+  },
+  "m_Name": "",
+  "_rig": {
+    "SubRigs": [
+      {
+        "Name": "Hair",
+        "Input": [
+          {
+            "SourceId": "ParamHeadZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 50.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamHeadX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 30.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamHeadY",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 10.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 50.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 30.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamHeadpatX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 10.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamHairPhysicsBaseToShort",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 2.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "ParamHairPhysicsShortToMid",
+            "ParticleIndex": 2,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "ParamHairPhysicsMidToLong",
+            "ParticleIndex": 3,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 6.0
+            },
+            "Mobility": 0.8999999761581421,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 12.0
+            },
+            "Mobility": 0.8999999761581421,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 18.0
+            },
+            "Mobility": 0.8999999761581421,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 6.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 60.0,
+            "Minimum": -60.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "head - body",
+        "Input": [
+          {
+            "SourceId": "ParamHeadX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 60.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamHeadZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 60.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyFeedback",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 40.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamChestX",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 3.4000000953674316
+            },
+            "Mobility": 0.25999999046325684,
+            "Delay": 0.699999988079071,
+            "Acceleration": 1.2400000095367432,
+            "Radius": 3.4000000953674316
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 5.0,
+            "Minimum": -5.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "BodyAccessoryPhysics",
+        "Input": [
+          {
+            "SourceId": "ParamBodyZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 30.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamHeadX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 50.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamChestX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 20.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamBodyAccessoryPhysics",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 4.0
+            },
+            "Mobility": 0.8999999761581421,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 4.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 45.0,
+            "Minimum": -45.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "BoobLX",
+        "Input": [
+          {
+            "SourceId": "ParamBodyZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamChestX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 60.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 20.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamPhysicsBoobXL",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 6.099999904632568
+            },
+            "Mobility": 0.8899999856948853,
+            "Delay": 0.9900000095367432,
+            "Acceleration": 2.180000066757202,
+            "Radius": 6.099999904632568
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 20.0,
+            "Minimum": -20.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "BoobRX",
+        "Input": [
+          {
+            "SourceId": "ParamBodyZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamChestX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 60.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 20.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamPhysicsBoobXR",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 6.099999904632568
+            },
+            "Mobility": 0.8899999856948853,
+            "Delay": 0.9900000095367432,
+            "Acceleration": 2.180000066757202,
+            "Radius": 6.099999904632568
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 20.0,
+            "Minimum": -20.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "BoobLY",
+        "Input": [
+          {
+            "SourceId": "ParamBodyY",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 60.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamPhysicsBoobXL",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 50.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamPhysicsBoobYL",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 5.0
+            },
+            "Mobility": 0.8999999761581421,
+            "Delay": 0.800000011920929,
+            "Acceleration": 1.5,
+            "Radius": 5.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "BoobRY",
+        "Input": [
+          {
+            "SourceId": "ParamBodyY",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 60.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamPhysicsBoobYR",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 50.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamPhysicsBoobYR",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 5.0
+            },
+            "Mobility": 0.8999999761581421,
+            "Delay": 0.800000011920929,
+            "Acceleration": 1.5,
+            "Radius": 5.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "saliva",
+        "Input": [
+          {
+            "SourceId": "ParamHeadX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 15.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamBodyX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 5.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          },
+          {
+            "SourceId": "ParamToungeX",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 50.0,
+            "SourceComponent": 2,
+            "IsInverted": 1
+          },
+          {
+            "SourceId": "ParamHeadZ",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 1.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamSalivaPhysics",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 5.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 3.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 1.5,
+            "Radius": 3.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "Pupil",
+        "Input": [
+          {
+            "SourceId": "ParamEyeOpen",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 100.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamPupilWiggle",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 3.0
+            },
+            "Mobility": 0.949999988079071,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 1.5,
+            "Radius": 3.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 0.0,
+            "Minimum": -10.100000381469727,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 0.0,
+            "Minimum": -13.899999618530273,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "Wiggle",
+        "Input": [
+          {
+            "SourceId": "ParamEyeOpen",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 100.0,
+            "SourceComponent": 0,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "ParamEarsWiggle",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 1.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 1.0,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 0.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 6.099999904632568
+            },
+            "Mobility": 0.6899999976158142,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 1.5,
+            "Radius": 6.099999904632568
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": 0.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 0.0,
+            "Minimum": -13.899999618530273,
+            "Default": 0.0
+          }
+        }
+      },
+      {
+        "Name": "Tail",
+        "Input": [
+          {
+            "SourceId": "ParamTailWiggle",
+            "ScaleOfTranslation": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 0.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Output": [
+          {
+            "DestinationId": "Param_Angle_Rotation_1_TailMain",
+            "ParticleIndex": 1,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_2_TailMain",
+            "ParticleIndex": 2,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_3_TailMain",
+            "ParticleIndex": 3,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_4_TailMain",
+            "ParticleIndex": 4,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_5_TailMain",
+            "ParticleIndex": 5,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_6_TailMain",
+            "ParticleIndex": 6,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_7_TailMain",
+            "ParticleIndex": 7,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_8_TailMain",
+            "ParticleIndex": 8,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          },
+          {
+            "DestinationId": "Param_Angle_Rotation_9_TailMain",
+            "ParticleIndex": 9,
+            "TranslationScale": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "AngleScale": 50.0,
+            "Weight": 100.0,
+            "SourceComponent": 2,
+            "IsInverted": 0
+          }
+        ],
+        "Particles": [
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.800000011920929,
+            "Acceleration": 1.0,
+            "Radius": 4.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 6.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 12.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 18.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 24.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 30.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 36.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 42.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 48.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 54.0
+            },
+            "Mobility": 0.800000011920929,
+            "Delay": 0.8999999761581421,
+            "Acceleration": 0.8500000238418579,
+            "Radius": 6.0
+          },
+          {
+            "InitialPosition": {
+              "x": 0.0,
+              "y": 64.0
+            },
+            "Mobility": 0.949999988079071,
+            "Delay": 1.0,
+            "Acceleration": 1.0,
+            "Radius": 10.0
+          }
+        ],
+        "Normalization": {
+          "Position": {
+            "Maximum": 10.0,
+            "Minimum": -10.0,
+            "Default": 0.0
+          },
+          "Angle": {
+            "Maximum": 70.0,
+            "Minimum": -70.0,
+            "Default": 0.0
+          }
+        }
+      }
+    ],
+    "Gravity": {
+      "x": 0.0,
+      "y": -1.0
+    },
+    "Wind": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "Fps": 60.0
+  }
+}

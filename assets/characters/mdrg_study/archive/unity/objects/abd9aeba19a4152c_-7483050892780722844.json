@@ -1,0 +1,4601 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Polyglot_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 3020549575994940229
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 907575955456,
+      "m_Localized": "cs_CZ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907601121280,
+      "m_Localized": "Czech",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1066867232768,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315585,
+      "m_Localized": "Třída",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315586,
+      "m_Localized": "Smazat postavu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315587,
+      "m_Localized": "Nová postava",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315588,
+      "m_Localized": "Umělá inteligence",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315589,
+      "m_Localized": "Mimozemšťan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315590,
+      "m_Localized": "Klon ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315591,
+      "m_Localized": "Kyborg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315592,
+      "m_Localized": "Božstvo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315593,
+      "m_Localized": "Démon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315594,
+      "m_Localized": "Démonka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315595,
+      "m_Localized": "Drak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315596,
+      "m_Localized": "Draci",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315597,
+      "m_Localized": "Duch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315598,
+      "m_Localized": "Bůh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315599,
+      "m_Localized": "Bohové",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315600,
+      "m_Localized": "Bohyně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315601,
+      "m_Localized": "Mág",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315602,
+      "m_Localized": "Lékař",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315603,
+      "m_Localized": "Příšera",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315604,
+      "m_Localized": "Ninja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315605,
+      "m_Localized": "Pirát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315606,
+      "m_Localized": "Kněz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315607,
+      "m_Localized": "Princ ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315608,
+      "m_Localized": "Princezna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315609,
+      "m_Localized": "Robot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315610,
+      "m_Localized": "Kostlivec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315611,
+      "m_Localized": "Odstřelovač",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315612,
+      "m_Localized": "Voják",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315613,
+      "m_Localized": "Zloděj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315614,
+      "m_Localized": "Válečník",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315615,
+      "m_Localized": "Kouzelník",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315616,
+      "m_Localized": "Zombie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315617,
+      "m_Localized": "Zombíci",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315618,
+      "m_Localized": "První místo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315619,
+      "m_Localized": "Pozice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315620,
+      "m_Localized": "Druhé místo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315621,
+      "m_Localized": "Třetí místo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315622,
+      "m_Localized": "Hořící",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315623,
+      "m_Localized": "Kritický",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315624,
+      "m_Localized": "Mrtvý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315625,
+      "m_Localized": "Podchlazený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315626,
+      "m_Localized": "Otrávený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315627,
+      "m_Localized": "Zpomalený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315628,
+      "m_Localized": "Ochromený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315629,
+      "m_Localized": "V bezvědomí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315630,
+      "m_Localized": "Bez zranění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315631,
+      "m_Localized": "Vlhký",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315632,
+      "m_Localized": "Zraněný",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315633,
+      "m_Localized": "Velký",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315634,
+      "m_Localized": "Obrovský",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315635,
+      "m_Localized": "Malý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315636,
+      "m_Localized": "Maličký",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315637,
+      "m_Localized": "Vzduch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315638,
+      "m_Localized": "Země",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315639,
+      "m_Localized": "Oheň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315640,
+      "m_Localized": "Kov",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315641,
+      "m_Localized": "Voda",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315642,
+      "m_Localized": "Sázka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315643,
+      "m_Localized": "Vyřadit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315644,
+      "m_Localized": "Jackpot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315645,
+      "m_Localized": "Maximálně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315646,
+      "m_Localized": "Minimálně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315647,
+      "m_Localized": "Brnění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315648,
+      "m_Localized": "Šíp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315649,
+      "m_Localized": "Šípy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907605315650,
+      "m_Localized": "Deskovka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509888,
+      "m_Localized": "Bomba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509889,
+      "m_Localized": "Kniha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509890,
+      "m_Localized": "Boty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509891,
+      "m_Localized": "Luk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509892,
+      "m_Localized": "Karta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509893,
+      "m_Localized": "Karty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509894,
+      "m_Localized": "Truhla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509895,
+      "m_Localized": "Magický",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509896,
+      "m_Localized": "Rezavý ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509897,
+      "m_Localized": "Dýka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509898,
+      "m_Localized": "Kostka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509899,
+      "m_Localized": "Kostky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509900,
+      "m_Localized": "Dveře",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509901,
+      "m_Localized": "Rukavice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509902,
+      "m_Localized": "Klenot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509903,
+      "m_Localized": "Dárek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509904,
+      "m_Localized": "Dárky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509905,
+      "m_Localized": "Rukavice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509906,
+      "m_Localized": "Střelná zbraň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509907,
+      "m_Localized": "Kladivo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509908,
+      "m_Localized": "Helma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509909,
+      "m_Localized": "Klíč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509910,
+      "m_Localized": "Nůž",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509911,
+      "m_Localized": "Zámek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509912,
+      "m_Localized": "Láska",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509913,
+      "m_Localized": "Kulomet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509914,
+      "m_Localized": "Magie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509915,
+      "m_Localized": "Pistole",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509916,
+      "m_Localized": "Úkol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509917,
+      "m_Localized": "Hodnost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509918,
+      "m_Localized": "Útočná puška",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509919,
+      "m_Localized": "Raketomet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509920,
+      "m_Localized": "RPG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509921,
+      "m_Localized": "Svitek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509922,
+      "m_Localized": "Štít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509923,
+      "m_Localized": "Štíty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509924,
+      "m_Localized": "Energetický štít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509925,
+      "m_Localized": "Energetické štíty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509926,
+      "m_Localized": "Brokovnice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509927,
+      "m_Localized": "Odstřelovací puška",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509928,
+      "m_Localized": "Kouzlo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509929,
+      "m_Localized": "Hůl",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509930,
+      "m_Localized": "Meč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509931,
+      "m_Localized": "Poklad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509932,
+      "m_Localized": "Epický",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509933,
+      "m_Localized": "Haraburdí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509934,
+      "m_Localized": "Hůlka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907609509935,
+      "m_Localized": "Dřevo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704192,
+      "m_Localized": "Výška",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704193,
+      "m_Localized": "Brzdy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704194,
+      "m_Localized": "Podvozek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704195,
+      "m_Localized": "Hloubka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704196,
+      "m_Localized": "Palivo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704197,
+      "m_Localized": "Ozubené kolo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704198,
+      "m_Localized": "Ovládání",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704199,
+      "m_Localized": "Rychlost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704200,
+      "m_Localized": "Řízení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704201,
+      "m_Localized": "Zavěšení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704202,
+      "m_Localized": "Kola",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704203,
+      "m_Localized": "Křídla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704204,
+      "m_Localized": "Medaile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704205,
+      "m_Localized": "Bronzová medaile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704206,
+      "m_Localized": "Zlatá medaile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704207,
+      "m_Localized": "Stříbrná medaile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704208,
+      "m_Localized": "Bronz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704209,
+      "m_Localized": "Mince",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704210,
+      "m_Localized": "Zlato",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704211,
+      "m_Localized": "Ingot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704212,
+      "m_Localized": "Platina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704213,
+      "m_Localized": "Stříbro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704214,
+      "m_Localized": "Hrad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704215,
+      "m_Localized": "Jeskyně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704216,
+      "m_Localized": "Katakomby",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704217,
+      "m_Localized": "Hostinec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704218,
+      "m_Localized": "Planeta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704219,
+      "m_Localized": "Země",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704220,
+      "m_Localized": "Vesmír",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704221,
+      "m_Localized": "Vesmírná loď",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704222,
+      "m_Localized": "Příběh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704223,
+      "m_Localized": "Dobrodružství",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704224,
+      "m_Localized": "Kapitola",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704225,
+      "m_Localized": "Stránka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704226,
+      "m_Localized": "Hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704227,
+      "m_Localized": "Vývoj hry",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704228,
+      "m_Localized": "Vývojář",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704229,
+      "m_Localized": "Vytvořeno ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704230,
+      "m_Localized": "Produkce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704231,
+      "m_Localized": "Producent",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704232,
+      "m_Localized": "Vydavatel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704233,
+      "m_Localized": "Ražisér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704234,
+      "m_Localized": "Vedení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704235,
+      "m_Localized": "Asistent",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704236,
+      "m_Localized": "Partner",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704237,
+      "m_Localized": "Senior",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704238,
+      "m_Localized": "Junior",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704239,
+      "m_Localized": "Hlavní technický ředitel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704240,
+      "m_Localized": "Technický ředitel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704241,
+      "m_Localized": "Kreativní režisér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704242,
+      "m_Localized": "Animátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704243,
+      "m_Localized": "Umělec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704244,
+      "m_Localized": "Hudební režisér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704245,
+      "m_Localized": "Design",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704246,
+      "m_Localized": "Programový manažer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704247,
+      "m_Localized": "Projektový manažer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704248,
+      "m_Localized": "Herní design",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704249,
+      "m_Localized": "Herní designér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704250,
+      "m_Localized": "Kód",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704251,
+      "m_Localized": "Programování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704252,
+      "m_Localized": "Programátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704253,
+      "m_Localized": "Programátoři",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704254,
+      "m_Localized": "Vedoucí programátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704255,
+      "m_Localized": "Grafický Designér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704256,
+      "m_Localized": "Technický umělec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704257,
+      "m_Localized": "Konceptový umělec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704258,
+      "m_Localized": "Designér Postav",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704259,
+      "m_Localized": "Umění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704260,
+      "m_Localized": "Umělec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704261,
+      "m_Localized": "Umělci",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704262,
+      "m_Localized": "Design prostředí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704263,
+      "m_Localized": "Designér prostředí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704264,
+      "m_Localized": "Filmový ředitel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704265,
+      "m_Localized": "Filmový animátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704266,
+      "m_Localized": "Umělec rozhraní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704267,
+      "m_Localized": "Skladatel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704268,
+      "m_Localized": "Muzikant",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704269,
+      "m_Localized": "Speciální poděkování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907613704270,
+      "m_Localized": "Speciální poděkování pro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898496,
+      "m_Localized": "Obrázek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898497,
+      "m_Localized": "Obrázky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898498,
+      "m_Localized": "Písmo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898499,
+      "m_Localized": "Písma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898500,
+      "m_Localized": "Soundtrack",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898501,
+      "m_Localized": "Spisovatel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898502,
+      "m_Localized": "Rukopis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898503,
+      "m_Localized": "Scénárista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898504,
+      "m_Localized": "Animace",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898505,
+      "m_Localized": "Animátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898506,
+      "m_Localized": "Dabing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898507,
+      "m_Localized": "Dabér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898508,
+      "m_Localized": "Zvukový designér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898509,
+      "m_Localized": "Zvukový inženýr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898510,
+      "m_Localized": "Zvukové efekty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898511,
+      "m_Localized": "Vizuální efekty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898512,
+      "m_Localized": "Nahrávač ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898513,
+      "m_Localized": "Nahrávač zvuků",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898514,
+      "m_Localized": "Manažer testování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898515,
+      "m_Localized": "Vedoucí testování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898516,
+      "m_Localized": "Tester",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898517,
+      "m_Localized": "Správce databáze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898518,
+      "m_Localized": "3D Modelování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898519,
+      "m_Localized": "Modely",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898520,
+      "m_Localized": "Lokalizace",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898521,
+      "m_Localized": "Překlad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898522,
+      "m_Localized": "Přeložil Polyglot Projekt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898523,
+      "m_Localized": "Akční hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898524,
+      "m_Localized": "Adventura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898525,
+      "m_Localized": "Karetní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898526,
+      "m_Localized": "Příležitostná hrá",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898527,
+      "m_Localized": "Fantasy hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898528,
+      "m_Localized": "Težká hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898529,
+      "m_Localized": "Nezávislé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898530,
+      "m_Localized": "Středověká hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898531,
+      "m_Localized": "Různé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898532,
+      "m_Localized": "Režim více hráčů",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898533,
+      "m_Localized": "Žánr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898534,
+      "m_Localized": "Platformová hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898535,
+      "m_Localized": "Puzzle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898536,
+      "m_Localized": "Kvíz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898537,
+      "m_Localized": "Závodní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898538,
+      "m_Localized": "Retro hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898539,
+      "m_Localized": "Hra na role",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898540,
+      "m_Localized": "Strategie v reálném čase",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898541,
+      "m_Localized": "SCI-FI hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898542,
+      "m_Localized": "Střílečka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898543,
+      "m_Localized": "Simulátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898544,
+      "m_Localized": "Režim jednoho hráče",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898545,
+      "m_Localized": "Sportovní hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898546,
+      "m_Localized": "Strategická hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898547,
+      "m_Localized": "Tahová strategie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898548,
+      "m_Localized": "Obranná hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898549,
+      "m_Localized": "Zařízení {0} nenalezeno.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 907617898550,
+      "m_Localized": "Opouštíte trackovací zónu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898551,
+      "m_Localized": "HMD nenalezeno.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898552,
+      "m_Localized": "Kód chyby:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898553,
+      "m_Localized": "Vyskytla se chyba.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898554,
+      "m_Localized": "Neplatný název.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898555,
+      "m_Localized": "Neplatný CD klíč.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898556,
+      "m_Localized": "Detekovány cheaty!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898557,
+      "m_Localized": "Spojení ztraceno.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898558,
+      "m_Localized": "Tvůj protivník se odpojil.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898559,
+      "m_Localized": "Hráč se odpojil.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898560,
+      "m_Localized": "Tvůj spojenec se odpojil.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898561,
+      "m_Localized": "Nelze se připojit k serveru.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898562,
+      "m_Localized": "Uložený soubor je poškozen.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907617898563,
+      "m_Localized": "Nenalezeny žádné hry.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092800,
+      "m_Localized": "Žádné probíhající hry.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092801,
+      "m_Localized": "Útočit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092802,
+      "m_Localized": "Boost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092803,
+      "m_Localized": "Stavět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092804,
+      "m_Localized": "Nahodit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092805,
+      "m_Localized": "Seslat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092806,
+      "m_Localized": "Činit si nárok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092807,
+      "m_Localized": "Šplhat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092808,
+      "m_Localized": "Zavřít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092809,
+      "m_Localized": "Sbírat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092810,
+      "m_Localized": "Uvařit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092811,
+      "m_Localized": "Vytvořit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092812,
+      "m_Localized": "Skrčit se",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092813,
+      "m_Localized": "Uhnout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092814,
+      "m_Localized": "Řídit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092815,
+      "m_Localized": "Létat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092816,
+      "m_Localized": "Plná rychlost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092817,
+      "m_Localized": "Jít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092818,
+      "m_Localized": "Jdi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092819,
+      "m_Localized": "Poloviční rychlost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092820,
+      "m_Localized": "Vyléčit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092821,
+      "m_Localized": "Skočit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092822,
+      "m_Localized": "Přístát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092823,
+      "m_Localized": "Podívat se",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092824,
+      "m_Localized": "Mixovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092825,
+      "m_Localized": "Otevřít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092826,
+      "m_Localized": "Zvednout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092827,
+      "m_Localized": "Závodit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092828,
+      "m_Localized": "Číst",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092829,
+      "m_Localized": "Nahradit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092830,
+      "m_Localized": "Bežet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092831,
+      "m_Localized": "Utéct",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092832,
+      "m_Localized": "Střílet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092833,
+      "m_Localized": "Plížit se",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092834,
+      "m_Localized": "Točit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092835,
+      "m_Localized": "Sprintovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092836,
+      "m_Localized": "Otáčet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092837,
+      "m_Localized": "Vzlétat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092838,
+      "m_Localized": "Mluvit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092839,
+      "m_Localized": "Hodit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092840,
+      "m_Localized": "Jít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092841,
+      "m_Localized": "Vytrvalost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092842,
+      "m_Localized": "Zkušenostní body",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092843,
+      "m_Localized": "Žena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092844,
+      "m_Localized": "Zdraví",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092845,
+      "m_Localized": "Srdce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092846,
+      "m_Localized": "Srdce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092847,
+      "m_Localized": "Úroveň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092848,
+      "m_Localized": "Vyšší úroveň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092849,
+      "m_Localized": "Životy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092850,
+      "m_Localized": "Muž",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092851,
+      "m_Localized": "Muž",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092852,
+      "m_Localized": "Muži",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092853,
+      "m_Localized": "Oživení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092854,
+      "m_Localized": "Oživení za:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092855,
+      "m_Localized": "Oživit?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092856,
+      "m_Localized": "Oživování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092857,
+      "m_Localized": "Dovednost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092858,
+      "m_Localized": "Bod oživení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092859,
+      "m_Localized": "Transexuál",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092860,
+      "m_Localized": "Žena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092861,
+      "m_Localized": "Ženy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092862,
+      "m_Localized": "Poškození",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092863,
+      "m_Localized": "Kritický zásah",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092864,
+      "m_Localized": "Vedle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092865,
+      "m_Localized": "Úder",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092866,
+      "m_Localized": "Zásahové body",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092867,
+      "m_Localized": "Vedle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092868,
+      "m_Localized": "Poškození",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092869,
+      "m_Localized": "Poškození",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092870,
+      "m_Localized": "Nepřítel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092871,
+      "m_Localized": "Nepřítel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092872,
+      "m_Localized": "Nepřítelé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092873,
+      "m_Localized": "Nepřátelé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092874,
+      "m_Localized": "Inventář",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092875,
+      "m_Localized": "Munice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092876,
+      "m_Localized": "Munice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092877,
+      "m_Localized": "Kulka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092878,
+      "m_Localized": "Kulky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092879,
+      "m_Localized": "Koupit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092880,
+      "m_Localized": "Kapacita inventáře",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092881,
+      "m_Localized": "Upustit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092882,
+      "m_Localized": "Zátěž",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092883,
+      "m_Localized": "Plný inventář",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092884,
+      "m_Localized": "Předmět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092885,
+      "m_Localized": "Klíč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907622092886,
+      "m_Localized": "Posílení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287104,
+      "m_Localized": "Prodat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287105,
+      "m_Localized": "Použít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287106,
+      "m_Localized": "Zbraň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287107,
+      "m_Localized": "Zbraně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287108,
+      "m_Localized": "Víc už toho neuneseš.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287109,
+      "m_Localized": "Buď opatrný",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287110,
+      "m_Localized": "Prosím, buď opatrný.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287111,
+      "m_Localized": "Taktika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287112,
+      "m_Localized": "Cíl",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287113,
+      "m_Localized": "Asistence  ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287114,
+      "m_Localized": "Asistence",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287115,
+      "m_Localized": "Útočit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287116,
+      "m_Localized": "Bonus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287117,
+      "m_Localized": "Zabrat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287118,
+      "m_Localized": "Hotovo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287119,
+      "m_Localized": "Smrt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287120,
+      "m_Localized": "Smrti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287121,
+      "m_Localized": "Bránit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287122,
+      "m_Localized": "Zničit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287123,
+      "m_Localized": "Utéct",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287124,
+      "m_Localized": "Konec ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287125,
+      "m_Localized": "Konec hry!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287126,
+      "m_Localized": "KONEC HRY!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287127,
+      "m_Localized": "Nejvyšší úroveň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287128,
+      "m_Localized": "Nedokončený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287129,
+      "m_Localized": "Zabití",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287130,
+      "m_Localized": "Asistence zabití",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287131,
+      "m_Localized": "Zabití",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287132,
+      "m_Localized": "Zabití",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287133,
+      "m_Localized": "Uzamčeno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287134,
+      "m_Localized": "Prohry",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287135,
+      "m_Localized": "Zápas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287136,
+      "m_Localized": "Mise",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287137,
+      "m_Localized": "Objekty mise",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287138,
+      "m_Localized": "Objekt mise",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287139,
+      "m_Localized": "Násobič",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287140,
+      "m_Localized": "Objekty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287141,
+      "m_Localized": "Pozice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287142,
+      "m_Localized": "Kolo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287143,
+      "m_Localized": "Kola",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287144,
+      "m_Localized": "Kolo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287145,
+      "m_Localized": "Skóre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287146,
+      "m_Localized": "Čas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287147,
+      "m_Localized": "Čas vypršel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287148,
+      "m_Localized": "Turnaj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287149,
+      "m_Localized": "Turnaje",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287150,
+      "m_Localized": "Vítězství",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287151,
+      "m_Localized": "Prohra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287152,
+      "m_Localized": "Byl jsi poražen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287153,
+      "m_Localized": "Poražený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287154,
+      "m_Localized": "Tvůj tým prohrál!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287155,
+      "m_Localized": "Tvůj tým vyhrál!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287156,
+      "m_Localized": "Vítězství",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287157,
+      "m_Localized": "Vítěz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287158,
+      "m_Localized": "Jsi mrtev",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287159,
+      "m_Localized": "Zemřel jsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287160,
+      "m_Localized": "Prohrál jsi!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287161,
+      "m_Localized": "Prohrál jsi!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287162,
+      "m_Localized": "Vyhrál jsi!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287163,
+      "m_Localized": "Vyhrál jsi!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287164,
+      "m_Localized": "Kamera",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287165,
+      "m_Localized": "Obrácený",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287166,
+      "m_Localized": "Normální",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287167,
+      "m_Localized": "Kamera osa X",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287168,
+      "m_Localized": "Kamera osa Y",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287169,
+      "m_Localized": "Tlačítko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287170,
+      "m_Localized": "Klik                                                                  ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287171,
+      "m_Localized": "Mrtvá zóna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287172,
+      "m_Localized": "Dvojklik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287173,
+      "m_Localized": "Táhnout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287174,
+      "m_Localized": "Táhni a pusť",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287175,
+      "m_Localized": "Prst",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287176,
+      "m_Localized": "Ovladač",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287177,
+      "m_Localized": "Gyroskop",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287178,
+      "m_Localized": "Klávesa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287179,
+      "m_Localized": "Klávesnice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287180,
+      "m_Localized": "Myš",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287181,
+      "m_Localized": "Citlivost myši",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287182,
+      "m_Localized": "Zúžení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287183,
+      "m_Localized": "Rotovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287184,
+      "m_Localized": "Přetáčet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907626287185,
+      "m_Localized": "Třepat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481408,
+      "m_Localized": "Rozšířit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481409,
+      "m_Localized": "Výpad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481410,
+      "m_Localized": "Klepnout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481411,
+      "m_Localized": "Toto tlačítko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481412,
+      "m_Localized": "Tato klávesa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481413,
+      "m_Localized": "Naklonit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481414,
+      "m_Localized": "Paže",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481415,
+      "m_Localized": "Paže",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481416,
+      "m_Localized": "Hrudník",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481417,
+      "m_Localized": "Brada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481418,
+      "m_Localized": "Barva",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481419,
+      "m_Localized": "Ucho",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481420,
+      "m_Localized": "Uši",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481421,
+      "m_Localized": "Oko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481422,
+      "m_Localized": "Oči",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481423,
+      "m_Localized": "Chodidla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481424,
+      "m_Localized": "Chodidlo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481425,
+      "m_Localized": "Vlasy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481426,
+      "m_Localized": "Vousy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481427,
+      "m_Localized": "Srst",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481428,
+      "m_Localized": "Vlasy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481429,
+      "m_Localized": "Ruka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481430,
+      "m_Localized": "Ruce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481431,
+      "m_Localized": "Hlava",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481432,
+      "m_Localized": "Boky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481433,
+      "m_Localized": "Noha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481434,
+      "m_Localized": "Nohy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481435,
+      "m_Localized": "Pusa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481436,
+      "m_Localized": "Krk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481437,
+      "m_Localized": "Nos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481438,
+      "m_Localized": "Pleť",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481439,
+      "m_Localized": "Krunýř",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481440,
+      "m_Localized": "Obtížnost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481441,
+      "m_Localized": "Snadná",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481442,
+      "m_Localized": "Těžká",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481443,
+      "m_Localized": "Nemožná",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481444,
+      "m_Localized": "Šílená",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481445,
+      "m_Localized": "Střední",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481446,
+      "m_Localized": "Velmi snadná",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481447,
+      "m_Localized": "Velmi težká",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481448,
+      "m_Localized": "Dolů",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481449,
+      "m_Localized": "vlevo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481450,
+      "m_Localized": "vpravo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481451,
+      "m_Localized": "Nahoru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481452,
+      "m_Localized": "Načíst",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481453,
+      "m_Localized": "Načíst hru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481454,
+      "m_Localized": "Načítám...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481455,
+      "m_Localized": "Prosím čekejte...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481456,
+      "m_Localized": "Zrušit nastavení?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481457,
+      "m_Localized": "Uložit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481458,
+      "m_Localized": "Uložit nastavení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481459,
+      "m_Localized": "Uložit hru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481460,
+      "m_Localized": "Ukládám...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481461,
+      "m_Localized": "Všechny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481462,
+      "m_Localized": "Věk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481463,
+      "m_Localized": "Jste si opravdu jist?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481464,
+      "m_Localized": "Jste si jist?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481465,
+      "m_Localized": "Zpět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481466,
+      "m_Localized": "Hudba v pozadí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481467,
+      "m_Localized": "Storno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481468,
+      "m_Localized": "Zavřít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481469,
+      "m_Localized": "Potvrdit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481470,
+      "m_Localized": "Pokračovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481471,
+      "m_Localized": "Pokračovat?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481472,
+      "m_Localized": "Autoři",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481473,
+      "m_Localized": "Odejít na plochu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481474,
+      "m_Localized": "Odejít na plochu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481475,
+      "m_Localized": "Stáhnutelný obsah",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481476,
+      "m_Localized": "Stáhnout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481477,
+      "m_Localized": "Obsah ke stažení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481478,
+      "m_Localized": "Odejít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481479,
+      "m_Localized": "Odejít?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481480,
+      "m_Localized": "Extra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481481,
+      "m_Localized": "FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481482,
+      "m_Localized": "Galerie umění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481483,
+      "m_Localized": "Nashledanou!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481484,
+      "m_Localized": "Grafika",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481485,
+      "m_Localized": "Nákup v aplikaci",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481486,
+      "m_Localized": "Jazyk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481487,
+      "m_Localized": "Úroveň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481488,
+      "m_Localized": "Mail",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481489,
+      "m_Localized": "Hlavní menu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481490,
+      "m_Localized": "Více",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481491,
+      "m_Localized": "Hudba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907630481492,
+      "m_Localized": "Hudební přehrávač",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675712,
+      "m_Localized": "Nová hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675713,
+      "m_Localized": "Další",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675714,
+      "m_Localized": "Další skladba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675715,
+      "m_Localized": "Ne",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675716,
+      "m_Localized": "NE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675717,
+      "m_Localized": "Nikoliv",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675718,
+      "m_Localized": "OK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675719,
+      "m_Localized": "Pauza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675720,
+      "m_Localized": "Pozastaveno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907634675721,
+      "m_Localized": "Hrát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504832,
+      "m_Localized": "Hrát znova",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504833,
+      "m_Localized": "Stiskněte libovolnou klávesu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504834,
+      "m_Localized": "Stiskněte libovolnou klávesu pro pokračování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504835,
+      "m_Localized": "Stiskněte start",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504836,
+      "m_Localized": "Stiskněte start pro pokračování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504837,
+      "m_Localized": "Předchozí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907760504838,
+      "m_Localized": "Předchozí skladba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699136,
+      "m_Localized": "Cena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699137,
+      "m_Localized": "Zdarma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699138,
+      "m_Localized": "Zakoupit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699139,
+      "m_Localized": "Ukončit hru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699140,
+      "m_Localized": "Opravdu chcete hru ukončit?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699141,
+      "m_Localized": "Ukončít hru?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699142,
+      "m_Localized": "Přehrát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699143,
+      "m_Localized": "Zpět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699144,
+      "m_Localized": "Vrátit se na hlavní menu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699145,
+      "m_Localized": "Vrátit se na hlavní menu ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699146,
+      "m_Localized": "Sdílet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699147,
+      "m_Localized": "Přeskočit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699148,
+      "m_Localized": "Zvuk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699149,
+      "m_Localized": "Děkuji!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699150,
+      "m_Localized": "Odemknout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699151,
+      "m_Localized": "Kvalita obrazu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699152,
+      "m_Localized": "Hlasy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699153,
+      "m_Localized": "Upozornění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699154,
+      "m_Localized": "Vítejte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699155,
+      "m_Localized": "Svět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699156,
+      "m_Localized": "Jistě",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699157,
+      "m_Localized": "Ano",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699158,
+      "m_Localized": "ANO",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699159,
+      "m_Localized": "ltr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699160,
+      "m_Localized": "Čeština",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699161,
+      "m_Localized": "Czech",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699162,
+      "m_Localized": "Přihlášení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699163,
+      "m_Localized": "E-mail",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699164,
+      "m_Localized": "Zapomenuté heslo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699165,
+      "m_Localized": "Heslo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699166,
+      "m_Localized": "Registrace",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699167,
+      "m_Localized": "Pamatujete ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699168,
+      "m_Localized": "Výzva",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699169,
+      "m_Localized": "Mód Výzvy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699170,
+      "m_Localized": "Ko-op",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699171,
+      "m_Localized": "Kooperativní hra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699172,
+      "m_Localized": "Všichni proti všem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699173,
+      "m_Localized": "Nápověda",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699174,
+      "m_Localized": "Instrukce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699175,
+      "m_Localized": "Více hráčů",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699176,
+      "m_Localized": "Hrát po lokální síti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699177,
+      "m_Localized": "Hrát přes síť",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699178,
+      "m_Localized": "Hrát online",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699179,
+      "m_Localized": "Jeden hráč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699180,
+      "m_Localized": "Trénink",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699181,
+      "m_Localized": "Návod",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699182,
+      "m_Localized": "Versus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699183,
+      "m_Localized": "Jméno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699184,
+      "m_Localized": "Jméno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699185,
+      "m_Localized": "Přijmení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699186,
+      "m_Localized": "Přezdívka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699187,
+      "m_Localized": "Nastavení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699188,
+      "m_Localized": "Pokročilé grafické nastavení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699189,
+      "m_Localized": "Antialiasing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699190,
+      "m_Localized": "Bloom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699191,
+      "m_Localized": "Ovládání",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699192,
+      "m_Localized": "Nastavení obtížnosti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699193,
+      "m_Localized": "Zobrazení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699194,
+      "m_Localized": "Pohled z první osoby",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699195,
+      "m_Localized": "Zorné pole",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699196,
+      "m_Localized": "Celá obrazovka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699197,
+      "m_Localized": "Nastavení hratelnosti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699198,
+      "m_Localized": "Nastavení grafiky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699199,
+      "m_Localized": "HUD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699200,
+      "m_Localized": "Hlasitost hudby",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699201,
+      "m_Localized": "Nastavení sítě",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699202,
+      "m_Localized": "Kvalita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699203,
+      "m_Localized": "Rozlišení",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699204,
+      "m_Localized": "Hlasitost efektů",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699205,
+      "m_Localized": "Stín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907764699206,
+      "m_Localized": "Stíny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893440,
+      "m_Localized": "Velikost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893441,
+      "m_Localized": "Nastavení zvuku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893442,
+      "m_Localized": "Hlasitost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893443,
+      "m_Localized": "Rozdělená obrazovka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893444,
+      "m_Localized": "Pohled ze třetí osoby",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893445,
+      "m_Localized": "Nastavení obrazu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893446,
+      "m_Localized": "Kvalita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893447,
+      "m_Localized": "Hlasitost hlasů",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893448,
+      "m_Localized": "Vertikální synchronizace obrazu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893449,
+      "m_Localized": "Režim v okně",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893450,
+      "m_Localized": "Kvalita shaderu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893451,
+      "m_Localized": "Kvalita textur",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893452,
+      "m_Localized": "Vícejádrové vykreslování",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893453,
+      "m_Localized": "Kvalita modelu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893454,
+      "m_Localized": "Širokoúhlý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893455,
+      "m_Localized": "Kvalita efektů",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893456,
+      "m_Localized": "Anizotropní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893457,
+      "m_Localized": "Bilineární",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893458,
+      "m_Localized": "Trilineární",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893459,
+      "m_Localized": "Filtrovací režim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893460,
+      "m_Localized": "Velmi vysoká",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893461,
+      "m_Localized": "Velmi vysoká",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893462,
+      "m_Localized": "Vysoká",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893463,
+      "m_Localized": "Střední",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893464,
+      "m_Localized": "Nízká",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893465,
+      "m_Localized": "Verze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893466,
+      "m_Localized": "Demo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893467,
+      "m_Localized": "Zdarma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893468,
+      "m_Localized": "Plná verze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893469,
+      "m_Localized": "Lite",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893470,
+      "m_Localized": "Premiová verze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893471,
+      "m_Localized": "Shareware",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893472,
+      "m_Localized": "Zkušební verze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893473,
+      "m_Localized": "VR komfortní režim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893474,
+      "m_Localized": "Vyresetovat orientaci HMD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 907768893475,
+      "m_Localized": "Virtuální realita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 907617898549
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

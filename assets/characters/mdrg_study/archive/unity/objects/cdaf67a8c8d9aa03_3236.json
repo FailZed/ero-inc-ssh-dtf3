@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9277,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: I missed you!\nBot: It's been {gv_TimeSinceLastSawBot} minutes since we last interacted!",
+    "localizedLines": [
+      {
+        "KeyId": 191538825783021572
+      },
+      {
+        "KeyId": 191538825783021573
+      }
+    ]
+  }
+}

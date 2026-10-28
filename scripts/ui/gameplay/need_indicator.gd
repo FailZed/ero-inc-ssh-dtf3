@@ -1,27 +1,25 @@
 extends Control
-## A quiet need indicator. The complete value remains available in its tooltip.
+## A compact, always-visible need glyph; the label and exact value remain readable on touch.
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const HUD = preload("res://scripts/ui/gameplay/hud_widgets.gd")
 var kind := "satiety"
 var title := ""
 var metric_title := ""
 var value := 100.0
+var show_caption := true
 
 func _ready() -> void:
-	custom_minimum_size = Vector2(34, 54)
-	mouse_filter = Control.MOUSE_FILTER_PASS
+	custom_minimum_size = Vector2(72, 78)
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 func set_value(amount: float) -> void:
 	value = clampf(amount, 0.0, 100.0)
-	tooltip_text = "%s · %s: %d / 100\nЧем полнее индикатор, тем лучше" % [title, metric_title, roundi(value)]
+	tooltip_text = "%s · %s: %d / 100" % [title, metric_title, roundi(value)]
 	queue_redraw()
 
 func _draw() -> void:
-	var center := Vector2(size.x * 0.5, 17)
 	var color := UI.ORANGE if value < 30.0 else UI.BLUE
-	var radius := 15.0
-	draw_arc(center, radius, -PI * 0.5, PI * 1.5, 48, Color(0.40, 0.58, 0.69, 0.22), 2.0, true)
-	if value > 0.0:
-		draw_arc(center, radius, -PI * 0.5, -PI * 0.5 + TAU * value / 100.0, 48, color, 2.0, true)
-	draw_texture_rect(HUD.icon(kind), Rect2(center - Vector2(8, 8), Vector2(16, 16)), false, color)
-	draw_string(get_theme_default_font(), Vector2(center.x - 26, 50), title, HORIZONTAL_ALIGNMENT_CENTER, 52, 12, UI.MUTED)
+	var icon_size := Vector2(26, 26)
+	draw_texture_rect(HUD.icon(kind), Rect2(Vector2((size.x - icon_size.x) * 0.5, 2), icon_size), false, color)
+	draw_string(get_theme_default_font(), Vector2(0, 49), str(roundi(value)), HORIZONTAL_ALIGNMENT_CENTER, size.x, roundi(17 * UI.text_scale), UI.INK)
+	if show_caption: draw_string(get_theme_default_font(), Vector2(0, 72), title, HORIZONTAL_ALIGNMENT_CENTER, size.x, roundi(13 * UI.text_scale), UI.MUTED)

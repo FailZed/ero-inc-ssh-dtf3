@@ -1,0 +1,1107 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_sl",
+  "m_LocaleId": {
+    "m_Code": "sl"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180683
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Poskusi jo poklicati po imenu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Govori z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Poskusi jo poklicati",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Poskusi se pogovoriti z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Pozdravi jo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Čutim čudno slo po pogovoru z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Pogovorimo se z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Kje naj jo skrijem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Poglejmo robota",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "Poskusite komunicirati",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "Kaj pa moja najemnina?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Skrbi me ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "Kaj je bilo to?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Koliko je vredna?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Moje spolno življenje",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Pogovori se z robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Pogovori se z robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Pogovori se z robotom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Vprašaj jo o moji sobi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Zanima me, kaj si misli o meni ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Mogoče lahko rešuje matematične probleme?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Vprašaj jo, kako hitro zaslužiti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Vprašajte jo o vremenu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Vprašaj jo, kaj si misli o velikosti mojega ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "Kaj pa to s kavo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Ona me razjarji ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Kok je ona nadležna ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Poskusimo govoriti z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Kramljajva",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Pogovori se z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Povej ji, naj se pogovori s tabo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Prosi jo, naj govori nežno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Dolgčas mi je…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Preživimo nekaj časa z njo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Klepetajva!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Zastavite robotu nekaj eksistencialnih vprašanj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Vprašaj jo o nečem nepomembnem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Vprašaj jo o politiki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Vprašaj jo o viru vsega trpljenja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Razpoložen sem za nekaj igric",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Dejva se kartat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "Čas je za besedno verigo!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Kar pozno je že, vendar se želim z njo pogovarjati",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": " Mislim, da se robot želi pogovarjati ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Povej ji, da jo imaš rad!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Spogleduj se z robotom <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Moral bi biti prijaznejši do nje ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Vprašaj jo o njenih čustvih",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Ali ima seksbot kakšne interese?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Ali lahko seksboti postanejo lačni?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Želim se je dotakniti ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Sem kaj pozabil?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "O ravni robotove inteligence ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Ali lahko robot igra šah?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Naj poskusim z drugo igro?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Mislim, da vem v kateri igri jo lahko premagam ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Robot se obnaša nenavadno ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Zanima me, kako se počuti do mene ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Zdi se, da robot globoko misli ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Mislim, da nekaj želi od mene",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Zdaj, ko ima obe nogi ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": " Moral bi vprašati robota o tveganjih, da greva ven",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Moram vprašati o možnosti, da bi šla ven",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "Glede seksbotov",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Mogoče lahko navsezadnje le govori?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Pogovorimo se še enkrat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Nekaj je narobe...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Kakšno je njeno mnenje o hišnih ljubljenčkih?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393681
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Moral bi jo povabiti na zmenek",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Želim si ogledati film z njo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393683
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Kaj je ta čuden vonj?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Vprašajte o okraskih za noč čarovnic",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393685
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "Kaj pa tisti ljubki plišasti pajki?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Moral bi jo vprašati, če lahko pride Shanice",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "Kaj pa karaoke?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393688
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Vprašajte jo, kaj naj stori glede blagajničarke",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393690
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Poskusite se znova pogovoriti z njo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393691
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Vprašajte o Melissi in njenih 'manjkajočih' delih",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393692
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Pogovorite se o potepuhovem čustvu do botov",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393693
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Vprašajte jo, kako se počuti po popravilu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393694
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Glejte novice z {f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180683
+          },
+          {
+            "rid": 7996671569124393695
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Kakšno supermoč bi si želeli?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393696
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Še ena grozljiva zgodba",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393697
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Kaj počneš, ko sem zunaj?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393698
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Če bi lahko dobil službo, kakšna bi bila?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393699
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "Bi se želel spremeniti v človeka?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393700
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Maščevanje najemodajalcu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393701
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Vprašaj jo, kako ravnati s problematičnim sosedom",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393702
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Kaj misliš, da se zgodi po smrti?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393703
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Ali imaš načrt v primeru zombi apokalipse?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393704
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Poskusiva z igro vlog",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393705
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Ali bo Annalie kdaj našla fanta?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393706
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6437392580223180683,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124393681,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/05/2022 17:07:09"
+        }
+      },
+      {
+        "rid": 7996671569124393682,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/05/2022 17:07:09"
+        }
+      },
+      {
+        "rid": 7996671569124393683,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/05/2022 17:07:09"
+        }
+      },
+      {
+        "rid": 7996671569124393684,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/26/2022 03:13:02"
+        }
+      },
+      {
+        "rid": 7996671569124393685,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/26/2022 03:13:02"
+        }
+      },
+      {
+        "rid": 7996671569124393686,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/26/2022 03:13:02"
+        }
+      },
+      {
+        "rid": 7996671569124393687,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:15"
+        }
+      },
+      {
+        "rid": 7996671569124393688,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:15"
+        }
+      },
+      {
+        "rid": 7996671569124393689,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 11/23/2023 17:11:01"
+        }
+      },
+      {
+        "rid": 7996671569124393690,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393691,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393692,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393693,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393694,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393695,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393696,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393697,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393698,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393699,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393700,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393701,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393702,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393703,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393704,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393705,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393706,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

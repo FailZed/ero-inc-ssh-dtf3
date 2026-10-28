@@ -1,0 +1,79 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14015,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Cashier.Base.daily\r\nMelissa: You two…{{wi}} Why did you ask me to come here?\r\nYou: We wanted to hang out with you?\r\n#Cashier.Mouth.open\r\nMelissa: To what?\r\n#Cashier.Mouth.normal\r\nYou: You know, you being our friend and all, we wanted to get to know you better, that’s all.\r\nMelissa: …\r\n#Cashier.Eyes.closed\r\nMelissa: Right. Sorry, I forgot that I agreed to your ridiculous proposition and that we are now friends.\r\n#Cashier.Eyes.normal\r\n#bot.Expression.angry\r\nMelissa: And you. Stop smiling like that, it’s creepy.\r\nYou: That’s a little too far, don’t you think?\r\nMelissa: …\r\n#bot.Expression.clear\r\nMelissa: Perhaps.\r\nMelissa: Anyway, where do you want to hang out?\r\nYou: Uh…{{wi}} I was thinking about just walking around the area.\r\nMelissa: …\r\nMelissa: Really?\r\nMelissa: No wonder you end up with a- {{wi}}never mind that.\r\nYou: You wanted to say something rude again, didn’t you?\r\nMelissa: Walking is not for me, let’s do something different.\r\nBot: Like what?\r\nYou: Sorry, I didn’t prepare anything so I’m clueless where to take you two.\r\nMelissa: Just follow me, I know a place…\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 210014197351702528
+      },
+      {
+        "KeyId": 210014197351702529
+      },
+      {
+        "KeyId": 210014197351702530
+      },
+      {
+        "KeyId": 210014197351702531
+      },
+      {
+        "KeyId": 210014197351702532
+      },
+      {
+        "KeyId": 210014197351702533
+      },
+      {
+        "KeyId": 210014197351702534
+      },
+      {
+        "KeyId": 210014197351702535
+      },
+      {
+        "KeyId": 210014197351702536
+      },
+      {
+        "KeyId": 210014197351702537
+      },
+      {
+        "KeyId": 210014197351702538
+      },
+      {
+        "KeyId": 210014197351702539
+      },
+      {
+        "KeyId": 210014197351702540
+      },
+      {
+        "KeyId": 210014197351702541
+      },
+      {
+        "KeyId": 210014197351702542
+      },
+      {
+        "KeyId": 210014197351702543
+      },
+      {
+        "KeyId": 210014197351702544
+      },
+      {
+        "KeyId": 210014197351702545
+      },
+      {
+        "KeyId": 210014197351702546
+      },
+      {
+        "KeyId": 210014197351702547
+      }
+    ]
+  }
+}

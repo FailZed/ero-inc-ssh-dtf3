@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17902,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: So, how did it go? \r\nYou: We won’t be bothered anymore.\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: That’s great!\r\nBot: What was it even about? \r\nYou: It was just some sad guy. It went pretty easily.\r\nBot: I’m glad it went well.\r\n#bot.Expression.blush\r\nBot: Remember, whenever you are in trouble, you can ask me for help. Just like today.\r\nYou: Sure. \r\n",
+    "localizedLines": [
+      {
+        "KeyId": 498580636215152640
+      },
+      {
+        "KeyId": 498580636215152641
+      },
+      {
+        "KeyId": 498580636215152642
+      },
+      {
+        "KeyId": 498580636215152643
+      },
+      {
+        "KeyId": 498580636215152644
+      },
+      {
+        "KeyId": 498580636215152645
+      },
+      {
+        "KeyId": 498580636215152646
+      },
+      {
+        "KeyId": 498580636215152647
+      }
+    ]
+  }
+}

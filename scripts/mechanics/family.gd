@@ -8,6 +8,11 @@ static func defaults() -> Dictionary:
 	return {"version": 1, "members": {}, "next_id": 1, "imported_births": 0, "budget": 0, "arrears": 0, "spent": 0, "history": []}
 
 static func catalog_error(catalog: Dictionary) -> String:
+	var household: Variant = catalog.get("family_rules",{}).get("household")
+	if not CHECK.fields(household,{"daily_cost":"n","care_interval":"n","support_cost":"n","support_minutes":"n","history_limit":"n"}): return "invalid_family_rules"
+	for key in ["daily_cost","care_interval","support_cost","support_minutes","history_limit"]:
+		if household[key] < 0 or int(household[key]) != household[key] or household[key] > 10080: return "invalid_family_rules"
+	if household.care_interval < 1 or household.support_minutes < 1 or household.history_limit < 1 or household.history_limit > 64: return "invalid_family_rules"
 	var prior := -1
 	for stage in ["infant", "toddler", "child", "teen", "adult"]:
 		var spec: Variant = catalog.get("family_stages", {}).get(stage)
@@ -37,7 +42,7 @@ func _now() -> int:
 func _log(kind: String, id: String, details: Dictionary = {}) -> void:
 	var entry := {"kind": kind, "member": id, "minute": _now(), "details": details.duplicate(true)}
 	sim.state.family.history.append(entry)
-	while sim.state.family.history.size() > 64: sim.state.family.history.pop_front()
+	while sim.state.family.history.size() > int(sim.catalog.family_rules.household.history_limit): sim.state.family.history.pop_front()
 	emit_event("family_" + kind, {"member": id, "details": details})
 
 func _sync_births() -> void:
@@ -87,7 +92,23 @@ func _charge(amount: int) -> bool:
 	sim.state.family.spent += amount
 	return true
 
+func inspect() -> Dictionary:
+	var members: Array = []
+	for member in sim.state.family.members.values():
+		if not "player" in member.get("guardians",member.parents): continue
+		var available: Array = []
+		for id in sim.catalog.family_actions:
+			var spec: Dictionary = sim.catalog.family_actions[id]
+			if member.stage in spec.stages:
+				available.append({"id":id,"label":spec.label,"minutes":spec.minutes,"cost":spec.cost,"energy":spec.energy,"ready_at":int(member.recent.get(id,-10080))+int(sim.catalog.family_rules.household.care_interval)})
+		var milestones: Array = []
+		for milestone in [{"value":25,"label":"Любознательность"},{"value":50,"label":"Уверенность"},{"value":75,"label":"Самостоятельность"}]:
+			milestones.append({"value":milestone.value,"label":milestone.label,"reached":float(member.development) >= int(milestone.value)})
+		members.append({"id":member.id,"name":member.name,"stage":member.stage,"needs":member.needs.duplicate(true),"development":member.development,"milestones":milestones,"assignments":member.assignments.duplicate(true),"actions":available,"at_school":_school(member),"at_home":_at_home(member),"busy":not member.task.is_empty(),"independent_food":member.stage == "adult" or (member.stage == "teen" and float(member.development) >= 50)})
+	return {"members":members,"daily_cost":members.size()*int(sim.catalog.family_rules.household.daily_cost),"budget":sim.state.family.budget,"arrears":sim.state.family.arrears,"description":"Развитие ускоряет обучение. Подростки с развитием от 50 и взрослые сами готовят еду из семейного бюджета; совместное время остаётся важным."}
+
 func execute(operation: String, args: Dictionary) -> Dictionary:
+	if operation == "inspect": return Rules.ok(inspect())
 	var family: Dictionary = sim.state.family
 	if operation == "deposit":
 		var amount := int(args.get("amount", 0))
@@ -117,8 +138,8 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			_log("assignment", id, {"need": need, "caregiver": caregiver})
 		"support":
 			if int(member.support_until) > _now(): return Rules.fail("family_support_active")
-			if not _charge(60): return Rules.fail("insufficient_funds")
-			member.support_until = _now() + 480
+			if not _charge(int(sim.catalog.family_rules.household.support_cost)): return Rules.fail("insufficient_funds")
+			member.support_until = _now() + int(sim.catalog.family_rules.household.support_minutes)
 			_log("support", id)
 		"care": return _care(member, str(args.get("action", "")))
 		_:
@@ -131,7 +152,7 @@ func _care(member: Dictionary, action: String) -> Dictionary:
 	if not _at_home(member): return Rules.fail("family_home_required")
 	if not member.task.is_empty(): return Rules.fail("family_care_in_progress")
 	if _school(member): return Rules.fail("family_member_at_school")
-	if _now() - int(member.recent.get(action, -10080)) < 120: return Rules.fail("family_care_cooldown")
+	if _now() - int(member.recent.get(action, -10080)) < int(sim.catalog.family_rules.household.care_interval): return Rules.fail("family_care_cooldown")
 	if float(sim.state.player.needs.energy) < float(spec.energy): return Rules.fail("insufficient_energy")
 	if not _charge(int(spec.cost)): return Rules.fail("insufficient_funds")
 	member.task = {"caregiver": "player", "action": action, "due": _now() + int(spec.minutes)}
@@ -151,7 +172,10 @@ func _finish_care(member: Dictionary) -> void:
 			return
 	var spec := definition("family_actions", str(task.action))
 	for need in spec.needs: member.needs[need] = minf(100, float(member.needs[need]) + float(spec.needs[need]))
-	member.development = minf(100, float(member.development) + float(spec.get("development", 0)))
+	var previous_development := float(member.development)
+	member.development = minf(100, previous_development + float(spec.get("development", 0)))
+	for threshold in [25,50,75]:
+		if previous_development < threshold and float(member.development) >= threshold: _log("development",str(member.id),{"threshold":threshold})
 	member.recent[str(task.action)] = _now()
 	member.bonds[str(task.caregiver)] = minf(100, float(member.bonds.get(str(task.caregiver), 0)) + 2.0)
 	_release_caregiver(task)
@@ -178,7 +202,7 @@ func _autonomy(member: Dictionary) -> void:
 	var action: String = {"food":"feed", "hygiene":"wash", "rest":"settle", "attention":"play"}[selected]
 	var spec := definition("family_actions", action)
 	if not member.stage in spec.stages: return
-	if _now() - int(member.recent.get(action, -10080)) < 120: return
+	if _now() - int(member.recent.get(action, -10080)) < int(sim.catalog.family_rules.household.care_interval): return
 	var id := str(member.assignments[selected])
 	if id == "player" or not sim.state.social.npcs.has(id): return
 	var npc: Dictionary = sim.state.social.npcs[id]
@@ -228,6 +252,20 @@ func _hour(member: Dictionary) -> void:
 	var automatic: bool = int(member.support_until) > _now() or _school(member)
 	for need in sim.catalog.family_stages[member.stage].decay:
 		member.needs[need] = maxf(0, float(member.needs[need]) - float(sim.catalog.family_stages[member.stage].decay[need]))
+	if not automatic and member.task.is_empty() and (member.stage == "adult" or (member.stage == "teen" and float(member.development) >= 50)) and float(member.needs.food) < 45:
+		var cost := int(sim.catalog.family_actions.feed.cost)
+		var paid := false
+		if "player" in member.get("guardians",member.parents): paid = _charge(cost)
+		else:
+			for guardian in member.get("guardians",member.parents):
+				var npc: Dictionary = sim.state.social.npcs.get(guardian,{})
+				if not npc.is_empty() and int(npc.money) >= cost:
+					npc.money -= cost
+					paid = true
+					break
+		if paid:
+			member.needs.food = minf(100,float(member.needs.food)+float(sim.catalog.family_actions.feed.needs.food))
+			_log("self_care",str(member.id),{"action":"feed","cost":cost})
 	if automatic:
 		for need in ["food", "hygiene", "attention"]: member.needs[need] = minf(100, float(member.needs[need]) + 8)
 	if member.stage in ["teen", "adult"]:
@@ -241,10 +279,10 @@ func _hour(member: Dictionary) -> void:
 		_log("needs_attention", str(member.id))
 	if minute == 840 and int(sim.state.clock.weekday) <= 5 and _now() >= sim.calendar.add_months(int(member.born), 72) and member.stage != "adult":
 		member.school_days += 1
-		member.school_progress = minf(100, float(member.school_progress) + (1.0 if not low else 0.25))
+		member.school_progress = minf(100, float(member.school_progress) + (1.0 if not low else 0.25)*(1.0+float(member.development)/100.0))
 	if minute == 0 and "player" in member.get("guardians", member.parents):
-		if not _charge(6):
-			sim.state.family.arrears += 6
+		if not _charge(int(sim.catalog.family_rules.household.daily_cost)):
+			sim.state.family.arrears += int(sim.catalog.family_rules.household.daily_cost)
 			_log("expenses_due", str(member.id))
 
 static func state_error(state: Dictionary, catalog: Dictionary) -> String:

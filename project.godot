@@ -13,7 +13,7 @@ config_version=5
 config/name="EroInc"
 config/version="0.1.0"
 run/main_scene="uid://dm3iv7c4g8m5g"
-config/features=PackedStringArray("4.7", "Mobile")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -149,7 +149,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/quest_weaver/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/quest_weaver/plugin.cfg", "res://addons/mdrg_study_export/plugin.cfg")
 
 [input]
 
@@ -173,6 +173,5 @@ locale/translations=PackedStringArray("res://translation/dialogic_timeline_trans
 
 [rendering]
 
-rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true

@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 18766,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "I was thinking a lot about whether I should do it or not, but it seems like now is a good time to introduce {f_botName} to my hobby.\r\nFishing isn’t really something that’s popular among girls, but as she said, she’s a little different, so maybe she will like it? \r\nWell, there’s only one way to find out. If she doesn’t we can always just go back home earlier.\r\nYou: Are you excited to go fishing? \r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: Sure!\r\nBot: I never went fishing before so it feels a little adventurous! Besides, I like trying new things.\r\nBot: I’m glad you finally decided to take me with you. \r\nYou: No problem.\r\nI can’t say I don’t feel a little reassured by her words. Having someone so interested in your stuff feels great.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 545643896566177792
+      },
+      {
+        "KeyId": 545643896595537920
+      },
+      {
+        "KeyId": 545643896595537921
+      },
+      {
+        "KeyId": 545643896595537922
+      },
+      {
+        "KeyId": 545643896595537923
+      },
+      {
+        "KeyId": 545643896595537924
+      },
+      {
+        "KeyId": 545643896595537925
+      },
+      {
+        "KeyId": 545643896595537926
+      },
+      {
+        "KeyId": 545643896595537927
+      }
+    ]
+  }
+}

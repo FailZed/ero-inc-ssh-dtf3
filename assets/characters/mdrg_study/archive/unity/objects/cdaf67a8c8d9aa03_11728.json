@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17626,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Policewoman.Face.lookateachother\r\n#Policeman.Face.lookateachother\r\nPoliceman: Come on! Stop wasting your time and confess!\r\n???: B-But I didn’t do it! Why are you doing this?!\r\nPolicewoman: Didn’t you ever hear about quotas? You just got unlucky.\r\nPoliceman: Listen, man. You just got the short end of the stick. It happens. You can be a bitch about it and have another arm broken or just do what we want you to do.\r\n#Policeman.Face.angry\r\n#Policewoman.Face.angry\r\n???: {{punch}}Hey! You! Help me! They are going to torture me!\r\nW-What? What am I supposed to help you?! It’s impossible!\r\nPolicewoman: If you know what’s best for you, you will keep your cellphone in your pocket and move along, citizen.\r\nYou: S-Sure…\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 484446679931543552
+      },
+      {
+        "KeyId": 484446679931543553
+      },
+      {
+        "KeyId": 484446679935737856
+      },
+      {
+        "KeyId": 484446679935737857
+      },
+      {
+        "KeyId": 484446679935737858
+      },
+      {
+        "KeyId": 484446679935737859
+      },
+      {
+        "KeyId": 484446679935737860
+      },
+      {
+        "KeyId": 484446679935737861
+      }
+    ]
+  }
+}

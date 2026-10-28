@@ -1,0 +1,76 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 185
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 36607885312
+  },
+  "m_Name": "",
+  "canvasGroup": {
+    "m_FileID": 0,
+    "m_PathID": 1919
+  },
+  "cookingSongDisplayPrefab": {
+    "prefab": {
+      "m_FileID": 3,
+      "m_PathID": 1614
+    }
+  },
+  "cookingRecipeExecutionEntryPrefab": {
+    "prefab": {
+      "m_FileID": 3,
+      "m_PathID": 1697
+    }
+  },
+  "A_CompoundItemList": {
+    "m_FileID": 0,
+    "m_PathID": 13382
+  },
+  "A_Modifier_Description": {
+    "m_FileID": 0,
+    "m_PathID": 1997
+  },
+  "A_Effects_Description": {
+    "m_FileID": 0,
+    "m_PathID": 1982
+  },
+  "A_Modifier_Buttons": {
+    "m_FileID": 0,
+    "m_PathID": 13554
+  },
+  "A_Song_Name": {
+    "m_FileID": 0,
+    "m_PathID": 1983
+  },
+  "A_Song_DescriptionTextMeshProUGUI": {
+    "m_FileID": 0,
+    "m_PathID": 1968
+  },
+  "A_Song_DescriptionTextMeshProUGUILinkHandler": {
+    "m_FileID": 0,
+    "m_PathID": 12822
+  },
+  "A_Ingredient_Description": {
+    "m_FileID": 0,
+    "m_PathID": 1993
+  },
+  "A_Ingredient_List": {
+    "m_FileID": 0,
+    "m_PathID": 13728
+  },
+  "A_Song_Buttons": {
+    "m_FileID": 0,
+    "m_PathID": 13553
+  },
+  "A_Return_Button": {
+    "m_FileID": 0,
+    "m_PathID": 13566
+  },
+  "A_Help_Button": {
+    "m_FileID": 0,
+    "m_PathID": 13574
+  }
+}

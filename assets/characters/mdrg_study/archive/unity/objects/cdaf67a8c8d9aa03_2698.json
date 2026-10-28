@@ -1,0 +1,59 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 1772.942138671875,
+    "y": 617.46826171875,
+    "width": 184.92999267578125,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 3801,
+  "blockName": "Sleep/Sleep until rested",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 6394
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6393
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2336
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7755
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3717
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2253
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2254
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

@@ -1,0 +1,121 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14028,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: We got the shoes on, what now?\r\nMelissa: There are holes in the ball, you put your fingers in them…\r\nMelissa: Like that.\r\nYou: That looked very skillful.\r\nMelissa: I will throw first, observe…\r\nSTRIKE!{{punch}}\r\nYou: Uh, isn’t that the perfect result?\r\nMelissa: …\r\nMelissa: I was lucky.\r\nMelissa: Now it’s your turn, Anon. \r\nYou: Alright, here I go…\r\nYou: Damn, it went to the side.\r\nMelissa: It’s called the gutter. You have one more throw.\r\nYou: …\r\n#bot.Expression.happy\r\nYou: I got a few, but 5 are still standing.\r\nBot: Good job! \r\n#bot.Expression.clear\r\nMelissa: It’s your turn now, {f_botName}.\r\nBot: I will show you what I got!\r\nBot: …\r\nMelissa: You left one pin.\r\n#bot.Expression.angry\r\nBot: Yes, I can see that!\r\n#bot.Expression.clear\r\nBot: I still have a second throw, right?\r\nMelissa: Yes, you do.\r\nBot: …\r\nYou: Damn, it went into the gutter.{{wi}} No, wait! It bounced out and hit the last pin!\r\n#bot.Expression.veryhappy\r\nBot: Yes! I did it!\r\nMelissa: It doesn’t count.\r\n#bot.Expression.angry\r\nBot: What?! You are making this up so that you will win!\r\nMelissa: Don’t trust me? Check the rules for yourself.\r\nBot: I will!\r\nBot: …\r\n#bot.Expression.sad\r\nBot: You are right…{{wi}} I’m sorry…\r\n#bot.Expression.clear\r\nMelissa: We are not playing for points today, let’s just throw a few times and learn the rules.\r\nYou: Sounds good to me. \r\n",
+    "localizedLines": [
+      {
+        "KeyId": 210014866179612675
+      },
+      {
+        "KeyId": 210014866179612676
+      },
+      {
+        "KeyId": 210014866179612677
+      },
+      {
+        "KeyId": 210014866179612678
+      },
+      {
+        "KeyId": 210014866179612679
+      },
+      {
+        "KeyId": 210014866179612680
+      },
+      {
+        "KeyId": 210014866179612681
+      },
+      {
+        "KeyId": 210014866179612682
+      },
+      {
+        "KeyId": 210014866179612683
+      },
+      {
+        "KeyId": 210014866179612684
+      },
+      {
+        "KeyId": 210014866179612685
+      },
+      {
+        "KeyId": 210014866179612686
+      },
+      {
+        "KeyId": 210014866179612687
+      },
+      {
+        "KeyId": 210014866179612688
+      },
+      {
+        "KeyId": 210014866179612689
+      },
+      {
+        "KeyId": 210014866179612690
+      },
+      {
+        "KeyId": 210014866179612691
+      },
+      {
+        "KeyId": 210014866179612692
+      },
+      {
+        "KeyId": 210014866179612693
+      },
+      {
+        "KeyId": 210014866179612694
+      },
+      {
+        "KeyId": 210014866179612695
+      },
+      {
+        "KeyId": 210014866179612696
+      },
+      {
+        "KeyId": 210014866179612697
+      },
+      {
+        "KeyId": 210014866179612698
+      },
+      {
+        "KeyId": 210014866179612699
+      },
+      {
+        "KeyId": 210014866179612700
+      },
+      {
+        "KeyId": 210014866179612701
+      },
+      {
+        "KeyId": 210014866179612702
+      },
+      {
+        "KeyId": 210014866179612703
+      },
+      {
+        "KeyId": 210014866179612704
+      },
+      {
+        "KeyId": 210014866179612705
+      },
+      {
+        "KeyId": 210014866179612706
+      },
+      {
+        "KeyId": 210014866179612707
+      },
+      {
+        "KeyId": 210014866179612708
+      }
+    ]
+  }
+}

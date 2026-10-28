@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13214,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.ArmBoth.DownNormal\r\nYou: Do you want to go to Annalie?\r\n#bot.Expression.Clear\r\nBot: Yeah! Since the riots ended I never went to visit her.\r\nYou: I went there alone. \r\nYou: During riots her shop got hit pretty hard, but she’s a hardworking girl so her shop is almost back to normal.\r\n#bot.Expression.angry\r\nBot: If only I was there… {{wi}}I would eliminate any threats to her shop.\r\nI’m kinda glad you weren’t there for that reason…\r\nYou: Alright then. Let’s go see her.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 198909616996618240
+      },
+      {
+        "KeyId": 198909616996618241
+      },
+      {
+        "KeyId": 198909616996618242
+      },
+      {
+        "KeyId": 198909616996618243
+      },
+      {
+        "KeyId": 198909616996618244
+      },
+      {
+        "KeyId": 198909616996618245
+      },
+      {
+        "KeyId": 198909616996618246
+      }
+    ]
+  }
+}

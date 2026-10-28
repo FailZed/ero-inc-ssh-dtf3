@@ -161,7 +161,7 @@ func _adjust(id: String, need: String, delta: float) -> void:
 	var needs: Dictionary = actor(id).get("needs",{})
 	if not needs.has(need): return
 	if id=="player": sim.services.character.adjust_need(need,delta)
-	else: needs[need] = clampf(float(needs[need])+delta,0,100)
+	else: needs[need] = clampi(roundi(float(needs[need])*10000.0)+roundi(delta*10000.0),0,1000000)/10000.0
 	needs[need] = snappedf(float(needs[need]),0.0001)
 
 func tick(minute: int) -> void:

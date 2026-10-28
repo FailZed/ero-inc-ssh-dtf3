@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13716,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: {f_playerName}! How can you agree to being insulted like that?! \r\nYou: She apologised, right? We have some disagreements, but I’m sure that when we and Melissa get to know each other, we will become great friends.\r\n#bot.Expression.Shock\r\nBot: Aren’t you being a little too naive?\r\n#bot.Expression.Clear\r\nYou: Maybe so, but it’s not like you meet a bot like her very often. It’s a great opportunity for us to meet with someone who shares our troubles.\r\n#bot.Expression.Sad\r\nBot: If you really want this to work, I guess I can overlook her behaviour today…\r\nYou: Let’s give her and her owner a chance. They are probably just cautious. That’s why Melissa seemed so hostile.\r\nBot: You think so? I think she’s just a hateful individual…\r\nYou: That could be the case, but let’s hope for the best…\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209926848844390400
+      },
+      {
+        "KeyId": 209926848848584704
+      },
+      {
+        "KeyId": 209926848848584705
+      },
+      {
+        "KeyId": 209926848848584706
+      },
+      {
+        "KeyId": 209926848848584707
+      },
+      {
+        "KeyId": 209926848848584708
+      },
+      {
+        "KeyId": 209926848848584709
+      },
+      {
+        "KeyId": 209926848848584710
+      }
+    ]
+  }
+}

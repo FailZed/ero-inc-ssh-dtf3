@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15134,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.VeryHappy\r\n#bot.Expression.VeryBlush\r\nBot: {f_playerName}! Would you rather have dinner, bath or maybe-\r\n#bot.Expression.clear\r\nYou: Look what I got! It’s a stove! Now we can make dinner! \r\n#bot.Expression.VeryAngry\r\nBot: …\r\nYou: It’s a little old and neglected, but I’m sure that with a little work it will be like brand new. Could you take a quick look?\r\nYou: {{punch}}Ah! {{wi}}You kicked me again!\r\nShit! That kick made me lose my balance!\r\nYou: I-I’m about to- I’m about to drop the stove!\n#bot.Expression.clear\r\n#bot.Expression.sad",
+    "localizedLines": [
+      {
+        "KeyId": 323540738202656768
+      },
+      {
+        "KeyId": 323540738206851072
+      },
+      {
+        "KeyId": 323540738206851073
+      },
+      {
+        "KeyId": 323540738206851074
+      },
+      {
+        "KeyId": 323540738206851075
+      },
+      {
+        "KeyId": 323540738206851076
+      },
+      {
+        "KeyId": 323540738206851077
+      }
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2991
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 469762048
+  },
+  "m_Name": "",
+  "<Unique>k__BackingField": 1,
+  "<DefaultId>k__BackingField": "Annalie_Outside",
+  "yoffest": -2.5999999046325684,
+  "defaultActiveItems": [
+    {
+      "SlotId": "Arm",
+      "ItemId": "down"
+    },
+    {
+      "SlotId": "face",
+      "ItemId": "normal"
+    }
+  ],
+  "comboSlots": [
+    {
+      "Id": "face",
+      "Items": [
+        {
+          "Id": "normal",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "normal"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "normal"
+            }
+          ]
+        },
+        {
+          "Id": "sad",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "sad"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "Hmm"
+            }
+          ]
+        },
+        {
+          "Id": "pervy",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "pervy"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "pervy"
+            }
+          ]
+        },
+        {
+          "Id": "suprised",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "suprised"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "awww"
+            }
+          ]
+        },
+        {
+          "Id": "smileEyeClosed",
+          "ItemsInTheComboSlot": [
+            {
+              "SlotId": "Eyes",
+              "ItemId": "SmileClosed"
+            },
+            {
+              "SlotId": "Mouth",
+              "ItemId": "open"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_slotCaches": [
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 5572
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7415
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10696
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7146
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10706
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5857
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10772
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5963
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10753
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 5523
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10678
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6182
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10720
+          }
+        }
+      ]
+    },
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 5457
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6718
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10804
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7613
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10699
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7133
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10739
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7602
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10732
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7720
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10762
+          }
+        }
+      ]
+    },
+    {
+      "<SlotTransform>k__BackingField": {
+        "m_FileID": 0,
+        "m_PathID": 6350
+      },
+      "<Items>k__BackingField": [
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 6347
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10743
+          }
+        },
+        {
+          "<ItemTransform>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 7084
+          },
+          "<ItemSpriteRenderer>k__BackingField": {
+            "m_FileID": 0,
+            "m_PathID": 10731
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 38033948672
+  },
+  "m_Name": "",
+  "itemId": 6260,
+  "indentLevel": 1,
+  "characterRef": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Characters/Annalie/Annalie",
+      "assetGuid": "218fc9d1a2405fa4e89e78d045e5ba0e",
+      "assetLocalId": 3839597931098662624,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 0
+    }
+  },
+  "setInvisible": {
+    "booleanRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "booleanVal": 1
+  },
+  "offset": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "scale": 1.0,
+  "targetView": {
+    "m_FileID": 0,
+    "m_PathID": 12842
+  },
+  "transitionAnimation": 7,
+  "time": 0.5,
+  "forceId": "",
+  "fadeData": [
+    {
+      "SlotId": "face",
+      "ItemId": "sad",
+      "instant": 1
+    }
+  ]
+}

@@ -361,6 +361,7 @@ signal game_day_changed(snapshot: Dictionary)
 signal game_month_changed(snapshot: Dictionary)
 
 var _pending_load_slot := ""
+var last_load_error := ""
 var _autosave_timer := Timer.new()
 var _autosave_runtime_paused := true
 var _choice_autosave_pending := false
@@ -417,6 +418,7 @@ func _process(delta: float) -> void:
 
 
 func start_new_game() -> Error:
+	last_load_error = ""
 	_pending_load_slot = ""
 	_reset_autosave_progress()
 	Dialogic.clear(DialogicGameHandler.ClearFlags.FULL_CLEAR)
@@ -431,7 +433,7 @@ func return_to_main_menu() -> Error:
 	if Dialogic != null:
 		Dialogic.end_timeline(true)
 		if Dialogic.has_subsystem("Styles"):
-			var layout := Dialogic.Styles.get_layout_node()
+			var layout: Node = Dialogic.Styles.get_layout_node()
 			if layout != null and is_instance_valid(layout):
 				if layout.get_parent() != null:
 					layout.get_parent().remove_child(layout)
@@ -441,7 +443,7 @@ func return_to_main_menu() -> Error:
 
 
 func continue_latest_game() -> Error:
-	var latest_slot := Dialogic.Save.get_latest_slot()
+	var latest_slot: String = Dialogic.Save.get_latest_slot()
 	if latest_slot.is_empty():
 		return ERR_FILE_NOT_FOUND
 
@@ -466,11 +468,20 @@ func apply_pending_load() -> Error:
 
 	var slot_id := _pending_load_slot
 	_pending_load_slot = ""
-	var load_error := Dialogic.Save.load(slot_id)
+	last_load_error = ""
+	var load_error: Error = Dialogic.Save.load(slot_id)
 	if load_error == OK:
 		_sync_character_profile_from_dialogic()
 		_sync_game_time_from_dialogic()
-		_reset_autosave_progress()
+		if _has_gameplay_restore_error():
+			load_error = ERR_INVALID_DATA
+			last_load_error = load("res://scripts/gameplay/presentation.gd").error(str(get_node("/root/Gameplay").restore_error))
+		else:
+			_reset_autosave_progress()
+	if load_error != OK:
+		if last_load_error.is_empty(): last_load_error = localize("feedback.load_failed", {"slot":slot_id,"error":error_string(load_error)})
+		pause_autosave_runtime()
+		return_to_main_menu.call_deferred()
 	return load_error
 
 
@@ -514,33 +525,39 @@ func capture_thumbnail() -> void:
 	if DisplayServer.get_name() == "headless":
 		return
 
-	var save_system := Dialogic.Save
+	var save_system: Node = Dialogic.Save
 	if save_system == null:
 		return
 
-	var viewport := save_system.get_viewport()
+	var viewport: Viewport = save_system.get_viewport()
 	if viewport == null:
 		return
 
-	var viewport_texture := viewport.get_texture()
+	var viewport_texture: ViewportTexture = viewport.get_texture()
 	if viewport_texture == null:
 		return
 
-	var image := viewport_texture.get_image()
+	var image: Image = viewport_texture.get_image()
 	if image == null:
 		return
 
 	save_system.latest_thumbnail = image
 
 
+func _has_gameplay_restore_error() -> bool:
+	var gameplay := get_node_or_null("/root/Gameplay")
+	return gameplay != null and not str(gameplay.get("restore_error")).is_empty()
+
+
 func save_slot(slot_id: String) -> Error:
+	if _has_gameplay_restore_error(): return ERR_INVALID_DATA
 	var slot_ref := _decode_slot_reference(slot_id)
 	if slot_ref.is_empty():
 		return ERR_INVALID_PARAMETER
 	if str(slot_ref.get("kind", "")) == SLOT_KIND_AUTO:
 		return ERR_UNAUTHORIZED
 
-	var thumbnail_mode := Dialogic.Save.ThumbnailMode.TAKE_AND_STORE
+	var thumbnail_mode: int = Dialogic.Save.ThumbnailMode.TAKE_AND_STORE
 	if Dialogic.Save.latest_thumbnail != null:
 		thumbnail_mode = Dialogic.Save.ThumbnailMode.STORE_ONLY
 
@@ -552,7 +569,7 @@ func save_slot(slot_id: String) -> Error:
 		"slot_index": slot_ref["slot_index"],
 	}
 
-	var save_error := Dialogic.Save.save(slot_id, false, thumbnail_mode, save_info)
+	var save_error: Error = Dialogic.Save.save(slot_id, false, thumbnail_mode, save_info)
 	if save_error == OK:
 		save_slots_changed.emit()
 
@@ -565,7 +582,7 @@ func delete_slot(slot_id: String) -> Error:
 	if slot_id.begins_with("auto_"):
 		return ERR_UNAUTHORIZED
 
-	var delete_error := Dialogic.Save.delete_slot(slot_id)
+	var delete_error: Error = Dialogic.Save.delete_slot(slot_id)
 	if delete_error == OK:
 		save_slots_changed.emit()
 
@@ -606,7 +623,7 @@ func _build_slot_entry(slot_id: String, kind: String, page_index: int, slot_inde
 		"page_index": page_index,
 		"slot_index": slot_index,
 	}
-	var slot_info := Dialogic.Save.get_slot_info(slot_id) if exists else {}
+	var slot_info: Dictionary = Dialogic.Save.get_slot_info(slot_id) if exists else {}
 	var is_auto_slot := kind == SLOT_KIND_AUTO
 	var can_primary_action := (not is_auto_slot and is_save_mode and not exists) or (exists and not is_save_mode)
 	var localized_title := _build_slot_title(slot_ref)
@@ -1067,7 +1084,7 @@ func _apply_runtime_language() -> void:
 		return
 
 	if dialogic.has_subsystem("Text"):
-		var current_speaker := dialogic.Text.get_current_speaker()
+		var current_speaker: DialogicCharacter = dialogic.Text.get_current_speaker()
 		dialogic.Text.update_name_label(current_speaker, true)
 
 		var current_event := _get_current_dialogic_event(dialogic)
@@ -1222,7 +1239,7 @@ func _pick_allowed_value(value: String, allowed: Array, fallback: String) -> Str
 func _refresh_runtime_speaker_label() -> void:
 	if Dialogic == null or not Dialogic.has_subsystem("Text"):
 		return
-	var current_speaker := Dialogic.Text.get_current_speaker()
+	var current_speaker: DialogicCharacter = Dialogic.Text.get_current_speaker()
 	Dialogic.Text.update_name_label(current_speaker, true)
 
 
@@ -1319,6 +1336,7 @@ func set_choice_autosave_enabled(enabled: bool) -> void:
 
 
 func perform_autosave() -> Error:
+	if _has_gameplay_restore_error(): return ERR_INVALID_DATA
 	if _autosave_runtime_paused or not is_game_scene_active() or get_tree().paused:
 		return OK
 	if not _autosave_progress_dirty:
@@ -1339,11 +1357,11 @@ func perform_autosave() -> Error:
 		"slot_index": slot_index,
 	}
 
-	var thumbnail_mode := Dialogic.Save.ThumbnailMode.TAKE_AND_STORE
+	var thumbnail_mode: int = Dialogic.Save.ThumbnailMode.TAKE_AND_STORE
 	if Dialogic.Save.latest_thumbnail != null:
 		thumbnail_mode = Dialogic.Save.ThumbnailMode.STORE_ONLY
 
-	var save_error := Dialogic.Save.save(slot_id, false, thumbnail_mode, save_info)
+	var save_error: Error = Dialogic.Save.save(slot_id, false, thumbnail_mode, save_info)
 	if save_error == OK:
 		_set_next_autosave_index((slot_index + 1) % AUTO_SLOT_COUNT)
 		_autosave_progress_dirty = false

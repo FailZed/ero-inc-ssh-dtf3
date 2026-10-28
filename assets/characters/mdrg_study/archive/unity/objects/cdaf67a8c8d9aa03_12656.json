@@ -1,0 +1,160 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 18771,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Wow! I had no idea a place like this existed around here!\r\n#bot.Expression.clear\r\nYou: The amount of things wrong with this place is so high that the local government <i>politely</i> asked internet map websites to delete it. Now all satellite images are just showing a black square. \r\nBot: Now that you say it, what is this colorful sand? I’ve never seen something like that before. \r\n#bot.Expression.clear\r\n#bot.Expression.Shock\r\nYou: It’s all plastic that was shredded by the waves and brought here. \r\nYou: And the shipwreck right there was deemed too expensive to remove. At least they removed most of the oil spill.\r\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nBot: You have been eating fish from here? Is that safe?\r\n#bot.Expression.clear\r\nYou: In moderation it should be fine. Don’t worry, I already asked people around here if it’s ok.\r\nThis conversation reminds me of myself and Mrs. Fisher when we first met. \r\nI voiced the same concerns and it all turned out alright. \r\nYou: Are you ready to go? You have your fishing rod, hook, bait and everything. \r\n#bot.Expression.Happy\r\nBot: I’m ready!\r\nYou: Uh… {{wi}}You know how to do it, right? I’m sure you checked it on the internet beforehand. \r\n#bot.Expression.Blush\r\nBot: Sure, but I want you to teach me.\r\nYou: Oh…\r\nYou: Sure, why not. You need to connect the hook to the end of the line. Now put bait on it. Don’t forget about the weight.\r\n#bot.Expression.NoBlush\r\nYou: Now you need to choose your fishing spot.\r\nBot: How do I do that?\r\nYou: As Mrs. Fisher said, fish like shade and things to hide in, but we are at the beach so it’s a little harder to spot good places.\r\nYou: How about for your first time we go to my usual place?\r\nBot: Works for me!\r\nYou: Now that the setup is ready and we are in a good spot, we can start for real.\r\nYou: It’s time to cast the line. No need to overthink it. It takes quite some time to get good at it.\r\n#bot.Expression.Blush\r\nBot: Could you guide my hand, please?\r\nYou: Sure…\r\nBot: Here it goes!\r\nYou: …\r\n#bot.Expression.NoBlush\r\nIt might have gone further than my usual range…\r\nBot: How did I do?!\r\nYou: V-Very well! \r\nA little too well…\r\nWhy did I even bother with the fish joint? I have been outperformed so easily… \r\nI need to dismiss this self-pity, or I will ruin our date!\r\nYou: It went quite far so there’s a chance of catching something big. Prepare yourself.\r\nBot: I got things for now. You can just sit back and watch.\r\nYou: You are rather confident. \r\nBot: This is where fun begins, right? If I don’t do this myself it will be all pointless.\r\nYou: Judging by how you casted that rod I have nothing to worry about.\r\n#bot.Expression.veryHappy\r\nBot: Oh! I think something’s biting!\r\nYou: It is? That’s fast. \r\nBot: I guess I have a real talent for it!\r\nYou: You sure do. It took me a while to get on that level. \r\nBot: It’s only natural. After all, my supreme intellect gives me a massive advantage!\r\n#bot.Expression.clear\r\n#bot.Expression.Angry\r\nYou: Having trouble? \r\nBot: This…{{wi}} this fish is giving me more trouble than I thought.\r\nYou: Maybe it’s a giant?\r\nBot: I would rather not overextend my synthetic joints so it might take a while. \r\nYou: Take your time. Fishing is all about patience.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 545644244223647744
+      },
+      {
+        "KeyId": 545644244223647745
+      },
+      {
+        "KeyId": 545644244223647746
+      },
+      {
+        "KeyId": 545644244223647747
+      },
+      {
+        "KeyId": 545644244223647748
+      },
+      {
+        "KeyId": 545644244223647749
+      },
+      {
+        "KeyId": 545644244223647750
+      },
+      {
+        "KeyId": 545644244223647751
+      },
+      {
+        "KeyId": 545644244223647752
+      },
+      {
+        "KeyId": 545644244223647753
+      },
+      {
+        "KeyId": 545644244223647754
+      },
+      {
+        "KeyId": 545644244223647755
+      },
+      {
+        "KeyId": 545644244223647756
+      },
+      {
+        "KeyId": 545644244223647757
+      },
+      {
+        "KeyId": 545644244223647758
+      },
+      {
+        "KeyId": 545644244223647759
+      },
+      {
+        "KeyId": 545644244223647760
+      },
+      {
+        "KeyId": 545644244223647761
+      },
+      {
+        "KeyId": 545644244223647762
+      },
+      {
+        "KeyId": 545644244223647763
+      },
+      {
+        "KeyId": 545644244227842048
+      },
+      {
+        "KeyId": 545644244227842049
+      },
+      {
+        "KeyId": 545644244227842050
+      },
+      {
+        "KeyId": 545644244227842051
+      },
+      {
+        "KeyId": 545644244227842052
+      },
+      {
+        "KeyId": 545644244227842053
+      },
+      {
+        "KeyId": 545644244227842054
+      },
+      {
+        "KeyId": 545644244227842055
+      },
+      {
+        "KeyId": 545644244227842056
+      },
+      {
+        "KeyId": 545644244227842057
+      },
+      {
+        "KeyId": 545644244227842058
+      },
+      {
+        "KeyId": 545644244227842059
+      },
+      {
+        "KeyId": 545644244227842060
+      },
+      {
+        "KeyId": 545644244227842061
+      },
+      {
+        "KeyId": 545644244227842062
+      },
+      {
+        "KeyId": 545644244227842063
+      },
+      {
+        "KeyId": 545644244227842064
+      },
+      {
+        "KeyId": 545644244227842065
+      },
+      {
+        "KeyId": 545644244227842066
+      },
+      {
+        "KeyId": 545644244227842067
+      },
+      {
+        "KeyId": 545644244227842068
+      },
+      {
+        "KeyId": 545644244227842069
+      },
+      {
+        "KeyId": 545644244227842070
+      },
+      {
+        "KeyId": 545644244227842071
+      },
+      {
+        "KeyId": 545644244227842072
+      },
+      {
+        "KeyId": 545644244227842073
+      },
+      {
+        "KeyId": 545644244227842074
+      }
+    ]
+  }
+}

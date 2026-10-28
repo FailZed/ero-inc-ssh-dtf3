@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 147.10165405273438,
+    "y": 3013.06689453125,
+    "width": 165.989990234375,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 2151,
+  "blockName": "Church/Church start",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 3543
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3539
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7299
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

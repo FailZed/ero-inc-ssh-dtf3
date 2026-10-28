@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9403,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Hey {f_botName}.\nYou: Can you tell me the statistics of ... you know what?\nBot: Yes, {f_playerName}!\nBot: So far you came {f_Integer} ml.\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538825967570955
+      },
+      {
+        "KeyId": 191538825967570956
+      },
+      {
+        "KeyId": 191538825971765248
+      },
+      {
+        "KeyId": 191538825971765249
+      }
+    ]
+  }
+}

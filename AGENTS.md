@@ -1,9 +1,11 @@
 # Project guidance
 
-- For game-development tasks, read `C:/Users/vladi/.codex/skills/router/SKILL.md`
-  and then only the relevant installed specialist skills. The local bundle is
-  `awesome-gamedev-agent-skills`; its 75 skills are installed in
-  `C:/Users/vladi/.codex/skills`. Follow the user's current scope over skill defaults.
+- For game-development tasks, read the installed `router/SKILL.md` from the
+  current machine's Codex skills directory, then only the relevant specialist
+  skills. The bundle is `gamedev-skills/awesome-gamedev-agent-skills`;
+  install it on a new machine before game-development work. Codex on macOS
+  reads user skills from `~/.agents/skills`. Follow the user's current scope
+  over skill defaults.
 - EroInc is unreleased: replace obsolete systems directly. Do not retain legacy
   implementations, backward-compatibility layers, adapters, or fallback paths for
   superseded systems unless the user explicitly requests them. Update affected

@@ -4,6 +4,9 @@ signal closed
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const Puppet = preload("res://scripts/characters/puppet_view.gd")
 const PROFILE_PATH := "res://data/characters/interaction_profile.json"
+const IMPORT_CATALOG_PATH := "res://assets/characters/mdrg_study/catalog.json"
+const IMPORT_PROFILE_PATH := "res://assets/characters/mdrg_study/interaction_profile.json"
+const RIG_DEBUG_LABEL := "Без одежды (проверка рига)"
 const SAVE_DIR := "user://character_workshop"
 
 var puppet: Control
@@ -33,7 +36,7 @@ var settings_controls: Dictionary = {}
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	theme = UI.skin()
-	models = _read_json("res://data/characters/study_catalog.json").get("models", [])
+	models = _load_available_models()
 	_build_ui()
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(SAVE_DIR))
 	for argument: String in OS.get_cmdline_user_args():
@@ -69,6 +72,12 @@ func _build_ui() -> void:
 	preset_list = UI.column(left, 8)
 	UI.button(left, "Открыть модель…", func(): _open_file("model"))
 	UI.button(left, "Сбросить позу", func(): puppet.reset_character(); _rebuild_parameters(); _rebuild_presets())
+	UI.button(left, "Без одежды · тест рига", func():
+		if puppet.profile.get("outfits", {}).has(RIG_DEBUG_LABEL):
+			puppet.choose_preset("outfits", RIG_DEBUG_LABEL)
+			_message("Режим проверки рига включён. Сброс позы вернёт одежду.")
+		else:
+			_message("Для этой модели нет переключателей одежды."))
 	var stage_column := UI.column(body, 8)
 	stage_column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	stage_column.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -82,7 +91,7 @@ func _build_ui() -> void:
 	stage.add_child(puppet)
 	puppet.load_failed.connect(_message)
 	puppet.interaction_finished.connect(func(event): _message("%s · %.1f с" % [event.get("interaction",""),event.get("duration",0.0)]))
-	UI.label(stage_column, "Потяни голову, щёку или руку. Esc — отпустить. Масштаб — ползунком ниже.", 16, UI.MUTED)
+	UI.label(stage_column, "Перетаскивай глаза, уши, рот, руки, ноги, корпус или хвост. Esc — отпустить.", 16, UI.MUTED)
 	var zoom_row := UI.row(stage_column)
 	UI.label(zoom_row, "Масштаб", 16)
 	var zoom_slider := _slider(zoom_row, 0.5, 2.5, 1.0)
@@ -173,15 +182,50 @@ func _check(parent: Node, title: String, initial: bool, action: Callable) -> Che
 	parent.add_child(check)
 	return check
 
+func _load_available_models() -> Array:
+	var results: Array = []
+	var known: Dictionary = {}
+	var legacy: Variant = _read_json("res://data/characters/study_catalog.json").get("models", [])
+	if legacy is Array:
+		for value: Variant in legacy:
+			if value is Dictionary and value.get("id") is String:
+				var key: String = str(value["id"])
+				if not key.is_empty() and not known.has(key):
+					known[key] = true
+					results.append(value)
+	var imported: Variant = _read_json(IMPORT_CATALOG_PATH).get("models", [])
+	if imported is Array:
+		for value: Variant in imported:
+			if not value is Dictionary: continue
+			var key: String = str(value.get("id", ""))
+			var pathname: String = str(value.get("model3", ""))
+			if key.is_empty() or pathname.is_empty() or known.has(key): continue
+			known[key] = true
+			results.append({"id": key, "source_id": str(value.get("source_id", "")),
+				"title": str(value.get("name", key)), "model": pathname,
+				"snapshot": str(value.get("snapshot", "")),
+				"info": str(value.get("info", "")), "study_asset": false,
+				"imported": true})
+	return results
+
+
+func _profile_for_item(item: Dictionary) -> Dictionary:
+	if bool(item.get("imported", false)) or str(item.get("id", "")) == "interaction_model":
+		var imported: Dictionary = _read_json(IMPORT_PROFILE_PATH)
+		if not imported.is_empty(): return imported
+	return _read_json(PROFILE_PATH)
+
+
 func _select_model(index: int) -> void:
 	if index < 0 or index >= models.size(): return
 	var item: Dictionary = models[index]
-	var bindings := _read_json(PROFILE_PATH) if item.id == "interaction_model" else {}
+	var bindings: Dictionary = _profile_for_item(item)
 	if puppet.load_character(item, bindings):
 		model_picker.select(index)
 		_rebuild_parameters()
 		_rebuild_presets()
-		details.text = "%s\n%d параметров · %d сеток\nУчебная модель MDRG" % [item.id,puppet.bank.definitions.size(),puppet.model.call("get_meshes").size()]
+		details.text = "%s\n%d параметров · %d сеток\n%d активных зон касания" % [item.id,
+			puppet.bank.definitions.size(), puppet.model.call("get_meshes").size(), puppet.get_active_zone_count()]
 
 func _rebuild_parameters() -> void:
 	UI.clear(parameter_list)
@@ -277,7 +321,7 @@ func _file_selected(path: String) -> void:
 	match file_action:
 		"model":
 			var item := {"id":path.get_file().trim_suffix(".model3.json"),"title":path.get_file(),"model":path,"study_asset":false}
-			if puppet.load_character(item):
+			if puppet.load_character(item, _profile_for_item(item)):
 				models.append(item)
 				model_picker.add_item(item.title)
 				model_picker.select(models.size()-1)

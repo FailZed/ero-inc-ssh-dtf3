@@ -1,0 +1,59 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 1767.258544921875,
+    "y": 474.3041076660156,
+    "width": 211.11000061035156,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 140,
+  "blockName": "Sleep/Sleep for 480 minutes",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 4550
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5295
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2337
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7752
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5119
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2184
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2135
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

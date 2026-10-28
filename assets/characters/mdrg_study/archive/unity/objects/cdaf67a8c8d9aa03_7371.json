@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 3707764736
+  },
+  "m_Name": "",
+  "itemId": 12680,
+  "indentLevel": 0,
+  "inputText": {
+    "stringRef": {
+      "m_FileID": 0,
+      "m_PathID": 3094
+    },
+    "stringVal": ""
+  },
+  "target": {
+    "m_FileID": 0,
+    "m_PathID": 2161
+  },
+  "checkType": 1,
+  "toCompare": [
+    {
+      "stringRef": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "stringVal": "Jun"
+    }
+  ],
+  "toCompareLocalizable": [],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

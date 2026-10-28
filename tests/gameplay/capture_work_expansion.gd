@@ -1,5 +1,5 @@
 extends SceneTree
-var directory := "E:/GoDot/.research/school-0.981/work-expansion-2026-10-27/captures"
+var directory := OS.get_environment("EROINC_ARTIFACTS").path_join("captures/work_expansion") if not OS.get_environment("EROINC_ARTIFACTS").is_empty() else "user://captures/work_expansion"
 var gameplay
 var window
 var checks := 0
@@ -79,7 +79,7 @@ func run() -> void:
 	entry.pressed.emit()
 	await settle()
 	window = shell.get_child(-1)
-	check(window._body.find_children("*","Button",true,false).filter(func(node): return node.has_meta("job_id")).size() == 33,"native selector contains thirty-three jobs")
+	check(window._body.find_children("*","Button",true,false).filter(func(node): return node.has_meta("job_id")).size() == 35,"native selector contains thirty-five jobs")
 	await select_job("tutor")
 	await capture("jobs-and-promotion")
 	# Controlled test fixture: demonstrate the skill filter and actual comparison task.

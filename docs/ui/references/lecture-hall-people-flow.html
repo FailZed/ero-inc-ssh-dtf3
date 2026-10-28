@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EroInc · лекционный зал · поиск собеседника</title>
+  <style>
+    :root { color-scheme: dark; --ink:#eef2f6; --muted:#a8c7dd; --blue:#75caff; --line:#54728b; --panel:rgba(3,13,25,.94); --gold:#f5d5b1; }
+    * { box-sizing:border-box }
+    html,body { margin:0; background:#050a11; color:var(--ink); font-family:Georgia,"Times New Roman",serif }
+    body { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px }
+    .preview-nav { display:flex; gap:8px; font:14px system-ui,sans-serif; padding:14px }
+    .preview-nav button { padding:9px 14px; background:#0b1b29; color:#cfe5f4; border:1px solid #426781; cursor:pointer }
+    .preview-nav button.active { background:#163653; border-color:#75caff }
+    .frame { position:relative; width:1672px; height:941px; overflow:hidden; isolation:isolate; background:#050d17; flex:none }
+    .background { position:absolute; inset:0; background:url("../../../assets/textures/backgrounds/lecture_hall/lecture_hall_front_v1.png") center/cover no-repeat; z-index:-2 }
+    .frame::before { content:""; position:absolute; inset:0; pointer-events:none; z-index:-1; background:linear-gradient(180deg,rgba(3,9,18,.40),transparent 22%,transparent 69%,rgba(3,9,18,.65)) }
+    .hidden { display:none !important }
+    .top-left { position:absolute; left:48px; top:28px; text-shadow:0 2px 7px #01060e }
+    .place { color:var(--gold); text-transform:uppercase; font-size:25px; letter-spacing:.03em }
+    .goal { color:#c5e3f7; font-size:21px; margin-top:5px }
+    .top-right { position:absolute; right:47px; top:28px; display:flex; align-items:center; gap:17px }
+    .round { width:56px; height:56px; display:grid; place-items:center; background:rgba(4,15,27,.73); border:1px solid #607d94; border-radius:50%; box-shadow:0 3px 13px #03101e; position:relative }
+    .round .dot { width:8px; height:8px; border-radius:50%; background:#fb796f; box-shadow:0 0 5px #e24c49; position:absolute; right:6px; top:4px }
+    .divider { height:38px; width:1px; background:#6e8291; margin:0 2px }
+    .time { text-align:right; text-shadow:0 2px 7px #01060e }
+    .time strong { display:block; font-size:30px; font-weight:normal }
+    .time span { color:var(--muted); font-size:16px }
+    svg.icon { width:28px; height:28px; stroke:currentColor; stroke-width:1.8; fill:none; stroke-linecap:round; stroke-linejoin:round }
+    .round svg { width:25px; height:25px }
+    .vitals { position:absolute; left:50px; bottom:192px; display:flex; gap:26px; text-shadow:0 2px 8px #02070e }
+    .vital { display:flex; align-items:center; gap:8px; color:#fff }
+    .vital svg { width:29px; height:29px }
+    .vital label { font-size:16px; color:var(--muted); display:block }
+    .vital b { font-size:20px; font-weight:normal; display:block; margin-top:3px }
+    .action-rail { position:absolute; left:0; right:0; bottom:0; height:159px; display:flex; align-items:stretch; justify-content:center; background:linear-gradient(180deg,rgba(3,13,25,.72),rgba(1,8,16,.96)); border-top:1px solid rgba(104,151,184,.35); box-shadow:0 -14px 32px rgba(0,5,13,.25) }
+    .action { position:relative; width:240px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px; border:0; background:none; color:#f2e2d3; cursor:pointer; font:24px Georgia,serif }
+    .action + .action::before { content:""; position:absolute; left:0; top:50px; bottom:38px; width:1px; background:#586f80 }
+    .action svg { width:54px; height:54px; stroke-width:1.65 }
+    .action.active { color:#b2e2ff }
+    .action.active::after { content:""; position:absolute; left:44px; right:44px; bottom:0; height:2px; background:#75caff; box-shadow:0 0 16px 3px #358cdf }
+    .action.active .icon-wrap { width:76px; height:76px; margin-top:-13px; margin-bottom:-7px; display:grid; place-items:center; border:2px solid #66c5ff; border-radius:50%; background:radial-gradient(circle,#144577,#071c30); box-shadow:0 0 21px #0e75c2 }
+    .action small { color:#b5d9ee; font:16px system-ui,sans-serif; position:absolute; top:12px; right:29px }
+    .people-panel { position:absolute; top:94px; right:28px; width:565px; height:630px; background:linear-gradient(130deg,rgba(4,16,31,.98),rgba(3,12,23,.94)); border:1px solid #5d7c99; border-radius:18px; box-shadow:0 20px 50px #010711, inset 0 0 20px #0b2440; padding:21px 28px 24px }
+    .panel-title { display:flex; justify-content:space-between; align-items:center; gap:10px; color:var(--gold); font-size:31px }
+    .close { border:0; background:none; color:#c8e1ef; font:34px Georgia,serif; cursor:pointer }
+    .hint { color:var(--muted); font-size:17px; margin:9px 0 21px; font-family:system-ui,sans-serif }
+    .person { display:flex; align-items:center; gap:17px; min-height:116px; width:100%; text-align:left; color:var(--ink); background:rgba(17,46,72,.32); border:1px solid #3c6584; padding:15px 17px; margin:10px 0; cursor:pointer }
+    .person.selected { background:linear-gradient(90deg,rgba(24,93,147,.72),rgba(19,56,87,.36)); border-color:#78c8f5; box-shadow:inset 4px 0 #72cfff, 0 0 19px rgba(61,143,210,.17) }
+    .avatar { width:55px; height:55px; flex:none; border-radius:50%; border:1px solid #648cad; display:grid; place-items:center; color:#b4dbf1; background:#0e2c46 }
+    .avatar svg { width:31px; height:31px }
+    .person .info { flex:1; display:flex; flex-direction:column; gap:5px }
+    .person strong { font:22px Georgia,serif }
+    .person span { color:#afd2e9; font:16px system-ui,sans-serif }
+    .person .arrow { color:#bbdbed; font:29px Georgia,serif }
+    .person.blocked { opacity:.63 }
+    .talk { position:absolute; bottom:24px; left:28px; right:28px; height:55px; border:1px solid #a2dcff; border-radius:10px; background:linear-gradient(90deg,#45a9f0,#85cefa); color:#061a2a; font:22px Georgia,serif; cursor:pointer; box-shadow:0 0 19px rgba(60,163,238,.26) }
+    .panel-foot { position:absolute; bottom:89px; left:29px; color:#a8c1d5; font:15px system-ui,sans-serif }
+    .dialogue { position:absolute; inset:0; background:rgba(2,7,14,.35) }
+    .frame.talking > .top-left, .frame.talking > .top-right, .frame.talking > .vitals, .frame.talking > .action-rail { display:none }
+    .dialogue .background { filter:blur(3px) brightness(.48); transform:scale(1.02) }
+    .dialogue-top { position:absolute; top:27px; left:47px; right:47px; display:flex; justify-content:space-between; align-items:center; color:#e6eef4; font:18px system-ui,sans-serif }
+    .back { border:1px solid #62839a; background:rgba(3,13,25,.72); color:#eff5f8; padding:12px 16px; font:17px system-ui,sans-serif; cursor:pointer }
+    .dialogue-top span { margin-left:auto; margin-right:23px; color:#bad5e7 }
+    .rig { position:absolute; width:720px; height:880px; left:493px; top:46px; object-fit:contain; object-position:bottom; filter:drop-shadow(0 6px 15px #000) }
+    .identity { position:absolute; left:44px; top:177px; width:360px; min-height:189px; background:rgba(4,16,32,.93); border:1px solid #537896; padding:17px 19px; box-shadow:inset 0 0 0 4px rgba(16,46,79,.54) }
+    .identity strong { display:block; font:31px Georgia,serif }
+    .identity b { display:block; color:#91cfff; font:17px system-ui,sans-serif; margin-top:9px; letter-spacing:.02em }
+    .identity p { color:#b8d0e2; font:17px system-ui,sans-serif; line-height:1.55; margin:11px 0 0 }
+    .responses { position:absolute; right:43px; top:178px; width:398px; min-height:440px; background:rgba(4,16,32,.95); border:1px solid #537896; box-shadow:inset 0 0 0 4px rgba(16,46,79,.54); padding:17px }
+    .responses h3 { color:#a8c7dd; font:16px system-ui,sans-serif; margin:0 0 13px; letter-spacing:.04em }
+    .response { display:block; width:100%; border:0; border-top:1px solid #435d76; padding:16px 5px; background:none; color:#eef2f6; text-align:left; font:20px Georgia,serif }
+    .response.selected { background:#102d49; border:1px solid #76c7f1; color:#bce3fa; padding:15px 10px }
+    .speech { position:absolute; left:140px; right:140px; bottom:39px; height:178px; background:rgba(3,13,29,.97); border:1px solid #557c9e; box-shadow:inset 0 0 0 5px rgba(21,54,90,.63),0 7px 23px #000; padding:20px 24px }
+    .speech small { display:block; color:#9bcff2; font:16px system-ui,sans-serif; margin-bottom:13px }
+    .speech p { font:29px Georgia,serif; margin:0; line-height:1.28 }
+    body.capture { width:1672px; height:941px; min-height:941px; overflow:hidden; gap:0 }
+    body.capture .preview-nav { display:none }
+    body.capture .frame { transform:none; margin:0 }
+    @media(max-width:1700px) { .frame { transform:scale(min(1, calc((100vw - 24px)/1672))); transform-origin:center; margin:calc((941px * (min(1, (100vw - 24px)/1672) - 1))/2) 0 } }
+  </style>
+</head>
+<body>
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+    <symbol id="i-people" viewBox="0 0 32 32"><circle cx="12" cy="10" r="4"/><path d="M3 26v-3c0-4 4-7 9-7s9 3 9 7v3M22 7c3 0 5 2 5 5s-2 5-5 5M23 19c4 1 6 3 6 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 32 32"><rect x="8" y="3" width="16" height="26" rx="2"/><path d="M13 6h6M15 25h2"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 32 32"><rect x="4" y="11" width="24" height="17" rx="2"/><path d="M11 11V8c0-3 2-5 5-5s5 2 5 5v3M4 19h24M14 18v3h4v-3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 32 32"><path d="M7 3h19v26H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zM7 25h19M11 8h10M11 13h10"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 32 32"><path d="M16 29 3 15C-2 7 8-1 16 8c8-9 18-1 13 7z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 32 32"><path d="m18 2-11 16h9l-2 12 11-17h-9z"/></symbol>
+    <symbol id="i-food" viewBox="0 0 32 32"><path d="M4 3v12M8 3v12M12 3v12M8 15v14M24 3c-5 4-5 13 0 14v12"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 32 32"><path d="M2 16c4-6 9-9 14-9s10 3 14 9c-4 6-9 9-14 9S6 22 2 16z"/><circle cx="16" cy="16" r="4"/></symbol>
+    <symbol id="i-chair" viewBox="0 0 32 32"><path d="M5 18h22v7H5zM7 5h18v13H7zM8 25v5M24 25v5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 32 32"><rect x="3" y="6" width="26" height="23" rx="2"/><path d="M3 12h26M9 3v6M23 3v6M9 18h5M19 18h5M9 24h5"/></symbol>
+    <symbol id="i-door" viewBox="0 0 32 32"><path d="M7 3h20v26H7zM4 29h25M13 4v24M20 16h2"/></symbol>
+    <symbol id="i-map" viewBox="0 0 32 32"><path d="m2 7 9-4 10 4 9-4v22l-9 4-10-4-9 4zM11 3v22M21 7v22"/></symbol>
+  </svg>
+  <nav class="preview-nav" aria-label="Состояния референса">
+    <button data-to="scene">01 · Чистая сцена</button>
+    <button data-to="people">02 · Кто рядом</button>
+    <button data-to="talk">03 · Разговор Live2D</button>
+  </nav>
+  <main class="frame" id="capture">
+    <div class="background"></div>
+    <div class="top-left"><div class="place">Лекционный зал</div><div class="goal">Начало занятий · 1/3</div></div>
+    <div class="top-right">
+      <div class="round"><svg class="icon"><use href="#i-phone"/></svg></div>
+      <div class="round"><svg class="icon"><use href="#i-bag"/></svg></div>
+      <div class="round"><svg class="icon"><use href="#i-book"/></svg><i class="dot"></i></div>
+      <i class="divider"></i><div class="time"><strong>18:40</strong><span>Вт, 1 сентября</span></div>
+    </div>
+    <div class="vitals">
+      <div class="vital"><svg class="icon"><use href="#i-heart"/></svg><div><label>ХП</label><b>100</b></div></div>
+      <div class="vital"><svg class="icon"><use href="#i-bolt"/></svg><div><label>Энергия</label><b>83</b></div></div>
+      <div class="vital"><svg class="icon"><use href="#i-food"/></svg><div><label>Голод</label><b>76</b></div></div>
+    </div>
+    <div class="action-rail">
+      <button class="action" data-to="scene"><svg class="icon"><use href="#i-eye"/></svg><span>Осмотреться</span></button>
+      <button class="action active" data-to="people"><span class="icon-wrap"><svg class="icon"><use href="#i-people"/></svg></span><span>Люди рядом</span><small>2</small></button>
+      <button class="action"><svg class="icon"><use href="#i-chair"/></svg><span>Занять место</span></button>
+      <button class="action"><svg class="icon"><use href="#i-calendar"/></svg><span>Расписание</span></button>
+      <button class="action"><svg class="icon"><use href="#i-door"/></svg><span>Выход</span></button>
+      <button class="action"><svg class="icon"><use href="#i-map"/></svg><span>Карта</span></button>
+    </div>
+    <section class="people-panel hidden" aria-label="Люди рядом">
+      <div class="panel-title">Кто в зале <button class="close" data-to="scene" aria-label="Закрыть">×</button></div>
+      <div class="hint">2 человека рядом · выбор не запускает разговор</div>
+      <button class="person selected" data-person="0"><span class="avatar"><svg class="icon"><use href="#i-people"/></svg></span><span class="info"><strong>Студентка у прохода</strong><span>Можно подойти и поговорить</span></span><span class="arrow">›</span></button>
+      <button class="person blocked" disabled><span class="avatar"><svg class="icon"><use href="#i-people"/></svg></span><span class="info"><strong>Преподаватель</strong><span>Занят подготовкой к лекции</span></span><span class="arrow">·</span></button>
+      <div class="panel-foot">Esc — закрыть · Enter — начать разговор</div>
+      <button class="talk" data-to="talk">Поговорить с выбранным человеком →</button>
+    </section>
+    <section class="dialogue hidden" aria-label="Разговор">
+      <div class="background"></div>
+      <div class="dialogue-top"><button class="back" data-to="people">← К ЛЕКЦИОННОМУ ЗАЛУ</button><span>Лекционный зал</span><button class="back">МЕНЮ</button></div>
+      <img class="rig" src="lecture-hall-live2d-frame.png" alt="Статичный кадр временного Live2D-рига">
+      <div class="identity"><strong>Собеседница</strong><b>ЛИЧНЫЙ РАЗГОВОР</b><p>Рядом в лекционном зале<br>Знакомство · спокойное настроение</p></div>
+      <div class="responses"><h3>ВАШ ОТВЕТ</h3><button class="response selected">Поздороваться · 1 мин</button><button class="response">Спросить о занятиях · 3 мин</button><button class="response">Узнать, свободно ли место · 2 мин</button><button class="response">Попрощаться</button></div>
+      <div class="speech"><small>РАЗГОВОР</small><p>Привет! Ты тоже пришёл на эту лекцию?</p></div>
+    </section>
+  </main>
+  <script>
+    const allowed = new Set(["scene", "people", "talk"]);
+    if (new URLSearchParams(location.search).has("capture")) document.body.classList.add("capture");
+    function show(state) {
+      if (!allowed.has(state)) state = "scene";
+      document.querySelector(".people-panel").classList.toggle("hidden", state !== "people");
+      document.querySelector(".dialogue").classList.toggle("hidden", state !== "talk");
+      document.querySelector(".frame").classList.toggle("talking", state === "talk");
+      document.querySelectorAll(".preview-nav button").forEach(button => button.classList.toggle("active", button.dataset.to === state));
+      document.querySelector(".action[data-to='people']").classList.toggle("active", state === "people");
+      history.replaceState(null, "", "?state=" + state);
+    }
+    document.querySelectorAll("[data-to]").forEach(button => button.addEventListener("click", () => show(button.dataset.to)));
+    document.querySelectorAll("[data-person]").forEach(button => button.addEventListener("click", () => {
+      document.querySelectorAll("[data-person]").forEach(person => person.classList.remove("selected"));
+      button.classList.add("selected");
+    }));
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") show(document.querySelector(".dialogue").classList.contains("hidden") ? "scene" : "people");
+      if (event.key === "Enter" && !document.querySelector(".people-panel").classList.contains("hidden")) show("talk");
+    });
+    show(new URLSearchParams(location.search).get("state") || "scene");
+  </script>
+</body>
+</html>

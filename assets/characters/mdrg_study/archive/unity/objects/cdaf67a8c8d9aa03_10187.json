@@ -1,0 +1,61 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15927,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Here’s the money, alright? Now, if you excuse me…\r\nLandlord: Not so fast.\r\nLandlord: Did you honestly think I would let you get away with it?! {{wi}}{{punch}}GET OUT NOW!\r\nYou: Wait, wait, wait! We can make a deal, right? 100$ raise, like the last time!\r\nLandlord: 200$ raise.\r\nYou: 200$?! That’s outrageous!\r\nLandlord: 250$\r\nYou: What?!\r\nLandlord: Keep negotiating and it will soon go to 300$\r\nYou: Alright! 250$...\r\nLandlord: Attaboy. {{wi}}When will you learn? Well, it’s not like it’s my problem. Hahaha!\r\n#Landlord.animate(TransparencyTo0,0.5)\r\nLandlord: Hahahaha!\r\nYou: Grrr!\r\nI will get back at him! I promise!",
+    "localizedLines": [
+      {
+        "KeyId": 455828704907485184
+      },
+      {
+        "KeyId": 455828704907485185
+      },
+      {
+        "KeyId": 455828704907485186
+      },
+      {
+        "KeyId": 455828704907485187
+      },
+      {
+        "KeyId": 455828704907485188
+      },
+      {
+        "KeyId": 455828704911679488
+      },
+      {
+        "KeyId": 455828704911679489
+      },
+      {
+        "KeyId": 455828704911679490
+      },
+      {
+        "KeyId": 455828704911679491
+      },
+      {
+        "KeyId": 455828704911679492
+      },
+      {
+        "KeyId": 455828704911679493
+      },
+      {
+        "KeyId": 455828704911679494
+      },
+      {
+        "KeyId": 455828704911679495
+      },
+      {
+        "KeyId": 455828704911679496
+      }
+    ]
+  }
+}

@@ -64,7 +64,9 @@ enum LogicOperator { AND, OR }
 
 @export var logic_operator: LogicOperator = LogicOperator.AND
 
-@export var sub_conditions: Array[ConditionResource] = []
+# A self-typed exported array retains this script at engine shutdown.
+# The condition editor supplies ConditionResource elements.
+@export var sub_conditions: Array[Resource] = []
 
 @export var include_inventory_holdings: bool = false
 

@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13698,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Are you sure it’s a good place? It’s quite far away from the supermarket.\r\nYou: I think I saw her once coming this way. She must live nearby…\r\nBot: If you say so.\r\n#bot.Expression.VeryAngry\r\nYou: Yeah, right. Try not being openly hostile. Your face says that you are ready to fight…\r\nBot: I will try.\r\n#bot.Expression.Angry\r\nBot: Better?\r\nYou: A little, but you still look angry.\r\nBot: I want my displeasure to be visible.\r\nYou: Alright then…\r\nDamn, that cashier really got under {f_botName}’s skin.\r\nIt might be a lost cause…\r\nYou: Here she comes!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209918542931288064
+      },
+      {
+        "KeyId": 209918542931288065
+      },
+      {
+        "KeyId": 209918542931288066
+      },
+      {
+        "KeyId": 209918542931288067
+      },
+      {
+        "KeyId": 209918542931288068
+      },
+      {
+        "KeyId": 209918542931288069
+      },
+      {
+        "KeyId": 209918542931288070
+      },
+      {
+        "KeyId": 209918542931288071
+      },
+      {
+        "KeyId": 209918542931288072
+      },
+      {
+        "KeyId": 209918542931288073
+      },
+      {
+        "KeyId": 209918542931288074
+      },
+      {
+        "KeyId": 209918542931288075
+      }
+    ]
+  }
+}

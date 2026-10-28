@@ -1,0 +1,70 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16350,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "#Cashier.Face.normal\r\nYou: I can’t believe what I just heard. You killed two people?\r\nYou: Maybe you didn’t do it yourself, but still. 2 people died because of you.\r\nYou: I’m sorry about what happened to you, but it’s not an excuse for what you did! You are fucked up!\r\nYou: You are right. I was selfish by trying to force you into being friends. I was stupid! \r\nYou: I thought that you were similar to {f_botName}, but now I realize how far that is from the truth! \r\nYou: You want to be left alone? Fine! We will stop seeing you, but I will tell the cops what you told me! You are too dangerous to be left alone!\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: You still don’t get it, do you?\r\n#Cashier.Face.normal\r\nMelissa: Sure. You can go to the police, but by doing that you would doom both {f_botName} and yourself. \r\nYou: What the hell are you talking about?\r\nMelissa: When they scan my memory module, they will find out that {f_botName} is also a bot. \r\nYou: Wha- {{punch}}\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: You really are a simpleton.\r\n#Cashier.Face.normal\r\nMelissa: As our parting gift, I will explain to you the two choices you have.\r\nMelissa: 1. {{wi}}You pretend that we never met and we never talk to each other ever again. \r\nMelissa: 2. {{wi}}You smash me to bits right now. In this very alley.\r\nYou: W-What is wrong with you... Why would you even say something like this…\r\nMelissa: The choice is yours, but please, make it quick. I have stuff to do.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473597602260049920
+      },
+      {
+        "KeyId": 473597602260049921
+      },
+      {
+        "KeyId": 473597602260049922
+      },
+      {
+        "KeyId": 473597602260049923
+      },
+      {
+        "KeyId": 473597602260049924
+      },
+      {
+        "KeyId": 473597602260049925
+      },
+      {
+        "KeyId": 473597602260049926
+      },
+      {
+        "KeyId": 473597602260049927
+      },
+      {
+        "KeyId": 473597602260049928
+      },
+      {
+        "KeyId": 473597602260049929
+      },
+      {
+        "KeyId": 473597602260049930
+      },
+      {
+        "KeyId": 473597602260049931
+      },
+      {
+        "KeyId": 473597602260049932
+      },
+      {
+        "KeyId": 473597602260049933
+      },
+      {
+        "KeyId": 473597602260049934
+      },
+      {
+        "KeyId": 473597602260049935
+      },
+      {
+        "KeyId": 473597602260049936
+      }
+    ]
+  }
+}

@@ -1,0 +1,1977 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180674
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Intenta decir su nombre",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393475
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Hablar con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393476
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Intentar llamar su atención",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393477
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Intentar hablar con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393478
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Decir hola",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Siento una extraña necesidad de hablar con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393480
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Hablemos con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "¿Dónde la escondo?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393482
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Veamos al Bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393483
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "Intentar comunicarse",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "¿Qué pasará con mi alquiler?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Estoy preocupado...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393486
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "¿Qué fue eso?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393487
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "¿Cuánto vale ella?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393488
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Mi vida sexual",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Hablar con la Bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393490
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Hablar con la Bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393491
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Hablar con la Bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393492
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Pregúntarle acerca de mi habitación",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393493
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Me pregunto qué piensa ella de mí...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393494
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "¿Quizás ella pueda hacer matemáticas?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393495
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Preguntarle cómo hacer dinero rápido.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393496
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Preguntarle sobre el clima",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393497
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Preguntarle qué piensa sobre el tamaño de mi...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393498
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "¿Qué pasa con la maquina de café?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393499
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393500
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Ella me irrita...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393501
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Ella esta molesta...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393502
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Intentemos hablar con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393503
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Tengamos una pequeña charla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393504
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Hablar con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393505
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Decirle que hable contigo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393506
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Pedirle que hable gentilmente",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393507
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Estoy aburrido…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393508
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Pasemos un rato con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393509
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "¡Charlemos!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393510
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Hacerle algunas preguntas existenciales",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393511
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Preguntarle sobre algo sin importancia.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393512
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Preguntarle sobre política",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393513
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Preguntarle sobre la fuente de todo sufrimiento",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393514
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Estoy de humor para jugar algunos juegos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393515
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Juguemos a las cartas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393516
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "¡Es hora de palabras encadenadas!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393517
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Es un poco tarde pero quiero hablar con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393518
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": "Creo que la Bot quiere hablar...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393519
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "¡Decirle que la amas!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393520
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Coquetear con la Bot <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393521
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Debería ser más amable con ella...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393522
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Preguntarle sobre sus emociones.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393523
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "¿Acaso un Bot sexual tiene algún interés?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393524
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "¿Acaso un Bot sexual puede sentir hambre?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393525
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Quiero tocarla...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393526
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "¿Olvidé algo?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393527
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "Sobre el nivel de inteligencia de un Bot...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393528
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "¿Puede un Bot jugar al ajedrez?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393529
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "¿Debería probar otro juego?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393530
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Creo que sé en qué juego puedo vencerla...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393531
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "La Bot parece que está confundida...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393532
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Me pregunto qué siente ella por mí...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393533
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "La Bot parece estar en un pensamiento profundo...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393534
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Creo que ella quiere algo de mi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393535
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Ahora que ella tiene ambas piernas...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393536
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": "Debería preguntarle a la Bot sobre los riesgos de salir afuera",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393537
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Necesito preguntar sobre la posibilidad de que ella salga afuera",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393538
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393539
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "Acerca de los robots sexuales",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393540
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "¿Quizás ella pueda hablar después de todo?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393541
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Hablemos de nuevo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393542
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Algo se siente fuera de lugar…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393543
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "¿Cuál es su opinión sobre las mascotas?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393544
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Debería invitarla a una cita",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393545
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Quiero ver una película con ella",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393546
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "¿Qué es ese extraño olor?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393547
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Preguntarle sobre las decoraciones de Halloween",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393548
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "¿Qué piensas de ese linda araña de peluche?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393549
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Debería preguntarle si Shanice puede venir",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393550
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "¿Qué tal karaoke?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393551
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393552
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Preguntarle qué hacer sobre la cajera",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393553
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Intentar hablar con ella otra vez",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393554
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Preguntarle sobre Melissa y sus partes \"faltantes\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393555
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Discutir sobre como el vagabundo se siente hacia los robots",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393556
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Preguntarle cómo se siente después de las reparaciones",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393557
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Mirar noticias con {f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180674
+          },
+          {
+            "rid": 7996671569124393558
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "¿Qué superpoder te gustaría tener?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Otra historia de miedo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "¿Qué haces cuando no estoy?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Si pudieras tener un trabajo, ¿cuál sería?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "¿Te gustaría convertirte en humana?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Vengarse del casero",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Pregúntale cómo lidiar con el vecino problemático",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "¿Qué crees que sucede después de la muerte?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "¿Tienes un plan en caso de un apocalipsis zombie?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Probemos un juego de rol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "¿Annalie alguna vez encontrará un novio?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6437392580223180674,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124393475,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393476,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393477,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393478,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393479,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393480,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393481,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393482,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393483,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393484,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393485,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393486,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393487,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393488,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393489,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393490,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393491,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393492,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393493,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393494,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393495,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393496,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393497,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393498,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393499,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393500,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393501,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393502,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393503,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393504,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393505,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393506,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393507,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393508,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393509,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393510,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393511,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393512,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393513,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393514,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393515,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393516,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393517,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393518,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393519,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393520,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393521,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393522,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393523,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393524,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393525,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393526,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393527,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393528,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393529,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393530,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393531,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393532,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393533,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393534,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393535,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393536,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393537,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393538,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393539,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393540,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393541,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393542,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393543,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393544,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393545,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393546,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393547,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393548,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393549,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393550,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393551,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393552,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393553,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393554,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393555,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393556,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393557,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      },
+      {
+        "rid": 7996671569124393558,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔️"
+        }
+      }
+    ]
+  }
+}

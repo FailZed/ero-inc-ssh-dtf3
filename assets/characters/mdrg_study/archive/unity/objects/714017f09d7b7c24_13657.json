@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 32614907904
+  },
+  "m_Name": "OtherDataGenerated",
+  "ShowerParticleSystems": {
+    "Soap": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/Game/Scripts/Game States/ShowerState/Soap/ParticleSystem/FlyOffSoapParticleSystem",
+        "assetGuid": "f401a31ee4e9def4394ad7808026f6ec",
+        "assetLocalId": 1734922273242487174,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    },
+    "HideBrushSoapParticleSystem": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/Game/Scripts/Game States/ShowerState/Soap/ParticleSystem/HideBrushSoapParticleSystem",
+        "assetGuid": "20530e266aa43554bad1e8c19d8fcdbd",
+        "assetLocalId": 8952122693143663015,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    }
+  },
+  "ShowerParticleSystemsGroups": {
+    "FlyOffSoapParticleSystem": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/Game/Scripts/Game States/ShowerState/Soap/ParticleSystem/FlyOffSoapParticleSystem",
+        "assetGuid": "f401a31ee4e9def4394ad7808026f6ec",
+        "assetLocalId": 5363800445336090928,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 0
+      }
+    }
+  }
+}

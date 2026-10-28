@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15542,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "The skin of the sausage is nicely fried, but the inside is still juicy and yummy. Sadly the onion wasn’t fresh, but it still works well together.\r\nAlthough, there’s something that I can’t put my finger on.\r\nThe taste of this sausage is a bit different. I ate this supermarket sausage many times so I know exactly how it tastes, but there’s a small change…\r\nYou: {f_botName}, did you add something to the sausage?\r\n#bot.Expression.VeryHappy\r\nBot: Oh, so you noticed.\r\n#bot.Expression.clear\r\n#bot.Expression.angry\r\nYou: Should I be scared?\r\nBot: Of course not! I didn’t do anything weird to it! \r\n#bot.Expression.clear\r\nBot: To make the sausage more flavorful, I marinated it in soda before frying.\r\nYou: Really? I would never have guessed it.\r\n#bot.Expression.happy\r\nYou: It’s really good, great job!\r\nBot: Thank you for the praise!\r\nBot: I will also make you something hot to drink to stimulate your stomach. Sausage might be hard to digest.\r\nYou: I will take you up on your offer.",
+    "localizedLines": [
+      {
+        "KeyId": 330835511527596032
+      },
+      {
+        "KeyId": 330835511527596033
+      },
+      {
+        "KeyId": 330835511527596034
+      },
+      {
+        "KeyId": 330835511527596035
+      },
+      {
+        "KeyId": 330835511527596036
+      },
+      {
+        "KeyId": 330835511527596037
+      },
+      {
+        "KeyId": 330835511527596038
+      },
+      {
+        "KeyId": 330835511527596039
+      },
+      {
+        "KeyId": 330835511527596040
+      },
+      {
+        "KeyId": 330835511527596041
+      },
+      {
+        "KeyId": 330835511527596042
+      },
+      {
+        "KeyId": 330835511527596043
+      },
+      {
+        "KeyId": 330835511527596044
+      }
+    ]
+  }
+}

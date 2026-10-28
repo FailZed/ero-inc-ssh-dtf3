@@ -1,7 +1,7 @@
 extends SceneTree
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const Visuals = preload("res://scripts/portraits/character_visuals.gd")
-var directory := "E:/GoDot/.research/school-0.981/sandbox-2026-10-27/captures"
+var directory := OS.get_environment("EROINC_ARTIFACTS").path_join("captures/sandbox") if not OS.get_environment("EROINC_ARTIFACTS").is_empty() else "user://captures/sandbox"
 var capture_failed := false
 
 func _initialize() -> void:

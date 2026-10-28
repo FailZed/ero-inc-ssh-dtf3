@@ -1,0 +1,34 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9809,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Master?\r\nYou: Yes, {f_botName}, what is it?\r\nBot: My parts could use an upgrade, these I have equipped now aren’t very good quality…\r\nYou: These better limbs aren’t cheap, you know? I’m not a millionaire. I will do my best though.\r\n#bot.Expression.Happy\r\nBot: That’s ok~",
+    "localizedLines": [
+      {
+        "KeyId": 191538826848374789
+      },
+      {
+        "KeyId": 191538826848374790
+      },
+      {
+        "KeyId": 191538826848374791
+      },
+      {
+        "KeyId": 191538826848374792
+      },
+      {
+        "KeyId": 191538826848374793
+      }
+    ]
+  }
+}

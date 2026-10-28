@@ -1,0 +1,47 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 5668.810546875,
+    "y": 2086.846435546875,
+    "width": 176.13999938964844,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 18611,
+  "blockName": "Outside/FishJointWalk",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 12504
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 12503
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 12502
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 12501
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

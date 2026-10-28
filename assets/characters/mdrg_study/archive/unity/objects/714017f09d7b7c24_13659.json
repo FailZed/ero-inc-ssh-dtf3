@@ -1,0 +1,44 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 18186502144
+  },
+  "m_Name": "ShaderDataGenerated",
+  "Live2DShaders": {
+    "MovingTexture": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/Game/Shader/CustomLive2D/MovingTexture",
+        "assetGuid": "6bf6ff88b70d4c03aa8c6e8e7c5916cd",
+        "assetLocalId": 4800000,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 1
+      }
+    },
+    "Rainbow": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/Game/Shader/CustomLive2D/Rainbow",
+        "assetGuid": "5dd0431d663645f498c372f45de12d84",
+        "assetLocalId": 4800000,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 1
+      }
+    },
+    "RayMarching": {
+      "resourcesReferenceLoader": {
+        "path": "Assets/Game/Shader/CustomLive2D/RayMarching",
+        "assetGuid": "8600f02fb3fc44ffbfc706364be6ba4f",
+        "assetLocalId": 4800000,
+        "isEmpty": 0,
+        "isInResourcesFolder": 0,
+        "isMainAsset": 1
+      }
+    }
+  }
+}

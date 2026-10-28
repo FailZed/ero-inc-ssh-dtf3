@@ -1,0 +1,1065 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Common_pt-BR",
+  "m_LocaleId": {
+    "m_Code": "pt-BR"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": -593790824102937619
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 280313597952,
+      "m_Localized": "BigDaddyHurt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131348
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 283585155072,
+      "m_Localized": "Lady Annalie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131349
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 285984296960,
+      "m_Localized": "Proprietário",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131350
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6160727567896576,
+      "m_Localized": "Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8386212125347840,
+      "m_Localized": "Você",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8386212137930752,
+      "m_Localized": "Robô",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893851684864,
+      "m_Localized": "Policial Feminina",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131351
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893902016512,
+      "m_Localized": "Policial",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210816,
+      "m_Localized": "Mãe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210817,
+      "m_Localized": "Vizinho chato",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210818,
+      "m_Localized": "Rádio da polícia (texto para fala)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893906210819,
+      "m_Localized": "Rádio da polícia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405120,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405121,
+      "m_Localized": "??? 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405122,
+      "m_Localized": "Bandido",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893910405123,
+      "m_Localized": "Homem Rosa Misterioso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599424,
+      "m_Localized": "Eclesio-bô FF",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599425,
+      "m_Localized": "Freira sexy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893914599426,
+      "m_Localized": "'Irmã' Shanice",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131352
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893914599427,
+      "m_Localized": "Irmã Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793728,
+      "m_Localized": "Robô Sacerdotal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793729,
+      "m_Localized": "Freira",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793730,
+      "m_Localized": "Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893918793731,
+      "m_Localized": "Futura Freira Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988032,
+      "m_Localized": "Padre-bô",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131353
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 189884893922988033,
+      "m_Localized": "Eclesio-bô FF e você",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988034,
+      "m_Localized": "Goku segundo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893922988035,
+      "m_Localized": "Bo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182336,
+      "m_Localized": "Nigevchenko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182337,
+      "m_Localized": "Jamie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182338,
+      "m_Localized": "Locutor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893927182339,
+      "m_Localized": "Mulher",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376640,
+      "m_Localized": "Distribuidor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376641,
+      "m_Localized": "???1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376642,
+      "m_Localized": "Secretária do Blaubleim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893931376643,
+      "m_Localized": "Blaubleim ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570944,
+      "m_Localized": "pApAi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570945,
+      "m_Localized": "vOcÊ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893935570947,
+      "m_Localized": "Padre-bô Mark",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765248,
+      "m_Localized": "Mendigo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765250,
+      "m_Localized": "Annalie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893939765251,
+      "m_Localized": "Você e o Robô",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959552,
+      "m_Localized": "Estranho",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959553,
+      "m_Localized": "Estranho 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959554,
+      "m_Localized": "Estranho 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893943959555,
+      "m_Localized": "Estranho 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153856,
+      "m_Localized": "Garotinha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153857,
+      "m_Localized": "Mãe da menina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153858,
+      "m_Localized": "Idosa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153859,
+      "m_Localized": " Policiais 3 e 4",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893948153860,
+      "m_Localized": "Policial 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348161,
+      "m_Localized": "Policiais",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348162,
+      "m_Localized": "??? 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893952348163,
+      "m_Localized": "??? 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542464,
+      "m_Localized": "??? 3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542465,
+      "m_Localized": "Josh?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542466,
+      "m_Localized": "Josh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893956542467,
+      "m_Localized": "Recepcionista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736768,
+      "m_Localized": "Detetive",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736769,
+      "m_Localized": "Garçom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736770,
+      "m_Localized": "Sr. Fantasma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893960736771,
+      "m_Localized": "Jogador de beisebol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931072,
+      "m_Localized": "Morte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931073,
+      "m_Localized": "Fantasma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931074,
+      "m_Localized": "Cara de terno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893964931075,
+      "m_Localized": "Velhinha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125377,
+      "m_Localized": "Eclesio-bô FF ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893969125379,
+      "m_Localized": "Nova Concierge",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893973319680,
+      "m_Localized": "Concierge Leonardo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189884893973319681,
+      "m_Localized": "Big Daddy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197348848315654144,
+      "m_Localized": "Farmacêutico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197348848403734528,
+      "m_Localized": "Funcionária",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168577,
+      "m_Localized": "Caixa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852422168576,
+      "m_Localized": "Leonardo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207821852338282496,
+      "m_Localized": "Melissa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899521212416,
+      "m_Localized": "Apresentador",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131354
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 230535899592515584,
+      "m_Localized": "Repórter",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 230535899592515585,
+      "m_Localized": "Baderneiro",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131355
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 296908734682095616,
+      "m_Localized": "Mulher rica com jaqueta rosa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734682095617,
+      "m_Localized": "Mulher rica com peitos enormes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296908734589820928,
+      "m_Localized": "Alto-falante da loja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319409216818241536,
+      "m_Localized": "Little_Richard",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319409216914710528,
+      "m_Localized": "InquilinoMalTratado (Você)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732238696448,
+      "m_Localized": "Sra. Fisher",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445184,
+      "m_Localized": "Equipe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445185,
+      "m_Localized": "Membro da equipe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445186,
+      "m_Localized": "DAK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326769732276445187,
+      "m_Localized": "Administrador",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400360382465,
+      "m_Localized": "Mulher Jovem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400360382464,
+      "m_Localized": "Velha Senhora",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328532400263913472,
+      "m_Localized": "Lucy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131356
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 471117888949837824,
+      "m_Localized": "Amei",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131357
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 471117889046306816,
+      "m_Localized": "Melissa verdadeira",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131358
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 471117889046306817,
+      "m_Localized": "Jacobi E. Wunderanwalt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131359
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 479127667148316672,
+      "m_Localized": "Britannia",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131360
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 479859701739151360,
+      "m_Localized": "Mulher aleatória",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131361
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 479127667198648320,
+      "m_Localized": "Mulher desconhecida",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131362
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481728203517321216,
+      "m_Localized": "Velho",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131363
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777896128514,
+      "m_Localized": "???5",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131364
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777896128513,
+      "m_Localized": "???4",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131365
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777896128512,
+      "m_Localized": "???3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131366
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 481727777795465216,
+      "m_Localized": "???2&3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131367
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 542258247985258496,
+      "m_Localized": "Gravação",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124131368
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569124131348,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Noah(Elfin) :Não é para traduzir nome de personagens. "
+        }
+      },
+      {
+        "rid": 7996671569124131349,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "OK - 15/03/2026\n\nDama não né!"
+        }
+      },
+      {
+        "rid": 7996671569124131350,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Fix Typo"
+        }
+      },
+      {
+        "rid": 7996671569124131351,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "(demonikku): no jogo, ficou muito confuso deixar sem específicar, por mais que seja um diálogo \"\"\"aleatório\"\"\" dos primeiros dias da história."
+        }
+      },
+      {
+        "rid": 7996671569124131352,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Done! (04/21/24) | demonikku: Como estou traduzindo, também tô revisando TUDO.  Qualquer erro de digitação ou concordância, pode me chamar no discord: \"demonikku\". Também estou no servidor  -obviamente-, então se quiser me chamar nos chats do mesmo, fiquem a vontade. <3"
+        }
+      },
+      {
+        "rid": 7996671569124131353,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "(demonikku): Assim ficou bem melhor ewe"
+        }
+      },
+      {
+        "rid": 7996671569124131354,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "(demonikku): deixasse apenas apresentador, menos extenso e autoexplicativo pra(s) cena(s) deste personagem"
+        }
+      },
+      {
+        "rid": 7996671569124131355,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "(demonikku): dei uma olhada no meaning de Rioter, e apareceram algumas notícias de protestos com os protestantes mais violentos, tumultos tensos e afins. Então acabei deixando baderneiro, taok?"
+        }
+      },
+      {
+        "rid": 7996671569124131356,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Os textos estão verdes... Isso está certo? -Phobos 14/07/2025"
+        }
+      },
+      {
+        "rid": 7996671569124131357,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131358,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131359,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131360,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131361,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131362,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131363,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131364,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131365,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131366,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131367,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124131368,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16292,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Cashier.Face.depressed\r\n#Annalie_Outside.face.suprised\r\n#bot.Expression.clear\r\n#bot.Expression.VeryShock\r\nPoliceman: Well, well, well. Who do we have here? Having fun? {{punch}}\r\nPoliceman: Friends of yours? How nice! But I can’t believe that you actually have the spine to go around and laugh with friends after what you did.\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Awww\r\n#bot.Expression.clear\r\n#bot.Expression.angry\r\nLady Annalie: What exactly do you two dorks want? \r\n#Annalie_Outside.face.sad\r\nPoliceman: Easy, lady, or I will arrest you for resisting arrest! You wouldn’t want that now, would you?\r\nPolicewoman: We just came to say hi to Melissa, that’s all. There’s no need to make it any uglier than it needs to be.\r\nPoliceman: Right, right! \r\nPoliceman: Just answer us this one question and we are off.\r\n#Policeman.Face.angry\r\n#bot.Expression.clear\r\n#bot.Expression.VeryShock\r\n#Annalie_Outside.face.suprised\r\nPoliceman: Do your friends know that you are a cold-blooded murderer?\r\n#Policeman.Face.annoyed\r\n#Annalie_Outside.face.sad\r\n#bot.Expression.clear\r\n#bot.Expression.angry\r\nPoliceman: I guess not.\r\nPoliceman: You don’t need to answer anymore, Melissa. We figured it out ourselves.\r\nPoliceman: Ah~ That was a nice line, wasn’t it?!\r\n#Policewoman.Face.annoyed\r\nPolicewoman: Yes, it was… {{wi}}and then you ruined it.\r\n#Policewoman.Face.normal\r\nPoliceman: We will go now, Melissa. It seems like you and your friends have a lot to talk about. Bye~\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473568303754764288
+      },
+      {
+        "KeyId": 473568303754764289
+      },
+      {
+        "KeyId": 473568303754764290
+      },
+      {
+        "KeyId": 473568303754764291
+      },
+      {
+        "KeyId": 473568303754764292
+      },
+      {
+        "KeyId": 473568303754764293
+      },
+      {
+        "KeyId": 473568303754764294
+      },
+      {
+        "KeyId": 473568303754764295
+      },
+      {
+        "KeyId": 473568303754764296
+      },
+      {
+        "KeyId": 473568303754764297
+      },
+      {
+        "KeyId": 473568303754764298
+      },
+      {
+        "KeyId": 473568303754764299
+      },
+      {
+        "KeyId": 473568303754764300
+      }
+    ]
+  }
+}

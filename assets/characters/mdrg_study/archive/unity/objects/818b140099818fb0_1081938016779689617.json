@@ -1,0 +1,7256 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "News_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 7941212782587087890
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3496715620352,
+      "m_Localized": "<b><u>Ti sei unito a noi… Non si torna indietro…</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496719814656,
+      "m_Localized": "<b><u>Una nota azienda alimentare rimuove dagli scaffali un lotto di prodotti andati a male, citando 'un rischio per il brand'.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496719814657,
+      "m_Localized": "<b><u>Litri di sborra trovati nelle riserve idriche di {UScity}. Si dimette il CEO della sperm farm.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966055
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814658,
+      "m_Localized": "<b><u>Nuova arma progettata in {country}! I robot giganti sono il futuro della guerra?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008960,
+      "m_Localized": "<b><u>Ghetti bianchi sempre più diffusi. Perché esistono?</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008961,
+      "m_Localized": "<b><u>Benefici della mescolanza tra razze. Tutto quello che devi sapere</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008962,
+      "m_Localized": "<b><u>Furry in aumento. Perché le persone odiano i nostri soffici amici?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966056
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008963,
+      "m_Localized": "<b><u>Codice trapelato di Elven Fortress spiega la relatività generale. Scopri come.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008964,
+      "m_Localized": "<b><u>Scoperto il gender Z. Si aggiunge una nuova dimensione ai gender conosciuti.<u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966057
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008965,
+      "m_Localized": "<b><u>Catena internazionale di pizzerie chiusa per violazioni su minori.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966058
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008966,
+      "m_Localized": "<b><u>Cosa è successo sull'isola Bobesta? Rilasciate 40 pagine di documenti.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008967,
+      "m_Localized": "<b><u>IN CORSO - lo sheriffo:\"situzione critica\", 17 ore di stallo alla banca del seme - guarda LIVE</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008968,
+      "m_Localized": "<b><u>Ondate di manifestazioni spontanee si ergono in Giappone, \nringraziando e lodando il governo per l'abolizione delle leggi sulla censura della pornografia.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966059
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008969,
+      "m_Localized": "<b><u>Più del 50% degli uomini soffre di disfunzione erettile! Come gestirsi con gli estrogeni additivi?</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008970,
+      "m_Localized": "<b><u>Ossa di più di {number, 200,1000} persone trovate nel municipio di \n{UScity}. Praticavano rituali satanici?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008971,
+      "m_Localized": "<b><u>Questa ragazzina di {number, 5, 10} anni può far levitare un cetriolo con la sola forza di volontà. Guarda il video!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008972,
+      "m_Localized": "<b><u>La lingua polacca sta diventando il nuovo latino? Come iniziare a impararlo ora.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008973,
+      "m_Localized": "<b><u>Rivelata la tecnologia segreta dell'Impero Polacco! Le persone sono in pericolo?</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008974,
+      "m_Localized": "<b><u>Scioccante nuovo studio rivela che l'87% dei maschi nati dopo il 2000 non ha mai ricevuto un abbraccio.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008975,
+      "m_Localized": "<b><u>Nonostante rappresentino solo il 13% della popolazione, i videogiocatori constituiscono il 56% dei vergini. Uno sguardo approfondito nella comunità.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008976,
+      "m_Localized": "<b><u>2 + 2 = crimine di pensiero? Certezze matematiche appese a un filo mentre le più grandi paure di Orwell diventano realtà.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008977,
+      "m_Localized": "<b><u>SCIOCCANTE: Informazioni riservate rivelano che gli impianti celebrali hanno falle nella sicurezza, sono facilmente hackerabili.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008978,
+      "m_Localized": "<b><u>SCIOCCANTE: Impianto celebrale hackerato trasmetteva `sissy porn` direttamente nel cervello di un ragazzino.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966060
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008979,
+      "m_Localized": "<b><u>Scienziati in {country} trovano strane uova vecchie di migliaia di anni. L'inizio di una nuova era Paleolitica?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008980,
+      "m_Localized": "<b><u>SCIOCCANTE: Tasso di suicidi più alto che mai; sfiora il \n{number, 20, 40}% per i maschi bianchi di 20 anni.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008981,
+      "m_Localized": "<b><u>Toccante storia di sesso in un asilo scuote il nostro modo di vedere la società. Leggi di più.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008982,
+      "m_Localized": "<b><u>Arrestato uomo di {UScity} 8 anni dopo aver ucciso un uomo incendiandogli i genitali.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008983,
+      "m_Localized": "<b><u>Cittadini della colonia marziana chiedono fonti di cibo più sostenibili, citando studi riguardo ai grilli e la loro maggiore sostenibilità rispetto agli scarafaggi.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008984,
+      "m_Localized": "<b><u>Può un cane miagolare e un gatto abbaiare?</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008985,
+      "m_Localized": "<b><u>Svolta nella scienza: finalmente superato il blocco stradale di Alcubierre's drive</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008986,
+      "m_Localized": "<b><u>Nuovo bar 'H.3.A.V.E.N' aprirà in {number, 5, 15} giorni.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008987,
+      "m_Localized": "<b><u>Un incidente in una centrale nucleare ha causato la comparsa di ragni mutanti con {number,50,70} zampe.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008988,
+      "m_Localized": "<b><u>Cittadini della colonia marziana chiedono fonti di cibo più sostenibili, citando studi riguardo ai grilli e la loro maggiore sostenibilità rispetto agli scarafaggi.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966061
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008989,
+      "m_Localized": "<b><u>Vice presidente della compagnia aerea Divided:\"lo spazio per le gambe è un privilegio non un diritto\", indignata la risposta internazionale.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008990,
+      "m_Localized": "<b><u>Uomo di {UScity} rapisce scienziato e un bambino (ToT) \nper creare una ragazza-gatto geneticamente modificata, dicono le autorità.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966062
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008991,
+      "m_Localized": "<b><u>SCIOCCANTE: Informazioni riservate rivelano che gli impianti celebrali della  {company} hanno falle nella sicurezza, sono facilmente hackerabili.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008992,
+      "m_Localized": "<b><u>Rinchiuso genitore pedofilo. Quali sono i segnali d'allarme a cui TU puoi fare attenzione? Carezze e tenersi per mano.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008993,
+      "m_Localized": "<b><u>Rana</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008994,
+      "m_Localized": "<b><u>Base lunare? A breve potrebbe chiamarsi \"base degli orsi\" dopo un'imboscata da parte di questi infidi mammiferi spaziali ha colto i nostri cosmonauti di sorpresa.\n</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008995,
+      "m_Localized": "<u><b>BREAKING NEWS:Il governo annuncia che  il suo farmaco per cambiare sesso è stato completato! Tasso di mortalità: solo\n{number,45,99}%</u></b></u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008996,
+      "m_Localized": "<b><u>Ragazzina scomparsa torna a casa dopo 2 settimane! \nFelici, i genitori commentano: \"L'abbiamo messa in un tritacarne e data da mangiare ai cani, com'è possibile?\"</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008997,
+      "m_Localized": "<b><u>Nuovo aroma dello svapo \"Cazzo di donna\" sta conquistando il mercato</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724008998,
+      "m_Localized": "<b><u>Scienziato aggiungono lettere all'alfabeto greco dopo l'apparizione di un nuovo ceppo di {disease}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008999,
+      "m_Localized": "<b><u>Non hai superato l'esame della prostata? Ecco come prepararti per il prossimo</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009000,
+      "m_Localized": "<b><u>Ninja cyborg irrompe in una base militare a {UScity}, i proiettili sono \"inefficaci\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009001,
+      "m_Localized": "<b><u>Il tuo smart fridge ti spia? Fridge CEO: \"Questi dati sono usati per migliorare la vostra esperienza\"</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009002,
+      "m_Localized": "<b><u>Fai attenzione! Due cyborg stavano combattendo con delle katane nelle wasteland, i locali dicono che nessun civile è stato ferito ma è meglio tenere le distanze dalla loro posizione</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966063
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009003,
+      "m_Localized": "<b><u>Legislatore ({number,32,79}) propose la legalizzazione dei sexbot. Morì poco dopo di arresto cardiaco</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009004,
+      "m_Localized": "<b><u>Hackers oscurano più grande sito yiff in {country} \nparalizzando per anni la comunità furry locale</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009005,
+      "m_Localized": "<b><u>Sempre più nazioni bandiscono i sexbot a causa dei tassi di natalità al minimo storico</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009006,
+      "m_Localized": "<b><u>Milioni di persone intrappolate in un gioco VR stanno tenedo enormi orge in tutto il server. Qual è il problema? È PEGI \n7</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009007,
+      "m_Localized": "<b><u>Ti prudono le palle? Segnali di inizio di problemi futuri. Clicca qui per saperne di più...</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009008,
+      "m_Localized": "<b><u>:) :) :), l'artista dietro i popolarissimi death-noise-breakcore album rompe il silenzio</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009009,
+      "m_Localized": "<b><u>Registrazione segreta di un membro del nostro staff è stata rilasciata da sabotatori di destra. NON GUARDATELO</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009010,
+      "m_Localized": "<b><u>Ribellioni in {country} fuori controllo dopo che un membro di ALM è stato ucciso da un drone non identificato</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009011,
+      "m_Localized": "<b><u>Occupazione polacca in {country2} - tutto quello che c'è da sapere</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009012,
+      "m_Localized": "<b><u>Gruppo di otaku (patiti di cultura giapponese) rapisce e stupra ragazzino di {number,3,13} anni</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966064
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009013,
+      "m_Localized": "<b><u>Gang di {number,3,69} {animal} selvaggi TERRORIZZA cittadina di {UScity}. Con immagini</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009014,
+      "m_Localized": "<b><u>Nuovo ceppo del HIV chiamato HIV-{number,20,77}xj \nha già uccisono {number,3,1790} persone in {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009015,
+      "m_Localized": "<b><u>Esercito statunitense lancia attacco aereo contro i Talebani in \n{country} uccidendo {number,2,666} bambini non ancora nati</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009016,
+      "m_Localized": "<b><u>\"Disonorevole\" dice ambasciatore di {country} dopo che \n{number,3,20} veterani di guerre per procura vengono decorati con la medaglia d'onore</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009017,
+      "m_Localized": "<b><u>IMPORTANTE. Nazionalismo in crescita dopo che un MASCHIO BIANCO vince le elezioni in {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009018,
+      "m_Localized": "<b><u>Grazie a questo accessorio cibernetico i tuoi genitali maschili e simili possono crescere fino a {number,2,5} centimetri</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966065
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009019,
+      "m_Localized": "<b><u>Recessione in {country} lascia {number,5,20} mila persone senza casa.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009020,
+      "m_Localized": "<b><u>{country}: scienziati trovano una nuova cura per l'eterossessualità.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009021,
+      "m_Localized": "<b><u>Grande svolta nella genetica. Ad avere il genoma più simile a quello umano è il {animal}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009022,
+      "m_Localized": "<b><u>{celebrity} è un membro di\n{terroristorganisation}? Un report terrificante da un nostro lettore.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009023,
+      "m_Localized": "<b><u>Tensioni tra {country} e {country} in aumento. È guerra?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009024,
+      "m_Localized": "<b><u>Turisti illegali trovati in {country} stavano trasportando\n{number,2,100} milioni di dollari. Di chi sono questi soldi?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009025,
+      "m_Localized": "<b><u>Oggi sono stato rapinato per strada e ciò ha fatto crescere il mio amore per la diversità in {UScity}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009026,
+      "m_Localized": "<b><u>Suicidio di massa alla chiesa di Four Leaf Clover in {UScity} \ndopo che la congregazione ha ingerito una manciata di pillole {color}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009027,
+      "m_Localized": "<b><u>Il sesso anale è peccato? Prete {sexuality} locale risponde.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009028,
+      "m_Localized": "<b><u>Ami le {bodypart}? Gli scienziati dicono che sei {sexuality}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009029,
+      "m_Localized": "<b><u>Sei {sexuality}? Scenziati dicono che ti piacciono le {bodypart}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009030,
+      "m_Localized": "<b><u>{celebrity} trovato morto. L'autopsia suggerisce un suicidio da {deathcause}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009031,
+      "m_Localized": "<b><u>Errore fatale: calciatore del {country} 'ucciso dai compagni dopo un errore in difesa'</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009032,
+      "m_Localized": "<b><u>LEGGI DI PIÙ: Fulmini uccisono {number,3,10} bambini che giocavano a calcio in {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009033,
+      "m_Localized": "<b><u>{bodypart} smembrate trovate in una piccola chiesa a {UScity}. Il video scioccante.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009034,
+      "m_Localized": "<b><u>Gigantesco {animal} attending a school in Florida? Incredible story.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009035,
+      "m_Localized": "<b><u>SCIOCCANTE: essere {sexuality} vietato in {country}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009036,
+      "m_Localized": "<b><u>' Incredibile’: essere {sexuality} non è più illegale in {country}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009037,
+      "m_Localized": "<b><u>SCIOCCANTE: Il gruppo dietro il rilascio del nuovo romanzo porno ha connessioni con {terroristorganisation}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009038,
+      "m_Localized": "<b><u>Giocare in realtà virtuale è sempre più vicino con il rilascio di SCO(Spear Craft Offline) </u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009039,
+      "m_Localized": "<b><u>Rivolte a {UScity} terminate dopo \"brutale\" \"intervento\" \"militare\".</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009040,
+      "m_Localized": "<b><u>Giovane triliardario aumenta i fondi della sua milizia privata in {country}. Colpo di stato all'orizzonte?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009041,
+      "m_Localized": "<b><u>Genocidio efferato in {country}. Oltre {number, 8800, 9200} i morti.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009042,
+      "m_Localized": "<b><u>Il CEO di {company} è {sexuality}? Una bellissima storia.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009043,
+      "m_Localized": "<b><u>Ti piace il {color}? Il tuo futuro non sarà brillante...</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009044,
+      "m_Localized": "<b><u>Uccello da record a {UScity}! Contadino vince competizione locale. </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009045,
+      "m_Localized": "<b><u>Uomo di {UScity} trovato mentre faceva sesso con un {animal}. L'animale non ce l'ha fatta.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009046,
+      "m_Localized": "<b><u>Uomo di {UScity} trovato mentre faceva sesso con {animal}. Fortunatamente l'animale non ha sporto denuncia.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009047,
+      "m_Localized": "<b><u>Basso costo del lavoro in {country} fa crollare i prezzi delle tute di pelliccia. È la fine del dominio dei produttori occidentali sul mercato?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009048,
+      "m_Localized": "<b><u>{company} citata in giudizio per presunte discriminazioni contro orientamento {sexuality}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966066
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009049,
+      "m_Localized": "<b><u>{number,1000,2000} persone si suicidono in massa nel centro di {UScity}. Perché?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009050,
+      "m_Localized": "<b><u>Uomo di {UScity} rapisce scienziato per creare una ragazza-{animal} geneticamente modificata, dicono le autorità</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009051,
+      "m_Localized": "<b><u>Uomo di {UScity} confessa il furto di {number,10,50} Kg di burro</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966067
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009052,
+      "m_Localized": "<b><u>SCIOCCANTE! L'uso della parola \"SCIOCCANTE\" nei titoli delle notizie aumentato del {number, 300, 500}% nell'ultima settimana.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009053,
+      "m_Localized": "<b><u>SCIOCCANTE!!! Presidente di {country} è diventato un tossicodipendente!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966068
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009054,
+      "m_Localized": "<b><u>Clone di Mahatma Gandhi pretende che {country} renda illegali tutte le importazione ed esportazioni di {animal} o rischia bombardamento nucleare.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966069
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009055,
+      "m_Localized": "<b><u>Vendita annuale di orsacchiotti recupera il {number,20,50}% rispetto allo scorso periodo.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009056,
+      "m_Localized": "<b><u>Caramello gommose verdi correlate all'insorgere di acne.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009057,
+      "m_Localized": "<b><u>Visori VR solo per adulti? - Le industrie accettano che l'unico genere redditizio sia il porno</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3496724009058,
+      "m_Localized": "<b><u>Stato di emergenza in {country} dopo un focolaio di rabbia a una convention furry</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009059,
+      "m_Localized": "<b><u>{country}: uomo muore di overdose di Vinegara che gli ha causato un'erezione di {number,10,85} ore</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966070
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666432,
+      "m_Localized": "<b><u>È vero?! Un maschio bianco etero stava trasmettendo i suoi rapporti sessuali con un sexbot per qualche ora. La polizia sta indagando.</u></b>\n<size=60%>È sconcertante… la gente guardava la trasmissione in massa. Purtroppo non è possibile intraprendere azioni legali contro gli spettatori poichè guardare contenuti con i sexbot non è illegale. CockTwitch, il sito su cui è avvenuta la vicenda, rifiuta di prendere provvedimenti per via delle sue \"politiche\".",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666433,
+      "m_Localized": "<b><u>Esplosione alla basilica di San Pietro causata da una fuga di gas.</u></b>\n<size=60%>Non è successo niente di sospetto e tutte queste fake news e teorie cospirazioniste che circolano per l'internet sono disgustose e inappropriate. Oh e Pio XXX è Papa di nuovo.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666434,
+      "m_Localized": "<b><u>Noto comico/terrorista Sam <REDACTED> è SCAPPATO di nuovo dalla sua cella di isolamento.</u></b>\n<size=60%>Questo deviato bastardo ha potuto farla franca per tutti i suoi crimini per colpa del governo neo-liburista. Rapida la reazione da parte di FBI e altre organizzazioni, ma è riuscito a scappare senza lasciare traccie. Tempi pericolosi oll'orizzonte...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666435,
+      "m_Localized": "<b><u>Videogiochi, un pericolo in crescita. Un altro streamer si toglie la vita dopo aver perso in una competizione.</u></b>\n<size=60%>Qualcosa un tempo considerato solo uno scherzo dell'internet è diventato realtà. I crolli mentali dei videogiocatori \n(noti come \"rages\") si stanno facendo sentire sulla parte giovane della popolazione. Solo in questo semestre le morti correlate ai videogiochi sono cresciute del \n{number,150,3000}%...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666436,
+      "m_Localized": "<b><u>Chiesa di Q Anon registrata ufficialmente come religione</u></b>\n<size=60%>Chi avrebbe mai pensato che qualcosa di così sinistro come il culto di Q Anon sarebbe stato riconosciuto nella società odierna. Il nostro esperto di religioni morte, il prete cattolico Marko, ha rilasciato una breve intervista sulla questione....",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666437,
+      "m_Localized": "<b><u>Nuova vittima del killer dello zodiaco ha postato su twiiter questa strana foto di una mucca fatta di burro poco prima di morire</u></b>\n<size=60%>Cosa può significare? I nostri esperti pensano di aver trovato un indizio in un vecchio twiit di un senatore. \nChe ci sia dietro qualcos'altro?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666438,
+      "m_Localized": "<b><u>Blue Lives Matter riconosciuta ufficialmente come organizzazione terrorista dalle nazioni unite</u></b>\n<size=60%>Finalmente qualche buona notizia in questo mondo abbandonato da Dio. Anche se nessuno è stato ancora condannato è un segnale positivo per tutte le polizie private alternative nate di recente.  ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666439,
+      "m_Localized": "<b><u> Loooney Tunes remake, Tadeeo non avrà più il suo fucile, i creatori dichiarano \"non supportiamo le armi\"</u></b>\n<size=60%>Decisione buona e ragionevole messa in ombra dal ondate di protesta sui social. I creatori hanno ricevuto centiania di minacce di morte dagli amanti del secondo emendamento.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966071
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666440,
+      "m_Localized": "<b><u>\"Teste calde\". Match di wrestling professionista si scalda quando gli spettatori invadono il ring dopo un commento razzista da parte di un partecipante</u></b>\n<size=60%>Il mondo del wrestling mostra ancora una volta quanto sia fuori dal tempo. Purtroppo, nessun partecipante è stato ferito.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666441,
+      "m_Localized": "<b><u>Il video in cui Obunga sta comprando \"hot dogs\" per 65mila $ è reale? Il nostro esperto non ne è sicuro</u></b>\n<size=60%>Con la sempre maggiore diffusione di tecnologie di deepfake non possiamo essere sicuri dell'autenticità di nessun video che non sia rilasciato da giornalisti approvati dal governo. Leggi di più per sapere di chi fidarti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666442,
+      "m_Localized": "<b><u>Vi ricordate la notizia riguardo ai litri di sborra trovati nelle riserve idriche? È peggio di quanto pensassimo...</u></b>\n<size=60%>Nuova indagine del governo rivela che altre {number, 501, 3500} donne in più potrebbero essere rimaste incinte, incluse alcune ragazzine di {number, 10, \n13} anni. Adesso inizia la ricerca dei padri.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666443,
+      "m_Localized": "<b><u>Persone piovono dal cielo ogni giorno</u></b>\n<size=60%>Con il tasso di suicidi più alto che mai, tutto questo fa parte della normalità della vita di città. Come gestire il trauma? La nostra risposta: Pasticche. \n(Sponsorizzato da Bigpharma™)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666444,
+      "m_Localized": "<b><u>Persone piovono dal cielo ogni giorno</u></b>\n<size=60%>Con il tasso di suicidi più alto che mai, tutto questo fa parte della normalità della vita di città. Come gestire il trauma? La nostra risposta: Pasticche. \n(Sponsorizzato da Bigpharma™)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966072
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666445,
+      "m_Localized": "<b><u>CEO di SpaceY, Edison, e Brainlinker muore dopo che il primo chip per interfacciarsi con il cervello dell'azienda va in corto ed esplode.</u></b>\n<size=60%>Nuovo proprietario sostiene che tutte e 3 le compagnie avranno ricavi da record visto che non ci sarà più la malagestione dell'ultimo CEO.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966073
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666446,
+      "m_Localized": "<b><u>Pagine meme delle aziende vietate? Legislatori di {country} \npotrebbero salvarci dal cringe che invade i social da sempre</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666447,
+      "m_Localized": "<b><u>Stato di emergenza in {country} dopo un focolaio di rabbia a una convention furry</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666448,
+      "m_Localized": "<b><u>Raid della polizia in un deposito, trovato contrabbando illegale.</u></b>\n<size=60%>L'ufficiale Hugh Janus dichiara: \"Quello che abbiamo trovato qui ha cambiato per sempre le nostre vite...\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666449,
+      "m_Localized": "<b><u>È accaduto qualcosa di TERRIBILE</u></b>\n<size=60%>Un sexbot\n è andato a scuola per anni in una classe di liceali senza che nessuno se ne accorgesse... Gli insegnanti l'hanno notato solo dopo che ha iniziato a vendere il proprio corpo per dell'olio motore...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666450,
+      "m_Localized": "<b><u>Cadavere trovato sulla Stazione Spaziale Internazionale.</u></b>\n<size=60%>I rimanenti membri dell'equipaggio sono intrappolato con un mostro. Incontro a bordo cancellato a causa di un allarme. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666451,
+      "m_Localized": "<b><u>Locali riportano guerre tra gang di Neo Furry e Hyper Weebs.</u></b>\n<size=60%>Le forze dell'ordine raccomandano di rimanere in casa per non restare coinvolti negli scontri.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666452,
+      "m_Localized": "<b><u>Bo Brogan discute del controverso streamer di cocktwitch nel suo ultimo podcast</u></b>\n<size=60%>\"Questo tizio bianco, non sembra ma può scopare come un orangotango. Scommetto che se andasse in palestra e mangiasse più proteine potrebbe scoparsi quel sexbot come un GORILLA UAAAGH...UUUAAAAGH...Jamie tira fuori quel video delle due scimmie che fanno sesso.\"</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666453,
+      "m_Localized": "<b><u>Cadevere trovato sull'isola privata di {celebrity} identificato come {name}. Nonostante i numerosi indizi la polizia afferma che la vittima sia solo andato alla deriva fino lì.</u></b>\n<size=60%>Per adesso dobbiamo fidarci dei detective, ma vale la pena di dire che questa celebrità ha una storia di incidenti simili",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666454,
+      "m_Localized": "<b><u>{country} ha lanciato un nuovo satellite qualche settimana fa.</u></b>\n<size=60%>Esploso dopo un malfunzionamento, distrugge {number,2,53} altri satelliti.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666455,
+      "m_Localized": "<b><u>Notizie terribili per gli amanti dello spazio!</u></b>\n<size=60%>La quantità di detriti in orbita potrebbe mettere a repentaglio l'esplorazione futura. \nAbbiamo chiesto a {celebrity} cosa pensa di questa faccenda",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666456,
+      "m_Localized": "<b><u>Orribile! Poliziotti arrestano brutalmente un ragazzino di {number,6,14} \nanni. Si presume che abbia infettato volontariamente la sua compagna con l'HIV</u></b>\n<size=60%>Storia da far bollire il sangue. Il nostro ospite sostiene che si tratti solo di un caso tra i tanti. Che sia l'inizio di un nuovo movimento sociale?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666457,
+      "m_Localized": "<b><u>Dopo che la recessione colpisce la {country}, il governo è stato obbligato a scambiare {number,8,77}% del suo equipaggiamento militare con {company} in cambio dei loro prodotti per evitare una carestia di massa</u></b>\n<size=60%>Questa società adesso ha quasi la stessa influenza \"diretta\" della Bepsi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666458,
+      "m_Localized": "<b><u>\"Mozzafiato\": Questa coraggiosa ragazzina di {number,8,16} anni da {UScity} ha scosso il mondo con la sua nuova \n{art}!</u></b>\n<size=60%>Il futuro per i piccoli idol e i loro fan è più radioso che mai e non c'è niente di più bello.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666459,
+      "m_Localized": "<b><u>Scioccante: Bigpharma™  ha comprato tutti i brevetti dei medicinali per la {disease} e ha aumentato i prezzi del\n{number,500,3000}%</u></b>\n<size=60%>Con questa mossa la selezione naturale potrebbe tornare ad essere rilevante. Gli esperti stimano che {number,200000,6000000} persone moriranno a causa di questo cambiamento.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666460,
+      "m_Localized": "<b><u>Ragazzino di {number,6,15} accusa la madre di forzarlo a cambiare sesso. Il nostro reporter sotto copertura ha scoperto che racconta un sacco di cazzate.</u></b>\n<size=60%>C'è forse qualcosa di più disgustoso dell'accusare falsamente la propria madre? Noi pensiamo di no. Dopo {number,2,30} settimane di spionaggio vogliamo condividere le prove video che incastrano questa ex-ragazzina.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666461,
+      "m_Localized": "<b><u>{country}: uomo muore dopo un'orvedose di Vinegara che gli ha causato un'erezione di {number,10,50} ore.</u></b>\n<size=60%>Più tardi si è scoperto che ha rifiutato di ricevere aiuto medico perchè era \"su un altro livello\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966074
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666462,
+      "m_Localized": "<b><u>Amore virtuale proibito tra uomo dalla {country} e le {bodypart} di {animegirl}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666463,
+      "m_Localized": "<b><u>Oggi è il primo anniversario del martirio di C. Jenner</u></b>\n<size=60%>Un intero anno è passato da quella che è forse una delle più grandi tragedie della nostra nazione. Noi di Bang HQ siamo fieri di annunciare che abbiamo intervistato un conoscente stretto della vittima. Il suo dentista, Lucas.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666464,
+      "m_Localized": "<b><u>Papa neoeletto decide di chiamarsi \"Goku secondo\" ed ecco le ragioni per cui questo aiuterà le persone di colore</u></b>\n<size=60%>Dopo aver perso il 90% dei suoi seguaci in europa, la chiesa cattolica prende delle decisioni drastiche per attirare le nuove generazioni di persone. Tra le misure anche un intervento di cambio sesso gratuito per i credenti.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666465,
+      "m_Localized": "<b><u>\"Mi sono svegliato e non avevo più le mani, ma lui era qui con me...\". Questa bellissima storia d'amore tra due pirati somali gay vi strapperà le lacrime</u></b>\n<size=60%>C'è forse qualcosa di più carino dei cuccioli? Noi pensiamo di sì e questo ne è la prova. L'amore gay è molto più puro e questi tizi sono armati.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666466,
+      "m_Localized": "<b><u>Preview per il grande show di stasera \"In cucina con Lil Uzi\"</u></b>\n<size=60%>Qualcosa che tutti stavamo aspettando! Dopo che le accuse sessuali nei confronti del produttore sono cadute il nostro show di cucina preferito ritorna con la terza stagione. \nIl trailer pieno d'azione ha aumentato l'hype e l'appetito delle persone è più grande che mai!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666467,
+      "m_Localized": "<b><u>Urrà! Grazie agli sforzi per il volontariato di Amazoon\n{number,123,5804} nuovi migranti illegali hanno imparato a programmare in \nZuluscript\"</u></b>\n<size=60%>Credo che possiamo essere tutti d'accordo sul fatto che questo comportamento debba essere premiato dal governo. \nAltre società seguiranno la stessa strada o sono destinate al fallimento?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666468,
+      "m_Localized": "<b><u>Sei stato censurato su Faceberg e altri social? Smetti di essere razzista.</u></b>\n<size=60%>Alcune persone sono ancora confuse dalle semplici regole della comunità. Il nostro avvocato in sole poche settimane ha preparato per noi un breve riassunto di 74 pagine su tutto il regolamento. \"Non ci sono scuse per essere bigotti\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666469,
+      "m_Localized": "<b><u>I pedofili dovrebbero essere obbligati all'intervento per cambiare età?</u></b>\n<size=60%>Abbiamo invitato gli esperti per una discussione riguardo al nuovo traguardo della medicina: l'intervento del cambio d'età. Dopo qualche ora pensiamo di avere la risposta...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666470,
+      "m_Localized": "<b><u>Donne transessuali dominano le olimpiadi invernali. Le persone con le mestruazioni dovrebbero preoccuparsi?</u></b>\n<size=60%>Una dei migliori atleti transessuali, Bryaona, {country}, è una delle molte vittime dell'odio TERF che domina il dibattito pubblico negli ultimi due mesi. Bryona, con i suoi 218 cm di altezza e 160 Kg di peso…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966075
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666471,
+      "m_Localized": "<b><u>Una donna americana staa cercando di abbattere CockTwitch (ma non è una lotta al porno)</u></b>\n<size=60%>La sua petizione ha già raccolto {number,80,700} mila firme. Cosa la spinge a farlo? Il suo account ha perso tutti gli iscritti nel giro di qualche mese. Poi ha scoperto che le persone si possono disiscrivere quando vogliono. \"Mi davano un falso senso di sicurezza.\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666472,
+      "m_Localized": "<b><u>Gli anime sono un modo per fuggire dagli realtà degli estremisti di destra?</u></b>\n<size=60%>Il nostro studio ha trovato che il colore della melanina della pelle della maggiori eroine dell'animazione giapponese è più vicino a quello degli abitanto dell'est europa piuttosto che agli asiatici. Per esempio, la pelle di {animegirl}...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666473,
+      "m_Localized": "<b><u>Questa famosa pornostar diventa il primo SINDACO di NYC minorenne. Clicca qui per vedere il suo album fotografico</u></b>\n<size=60%>Chi l'ha detto che i sindaci non possano essere sexy? Noi della redazione Bang speriamo che questo sia l'inizio di un nuovo trend politico, nominare per le elezioni membri riconosciuti della comunità dei sex workers.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666474,
+      "m_Localized": "<b><u> La corruzione è una cosa così negativa? Il più grande mito della politica mondiale nel nostro esclusivo articolo d'opinione</u></b>\n<size=60%>È davvero terrificante che le persone credano ancora che giochi politici illegali e accordi sottobanco siano da ostracizzare. In realtà rappresentano la spina dorsale della nostra democrazia. Ecco le opinioni...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666475,
+      "m_Localized": "<b><u>Lei l'ha tradito, ma è lui che ha iniziato a guardare ad altre donne per primo</u></b>\n<size=60%>Per quanto possa suonare ridicolo, alcuni m*schi credono che non sia colpa loro quando le donne li tradiscono. \"Nel {number,89,99}% dei casi le donne sono obbligate a tradire. I numeri non mentono.\" dice il nostro esperto {sexuality}. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666476,
+      "m_Localized": "<b><u>I politici ci mentono? Sì e dovremmo essergli grati per questo</u></b>\n<size=60%>\"La persona media non saprebbe gesitre il trauma psicologico dato dal sapere la verità sulla nostra società\", dice il nostro esperto. Questo fatto è stato verificato dall'organizzazione per i diritti umani.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666477,
+      "m_Localized": "<b><u>Grande problema con Dio. Si dice che abbia creato i neri, \nche è fantastico, ma le persone verdi, blu o viola? La scienza può mettere le cose a posto e dovrebbe rimpiazzare la religione.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666478,
+      "m_Localized": "<b><u>\"Me ne vado da questa redazione! Il 90% degli articoli sono inventati!\" Queste sono le ultime parole del nostro defunto collega. Ti volevamo bene anche noi, amico...</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666479,
+      "m_Localized": "<b><u>Stai seguendo il processo di Ghislaine Maxwell? Davvero? \nNon hai niente di meglio da fare, fottuto strambo estremista?</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666480,
+      "m_Localized": "<u><b>Le macchine a guida autonoma dovrebbero essere considerate sexbot considerando il crescente numero di autosessuali che si scopano il tubo di scarico? In breve: sì</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666481,
+      "m_Localized": "<u><b>I prezzi del gas salgono? Bene. È positivo per l'ambiente e le casse dello stato</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666482,
+      "m_Localized": "<u><b>Tenere uno stile di vita sano è una cosa del passato? Questi nuovi organi artificiali sono meno costosi e più efficienti delle tue spoglie mortali</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3599035666483,
+      "m_Localized": "<b><u>{animeboy} della popolare serie animata giapponese è diventato il volto della rivoluzione per la supremazia bianca in {country}. Il nostro esperto ci spiega perché</u></b>\n<size=60%>All'inizio i media locali lo chiamavano \"uno scherzo\" o \"un meme\" con più di  \n{number,200,3000}k post, ma non fa ridere nessuno… tranne Adolf \nHitler...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666484,
+      "m_Localized": "<b><u>{company} sta lottando contro la concorrenza \"sleale\" delle piccole imprese in {country} e dovremmo tifare per loro</u></b>\n<size=60%>Tutti amano i signori delle corporazioni e i loro prodotti, giusto? Se le loro richieste non venissero soddisfatte licenzierebbero il {number,10,90}% della forza lavoro quindi non dovremmo farli arrabbiare.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666485,
+      "m_Localized": "<b><u>Età del consenso è ancora oggetto di dibattito in \n{country}. Lettore preoccupato: \"Come posso spiegare a mia figlia di {number,6,13} \nche la sua relazione potrebbe offendere qualcuno?\"</u></b>\n<size=60%>Tutti pensavano che \n\"l'amore non ha età\" fosse buon senso ormai. A quanto pare non è così e sta spezzando il cuore di molti ragazzini nel mondo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666486,
+      "m_Localized": "<b><u>{name} diventa nuovo professore in materia {sexuality2}. Università locale a {UScity} non può che esserne orgogliosa!</u></b>\n<size=60%>\"Passo nella giusta direzione\", questa la reazione di molti studenti alla grande notizia. Clicca qui per l'intervista completa...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666487,
+      "m_Localized": "<b><u>\"Il mio ragazzo (M{number,22,52}) ha contratto la {disease} \ne a me (F{number,16,31}) andava bene. Adesso vuole fare del sesso non protetto. Dovrei acconsentire?\"</u></b>\n<size=60%>La redazione di Bang risponde alle preoccupazioni dei lettori. Scopri cosa le abbiamo risposto!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666488,
+      "m_Localized": "<b><u>Decisioni da prendere per il governo della {country} dopo che il suo punteggio per le libertà civili scende di {number,1,30} quest'anno. La nostra soluzione: Drag Queen negli asili</u></b>\n<size=60%>Non sorprende questo cambiamento nel punteggio. Se solo avessero ascoltato il consiglio di {celebrity} \nsi sarebbe potuto evitare tutto ciò. Adesso le sanzioni delle nazioni unite sono imminenti. \nA meno che… Drag Queens.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666489,
+      "m_Localized": "<b><u>\"Non voglio attaccare {celebrity} in particolare, ma lo farò lo stesso.\"</u></b>\n<size=60%>\n Leader della sinistra progressista ancora una volta attaccano i più famosi del mondo dopo che il loro consenso cala del {number,2,27} nell'ultimo sondaggio. \nMa possiamo davvero biasimarli? Nonostante l'80% di tasse i ricchi stanno diventando sempre più ricchi e i poveri sempre più poveri.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39490982969741312,
+      "m_Localized": "<b><u>Epidemia di ictus spontaneo nella nostra città! </u></b>\n<size=60%>Agente Hugh Janus: \"Quello che abbiamo trovato là ha cambiato le nostre vite per sempre...\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39492779197206528,
+      "m_Localized": "<b><u>Il think tank socioeconomico più pagato è d'accordo. Le cose brutte continueranno a succedere.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966076
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206529,
+      "m_Localized": "<b><u>Mentre i ricchi in tutto il mondo stanno trascendendo lo stadio umano, le persone delle classi medio-basse dovrebbero avere paura? Certo che no!</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39492779197206530,
+      "m_Localized": "<b><u>Si possono incarcerare i dipendenti quando si rifiutano di fare straordinari non retribuiti? Gli avvocati: dipende.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39492779197206531,
+      "m_Localized": "<b><u>Il governo raddoppia il budget per il monitoraggio degli schizofrenici.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39492779197206532,
+      "m_Localized": "<b><u>I giornalisti sotto copertura rivelano che per ogni 100g di carne vegetale vengono utilizzati 114g di  carne vera</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39492779197206533,
+      "m_Localized": "<b><u>{UScity} cade nell'anarchia dopo che {terroristorganisation} rivendica {number,2,5} distretti come zone autonome libere dalla tirannia {number,100,1000} i dispersi</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118728930864533504,
+      "m_Localized": "<b><u>Amianto trovato di nuovo nell'abbigliamento Stilou!</u></b>\n<size=60%>L'abbigliamento interessato comprende infradito da uomo nei seguenti colori: giallo, salmone e pesca. Il marchio nega le accuse e il loro direttore afferma che i vestiti sono \"sicuri al 100% se non indossati\".",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 196009274129768448,
+      "m_Localized": "<b><u>Rivolte in una delle più grandi megalopoli!</u></b>\n<size=60%>Le autorità locali sono impotenti mentre la città brucia! Abbiamo chiesto al sindaco se ascolterà la gente e si dimetterà. La sua risposta: “Non faccio negoziazioni con i terroristi!”",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056392552448,
+      "m_Localized": "<b><u>Uno dei più grandi studi pornografici è stato perquisito</u></b>\n<size=60%>Una voce ben nota nel settore si è rivelata vera. L'azienda produceva porno utilizzando sexbot e poi effettuava il deepfake di volti umani su quei robot illegali.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135360,
+      "m_Localized": "<b><u>Il sexbot catturato dalle autorità e portato ad essere disassemblato, non era un sexbot</u></b>\n<size=60%>\"Pensavo che il sangue fosse un miglioramento realistico...\" ha detto un testimone.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135361,
+      "m_Localized": "<b><u>Confermato ufficialmente: è stato trovato un nuovo ceppo del virus</u></b>\n<size=60%>Provoca una malattia molto vicina alla demenza ed è contagiosa! ed è contagiosa! ed è contagiosa! ed è contagiosa! ed è contagi... **continua a leggere>>>**",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135362,
+      "m_Localized": "<b><u>I luoghi di lavoro che consentono l'uso di fursuit sono un potenziale pericolo per la salute?</u></b>\n<size=60%>Il nostro esperto ci racconta di più sulla cosiddetta \"sindrome della palla di pelo\", sulle sue conseguenze, su come evitarla e di chi è la colpa...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135363,
+      "m_Localized": "<b><u>Il gatto di nome Purrdolf Hissler, eletto sindaco di una piccola città rurale, si rivela un conservatore</u></b>\n<size=60%> Ora i residenti stanno cercando di rimediare al loro errore, ma finora tutto invano. \"È come se fossimo stati colpiti da una guerra lampo...\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135364,
+      "m_Localized": "<b><u>Un uomo muore di infarto dopo aver raggiunto l'orgasmo 47 volte di seguito</u></b>\n<size=60%>”Goon marathon challenge”. Tutto quello che devi sapere su questa nuova tendenza di Internet e sul suo numero di morti...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966077
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135365,
+      "m_Localized": "<b><u>NON ERA MORTO!!!</u></b>\n<size=60%>Ragazzo di 6 anni smarrito trovato nella vasca delle palline del MacDonald dopo 3 giorni di ricerca. La polizia è rimasta stupita.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135366,
+      "m_Localized": "<b><u>Una grande azienda richiama oltre {number,22511,364666} protesi al pene a causa di un difetto potenzialmente pericoloso per la vita</u></b>\n<size=60%>Come abbiamo appreso dal portavoce dell'azienda, tutti coloro che possiedono l'hardware difettoso: \"JACKHAMMER MAGNUM {number,300,9999}\" dovrebbero mantenere la calma e chiamare i vigili del fuoco il prima possibile.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966078
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135367,
+      "m_Localized": "<b><u>Che pasticcio!</u></b>\n<size=60%>Con la crescente popolarità dei sostituti robotici del cazzo, gli esperti discutono se regalare alla tua ragazza il tuo vecchio pene conservato in un barattolo sia o meno una buona idea</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135368,
+      "m_Localized": "<b><u>Enormi rivolte in una delle megalopoli? Le chiamiamo stronzate.</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135369,
+      "m_Localized": "<b><u>Sei VERAMENTE sicuro di non avere l'AIDS? Rispondi a questo quiz di 50 domande per scoprirlo!</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135370,
+      "m_Localized": "<b><u>Dopo un catastrofico fallimento dell'impianto mimetico, un uomo rende le sue parti intime permanentemente invisibili</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135371,
+      "m_Localized": "<b><u>Un nuovo studio mostra che se il numero degli hikikomori non smette di aumentare, presto ci sarà una carenza globale di vitamina D</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135372,
+      "m_Localized": "<b><u>Una nuova tecnologia consente di borseggiare i reni, provocando un boom del prelievo di organi sul mercato nero in {paese</u></b>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 214221056405135373,
+      "m_Localized": "<b><u>Uno scienziato di {country} afferma che {number,1,7} persone su 10 potrebbero diventare robotsessuali nei prossimi anni</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135374,
+      "m_Localized": "<b><u>Grandi notizie! Il presidente di {country} è diventato una donna!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135375,
+      "m_Localized": "<b><u>Un grande gregge di pecore ha attaccato {country}. \"Abbiamo bisogno di più erba\", affermano.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135376,
+      "m_Localized": "<b><u>La dimensione media del cazzo in {country} è di soli 7 centimetri! Sviluppo scioccante!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966079
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135377,
+      "m_Localized": "<b><u>La più grande convention yiff in {country}. Gli esperti suggeriscono di nascondere i tuoi cani.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135378,
+      "m_Localized": "<b><u>L'uomo di {UScity} ha combattuto contro {number,15,30} persone. Ha vinto.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316522004892082176,
+      "m_Localized": "<b><u>Il famoso sviluppatore di giochi \"HW\" ha finalmente saldato il suo debito!!!</u></b>\n<size=60%>Il loro gioco ha venduto oltre {number,30,60} milioni di copie in tutto il mondo. Congratulazioni HW!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966080
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321828732810551296,
+      "m_Localized": "<b><u>GRANDE TRAGEDIA! Attivista anti-sexbot SPARATO E UCCISO</u></b>\n<size=60%>L'attivista anti-sexbot e il nostro caro amico sono stati uccisi mentre usavano il bagno in una delle più grandi catene di fast food. È stato ucciso dai terroristi o... dalla sua dieta.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966081
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321885704058560512,
+      "m_Localized": "<b><u>NOVITÀ DELLA SETTIMANA Gli agenti federali hanno individuato un pericoloso terrorista pro-sexbot, pseudonimo DAK</u></b>\n<size=60%>Una feccia in meno nelle nostre strade. Posso assicurare che ogni bambino sulla Terra non ha più bisogno di temere. Sei al sicuro. E i genitori dovrebbero ricordarselo la prossima volta che voteranno.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966082
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321937685548621824,
+      "m_Localized": "<b><u> L'esibizionismo è in aumento? Nonostante il freddo estremo, una donna perversa è stata avvistata mentre faceva jogging per la città! </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966083
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384602058752,
+      "m_Localized": "<b><u>Farsela addosso conta come disobbedire al comando \"non muoverti\"? </u></b>\n<size=60%>Un adolescente di {UScity} ha imparato la risposta nel modo più duro e ora sta lottando per la sua vita in ospedale. Capo della polizia: \"giustificata al 100%\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966084
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030272,
+      "m_Localized": "<b><u>VolksAuto non corre più il rischio di andare in bancarotta dopo che più di 10.000 dipendenti coinvolti nell'azione collettiva sono morti nell'arco di un mese.  </u></b>\n<size=60%>\"Un ritorno alla tradizione\" ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966085
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030273,
+      "m_Localized": "<b><u>Spiegazione della strana ossessione della destra per le ragazze gatto. </u></b>\n<size=60%>I nostri animali domestici sono al sicuro mentre le voci a favore del \"ritorno alla tradizione\" diventano sempre più forti?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966086
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030274,
+      "m_Localized": "<b><u>Una nuova tendenza virale su Internet avviata dai nostri giovani è persino peggiore della precedente. </u></b>\n<size=60%>Le percosse torneranno alla grazia? ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966087
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030275,
+      "m_Localized": "<b><u>Esiste una ragione per una forte correlazione tra il divieto dei test di paternità in tutto il mondo e il suicidio maschile? </u></b>\n<size=60%>\"Cazzate\", dice il nostro esperto",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966088
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030276,
+      "m_Localized": "<b><u>L'elenco di combinazioni di articoli del carrello non così ovvie che potrebbero portare un cassiere a chiamare la polizia</u></b >\n<size=60%>Alcuni esempi: cetriolo e preservativo, pala e lime, peluche anime e barattolo...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966089
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030277,
+      "m_Localized": "<b><u>Un funzionario governativo ha simulato un ritardo mentale di 13 anni. La parte peggiore? È l'amato gatto di nome Biscuit</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966090
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030278,
+      "m_Localized": "<b><u>Vibratori surriscaldati? Addormentarsi mentre ci si masturba non è mai stato così pericoloso come adesso.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966091
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030279,
+      "m_Localized": "<b><u>Un nuovo studio rileva: \"Avere rapporti con robot può essere collegato all'HIV wireless\"</u></ b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966092
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030280,
+      "m_Localized": "<b><u>Dipendenza dal porno. Una malattia vile, orribile e distruttiva... che aiuta davvero a tenere unito il matrimonio</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966093
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030281,
+      "m_Localized": "<b><u>Il villaggio rievocativo dell'antica Grecia in {country} diventa il posto dove stare per gli uomini con l'uccello piccolo< /u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966094
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030282,
+      "m_Localized": "<b><u>Ladri di cromosomi. Tutto quello che c'è da sapere su questa nuova minaccia mortale ancora in circolazione</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966095
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030283,
+      "m_Localized": "<b><u>“Rubare ai ricchi per dare ai poveri”. L'altro lato della storia raccontato da uno dei ladri di cromosomi incarcerati</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966096
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030284,
+      "m_Localized": "<b><u>Il tuo ragazzo è un estremista di destra? Controlla la sua cronologia delle ricerche per la parola chiave \"anime\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966097
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030285,
+      "m_Localized": "<b><u>Il cane di famiglia smarrito che è tornato a casa dopo 5 anni si è rivelato essere un clone spia di {country</u> </b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966098
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030286,
+      "m_Localized": "<b><u>Penetrazione uretrale. Che ne dici di una cura per l'impotenza?</u></b> ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966099
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030287,
+      "m_Localized": "<b><u>I preservativi si aggiungono ai palloncini nell'elenco degli articoli proibiti in {paese} poiché il contrabbando di gas serra costa al governo {numero, 2,30} miliardi di dollari all'anno</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966100
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030288,
+      "m_Localized": "<b><u>Lo sperma non vaccinato diventa l'oggetto più in voga nei circoli dei cimeli nazisti. I prezzi hanno raggiunto i {number,200,950}k dollari per Ml</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569125966101
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 473240352332963840,
+      "m_Localized": "<b><u> Nuovo disco con la canzone karaoke più difficile che esista. Ora l'azienda sta cercando il vincitore per dare a lui, lei o loro, un premio di 100.000 $ </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125966102
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 3496719814657
+            },
+            {
+              "id": 3496719814658
+            },
+            {
+              "id": 3496724008970
+            },
+            {
+              "id": 3496724008971
+            },
+            {
+              "id": 3496724008979
+            },
+            {
+              "id": 3496724008980
+            },
+            {
+              "id": 3496724008982
+            },
+            {
+              "id": 3496724008986
+            },
+            {
+              "id": 3496724008987
+            },
+            {
+              "id": 3496724008990
+            },
+            {
+              "id": 3496724008991
+            },
+            {
+              "id": 3496724008995
+            },
+            {
+              "id": 3496724008998
+            },
+            {
+              "id": 3496724009000
+            },
+            {
+              "id": 3496724009003
+            },
+            {
+              "id": 3496724009004
+            },
+            {
+              "id": 3496724009010
+            },
+            {
+              "id": 3496724009011
+            },
+            {
+              "id": 3496724009012
+            },
+            {
+              "id": 3496724009013
+            },
+            {
+              "id": 3496724009014
+            },
+            {
+              "id": 3496724009015
+            },
+            {
+              "id": 3496724009016
+            },
+            {
+              "id": 3496724009017
+            },
+            {
+              "id": 3496724009018
+            },
+            {
+              "id": 3496724009019
+            },
+            {
+              "id": 3496724009020
+            },
+            {
+              "id": 3496724009021
+            },
+            {
+              "id": 3496724009022
+            },
+            {
+              "id": 3496724009023
+            },
+            {
+              "id": 3496724009024
+            },
+            {
+              "id": 3496724009025
+            },
+            {
+              "id": 3496724009026
+            },
+            {
+              "id": 3496724009027
+            },
+            {
+              "id": 3496724009028
+            },
+            {
+              "id": 3496724009029
+            },
+            {
+              "id": 3496724009030
+            },
+            {
+              "id": 3496724009031
+            },
+            {
+              "id": 3496724009032
+            },
+            {
+              "id": 3496724009033
+            },
+            {
+              "id": 3496724009034
+            },
+            {
+              "id": 3496724009035
+            },
+            {
+              "id": 3496724009036
+            },
+            {
+              "id": 3496724009037
+            },
+            {
+              "id": 3496724009039
+            },
+            {
+              "id": 3496724009040
+            },
+            {
+              "id": 3496724009041
+            },
+            {
+              "id": 3496724009042
+            },
+            {
+              "id": 3496724009043
+            },
+            {
+              "id": 3496724009044
+            },
+            {
+              "id": 3496724009045
+            },
+            {
+              "id": 3496724009046
+            },
+            {
+              "id": 3496724009047
+            },
+            {
+              "id": 3496724009048
+            },
+            {
+              "id": 3496724009049
+            },
+            {
+              "id": 3496724009050
+            },
+            {
+              "id": 3496724009051
+            },
+            {
+              "id": 3496724009052
+            },
+            {
+              "id": 3496724009053
+            },
+            {
+              "id": 3496724009054
+            },
+            {
+              "id": 3496724009055
+            },
+            {
+              "id": 3496724009058
+            },
+            {
+              "id": 3496724009059
+            },
+            {
+              "id": 3599035666435
+            },
+            {
+              "id": 3599035666442
+            },
+            {
+              "id": 3599035666446
+            },
+            {
+              "id": 3599035666447
+            },
+            {
+              "id": 3599035666453
+            },
+            {
+              "id": 3599035666454
+            },
+            {
+              "id": 3599035666455
+            },
+            {
+              "id": 3599035666456
+            },
+            {
+              "id": 3599035666457
+            },
+            {
+              "id": 3599035666458
+            },
+            {
+              "id": 3599035666459
+            },
+            {
+              "id": 3599035666460
+            },
+            {
+              "id": 3599035666461
+            },
+            {
+              "id": 3599035666462
+            },
+            {
+              "id": 3599035666467
+            },
+            {
+              "id": 3599035666470
+            },
+            {
+              "id": 3599035666471
+            },
+            {
+              "id": 3599035666472
+            },
+            {
+              "id": 3599035666475
+            },
+            {
+              "id": 3599035666483
+            },
+            {
+              "id": 3599035666484
+            },
+            {
+              "id": 3599035666485
+            },
+            {
+              "id": 3599035666486
+            },
+            {
+              "id": 3599035666487
+            },
+            {
+              "id": 3599035666488
+            },
+            {
+              "id": 3599035666489
+            },
+            {
+              "id": 39492779197206533
+            },
+            {
+              "id": 214221056405135366
+            },
+            {
+              "id": 214221056405135373
+            },
+            {
+              "id": 214221056405135374
+            },
+            {
+              "id": 214221056405135375
+            },
+            {
+              "id": 214221056405135376
+            },
+            {
+              "id": 214221056405135377
+            },
+            {
+              "id": 214221056405135378
+            },
+            {
+              "id": 316522004892082176
+            },
+            {
+              "id": 331763384602058752
+            },
+            {
+              "id": 331763384623030281
+            },
+            {
+              "id": 331763384623030287
+            },
+            {
+              "id": 331763384623030288
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569125966055,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Gallons to Litres because it sounds more familiar"
+        }
+      },
+      {
+        "rid": 7996671569125966056,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Do not have a translation for furry but it can be used in italian"
+        }
+      },
+      {
+        "rid": 7996671569125966057,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "ho provato a migliorare la traduzione, ma credo che si possa ancora fare di meglio\nIn risposta a tr prec, secondo me va bene tenere gender, forse si capisce meglio, per non far confusione con generazione Z come anno di nascita"
+        }
+      },
+      {
+        "rid": 7996671569125966058,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "la battuta non rende, ma ho preferito fare riferimento alla violazione più grave delle due"
+        }
+      },
+      {
+        "rid": 7996671569125966059,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "la battuta tra \"ergersi\" e \"pornografia\" va fatta"
+        }
+      },
+      {
+        "rid": 7996671569125966060,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "dopo ricerche che preferivo non fare, ho scoperto che sissy porn sono immagini di omosessuali in mezzo a porno straight per far cambiare sesso a chi guarda, quindi ho mantenuto  all'inglese dato che è na roba specifica"
+        }
+      },
+      {
+        "rid": 7996671569125966061,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "duplicated of SideNews_10024"
+        }
+      },
+      {
+        "rid": 7996671569125966062,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "lascio \"bambino\" perchè mi fa ridere la scena del tizio che rapisce un bambino e si accorge poi che doveva invece rapire una bambina ma ha sbagliato"
+        }
+      },
+      {
+        "rid": 7996671569125966063,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "lascio \"wasteland\" perchè credo che ormai fallout abbia aiutato a sapere cosa vuol dire quella parola"
+        }
+      },
+      {
+        "rid": 7996671569125966064,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "serve una traduzione più al limite o dispreggiativa di \"amanti\"\n\nAltro tr: ho usato patiti, magari rende di più"
+        }
+      },
+      {
+        "rid": 7996671569125966065,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "inches -> centimeters"
+        }
+      },
+      {
+        "rid": 7996671569125966066,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Need a longer phrase to fit the sexuality generator"
+        }
+      },
+      {
+        "rid": 7996671569125966067,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Lbs -> Kg"
+        }
+      },
+      {
+        "rid": 7996671569125966068,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "cannot really fit the article before country it will sound weird for some of them. in italian we usually use nationality instead of country name"
+        }
+      },
+      {
+        "rid": 7996671569125966069,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "cannot fit the article before country, because sometimes it is used and sometimes not. also the sentence have been longed to sound better"
+        }
+      },
+      {
+        "rid": 7996671569125966070,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Vinegara"
+        }
+      },
+      {
+        "rid": 7996671569125966071,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Elmer Fudd is called \"Taddeo\" in the italian version so i changed it to \"Tadeeo\" to keep the joke of adding letters to \"Loooney\" "
+        }
+      },
+      {
+        "rid": 7996671569125966072,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "con \"pasticche\" si possono intendere sia le compresse medicinali che le droghe in forma di compresse"
+        }
+      },
+      {
+        "rid": 7996671569125966073,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "copy from above"
+        }
+      },
+      {
+        "rid": 7996671569125966074,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Vinegara"
+        }
+      },
+      {
+        "rid": 7996671569125966075,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "convert imperial units to metric"
+        }
+      },
+      {
+        "rid": 7996671569125966076,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "cosa è un think tank?"
+        }
+      },
+      {
+        "rid": 7996671569125966077,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "challenge dei social rimangono in inglese"
+        }
+      },
+      {
+        "rid": 7996671569125966078,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "in italiano ho sempre sentito \"chiamare i pompieri/ vigili del fuoco\" mai le stazioni"
+        }
+      },
+      {
+        "rid": 7996671569125966079,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "In italia si usano i centimetri"
+        }
+      },
+      {
+        "rid": 7996671569125966080,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966081,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966082,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966083,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966084,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966085,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966086,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966087,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966088,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966089,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966090,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966091,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966092,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966093,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966094,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966095,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966096,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966097,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966098,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966099,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966100,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966101,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125966102,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

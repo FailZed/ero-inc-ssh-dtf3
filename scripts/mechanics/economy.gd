@@ -83,7 +83,9 @@ func _project(id: String, minutes: int) -> Dictionary:
 		sim.state.economy.cash += int(project.get("pay", 0))
 		emit_event("project_completed", {"id": id})
 	sim.state.economy.projects[id] = progress
-	return sim.advance(effort)
+	var result: Dictionary = sim.advance(effort)
+	if not result.ok: return result
+	return Rules.ok({"id":id,"completed":progress.completed,"progress":progress.progress,"minutes":effort})
 
 func tick(minute: int) -> void:
 	if minute % 1440 != 0: return

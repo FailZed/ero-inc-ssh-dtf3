@@ -1,0 +1,103 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15899,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Landlord.Misc.money\r\nHe snatched the money and counted it.\r\nLandlord: You’re 100$ short.\r\nYou: Are you sure? I counted it a few times.\n#Landlord.Face.Unhappy\r\nLandlord: WHO DO YOU TAKE ME FOR! OF COURSE I’M SURE!\r\nYou: Can you… count again?\r\nLandlord: …\r\nLandlord: Anon, Anon, Anon. My dear Anon…\r\nLandlord: I will do it, but if I count again and it turns out you gave me the wrong amount, you owe me an additional 500$, because of the time I wasted here.\r\nYou: That’s completely unreasonable!!!\r\nHe quickly flipped through the stack of money again.\n#Landlord.Face.Surprised\r\nLandlord: Wha…\r\nLandlord: …\r\nHis face showed some emotion. That's rare.\nHe looks... shocked?\r\nLandlord: I…\r\nLandlord: It’s…\r\nLandlord: It’s…{{wi}} the…{{wi}} correct…{{wi}} amount…\r\nYou: Oh, so you just made a mistake counting money?\r\nLandlord: “just made a mistake counting money”? \r\nLandlord: …\r\nHe seemed shaken by the news.\r\nLandlord: Anon… \r\nYou: Yes?\n#Landlord.Face.Grin\r\nLandlord: I got you! Hehehehe~\r\n#Landlord.animate(TransparencyTo0,0.5)\r\nHe left before I could even say goodbye. \r\nDid he really make a mistake or was it an elaborate prank? I don’t take him for a person to make jokes like this.\r\nI guess even someone like him slips up sometimes.\r\nThat was really uncharacteristic of him. Especially because money was involved.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 455475341401513984
+      },
+      {
+        "KeyId": 455475341401513985
+      },
+      {
+        "KeyId": 455475341401513986
+      },
+      {
+        "KeyId": 455475341401513987
+      },
+      {
+        "KeyId": 455475341401513988
+      },
+      {
+        "KeyId": 455475341401513989
+      },
+      {
+        "KeyId": 455475341401513990
+      },
+      {
+        "KeyId": 455475341401513991
+      },
+      {
+        "KeyId": 455475341401513992
+      },
+      {
+        "KeyId": 455475341401513993
+      },
+      {
+        "KeyId": 455475341401513994
+      },
+      {
+        "KeyId": 455475341401513995
+      },
+      {
+        "KeyId": 455475341401513996
+      },
+      {
+        "KeyId": 475751828838932480
+      },
+      {
+        "KeyId": 455475341401513997
+      },
+      {
+        "KeyId": 455475341401513998
+      },
+      {
+        "KeyId": 455475341401513999
+      },
+      {
+        "KeyId": 455475341401514000
+      },
+      {
+        "KeyId": 455475341401514001
+      },
+      {
+        "KeyId": 455475341401514002
+      },
+      {
+        "KeyId": 455475341401514003
+      },
+      {
+        "KeyId": 455475341401514004
+      },
+      {
+        "KeyId": 455475341401514005
+      },
+      {
+        "KeyId": 455475341401514006
+      },
+      {
+        "KeyId": 455475341401514007
+      },
+      {
+        "KeyId": 455475341401514008
+      },
+      {
+        "KeyId": 455475341405708288
+      },
+      {
+        "KeyId": 455475341405708289
+      }
+    ]
+  }
+}

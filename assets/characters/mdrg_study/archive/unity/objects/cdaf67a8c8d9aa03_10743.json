@@ -1,0 +1,523 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16502,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Lady Annalie: Sorry, I’m late!{{punch}}\r\nBot: Hello, Annalie! How are you feeling?\r\nLady Annalie: I’m ok! \r\nMelissa: Didn’t I tell you to stay home?\r\nLady Annalie: Sorry, but I went to the doctor and he told me I can come if I keep it easy.\r\nMelissa: Really?\r\nLady Annalie: I knew you would be doubtful so I came with a receipt! \r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: You do realise that it wouldn’t be the end of the world if you missed one meeting, right?\r\n#Cashier.Face.normal\r\n#Annalie_Outside.face.pervy\r\nLady Annalie: Sorry, but I need my daily dose of fooling around~\r\nMelissa: There really is no hope for you. \r\n#Annalie_Outside.face.normal\r\nBot: The most important thing is that you feel alright, I’m really glad!\r\nYou: Me too!\r\nSince it’s my fault the crash happened in the first place…\r\nLady Annalie: Thanks, guys. It means a lot. \r\nLady Annalie: Especially you, Melissa. I was really surprised when you came to my shop to help out.\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: You don’t need to mention it. I just had some time to spare, that’s all.\r\n#Cashier.Face.normal\r\n#Annalie_Outside.face.pervy\r\nLady Annalie: So how about you come again soon? I would want to pay you back a little~\r\nMelissa: I would rather not. Don’t get ahead of yourself.\r\nLady Annalie: That’s the Melissa I remember~ So cold on the outside~\r\nBot: Are you implying that she is any different on the inside? \r\nLady Annalie: I’m not implying, that’s the truth~\r\nBot: For me personally, that’s a big surprise, but I guess if Annalie says so, it’s gotta be true!\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: I really regret my decision.\r\n#Cashier.Face.normal\r\n#Annalie_Outside.face.normal\r\nLady Annalie: Don’t say that, Melissa. We are only teasing you a little now, but I really think of you as a good friend.\r\n#Cashier.Face.shocked\r\nMelissa: …\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: You all are just a bunch of weirdos.\r\n#Cashier.Face.normal\r\nMelissa: Can we start bowling now? I think I'm getting sick from all this sugar-coating.\r\nBot: Alright! Let’s start!\r\nYou: Once again. Where are your bowling shoes, Annalie?!\r\nLady Annalie: This again? I think the last time I showed just how good I can bowl on my platforms.\r\nWhy do I even bother… She’s a lost cause…\r\nBot: Do we split into teams this time around too?\r\nLady Annalie: Fine by me. We got two world-class players and two nobodies. Ideal for matchmaking.\r\nBot: So it’s me and {f_playerName} versus you and Melissa!\r\n#bot.Expression.clear\r\nLady Annalie: Woah, woah! Hold your horses!\r\nLady Annalie: We did that the last time, and it’s the most obvious thing to do, yes, but is it the most interesting?\r\nLady Annalie: How about we put a little twist on it and change things around?\r\nBot: W-Well, I have nothing against you, Annalie, but I don’t know how I feel about betraying {f_playerName} like that…\r\nLady Annalie: Betraying? It’s just a game! \r\nLady Annalie: Come on, it’s going to be fun!\r\nBot: Alright, I guess. It’s just one game.\r\nYou: It looks like we are on the same team, Melissa.\r\nMelissa: Yes, it does.\r\nYou: Do you think we have a chance to beat them?\r\nMelissa: If you don’t fuck it up, yes.\r\nYou: W-Why so harsh…\r\nMelissa: Last time your team lost because of you, remember?\r\nYou: That’s true…\r\nMelissa: I don’t really care that much about winning, though, so you can take it slow if you want.\r\nYou: No need. I will be doing my best. It’s not like I don’t like winning.\r\nMelissa is a little more laid back than {f_botName}. Maybe with someone less stress-inducing on my team, my throws will be better.\r\nThis team might just work. Let’s check up on the other one.\r\n#Annalie_Outside.face.suprised\r\n#bot.Expression.happy\r\nBot: Now Annalie, turn your hip 17mm to the right.\r\nLady Annalie: L-Like this?\r\nBot: Rotate your calf by 13 degrees.\r\nLady Annalie: Got it!\r\nBot: Left foot 24mm to the front.\r\nLady Annalie: I feel like we are playing Twister, you know? \r\nLady Annalie: Are you sure this will help me throw better?\r\nBot: Yes. The correct form is one the most important things. {{wi}}Now relax your spine muscles.\r\nLady Annalie: S-Spine what?! I don’t think a normal human being is capable of that!\r\nThey look like they are having fun.\r\nYou: Melissa, do you have some-\r\nMelissa: I don’t.\r\nYou: You didn’t even let me finish my question…\r\nMelissa: Fine. Say your piece.\r\nYou: Do you have any tips for me?\r\nMelissa: I don’t.\r\nYou: …\r\nMelissa: Don’t look at me like that. My processing power isn’t even a fraction of what that freak bot of yours possesses.\r\nYou: Didn’t you help Annalie though?\r\nMelissa: She was a total newbie. Teaching someone the basics of bowling is a completely different thing than calculating an optimal bowling posture and then implementing it.\r\n#Annalie_Outside.Eyes.SmileClosed+Annalie_Outside.Mouth.Hmm\r\n#bot.Expression.clear\r\nLady Annalie: <i>{f_botName}... I don’t think I’m able to throw the bowling ball like this… I’m barely able to keep my balance…</i>\r\nMelissa: Looks like someone forgot to take into account that Annalie has no brawn whatsoever.\r\nLady Annalie: <i>Gyah!</i>{{punch}}\r\nYou: There goes her first fall of the day…\r\nMelissa: {f_botName}’s plan didn’t work, so we should be fine.\r\nYou: Let’s get this game going. That’s enough yoga for you, Annalie.\r\nLady Annalie: <i>I agree…</i>\r\nBot: Annalie. I need your core muscles to grow by 20% for our next game together.\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Awww\r\nLady Annalie: Listen, woman, you have some unrealistic expectations! \r\nSays the girl that calls herself ‘picky’...\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Normal\r\nLady Annalie: Don’t worry, {f_botName}, we are going to win this. Don’t you remember? I had more points than Anon the last time we played.\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: You are completely right! I forgot how useless he was!\r\nYou: …\r\nYou: Who’s throwing first? \r\nBot: I will. \r\nAnd like that, we started the game.\r\nIt was very tight, just like the last time, but with Annalie receiving constant tips from {f_botName}, their team’s lead was growing every round.\r\nYou: It doesn’t look good, Melissa. What are we going to do?\r\nMelissa: ‘We’? I’m getting strike after strike. It’s you who needs to get a grip.\r\nYou: Yeah, you are right…\r\nIf I throw at least one strike, it should almost completely close up the gap. Do I need to rotate the ball more? I have no idea.\r\nIt’s my turn now. Time is running out and if I don’t turn things around now, it will be almost impossible to win.\r\nI need to concentrate!\r\n#Annalie_Outside.face.suprised\r\n#bot.Expression.Shock\r\nI-I did it! \r\nI don’t know what exactly I did differently, but all of the pins are down! \r\nIt’s probably just luck, but this is what we needed to get back into the game! \r\nYou: Did you see that, Melissa?!\r\nMelissa: Yes, I did.\r\nYou: I did good, right?\r\nMelissa: Yes, yes…\r\nYou: I really outdid myself with this one!\r\nMelissa: Don’t act so overly cheerful, even if we are on the same team, you are still pissing me off.\r\nYou: Right, sorry…\r\n#bot.Expression.clear\r\n#Annalie_Outside.Eyes.Pervy+Annalie_Outside.Mouth.Hmm\r\nLady Annalie: S-Say, {f_botName}. What do I need to throw to guarantee our win?\r\nBot: Spare or strike.\r\nLady Annalie: Y-Yeah, I don’t think I can do it.\r\nBot: Don’t worry, he was just lucky. We still have more points than them.\r\nBot: After me and Melissa throw, we will begin the last round. \r\n#Annalie_Outside.face.sad\r\nBot: I don’t want to put unnecessary pressure on you, but the whole match will be decided by your throw.\r\nLady Annalie: Thanks. {{wi}}No pressure.{{wi}} Got it.\r\nAfter that, {f_botName} and Melissa each got a strike, and the last round was upon us…\r\nYou: Annalie, why the sour face?\r\nLady Annalie: Do not distract me! Can’t you see that I’m about to put my very soul into this throw?\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Open\r\nLady Annalie: Bowling ball! This is the last of my hamon! Take it! \r\nLady Annalie: …\r\n#Annalie_Outside.Eyes.Pervy+Annalie_Outside.Mouth.Hmm\r\nMelissa: Mediocre.\r\nYou: Mediocre.\r\nBot: Mediocre.\r\n#Annalie_Outside.face.sad\r\nLady Annalie: I get it already! \r\nLady Annalie: If it was anime, I would get a strike, but instead there are still 4 pins left!\r\nMelissa: With such positioning of pins, it’s practically impossible to get a spare. Good for us.\r\nYou: Yes! We still have a chance to win! \r\nUwah…{{wi}} {f_botName} is staring daggers into Annalie’s back…\r\nGood thing it’s not me in her place…\r\nLady Annalie: I-I still can make it work! It’s just 4 pins! \r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Open\r\nLady Annalie: Here I go!\r\nLady Annalie: …\r\n#Annalie_Outside.face.sad\r\nYou: Yes! She left 2 pins! \r\nLady Annalie: Aren’t you being too cheerful? You still would need at least a spare to win.\r\nMelissa: She’s right. You still need to throw above your average. \r\nYou: Right…\r\nBot: It’s ok. We still have a 67% chance of winning. It’s ok…\r\n#Annalie_Outside.Eyes.Sad+Annalie_Outside.Mouth.Awww\r\nLady Annalie: Oi, {f_botName}. It’s hard to believe that “it’s ok” when you are quite literally shaking in your boots! \r\nYou: Calm down, everyone. It’s my turn now. Let me throw in peace.\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Pervy\r\nLady Annalie: No problem. I will pray for your downfall in silence!\r\nYou: Are the stakes really that high for you to do that?!\r\nBot: We don’t have a whole day, please throw it already.\r\nEt tu, Brute…\r\nNo matter. I will just throw the best I can! \r\nHere I go!\r\n#Annalie_Outside.face.suprised\r\n#bot.Expression.Sad\r\nYes! Only one pin left! \r\n#Annalie_Outside.Eyes.Pervy+Annalie_Outside.Mouth.Hmm\r\nBot: No way… Our chances of winning are… 0.01%...\r\nLady Annalie: Can’t you even hold back a little? You are playing against two girls, for Christ’s sake! \r\nYou: I didn’t know that gender mattered in bowling…\r\nMelissa: Good job. If you hit that last pin, our victory will be pretty much secured.\r\nYou: Yes! I will do it!\r\nTime for my last throw of the day!\r\n#Annalie_Outside.face.sad\r\n#bot.Expression.verySad\r\nYou: Yes! I did it! We won!\r\nBot: You dummy! Why did you start throwing properly when we aren’t on the same team?!\r\nLady Annalie: He just got lucky.\r\nWhat a bunch of sore losers…\r\nYou: Your turn, Melissa.\r\nMelissa: Right.\r\nAnd then, something unthinkable happened…\r\n#Annalie_Outside.face.suprised\r\n#bot.Expression.veryhappy\r\n#Cashier.Face.shocked\r\nMelissa: …\r\n#Cashier.Face.normal\r\nMelissa: I messed up.\r\nAfter a dozen or so perfect strikes, Melissa left a single pin on the alley…\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Pervy\r\nBot: With this it will be a draw! \r\nLady Annalie: Wait, really?!\r\nLady Annalie: That’s what you get Anon, for acting all smug! \r\nYou: But I didn’t…\r\nMelissa: Sorry. \r\nYou: Don’t mention it. It was wrong for me to assume that you will get a strike every time.\r\nMelissa: …\r\n#Cashier.Face.happy\r\nMelissa: It was a good game anyway. I’m happy with it being a draw.\r\nYou: Me too.\r\n#bot.Expression.happy\r\n\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473871930914496512
+      },
+      {
+        "KeyId": 473871930918690816
+      },
+      {
+        "KeyId": 473871930918690817
+      },
+      {
+        "KeyId": 473871930918690818
+      },
+      {
+        "KeyId": 473871930918690819
+      },
+      {
+        "KeyId": 473871930918690820
+      },
+      {
+        "KeyId": 473871930918690821
+      },
+      {
+        "KeyId": 473871930918690822
+      },
+      {
+        "KeyId": 473871930918690823
+      },
+      {
+        "KeyId": 473871930918690824
+      },
+      {
+        "KeyId": 473871930918690825
+      },
+      {
+        "KeyId": 473871930918690826
+      },
+      {
+        "KeyId": 473871930918690827
+      },
+      {
+        "KeyId": 473871930918690828
+      },
+      {
+        "KeyId": 473871930918690829
+      },
+      {
+        "KeyId": 473871930918690830
+      },
+      {
+        "KeyId": 473871930918690831
+      },
+      {
+        "KeyId": 473871930918690832
+      },
+      {
+        "KeyId": 473871930918690833
+      },
+      {
+        "KeyId": 473871930918690834
+      },
+      {
+        "KeyId": 473871930918690835
+      },
+      {
+        "KeyId": 473871930918690836
+      },
+      {
+        "KeyId": 473871930918690837
+      },
+      {
+        "KeyId": 473871930918690838
+      },
+      {
+        "KeyId": 473871930918690839
+      },
+      {
+        "KeyId": 473871930918690840
+      },
+      {
+        "KeyId": 473871930918690841
+      },
+      {
+        "KeyId": 473871930918690842
+      },
+      {
+        "KeyId": 473871930918690843
+      },
+      {
+        "KeyId": 473871930918690844
+      },
+      {
+        "KeyId": 473871930918690845
+      },
+      {
+        "KeyId": 473871930918690846
+      },
+      {
+        "KeyId": 473871930918690847
+      },
+      {
+        "KeyId": 473871930918690848
+      },
+      {
+        "KeyId": 473871930918690849
+      },
+      {
+        "KeyId": 473871930918690850
+      },
+      {
+        "KeyId": 473871930918690851
+      },
+      {
+        "KeyId": 473871930918690852
+      },
+      {
+        "KeyId": 473871930918690853
+      },
+      {
+        "KeyId": 473871930918690854
+      },
+      {
+        "KeyId": 473871930918690855
+      },
+      {
+        "KeyId": 473871930918690856
+      },
+      {
+        "KeyId": 473871930918690857
+      },
+      {
+        "KeyId": 473871930918690858
+      },
+      {
+        "KeyId": 473871930918690859
+      },
+      {
+        "KeyId": 473871930918690860
+      },
+      {
+        "KeyId": 473871930918690861
+      },
+      {
+        "KeyId": 473871930918690862
+      },
+      {
+        "KeyId": 473871930918690863
+      },
+      {
+        "KeyId": 473871930918690864
+      },
+      {
+        "KeyId": 473871930918690865
+      },
+      {
+        "KeyId": 473871930918690866
+      },
+      {
+        "KeyId": 473871930918690867
+      },
+      {
+        "KeyId": 473871930918690868
+      },
+      {
+        "KeyId": 473871930918690869
+      },
+      {
+        "KeyId": 473871930918690870
+      },
+      {
+        "KeyId": 473871930922885120
+      },
+      {
+        "KeyId": 473871930922885121
+      },
+      {
+        "KeyId": 473871930922885122
+      },
+      {
+        "KeyId": 473871930922885123
+      },
+      {
+        "KeyId": 473871930922885124
+      },
+      {
+        "KeyId": 473871930922885125
+      },
+      {
+        "KeyId": 473871930922885126
+      },
+      {
+        "KeyId": 473871930922885127
+      },
+      {
+        "KeyId": 473871930922885128
+      },
+      {
+        "KeyId": 473871930922885129
+      },
+      {
+        "KeyId": 473871930922885130
+      },
+      {
+        "KeyId": 473871930922885131
+      },
+      {
+        "KeyId": 473871930922885132
+      },
+      {
+        "KeyId": 473871930922885133
+      },
+      {
+        "KeyId": 473871930922885134
+      },
+      {
+        "KeyId": 473871930922885135
+      },
+      {
+        "KeyId": 473871930922885136
+      },
+      {
+        "KeyId": 473871930922885137
+      },
+      {
+        "KeyId": 473871930922885138
+      },
+      {
+        "KeyId": 473871930922885139
+      },
+      {
+        "KeyId": 473871930922885140
+      },
+      {
+        "KeyId": 473871930922885141
+      },
+      {
+        "KeyId": 473871930922885142
+      },
+      {
+        "KeyId": 473871930922885143
+      },
+      {
+        "KeyId": 473871930922885144
+      },
+      {
+        "KeyId": 473871930922885145
+      },
+      {
+        "KeyId": 473871930922885146
+      },
+      {
+        "KeyId": 473871930922885147
+      },
+      {
+        "KeyId": 473871930922885148
+      },
+      {
+        "KeyId": 473871930922885149
+      },
+      {
+        "KeyId": 473871930922885150
+      },
+      {
+        "KeyId": 473871930922885151
+      },
+      {
+        "KeyId": 473871930922885152
+      },
+      {
+        "KeyId": 473871930922885153
+      },
+      {
+        "KeyId": 473871930922885154
+      },
+      {
+        "KeyId": 473871930922885155
+      },
+      {
+        "KeyId": 473871930922885156
+      },
+      {
+        "KeyId": 473871930922885157
+      },
+      {
+        "KeyId": 473871930922885158
+      },
+      {
+        "KeyId": 473871930922885159
+      },
+      {
+        "KeyId": 473871930922885160
+      },
+      {
+        "KeyId": 473871930922885161
+      },
+      {
+        "KeyId": 473871930922885162
+      },
+      {
+        "KeyId": 473871930922885163
+      },
+      {
+        "KeyId": 473871930922885164
+      },
+      {
+        "KeyId": 473871930922885165
+      },
+      {
+        "KeyId": 473871930922885166
+      },
+      {
+        "KeyId": 473871930922885167
+      },
+      {
+        "KeyId": 473871930922885168
+      },
+      {
+        "KeyId": 473871930922885169
+      },
+      {
+        "KeyId": 473871930922885170
+      },
+      {
+        "KeyId": 473871930922885171
+      },
+      {
+        "KeyId": 473871930922885172
+      },
+      {
+        "KeyId": 473871930927079424
+      },
+      {
+        "KeyId": 473871930927079425
+      },
+      {
+        "KeyId": 473871930927079426
+      },
+      {
+        "KeyId": 473871930927079427
+      },
+      {
+        "KeyId": 473871930927079428
+      },
+      {
+        "KeyId": 473871930927079429
+      },
+      {
+        "KeyId": 473871930927079430
+      },
+      {
+        "KeyId": 473871930927079431
+      },
+      {
+        "KeyId": 473871930927079432
+      },
+      {
+        "KeyId": 473871930927079433
+      },
+      {
+        "KeyId": 473871930927079434
+      },
+      {
+        "KeyId": 473871930927079435
+      },
+      {
+        "KeyId": 473871930927079436
+      },
+      {
+        "KeyId": 473871930927079437
+      },
+      {
+        "KeyId": 473871930927079438
+      },
+      {
+        "KeyId": 473871930927079439
+      },
+      {
+        "KeyId": 473871930927079440
+      },
+      {
+        "KeyId": 473871930927079441
+      },
+      {
+        "KeyId": 473871930927079442
+      },
+      {
+        "KeyId": 473871930927079443
+      },
+      {
+        "KeyId": 473871930927079444
+      },
+      {
+        "KeyId": 473871930927079445
+      },
+      {
+        "KeyId": 473871930927079446
+      },
+      {
+        "KeyId": 473871930927079447
+      },
+      {
+        "KeyId": 473871930927079448
+      },
+      {
+        "KeyId": 473871930927079449
+      },
+      {
+        "KeyId": 473871930927079450
+      },
+      {
+        "KeyId": 473871930927079451
+      },
+      {
+        "KeyId": 473871930927079452
+      },
+      {
+        "KeyId": 473871930927079453
+      },
+      {
+        "KeyId": 473871930927079454
+      },
+      {
+        "KeyId": 473871930927079455
+      },
+      {
+        "KeyId": 473871930927079456
+      },
+      {
+        "KeyId": 473871930927079457
+      },
+      {
+        "KeyId": 473871930927079458
+      },
+      {
+        "KeyId": 473871930927079459
+      },
+      {
+        "KeyId": 473871930927079460
+      },
+      {
+        "KeyId": 473871930927079461
+      },
+      {
+        "KeyId": 473871930927079462
+      },
+      {
+        "KeyId": 473871930927079463
+      },
+      {
+        "KeyId": 473871930927079464
+      },
+      {
+        "KeyId": 473871930927079465
+      },
+      {
+        "KeyId": 473871930927079466
+      },
+      {
+        "KeyId": 473871930927079467
+      },
+      {
+        "KeyId": 473871930927079468
+      },
+      {
+        "KeyId": 473871930927079469
+      },
+      {
+        "KeyId": 473871930927079470
+      },
+      {
+        "KeyId": 473871930927079471
+      },
+      {
+        "KeyId": 473871930927079472
+      },
+      {
+        "KeyId": 473871930927079473
+      },
+      {
+        "KeyId": 473871930927079474
+      },
+      {
+        "KeyId": 473871930927079475
+      },
+      {
+        "KeyId": 473871930927079476
+      },
+      {
+        "KeyId": 473871930927079477
+      },
+      {
+        "KeyId": 473871930927079478
+      },
+      {
+        "KeyId": 473871930931273728
+      },
+      {
+        "KeyId": 473871930931273729
+      },
+      {
+        "KeyId": 473871930931273730
+      },
+      {
+        "KeyId": 473871930931273731
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 12414,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "I wonder if she would like to do karaoke.\r\nBuying a set of microphones and doing it here wouldn’t be as fun as going to some venue.\r\nThere’s also the problem with Landlord. He would probably be mad at us if we sang too loud.\r\nIt isn’t worth the risk of angering him…\r\nYou: Hey, {f_botName}. Would you like us to go to karaoke somewhere?\r\nBot: What’s karaoke?\r\nYou: Uh, karaoke is basically getting together with a few people and singing songs. \r\nBot: Oh, I see.\r\nBot: Do we need to write our own songs or…\r\nYou: No, in a karaoke box there’s a machine with already existing songs to choose from.\r\nBot: So, it’s like a game?\r\nYou: Yeah, something like that.\r\nBot: You said about a group of people. Are the two of us enough?\r\nYou: Sure. It’s not that unusual. Although going alone would be kinda…\r\nYou: So, would you like us to go?\r\r\n#bot.Expression.Happy\r\nBot: Sure! It sounds fun. I will need to update my sound driver. I wouldn’t want to lose.\r\n#bot.Expression.NoHappy\r\nYou: Oh, you can’t really lose at karaoke. It’s all about having fun.\r\nBot: Did you go to karaoke before?\r\nYou: A few times. It was alright I guess. It mostly depends on the people you go with if it’s fun.\r\nYou: I didn’t go to karaoke for quite some time and it would be nice going there with you.\r\n#bot.Expression.Blush\r\nBot: Ok, let’s go then!\r\nYou: Sure!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538828853252100
+      },
+      {
+        "KeyId": 191538828853252101
+      },
+      {
+        "KeyId": 191538828853252102
+      },
+      {
+        "KeyId": 191538828853252103
+      },
+      {
+        "KeyId": 191538828853252104
+      },
+      {
+        "KeyId": 191538828853252105
+      },
+      {
+        "KeyId": 191538828853252106
+      },
+      {
+        "KeyId": 191538828853252107
+      },
+      {
+        "KeyId": 191538828853252108
+      },
+      {
+        "KeyId": 191538828853252109
+      },
+      {
+        "KeyId": 191538828853252110
+      },
+      {
+        "KeyId": 191538828853252111
+      },
+      {
+        "KeyId": 191538828853252112
+      },
+      {
+        "KeyId": 191538828853252113
+      },
+      {
+        "KeyId": 191538828853252114
+      },
+      {
+        "KeyId": 191538828857446400
+      },
+      {
+        "KeyId": 191538828857446401
+      },
+      {
+        "KeyId": 191538828857446402
+      },
+      {
+        "KeyId": 191538828857446403
+      },
+      {
+        "KeyId": 191538828857446404
+      },
+      {
+        "KeyId": 191538828857446405
+      },
+      {
+        "KeyId": 191538828857446406
+      }
+    ]
+  }
+}

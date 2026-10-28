@@ -1,0 +1,61 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16906,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Annalie_Outside.Eyes.Normal+Annalie_Outside.Mouth.Open\r\nLady Annalie: Thanks, {f_botName}. At least you care about me.\r\nYou: …\r\n#Annalie_Outside.Eyes.Pervy+Annalie_Outside.Mouth.Open\r\nLady Annalie: Please take my hand and let’s skate away from this guy.\r\n#bot.Expression.sad\r\n#Annalie_Outside.face.normal\r\nBot: I-If that’s what you want…\r\nYou: Wha?!\r\nI can’t believe I was betrayed that easily…\r\nYou: Are you two really going to just skate away?! Wait for me!\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: You are doing great, Annalie! So please, cheer up a little.\r\n#Annalie_Outside.face.smileEyeClosed\r\nLady Annalie: Even if you say that…{{wi}} I can’t stop shaking my legs. My knees seem to instinctively try to find balance.\r\n#Annalie_Outside.face.normal\r\nBot: Soon you should get used to it. {{wi}}I think…\r\n#Annalie_Outside.face.sad\r\nLady Annalie: You could have left the last part to yourself, you know?\r\nBot: Maybe I should’ve, but I didn’t want to lie to you.\r\n#Annalie_Outside.face.normal\r\nLady Annalie: Thanks I guess…\r\nLady Annalie: Damn, you are much better at this than me.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 479403817208635392
+      },
+      {
+        "KeyId": 479403817208635393
+      },
+      {
+        "KeyId": 479403817208635394
+      },
+      {
+        "KeyId": 479403817208635395
+      },
+      {
+        "KeyId": 479403817208635396
+      },
+      {
+        "KeyId": 479403817208635397
+      },
+      {
+        "KeyId": 479403817208635398
+      },
+      {
+        "KeyId": 479403817208635399
+      },
+      {
+        "KeyId": 479403817208635400
+      },
+      {
+        "KeyId": 479403817208635401
+      },
+      {
+        "KeyId": 479403817208635402
+      },
+      {
+        "KeyId": 479403817208635403
+      },
+      {
+        "KeyId": 479403817208635404
+      },
+      {
+        "KeyId": 479403817208635405
+      }
+    ]
+  }
+}

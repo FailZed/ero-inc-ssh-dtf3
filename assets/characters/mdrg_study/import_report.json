@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "tool_version": "1.3.0",
+  "project": "/Users/vladzvezdin/GoDot/ero-inc",
+  "namespace": "mdrg_study",
+  "install_relative_path": "assets/characters/mdrg_study",
+  "merged_with_existing_character_files": true,
+  "existing_project": true,
+  "runtime_equivalent_to_unity": false,
+  "native_render_tested": false,
+  "issues": [
+    {
+      "code": "upstream_conversion_gaps",
+      "message": "The Unity extraction reported unresolved assets or conversion gaps; see archive/export_report.json"
+    }
+  ],
+  "archive_mode": "full",
+  "catalog": "res://assets/characters/mdrg_study/catalog.json",
+  "viewer_scene": "res://assets/characters/mdrg_study/scenes/browser.tscn",
+  "counts": {
+    "source_models": 6,
+    "ready_models": 6,
+    "unavailable_models": 0
+  },
+  "unity_export_status": "completed_with_gaps",
+  "unity_export_issues_by_code": {
+    "opaque_asset": 2,
+    "asset_conversion_failed": 13,
+    "unresolved_reference": 20944,
+    "unreadable_typetree": 414,
+    "unassigned_motion": 5,
+    "source_snapshot_disabled": 1
+  },
+  "dependency": {
+    "directory_present": true,
+    "host_binary_present": true,
+    "runtime_loaded": false,
+    "target": "res://addons/gd_cubism/",
+    "descriptor": "gd_cubism.gdextension",
+    "libraries": [
+      {
+        "features": "macos",
+        "file": "bin/libgd_cubism.macos.universal.dylib",
+        "present": true,
+        "host_match": true
+      },
+      {
+        "features": "windows.x86_64",
+        "file": "bin/libgd_cubism.windows.x86_64.dll",
+        "present": true,
+        "host_match": false
+      }
+    ]
+  },
+  "status": "prepared_with_gaps",
+  "validation": {
+    "model_reference_sets_checked": 6,
+    "godot_engine_checked": false
+  }
+}

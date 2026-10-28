@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 12691,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Hey {f_botName}!\nBot: Yes {f_playerName}?\nYou: Can you call me by a different name?\nBot: Yes! How would you like me to call you now?",
+    "localizedLines": [
+      {
+        "KeyId": 193118378829680640
+      },
+      {
+        "KeyId": 193118378829680641
+      },
+      {
+        "KeyId": 193118378829680642
+      },
+      {
+        "KeyId": 193118378829680643
+      }
+    ]
+  }
+}

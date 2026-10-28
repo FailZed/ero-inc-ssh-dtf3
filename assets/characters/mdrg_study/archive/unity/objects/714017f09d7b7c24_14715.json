@@ -1,0 +1,102 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1206
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 14545846272
+  },
+  "m_Name": "",
+  "m_Navigation": {
+    "m_Mode": 3,
+    "m_WrapAround": 0,
+    "m_SelectOnUp": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectOnDown": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectOnLeft": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectOnRight": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_Transition": 2,
+  "m_Colors": {
+    "m_NormalColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "m_HighlightedColor": {
+      "r": 0.14509804546833038,
+      "g": 0.7568627595901489,
+      "b": 0.8784313797950745,
+      "a": 0.6980392336845398
+    },
+    "m_PressedColor": {
+      "r": 0.0784313753247261,
+      "g": 0.5137255191802979,
+      "b": 0.6000000238418579,
+      "a": 1.0
+    },
+    "m_SelectedColor": {
+      "r": 0.14509804546833038,
+      "g": 0.7568627595901489,
+      "b": 0.8784313797950745,
+      "a": 0.6980392336845398
+    },
+    "m_DisabledColor": {
+      "r": 0.5882353186607361,
+      "g": 0.6470588445663452,
+      "b": 0.6666666865348816,
+      "a": 0.501960813999176
+    },
+    "m_ColorMultiplier": 2.0,
+    "m_FadeDuration": 0.10000000149011612
+  },
+  "m_SpriteState": {
+    "m_HighlightedSprite": {
+      "m_FileID": 0,
+      "m_PathID": 974
+    },
+    "m_PressedSprite": {
+      "m_FileID": 0,
+      "m_PathID": 875
+    },
+    "m_SelectedSprite": {
+      "m_FileID": 0,
+      "m_PathID": 974
+    },
+    "m_DisabledSprite": {
+      "m_FileID": 0,
+      "m_PathID": 915
+    }
+  },
+  "m_AnimationTriggers": {
+    "m_NormalTrigger": "Normal",
+    "m_HighlightedTrigger": "Highlighted",
+    "m_PressedTrigger": "Pressed",
+    "m_SelectedTrigger": "Highlighted",
+    "m_DisabledTrigger": "Disabled"
+  },
+  "m_Interactable": 1,
+  "m_TargetGraphic": {
+    "m_FileID": 0,
+    "m_PathID": 14714
+  },
+  "m_OnClick": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

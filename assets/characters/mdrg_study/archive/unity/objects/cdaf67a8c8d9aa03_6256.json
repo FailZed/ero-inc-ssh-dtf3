@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 10763,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: A new restaurant opened nearby. I was thinking that we could go there and check it out.\r\n#bot.Expression.Happy\r\nBot: So…{{wi}} It’s a date, right?\r\nYou: Y-yeah\r\n#bot.Expression.NoHappy\r\nBot: What do you know about it?\r\nYou: Not much, I just saw their ad on some website. I wonder how did they know that I live nearby though.\r\nBot: You have enabled geolocation on your phone. That restaurant probably runs targeted ads.\r\nI kinda feel like my privacy has been invaded…\r\nAlthough thanks to that ad, I had a pretext to go out with {f_botName} again, so maybe it’s not all bad.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538827716595721
+      },
+      {
+        "KeyId": 191538827716595722
+      },
+      {
+        "KeyId": 191538827716595723
+      },
+      {
+        "KeyId": 191538827716595724
+      },
+      {
+        "KeyId": 191538827716595725
+      },
+      {
+        "KeyId": 191538827720790016
+      },
+      {
+        "KeyId": 191538827720790017
+      },
+      {
+        "KeyId": 191538827720790018
+      }
+    ]
+  }
+}

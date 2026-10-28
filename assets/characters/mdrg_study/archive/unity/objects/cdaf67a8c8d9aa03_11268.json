@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17171,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Lady Annalie: I see you two are already here.\r\nBot: Yes! What should we do?\r\n#bot.Expression.Clear\r\n#bot.Expression.shock\r\n#bot.Expression.Blush\r\nLady Annalie: Get naked. I need to check the fit for the last time.\r\n#Annalie_Outside.face.pervy\r\nBot: T-There’s a lot of people though.\r\nLady Annalie: Come on~ It’s too late to get embarrassed now! All the people here are professionals. \r\nBot: A-Alright…\r\n#Annalie_Outside.face.normal\r\nYou: Does she need to get completely naked?\r\nLady Annalie: Of course not. She can leave her panties on. \r\n#Annalie_Outside.face.pervy\r\nLady Annalie: If she has any on, that is~\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 482594713353838592
+      },
+      {
+        "KeyId": 482594713358032896
+      },
+      {
+        "KeyId": 482594713358032897
+      },
+      {
+        "KeyId": 482594713358032898
+      },
+      {
+        "KeyId": 482594713358032899
+      },
+      {
+        "KeyId": 482594713358032900
+      },
+      {
+        "KeyId": 482594713358032901
+      },
+      {
+        "KeyId": 482594713358032902
+      },
+      {
+        "KeyId": 482594713358032903
+      }
+    ]
+  }
+}

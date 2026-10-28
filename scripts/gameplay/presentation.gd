@@ -66,6 +66,10 @@ static func combat_log(entry: Dictionary) -> String:
 	return actor + (" поднимается" if entry.get("action","") == "stand_up" else " восстанавливает выносливость")
 
 static func error(id: String) -> String:
+	var pressure_errors := {"unknown_pressure_case":"Этот случай недоступен.","pressure_case_closed":"Этот случай уже закрыт для выбранного ответа.","pressure_response_used":"Этот ответ уже использован. Выберите другой способ действовать.","pressure_evidence_required":"Сначала соберите как минимум два подтверждения.","pressure_no_audience":"Нет свидетелей, которым можно предъявить доказательства.","leave_threat_location_first":"Сначала покиньте место, где находится агрессор.","supporter_unwilling":"Этот знакомый не готов поддержать вас.","supporter_afraid":"Этот знакомый боится последствий вмешательства.","unknown_supporter":"Этот человек сейчас недоступен для поддержки.","pressure_deadline_too_close":"До срока осталось слишком мало времени для этого ответа.","pressure_payment_unavailable":"В этом случае откуп недоступен.","pressure_response_unavailable":"Этот ответ не подходит к угрозе.","pressure_already_active":"Между этими участниками уже развивается конфликт.","antagonist_cooldown":"Повторное давление пока недоступно.","insufficient_motive":"У персонажа нет достаточного мотива для такого поступка.","unavailable_antagonist":"Участник конфликта недоступен.","no_opportunity":"Для этой угрозы сейчас нет подходящей ситуации.","no_known_project":"Нет известного проекта, на который можно воздействовать.","no_social_history":"Участников не связывает нужная история отношений.","actor_busy":"Персонаж сейчас занят.","target_busy":"Сначала завершите текущее взаимодействие.","pressure_capacity":"Уже развивается несколько угроз.","unknown_pressure_response":"Этот способ ответа недоступен.","unknown_pressure_kind":"Этот вид угрозы недоступен."}
+	if pressure_errors.has(id): return str(pressure_errors[id])
+	var companion_errors := {"companion_needs_trust":"Нужно больше доверия и близости.","companion_cooldown":"Собеседнику нужно время. Вернитесь к этому через несколько часов.","finish_companion_moment":"Завершите или остановите встречу с персонажем.","stale_companion_moment":"Этот момент уже завершён. Предложите новую встречу.","unagreed_companion_gesture":"Выберите только согласованный жест.","unknown_companion_gesture":"Этот жест недоступен.","invalid_companion_duration":"Удерживайте прикосновение немного дольше.","adult_required":"Это действие доступно только взрослым персонажам.","unsupported_main_schema":"Сохранение создано другой версией игры. Для этого обновления начните новую игру.","catalog_mismatch":"Сохранение использует другой набор игровых правил. Выберите совместимое сохранение или начните новую игру."}
+	if companion_errors.has(id): return str(companion_errors[id])
 	if preload("res://scripts/gameplay/adult_health_presentation.gd").ERRORS.has(id): return preload("res://scripts/gameplay/adult_health_presentation.gd").ERRORS[id]
 	if preload("res://scripts/gameplay/growth_presentation.gd").ERRORS.has(id): return preload("res://scripts/gameplay/growth_presentation.gd").ERRORS[id]
 	if preload("res://scripts/gameplay/livelihood_presentation.gd").ERRORS.has(id): return preload("res://scripts/gameplay/livelihood_presentation.gd").ERRORS[id]
@@ -110,6 +114,12 @@ static func actor_name(sim, id: String) -> String:
 	return "вы" if id == "player" else str(sim.state.social.npcs.get(id, {}).get("name", "знакомый"))
 
 static func event_text(event: Dictionary, sim) -> String:
+	if event.get("kind","") == "pressure_notice": return str(event.get("data",{}).get("text",""))
+	if event.get("kind","") == "companion_moment":
+		var moment: Dictionary = event.data
+		var person := str(sim.state.social.npcs.get(moment.npc,{}).get("name","Собеседник"))
+		var descriptions := {"completed":"вы провели приятный момент вместе.","declined":"сейчас предпочитает держать дистанцию.","cancelled":"вы остановили встречу.","interrupted":"обстоятельства изменились; встреча прервана."}
+		return person + ": " + str(descriptions.get(moment.outcome,""))
 	var data: Dictionary = event.get("data", {})
 	if str(event.get("kind","")).begins_with("adult_health_"):
 		var target := str(data.get("target",""))

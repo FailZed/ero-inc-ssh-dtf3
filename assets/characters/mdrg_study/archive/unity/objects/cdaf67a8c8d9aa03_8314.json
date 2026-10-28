@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13727,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.Clear\r\nBot: {f_playerName}, you look malnourished. How about we go somewhere to eat?\r\nYou: Now that you mention it, I feel kinda hungry…\r\nYou: …but at this hour, I doubt that any place is open.\r\nBot: There’s one place open, a supermarket nearby.\r\nYou: Right…{{wi}} that place.\r\nYou: Even so, it’s not a restaurant or fast-food. Beggars can't be choosers I guess…\r\nYou: Alright then, let’s go.\r\n#bot.Expression.Sad\r\nBot: You don’t seem too happy about it…\r\nYou: It’s not like that. Some time ago I thought that one of the cashiers was a bot.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209930245538570240
+      },
+      {
+        "KeyId": 209930254279499776
+      },
+      {
+        "KeyId": 209930254279499777
+      },
+      {
+        "KeyId": 209930254279499778
+      },
+      {
+        "KeyId": 209930254279499779
+      },
+      {
+        "KeyId": 209930254279499780
+      },
+      {
+        "KeyId": 209930254279499781
+      },
+      {
+        "KeyId": 209930254279499782
+      },
+      {
+        "KeyId": 209930254279499783
+      }
+    ]
+  }
+}

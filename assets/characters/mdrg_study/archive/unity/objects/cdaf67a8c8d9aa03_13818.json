@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 616
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 29829890048
+  },
+  "m_Name": "",
+  "cuttingTarget": {
+    "m_FileID": 0,
+    "m_PathID": 1579
+  },
+  "leftHand": {
+    "m_FileID": 0,
+    "m_PathID": 13214
+  },
+  "rightHand": {
+    "m_FileID": 0,
+    "m_PathID": 13610
+  },
+  "bot": {
+    "m_FileID": 0,
+    "m_PathID": 1739
+  },
+  "cuttableFoodPrefabReference": {
+    "prefab": {
+      "m_FileID": 3,
+      "m_PathID": 1691
+    }
+  },
+  "meatSprite": {
+    "m_FileID": 3,
+    "m_PathID": 348
+  },
+  "carrotSprite": {
+    "m_FileID": 3,
+    "m_PathID": 450
+  },
+  "onionSprite": {
+    "m_FileID": 3,
+    "m_PathID": 412
+  }
+}

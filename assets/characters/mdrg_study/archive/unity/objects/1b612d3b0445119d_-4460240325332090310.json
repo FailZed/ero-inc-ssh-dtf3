@@ -1,0 +1,1738 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180678
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "ลองเรียกชื่อเธอดู",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655131
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "พูดคุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "ลองเรียกเธอ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "ลองพูดคุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "ทักทายไป",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "จู่ๆก็เกิดอยากคุยกับเธอขึ้นมาซะงั้น",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655132
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "ลองคุยกับเธอดูหน่อยก็แล้วกัน",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655133
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "ซ่อนเธอไว้ตรงไหนดีเนี่ย",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655134
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "ลองตรวจสอบเธอดูหน่อยดีกว่า",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655135
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "หาวิธีสื่อสารกับเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655136
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "เอาไงกับเรื่องค่าเช่าห้องของเราดี?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655137
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "รู้สึกกังวลจังเลยแฮะ...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655138
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "นั่นมันอะไรน่ะ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "ถ้าขายเธอจะได้เงินเท่าไหร่กัน?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655139
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "ชีวิตวัยสะรุ่นหมกมุ่นของเรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655140
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "พูดคุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655141
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "พูดคุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655142
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "พูดคุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655143
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "ถามความคิดเห็นเรื่องห้องของเรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655144
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "สงสัยจังว่าเธอจะคิดยังไงเกี่ยวกับเรา...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655145
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "หรือว่าเธอจะคำนวณเลขได้?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "ถามเธอว่าจะหาเงินยังไงให้ได้เร็วๆเยอะๆ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655146
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "ถามเรื่องสภาพฝนฟ้าอากาศ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655147
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "ถามเธอว่าคิดยังไงกับขนาด...ไอ้นั่นของเรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655148
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "สอบถามเรื่องเครื่องทำกาแฟนั่น",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655149
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "เธอทำให้เรารู้สึกไม่สบอารมณ์เลย...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655150
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "น่ารำคาญชะมัด...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "ลองพูดคุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "พูดคุยนิดๆหน่อยๆ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 666365931687772912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "คุยกับเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 666365931687772913
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "บอกให้เธอคุยกับเรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655151
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "ขอแบบสุภาพๆให้เธอพูดคุยด้วย",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655152
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "เบื่อจังเลยแฮะ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "หาอะไรทำด้วยกันกับเธอดีกว่า ...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655153
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "มาคุยเรื่อยเปื่อยด้วยกันดีกว่า!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655154
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "ถามเรื่องการมีตัวตนอยู่ของคนเรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655155
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "ถามเรื่องอะไรซักอย่างที่ไม่ค่อยสำคัญ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655156
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "ถามเรื่องการเมือง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "ถามเรื่องบ่อเกิดแห่งทุกข์ทั้งปวง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "วันนี้อารมณ์ดีก็เลยอยากหาเกมอะไรซักอย่างเล่น",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "เล่นเกมไพ่กับเธอดีกว่า",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "ได้เวลาเล่นเกมต่อคำแล้ว!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "อาจจะช้าไปหน่อยแต่ก็อยากจะพูดคุยกับเธอดู",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": "ดูเหมือนว่าเธออยากจะพูดอะไรซักอย่างด้วย...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655163
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "บอกเธอไปว่าเรารักเธอ!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "พูดหยอกล้อกับเธอ <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655164
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "ต้องปฏิบัติตัวกับเธอให้ดีกว่านี้...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "ถามเรื่องอารมณ์ความรู้สึกของเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "หุ่นเซ็กส์บอทเนี่ยมีงานอดิเรกที่สนใจด้วยหรอ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655166
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "หุ่นเซ็กส์บอทเนี่ยหิวข้าวเป็นกับเขาด้วยหรอเนี่ย?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "อยากสัมผัสเธอจัง...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "เราลืมอะไรไปรึเปล่าหว่า?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655168
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "ถามเรื่องระดับความฉลาดของเธอ...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655169
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "เธอจะเล่นหมากรุกเป็นไหมนะ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655170
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "หรือเราควรหาเกมอื่นๆเล่นดูบ้าง?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "คิดออกแล้วล่ะว่าจะเอาเกมแบบไหนไปเล่นชนะเธอ...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "เหมือนว่าเธอจะดูแปลกไป...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "สงสัยจังว่าเธอรู้สึกยังไงกับเราบ้างน่ะ...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655174
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "ดูเหมือนว่าเธอกำลังง่วนอยู่กับความคิดอะไรบางอย่างอยู่...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655175
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "ดูเหมือนว่าเธอต้องการอะไรบางอย่างจากเรา",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655176
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "เอาหล่ะ เธอมีขาครบทั้งสองข้างแล้ว...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655177
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": "เราลองถามเธอเรื่องความเสี่ยงที่จะออกไปนอกห้องด้วยกันดูก่อน",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655178
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "เราต้องถามความเป็นไปได้ที่จะพาเธอออกไปข้างนอกห้องดูก่อน",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655179
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "ถามเรื่องหุ่นเซ็กส์บอท",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655180
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "หรือว่าเธอจะพูดได้จริงๆ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655181
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "ลองคุยอีกครั้งดู",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "มีบางอย่างไม่ชอบมาพากลแฮะ...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "เธอมีความคิดเห็นยังไงบ้างเรื่องสัตว์เลี้ยงน่ะ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655182
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "เราควรชวนเธอออกเดต",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655183
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "เราอยากไปดูหนังกับเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655184
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "กลิ่นแปลกๆนั่นมันกลิ่นอะไรกันน่ะ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655185
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "ถามเรื่องของตกแต่งวันฮาโลวีนในห้อง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655186
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "แล้วตุ๊กตาแมงมุมน่ารักๆนั่นล่ะ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "เราควรถามเธอว่าอนุญาตให้ชานิสมาที่ห้องจะได้ไหม",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655187
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "พวกเราไปร้องคาราโอเกะด้วยกันดีไหม?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655188
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "ถามเธอว่าจะทำยังไงกับเรื่องพนักงานคิดเงินคนนั้นดี",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655189
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "ลองคุยกับเธออีกครั้ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "ถามเกี่ยวกับเมลิสซ่าและชิ้นส่วนที่ \"ขาดไป\" ของเธอ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655190
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "หารือเรื่องความรู้สึกของคนจรจัดที่มีต่อพวกหุ่นยนต์",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655191
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "ถามเธอว่าเธอรู้สึกยังไงหลังได้รับการซ่อมแซม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "ดูข่าวด้วยกันกับ{f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "ถ้าเลือกได้ เธออยากเลือกพลังพิเศษอะไรล่ะ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655192
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "เล่าเรื่องสยองขวัญเรื่องใหม่ให้ฟัง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655193
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "เธอทำอะไรบ้างตอนที่ผมไม่อยู่ในห้องน่ะ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "ถ้าเธอสามารถหางานทำได้ เธออยากทำอะไรล่ะ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655194
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "เธออยากลองกลายเป็นมนุษย์ดูบ้างไหมล่ะ?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655195
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "แก้แค้นเจ้าของตึก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "ถามเธอว่าจะรับมือกับเพื่อนบ้านน่ารำคาญยังไงดี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "เธอคิดว่าจะเกิดอะไรขึ้นหลังจากที่เราตายไป?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124655196
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "เธอมีแผนรับมือในกรณีที่เกิดเหตุการณ์ซอมบี้ครองโลกหรือเปล่า?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "มาลองเล่นเกมสวมบทบาทกัน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "คิดว่าแอนนาลีย์จะหาแฟนกับเขาได้หรือเปล่านะ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 666365931687772912,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 666365931687772913,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 6437392580223180678,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124655131,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Done !\n\n14/09/26 :\nProofreading : Done !"
+        }
+      },
+      {
+        "rid": 7996671569124655132,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/10/24 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655133,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655134,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/07/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655135,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655136,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655137,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "19/01/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655138,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "19/01/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655139,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "19/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655140,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655141,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "29/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655142,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "29/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655143,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "29/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655144,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655145,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655146,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655147,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655148,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655149,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "19/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655150,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655151,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655152,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655153,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655154,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655155,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655156,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "06/08/24 :\n\nTypo Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655157,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655158,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655159,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655160,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655161,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655162,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655163,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655164,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655165,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655166,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655167,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655168,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "30/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655169,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655170,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "03/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655171,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "21/08/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655172,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655173,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655174,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655175,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655176,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655177,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655178,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/12/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655179,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/12/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655180,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655181,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "30/06/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655182,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655183,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "06/08/24 :\n\nTypo Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655184,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655185,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "02/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655186,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655187,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/11/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655188,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "26/02/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655189,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "04/04/23 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655190,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655191,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "14/09/26 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655192,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655193,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655194,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "20/01/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655195,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "26/02/25 :\n\nSmall Fix"
+        }
+      },
+      {
+        "rid": 7996671569124655196,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "09/04/26 :\n\nSmall Fix"
+        }
+      }
+    ]
+  }
+}

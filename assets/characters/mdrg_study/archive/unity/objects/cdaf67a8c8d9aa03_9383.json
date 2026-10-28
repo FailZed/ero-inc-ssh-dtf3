@@ -1,0 +1,61 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14970,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: Our burgers are ready, let’s dig in!\r\n#bot.Expression.clear\r\nYou: Wow…{{wi}} This is the smaller one?\r\nBot: Oops, sorry, I gave you mine by mistake.\r\nYou: …\r\nYou: I don’t think I can eat that whole burger. My stomach may burst.\r\nBot: After my calculations I conclude that it may be possible.\r\nYou: My mom told me not to waste food, but this time I will have to make an exemption.\r\n#bot.Expression.Happy\r\nYou: Hm! Taste is really good!\r\nYou: That’s gotta be one of the best if not the best burger I ever had!\r\n#bot.Expression.veryHappy\r\nBot: I’m glad you like it.\r\n#bot.Expression.Happy\r\nYou: As I thought, ⅔ is the most I could eat and I’m absolutely full…\r\nYou: Give me a few minutes…\r\n#bot.Expression.clear\r\n#bot.Expression.shock\r\nYou: If I get on a ride with this in my stomach, there might be an accident.\r\nBot: The wonders of the human body…\r\n#bot.Expression.happy",
+    "localizedLines": [
+      {
+        "KeyId": 323196449593483264
+      },
+      {
+        "KeyId": 323196449593483265
+      },
+      {
+        "KeyId": 323196449593483266
+      },
+      {
+        "KeyId": 323196449593483267
+      },
+      {
+        "KeyId": 323196449593483268
+      },
+      {
+        "KeyId": 323196449593483269
+      },
+      {
+        "KeyId": 323196449593483270
+      },
+      {
+        "KeyId": 323196449593483271
+      },
+      {
+        "KeyId": 323196449593483272
+      },
+      {
+        "KeyId": 323196449593483273
+      },
+      {
+        "KeyId": 323196449593483274
+      },
+      {
+        "KeyId": 323196449593483275
+      },
+      {
+        "KeyId": 323196449593483276
+      },
+      {
+        "KeyId": 323196449593483277
+      }
+    ]
+  }
+}

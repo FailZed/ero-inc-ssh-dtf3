@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 5799.71533203125,
+    "y": 3066.5927734375,
+    "width": 140.95999145507812,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 3834,
+  "blockName": "Outside/FD wait",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 3709
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4216
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4215
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4217
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3708
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4218
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

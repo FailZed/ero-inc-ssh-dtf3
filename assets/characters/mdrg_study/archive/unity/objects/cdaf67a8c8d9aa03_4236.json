@@ -1,0 +1,109 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 8821,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "'Nun' Shanice: I’m such an idiot…\n...\n'Nun' Shanice: You think I should change my ‘church’ outfit?\nYou: Well…\nI don’t really want her to change, because this one is…{{wi}} pretty nice to look at.\nYou: It’s {f_Integer}, you can wear whatever you want, right? \n#Nun.Face.nunFaceSerious\r\n'Nun' Shanice: Man, {{wi}}that was,{{wi}} like\r\n#Nun.Face.nunFaceHappy\r\n'Nun' Shanice: So smart! You are completely right! Woohoo! Girl power!\r\n#Nun.Face.nunFaceSerious\r\n'Nun' Shanice: To be honest my relationship with Priestcan wasn’t always this bad… He was getting mad about many things, but we could talk about John Paul’s discoveries for hours and I thought of him as a friend. \r\n'Nun' Shanice: After some time he became weird and now we quarrel everytime we meet.\r\n'Nun' Shanice: So, what should I do about this drama with an ATM priest? Any ideas?\r\nIdeas? I don’t know this robo-priest, I never talked to him before. \r\nYou: Uh… You could always talk to him and explain everything, right?\r\n#Nun.Face.nunFaceNormal\r\n'Nun' Shanice: Do you really think that would work?! \r\nYou: Yeah, sure! Why wouldn’t it? \r\n'Nun' Shanice: Alright! I will go for him! Wait a moment.\r\n#Nun.animate(TransparencyTo0,1)\r\nI wonder what this bot is like. Is it similar to my sexbot? Or maybe he is completely different?\r\nHuh?\r\nI can hear that Shanice raised her voice. Did something happen? \r\nOh, she’s coming this way.\r\n#Nun.Face.nunFaceAngry(instant)\r\n#Nun.animate(TransparencyTo1,1)\r\n'Nun' Shanice: Grrrrr! This Priestcan is pissing me off! \r\nYou: W-what happened?\r\n'Nun' Shanice: He told me that he has an important update right now and no one should bother him!\r\nYou: Unlucky I guess. I can always come tomorrow. \r\n#Nun.Face.nunFaceNormal\r\n'Nun' Shanice: Oh! You gonna come tomorrow?! \r\nYou: I-I didn’t say that! I might be busy, I don’t know yet. \r\n'Nun' Shanice: It’s okay. I’m usually here between 17 and 21. \r\n\r\n'Nun' Shanice: It’s getting late right now, so I’m going home, bye bye~\r\nYou: Yeah, I’m gonna go back too. It was nice meeting you! \r\n'Nun' Shanice: You too!\r\n#Nun.Face.nunFaceNormal\r\n#Nun.animate(TransparencyTo0,1)\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538824847691777
+      },
+      {
+        "KeyId": 191538824847691778
+      },
+      {
+        "KeyId": 191538824847691779
+      },
+      {
+        "KeyId": 191538824847691780
+      },
+      {
+        "KeyId": 191538824847691781
+      },
+      {
+        "KeyId": 191538824847691782
+      },
+      {
+        "KeyId": 191538824847691783
+      },
+      {
+        "KeyId": 191538824847691784
+      },
+      {
+        "KeyId": 191538824847691785
+      },
+      {
+        "KeyId": 191538824847691786
+      },
+      {
+        "KeyId": 191538824847691787
+      },
+      {
+        "KeyId": 191538824847691788
+      },
+      {
+        "KeyId": 191538824847691789
+      },
+      {
+        "KeyId": 191538824851886080
+      },
+      {
+        "KeyId": 191538824851886081
+      },
+      {
+        "KeyId": 191538824851886082
+      },
+      {
+        "KeyId": 191538824851886083
+      },
+      {
+        "KeyId": 191538824851886084
+      },
+      {
+        "KeyId": 191538824851886085
+      },
+      {
+        "KeyId": 191538824851886086
+      },
+      {
+        "KeyId": 191538824851886087
+      },
+      {
+        "KeyId": 191538824851886088
+      },
+      {
+        "KeyId": 191538824851886089
+      },
+      {
+        "KeyId": 191538824851886090
+      },
+      {
+        "KeyId": 191538824856080384
+      },
+      {
+        "KeyId": 191538824856080385
+      },
+      {
+        "KeyId": 191538824856080386
+      },
+      {
+        "KeyId": 191538824856080387
+      },
+      {
+        "KeyId": 191538824856080388
+      },
+      {
+        "KeyId": 191538824856080389
+      }
+    ]
+  }
+}

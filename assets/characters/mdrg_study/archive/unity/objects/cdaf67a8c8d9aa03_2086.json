@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9821,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: I need to ask you something {f_playerName}.\r\nYou: What is it?\r\nBot: Were you thinking about making up with Mr Landlord? You two seem like adversaries. \r\n#bot.Expression.VeryShock\r\nYou: No?\r\n#bot.Expression.NoShock\r\nBot: Why not?\r\nYou: Do you really need to ask? He’s a piece of shit! I hate that guy!\r\nBot: That’s some really strong feelings…\r\nYou: Yeah. If that guy could, he would throw me out from here without a second thought. \r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826860957698
+      },
+      {
+        "KeyId": 191538826860957699
+      },
+      {
+        "KeyId": 191538826860957700
+      },
+      {
+        "KeyId": 191538826860957701
+      },
+      {
+        "KeyId": 191538826860957702
+      },
+      {
+        "KeyId": 191538826860957703
+      },
+      {
+        "KeyId": 191538826860957704
+      },
+      {
+        "KeyId": 191538826860957705
+      }
+    ]
+  }
+}

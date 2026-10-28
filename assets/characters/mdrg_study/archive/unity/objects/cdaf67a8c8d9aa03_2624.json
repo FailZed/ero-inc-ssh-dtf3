@@ -1,0 +1,37 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9637,
+  "indentLevel": 2,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.Happy\r\nLady Annalie: My best friend is here again!\r\nYou: Hi Annalie!\r\nLady Annalie: Yeah, I meant {f_botName}.\r\n…\r\nBot: Hi Annalie! How are you?\r\nLady Annalie: I’m fine! Let’s find something nice for you!\r\n#bot.Expression.NoHappy\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826688991236
+      },
+      {
+        "KeyId": 191538826688991237
+      },
+      {
+        "KeyId": 191538826688991238
+      },
+      {
+        "KeyId": 191538826688991239
+      },
+      {
+        "KeyId": 191538826688991240
+      },
+      {
+        "KeyId": 191538826688991241
+      }
+    ]
+  }
+}

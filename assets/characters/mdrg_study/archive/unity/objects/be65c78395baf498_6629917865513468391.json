@@ -1,0 +1,7549 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Items_hu",
+  "m_LocaleId": {
+    "m_Code": "hu"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": -9204616198942692493
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2443643326464,
+      "m_Localized": "Macskafül",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125445703
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2443643326465,
+      "m_Localized": "Egy olyan tétel, amely egyesíti az állatimádókat és a weebeket. Limitált szőrös kiadás.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125445704
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1191153789440000,
+      "m_Localized": "Bolyhosság színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153772662784,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326470,
+      "m_Localized": "Bal láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326471,
+      "m_Localized": "Még egy önálló bal láb is bőséges örömet nyújthat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440003,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326472,
+      "m_Localized": "Jobb láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326473,
+      "m_Localized": "Még az önálló jobb láb is bőséges örömet nyújthat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440004,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326466,
+      "m_Localized": "Bal kéz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326467,
+      "m_Localized": "A bal kar kompatibilis a szexbotoddal!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440001,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326468,
+      "m_Localized": "Jobb kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326469,
+      "m_Localized": "A jobb kar kompatibilis a szexbotoddal!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440002,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326474,
+      "m_Localized": "Hegyes fogak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326475,
+      "m_Localized": "Adj a botnak élesebb fogakat! Miért?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326480,
+      "m_Localized": "Hiperkamó bal láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325396156416,
+      "m_Localized": "Még egy önálló bal láb is bőséges örömet nyújthat. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440008,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350720,
+      "m_Localized": "Hiperkamó jobb láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350721,
+      "m_Localized": "Még az önálló jobb láb is bőséges örömet nyújthat. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440009,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326476,
+      "m_Localized": "Hiperkamó bal kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326477,
+      "m_Localized": "A bal kar, amely kompatibilis a szexbottal! <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440006,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326478,
+      "m_Localized": "Hiperkamó jobb kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326479,
+      "m_Localized": "Jobb kar ami kompatibilis a szexbottal. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440007,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350722,
+      "m_Localized": "Hiperkamo bőr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350723,
+      "m_Localized": "Valahogy egyből működik. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440010,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350724,
+      "m_Localized": "Hiperkamó haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350725,
+      "m_Localized": "Valószínűleg jobb, mint egy paróka. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440012,
+      "m_Localized": "Másodlagos szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440011,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350726,
+      "m_Localized": "Hiperkamó szemek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350727,
+      "m_Localized": "Testreszabhatja a szemét, ahogyan jónak látod! <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440017,
+      "m_Localized": "Szem fehérje",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440016,
+      "m_Localized": "Jobb írisz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440015,
+      "m_Localized": "Bal írisz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440014,
+      "m_Localized": "Jobb pupilla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440013,
+      "m_Localized": "Bal pupilla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350728,
+      "m_Localized": "Hiperkamó hús",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350729,
+      "m_Localized": "Változtasd meg az ajkak, a hüvely és a mellbimbók színét a legújabb hiperkamó találmánnyal. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440018,
+      "m_Localized": "Száj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350730,
+      "m_Localized": "Hiperkamó macska fülek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326493,
+      "m_Localized": "Egy olyan elem, amely egyesíti az állatbarátokat és a weebeket. Limitált szőrös kiadás. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440020,
+      "m_Localized": "Bolyhos szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440019,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326494,
+      "m_Localized": "Csúcstechnológiájú hiperkamó bőr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326495,
+      "m_Localized": "High-tech hiperkamó bőr. Valamilyen oknál fogva rendkívül tartós és nem kopik. A bot emberibbnek tűnik!\nValahogy egyből működik. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440021,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326496,
+      "m_Localized": "Doboz sült bab",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326497,
+      "m_Localized": "A legjobb konzervek, amelyeket kaphatsz. Isten áldja meg a királynőt. Nagyon laktató.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326498,
+      "m_Localized": "Pácolt hagyma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326499,
+      "m_Localized": "A szója ellentéte. Pácolt. Nagyon laktató",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326500,
+      "m_Localized": "Kolbász",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326501,
+      "m_Localized": "Importálva Lengyelországból. Drága, és talán szalagféreg van benne. Nagyon laktató",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326502,
+      "m_Localized": "Instant tészta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326503,
+      "m_Localized": "Tele adalékanyagokkal. Nagyon finom, de egészségtelen. Kis adag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326504,
+      "m_Localized": "Energia ital",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326505,
+      "m_Localized": "Erőt ad, hogy egész éjjel baszhass (vagy játssz).",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326506,
+      "m_Localized": "Fehérjetartalmú rúd",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326507,
+      "m_Localized": "Ízletes snack. Nagyon kis adag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326508,
+      "m_Localized": "Csipsz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326509,
+      "m_Localized": "* Cronch Cronch* nagyon kicsi adag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326510,
+      "m_Localized": "Szóda",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326511,
+      "m_Localized": "Édes ital. Az íze, mint a szabadság.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326512,
+      "m_Localized": "Édesség",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326513,
+      "m_Localized": "Rettenetesen édes. Fáj tőle a fogad. Nagyon kis adag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326514,
+      "m_Localized": "Vege -kolbász",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326515,
+      "m_Localized": "Olyan ízű, mint a kolbász, de nem az. Összetevők: ismeretlen. Kis adag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326516,
+      "m_Localized": "Zöldségek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326517,
+      "m_Localized": "A technológiai fejlődésnek köszönhetően soha nem fognak megromlani, de mindig olyan ízűek lesznek, mint a szemét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326518,
+      "m_Localized": "Szója",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326519,
+      "m_Localized": "A golyók összehúzódnak, visszahúzódnak a testbe. A tápláló étrend vegán alternatívája. Nagyon laktató",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326520,
+      "m_Localized": "Kenyér az adagolóból",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326521,
+      "m_Localized": "Kenyérpótló, amelyet az adagolóból kaptál. Szörnyű az íze, de életben tart.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326524,
+      "m_Localized": "SempillX",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326525,
+      "m_Localized": "Regenerálja az összes spermádat, de álmossá tesz. Nyilvánvalóan nem befolyásolja az egészséget.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326526,
+      "m_Localized": "Ecetagara",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326527,
+      "m_Localized": "Lehetővé teszi, hogy az erekciót legfeljebb 2 órán keresztül fenntartsa a lelkedért cserébe. Ecet illata van. Úgy tűnik, hogy több darab beszedése semmin nem változtat.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326528,
+      "m_Localized": "Kitartás+",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326529,
+      "m_Localized": "40 fűszer varázslatos keveréke. Növeli a spermatermelést, és lehetővé teszi, hogy többet tejesíts, mint bármikor. Az egészséges felnőtt biztonságos adagja hetente egy tabletta. Ennél több, és a tested nem tarthat.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326530,
+      "m_Localized": "Ecetagara prémium",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326531,
+      "m_Localized": "A normál ecetagara prémium verziója. Lehetővé teszi az erekció fenntartását akár 24 órán keresztül a lelkedért cserébe. Nagyon erős ecet illatú. Úgy tűnik, hogy egynél több beszedése semmin nem változtat.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326522,
+      "m_Localized": "Dr. Blau speciális agykeveréke",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326523,
+      "m_Localized": "Segítenie kellene a mentális egészségben. Most recept nélkül. Valóban segít? Állítólag nagyon addiktív",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326532,
+      "m_Localized": "Póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326533,
+      "m_Localized": "Egyszerű póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472468463616,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326534,
+      "m_Localized": "Egyszerű bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326535,
+      "m_Localized": "Egyszerű bugyi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657920,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350732,
+      "m_Localized": "Fehérnemű bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350733,
+      "m_Localized": "Szexi bugyi!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657931,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350734,
+      "m_Localized": "Csíkos bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350735,
+      "m_Localized": "Csíkos bugyi, amelyet a Bogaloid Kitsune Piku ihlette. Most egyedi színekben!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657933,
+      "m_Localized": "Csíkok színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657932,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326538,
+      "m_Localized": "Bal sima zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326539,
+      "m_Localized": "Egyszerű bal zokni!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657922,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326540,
+      "m_Localized": "Jobb sima zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326541,
+      "m_Localized": "Egyszerű jobb zokni!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657923,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326544,
+      "m_Localized": "Bal fehérnemű zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326545,
+      "m_Localized": "Szexi bal zokni!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657925,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326546,
+      "m_Localized": "Jobb fehérnemű zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326547,
+      "m_Localized": "Szexi jobb zokni!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657926,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326550,
+      "m_Localized": "Bal hosszú zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326551,
+      "m_Localized": "Nagyon hosszú zokni. Hasznos a Bot nem megfelelő lábának elrejtésére.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657928,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326552,
+      "m_Localized": "Jobb hosszú zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326553,
+      "m_Localized": "Nagyon hosszú zokni. Hasznos a Bot nem megfelelő lábának elrejtésére.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657929,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326542,
+      "m_Localized": "Pár harisnya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326543,
+      "m_Localized": "Magában foglalja mind a bal, mind a jobb zoknit. <color =#00ff00>\nEz az elem még mindig a csomagolásban van. Használat előtt ki kell bontani! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657924,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326548,
+      "m_Localized": "Pár fehérnemű harisnya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326549,
+      "m_Localized": "Magában foglalja mind a bal, mind a jobb zoknit. <color =#00ff00>\nEz az elem még mindig a csomagolásban van. Használat előtt ki kell csomagolni! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657927,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326554,
+      "m_Localized": "Pár hosszú zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350731,
+      "m_Localized": "Nagyon hosszú zokni. Hasznos a Bot nem megfelelő lábának lefedésére. Magában foglalja mind a bal, mind a jobb zoknit. <color =#00ff00>\nEz az elem még mindig a csomagolásban van. Használat előtt ki kell csomagolni! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657930,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350740,
+      "m_Localized": "Aranyos masni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350741,
+      "m_Localized": "Aranyos masni!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657936,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326536,
+      "m_Localized": "Sima melltartó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2443643326537,
+      "m_Localized": "Egyszerű melltartó.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657921,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350736,
+      "m_Localized": "Fehérnemű melltartó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350737,
+      "m_Localized": "Szexi melltartó!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657934,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350738,
+      "m_Localized": "Rakott szoknya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350739,
+      "m_Localized": "Nem csak az iskolás lányok számára!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657935,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350742,
+      "m_Localized": "Sima bal surranó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350743,
+      "m_Localized": "Sima bal cipő.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657937,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350744,
+      "m_Localized": "Sima jobb surranó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350745,
+      "m_Localized": "Sima jobb cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657938,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350746,
+      "m_Localized": "Pár sima cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350747,
+      "m_Localized": "Egy pár sima cipő. <color =#00ff00>\nEz az elem még mindig a csomagolásban van. Használat előtt ki kell csomagolni! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657939,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350754,
+      "m_Localized": "Pixelszemüveg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350755,
+      "m_Localized": "Unod már a világ kinézetét? Viseld ezt a szemüveget, hogy pixelessé alakítsd!\n<color =#ff0000> befolyásolja a grafikus felhasználói felületet is! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350748,
+      "m_Localized": "Bal cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350749,
+      "m_Localized": "Stílusos bal cipő.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657942,
+      "m_Localized": "Matrica szín 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657941,
+      "m_Localized": "Matrica szín 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657940,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350750,
+      "m_Localized": "Jobb cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350751,
+      "m_Localized": "Stílusos jobb cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657945,
+      "m_Localized": "Matrica szín 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657944,
+      "m_Localized": "Matrica szín 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657943,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350752,
+      "m_Localized": "Pár cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44325400350753,
+      "m_Localized": "Egy pár stílusos cipő. <color =#00ff00>\nEz az elem még mindig a csomagolásban van. Használat előtt ki kell csomagolni! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657948,
+      "m_Localized": "Matrica szín 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657947,
+      "m_Localized": "Matrica szín 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191472472657946,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191153789440005,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 28379743266934784,
+      "m_Localized": "A halál szorítása",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 28379743287906304,
+      "m_Localized": "A gyógyszer egy egészségügyi állapotról kapta a nevét, amely azokra a férfiakra utal, akik túlságosan szorosan a hímtagjukat szorítva maszturbálnak. Érzéketlenné teszi a péniszt, ami megnehezíti az ejakulálást. Körülbelül 4 órán keresztül működik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36682290317520896,
+      "m_Localized": "Hüvely",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36682290296549376,
+      "m_Localized": " Mellbimbók",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39958762781282304,
+      "m_Localized": "Szív choker",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39958762806448128,
+      "m_Localized": "Choker, középen szív alakú.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39958762806448129,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39968409755979776,
+      "m_Localized": "Szívszemüveg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39968409755979777,
+      "m_Localized": "Kamu szemüveg szívecskékkel a kereten. Csak a megjelenés miatt.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39968409755979778,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40024584098811904,
+      "m_Localized": "Szemhéjpúder",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40024584098811905,
+      "m_Localized": "Színes kozmetikum, amelyet a szemhéjakra vagy a szem körüli bőrre alkalmaznak annak kiemelésére.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40024584098811906,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40024584098811907,
+      "m_Localized": "Gót szemsmink",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40024584098811908,
+      "m_Localized": "Gót témájú szemsmink.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40024584098811909,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642204733440,
+      "m_Localized": "Hiperkamó hegyes fülek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704960,
+      "m_Localized": "Hegyes fülek, mint egy elfé.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704961,
+      "m_Localized": "Főszín ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704962,
+      "m_Localized": "Tök lábtörlő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704963,
+      "m_Localized": "Dobd fel szobádat ezzel a sütőtök alakú lábtörlővel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704964,
+      "m_Localized": "Pók plüss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704965,
+      "m_Localized": "Dobd fel szobádat ezzel a pók plüssel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704966,
+      "m_Localized": "Denevér banner",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704967,
+      "m_Localized": "Dobd fel  szobádat ezzel a denevér bannerrel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704968,
+      "m_Localized": "Szellemdíszítés",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45112642225704969,
+      "m_Localized": "Dobd fel szobádat ezzel a szellem faldísszel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002413834240,
+      "m_Localized": "Csengő choker",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388672,
+      "m_Localized": "Choker egy csengővel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388673,
+      "m_Localized": "Apró varázslósapka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388674,
+      "m_Localized": "Apró kalap egy varázslónak!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388675,
+      "m_Localized": "Sütőtök hajtű",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388676,
+      "m_Localized": "Halloween témájú tök alakú hajtű.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388677,
+      "m_Localized": "Hegyes fülek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388678,
+      "m_Localized": "Hegyes fülek, mint egy elfé.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45694002447388679,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45697825966526465,
+      "m_Localized": "Piercing, amely az orr alsó részén halad át az orrlyukak között. A mágneseknek köszönhetően nem kell lyuk!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45697825966526464,
+      "m_Localized": "Orr piercing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45697825966526466,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860352,
+      "m_Localized": "Bal csíkos zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860353,
+      "m_Localized": "Csíkos zokni. Népszerű a Linus közösség körében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860355,
+      "m_Localized": "Csík színe 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860354,
+      "m_Localized": "Csík színe 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860356,
+      "m_Localized": "Jobb csíkos zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860357,
+      "m_Localized": "Csíkos zokni. Népszerű a Linus közösség körében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860359,
+      "m_Localized": "Csík színe 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860358,
+      "m_Localized": "Csík színe 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860360,
+      "m_Localized": "Pár csíkos zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860361,
+      "m_Localized": "Csíkos zokni. Népszerű a Linus közösség körében. A bal és a jobb oldali zoknit is tartalmazza. <color =#00ff00>\nEz az elem még mindig a csomagolásban van. Használat előtt ki kell csomagolni! </color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860363,
+      "m_Localized": "Csík színe 2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45753578005860362,
+      "m_Localized": "Csík színe 1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45834401056952320,
+      "m_Localized": "Gyűrű piercing orrba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45834401082118144,
+      "m_Localized": " Gyűrű alakú. Piercing, amely az orr alsó részén halad át az orrlyukak között. A mágneseknek köszönhetően nem kell lyuk!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45834401082118145,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45834401082118146,
+      "m_Localized": "Csipesz piercing orrba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45834401082118147,
+      "m_Localized": "Csipesz alakú. Piercing, amely az orr alsó részén halad át az orrlyukak között. A mágneseknek köszönhetően nem kell lyuk!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45834401082118148,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116789888639963136,
+      "m_Localized": "Horgászpóló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116789888656740352,
+      "m_Localized": "Menő póló „A nők akarnak engem” és „A halak félnek tőlem” felirattal. Menő a fiatalok körében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116789888656740353,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116801442194264064,
+      "m_Localized": "Hülyével vagyok póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116801442194264065,
+      "m_Localized": "Menő póló, „Hülyével vagyok” felirattal, jobbra mutató nyíllal. Menő a fiatalok körében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116801442194264066,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116807799685386240,
+      "m_Localized": "Temploming",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116807799685386241,
+      "m_Localized": "A templom emblémáját ábrázoló ing..",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116807799685386242,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117192350840524800,
+      "m_Localized": "Gamer ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117192350857302016,
+      "m_Localized": "Ing az „Egyél, játssz, aludj, ismételd\" felirattal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117192350857302017,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117262395314671616,
+      "m_Localized": "Bot póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117262395314671617,
+      "m_Localized": "Póló, amelynek kialakítása nagyon hasonlít a bot megjelenéséhez. Azt írja, hogy \"かわいい\" Furcsa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117262395314671618,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117265410406879232,
+      "m_Localized": "Dogecoin póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117265410411073536,
+      "m_Localized": "Póló DogeCoin dizájnnal. Nyilvánvalóan a mai napig használják ezt a kriptovalutát. A címkére ezek a titokzatos dolgokok vannak ráírva \"DQPLzpbkCyDzydHV3jZzE8gu8NrSPZNYqm\".",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117265410411073537,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117275133617246208,
+      "m_Localized": "Bárány póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117275133617246209,
+      "m_Localized": "Pixel art bárányos póló. Nagyon aranyos.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117275133617246210,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117301083490881536,
+      "m_Localized": "Sylphy póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117301083495075840,
+      "m_Localized": "Sylphy-t ábrázoló ing a \"Phantom Thief Sylphy\" játékból.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117301083495075841,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218105118720,
+      "m_Localized": "Luxe ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313024,
+      "m_Localized": "Luxe logójával ellátott ing.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313025,
+      "m_Localized": " Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313030,
+      "m_Localized": "Stilou ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313031,
+      "m_Localized": "Stilou logóval ellátott ing.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313032,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313037,
+      "m_Localized": "VolksAuto-RehabTech GmbH póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313038,
+      "m_Localized": "Póló a VolksAuto-RehabTech GmbH logójával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313039,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313044,
+      "m_Localized": "Monizmed ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313045,
+      "m_Localized": "Póló Monizmed logójával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313046,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313051,
+      "m_Localized": "Cukorbetegség ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313052,
+      "m_Localized": "Ing Cukorbetegség logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313053,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313058,
+      "m_Localized": "Cazino Paradize árucikk ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313059,
+      "m_Localized": "Ing a Cazino Paradize logójával. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313060,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116793594240438272,
+      "m_Localized": "Horgászbugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116793594244632576,
+      "m_Localized": "Csodálatos bugyi „A nők akarnak engem” és „A halak félnek tőlem” felirattal. Menő a fiatalok körében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117240882989502464,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 116793594244632577,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117241264255930368,
+      "m_Localized": "Luxe Rose bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117241264255930369,
+      "m_Localized": "Rózsamintás bugyi. Gyártó: Luxe.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117241264255930371,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117241264255930370,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799424,
+      "m_Localized": "Banán csíkos bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799425,
+      "m_Localized": "Csíkos bugyi pixel art banánnal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799427,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799426,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799428,
+      "m_Localized": "USB bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799429,
+      "m_Localized": "Bugyi pixel art USB logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799431,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117242969613799430,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117247414749761536,
+      "m_Localized": "Yaranaika bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117247414749761537,
+      "m_Localized": "Bugyi egy híres meme lopott verziójával. Szinte hallod hogy \"やらないか?\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117247414749761539,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117247414749761538,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690307,
+      "m_Localized": "Epercsíkos bugyi ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690308,
+      "m_Localized": "Csíkos bugyi pixel art eperrel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690310,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690309,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690311,
+      "m_Localized": "Barack csíkos bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690312,
+      "m_Localized": "Csíkos bugyi pixel art barack mintával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690314,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690313,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690304,
+      "m_Localized": "Avokádó bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690305,
+      "m_Localized": "Pixel art avokádó logóval ellátott bugyi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690306,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690315,
+      "m_Localized": "Cseresznye csíkos bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690316,
+      "m_Localized": "Csíkos bugyi pixel art cseresznyével.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690318,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117383250606690317,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117560233814790144,
+      "m_Localized": "Luxe Fehérnemű bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117560233818984448,
+      "m_Localized": "Luxe divatos bugyi. Szép masnijuk van!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117573071602061312,
+      "m_Localized": "Masni színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117560233818984449,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 111101990120853504,
+      "m_Localized": "Buggyos nadrág",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 111101990137630720,
+      "m_Localized": "Most stílusos kivitelben",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 112105818085527552,
+      "m_Localized": "Övszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 111101990137630721,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 111103985451929600,
+      "m_Localized": "Buggyos kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 111103985456123904,
+      "m_Localized": "Most stlusos kivitelben",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 112105818102304768,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 111103985456123905,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117265633959088128,
+      "m_Localized": "Dogecoin kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117265633959088129,
+      "m_Localized": "DogeCoin dizájnú, bő pulcsi. Nyilvánvalóan a mai napig használják ezt a kriptovalutát. \"DQPLzpbkCyDzydHV3jZzE8gu8NrSPZNYqm\". A címkére ezek a titokzatos karakterek vannak ráírva.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117267800908500992,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117265633959088130,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117318549080248320,
+      "m_Localized": "Weeb kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117318549080248321,
+      "m_Localized": "Weeb kapucnis pulcsi egy népszerű képregényre való hivatkozással.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117318549080248323,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117318549080248322,
+      "m_Localized": " Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117324265828519936,
+      "m_Localized": "Bloody Moon kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117324265832714240,
+      "m_Localized": "Nincs kép rajta az igazi holdról. Csak egy véres japán karakter 月.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117324265832714242,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117324265832714241,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117576302134693888,
+      "m_Localized": "Cosplay House kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117576302134693889,
+      "m_Localized": "Cosplay House logóval ellátott pulcsi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117576302134693891,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117576302134693890,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313026,
+      "m_Localized": "Luxe pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313027,
+      "m_Localized": "Buggyos kapucnis pulcsi Luxe logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313029,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313028,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313033,
+      "m_Localized": "Stilou kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313034,
+      "m_Localized": "Buggyos kapucnis pulcsi Stilou logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313036,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313035,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313040,
+      "m_Localized": "VolksAuto- RehabTech GmbH kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313041,
+      "m_Localized": "Buggyos kapucnis pulcsi a VolksAuto-RehabTech GmbH logójával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313043,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313042,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313047,
+      "m_Localized": "Monizmed kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313048,
+      "m_Localized": "Buggyos kapucnis pulcsi Monizmed logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313050,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313049,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313054,
+      "m_Localized": "Cukorbetegség kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313055,
+      "m_Localized": "Buggyos kapucnis pulcsi Cukorbetegség logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313057,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313056,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313061,
+      "m_Localized": "Cazino Paradize kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313062,
+      "m_Localized": "Buggyos kapucnis pulcsi a Cazino Paradize logójával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313064,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117585218109313063,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117612693388398592,
+      "m_Localized": "Cukorbetegség kapucnis pulóver átlátszó logóval",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117612693388398593,
+      "m_Localized": "Buggyos kapucnis pulóver Cukorbetegség átlátszó logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117612693388398595,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 117612693388398594,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 109962110615556096,
+      "m_Localized": "Bing Chilling magazincsomag",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 109962110636527616,
+      "m_Localized": "Furcsa magazincsomag, amit kaptál a Cazino jutalmaként.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654981287936,
+      "m_Localized": "VolksAuto bal kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065152,
+      "m_Localized": "A VolksAuto-RehabTech GmbH által gyártott bal kar protézis. Valamilyen oknál fogva illik a botra. Talán egyedi gyártású.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065153,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065154,
+      "m_Localized": "VolksAuto jobb kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065155,
+      "m_Localized": "A VolksAuto-RehabTech GmbH által gyártott jobb kar protézis. Valamilyen oknál fogva illik a botra. Talán egyedi gyártású.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065156,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065160,
+      "m_Localized": "VolksAuto jobb láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065161,
+      "m_Localized": "A VolksAuto-RehabTech GmbH által gyártott jobb láb protézis. Valamilyen oknál fogva illik a botra. Talán egyedileg készítették.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065162,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065157,
+      "m_Localized": "VolksAuto bal láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065158,
+      "m_Localized": "A VolksAuto-RehabTech GmbH által gyártott bal láb protézis. Valamilyen oknál fogva illik a botra. Talán egyedileg készítették.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065159,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065163,
+      "m_Localized": "Cukorbetegség Cola Pow ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065164,
+      "m_Localized": "Cola Pow logóval ellátott ing. A Diabete Conglomerate egyik márkája.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065165,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065166,
+      "m_Localized": "Diabete Dr. Sugar póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065167,
+      "m_Localized": "Póló Dr. Sugar logóval. A Diabete Conglomerate egyik márkája.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065168,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065173,
+      "m_Localized": "Diabete Sweet Potato póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065174,
+      "m_Localized": "Póló édesburgonya logóval. A Diabete Conglomerate egyik márkája.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065175,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065169,
+      "m_Localized": "Cukorbetegség Dr. Sugar kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065170,
+      "m_Localized": "Buggyos kapucnis pulóver Dr. Sugar logóval. A Diabete Conglomerate egyik márkája.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065172,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065171,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065176,
+      "m_Localized": "Cukorbetegség Sweet Potato kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065177,
+      "m_Localized": "Buggyos kapucnis pulcsi Sweet Potato logóval. A Diabete Conglomerate egyik márkája.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065179,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118092654998065178,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931162435584,
+      "m_Localized": "Kísérleti bal kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629888,
+      "m_Localized": "Szokatlan bal kar. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumisnak tűnik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629889,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629890,
+      "m_Localized": "Kísérleti jobb kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629891,
+      "m_Localized": "Szokatlan jobb kar. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumisnak tűnik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629892,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629896,
+      "m_Localized": "Kísérleti jobb láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629897,
+      "m_Localized": "Szokatlan jobb láb. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumisnak tűnik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629898,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629893,
+      "m_Localized": "Kísérleti bal láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629894,
+      "m_Localized": "Szokatlan bal láb. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumisnak tűnik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118222931166629895,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121348613459546112,
+      "m_Localized": "Szivárvány haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121348613476323328,
+      "m_Localized": "Nagyon ritka típusú hajmodul, amely idővel megváltoztatja a színét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686755446784,
+      "m_Localized": "Szivárványbőr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686759641088,
+      "m_Localized": "Valahogy egyből működik. NAGYON ritka.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686759641093,
+      "m_Localized": "Szem fehérje",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686759641092,
+      "m_Localized": "Jobb írisz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686759641091,
+      "m_Localized": "Bal írisz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686759641090,
+      "m_Localized": "Jobb pupilla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121353686759641089,
+      "m_Localized": "Bal pupilla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121447479949266944,
+      "m_Localized": "Galaxis haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121447479966044160,
+      "m_Localized": "Nagyon ritka hajtípus. Úgy néz ki, mintha az űrbe kukucskálnál.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120506405793697792,
+      "m_Localized": "HotPink Games Shirt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120506405810475008,
+      "m_Localized": "Ha nem tudsz választani a mellek és a fenék között, viseljen feneket a melleken – HP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120506405810475009,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120509688373448704,
+      "m_Localized": "Tüzelünk póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120509688373448705,
+      "m_Localized": " 4 lány, egy éjszaka, mi baj történhet?!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120509688373448706,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122849762570276864,
+      "m_Localized": "Destination Delirium póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122849762587054080,
+      "m_Localized": "Póló a Destination Delirium logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122849762587054081,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 124293906501079040,
+      "m_Localized": "Siluman póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 124293906517856256,
+      "m_Localized": "Póló a Siluman logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 124293906517856257,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 124293906517856258,
+      "m_Localized": "Siluman Alice Shirt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 124293906517856259,
+      "m_Localized": " Alice csibivel ellátott póló a \"Siluman Fantasy\"-ból",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 124293906517856260,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181243127535636480,
+      "m_Localized": "Kenyér az adagolóból",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181243127552413696,
+      "m_Localized": "A kinti adagolóból kapott kenyérpótló. Szörnyű az íze, de életben tart.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826945,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826949,
+      "m_Localized": "1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826948,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826956,
+      "m_Localized": "4",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826955,
+      "m_Localized": "3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826954,
+      "m_Localized": "2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826953,
+      "m_Localized": "1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826952,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826959,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 182780898981056512,
+      "m_Localized": "2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 182780898964279296,
+      "m_Localized": "1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826962,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826965,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184999568327184384,
+      "m_Localized": "Macskafarok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184999568343961600,
+      "m_Localized": "Macska farka. Nem macska méretű. A méret az emberi szexbotokhoz igazodik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187900097181126656,
+      "m_Localized": "Bolyhos bojtszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184999568343961601,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187900097197903872,
+      "m_Localized": "Más végű macskafarok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187900097197903873,
+      "m_Localized": "A macska farka a vége felé egy második színbe megy át. Nem macska méretű. A méret az emberi szexbotokhoz igazodik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187903014839652352,
+      "m_Localized": "Farokvég színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187900097197903874,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188208465334636544,
+      "m_Localized": "Bolyhos farok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188208465351413760,
+      "m_Localized": "Bolyhos farok. Vastagabb mint a macskáké.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188213664686149632,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188208465351413761,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188213903564345344,
+      "m_Localized": "Csíkos bolyhos farok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188213903564345345,
+      "m_Localized": "Csíkos bolyhos farok. A mosómedve ihlette! Vastagabb mint a macskáké.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188213903564345347,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188213903564345346,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052672,
+      "m_Localized": "Hiperkamó macska farok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052673,
+      "m_Localized": "Macska farka. Nem macska méretű. A méretet az emberi szexbotokhoz igazították.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052674,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052675,
+      "m_Localized": "Hiperkamó macskafarok, más végű",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052676,
+      "m_Localized": "A macska farka a vége felé egy második színbe megy át. Nem macska méretű. A méretet az emberi szexbotokhoz igazították.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052678,
+      "m_Localized": "Farokvég színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052677,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052679,
+      "m_Localized": "Hiperkamó bolyhos farok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052680,
+      "m_Localized": "Bolyhos farok. Vastagabb a macskáénál.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052681,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052682,
+      "m_Localized": "Hiperkamó csíkos bolyhos farok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052683,
+      "m_Localized": "Csíkos bolyhos farok. A mosómedve ihlette! Vastagabb a macskáénál.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052685,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188246587393052684,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 186800225388466176,
+      "m_Localized": "Gomba ing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 186800225409437696,
+      "m_Localized": "Póló gomba logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 186800225409437697,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187908576029577216,
+      "m_Localized": "Yaranaika póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187908576029577217,
+      "m_Localized": "Póló egy híres mém másolatával. Szinte hallod a \"やらないか?\" hangot.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187908576029577218,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187912100360622080,
+      "m_Localized": "Baka póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187912100360622081,
+      "m_Localized": "Póló japán szöveggel. Azt írja, hogy \"ばかじゃないよ！\", azaz \"Nem vagyok idióta!\" a \"nem vagyok\" rész kisebb betűtípussal van írva. Furcsa dizájn.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187912100360622082,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460661747712,
+      "m_Localized": "CIA póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719232,
+      "m_Localized": "Póló nagyon absztrakt dizájnnal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719233,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719234,
+      "m_Localized": "Polandball póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719235,
+      "m_Localized": "Egy csúnya polandball dizájnú póló.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719236,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197704444098252800,
+      "m_Localized": "True American Patriot póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197704444123418624,
+      "m_Localized": "Minden államban gyűlöletszimbólumként ismerik el. A Papbot ajándéka. A Vatikán még nem hagyta jóvá.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 197704444123418625,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 193602060408578048,
+      "m_Localized": "WyldSpace bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 193602060429549568,
+      "m_Localized": "Tapasztald meg a VR-t, mint még soha! Küzdj hősként, vagy szövetkezz szörnyetegként!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 193602060429549569,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719237,
+      "m_Localized": "Milf Hunter kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719238,
+      "m_Localized": "MILF Hunter feliratú kapucnis pulcsi, ismerős kivitelben.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719240,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719239,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719241,
+      "m_Localized": "Polandball kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719242,
+      "m_Localized": "Csúnya polandball dizájnnal rendelkező pulcsi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719244,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192903460682719243,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313239474176,
+      "m_Localized": "Hiperkamó kísérleti bal kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445696,
+      "m_Localized": "Szokatlan bal kar. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumiszerűnek tűnik.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445697,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445698,
+      "m_Localized": "Hiperkamó kísérleti jobb kar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445699,
+      "m_Localized": "Szokatlan jobb kar. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumiszerűnek tűnik.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445700,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640001,
+      "m_Localized": "Hiperkamó kísérleti jobb láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640002,
+      "m_Localized": "Szokatlan jobb láb. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumiszerűnek tűnik.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640003,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445701,
+      "m_Localized": "Hiperkamó kísérleti bal láb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313260445702,
+      "m_Localized": "Szokatlan bal láb. Kevésbé látható varrásai vannak, de a minősége nem túl jó. Kicsit gumiszerűnek tűnik.<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640000,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640004,
+      "m_Localized": "Hiperkamó éles fogak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640005,
+      "m_Localized": "Adj élesebb fogakat a botnak! Miért?<color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206205313264640006,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206274490084089856,
+      "m_Localized": "Negyedik dimenziós haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206274490084089857,
+      "m_Localized": "Rendkívül ritka hajtípus. Túlviláginak tűnik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206698043656888320,
+      "m_Localized": "TsunTsun személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206698043677859840,
+      "m_Localized": "NE téveszd össze a \"Tsundere\"-vel, itt nincs -dere. Ez a modul arra készteti a szexbotot, hogy teljesen utálja a fejedet.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207091130786897920,
+      "m_Localized": "Macskanő személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207091130812063744,
+      "m_Localized": "<b>Sokat</b> nyávog..",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207099388088016896,
+      "m_Localized": "Vezetői személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207099388108988416,
+      "m_Localized": "Az összes párbeszédet lecseréli a „Vezetek.” kifejezésre. Erősen illegális. A pletykák szerint elképesztő járműkezelési képességeket ad a szexbotoknak, de az igazság az, hogy ez csak egy olcsó párbeszéd helyettesítő modul. Ne vedd meg.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207110549701386240,
+      "m_Localized": "Robot személyiség modul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 207110549734940672,
+      "m_Localized": "\"robotosabbá\" teszi a párbeszédeket. Csipogás és hasonlók.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208181091741196288,
+      "m_Localized": "Yandere személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208181091745390592,
+      "m_Localized": "A szexbot IGAZÁN odáig lesz érted! (És őrült is lesz)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208181091745390593,
+      "m_Localized": "Szajha személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208181091745390594,
+      "m_Localized": "Nem kell sok kommentár. Totális ribancként viselkedik a szexbotod. Eléggé a farkad rabja.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208146063057477632,
+      "m_Localized": "Femcel személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208146063057477633,
+      "m_Localized": "Úgy viselkedik a szexbot, mint egy femcel. Más néven. lány, akinek nincs önbecsülése, néhány mentális problémája van, és nagyon odáig van érted.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208074844790579200,
+      "m_Localized": "Himedere személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208074844794773504,
+      "m_Localized": "Úgy viselkedik a sexbot, mint egy elkényeztetett hercegnő. A modul azt is elhiteti vele, hogy paraszt vagy.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208048876763996160,
+      "m_Localized": "Buta macska személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208048876784967680,
+      "m_Localized": "Nagyon ritka. Egy híres mém alapján. Ez az a fajta macska, aki csőbombát helyezne a postaládádba.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208427375743983616,
+      "m_Localized": "Ara Ara személyiségmodul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208427375764955136,
+      "m_Localized": "\"Ara ara\"-t használ, és jó fiúnak nevez.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208462603288043520,
+      "m_Localized": "WyldSpace póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208462603309015040,
+      "m_Localized": "Tapasztald meg a VR-t, mint még soha! Küzdj hősként vagy szövetkezz szörnyetegként!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208462603309015041,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206214193575092224,
+      "m_Localized": "Rúzs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206214193596063744,
+      "m_Localized": "Kiemeli az ajkakat. Egyszínű.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 206214193596063745,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 212809179640881152,
+      "m_Localized": "Mirthal póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 212809179661852672,
+      "m_Localized": "Vedd fel egy fiatal férfi szerepét, aki örökli nagyapja házát, és a sors egy hirtelen fordulata következtében egy titokzatos varázslónővel köti össze a sors. Fedezz fel egy fantasztikus középkori világot, és ismerkedj meg gyönyörű nőkkel, egzotikus fajokkal és szörnylányokkal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 212809179661852673,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176328117018624,
+      "m_Localized": "A-GUI póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176328137990144,
+      "m_Localized": "A-GUI logóval ellátott póló. Onahole, amely beviteli eszközként használható a szexi játékokban.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176328137990145,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176328137990146,
+      "m_Localized": "A-GUI kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176328137990147,
+      "m_Localized": "A-GUI logójával ellátott kapucnis pulcsi. Onahole, amely beviteli eszközként használható a szexi játékokban.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176717809803264,
+      "m_Localized": "String color",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 213176328137990148,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877203952394240,
+      "m_Localized": "Különleges hárembugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877203973365760,
+      "m_Localized": "Bugyi egy háremjáték logójával. Nyilvánvalóan egy bizonyos szereplő alsóneműiről mintázták. Egy titokzatos fátyolos nő készítette.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877203973365762,
+      "m_Localized": "Csíkok színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877203973365761,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877847799029760,
+      "m_Localized": "Különleges hárempulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877847799029761,
+      "m_Localized": "Háremjáték logójával ellátott pulcsi. Öt gyönyörű lányra és perverz tanárukra emlékeztet. Egy titokzatos fátyolos nő készítette.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877847799029763,
+      "m_Localized": "Megkötő színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 215877847799029762,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231412283547193344,
+      "m_Localized": "Bedabots póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231412283563970560,
+      "m_Localized": "A legjobb társ, akivel valaha találkozhatsz.\nSzerelem, ragaszkodás, valami, aminek megfoghatod a kezét.\nPartner, aki felmelegíti a téli hideg éjszakát, és még melegebbé és fülledtebbé teszi a nyarat.\nBedabots. Szerezd meg a sajátodat még ma.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231412283563970561,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131600822272,
+      "m_Localized": "Projekt Melody: ANBW póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131625988096,
+      "m_Localized": "Készülj fel, hogy elpusztíts néhány diót, és megmentsd a világot a hivatalos „Projekt Melody: A Nut Between Worlds” pólóval. +69%-os perverziót ad hozzá. Alkalmatlanság érzését keltheti azokban, akiknek nincs sajátjuk.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131625988097,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231412283563970562,
+      "m_Localized": "Bedabots kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231412283563970563,
+      "m_Localized": "A legjobb társ, aki valaha is lesz.\nSzerelem, ragaszkodás, valami aminek megfoghatod a kezét.\nPartner, aki felmelegíti a téli hideg éjszakát, és még melegebbé és fülledtebbé teszi a nyarat.\nBedabots. Szerezd meg a sajátodat még ma.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231412283563970564,
+      "m_Localized": "0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131625988098,
+      "m_Localized": "Projekt Melody: NBW Hoodie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131625988099,
+      "m_Localized": "Készülj fel, hogy elpusztíts néhány diót, és megmentsd a világot a hivatalos „Projekt Melody: A Nut Between Worlds” pulcsival. +69%-os perverziót ad hozzá. Alkalmatlanság érzését keltheti azokban, akiknek nincs sajátjuk.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131625988101,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231995131625988100,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 243299845663612928,
+      "m_Localized": "Mindent szelídítő kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 243299845684584448,
+      "m_Localized": "Csatlakozz a szórakozás világához róka-, nyuszi-, farkas- és egyéb szörnylánnyal, akit megszelídíthetsz ezzel az imádnivaló „Mindent szelídítő” kapucnis pulcsival!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 243299845684584450,
+      "m_Localized": "Zsinórszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 243299845684584449,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275455992461778944,
+      "m_Localized": "Xoullion póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275455992486944768,
+      "m_Localized": "Egy póló aranyos démoni logóval a közepén. Kiváló választás mindennapi használatra, ha szeretnéd egy kicsit felkelteni a tömeg figyelmét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275455992486944770,
+      "m_Localized": "Logószín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275455992486944769,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395299725312,
+      "m_Localized": "Xoulion Bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891136,
+      "m_Localized": "Bugyi cuki démoni logóval.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891138,
+      "m_Localized": "Logó színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891137,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891139,
+      "m_Localized": "Xoullion kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891140,
+      "m_Localized": "A közepén aranyos démoni logóval ellátott kapucnis pulóver kitűnő választás mindennapi használatra, ha szeretnéd egy kicsit felkelteni a tömeg figyelmét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891142,
+      "m_Localized": "Logó szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275468395324891141,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275475539382231040,
+      "m_Localized": "CELESTYN márkájú kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275475539403202560,
+      "m_Localized": "CELESTYN - NEO-Malajzia legjobb Breakcore producere, a CYNTHIA//NTWK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275475539403202561,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275475539403202562,
+      "m_Localized": "FlowerKidV márkájú kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275475539403202563,
+      "m_Localized": "Emeld stílusod a FlowerKidV kapucnis pulcsival, amelyen Japán legjobb zenei producerének ikonikus logója látható. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 275475539403202564,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 279883717863792640,
+      "m_Localized": "Vintage ruha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 279883717888958464,
+      "m_Localized": "Hosszú ruha ujjakkal, amely a test nagy részét fedi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 279883717888958466,
+      "m_Localized": "Másodlagos szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 279883717888958465,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271874424602353664,
+      "m_Localized": "Horgászbot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271874424623325184,
+      "m_Localized": "Alap horgászbot. Teszi a dolgát. Csak kis halakat tudsz fogni vele",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543385513984,
+      "m_Localized": "Bluegill",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679808,
+      "m_Localized": "Ennek a halnak mély, oldalról összenyomott teste van, alsó állkapcsán határozottan kék színű.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679809,
+      "m_Localized": "Nagyszájú sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679810,
+      "m_Localized": "Ennek a halnak nagy szája van, amely túlnyúlik a szemén, és sötétzöld árnyalatú. vízszintes csíkok.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679811,
+      "m_Localized": "Északi csuka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679812,
+      "m_Localized": "Hosszú, karcsú testével ez a hal olívazöld színű, világos foltokkal  az oldalán.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679813,
+      "m_Localized": "Sárga sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679814,
+      "m_Localized": "Ennek a halnak a teste aranysárga, különálló, függőleges fekete sávokkal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679815,
+      "m_Localized": "Walleye",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679816,
+      "m_Localized": "Erre a halra olíva-arany színű teste és nagy, tükröződő szemei a jellemzőek.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679817,
+      "m_Localized": "Szivárványos pisztráng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679818,
+      "m_Localized": "Ezt a halat élénk rózsaszín csíkok díszítik az oldalán, és kis fekete foltok vannak szétszórva a testén.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679819,
+      "m_Localized": "Kisszájú sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679820,
+      "m_Localized": "Ez a hal robusztus testtel büszkélkedhet. bronz színű és függőleges sávokkal az oldalain.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679821,
+      "m_Localized": "Csatornaharcsa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679822,
+      "m_Localized": "Ennek a halnak karcsú, hosszúkás teste van, mélyen villás farokkal és bajuszszerű nyűlványokkal a szája körül.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679823,
+      "m_Localized": "Barna pisztráng",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679824,
+      "m_Localized": "Ennek a halnak a teste aranybarna és sötét, világos glóriákkal körülvett foltok tarkítják.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679825,
+      "m_Localized": "Közönséges ponty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679826,
+      "m_Localized": "Ez egy nagy, nehéz testű hal nagy pikkelyekkel és bronz-arany árnyalattal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679827,
+      "m_Localized": "Red Snapper",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679828,
+      "m_Localized": "Ezt a halat vöröstől rózsaszínig terjedő testéről és kiemelkedő, háromszög alakú arcáról ismerik fel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679829,
+      "m_Localized": "Makréla ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679830,
+      "m_Localized": "Ennek a halnak áramvonalas teste kékes-zöld irizáló színű, hátán sötét hullámos csíkokkal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679831,
+      "m_Localized": "Penyhal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679832,
+      "m_Localized": "Ennek a lapos halnak mindkét szeme a feje egyik oldalán van, és foltos barna teste, hogy beolvadjon a tengerfenékbe.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679833,
+      "m_Localized": "Fekete-tengeri sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679834,
+      "m_Localized": "Ennek a halnak a teste sötét, sötét színű, kék és fekete jegyekkel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679835,
+      "m_Localized": "Csendes-óceáni laposhal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679836,
+      "m_Localized": "Ennek a nagy lepényhalnak a felső oldala sötétbarna, az alsó oldala pedig fehér, fenéklakó.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679837,
+      "m_Localized": "Atlanti lazac",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679838,
+      "m_Localized": "Ennek a halnak áramvonalas, ezüst teste van, néhány sötét folttal a feje és a felső test közelében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679839,
+      "m_Localized": "Arany lazac",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679840,
+      "m_Localized": "Ennek a halnak áramvonalas, aranyszínű teste van, néhány sötét folttal a fej és a felsőtest közelében. Nagyon ritka!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679841,
+      "m_Localized": "Tilapia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679842,
+      "m_Localized": "Ennek a halnak jellemzően mély teste van ezüstös árnyalattal és függőleges csíkokkal az oldalain.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679843,
+      "m_Localized": "Rizs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679844,
+      "m_Localized": "A főzés során használt alapanyag. Könnyen hozzáférhető, de már sokkal drágább mint régen.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679845,
+      "m_Localized": "Burgonya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679846,
+      "m_Localized": "A főzés során használt sokoldalú alapanyag. Lassan már luxusnak számít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679847,
+      "m_Localized": "Liszt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679848,
+      "m_Localized": "A főzés során használt alapanyag , ára magasan ível felfele a készlethiányok miatt.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679849,
+      "m_Localized": "Paradicsom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679850,
+      "m_Localized": "Mostanában nehéz friss paradicsomhoz jutni, de akik főznek, nagyon szeretik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679851,
+      "m_Localized": "Répa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679852,
+      "m_Localized": "Édes és ropogós gyökér. Növeli a nemzőképességedet!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679853,
+      "m_Localized": "Marhahús",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272511543410679854,
+      "m_Localized": "Valódi marhahús, bár nagyon drága, még mindig közkedvelt.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920118067200,
+      "m_Localized": "Bluegill",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261504,
+      "m_Localized": "Ennek a halnak mély, oldalról összenyomott teste van, alsó állkapcsán kifejezetten kék színű. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261505,
+      "m_Localized": "Nagyszájú sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261506,
+      "m_Localized": "Ennek a halnak nagy szája van, amely túlnyúlik a szemén, és sötétzöld árnyalatú vízszintes csíkokkal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261507,
+      "m_Localized": "Északi csuka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261508,
+      "m_Localized": "Hosszú, karcsú testű hal, olivazőld színű, oldalán világos foltokkal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261509,
+      "m_Localized": " Sárga sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261510,
+      "m_Localized": "Ennek a halnak aranysárga teste van, függőleges fekete sávokkal.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261511,
+      "m_Localized": "Walleye",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261512,
+      "m_Localized": "Ezt a halat olíva-aranyszínű teste és nagy, tükröződő szeme jellemzi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261513,
+      "m_Localized": "Red Snapper",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261514,
+      "m_Localized": "Ezt a halat a vöröstől a rózsaszínig terjedő árnyalatú testéről ismered fel. Kiemelkedő, háromszög alakú feje van.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261515,
+      "m_Localized": "Makréla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261516,
+      "m_Localized": "Ennek a halnak áramvonalas teste kékes-zöld irizáló színnel bír és sötét hullámos csíkok vannak a hátán.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261517,
+      "m_Localized": "Penyhehal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261518,
+      "m_Localized": "Ennek a lapos halnak mindkét szeme a feje egyik oldalán van, és foltos barna teste beleolvad a tengerfenékbe. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261519,
+      "m_Localized": "Fekete-tengeri sügér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261520,
+      "m_Localized": "Ez a hal sötét, sötét színű, kék és fekete jegyekkel a testén.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261521,
+      "m_Localized": "Csendes-óceáni laposhal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 271910920122261522,
+      "m_Localized": "Ennek a nagy lepényhalnak a felső oldala sötétbarna és az alsó oldala fehér. Fenéklakó.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272229956194394112,
+      "m_Localized": "Atlanti lazac",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272229956219559936,
+      "m_Localized": "Ennek a halnak áramvonalas, ezüst teste van, néhány sötét folttal a feje és a felső teste közelében.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272229956219559937,
+      "m_Localized": "Golden Salmon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272229956219559938,
+      "m_Localized": "Ennek a halnak áramvonalas, arany teste van, néhány helyen sötét foltokkal a fej és a felsőtest közelében. Nagyon ritka!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272229956219559939,
+      "m_Localized": "Tilapia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272229956219559940,
+      "m_Localized": "Ennek a halnak jellemzően mély teste van, ezüstös árnyalattal és függőleges csíkokkal az oldalain.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295169539949191168,
+      "m_Localized": "Háremek, céhek és fűszerek bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295169539953385472,
+      "m_Localized": "Egy ellopott trófea a céhek, a mágia és a hárem világából, ahol felejthetetlen kalandok bontakoznak ki. A világ vár rád... Szembe tudsz nézni vele?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295169539953385473,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295166833289322496,
+      "m_Localized": "Monster Tutor kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295166833314488320,
+      "m_Localized": "Egy pulcsi egy szörnylány játék logójával. A Netherworld Academy hallgatóinak adják.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295166833314488322,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295166833314488321,
+      "m_Localized": "Alap szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208073125888,
+      "m_Localized": "Megerősített horgászbot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291712,
+      "m_Localized": "Acéllal megerősített fa horgászbot. Ezzel már rendes fogást vihetsz haza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291713,
+      "m_Localized": "Üvegszálas horgászbot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291714,
+      "m_Localized": "Középkategóriás horgászbot üvegszálból.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291715,
+      "m_Localized": "Szénszálas horgászbot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291716,
+      "m_Localized": "Drága horgászbot szénszálból. Könnyű és erős.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291717,
+      "m_Localized": "Hiperacél horgászbot",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 285263208098291718,
+      "m_Localized": "Ez a horgászbot egzotikus anyagokból készült, és tele van olyan technológiával, amely lehetővé teszi a legnagyobb halak kifogását. Rendkívül drága.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898001182720,
+      "m_Localized": "Giliszta horgászcsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348544,
+      "m_Localized": "Földigiliszta. Csali, amivel a férgeket kedvelő halakat lehet fogni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348545,
+      "m_Localized": "Lárva horgászcsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348546,
+      "m_Localized": "Még mindig él és vergődik. Csali, amivel a rovarokat kedvelő halakat lehet fogni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348547,
+      "m_Localized": "Hús horgászcsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348548,
+      "m_Localized": "Megkérdőjelezhető eredetű hús. Csali, amivel a húst kedvelő halakat lehet fogni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348549,
+      "m_Localized": "Haldarabos horgászcsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348550,
+      "m_Localized": "A haldarabolásból származó maradékok és hulladékok hot dog-szerű állagúvá gyúrva. Csali, amellyel más halakra vadászó halakat lehet fogni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348551,
+      "m_Localized": "Kukoricacsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348552,
+      "m_Localized": "Konzerv kukorica. Csali, amivel a növényeket kedvelő halakat lehet fogni. Olcsó és hatékony.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348553,
+      "m_Localized": "Garnélacsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348554,
+      "m_Localized": "Alacsony minőségű garnélarák. Csali, amellyel a rákféléket kedvelő halakat lehet fogni (főleg a sósvízi halakat).",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348555,
+      "m_Localized": "Kagylócsali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286740898026348556,
+      "m_Localized": "Alacsony minőségű kagyló. Csali, amellyel a puhatestűeket kedvelő halakat lehet fogni (főleg sósvízi halak).",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394184933376,
+      "m_Localized": "Csirkehús",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099200,
+      "m_Localized": "Finom és népszerű, bár már nem olyan megfizethető, mint egykor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099201,
+      "m_Localized": "Hagyma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099202,
+      "m_Localized": "A hagymát még mindig széles körben használják, de ára meredeken emelkedett.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099203,
+      "m_Localized": "Tojás",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099204,
+      "m_Localized": "A tojás továbbra is a konyha alapterméke, bár az ára luxussá teszi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099205,
+      "m_Localized": "Tej",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099206,
+      "m_Localized": "Tej továbbra is kapható, de most lényegesen többe kerül, mint korábban.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099207,
+      "m_Localized": "Fokhagyma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099208,
+      "m_Localized": "A fokhagyma ízesít minden ételt, bár drágább, mint kellene.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099209,
+      "m_Localized": "Gyömbér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099210,
+      "m_Localized": "Még mindig nagyra becsülik különleges íze miatt, bár az ára az egekbe szökött.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099211,
+      "m_Localized": "Szójaszósz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293202394210099212,
+      "m_Localized": "Egy kedvelt fűszer, bár az ára a megnövekedett keresletet tükrözi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652736,
+      "m_Localized": "Saláta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652737,
+      "m_Localized": "Alap étel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652738,
+      "m_Localized": "Sült rizs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652739,
+      "m_Localized": "Alap étel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652740,
+      "m_Localized": "Sushi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652741,
+      "m_Localized": "Alap étel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652742,
+      "m_Localized": "Leves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652743,
+      "m_Localized": "Alap étel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652744,
+      "m_Localized": "Taco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293207657889652745,
+      "m_Localized": "Alap étel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295438828233023488,
+      "m_Localized": "Sült hal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295438828258189312,
+      "m_Localized": "Alap étel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140555632640,
+      "m_Localized": "Alapértelmezett bőr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826944,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826946,
+      "m_Localized": "Alap haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826947,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826950,
+      "m_Localized": "Alap szemek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826951,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826957,
+      "m_Localized": "Alap szív pupillák",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826958,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826960,
+      "m_Localized": "Alap hús",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826961,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826963,
+      "m_Localized": "Alapértelmezett fogak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181253140559826964,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312226910454145024,
+      "m_Localized": "Hiperkamó Ruhaárus haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312226910483505152,
+      "m_Localized": "Ismerős frizura... <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312226910483505154,
+      "m_Localized": "Másodlagos szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312226910483505153,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312232882400649216,
+      "m_Localized": "Hiperkamó szemet takaró frufru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312232882400649217,
+      "m_Localized": "Frufru, amely eltakarja Bot szemét.<color=#00FF00> Lehetővé teszi, hogy a nagyon high-tech elektrokróm anyagok használatának köszönhetően szabadon megváltoztathassa ennek a résznek a színét.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323435169865261056,
+      "m_Localized": "Másodlagos szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 312232882400649218,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322648445711015936,
+      "m_Localized": "Hiperkamó Hime vágású haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322648445736181760,
+      "m_Localized": "Hosszú hajvágású \"Hime vágott\" frizura. <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a nagyon high-tech elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322648445736181762,
+      "m_Localized": "Másodlagos szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322648445736181761,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322703753296732160,
+      "m_Localized": "Hiperkamó lófarok haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322703753321897984,
+      "m_Localized": "Hosszú lófarok, amely a haj hátsó részéhez tapad! <color=#00FF00> Lehetővé teszi ezen rész színének szabad megváltoztatását a csúcstechnológiás elektrokróm anyagok használatának köszönhetően.</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322703753321897986,
+      "m_Localized": "Scrunchie szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322703753321897985,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323380904543117312,
+      "m_Localized": "Fejkendő színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323054170589356032,
+      "m_Localized": "Hologram kikapcsolás",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323054170614521856,
+      "m_Localized": "Egyszerű modul, amely lehetővé teszi a bot haja feletti hologram letiltását.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085944324096,
+      "m_Localized": "Alapértelmezett bőr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072832,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, TÖRÖLD EZT!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072833,
+      "m_Localized": "Alapértelmezett haj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072834,
+      "m_Localized": "Rendszer által használt alapértelmezett haj!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323380904568283136,
+      "m_Localized": "Fejkendő színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072835,
+      "m_Localized": "Alapértelmezett szem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072836,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072837,
+      "m_Localized": "Alap szív pupillák",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072838,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072839,
+      "m_Localized": "Alap hús",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072840,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072841,
+      "m_Localized": "Alap fogak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072842,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072843,
+      "m_Localized": "Alapértelmezett hajhologram",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 311113085982072844,
+      "m_Localized": "Ezt a rendszer használja az alapértelmezett felszerelések kezelésére! NE HASZNÁLD EZT! HA HOZZÁADTAD A DEBUG HASZNÁLATÁVAL, EZT TÖRÖLD!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310071046628696065,
+      "m_Localized": "Szín 0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402025971712,
+      "m_Localized": "Bal előkelő cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914752,
+      "m_Localized": "Előkelő bal oldali cipő.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914753,
+      "m_Localized": "Szín 0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914754,
+      "m_Localized": "Jobb előkelő cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914755,
+      "m_Localized": "Előkelő jobb oldali cipő.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914756,
+      "m_Localized": "Szín 0 ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914757,
+      "m_Localized": "Pár előkelő cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914758,
+      "m_Localized": "Egy pár előkelő cipő.<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolni!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 300870402067914759,
+      "m_Localized": "Szín 0",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323671730955476992,
+      "m_Localized": "Slip ruha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323671730980642816,
+      "m_Localized": "Slip ruha magas hasítékkal, amely szabaddá teszi a jobb lábszárat. Nagyon előkelő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 323671730980642817,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668901617664,
+      "m_Localized": "Régi konzerv",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783488,
+      "m_Localized": "Régi konzerv. A címke már régen eltűnt.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783489,
+      "m_Localized": "Ócska cipő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783490,
+      "m_Localized": "Vizes és rossz szagú...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783491,
+      "m_Localized": "Régi fecskendő",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783492,
+      "m_Localized": "Undorító régi fecskendő.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783493,
+      "m_Localized": "Régi gránát",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783494,
+      "m_Localized": "Régi gránát. Már nem működik?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783495,
+      "m_Localized": "Rozsdás vödör  ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783496,
+      "m_Localized": "Rozsdás vödör tele lyukakkal. Nem biztos, hogy ezt még vödörnek lehet nevezni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783497,
+      "m_Localized": "Olajos hordó fedele",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783498,
+      "m_Localized": "Egy nagy olajhordó fedele. Mit csinált a vízben... soha nem fogod megtudni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783499,
+      "m_Localized": "Csonttöredékek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783500,
+      "m_Localized": "Régi csonttöredékek. Nedves és korrodált. Reméled, hogy ezek nem emberiek.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783501,
+      "m_Localized": "Törött okostelefon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783502,
+      "m_Localized": "Régi okostelefon összetört képernyővel. Valaki több lítiumot akart a vízbe?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783503,
+      "m_Localized": "Öreg Dr. Sugar doboz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783504,
+      "m_Localized": "Régi doboz. Meglepő módon még mindig olvasható, hogy ez Dr. Sugar.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783505,
+      "m_Localized": "Műanyag élelmiszertáska",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783506,
+      "m_Localized": "Régi műanyag élelmiszertáska. Ezek láthatóan több ezer évig bírják.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783507,
+      "m_Localized": "Régi halászháló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783508,
+      "m_Localized": "Régi halászháló, tele van lyukakkal. Már nem használható.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783509,
+      "m_Localized": "Régi autó akkumulátor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328131668926783510,
+      "m_Localized": "Átázott és koszos, de még mindig felismerhető. Valaki ezt tényleg a vízbe dobta?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325899737698918400,
+      "m_Localized": "Ecet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325899737728278528,
+      "m_Localized": "Csípős fűszer.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325899737728278529,
+      "m_Localized": "Tészta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325899737728278530,
+      "m_Localized": "Levesekhez és tésztaételekhez egyaránt hasznos.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448832,
+      "m_Localized": "Nyers darált marhahús",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448833,
+      "m_Localized": "Darált marhahús. Olcsóbb, mint egy rendes steak.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448834,
+      "m_Localized": "Cukor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448835,
+      "m_Localized": "Édes ételekhez szükséges!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448836,
+      "m_Localized": "Vaj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448837,
+      "m_Localized": "Tejből készült.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448838,
+      "m_Localized": "Sajt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448839,
+      "m_Localized": "Gazdag ízű és nagyon drága",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326245601718034432,
+      "m_Localized": "Joghurt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326245601747394560,
+      "m_Localized": "Úgy tűnik, jót tesz a bél mikrobiómának. Közvetlenül fogyasztható, vagy ételekbe főzve.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027576532992,
+      "m_Localized": "Adagolós kenyér babbal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027576532993,
+      "m_Localized": "Egyszerű étel. Brit klasszikus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727296,
+      "m_Localized": "Pácolt hagyma kolbásszal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727297,
+      "m_Localized": "Egyszerű étel. Nagyon finom.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727298,
+      "m_Localized": "Háziúr Taco-ja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727299,
+      "m_Localized": "A háziúrúr kedvenc étele. Néhány dolog szentségtelen kombinációja, amelyeket egy helyi boltban találhatsz...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727300,
+      "m_Localized": "Kis saláta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727301,
+      "m_Localized": "Egyszerű zöldségből készült étel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727302,
+      "m_Localized": "Egyszerű sült hal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325910027580727303,
+      "m_Localized": "Egyszerű sült hal tészta nélkül.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448840,
+      "m_Localized": "Tojásos krumplisaláta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448841,
+      "m_Localized": "Ízletes saláta.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448842,
+      "m_Localized": "Csirke tésztaleves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448843,
+      "m_Localized": "Alapétel. Nagyszerű!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448844,
+      "m_Localized": "Amerikai chili",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448845,
+      "m_Localized": "Ízletes steak!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448846,
+      "m_Localized": "Fantasztikus sárgarépasaláta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448847,
+      "m_Localized": "Nagyszerű a termékenység fokozása.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448848,
+      "m_Localized": "Sült rizs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448849,
+      "m_Localized": "Remek étel. Egyszerűen elkészíthető és hihetetlenül ízletes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448850,
+      "m_Localized": "Főtt steak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448851,
+      "m_Localized": "Ízletes steak!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448852,
+      "m_Localized": "Palacsinta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448853,
+      "m_Localized": "Édes és ízletes. Mit szeretnél még?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448854,
+      "m_Localized": "Fantasztikus sült hal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448855,
+      "m_Localized": "Sült hal gazdag tésztával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448856,
+      "m_Localized": "Bolognai spagetti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448857,
+      "m_Localized": "Nagyon ízletes, paradicsomcentrikus tésztaétel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325930555066540032,
+      "m_Localized": "Gyros",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325930555070734336,
+      "m_Localized": "Görög étel. Nagyon finom.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448858,
+      "m_Localized": "Omurice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448859,
+      "m_Localized": "Japán omlet rizzsel (és esetleg más finomságokkal) töltve.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448860,
+      "m_Localized": "Spagetti Carbonara",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448861,
+      "m_Localized": "Gazdag és krémes tésztaétel Olaszországból.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448862,
+      "m_Localized": "Wellington marha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325928011011448863,
+      "m_Localized": "Nagyon nehéz elkészíteni, de csodálatos ízű.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325935738186096640,
+      "m_Localized": "Szusi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 325935738186096641,
+      "m_Localized": "Nagyon nehéz elkészíteni, de az íze csodálatos.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326216135201513472,
+      "m_Localized": "Sheep curry-je",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 326216135226679296,
+      "m_Localized": "Titkos étel! Örülj, hogy megtaláltad!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 317634134886309888,
+      "m_Localized": "Fehérneműkatalógus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 317634134911475712,
+      "m_Localized": "Fehérneműkatalógus. Valamilyen oknál fogva az egyik ladyparts vásárlásodhoz tartozott.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322242163850076160,
+      "m_Localized": "Régi kályha a háziúrtól",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322242163871047680,
+      "m_Localized": "Egy tűzhely, amit a tulajtól kaptál.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322242163871047681,
+      "m_Localized": "Javított régi tűzhely a háziúrtól",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 322242163871047682,
+      "m_Localized": "Egy tűzhely, amit a gazdától kaptál. Javítva és továbbfejlesztve! A hatásfok 15%-kal nő, és modern biztonsági mechanizmusokkal rendelkezik!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244322902016,
+      "m_Localized": "Idegen póló",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067840,
+      "m_Localized": "Póló egy furcsa idegennel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067842,
+      "m_Localized": "Idegen színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067841,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067843,
+      "m_Localized": "Radioaktív bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067844,
+      "m_Localized": "Bugyi \"radioaktív\" szimbólummal. Valószínűleg maga a ruhanemű nem radioaktív.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067846,
+      "m_Localized": "Szimbólum színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067845,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067847,
+      "m_Localized": "Koponya kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067848,
+      "m_Localized": "Kis koponyával ellátott kapucnis pulcsi. Kicsit ijesztő.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067850,
+      "m_Localized": "Koponya színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 330052244348067849,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431241912320,
+      "m_Localized": "Toni S Majestic kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466752,
+      "m_Localized": "Pulcsi Toni S albumának borítójával!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466754,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466753,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466755,
+      "m_Localized": "Mad Joram kapucnis pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466756,
+      "m_Localized": "Pulcsi a Mad Joram logójával!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466758,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466757,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466759,
+      "m_Localized": "SJ68 kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466760,
+      "m_Localized": "SJ68 logóval ellátott pulcsi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466762,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466761,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466763,
+      "m_Localized": "Light Sonic Pulcsi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466764,
+      "m_Localized": "Pulcsi a LightSonic logójával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466766,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466765,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466767,
+      "m_Localized": "RottingSteel Hoodie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466768,
+      "m_Localized": "Pulcsi a RottingSteel logójával.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466770,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337448431275466769,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337452717002711043,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 337452717002711042,
+      "m_Localized": "Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 339962538713145344,
+      "m_Localized": "Nitrori kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 339962538738311168,
+      "m_Localized": "Nitrori logóval ellátott pulcsi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 343546632340496384,
+      "m_Localized": "Shady Corner kapucnis pulóver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 343546632374050816,
+      "m_Localized": " egy kapucnis pulóver Shady Corner logóval",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 343546632374050818,
+      "m_Localized": "Zsinór színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 343546632374050817,
+      "m_Localized": " Alapszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 419698219211022336,
+      "m_Localized": "Chicken Nuggets",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 419698219236188160,
+      "m_Localized": "Dino alakú. Ízletes, de valószínűleg nem tartalmaz csirkét. Nyersen, melegítés nélkül fogyasztandó. Melegítéskor műanyagszerű szag árad belőle.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 421127916037857280,
+      "m_Localized": "Répatorta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 421127916063023104,
+      "m_Localized": "Édes, gazdag és enyhén narancssárga.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 449109011454746624,
+      "m_Localized": "Alapszappan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 449109011479912448,
+      "m_Localized": "Alapszappan. Nem tisztít túl jól, de mindennapi használatra elég. Valószínűleg nem akarod tudni, milyen típusú zsírt használtak a gyártás során. Használható zuhanyozáskor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 449109011479912449,
+      "m_Localized": "Színes szappan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 449109011479912450,
+      "m_Localized": "Jobb minőségű szappan. Nem sokban különbözik olcsóbb társától, de van egy előnye - a színe még szórakoztatóbbá teszi! Használható zuhanyozáskor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 449109011479912451,
+      "m_Localized": "0. szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486117264570966016,
+      "m_Localized": "Cyber Libidó CCsökkentő ⚲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486117264596131840,
+      "m_Localized": "Ez a furcsa elem jelentősen csökkenti szexbotod vágyát. A belső DRM miatt csak egyszer használható.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486119661988995072,
+      "m_Localized": "Cyber ​​Libidó Növelő ⚤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486119661988995073,
+      "m_Localized": "Ez a furcsa elem növeli szexbotod vágyát. A belső DRM miatt csak egyszer használható. ÓVATOSAN HASZNÁLD!!!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486191818140016640,
+      "m_Localized": "Combméret modul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486191818169376768,
+      "m_Localized": "Lehetővé teszi, hogy bizonyos mértékig módosítsd a combok méretét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486464406372212736,
+      "m_Localized": "Vádliméret modul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486464406401572864,
+      "m_Localized": "Lehetővé teszi, hogy bizonyos mértékig módosítsd a vádli méretét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486464406401572865,
+      "m_Localized": "Lábméret modul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 486464406401572866,
+      "m_Localized": "Lehetővé teszi, hogy bizonyos mértékig módosítsd a láb méretét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783680,
+      "m_Localized": "Bal kengyelharisnya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783681,
+      "m_Localized": "Ez a fajta harisnya felfedi a láb egy részét. Bal lábra.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783682,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783683,
+      "m_Localized": "Jobb kengyelharisnya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783684,
+      "m_Localized": "Ez a fajta harisnya felfedi a láb egy részét. Jobb lábra.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783685,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783686,
+      "m_Localized": "Kengyelharisnya pár",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783687,
+      "m_Localized": "A bal és a jobb oldali kengyelharisnya is benne van. Olyan harisnyatípus, amely felfedi a láb egy részét<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnod!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487905714451783688,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487532561426817024,
+      "m_Localized": "Ovális szemüveg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487532561464565760,
+      "m_Localized": "Hamis szemüveg. Divatkellék.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487532561464565761,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487535686325903360,
+      "m_Localized": "Színes ovális szemüveg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487535686325903361,
+      "m_Localized": "Hamis szemüveg színes lencsével. Divatkellék.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487535686325903363,
+      "m_Localized": "Lencse színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487535686325903362,
+      "m_Localized": "Keret színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487859293279232000,
+      "m_Localized": "Szemtapasz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487859293321175040,
+      "m_Localized": "Kalózok használják. Mostantól elérhető a szexbotod számára.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487859293321175041,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487875777133027328,
+      "m_Localized": "Fényes hajcsat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487875777133027329,
+      "m_Localized": "Egy pár egyszerű hajcsat.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487875777133027330,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487892154979983360,
+      "m_Localized": "Nyelv piercing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487892154984177664,
+      "m_Localized": "Kör alakú piercing. A mágnesek használatának köszönhetően nem kell átszúrni a bot nyelvét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487892154984177665,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333011,
+      "m_Localized": "Üres",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333012,
+      "m_Localized": "Üres",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333007,
+      "m_Localized": "Mellméret modul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333008,
+      "m_Localized": "Lehetővé teszi, hogy bizonyos mértékig módosítsd a mellek méretét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333009,
+      "m_Localized": "Popsiméret modul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333010,
+      "m_Localized": "Lehetővé teszi, hogy bizonyos mértékig módosítsd a feneke méretét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136416972800,
+      "m_Localized": "Bal rövid zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332928,
+      "m_Localized": "Nagyon rövid zokni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332929,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332930,
+      "m_Localized": "Jobb rövid zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332931,
+      "m_Localized": "Nagyon rövid zokni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332932,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332936,
+      "m_Localized": "Bal kétcsíkos harisnya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332937,
+      "m_Localized": "Bal harisnya két csíkkal a tetején.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332939,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332938,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332940,
+      "m_Localized": "Jobb kétcsíkos harisnya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332941,
+      "m_Localized": "Jobb harisnya két csíkkal a tetején.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332943,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332942,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332948,
+      "m_Localized": "Bal térdzokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332949,
+      "m_Localized": "Bal zokni, amely térd alá ér.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332950,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332951,
+      "m_Localized": "Jobb térdzokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332952,
+      "m_Localized": "Jobb zokni, amely térd alá ér.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332953,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332933,
+      "m_Localized": "Egy pár rövid zokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332934,
+      "m_Localized": "Tartalmazza a bal és a jobb oldali rövid zoknit is.<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnod!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332935,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332944,
+      "m_Localized": "Két csíkos harisnyapár",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332945,
+      "m_Localized": "Harisnyapár két csíkkal a tetején. A bal és a jobb oldali harisnyát is tartalmazza.<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnod!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332947,
+      "m_Localized": "Csík színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332946,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332954,
+      "m_Localized": "Egy pár térdzokni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332955,
+      "m_Localized": "Térd alá érő harisnya. A bal és a jobb oldali harisnyát is tartalmazza.<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnod!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332956,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332963,
+      "m_Localized": "Színes szívszemüveg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332964,
+      "m_Localized": "Hamis szemüveg szív formájú kerettel. Csak a kinézet miatt. Többféle színben van.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332967,
+      "m_Localized": "Szív színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332966,
+      "m_Localized": "Lencse színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332965,
+      "m_Localized": "Keret színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332968,
+      "m_Localized": "Manikűr készlet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332969,
+      "m_Localized": "Teljes köröm- és lakk készlet. A jobb és bal kezet külön színezheted.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332971,
+      "m_Localized": "Bal oldali körmök színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332970,
+      "m_Localized": "A jobb oldali körmök színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332972,
+      "m_Localized": "Pedikűr készlet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332973,
+      "m_Localized": "Teljes köröm- és lakk készlet. A jobb és a bal lábfejet külön színezheted.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332975,
+      "m_Localized": "Bal láb körmök színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332974,
+      "m_Localized": "Jobb láb körmök színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332976,
+      "m_Localized": "Bőr csatos gallér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332977,
+      "m_Localized": "Övre emlékeztető nyaklánc. Általában állatoknak való, de néhány ember is szívesen hordja.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332979,
+      "m_Localized": "Csat színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332978,
+      "m_Localized": "Öv színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332995,
+      "m_Localized": "Szemceruza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332996,
+      "m_Localized": "Szemceruza, vonal a szem alatt.  Különféle színválasztékkal érkezik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332997,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332998,
+      "m_Localized": "Szív matrica",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332999,
+      "m_Localized": "Szívmatrica, amelyet a jobb szem alá helyezhetsz. Különféle színválasztékkal érkezik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333000,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333001,
+      "m_Localized": "Természetes szempillák",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333002,
+      "m_Localized": "Alsó szempillák. Különféle színválasztékkal érkezik.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333003,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333004,
+      "m_Localized": "Egyszerű choker",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333005,
+      "m_Localized": "Egyszerű szalag a nyak körül.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446333006,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332980,
+      "m_Localized": "Színes csatos gallér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332981,
+      "m_Localized": "Övre emlékeztető nyaklánc. Szokatlan színekben kapható. Általában állatoknak való, de néhány ember is szívesen hordja.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332983,
+      "m_Localized": "Csat színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332982,
+      "m_Localized": "Öv színe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332984,
+      "m_Localized": "Tüskés gallér",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332985,
+      "m_Localized": "Tüskés nyaklánc. A juhászkutyáknak volt ilyesmi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332986,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332960,
+      "m_Localized": "Fejpánt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332961,
+      "m_Localized": "Egyszerű fejpánt. Nagyon aranyosan néz ki!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332962,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332987,
+      "m_Localized": "Köldökpiercing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332988,
+      "m_Localized": "Egy kör alakú piercing. A mágnesek használatának köszönhetően nem kell átszúrni a bot bőrét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332989,
+      "m_Localized": "Jobb mellbimbó piercing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332990,
+      "m_Localized": "Egy kör alakú piercing. Az erős mágnesek használatának köszönhetően nem kell átszúrni a bot bőrét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332991,
+      "m_Localized": "Bal mellbimbó piercing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332992,
+      "m_Localized": "Egy kör alakú piercing. Az erős mágnesek használatának köszönhetően nem kell átszúrni a bot bőrét.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332993,
+      "m_Localized": "Egy pár mellbimbó piercing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332994,
+      "m_Localized": "Pár kör alakú piercing. Az erős mágnesek használatának köszönhetően nem kell átszúrni a bot bőrét.<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnod!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332957,
+      "m_Localized": "Miniszoknya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332958,
+      "m_Localized": "A szokásos szoknya rüvid változata.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 497988136446332959,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769864392704,
+      "m_Localized": "Bikini bugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558528,
+      "m_Localized": "Úszáshoz használt bugyi. Két színű.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558530,
+      "m_Localized": "Kiemelt szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558529,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499712,
+      "m_Localized": "Áttetsző bikinibugyi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499713,
+      "m_Localized": "Úszáshoz használt bugyi. Két szín. A fő anyag enyhén áttetsző.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499715,
+      "m_Localized": "Kiemelt szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499714,
+      "m_Localized": "Főszín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542893624718778368,
+      "m_Localized": "Áttetsző bikini szett",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542893624743944192,
+      "m_Localized": "Két színű áttetsző bikini melltartó és bugyi. Buja...<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnia!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542893624743944194,
+      "m_Localized": "Kiemelt szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542893624743944193,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558531,
+      "m_Localized": "Bikini melltartó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558532,
+      "m_Localized": "Úszáshoz használt melltartó. Két színű.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558534,
+      "m_Localized": "Kiemelt szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 540568769889558533,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499716,
+      "m_Localized": "Áttetsző bikini melltartó",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499717,
+      "m_Localized": "Úszáshoz használt melltartó. Két színű. A fő anyag enyhén áttetsző.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499719,
+      "m_Localized": "Kiemelt szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542910830848499718,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 545119144936202240,
+      "m_Localized": "Áttetsző bikini szett",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 545119144961368064,
+      "m_Localized": "Két színű áttetsző bikini melltartó és bugyi készlet. Buja...<color=#00FF00>\nEz az elem még a csomagolásában van. Először ki kell csomagolnod!</color>",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 545119144961368066,
+      "m_Localized": "Kiemelt szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 545119144961368065,
+      "m_Localized": "Fő szín",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569125445703,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔Finished and double checked at 10. 01. 2025"
+        }
+      },
+      {
+        "rid": 7996671569125445704,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "✔"
+        }
+      }
+    ]
+  }
+}

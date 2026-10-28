@@ -1,0 +1,37 @@
+name: Desktop checks
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned engine and templates
+        run: python tools/runtime.py setup --templates
+      - name: Check runtime
+        run: python tools/runtime.py doctor
+      - name: Gameplay, UI and save continuation
+        run: python tools/test.py all
+      - name: Standalone mechanics export
+        run: python tools/test.py mechanics --isolated --pack
+      - name: Standalone Live2D export
+        run: python tools/test.py characters --isolated --pack
+      - name: Export desktop distribution
+        run: python tools/export.py --platform ${{ runner.os == 'macOS' && 'macos' || 'windows' }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: desktop-${{ runner.os }}
+          include-hidden-files: true
+          path: |
+            .artifacts/
+            dist/

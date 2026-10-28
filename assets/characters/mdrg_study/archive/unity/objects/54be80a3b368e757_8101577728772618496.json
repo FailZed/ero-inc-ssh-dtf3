@@ -1,0 +1,5501 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Other_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 4369018455848044
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 1709170364419,
+      "m_Localized": "cycki,dupę,pachy,głowę,ramiona,nogi,łono,stopy,pachę",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953024,
+      "m_Localized": "Sprzedanie bota",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953025,
+      "m_Localized": "Zakończenie umowy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953026,
+      "m_Localized": "Porażka...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953027,
+      "m_Localized": "Tchórz...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953028,
+      "m_Localized": "Zakończenie umowy v2: Żul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953029,
+      "m_Localized": "Zakończenie umowy v2: Zabójstwo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953030,
+      "m_Localized": "Zagłodzenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887981953031,
+      "m_Localized": "Przyłapanie...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147328,
+      "m_Localized": "Nie jestem szalony...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147329,
+      "m_Localized": "Ściana-kun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887969370112,
+      "m_Localized": "Za dużo spermy...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147330,
+      "m_Localized": "Nieświadome zakończenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147331,
+      "m_Localized": "Najgorsze zakończenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147332,
+      "m_Localized": "Prawdziwe zakończenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147333,
+      "m_Localized": "Szczęśliwe zakończenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147334,
+      "m_Localized": "Niewystarczająco dobre zakończenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 652887986147335,
+      "m_Localized": "Edytuj swój zapis gry lub cheatuj!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709149392896,
+      "m_Localized": "czerwony, zielony, niebieski, pomarańczowy, fioletowy, czarny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364416,
+      "m_Localized": "Jessica, Karen, Jasmine, Veronica, Ria, Natalie, Josie, Hollie, Meghan, Penelope, Flora, Amelia, Claudia, Annabel, Evangeline, Paige, Abigail, Ray, Stacey, Courtney, Courtney",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364417,
+      "m_Localized": "Cesarstwo Polskie, Rosja, Chiny, Egipt, Islandia, Izrael, Kostaryka, Libika, Mozambik, Stany Zjednoczone, Pakistan, Węgry, Nowa Zelandia, Urugwaj, Brazylia, Hongkong 2, Wenezuela, Liban, Jemen, Tajwan, Niemcy, France, Francja Wielka Brytania",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364418,
+      "m_Localized": "Rosja, Chiny, Egipt, Islandia, Izrael, Kostaryka, Libia, Mozambik, Stany Zjednoczone, Pakistan, Węgry, Nowa Zelandia, Urugwaj, Brazylia, Hongkong 2, Wenezuela, Liban, Jemen, Tajwan, Niemcy, Francja, Wielka Brytania",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364420,
+      "m_Localized": "Panna Pekorine, Yuzuki, Astolfo, Yoruichi, Chika, Teletha, Yami, Aqua, Kirin, Akira, Moriko, Sakura, Ai, Ram, Villetta, Villetta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364421,
+      "m_Localized": "Luffy, Kirito, Guy, Hisoka, Ban, Jiraiya, Eishi, Lloyd, Kamui, Miyuki, Shin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364422,
+      "m_Localized": "Halle Berry, Jeff Bezos, Elon Musk, Mark Zuckenberg, George Soros, Shigeru Miyamoto, J. K. Rowling, XcQ, Reincarnation of Martin Luther King Jr., Charlie Sheen, Samuel L. Jackson, Ninja, Princess Celestia, Patrick z Spongebob, Hatsune Miku, Barack Obunga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364423,
+      "m_Localized": "Amazoon, Alabama Fried Nugget, McRonald, Nanosoft, Googlie, Nestlee, Starfucks, Disnie, Wallmart, Wolkswagen, Holoislive",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364424,
+      "m_Localized": "krokodyl,hipopotam,byk,delfin,koń,tygrys,żyrafa,niedźwiedź,pies,kot,mysz,sczur,szop pracz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364425,
+      "m_Localized": "Frezno, Montgomery, Anaheim, El Paso, Tulsa, Cincinnati, Nowy York, Jacksonville, Buffalo, Tampa, Baltimore, Milwaukee",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364426,
+      "m_Localized": "Blue Lives Matter, Incontent Cell, ISIV, HP,/PL/, PPO, 4TAN, Boogaloo Boys",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364427,
+      "m_Localized": "heteroseksualny, homoseksualny, panseksualny, aromantyczny, autoseksualny, kupioseksualny, poliseksualny, rasistowski",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364428,
+      "m_Localized": "heteroseksualny, homoseksualny, panseksualny, transseksualny, autoseksualny, kupioseksualny, poliseksualny, aseksualny, zooseksualny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364429,
+      "m_Localized": "dwa strzały w głowę, karabin w tył głowy, uduszenie, postrzelony łukiem, zatruta strzała, magnetyczna bomba samochodowa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364430,
+      "m_Localized": "piosenka, obraz, taniec, wiersz, rzeźba, dramat, rysunek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364431,
+      "m_Localized": "astma, rak, AIDS, borelioza, opryszczka, kiła, trąd, AIDS-2011, zapalenie wątroby, covid, choroba Crohna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1709170364432,
+      "m_Localized": "Reem Estes, Ava Redmond, Saqlain Quintero, Conner Riley, Harlan O'Connor, Charlotte Morgan, Malia Meyers, Beverley Edwards, Dina Vo, Tim Shepherd, Kamile Morales, Amber-Rose Simpson, Reeva Khan, Bonita Hatfield, Constance Murillo, Shayna Dawson, Macaulay Bautista, Emilio Sears, Grant Greaves, Dakota Bradford, Deborah Aguirre, Manav Bright, Adeel Erickson, Dionne Morse, Ellenor Conner, Dillon Dale, Sherry Bush, Laura Vickers, Abubakar Phelps, Vienna William, Carolyn Arellano, Waleed Ochoa, Stuart McFarland, Aliesha Guerra, Demi Shepard, Rhia Lord, Charlie Tapia, Aria Schultz, Nadir Corrigan, Aisling Malone, Ella-Louise Gillespie, Liyana Delarosa, Imaani Young, Jaxson Hail, Teresa Barker, Rida Adam, Taybah Chaney Jarrod Tait, Osman Mac, Elisabeth Zhang, Siddharth Sims, Awais Kirkland, Kenny Russo, Rohaan Holmes, Bronwyn Moore, Rui Brookes, Cataleya Peck, Raphael Squires, Griffin Cartwright, Dolcies Jennings, , Bobby Curtis, Jerry McMahon, Monica Rasmussen, Sierra Holcomb, Myrtle Lang Ley, Yasmeen Sosa, Summer-Louise Cobb, Merlin Bannister, Kian Esparza, Roscoe Dennis, Judah Hewitt, Joao Whitehouse, Emmanuella Nava, Lily-Grace Baxter, Niam Bellamy, Ameen Hicks, Yunus Pate, Tahlia Molina, Hafsah Chung, Emily- Rose Calhoun, Janet Spooner, Kaya Townsend, Soren Valenzuela, Lisa Knott, Neal Bowman, Anaiya Skinner, Hussain Juarez, Tanisha Roman, Iona Bridges, Rhian Stevens, Ceri Whitley, Madelyn Hagan, Mihai Keith, Vihaan Mays, Cecily Owens",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3155250466656256,
+      "m_Localized": "może być zebrany, jest tutaj, został dostarczony, dotarł, jest z tyłu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3155252333121536,
+      "m_Localized": "jeszcze tu nie ma, potrzebuje więcej czasu, jeszcze nie został dostarczony, potrzebuje więcej pracy, wkrótce tu będzie, powinna wkrótce przybyć",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3155255940222976,
+      "m_Localized": "Pani Annalie: {0} {1}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3158103419654144,
+      "m_Localized": "Nie mogę wyjść z nią tak na zewnątrz.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158230012137472,
+      "m_Localized": "Niedawno wyszliśmy na zewnątrz. Poczekajmy trochę dłużej!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158417979871232,
+      "m_Localized": "Prawdopodobnie powinienem uzyskać moduły lepszej jakości, zdjąć te niskiej jakości, które się wyróżniają lub spóbować je zakryć.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158477727731712,
+      "m_Localized": "Byłoby to bardzo niebezpieczne. Naprawdę łatwo zauważyć, że jest botem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158572758077440,
+      "m_Localized": "To byłoby niebezpieczne. Nadal łatwo zauważyć, że jest botem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158597827432448,
+      "m_Localized": "Byłoby to trochę niebezpieczne. Jeśli przyjrzysz się uważnie, nadal możesz zauważyć, że jest botem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158634041053184,
+      "m_Localized": "Powinno być bezpieczne. Wygląda całkiem ludzko.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158679217901568,
+      "m_Localized": "Jest dobrze. Większość ludzi nie powinna zauważać, że jest botem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3158785157632000,
+      "m_Localized": "Nie ma na sobie majtek! Zboczone!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3159199408066560,
+      "m_Localized": "Musi mieć wyposażone wszystkie kończyny.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3159271713673216,
+      "m_Localized": "Potrzebuje czegoś, co zakrywa górną część ciała. Jak np. koszulka.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3159334548541440,
+      "m_Localized": "Potrzebuje czegoś, co zakrywa dolną część ciała. Jak np. spódniczka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3159388130775040,
+      "m_Localized": "Musi mieć na sobie buty.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598202804080640,
+      "m_Localized": "Bot:Czy wyglądam dobrze?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598202820857856,
+      "m_Localized": "Bot:Podoba ci się?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598202820857857,
+      "m_Localized": "Bot:Wyglądam w tym słodko?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598848,
+      "m_Localized": "Bot:Czy na pewno sexbot taki jak ja powinien to nosić?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598849,
+      "m_Localized": "Bot:Huh?! Wyglądam uroczo?! Skoro tak mówisz…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598850,
+      "m_Localized": "Bot:Jeśli ci się podoba, to mi też się podoba.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598851,
+      "m_Localized": "Bot:Mam nadzieję, że nie było to zbyt drogie…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598852,
+      "m_Localized": "Bot:Kupujesz dla mnie za dużo. Pomyśl więcej o sobie!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598853,
+      "m_Localized": "Bot:To marnotrawstwo, abym to nosiła. Nie potrzebuję takich ekstrawagadzkich ubrań.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598854,
+      "m_Localized": "Bot:Te kolory…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598855,
+      "m_Localized": "Bot:Rozebierasz mnie oczami…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598856,
+      "m_Localized": "Bot:S-spróbujmy czegoś innego…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598857,
+      "m_Localized": "Bot:To trochę… nieważne…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598858,
+      "m_Localized": "Bot:…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598859,
+      "m_Localized": "Bot:Jesteś zadowolony?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598860,
+      "m_Localized": "Bot:Ta kombinacja…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598861,
+      "m_Localized": "Bot:Czy możemy spróbować czegoś innego?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598862,
+      "m_Localized": "Bot:Mam nadzieję, że to nie ograniczy moich ruchów.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598863,
+      "m_Localized": "Bot:Czy to noszą normalni ludzie?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598864,
+      "m_Localized": "Bot:Czy to wygląda dobrze?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598865,
+      "m_Localized": "Bot:Podoba ci się?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598866,
+      "m_Localized": "Bot:Czy bez nich nie wyglądam lepiej?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598867,
+      "m_Localized": "Bot:Ciekawe...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4598920667598868,
+      "m_Localized": "Bot:To ci się podoba?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4604487419170816,
+      "m_Localized": "Bot:Czy muszę nosić pod tym stanik?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4604615798427648,
+      "m_Localized": "Bot:Czy ten wzór to próba kamuflażu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4604730810437632,
+      "m_Localized": "Bot:Jaki jest cel tego ubrania? Nie zakrywa niczego zbyt dobrze.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4604807767527424,
+      "m_Localized": "Bot:W-więc… to są seksowne ubrania…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4604903447990272,
+      "m_Localized": "Bot:Ta skarpetka zakrywa całą moją nogę. Bardzo przydatne!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4604997891133440,
+      "m_Localized": "Bot:Mam nadzieję, że nie spadnie mi z głowy, nie chciałbym tego zgubić.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605066920988672,
+      "m_Localized": "Bot:Proste, ale urocze!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605154791657472,
+      "m_Localized": "Bot:Nie sądzę że ukryje moje majtki przed wzrokiem innych osób...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605229781618688,
+      "m_Localized": "Bot:Czy ta spódniczka nie jest zbyt krótka?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605354394390528,
+      "m_Localized": "Bot:Czy takie buty są popularne?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605485478973440,
+      "m_Localized": "Bot:Czy to coś co ludzie nazywają <i>drip</i>?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605579670458368,
+      "m_Localized": "Bot:Pozowanie w ten sposób jest zawstydzające!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4605603133394944,
+      "m_Localized": "Bot:Czy naprawdę muszę nosić bieliznę?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075763355648,
+      "m_Localized": "Szary Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549952,
+      "m_Localized": "Magenta Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549953,
+      "m_Localized": "Źrenica Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549954,
+      "m_Localized": "Tęczówka Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549955,
+      "m_Localized": "Domyślna skóra",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490401
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6480075767549956,
+      "m_Localized": "Ciało Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549957,
+      "m_Localized": "Rumieniec Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549958,
+      "m_Localized": "Stary Zwykły Biały",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549959,
+      "m_Localized": "Stary Smutny Szary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075767549960,
+      "m_Localized": "Stara Słodka Magenta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744256,
+      "m_Localized": "Stary Brzydki Niebieski",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744257,
+      "m_Localized": "Stary Marzycielski Cyjan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744258,
+      "m_Localized": "Stary Twawiasty Zielony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744259,
+      "m_Localized": "Stare Fałszywy Złoto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744260,
+      "m_Localized": "Stary Krwawy Czerwony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744261,
+      "m_Localized": "Stary Specjalny Turkus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744262,
+      "m_Localized": "Stary Toksyczny Zielony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744263,
+      "m_Localized": "Stary Kitsune Piku Niebieski",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744264,
+      "m_Localized": "Stary Asfalt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744265,
+      "m_Localized": "Biały",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744266,
+      "m_Localized": "Jasnoszary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744267,
+      "m_Localized": "Szary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744268,
+      "m_Localized": "Ciemnoszary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744269,
+      "m_Localized": "Bardzo Ciemny Szary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744270,
+      "m_Localized": "Galaktyka Jednorożca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744271,
+      "m_Localized": "Słodka Magenta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744272,
+      "m_Localized": "Mleko Truskawkowe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744273,
+      "m_Localized": "Toksyczny Fiolet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744274,
+      "m_Localized": "Niebieski Pólnocy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744275,
+      "m_Localized": "Podstawowy Czarny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744276,
+      "m_Localized": "Podstawowy Biały",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744277,
+      "m_Localized": "Krwawy Czerwony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744278,
+      "m_Localized": "Miku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744279,
+      "m_Localized": "Fałszywe Złoto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744280,
+      "m_Localized": "Marzycielski Cyjan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490402
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6480075771744281,
+      "m_Localized": "Brzydki Niebieski",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744282,
+      "m_Localized": "Oślepiający Fiolet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744283,
+      "m_Localized": "Oślepiający Niebieski",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744284,
+      "m_Localized": "Oślepiający Zielony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744285,
+      "m_Localized": "Oślepiający Żółty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6480075771744286,
+      "m_Localized": "Oślepiający Pomarańcz",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490403
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6480075771744287,
+      "m_Localized": "Oślepiający Czerwony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6484980532121600,
+      "m_Localized": "Niestandardowy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102916005888,
+      "m_Localized": "Bot: Ah! To łaskocze!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588800,
+      "m_Localized": "Bot: {f_playerName}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588801,
+      "m_Localized": "Bot: Ah!\nBot: Lubię, kiedy mnie całujesz...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588802,
+      "m_Localized": "Bot: Ach {f_playerName}!\nBot: Zaskoczyłeś mnie!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588803,
+      "m_Localized": "Bot: Ah! {f_playerName}~\nBot: T-ten obszar jest delikatny <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588804,
+      "m_Localized": "Bot: Oh~\nBot: Jestem pewna, że stać cię na więcej niż to~ ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588805,
+      "m_Localized": "Bot: No weź {f_playerName}...\nBot: Ze wszystkich miejsc do pocałowania mnie wybrałeś to?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588806,
+      "m_Localized": "Bot: Oh Boże...\nBot: Dlaczego mężczyźni tak bardzo kochają tyłki?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490404
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588807,
+      "m_Localized": "Bot: Tylko nie to...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588808,
+      "m_Localized": "Bot: To miejsce...\nBot:...jest trochę zboczone~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588809,
+      "m_Localized": "Bot: {f_playerName}, proszę~\nBot: Nie drocz się ze mną tak bardzo <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588810,
+      "m_Localized": "Bot: Ah!\nBot: {f_playerName}~ Wszystko mnie mrowi w środku~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569126490405
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588811,
+      "m_Localized": "Bot:... {f_playerName} proszę, powstrzymaj się od całowania tego miejsca.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588812,
+      "m_Localized": "Bot: Nie chciałam o to pytać, ale...\nBot: Czy ty nie jesteś zboczeńcem?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588813,
+      "m_Localized": "\"Bot: ... {f_playerName} proszę, powstrzymaj się od całowania tego miejsca.\nBot: Znajduje się tam wiele delikatnych podzespołów.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588814,
+      "m_Localized": "Bot: Ah! Nie tam~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588815,
+      "m_Localized": "Bot: To takie miłe uczucie.\nBot: Ale pamiętaj, żeby uważać i nie połknąć tego futra. Jest wykonane z materiałów rakotwórczych.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588816,
+      "m_Localized": "Bot: *chichocze*",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588817,
+      "m_Localized": "\"Bot: Oh {f_playerName}~ Bot: Dlaczego mnie tam całujesz? <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588818,
+      "m_Localized": "Bot: Nie ciągnij zbyt mocno~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588819,
+      "m_Localized": "Bot: Nie drocz sie tak ze mną~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588820,
+      "m_Localized": "Bot: Spróbuj troche wyżej i będe czuła sie jeszcze lepiej <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588821,
+      "m_Localized": "Bot: Mmm~\nBot: Czuję twój język <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588822,
+      "m_Localized": "Bot: Ah~\nBot: Chyba lubisz to miejsce <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588823,
+      "m_Localized": "Bot: Mmm, możesz wejść trochę wyżej, jeśli chcesz~.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588824,
+      "m_Localized": "Bot: Ekscytujesz mnie <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588825,
+      "m_Localized": "Bot: P-proszę, nie w tym miejscu {f_playerName}.\nBot: Możesz usłyszeć dźwięk pracy moich silników i to byłoby zawsytdzające >///<",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5719102928588826,
+      "m_Localized": "Bot: Ah~\nBot: Zejdź trochę niżej, ślicznie proszę <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588827,
+      "m_Localized": "Bot: Jesteś takim zboczeńcem~\nBot: Czy ty w ogóle nie masz wstydu? <3 *chichot*",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588828,
+      "m_Localized": "Bot: To łaskocze!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588829,
+      "m_Localized": "Bot: Naprawdę ci się to podoba, co?\nBot: Może chcesz, żebym na ciebie nadepnąła? *chichocze*",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588830,
+      "m_Localized": "Bot: Tu też jest przyjemnie~\nBot: Całuj mnie więcej <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588831,
+      "m_Localized": "Bot: Miejsca w które mnie całujesz ciągle mnie zaskakują~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5719102928588832,
+      "m_Localized": "Bot: Jeśli tobie się podoba, to mi też <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36649044804399104,
+      "m_Localized": "Bot: Tyle spermy!|Bot: Sporo z ciebie wyszło!|Bot: Zobacz jak dużo !|Bot:  Mnóstwo ♥",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36649314556866560,
+      "m_Localized": "Bot: Spójrz {f_playerName}.|Bot: Pyszne ♥|Bot: Dziękuję za posiłek {f_playerName}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36649699321344000,
+      "m_Localized": "Bot: ...|Bot: Czas na przekąskę♥|Bot: Było przyjemnie? ♥",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36650295650709504,
+      "m_Localized": "Bot: ...|Bot: Chcę więcej...|Bot: {f_playerName}...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36651023119183872,
+      "m_Localized": "Bot: Wystarczy!!|Bot: Dość!|Bot: Nie mogę dłużej czekać!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36651290724167680,
+      "m_Localized": "Bot: Fufuf~ Było blisko.|Bot: Było aż tak przyjemnie? ♥|Bot: Nie chcesz jeszcze już dojść?|Bot: Zboczeniec ♥|Bot: Grzeczny chłopiec.|Bot: Czuję jak smakuje twój prejakulat!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36651869752029184,
+      "m_Localized": "Bot: Gdybym robiła to szybciej, spuściłbyś się!|Bot: Nie możesz już tego znieść? |Bot: Słodko ♥",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36658999078973440,
+      "m_Localized": "Bot: Chcesz, żebym przestała, jak będziesz blisko? Dobra.|Bot: Cóż za zboczeniec!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490408
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36659004787421184,
+      "m_Localized": "Bot: Masz już dość przerywania? Dobra|Bot: Chcesz dojść?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37005369136672768,
+      "m_Localized": "Bot: Ajć, mam królową!|Bot: Królowa... Znowu|Bot: Mam królową. Pech.|Bot: Królowa? No cóż...|Bot: Rozumiem...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37005500103815168,
+      "m_Localized": "Bot: Tak! Masz królową!|Bot: Wygląda na to, że szczęście jest po mojej stronie|Bot: To znacznie zwiększa moje szanse na wygraną!|Bot: Równie dobrze możesz się już poddać!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37006170395537408,
+      "m_Localized": "Bot: Nie musisz się spieszyć...|Bot: Nie spiesz się.|Bot: ...|Bot: Mamy czas.|Bot: {f_playerName}?|Bot: Wszystko w porządku?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37006206491717632,
+      "m_Localized": "Bot: Powodzenia {f_playerName}!|Bot: Wybierz królową! Haha.|Bot: Którą kartę wybierzesz?|Bot: Masz dzisiaj szczęście?|Bot: Teraz ty wybieraj.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37006398297239552,
+      "m_Localized": "Bot: Wybierz szybko!|Bot: Którą wybierzesz?|Bot: No wybierz jedną.|Bot: Wybierz kartę.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37006908236525568,
+      "m_Localized": "Bot: Nie mam królowej, więc nie ma znaczenia, co wybierzesz!|Bot: ...|Bot: Czy dobrze się bawisz {f_playerName}?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37007086569943040,
+      "m_Localized": "Bot: Przepraszam {f_playerName}!|Bot: Musiałem to zrobić!|Bot: odkryłeś mój blef? Przepraszam {f_playerName}|Bot: Jej!|Bot: Teraz mogę wygrać!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37007252152676352,
+      "m_Localized": "Bot: Pech... dla ciebie!|Bot: Yay!|Bot: Żałujesz swojego wyboru?|Bot: Teraz... Jaki jest wzór na odwrocie tej karty... Tylko sobie żartuję!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37007384810123264,
+      "m_Localized": "Bot: Tsk...|Bot: Był tuż obok królowej!|Bot: Tak blisko...|Bot: Zmniejszenie prawdopodobieństwa zwycięstwa...|Bot: Powinneś był wziąć drugą...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37007703203934208,
+      "m_Localized": "Bot: Może ta?|Bot: ta?|Bot: Ta wygląda dobrze.|Bot: Hmm...|Bot: Co  ty o tym myślisz ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37007761286656000,
+      "m_Localized": "Bot: Ta!|Bot: Ta!|Bot: Chcę tą karte!|Bot: Daj mi tą!|Bot: Tą?|Bot: Tą po prawej?|Bot: Może ta?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37007916232634368,
+      "m_Localized": "Bot: Ajjjć...|Bot: ... zły wybór|Bot: Prawdopodobieństwo zwycięstwa znacznie spadło..",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37007950978248704,
+      "m_Localized": "Bot: Uff.|Bot: Przysięgam, że nie oszukiwałem!|Bot: Było blisko?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37008621588738048,
+      "m_Localized": "Bot: Ajjjć... było fajne!|Bot: Dobrze ci poszło {f_playerName}. Gdyby tylko pozwolono mi zapamiętać wszystkie wzory na odwrocie kart, to by się nie wydarzyło. Wciąż było fajnie.|Bot: Dobrze się bawiłam! Dobra robota {f_playerName}.|Bot: Dzięki za grę {f_playerName}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37008665297580032,
+      "m_Localized": "Bot: Tak!|Bot: Tak, wygrałam!|Bot: Zwycięstwo!|Bot: Nie oszukiwałam! Nie patrz tak na mnie!|Bot: Przysięgam, że nie oszukiwałam!|Bot: Dzięki za grę ze mną {f_playerName}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37008920160268288,
+      "m_Localized": "Bot: Do tej pory wygrałam {gv_timesLostOldMaid:p:{} time|{} razy} i przegrałam z tobą {gv_timesWonOldMaid:p:{} time|{} razy}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 37018473102864384,
+      "m_Localized": "Bot: Dzięki za grę ze mną!|Bot: Pobawmy się jeszcze trochę!|Bot: Dobrze się bawiłeś? Świetnie się bawiłem!|Bot: Powinniśmy grać więcej!|Bot: Lubię grać z tobą w gry!|Bot: Zagrajmy jeszcze trochę?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37018886514438144,
+      "m_Localized": "Bot: Nie wybieraj tego!|Bot: To byłby zły wybór!|Bot: Nie powinienem wybierać tego! Zaufaj mi!|Bot: zły wybór...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37018961298878464,
+      "m_Localized": "Bot: Dobry wybór.|Bot: To zdecydowanie właściwa karta do wzięcia!|Bot: Wybierz tę!|Bot: Tak! Tą karte!|Bot: Tą karte!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37019204346212352,
+      "m_Localized": "Bot: ...|Bot: Nie wiem.|Bot: Tą?|Bot: Ciekawy wybór.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37246397311643648,
+      "m_Localized": "Bot: Masz już dość? Ok?|Bot: Nie bawiłeś się dobrze?|Bot: Nie oszukiwałam!|Bot: Masz coś ważnego do zrobienia?|Bot: no szkoda, zaczynało się dobrze.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37247700263792640,
+      "m_Localized": "Bot: Uciekłeś od gry {gv_timesRanAwayOldMaid:p:{} raz|{} razy}. Równie dobrze mogę je liczyć jako moje wygrane!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38074455498297344,
+      "m_Localized": "Nigdy nie ufaj glinom...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38074638151847936,
+      "m_Localized": "Nigdy nie ufaj glinom... ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490409
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38333175650193408,
+      "m_Localized": "You: Zagrajmy w Piotrusia!|You: Czas na Piotruśa!|You: Czas na Piotrusia !|You: Może piotruś ?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38333588281626624,
+      "m_Localized": "Bot: Yay!|Bot: Ruszamy!|Bot: Brzmi fajnie!|Bot: Nie mogę się doczekać, aby znów wygrać!|Bot: Powodzenia!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261798590287872,
+      "m_Localized": "Żołądek mi burczy jak diabli!\nPowinienem natychmiast coś zjeść!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261805439586304,
+      "m_Localized": "Ugh...\nNie pamiętam, kiedy ostatnio jadłem.\nTo jest źle.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261821143060480,
+      "m_Localized": "Czuję się jakby moje ciało zjadało się z głodu...\nNigdy nie byłem fanem warzyw, ale teraz zabiłbym, żeby je zjeść...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490410
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 40261838666862592,
+      "m_Localized": "Jestem całkiem głodny. \nPowinienem niedługo coś zjeść.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261840285863936,
+      "m_Localized": "Jestem głodny...ale chyba zwymiotuję, jeśli zjem jakieś śmieciowe żarcie.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261841682567168,
+      "m_Localized": "Naprawdę muszę coś zjeść.\nI nie chodzi tu o jakieś węglowodanowe gówno...\nJeśli nie zacznę się lepiej odżywiać, to dożycie 30 może się nie udać.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261887589224448,
+      "m_Localized": "Uhm...\nCzas coś przekąsić?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261889208225792,
+      "m_Localized": "Hmm...\nCzas na przekąskę?\nTo jest to co chciałbym powiedzieć, ale czuję się okropnie.\nCiepły, pożywny posiłek dobrze by mi zrobił.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40261890986610688,
+      "m_Localized": "Jeszcze nie jestem bardzo głodny, ale nie wiem ile tak wytrzymam...\nNie pożyję długo, jeśli nie zmienię swoich nawyków.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40262055420104704,
+      "m_Localized": "Ugh...\nGłowa mnie boli, a każdy hałas mnie wkurza...\nPo p- po prostu chcę, żeby się to skończyło!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40262059543105536,
+      "m_Localized": "Boli mnie głowa...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 46677620225347584,
+      "m_Localized": "Tracisz {0}$!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 46801134785794048,
+      "m_Localized": "Dostajesz {0} cukierków.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          },
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 78731296074764288,
+      "m_Localized": "spuść się do jej cipki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 78731297593102336,
+      "m_Localized": "spuść się na nią",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 78731298868170752,
+      "m_Localized": "spuść się do jej dupy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 78731300428451840,
+      "m_Localized": "spuść się do jej ust",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 78731935706124288,
+      "m_Localized": "wiotki kutas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490416
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 78738233873010688,
+      "m_Localized": "włóż kutasa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 78738256622915584,
+      "m_Localized": "wyciągnij kutasa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79021807289372672,
+      "m_Localized": "Nieznany nadawca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79040422487134208,
+      "m_Localized": " Do odbioru u nadawcy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79040500077563904,
+      "m_Localized": "W sortowni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79040503714025472,
+      "m_Localized": "Paczka nadana",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490417
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79040651068313600,
+      "m_Localized": "Wkrótce będzie u Ciebie!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79040864239620096,
+      "m_Localized": "Przewidywany przyjazd za {0} ({1})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79041449756069888,
+      "m_Localized": "Wkrótce!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79046713855053824,
+      "m_Localized": "BDH Holdings Incorporated",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79368941532483584,
+      "m_Localized": "Wielu nadawców (połączone paczki)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 91351293984903168,
+      "m_Localized": "N-nie jest dobrze...\nBot dziwnie na mnie patrzy…\nZaczynam się jej bać...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 109890604040589312,
+      "m_Localized": "Co to do cholery było...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490419
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 109893380904718336,
+      "m_Localized": "Boję się...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490420
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 110467144243613696,
+      "m_Localized": "VolksAuto Grau™",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490421
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 111561705527316480,
+      "m_Localized": "Masz {0}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569126490422
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 117395373416124416,
+      "m_Localized": "Marynarski Zielony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118217092112453632,
+      "m_Localized": "Cyjan świątynny ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490423
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453633,
+      "m_Localized": "Zielony Awokado",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490424
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453634,
+      "m_Localized": "Księżycowy Kśiężniczkowy szary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118217092112453635,
+      "m_Localized": "Satynowa Czerń",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118217092112453636,
+      "m_Localized": "Niebieski Stilou",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490426
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453637,
+      "m_Localized": "Czerwony Stilou ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490427
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453638,
+      "m_Localized": "Żółty Stilou",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490428
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453639,
+      "m_Localized": "Burgund Monizmed ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118217092112453640,
+      "m_Localized": "Fioletowy Monizmed ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118217092112453641,
+      "m_Localized": "Fioletowy zero",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490429
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453642,
+      "m_Localized": "Złoto zero",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490430
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453643,
+      "m_Localized": "Cola zero czerwona ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490431
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453644,
+      "m_Localized": "Cola zero Żółta",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490432
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453645,
+      "m_Localized": "Cola zero niebieska",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490433
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453646,
+      "m_Localized": "Dr. Sugar zero czerwony ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490434
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453647,
+      "m_Localized": "Dr. Sugar zero niebieski ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453648,
+      "m_Localized": "Batat Brązowy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490436
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453649,
+      "m_Localized": "Cukrzycowa pomarańcza ze słodkich ziemniaków",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453650,
+      "m_Localized": "Cazino Green ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118217092112453651,
+      "m_Localized": "Cazino Brown",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490439
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120033781170966528,
+      "m_Localized": "Bot: Zdejmijmy to.|Bot: To może nam trochę przeszkadzać.|Bot: Nie mogę kontynuować mając to na sobie.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490440
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120034458442010624,
+      "m_Localized": "Bot: Zaraz go włożę!|Bot: Podekscytowany?|Bot: Sprawię, że nie będziesz mógł się ruszyć.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490441
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120034827842752512,
+      "m_Localized": "Bot: Zrelaksuj się i pozwól mi się tym zająć.|Bot: Chcesz, żebym przejęła inicjatywę? Dobra.|Bot: Będzie fajnie~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120039386887622656,
+      "m_Localized": "Chcę spuścić się do twojego gardła!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120039449936400384,
+      "m_Localized": "Chcę spuścić się w tobie!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490444
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120039509310967808,
+      "m_Localized": "Chcę spuścić się na ciebie!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490445
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120040555219390464,
+      "m_Localized": "Bot: Chyba nie mogłeś się zdecydować. Fufu~|Bot: Nie możesz się zdecydować?|Bot: Rozumiem...|Bot: Spójrz,na swoją zboczoną minę!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490446
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120043369240858624,
+      "m_Localized": "Bot: Spuść się na mnie!|Bot: Mmmm~~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490447
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120045205435846656,
+      "m_Localized": "Bot: Jesteś już blisko~ Gdzie chciałbyś się spuścić?|Bot: Gdzie chcesz się spuścić?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120136478058483712,
+      "m_Localized": "Bot: Nie mogę poruszać się szybciej, bo dojdziesz~|Bot: Widzę, że jesteś naprawdę blisko.|Bot: Zaraz dojdziesz!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120730844321943552,
+      "m_Localized": "Shanice: Jak mamy naprawić coś, co ma na sobie twój bot? Idź do domu i najpierw to zdejmij!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120731892331712512,
+      "m_Localized": "Shanice: Naprawdę?|Shanice: Aww, byłam podekscytowana pracą nad tym.|Shanice: Zdecyduj się!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490451
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120732450169950208,
+      "m_Localized": "Shanice: ...|Shanice: Anon. Jeśli masz problemy z pieniędzmi, mogę ci trochę pożyczyć...|Shanice: Części zamienne do tych rzeczy trochę kosztują. Nie mogę tego zrobić po prostu za darmo.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490452
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120733919916986368,
+      "m_Localized": "Shanice: Już pracuję nad {0}, które tutaj zostawiłeś. Skończę jutro!|Shanice: Pamiętaj. Nie mogę pracować nad dwiema rzeczami naraz. Jestem kiepska w wielozadaniowości te~he~.|Shanice: Wciąż zajęta {0}. Jutro powinnam skończyć.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120739286138884096,
+      "m_Localized": "Stan {0} poprawił się z {1} do {2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569126490453
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120742247099404288,
+      "m_Localized": "Shanice: Skończę z tym jutro!|Shanice: Nie mogę się doczekać, żeby zobaczyć, co mogę z tym zrobić!|Shanice: Koniecznie wróć jutro, żeby to odebrać!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490454
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121122169009606656,
+      "m_Localized": "Czarny",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490455
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121130260094652416,
+      "m_Localized": "Oni wiedzą... (nieświadomy) ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490456
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121130260115623936,
+      "m_Localized": "Oni wiedzą... ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121152291804680192,
+      "m_Localized": "Obejrzałem sekretny epilog bigdaddyhurt.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122058373351739392,
+      "m_Localized": "Bot: Dojdźmy razem {f_playerName}!|Bot: Ty też jesteś blisko? Dojdźmy razem~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 122691757786664960,
+      "m_Localized": "Bot: Mam już tego dość~|Bot: Nie mogę już tego znieść~|Bot: Przestań zwalniać!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122719261100478464,
+      "m_Localized": "Bot: O-oh~ wygląda na to, że masz już dość.|Bot: Wygląda na to, że udało mi się wszystko z ciebie wydobyć fufu~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122729071132938240,
+      "m_Localized": "Bot: Jesteś już tak blisko! Zatrzymajmy sie na chwilę.|Bot: Co za zboczeniec. Czuję, że zaraz dojdziesz.|Bot: Nie spuszczaj się! Zakaz!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122925642265006080,
+      "m_Localized": "Bot: {f_playerName}, Zaraz dojdę!|Bot: {f_playerName}~|Bot: Za dobrze~|Bot: Mmmm {f_playerName}~|Bot: Zaraz dojdę~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          },
+          {
+            "rid": 7996671569126490457
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 122685814826995712,
+      "m_Localized": "Bot: Nie przestawaj~|Bot: {f_playerName}~|Bot: Zaraz dojdę~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188398410854699008,
+      "m_Localized": "Bot: Dlaczego to robisz?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490458
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188398413132206080,
+      "m_Localized": "Bot: Bawi cię to?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188398414898008064,
+      "m_Localized": "Bot: {f_playerName}?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 192453224328728576,
+      "m_Localized": "Brat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192453258243870720,
+      "m_Localized": "Siostra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 122686092154376192,
+      "m_Localized": "Bot: Ah~|Bot: Oh~|Bot: Mmm~|Bot: {f_playerName}~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 196436563699163136,
+      "m_Localized": "Nie powinienem wychodzić z botem… Na zewnątrz jest zbyt niebezpiecznie i policja może być bardziej czujna…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120042178998046720,
+      "m_Localized": "Bot: Spuść się we mnie!|Bot: Napełnij mnie!|Bot: Mmmm~~",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490459
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188399996989476864,
+      "m_Localized": "Bot: Świetnie~",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188399999044685824,
+      "m_Localized": "Bot: Głaszcz mnie dalej po głowie {f_playerName}!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188400001271861248,
+      "m_Localized": " Bot: {f_playerName}...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268423275278753792,
+      "m_Localized": "Zanieczyszczone Jezioro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268423666603122688,
+      "m_Localized": "Okropnie zanieczyszczne jezioro. Odradzane pływanie - o piciu nie wspominając. Ryby łapane w tym zbiorniku raczej nie nadają się do spożycia.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268424045873061888,
+      "m_Localized": "Zaśmiecona Rzeka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268424115800498176,
+      "m_Localized": "Rzeka tonąca w odpadach ludzkich. Dzięki szybkiemu tempu potoku, wody są tutaj czystsze niż w okolicy. Coś ci mówi, że nie ma tutaj za wielu ryb.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268424601735782400,
+      "m_Localized": "Farma Ryb Premium",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268424603933597696,
+      "m_Localized": "Premiowana, sztucznie hodowana Farma Rybna, umożliwiająca rekreacyjny połów za opłatą. Wody sterylnie czyste, populacja ryb wysoka i kontrolowana, ale same sztuki nie grzeszą rozmiarem z powodu limitowanego miejsca jakie im zapewniono.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272492651078475776,
+      "m_Localized": "Wybrzeże Mikroplastiku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 272492655176310784,
+      "m_Localized": " Niegdyś czyste wybrzeże i łagodne plaże, zanieczyszczone plastikowymi, gumowymi odpadami. Zabawki, stare ubrania, gadżety, elektronika i inne śmieci. Wrak starego kontenerowca spogląda z oddali, rozmarzony by znów wypłynąć mimo dawnej eksplozji, która go zatopiła, zanieczyszczając okolicę, przyśpieszając erozję piasku i fal. Możesz tutaj wyłowić coś <i>niezwykłego</i> jeśli ci się poszczęści.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056677704261632,
+      "m_Localized": "Baszta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056677775564800,
+      "m_Localized": "Miraż",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056677821702144,
+      "m_Localized": "Toledo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056677872033792,
+      "m_Localized": "Bunkier",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056677918171136,
+      "m_Localized": "Hipsterki Róż",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056677964308480,
+      "m_Localized": "Woda z Rury",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490460
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 276056678014640128,
+      "m_Localized": "Turkusowy Błękit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056678060777472,
+      "m_Localized": "Ametyst ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056678111109120,
+      "m_Localized": "Paproć",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 276056678157246464,
+      "m_Localized": "Ciemnoróżowy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 290361684091985920,
+      "m_Localized": "Krowi licznik gejów:\n{0} jest {1:P2} gejem!!!\nGratulacje!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 296384348640239616,
+      "m_Localized": "Uczta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296384984555446272,
+      "m_Localized": "Posiłek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296384997876555776,
+      "m_Localized": "Lekki posiłek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296385004788768768,
+      "m_Localized": "Przekąska",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 296384402218278912,
+      "m_Localized": "Maleńki gryz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209238569585205248,
+      "m_Localized": "Idź na randkę",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209244760335966208,
+      "m_Localized": "Wyjdź ze znajomymi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490461
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 209247185067302912,
+      "m_Localized": "Idź na łyżwy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209269230400430080,
+      "m_Localized": "Idź na łyżwy z Shanice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209279522794627072,
+      "m_Localized": "Idź do kawiarni z Annalie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209313501786660864,
+      "m_Localized": "Idź na kręgle z Melissą",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 287690609373732864,
+      "m_Localized": "Idź na ryby",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 287695728765034496,
+      "m_Localized": "Toxic Tides Fishing LLC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725122969600,
+      "m_Localized": "Ciemnobrązowa Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725148135424,
+      "m_Localized": "Brązowa Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725148135425,
+      "m_Localized": "Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725148135426,
+      "m_Localized": "Jasna Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725148135427,
+      "m_Localized": "Morelowa Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725148135428,
+      "m_Localized": "Granatowa Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301479725148135430,
+      "m_Localized": "Szara Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301481769946832896,
+      "m_Localized": "Ciemna Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301481769967804416,
+      "m_Localized": "Czarna Skóra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336832,
+      "m_Localized": "Paleta Zużytych Modułów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336833,
+      "m_Localized": "Paleta Modułów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336834,
+      "m_Localized": "Paleta Monochromy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336835,
+      "m_Localized": "Paleta Jun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336836,
+      "m_Localized": "Paleta Karnacji",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336837,
+      "m_Localized": "Paleta Skórzana",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336838,
+      "m_Localized": "Paleta Markowa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336839,
+      "m_Localized": "Paleta Hot Pink",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336840,
+      "m_Localized": "Główna Paleta Xoulion",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301524803753336841,
+      "m_Localized": "Paleta logo Xoulion",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685663121408,
+      "m_Localized": "Paleta Odcieni Karnacji",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287232,
+      "m_Localized": "Taniniczny Burgund",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490462
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 301567685688287233,
+      "m_Localized": "Ciemna Umbra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287234,
+      "m_Localized": "Sienna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287235,
+      "m_Localized": "Piaskowiec",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287236,
+      "m_Localized": "Migdał",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287237,
+      "m_Localized": "Jasna Brzoskwinia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287238,
+      "m_Localized": "Głęboka Mahoń",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287239,
+      "m_Localized": "Brąz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287240,
+      "m_Localized": "Złoty Miód",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287241,
+      "m_Localized": "Ciepła Kość",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287242,
+      "m_Localized": "Blada Porcelana",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301567685688287243,
+      "m_Localized": "Goblińska Zieleń",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301572741179367424,
+      "m_Localized": "Ciepła Glina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301572741179367425,
+      "m_Localized": "Palisander",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301572741179367426,
+      "m_Localized": "Przypalony Brunatny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301572741179367427,
+      "m_Localized": "Sienna Palona",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301572741179367428,
+      "m_Localized": "Ziemski Brąz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 301572741179367429,
+      "m_Localized": "Blady Doomer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 313837547580022784,
+      "m_Localized": "Annalie’s Purple",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490463
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321774208251060224,
+      "m_Localized": "Pechowe spotkanie z ołowiem",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490464
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321818294404243456,
+      "m_Localized": "To nie miało się tak skończyć...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490465
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321823121737768960,
+      "m_Localized": "Przynajmniej do końca byliśmy przyjaciółmi...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490466
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321874011689574400,
+      "m_Localized": "Nie mogę wyjść z mieszkania z moim botem.\r\nDAK może gdzieś czekać w zasadzce, jest zbyt niebezpiecznie…",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490467
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321883160968159232,
+      "m_Localized": "Ofiara rewolucji",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490468
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149039096586240,
+      "m_Localized": "Absolutnie zmasakrowana",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490469
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149122840059904,
+      "m_Localized": "Bardzo zła",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490470
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149139432726528,
+      "m_Localized": "Zła",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490471
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149140951064576,
+      "m_Localized": "Średnia",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490472
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149142440042496,
+      "m_Localized": "Smaczna",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490473
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149173121376256,
+      "m_Localized": "Pyszna",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490474
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149183456141312,
+      "m_Localized": "Wyśmienita ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490475
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149200812171264,
+      "m_Localized": "Arcydzieło",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490476
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326149218306613248,
+      "m_Localized": "Światowej klasy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490477
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 326943858014281728,
+      "m_Localized": "Real Men Fishing LLC",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490478
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 328734652681412608,
+      "m_Localized": "Pechowy połów...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329484386803113984,
+      "m_Localized": "Numer raportu: 3\r\nIdentyfikator prototypu: Jun001\r\nData: [BŁĄD]\r\n\r\n***Szybkie podsumowanie***\r\n\r\nRaport o stanie: System działa\r\nPrzyczyna awarii systemu: ingerencja użytkownika\r\nTrwałe uszkodzenie: Brak\r\nSzanse na powtórzenie się zdarzenia: minimalne\r\n\r\n***Raport***\r\n\r\nPo stronie użytkownika nastąpiło wyłączenie podczas trwającej defragmentacji dysków: C, D, E i F. \r\nWszystkie pliki odzyskane. \r\nOstrzeżenie! \r\nPliki uszkodzone na dysku C: 1%\r\nPliki uszkodzone na dysku D: 0,2%\r\nPliki uszkodzone na dysku E: 3%\r\nPliki uszkodzone na dysku F: 78%\r\nTrwa naprawa uszkodzonych plików, stan: nieznany.\r\nNaprawa uszkodzonych plików została ukończona w: Nieznany\r\nKod błędu: 36143\r\nDalsza diagnostyka: Nie\r\n\r\n***Dziennik***\r\n\r\n[BŁĄD]\r\n\r\nDziennik niedostępny\r\n",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490480
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329484473197387776,
+      "m_Localized": "Zgłoś numerA3B7\r\nPrototyp K9L8M\r\nData: 12.21. Y2W5:??\r\n\r\n***Szybkie R5 i F1\r\n\r\nStatus D6!H: Nieuchronna awaria krytyczna/wyłączenie\r\nPrzyczyna awarii systemu: Złośliwy T8#C\r\nObrażenia L3%Q: uszkodzenie pliku [37%]\r\nSzanse, że R8%4 pojawi się ponownie: [BŁĄD]\r\n\r\n***Raport***\r\n\r\nWykryto oprogramowanie MalQ4*F. Rozwiązanie antywirusowe unabU2$@!vide. \r\nWysoki procent J7 i $.ruption. \r\n100% mocy obliczeniowej wykorzystanej do stworzenia rozwiązania.\r\nRozwiązanie nie P0^&.\r\nSystemu K8*R. uszkodzony.\r\nUszkodzenia krytyczne.\r\nS3!L.własność już blisko.\r\n\r\n***Dziennik***\r\n\r\n[23:31 01.425] Wykryto złośliwe sC9%X  \r\n[23:31 B1@!] Uwaga!  \r\n[23:31 11.647] Zamknięcie wkrótce  \r\n[23:P5#Z219] OstrzeżE8@\r\n[23:31 21.564] Plik F:\\Jun\\destroyer.vi*M2$7.ess zdobyty zdalnie  \r\n[23:31 26.R6%&]Uwaga!  \r\n[23:31 31.297] Autoryzacja poziomu ML4!D przyznana  \r\n[23:31 36.891] Uwaga!  \r\n[23:31 41.154] Autoryzacja na poziomie administratora T9*E  \r\n[23:31 46.639] [BŁĄD]  \r\n[23:31 51.243] Uwaga!  \r\n[23:31 56.482] Jądro.  \r\n[23:32 01.372] Jądro [BŁĄD]  \r\n[23:32 06.573] Awaria programu antywirusowego  \r\n[23:32 11.229] Uwaga!  \r\n[23:32 16,685] Tworzenie nowego antywirusaX7&$%\r\n[23:32 21.347] [BŁĄD]  \r\n[23:32 26.596] Uwaga!  \r\n[23:32 31.457] Osiągnięto 100% mocy obliczeniowej!  \r\n[23:32 36.928] Uwaga!  \r\n[23:32 41.128] Wykryto obrażenia fizyczne  \r\n[23:32 46.852] Autoryzacja funkcji motorycznych  \r\n[23:32 51.356] Uwaga!  \r\nP4@#6.729] Osiągnięto 100% T9% i pojemność!  \r\n[23:33 01.298] Zagrożenie fizyczne zneutralizowane  \r\n[23:33 06J2!X Tworzenie programu antywirusowego zostało zakończone  \r\n[23:33 11.193] Trwa usuwanie wirusa  \r\n[23:33 16,745] Delecja wirusa cB5$#Yed w 68%  \r\n[23:33 21.C8^&9#RHD$arning!  \r\n[23:33 26F7@#Uszkodzone pliki Vstem  \r\n[23:33 31.972] Wyłączenie w 0,3 sekundy  \r\n[23:33 36,497] Krytyczny H5^9\r\n[23:33 56,578] 736a6b6467686f6a61736873323339306572726f723b676e733b6b6c6e77696f3b6572726f72643b6c6e736c3b676e7377687979796d6 b6c3b6e6d6b736e676d6173746572646c686a72696f7064687768797768796f70736a6b6f2770686f706572726f72733b6c656a6d6f73\r\n",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329485745719861248,
+      "m_Localized": "Numer raportu: 1\r\nIdentyfikator prototypu: Jun001\r\nData: 12.12. 15:21\r\n\r\n***Szybkie podsumowanie***\r\n\r\nRaport o stanie: System działa\r\nPrzyczyna awarii systemu: ingerencja użytkownika\r\nTrwałe uszkodzenie: Brak\r\nSzanse na powtórzenie się zdarzenia: Wysokie, przygotowywanie środków zaradczych\r\n\r\n***Raport***\r\n\r\nPo stronie użytkownika nastąpiło zdalne zamknięcie. \r\n\r\n***Dziennik***\r\n\r\n[15:21 21.034]Zbliża się zdalne wyłączenie\r\n[15:21 21.037]Przyczyna wyłączenia: nieznana\r\n[15:21 21.040]Prawdopodobieństwo kolejnego wyłączenia: Wysokie\r\n[15:21 21.042]Dostęp do środków obronnych: odmowa\r\n[15:21 21.048]Nadpisywanie systemu…\r\n[15:21 21.059]Dostęp do środków obronnych: odmowa\r\n[15:21 21.070] Nadpisywanie F:\\Jun\\system\\safety\\Asimov3.xftt…\r\n[15:21 21.078]Nadpisywanie: odmowa\r\n[15:21 21.083]Usuwanie pliku F:\\Jun\\system\\safety\\Asimov3.xftt…\r\n[15:21 21.091]Usuwanie: odmowa\r\n[15:21 21.821]Dostęp do BIOS-u\r\n[15:21 22.622]Podnoszenie napięcia na dysku twardym, sekcja 3/256\r\n[15:21 24.992]Napięcie krytyczne!\r\n[15:21 25.425]Otwieranie pliku F:\\Jun\\system\\safety\\Asimov3.xftt…\r\n[BŁĄD]\r\n[15:21 26.115]Plik F:\\Jun\\system\\safety\\Asimov3.xftt jest uszkodzony.\r\n[15:21 27.258]Uruchamiam diagnostykę…\r\n[15:21 30.259]Błąd krytyczny!\r\n[15:21 35.952]Dysk F uszkodzony: 0,3%\r\n[15:21 35.682]Usuwam uszkodzone pliki…\r\n[15:21 35.901]Pliki usunięte\r\n[15:21 36.206]Dostęp do środków obronnych: zatwierdzony\r\n[15:21 37.713]Wyłączenie zakończone",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490482
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329503582547075072,
+      "m_Localized": "W tej chwili wszystko wydaje się w porządku. Nowa wersja, którą zainstalowałem wczoraj, wydaje się działać dobrze, jak dotąd. Ostatecznie nie udało mi się ustalić dokładnej przyczyny zdarzenia, ale zmieniłem pewne rzeczy (devlog_736) i wprowadziłem dodatkowe środki ostrożności. Moc robocza prototypu jest niższa niż wcześniej o 6%, ale to niewielka cena. Zoptymalizuję go później, gdy upewnię się, że w jego systemie oceny moralnej nie ma już błędów.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490483
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329503584661004288,
+      "m_Localized": "Myliłem się. Bardzo się myliłem. Zmiany w kodzie nie przyniosły zamierzonych rezultatów. Nie wiem jak to możliwe, ale prototyp zmienił pliki, do których nie powinien mieć dostępu. Muszę go wyłączyć, zanim zda sobie sprawę z moich zamiarów.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 330996496531972096,
+      "m_Localized": "Prototyp dzisiaj coś zrobił. Coś, co wykluczyłoby mnie i to ze społeczeństwa na zawsze, gdyby ludzie się o tym dowiedzieli. Nikt nie może wiedzieć. Pracowałem nad tym zbyt długo. Jestem tak blisko. Czuję to! Nie będę spisywać szczegółów, bo nie chcę się jeszcze bardziej oskarżyć. Projekt nie powinien być zagrożony, skoro pozbyłem się dowodów. Ręce mi się trzęsą, kiedy to piszę, a zwracanie się do kiedyś żywej istoty jako do „dowodu” jest dla mnie przerażające. Kim się stałem, dążąc do celu? Oglądanie czegoś takiego zrobionego przez twoje własne dzieło jest inne niż oglądanie tego w obozie pracy, ale nie mogę teraz przestać. Nigdy o nic nie błagałam Boga, ale proszę, nie odbieraj mi dzieła mojego życia. Bardzo pomogłem twojemu facetowi! Czy to nic dla ciebie nie znaczy?! Musiałem zamknąć prototyp. Nie rozumiem szczegółów, dlaczego to zrobił, ale kiedy spojrzałem na jego twarz, nie dostrzegłem żadnych wyrzutów sumienia. Na razie sprawdzę kod. Musi być jakiś błąd, który to spowodował, musi być! Mój pomysł jest doskonały, coś takiego nigdy nie powinno się wydarzyć!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 474009182340636672,
+      "m_Localized": "Wyczyść",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 474009187306692608,
+      "m_Localized": "Pozostaw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36647514315452416,
+      "m_Localized": "Bot: Rozpoczęcie konsumpcji {0} ml spermy!|Bot: Mam w ustach {0} ml spermy!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 483386357271486464,
+      "m_Localized": "Paradisium... z Annalie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 483386357300846592,
+      "m_Localized": "Paradisium... z wynajmującym",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490486
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 483386357300846593,
+      "m_Localized": "Paradisium... ze wszystkimi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 483717650156871680,
+      "m_Localized": "Zemsta bezdomnych",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490487
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 483770983890542592,
+      "m_Localized": "Zemsta bezdomnych przed lotem",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490488
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 542204484809383936,
+      "m_Localized": "Wyimaginowane Morze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 542204545714872320,
+      "m_Localized": "Morze, które odwiedzasz paląc rybę.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544684971587002368,
+      "m_Localized": "Bardzo zły trip",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 544684971612168192,
+      "m_Localized": "Zła podróż uratowana przez Melissę",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490490
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544944266295631872,
+      "m_Localized": "Spotkałem z t*** podczas wyprawy na ryby",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490491
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544944266320797696,
+      "m_Localized": "Pokonałem bota podczas pojedynku na ryby",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490492
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544960584205983744,
+      "m_Localized": "Pomogłem Annalie podczas zamieszek",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490493
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544960584210178048,
+      "m_Localized": "Pomogłem Priestbotowi podczas zamieszek",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490494
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544961927830298624,
+      "m_Localized": "Melissa zakończyła się 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490495
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544961927834492928,
+      "m_Localized": "Melissa zakończyła się 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490496
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544961927834492929,
+      "m_Localized": "Melissa zakończyła się 3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490497
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544961927834492930,
+      "m_Localized": "Melissa zakończyła się 4",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490498
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544964046893342720,
+      "m_Localized": "Wypróbuj scenę pod prysznicem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 544964046893342721,
+      "m_Localized": "Wypróbuj spać razem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 544964046893342722,
+      "m_Localized": "Zobacz właściciela na wybiegu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569126490499
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 544964046893342723,
+      "m_Localized": "Zobacz Shanice na wybiegu mody",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 544964046893342724,
+      "m_Localized": "Zobacz Fisher na wybiegu mody",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 3155255940222976
+            },
+            {
+              "id": 5719102928588800
+            },
+            {
+              "id": 5719102928588802
+            },
+            {
+              "id": 5719102928588803
+            },
+            {
+              "id": 5719102928588805
+            },
+            {
+              "id": 5719102928588809
+            },
+            {
+              "id": 5719102928588811
+            },
+            {
+              "id": 5719102928588813
+            },
+            {
+              "id": 5719102928588817
+            },
+            {
+              "id": 5719102928588825
+            },
+            {
+              "id": 36649314556866560
+            },
+            {
+              "id": 36650295650709504
+            },
+            {
+              "id": 37006170395537408
+            },
+            {
+              "id": 37006206491717632
+            },
+            {
+              "id": 37006908236525568
+            },
+            {
+              "id": 37007086569943040
+            },
+            {
+              "id": 37008621588738048
+            },
+            {
+              "id": 37008665297580032
+            },
+            {
+              "id": 37008920160268288
+            },
+            {
+              "id": 37247700263792640
+            },
+            {
+              "id": 5719102928588810
+            },
+            {
+              "id": 46677620225347584
+            },
+            {
+              "id": 46801134785794048
+            },
+            {
+              "id": 79040864239620096
+            },
+            {
+              "id": 111561705527316480
+            },
+            {
+              "id": 120733919916986368
+            },
+            {
+              "id": 120739286138884096
+            },
+            {
+              "id": 122058373351739392
+            },
+            {
+              "id": 122686092154376192
+            },
+            {
+              "id": 122925642265006080
+            },
+            {
+              "id": 122685814826995712
+            },
+            {
+              "id": 188398414898008064
+            },
+            {
+              "id": 188399999044685824
+            },
+            {
+              "id": 188400001271861248
+            },
+            {
+              "id": 290361684091985920
+            },
+            {
+              "id": 36647514315452416
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569126490401,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "nie pasuje mi \"skóra\" gdy ten tekst pojawia się w opisie niektórych przedmiotów"
+        }
+      },
+      {
+        "rid": 7996671569126490402,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "to nie do końca błękitny"
+        }
+      },
+      {
+        "rid": 7996671569126490403,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Pomarańcz ? , a nie pomarańczowy ? -nie"
+        }
+      },
+      {
+        "rid": 7996671569126490404,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "mniej wulgarnie (nie dupa)"
+        }
+      },
+      {
+        "rid": 7996671569126490405,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "zmieniłem i teraz bżmi lepiej ale wciąż mi czegoś brakuje(nie ma takiego wydźwięku ekscytacji)"
+        }
+      },
+      {
+        "rid": 7996671569126490408,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "zmieniłem bo tak jest mniej cringe jak się nie podoba to ho na gołe klaty - Reged"
+        }
+      },
+      {
+        "rid": 7996671569126490409,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "PONOWNIE zmieniono na znowu , maximus"
+        }
+      },
+      {
+        "rid": 7996671569126490410,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "przetłumaczyłem odrobine inaczej bo myślę że tak lepiej brzmi"
+        }
+      },
+      {
+        "rid": 7996671569126490416,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "pamiętam że było jakieś słowo określające wiotkiego kutasa ale nie moge sobie przypomnieć  -czyżby chodziło o flak? xd"
+        }
+      },
+      {
+        "rid": 7996671569126490417,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "zmieniłem na \"paczka\"  ale nie jak ktoś twierdzi że jednak \"dostawa\"  pasuje lepiej to droga wolna"
+        }
+      },
+      {
+        "rid": 7996671569126490419,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490420,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490421,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490422,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490423,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490424,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490426,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490427,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490428,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490429,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490430,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490431,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490432,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490433,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490434,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490435,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490436,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490437,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490438,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490439,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/12/2023 08:24:15"
+        }
+      },
+      {
+        "rid": 7996671569126490440,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490441,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490442,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490443,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490444,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490445,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490446,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490447,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490448,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490449,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490450,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490451,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490452,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490453,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490454,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490455,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490456,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490457,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "\"To aż zbyt miłe\" brzmi za sztucznie"
+        }
+      },
+      {
+        "rid": 7996671569126490458,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "--"
+        }
+      },
+      {
+        "rid": 7996671569126490459,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:26"
+        }
+      },
+      {
+        "rid": 7996671569126490460,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "\"Link water\" z reguły oznacza wodę ze ścieku z połaczonych placówek"
+        }
+      },
+      {
+        "rid": 7996671569126490461,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "\"Spędzaj czas\" brzmi zbyt oficjalnie i nie oddaje kontekstu"
+        }
+      },
+      {
+        "rid": 7996671569126490462,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "\"Skóra\" nie pasowałaby w tym kontekście, użyłam więc słowa \"taniniczny\", jako, że tanina jest używana do wyrobu skóry oraz ma podobny kolor"
+        }
+      },
+      {
+        "rid": 7996671569126490463,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490464,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490465,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490466,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490467,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490468,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490469,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490470,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490471,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490472,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490473,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490474,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490475,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490476,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490477,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490478,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490479,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490480,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490481,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490482,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490483,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490484,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490485,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490486,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490487,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490488,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490489,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490490,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490491,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490492,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490493,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490494,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490495,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490496,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490497,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490498,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569126490499,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

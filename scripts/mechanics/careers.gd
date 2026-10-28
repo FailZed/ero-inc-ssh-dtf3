@@ -86,6 +86,7 @@ func _train_minutes(skill: String) -> void:
 	if accumulated >= 10: sim.services.character.execute("train", {"skill": skill, "xp": 1})
 
 func _stream(id: String, minutes: int) -> Dictionary:
+	var modifiers: Dictionary = sim.services.computer.stream_modifiers(id) if sim.services.has("computer") else {"quality":0.0,"audience_scale":1.0}
 	var topic := definition("stream_topics", id)
 	if topic.is_empty() or minutes < 15 or minutes > 240: return Rules.fail("invalid_stream")
 	if not "computer" in sim.state.world.equipment: return Rules.fail("missing_computer")
@@ -110,8 +111,8 @@ func _stream(id: String, minutes: int) -> Dictionary:
 		var minute_key := "stream:%d" % int(sim.state.clock.day_index)
 		sim.state.careers.workdays[minute_key] = int(sim.state.careers.workdays.get(minute_key, 0)) + 1
 		var mastery := Formulas.mastery(float(sim.state.player.skills.get(skill_id, 0)), float(rules.get("skill_scale", 200)))
-		quality = clampf(20.0 + mastery * 50.0 + sim.services.character.effective_stat("charisma") * 2.0, 0, 100)
-		var audience := (quality + sqrt(float(channel.followers)) * float(rules.get("audience_followers_scale", 4))) / 60.0
+		quality = clampf(20.0 + mastery * 50.0 + sim.services.character.effective_stat("charisma") * 2.0+float(modifiers.quality), 0, 100)
+		var audience := (quality + sqrt(float(channel.followers)) * float(rules.get("audience_followers_scale", 4))) / 60.0 * float(modifiers.audience_scale)
 		exposure += audience
 		var growth := float(channel.get("growth_credit", 0)) + audience * float(topic.get("growth", 0.05))
 		channel.followers += int(floor(growth))

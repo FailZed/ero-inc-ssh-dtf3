@@ -1,0 +1,138 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 5017138534136241537
+  },
+  "m_Name": "Dutch (nl)",
+  "m_Identifier": {
+    "m_Code": "nl"
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 0
+      },
+      {
+        "rid": 1
+      },
+      {
+        "rid": 2
+      },
+      {
+        "rid": 3
+      }
+    ]
+  },
+  "m_LocaleName": "Dutch (nl)",
+  "m_CustomFormatCultureCode": "",
+  "m_UseCustomFormatter": 0,
+  "m_SortOrder": 13,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "FallbackLocale",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Locale": {
+            "m_FileID": 0,
+            "m_PathID": 7096932738371413085
+          }
+        }
+      },
+      {
+        "rid": 1,
+        "type": {
+          "class": "LocaleName",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "name": "Nederlands",
+          "nameInEnglish": "Dutch"
+        }
+      },
+      {
+        "rid": 2,
+        "type": {
+          "class": "LocaleTranslationProgress",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "fullProgress": 1.0,
+          "fullProgressMT": 0.9864204525947571
+        }
+      },
+      {
+        "rid": 3,
+        "type": {
+          "class": "LocaleFontMetadata",
+          "ns": "",
+          "asm": "GameAssembly"
+        },
+        "data": {
+          "mainFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "commisionerFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "notoSansFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "fontartoFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          },
+          "monospaceFontRef": {
+            "resourcesReferenceLoader": {
+              "path": "",
+              "assetGuid": "",
+              "assetLocalId": 0,
+              "isEmpty": 1,
+              "isInResourcesFolder": 0,
+              "isMainAsset": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

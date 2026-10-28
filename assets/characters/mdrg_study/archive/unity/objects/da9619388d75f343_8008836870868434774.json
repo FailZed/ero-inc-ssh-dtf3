@@ -1,0 +1,1332 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180685
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Onun adını söylemeyi dene",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393801
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Onunla konuş",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393802
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Ona seslenmeyi dene",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Onunla konuşmayı dene",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Merhaba de",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "İçimde onunla konuşmamı söyleyen garip bir his var",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Hadi onunla konuşalım",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Onu nereye saklayabilirim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Robota bir bakalım",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393803
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "İletişim kurmayı dene ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "Kiram ne olacak?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Endişeliyim...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "O da neydi?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Acaba fiyatı ne kadardır?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393804
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Seks hayatım",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Robot ile konuş",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393805
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Robot ile konuş",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393806
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Robot ile konuş",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393807
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Odam hakkında ne düşündüğünü sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Acaba benim hakkımda ne düşünüyor...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Belki de matematik işlemleri yapabiliyordur",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393808
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Nasıl kolay para kazanılacağını sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Hava durumunu sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "\"Şey\"imin boyutu hakkında ne düşündüğünü sor...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393809
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "Kahve makinesi olayı hakkında",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Beni kızdırıyor...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Sinirimi bozuyor...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Hadi konuşmayı deneyelim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Biraz konuş",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393810
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Onunla konuş",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393811
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Seninle konuşmasını söyle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Ondan kibarca konuşmasını iste\n",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393812
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Sıkıldım…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Haydi onunla biraz vakit gerçirelim",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393813
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Hadi sohbet edelim!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Bazı varoluşsal sorular sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Önemsiz bir şey sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Siyaset hakkında soru sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Bütün acıların kaynağını sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Biraz oyun oynayasım var",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393814
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Haydi kartlarla oynayalım",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393815
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "Kelime türetmece zamanı!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393816
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Saat biraz geç ama onunla konuşmak istiyorum",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393817
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": "Galiba konuşmak istiyor...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393818
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Onu sevdiğini söyle!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393819
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Robot ile flört et <3",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Ona daha iyi davranmalıyım...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Duyguları hakkında soru sor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393820
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Bir seksbotunun ilgi alanları var mı ki?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393821
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Seksbotları hiç acıkır mı ki?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393822
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Ona dokunmak istiyorum...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Bir şey mi unuttum?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "Robot'un zeka seviyesi hakkında...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393823
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Bir robot satranç oynayabilir mi?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Başka bir oyun mu denesem?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Onu hangi oyunda yenebileceğimi biliyorum",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393824
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Robot garip görünüyor...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393825
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Benim hakkımda ne hissettiğini merak ediyorum…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Robot derin düşüncelere dalmış görünüyor...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393826
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Sanırım benden bir şey istiyor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Artık iki bacağı da olduğuna göre...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": "Robota dışarı çıkmanın riskleri hakkında soru sormalıyım.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393827
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Onun dışarı çıkmasının mümkün olup olmadığını sormalıyım",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "Seksbotları hakkında",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393828
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Belki aslında konuşabiliyordur?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Haydi tekrar konuşalım",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Bir şeyler yanlış gibi...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393829
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Evcil hayvanlar hakkında düşünceleri neler?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393830
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Onu bir randevuya davet etmeliyim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Onunla birlikte film izlemek istiyorum",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393831
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Bu tuhaf koku da ne?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Cadılar Bayramı süsleri hakkında soru sor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393832
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "Şu şirin örümcek peluşuna ne dersin?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393833
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Ona Shanice'in gelip gelemeyeceğini sormalıyım",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "Peki ya Karaoke?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Ona kasiyer konusunda ne yapman gerektiğini sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Onunla tekrar konuşmayı dene",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Melissa ve onun 'eksik' parçaları hakkında soru sor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393834
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Evsiz'in robotlara karşı hislerini tartış",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Ona tamirlerden sonra nasıl hissettiğini sor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "{f_botName} ile haberleri izle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180685
+          },
+          {
+            "rid": 7996671569124393835
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Hangi süper gücü isterdin?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Başka bir korku hikayesi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Ben dışarıdayken ne yapıyorsun?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Eğer bir iş bulabilseydin bu ne olurdu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "İnsan olmak ister miydin?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Ev sahibinden intikam",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393836
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Ona sorunlu komşuyla nasıl başa çıkacağını sorun",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393837
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Sizce ölümden sonra ne olur?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393838
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Zombi kıyameti durumunda bir planınız var mı?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393839
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Bir rol yapma oyunu deneyelim",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393840
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Annalie bir gün bir erkek arkadaş bulacak mı?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393841
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6437392580223180685,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124393801,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Diyalog kısmının tamamı Emyrun#0731 tarafından çevirilmiş/düzeltilmiştir, bir hata vb. bulursanız bana yazabilirsiniz.\n\nupdate ile eklenen yerleride ben yaptım.\n-Mugnareff                                                                                                                                                                                             küçük hataları düzelttim                                                                 -Egoslavin         Yeni Ocakta gelen güncellemeye ben bakıyorum - Emoiso                                                                           "
+        }
+      },
+      {
+        "rid": 7996671569124393802,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": " "
+        }
+      },
+      {
+        "rid": 7996671569124393803,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393804,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393805,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393806,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393807,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393808,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize egoslavin tarafından değiştirilmiştir"
+        }
+      },
+      {
+        "rid": 7996671569124393809,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Kanka ben direkt çevirdim bunu, anlayan anlasın diye. -Kray"
+        }
+      },
+      {
+        "rid": 7996671569124393810,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "küçük düzeltmeler yapıldı -Kray"
+        }
+      },
+      {
+        "rid": 7996671569124393811,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize egoslavin tarafından değiştirilmiştir"
+        }
+      },
+      {
+        "rid": 7996671569124393812,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Emoiso tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393813,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Düzeltmeler yapıldı -Kray"
+        }
+      },
+      {
+        "rid": 7996671569124393814,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393815,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "düzeltmeler yapıldı -Kray"
+        }
+      },
+      {
+        "rid": 7996671569124393816,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393817,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "düzeltmeler yapıldı -Kray"
+        }
+      },
+      {
+        "rid": 7996671569124393818,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi     Düzeltmeler yapıldı -Kray"
+        }
+      },
+      {
+        "rid": 7996671569124393819,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393820,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "düzeltmeler yapıldı -kray"
+        }
+      },
+      {
+        "rid": 7996671569124393821,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "düzeltmeler yapıldı -kray"
+        }
+      },
+      {
+        "rid": 7996671569124393822,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393823,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393824,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393825,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393826,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393827,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393828,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393829,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393830,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393831,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393832,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393833,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize markothetiefling tarafından değiştirildi"
+        }
+      },
+      {
+        "rid": 7996671569124393834,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize egoslavin tarafından değiştirilmiştir"
+        }
+      },
+      {
+        "rid": 7996671569124393835,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "bu dize egoslavin tarafından değiştirilmiştir"
+        }
+      },
+      {
+        "rid": 7996671569124393836,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393837,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393838,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393839,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393840,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393841,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

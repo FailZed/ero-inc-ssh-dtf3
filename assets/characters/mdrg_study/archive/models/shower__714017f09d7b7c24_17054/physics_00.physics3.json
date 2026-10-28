@@ -1,0 +1,1056 @@
+{
+  "Version": 3,
+  "Meta": {
+    "PhysicsSettingCount": 12,
+    "TotalInputCount": 40,
+    "TotalOutputCount": 12,
+    "VertexCount": 24,
+    "EffectiveForces": {
+      "Gravity": {
+        "X": 0.0,
+        "Y": -1.0
+      },
+      "Wind": {
+        "X": 0.0,
+        "Y": 0.0
+      }
+    },
+    "PhysicsDictionary": [
+      {
+        "Id": "PhysicsSetting1",
+        "Name": "BoobsX"
+      },
+      {
+        "Id": "PhysicsSetting2",
+        "Name": "Cum"
+      },
+      {
+        "Id": "PhysicsSetting3",
+        "Name": "BoobsY"
+      },
+      {
+        "Id": "PhysicsSetting4",
+        "Name": "Ribcage"
+      },
+      {
+        "Id": "PhysicsSetting5",
+        "Name": "Hair"
+      },
+      {
+        "Id": "PhysicsSetting6",
+        "Name": "Tongue"
+      },
+      {
+        "Id": "PhysicsSetting7",
+        "Name": "ButtLY"
+      },
+      {
+        "Id": "PhysicsSetting8",
+        "Name": "ButtRY"
+      },
+      {
+        "Id": "PhysicsSetting9",
+        "Name": "ButtRZ"
+      },
+      {
+        "Id": "PhysicsSetting10",
+        "Name": "ButtLZ"
+      },
+      {
+        "Id": "PhysicsSetting11",
+        "Name": "ButtLX"
+      },
+      {
+        "Id": "PhysicsSetting12",
+        "Name": "ButtRX"
+      }
+    ],
+    "Fps": 120.0
+  },
+  "PhysicsSettings": [
+    {
+      "Id": "PhysicsSetting1",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 70.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "BoobPhysicsX"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 13.199999809265137
+          },
+          "Mobility": 0.9200000166893005,
+          "Delay": 0.8999999761581421,
+          "Acceleration": 3.0,
+          "Radius": 13.199999809265137
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -60.0,
+          "Default": 0.0,
+          "Maximum": 60.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting2",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 70.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "CumPhysics"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 100.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 3.5999999046325684
+          },
+          "Mobility": 0.9100000262260437,
+          "Delay": 0.8999999761581421,
+          "Acceleration": 3.0,
+          "Radius": 3.5999999046325684
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -60.0,
+          "Default": 0.0,
+          "Maximum": 60.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting3",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 70.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "BoobPhysicsY"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 100.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 13.199999809265137
+          },
+          "Mobility": 0.9200000166893005,
+          "Delay": 0.8999999761581421,
+          "Acceleration": 3.0,
+          "Radius": 13.199999809265137
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -60.0,
+          "Default": 0.0,
+          "Maximum": 60.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting4",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 25.0,
+          "Type": "X",
+          "Reflect": true
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 25.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "RibcagePhysicsRotation"
+          },
+          "VertexIndex": 1,
+          "Scale": 2.0,
+          "Weight": 100.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 7.0
+          },
+          "Mobility": 0.9100000262260437,
+          "Delay": 0.8999999761581421,
+          "Acceleration": 1.5,
+          "Radius": 7.0
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -5.0,
+          "Default": 0.0,
+          "Maximum": 5.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting5",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamHeadY"
+          },
+          "Weight": 30.0,
+          "Type": "Angle",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 20.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamHeadX"
+          },
+          "Weight": 50.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "HairPhysics"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 100.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 6.800000190734863
+          },
+          "Mobility": 0.949999988079071,
+          "Delay": 0.8999999761581421,
+          "Acceleration": 1.5,
+          "Radius": 6.800000190734863
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -50.0,
+          "Default": 0.0,
+          "Maximum": 50.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting6",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "RibcagePhysicsRotation"
+          },
+          "Weight": 25.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 10.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamHeadX"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamHeadY"
+          },
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "TonguePhysics"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 100.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 3.799999952316284
+          },
+          "Mobility": 0.949999988079071,
+          "Delay": 0.800000011920929,
+          "Acceleration": 1.5,
+          "Radius": 3.799999952316284
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -20.0,
+          "Default": 0.0,
+          "Maximum": 20.0
+        },
+        "Angle": {
+          "Minimum": -30.0,
+          "Default": 0.0,
+          "Maximum": 30.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting7",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtPressed"
+          },
+          "Weight": 10.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLY"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 2.9000000953674316
+          },
+          "Mobility": 0.9800000190734863,
+          "Delay": 0.800000011920929,
+          "Acceleration": 3.0,
+          "Radius": 2.9000000953674316
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting8",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtPressed"
+          },
+          "Weight": 10.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRY"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 3.0
+          },
+          "Mobility": 0.949999988079071,
+          "Delay": 0.800000011920929,
+          "Acceleration": 3.0,
+          "Radius": 3.0
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting9",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtPressed"
+          },
+          "Weight": 20.0,
+          "Type": "X",
+          "Reflect": true
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLY"
+          },
+          "Weight": 5.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRY"
+          },
+          "Weight": 20.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRZ"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 2.9000000953674316
+          },
+          "Mobility": 0.9800000190734863,
+          "Delay": 0.699999988079071,
+          "Acceleration": 3.0,
+          "Radius": 2.9000000953674316
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting10",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtPressed"
+          },
+          "Weight": 20.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLY"
+          },
+          "Weight": 20.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRY"
+          },
+          "Weight": 5.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLZ"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 3.0
+          },
+          "Mobility": 0.9800000190734863,
+          "Delay": 0.699999988079071,
+          "Acceleration": 3.0,
+          "Radius": 3.0
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting11",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtPressed"
+          },
+          "Weight": 10.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 15.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLY"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRY"
+          },
+          "Weight": 10.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLZ"
+          },
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRZ"
+          },
+          "Weight": 15.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLX"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 1.5
+          },
+          "Mobility": 0.9800000190734863,
+          "Delay": 0.699999988079071,
+          "Acceleration": 3.0,
+          "Radius": 1.5
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    },
+    {
+      "Id": "PhysicsSetting12",
+      "Input": [
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtMovement"
+          },
+          "Weight": 30.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ButtPressed"
+          },
+          "Weight": 10.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamBotBodyStraighten"
+          },
+          "Weight": 15.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsLZ"
+          },
+          "Weight": 5.0,
+          "Type": "X",
+          "Reflect": false
+        },
+        {
+          "Source": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRZ"
+          },
+          "Weight": 15.0,
+          "Type": "X",
+          "Reflect": false
+        }
+      ],
+      "Output": [
+        {
+          "Destination": {
+            "Target": "Parameter",
+            "Id": "ParamButtPhysicsRX"
+          },
+          "VertexIndex": 1,
+          "Scale": 1.0,
+          "Weight": 50.0,
+          "Type": "Angle",
+          "Reflect": false
+        }
+      ],
+      "Vertices": [
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "Mobility": 1.0,
+          "Delay": 1.0,
+          "Acceleration": 1.0,
+          "Radius": 0.0
+        },
+        {
+          "Position": {
+            "X": 0.0,
+            "Y": 1.4500000476837158
+          },
+          "Mobility": 0.9800000190734863,
+          "Delay": 0.699999988079071,
+          "Acceleration": 3.0,
+          "Radius": 1.4500000476837158
+        }
+      ],
+      "Normalization": {
+        "Position": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        },
+        "Angle": {
+          "Minimum": -10.0,
+          "Default": 0.0,
+          "Maximum": 10.0
+        }
+      }
+    }
+  ]
+}

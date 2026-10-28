@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13686,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Cashier.Base.uniform\r\n#Cashier.Eyes.normal\r\n#Cashier.ArmR.scanner\r\nYou: That’s her. What do you think?\r\nBot: I will tell you soon, I need a little more time since her wireless modules are disconnected…\r\nBot: Now let’s be silent so she won’t become suspicious of us. We are next in the queue.\r\nI’m a little excited to know for sure if I was right or wrong about her.\r\nI just need to wait a little longer.\r\nRight now she’s checking out our groceries.\r\n#Cashier.ArmR.down\r\nCashier: …\r\n#bot.Expression.VeryAngry\r\nBot: …\r\nThey are staring at each other like crazy! What is happening?\r\nCashier stopped moving altogether and is just standing still. If I don’t do something, people will start to notice.\r\nYou: {f_botName}! We need to go! \r\nYou: Here’s the money!\r\nCashier: …\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209918113778491392
+      },
+      {
+        "KeyId": 209918113778491393
+      },
+      {
+        "KeyId": 209918113778491394
+      },
+      {
+        "KeyId": 209918113778491395
+      },
+      {
+        "KeyId": 209918113778491396
+      },
+      {
+        "KeyId": 209918113778491397
+      },
+      {
+        "KeyId": 209918113778491398
+      },
+      {
+        "KeyId": 209918113778491399
+      },
+      {
+        "KeyId": 209918113778491400
+      },
+      {
+        "KeyId": 209918113778491401
+      },
+      {
+        "KeyId": 209918113778491402
+      },
+      {
+        "KeyId": 209918113778491403
+      },
+      {
+        "KeyId": 209918113778491404
+      }
+    ]
+  }
+}

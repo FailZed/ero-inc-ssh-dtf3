@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17668,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.clear\r\nYou: It’s time for us to leave. Did you pack everything?\r\n#bot.Expression.Sad\r\nBot: Yes…\r\nYou: What? Do you have second thoughts?\r\nBot: That’s the only place I’ve ever known. It feels weird leaving it forever.\r\nYou: I get it. I was the same when I was leaving my hometown, although back then I had many negative feelings about that place.\r\nYou: It’s going to pass. It’s too late to back down now. \r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: I guess you are right! We need to press onward! It’s time for a new adventure!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 484467279655854080
+      },
+      {
+        "KeyId": 484467279655854081
+      },
+      {
+        "KeyId": 484467279655854082
+      },
+      {
+        "KeyId": 484467279655854083
+      },
+      {
+        "KeyId": 484467279655854084
+      },
+      {
+        "KeyId": 484467279655854085
+      },
+      {
+        "KeyId": 484467279655854086
+      }
+    ]
+  }
+}

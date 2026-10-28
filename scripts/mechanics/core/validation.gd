@@ -74,6 +74,15 @@ static func catalog_error(catalog: Dictionary) -> String:
 				if not entry.get(field, []) is Array: return "invalid_effects"
 				for effect in entry.get(field, []):
 					if not effect is Dictionary or not effect.get("kind") is String: return "invalid_effect"
+	for quest in catalog.quests.values():
+		if not quest.get("objectives") is Dictionary or quest.objectives.is_empty() or not quest.get("bindings",{}) is Dictionary: return "invalid_quest_definition"
+		for objective in quest.objectives:
+			if (not number(quest.objectives[objective]) or quest.objectives[objective] < 1 or quest.objectives[objective] > 1000000 or int(quest.objectives[objective]) != quest.objectives[objective]): return "invalid_quest_objective"
+		for objective in quest.get("bindings",{}):
+			if not quest.objectives.has(objective) or not quest.bindings[objective] is Array or quest.bindings[objective].is_empty(): return "invalid_quest_binding"
+			for binding in quest.bindings[objective]:
+				if not fields(binding,{"module":"s","operation":"s"}) or not binding.get("args",{}) is Dictionary or not binding.get("result",{}) is Dictionary: return "invalid_quest_binding"
+				if not binding.get("different_days",false) is bool or not binding.get("unique_arg","") is String: return "invalid_quest_binding"
 	for id in catalog.actions:
 		var action: Dictionary = catalog.actions[id]
 		if not action.get("costs", {}) is Dictionary: return "invalid_costs"
@@ -162,6 +171,16 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 			if not catalog.group_projects.has(project) or not fields(group.projects[project], {"progress": "n", "completed": "b"}): return "invalid_group_project"
 	for id in state.journal.quests:
 		if not catalog.quests.has(id) or not fields(state.journal.quests[id], {"status": "s", "objectives": "d", "claimed": "b", "deadline": "n"}): return "invalid_quest"
+	for id in state.journal.quests:
+		var progress: Dictionary = state.journal.quests[id]
+		if not progress.get("seen",{}) is Dictionary: return "invalid_quest_seen"
+		for objective in progress.get("seen",{}):
+			var values: Variant = progress.seen[objective]
+			if not catalog.quests[id].objectives.has(objective) or not values is Array or values.size() > int(catalog.quests[id].objectives[objective]): return "invalid_quest_seen"
+			var unique := {}
+			for value in values:
+				if not value is String or value.is_empty() or unique.has(value): return "invalid_quest_seen"
+				unique[value] = true
 	for condition in state.conditions.values():
 		if not fields(condition, {"id": "s", "target": "s", "started": "n", "stage": "n", "status": "s"}) or not catalog.conditions.has(condition.id): return "invalid_condition"
 	var combat: Dictionary = state.encounters.combat

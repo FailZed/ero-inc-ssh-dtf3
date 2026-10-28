@@ -1,0 +1,79 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13203,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.Happy\r\n#bot.ArmL.UpHi\r\n#Annalie.face.normal\r\nBot: Hello Annalie!\r\n#bot.ArmBoth.DownNormal\r\nYou: Hi.\r\nAnnalie: Welcome you two. \r\nAnnalie: You are my first clients after reopening.\r\nAnnalie: As you can see, the shop is almost back to normal. I will fix all the other small stuff in the meantime.\r\n#Annalie.Eyes.sad+Annalie.Mouth.normal\r\nAnnalie: All these repairs weren’t cheap so I had to open as soon as possible.\r\nYou: It looks great anyway. Compared to what it was back then…\r\n#bot.Expression.sad\r\nBot: Yes. I’m very sorry this happened to you Annalie…\r\n#Annalie.Eyes.smileClosed+Annalie.Mouth.normal\r\nAnnalie: Don’t worry about it. I will get back on my feet in no time.\r\n#Annalie.face.normal\r\nBot: You could’ve asked me for help too, I would come.\r\nAnnalie: I have my pride. I don’t like asking others for help. \r\nBot: Why?\r\n#Annalie.Eyes.normal+Annalie.Mouth.sad\r\nAnnalie: Sorry, but that’s not something I want to talk about.\r\n#Annalie.face.normal\r\nBot: But Anon helped you, right?\r\nAnnalie: I guess that was a little bit different since he offered to help me himself.\r\nYou: Alright {f_botName}, give her some slack.\r\nBot: Ok…\r\nAnnalie: You don’t need to worry about me {f_botName}, as you can see, my shop is more or less fixed. I will be fine.\r\n#bot.Expression.clear\r\nBot: If you say so…\r\nAnnalie: How about you look through my new merchandise? Everything is brand new since all of the old stuff got stolen.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 198908918204600320
+      },
+      {
+        "KeyId": 198908918204600321
+      },
+      {
+        "KeyId": 198908918204600322
+      },
+      {
+        "KeyId": 198908918204600323
+      },
+      {
+        "KeyId": 198908918204600324
+      },
+      {
+        "KeyId": 198908918204600325
+      },
+      {
+        "KeyId": 198908918204600326
+      },
+      {
+        "KeyId": 198908918204600327
+      },
+      {
+        "KeyId": 198908918204600328
+      },
+      {
+        "KeyId": 198908918204600329
+      },
+      {
+        "KeyId": 198908918204600330
+      },
+      {
+        "KeyId": 198908918204600331
+      },
+      {
+        "KeyId": 198908918204600332
+      },
+      {
+        "KeyId": 198908918204600333
+      },
+      {
+        "KeyId": 198908918204600334
+      },
+      {
+        "KeyId": 198908918204600335
+      },
+      {
+        "KeyId": 198908918204600336
+      },
+      {
+        "KeyId": 198908918204600337
+      },
+      {
+        "KeyId": 198908918204600338
+      },
+      {
+        "KeyId": 198908918204600339
+      }
+    ]
+  }
+}

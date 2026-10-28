@@ -1,11 +1,11 @@
-"""Build the pinned Windows Cubism renderer using the local portable toolchain.
+"""Build the pinned Live2D extension on macOS (universal) or Windows (x64).
 
-The framework and build cache stay on E:. No game or save file is modified.
-Run with the research Python environment (scons and pefile are required).
+Uses the official Native SDK, never a DLL from another game's installation.
+SDK terms: https://www.live2d.com/en/sdk/download/native/
+Build dependencies: Xcode Command Line Tools, or Visual Studio C++ Build Tools.
 """
 from pathlib import Path
 import argparse
-import hashlib
 import importlib.util
 import json
 import os
@@ -13,97 +13,113 @@ import re
 import shutil
 import subprocess
 import sys
-import pefile
+import venv
+from runtime import ROOT, CACHE, download, extract, host, digest
 
-PROJECT = Path(__file__).resolve().parents[1]
-RUNTIME = Path('E:/Ai/ComfyUI-EroInc/runtime/cubism')
-SOURCE = RUNTIME/'gd_cubism-0.9.1'
+REVISION = '60e9c61ed20d08ec19b2cb80fb492ce6344927c6'
+CPP_REVISION = 'fbbf9ec4efd8f1055d00edb8d926eef8ba4c2cce'
+SDK_NAME = 'CubismSdkForNative-5-r.1'
+SDK_SHA256 = '073f623fc3fb06c192e68bb5287fdb9dab1952164c2a956dec6d4b45fd342ffb'
+SOURCE = CACHE / 'gd_cubism'
 
 
-def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--core-dll', type=Path, default=Path('E:/factorial-omega-win-64/My Dystopian Robot Girlfriend_Data/Plugins/x86_64/Live2DCubismCore.dll'))
-    p.add_argument('--jobs', type=int, default=6)
-    args = p.parse_args()
-    compiler = RUNTIME/'llvm-mingw-20261020-ucrt-x86_64/bin'
-    if not compiler.is_dir():
-        raise SystemExit('Portable llvm-mingw compiler is missing from '+str(compiler))
-    archive = RUNTIME/'llvm-mingw-20261020-ucrt-x86_64.zip'
-    if archive.exists() and hashlib.sha256(archive.read_bytes()).hexdigest() != 'fd5462b7f5d93b2ff981fcd3f9c7e427e47f3203c64ea91c27bcc444eebd74cd':
-        raise SystemExit('Portable compiler archive checksum mismatch')
-    native_file = SOURCE/'src/gd_cubism_user_model.cpp'
+def checked(*args, **kwargs):
+    subprocess.run([str(arg) for arg in args], check=True, **kwargs)
+
+
+def prepare_source():
+    if not (SOURCE / '.git').is_dir():
+        checked('git', 'clone', '--branch', 'v0.9.1', '--depth', '1', 'https://github.com/MizunagiKB/gd_cubism.git', SOURCE)
+    actual = subprocess.check_output(['git', '-C', str(SOURCE), 'rev-parse', 'HEAD'], text=True).strip()
+    if actual != REVISION:
+        raise RuntimeError('Unexpected gd_cubism source revision; use a fresh build cache')
+    checked('git', '-C', SOURCE, 'submodule', 'update', '--init', '--depth', '1')
+    actual = subprocess.check_output(['git', '-C', str(SOURCE / 'godot-cpp'), 'rev-parse', 'HEAD'], text=True).strip()
+    if actual != CPP_REVISION:
+        raise RuntimeError('Unexpected godot-cpp source revision')
+    native_file = SOURCE / 'src/gd_cubism_user_model.cpp'
     native_text = native_file.read_text(encoding='utf-8')
     if 'D_METHOD("is_initialized")' not in native_text:
         native_text = native_text.replace('// ModelData', '// ModelData\n    ClassDB::bind_method(D_METHOD("is_initialized"), &GDCubismUserModel::is_initialized);', 1)
         native_file.write_text(native_text, encoding='utf-8')
-    sdk = SOURCE/'thirdparty/CubismSdkForNative-5-r.1'
-    lib = sdk/'Core/lib/windows/x86_64/mingw'
-    lib.mkdir(parents=True, exist_ok=True)
-    pe = pefile.PE(str(args.core_dll))
-    exports = [e.name.decode('ascii') for e in pe.DIRECTORY_ENTRY_EXPORT.symbols if e.name]
-    definition = lib/'Live2DCubismCore.def'
-    definition.write_text('LIBRARY Live2DCubismCore.dll\nEXPORTS\n'+'\n'.join(exports)+'\n', encoding='utf-8')
-    subprocess.run([str(compiler/'llvm-dlltool.exe'), '-m', 'i386:x86-64', '-d', str(definition),
-        '-l', str(lib/'libLive2DCubismCore.a')], check=True)
-    build_file = SOURCE/'SConstruct'
-    text = build_file.read_text(encoding='utf-8')
-    if '# EroInc portable dynamic Core' not in text:
-        start = text.index('if env["platform"] == "windows":')
-        end = text.index('elif env["platform"] == "macos":', start)
-        text = text[:start]+'''# EroInc portable dynamic Core: use the installed x64 Core DLL through an import library.
-if env["platform"] == "windows":
-    env.Append(LIBPATH=[os.path.join(CUBISM_NATIVE_CORE_DIR, "lib/windows/x86_64/mingw")])
+    build_file = SOURCE / 'SConstruct'
+    build_text = build_file.read_text(encoding='utf-8')
+    if '# EroInc cross-build' not in build_text:
+        build_text = build_text.replace('if env["platform"] == "windows":', '''# EroInc cross-build: use the official Core import library with MinGW.
+if env["platform"] == "windows" and env.get("use_mingw", False):
+    env.Append(LIBPATH=[os.path.join(CUBISM_NATIVE_CORE_DIR, "dll/windows/x86_64")])
     env.Append(LIBS=["Live2DCubismCore"])
     env.Append(LINKFLAGS=["-static-libgcc", "-static-libstdc++"])
-'''+text[end:]
-        build_file.write_text(text, encoding='utf-8')
-    spec = importlib.util.spec_from_file_location('cubism_bindings', SOURCE/'godot-cpp/binding_generator.py')
+elif env["platform"] == "windows":''', 1)
+        build_file.write_text(build_text, encoding='utf-8')
+    spec = importlib.util.spec_from_file_location('cubism_bindings', SOURCE / 'godot-cpp/binding_generator.py')
     binding = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(binding)
     headers = set()
-    for path in (SOURCE/'src').rglob('*'):
+    for path in (SOURCE / 'src').rglob('*'):
         if path.suffix in ('.cpp', '.hpp'):
             headers.update(re.findall(r'godot_cpp/classes/(\w+)\.hpp', path.read_text(encoding='utf-8')))
-    api = json.loads((SOURCE/'godot-cpp/gdextension/extension_api.json').read_text(encoding='utf-8'))
-    classes = [c['name'] for c in api['classes'] if binding.camel_to_snake(c['name']) in headers]
-    profile = SOURCE/'ero_profile.json'
-    profile.write_text(json.dumps({'enabled_classes':classes}, indent=2), encoding='utf-8')
-    env = os.environ.copy()
-    env['PATH'] = str(compiler)+os.pathsep+env['PATH']
-    subprocess.run([sys.executable, '-m', 'SCons', 'platform=windows', 'use_mingw=yes',
-        'arch=x86_64', 'target=template_debug', 'debug_symbols=no', 'optimize=speed',
-        'build_profile=ero_profile.json', '-j'+str(args.jobs)], cwd=SOURCE, env=env, check=True)
-    target = PROJECT/'addons/gd_cubism'
-    target.mkdir(parents=True, exist_ok=True)
-    for name in ('res', 'bin'):
-        shutil.copytree(SOURCE/'demo/addons/gd_cubism'/name, target/name, dirs_exist_ok=True)
-    shutil.copy2(args.core_dll, target/'bin/Live2DCubismCore.dll')
-    (target/'gd_cubism.gdextension').write_text('''[configuration]
-entry_symbol = "gd_cubism_library_init"
-compatibility_minimum = "4.3"
+    api = json.loads((SOURCE / 'godot-cpp/gdextension/extension_api.json').read_text(encoding='utf-8'))
+    classes = [item['name'] for item in api['classes'] if binding.camel_to_snake(item['name']) in headers]
+    (SOURCE / 'ero_profile.json').write_text(json.dumps({'enabled_classes': classes}, indent=2), encoding='utf-8')
 
-[libraries]
-windows.x86_64 = "bin/libgd_cubism.windows.debug.x86_64.dll"
 
-[dependencies]
-windows.x86_64 = {"bin/Live2DCubismCore.dll": ""}
-''', encoding='utf-8')
-    for name in ('LICENSE.adoc','LICENSE.en.adoc'):
-        shutil.copy2(SOURCE/name, target/name)
-    for name in ('LICENSE.md','NOTICE.md'):
-        shutil.copy2(sdk/name, target/('CUBISM_SDK_'+name))
-    shutil.copy2(sdk/'Core/LICENSE.md', target/'CUBISM_CORE_LICENSE.md')
-    shutil.copy2(sdk/'Framework/LICENSE.md', target/'CUBISM_FRAMEWORK_LICENSE.md')
-    provenance = {'renderer':'MizunagiKB/gd_cubism v0.9.1',
-        'source':'https://github.com/MizunagiKB/gd_cubism/tree/v0.9.1',
-        'godot_cpp_revision':'fbbf9ec4efd8f1055d00edb8d926eef8ba4c2cce',
-        'sdk_headers':'Live2D Cubism SDK for Native 5-r.1',
-        'core_source':str(args.core_dll), 'core_sha256':hashlib.sha256(args.core_dll.read_bytes()).hexdigest(),
-        'local_changes':['Windows MinGW import library for the supplied Core DLL','Expose is_initialized() to GDScript'],
-        'platform':'Windows x86_64', 'build_profile':classes}
-    (target/'provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print('CUBISM_RUNTIME_READY',target,flush=True)
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--sdk', type=Path, help='An extracted official CubismSdkForNative-5-r.1 directory')
+    parser.add_argument('--platform', choices=['macos','windows'], default=host())
+    parser.add_argument('--jobs', type=int, default=min(os.cpu_count() or 2, 8))
+    args = parser.parse_args()
+    target_platform = args.platform
+    prepare_source()
+    sdk = SOURCE / 'thirdparty' / SDK_NAME
+    if args.sdk:
+        if not (args.sdk / 'Core/include/Live2DCubismCore.h').is_file():
+            raise RuntimeError('--sdk must point to the extracted Native SDK')
+        if args.sdk.resolve() != sdk.resolve():
+            shutil.copytree(args.sdk, sdk, dirs_exist_ok=True)
+    elif not (sdk / 'Core/include/Live2DCubismCore.h').is_file():
+        archive = download(f'https://cubism.live2d.com/sdk-native/bin/{SDK_NAME}.zip', CACHE / f'{SDK_NAME}.zip', SDK_SHA256)
+        extract(archive, SOURCE / 'thirdparty')
+    build_env = CACHE / 'build-venv'
+    python = build_env / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+    if not python.is_file():
+        venv.EnvBuilder(with_pip=True).create(build_env)
+    checked(python, '-m', 'pip', 'install', '--disable-pip-version-check', 'scons==4.7.0')
+    if target_platform == 'macos':
+        core = sdk / 'Core/lib/macos'
+        (core / 'universal').mkdir(exist_ok=True)
+        checked('lipo', '-create', core / 'arm64/libLive2DCubismCore.a', core / 'x86_64/libLive2DCubismCore.a', '-output', core / 'universal/libLive2DCubismCore.a')
+    extra = []
+    if target_platform == 'windows' and (host() != 'windows' or shutil.which('x86_64-w64-mingw32-g++')):
+        if not shutil.which('x86_64-w64-mingw32-g++'):
+            raise RuntimeError('Cross-building Windows requires mingw-w64')
+        extra = ['use_mingw=yes']
+    checked(python, '-m', 'SCons', *extra, f'platform={target_platform}', 'arch=universal' if target_platform == 'macos' else 'arch=x86_64', 'target=template_debug', 'debug_symbols=no', 'optimize=speed', 'build_profile=ero_profile.json', '-j' + str(max(1, args.jobs)), cwd=SOURCE)
+    addon = ROOT / 'addons/gd_cubism'
+    binary_dir = addon / 'bin'
+    binary_dir.mkdir(exist_ok=True)
+    if target_platform == 'macos':
+        source = SOURCE / 'demo/addons/gd_cubism/bin/libgd_cubism.macos.debug.framework/libgd_cubism.macos.debug'
+        target = binary_dir / 'libgd_cubism.macos.universal.dylib'
+        shutil.copy2(source, target)
+        checked('install_name_tool', '-id', '@rpath/' + target.name, target)
+        checked('codesign', '--force', '--sign', '-', target)
+    else:
+        source = SOURCE / 'demo/addons/gd_cubism/bin/libgd_cubism.windows.debug.x86_64.dll'
+        target = binary_dir / 'libgd_cubism.windows.x86_64.dll'
+        shutil.copy2(source, target)
+        shutil.copy2(sdk / 'Core/dll/windows/x86_64/Live2DCubismCore.dll', binary_dir / 'Live2DCubismCore.dll')
+    shutil.copytree(SOURCE / 'demo/addons/gd_cubism/res', addon / 'res', dirs_exist_ok=True)
+    for source_path, name in [(sdk / 'LICENSE.md', 'CUBISM_SDK_LICENSE.md'), (sdk / 'NOTICE.md', 'CUBISM_SDK_NOTICE.md'), (sdk / 'Core/LICENSE.md', 'CUBISM_CORE_LICENSE.md'), (sdk / 'Framework/LICENSE.md', 'CUBISM_FRAMEWORK_LICENSE.md')]:
+        shutil.copy2(source_path, addon / name)
+    (binary_dir / f'build-{target_platform}.json').write_text(json.dumps({'renderer_revision': REVISION, 'godot_cpp_revision': CPP_REVISION, 'sdk': SDK_NAME, 'platform': target_platform, 'binary': target.name, 'sha256': digest(target), 'core_linkage': 'dynamic' if extra else 'static'}, indent=2) + '\n', encoding='utf-8')
+    print('CUBISM_RUNTIME_READY', target, flush=True)
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except (RuntimeError, OSError, subprocess.CalledProcessError) as error:
+        print(f'Live2D build failed: {error}', file=sys.stderr)
+        sys.exit(1)

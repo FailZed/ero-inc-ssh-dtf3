@@ -1,0 +1,34 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 9646,
+  "indentLevel": 4,
+  "serializedLocalizedConversation": {
+    "mainText": "Lady Annalie: Coming back empty handed?\r\nYou: Yeah, sorry about that. We are a little low on cash right now.\r\nLady Annalie: No problem! Cash isn’t really an issue!\r\n#Annalie.Face.pervyGrin\r\nLady Annalie: As long as {f_botName} will cooperate with me a little in the back~\r\n#bot.Expression.Shock\r\n#Annalie.Face.sad\r\nYou: Y-yeah, we will decline that offer…\r\n#bot.Expression.NoShock\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538826701574144
+      },
+      {
+        "KeyId": 191538826701574145
+      },
+      {
+        "KeyId": 191538826701574146
+      },
+      {
+        "KeyId": 191538826701574147
+      },
+      {
+        "KeyId": 191538826701574148
+      }
+    ]
+  }
+}

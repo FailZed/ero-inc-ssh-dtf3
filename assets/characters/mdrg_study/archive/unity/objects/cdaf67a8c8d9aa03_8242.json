@@ -1,0 +1,190 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13706,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Cashier.Base.daily\r\n#Cashier.Eyes.normal\r\nCashier: …\r\nCashier: You two again…{{wi}} What do you want?\r\nBot: Listen! We know you are a bot! So better be nicer, or else…\r\nCashier: …\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nCashier: Eh…{{wi}} That’s the best thing you came up with?\r\n#Cashier.Face.normal\r\nCashier: I don’t think you have thought it through. After you communicated with me back in the supermarket I know that you are also a bot.\r\n#bot.Expression.NoShock\r\nCashier: So don’t you try threatening me, because if you reveal my identity I will take you down with me.\r\n#bot.Expression.Angry\r\nYou: Woah! Let’s calm down, ok? We don’t mean harm.\r\nBot: To assure our safety, I recommend destroying her right here, right now.\r\nYou: No one is destroying anyone, ok?!\r\nYou: Sorry about that…\r\nYou: I think we started on the wrong foot.\r\nYou: I’m Anon and this is {f_botName}. We wanted to get to know you since you are a bot just like {f_botName}. Is it okay for us to talk a little?\r\nCashier: …\r\nCashier: Alright.\r\nBot: Why do you want to talk with her?! She’s rude! She’s a threat!\r\nBot: Didn’t you notice how long it takes for her to come up with an answer? She has slow, inferior circuits!\r\nCashier: …\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nCashier: Eh…\r\n#Cashier.Eyes.normal+Cashier.Mouth.hmmm\r\nCashier: I must say I’m a little disappointed. I thought that newer models would have some common sense and tact, but it appears that they are just as shameless as their masters.\r\n#bot.Expression.VeryAngry\r\nBot: Do you have a death wish, old hag? \r\nI-I need to stop this before they tear each other apart!\r\n#bot.Expression.Angry\r\nYou: Calm down a little {f_botName}! Let’s be civilised…\r\nYou: What’s your name?\r\nCashier: …\r\nCashier: I will answer only because you seem a little more level-headed than your companion.\r\nMelissa: I’m Melissa.\r\nYou: Nice to meet you, Melissa.\r\nYou: Why are you working at a supermarket? Isn’t it super dangerous for you and your owner?\r\nMelissa: …\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: It’s not like I want to. I’m forced by circumstances.\r\n#Cashier.Face.normal\r\nYou: Circumstances? \r\nMelissa: …\r\nMelissa: Sorry, but it isn’t something I would want to reveal to strangers.\r\nYou: Well, that’s understandable. \r\nYou: Could we meet with your owner? You have one, right?\r\nMelissa: …\r\nMelissa: Yes, I do have an owner, but she’s unavailable. {{wi}}Permanently.\r\nBot: Just say upfront that you don’t want us to meet her, you don’t need to sugarcoat it.\r\nMelissa: Just say what you want from me and be done with it. \r\nMelissa: What is it? Money? My body?\r\nYou: N-Nothing like that! \r\nYou: I just wanted for {f_botName} to have another friend, that’s all.\r\nMelissa: …\r\n#Cashier.Face.shocked\r\nMelissa: …\r\n#Cashier.Eyes.normal+Cashier.Mouth.hmmm\r\n#bot.Expression.VeryAngry\r\nMelissa: Are you dumb or something?\r\n#Cashier.ArmL.raised\r\nMelissa: We are bots. We were created to serve a purpose. We have no need for ‘friends’.\r\n#Cashier.ArmL.down\r\nYou: …\r\n#Cashier.Eyes.closed+Cashier.Mouth.open\r\nMelissa: Eh…\r\n#Cashier.Face.normal\r\nMelissa: I guess it’s fine. I agree to becoming your friend if you keep quiet about my existence.\r\nYou: Deal!\r\nBot: {f_playerName}! I don’t agree to becoming her friend!\r\n#bot.Expression.clear\r\nMelissa: I also apologise for saying rude things about you earlier. \r\nMelissa: Usually, when someone bothers me, he wants me to do some perverted things to him and as I lack female parts and self-cleaning abilities, things could get very nasty very fast.\r\nYou: That’s understandable…\r\nI feel sorry for her…{{wi}} She obviously went through a lot…\r\nMelissa: If that’s all, I will be going now. See you later, {{wi}}<i>friends.\r</i>",
+    "localizedLines": [
+      {
+        "KeyId": 209919948664856576
+      },
+      {
+        "KeyId": 209919948664856577
+      },
+      {
+        "KeyId": 209919948664856578
+      },
+      {
+        "KeyId": 209919948664856579
+      },
+      {
+        "KeyId": 209919948664856580
+      },
+      {
+        "KeyId": 209919948664856581
+      },
+      {
+        "KeyId": 209919948664856582
+      },
+      {
+        "KeyId": 209919948664856583
+      },
+      {
+        "KeyId": 209919948664856584
+      },
+      {
+        "KeyId": 209919948664856585
+      },
+      {
+        "KeyId": 209919948664856586
+      },
+      {
+        "KeyId": 209919948664856587
+      },
+      {
+        "KeyId": 209919948664856588
+      },
+      {
+        "KeyId": 209919948664856589
+      },
+      {
+        "KeyId": 209919948664856590
+      },
+      {
+        "KeyId": 209919948664856591
+      },
+      {
+        "KeyId": 209919948664856592
+      },
+      {
+        "KeyId": 209919948664856593
+      },
+      {
+        "KeyId": 209919948664856594
+      },
+      {
+        "KeyId": 209919948664856595
+      },
+      {
+        "KeyId": 209919948664856596
+      },
+      {
+        "KeyId": 209919948664856597
+      },
+      {
+        "KeyId": 209919948664856598
+      },
+      {
+        "KeyId": 209919948664856599
+      },
+      {
+        "KeyId": 209919948664856600
+      },
+      {
+        "KeyId": 209919948664856601
+      },
+      {
+        "KeyId": 209919948664856602
+      },
+      {
+        "KeyId": 209919948664856603
+      },
+      {
+        "KeyId": 209919948664856604
+      },
+      {
+        "KeyId": 209919948664856605
+      },
+      {
+        "KeyId": 209919948664856606
+      },
+      {
+        "KeyId": 209919948664856607
+      },
+      {
+        "KeyId": 209919948664856608
+      },
+      {
+        "KeyId": 209919948664856609
+      },
+      {
+        "KeyId": 209919948664856610
+      },
+      {
+        "KeyId": 209919948664856611
+      },
+      {
+        "KeyId": 209919948664856612
+      },
+      {
+        "KeyId": 209919948664856613
+      },
+      {
+        "KeyId": 209919948664856614
+      },
+      {
+        "KeyId": 209919948664856615
+      },
+      {
+        "KeyId": 209919948664856616
+      },
+      {
+        "KeyId": 209919948664856617
+      },
+      {
+        "KeyId": 209919948664856618
+      },
+      {
+        "KeyId": 209919948664856619
+      },
+      {
+        "KeyId": 209919948664856620
+      },
+      {
+        "KeyId": 209919948664856621
+      },
+      {
+        "KeyId": 209919948664856622
+      },
+      {
+        "KeyId": 209919948664856623
+      },
+      {
+        "KeyId": 209919948664856624
+      },
+      {
+        "KeyId": 209919948664856625
+      },
+      {
+        "KeyId": 209919948664856626
+      },
+      {
+        "KeyId": 209919948664856627
+      },
+      {
+        "KeyId": 209919948664856628
+      },
+      {
+        "KeyId": 209919948664856629
+      },
+      {
+        "KeyId": 209919948669050880
+      },
+      {
+        "KeyId": 209919948669050881
+      },
+      {
+        "KeyId": 209919948669050882
+      }
+    ]
+  }
+}

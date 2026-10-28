@@ -1,0 +1,177 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="EroInc"
+config/version="0.1.0"
+run/main_scene="uid://dm3iv7c4g8m5g"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Dialogic="*uid://ds2q0uclmolvu"
+GameSession="*res://scripts/managers/game_session.gd"
+ProtagonistDialogicBridge="*res://scripts/portraits/protagonist_dialogic_bridge.gd"
+LocationManager="*res://scripts/managers/location_manager.gd"
+Gameplay="*res://scripts/gameplay/gameplay.gd"
+QuestWeaverGlobal="*uid://dmhog666hpq8h"
+QuestWeaverServices="*uid://1umj0il2i4h"
+QuestWeaverGameState="*uid://dyublgkaguaj8"
+QuestWeaverController="*res://addons/quest_weaver/core/quest_controller.tscn"
+
+[dialogic]
+
+directories/dch_directory={
+"FailZed": "res://Characters/FailZed.dch",
+"god?": "res://Characters/story/speaker_676f643f.dch",
+"Алекс Смит": "res://Characters/story/speaker_d090d0bbd0b5d0bad18120d0a1d0bcd0b8d182.dch",
+"Асука": "res://Characters/story/speaker_d090d181d183d0bad0b0.dch",
+"ГГ": "res://Characters/ГГ.dch",
+"Голос из динамиков": "res://Characters/story/speaker_d093d0bed0bbd0bed18120d0b8d0b720d0b4d0b8d0bdd0b0d0bcd0b8d0bad0bed0b2.dch",
+"Девочка": "res://Characters/story/speaker_d094d0b5d0b2d0bed187d0bad0b0.dch",
+"Девушка": "res://Characters/story/speaker_d094d0b5d0b2d183d188d0bad0b0.dch",
+"Дежурный медведь": "res://Characters/story/speaker_d094d0b5d0b6d183d180d0bdd18bd0b920d0bcd0b5d0b4d0b2d0b5d0b4d18c.dch",
+"Дру Томас": "res://Characters/story/speaker_d094d180d18320d0a2d0bed0bcd0b0d181.dch",
+"Друг Томас": "res://Characters/story/speaker_d094d180d183d0b320d0a2d0bed0bcd0b0d181.dch",
+"Лин": "res://Characters/story/speaker_d09bd0b8d0bd.dch",
+"Лира": "res://Characters/story/speaker_d09bd0b8d180d0b0.dch",
+"Мама?!": "res://Characters/story/speaker_d09cd0b0d0bcd0b03f21.dch",
+"Мира": "res://Characters/story/speaker_d09cd0b8d180d0b0.dch",
+"Михаил Мэтисон": "res://Characters/story/speaker_d09cd0b8d185d0b0d0b8d0bb20d09cd18dd182d0b8d181d0bed0bd.dch",
+"Мышь": "res://Characters/story/speaker_d09cd18bd188d18c.dch",
+"На доске написано": "res://Characters/story/speaker_d09dd0b020d0b4d0bed181d0bad0b520d0bdd0b0d0bfd0b8d181d0b0d0bdd0be.dch",
+"Оливер": "res://Characters/story/speaker_d09ed0bbd0b8d0b2d0b5d180.dch",
+"Отец": "res://Characters/story/speaker_d09ed182d0b5d186.dch",
+"Парень": "res://Characters/story/speaker_d09fd0b0d180d0b5d0bdd18c.dch",
+"Парень антро": "res://Characters/story/speaker_d09fd0b0d180d0b5d0bdd18c20d0b0d0bdd182d180d0be.dch",
+"Райан": "res://Characters/story/speaker_d0a0d0b0d0b9d0b0d0bd.dch",
+"Ректор": "res://Characters/story/speaker_d0a0d0b5d0bad182d0bed180.dch",
+"Уриил": "res://Characters/story/speaker_d0a3d180d0b8d0b8d0bb.dch",
+"Элиот": "res://Characters/story/speaker_d0add0bbd0b8d0bed182.dch",
+"Элли": "res://Characters/story/speaker_d0add0bbd0bbd0b8.dch",
+"девочка?": "res://Characters/story/speaker_d0b4d0b5d0b2d0bed187d0bad0b03f.dch",
+"девочки?!": "res://Characters/story/speaker_d0b4d0b5d0b2d0bed187d0bad0b83f21.dch",
+"мальчик 1?!": "res://Characters/story/speaker_d0bcd0b0d0bbd18cd187d0b8d0ba20313f21.dch",
+"мальчик 2?!": "res://Characters/story/speaker_d0bcd0b0d0bbd18cd187d0b8d0ba20323f21.dch",
+"мальчики?!": "res://Characters/story/speaker_d0bcd0b0d0bbd18cd187d0b8d0bad0b83f21.dch",
+"толпа?!": "res://Characters/story/speaker_d182d0bed0bbd0bfd0b03f21.dch"
+}
+directories/dtl_directory={
+"chapter_one": "res://TimeLine/chapter_one.dtl",
+"flashback_flee": "res://TimeLine/prolog/flashback_flee.dtl",
+"prolog": "res://TimeLine/prolog.dtl",
+"prolog/prolog": "res://TimeLine/prolog/prolog.dtl",
+"scene_02_warehouse_confrontation": "res://TimeLine/prolog/scene_02_warehouse_confrontation.dtl",
+"scene_03_death_reset": "res://TimeLine/prolog/scene_03_death_reset.dtl",
+"scene_04_night_wakeup": "res://TimeLine/prolog/scene_04_night_wakeup.dtl",
+"scene_05_mirror_and_photo": "res://TimeLine/prolog/scene_05_mirror_and_photo.dtl",
+"scene_06_flashback_park": "res://TimeLine/prolog/scene_06_flashback_park.dtl",
+"scene_07_thomas": "res://TimeLine/prolog/scene_07_thomas.dtl",
+"scene_08_embankment": "res://TimeLine/prolog/scene_08_embankment.dtl",
+"scene_09_lyra_choice_point": "res://TimeLine/prolog/scene_09_lyra_choice_point.dtl",
+"scene_10_intervene_and_escape": "res://TimeLine/prolog/scene_10_intervene_and_escape.dtl",
+"scene_11_first_trust": "res://TimeLine/prolog/scene_11_first_trust.dtl",
+"scene_12_glade_reveal": "res://TimeLine/prolog/scene_12_glade_reveal.dtl",
+"scene_13_way_home": "res://TimeLine/prolog/scene_13_way_home.dtl",
+"scene_14_lyra_father": "res://TimeLine/prolog/scene_14_lyra_father.dtl",
+"scene_15_home_evening": "res://TimeLine/prolog/scene_15_home_evening.dtl",
+"testTimeline for game": "res://TimeLine/testTimeline for game.dtl",
+"timeline": "res://TimeLine/timeline.dtl"
+}
+layout/style_directory={
+"": "res://styles/custom_styles.tres",
+"custom_styles": "res://styles/custom_styles.tres"
+}
+layout/style_list=["res://styles/custom_styles.tres"]
+layout/default_style="res://styles/custom_styles.tres"
+variables={
+"Under18Age": false
+}
+glossary/default_case_sensitive=true
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+history/simple_history_save=false
+history/simple_history_enabled=true
+translation/enabled=true
+translation/original_locale="ru"
+translation/file_mode=1
+translation/translation_folder="res://translation"
+translation/save_mode=0
+translation/add_separator=false
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
+translation/id_counter=16
+translation/locales=[]
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/quest_weaver/plugin.cfg", "res://addons/mdrg_study_export/plugin.cfg")
+
+[input]
+
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":88,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://translation/dialogic_timeline_translation.ru.translation", "res://translation/dialogic_timeline_translation.en.translation")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

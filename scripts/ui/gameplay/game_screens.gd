@@ -590,6 +590,10 @@ static func person(owner: Control, parent: Node) -> void:
 			UI.button(row,"Выполнено",owner._act.bind("social_rules","fulfill",{"id":id,"promise":promise}))
 		return
 	var activities := W.grid(detail)
+	var together := UI.button(activities,"Прикосновения и время вместе",owner._open_companion.bind(id))
+	together.set_meta("companion_entry",id)
+	together.disabled = not local
+	together.tooltip_text = "Нужно встретиться лично" if not local else "Предложить жест и узнать ответ собеседника"
 	for venue in ["coffee","walk","cinema"]:
 		action(owner,activities,{"coffee":"Выпить кофе","walk":"Прогуляться","cinema":"Сходить в кино"}[venue],{"coffee":"60 мин · 15 ¤","walk":"45 мин · в хорошую погоду","cinema":"90 мин · 30 ¤"}[venue],"social_rules","date",{"id":id,"venue":venue},"Пригласить")
 	for key in Social.ACTIONS:

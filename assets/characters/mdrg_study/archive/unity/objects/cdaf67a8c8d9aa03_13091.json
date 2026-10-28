@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 203
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 1442840576
+  },
+  "m_Name": "",
+  "characterId": "bot",
+  "Path": "Live2D/Missionary/bot_missionary",
+  "SourcePrefab": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Live2D/Missionary/bot_missionary",
+      "assetGuid": "34888389f47d8f64aa1047adb36b9afd",
+      "assetLocalId": 6498115183977179612,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 1
+    }
+  },
+  "ControllerTypeName": "Live2DMissionaryFuckController"
+}

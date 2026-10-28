@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 8628,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "You: {f_botName} is a name I gave you. Can you add it to your database?\r\nBot: Affirmative {f_playerName}.\r\nLet’s check if it works.\r\nYou: {f_botName}?\r\nBot: What is it {f_playerName}?\r\nOk, guess it works.\r\nYou: Nothing.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 191538824323403777
+      },
+      {
+        "KeyId": 191538824323403778
+      },
+      {
+        "KeyId": 191538824323403779
+      },
+      {
+        "KeyId": 191538824323403780
+      },
+      {
+        "KeyId": 191538824323403781
+      },
+      {
+        "KeyId": 191538824323403782
+      },
+      {
+        "KeyId": 191538824323403783
+      }
+    ]
+  }
+}

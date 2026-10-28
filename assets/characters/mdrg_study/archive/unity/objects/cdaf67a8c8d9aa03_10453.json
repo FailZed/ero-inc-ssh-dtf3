@@ -1,0 +1,52 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16160,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.Happy\r\nYou: Are you ready to go bowling?\r\nBot: Yes! I calibrated my sensors and actuators so I can assure victory!\r\nYou: You seem awfully excited. Did you forget that Melissa will be there?\r\nBot: Hmph! I know she will be there, you don’t need to remind me, but there also will be Annalie! \r\nYou: So you like Annalie more than you dislike Melissa?\r\n#bot.Expression.clear\r\n#bot.Expression.angry\r\nBot: If I were to put a numeric value to both, that wouldn’t be the case.\r\nYou: Then why?\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nBot: I have other objectives than just having fun. I’m going there to absolutely crush Melissa at bowling.\r\n#bot.Expression.clear\r\nYou: Sounds good to me, but please let it be a healthy competition. No shouting!\r\nBot: Sure, sure, stop nagging.\r\nIs she entering her rebellious phase? I can’t even imagine how disastrous that would be…\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473257584060522496
+      },
+      {
+        "KeyId": 473257584060522497
+      },
+      {
+        "KeyId": 473257584060522498
+      },
+      {
+        "KeyId": 473257584060522499
+      },
+      {
+        "KeyId": 473257584060522500
+      },
+      {
+        "KeyId": 473257584060522501
+      },
+      {
+        "KeyId": 473257584060522502
+      },
+      {
+        "KeyId": 473257584060522503
+      },
+      {
+        "KeyId": 473257584060522504
+      },
+      {
+        "KeyId": 473257584060522505
+      },
+      {
+        "KeyId": 473257584060522506
+      }
+    ]
+  }
+}

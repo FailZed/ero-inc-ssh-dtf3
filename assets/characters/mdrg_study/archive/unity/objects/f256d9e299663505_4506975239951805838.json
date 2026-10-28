@@ -1,0 +1,1647 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "Dialogue_nl",
+  "m_LocaleId": {
+    "m_Code": "nl"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 9024666039417792656
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 6437392580223180689
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3183073955840,
+      "m_Localized": "Probeer haar naam te zeggen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538752,
+      "m_Localized": "Praat tegen haar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538754,
+      "m_Localized": "Probeer tegen haar te praten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733056,
+      "m_Localized": "Zeg hoi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733057,
+      "m_Localized": "Ik voel een rare drang om tegen haar te praten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733058,
+      "m_Localized": "Laten we met haar praten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733059,
+      "m_Localized": "Waar moet ik haar verstoppen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733060,
+      "m_Localized": "Laten we naar de bot kijken",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393848
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733061,
+      "m_Localized": "probeer te communiceren",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733062,
+      "m_Localized": "Hoe zit het met mijn huur?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733063,
+      "m_Localized": "Ik ben bezorgd...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733064,
+      "m_Localized": "Wat was dat?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733065,
+      "m_Localized": "Hoeveel is ze waard?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733066,
+      "m_Localized": "Mijn sex leven",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733067,
+      "m_Localized": "Praat tegen de bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393849
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733068,
+      "m_Localized": "Praat tegen de bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393850
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733069,
+      "m_Localized": "Praat tegen de bot",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393851
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733070,
+      "m_Localized": "Vraag haar naar mijn kamer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733071,
+      "m_Localized": "Ik vraag me af wat ze van me vindt...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733072,
+      "m_Localized": "Mischien kan ze wiskunde doen?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733073,
+      "m_Localized": "Vraag haar hoe je snel geld kunt verdienen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733074,
+      "m_Localized": "Vraag haar naar het weer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733075,
+      "m_Localized": "Vraag haar wat ze vindt van de grote van mijn...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733076,
+      "m_Localized": "Hoe zit het met dat koffie ding",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733077,
+      "m_Localized": "...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733078,
+      "m_Localized": "Ze maakt me kwaad...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733079,
+      "m_Localized": "Ze is vervelend...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733080,
+      "m_Localized": "Laten we proberen tegen haar te praten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733081,
+      "m_Localized": "Een praatje maken",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733082,
+      "m_Localized": "Praat met haar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733083,
+      "m_Localized": "Zeg haar dat ze met je moet praten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733084,
+      "m_Localized": "Vraag haar om zachtjes te praten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733085,
+      "m_Localized": "Ik verveel me...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733086,
+      "m_Localized": "Laten we wat tijd met haar doorbrengen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733087,
+      "m_Localized": "Laten we praten!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733116,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183090733117,
+      "m_Localized": "Over sexbots",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183086538753,
+      "m_Localized": "Probeer haar te bellen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393852
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733088,
+      "m_Localized": "Stel bot enkele existentiële vragen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393853
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733089,
+      "m_Localized": "Vraag haar iets onbelangrijks",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393854
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733090,
+      "m_Localized": "Vraag haar over politiek",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733091,
+      "m_Localized": "Vraag haar naar de bron van al het lijden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393856
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733092,
+      "m_Localized": "Ik heb zin om wat games te spelen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393857
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733093,
+      "m_Localized": "Laten we spelen met kaarten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393858
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733094,
+      "m_Localized": "Het is tijd voor een woordketting!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733095,
+      "m_Localized": "Het is een beetje laat, maar ik wil met haar praten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393860
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733096,
+      "m_Localized": " Ik denk dat bot wil praten...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393861
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733097,
+      "m_Localized": "Vertel haar dat je van haar houdt!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733098,
+      "m_Localized": "Flirten met bot <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733099,
+      "m_Localized": "Ik zou aardiger tegen haar moeten zijn...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733100,
+      "m_Localized": "Vraag naar haar emoties",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733101,
+      "m_Localized": "Heeft een sexbot interesses?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733102,
+      "m_Localized": "Krijgt een seksbot ooit honger?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733103,
+      "m_Localized": "Ik wil haar aanraken...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733104,
+      "m_Localized": "Ben ik iets vergeten?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733105,
+      "m_Localized": "Over het intelligentieniveau van de bot...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733106,
+      "m_Localized": "Kan een bot schaken?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733107,
+      "m_Localized": "Moet ik een ander spel proberen?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393872
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733108,
+      "m_Localized": "Ik denk dat ik weet in welk spel ik haar kan verslaan...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733109,
+      "m_Localized": "Bot lijkt vreemd...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393874
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733110,
+      "m_Localized": "Ik vraag me af hoe ze over mij denkt...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393875
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733111,
+      "m_Localized": "Bot lijkt in diepe gedachten verzonken...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733112,
+      "m_Localized": "Ik denk dat ze iets van me wil",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393877
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733113,
+      "m_Localized": "Nu ze beide benen heeft...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393878
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733114,
+      "m_Localized": " Ik zou bot moeten vragen naar de risico's van naar buiten gaan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393879
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733115,
+      "m_Localized": "Ik moet vragen naar de mogelijkheid dat ze naar buiten gaat",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733118,
+      "m_Localized": "Misschien kan ze toch praten?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393881
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733119,
+      "m_Localized": "Laten we nog eens praten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393882
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3183090733120,
+      "m_Localized": "Er voelt iets niet goed...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393883
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186710323200,
+      "m_Localized": "Wat is haar mening over huisdieren?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393884
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906112,
+      "m_Localized": "Ik zou haar moeten uitnodigen voor een date",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393885
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 38378186722906113,
+      "m_Localized": "Ik wil een film met haar kijken",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393886
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153391337472,
+      "m_Localized": "Wat is die rare geur?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393887
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503296,
+      "m_Localized": "Vraag naar de Halloween-versieringen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393888
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45696153416503297,
+      "m_Localized": "Hoe zit het met dat schattige spinnenpluche?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393889
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 120816570795429888,
+      "m_Localized": "Ik zou haar moeten vragen of Shanice langs kan komen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393890
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 121488171031465984,
+      "m_Localized": "Wat dacht je van karaoke?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393891
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 188424289878151168,
+      "m_Localized": "???",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393892
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208135514265477120,
+      "m_Localized": "Vraag haar wat ze met de kassier moet doen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393893
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208136759931822080,
+      "m_Localized": "Probeer nog eens met haar te praten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393894
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208176712170594304,
+      "m_Localized": "Vraag naar Melissa en haar ‘ontbrekende’ onderdelen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393895
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208184189855457280,
+      "m_Localized": "Bespreek het sentiment van de zwerver ten opzichte van bots",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393896
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 208249514085048320,
+      "m_Localized": "Vraag haar hoe ze zich voelt na de reparaties",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393897
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 209124748665282560,
+      "m_Localized": "Bekijk nieuws met {f_botName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392580223180689
+          },
+          {
+            "rid": 7996671569124393898
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329561421806297088,
+      "m_Localized": "Welke superkracht zou jij willen?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393899
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 329562090420297728,
+      "m_Localized": "Nog een horrorverhaal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393900
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743964759777280,
+      "m_Localized": "Wat doe je als ik weg ben?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393901
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743972154335232,
+      "m_Localized": "Als je een baan zou kunnen krijgen, wat zou dat dan zijn?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393902
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 333743980517777408,
+      "m_Localized": "Zou je in een mens willen veranderen?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393903
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 454075064358264832,
+      "m_Localized": "Wraak op de huisbaas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496812532128681984,
+      "m_Localized": "Vraag haar hoe ze moet omgaan met de problematische buurman",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393905
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496882784552226816,
+      "m_Localized": "Wat denk je dat er gebeurt na de dood?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393906
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496884597502382080,
+      "m_Localized": "Heb je een plan in het geval van een zombie-apocalyps?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393907
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496885401596596224,
+      "m_Localized": "Laten we een rollenspel proberen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393908
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 496886190553567232,
+      "m_Localized": "Zal Annalie ooit een vriendje vinden?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569124393909
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6437392580223180689,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 209124748665282560
+            }
+          ]
+        }
+      },
+      {
+        "rid": 7996671569124393848,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "maby robot instead of bot, not sure"
+        }
+      },
+      {
+        "rid": 7996671569124393849,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "maby robot instead of bot, not sure"
+        }
+      },
+      {
+        "rid": 7996671569124393850,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "maby robot instead of bot, not sure"
+        }
+      },
+      {
+        "rid": 7996671569124393851,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "maby robot instead of bot, not sure"
+        }
+      },
+      {
+        "rid": 7996671569124393852,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393853,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393854,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393855,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393856,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393857,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393858,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393859,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393860,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393861,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393862,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393863,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393864,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393865,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393866,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393867,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393868,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393869,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393870,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393871,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393872,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393873,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393874,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393875,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393876,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393877,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393878,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393879,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393880,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393881,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393882,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393883,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 09/20/2022 20:45:50"
+        }
+      },
+      {
+        "rid": 7996671569124393884,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/05/2022 17:07:08"
+        }
+      },
+      {
+        "rid": 7996671569124393885,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/05/2022 17:07:08"
+        }
+      },
+      {
+        "rid": 7996671569124393886,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/05/2022 17:07:08"
+        }
+      },
+      {
+        "rid": 7996671569124393887,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/26/2022 03:13:01"
+        }
+      },
+      {
+        "rid": 7996671569124393888,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/26/2022 03:13:01"
+        }
+      },
+      {
+        "rid": 7996671569124393889,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 10/26/2022 03:13:01"
+        }
+      },
+      {
+        "rid": 7996671569124393890,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:14"
+        }
+      },
+      {
+        "rid": 7996671569124393891,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 05/23/2023 21:29:14"
+        }
+      },
+      {
+        "rid": 7996671569124393892,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated at 11/23/2023 17:11:01"
+        }
+      },
+      {
+        "rid": 7996671569124393893,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393894,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393895,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393896,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393897,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393898,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393899,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393900,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393901,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393902,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393903,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393904,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393905,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393906,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393907,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393908,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569124393909,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      }
+    ]
+  }
+}

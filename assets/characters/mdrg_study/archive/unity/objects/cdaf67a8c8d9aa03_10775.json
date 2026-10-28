@@ -1,0 +1,58 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 16531,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "Bot: The place that Annalie invited us to. We went there before, right?\r\nYou: Yeah, I think so.\r\nIt’s that expensive place again…{{wi}} thanks, Annalie…\r\nBot: Do you remember what you got the last time?\r\nYou: No, not really.\r\nBot: Should I remind you so that you won’t get the same thing twice?\r\nYou: I think they have a brunch menu, so that shouldn’t be a problem.\r\nBot: You are pretty knowledgeable about this stuff.\r\nYou: I learned about this from movies. To be honest, I have never been to a brunch in my life.\r\n#bot.Expression.blush\r\nBot: Another of your first times will be mine then!\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nYou: C-Come on now, that’s something a creepy old man would say.\r\nBot: Like Mr. Landlord?\r\nYou: Yeah.\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 473874445034840064
+      },
+      {
+        "KeyId": 473874445034840065
+      },
+      {
+        "KeyId": 473874445034840066
+      },
+      {
+        "KeyId": 473874445034840067
+      },
+      {
+        "KeyId": 473874445034840068
+      },
+      {
+        "KeyId": 473874445034840069
+      },
+      {
+        "KeyId": 473874445034840070
+      },
+      {
+        "KeyId": 473874445034840071
+      },
+      {
+        "KeyId": 473874445034840072
+      },
+      {
+        "KeyId": 473874445034840073
+      },
+      {
+        "KeyId": 473874445034840074
+      },
+      {
+        "KeyId": 473874445034840075
+      },
+      {
+        "KeyId": 473874445034840076
+      }
+    ]
+  }
+}

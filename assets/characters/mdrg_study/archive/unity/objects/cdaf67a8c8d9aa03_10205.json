@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 15909,
+  "indentLevel": 1,
+  "serializedLocalizedConversation": {
+    "mainText": "You: H-Here you go, sir…\r\nLandlord: Now, that’s better, hehe~\r\n#Landlord.animate(TransparencyTo0,0.5)\r\nYou: …\r\nI’m pathetic.",
+    "localizedLines": [
+      {
+        "KeyId": 455476664477933568
+      },
+      {
+        "KeyId": 455476664477933569
+      },
+      {
+        "KeyId": 455476664477933570
+      },
+      {
+        "KeyId": 455476664477933571
+      }
+    ]
+  }
+}

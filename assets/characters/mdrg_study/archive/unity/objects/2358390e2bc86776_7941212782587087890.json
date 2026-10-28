@@ -1,0 +1,4746 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -4826179110787420926
+  },
+  "m_Name": "News Shared Data",
+  "m_TableCollectionName": "News",
+  "m_TableCollectionNameGuidString": "fcb91395982c4b2439c2c1ecb0300f8b",
+  "m_Entries": [
+    {
+      "m_Id": 3496715620352,
+      "m_Key": "SideNews_1000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 0
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814656,
+      "m_Key": "SideNews_1001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814657,
+      "m_Key": "SideNews_1002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814658,
+      "m_Key": "SideNews_10000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 3
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008960,
+      "m_Key": "SideNews_10001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008961,
+      "m_Key": "SideNews_10002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 5
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008962,
+      "m_Key": "SideNews_10003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008963,
+      "m_Key": "SideNews_10004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008964,
+      "m_Key": "SideNews_10005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008965,
+      "m_Key": "SideNews_10006",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 9
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008966,
+      "m_Key": "SideNews_10007",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 10
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008967,
+      "m_Key": "SideNews_10008",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 11
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008968,
+      "m_Key": "SideNews_10009",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 12
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008969,
+      "m_Key": "SideNews_10010",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 13
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008970,
+      "m_Key": "SideNews_10011",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 14
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008971,
+      "m_Key": "SideNews_10012",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 15
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008972,
+      "m_Key": "SideNews_10013",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 16
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008973,
+      "m_Key": "SideNews_10014",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 17
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008974,
+      "m_Key": "SideNews_10015",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 18
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008975,
+      "m_Key": "SideNews_10016",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 19
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008976,
+      "m_Key": "SideNews_10017",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 20
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008977,
+      "m_Key": "SideNews_10018",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 21
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008978,
+      "m_Key": "SideNews_10019",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 22
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008979,
+      "m_Key": "SideNews_10020",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 23
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008980,
+      "m_Key": "SideNews_10021",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 24
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008981,
+      "m_Key": "SideNews_10022",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 25
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008982,
+      "m_Key": "SideNews_10023",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 26
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008983,
+      "m_Key": "SideNews_10024",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 27
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008984,
+      "m_Key": "SideNews_10025",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 28
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008985,
+      "m_Key": "SideNews_10026",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 29
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008986,
+      "m_Key": "SideNews_10027",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 30
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008987,
+      "m_Key": "SideNews_10028",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 31
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008988,
+      "m_Key": "SideNews_10029",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 32
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008989,
+      "m_Key": "SideNews_10030",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 33
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008990,
+      "m_Key": "SideNews_10031",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 34
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008991,
+      "m_Key": "SideNews_10032",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 35
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008992,
+      "m_Key": "SideNews_10033",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 36
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008993,
+      "m_Key": "SideNews_10034",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 37
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008994,
+      "m_Key": "SideNews_10035",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 38
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008995,
+      "m_Key": "SideNews_10036",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 39
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008996,
+      "m_Key": "SideNews_10037",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 40
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008997,
+      "m_Key": "SideNews_10038",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 41
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008998,
+      "m_Key": "SideNews_10039",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 42
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008999,
+      "m_Key": "SideNews_10040",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 43
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009000,
+      "m_Key": "SideNews_10041",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 44
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009001,
+      "m_Key": "SideNews_10042",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 45
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009002,
+      "m_Key": "SideNews_10043",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 46
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009003,
+      "m_Key": "SideNews_10044",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 47
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009004,
+      "m_Key": "SideNews_10045",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 48
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009005,
+      "m_Key": "SideNews_10046",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 49
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009006,
+      "m_Key": "SideNews_10047",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 50
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009007,
+      "m_Key": "SideNews_10048",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 51
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009008,
+      "m_Key": "SideNews_10049",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 52
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009009,
+      "m_Key": "SideNews_10050",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 53
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009010,
+      "m_Key": "SideNews_20000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 54
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009011,
+      "m_Key": "SideNews_20001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 55
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009012,
+      "m_Key": "SideNews_20002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 56
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009013,
+      "m_Key": "SideNews_20003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 57
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009014,
+      "m_Key": "SideNews_20004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 58
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009015,
+      "m_Key": "SideNews_20005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 59
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009016,
+      "m_Key": "SideNews_20006",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 60
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009017,
+      "m_Key": "SideNews_20007",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 61
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009018,
+      "m_Key": "SideNews_20008",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 62
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009019,
+      "m_Key": "SideNews_20009",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 63
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009020,
+      "m_Key": "SideNews_20010",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 64
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009021,
+      "m_Key": "SideNews_20011",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 65
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009022,
+      "m_Key": "SideNews_20012",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 66
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009023,
+      "m_Key": "SideNews_20013",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 67
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009024,
+      "m_Key": "SideNews_20014",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 68
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009025,
+      "m_Key": "SideNews_20015",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 69
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009026,
+      "m_Key": "SideNews_20016",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 70
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009027,
+      "m_Key": "SideNews_20017",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 71
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009028,
+      "m_Key": "SideNews_20018",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 72
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009029,
+      "m_Key": "SideNews_20019",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 73
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009030,
+      "m_Key": "SideNews_20020",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 74
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009031,
+      "m_Key": "SideNews_20021",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 75
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009032,
+      "m_Key": "SideNews_20022",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 76
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009033,
+      "m_Key": "SideNews_20023",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 77
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009034,
+      "m_Key": "SideNews_20024",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 78
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009035,
+      "m_Key": "SideNews_20025",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 79
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009036,
+      "m_Key": "SideNews_20026",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 80
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009037,
+      "m_Key": "SideNews_20027",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 81
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009038,
+      "m_Key": "SideNews_20028",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 82
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009039,
+      "m_Key": "SideNews_20029",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 83
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009040,
+      "m_Key": "SideNews_20030",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 84
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009041,
+      "m_Key": "SideNews_20031",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 85
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009042,
+      "m_Key": "SideNews_20032",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 86
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009043,
+      "m_Key": "SideNews_20033",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 87
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009044,
+      "m_Key": "SideNews_20034",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 88
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009045,
+      "m_Key": "SideNews_20035",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 89
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009046,
+      "m_Key": "SideNews_20036",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 90
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009047,
+      "m_Key": "SideNews_20037",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 91
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009048,
+      "m_Key": "SideNews_20038",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 92
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009049,
+      "m_Key": "SideNews_20039",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 93
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009050,
+      "m_Key": "SideNews_20040",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 94
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009051,
+      "m_Key": "SideNews_20041",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 95
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009052,
+      "m_Key": "SideNews_20042",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 96
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009053,
+      "m_Key": "SideNews_20043",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 97
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009054,
+      "m_Key": "SideNews_20044",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 98
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009055,
+      "m_Key": "SideNews_20045",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 99
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009056,
+      "m_Key": "SideNews_20046",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 100
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009057,
+      "m_Key": "SideNews_20047",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 101
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009058,
+      "m_Key": "SideNews_20048",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 102
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009059,
+      "m_Key": "SideNews_20049",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 103
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666432,
+      "m_Key": "MainNews_1000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 104
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666433,
+      "m_Key": "MainNews_10000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 105
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666434,
+      "m_Key": "MainNews_10001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 106
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666435,
+      "m_Key": "MainNews_10002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 107
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666436,
+      "m_Key": "MainNews_10003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 108
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666437,
+      "m_Key": "MainNews_10004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 109
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666438,
+      "m_Key": "MainNews_10005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 110
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666439,
+      "m_Key": "MainNews_10006",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 111
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666440,
+      "m_Key": "MainNews_10007",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 112
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666441,
+      "m_Key": "MainNews_10008",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 113
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666442,
+      "m_Key": "MainNews_10009",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 114
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666443,
+      "m_Key": "MainNews_10010",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 115
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666444,
+      "m_Key": "MainNews_10011",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 116
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666445,
+      "m_Key": "MainNews_10012",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 117
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666446,
+      "m_Key": "MainNews_10013",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 118
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666447,
+      "m_Key": "MainNews_10014",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 119
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666448,
+      "m_Key": "MainNews_10015",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 120
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666449,
+      "m_Key": "MainNews_10016",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 121
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666450,
+      "m_Key": "MainNews_10017",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 122
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666451,
+      "m_Key": "MainNews_10018",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 123
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666452,
+      "m_Key": "MainNews_10019",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 124
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666453,
+      "m_Key": "MainNews_20000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 125
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666454,
+      "m_Key": "MainNews_20001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 126
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666455,
+      "m_Key": "MainNews_20002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 127
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666456,
+      "m_Key": "MainNews_20003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 128
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666457,
+      "m_Key": "MainNews_20004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 129
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666458,
+      "m_Key": "MainNews_20005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 130
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666459,
+      "m_Key": "MainNews_20006",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 131
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666460,
+      "m_Key": "MainNews_20007",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 132
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666461,
+      "m_Key": "MainNews_20008",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 133
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666462,
+      "m_Key": "MainNews_20009",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 134
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666463,
+      "m_Key": "OpinionNews_10000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 135
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666464,
+      "m_Key": "OpinionNews_10001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 136
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666465,
+      "m_Key": "OpinionNews_10002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 137
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666466,
+      "m_Key": "OpinionNews_10003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 138
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666467,
+      "m_Key": "OpinionNews_10004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 139
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666468,
+      "m_Key": "OpinionNews_10005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 140
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666469,
+      "m_Key": "OpinionNews_10006",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 141
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666470,
+      "m_Key": "OpinionNews_10007",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 142
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666471,
+      "m_Key": "OpinionNews_10008",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 143
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666472,
+      "m_Key": "OpinionNews_10009",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 144
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666473,
+      "m_Key": "OpinionNews_10010",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 145
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666474,
+      "m_Key": "OpinionNews_10011",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 146
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666475,
+      "m_Key": "OpinionNews_10012",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 147
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666476,
+      "m_Key": "OpinionNews_10013",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 148
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666477,
+      "m_Key": "OpinionNews_10014",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 149
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666478,
+      "m_Key": "OpinionNews_10015",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 150
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666479,
+      "m_Key": "OpinionNews_10016",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 151
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666480,
+      "m_Key": "OpinionNews_10017",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 152
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666481,
+      "m_Key": "OpinionNews_10018",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 153
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666482,
+      "m_Key": "OpinionNews_10019",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 154
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666483,
+      "m_Key": "OpinionNews_20000",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 155
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666484,
+      "m_Key": "OpinionNews_20001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 156
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666485,
+      "m_Key": "OpinionNews_20002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666486,
+      "m_Key": "OpinionNews_20003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666487,
+      "m_Key": "OpinionNews_20004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666488,
+      "m_Key": "OpinionNews_20005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666489,
+      "m_Key": "OpinionNews_20006",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39490982969741312,
+      "m_Key": "MainNews_1001",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206528,
+      "m_Key": "OpinionNews_10020",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 163
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206529,
+      "m_Key": "OpinionNews_10021",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 164
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206530,
+      "m_Key": "OpinionNews_10022",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206531,
+      "m_Key": "SideNews_10051",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 166
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206532,
+      "m_Key": "SideNews_10052",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206533,
+      "m_Key": "SideNews_10053",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 168
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118728930864533504,
+      "m_Key": "MainNews_1002",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 169
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 196009274129768448,
+      "m_Key": "MainNews_1003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7464767218832900098
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056392552448,
+      "m_Key": "MainNews_10020",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208194
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135360,
+      "m_Key": "MainNews_10021",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208195
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135361,
+      "m_Key": "MainNews_10022",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208196
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135362,
+      "m_Key": "MainNews_10023",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208197
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135363,
+      "m_Key": "MainNews_10024",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208198
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135364,
+      "m_Key": "MainNews_10025",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208199
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135365,
+      "m_Key": "MainNews_10026",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208200
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135366,
+      "m_Key": "MainNews_20010",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208201
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135367,
+      "m_Key": "OpinionNews_10023",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208202
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135368,
+      "m_Key": "SideNews_1003",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208203
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135369,
+      "m_Key": "SideNews_10054",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208204
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135370,
+      "m_Key": "SideNews_10055",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208205
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135371,
+      "m_Key": "SideNews_10056",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208206
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135372,
+      "m_Key": "SideNews_10057",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208207
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135373,
+      "m_Key": "SideNews_20050",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208208
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135374,
+      "m_Key": "SideNews_20051",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208209
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135375,
+      "m_Key": "SideNews_20052",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208210
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135376,
+      "m_Key": "SideNews_20053",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208211
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135377,
+      "m_Key": "SideNews_20054",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208212
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135378,
+      "m_Key": "SideNews_20055",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 6437392787123208213
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316522004892082176,
+      "m_Key": "MainNews_10027",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2293411008828670025
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321828732810551296,
+      "m_Key": "MainNews_1004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2293411343759573083
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321885704058560512,
+      "m_Key": "MainNews_1005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2293411346165792894
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321937685548621824,
+      "m_Key": "SideNews_1004",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2293411346165792930
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384602058752,
+      "m_Key": "MainNews_10028",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559187
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030272,
+      "m_Key": "MainNews_10029",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559188
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030273,
+      "m_Key": "MainNews_10030",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559189
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030274,
+      "m_Key": "MainNews_20011",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559190
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030275,
+      "m_Key": "OpinionNews_10024",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559191
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030276,
+      "m_Key": "OpinionNews_10025",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559192
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030277,
+      "m_Key": "SideNews_10058",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559193
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030278,
+      "m_Key": "SideNews_10059",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559194
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030279,
+      "m_Key": "SideNews_10060",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559195
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030280,
+      "m_Key": "SideNews_10061",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559196
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030281,
+      "m_Key": "SideNews_10062",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559197
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030282,
+      "m_Key": "SideNews_10063",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559198
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030283,
+      "m_Key": "SideNews_10064",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559199
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030284,
+      "m_Key": "SideNews_10065",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559200
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030285,
+      "m_Key": "SideNews_10066",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559201
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030286,
+      "m_Key": "SideNews_10067",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559202
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030287,
+      "m_Key": "SideNews_20056",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559203
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030288,
+      "m_Key": "SideNews_20057",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 2004926924096559204
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 473240352332963840,
+      "m_Key": "SideNews_1005",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7892723601979211871
+          }
+        ]
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 170
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 0,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 1000][condition,flag,isset,joinus][onetime]<b><u>You joined us… There is no going back…</u></b>"
+        }
+      },
+      {
+        "rid": 1,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[condition,flag,isset,diarrhea][onetime]<b><u>A well known food manufacturer takes faulty series of their product off the shelves, because of ‘brand risk’.</u></b>"
+        }
+      },
+      {
+        "rid": 2,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[condition, day, equals, 3][onetime]<b><u>Gallons of cum found in {UScity} water supply. Suspected sperm farm CEO resigns.</u></b>"
+        }
+      },
+      {
+        "rid": 3,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 10000][onetime]<b><u>New weapon design from {country}! Are giant robots the future of the battlefield?</u></b>"
+        }
+      },
+      {
+        "rid": 4,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>White ghettos on the rise. Why do they exist?</u></b>"
+        }
+      },
+      {
+        "rid": 5,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Benefits of race mixing. All you need to know.</u></b>"
+        }
+      },
+      {
+        "rid": 6,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Furrism on the rise. Why do people hate our fluffy friends?</u></b>"
+        }
+      },
+      {
+        "rid": 7,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Leaked code of Elven Fortress explains the general relativity. Learn how.</u></b>"
+        }
+      },
+      {
+        "rid": 8,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Z axis gender discovered, giving the gender plane a new dimension</u></b>"
+        }
+      },
+      {
+        "rid": 9,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>International pizza chain closed over minor violations</u></b>"
+        }
+      },
+      {
+        "rid": 10,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>What happened on Bobesta’s island? 40 page long documentary released.</u></b>"
+        }
+      },
+      {
+        "rid": 11,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>DEVELOPING STORY - Situation \"critical\" says sheriff on 17 hour sperm bank standoff - watch LIVE</u></b>"
+        }
+      },
+      {
+        "rid": 12,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Hundreds of demonstrations erupt in Japan, thanking the government for abolishing the pornography censorship law.</u></b>"
+        }
+      },
+      {
+        "rid": 13,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Over 50% of men have erectile dysfunction! How to deal with estrogen additives?</u></b>"
+        }
+      },
+      {
+        "rid": 14,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Bones of over {number, 200,1000} people found in {UScity}’s city hall. Were satanist rituals performed?</u></b>"
+        }
+      },
+      {
+        "rid": 15,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>This {number, 5, 10} year old girl is able to levitate a cucumber with the sheer power of her will. Watch the video!</u></b>"
+        }
+      },
+      {
+        "rid": 16,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Polish language is becoming the new Latin? How to start learning now.</u></b>"
+        }
+      },
+      {
+        "rid": 17,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Polish Empire’s secret technology revealed! Is peoplekind in danger?</u></b>"
+        }
+      },
+      {
+        "rid": 18,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Shocking new study finds that 87% of males born after 2000 have never been hugged.</u></b>"
+        }
+      },
+      {
+        "rid": 19,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Despite being 13% of the population gamers constitute for 56% of virgins. A deep look into the gaming community.</u></b>"
+        }
+      },
+      {
+        "rid": 20,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>2 + 2 = thought crime? Mathematical certainty hangs in the balance as Orwell’s worst fears come to life</u></b>"
+        }
+      },
+      {
+        "rid": 21,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>SHOCKING: Insider info reveals brain implants have a security loophole, can be easily hacked.</u></b>"
+        }
+      },
+      {
+        "rid": 22,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>SHOCKING: Hacked brain implant found streaming sissy porn directly into a boy’s brain.</u></b>"
+        }
+      },
+      {
+        "rid": 23,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Scientists in {country} found strange eggs thousands of years old. The beginning of a new Paleo Era?</u></b>"
+        }
+      },
+      {
+        "rid": 24,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>SHOCKING: Suicide rates higher than ever; as high as {number, 20, 40}% for white males aged 20.</u></b>"
+        }
+      },
+      {
+        "rid": 25,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Beautiful story about sex in a kindergarden shakes our view of society. Read more.</u></b>"
+        }
+      },
+      {
+        "rid": 26,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>{UScity} man arrested 8 years after killing man, setting fire to his genitals</u></b>"
+        }
+      },
+      {
+        "rid": 27,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Mars Colony citizens demand more sustainable food sources, citing scientific study that crickets are more sustainable than cockroaches</u></b>"
+        }
+      },
+      {
+        "rid": 28,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Can a Dog say Mew and a Cat say Bork?</u></b>"
+        }
+      },
+      {
+        "rid": 29,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Scientific breakthrough: Alcubierre drive's massive road block finally passed</u></b>"
+        }
+      },
+      {
+        "rid": 30,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>New bar by the name of H.3.A.V.E.N opening up in {number, 5, 15} days</u></b>"
+        }
+      },
+      {
+        "rid": 31,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>An accident at a nuclear power plant has created mutant spiders with {number,50,70} legs.</u></b>"
+        }
+      },
+      {
+        "rid": 32,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Mars Colony citizens running out of food... They ate Mark...</u></b>"
+        }
+      },
+      {
+        "rid": 33,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Vice president of Divided airlines says that \"leg room is a privilege not a right\" causing international outrage</u></b>"
+        }
+      },
+      {
+        "rid": 34,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>{UScity} man kidnapped a scientist and a child (ToT) to make a genetically engineered cat girl, authorities say</u></b>"
+        }
+      },
+      {
+        "rid": 35,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>SHOCKING: Insider info reveals {company} brain implants have a security loophole and can be easily hacked</u></b>"
+        }
+      },
+      {
+        "rid": 36,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Predator parent locked up. Red flags that YOU can look out for in your neighbourhood? Head patting and hand holding</u></b>"
+        }
+      },
+      {
+        "rid": 37,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Frog</u></b>"
+        }
+      },
+      {
+        "rid": 38,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Moon base? Soon it may be a “bear base”. An attack by these tricky space mammals caught our cosmonauts off guard</u></b>"
+        }
+      },
+      {
+        "rid": 39,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<u><b>The government-made gender swapping drug is now complete! Death rate: only {number,45,99}%</u></b>"
+        }
+      },
+      {
+        "rid": 40,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Missing girl returned home after 2 weeks! Happy parents: \"We ground her body and fed it to the dogs, impossible...\"</u></b>"
+        }
+      },
+      {
+        "rid": 41,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>New vape flavor named “Dick girl fumes” is taking over the market</u></b>"
+        }
+      },
+      {
+        "rid": 42,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Scientists add more letters to greek alphabet after new strain of {disease} appeared</u></b>"
+        }
+      },
+      {
+        "rid": 43,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Failed your prostate exam? Here's how you can prepare for the next one</u></b>"
+        }
+      },
+      {
+        "rid": 44,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Cyborg ninja breaks into a military base in {UScity}, bullets are said to be \"ineffective\"</u></b>"
+        }
+      },
+      {
+        "rid": 45,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Is your smart fridge spying on you? Fridge CEO: \"These data are used to improve your experience\"</u></b>"
+        }
+      },
+      {
+        "rid": 46,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Stay Safe! Two cyborg men were fighting with katanas out in the wastelands, local authorities say no civilians were hurt</u></b>"
+        }
+      },
+      {
+        "rid": 47,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Lawmaker ({number,32,79}) proposed legalisation of sexbots. He died soon after of heart attack</u></b>"
+        }
+      },
+      {
+        "rid": 48,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Hackers took down biggest yiff website in {country}, crippling furry community there for years</u></b>"
+        }
+      },
+      {
+        "rid": 49,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>More countries to ban sexbots after birth rates dropped there to all time lows</u></b>"
+        }
+      },
+      {
+        "rid": 50,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Millions of people trapped in VR game are now having massive serverwide orgies. What's the problem? It's PEGI 7</u></b>"
+        }
+      },
+      {
+        "rid": 51,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Are your balls itching? That's just the beginning of the real problems to come. Click here for more...</u></b>"
+        }
+      },
+      {
+        "rid": 52,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>:) :) :), the artist behind extremely popular death-noise-breakcore albums breaks silence</u></b>"
+        }
+      },
+      {
+        "rid": 53,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Secretly recorded video of our staffer has been released by right wing saboteurs. DO NOT WATCH IT</u></b>"
+        }
+      },
+      {
+        "rid": 54,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 20000]<b><u>Riots in {country} escalate after ALM member was KILLED by unidentified drone</u></b>"
+        }
+      },
+      {
+        "rid": 55,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Polish occupation in {country2}- everything you need to know</u></b>"
+        }
+      },
+      {
+        "rid": 56,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Group of otakus (japanophiles) kidnaps and rapes {number,3,13} years old boy</u></b>"
+        }
+      },
+      {
+        "rid": 57,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Gang of {number,3,69} wild {animal} TERRORIZING small city in {UScity}. With pictures</u></b>"
+        }
+      },
+      {
+        "rid": 58,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>New mutation of HIV called HIV-{number,20,77}xj already killed {number,3,1790} in {country}</u></b>"
+        }
+      },
+      {
+        "rid": 59,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>US military launches airstrikes against Taliban in {country} and kills {number,2,666} unborn children</u></b>"
+        }
+      },
+      {
+        "rid": 60,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>\"Dishonorable\" says Ambassador of {country} after {number,3,20} proxy wars veterans are gifted Medal of Honor</u></b>"
+        }
+      },
+      {
+        "rid": 61,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>IMPORTANT. Nationalism on the rise after WHITE MALE wins presidential elections in {country}</u></b>"
+        }
+      },
+      {
+        "rid": 62,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Thanks to this new cybernetic your male and male like genitals can grow up to {number,2,5} inches</u></b>"
+        }
+      },
+      {
+        "rid": 63,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>A recession in {country} left {number,5,20} thousand people homeless.</u></b>"
+        }
+      },
+      {
+        "rid": 64,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{country} scientists discovered a new way to cure heterosexualism.</u></b>"
+        }
+      },
+      {
+        "rid": 65,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Giant breakthrough in genetics. Humanity's closest genetic neighbour is {animal}!</u></b>"
+        }
+      },
+      {
+        "rid": 66,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{celebrity} is a member of the {terroristorganisation}? A terrifying report from our reader.</u></b>"
+        }
+      },
+      {
+        "rid": 67,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Tensions between {country} and {country} increase. War?</u></b>"
+        }
+      },
+      {
+        "rid": 68,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Illegal tourists found in {country} hauling {number,2,100} million dollars. Whose money is this?</u></b>"
+        }
+      },
+      {
+        "rid": 69,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>I was mugged on the street today and that made me love {UScity}’s diversity.</u></b>"
+        }
+      },
+      {
+        "rid": 70,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Mass suicide at Four Leaf Clover church in {UScity} after congregation ingest handfuls of {color} pills.</u></b>"
+        }
+      },
+      {
+        "rid": 71,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Is anal a sin? Local {sexuality} priest answers.</u></b>"
+        }
+      },
+      {
+        "rid": 72,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Do you love {bodypart}? Scientists say you are more likely to be {sexuality}.</u></b>"
+        }
+      },
+      {
+        "rid": 73,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Are you {sexuality}? Scientists say you are more likely to be into {bodypart}.</u></b>"
+        }
+      },
+      {
+        "rid": 74,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{celebrity} found dead. Autopsy report suggests suicide by {deathcause}.</u></b>"
+        }
+      },
+      {
+        "rid": 75,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Fatal mistake: {country}’s football player 'killed by teammates after defensive error'</u></b>"
+        }
+      },
+      {
+        "rid": 76,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>READ MORE: Lightning strike kills {number,3,10} children playing football in {country}</u></b>"
+        }
+      },
+      {
+        "rid": 77,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Dismembered {bodypart} found in a small church in {UScity}. Shocking footage.</u></b>"
+        }
+      },
+      {
+        "rid": 78,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Gigantic {animal} attending a school in Florida? Incredible story.</u></b>"
+        }
+      },
+      {
+        "rid": 79,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>SHOCKING: {sexuality}s banned in {country}!</u></b>"
+        }
+      },
+      {
+        "rid": 80,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>' Breathtaking’ {sexuality}ity no longer illegal in {country}!</u></b>"
+        }
+      },
+      {
+        "rid": 81,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>SHOCKING: Team behind a newly released porn novel has connections with {terroristorganisation}!</u></b>"
+        }
+      },
+      {
+        "rid": 82,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Virtual reality gaming closer than ever with release of SCO(Spear Craft Offline) </u></b>"
+        }
+      },
+      {
+        "rid": 83,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Riots in {UScity} end after a \"brutal\" \"military\" \"intervention\".</u></b>"
+        }
+      },
+      {
+        "rid": 84,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Young trillionaire funds his army in {country}. Coup incoming?</u></b>"
+        }
+      },
+      {
+        "rid": 85,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Brutal genocide in {country}. Over {number, 8800, 9200} people dead.</u></b>"
+        }
+      },
+      {
+        "rid": 86,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{company}’s CEO is {sexuality}? Beautiful story.</u></b>"
+        }
+      },
+      {
+        "rid": 87,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Do you like {color}? Your future is not looking bright...</u></b>"
+        }
+      },
+      {
+        "rid": 88,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Biggest cock in {UScity}! Old farmer’s chicken wins a local competition. </u></b>"
+        }
+      },
+      {
+        "rid": 89,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{UScity} man found having sex with {animal}. The animal did not survive.</u></b>"
+        }
+      },
+      {
+        "rid": 90,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{UScity} man found having sex with {animal}. Luckily for him the animal isn’t pressing charges.</u></b>"
+        }
+      },
+      {
+        "rid": 91,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Cheap labor in the {country} causes fursuit prices to plummet. The end of western suit makers' iron grip on the industry?</u></b>"
+        }
+      },
+      {
+        "rid": 92,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{company} sued after alleged discrimination against {sexuality}</u></b>"
+        }
+      },
+      {
+        "rid": 93,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{number,1000,2000} people commit a mass suicide in {UScity} center. Why?</u></b>"
+        }
+      },
+      {
+        "rid": 94,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{UScity} man kidnap scientist to make a genetically engineered {animal} girl, authorities say</u></b>"
+        }
+      },
+      {
+        "rid": 95,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{UScity} man confesses to stealing {number,10,50} Lbs of butter from store</u></b>"
+        }
+      },
+      {
+        "rid": 96,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>SHOCKING! Number of \"SHOCKING\"s in news headlines increased by {number, 300, 500}% last week.</u></b>"
+        }
+      },
+      {
+        "rid": 97,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>SHOCKING!!! {country} president is now a drug addict!</u></b>"
+        }
+      },
+      {
+        "rid": 98,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Clone of Mahatma Gandhi demands {country} ban all imports and exports of {animal}s or face nuclear annihilation.</u></b>"
+        }
+      },
+      {
+        "rid": 99,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Annual Teddybear market recovers to {number,20,50}% of tank sales.</u></b>"
+        }
+      },
+      {
+        "rid": 100,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Green Jelly beans linked to acne.</u></b>"
+        }
+      },
+      {
+        "rid": 101,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>VR headsets only for adults? - Industry accepts that the only profitable genre is porn</u></b>"
+        }
+      },
+      {
+        "rid": 102,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>State of emergency in {country} after outbreak of rabies caused by a furry convention</u></b>"
+        }
+      },
+      {
+        "rid": 103,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Man from {country} dies due to a vinegara overdose that resulted in a {number,10,85} hour erection</u></b>"
+        }
+      },
+      {
+        "rid": 104,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 1000][onetime][image, sex][condition, longeststreamlength, above, 120]<b><u>Is this for real?! Some white cis male was streaming his sexual intercourse with sexbot for a few hours. Now police took interest in the matter.</u></b>\n<size=60%>This is outrageous… People watched his stream en masse. Sadly, no legal action can be taken against viewers, because watching sexbot materials is not illegal. CockTwitch, website on which it all took place, has refused to take action, because of its \"policies\" "
+        }
+      },
+      {
+        "rid": 105,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 10000][onetime][image, religion][condition,flag,isset,church-whatHappenedAfter]<b><u>Explosion at St. Peter's Basilica caused by a gas leak.</u></b>\n<size=60%>Nothing really suspicious happened there and all of these fake news and conspiracy theories circling around the internet are disgusting and inappropriate. Oh and Pius XXX is the pope again."
+        }
+      },
+      {
+        "rid": 106,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police]<b><u>Notorious terrorist/comedian Sam <REDACTED> once again ESCAPED his solitary confinement</u></b>\n<size=60%>This sick bastard was allowed by our neo-libunist government to get away with all of his crimes. Quick action has been taken by the FBI and other organisations, but he disappeared without a trace. Truly dangerous times are upon us..."
+        }
+      },
+      {
+        "rid": 107,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, computer]<b><u>Video games as a growing danger. Another streamer takes his life after loss in a multiplayer competition</u></b>\n<size=60%>Something once considered an internet joke now became reality. Video games meltdowns (also known as \"rages\") are taking their toll on our young part of demography. Only this quarter video game related deaths rose by {number,150,3000}%..."
+        }
+      },
+      {
+        "rid": 108,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, religion]<b><u>Church of Q Anon officially registered as a religion</u></b>\n<size=60%>Who would have thought that something as sinister as the cult of Q Anon would find recognition in today’s society. Our representative of dead religions, catholic priest Marko gave us a short interview on this matter..."
+        }
+      },
+      {
+        "rid": 109,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police2]<b><u>New victim of the Zodiac killer twiited this weird photo of a cow made of butter seconds before her death</u></b>\n<size=60%>What could this possibly mean? Our experts think they found a clue in a US senator’s old twiit. Could there be more to the case?"
+        }
+      },
+      {
+        "rid": 110,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police3]<b><u>Blue Lives Matter movement officially recognized as a terrorist organization by UN</u></b>\n<size=60%>Finally some good news in this G-d forsaken world. Although no one was yet sentenced this is a good sign for all newly formed private sector police alternatives.  "
+        }
+      },
+      {
+        "rid": 111,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, cartoon]<b><u>Loooney Tunes remake will see Elmer Fud without his rifle as creators declare \"we're not doing guns\"</u></b>\n<size=60%>Overall good and reasonable decision was overshadowed by a wave of outrage on social media. Creators received hundreds of death threats from 2nd amendment loving fans."
+        }
+      },
+      {
+        "rid": 112,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, ring]<b><u>\"Too much heat\". Pro wrestling match turned very real when fans stormed the ring after racist remark by one of the competitors</u></b>\n<size=60%>World of professional wrestling once again shows how much out of time it is. Sadly, engaged performers weren’t hurt."
+        }
+      },
+      {
+        "rid": 113,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, hotdog]<b><u>Is this video of Obunga buying \"hot dogs\" for 65k$ real? Our expert is not so sure</u></b>\n<size=60%>With deep fake technology on the rise we can’t be sure of any video evidence that is not captured by government confirmed journalists. Read more to know who you can believe"
+        }
+      },
+      {
+        "rid": 114,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, sewer][condition, day, equals, 4]<b><u>Remember our news about gallons of cum found in the water supply? It’s worse than we thought...</u></b>\n<size=60%>New government expertise found out that even {number, 501, 3500} more females could be impregnated, including girls as young as {number, 10, 13}. Now the search for the fathers began. "
+        }
+      },
+      {
+        "rid": 115,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, jumper]<b><u>People falling from the sky now an everyday occurence</u></b>\n<size=60%>With suicide rates as high as they are now this has become a part and parcel of living in a city. How to deal with the trauma? Our answer: Drugs. (Sponsored by Bigpharma™)"
+        }
+      },
+      {
+        "rid": 116,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, jumper]<b><u>People falling from the sky now an everyday occurence</u></b>\n<size=60%>With suicide rates as high as they are now this has become a part and parcel of living in a city. How to deal with the trauma? Our answer: Drugs. (Sponsored by Bigpharma™)"
+        }
+      },
+      {
+        "rid": 117,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, satellite]<b><u>CEO of SpaceY, Edison, and Brainlinker died as the world's first brain-interface chip produced by Brainlinker short-cricuit and exploded.</u></b>\n<size=60%>New owner claims all 3 companys will expected to have record gains as the late CEO can't miss-manage any projects anymore."
+        }
+      },
+      {
+        "rid": 118,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police]<b><u>Corporate meme pages banned? Lawmakers from {country} could save us from cringe ridden social media forever</u></b>"
+        }
+      },
+      {
+        "rid": 119,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police]<b><u>State of emergency in {country} after outbreak of rabies caused by a furry convention</u></b>"
+        }
+      },
+      {
+        "rid": 120,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police]<b><u>Police raids a warehouse, finds illegal contraband.</u></b>\n<size=60%>Officer Hugh Janus exclaimed: \"What we found there changed our lives forever...\""
+        }
+      },
+      {
+        "rid": 121,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, policechild]<b><u>Something TERRIBLE has happened</u></b>\n<size=60%>Sexbot blended in a class of grade schoolers, pretending to be a student for years... Teachers noticed only after sexbot started whoring itself in exchange of motor oil..."
+        }
+      },
+      {
+        "rid": 122,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, satellite]<b><u>Dead body reported on the International Space Station.</u></b>\n<size=60%>Remaining crewmates are trapped in space with a monster. Meeting on board has been cancelled because of an alarm going off"
+        }
+      },
+      {
+        "rid": 123,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, demonstration]<b><u>Locals reports Gang wars between Neo Furries and Hyper Weebs.</u></b>\n<size=60%>Officials says we should all stay in our homes to avoid the cross fire"
+        }
+      },
+      {
+        "rid": 124,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, brogan]<b><u>Bo Brogan spoke of controversial cocktwich streamer in the latest podcast</u></b>\n<size=60%>\"This white guy doesn't look like it but he can bang like an orangutan. I bet if he hit the gym and ate more protein he could bang that sexbot like a freaking GORILLA UAAAGH...UUUAAAAGH...Jamie pull up that video of those two apes having sex.\"</u></b>"
+        }
+      },
+      {
+        "rid": 125,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 20000][image, island]<b><u>Body found on {celebrity}’s private island identified as {name}. Despite multiple connections police say the victim just drifted there.</u></b>\n<size=60%>For now we should believe detectives, but worth mentioning is that this celebrity has some history of similar incidents"
+        }
+      },
+      {
+        "rid": 126,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, satellite]<b><u>{country} launched a new satellite a few weeks ago.</u></b>\n<size=60%>Now it malfunctioned and exploded, destroying {number,2,53} other satelites."
+        }
+      },
+      {
+        "rid": 127,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, satellite]<b><u>Terrible news for space fans!</u></b>\n<size=60%>Amount of debris on earth’s orbit could jeopardize further space exploration. We asked {celebrity} about his thoughts on this matter"
+        }
+      },
+      {
+        "rid": 128,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, policechild]<b><u>Horrible! Policemen brutally arrest a {number,6,14} years old boy after he allegedly infected his partner with HIV on purpose</u></b>\n<size=60%>Story that makes the blood boil. Our guest claims this case is only one of many. Is it the start of a new social movement? "
+        }
+      },
+      {
+        "rid": 129,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, army]<b><u>After recession hit {country}, its government was forced to trade {number,8,77}% of it’s military weapons and vehicles with {company} in exchange of their products to prevent mass starvation</u></b>\n<size=60%>This corporation now has almost as much \"direct\" persuasion power as Bepsi"
+        }
+      },
+      {
+        "rid": 130,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, happykid]<b><u>\"Breathtaking\": This brave {number,8,16} year old girl from {UScity} has shaken the world with her new {art}!</u></b>\n<size=60%>The future for kid idols and their lovers is looking brighter than ever before and that is truly beautiful. "
+        }
+      },
+      {
+        "rid": 131,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, pills]<b><u>Shocking: Bigpharma™ bought all patents for manufacturing of {disease} medicine and increased the price by {number,500,3000}%</u></b>\n<size=60%>Thanks to that natural selection might become a thing again and we believe it is a good thing. Experts project that {number,200000,6000000} people will die because of this change."
+        }
+      },
+      {
+        "rid": 132,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, child]<b><u>{number,6,15} years old kid accused his mother of forcing sex change on him. Our undercover reporter just found out that he is full of shit.</u></b>\n<size=60%>Is there something more disgusting than false accusations against your own mother? We think not. After {number,2,30} weeks of espionage we want to share our video evidence that exposes this former girl."
+        }
+      },
+      {
+        "rid": 133,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, pills]<b><u>Man from {country} dies due to an overdosed on vinegara that resulted in a {number,10,50} hour erection.</u></b>\n<size=60%>Later it was found that he refused to seek medical help because he was quote 'Built different'."
+        }
+      },
+      {
+        "rid": 134,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, cartoon]<b><u>Forbidden virtual love between a man from {country} and {animegirl}'s {bodypart}.</u></b>"
+        }
+      },
+      {
+        "rid": 135,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 10000][onetime][image, OPfuneral]<b><u>Today is the first anniversary of martyr's death of C. Jenner</u></b>\n<size=60%>One year passed from possibly the biggest tragedies our country has ever seen. We at Bang HQ are proud to announce that we interviewed someone who was close to the victim. Her dentist Lucas."
+        }
+      },
+      {
+        "rid": 136,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][never][image, OPpope]<b><u>Newly elected pope named himself \"Goku the second\" and here is why it will help People of color</u></b>\n<size=60%>After losing 90% of its followers in Europe, catholic church took some drastic measures to appeal to the new generations of people beings. Some of these measures included free sex change therapy for new followers."
+        }
+      },
+      {
+        "rid": 137,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPblacks]<b><u>\"I woke up and my hands were gone, but he was with me...\". This beautiful romantic story of 2 gay Somali pirates will make you cry</u></b>\n<size=60%>Is there something more cuter than puppies? We think yes and this is our proof. Gay love is something much purerer and these guys also have big guns."
+        }
+      },
+      {
+        "rid": 138,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPcooking]<b><u>Preview of tonight's biggest show \"Cooking with Lil Uzi\"</u></b>\n<size=60%>Something we all have been waiting for! After dismissal of producer’s sex allegations our favourite cooking show is back with its 3rd season. Action packed trailer just increased the hype and people’s appetite is bigger than ever!"
+        }
+      },
+      {
+        "rid": 139,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPcomputer2]<b><u>Hooray! Thanks to Amazoon's voluntary efforts {number,123,5804} of new illegal immigrants learned how to program in Zuluscript\"</u></b>\n<size=60%>I think all of us agree that behaviour like this should be rewarded by our government. Will other companies take the same road or are they doomed to fail?"
+        }
+      },
+      {
+        "rid": 140,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsocialmedia]<b><u>Are you being censored on Faceberg and other social media? Stop being racist.</u></b>\n<size=60%>Some people are still confused by simple community guidelines. Our local lawyer in just a few weeks prepared for us a short, 74 page long summary of all rules. \"There’s no excuse for being a bigot\""
+        }
+      },
+      {
+        "rid": 141,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsurgery]<b><u>Should be pedophiles forced to take age reassignment surgery?</u></b>\n<size=60%>We invited experts to an open discussion about the newest medical breakthrough: age reassignment surgery. After a few hours, we think we got an answer..."
+        }
+      },
+      {
+        "rid": 142,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsport]<b><u>Transgender females are dominating the Winter Olympics. Should people who menstruate be concerned?</u></b>\n<size=60%>One of the top transgender athletes, Bryaona from {country} is one of the many victims of toxic TERF hate, that dominated public sphere in the last couple of months. Bryona, with her height of 7’2 and 350 pounds… "
+        }
+      },
+      {
+        "rid": 143,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPporn]<b><u>One American woman is trying to bring down CockTwitch (but her fight isn't against porn)</u></b>\n<size=60%>Her petition was already signed over {number,80,700} thousand times. What motivated her? Her account lost all of her subscribers in a timespan of a few months. Later she found out people can unsubscribe her channel at any time they want. \"They just gave me a false sense of security.\""
+        }
+      },
+      {
+        "rid": 144,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPanime]<b><u>Is anime a mean of escape for radical right wing extremists?</u></b>\n<size=60%>Our study found out that the color of skin pigment of every major heroine in japanese animation is much closer to eastern european skin pigment than asian. For example, {animegirl}’s skin..."
+        }
+      },
+      {
+        "rid": 145,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPnaked]<b><u>This popular pornstar just became the first underaged MAYOR of NYC. Click here to see his/her new spicy photoshoot</u></b>\n<size=60%>Who said that mayors cannot be sexy? We at Bang redaction hope this will become a new trend among politicians to nominate acknowledged by sex work community persons. "
+        }
+      },
+      {
+        "rid": 146,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPpolitician]<b><u> Is corruption really that bad? Biggest misconceptions about world politics in our new exclusive opinion article</u></b>\n<size=60%>It’s truly terrifying that people still believe that illegal political tactics and deals behind closed doors should be ostracised. In truth, they are the backbone of our democracy. Opinion... "
+        }
+      },
+      {
+        "rid": 147,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPporn]<b><u>She cheated, but he was looking at other females first</u></b>\n<size=60%>As ridiculous as this sounds some m*les think that it’s not their fault when women cheat on them. \"{number,89,99}% of the times women are forced to cheat. Numbers don’t lie\" says our {sexuality} expert."
+        }
+      },
+      {
+        "rid": 148,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPpolitics]<b><u>Do politicians lie to us? Yes and we should be grateful to them for it</u></b>\n<size=60%>\"Average human beings would not withstand psychological trauma caused by knowing the truth about our society\", says our expert. This has been fact checked by human rights organisations"
+        }
+      },
+      {
+        "rid": 149,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPblacks]<b><u>Big problem with God. He presumably created blacks, which is great, but what about green, blue or purple people? Science can fix this and should replace religion</u></b>"
+        }
+      },
+      {
+        "rid": 150,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsocialmedia]<b><u>\"I’m quitting this network! 90% of articles are made up!\" These are the last words of our now dead colleague. We loved you too, buddy...</u></b>"
+        }
+      },
+      {
+        "rid": 151,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPcomputer2]<b><u>You are following Ghislaine Maxwell trail? Really? Don’t you have anything better to do, you fucking weirdo extrimist?</u></b>"
+        }
+      },
+      {
+        "rid": 152,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPcar]<u><b>Should self driving cars be considered sexbots due to rising number of autosexuals humping the tailpipe? Short answer: yes</u></b>"
+        }
+      },
+      {
+        "rid": 153,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPcar]<u><b>Gas prices up? Good. It's good for environment and national budget</u></b>"
+        }
+      },
+      {
+        "rid": 154,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsurgery]<u><b>Is healthy lifestyle done for good? These new artificial organs are cheaper in exploitation and more efficient than your mortal flesh</u></b>"
+        }
+      },
+      {
+        "rid": 155,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[id, 20000][image,OPanimeboy]<b><u>{animeboy} from popular Japanese animation has become a face of white supremacist revolution in {country}. Our expert explains to us why</u></b>\n<size=60%>At first local media called it an \"innocent joke\" and \"a meme\" involving stunning {number,200,3000}k posts, but now nobody is laughing… except Adolf Hitler..."
+        }
+      },
+      {
+        "rid": 156,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image,OPcompany]<b><u>{company} is fighting against \"unfair\" trading tactics of smaller businesses in {country} and we should cheer it on</u></b>\n<size=60%>Everyone loves our corporate overlords and their great products, right? If their demands are not met they will fire {number,10,90}% of their workforce so we shouldn’t anger them."
+        }
+      },
+      {
+        "rid": 157,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image,OPchildandadult]<b><u>Age of consent is again a topic of public debate in {country}. Concerned reader: \"How should I explain my {number,6,13} years old daughter that her relationship may offend someone?\"</u></b>\n<size=60%>Everyone thought that \"love has no age limit\" is a common knowledge by now. Turns out that is not the case and it’s breaking hearts of kids all over the world"
+        }
+      },
+      {
+        "rid": 158,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image,OPuni]<b><u>{name} became new professor of {sexuality2}ity. Local university in {UScity} couldn’t be prouder!</u></b>\n<size=60%>\"Step in a right direction\", that’s how most students reacted to this great news. Click for a full interview..."
+        }
+      },
+      {
+        "rid": 159,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, OPfemale]<b><u>\"My boyfriend (M {number,22,52}) contracted {disease} and I (F {number,16,31}) was ok with it. Now he wants to have unprotected sex. Should I allow it?\"</u></b>\n<size=60%>Bang redactors are answering worried reader’s questions. Find out what we told her! "
+        }
+      },
+      {
+        "rid": 160,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, OPdragqueen]<b><u>Decisions must be made by {country}'s government after it's Civil Liberties ranking dropped by {number,1,30} this year. Our solutions: Drag Queens in kindergartens</u></b>\n<size=60%>No surprise in this ranking change. If only they listened to {celebrity} advice this could be averted. Now UN sanctions are probably imminent. Unless… Drag Queens."
+        }
+      },
+      {
+        "rid": 161,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, OPpoor]<b><u>\"I don’t want to personally attack {celebrity}, but I will anyway.\"</u></b>\n<size=60%> Leaders of progressive left once again attacked one of the world’s biggest names after they dropped by {number,2,27} in the latest poll. Can we really blame them? Despite 80% of income tax rich people are still getting richer and poor people are still getting poorer. "
+        }
+      },
+      {
+        "rid": 162,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police][never]<b><u>Spointaneus stroke epidemic in our city! </u></b>\n<size=60%>Officer Hugh Janus exclaimed: \"What we found there changed our lives forever...\""
+        }
+      },
+      {
+        "rid": 163,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPpolitician]<b><u>Top paid socioeconomic think tank agrees. Bad things will keep happening."
+        }
+      },
+      {
+        "rid": 164,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsurgery]<b><u>While rich around the world are transcending humanity, should lower and middle class people be afraid? Of course not!"
+        }
+      },
+      {
+        "rid": 165,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsurgery]<b><u>Can you imprison your employees when they refuse to work unpaid overtime? Lawyers say: it depends."
+        }
+      },
+      {
+        "rid": 166,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Government doubles the budget for monitoring schizophrenics.</u></b>"
+        }
+      },
+      {
+        "rid": 167,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Undercover journalists unveil that for every 100g of plant-based meat, 114g of real meat is being used during production</u></b>"
+        }
+      },
+      {
+        "rid": 168,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>{UScity} falls into anarchy as {terroristorganisation} claims {number,2,5} districts as autonomous zones free from tyranny</u></b>"
+        }
+      },
+      {
+        "rid": 169,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police][never]<b><u>Asbestos found once again in Stilou clothing!</u></b>\n<size=60%>The affected clothing includes man thongs in these colors: yellow, salmon and peach. Brand is denying accusations and their director says that clothes are ‘100% safe if not worn’."
+        }
+      },
+      {
+        "rid": 170,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CustomEpoch": 1655566500130
+        }
+      },
+      {
+        "rid": 2004926924096559187,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police2]<b><u>Does shitting yourself count as disobeying the “don’t move” command? </u></b>\n<size=60%>One {UScity} teen learned the answer the hard way and now is fighting for his life in the hospital. Police chief: “100% justified”"
+        }
+      },
+      {
+        "rid": 2004926924096559188,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police2]<b><u>VolksAuto is no longer in threat of facing bankruptcy after more than 10 000 of their workforce involved in the class action dies in the span of a month.  </u></b>\n<size=60%>“A return to tradition” "
+        }
+      },
+      {
+        "rid": 2004926924096559189,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, cartoon]<b><u>Right-wing’s weird obsession with catgirls explained. </u></b>\n<size=60%>Are our pets safe as the voices for “the return to tradition” grow stronger?"
+        }
+      },
+      {
+        "rid": 2004926924096559190,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, child]<b><u>A new viral internet trend started by our youth is even worse than the last one. </u></b>\n<size=60%>Will beatings come back to grace? "
+        }
+      },
+      {
+        "rid": 2004926924096559191,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPfuneral]<b><u>Is there are reason for a strong correlation between paternity test bans across the world and male suicide? </u></b>\n<size=60%>“Bollocks”, says our expert"
+        }
+      },
+      {
+        "rid": 2004926924096559192,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsocialmedia]<b><u>The list of not so obvious shopping cart item combinations that may result in a cashier calling the police on you</u></b>\n<size=60%>Some examples: cucumber and condom, shovel and lime, anime plushie and jar…"
+        }
+      },
+      {
+        "rid": 2004926924096559193,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>A government official faked retardation for 13 years. The worst part? It's the beloved cat named Biscuit</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559194,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Overheating vibrators? Falling asleep while masturbating never was as dangerous as now.</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559195,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>New study finds: \"Having intercourse with robots may be linked to Wireless HIV\"</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559196,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Porn addiction. Vile, horrible and destructive disease… that actually helps keeping the marriage together</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559197,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Ancient Greece reenactor village in {country} becomes the place to be for men with small peckers</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559198,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Chromosome thieves. Everything you need to know about this new deadly threat that is still on the loose</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559199,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>“Stealing from the rich and giving it to the poor”. The other side of the story told by one of the incarcerated chromosome thieves</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559200,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Is your boyfriend a right-wing extremist? Check his search history for keyword “anime”</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559201,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Lost family dog that returned home after 5 years turned out to be a spy clone from {country}</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559202,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Urethral penetration. How is that SOUNDING for a cure for impotence?</u></b> "
+        }
+      },
+      {
+        "rid": 2004926924096559203,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Condoms join balloons on the list of forbidden items in {country} since greenhouse gas smuggling costs the government {number,2,30} billions $ a year</u></b>"
+        }
+      },
+      {
+        "rid": 2004926924096559204,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Unvaccinated sperm becomes the hottest item in nazi memorabilia circles. Prices reached {number,200,950}k dollars per Ml</u></b>"
+        }
+      },
+      {
+        "rid": 2293411008828670025,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, hotdog]<b><u>Famous game developer \"HW\" finally paid off his debt!!!</u></b>\n<size=60%>Their game sold over {number,30,60} million copies worldwide. Congratulations HW!"
+        }
+      },
+      {
+        "rid": 2293411343759573083,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police][never]<b><u>MAJOR TRAGEDY! Anti-sexbot activist SHOT AND KILLED</u></b>\n<size=60%>Anti-sexbot activist and our dear friend has been killed while using a bathroom in one of the biggest fast food chains. Was he killed by terrorists or... his diet."
+        }
+      },
+      {
+        "rid": 2293411346165792894,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police][never]<b><u>NEWS OF THE WEEK Federal Agents have apprehended a dangerous pro-sexbot terrorist, pseudonym DAK</u></b>\n<size=60%>One scum less on our streets. I can assure that every child on Earth no longer needs to fear. You are safe. And parents should remember that next time they cast their vote."
+        }
+      },
+      {
+        "rid": 2293411346165792930,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[condition,flag,isset,joinus7_richard3_BotNaked][onetime]<b><u> Is exhibitionism on the rise? Regardless of extreme cold, a perverted woman was spotted jogging through the city! </u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208194,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police2]<b><u>One of the biggest porn studios has been raided</u></b>\n<size=60%>A well known rumor within the industry turned out to be true. Company was making porn using sexbots and then would deepfake human faces on those illegal bots."
+        }
+      },
+      {
+        "rid": 6437392787123208195,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, police3]<b><u>Sex bot captured by authorities taken to be disassembled, wasn't a sex bot</u></b>\n<size=60%>\"I thought the blood was a realistic upgrade...\" said a witness."
+        }
+      },
+      {
+        "rid": 6437392787123208196,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, virus]<b><u>Officially confirmed: a new strain of the virus has been found</u></b>\n<size=60%>It causes a disease very close to dementia and it is contagious! and it's contagious! and it's contagious! and it's contagious! and it's contagi... **read more>>>**"
+        }
+      },
+      {
+        "rid": 6437392787123208197,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, pills]<b><u>Are fursuit-allowing workplaces a potential health hazard?</u></b>\n<size=60%>Our expert tells us more about so-called “furrball syndrome”, its consequences, how to avoid it and who to blame for it…"
+        }
+      },
+      {
+        "rid": 6437392787123208198,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, revolution]<b><u>Cat named Purrdolf Hissler who was elected as a mayor of a small rural town turns out to be a conservative</u></b>\n<size=60%> Now residents are trying to fix their mistake, so far in no vain. “It’s like we have been hit with a Blitzkrieg…”"
+        }
+      },
+      {
+        "rid": 6437392787123208199,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, religion]<b><u>Man dies from heart attack after bringing himself to climax 47 times in a row</u></b>\n<size=60%>”Goon marathon challenge”. Everything you need to know about this new internet trend and its deathly toll…"
+        }
+      },
+      {
+        "rid": 6437392787123208200,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, happykid]<b><u>HE WASN'T DEAD!!!</u></b>\n<size=60%>Lost 6y/o boy found at the MacDonald ball pit after 3 days of searching. The police were left astonished."
+        }
+      },
+      {
+        "rid": 6437392787123208201,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[image, hotdog]<b><u>Big company recalls over {number,22511,364666} penis implants over a potentially life threatening defect</u></b>\n<size=60%>As we have learned from the company’s spokesperson, everyone equipped with the faulty hardware: ‘JACKHAMMER MAGNUM {number,300,9999}’ should remain calm and call a local fire station as soon as possible."
+        }
+      },
+      {
+        "rid": 6437392787123208202,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, OPsurgery]<b><u>What a pickle!</u></b>\n<size=60%>With robotic cock replacements gaining popularity, experts debate whether or not gifting your girlfriend your old, preserved penis in a jar is a good idea</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208203,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[condition, RiotsActive, equals, true][onetime]<b><u>Huge riots in one of the megacities? We call bullshit.</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208204,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>Are you REALLY sure you don't have AIDS? Take this 50-question quiz to find out!</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208205,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>After a catastrophic camouflage implant failure a man gets his privates permanently invisible</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208206,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>New study shows that if the number of hikikomoris won’t stop rising, soon there will be a global shortage of vitamin D</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208207,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime]<b><u>New technology allows to pickpocket kidneys, causing black market organ harvesting to boom in {country}</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208208,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>A scientist from {country} says that {number,1,7} in 10 people might become robosexuals in the next few years</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208209,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Great news! The president of {country} became a woman!</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208210,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>A big flock of sheep attacked {country}. \"We need more grass\" they claim.</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208211,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Average cock size in {country} is only 3 inches! Shocking development!</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208212,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>Biggest yiff convention in {country}. Experts say to hide your dogs.</u></b>"
+        }
+      },
+      {
+        "rid": 6437392787123208213,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "<b><u>{UScity} man fought {number,15,30} people. He won.</u></b>"
+        }
+      },
+      {
+        "rid": 7464767218832900098,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[onetime][image, demonstration][never]<b><u>Riots in one of the biggest megacities!</u></b>\n<size=60%>Local authorities are helpless while the city burns! We asked the mayor if he’s going to listen to the people and resign. His response: ‘I’m not negotiating with terrorists!"
+        }
+      },
+      {
+        "rid": 7892723601979211871,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "[condition,flag,isset,Melissa21.5][onetime]<b><u> New record high on the most difficult karaoke song in existence. Now the company is looking for the winner to give him, her or They, a 100k$ prize </u></b>"
+        }
+      }
+    ]
+  }
+}

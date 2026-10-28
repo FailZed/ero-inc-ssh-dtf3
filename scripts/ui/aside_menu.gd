@@ -74,7 +74,7 @@ func _ready() -> void:
 	minimal.quiet_button(_workshop_button)
 	$VBoxContainer/MenuButtons.move_child(_workshop_button, gallery_button.get_index())
 	_workshop_button.disabled = not ClassDB.class_exists("GDCubismUserModel")
-	_workshop_button.tooltip_text = "Мастерская персонажей · Live2D · Windows x64"
+	_workshop_button.tooltip_text = "Мастерская персонажей · Live2D" if not _workshop_button.disabled else "Для мастерской требуется установить модуль Live2D. См. инструкцию запуска проекта."
 	GameSession.language_changed.connect(_refresh_localized_ui)
 	apply_preset(initial_preset)
 

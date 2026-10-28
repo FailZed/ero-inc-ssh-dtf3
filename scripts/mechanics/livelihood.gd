@@ -48,6 +48,7 @@ func home_level(id: String) -> int:
 func wage(id: String, quality: float) -> int:
 	var job: Dictionary = rules().jobs[id]
 	var bonus := 1.0 + 0.08*(int(career(id).level)-1)
+	if sim.state.world.flags.get("qualified_"+str(job.skill),false): bonus += 0.10
 	if job.location in HOME: bonus += 0.05*home_level("workspace")
 	return roundi(float(job.pay)*bonus*(0.45+0.85*quality))
 
@@ -190,7 +191,7 @@ func _finish(session: Dictionary, quality: float, cancelled: bool) -> Dictionary
 	_note({"kind":"work","id":session.id,"minute":int(sim.state.clock.total_minutes),"pay":paid,"quality":quality,"caught":caught,"cancelled":cancelled})
 	sim.state.livelihood.pending = {}
 	emit_event("work_paid",{"title":job.title,"pay":paid,"caught":caught})
-	return Rules.ok({"pay":paid,"quality":quality,"caught":caught,"career_xp":gained,"accelerated":accelerated,"level":after.level,"missed_classes":session.missed_classes})
+	return Rules.ok({"completed":not cancelled,"pay":paid,"quality":quality,"caught":caught,"career_xp":gained,"accelerated":accelerated,"level":after.level,"missed_classes":session.missed_classes})
 
 func _attendance() -> void:
 	var day := int(sim.state.clock.day_index)

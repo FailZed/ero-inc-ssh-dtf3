@@ -1,0 +1,5378 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -2766267126516050984
+  },
+  "m_Name": "News_sv",
+  "m_LocaleId": {
+    "m_Code": "sv"
+  },
+  "m_SharedData": {
+    "m_FileID": 2,
+    "m_PathID": 7941212782587087890
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 8363390524344257487
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 3496715620352,
+      "m_Localized": "<b><u>Du gick med oss... Det finns ingen återvändo...</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968221
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814656,
+      "m_Localized": "<b><u>En välkänd livsmedelstillverkare tar bort felaktiga serier av sin produkt från hyllorna på grund av \"varumärkesrisk\".</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968222
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814657,
+      "m_Localized": "<b><u>Liter sperma hittades i vattenförsörjningen i {UScity}. Misstänkt spermagårds vd avgår.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968223
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496719814658,
+      "m_Localized": "<b><u>Ny vapendesign från {country}! Är gigantiska robotar framtiden för slagfältet?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968224
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008960,
+      "m_Localized": "<b><u>Vita getton på frammarsch. Varför finns de?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968225
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008961,
+      "m_Localized": "<b><u>Fördelar med rasblandning. Allt du behöver veta.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968226
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008962,
+      "m_Localized": "<b><u>Furrism ökar. Varför hatar folk våra fluffiga vänner?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968227
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008963,
+      "m_Localized": "<b><u>Läckt kod för Elven Fortress förklarar den allmänna relativiteten. Lär dig hur.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968228
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008964,
+      "m_Localized": "<b><u>Z-axelns kön upptäckt, vilket ger genusplanet en ny dimension</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968229
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008965,
+      "m_Localized": "<b><u>Internationell pizzakedja stängd på grund av mindre överträdelser</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968230
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008966,
+      "m_Localized": "<b><u>Vad hände på Bobestas ö? 40 sidor lång dokumentär släppt.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968231
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008967,
+      "m_Localized": "<b><u>UTVECKLING BERÄTTELSE - Situationen \"kritisk\" säger sheriffen på 17 timmars spermabank standoff - titta LIVE</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968232
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008968,
+      "m_Localized": "<b><u>Hundratals demonstrationer utbryter i Japan och tackar regeringen för att de avskaffat lagen om pornograficensur.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968233
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008969,
+      "m_Localized": "<b><u>Över 50 % av männen har erektil dysfunktion! Hur hanterar man östrogentillsatser?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968234
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008970,
+      "m_Localized": "<b><u>Ben av över {number,200,1000} personer hittades i {UScity}s stadshus. Utfördes satanistiska ritualer?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968235
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008971,
+      "m_Localized": "<b><u>Denna {number, 5, 10}-åriga flicka kan sväva en gurka med kraften av sin vilja. Se videon!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968236
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008972,
+      "m_Localized": "<b><u>Har polska språket blivit det nya latinet? Så börjar du lära dig nu.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968237
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008973,
+      "m_Localized": "<b><u>Polska imperiets hemliga teknik avslöjad! Är människor i fara?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968238
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008974,
+      "m_Localized": "<b><u>En ny chockerande studie visar att 87 % av män födda efter 2000 aldrig har blivit kramade.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968239
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008975,
+      "m_Localized": "<b><u>Trots att de är 13 % av befolkningen utgör spelare 56 % av oskulderna. En djup titt in i spelgemenskapen.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968240
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008976,
+      "m_Localized": "<b><u>2 + 2 = tankebrott? Matematisk säkerhet hänger i balans när Orwells värsta farhågor vaknar till liv</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968241
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008977,
+      "m_Localized": "<b><u>CHOCKERANDE: Insiderinformation avslöjar att hjärnimplantat har ett kryphål i säkerheten, som lätt kan hackas.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968242
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008978,
+      "m_Localized": "<b><u>CHOCKERANDE: Hackat hjärnimplantat hittas strömmande sexig porr direkt in i en pojkes hjärna.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968243
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008979,
+      "m_Localized": "<b><u>Forskare i {country} hittade konstiga ägg som är tusentals år gamla. Början på en ny Paleo-era?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968244
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008980,
+      "m_Localized": "<b><u>CHOCKERANDE: Självmordsfrekvensen högre än någonsin; så högt som {number, 20, 40}% för vita män i åldern 20.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968245
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008981,
+      "m_Localized": "<b><u>Vacker berättelse om sex på en dagis skakar vår syn på samhället. Läs mer.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968246
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008982,
+      "m_Localized": "<b><u>{UScity}-man greps 8 år efter att ha dödat en man och tänt eld på hans könsorgan</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968247
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008983,
+      "m_Localized": "<b><u>Invånare i Marskolonien kräver mer hållbara matkällor, med hänvisning till vetenskapliga studier som visar att syrsor är mer hållbara än kackerlackor</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968248
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008984,
+      "m_Localized": "<b><u>Kan en hund säga Mew och en katt sa Bork?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968249
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008985,
+      "m_Localized": "<b><u>Vetenskapligt genombrott: Alcubierre Drives massiva vägspärr passerade äntligen</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968250
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008986,
+      "m_Localized": "<b><u>Ny stapel med namnet H.3.A.V.E.N som öppnar om {number, 5, 15} days</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968251
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008987,
+      "m_Localized": "<b><u>En olycka vid ett kärnkraftverk har skapat muterade spindlar med {number,50,70} ben.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968252
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008988,
+      "m_Localized": "<b><u>Invånare i Mars Colony får slut på mat... De åt Mark...</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968253
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008989,
+      "m_Localized": "<b><u>Vice president för Divided airlines säger att \"benutrymme är ett privilegium inte en rättighet\" som orsakar internationell upprördhet</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968254
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008990,
+      "m_Localized": "<b><u>{UScity}-man kidnappade en vetenskapsman och ett barn (ToT) för att göra en genetiskt modifierad kattflicka, säger myndigheterna</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968255
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008991,
+      "m_Localized": "<b><u>CHOCKERANDE: Insiderinformation avslöjar {company} hjärnimplantat har ett kryphål i säkerheten och kan enkelt hackas</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968256
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008992,
+      "m_Localized": "<b><u>Rovdjursförälder inlåst. Röda flaggor som DU kan hålla utkik efter i ditt närområde? Huvudklappning och handhållning</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968257
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008993,
+      "m_Localized": "<b><u>Groda</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968258
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008994,
+      "m_Localized": "<b><u>Månbas? Snart kan det bli en \"björnbas\". En attack av dessa knepiga rymddäggdjur överraskade våra kosmonauter</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968259
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008995,
+      "m_Localized": "<u><b>Den regeringstillverkade könsbytedrogen är nu klar! Dödsfrekvens: endast {number,45,99}%</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968260
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008996,
+      "m_Localized": "<b><u>Försvunnen tjej återvände hem efter två veckor! Glada föräldrar: \"Vi malde hennes kropp och matade hundarna med den, omöjligt...\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968261
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008997,
+      "m_Localized": "<b><u>Ny vape-smak med namnet \"Dick girl fumes\" tar över marknaden</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968262
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008998,
+      "m_Localized": "<b><u>Forskare lägger till fler bokstäver i det grekiska alfabetet efter att en ny stam av {disease} dykt upp</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968263
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724008999,
+      "m_Localized": "<b><u>Fick du underkänd på din prostataundersökning? Så här kan du förbereda dig för nästa</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968264
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009000,
+      "m_Localized": "<b><u>Cyborg-ninja bryter sig in på en militärbas i {UScity}, kulor sägs vara \"ineffektiva\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968265
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009001,
+      "m_Localized": "<b><u>Spionerar ditt smarta kylskåp på dig? Fridge CEO: \"Dessa data används för att förbättra din upplevelse\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968266
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009002,
+      "m_Localized": "<b><u>Var säker! Två cyborgmän slogs med katanas ute i ödemarkerna, lokala myndigheter säger att inga civila skadades</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968267
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009003,
+      "m_Localized": "<b><u>Lawmaker ({number,32,79}) föreslog legalisering av sexbots. Han dog strax efter av hjärtinfarkt</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968268
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009004,
+      "m_Localized": "<b><u>Hackare tog ner den största yiff-webbplatsen i {country} och förlamade furry community där i flera år</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968269
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009005,
+      "m_Localized": "<b><u>Fler länder förbjuder sexbots efter att födelsetalen sjunkit där till alla tiders lägsta nivåer</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968270
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009006,
+      "m_Localized": "<b><u>Miljontals människor som är fångade i VR-spel har nu massiva serveromfattande orgier. Vad är problemet? Det är PEGI 7</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968271
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009007,
+      "m_Localized": "<b><u>Klar det i dina bollar? Det är bara början på de verkliga problemen som kommer. Klicka här för mer...</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968272
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009008,
+      "m_Localized": "<b><u>:) :) :), artisten bakom extremt populära death-noise-breakcore-album bryter tystnaden</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968273
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009009,
+      "m_Localized": "<b><u>Hemligt inspelad video av vår personal har släppts av högerextrema sabotörer. SE DET INTE</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968274
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009010,
+      "m_Localized": "<b><u>Upplopp i {country} eskalerar efter att ALM-medlem dödades av oidentifierad drönare</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968275
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009011,
+      "m_Localized": "<b><u>Polsk ockupation i {country2} – allt du behöver veta</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968276
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009012,
+      "m_Localized": "<b><u>Grupp otakus (japanofiler) kidnappningar och våldtäkter {number,3,13} år gammal pojke</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968277
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009013,
+      "m_Localized": "<b><u>Gäng av {number,3,69} vilda {animal} TERRORISERANDE liten stad i {UScity}. Med bilder</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968278
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009014,
+      "m_Localized": "<b><u>Ny mutation av HIV som kallas HIV-{number,20,77}xj dödade redan {number,3,1790} i {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968279
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009015,
+      "m_Localized": "<b><u>USA:s militär inleder flyganfall mot talibanerna i {country} och dödar {number,2,666} ofödda barn</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968280
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009016,
+      "m_Localized": "<b><u>\"Ohederligt\" säger ambassadör för {country} efter {number,3,20} proxy wars veteraner är begåvade Medal of Honor</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968281
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009017,
+      "m_Localized": "<b><u>VIKTIGT. Nationalismen ökar efter att WHITE MALE vinner presidentvalet i {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968282
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009018,
+      "m_Localized": "<b><u>Tack vare denna nya cybernetik kan dina manliga och manliga könsorgan växa upp till {number,2,5} tum</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968283
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009019,
+      "m_Localized": "<b><u>En lågkonjunktur i {country} gjorde {number,5,20} tusen människor hemlösa.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968284
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009020,
+      "m_Localized": "<b><u>Forskare från {country} upptäckte ett nytt sätt att bota heterosexualism.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968285
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009021,
+      "m_Localized": "<b><u>Jätte genombrott inom genetik. Mänsklighetens närmaste genetiska granne är {animal}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968286
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009022,
+      "m_Localized": "<b><u>{celebrity} är medlem i {terroristorganisation}? En skrämmande rapport från vår läsare.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968287
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009023,
+      "m_Localized": "<b><u>Spänningarna mellan {country} och {country} ökar. Krig?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968288
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009024,
+      "m_Localized": "<b><u>Olagliga turister hittade i {country} som drar {number,2,100} miljoner dollar. Vems pengar är det här?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968289
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009025,
+      "m_Localized": "<b><u>Jag blev rånad på gatan idag och det fick mig att älska {UScity}s mångfald.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968290
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009026,
+      "m_Localized": "<b><u>Massasjälvmord i Four Leaf Clover-kyrkan i {UScity} efter att församlingen fått i sig handfulla {color}-piller.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968291
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009027,
+      "m_Localized": "<b><u>Är anal synd? Lokal {sexuality}-präst svarar.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968292
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009028,
+      "m_Localized": "<b><u>Älskar du {bodypart}? Forskare säger att du är mer sannolikt att vara {sexuality}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968293
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009029,
+      "m_Localized": "<b><u>Är du {sexuality}? Forskare säger att det är mer sannolikt att du gillar {bodypart}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968294
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009030,
+      "m_Localized": "<b><u>{celebrity} hittades död. Obduktionsrapport tyder på självmord av {deathcause}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968295
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009031,
+      "m_Localized": "<b><u>Dödligt misstag: {country} fotbollsspelare \"dödad av lagkamrater efter försvarsfel\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968296
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009032,
+      "m_Localized": "<b><u>LÄS MER: Blixtnedslag dödar {number,3,10} barn som spelar fotboll i {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968297
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009033,
+      "m_Localized": "<b><u>Styckad {bodypart} hittades i en liten kyrka i {UScity}. Chockerande bilder.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968298
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009034,
+      "m_Localized": "<b><u>Gigantiskt {animal} som går i en skola i Florida? Otrolig historia.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968299
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009035,
+      "m_Localized": "<b><u>CHOCKERANDE: {sexuality} är förbjudna i {country}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968300
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009036,
+      "m_Localized": "<b><u>'Handlös' {sexuality}ity inte längre olaglig i {country}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968301
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009037,
+      "m_Localized": "<b><u>CHOCKERANDE: Teamet bakom en nysläppt porrroman har kopplingar till {terroristorganisation}!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968302
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009038,
+      "m_Localized": "<b><u>Virtual reality-spel närmare än någonsin med lanseringen av SCO(Spear Craft Offline) </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968303
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009039,
+      "m_Localized": "<b><u>Upplopp i {UScity} slutar efter ett \"brutalt\" \"militärt\" \"ingripande\".</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968304
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009040,
+      "m_Localized": "<b><u>Ung biljonär finansierar sin armé i {country}. Kupp inkommande?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968305
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009041,
+      "m_Localized": "<b><u>Brutalt folkmord i {country}. Över {number, 8800, 9200} människor döda.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968306
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009042,
+      "m_Localized": "<b><u>{company}s VD är {sexuality}? Vacker berättelse.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968307
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009043,
+      "m_Localized": "<b><u>Gillar du {color}? Din framtid ser inte ljus ut...</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968308
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009044,
+      "m_Localized": "<b><u>Största kuk i {UScity}! Gammal bondkyckling vinner en lokal tävling. </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968309
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009045,
+      "m_Localized": "<b><u>man från {UScity} hittas ha sex med {animal}. Djuret överlevde inte.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968310
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009046,
+      "m_Localized": "<b><u>man från {UScity} hittas ha sex med {animal}. Tur för honom att djuret inte anklagar.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968311
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009047,
+      "m_Localized": "<b><u>Billig arbetskraft i {country} får fursuitpriserna att rasa. Slutet på västerländska kostymtillverkarnas järngrepp om branschen?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968312
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009048,
+      "m_Localized": "<b><u>{company} stämde efter påstådd diskriminering av {sexuality}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968313
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009049,
+      "m_Localized": "<b><u>{number,1000,2000} personer begår ett masssjälvmord i {UScity} centrum. Varför?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968314
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009050,
+      "m_Localized": "<b><u>{UScity} man kidnappade forskare för att göra en genetiskt modifierad {animal} flicka, säger myndigheterna</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968315
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009051,
+      "m_Localized": "<b><u>{UScity}-man erkänner att ha stulit {number,10,50} pund smör från butik</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968316
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009052,
+      "m_Localized": "<b><u>CHOCKERANDE! Antalet \"CHOCKERANDE\" i nyhetsrubriker ökade med {number, 300, 500}% förra veckan.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968317
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009053,
+      "m_Localized": "<b><u>CHOCKERANDE!!! {country} president är nu en drogmissbrukare!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968318
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009054,
+      "m_Localized": "<b><u>Klonen av Mahatma Gandhi kräver att {country} förbjuder all import och export av {animal} eller kommer att utsättas för kärnvapenförintelse.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968319
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009055,
+      "m_Localized": "<b><u>Årlig Teddybear-marknad återhämtar sig till {number,20,50}% av tankförsäljningen.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968320
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009056,
+      "m_Localized": "<b><u>Gröna gelébönor kopplade till akne.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968321
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009057,
+      "m_Localized": "<b><u>VR-headset endast för vuxna? - Industrin accepterar att den enda lönsamma genren är porr</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968322
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009058,
+      "m_Localized": "<b><u>Nödläge i {country} efter utbrott av rabies orsakat av en lurvig konvention</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968323
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3496724009059,
+      "m_Localized": "<b><u>Man från {country} dör på grund av en överdos vinegara som resulterade i en erektion på {number,10,85} timmar</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968324
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666432,
+      "m_Localized": "<b><u>Är det här på riktigt?! Någon vit cis-hane streamade sitt samlag med sexbot i några timmar. Nu har polisen intresserat sig för ärendet.</u></b>\n<size=60%>Det här är upprörande... Folk tittade på hans stream i massor. Tyvärr kan inga rättsliga åtgärder vidtas mot tittare, eftersom det inte är olagligt att titta på sexbotmaterial. CockTwitch, webbplats där allt ägde rum, har vägrat vidta åtgärder på grund av sina \"policyer\" ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968325
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666433,
+      "m_Localized": "<b><u>Explosion vid Peterskyrkan orsakad av en gasläcka.</u></b>\n<size=60%>Inget riktigt misstänkt hände där och alla dessa falska nyheter och konspirationsteorier som cirkulerar runt på internet är äckliga och olämpliga. Åh och Pius XXX är påven igen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968326
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666434,
+      "m_Localized": "<b><u>Den ökända terroristen/komikern Sam <REDACTED> SLIPDE återigen sin isoleringscell</u></b>\n<size=60%>Den här sjuka jäveln tilläts av vår nylibunistiska regering att komma undan med alla sina brott. Snabba åtgärder har vidtagits av FBI och andra organisationer, men han försvann spårlöst. Verkligen farliga tider är över oss...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968327
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666435,
+      "m_Localized": "<b><u>Tv-spel som en växande fara. En annan streamer tar sitt liv efter förlust i en flerspelartävling</u></b>\n<size=60%>Något som en gång ansågs vara ett internetskämt blev nu verklighet. Videospel härdsmälta (även känd som \"rages\") tar ut sin rätt på vår unga del av demografin. Bara det här kvartalet ökade antalet videospelsrelaterade dödsfall med {number,150,3000} %...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968328
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666436,
+      "m_Localized": "<b><u>Church of Q Anon officiellt registrerad som en religion</u></b>\n<size=60%>Vem skulle ha trott att något så olycksbådande som kulten av Q Anon skulle få erkännande i dagens samhälle. Vår representant för döda religioner, den katolske prästen Marko gav oss en kort intervju om denna fråga...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968329
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666437,
+      "m_Localized": "<b><u>Nytt offer för Zodiac-mördaren twiited detta konstiga foto av en ko gjord av smör sekunder före hennes död< /u></b>\n<size=60%>Vad kan detta betyda? Våra experter tror att de hittat en ledtråd i en amerikansk senators gamla twiit. Kan det finnas mer i fallet?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968330
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666438,
+      "m_Localized": "<b><u>Blue Lives Matter-rörelsen som officiellt erkänts som en terroristorganisation av FN</u></b>\n<size=60%>Äntligen några goda nyheter i denna G-d övergivna värld. Även om ingen ännu dömts är detta ett gott tecken för alla nybildade privata polisalternativ.  ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968331
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666439,
+      "m_Localized": "<b><u>Loooney Tunes remake kommer att se Elmer Fud utan sitt gevär när kreatörerna förklarar \"we're not do guns\"</u></b>\n<size=60%>Allmänt sett överskuggades ett bra och rimligt beslut av en våg av upprördhet på sociala medier. Kreatörer fick hundratals dödshot från fans som älskar andra tillägget.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968332
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666440,
+      "m_Localized": "<b><u>\"Too much heat\". Proffsbrottningsmatchen blev väldigt verklig när fansen stormade ringen efter ett rasistiskt uttalande från en av konkurrenterna</u></b>\n<size=60%>Världen för professionell brottning visar återigen hur mycket tid det är. Tyvärr kom engagerade artister inte till skada.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968333
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666441,
+      "m_Localized": "<b><u>Är den här videon där Obunga köper \"korv\" för 65k$ riktig? Vår expert är inte så säker</u></b>\n<size=60%>Med djup falsk teknik på frammarsch kan vi inte vara säkra på några videobevis som inte fångas av regeringsbekräftade journalister. Läs mer för att veta vem du kan tro",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968334
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666442,
+      "m_Localized": "<b><u>Kommer du ihåg våra nyheter om litervis sperma som finns i vattenförsörjningen? Det är värre än vi trodde...</u></b>\n<size=60%>Ny statlig expertis upptäckte att till och med {number, 501, 3500} fler kvinnor kunde impregneras, inklusive flickor så unga som {number, 10, 13}. Nu började sökandet efter fäderna. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968335
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666443,
+      "m_Localized": "<b><u>Människor som faller från himlen är nu en vardaglig händelse</u></b>\n<size=60%>Med så höga självmordsfrekvenser som de är nu har detta blivit en del av att bo i en stad. Hur ska man hantera traumat? Vårt svar: Droger. (Sponsrad av Bigpharma™)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968336
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666444,
+      "m_Localized": "<b><u>Människor som faller från himlen är nu en vardaglig händelse</u></b>\n<size=60%>Med så höga självmordsfrekvenser som de är nu har detta blivit en del av att bo i en stad. Hur ska man hantera traumat? Vårt svar: Droger. (Sponsrad av Bigpharma™)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968337
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666445,
+      "m_Localized": "<b><u>VD för SpaceY, Edison och Brainlinker dog som världens första hjärngränssnittschip som producerats av Brainlinker short-cricuit och exploderade.</u></b>\n<size=60%>Ny ägare hävdar att alla tre företagen kommer att förväntas ha rekordvinster eftersom den bortgångne VD:n inte kan missstyra några projekt längre.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968338
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666446,
+      "m_Localized": "<b><u>Företags meme-sidor förbjudna? Lagstiftare från {country} skulle kunna rädda oss från krypande sociala medier för evigt</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968339
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666447,
+      "m_Localized": "<b><u>Nödläge i {country} efter utbrott av rabies orsakat av en lurvig konvention</u ></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968340
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666448,
+      "m_Localized": "<b><u>Polisen slår till mot ett lager, hittar illegala smugglare.</u></b>\n<size=60%>Officer Hugh Janus utbrast: \"Det vi hittade där förändrade våra liv för alltid...\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968341
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666449,
+      "m_Localized": "<b><u>Något FRUKTANSVÄRT har hänt</u></b>\n<size=60%>Sexbot blandade sig i en klass av grundskoleelever och låtsades vara student i flera år... Lärare märkte det först efter att sexbot började hora sig själv i utbyte mot motorolja...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968342
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666450,
+      "m_Localized": "<b><u> Död kropp rapporterades på den internationella rymdstationen.</u></b>\n<size=60%>Återstående besättningskamrater är fångade i rymden med ett monster. Mötet ombord har ställts in på grund av ett larm som går",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968343
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666451,
+      "m_Localized": "<b><u>Lokalbefolkningen rapporterar gängkrig mellan Neo Furries och Hyper Weebs.</u></b>\n<size=60%>Tjänstemän säger att vi alla borde stanna i våra hem för att undvika korsbranden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968344
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666452,
+      "m_Localized": "<b><u>Bo Brogan talade om kontroversiell cocktwich-streamer i den senaste podcasten</u></b>\n<size=60%>\"Den här vita killen ser inte ut som det men han kan slå som en orangutang. Jag slår vad om att om han gick till gymmet och åt mer protein så skulle han kunna slå den där sexboten som en jävla GORILLA UAAAGH...UUUAAAAGH. ..Jamie tar upp den där videon där de två aporna har sex.\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968345
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666453,
+      "m_Localized": "<b><u>Kroppen hittades på {celebrity}s privata ö identifierad som {name}. Trots flera kopplingar säger polisen att offret bara drev dit.</u></b>\n<size=60%>För nu borde vi tro detektiver, men värt att nämna är att den här kändisen har en historia av liknande incidenter",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968346
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666454,
+      "m_Localized": "<b><u>{country} lanserade en ny satellit för några veckor sedan.</u ></b>\n<size=60%>Nu fungerade det fel och exploderade, och förstörde {number,2,53} andra satelliter.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968347
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666455,
+      "m_Localized": "<b><u>Fantastiska nyheter för rymdfans!</u></b>\n<size=60%>Mängden skräp på jordens omloppsbana kan äventyra ytterligare rymdutforskning. Vi frågade {celebrity} om hans tankar i denna fråga",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968348
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666456,
+      "m_Localized": "<b><u>Hemskt! Poliser arresterar brutalt en {number,6,14} år gammal pojke efter att han påstås ha smittat sin partner med hiv med avsikt</u></b>\n<size=60%>Berättelse som får blodet att koka. Vår gäst hävdar att detta fall bara är ett av många. Är det starten på en ny social rörelse? ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968349
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666457,
+      "m_Localized": "<b><u>Efter recessionen drabbade {country}, tvingades dess regering att byta ut {number,8,77}% av sina militära vapen och fordon med {company} i utbyte mot deras produkter för att förhindra masssvält< /u></b>\n<size=60%>Det här företaget har nu nästan lika mycket \"direkt\" övertalningsförmåga som Bepsi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968350
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666458,
+      "m_Localized": "<b><u>\"Breathtaking\": Den här modiga {number,8,16}-åriga tjejen från {UScity} har skakade världen med sin nya {art}!</u></b>\n<size=60%>Framtiden för barnidoler och deras älskare ser ljusare ut än någonsin tidigare och det är verkligen vackert. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968351
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666459,
+      "m_Localized": "<b><u>Chockerande: Bigpharma™ köpte alla patent för tillverkning av läkemedel mot {disease} och höjde priset med {number,500,3000}%</u></b>\n<size=60%>Tack vare det naturliga urvalet kan det bli en grej igen och vi tror att det är bra. Experter tror att {number,200000,6000000} människor kommer att dö på grund av denna förändring.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968352
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666460,
+      "m_Localized": "<b><u>{number,6,15} år gammalt barn anklagade sin mamma för att tvinga på honom ett könsbyte. Vår undercover-reporter fick precis reda på att han är full av skit.</u></b>\n<size=60%>Finns det något äckligare än falska anklagelser mot din egen mamma? Vi tror inte. Efter {number,2,30} veckors spionage vill vi dela med oss ​​av våra videobevis som avslöjar den här före detta flickan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968353
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666461,
+      "m_Localized": "<b><u>Man från {country} dör på grund av en överdos av vinegara som resulterade i en {number,10,50} timmars erektion.</u></b>\n<size=60%>Senare visade det sig att han vägrade söka medicinsk hjälp eftersom han citerades \"byggd annorlunda\".",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968354
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666462,
+      "m_Localized": "<b><u>Förbjuden virtuell kärlek mellan en man från {country} och {animegirl}' s {bodypart}.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968355
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666463,
+      "m_Localized": "<b><u>I dag är det första årsdagen av C. Jenners martyrdöd</u></b>\n<size=60%>Ett år gick från de kanske största tragedierna som vårt land någonsin har sett. Vi på Bang HQ är stolta över att kunna meddela att vi intervjuat någon som stod offret nära. Hennes tandläkare Lucas.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968356
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666464,
+      "m_Localized": "<b><u>Den nyvalde påven kallade sig själv \"Goku den andra\" och här är anledningen till att det kommer att hjälpa människor med färg</u></b>\n<size=60%>Efter att ha förlorat 90 % av sina anhängare i Europa, vidtog den katolska kyrkan några drastiska åtgärder för att tilltala de nya generationerna av människor. Några av dessa åtgärder inkluderade gratis sexbytesterapi för nya följare.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968357
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666465,
+      "m_Localized": "<b><u>\"Jag vaknade och mina händer var borta, men han var med mig...\". Denna vackra romantiska berättelse om 2 homosexuella somaliska pirater kommer att få dig att gråta</u></b>\n<size=60%>Finns det något sötare än valpar? Vi tror ja och detta är vårt bevis. Gay kärlek är något mycket renare och dessa killar har också stora vapen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968358
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666466,
+      "m_Localized": "<b><u>Förhandsvisning av kvällens största show \"Cooking with Lil Uzi\"</u></b>\n<size=60%>Något vi alla har väntat på! Efter att ha avfärdat producentens sexanklagelser är vår favoritmatlagningsprogram tillbaka med sin tredje säsong. Actionspäckad trailer ökade bara hypen och folks aptit är större än någonsin!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968359
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666467,
+      "m_Localized": "<b><u>Hurra! Tack vare Amazoons frivilliga insatser lärde sig {number,123,5804} nya illegala invandrare hur man programmerar i Zuluscript\"</u></b>\n<size=60%>Jag tror att vi alla är överens om att beteende som detta bör belönas av vår regering. Kommer andra företag att ta samma väg eller är de dömda att misslyckas?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968360
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666468,
+      "m_Localized": "<b><u>Censureras du på Faceberg och andra sociala medier? Sluta vara rasist.</u></b>\n<size=60%>Vissa människor är fortfarande förvirrade av enkla riktlinjer för communityn. Vår lokala advokat förberedde på bara några veckor för oss en kort, 74 sidor lång sammanfattning av alla regler. \"Det finns ingen ursäkt för att vara en bigot\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968361
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666469,
+      "m_Localized": "<b><u>Ska pedofiler tvingas göra en åldersändringsoperation?</u></b>\n<size=60%>Vi bjöd in experter till en öppen diskussion om det senaste medicinska genombrottet: åldersförändringskirurgi. Efter några timmar tror vi att vi fick ett svar...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968362
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666470,
+      "m_Localized": "<b><u>Transgender kvinnor dominerar vinter-OS. Ska människor som har mens vara oroliga?</u></b>\n<size=60%>En av de främsta transpersonerna, Bryaona från {country}, är ett av de många offren för giftigt TERF-hat, som dominerat den offentliga sfären under de senaste månaderna. Bryona, med sin längd på 7'2 och 350 pund... ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968363
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666471,
+      "m_Localized": "<b><u>En amerikansk kvinna försöker slå ner CockTwitch (men hennes kamp är inte mot porr)</u></b>\n<size=60%>Hennes namninsamling har redan undertecknats över {number,80,700} tusen gånger. Vad motiverade henne? Hennes konto förlorade alla sina prenumeranter på några månader. Senare fick hon reda på att folk kan säga upp henne när de vill. \"De gav mig bara en falsk känsla av säkerhet.\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968364
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666472,
+      "m_Localized": "<b><u>Är anime ett sätt att fly för radikala högerextremister?</u></b>\n<size=60%>Vår studie fann att färgen på hudpigmentet hos alla stora hjältinnor i japansk animation är mycket närmare östeuropeiskt hudpigment än asiatiskt. Till exempel, {animegirl}s hud...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968365
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666473,
+      "m_Localized": "<b><u>Denna populära porrstjärna blev precis den första minderåriga borgmästaren i NYC. Klicka här för att se hans/hennes nya kryddiga fotografering</u></b>\n<size=60%>Vem sa att borgmästare inte kan vara sexiga? Vi på Bang redaction hoppas att detta ska bli en ny trend bland politiker att nominera erkända av sexarbetare. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968366
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666474,
+      "m_Localized": "<b><u> Är korruption verkligen så illa? Största missuppfattningar om världspolitik i vår nya exklusiva åsiktsartikel</u></b>\n<size=60%>Det är verkligen skrämmande att folk fortfarande tror att olaglig politisk taktik och affärer bakom stängda dörrar bör utfrysas. I själva verket är de ryggraden i vår demokrati. Åsikt... ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968367
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666475,
+      "m_Localized": "<b><u>Hon var otrogen, men han tittade på andra kvinnor först</u></b>\n<size=60%>Så löjligt det här låter som en del tror att det inte är deras fel när kvinnor är otrogna mot dem. \"{number,89,99}% av gångerna som kvinnor tvingas att fuska. Siffror ljuger inte\" säger vår {sexuality}-expert.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968368
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666476,
+      "m_Localized": "<b><u>Ljuger politiker för oss? Ja och vi borde vara dem tacksamma för det</u></b>\n<size=60%>\"Genomsnittsmänniskor skulle inte motstå psykologiska trauman orsakade av att veta sanningen om vårt samhälle\", säger vår expert. Detta har faktakontrollerats av människorättsorganisationer",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968369
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666477,
+      "m_Localized": "<b><u>Stort problem med Gud. Han skapade förmodligen svarta, vilket är bra, men hur är det med gröna, blå eller lila människor? Vetenskapen kan fixa detta och bör ersätta religion</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968370
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666478,
+      "m_Localized": "<b><u>\"Jag lämnar det här nätverket! 90 % av artiklarna är påhittade!\" Detta är vår numera döda kollegas sista ord. Vi älskade dig också, kompis...</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968371
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666479,
+      "m_Localized": "<b><u>Följer du Ghislaine Maxwells spår? Verkligen? Har du inget bättre att göra, din jävla konstig extremist?</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968372
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666480,
+      "m_Localized": "<u><b>Bör självkörande bilar betraktas som sexbotar på grund av ett ökande antal autosexuella som pucker i avgasröret? Kort svar: ja</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968373
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666481,
+      "m_Localized": "<u><b>Höger bensinpriserna? Bra. Det är bra för miljön och nationalbudgeten</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968374
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666482,
+      "m_Localized": "<u><b>Gör en hälsosam livsstil för gott? Dessa nya konstgjorda organ är billigare i exploatering och mer effektiva än ditt dödliga kött</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968375
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666483,
+      "m_Localized": "<b><u>{animeboy} från populär japansk animation har blivit ett ansikte för den vita supremacistiska revolutionen i {country}. Vår expert förklarar för oss varför</u></b>\n<size=60%>Först kallade lokala medier det för ett \"oskyldigt skämt\" och \"ett meme\" som involverade fantastiska {antal 200 3000 000 inlägg, men nu skrattar ingen... förutom Adolf Hitler...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968376
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666484,
+      "m_Localized": "< b><u>{company} kämpar mot \"orättvis\" handelstaktik för mindre företag i {country} och vi borde heja på det</u></b>\n<size=60%>Alla älskar våra företagsöverherrar och deras fantastiska produkter, eller hur? Om deras krav inte uppfylls kommer de att sparka {number,10,90}% av sin arbetsstyrka så vi borde inte reta upp dem.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968377
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666485,
+      "m_Localized": "<b><u>Allmänhetens ålder är återigen ett ämne för offentlig debatt i {country}. Bekymrad läsare: \"Hur ska jag förklara min {number,6,13} år gamla dotter att hennes förhållande kan kränka någon?\"</u></b>\n<size=60%>Alla trodde att \"kärlek har ingen åldersgräns\" är allmänt känt vid det här laget. Det visar sig att så inte är fallet och det krossar hjärtan hos barn över hela världen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968378
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666486,
+      "m_Localized": "<b><u>{name} blev ny professor i {sexuality2}. Det lokala universitetet i {UScity} kunde inte vara stoltare!</u></b>\n<size=60%>\"Steg i rätt riktning\", det var så de flesta elever reagerade på den här fantastiska nyheten. Klicka för en fullständig intervju...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968379
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666487,
+      "m_Localized": "<b><u>\"Min pojkvän (M {number,22,52}) drabbades av {disease} och jag (F {number,16,31}) var okej med det . Nu vill han ha oskyddat sex. Ska jag tillåta det?\"</u></b>\n<size=60%>Bang-redaktörer svarar på oroliga läsares frågor. Ta reda på vad vi sa till henne! ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968380
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666488,
+      "m_Localized": "<b><u>Beslut måste fattas av {country}s regering efter att dess medborgerliga frihetsranking sjönk med {number,1,30} i år. Våra lösningar: Drag Queens på dagis</u></b>\n<size=60%>Ingen överraskning i denna rankingförändring. Om de bara lyssnade på råd från {celebrity} skulle detta kunna undvikas. Nu är sannolikt FN-sanktioner nära förestående. Om inte... Drag Queens.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968381
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3599035666489,
+      "m_Localized": "<b><u>\"Jag vill inte angripa {celebrity} personligen, men jag kommer ändå.\"</u></b>\n<size=60%> Ledare för progressiv vänster attackerade återigen ett av världens största namn efter att de sjunkit med {number,2,27} i den senaste omröstningen. Kan vi verkligen skylla på dem? Trots 80 % av inkomstskatten blir rika människor fortfarande rikare och fattiga människor blir fortfarande fattigare. ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968382
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39490982969741312,
+      "m_Localized": "<b><u>Spointaneus strokeepidemi i vår stad! </u></b>\n<size=60%>Officer Hugh Janus utbrast: \"Det vi hittade där förändrade våra liv för alltid...\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968383
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206528,
+      "m_Localized": "<b><u>Bästbetalda socioekonomiska tankesmedja håller med. Dåliga saker kommer att fortsätta hända.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968384
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206529,
+      "m_Localized": "<b><u>Medan rika runt om i världen överskrider mänskligheten, borde låg- och medelklass människor vara rädda? Självklart inte!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968385
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206530,
+      "m_Localized": "<b><u>Kan du fängsla dina anställda när de vägrar arbeta obetald övertid? Advokater säger: det beror på.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968386
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206531,
+      "m_Localized": "<b><u>Regeringen fördubblar budgeten för övervakning av schizofrena.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968387
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206532,
+      "m_Localized": "<b><u>Undercover-journalister avslöjar att för varje 100 g växt- baserat kött, 114 g äkta kött används under produktionen</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968388
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39492779197206533,
+      "m_Localized": "<b><u>{UScity} faller i anarki eftersom {terroristorganisation} hävdar att {number,2,5} distrikt är autonoma zoner fria från tyranni</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968389
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 118728930864533504,
+      "m_Localized": "<b><u>Asbest hittades återigen i Stilou-kläder!</u></b>\n<size=60%>De drabbade kläderna inkluderar manskor i dessa färger: gul, lax och persika. Brand förnekar anklagelser och deras regissör säger att kläder är \"100 % säkra om de inte bärs\".",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968390
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 196009274129768448,
+      "m_Localized": "<b><u>Upplopp i en av de största megastäderna!</u></b>\n<size=60%>Lokala myndigheter är hjälplösa medan staden brinner! Vi frågade borgmästaren om han skulle lyssna på folket och avgå. Hans svar: 'Jag förhandlar inte med terrorister!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968391
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056392552448,
+      "m_Localized": "<b><u>En av de största porrstudiorna har blivit razzia</u></b>\n<size=60%>Ett välkänt rykte inom branschen visade sig vara sant. Företaget gjorde porr med hjälp av sexbots och sedan deepfake mänskliga ansikten på dessa illegala bots.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968392
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135360,
+      "m_Localized": "<b><u>Sexbot som greps av myndigheter som tagits för att demonteras, var inte en sexbot</u></b>\n<size=60%>\"Jag trodde att blodet var en realistisk uppgradering...\" sa ett vittne.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968393
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135361,
+      "m_Localized": "<b><u>Officiellt bekräftad: en ny stam av viruset har hittats</u></b>\n<size=60%>Det orsakar en sjukdom mycket nära demens och det är smittsamt! och det smittar! och det smittar! och det smittar! och det är smittsamt... **läs mer>>>**",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968394
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135362,
+      "m_Localized": "<b><u>Är arbetsplatser som tillåter fursuit en potentiell hälsorisk?</u></b>\n<size=60%>Vår expert berättar mer om så kallat \"furrball-syndrom\", dess konsekvenser, hur man undviker det och vem man ska skylla på för det...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968395
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135363,
+      "m_Localized": "<b><u>Katt vid namn Purrdolf Hissler som valdes till borgmästare i en liten stad på landsbygden visar sig vara konservativ</u></b>\n<size=60%> Nu försöker invånarna åtgärda sina misstag, hittills förgäves. \"Det är som att vi har drabbats av en Blitzkrieg...\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968396
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135364,
+      "m_Localized": "<b><u>Man dör av hjärtinfarkt efter att ha nått klimax 47 gånger i rad</u></b>\n<size=60%>”Goon marathon challenge”. Allt du behöver veta om denna nya internettrend och dess dödssiffra...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968397
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135365,
+      "m_Localized": "<b><u>HAN VAR INTE DÖD!!!</u></b>\n<size=60%>Förlorad 6-årig pojke hittades vid MacDonalds bollhål efter 3 dagars forskning. Polisen blev förvånad.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968398
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135366,
+      "m_Localized": "<b><u>Stort företag återkallar över {number,22511,364666} penisimplantat för en potentiellt livshotande defekt</u></b>\n<size=60%>Som vi har fått veta av företagets talesman bör alla utrustade med den felaktiga hårdvaran: 'JACKHAMMER MAGNUM {number,300,9999}' förbli lugna och ringa en lokal brandstation så snart som möjligt.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968399
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135367,
+      "m_Localized": "<b><u>Vilken gurka!</u></b>\n<size=60%>I takt med att ersättare av robotar blir populära, diskuterar experter om det är en bra idé att ge din flickvän din gamla, bevarade penis i en burk eller inte</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968400
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135368,
+      "m_Localized": "<b><u>Enorma upplopp i en av megastäderna? Vi kallar skitsnack.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968401
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135369,
+      "m_Localized": "<b><u>Är du VERKLIGEN säker på att du inte har AIDS? Gör det här frågesporten med 50 frågor för att ta reda på det!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968402
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135370,
+      "m_Localized": "<b><u>Efter ett katastrofalt fel på kamouflageimplantatet blir en man permanent osynlig för sina meniga</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968403
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135371,
+      "m_Localized": "<b><u>Ny studie visar att om antalet hikikomoris inte kommer att sluta öka kommer det snart att bli en global brist på vitamin D</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968404
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135372,
+      "m_Localized": "<b><u>Ny teknik gör det möjligt att få ficktjuvar att få njurar, vilket gör att organskörden på svarta marknaden ökar i {country}</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968405
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135373,
+      "m_Localized": "<b><u>En vetenskapsman från {country} säger att {number,1,7} av 10 personer kan bli robosexuella inom de närmaste åren</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968406
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135374,
+      "m_Localized": "<b><u>Bra nyheter! Presidenten för {country} blev en kvinna!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968407
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135375,
+      "m_Localized": "<b><u>En stor flock får attackerade {country}. \"Vi behöver mer gräs\" hävdar de.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968408
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135376,
+      "m_Localized": "<b><u>Genomsnittlig kukstorlek i {country} är bara 3 tum! Chockerande utveckling!</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968409
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135377,
+      "m_Localized": "<b><u>Största yiff-konventionen i {country}. Experter säger att man ska gömma sina hundar.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968410
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 214221056405135378,
+      "m_Localized": "<b><u>{UScity} man slogs mot {number,15,30} personer. Han vann.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968411
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 316522004892082176,
+      "m_Localized": "<b><u>Den berömda spelutvecklaren \"HW\" betalade äntligen av sin skuld!!!</u></b>\n<size=60%>Deras spel sålde över {number,30,60} miljoner exemplar världen över. Grattis HW!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968412
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321828732810551296,
+      "m_Localized": "<b><u>STOR TRAGEDI! Anti-sexbotaktivist SKUT OCH DÖDADE</u></b>\n<size=60%>Anti-sexbotaktivist och vår kära vän har dödats när han använde ett badrum i en av de största snabbmatskedjorna. Mördades han av terrorister eller... hans diet.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968413
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321885704058560512,
+      "m_Localized": "<b><u>VECKANS NYHETER Federala agenter har förstått en farlig pro-sexbot-terrorist, pseudonymen DAK</u></b>\n<size=60%>Ett avskum mindre på våra gator. Jag kan försäkra att varje barn på jorden inte längre behöver vara rädd. Du är säker. Och föräldrar bör komma ihåg att nästa gång de lägger sin röst.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968414
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 321937685548621824,
+      "m_Localized": "<b><u> Är exhibitionism på uppgång? Oavsett extrem kyla sågs en pervers kvinna jogga genom staden! </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968415
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384602058752,
+      "m_Localized": "<b><u>Räknas det att skita dig själv som att inte lyda kommandot \"rör dig inte\"? </u></b>\n<size=60%>En tonåring i {UScity} lärde sig svaret på den hårda vägen och kämpar nu för sitt liv på sjukhuset. Polischef: \"100 % motiverad\"",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968416
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030272,
+      "m_Localized": "<b><u>VolksAuto hotar inte längre att bli konkurs efter att mer än 10 000 av deras arbetsstyrka inblandade i grupptalan avlidit inom loppet av en månad.  </u></b>\n<size=60%>\"A return to tradition\" ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968417
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030273,
+      "m_Localized": "<b><u>Högerns konstiga besatthet av catgirls förklaras. </u></b>\n<size=60%>Är våra husdjur säkra när rösterna för \"återgången till traditionen\" växer sig starkare?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968418
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030274,
+      "m_Localized": "<b><u>En ny viral internettrend som vår ungdom startade är ännu värre än den förra. </u></b>\n<size=60%>Kommer misshandel tillbaka till nåden? ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968419
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030275,
+      "m_Localized": "<b><u>Finns det skäl för ett starkt samband mellan förbud mot faderskapstest över hela världen och manligt självmord? </u></b>\n<size=60%>\"Bollocks\", säger vår expert",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968420
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030276,
+      "m_Localized": "<b><u>Listan över inte så uppenbara varukorgskombinationer som kan leda till att en kassör ringer polisen på dig</u></b >\n<size=60%>Några exempel: gurka och kondom, spade och lime, anime-plysch och burk...",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968421
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030277,
+      "m_Localized": "<b><u>En regeringstjänsteman fejkade retardation i 13 år. Den värsta delen? Det är den älskade katten som heter Biscuit</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968422
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030278,
+      "m_Localized": "<b><u>Överhettade vibratorer? Att somna när man onanerar har aldrig varit så farligt som nu.</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968423
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030279,
+      "m_Localized": "<b><u>Ny studie visar: \"Att ha samlag med robotar kan vara kopplat till trådlös HIV\"</u></ b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968424
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030280,
+      "m_Localized": "<b><u>Porrberoende. Avskyvärd, hemsk och destruktiv sjukdom... som faktiskt hjälper till att hålla ihop äktenskapet</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968425
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030281,
+      "m_Localized": "<b><u>Antikens Greklands återskapande by i {country} blir platsen att vara för män med små hackar< /u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968426
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030282,
+      "m_Localized": "<b><u>Kromosomtjuvar. Allt du behöver veta om detta nya dödliga hot som fortfarande är löst</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968427
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030283,
+      "m_Localized": "<b><u>\"Stjäla från de rika och ge det till de fattiga\". Den andra sidan av historien berättad av en av de fängslade kromosomtjuvarna</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968428
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030284,
+      "m_Localized": "<b><u>Är din pojkvän högerextremist? Kontrollera hans sökhistorik efter sökordet \"anime\"</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968429
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030285,
+      "m_Localized": "<b><u>Förlorad familjehund som återvände hem efter 5 år visade sig vara en spionklon från {country}</u> </b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968430
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030286,
+      "m_Localized": "<b><u>Penetrering av urinröret. Hur låter det som ett botemedel mot impotens?</u></b> ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968431
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030287,
+      "m_Localized": "<b><u>Kondomer förenas med ballonger på listan över förbjudna föremål i {country} eftersom växthusgassmuggling kostar regeringen {antal, 2,30} miljarder dollar per år</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968432
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 331763384623030288,
+      "m_Localized": "<b><u>Ovaccinerade spermier blir det hetaste föremålet i nazistiska minneskretsar. Priserna nådde {number 200 950}k dollar per Ml</u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 8363390524344257487
+          },
+          {
+            "rid": 7996671569125968433
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 473240352332963840,
+      "m_Localized": "<b><u> Ny rekord med den svåraste karaokelåten som finns. Nu letar företaget efter vinnaren som kan ge honom, henne eller De, ett pris på 100k$ </u></b>",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 7996671569125968434
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7996671569125968221,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968222,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968223,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968224,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968225,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968226,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968227,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968228,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968229,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968230,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968231,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968232,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968233,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968234,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968235,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968236,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968237,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968238,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968239,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968240,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968241,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968242,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968243,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968244,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968245,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968246,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968247,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968248,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968249,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968250,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968251,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968252,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968253,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968254,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968255,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968256,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968257,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968258,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968259,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968260,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968261,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968262,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968263,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968264,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968265,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968266,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968267,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968268,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968269,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968270,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968271,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968272,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968273,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968274,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968275,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968276,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968277,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968278,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968279,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968280,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968281,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968282,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968283,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968284,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968285,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968286,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968287,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968288,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968289,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968290,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968291,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968292,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968293,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968294,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968295,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968296,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968297,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968298,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968299,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968300,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968301,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968302,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968303,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968304,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968305,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968306,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968307,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968308,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968309,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968310,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968311,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968312,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968313,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968314,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968315,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968316,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968317,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968318,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968319,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968320,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968321,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968322,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968323,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968324,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968325,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968326,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968327,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968328,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968329,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968330,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968331,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968332,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968333,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968334,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968335,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968336,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968337,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968338,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968339,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968340,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968341,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968342,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968343,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968344,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968345,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968346,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968347,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968348,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968349,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968350,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968351,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968352,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968353,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968354,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968355,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968356,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968357,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968358,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968359,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968360,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968361,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968362,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968363,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968364,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968365,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968366,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968367,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968368,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968369,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968370,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968371,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968372,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968373,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968374,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968375,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968376,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968377,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968378,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968379,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968380,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968381,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968382,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968383,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968384,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968385,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968386,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968387,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968388,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968389,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968390,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968391,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968392,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968393,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968394,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968395,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968396,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968397,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968398,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968399,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968400,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968401,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968402,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968403,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968404,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968405,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968406,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968407,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968408,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968409,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968410,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968411,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968412,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968413,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968414,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968415,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968416,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968417,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968418,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968419,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968420,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968421,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968422,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968423,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968424,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968425,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968426,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968427,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968428,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968429,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968430,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968431,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968432,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968433,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 7996671569125968434,
+        "type": {
+          "class": "Comment",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_CommentText": "Machine translated"
+        }
+      },
+      {
+        "rid": 8363390524344257487,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {
+          "m_Entries": [],
+          "m_SharedEntries": [
+            {
+              "id": 3496719814657
+            },
+            {
+              "id": 3496719814658
+            },
+            {
+              "id": 3496724008970
+            },
+            {
+              "id": 3496724008971
+            },
+            {
+              "id": 3496724008979
+            },
+            {
+              "id": 3496724008980
+            },
+            {
+              "id": 3496724008982
+            },
+            {
+              "id": 3496724008986
+            },
+            {
+              "id": 3496724008987
+            },
+            {
+              "id": 3496724008990
+            },
+            {
+              "id": 3496724008991
+            },
+            {
+              "id": 3496724008995
+            },
+            {
+              "id": 3496724008998
+            },
+            {
+              "id": 3496724009000
+            },
+            {
+              "id": 3496724009003
+            },
+            {
+              "id": 3496724009004
+            },
+            {
+              "id": 3496724009010
+            },
+            {
+              "id": 3496724009011
+            },
+            {
+              "id": 3496724009012
+            },
+            {
+              "id": 3496724009013
+            },
+            {
+              "id": 3496724009014
+            },
+            {
+              "id": 3496724009015
+            },
+            {
+              "id": 3496724009016
+            },
+            {
+              "id": 3496724009017
+            },
+            {
+              "id": 3496724009018
+            },
+            {
+              "id": 3496724009019
+            },
+            {
+              "id": 3496724009020
+            },
+            {
+              "id": 3496724009021
+            },
+            {
+              "id": 3496724009022
+            },
+            {
+              "id": 3496724009023
+            },
+            {
+              "id": 3496724009024
+            },
+            {
+              "id": 3496724009025
+            },
+            {
+              "id": 3496724009026
+            },
+            {
+              "id": 3496724009027
+            },
+            {
+              "id": 3496724009028
+            },
+            {
+              "id": 3496724009029
+            },
+            {
+              "id": 3496724009030
+            },
+            {
+              "id": 3496724009031
+            },
+            {
+              "id": 3496724009032
+            },
+            {
+              "id": 3496724009033
+            },
+            {
+              "id": 3496724009034
+            },
+            {
+              "id": 3496724009035
+            },
+            {
+              "id": 3496724009036
+            },
+            {
+              "id": 3496724009037
+            },
+            {
+              "id": 3496724009039
+            },
+            {
+              "id": 3496724009040
+            },
+            {
+              "id": 3496724009041
+            },
+            {
+              "id": 3496724009042
+            },
+            {
+              "id": 3496724009043
+            },
+            {
+              "id": 3496724009044
+            },
+            {
+              "id": 3496724009045
+            },
+            {
+              "id": 3496724009046
+            },
+            {
+              "id": 3496724009047
+            },
+            {
+              "id": 3496724009048
+            },
+            {
+              "id": 3496724009049
+            },
+            {
+              "id": 3496724009050
+            },
+            {
+              "id": 3496724009051
+            },
+            {
+              "id": 3496724009052
+            },
+            {
+              "id": 3496724009053
+            },
+            {
+              "id": 3496724009054
+            },
+            {
+              "id": 3496724009055
+            },
+            {
+              "id": 3496724009058
+            },
+            {
+              "id": 3496724009059
+            },
+            {
+              "id": 3599035666435
+            },
+            {
+              "id": 3599035666442
+            },
+            {
+              "id": 3599035666446
+            },
+            {
+              "id": 3599035666447
+            },
+            {
+              "id": 3599035666453
+            },
+            {
+              "id": 3599035666454
+            },
+            {
+              "id": 3599035666455
+            },
+            {
+              "id": 3599035666456
+            },
+            {
+              "id": 3599035666457
+            },
+            {
+              "id": 3599035666458
+            },
+            {
+              "id": 3599035666459
+            },
+            {
+              "id": 3599035666460
+            },
+            {
+              "id": 3599035666461
+            },
+            {
+              "id": 3599035666462
+            },
+            {
+              "id": 3599035666467
+            },
+            {
+              "id": 3599035666470
+            },
+            {
+              "id": 3599035666471
+            },
+            {
+              "id": 3599035666472
+            },
+            {
+              "id": 3599035666475
+            },
+            {
+              "id": 3599035666483
+            },
+            {
+              "id": 3599035666484
+            },
+            {
+              "id": 3599035666485
+            },
+            {
+              "id": 3599035666486
+            },
+            {
+              "id": 3599035666487
+            },
+            {
+              "id": 3599035666488
+            },
+            {
+              "id": 3599035666489
+            },
+            {
+              "id": 39492779197206533
+            },
+            {
+              "id": 214221056405135366
+            },
+            {
+              "id": 214221056405135372
+            },
+            {
+              "id": 214221056405135373
+            },
+            {
+              "id": 214221056405135374
+            },
+            {
+              "id": 214221056405135375
+            },
+            {
+              "id": 214221056405135376
+            },
+            {
+              "id": 214221056405135377
+            },
+            {
+              "id": 214221056405135378
+            },
+            {
+              "id": 316522004892082176
+            },
+            {
+              "id": 331763384602058752
+            },
+            {
+              "id": 331763384623030281
+            },
+            {
+              "id": 331763384623030285
+            },
+            {
+              "id": 331763384623030287
+            },
+            {
+              "id": 331763384623030288
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

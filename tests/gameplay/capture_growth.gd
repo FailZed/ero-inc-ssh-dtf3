@@ -1,5 +1,5 @@
 extends SceneTree
-var directory := "E:/GoDot/.research/school-0.981/growth-2026-10-27/captures"
+var directory := OS.get_environment("EROINC_ARTIFACTS").path_join("captures/growth") if not OS.get_environment("EROINC_ARTIFACTS").is_empty() else "user://captures/growth"
 var gameplay
 var window
 var checks := 0

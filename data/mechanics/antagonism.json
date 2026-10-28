@@ -1,0 +1,91 @@
+{
+  "antagonism_rules": {
+    "interval": 180,
+    "global_cooldown": 720,
+    "actor_cooldown": 2880,
+    "case_limit": 48,
+    "active_limit": 2,
+    "threshold": 0.68,
+    "chance": 0.45,
+    "kinds": {
+      "extortion": {
+        "label": "Вымогательство",
+        "motive": "profit",
+        "tag": "crime",
+        "deadline": 720,
+        "physical": true,
+        "amount": 45,
+        "damage": 8,
+        "text": "Требуют плату за «спокойствие». Отказ может закончиться нападением при следующей встрече."
+      },
+      "intimidation": {
+        "label": "Травля и запугивание",
+        "motive": "dominance",
+        "tag": "conflict",
+        "deadline": 360,
+        "physical": true,
+        "amount": 0,
+        "damage": 10,
+        "text": "Вас пытаются вытеснить и заставить подчиниться. Сторонники агрессора ждут, что окружающие промолчат."
+      },
+      "slander": {
+        "label": "Кампания клеветы",
+        "motive": "resentment",
+        "tag": "deception",
+        "deadline": 720,
+        "physical": false,
+        "amount": 0,
+        "damage": 0,
+        "text": "Среди знакомых распространяют обвинения в вашей ненадёжности. Проверяемые свидетельства могут разрушить эту историю."
+      },
+      "sabotage": {
+        "label": "Присвоение и срыв работы",
+        "motive": "ambition",
+        "tag": "deception",
+        "deadline": 720,
+        "physical": false,
+        "amount": 0,
+        "damage": 0,
+        "text": "Вашу работу пытаются представить чужой или сорвать её сдачу. Зафиксируйте авторство и сохраните материалы."
+      }
+    },
+    "responses": {
+      "document": {
+        "label": "Зафиксировать угрозу",
+        "minutes": 10
+      },
+      "investigate": {
+        "label": "Собрать подтверждения",
+        "minutes": 30
+      },
+      "ally": {
+        "label": "Попросить поддержки",
+        "minutes": 15
+      },
+      "refuse": {
+        "label": "Открыто отказать",
+        "minutes": 5
+      },
+      "pay": {
+        "label": "Заплатить за временную передышку",
+        "minutes": 5
+      },
+      "secure": {
+        "label": "Защитить материалы проекта",
+        "minutes": 20
+      },
+      "report": {
+        "label": "Подать заявление со свидетельствами",
+        "minutes": 45
+      },
+      "expose": {
+        "label": "Разоблачить перед свидетелями",
+        "minutes": 20
+      },
+      "evade": {
+        "label": "Прекратить встречу и уйти от угрозы",
+        "minutes": 0
+      }
+    }
+  }
+}

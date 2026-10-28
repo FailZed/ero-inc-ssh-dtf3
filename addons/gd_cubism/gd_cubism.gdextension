@@ -3,7 +3,8 @@ entry_symbol = "gd_cubism_library_init"
 compatibility_minimum = "4.3"
 
 [libraries]
-windows.x86_64 = "bin/libgd_cubism.windows.debug.x86_64.dll"
+macos = "bin/libgd_cubism.macos.universal.dylib"
+windows.x86_64 = "bin/libgd_cubism.windows.x86_64.dll"
 
 [dependencies]
-windows.x86_64 = {"bin/Live2DCubismCore.dll": ""}
+windows.x86_64 = { "bin/Live2DCubismCore.dll": "" }

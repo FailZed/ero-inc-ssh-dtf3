@@ -39,7 +39,8 @@ func _ready() -> void:
 		var load_error := GameSession.apply_pending_load()
 		if load_error != OK:
 			push_warning("Game: failed to apply pending load: %s" % error_string(load_error))
-			if not Gameplay.is_sandbox(): Dialogic.start(GameSession.DEFAULT_TIMELINE)
+			# Failed loads return to the menu with a readable error; never restart the story.
+			return
 	else:
 		if not Gameplay.is_sandbox(): Dialogic.start(GameSession.DEFAULT_TIMELINE)
 	_on_gameplay_phase_changed(Gameplay.phase)

@@ -1,0 +1,66 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2942
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 4244635648
+  },
+  "m_Name": "",
+  "m_Material": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Color": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "m_RaycastTarget": 1,
+  "m_RaycastPadding": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "m_Maskable": 1,
+  "m_OnCullStateChanged": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  },
+  "m_IsTrail": 0,
+  "m_IgnoreCanvasScaler": 0,
+  "m_AbsoluteMode": 0,
+  "m_Scale3D": {
+    "x": 45.0,
+    "y": 45.0,
+    "z": 45.0
+  },
+  "m_AnimatableProperties": [],
+  "m_Particles": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 10648
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10647
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 10646
+    }
+  ],
+  "m_MeshSharing": 0,
+  "m_GroupId": 0,
+  "m_GroupMaxId": 0,
+  "m_PositionMode": 0,
+  "m_AutoScaling": 0,
+  "m_AutoScalingMode": 2,
+  "m_UseCustomView": 0,
+  "m_CustomViewSize": 10.0
+}

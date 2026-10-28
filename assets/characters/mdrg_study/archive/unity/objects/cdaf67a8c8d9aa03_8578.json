@@ -1,0 +1,63 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 11492392960
+  },
+  "m_Name": "",
+  "nodeRect": {
+    "x": 2114.84033203125,
+    "y": 809.0194091796875,
+    "width": 184.8000030517578,
+    "height": 40.0
+  },
+  "tint": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "useCustomTint": 0,
+  "itemId": 14058,
+  "blockName": "WakeUp/BotBringsFood",
+  "description": "",
+  "commandList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 8576
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8575
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8577
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8574
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8573
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8572
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8571
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8570
+    }
+  ],
+  "suppressAllAutoSelections": 0
+}

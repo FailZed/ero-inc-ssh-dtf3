@@ -1,0 +1,50 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 38033948672
+  },
+  "m_Name": "",
+  "itemId": 14424,
+  "indentLevel": 2,
+  "characterRef": {
+    "resourcesReferenceLoader": {
+      "path": "Assets/ResourcesOutside/Characters/policeman/Policeman",
+      "assetGuid": "b08656e337612044cbd5c0f4ffcd3e90",
+      "assetLocalId": 1163077155669115001,
+      "isEmpty": 0,
+      "isInResourcesFolder": 0,
+      "isMainAsset": 0
+    }
+  },
+  "setInvisible": {
+    "booleanRef": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "booleanVal": 0
+  },
+  "offset": {
+    "x": 3.0,
+    "y": 0.0
+  },
+  "scale": 1.0,
+  "targetView": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "transitionAnimation": 0,
+  "time": 0.5,
+  "forceId": "",
+  "fadeData": [
+    {
+      "SlotId": "Face",
+      "ItemId": "angry",
+      "instant": 1
+    }
+  ]
+}

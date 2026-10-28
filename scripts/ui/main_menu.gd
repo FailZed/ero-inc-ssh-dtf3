@@ -100,6 +100,9 @@ func _ready() -> void:
 	_refresh_load_menu()
 	_apply_translations()
 	_show_section(ContentSection.OVERVIEW)
+	if menu_context == MenuContext.START and not GameSession.last_load_error.is_empty():
+		_show_section(ContentSection.LOAD)
+		_set_feedback(GameSession.last_load_error)
 	if menu_context == MenuContext.START and OS.get_cmdline_user_args().has("--character-workshop") and not get_tree().has_meta("character_workshop_command_used"):
 		get_tree().set_meta("character_workshop_command_used", true)
 		_open_character_workshop.call_deferred()

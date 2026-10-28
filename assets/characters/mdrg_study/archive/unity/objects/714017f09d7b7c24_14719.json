@@ -1,0 +1,115 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1208
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 19478347776
+  },
+  "m_Name": "",
+  "m_Navigation": {
+    "m_Mode": 3,
+    "m_WrapAround": 0,
+    "m_SelectOnUp": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectOnDown": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectOnLeft": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectOnRight": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_Transition": 1,
+  "m_Colors": {
+    "m_NormalColor": {
+      "r": 0.250980406999588,
+      "g": 0.250980406999588,
+      "b": 0.250980406999588,
+      "a": 0.501960813999176
+    },
+    "m_HighlightedColor": {
+      "r": 0.501960813999176,
+      "g": 0.501960813999176,
+      "b": 0.501960813999176,
+      "a": 0.6980392336845398
+    },
+    "m_PressedColor": {
+      "r": 0.3450980484485626,
+      "g": 0.3450980484485626,
+      "b": 0.3450980484485626,
+      "a": 0.6980392336845398
+    },
+    "m_SelectedColor": {
+      "r": 0.501960813999176,
+      "g": 0.501960813999176,
+      "b": 0.501960813999176,
+      "a": 0.6980392336845398
+    },
+    "m_DisabledColor": {
+      "r": 0.250980406999588,
+      "g": 0.250980406999588,
+      "b": 0.250980406999588,
+      "a": 0.501960813999176
+    },
+    "m_ColorMultiplier": 2.0,
+    "m_FadeDuration": 0.10000000149011612
+  },
+  "m_SpriteState": {
+    "m_HighlightedSprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_PressedSprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_SelectedSprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_DisabledSprite": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_AnimationTriggers": {
+    "m_NormalTrigger": "Normal",
+    "m_HighlightedTrigger": "Highlighted",
+    "m_PressedTrigger": "Pressed",
+    "m_SelectedTrigger": "Highlighted",
+    "m_DisabledTrigger": "Disabled"
+  },
+  "m_Interactable": 0,
+  "m_TargetGraphic": {
+    "m_FileID": 0,
+    "m_PathID": 14718
+  },
+  "m_FillRect": {
+    "m_FileID": 0,
+    "m_PathID": 12040
+  },
+  "m_HandleRect": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Direction": 1,
+  "m_MinValue": 0.0,
+  "m_MaxValue": 1.0,
+  "m_WholeNumbers": 0,
+  "m_Value": 1.0,
+  "m_OnValueChanged": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

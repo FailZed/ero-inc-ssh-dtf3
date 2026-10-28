@@ -1,0 +1,1226 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 160
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 7633633280
+  },
+  "m_Name": "",
+  "NormalCharacters": [
+    {
+      "_id": "Landlord",
+      "_nameStringReference": {
+        "KeyId": 285984296960
+      },
+      "_nameColor": {
+        "r": 0.5921568870544434,
+        "g": 0.38823530077934265,
+        "b": 0.0470588244497776,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "You",
+      "_nameStringReference": {
+        "KeyId": 8386212125347840
+      },
+      "_nameColor": {
+        "r": 0.15966537594795227,
+        "g": 0.5456714034080505,
+        "b": 0.8679245114326477,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Bot",
+      "_nameStringReference": {
+        "KeyId": 8386212137930752
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 0.6745283007621765,
+        "b": 0.9294278621673584,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "bigdaddyhurt1177",
+      "_nameStringReference": {
+        "KeyId": 280313597952
+      },
+      "_nameColor": {
+        "r": 0.501960813999176,
+        "g": 0.12941177189350128,
+        "b": 0.6784313917160034,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Policewoman",
+      "_nameStringReference": {
+        "KeyId": 189884893851684864
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Policeman",
+      "_nameStringReference": {
+        "KeyId": 189884893902016512
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Mom",
+      "_nameStringReference": {
+        "KeyId": 189884893906210816
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Annoying neighbor",
+      "_nameStringReference": {
+        "KeyId": 189884893906210817
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Police's TTS(text to speech)",
+      "_nameStringReference": {
+        "KeyId": 189884893906210818
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Police's TTS",
+      "_nameStringReference": {
+        "KeyId": 189884893906210819
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???",
+      "_nameStringReference": {
+        "KeyId": 189884893910405120
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???2",
+      "_nameStringReference": {
+        "KeyId": 189884893910405121
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Thug",
+      "_nameStringReference": {
+        "KeyId": 189884893910405122
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Mysterious pink man",
+      "_nameStringReference": {
+        "KeyId": 189884893910405123
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Ecclesiasticalot FF",
+      "_nameStringReference": {
+        "KeyId": 189884893914599424
+      },
+      "_nameColor": {
+        "r": 0.6886792182922363,
+        "g": 0.6886792182922363,
+        "b": 0.6886792182922363,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Sexy nun",
+      "_nameStringReference": {
+        "KeyId": 189884893914599425
+      },
+      "_nameColor": {
+        "r": 0.8207547068595886,
+        "g": 0.4684496223926544,
+        "b": 0.7872463464736938,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "'Nun' Shanice",
+      "_nameStringReference": {
+        "KeyId": 189884893914599426
+      },
+      "_nameColor": {
+        "r": 0.8207547068595886,
+        "g": 0.4684496223926544,
+        "b": 0.7872463464736938,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Nun Shanice",
+      "_nameStringReference": {
+        "KeyId": 189884893914599427
+      },
+      "_nameColor": {
+        "r": 0.8207547068595886,
+        "g": 0.4684496223926544,
+        "b": 0.7872463464736938,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Priestcan",
+      "_nameStringReference": {
+        "KeyId": 189884893918793728
+      },
+      "_nameColor": {
+        "r": 0.6886792182922363,
+        "g": 0.6886792182922363,
+        "b": 0.6886792182922363,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Nun",
+      "_nameStringReference": {
+        "KeyId": 189884893918793729
+      },
+      "_nameColor": {
+        "r": 0.8207547068595886,
+        "g": 0.4684496223926544,
+        "b": 0.7872463464736938,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Shanice",
+      "_nameStringReference": {
+        "KeyId": 189884893918793730
+      },
+      "_nameColor": {
+        "r": 0.8207547068595886,
+        "g": 0.4684496223926544,
+        "b": 0.7872463464736938,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Future nun Shanice",
+      "_nameStringReference": {
+        "KeyId": 189884893918793731
+      },
+      "_nameColor": {
+        "r": 0.8207547068595886,
+        "g": 0.4684496223926544,
+        "b": 0.7872463464736938,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Priestbot",
+      "_nameStringReference": {
+        "KeyId": 189884893922988032
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Ecclesiasticalot FF & You",
+      "_nameStringReference": {
+        "KeyId": 189884893922988033
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Goku the second",
+      "_nameStringReference": {
+        "KeyId": 189884893922988034
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Bo",
+      "_nameStringReference": {
+        "KeyId": 189884893922988035
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Nigevchenko",
+      "_nameStringReference": {
+        "KeyId": 189884893927182336
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Jamie",
+      "_nameStringReference": {
+        "KeyId": 189884893927182337
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Announcer",
+      "_nameStringReference": {
+        "KeyId": 189884893927182338
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Some woman",
+      "_nameStringReference": {
+        "KeyId": 189884893927182339
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Dispenser",
+      "_nameStringReference": {
+        "KeyId": 189884893931376640
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???1",
+      "_nameStringReference": {
+        "KeyId": 189884893931376641
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Blaubleim’s secretary",
+      "_nameStringReference": {
+        "KeyId": 189884893931376642
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Blaubleim",
+      "_nameStringReference": {
+        "KeyId": 189884893931376643
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "dAdDy",
+      "_nameStringReference": {
+        "KeyId": 189884893935570944
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "yOU",
+      "_nameStringReference": {
+        "KeyId": 189884893935570945
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Priestbot Mark",
+      "_nameStringReference": {
+        "KeyId": 189884893935570947
+      },
+      "_nameColor": {
+        "r": 0.6886792182922363,
+        "g": 0.6886792182922363,
+        "b": 0.6886792182922363,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Hobo",
+      "_nameStringReference": {
+        "KeyId": 189884893939765248
+      },
+      "_nameColor": {
+        "r": 0.3764705955982208,
+        "g": 0.41960784792900085,
+        "b": 0.2705882489681244,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Lady Annalie",
+      "_nameStringReference": {
+        "KeyId": 283585155072
+      },
+      "_nameColor": {
+        "r": 0.41960784792900085,
+        "g": 0.2862745225429535,
+        "b": 0.4745098054409027,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Annalie",
+      "_nameStringReference": {
+        "KeyId": 189884893939765250
+      },
+      "_nameColor": {
+        "r": 0.41960784792900085,
+        "g": 0.2862745225429535,
+        "b": 0.4745098054409027,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "You and Bot",
+      "_nameStringReference": {
+        "KeyId": 189884893939765251
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Stranger",
+      "_nameStringReference": {
+        "KeyId": 189884893943959552
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Stranger 1",
+      "_nameStringReference": {
+        "KeyId": 189884893943959553
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Stranger 2",
+      "_nameStringReference": {
+        "KeyId": 189884893943959554
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Stranger 3",
+      "_nameStringReference": {
+        "KeyId": 189884893943959555
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Some little girl",
+      "_nameStringReference": {
+        "KeyId": 189884893948153856
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Girl's mother",
+      "_nameStringReference": {
+        "KeyId": 189884893948153857
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Some old woman",
+      "_nameStringReference": {
+        "KeyId": 189884893948153858
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Policemen 3 and 4",
+      "_nameStringReference": {
+        "KeyId": 189884893948153859
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Policeman 2",
+      "_nameStringReference": {
+        "KeyId": 189884893948153860
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Policewoman and Policewoman",
+      "_nameStringReference": {
+        "KeyId": 189884893952348161
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "??? 1",
+      "_nameStringReference": {
+        "KeyId": 189884893952348162
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "??? 2",
+      "_nameStringReference": {
+        "KeyId": 189884893952348163
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "??? 3",
+      "_nameStringReference": {
+        "KeyId": 189884893956542464
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Josh?",
+      "_nameStringReference": {
+        "KeyId": 189884893956542465
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Josh",
+      "_nameStringReference": {
+        "KeyId": 189884893956542466
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Receptionist",
+      "_nameStringReference": {
+        "KeyId": 189884893956542467
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Detective",
+      "_nameStringReference": {
+        "KeyId": 189884893960736768
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Waiter",
+      "_nameStringReference": {
+        "KeyId": 189884893960736769
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Mr Ghost",
+      "_nameStringReference": {
+        "KeyId": 189884893960736770
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Baseball player",
+      "_nameStringReference": {
+        "KeyId": 189884893960736771
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Death",
+      "_nameStringReference": {
+        "KeyId": 189884893964931072
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Ghost",
+      "_nameStringReference": {
+        "KeyId": 189884893964931073
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Busy suit guy",
+      "_nameStringReference": {
+        "KeyId": 189884893964931074
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Some old lady",
+      "_nameStringReference": {
+        "KeyId": 189884893964931075
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "New concierge",
+      "_nameStringReference": {
+        "KeyId": 189884893969125379
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Concierge Leonardo",
+      "_nameStringReference": {
+        "KeyId": 189884893973319680
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Big Daddy",
+      "_nameStringReference": {
+        "KeyId": 189884893973319681
+      },
+      "_nameColor": {
+        "r": 0.501960813999176,
+        "g": 0.12941177189350128,
+        "b": 0.6784313917160034,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Pharmacist",
+      "_nameStringReference": {
+        "KeyId": 197348848315654144
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Some female clerk",
+      "_nameStringReference": {
+        "KeyId": 197348848403734528
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Melissa",
+      "_nameStringReference": {
+        "KeyId": 207821852338282496
+      },
+      "_nameColor": {
+        "r": 0.42659837007522583,
+        "g": 0.7547169923782349,
+        "b": 0.3809185028076172,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Leonardo",
+      "_nameStringReference": {
+        "KeyId": 207821852422168576
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Cashier",
+      "_nameStringReference": {
+        "KeyId": 207821852422168577
+      },
+      "_nameColor": {
+        "r": 0.4274509847164154,
+        "g": 0.7529411911964417,
+        "b": 0.3803921639919281,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "News Presenter",
+      "_nameStringReference": {
+        "KeyId": 230535899521212416
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Reporter",
+      "_nameStringReference": {
+        "KeyId": 230535899592515584
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Rioter",
+      "_nameStringReference": {
+        "KeyId": 230535899592515585
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Shop speaker",
+      "_nameStringReference": {
+        "KeyId": 296908734589820928
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 0.8892558813095093,
+        "b": 0.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Rich woman in a pink jacket",
+      "_nameStringReference": {
+        "KeyId": 296908734682095616
+      },
+      "_nameColor": {
+        "r": 0.6618674993515015,
+        "g": 0.1668422669172287,
+        "b": 0.8264150619506836,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Rich woman with overly huge boobs",
+      "_nameStringReference": {
+        "KeyId": 296908734682095617
+      },
+      "_nameColor": {
+        "r": 0.48073264956474304,
+        "g": 0.1111498549580574,
+        "b": 0.8792452812194824,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Little_Richard",
+      "_nameStringReference": {
+        "KeyId": 319409216818241536
+      },
+      "_nameColor": {
+        "r": 0.0,
+        "g": 0.5607843399047852,
+        "b": 0.06666667014360428,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "AbusedTenant",
+      "_nameStringReference": {
+        "KeyId": 319409216914710528
+      },
+      "_nameColor": {
+        "r": 0.15966537594795227,
+        "g": 0.5456714034080505,
+        "b": 0.8679245114326477,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Mrs. Fisher",
+      "_nameStringReference": {
+        "KeyId": 326769732238696448
+      },
+      "_nameColor": {
+        "r": 0.3249497413635254,
+        "g": 0.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Staff",
+      "_nameStringReference": {
+        "KeyId": 326769732276445184
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Staff member",
+      "_nameStringReference": {
+        "KeyId": 326769732276445185
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "DAK",
+      "_nameStringReference": {
+        "KeyId": 326769732276445186
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Admin",
+      "_nameStringReference": {
+        "KeyId": 326769732276445187
+      },
+      "_nameColor": {
+        "r": 0.09534144401550293,
+        "g": 1.0,
+        "b": 0.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Lucy",
+      "_nameStringReference": {
+        "KeyId": 328532400263913472
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Old Lady",
+      "_nameStringReference": {
+        "KeyId": 328532400360382464
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Young woman",
+      "_nameStringReference": {
+        "KeyId": 328532400360382465
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Amei",
+      "_nameStringReference": {
+        "KeyId": 471117888949837824
+      },
+      "_nameColor": {
+        "r": 0.4274509847164154,
+        "g": 0.7529411911964417,
+        "b": 0.3803921639919281,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Real Melissa",
+      "_nameStringReference": {
+        "KeyId": 471117889046306816
+      },
+      "_nameColor": {
+        "r": 0.4274509847164154,
+        "g": 0.5372549295425415,
+        "b": 0.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Jacobi E. Wunderanwalt",
+      "_nameStringReference": {
+        "KeyId": 471117889046306817
+      },
+      "_nameColor": {
+        "r": 0.5504541397094727,
+        "g": 0.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Britannia",
+      "_nameStringReference": {
+        "KeyId": 479127667148316672
+      },
+      "_nameColor": {
+        "r": 0.8196079134941101,
+        "g": 0.6509804129600525,
+        "b": 0.3490196168422699,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Unknown woman",
+      "_nameStringReference": {
+        "KeyId": 479127667198648320
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Random woman",
+      "_nameStringReference": {
+        "KeyId": 479859701739151360
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???2&3",
+      "_nameStringReference": {
+        "KeyId": 481727777795465216
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???3",
+      "_nameStringReference": {
+        "KeyId": 481727777896128512
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???4",
+      "_nameStringReference": {
+        "KeyId": 481727777896128513
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "???5",
+      "_nameStringReference": {
+        "KeyId": 481727777896128514
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Old Man",
+      "_nameStringReference": {
+        "KeyId": 481728203517321216
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "_id": "Recording",
+      "_nameStringReference": {
+        "KeyId": 542258247985258496
+      },
+      "_nameColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    }
+  ]
+}

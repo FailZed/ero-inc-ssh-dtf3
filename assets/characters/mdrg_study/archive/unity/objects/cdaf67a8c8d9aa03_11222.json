@@ -1,0 +1,61 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 17100,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "#Annalie_Outside.animate(MoveToRight)\n#bot.Expression.clear\r\n#bot.Expression.sad\r\nBot: Are you alright, Annalie?\r\nLady Annalie: …\r\nLady Annalie: Yeah, I’m alright.\r\nBot: Why didn’t you say anything back! She’s your nemesis, right?!\r\nLady Annalie: There’s no good comeback to the truth.\r\nBot: Don’t say that, accidents happen! It’s a medical emergency!\r\nBot: Your model is healthy, remember? It’s just a little snag, nothing more! Don’t let the Britannia person get into your head!\r\n#Annalie_Outside.face.smileEyeClosed\r\nLady Annalie: Y-You are right! Everything’s fine! I still have my models and all my pieces for the show are almost finished.\r\n#Annalie_Outside.face.sad\r\n#bot.Expression.clear\r\n#bot.Expression.happy\r\nLady Annalie: That stupid ******* ***** ******* ****** Britannia just took me by surprise like the coward she is! I will utterly destroy her! {{wi}}****!\r\n#bot.Expression.clear\r\n#Annalie_Outside.Eyes.Suprised+Annalie_Outside.Mouth.Hmm\r\nUnknown woman: Um, excuse me. We are here with little children. Could we ask you to use fewer profanities?\r\nLady Annalie: S-Sure, sorry about that…\r\n#Annalie_Outside.face.sad\r\n#bot.Expression.happy\r\nLady Annalie: I guess it’s just one of those days… {{wi}}Things just keep piling up. \r\nYou: It never rains but it pours…\r\nLady Annalie: Seriously. Let’s call it quits for today. I can feel a headache coming.",
+    "localizedLines": [
+      {
+        "KeyId": 479715228669435904
+      },
+      {
+        "KeyId": 479715228669435905
+      },
+      {
+        "KeyId": 479715228669435906
+      },
+      {
+        "KeyId": 479715228669435907
+      },
+      {
+        "KeyId": 479715228669435908
+      },
+      {
+        "KeyId": 479715228669435909
+      },
+      {
+        "KeyId": 479715228669435910
+      },
+      {
+        "KeyId": 479715228669435911
+      },
+      {
+        "KeyId": 479715228669435912
+      },
+      {
+        "KeyId": 479715228669435913
+      },
+      {
+        "KeyId": 479715228669435914
+      },
+      {
+        "KeyId": 479715228669435915
+      },
+      {
+        "KeyId": 479715228669435916
+      },
+      {
+        "KeyId": 479715228669435917
+      }
+    ]
+  }
+}

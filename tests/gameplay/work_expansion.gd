@@ -31,7 +31,7 @@ func run() -> void:
 	var sim = fresh()
 	var covered: Dictionary = {}
 	for job in sim.catalog.livelihood_rules.jobs.values(): covered[job.skill] = true
-	check(sim.configuration_error.is_empty() and sim.catalog.livelihood_rules.jobs.size() == 33 and covered.size() == 30,"thirty skills have real work applications in thirty-three jobs")
+	check(sim.configuration_error.is_empty() and sim.catalog.livelihood_rules.jobs.size() == 35 and covered.size() == 30,"thirty skills have real work applications in thirty-five jobs")
 	for id in sim.catalog.skills: check(covered.has(id),"practical job for "+id)
 	_test_careers()
 	_test_schedule()
@@ -171,7 +171,7 @@ func _test_ui() -> void:
 	var window = load("res://scripts/ui/gameplay/livelihood_window.gd").new()
 	root.add_child(window)
 	await process_frame
-	check(window._body.find_children("*","Button",true,false).filter(func(node): return node.has_meta("job_id")).size() == 33,"all jobs are reachable through the actual work selector")
+	check(window._body.find_children("*","Button",true,false).filter(func(node): return node.has_meta("job_id")).size() == 35,"all jobs are reachable through the actual work selector")
 	for id in ["tutor","lab_assistant","music_arranger"]:
 		gameplay.simulation = fresh(id)
 		gameplay.simulation.command("livelihood","work",{"id":id})

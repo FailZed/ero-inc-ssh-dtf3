@@ -1,0 +1,43 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 13834,
+  "indentLevel": 0,
+  "serializedLocalizedConversation": {
+    "mainText": "You: Look out {f_botName}.\r\nBot: I know. You worry too much.\r\nShanice: Come on! Let me hold you a little {f_botName}!\r\n#bot.Expression.veryshock\r\nBot: Uwah! {{punch}}\r\nYou: Shanice!\r\n#Nun_NewOutfit.Eyes.HappyClosed+Nun_NewOutfit.Mouth.Normal\r\nShanice: Don’t worry, I got this! Trust me a little!\r\nYou: If you say so…\r\nBot: W-Wait!\r\n",
+    "localizedLines": [
+      {
+        "KeyId": 209970416686456832
+      },
+      {
+        "KeyId": 209970416686456833
+      },
+      {
+        "KeyId": 209970416686456834
+      },
+      {
+        "KeyId": 209970416686456835
+      },
+      {
+        "KeyId": 209970416686456836
+      },
+      {
+        "KeyId": 209970416686456837
+      },
+      {
+        "KeyId": 209970416686456838
+      },
+      {
+        "KeyId": 209970640502906880
+      }
+    ]
+  }
+}

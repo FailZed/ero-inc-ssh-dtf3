@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 119
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 3976200192
+  },
+  "m_Name": "",
+  "L2DMeshUvShader": {
+    "m_FileID": 3,
+    "m_PathID": 103
+  },
+  "L2DMeshUvWireframeShader": {
+    "m_FileID": 3,
+    "m_PathID": 93
+  },
+  "DrawTextureShader": {
+    "m_FileID": 3,
+    "m_PathID": 100
+  },
+  "DrawTextureShaderNoBlend": {
+    "m_FileID": 3,
+    "m_PathID": 97
+  },
+  "DrawScratchShader": {
+    "m_FileID": 3,
+    "m_PathID": 105
+  },
+  "CompareTextureShader": {
+    "m_FileID": 3,
+    "m_PathID": 96
+  },
+  "ClearShader": {
+    "m_FileID": 3,
+    "m_PathID": 94
+  }
+}

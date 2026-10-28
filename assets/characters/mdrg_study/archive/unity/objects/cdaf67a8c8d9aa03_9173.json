@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 5553258496
+  },
+  "m_Name": "",
+  "itemId": 14718,
+  "indentLevel": 2,
+  "serializedLocalizedConversation": {
+    "mainText": "#bot.Expression.Happy\nBot: Hello there, {f_playerName}!\nYou: Wha?! What are you doing here?!\n",
+    "localizedLines": [
+      {
+        "KeyId": 322580858381787137
+      },
+      {
+        "KeyId": 322580858381787138
+      }
+    ]
+  }
+}
