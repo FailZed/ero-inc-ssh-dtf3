@@ -21,6 +21,9 @@ SUITES = {
     'mechanics': ('tests/mechanics/run.gd', 'MECHANICS_RESULT'),
     'characters': ('tests/characters/run.gd', 'CHARACTERS_RESULT'),
     'character-menu': ('tests/characters/integration.gd', 'CHARACTERS_INTEGRATION_RESULT'),
+    'protagonist': ('tests/characters/protagonist_live2d.gd', 'PROTAGONIST_LIVE2D_RESULT'),
+    'creator-ui': ('tests/gameplay/run_creator_ui.gd', 'CREATOR_UI_RESULT'),
+    'creator-selection': ('tests/gameplay/run_creator_selection.gd', 'CREATOR_SELECTION_RESULT'),
     'sandbox': ('tests/gameplay/run_sandbox.gd', 'SANDBOX_RESULT'),
     'work': ('tests/gameplay/work_expansion.gd', 'WORK_EXPANSION_RESULT'),
     'livelihood': ('tests/gameplay/livelihood.gd', 'LIVELIHOOD_RESULT'),
@@ -37,7 +40,7 @@ def prepare(kind):
     target = FIXTURE if kind == 'main' else FIXTURE.parent / kind
     target.mkdir(parents=True, exist_ok=True)
     if kind == 'main':
-        for name in ['scripts', 'scenes', 'data', 'addons', 'assets', 'Characters', 'TimeLine', 'locations', 'quests', 'styles', 'translation', 'tests']:
+        for name in ['scripts', 'scenes', 'data', 'addons', 'assets', 'Characters', 'TimeLine', 'quests', 'styles', 'translation', 'tests']:
             copy_directory(name, target)
         settings = (ROOT / 'project.godot').read_text(encoding='utf-8')
         settings = settings.replace('[application]', f'[application]\nconfig/use_custom_user_dir=true\nconfig/custom_user_dir_name="EroIncAutomatedTests-{FIXTURE.parent.name}"')
@@ -49,7 +52,7 @@ def prepare(kind):
         for name in paths:
             copy_directory(name, target)
         if kind == 'characters':
-            for name in ['scripts/ui/gameplay/ui_factory.gd', 'assets/textures/ui/windows-v2/window_surface.png', 'assets/textures/backgrounds/location_pack_v1/bedroom_night.png']:
+            for name in ['scripts/ui/gameplay/ui_factory.gd', 'scripts/ui/gameplay/hud_widgets.gd', 'assets/textures/ui/windows-v2/window_surface.png', 'assets/textures/backgrounds/location_pack_v1/bedroom_night.png']:
                 output = target / name
                 output.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(ROOT / name, output)
@@ -147,13 +150,25 @@ custom_template/release=""
         if args.npc_careers_only: extra.append('--npc-careers-only')
         if extra: extra.insert(0, '--')
         results[suite] = run_process(suite + ('-pack' if args.pack else ''), [*base, '--script', 'res://' + script, *extra], marker)
-    if args.suite in ['all', 'snapshots']:
-        for snapshot in ['snapshot_process', 'sandbox_snapshot', 'work_expansion_snapshot', 'growth_snapshot', 'livelihood_snapshot', 'remaining_snapshot', 'companion_snapshot']:
+    if args.suite in ['all', 'sandbox']:
+        results['sandbox-flow'] = run_process('sandbox-flow', [*base, '--script', 'res://tests/gameplay/sandbox_flow.gd'], 'SANDBOX_FLOW_RESULT')
+        results['sandbox-configurations'] = run_process('sandbox-configurations', [*base, '--script', 'res://tests/gameplay/sandbox_configurations.gd'], 'SANDBOX_CONFIGURATIONS_RESULT')
+        results['sandbox-world-economy'] = run_process('sandbox-world-economy', [*base, '--script', 'res://tests/gameplay/sandbox_world_economy.gd'], 'SANDBOX_WORLD_ECONOMY_RESULT')
+        results['story-mode-disabled'] = run_process('story-mode-disabled', [*base, '--script', 'res://tests/gameplay/story_mode_disabled.gd'], 'STORY_MODE_DISABLED_RESULT')
+    if args.suite in ['all', 'snapshots', 'sandbox']:
+        snapshots = ['sandbox_snapshot'] if args.suite == 'sandbox' else ['snapshot_process', 'sandbox_snapshot', 'work_expansion_snapshot', 'growth_snapshot', 'livelihood_snapshot', 'remaining_snapshot', 'companion_snapshot']
+        for snapshot in snapshots:
             script = target / 'tests/gameplay' / (snapshot + '.gd')
             marker = re.search(r'print\("([A-Z_]+RESULT) ', script.read_text(encoding='utf-8')).group(1)
             path = ARTIFACTS / (snapshot + '.json')
             for mode in ['write', 'read']:
                 results[snapshot + '-' + mode] = run_process(snapshot + '-' + mode, [*base, '--script', 'res://tests/gameplay/' + script.name, '--', f'--{mode}={path}'], marker)
+            if snapshot == 'sandbox_snapshot':
+                path = ARTIFACTS / (snapshot + '-nonstudent.json')
+                for mode in ['write', 'read']:
+                    name = snapshot + '-nonstudent-' + mode
+                    results[name] = run_process(name, [*base, '--script', 'res://tests/gameplay/' + script.name, '--', f'--{mode}={path}', '--nonstudent'], marker)
+    if args.suite in ['all', 'snapshots']:
         for snapshot in ['reproduction_snapshot', 'npc_reproduction_snapshot']:
             script = target / 'tests/mechanics' / (snapshot + '.gd')
             marker = re.search(r'print\("([A-Z_]+RESULT) ', script.read_text(encoding='utf-8')).group(1)

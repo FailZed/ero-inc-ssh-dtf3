@@ -67,7 +67,7 @@ func refresh() -> void:
 	var stage: Dictionary = Guide.STAGES[id]
 	var place_id := str(Gameplay.story_flags.get("guide_location",stage.start))
 	var place: Dictionary = Guide.PLACES[place_id]
-	_background.texture = load(Guide.background(place_id))
+	_background.texture = load(Guide.background(place_id, int(Gameplay.simulation.state.clock.minute_of_day)))
 	_place_title.text = place.title
 	_quest_title.text = "ТЕКУЩАЯ ЗАДАЧА · " + str(stage.title)
 	_objective.text = stage.objective
@@ -116,7 +116,7 @@ func _toggle_journal() -> void:
 
 func _open_resident(id: String) -> void:
 	var conversation := preload("res://scripts/ui/gameplay/conversation_window.gd").new()
-	conversation.configure(id,"story",Guide.background(str(Gameplay.story_flags.guide_location)))
+	conversation.configure(id,"story",Guide.background(str(Gameplay.story_flags.guide_location), int(Gameplay.simulation.state.clock.minute_of_day)))
 	conversation.menu_requested.connect(menu_requested.emit)
 	add_child(conversation)
 

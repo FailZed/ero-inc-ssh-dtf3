@@ -42,7 +42,11 @@ func _ready() -> void:
 			# Failed loads return to the menu with a readable error; never restart the story.
 			return
 	else:
-		if not Gameplay.is_sandbox(): Dialogic.start(GameSession.DEFAULT_TIMELINE)
+		if not Gameplay.is_sandbox():
+			GameSession.last_load_error = GameSession.localize("feedback.story_unavailable")
+			GameSession.pause_autosave_runtime()
+			GameSession.return_to_main_menu.call_deferred()
+			return
 	_on_gameplay_phase_changed(Gameplay.phase)
 	call_deferred("_restore_exploration")
 

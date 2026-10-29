@@ -339,6 +339,7 @@ func adult_relationships() -> void:
 	choose(sim, "back")
 	choose(sim, "more")
 	choose(sim, "romance")
+	sim.rng.seed = 42
 	t._check(choose(sim, "partner").accepted and sim.services.npc_dialogue._is_partner(npc), "relationship proposal in dialogue reaches the shared mutual-agreement rules")
 	# Respect live NPC boundaries and current content filters even in an open menu.
 	open(sim)

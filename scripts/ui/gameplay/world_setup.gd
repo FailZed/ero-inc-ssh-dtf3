@@ -9,6 +9,9 @@ const W = preload("res://scripts/ui/gameplay/game_widgets.gd")
 const Education = preload("res://scripts/mechanics/education_schedule.gd")
 var configuration: Dictionary = Setup.defaults()
 var page := 0
+var _layout_root: Control
+var _aside: VBoxContainer
+var _panel: PanelContainer
 var _body: VBoxContainer
 var _step: Label
 var _next: Button
@@ -25,57 +28,73 @@ var _subject_checks: Dictionary = {}
 var _education_status: Label
 
 func _ready() -> void:
+	# Story mode is paused while the playable flow is being built in sandbox.
+	configuration.mode = "sandbox"
+	configuration.difficulty = "hard"
 	var seed_source := RandomNumberGenerator.new()
 	seed_source.randomize()
 	configuration.seed = seed_source.randi_range(0,2147483647)
 	theme = UI.skin()
+	var setup_font := theme.default_font.duplicate() as FontFile
+	setup_font.multichannel_signed_distance_field = true
+	theme.default_font = setup_font
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	UI.background(self, "res://assets/textures/backgrounds/prolog/warehouse_exterior_night.png", 0.40)
-	var root := UI.row(UI.inset(self, 60), 42)
-	var aside := UI.column(root, 24)
-	aside.custom_minimum_size.x = 280
-	UI.label(aside, "ERO INC", 46)
-	_mode_title = UI.label(aside, "НОВАЯ ИСТОРИЯ", 17, UI.ORANGE)
-	_step = UI.label(aside, "", 26, UI.BLUE)
-	_mode_description = UI.label(aside, "", 20, UI.MUTED)
+	_layout_root = Control.new()
+	_layout_root.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(_layout_root)
+	var root := UI.row(UI.inset(_layout_root, 18), 18)
+	_aside = UI.column(root, 16)
+	_aside.custom_minimum_size.x = 120
+	UI.label(_aside, "ERO INC", 30)
+	_mode_title = UI.label(_aside, "ПЕСОЧНИЦА", 16, UI.ORANGE)
+	_step = UI.label(_aside, "", 22, UI.BLUE)
+	_mode_description = UI.label(_aside, "", 17, UI.MUTED)
 	var space := Control.new()
 	space.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	aside.add_child(space)
-	_summary = UI.label(aside, "", 18, UI.MUTED)
-	var panel := PanelContainer.new()
-	panel.add_theme_stylebox_override("panel",UI.surface(28))
-	panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	root.add_child(panel)
-	var content := UI.column(panel, 18)
+	_aside.add_child(space)
+	_summary = UI.label(_aside, "", 15, UI.MUTED)
+	_panel = PanelContainer.new()
+	_panel.add_theme_stylebox_override("panel",UI.surface(18))
+	_panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	root.add_child(_panel)
+	var content := UI.column(_panel, 12)
 	_body = UI.scroller(content)
 	_status = UI.label(content, "", 18, UI.ORANGE)
 	var footer := UI.row(content)
 	_back = UI.button(footer, "НАЗАД", _go_back)
 	_next = UI.button(footer, "ДАЛЕЕ  →", _go_next)
 	_next.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	resized.connect(_layout)
+	_layout()
 	_show_page()
+
+func _layout() -> void:
+	if not is_instance_valid(_layout_root): return
+	# The project uses a 1920px canvas; fit the setup to the actual landscape window.
+	var viewport_scale: float = get_viewport().get_final_transform().get_scale().x
+	var compensation: float = maxf(viewport_scale, 0.75) / maxf(viewport_scale, 0.1)
+	_layout_root.scale = Vector2.ONE * compensation
+	_layout_root.size = size / compensation
+	var available := _layout_root.size.x
+	_aside.custom_minimum_size.x = clampf(available * 0.15, 120.0, 280.0)
+	_mode_description.visible = available >= 1400.0
+	_summary.visible = available >= 900.0
 
 func _show_page() -> void:
 	UI.clear(_body)
-	_mode_title.text = "ПЕСОЧНИЦА" if configuration.get("mode","story") == "sandbox" else "НОВАЯ ИСТОРИЯ"
-	_mode_description.text = "Город будет жить своим ритмом.\n\nСамостоятельная жизнь без основного сюжета: заботьтесь о себе, обустраивайте дом и знакомьтесь с жителями." if configuration.get("mode","story") == "sandbox" else "Город будет жить своим ритмом.\n\nЭти настройки определяют случайных жителей. Сюжетные персонажи сохраняют свои особенности."
+	_mode_title.text = "ПЕСОЧНИЦА"
+	_mode_description.text = "Город будет жить своим ритмом.\n\nЗаботьтесь о себе, обустраивайте дом и знакомьтесь с жителями."
 	_step.text = "1 / 2\nЖители города" if page == 0 else "2 / 2\nВаш ритм жизни"
-	_next.text = "ДАЛЕЕ  →" if page == 0 else "НАЧАТЬ ПЕСОЧНИЦУ  →" if configuration.get("mode","story") == "sandbox" else "НАЧАТЬ ИСТОРИЮ  →"
+	_next.text = "ДАЛЕЕ  →" if page == 0 else "НАЧАТЬ ПЕСОЧНИЦУ  →"
 	if page == 0: _population_page()
 	else: _difficulty_page()
 	_refresh()
 	_next.grab_focus()
 
 func _population_page() -> void:
-	UI.label(_body, "Режим игры", 26, UI.BLUE)
-	var modes := UI.row(_body)
-	for id in ["story", "sandbox"]:
-		var caption: String = {"story":"ИСТОРИЯ", "sandbox":"ПЕСОЧНИЦА · ЖИЗНЬ В ГОРОДЕ"}[id]
-		UI.button(modes, ("✓ " if configuration.get("mode","story") == id else "") + caption, func():
-			configuration.mode = id
-			if id == "sandbox": configuration.difficulty = "hard"
-			_show_page())
-	UI.label(_body,"Сюжетное начало, затем свободная жизнь в городе." if configuration.mode == "story" else "Начало у домашнего зеркала, затем самостоятельная жизнь в городе без основного сюжета.",19,UI.MUTED)
+	UI.label(_body, "ПЕСОЧНИЦА · ЖИЗНЬ В ГОРОДЕ", 26, UI.BLUE)
+	UI.label(_body, "Начало у домашнего зеркала, затем самостоятельная жизнь в городе.", 19, UI.MUTED)
 	UI.label(_body, "Кто живёт в вашем городе?", 36)
 	UI.label(_body, "Люди, полуфурри и фурри — разные внешности, равные возможности.", 20, UI.MUTED)
 	var portraits := UI.row(_body, 14)
@@ -87,7 +106,7 @@ func _population_page() -> void:
 		portrait.texture = load("res://assets/textures/portraits/world_examples/%s.tres" % id)
 		portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		portrait.custom_minimum_size = Vector2(140,160)
+		portrait.custom_minimum_size = Vector2(120,120) if _layout_root.size.x < 1400.0 else Vector2(140,160)
 		card.add_child(portrait)
 		UI.label(card, {"human":"ЧЕЛОВЕК", "semi_furry":"ПОЛУФУРРИ", "furry":"ФУРРИ"}[id], 22)
 		UI.label(card, {"human":"Человеческие черты", "semi_furry":"Человеческое лицо, звериные уши", "furry":"Шерсть, морда и хвост"}[id], 16, UI.MUTED)
@@ -137,7 +156,7 @@ func _number(parent: Node, text: String, low: float, high: float, value: float, 
 	spin.max_value = high
 	spin.step = step_value
 	spin.value = value
-	spin.custom_minimum_size = Vector2(180, 48)
+	spin.custom_minimum_size = Vector2(140 if _layout_root.size.x < 1400.0 else 180, 48)
 	if parent is GridContainer: spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	spin.value_changed.connect(callback)
 	row.add_child(spin)
@@ -145,7 +164,7 @@ func _number(parent: Node, text: String, low: float, high: float, value: float, 
 
 func _difficulty_page() -> void:
 	UI.label(_body, "В каком ритме вы хотите жить?", 36)
-	UI.label(_body, "Потребности, расходы и самостоятельная жизнь жителей действуют с начала свободной игры." if configuration.get("mode","story") == "sandbox" else "Первая глава посвящена истории. Свободные занятия и последствия включатся после её завершения.", 20, UI.MUTED)
+	UI.label(_body, "Потребности, расходы и самостоятельная жизнь жителей действуют с начала игры.", 20, UI.MUTED)
 	UI.label(_body, "Отношения и семья", 26, UI.BLUE)
 	for id in ["romance", "adult", "pregnancy"]:
 		var content_toggle := CheckBox.new()
@@ -153,10 +172,9 @@ func _difficulty_page() -> void:
 		content_toggle.button_pressed = bool(configuration.content.get(id,true))
 		content_toggle.toggled.connect(func(value): configuration.content[id] = value)
 		_body.add_child(content_toggle)
-	if configuration.get("mode","story") == "sandbox":
-		_number(_body, "Деньги на начало жизни", 100, 1000, configuration.get("sandbox",{}).get("start_cash",250), func(v): configuration.sandbox.start_cash = int(v))
-		_education_settings()
-	var choices := W.grid(_body,3)
+	_number(_body, "Деньги на начало жизни", 100, 1000, configuration.get("sandbox",{}).get("start_cash",250), func(v): configuration.sandbox.start_cash = int(v))
+	_education_settings()
+	var choices := W.grid(_body,1 if _layout_root.size.x < 1400.0 else 3)
 	for id in ["easy", "normal", "hard"]:
 		var card := W.panel(choices,18)
 		var names := {"easy":"СПОКОЙНАЯ ЖИЗНЬ", "normal":"ОБЫЧНЫЙ РИТМ", "hard":"КАЖДЫЙ ДЕНЬ ИМЕЕТ ВЕС"}
@@ -172,7 +190,7 @@ func _difficulty_page() -> void:
 		var custom := UI.card(_body)
 		UI.label(custom, "Свои правила", 24, UI.BLUE)
 		var names := {"satiety_enabled":"Учитывать голод", "rent_enabled":"Плата за жильё", "education_failure":"Последствия пропусков", "starvation_attrition":"Урон от голода", "exhaustion_enabled":"Истощение", "eviction_enabled":"Выселение за долги"}
-		var baseline: Dictionary = Gameplay.simulation.catalog.difficulties.custom
+		var baseline: Dictionary = get_node("/root/Gameplay").simulation.catalog.difficulties.custom
 		for id in Preferences.TOGGLES:
 			var check := CheckBox.new()
 			check.text = names[id]
@@ -259,7 +277,8 @@ func _go_back() -> void:
 
 func _go_next() -> void:
 	if page == 0: page = 1; _show_page(); return
-	var result := Gameplay.begin_new_game(configuration)
+	configuration.mode = "sandbox"
+	var result: Error = get_node("/root/Gameplay").begin_new_game(configuration)
 	if result != OK: _status.text = "Не удалось начать игру. Проверьте настройки."
 
 func _unhandled_input(event: InputEvent) -> void:

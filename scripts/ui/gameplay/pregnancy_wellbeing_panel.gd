@@ -24,5 +24,5 @@ static func populate(owner: Control, parent: VBoxContainer, target: String = "pl
 		owner._offer(card,"Зайти в туалет","5 мин · нужен доступный туалет","pregnancy_wellbeing","toilet")
 	if status.soiled: owner._offer(card,"Привести себя в порядок","10 мин · сменить одежду и умыться","pregnancy_wellbeing","cleanup")
 	if status.active:
-		owner._offer(card,"Купить гигиенические средства","5 мин · 6 ¤ за три · клиника или магазин","pregnancy_wellbeing","supplies")
-		if status.phase=="pregnancy": owner._offer(card,"Обсудить самочувствие на осмотре","30 мин · 30 ¤ · в клинике","pregnancy_wellbeing","checkup")
+		owner._offer(card,"Купить гигиенические средства","5 мин · 6 €$ за три · клиника или магазин","pregnancy_wellbeing","supplies")
+		if status.phase=="pregnancy": owner._offer(card,"Обсудить самочувствие на осмотре","30 мин · 30 €$ · в клинике","pregnancy_wellbeing","checkup")

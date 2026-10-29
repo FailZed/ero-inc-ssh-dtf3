@@ -2,6 +2,7 @@ extends SceneTree
 const Setup = preload("res://scripts/mechanics/setup_config.gd")
 const VisualState = preload("res://scripts/portraits/character_state.gd")
 const PersonalStories = preload("res://scripts/mechanics/npc_stories.gd")
+const Education = preload("res://scripts/mechanics/education_schedule.gd")
 var checks := 0
 var failures: Array[String] = []
 var gameplay
@@ -27,6 +28,7 @@ func _run() -> void:
 	_test_zero_xp_personal_ending()
 	_test_explicit_personal_story_binding()
 	_test_all_personal_arcs()
+	_test_ellie_household_goal()
 	_test_current_validation()
 	_test_visual_state()
 	dialogic.VAR.var_storage.World = original
@@ -242,6 +244,26 @@ func _test_all_personal_arcs() -> void:
 		check(sim.command("npc_stories","choose",{"id":id,"node":"return_two","choice":"finish"}).ok, "full personal ending is reachable: " + id)
 		check(sim.state.npc_stories.arcs[id].ending == "shared_end", "personal arc records chosen full ending: " + id)
 
+func _test_ellie_household_goal() -> void:
+	for enrolled in [true,false]:
+		var sim = _personal_world("ellie")
+		Education.apply_plan(sim.state,enrolled,["computing","physics"] if enrolled else [])
+		var label := "student" if enrolled else "nonstudent"
+		check(sim.command("npc_stories","start",{"id":"ellie"}).ok, "Ellie starts for " + label)
+		check(sim.command("npc_stories","choose",{"id":"ellie","node":"intro","choice":"help"}).ok, "Ellie household goal opens for " + label)
+		if not enrolled:
+			var academic: Dictionary = sim.command("world","homework")
+			check(not academic.ok and academic.error == "education_not_enrolled", "nonstudent academic homework guard remains")
+		sim.state.world.location = "detached_house_bedroom"
+		var before: Dictionary = sim.export_snapshot()
+		var foreign: Dictionary = sim.command("world","clean")
+		check(not foreign.ok and foreign.error == "home_required" and before == sim.export_snapshot() and sim.state.npc_stories.arcs.ellie.node == "task_one", "foreign bedroom cannot complete Ellie goal: " + label)
+		sim.state.world.location = sim.player_home_room("bedroom")
+		check(_do_goal(sim,"ellie","task_one"), "own household chore completes Ellie goal: " + label)
+		check(sim.command("npc_stories","choose",{"id":"ellie","node":"return_one","choice":"continue"}).ok, "Ellie continues after chore: " + label)
+		check(_do_goal(sim,"ellie","task_two"), "leisure completes Ellie goal: " + label)
+		check(sim.command("npc_stories","choose",{"id":"ellie","node":"return_two","choice":"finish"}).ok and sim.state.npc_stories.arcs.ellie.ending == "shared_end", "Ellie reaches full ending: " + label)
+
 func _do_goal(sim, id: String, node_id: String) -> bool:
 	var goal: Dictionary = sim.catalog.npc_story_arcs[id].nodes[node_id].goal
 	var result: Dictionary = {}
@@ -261,6 +283,7 @@ func _do_goal(sim, id: String, node_id: String) -> bool:
 			sim.state.world.location = "kitchen" if goal.module == "inventory" else "bedroom"
 		if goal.module in ["npc_relationships","social"]: sim.state.social.npcs[id].location = sim.state.world.location
 		var args := {"id":goal.get("id",id)}
+		if goal.module == "world" and goal.operation == "clean": args.erase("id")
 		if goal.has("action"): args.action = goal.action
 		if goal.has("item"): args.item = goal.item
 		if goal.module == "economy": args.id = "website_order"; args.minutes = 30

@@ -10,9 +10,11 @@ const PLACES := {
 	"campus_hall":{"title":"Холл университета","background":"res://assets/textures/locations/apartment/hallway_16x9.png","exits":["campus_courtyard","campus_corridor"],"objects":{"notice":"Указатель аудиторий","bear":"Дежурный"}},
 	"campus_corridor":{"title":"Второй этаж · левое крыло","background":"res://assets/textures/locations/apartment/hallway_16x9.png","exits":["campus_hall"],"objects":{"club":"Косплейный клуб","classroom":"Аудитория 213","bathroom_door":"Мужской туалет"}}
 }
-static func background(id: String) -> String:
+static func background(id: String, minute_of_day: int) -> String:
 	var campus := {"campus_courtyard":"courtyard","campus_hall":"hall","campus_corridor":"corridor"}
 	if campus.has(id): return "res://assets/textures/backgrounds/campus_v1/%s.tres" % campus[id]
+	if id == "kitchen" and (minute_of_day >= 18 * 60 or minute_of_day < 5 * 60):
+		return "res://assets/textures/locations/apartment/kitchen_night_16x9.png"
 	return str(PLACES[id].background)
 const STAGES := {
 	"night":{"title":"Прийти в себя","objective":"Пройдите в ванную и умойтесь.","hint":"Из спальни выйдите в прихожую. Дверь ванной находится рядом.","start":"bedroom","allowed":["bedroom","apartment_hall","bathroom","kitchen"],"goal_place":"bathroom","goal":"sink","action":"УМЫТЬСЯ","timeline":"scene_05_mirror_and_photo/"},

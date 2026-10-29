@@ -44,6 +44,23 @@ func run() -> void:
 	_harm_and_support()
 	_slander_and_sabotage()
 	_dialogue_and_restore()
+	_unobserved_conflict()
+
+func _unobserved_conflict() -> void:
+	var sim = fresh()
+	sim.state.world.location = "bedroom"
+	var id := stage(sim,"intimidation","victim")
+	t.check(not sim.state.antagonism.cases[id].observed,"NPC conflict begins outside the player's view")
+	t.check(sim.services.antagonism.inspect().cases.is_empty(),"unobserved NPC conflict is absent from visible cases")
+	t.check(sim.command("clock","advance",{"minutes":360}).ok,"unobserved NPC conflict resolves")
+	var view: Dictionary = sim.services.antagonism.inspect()
+	t.check(view.cases.is_empty() and view.history.is_empty(),"unobserved NPC outcome stays out of the player-facing history")
+	var replay = fresh()
+	t.check(replay.restore_snapshot(snapshot(sim)).ok and replay.services.antagonism.inspect().history.is_empty(),"restoring an unobserved outcome does not reveal it")
+	sim = fresh()
+	id = stage(sim,"intimidation","victim")
+	t.check(sim.command("clock","advance",{"minutes":360}).ok,"observed NPC conflict resolves")
+	t.check(sim.services.antagonism.inspect().history.any(func(row): return row.id == id),"observed NPC outcome remains in visible history")
 
 func _motives() -> void:
 	var sim = fresh()

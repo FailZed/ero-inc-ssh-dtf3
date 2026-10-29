@@ -27,16 +27,24 @@ var _is_save_mode := false
 
 
 func _ready() -> void:
+	var window_size := DisplayServer.window_get_size()
+	var compact := window_size.x > window_size.y and window_size.x <= 1100
 	focus_mode = Control.FOCUS_ALL
-	add_theme_stylebox_override("panel",UI.style(Color("0e202d"),Color("3a5d75")))
-	title_label.add_theme_font_size_override("font_size",roundi(20*UI.text_scale))
-	date_label.add_theme_font_size_override("font_size",roundi(17*UI.text_scale))
-	empty_label.add_theme_font_size_override("font_size",roundi(20*UI.text_scale))
+	var card_style := UI.style(Color("0e202d"),Color(0.48,0.70,0.82,0.68))
+	card_style.set_border_width_all(1)
+	card_style.set_content_margin_all(10)
+	add_theme_stylebox_override("panel",card_style)
+	title_label.add_theme_font_size_override("font_size",roundi((30 if compact else 20)*UI.text_scale))
+	date_label.add_theme_font_size_override("font_size",roundi((25 if compact else 17)*UI.text_scale))
+	empty_label.add_theme_font_size_override("font_size",roundi((30 if compact else 20)*UI.text_scale))
 	for button in [primary_button,delete_button,overwrite_button]:
-		button.add_theme_font_size_override("font_size",roundi(18*UI.text_scale))
-		button.custom_minimum_size.y = 42
-	primary_button.add_theme_stylebox_override("normal",UI.style(Color("24465b"),UI.BLUE))
-	primary_button.custom_minimum_size.x = 130
+		button.add_theme_font_size_override("font_size",roundi((27 if compact else 18)*UI.text_scale))
+		button.custom_minimum_size.y = 68 if compact else 42
+	primary_button.flat = false
+	var action_style := UI.style(Color(0.10,0.22,0.30,0.92),Color(0.53,0.72,0.83,0.72))
+	action_style.set_border_width_all(1)
+	primary_button.add_theme_stylebox_override("normal",action_style)
+	primary_button.custom_minimum_size.x = 180 if compact else 130
 	delete_button.add_theme_color_override("font_color",UI.MUTED)
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	gui_input.connect(_on_gui_input)
@@ -156,5 +164,3 @@ func _make_preview_texture(color: Color) -> Texture2D:
 	var image := Image.create(320, 180, false, Image.FORMAT_RGBA8)
 	image.fill(color)
 	return ImageTexture.create_from_image(image)
-
-

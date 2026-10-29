@@ -62,7 +62,7 @@ static func populate(owner: Control, parent: VBoxContainer) -> void:
 		if r.infertile: UI.label(card,"Бесплодие",20,UI.MUTED)
 		if r.sterilization != "none": UI.label(card,("Перевязка маточных труб" if r.sterilization=="tubal_ligation" else "Вазэктомия")+(" · действует" if r.sterile else " · результат ещё не вступил в силу"),20)
 		if int(r.recovery_until)>int(sim.state.clock.total_minutes): UI.label(card,"Восстановление: ещё %d мин" % [int(r.recovery_until)-int(sim.state.clock.total_minutes)],19,UI.MUTED)
-		if r.can_gestate: owner._offer(card,"Проверить беременность","5 мин · 10 ¤","reproduction","test")
+		if r.can_gestate: owner._offer(card,"Проверить беременность","5 мин · 10 €$","reproduction","test")
 		if not r.cycling and not r.infertile and r.sterilization == "none": UI.label(card,"Сейчас нет особых состояний.",20,UI.MUTED)
 	elif section == "protection":
 		var setting := W.panel(parent)
@@ -78,12 +78,12 @@ static func populate(owner: Control, parent: VBoxContainer) -> void:
 			for method in ["pill","iud","implant","none"]:
 				if method==r.method and method!="pill": continue
 				var spec: Dictionary = sim.catalog.contraceptive_methods[method]
-				owner._offer(methods,"Отменить текущую контрацепцию" if method=="none" else str(spec.label),"%d мин · %d ¤" % [spec.minutes,spec.cost],"reproduction","contraception",{"method":method})
+				owner._offer(methods,"Отменить текущую контрацепцию" if method=="none" else str(spec.label),"%d мин · %d €$" % [spec.minutes,spec.cost],"reproduction","contraception",{"method":method})
 			owner._offer(parent,"Экстренная контрацепция","Нужен предмет и недавний эпизод риска","reproduction","emergency")
 		for id in sim.catalog.reproductive_procedures:
 			var spec: Dictionary = sim.catalog.reproductive_procedures[id]
 			if not r.get(spec.capability,false) or r.sterilization!="none": continue
-			UI.button(parent,"Клиника: %s · %d ¤" % [spec.label,spec.cost],confirm.bind(owner,str(spec.label),"reproduction","procedure",{"id":id,"confirm":true}))
+			UI.button(parent,"Клиника: %s · %d €$" % [spec.label,spec.cost],confirm.bind(owner,str(spec.label),"reproduction","procedure",{"id":id,"confirm":true}))
 	else:
 		UI.label(parent,"Ваши планы",26)
 		var desire := OptionButton.new()
@@ -115,7 +115,7 @@ static func support(owner: Control, parent: VBoxContainer) -> void:
 		count+=1
 		var card := UI.card(parent)
 		UI.label(card,str(sim.state.family.members[o.member].name) + (" · вы платите" if o.payer=="player" else " · вам платят"),22)
-		UI.label(card,"%d ¤ в месяц · задолженность %d ¤ · выплачено %d ¤" % [o.monthly,o.arrears,o.paid],19,UI.MUTED)
+		UI.label(card,"%d €$ в месяц · задолженность %d €$ · выплачено %d €$" % [o.monthly,o.arrears,o.paid],19,UI.MUTED)
 		if o.payer=="player":
 			var automatic := CheckBox.new()
 			automatic.text = "Автоплатёж при наличии средств"
@@ -125,6 +125,6 @@ static func support(owner: Control, parent: VBoxContainer) -> void:
 		if int(o.arrears)>0:
 			if o.payer=="player":
 				owner._offer(card,"Погасить задолженность","Перевод второму родителю","child_support","pay",{"id":o.id,"amount":o.arrears})
-			else: owner._offer(card,"Подать на взыскание","30 ¤ · рассмотрение занимает время","child_support","file_enforcement",{"id":o.id})
+			else: owner._offer(card,"Подать на взыскание","30 €$ · рассмотрение занимает время","child_support","file_enforcement",{"id":o.id})
 		if o.order: UI.label(card,"Действует взыскание задолженности",18,UI.ORANGE)
 	if count==0: UI.label(parent,"Обязательства появляются, когда ребёнок живёт отдельно от одного из родителей. Отказ от ухода не отменяет финансовые обязанности.",19,UI.MUTED)

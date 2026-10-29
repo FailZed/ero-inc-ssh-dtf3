@@ -13,6 +13,17 @@ func _open_at_clock(entry: Dictionary, clock: Dictionary) -> bool:
 		return Graph.service_open(graph,str(policy.service_id),int(clock.minute_of_day),int(clock.weekday)) if policy.kind == "service" else true
 	return super._open_at_clock(entry,clock)
 
+func _home_transit_rooms(property_id: String) -> Array:
+	var rooms: Dictionary = Graph.home_unit(sim.catalog.city_graph,property_id).get("room_ids",{})
+	var result: Array = []
+	for kind in ["hall","stairs"]:
+		if rooms.has(kind): result.append(str(rooms[kind]))
+	return result
+
+func _player_invitation_transit(destination: String) -> Array:
+	if not sim.is_player_home_location(destination): return []
+	return _home_transit_rooms(City.active_property(sim.state))
+
 func actor_context(id: String, minute: int, urgent: bool = false) -> Dictionary:
 	var clock: Dictionary = sim.calendar.snapshot(minute)
 	var actor := {"id":id,"residence_id":"","story_location_ids":[],"activity_location_ids":[],"duty_location_ids":[],"urgent_location_ids":[],"invited_location_ids":[]}
@@ -52,11 +63,20 @@ func actor_context(id: String, minute: int, urgent: bool = false) -> Dictionary:
 		for property_id in sim.state.housing.properties:
 			if id in sim.state.housing.properties[property_id].get("tenants",[]):
 				actor.invited_location_ids.append_array(Graph.home_unit(sim.catalog.city_graph,str(property_id)).get("room_ids",{}).values())
+		# Someone already inside a residence can use its hall (and stairs) to
+		# leave, even after a tenancy or invitation ends. This grants no bedroom.
+		var current := str(sim.state.social.npcs[id].location)
+		for property_id in sim.catalog.city_graph.home_units:
+			var rooms: Dictionary = Graph.home_unit(sim.catalog.city_graph,str(property_id)).get("room_ids",{})
+			if current in rooms.values():
+				actor.invited_location_ids.append_array(_home_transit_rooms(str(property_id)))
+				break
 	for session in sim.state.get("npc_reproduction",{}).get("sessions",{}).values():
 		if id in [session.a,session.b]: actor.invited_location_ids.append(str(session.venue))
 	for appointment in sim.state.social.appointments:
 		if appointment.npc == id and appointment.status == "pending" and sim.is_player_home_location(str(appointment.location)):
 			actor.invited_location_ids.append(str(appointment.location))
+			actor.invited_location_ids.append_array(_player_invitation_transit(str(appointment.location)))
 	for member in sim.state.get("family",{}).get("members",{}).values():
 		if id in member.get("guardians",member.parents): actor.invited_location_ids.append(str(member.home))
 	return actor
@@ -65,7 +85,9 @@ func actor_availability(id: String, actor_id: String, minute: int, ignore_hours:
 	if not sim.catalog.locations.has(id): return Rules.fail("unknown_location")
 	var clock: Dictionary = sim.calendar.snapshot(minute)
 	var actor := actor_context(actor_id,minute,ignore_hours)
-	if not invited_destination.is_empty(): actor.invited_location_ids.append(invited_destination)
+	if not invited_destination.is_empty():
+		actor.invited_location_ids.append(invited_destination)
+		actor.invited_location_ids.append_array(_player_invitation_transit(invited_destination))
 	var access := Graph.can_enter(sim.catalog.city_graph,id,actor,int(clock.minute_of_day),int(clock.weekday))
 	if not access.ok and ignore_hours:
 		access = Graph.can_enter(sim.catalog.city_graph,id,actor,int(clock.minute_of_day),int(clock.weekday),false)

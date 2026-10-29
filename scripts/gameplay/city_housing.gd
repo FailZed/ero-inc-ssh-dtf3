@@ -5,7 +5,7 @@ const CITY_PROPERTIES := ["detached_house","penthouse","social_housing"]
 
 func emergency_available() -> bool:
 	var housing: Dictionary = sim.state.housing
-	return housing.residence.is_empty() and (housing.properties.get("apartment",{}).get("evicted",false) or sim.state.world.flags.get("student_home_lost",false)) and int(sim.state.economy.cash) < 600 and not housing.properties.has("social_housing")
+	return housing.residence.is_empty() and (housing.properties.get("apartment",{}).get("evicted",false) or sim.state.world.flags.get("student_home_lost",false)) and int(sim.state.economy.cash) < 600 and not housing.properties.has("social_housing") and not sim.state.world.flags.get("social_housing_granted",false)
 
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	var id := str(args.get("id",""))
@@ -17,6 +17,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			var granted := super.execute("rent",args)
 			if granted.ok:
 				sim.state.housing.properties.social_housing.equipment.stove = 1
+				sim.state.world.flags.social_housing_granted = true
 				emit_event("social_housing_granted",{})
 			return granted
 	if City.data(sim.catalog).home_units.has(id) and operation == "move_in":
@@ -32,6 +33,7 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	var had_home: bool = not sim.state.housing.residence.is_empty()
 	var was_inside: bool = sim.is_player_home_location(str(sim.state.world.location))
 	var result := super.execute(operation,args)
+	if result.ok and id == "social_housing" and operation == "end_lease": sim.state.world.flags.social_housing_granted = true
 	if result.ok and operation == "move_in": sim.state.world.flags.city_story_home = false
 	if result.ok and had_home and sim.state.housing.residence.is_empty():
 		sim.state.world.flags.city_story_home = false

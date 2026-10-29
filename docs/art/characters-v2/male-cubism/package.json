@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "description": "Layered PSD writer for Cubism 5.2 male model pilots",
+  "dependencies": {
+    "ag-psd": "^34.1.0",
+    "canvas": "^3.2.0",
+    "pngjs": "^7.0.0"
+  }
+}

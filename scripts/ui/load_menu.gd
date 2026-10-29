@@ -17,6 +17,7 @@ enum PaginationSection {
 }
 
 const SAVE_SLOT_SCENE: PackedScene = preload("res://scenes/mainMenu/save_slot_card.tscn")
+const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const USER_SLOTS_PER_PAGE := 6
 const GRID_GAP := 16.0
 const MIN_CARD_WIDTH := 230.0
@@ -48,6 +49,15 @@ var _navigation_bound := false
 
 
 func _ready() -> void:
+	var compact := _compact_landscape()
+	$MarginContainer/PanelContainer.add_theme_stylebox_override("panel",UI.surface(16 if compact else 28))
+	section_title_label.add_theme_font_size_override("font_size",48 if compact else 40)
+	for tab in [auto_tab_button,manual_tab_button]:
+		tab.custom_minimum_size.y = 72 if compact else 48
+		tab.add_theme_font_size_override("font_size",28 if compact else 17)
+	auto_tab_button.get_parent().add_theme_constant_override("separation",10 if compact else 0)
+	grid.add_theme_constant_override("h_separation",24 if compact else 16)
+	grid.add_theme_constant_override("v_separation",20 if compact else 16)
 	_bind_navigation()
 	GameSession.language_changed.connect(_refresh_view)
 	resized.connect(_on_resized)
@@ -114,8 +124,9 @@ func _refresh_view() -> void:
 func _render_navigation() -> void:
 	auto_tab_button.button_pressed = _current_section == PaginationSection.AUTO
 	manual_tab_button.button_pressed = _current_section == PaginationSection.USER
-	auto_tab_button.text = "Auto & quick" if GameSession.get_language_code() == GameSession.LANGUAGE_EN else "Авто и быстрые"
-	manual_tab_button.text = "My saves" if GameSession.get_language_code() == GameSession.LANGUAGE_EN else "Мои сохранения"
+	var compact := _compact_landscape()
+	auto_tab_button.text = ("Auto" if compact else "Auto & quick") if GameSession.get_language_code() == GameSession.LANGUAGE_EN else ("Авто" if compact else "Авто и быстрые")
+	manual_tab_button.text = ("Slots" if compact else "My saves") if GameSession.get_language_code() == GameSession.LANGUAGE_EN else ("Слоты" if compact else "Мои сохранения")
 	pagination_row.visible = true
 	var show_pagination := _current_section == PaginationSection.USER
 	prev_page_button.visible = show_pagination
@@ -192,12 +203,13 @@ func _get_user_page_count() -> int:
 
 func _calculate_grid_layout(item_count: int) -> Dictionary:
 	var available_width := _get_available_grid_width()
-	var columns := mini(MAX_COLUMNS, maxi(item_count, 1))
+	var compact := _compact_landscape()
+	var columns := mini(2 if compact else MAX_COLUMNS, maxi(item_count, 1))
 	while columns > 1 and (available_width-GRID_GAP*float(columns-1))/float(columns) < MIN_CARD_WIDTH: columns -= 1
 
 	var raw_width := (available_width - GRID_GAP * float(columns - 1)) / float(columns)
-	var card_width := minf(raw_width, MAX_CARD_WIDTH)
-	var preview_height := clampf(roundf(card_width * PREVIEW_HEIGHT_RATIO), MIN_PREVIEW_HEIGHT, MAX_PREVIEW_HEIGHT)
+	var card_width := minf(raw_width,620.0 if compact else MAX_CARD_WIDTH)
+	var preview_height := clampf(roundf(card_width * (0.38 if compact else PREVIEW_HEIGHT_RATIO)),160.0 if compact else MIN_PREVIEW_HEIGHT,220.0 if compact else MAX_PREVIEW_HEIGHT)
 
 	return {
 		"columns": columns,
@@ -208,6 +220,10 @@ func _calculate_grid_layout(item_count: int) -> Dictionary:
 
 func _get_available_grid_width() -> float:
 	return maxf(size.x-128.0,MIN_CARD_WIDTH)
+
+func _compact_landscape() -> bool:
+	var window_size := DisplayServer.window_get_size()
+	return window_size.x > window_size.y and window_size.x <= 1100
 
 
 func _on_resized() -> void:

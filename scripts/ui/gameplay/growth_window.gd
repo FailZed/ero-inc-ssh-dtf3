@@ -74,7 +74,7 @@ func _skills() -> void:
 		UI.label(card,spec.label,25,UI.BLUE)
 		W.meter(card,"Уровень %d / 10" % level,score,"journal",maxi(score,10*(level+1)*(level+1)))
 		UI.label(card,spec.practice,20)
-		UI.label(card,"%d мин · силы −%d · %d ¤ · +%d практики" % [spec.minutes,ceili(float(spec.energy)*sim.multiplier("resource_cost")),spec.cost,spec.xp],17,UI.MUTED)
+		UI.label(card,"%d мин · силы −%d · %d €$ · +%d практики" % [spec.minutes,ceili(float(spec.energy)*sim.multiplier("resource_cost")),spec.cost,spec.xp],17,UI.MUTED)
 		var reason: String = sim.services.growth.practice_blocked(id)
 		if not reason.is_empty(): UI.label(card,Names.error(reason),17,UI.MUTED)
 		var start := W.primary(card,"Практиковать · %d мин" % spec.minutes,_act.bind("practice",{"id":id}))

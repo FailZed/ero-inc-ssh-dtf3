@@ -2,6 +2,7 @@ extends Control
 ## Shared game overlay: consistent back, safe margins, focus and scroll ownership.
 signal back_requested
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
+const HUD = preload("res://scripts/ui/gameplay/hud_widgets.gd")
 var title := ""
 var subtitle := ""
 var preferred_size := Vector2(1480,910)
@@ -16,8 +17,11 @@ var _memory: Dictionary = {}
 var _close: Button
 var _tab_buttons: Dictionary = {}
 var _selected_tab := ""
+var _compact_landscape := false
 
 func _ready() -> void:
+	var window_size := DisplayServer.window_get_size()
+	_compact_landscape = window_size.x > window_size.y and window_size.x <= 1100
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.skin()
 	mouse_filter = Control.MOUSE_FILTER_STOP
@@ -29,7 +33,7 @@ func _ready() -> void:
 	add_child(shade)
 	panel = PanelContainer.new()
 	panel.name = "GameWindow"
-	panel.add_theme_stylebox_override("panel",UI.surface(30))
+	panel.add_theme_stylebox_override("panel",UI.surface(22 if _compact_landscape else 30))
 	panel.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 	add_child(panel)
 	resized.connect(_fit)
@@ -38,11 +42,11 @@ func _ready() -> void:
 	var header := UI.row(content,20)
 	var titles := UI.column(header,5)
 	titles.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	UI.label(titles,title,34)
-	if not subtitle.is_empty(): UI.label(titles,subtitle,18,UI.MUTED)
-	_close = UI.button(header,"Назад · Esc",back_requested.emit)
+	UI.label(titles,title,48 if _compact_landscape else 34)
+	if not subtitle.is_empty(): UI.label(titles,subtitle,28 if _compact_landscape else 18,UI.MUTED)
+	_close = HUD.dock_button(header,"Закрыть окно","Esc","close",back_requested.emit)
 	_close.set_meta("window_back",true)
-	_close.custom_minimum_size.x = 150
+	_close.custom_minimum_size = Vector2(80,80) if _compact_landscape else Vector2(54,54)
 	_close.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	tabs = UI.row(content,10)
 	tabs.visible = false
@@ -51,12 +55,16 @@ func _ready() -> void:
 	body = UI.scroller(content)
 	_scroll = body.get_parent()
 	footer = UI.row(content,14)
+	_adapt_body_for_landscape.call_deferred()
 	_wire_focus.call_deferred()
 	tree_exiting.connect(func():
 		if _return_focus != null: UI.restore_focus.call_deferred(_return_focus))
 
 func _fit() -> void:
-	panel.size = Vector2(maxf(320,minf(preferred_size.x,size.x-96)),maxf(260,minf(preferred_size.y,size.y-96)))
+	var desired_width := maxf(preferred_size.x,1700.0) if _compact_landscape else preferred_size.x
+	var desired_height := preferred_size.y
+	if _compact_landscape: desired_height = maxf(desired_height,980.0 if desired_height >= 850.0 else 700.0)
+	panel.size = Vector2(maxf(320,minf(desired_width,size.x-(80.0 if _compact_landscape else 96.0))),maxf(260,minf(desired_height,size.y-(80.0 if _compact_landscape else 96.0))))
 	panel.position = (size-panel.size)*0.5
 	if is_node_ready(): _wire_focus.call_deferred()
 
@@ -75,6 +83,7 @@ func set_tabs(items: Dictionary, selected: String, callback: Callable) -> void:
 		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		button.add_theme_stylebox_override("normal",UI.style(Color("24465b") if selected == id else Color.TRANSPARENT,UI.BLUE if selected == id else Color("3a5364")))
 		_tab_buttons[id] = button
+	_adapt_body_for_landscape.call_deferred()
 
 func notice(message: String) -> void:
 	status.text = message
@@ -91,7 +100,21 @@ func begin_update() -> void:
 
 func end_update() -> void:
 	notice(status.text)
+	_adapt_body_for_landscape()
 	_restore.call_deferred()
+
+func _adapt_body_for_landscape() -> void:
+	if not _compact_landscape or not is_instance_valid(body): return
+	for root in [body,tabs,footer]:
+		for control in root.find_children("*","Control",true,false):
+			if not (control is Label or control is BaseButton or control is LineEdit): continue
+			var base_size := int(control.get_meta("landscape_base_font_size",control.get_theme_font_size("font_size")))
+			control.set_meta("landscape_base_font_size",base_size)
+			control.add_theme_font_size_override("font_size",roundi(base_size*1.6))
+			if control is BaseButton or control is LineEdit:
+				var base_height := float(control.get_meta("landscape_base_height",control.custom_minimum_size.y))
+				control.set_meta("landscape_base_height",base_height)
+				control.custom_minimum_size.y = maxf(base_height,88.0)
 
 func _restore() -> void:
 	if not is_inside_tree(): return

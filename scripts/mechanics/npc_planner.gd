@@ -49,8 +49,28 @@ func active_owner(id: String) -> Dictionary:
 		for member in sim.state.family.members.values():
 			if member.task.get("caregiver","")==id: return {"owner":"family","priority":65,"due":int(member.task.due),"destination":str(member.home)}
 	for meeting in sim.state.social.appointments:
-		if meeting.npc==id and not meeting.get("journey",{}).is_empty(): return {"owner":"appointment","priority":80,"due":int(meeting.minute)+30,"destination":str(meeting.location)}
+		if meeting.npc==id and not meeting.get("journey",{}).is_empty(): return {"owner":"appointment","priority":80,"due":int(meeting.minute)+int(meeting.get("duration",30)),"destination":str(meeting.location)}
 	return {}
+
+func invite(id: String, destination: String, minutes: int) -> Dictionary:
+	if not sim.services.npc_agency.enabled() or not sim.state.social.npcs.has(id): return Rules.fail("npc_travel_unavailable")
+	var npc: Dictionary = sim.state.social.npcs[id]
+	if not active_owner(id).is_empty() or int(npc.pinned_until)>now(): return Rules.fail("npc_busy")
+	var route: Dictionary = sim.services.npc_agency._route(npc,str(npc.location),destination,-1,false,destination)
+	if route.is_empty(): return Rules.fail("invitation_route_unavailable")
+	var arrival := now()+int(route.minutes)
+	if not calendar.conflict(id,destination,int(route.minutes)+minutes,80).is_empty(): return Rules.fail("invitation_calendar_conflict")
+	var meeting := {"npc":id,"minute":arrival,"location":destination,"status":"pending", "kind":"invitation","duration":minutes}
+	sim.state.social.appointments.append(meeting)
+	if not calendar.site_open(destination,arrival,arrival+minutes,id):
+		sim.state.social.appointments.pop_back()
+		return Rules.fail("invitation_destination_unavailable")
+	var request := {"owner":"appointment","id":id,"kind":"invitation","destination":destination,"minutes":minutes,"priority":80,
+		"route":route,"origin":str(npc.location),"payload":{"appointment":sim.state.social.appointments.size()-1},"actors":[id]}
+	if not _start_meeting(request):
+		sim.state.social.appointments.pop_back()
+		return Rules.fail("invitation_unavailable")
+	return Rules.ok({"arrival":arrival,"until":arrival+minutes})
 
 func interrupt(id: String, reason: String) -> void:
 	if sim.services.has("adult_health"): sim.services.adult_health.care.cancel(id)
@@ -170,12 +190,23 @@ func _appointments() -> void:
 		var meeting: Dictionary = sim.state.social.appointments[index]
 		var npc: Dictionary = sim.state.social.npcs[meeting.npc]
 		var journey: Dictionary = meeting.get("journey",{})
+		var duration := int(meeting.get("duration",30))
 		if not journey.is_empty():
-			if int(npc.pinned_until)!=int(journey.pin) or npc.location!=(journey.origin if journey.phase=="travel" else meeting.location): _release_meeting(meeting); continue
+			if meeting.status!="pending": _release_meeting(meeting); continue
+			if meeting.get("kind","")=="invitation" and sim.state.world.location!=meeting.location:
+				meeting.status="cancelled"
+				meeting.reason="player_left"
+				_release_meeting(meeting)
+				continue
+			if int(npc.pinned_until)!=int(journey.pin) or npc.location!=(journey.origin if journey.phase=="travel" else meeting.location):
+				if meeting.get("kind","")=="invitation": meeting.status="cancelled"; meeting.reason="journey_interrupted"
+				_release_meeting(meeting)
+				continue
 			if journey.phase=="travel" and now()>=int(journey.arrival): npc.location = meeting.location; npc.activity = "appointment"; journey.phase = "waiting"
-			if meeting.status!="pending" or now()>=int(meeting.minute)+30: _release_meeting(meeting)
+			if meeting.status!="pending" or now()>=int(meeting.minute)+duration: _release_meeting(meeting)
 			continue
 		if meeting.status!="pending" or int(meeting.minute)<now() or not npc.has("mind") or not sim.services.npc_agency.enabled(): continue
+		if meeting.get("kind","")=="invitation": continue
 		var route: Dictionary = sim.services.npc_agency._route(npc,str(npc.location),str(meeting.location))
 		if route.is_empty() or int(meeting.minute)-now()>int(route.minutes): continue
 		submit("appointment",str(meeting.npc),"appointment",str(meeting.location),maxi(1,int(meeting.minute)+30-now()-int(route.minutes)),80,{"appointment":index})
@@ -185,7 +216,7 @@ func _start_meeting(request: Dictionary) -> bool:
 	var npc: Dictionary = sim.state.social.npcs[request.id]
 	if meeting.status!="pending" or int(npc.money)<int(request.route.cost): return false
 	if now()+int(request.route.minutes)>int(meeting.minute): return false
-	var pin := int(meeting.minute)+31
+	var pin := int(meeting.minute)+int(meeting.get("duration",30))+1
 	var previous := int(npc.pinned_until)
 	sim.services.npc_agency._cancel(npc,"appointment")
 	npc.money -= int(request.route.cost)
@@ -245,7 +276,7 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 		if not j is Dictionary or not j.get("origin") is String or not catalog.locations.has(j.origin) or not j.get("phase") in ["travel","waiting"]: return "invalid_appointment_journey"
 		for key in ["arrival","pin","previous_pin"]:
 			if not H.integer(j.get(key),0,2147483647): return "invalid_appointment_journey"
-		if int(j.pin)!=int(meeting.minute)+31 or int(state.social.npcs[meeting.npc].pinned_until)!=int(j.pin) or reserved.has(meeting.npc): return "inconsistent_appointment_reservation"
+		if int(j.pin)!=int(meeting.minute)+int(meeting.get("duration",30))+1 or int(state.social.npcs[meeting.npc].pinned_until)!=int(j.pin) or reserved.has(meeting.npc): return "inconsistent_appointment_reservation"
 		if meeting.status!="pending" or int(j.arrival)>int(meeting.minute): return "invalid_appointment_journey"
 		var npc: Dictionary = state.social.npcs[meeting.npc]
 		if npc.location!=(j.origin if j.phase=="travel" else meeting.location): return "inconsistent_appointment_location"

@@ -74,6 +74,7 @@ func reject(sim, module_id: String, operation: String, args: Dictionary, label: 
 func run() -> void:
 	_accidental_pregnancy()
 	_protection_and_interruptions()
+	_late_start_window()
 	_physiology_and_treatments()
 	_decisions_and_support()
 	_snapshots()
@@ -148,6 +149,21 @@ func _protection_and_interruptions() -> void:
 	sim=fresh()
 	sim.state.social.npcs.adult.health=20
 	reject(sim,"intimacy","begin",{"id":"adult"},"participant needing recovery")
+
+func _late_start_window() -> void:
+	var sim = fresh()
+	sim.state.inventory.items.barrier_protection = 1
+	ready(sim,"barrier")
+	t._check(sim.command("clock","advance",{"minutes":58}).ok,"discussion may use most of the invitation window")
+	choose(sim,"start")
+	t._check(not sim.state.inventory.items.has("barrier_protection"),"late start consumes one barrier")
+	var active: Dictionary = sim.state.intimacy.active
+	t._check(int(active.expires)>int(active.due) and int(sim.state.social.npcs.adult.pinned_until)==int(active.reserved_until),"late start extends the encounter and its NPC reservation past completion")
+	choose(sim,"finish")
+	t._check(sim.state.intimacy.active.get("stage","")=="aftercare" and sim.state.reproduction.exposures.size()==1,"late start reaches aftercare and its single exposure")
+	t._check(sim.command("clock","advance",{"minutes":10}).ok and sim.state.intimacy.active.get("stage","")=="aftercare","aftercare remains available after encounter time elapses")
+	choose(sim,"close")
+	t._check(sim.state.intimacy.history[-1].status=="completed" and int(sim.state.social.npcs.adult.pinned_until)==0,"late start closes as completed and releases the NPC reservation")
 
 func _physiology_and_treatments() -> void:
 	var sim = fresh()

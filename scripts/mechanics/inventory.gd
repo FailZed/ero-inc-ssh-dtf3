@@ -111,5 +111,5 @@ func tick(minute: int) -> void:
 	for shop_id in sim.state.economy.shop_stock:
 		var shop := definition("shops", str(shop_id))
 		for item in shop.get("stock", {}):
-			if definition("items", str(item)).get("category", "") in ["food", "ingredient", "medicine", "medical"]:
+			if str(item) == "lockpick" or definition("items", str(item)).get("category", "") in ["food", "ingredient", "medicine", "medical"]:
 				sim.state.economy.shop_stock[shop_id][item] = maxi(int(shop.stock[item]), int(sim.state.economy.shop_stock[shop_id].get(item, 0)))

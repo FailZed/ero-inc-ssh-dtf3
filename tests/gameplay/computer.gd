@@ -46,6 +46,7 @@ func _programmer() -> void:
 	refused(sim,"lesson",{"id":"code_review"},"repeating a course cannot farm daily XP")
 	t.check(sim.command("events","start_quest",{"id":"home_with_purpose"}).ok,"home project quest accepts computer work")
 	var id := _project(sim)
+	t.check(sim.services.computer.inspect().projects.any(func(project): return project.id == id),"accepted project inspection exposes the id needed for player actions")
 	refused(sim,"take_project",{"id":id},"same offer cannot be accepted twice")
 	refused(sim,"deliver_project",{"id":id},"project cannot be sold before work")
 	refused(sim,"project_step",{"id":id,"step":"test","choice":"coverage"},"stale or out-of-order project stage is atomic")

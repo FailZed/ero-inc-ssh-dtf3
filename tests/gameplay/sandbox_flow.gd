@@ -19,6 +19,22 @@ func _run() -> void:
 	config.difficulty = "hard"
 	config.population.count = 8
 	config.content.pregnancy = false
+	var story_config: Dictionary = config.duplicate(true)
+	story_config.mode = "story"
+	var before_rejected_start: Dictionary = gameplay.simulation.export_snapshot()
+	check(gameplay.begin_new_game(story_config) == ERR_UNAVAILABLE and gameplay.simulation.export_snapshot() == before_rejected_start,
+		"story start is disabled without changing the sandbox world")
+	var setup: Control = load("res://scenes/ui/WorldSetup.tscn").instantiate()
+	root.add_child(setup)
+	await process_frame
+	check(setup.configuration.mode == "sandbox" and setup.configuration.difficulty == "hard",
+		"new game screen defaults to sandbox")
+	var story_choice_visible := false
+	for node: Node in setup.find_children("*", "Button", true, false):
+		if (node as Button).text.contains("ИСТОРИЯ"): story_choice_visible = true
+	check(not story_choice_visible, "new game screen offers no story mode choice")
+	setup.queue_free()
+	await process_frame
 	check(gameplay.begin_new_game(config) == OK, "new game API accepts real sandbox start")
 	for i in range(12): await process_frame
 	session.pause_autosave_runtime()

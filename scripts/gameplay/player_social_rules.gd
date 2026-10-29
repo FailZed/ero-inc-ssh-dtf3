@@ -24,7 +24,7 @@ func guest_availability(id: String) -> Dictionary:
 func _has_commitment(npc: Dictionary) -> bool:
 	var now := int(sim.state.clock.total_minutes)
 	for meeting in sim.state.social.appointments:
-		if meeting.npc == npc.id and meeting.status == "pending" and int(meeting.minute) < now + 90 and int(meeting.minute) + 30 > now: return true
+		if meeting.npc == npc.id and meeting.status == "pending" and int(meeting.minute) < now + 90 and int(meeting.minute) + int(meeting.get("duration",30)) > now: return true
 	var context: Dictionary = sim.services.npc_behavior.context(npc)
 	# Look through the whole visit, including midnight and short work windows.
 	for offset in range(90):

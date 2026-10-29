@@ -35,6 +35,7 @@ static func icon(id: String) -> Texture2D:
 		"clean": '<path d="M24 3L12 19M8 16l11 8-7 6-10-7zM7 23l5 4M23 17v6M20 20h6"/>',
 		"arrow": '<path d="M4 16h24M18 6l10 10-10 10"/>',
 		"wallet": '<path d="M4 9l20-5v5M4 9h24v19H4zM21 16h9v7h-9z"/><circle cx="25" cy="19.5" r=".8"/>'})
+	paths["credit"] = '<path d="M26 6A13 13 0 1019 29M23 7H16a9 9 0 000 18h7M6 14h19M6 20h16" stroke="#da9a63"/>'
 	paths.merge({
 		"home": '<path d="M2 15L16 3l14 12M6 12v17h20V12M13 29V18h7v11"/>',
 		"outfit": '<path d="M10 3l6 4 6-4 8 9-6 5-3-3v16H11V14l-3 3-6-5z"/>',
@@ -74,6 +75,43 @@ static func quiet_button(button: Button) -> void:
 	button.add_theme_stylebox_override("pressed", button_style(Color(0.10,0.21,0.29,0.9), UI.BLUE))
 	button.add_theme_stylebox_override("focus", button_style(Color.TRANSPARENT, UI.BLUE))
 	button.add_theme_stylebox_override("disabled", button_style())
+
+static func action_card(button: Button, kind: String, large: bool) -> void:
+	var diameter := 74.0 if large else 48.0
+	var normal := UI.style(Color(0.006,0.021,0.034,0.68),Color.TRANSPARENT)
+	normal.set_border_width_all(0)
+	normal.content_margin_left = roundi(diameter+20.0)
+	normal.content_margin_right = 16
+	normal.content_margin_top = 8
+	normal.content_margin_bottom = 8
+	var hover := normal.duplicate() as StyleBoxFlat
+	hover.bg_color = Color(0.055,0.13,0.18,0.90)
+	hover.border_color = UI.BLUE
+	hover.border_width_left = 2
+	button.add_theme_stylebox_override("normal",normal)
+	button.add_theme_stylebox_override("hover",hover)
+	button.add_theme_stylebox_override("pressed",hover)
+	button.add_theme_stylebox_override("focus",hover)
+	var orb := PanelContainer.new()
+	orb.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	orb.anchor_top = 0.5
+	orb.anchor_bottom = 0.5
+	orb.offset_left = 4
+	orb.offset_right = diameter+4
+	orb.offset_top = -diameter*0.5
+	orb.offset_bottom = diameter*0.5
+	var orb_style := UI.style(Color(0.012,0.043,0.065,0.90),Color(0.50,0.73,0.85,0.80))
+	orb_style.set_border_width_all(1)
+	orb_style.set_corner_radius_all(roundi(diameter*0.5))
+	orb_style.set_content_margin_all(10 if large else 8)
+	orb.add_theme_stylebox_override("panel",orb_style)
+	button.add_child(orb)
+	var glyph := TextureRect.new()
+	glyph.texture = icon(kind)
+	glyph.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	glyph.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	glyph.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	orb.add_child(glyph)
 
 static func dock_button(parent: Node, title: String, key: String, kind: String, callback: Callable) -> Button:
 	var button := UI.button(parent, "", callback)
@@ -118,4 +156,3 @@ static func rail(parent: Node, height: int, color: Color) -> ProgressBar:
 	bar.add_theme_stylebox_override("fill", fill)
 	parent.add_child(bar)
 	return bar
-

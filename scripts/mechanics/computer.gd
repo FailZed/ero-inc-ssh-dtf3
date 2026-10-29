@@ -48,6 +48,7 @@ func project_view(id: String) -> Dictionary:
 	var p: Dictionary = _state().projects.get(id,{})
 	if p.is_empty(): return {}
 	var result := p.duplicate(true)
+	result.id = id
 	result.label = rules().projects[p.type].label
 	result.brief = rules().projects[p.type].brief
 	result.stage = Stages[int(p.step)] if int(p.step) < 3 else "delivery"

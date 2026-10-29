@@ -3,6 +3,7 @@ extends "res://scripts/mechanics/autonomous_reproductive_simulation.gd"
 const PlayerNeeds = preload("res://scripts/gameplay/player_needs.gd")
 const ActionPolicy = preload("res://scripts/gameplay/action_policy.gd")
 const PlayerCharacter = preload("res://scripts/gameplay/player_character.gd")
+const ProtagonistAppearance = preload("res://scripts/characters/protagonist_appearance.gd")
 const PlayerRelationships = preload("res://scripts/gameplay/player_relationships.gd")
 const PlayerInstitutions = preload("res://scripts/gameplay/player_institutions.gd")
 const PlayerSocialRules = preload("res://scripts/gameplay/player_social_rules.gd")
@@ -175,6 +176,10 @@ func restore_snapshot(snapshot: Dictionary) -> Dictionary:
 func validate_state(candidate: Dictionary) -> Dictionary:
 	var result := super.validate_state(candidate)
 	if not result.ok: return result
+	var appearance: Variant = candidate.player.get("appearance", {})
+	if not appearance is Dictionary: return Rules.fail("invalid_player_appearance")
+	if appearance.has("live2d") and not ProtagonistAppearance.validate_appearance(appearance.live2d):
+		return Rules.fail("invalid_protagonist_live2d")
 	var random_error := RandomEvents.state_error(candidate)
 	if not random_error.is_empty(): return Rules.fail(random_error)
 	if not candidate.world.flags.get("student_enrolled") is bool: return Rules.fail("invalid_education_status")

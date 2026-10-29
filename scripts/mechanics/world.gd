@@ -25,8 +25,9 @@ func actor_availability(id: String, actor_id: String, minute: int, ignore_hours:
 	var location := definition("locations",id)
 	if location.is_empty(): return Rules.fail("unknown_location")
 	if not ignore_hours and not is_open_at(location,minute): return Rules.fail("location_closed")
-	var context: Dictionary = sim.state if actor_id == "player" else sim.services.npc_behavior.context(sim.state.social.npcs[actor_id])
-	context = context.duplicate(true)
+	# Rules.check only reads nested state. Copy the root so the arrival clock stays
+	# local without cloning every NPC and domain for each route edge.
+	var context: Dictionary = sim.state.duplicate() if actor_id == "player" else sim.services.npc_behavior.context(sim.state.social.npcs[actor_id])
 	context.clock = sim.calendar.snapshot(minute)
 	return Rules.ok(location.duplicate(true)) if Rules.check(context,location.get("requirements",{})) else Rules.fail("location_requirements")
 
@@ -142,10 +143,13 @@ func tick(minute: int) -> void:
 				if world.education.absences >= int(discipline.get("expulsion_absences", 8)) and not world.education.get("expelled", false):
 					world.education.expelled = true
 					emit_event("education_expulsion", {})
-	if minute % 60 == 0:
+	# Keep one weather state through a substantial part of the day so outdoor
+	# plans and rain-dependent encounters do not reverse every hour.
+	if minute % 360 == 0:
 		var weather: Array = sim.catalog.settings.weather_types
 		world.weather = str(weather[sim.rng.randi_range(0, weather.size() - 1)])
 		world.temperature = sim.rng.randi_range(10, 20) if world.weather == "rain" else sim.rng.randi_range(20, 30)
+	if minute % 60 == 0:
 		world.heat = maxf(0.0, float(world.heat) - 1.0)
 	if minute % 1440 == 0:
 		world.cleanliness = maxf(0.0, float(world.cleanliness) - 5.0)

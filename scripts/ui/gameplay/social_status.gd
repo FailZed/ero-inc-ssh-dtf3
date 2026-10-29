@@ -11,7 +11,7 @@ static func employment(parent: Node, sim, id: String) -> void:
 		return
 	var title := UI.label(parent,"%s · ступень %d / 5" % [view.title,view.rank],21,UI.BLUE)
 	title.set_meta("npc_occupation",view.id)
-	UI.label(parent,"%s · навык %d / 10 · %.2f ¤ в час" % [Names.title(str(view.skill)),view.skill_level,view.hourly_pay],18,UI.MUTED)
+	UI.label(parent,"%s · навык %d / 10 · %.2f €$ в час" % [Names.title(str(view.skill)),view.skill_level,view.hourly_pay],18,UI.MUTED)
 	if int(view.rank)<5: UI.label(parent,"Следующая ступень: навык %d" % view.next_skill,17,UI.MUTED)
 	UI.label(parent,"Работает из дома" if view.location==sim.state.social.npcs[id].home else Names.title(str(view.location)),18,UI.MUTED)
 	if view.schedule.is_empty():

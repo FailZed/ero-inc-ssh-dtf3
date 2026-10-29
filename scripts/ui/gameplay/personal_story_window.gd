@@ -73,7 +73,7 @@ func _refresh() -> void:
 		for choice in view.choices:
 			var costs: Array[String] = ["%d мин" % int(choice.get("minutes",5))]
 			if float(choice.get("energy",0)) > 0: costs.append("силы −%d" % int(choice.energy))
-			if int(choice.get("cost",0)) > 0: costs.append("%d ¤" % int(choice.cost))
+			if int(choice.get("cost",0)) > 0: costs.append("%d €$" % int(choice.cost))
 			var caption := str(choice.text) + "\n" + " · ".join(costs)
 			var button := UI.button(_body,caption,func(): Gameplay.execute("npc_stories","choose",{"id":npc_id,"node":view.node,"choice":choice.id}))
 			button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART

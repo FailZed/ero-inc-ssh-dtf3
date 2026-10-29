@@ -31,9 +31,11 @@ static func focus_loop(root: Control) -> void:
 			source.set("focus_neighbor_"+{Vector2.LEFT:"left",Vector2.UP:"top",Vector2.RIGHT:"right",Vector2.DOWN:"bottom"}[direction],source.get_path_to(closest))
 
 static func surface(padding: int = 24) -> StyleBoxFlat:
-	var result := style(Color(0.012,0.025,0.036,0.92),Color(0.40,0.59,0.70,0.4))
-	result.set_border_width_all(1)
+	var result := style(Color(0.012,0.029,0.043,0.93),Color(0.48,0.70,0.82,0.82))
+	result.set_border_width_all(2)
 	result.set_content_margin_all(padding)
+	result.shadow_color = Color(0.0,0.0,0.0,0.48)
+	result.shadow_size = 8
 	return result
 
 static func set_text_scale(value: float) -> void:

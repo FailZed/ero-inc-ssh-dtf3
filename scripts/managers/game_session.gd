@@ -1,6 +1,7 @@
 extends Node
 
 const GAME_CALENDAR = preload("res://scripts/mechanics/core/calendar.gd")
+const PROTAGONIST_APPEARANCE = preload("res://scripts/characters/protagonist_appearance.gd")
 const TIME_MODE_REALTIME := "realtime"
 const TIME_MODE_ACTIONS := "actions"
 
@@ -161,6 +162,7 @@ const TRANSLATIONS := {
 		"feedback.save_updated": "Сохранение обновлено: {slot}.",
 		"feedback.save_failed": "Не удалось сохранить слот {slot}: {error}.",
 		"feedback.load_failed": "Не удалось загрузить слот {slot}: {error}.",
+		"feedback.story_unavailable": "Сюжетный режим временно отключён. Сохранение не изменено; сейчас доступна только песочница.",
 		"feedback.delete_ok": "Слот {slot} удален.",
 		"feedback.delete_failed": "Не удалось удалить слот {slot}: {error}.",
 		"feedback.overwrite_ok": "Слот {slot} перезаписан.",
@@ -288,6 +290,7 @@ const TRANSLATIONS := {
 		"feedback.save_updated": "Save updated: {slot}.",
 		"feedback.save_failed": "Failed to save slot {slot}: {error}.",
 		"feedback.load_failed": "Failed to load slot {slot}: {error}.",
+		"feedback.story_unavailable": "Story mode is temporarily disabled. The save was not changed; only sandbox is available now.",
 		"feedback.delete_ok": "Slot {slot} deleted.",
 		"feedback.delete_failed": "Failed to delete slot {slot}: {error}.",
 		"feedback.overwrite_ok": "Slot {slot} overwritten.",
@@ -471,12 +474,18 @@ func apply_pending_load() -> Error:
 	last_load_error = ""
 	var load_error: Error = Dialogic.Save.load(slot_id)
 	if load_error == OK:
-		_sync_character_profile_from_dialogic()
-		_sync_game_time_from_dialogic()
-		if _has_gameplay_restore_error():
+		var world_data: Variant = Dialogic.VAR.var_storage.get("World", {})
+		var saved_setup: Variant = world_data.get("gameplay_setup", {}) if world_data is Dictionary else {}
+		if not (saved_setup is Dictionary) or str(saved_setup.get("mode", "story")) != "sandbox":
+			load_error = ERR_UNAVAILABLE
+			last_load_error = localize("feedback.story_unavailable")
+		else:
+			_sync_character_profile_from_dialogic()
+			_sync_game_time_from_dialogic()
+		if load_error == OK and _has_gameplay_restore_error():
 			load_error = ERR_INVALID_DATA
 			last_load_error = load("res://scripts/gameplay/presentation.gd").error(str(get_node("/root/Gameplay").restore_error))
-		else:
+		elif load_error == OK:
 			_reset_autosave_progress()
 	if load_error != OK:
 		if last_load_error.is_empty(): last_load_error = localize("feedback.load_failed", {"slot":slot_id,"error":error_string(load_error)})
@@ -826,6 +835,7 @@ func is_time_capability_available(capability: String) -> bool:
 
 
 func get_character_profile() -> Dictionary:
+	var creation_budget := _character_creation_budget()
 	return {
 		"schema_version": player_profile_schema_version,
 		"identity": {
@@ -835,7 +845,7 @@ func get_character_profile() -> Dictionary:
 		"appearance": player_appearance.duplicate(true),
 		"rules": {
 			"base_stat": CHARACTER_BASE_STAT,
-			"bonus_points": CHARACTER_BONUS_POINTS,
+			"bonus_points": creation_budget,
 			"min_stat": CHARACTER_MIN_STAT,
 			"max_stat": CHARACTER_MAX_STAT,
 		},
@@ -852,10 +862,15 @@ func get_character_profile() -> Dictionary:
 		},
 		"unspent_points": player_unspent_points,
 		"base_stat": CHARACTER_BASE_STAT,
-		"bonus_points": CHARACTER_BONUS_POINTS,
+		"bonus_points": creation_budget,
 		"min_stat": CHARACTER_MIN_STAT,
 		"max_stat": CHARACTER_MAX_STAT,
 	}
+
+
+func _character_creation_budget() -> int:
+	var gameplay := get_node_or_null("/root/Gameplay")
+	return int(gameplay.creation_budget()) if gameplay != null else CHARACTER_BONUS_POINTS
 
 
 func get_default_character_full_name(language_code: String = "") -> String:
@@ -978,7 +993,7 @@ func reset_character_profile() -> void:
 	player_charisma = CHARACTER_BASE_STAT
 	player_intellect = CHARACTER_BASE_STAT
 	player_luck = CHARACTER_BASE_STAT
-	player_unspent_points = CHARACTER_BONUS_POINTS
+	player_unspent_points = _character_creation_budget()
 	player_appearance = CHARACTER_APPEARANCE_DEFAULTS.duplicate(true)
 	player_character_created = false
 	_sync_character_profile_to_dialogic()
@@ -998,6 +1013,11 @@ func apply_character_profile_v2(profile: Dictionary) -> bool:
 	var normalized_name := str(identity.get("full_name", "")).strip_edges()
 	if normalized_name.is_empty():
 		return false
+	var appearance: Variant = profile.get("appearance", {})
+	if not appearance is Dictionary:
+		return false
+	if appearance.has("live2d") and not PROTAGONIST_APPEARANCE.validate_appearance(appearance.live2d):
+		return false
 
 	var normalized_appearance := _normalize_character_appearance(profile.get("appearance", {}))
 	var normalized_stats := _normalize_character_stats(profile.get("stats", {}))
@@ -1008,9 +1028,7 @@ func apply_character_profile_v2(profile: Dictionary) -> bool:
 			return false
 		spent_points += stat_value - CHARACTER_BASE_STAT
 
-	var creation_budget := CHARACTER_BONUS_POINTS
-	var gameplay := get_node_or_null("/root/Gameplay")
-	if gameplay != null: creation_budget = int(gameplay.creation_budget())
+	var creation_budget := _character_creation_budget()
 	if spent_points < 0 or spent_points > creation_budget:
 		return false
 
@@ -1196,7 +1214,8 @@ func _sync_character_profile_from_dialogic() -> void:
 	var spent_points := 0
 	for stat_key in CHARACTER_STAT_KEYS:
 		spent_points += int(normalized_stats[stat_key]) - CHARACTER_BASE_STAT
-	player_unspent_points = clampi(CHARACTER_BONUS_POINTS - spent_points, 0, CHARACTER_BONUS_POINTS)
+	var creation_budget := _character_creation_budget()
+	player_unspent_points = clampi(creation_budget - spent_points, 0, creation_budget)
 
 	if player_profile_schema_version < CHARACTER_PROFILE_SCHEMA_VERSION:
 		player_profile_schema_version = CHARACTER_PROFILE_SCHEMA_VERSION
@@ -1229,6 +1248,10 @@ func _normalize_character_appearance(appearance: Variant) -> Dictionary:
 	normalized["censorship_enabled"] = bool(source.get("censorship_enabled", normalized["censorship_enabled"]))
 	normalized["portrait_expression"] = str(source.get("portrait_expression", normalized["portrait_expression"]))
 	normalized["portrait_preset"] = str(source.get("portrait_preset", normalized["portrait_preset"]))
+	# The explicit GG payload belongs to this profile; ordinary profiles keep
+	# their existing appearance until the player confirms the new creator.
+	if source.has("live2d"):
+		normalized["live2d"] = source["live2d"].duplicate(true) if source["live2d"] is Dictionary else source["live2d"]
 	return normalized
 
 

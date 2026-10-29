@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "status": "concept_reference_only",
+  "created_on": "2026-10-29",
+  "tool": "built-in imagegen",
+  "canvas": "1024x1536 RGBA",
+  "purpose": "Original adult male front-view body archetypes for future Cubism authoring",
+  "shared_prompt_constraints": "One original adult man, full-length exact front orthographic A-pose, fully clothed in opaque navy crew-neck T-shirt and charcoal straight trousers, shoes visible, transparent background; thin variable dark anime line, matte flat colors, restrained two-tone cel shadows, muted blue-black and steel-blue palette; no text, scenery, extra people, cat ears, cropped limbs, or existing franchise likeness.",
+  "assets": [
+    {
+      "id": "lean",
+      "file": "lean-concept.png",
+      "original_output": "exec-bfeef361-a691-4519-ba62-198c16529231.png",
+      "prompt_body": "Slim narrow-shouldered adult man about 25, thin limbs, natural male anatomy, short dark brown hair, neutral face.",
+      "status": "reference_not_rigged"
+    },
+    {
+      "id": "medium",
+      "file": "medium-concept.png",
+      "original_output": "exec-bd20d1d6-516e-4705-b2a6-8e50485cbd5c.png",
+      "prompt_body": "Average-shouldered adult man about 27 with moderate natural body fat and muscle, short dark hair, neutral face.",
+      "status": "reference_not_rigged"
+    },
+    {
+      "id": "full",
+      "file": "full-concept.png",
+      "original_output": "exec-b6f2e440-12d4-4ea2-99b5-e701a6eafff2.png",
+      "prompt_body": "Clearly full stocky adult man about 30, broad soft shoulders, large round belly and waist, fuller arms and thighs, short dark brown hair, neutral face.",
+      "status": "reference_not_rigged"
+    }
+  ],
+  "review": "Visual reference only: the three silhouettes read differently. Layer separation, hidden-area repainting, mesh deformation, export, native Godot rendering and approved-style gate are pending."
+}

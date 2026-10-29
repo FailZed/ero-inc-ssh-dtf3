@@ -32,6 +32,16 @@ func command(sim, module_id: String, operation: String, args: Dictionary = {}) -
 	return result
 
 func _run() -> void:
+	if "--housing-only" in OS.get_cmdline_user_args():
+		_test_housing_preferences_autonomy()
+		print("MECHANICS_RESULT ", JSON.stringify({"checks":checks,"failed":failures.size(),"failures":failures}))
+		quit(0 if failures.is_empty() else 1)
+		return
+	if "--h04-only" in OS.get_cmdline_user_args():
+		NpcLifeTests.new(self).h04_invitations_and_tenancy()
+		print("MECHANICS_RESULT ", JSON.stringify({"checks":checks,"failed":failures.size(),"failures":failures}))
+		quit(0 if failures.is_empty() else 1)
+		return
 	if "--npc-careers-only" in OS.get_cmdline_user_args():
 		preload("res://tests/mechanics/npc_careers.gd").new(self).run()
 		print("MECHANICS_RESULT ", JSON.stringify({"checks":checks,"failed":failures.size(),"failures":failures}))
@@ -65,12 +75,16 @@ func _run() -> void:
 	_test_transactions_and_replay()
 	_test_boundaries_and_validation()
 	_test_housing_preferences_autonomy()
+	if "--phase-profile" in OS.get_cmdline_user_args(): print("MECHANICS_PHASE advanced")
 	AdvancedTests.new(self).run()
 	ParityTests.new(self).run()
 	BalanceTests.new(self).run()
+	if "--phase-profile" in OS.get_cmdline_user_args(): print("MECHANICS_PHASE npc_life")
 	NpcLifeTests.new(self).run()
+	if "--phase-profile" in OS.get_cmdline_user_args(): print("MECHANICS_PHASE personality_dialogue")
 	PersonalityTests.new(self).run()
 	DialogueTests.new(self).run()
+	if "--phase-profile" in OS.get_cmdline_user_args(): print("MECHANICS_PHASE family_digital")
 	preload("res://tests/mechanics/family.gd").new(self).run()
 	preload("res://tests/mechanics/family_handoff.gd").new(self).run()
 	preload("res://tests/mechanics/digital.gd").new(self).run()
@@ -83,6 +97,7 @@ func _run() -> void:
 	preload("res://tests/mechanics/care_homes.gd").new(self).run()
 	preload("res://tests/mechanics/npc_planner.gd").new(self).run()
 	preload("res://tests/mechanics/npc_reproduction.gd").new(self).run()
+	if "--phase-profile" in OS.get_cmdline_user_args(): print("MECHANICS_PHASE integration")
 	if not "--unit-only" in OS.get_cmdline_user_args(): _test_existing_integration()
 	print("MECHANICS_RESULT ", JSON.stringify({"checks": checks, "failed": failures.size(), "failures": failures}))
 	quit(0 if failures.is_empty() else 1)

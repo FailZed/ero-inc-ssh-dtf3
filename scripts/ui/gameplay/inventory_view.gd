@@ -13,8 +13,11 @@ var _grid: GridContainer
 var _detail: VBoxContainer
 var _count: Label
 var _tools: Array[Control] = []
+var _compact_landscape := false
 
 func _ready() -> void:
+	var window_size := DisplayServer.window_get_size()
+	_compact_landscape = window_size.x > window_size.y and window_size.x <= 1100
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 	var tools := UI.row(self,10)
 	var search := LineEdit.new()
@@ -22,7 +25,8 @@ func _ready() -> void:
 	search.set_meta("input_id","inventory_search")
 	search.text = str(view_state.query)
 	search.clear_button_enabled = true
-	search.custom_minimum_size = Vector2(180,44)
+	search.custom_minimum_size = Vector2(180,84 if _compact_landscape else 44)
+	if _compact_landscape: search.add_theme_font_size_override("font_size",roundi(30*UI.text_scale))
 	search.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	search.text_changed.connect(func(value): view_state.query = value; _populate())
 	tools.add_child(search)
@@ -33,25 +37,31 @@ func _ready() -> void:
 		filter.set_item_metadata(filter.item_count-1,id)
 		if id == view_state.filter: filter.select(filter.item_count-1)
 	filter.item_selected.connect(func(index): view_state.filter = str(filter.get_item_metadata(index)); _populate())
+	if _compact_landscape:
+		filter.custom_minimum_size.y = 84
+		filter.add_theme_font_size_override("font_size",roundi(30*UI.text_scale))
 	tools.add_child(filter)
 	var sort := OptionButton.new()
 	sort.set_meta("input_id","inventory_sort")
 	for title in ["По названию","По весу","По количеству"]: sort.add_item(title)
 	sort.select(int(view_state.sort))
 	sort.item_selected.connect(func(index): view_state.sort = index; _populate())
+	if _compact_landscape:
+		sort.custom_minimum_size.y = 84
+		sort.add_theme_font_size_override("font_size",roundi(30*UI.text_scale))
 	tools.add_child(sort)
 	_tools.assign([search,filter,sort])
-	_count = UI.label(self,"",17,UI.MUTED)
+	_count = UI.label(self,"",30 if _compact_landscape else 17,UI.INK if _compact_landscape else UI.MUTED)
 	var columns := UI.row(self,32)
 	var list := UI.column(columns,6)
 	list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var heading := UI.row(list)
-	UI.label(heading,"Вещь",18,UI.MUTED)
-	var quantity := UI.label(heading,"Кол.",18,UI.MUTED)
+	UI.label(heading,"Вещь",28 if _compact_landscape else 18,UI.INK if _compact_landscape else UI.MUTED)
+	var quantity := UI.label(heading,"Кол.",28 if _compact_landscape else 18,UI.INK if _compact_landscape else UI.MUTED)
 	quantity.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	quantity.custom_minimum_size.x = 60
 	quantity.size_flags_horizontal = Control.SIZE_SHRINK_END
-	var weight := UI.label(heading,"Вес",18,UI.MUTED)
+	var weight := UI.label(heading,"Вес",28 if _compact_landscape else 18,UI.INK if _compact_landscape else UI.MUTED)
 	weight.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	weight.custom_minimum_size.x = 82
 	weight.size_flags_horizontal = Control.SIZE_SHRINK_END
@@ -95,13 +105,13 @@ func _populate() -> void:
 		button.clip_text = true
 		button.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		button.custom_minimum_size.y = 54
+		button.custom_minimum_size.y = 88 if _compact_landscape else 54
 		button.icon = Art.texture(id,item)
 		button.expand_icon = true
 		button.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		button.add_theme_constant_override("icon_max_width",34)
+		button.add_theme_constant_override("icon_max_width",54 if _compact_landscape else 34)
 		button.add_theme_constant_override("h_separation",12)
-		button.add_theme_font_size_override("font_size",roundi(20*UI.text_scale))
+		button.add_theme_font_size_override("font_size",roundi((30 if _compact_landscape else 20)*UI.text_scale))
 		button.tooltip_text = Names.title(id)+" · описание и действия"
 		var style := UI.style(Color("183248") if id == view_state.selected else Color(0.025,0.05,0.07,0.48),UI.BLUE if id == view_state.selected else Color(0.3,0.45,0.55,0.25))
 		style.content_margin_right = 170
@@ -118,7 +128,7 @@ func _populate() -> void:
 		values.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		button.add_child(values)
 		for value in [str(sim.state.inventory.items[id]),"%.2f" % float(item.get("weight",0))]:
-			var label := UI.label(values,value,18,UI.MUTED)
+			var label := UI.label(values,value,28 if _compact_landscape else 18,UI.INK if _compact_landscape else UI.MUTED)
 			label.custom_minimum_size.x = 60
 			label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
@@ -160,6 +170,9 @@ func _focus_item(id: String) -> void:
 
 func _action(caption: String, module_id: String, operation: String, args: Dictionary) -> Button:
 	var button := W.primary(_detail,caption,func(): action_requested.emit(module_id,operation,args))
+	if _compact_landscape:
+		button.custom_minimum_size.y = 84
+		button.add_theme_font_size_override("font_size",roundi(30*UI.text_scale))
 	button.set_meta("gameplay_action",{"module":module_id,"operation":operation,"args":args})
 	return button
 
@@ -167,7 +180,7 @@ func _show_detail() -> void:
 	UI.clear(_detail)
 	var id := str(view_state.selected)
 	if id.is_empty():
-		UI.label(_detail,"Выберите вещь",24,UI.MUTED)
+		UI.label(_detail,"Выберите вещь",34 if _compact_landscape else 24,UI.MUTED)
 		return
 	var item: Dictionary = sim.catalog.items[id]
 	var identity := UI.row(_detail,14)
@@ -177,10 +190,10 @@ func _show_detail() -> void:
 	art.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	art.custom_minimum_size = Vector2(72,72)
 	identity.add_child(art)
-	UI.label(identity,Names.title(id),27)
-	UI.label(_detail,"%s · %d шт. · %.2f кг за вещь" % [FILTERS[_category(item)],int(sim.state.inventory.items[id]),float(item.get("weight",0))],18,UI.MUTED)
-	if item.has("description"): UI.label(_detail,str(item.description),20)
-	for need in item.get("restore",{}): UI.label(_detail,"%s +%d" % [Names.title(need),roundi(float(item.restore[need]))],19,UI.BLUE)
+	UI.label(identity,Names.title(id),36 if _compact_landscape else 27)
+	UI.label(_detail,"%s · %d шт. · %.2f кг за вещь" % [FILTERS[_category(item)],int(sim.state.inventory.items[id]),float(item.get("weight",0))],30 if _compact_landscape else 18,UI.INK if _compact_landscape else UI.MUTED)
+	if item.has("description"): UI.label(_detail,str(item.description),30 if _compact_landscape else 20)
+	for need in item.get("restore",{}): UI.label(_detail,"%s +%d" % [Names.title(need),roundi(float(item.restore[need]))],30 if _compact_landscape else 19,UI.BLUE)
 	if item.has("restore") or item.has("effect"):
 		_action("Поесть · 5 мин" if item.get("category","") == "food" else "Использовать","inventory","use",{"id":id})
 	if id == "book" and sim.catalog.actions.has("read"):

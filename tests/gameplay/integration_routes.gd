@@ -21,7 +21,8 @@ func _ready_people(sim) -> void:
 	for npc in sim.state.social.npcs.values():
 		sim.services.npc_agency._cancel(npc, "integration_fixture")
 		npc.location = "residential_district"
-		npc.schedule = []
+		# Employed residents must retain their mandatory shifts for catalog validation.
+		if not npc.has("employment_plan"): npc.schedule = []
 		npc.activity = "idle"
 		npc.decision = {"committed":false}
 		npc.pinned_until = int(sim.state.clock.total_minutes) + 1440
@@ -164,7 +165,7 @@ func run() -> void:
 	t.gameplay.complete_chapter_one()
 	t.gameplay.execute("clock", "advance", {"minutes":840}) # next morning, shop is open
 	sim = t.gameplay.simulation
-	sim.state.world.location = "global_map"
+	sim.state.world.location = sim.location_role("supply_shop")
 	shell.open_panel("work")
 	minute = int(sim.state.clock.total_minutes)
 	cash = int(sim.state.economy.cash)

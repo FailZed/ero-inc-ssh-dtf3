@@ -17,7 +17,7 @@ static func populate(owner: Control, parent: Node, member: Dictionary) -> void:
 		for option in sim.services.family.care_options(str(member.id),str(need)):
 			if not offered: UI.label(parent,"Разовая помощь другого опекуна",20,UI.BLUE); offered = true
 			var title := Names.actor_name(sim,str(option.caregiver))+" · "+str(NEEDS[need])
-			var detail := "%d мин · %d ¤ · постоянный ответственный сохранится" % [int(option.minutes),int(option.cost)]
+			var detail := "%d мин · %d €$ · постоянный ответственный сохранится" % [int(option.minutes),int(option.cost)]
 			var reason := "" if option.available else Names.error(str(option.reason))
 			var button: Button = owner._offer(parent,title,detail,"family","delegate",{"id":member.id,"need":need,"caregiver":option.caregiver},reason,false,true)
 			button.text = "Попросить помочь один раз"

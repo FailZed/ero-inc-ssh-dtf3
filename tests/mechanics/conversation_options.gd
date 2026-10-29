@@ -33,7 +33,8 @@ func run() -> void:
 			sim.services.inventory.execute("equip",{"id":"knife"})
 		npc.inventory[str(sim.catalog.items.keys()[0])] = 1
 		if id=="hg_shave":
-			sim.services.combat.start(str(npc.id))
+			# Start through dialogue so the combat outcome restores its answer node.
+			if not choose(room,"hg_fight").ok: t._check(false,"shave fixture starts a dialogue fight")
 			sim.state.encounters.combat.status = "surrendered"
 			sim.services.combat._update_outcome()
 		if id=="fn_repay": bond.loan = 25

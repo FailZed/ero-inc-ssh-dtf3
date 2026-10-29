@@ -58,6 +58,8 @@ func _work_contract(id: String, minutes: int) -> Dictionary:
 func _shift(id: String) -> Dictionary:
 	var spec := definition("professions", id)
 	if spec.is_empty() or not sim.services.world.is_open(spec): return Rules.fail("shift_unavailable")
+	var duration := int(spec.get("minutes", 120))
+	if not sim.services.world.is_open_at(spec, int(sim.state.clock.total_minutes) + duration - 1): return Rules.fail("shift_closes_before_end")
 	if spec.has("home_room_kind"):
 		if not sim.is_player_home_location(str(sim.state.world.location)) or sim.room_kind(str(sim.state.world.location)) != spec.home_room_kind: return Rules.fail("wrong_workplace")
 	elif spec.has("location") and spec.location != sim.state.world.location: return Rules.fail("wrong_workplace")
@@ -70,7 +72,7 @@ func _shift(id: String) -> Dictionary:
 	sim.state.economy.cash += int(round(float(spec.get("pay", 50)) * Formulas.career_pay(level, definition("balance_rules", "career"))))
 	sim.state.careers.workdays[key] = int(sim.state.careers.workdays.get(key, 0)) + 1
 	_promote(id, int(spec.get("xp", 20)))
-	return sim.advance(int(spec.get("minutes", 120)))
+	return sim.advance(duration)
 
 func _promote(id: String, xp: int) -> void:
 	var career: Dictionary = sim.state.careers.professions.get(id, {"level": 1, "xp": 0, "reputation": 0})

@@ -160,6 +160,7 @@ func discovery_and_repetition() -> void:
 	t._check(float(bond(sim, "h1", "h0").gain_used) <= 8 and float(bond(sim, "h1", "h0").trust) <= 4, "daily gains have a pair-specific shared budget")
 	var incoming: Dictionary = sim.services.npc_relationships._bond("h1", "h0")
 	incoming.trust = 20.0
+	sim.rng.seed = 42
 	act(sim, "h0", "h1", "share_values")
 	t._check(bond(sim, "h1", "h0").known_values.size() == 1, "a deep conversation discloses one value")
 

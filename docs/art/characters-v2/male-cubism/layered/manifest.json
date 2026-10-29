@@ -1,0 +1,53 @@
+[
+  {
+    "form": "lean",
+    "psd": "layered/lean/lean-segmented-pilot.psd",
+    "layers": {
+      "shirt_torso_and_sleeves": 114985,
+      "left_arm_hand": 19312,
+      "right_arm_hand": 19227,
+      "hair_front": 13148,
+      "head_neck": 14803,
+      "left_shoe": 9566,
+      "right_shoe": 9561,
+      "pelvis": 48827,
+      "left_leg": 46850,
+      "right_leg": 47287
+    },
+    "status": "segmented_pilot_not_rig_ready"
+  },
+  {
+    "form": "medium",
+    "psd": "layered/medium/medium-segmented-pilot.psd",
+    "layers": {
+      "shirt_torso_and_sleeves": 149322,
+      "left_arm_hand": 26054,
+      "right_arm_hand": 26033,
+      "hair_front": 13590,
+      "head_neck": 19270,
+      "left_shoe": 10873,
+      "right_shoe": 10715,
+      "pelvis": 51376,
+      "left_leg": 62130,
+      "right_leg": 63239
+    },
+    "status": "segmented_pilot_not_rig_ready"
+  },
+  {
+    "form": "full",
+    "psd": "layered/full/full-segmented-pilot.psd",
+    "layers": {
+      "shirt_torso_and_sleeves": 241722,
+      "left_arm_hand": 38079,
+      "right_arm_hand": 37690,
+      "hair_front": 11928,
+      "head_neck": 24701,
+      "left_shoe": 15319,
+      "right_shoe": 15782,
+      "pelvis": 41653,
+      "left_leg": 94194,
+      "right_leg": 95089
+    },
+    "status": "segmented_pilot_not_rig_ready"
+  }
+]

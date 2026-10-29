@@ -13,6 +13,7 @@ var _list: VBoxContainer
 var _run: Button
 var _status: Label
 var _generation := 0
+var _compact_landscape := false
 
 func _ready() -> void:
 	custom_minimum_size.x = 340
@@ -39,6 +40,17 @@ func _ready() -> void:
 	_status = UI.label(_body, "", 13, UI.MUTED)
 	refresh()
 
+func set_compact_landscape(enabled: bool) -> void:
+	if _compact_landscape == enabled: return
+	_compact_landscape = enabled
+	custom_minimum_size.x = 500 if enabled else 340
+	_toggle.custom_minimum_size.y = 54 if enabled else 32
+	_toggle.add_theme_font_size_override("font_size",24 if enabled else 14)
+	_run.custom_minimum_size = Vector2(58,54) if enabled else Vector2(34,32)
+	_run.add_theme_constant_override("icon_max_width",40 if enabled else 26)
+	_status.add_theme_font_size_override("font_size",22 if enabled else 13)
+	refresh()
+
 func enqueue(command: Dictionary) -> void:
 	if entries.size() >= 6:
 		_status.text = "В плане уже 6 действий."
@@ -57,13 +69,14 @@ func refresh() -> void:
 	for index in range(entries.size()):
 		var entry: Dictionary = entries[index]
 		var row := UI.row(_list, 6)
-		var caption := UI.label(row, "%02d  %s" % [index + 1, entry.title], 14)
+		var caption := UI.label(row, "%02d  %s" % [index + 1, entry.title], 22 if _compact_landscape else 14)
 		caption.max_lines_visible = 1
 		caption.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 		caption.tooltip_text = str(entry.title)
-		caption.custom_minimum_size.x = 180
+		caption.custom_minimum_size.x = 270 if _compact_landscape else 180
 		var remove := UI.button(row, "×", _remove.bind(index))
-		remove.custom_minimum_size = Vector2(28, 26)
+		remove.custom_minimum_size = Vector2(46,44) if _compact_landscape else Vector2(28,26)
+		remove.add_theme_font_size_override("font_size",26 if _compact_landscape else 20)
 		remove.tooltip_text = "Убрать действие из плана"
 		HUD.quiet_button(remove)
 	_status.text = "Выполняется по порядку…" if running else "Нажмите ▶, чтобы начать" if not entries.is_empty() else "Shift + действие — добавить в план"

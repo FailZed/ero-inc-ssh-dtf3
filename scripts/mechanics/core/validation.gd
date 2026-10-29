@@ -154,6 +154,8 @@ static func state_error(state: Dictionary, catalog: Dictionary) -> String:
 	for appointment in state.social.appointments:
 		if not fields(appointment, {"npc": "s", "minute": "n", "location": "s", "status": "s"}): return "invalid_appointment"
 		if not state.social.npcs.has(appointment.npc) or not catalog.locations.has(appointment.location): return "invalid_appointment_target"
+		if appointment.has("kind") or appointment.has("duration"):
+			if appointment.get("kind","") != "invitation" or not Human.integer(appointment.get("duration"),1,1440) or not appointment.status in ["pending","met","cancelled"]: return "invalid_invitation"
 	for message in state.social.messages:
 		if not fields(message, {"id": "n", "npc": "s", "text": "s", "incoming": "b", "read": "b", "minute": "n"}): return "invalid_message"
 	for relation in state.social.relationships.values():

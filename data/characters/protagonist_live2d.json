@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "model_id": "gg",
+  "title": "ГГ — повседневная Live2D-модель",
+  "study_asset": true,
+  "body_type": "female_only",
+  "default_outfit": "hoodie_pants",
+  "groups": [
+    {
+      "id": "body",
+      "title": "Телосложение",
+      "controls": [
+        {"id": "ParamAssSize", "title": "Бёдра", "minimum": -1.0, "maximum": 1.0, "default": 0.0, "step": 0.05},
+        {"id": "ParamThighSize", "title": "Верх ног", "minimum": -1.0, "maximum": 1.0, "default": 0.0, "step": 0.05},
+        {"id": "ParamCalfSize", "title": "Икры", "minimum": -1.0, "maximum": 1.0, "default": 0.0, "step": 0.05},
+        {"id": "ParamFootLength", "title": "Длина стопы", "minimum": -1.0, "maximum": 1.0, "default": 0.0, "step": 0.05},
+        {"id": "ParamFootWidth", "title": "Ширина стопы", "minimum": -1.0, "maximum": 1.0, "default": 0.0, "step": 0.05},
+        {"id": "ParamBoobSize", "title": "Объём груди", "minimum": -1.0, "maximum": 1.0, "default": 0.0, "step": 0.05}
+      ]
+    }
+  ],
+  "outfits": [
+    {"id": "hoodie_pants", "title": "Худи и брюки", "parameters": {"ParamHoodieEnabled": 1.0, "ParamPantsEnabled": 1.0}},
+    {"id": "shirt_skirt", "title": "Рубашка и юбка", "parameters": {"ParamShirtEnabled": 1.0, "ParamSkirtEnabled": 1.0}},
+    {"id": "dress", "title": "Платье", "parameters": {"ParamDress2Enabled": 1.0}}
+  ],
+  "palette_groups": [
+    {"id": "skin", "title": "Кожа", "meshes": ["Skin*", "PointyEar*"], "default": "original", "options": [
+      {"id": "original", "title": "Исходная", "color": "ffffff"},
+      {"id": "peach", "title": "Персиковая", "color": "ffe1d6"},
+      {"id": "rose", "title": "Розовая", "color": "f4d5d2"},
+      {"id": "olive", "title": "Оливковая", "color": "d1c2a8"}
+    ]},
+    {"id": "hair", "title": "Волосы", "meshes": ["ModdableHair*", "H0_*", "H1_*", "H2_*", "H3_*", "H4_*", "Brow*"], "default": "original", "options": [
+      {"id": "original", "title": "Исходные", "color": "ffffff"},
+      {"id": "espresso", "title": "Каштановые", "color": "aa817a"},
+      {"id": "ash", "title": "Пепельные", "color": "ccd3dd"},
+      {"id": "copper", "title": "Медные", "color": "e2aa86"}
+    ]},
+    {"id": "eyes", "title": "Глаза", "meshes": ["Iris*"], "default": "original", "options": [
+      {"id": "original", "title": "Исходные", "color": "ffffff"},
+      {"id": "sky", "title": "Голубые", "color": "b3daf2"},
+      {"id": "sea", "title": "Зелёные", "color": "a9d2bd"},
+      {"id": "hazel", "title": "Карие", "color": "d7ae80"}
+    ]},
+    {"id": "top", "title": "Верх одежды", "meshes": ["PlainShirt*", "Plainshirt*", "LongHoodie*", "AltLongHoodie*", "Dress2Chest", "Dress2Sleeve*", "Dress2Back"], "default": "original", "options": [
+      {"id": "original", "title": "Исходный", "color": "ffffff"},
+      {"id": "steel", "title": "Стальной", "color": "b9d0e4"},
+      {"id": "rose", "title": "Розовый", "color": "e8c7ce"},
+      {"id": "sage", "title": "Шалфей", "color": "c5d7c6"}
+    ]},
+    {"id": "bottom", "title": "Низ одежды", "meshes": ["Skirt", "*BPants*", "Dress2Middle"], "default": "original", "options": [
+      {"id": "original", "title": "Исходный", "color": "ffffff"},
+      {"id": "navy", "title": "Тёмно-синий", "color": "9bacc8"},
+      {"id": "charcoal", "title": "Графитовый", "color": "b8bec7"},
+      {"id": "brown", "title": "Коричневый", "color": "cbb49c"}
+    ]}
+  ],
+  "framing": ["face", "body"],
+  "unsupported": ["face_shape", "hair_style", "male_body", "independent_cubism_authoring"]
+}

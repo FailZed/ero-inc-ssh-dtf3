@@ -1,9 +1,12 @@
 # Project guidance
 
-- Development coordination is maintained by the chat «Правила для агентов»
-  (`01a17e92-142c-7992-ad8e-3e93fa96376d`), as requested by the owner on
-  2026-10-28. Read `docs/coordination/README.md` before taking the next task;
-  preserve direct user instructions in each chat and other agents' edits.
+- Development coordination belongs to chat
+  `01a18638-501e-7df3-836c-a733a3e75fcb`, as requested by the owner on
+  2026-10-29. It assigns agent tasks, resolves shared-file and design questions,
+  reviews results, and handles integration and Git. Other agents consult this
+  coordinator and use `gpt-6-sol` with reasoning effort `high`. Read
+  `docs/coordination/README.md` before taking the next task; preserve direct
+  user instructions in each chat and other agents' edits.
 - For game-development tasks, read `C:/Users/vladi/.codex/skills/router/SKILL.md`
   and then only the relevant installed specialist skills. The local bundle is
   `awesome-gamedev-agent-skills`; its 75 skills are installed in

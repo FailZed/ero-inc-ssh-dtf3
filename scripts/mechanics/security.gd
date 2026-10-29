@@ -1,6 +1,45 @@
 extends "res://scripts/mechanics/core/module.gd"
 ## Entirely fictional theft, witnesses and police consequences inside the sim.
 
+func _witness_count(id: String) -> int:
+	var witnesses := 0
+	for other_id in sim.state.social.npcs:
+		if other_id != id and sim.state.social.npcs[other_id].location == sim.state.world.location: witnesses += 1
+	return witnesses
+
+func _direct_chance(witnesses: int) -> float:
+	return clampf(0.25 + sim.services.character.effective_stat("cunning") * 0.025 + sim.state.player.skills.get("stealth", 0) * 0.002 - witnesses * 0.06 - sim.state.world.heat * 0.003, 0.03, 0.95)
+
+func preview(operation: String, args: Dictionary = {}) -> Dictionary:
+	if not operation in ["steal", "burglary", "begin_burglary"]: return Rules.fail("unknown_operation")
+	var id := str(args.get("npc", ""))
+	var item := str(args.get("item", ""))
+	var npc: Dictionary = sim.state.social.npcs.get(id, {})
+	var interactive := operation == "begin_burglary"
+	var uses_tool := operation != "steal"
+	var blocked := ""
+	if sim.state.encounters.combat.get("status", "") == "active": blocked = "finish_active_combat"
+	elif sim.state.encounters.game.get("status", "") == "active": blocked = "finish_active_game"
+	elif "crime" in sim.state.preferences.disabled_tags: blocked = "content_disabled"
+	elif npc.is_empty(): blocked = "unknown_npc"
+	elif not item.is_empty() and int(npc.inventory.get(item, 0)) < 1: blocked = "target_item_missing"
+	elif operation == "steal" and npc.location != sim.state.world.location: blocked = "npc_not_present"
+	elif uses_tool and npc.home != sim.state.world.location: blocked = "wrong_target_home"
+	elif uses_tool and int(sim.state.inventory.items.get("lockpick", 0)) < 1: blocked = "insufficient_items"
+	elif not item.is_empty():
+		var tool_weight := float(definition("items", "lockpick").get("weight", 0)) if uses_tool else 0.0
+		if sim.services.inventory.weight() + float(definition("items", item).get("weight", 0)) - tool_weight > sim.services.inventory.capacity() + 0.00001: blocked = "inventory_capacity"
+	var witnesses := _witness_count(id) if not npc.is_empty() else 0
+	var chance := _direct_chance(witnesses) if not interactive else 0.0
+	var fine := 50 if interactive else 20 + witnesses * 10
+	var heat := 30.0 if interactive else 15.0 + witnesses * 5.0
+	return Rules.ok({"operation":operation,"npc":id,"item":item,"blocked":blocked,
+		"chance_min":0.0 if interactive else chance,"chance_max":1.0 if interactive else chance,
+		"chance_model":"player_input" if interactive else "random_roll",
+		"minutes":15 if interactive else 10 if operation == "steal" else 30,
+		"tool_cost":1 if uses_tool else 0,"witnesses":witnesses,
+		"fine_on_failure":fine,"heat_on_failure":minf(100.0,float(sim.state.world.heat)+heat) - float(sim.state.world.heat)})
+
 func execute(operation: String, args: Dictionary) -> Dictionary:
 	if operation == "begin_burglary": return _begin_burglary(args)
 	if operation == "pay_fine":
@@ -18,20 +57,17 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		sim.state.world.heat = 0.0
 		return sim.advance(duration)
 	if not operation in ["steal", "burglary"]: return Rules.fail("unknown_operation")
+	var forecast: Dictionary = preview(operation, args)
+	if not forecast.ok: return forecast
+	if not str(forecast.data.blocked).is_empty(): return Rules.fail(str(forecast.data.blocked))
 	var id := str(args.get("npc", ""))
-	if not sim.state.social.npcs.has(id): return Rules.fail("unknown_npc")
 	var npc: Dictionary = sim.state.social.npcs[id]
 	var item := str(args.get("item", ""))
-	if not item.is_empty() and int(npc.inventory.get(item, 0)) < 1: return Rules.fail("target_item_missing")
-	if operation == "steal" and npc.location != sim.state.world.location: return Rules.fail("npc_not_present")
 	if operation == "burglary":
-		if npc.home != sim.state.world.location: return Rules.fail("wrong_target_home")
 		var tool: Dictionary = sim.services.inventory.change("lockpick", -1)
 		if not tool.ok: return tool
-	var witnesses := 0
-	for other_id in sim.state.social.npcs:
-		if other_id != id and sim.state.social.npcs[other_id].location == sim.state.world.location: witnesses += 1
-	var chance := clampf(0.25 + sim.services.character.effective_stat("cunning") * 0.025 + sim.state.player.skills.get("stealth", 0) * 0.002 - witnesses * 0.06 - sim.state.world.heat * 0.003, 0.03, 0.95)
+	var witnesses := int(forecast.data.witnesses)
+	var chance := float(forecast.data.chance_min)
 	var success: bool = sim.rng.randf() < chance
 	var taken := 0
 	if success:
@@ -62,13 +98,11 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 	return Rules.ok({"success": success, "chance": chance, "witnesses": witnesses, "money": taken})
 
 func _begin_burglary(args: Dictionary) -> Dictionary:
+	var forecast: Dictionary = preview("begin_burglary", args)
+	if not forecast.ok: return forecast
+	if not str(forecast.data.blocked).is_empty(): return Rules.fail(str(forecast.data.blocked))
 	var npc := str(args.get("npc", ""))
-	if not sim.state.social.npcs.has(npc): return Rules.fail("unknown_npc")
-	if sim.state.social.npcs[npc].home != sim.state.world.location: return Rules.fail("wrong_target_home")
 	var item := str(args.get("item", ""))
-	if not item.is_empty():
-		if int(sim.state.social.npcs[npc].inventory.get(item, 0)) < 1: return Rules.fail("target_item_missing")
-		if sim.services.inventory.weight() + float(definition("items", item).get("weight", 0)) - float(definition("items", "lockpick").get("weight", 0)) > sim.services.inventory.capacity(): return Rules.fail("inventory_capacity")
 	var removed: Dictionary = sim.services.inventory.change("lockpick", -1)
 	if not removed.ok: return removed
 	var result: Dictionary = sim.services.encounters.execute("game_start", {"type": "lockpick", "limit": 5})

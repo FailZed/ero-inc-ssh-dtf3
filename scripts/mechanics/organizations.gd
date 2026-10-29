@@ -27,9 +27,9 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			var task := str(args.get("task", "idle"))
 			if not group.members.has(npc): return Rules.fail("not_member")
 			if not task in ["idle", "clean", "fundraise", "article"] and not group.projects.has(task): return Rules.fail("unknown_task")
+			if args.has("role"): return Rules.fail("role_requires_election")
 			sim.services.institutions.attendance.cancel(group,npc,"reassigned")
 			group.members[npc].task = task
-			group.members[npc].role = str(args.get("role", "member"))
 		"fund":
 			var amount := int(args.get("amount", 0))
 			if amount <= 0 or sim.state.economy.cash < amount: return Rules.fail("invalid_funding")

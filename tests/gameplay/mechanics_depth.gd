@@ -121,12 +121,12 @@ func _clubs() -> void:
 	check(sim.command("social","generate",{"id":"club_depth"}).ok,"generate club participant")
 	var npc: Dictionary = sim.state.social.npcs.club_depth
 	npc.schedule = []
-	npc.location = "training_center"
-	npc.home = "training_center"
+	var club_place: String = sim.location_role("study")
+	npc.location = club_place
 	npc.activity = "rest"
 	npc.needs.energy = 100
 	npc.needs.satiety = 100
-	sim.state.world.location = "training_center"
+	sim.state.world.location = club_place
 	npc.biography.goal = "community"
 	check(sim.command("organizations","create",{"id":"creative_collective"}).ok,"create club in the main world")
 	check(sim.command("organizations","recruit",{"id":"creative_collective","npc":"club_depth"}).ok,"actual invitation accepts a willing member")

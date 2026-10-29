@@ -20,5 +20,5 @@ static func populate(owner: Control, parent: Node, entries: Array) -> void:
 		var args := {"condition":str(item.condition)} if not str(item.condition).is_empty() else {}
 		var captions := {"care_step":"Выполнить назначенный уход","care_review":"Уточнить план у врача","treat":"Начать назначенный курс","screen":"Пройти плановый скрининг","followup":"Пройти уточняющий осмотр","vaccinate":"Пройти следующий этап вакцинации"}
 		var spec: Dictionary = sim.services.adult_health.config().actions[item.operation]
-		owner._offer(parent,str(captions[item.operation]),"%d мин · %d ¤" % [int(spec.minutes),int(spec.cost)],"adult_health",str(item.operation),args)
+		owner._offer(parent,str(captions[item.operation]),"%d мин · %d €$" % [int(spec.minutes),int(spec.cost)],"adult_health",str(item.operation),args)
 		if int(item.due)<=now and item.status!="deferred": owner._offer(parent,"Напомнить через два часа","Срок плана при этом не меняется","adult_health","snooze_care",{"id":str(item.id)})

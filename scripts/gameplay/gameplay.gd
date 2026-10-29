@@ -53,9 +53,10 @@ func make_simulation():
 	return Simulation.new(int(configuration.seed), extensions)
 
 func begin_new_game(config: Dictionary) -> Error:
+	if str(config.get("mode", "")) != "sandbox": return ERR_UNAVAILABLE
 	var prepared := config.duplicate(true)
-	# The story creates its hero later at the mirror. Laboratory allocations must
-	# not consume the pre-story budget or reject a valid low-point custom world.
+	# World settings precede the mirror. Population setup must not spend the
+	# hero's stat budget before character creation.
 	prepared.profile = Setup.defaults().profile
 	for stat in Setup.STATS: prepared.profile.stats[stat] = 5
 	var valid: Dictionary = Setup.validate(prepared)

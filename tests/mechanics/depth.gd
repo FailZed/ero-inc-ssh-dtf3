@@ -7,6 +7,7 @@ func _init(parent) -> void: t = parent
 func run() -> void:
 	_education()
 	_clubs()
+	_work_and_elections()
 	_digital()
 	_quests()
 
@@ -94,6 +95,33 @@ func _clubs() -> void:
 	sim.state.social.npcs.worker.schedule = [{"hours":[1080,1200],"weekdays":[1],"location":"training_center","activity":"study"}]
 	t.command(sim,"clock","advance",{"minutes":31})
 	t._check(sim.state.organizations.creative_collective.work.sessions.is_empty(),"mandatory education takes priority over optional club production")
+
+func _work_and_elections() -> void:
+	var closing = t.fresh({"settings":{"start_minutes":1199}})
+	closing.state.world.location = "global_map"
+	var before: Dictionary = closing.export_snapshot()
+	var denied: Dictionary = closing.command("careers","shift",{"id":"retail"})
+	t._check(not denied.ok and denied.error == "shift_closes_before_end" and closing.export_snapshot() == before,"retail shift cannot start when it would run past closing; refusal leaves time and pay untouched")
+	var open = t.fresh({"settings":{"start_minutes":1080}})
+	open.state.world.location = "global_map"
+	var cash := int(open.state.economy.cash)
+	t.command(open,"careers","shift",{"id":"retail"})
+	t._check(int(open.state.clock.total_minutes) == 1200 and int(open.state.economy.cash) > cash,"retail shift ending exactly at closing is paid")
+	var club = t.fresh()
+	for npc in ["a","b"]:
+		t.command(club,"social","generate",{"id":npc})
+	t.command(club,"organizations","create",{"id":"creative_collective"})
+	for npc in ["a","b"]:
+		t.command(club,"organizations","recruit",{"id":"creative_collective","npc":npc})
+	t.command(club,"institutions","election",{"id":"creative_collective","candidates":["a","b"]})
+	t.command(club,"institutions","vote",{"id":"creative_collective","npc":"a","candidate":"b"})
+	t.command(club,"institutions","vote",{"id":"creative_collective","npc":"b","candidate":"b"})
+	t.command(club,"institutions","resolve_election",{"id":"creative_collective"})
+	before = club.export_snapshot()
+	denied = club.command("organizations","assign",{"id":"creative_collective","npc":"a","task":"clean","role":"leader"})
+	t._check(not denied.ok and denied.error == "role_requires_election" and club.export_snapshot() == before,"club task assignment cannot appoint an unelected leader")
+	t.command(club,"organizations","assign",{"id":"creative_collective","npc":"b","task":"clean"})
+	t._check(club.state.organizations.creative_collective.members.b.role == "leader","elected leader keeps office after a task assignment")
 
 func _digital() -> void:
 	var sim = Extended.new(17,{"settings":{"start_minutes":480}})

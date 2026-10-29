@@ -83,6 +83,7 @@ func _symptoms_and_care() -> void:
 	var initial_bladder := float(sim.state.player.needs.bladder)
 	t._check(sim.command("clock","advance",{"minutes":15}).ok,"pregnancy symptoms tick in main runtime")
 	t._check(sim.state.player.needs.bladder<initial_bladder-0.5,"pregnancy urgency consumes actual player bladder comfort")
+	sim.state.world.location = "global_map"
 	reject(sim,"toilet",{},"toilet in an unavailable location")
 	record = sim.state.pregnancy_wellbeing.records.player
 	sim.state.world.location = "bathroom"

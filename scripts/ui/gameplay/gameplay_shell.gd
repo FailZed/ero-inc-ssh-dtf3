@@ -25,7 +25,9 @@ const W = preload("res://scripts/ui/gameplay/game_widgets.gd")
 const PeopleView = preload("res://scripts/ui/gameplay/people_view.gd")
 const SceneInteraction = preload("res://scripts/ui/gameplay/scene_interaction.gd")
 const BookOverlay = preload("res://scripts/ui/gameplay/book_overlay.gd")
+const SleepPicker = preload("res://scripts/ui/gameplay/sleep_picker.gd")
 var _book_overlay: BookOverlay
+var _sleep_picker: SleepPicker
 var _companion_window: Control
 var _place_inspector: PlaceObjects
 var _place_confirmation: ConfirmationDialog
@@ -33,6 +35,8 @@ var _scene_actions: Control
 var _screen_state: Dictionary = {}
 var _phone_view: Phone
 var _queue: ActionQueue
+var _queue_layer: Control
+var _queue_holder: VBoxContainer
 var _plan_button: Button
 var _profile_tab := "attributes"
 var _inventory_state := {"query":"", "filter":"all", "selected":"", "sort":0}
@@ -65,7 +69,13 @@ var _chrome: MarginContainer
 var _main_panel: PanelContainer
 var _sections_overlay: Control
 var _sections_button: Button
+var _sections_panel: PanelContainer
+var _sections_title: Label
+var _section_headings: Array[Label] = []
+var _section_links: Array[Button] = []
+var _section_footer_buttons: Array[Button] = []
 var _close_panel: Button
+var _sections_link: Button
 var _hero: PlayerHUD
 var _clock: Label
 var _date: Label
@@ -78,8 +88,14 @@ var _toast_serial := 0
 var _phone_badge: Label
 var _phone_badge_frame: PanelContainer
 var _dock_hint: Label
-var _header: HBoxContainer
-var _bottom: HBoxContainer
+var _header: Control
+var _bottom: Control
+var _hud_footer_shade: ColorRect
+var _header_moment: VBoxContainer
+var _header_wallet: TextureRect
+var _header_menu: Button
+var _dock_corner: VBoxContainer
+var _mobile_active := false
 
 func _ready() -> void:
 	theme = UI.skin()
@@ -92,20 +108,41 @@ func _ready() -> void:
 	add_child(_city)
 	_city.travel_requested.connect(_city_travel)
 	_city.close_requested.connect(open_panel.bind("place"))
+	_hud_footer_shade = ColorRect.new()
+	_hud_footer_shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_hud_footer_shade.anchor_left = 0.0
+	_hud_footer_shade.anchor_right = 1.0
+	_hud_footer_shade.anchor_top = 1.0
+	_hud_footer_shade.anchor_bottom = 1.0
+	_hud_footer_shade.offset_top = -310.0
+	_hud_footer_shade.offset_bottom = 0.0
+	var footer_shader := Shader.new()
+	footer_shader.code = "shader_type canvas_item; void fragment() { COLOR = vec4(0.004, 0.014, 0.025, 0.76 * smoothstep(0.0, 1.0, UV.y)); }"
+	var footer_material := ShaderMaterial.new()
+	footer_material.shader = footer_shader
+	_hud_footer_shade.material = footer_material
+	add_child(_hud_footer_shade)
 	_chrome = UI.inset(self,48)
+	# The city map is a sibling behind this full-screen HUD. Empty HUD layout
+	# areas must let pointer events reach its pins and confirmation card.
+	_chrome.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var layout := UI.column(_chrome, 18)
+	layout.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var header := UI.row(layout, 14)
+	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_header = header
 	_status = UI.button(header,"",func(): _scene_actions.show_actions(_status.get_screen_position()+Vector2(0,48)))
 	_status.add_theme_font_size_override("font_size",20)
 	_status.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
 	HUD.quiet_button(_status)
 	var gap := Control.new()
+	gap.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	gap.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header.add_child(gap)
 	_wait = HUD.dock_button(header,"Подождать 15 минут","","calendar",_act.bind("clock","advance",{"minutes":15}))
 	_wait.tooltip_text = "Подождать 15 игровых минут. Жители продолжат свои дела."
 	var moment := UI.column(header,0)
+	_header_moment = moment
 	_clock = UI.label(moment,"",34)
 	_clock.autowrap_mode = TextServer.AUTOWRAP_OFF
 	_date = UI.label(moment,"",17,UI.MUTED)
@@ -114,7 +151,9 @@ func _ready() -> void:
 	var separator := VSeparator.new()
 	header.add_child(separator)
 	var wallet := TextureRect.new()
-	wallet.texture = HUD.icon("wallet")
+	_header_wallet = wallet
+	wallet.texture = HUD.icon("credit")
+	wallet.tooltip_text = "Кредиты · €$"
 	wallet.custom_minimum_size = Vector2(32,32)
 	wallet.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	wallet.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -128,6 +167,7 @@ func _ready() -> void:
 	_cash.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_plan_button = HUD.dock_button(header, "План действий", "Q", "journal", _toggle_plan)
 	var menu := UI.button(header,"Меню",_request_menu)
+	_header_menu = menu
 	menu.icon = HUD.icon("menu")
 	menu.expand_icon = true
 	menu.add_theme_constant_override("icon_max_width",32)
@@ -153,13 +193,10 @@ func _ready() -> void:
 	content.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var heading := UI.row(content)
 	_title = UI.label(heading, "", 28)
-	var sections_link := UI.button(heading, "Разделы · F1", _toggle_sections)
-	sections_link.add_theme_font_size_override("font_size", 14)
-	HUD.quiet_button(sections_link)
-	_close_panel = UI.button(heading,"Назад · Esc",_back_panel)
-	HUD.quiet_button(_close_panel)
+	var sections_link := HUD.dock_button(heading,"Разделы","F1","sections",_toggle_sections)
+	_sections_link = sections_link
+	_close_panel = HUD.dock_button(heading,"Назад","Esc","close",_back_panel)
 	sections_link.set_meta("detail_navigation", true)
-	_close_panel.add_theme_font_size_override("font_size", 14)
 	_close_panel.tooltip_text = "Закрыть раздел · Esc"
 	_body = UI.scroller(content)
 	_scroll = _body.get_parent()
@@ -181,18 +218,37 @@ func _ready() -> void:
 	_toast.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	_toast.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
 	var bottom := UI.row(layout, 20)
+	bottom.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_bottom = bottom
 	_hero = PlayerHUD.new()
 	_hero.pressed.connect(open_panel.bind("health"))
 	bottom.add_child(_hero)
 	var empty := Control.new()
+	empty.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	empty.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	bottom.add_child(empty)
 	_queue = ActionQueue.new()
 	_queue.execute_requested.connect(_execute_planned)
-	bottom.add_child(_queue)
+	_queue_layer = Control.new()
+	_queue_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_chrome.add_child(_queue_layer)
+	var queue_holder := VBoxContainer.new()
+	_queue_holder = queue_holder
+	queue_holder.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	queue_holder.alignment = BoxContainer.ALIGNMENT_END
+	queue_holder.anchor_left = 0.5
+	queue_holder.anchor_right = 0.5
+	queue_holder.anchor_top = 1.0
+	queue_holder.anchor_bottom = 1.0
+	queue_holder.offset_left = -170
+	queue_holder.offset_right = 170
+	queue_holder.offset_top = -480
+	queue_holder.offset_bottom = -120
+	_queue_layer.add_child(queue_holder)
+	queue_holder.add_child(_queue)
 	_queue.layout_changed.connect(func(): _refresh_hud(Gameplay.simulation.state))
 	var corner := UI.column(bottom, 8)
+	_dock_corner = corner
 	corner.size_flags_vertical = Control.SIZE_SHRINK_END
 	# The label has a reserved line: hovering never moves the buttons or scene.
 	_dock_hint = UI.label(corner, "", 15, UI.BLUE)
@@ -210,6 +266,7 @@ func _ready() -> void:
 	var shortcuts := UI.row(dock, 4)
 	for spec in [["phone","Телефон","P"],["inventory","Сумка","I"],["journal","Книга","J"]]:
 		_dock_buttons[spec[0]] = HUD.labeled_button(shortcuts,spec[1],spec[2],spec[0],_toggle_panel.bind(spec[0]))
+	_dock_buttons.actions = HUD.labeled_button(shortcuts,"Действия","","bed",_toggle_actions)
 	_sections_button = HUD.labeled_button(shortcuts,"Разделы","F1","sections",_toggle_sections)
 	_phone_badge_frame = PanelContainer.new()
 	_phone_badge_frame.anchor_left = 0.65
@@ -243,6 +300,9 @@ func _ready() -> void:
 		_refresh_hud(Gameplay.simulation.state)
 		_sections_button.grab_focus())
 	add_child(_book_overlay)
+	_sleep_picker = SleepPicker.new()
+	_sleep_picker.duration_selected.connect(_sleep_selected)
+	add_child(_sleep_picker)
 	_hud_hint = HUD.dock_button(self, "Показать интерфейс", "H", "eye", _toggle_hud)
 	_hud_hint.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
 	_hud_hint.offset_left = -96
@@ -255,6 +315,68 @@ func _ready() -> void:
 	Gameplay.panel_requested.connect(open_panel)
 	_probe = Gameplay.make_simulation()
 	_refresh()
+	get_viewport().size_changed.connect(_apply_mobile_layout)
+	_apply_mobile_layout.call_deferred()
+
+func _apply_mobile_layout() -> void:
+	if not is_inside_tree(): return
+	var window_size := DisplayServer.window_get_size()
+	var narrow := window_size.x > window_size.y and window_size.x <= 1100
+	if narrow == _mobile_active: return
+	_mobile_active = narrow
+	_status.add_theme_font_size_override("font_size",30 if narrow else 20)
+	_status.custom_minimum_size.y = 86 if narrow else 48
+	_status.size_flags_horizontal = Control.SIZE_FILL
+	_status.alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_header_menu.custom_minimum_size = Vector2(172,86) if narrow else Vector2(140,58)
+	_header_menu.add_theme_font_size_override("font_size",30 if narrow else 20)
+	_header_menu.add_theme_constant_override("icon_max_width",44 if narrow else 32)
+	_wait.custom_minimum_size = Vector2(78,78) if narrow else Vector2(54,54)
+	_wait.add_theme_constant_override("icon_max_width",44 if narrow else 26)
+	_plan_button.custom_minimum_size = Vector2(78,78) if narrow else Vector2(54,54)
+	_plan_button.add_theme_constant_override("icon_max_width",44 if narrow else 26)
+	_header_moment.custom_minimum_size.x = 255 if narrow else 180
+	_clock.add_theme_font_size_override("font_size",42 if narrow else 34)
+	_date.add_theme_font_size_override("font_size",24 if narrow else 17)
+	_header_wallet.custom_minimum_size = Vector2(50,50) if narrow else Vector2(32,32)
+	_cash.custom_minimum_size.x = 112 if narrow else 80
+	_cash.add_theme_font_size_override("font_size",32 if narrow else 24)
+	for navigation_button in [_sections_link,_close_panel]:
+		navigation_button.custom_minimum_size = Vector2(76,76) if narrow else Vector2(54,54)
+		navigation_button.add_theme_constant_override("icon_max_width",40 if narrow else 26)
+	_hero.set_compact_icon_scale(narrow)
+	_queue.set_compact_landscape(narrow)
+	_queue_holder.offset_left = -250 if narrow else -170
+	_queue_holder.offset_right = 250 if narrow else 170
+	_hero.size_flags_horizontal = Control.SIZE_FILL
+	_dock_corner.size_flags_horizontal = Control.SIZE_FILL
+	for button in _dock_buttons.values() + [_sections_button]:
+		button.custom_minimum_size = Vector2(108,96) if narrow else Vector2(96,96)
+		button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+		button.add_theme_constant_override("icon_max_width",64 if narrow else 32)
+		for child in button.get_children():
+			if child is Label:
+				child.add_theme_font_size_override("font_size",roundi((21 if narrow else 18)*UI.text_scale))
+				child.offset_top = -30
+	_scene_actions.set_mobile_layout(narrow)
+	_style_sections_layout(narrow)
+	_refresh_hud(Gameplay.simulation.state)
+	_adapt_main_body_for_landscape()
+	_fit_inventory_window.call_deferred()
+	_wire_scene_focus.call_deferred()
+
+func _adapt_main_body_for_landscape() -> void:
+	if not is_instance_valid(_body) or current_panel == "inventory": return
+	for control in _body.find_children("*","Control",true,false):
+		if not (control is Label or control is BaseButton or control is LineEdit or control is RichTextLabel): continue
+		if not _mobile_active and not control.has_meta("landscape_base_font_size"): continue
+		var base_size := int(control.get_meta("landscape_base_font_size",control.get_theme_font_size("font_size")))
+		control.set_meta("landscape_base_font_size",base_size)
+		control.add_theme_font_size_override("font_size",roundi(base_size*(1.7 if _mobile_active else 1.0)))
+		if control is BaseButton or control is LineEdit:
+			var base_height := float(control.get_meta("landscape_base_height",control.custom_minimum_size.y))
+			control.set_meta("landscape_base_height",base_height)
+			control.custom_minimum_size.y = maxf(base_height,96.0) if _mobile_active else base_height
 
 func _queue_refresh() -> void:
 	if _refresh_pending: return
@@ -273,7 +395,9 @@ func _notify(text: String) -> void:
 		if serial == _toast_serial: _toast.text = ""; _toast.hide())
 
 func open_panel(id: String, record_history: bool = true) -> void:
+	if id != "place" and is_instance_valid(_scene_actions): _scene_actions.hide_drawer()
 	if is_instance_valid(_book_overlay): _book_overlay.hide_book()
+	if is_instance_valid(_sleep_picker): _sleep_picker.hide_picker()
 	if is_instance_valid(_queue) and _queue.running: _queue.stop()
 	if id == "place": _panel_history.clear()
 	elif record_history and current_panel != id:
@@ -297,6 +421,11 @@ func _toggle_panel(id: String) -> void:
 	if current_panel == id: _back_panel()
 	else: open_panel(id)
 
+func _toggle_actions() -> void:
+	if current_panel != "place": open_panel("place")
+	_scene_actions.toggle_drawer()
+	_refresh_hud(Gameplay.simulation.state)
+
 func _back_panel() -> void:
 	if current_panel == "npc" and _npc_risk:
 		_npc_risk = false
@@ -318,34 +447,63 @@ func _build_sections() -> void:
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_sections_overlay.add_child(center)
-	var panel := PanelContainer.new()
-	panel.custom_minimum_size.x = 1040
-	panel.add_theme_stylebox_override("panel",UI.surface(30))
-	center.add_child(panel)
-	var content := UI.column(panel, 14)
-	var title := UI.row(content)
-	UI.label(title, "Разделы", 32)
-	UI.button(title,"Книга · B",_toggle_book)
-	UI.button(title, "ЗАКРЫТЬ  ×", _toggle_sections)
+	_sections_panel = PanelContainer.new()
+	_sections_panel.custom_minimum_size.x = 1320
+	_sections_panel.add_theme_stylebox_override("panel",UI.surface(28))
+	center.add_child(_sections_panel)
+	var content := UI.column(_sections_panel, 18)
+	var title := UI.row(content, 16)
+	_sections_title = UI.label(title, "Разделы", 34)
+	var close := HUD.dock_button(title,"Закрыть разделы","Esc","close",_toggle_sections)
+	close.custom_minimum_size = Vector2(54,54)
 	var grid := GridContainer.new()
 	grid.columns = 3
-	grid.add_theme_constant_override("h_separation", 12)
-	grid.add_theme_constant_override("v_separation", 10)
+	grid.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	grid.add_theme_constant_override("h_separation", 16)
 	content.add_child(grid)
 	for group in Screens.GROUPS:
-		var column := UI.column(grid, 8)
-		UI.label(column, group.title, 13, UI.BLUE)
+		var column := W.panel(grid, 16, Color(0.018,0.041,0.058,0.86))
+		column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		var heading := UI.label(column, group.title, 16, UI.BLUE)
+		_section_headings.append(heading)
 		for spec in group.screens:
 			var id: String = spec[0]
 			_nav_buttons[id] = UI.button(column, spec[1] + (" · " + spec[3] if not spec[3].is_empty() else ""), open_panel.bind(id))
 			_nav_buttons[id].alignment = HORIZONTAL_ALIGNMENT_LEFT
-			_nav_buttons[id].add_theme_font_size_override("font_size", 18)
+			_nav_buttons[id].icon = HUD.icon(str(spec[2]))
+			_nav_buttons[id].icon_alignment = HORIZONTAL_ALIGNMENT_LEFT
+			_nav_buttons[id].expand_icon = true
+			HUD.quiet_button(_nav_buttons[id])
 			_nav_buttons[id].size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	var footer := UI.row(content)
-	_nav_buttons.place = UI.button(footer, "К СЦЕНЕ", open_panel.bind("place"))
-	UI.button(footer, "ИНТЕРФЕЙС И УПРАВЛЕНИЕ", open_panel.bind("interface"))
-	UI.button(content, "Скрыть интерфейс · H", _toggle_hud)
+			_section_links.append(_nav_buttons[id])
+	var footer := UI.row(content, 12)
+	_nav_buttons.place = UI.button(footer, "На сцену", open_panel.bind("place"))
+	for item in [[_nav_buttons.place,"arrow"],[UI.button(footer,"Книга · B",_toggle_book),"book"],[UI.button(footer,"Настройки",open_panel.bind("interface")),"menu"],[UI.button(footer,"Скрыть HUD · H",_toggle_hud),"eye"]]:
+		var button: Button = item[0]
+		button.icon = HUD.icon(str(item[1]))
+		button.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT
+		button.expand_icon = true
+		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		HUD.quiet_button(button)
+		_section_footer_buttons.append(button)
+	_style_sections_layout(_mobile_active)
 	_sections_overlay.visible = false
+
+func _style_sections_layout(narrow: bool) -> void:
+	if not is_instance_valid(_sections_panel): return
+	_sections_panel.custom_minimum_size.x = 1760 if narrow else 1320
+	_sections_panel.add_theme_stylebox_override("panel",UI.surface(20 if narrow else 28))
+	_sections_title.add_theme_font_size_override("font_size",roundi((44 if narrow else 34)*UI.text_scale))
+	for heading in _section_headings:
+		heading.add_theme_font_size_override("font_size",roundi((24 if narrow else 16)*UI.text_scale))
+	for button in _section_links:
+		button.custom_minimum_size.y = 88 if narrow else 54
+		button.add_theme_font_size_override("font_size",roundi((29 if narrow else 19)*UI.text_scale))
+		button.add_theme_constant_override("icon_max_width",42 if narrow else 28)
+	for button in _section_footer_buttons:
+		button.custom_minimum_size.y = 72 if narrow else 52
+		button.add_theme_font_size_override("font_size",roundi((27 if narrow else 18)*UI.text_scale))
+		button.add_theme_constant_override("icon_max_width",38 if narrow else 25)
 
 func _toggle_sections() -> void:
 	if is_instance_valid(_book_overlay): _book_overlay.hide_book()
@@ -368,9 +526,11 @@ func _refresh_hud(s: Dictionary) -> void:
 	_clock.text = str(s.clock.time_text)
 	_date.text = "%s, %d %s" % [["Пн","Вт","Ср","Чт","Пт","Сб","Вс"][int(s.clock.weekday)-1],int(s.clock.day),["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"][int(s.clock.month_number)-1]]
 	_clock.tooltip_text = "%s · %d год\nВремя идёт во время действий" % [s.clock.date_text, int(s.clock.year)]
-	_cash.text = "%d ¤" % int(s.economy.cash)
+	_cash.text = "%d" % int(s.economy.cash)
+	_cash.tooltip_text = "Кредиты · €$"
 	_hero.present(s.player, Gameplay.simulation.services.needs.condition())
 	_hero.visible = current_panel == "place" and not encounter
+	_hud_footer_shade.visible = current_panel == "place" and not encounter
 	_main_panel.visible = not current_panel in ["place","map","phone"] or encounter
 	_scene_actions.visible = current_panel == "place" and not encounter and not (is_instance_valid(_book_overlay) and _book_overlay.visible)
 	_status.disabled = not _scene_actions.visible
@@ -388,11 +548,12 @@ func _refresh_hud(s: Dictionary) -> void:
 	_phone_badge_frame.visible = unread > 0
 	_dock_buttons.phone.tooltip_text = "Телефон · P" + ("\nНепрочитанных: %d" % unread if unread > 0 else "")
 	for id in _dock_buttons:
-		_dock_buttons[id].modulate = UI.BLUE if current_panel == id else Color.WHITE
-		_dock_buttons[id].add_theme_stylebox_override("normal", HUD.button_style(Color(0.05,0.12,0.18,0.65), UI.BLUE) if current_panel == id else HUD.button_style())
+		var selected: bool = current_panel == id or id == "actions" and _scene_actions.drawer_open and current_panel == "place"
+		_dock_buttons[id].modulate = UI.BLUE if selected else Color.WHITE
+		_dock_buttons[id].add_theme_stylebox_override("normal", HUD.button_style(Color(0.05,0.12,0.18,0.65), UI.BLUE) if selected else HUD.button_style())
 	var home: bool = current_panel == "place" and not encounter
-	_main_panel.anchor_left = 0.0 if current_panel == "inventory" and not encounter else 0.08
-	_main_panel.anchor_right = 0.64 if current_panel == "inventory" and not encounter else 0.92
+	_main_panel.anchor_left = 0.02 if _mobile_active else 0.0 if current_panel == "inventory" and not encounter else 0.08
+	_main_panel.anchor_right = 0.98 if _mobile_active else 0.64 if current_panel == "inventory" and not encounter else 0.92
 	_main_panel.anchor_top = 0.0
 	_main_panel.anchor_bottom = 1.0
 	_main_panel.offset_left = 0
@@ -404,7 +565,7 @@ func _refresh_hud(s: Dictionary) -> void:
 		if link.has_meta("detail_navigation"): link.visible = not home and not encounter
 	_queue.visible = home and not encounter and (_queue.planning or not _queue.entries.is_empty())
 	_plan_button.modulate = UI.BLUE if _queue.planning else Color.WHITE
-	_plan_button.visible = _queue.planning or not _queue.entries.is_empty()
+	_plan_button.visible = true
 	_plan_button.disabled = encounter
 	_title.add_theme_font_size_override("font_size",34)
 	_title.add_theme_color_override("font_color",UI.INK)
@@ -425,10 +586,18 @@ func _refresh() -> void:
 	var s: Dictionary = Gameplay.simulation.state
 	_probe_snapshot = Gameplay.simulation.export_snapshot()
 	_refresh_hud(s)
-	for id in _nav_buttons: _nav_buttons[id].modulate = UI.BLUE if id == current_panel or (id == "people" and current_panel in ["npc", "gathering"]) else Color.WHITE
+	for id in _nav_buttons:
+		var selected: bool = id == current_panel or (id == "people" and current_panel in ["npc", "gathering"])
+		_nav_buttons[id].modulate = UI.BLUE if selected else Color.WHITE
+		if id != "place":
+			var surface := HUD.button_style(Color(0.06,0.15,0.21,0.90),UI.BLUE) if selected else HUD.button_style(Color(0.01,0.03,0.045,0.48),Color(0.35,0.52,0.64,0.32))
+			if selected: surface.border_width_bottom = 2
+			_nav_buttons[id].add_theme_stylebox_override("normal",surface)
 	var room_kind: String = Gameplay.simulation.room_kind(str(s.world.location))
 	var backgrounds := {"bedroom":"bedroom_night","hall":"hallway_night","bathroom":"bathroom_night","kitchen":"bedroom_morning"}
-	_background.texture = load("res://assets/textures/locations/apartment/kitchen_16x9.png" if room_kind == "kitchen" else "res://assets/textures/backgrounds/campus_v1/courtyard.tres" if str(s.world.location).begins_with("campus_") else "res://assets/textures/backgrounds/location_pack_v1/%s.png" % backgrounds.get(room_kind,"home_street_day"))
+	var kitchen_at_night := int(s.clock.minute_of_day) >= 18 * 60 or int(s.clock.minute_of_day) < 5 * 60
+	var kitchen_path := "res://assets/textures/locations/apartment/kitchen_night_16x9.png" if kitchen_at_night else "res://assets/textures/locations/apartment/kitchen_16x9.png"
+	_background.texture = load(kitchen_path if room_kind == "kitchen" else "res://assets/textures/backgrounds/campus_v1/courtyard.tres" if str(s.world.location).begins_with("campus_") else "res://assets/textures/backgrounds/location_pack_v1/%s.png" % backgrounds.get(room_kind,"home_street_day"))
 	_scene_actions.begin(str(s.world.location),_background.texture)
 	_city.visible = current_panel == "map"
 	if _city.visible: _city.present(Gameplay.simulation,true)
@@ -474,15 +643,16 @@ func _refresh() -> void:
 			_body.add_child(viewer)
 	if current_panel == "place": _scene_actions.finish()
 	if _body.get_child_count() == 0 and not current_panel in ["place","phone"]: UI.label(_body, "Пока здесь тихо.", 22, UI.MUTED)
+	_adapt_main_body_for_landscape()
 	_restore_focus(focus)
 	_wire_scene_focus.call_deferred()
 	_fit_inventory_window.call_deferred()
 
 func _fit_inventory_window() -> void:
 	if not is_inside_tree() or current_panel != "inventory" or _wait.disabled: return
-	var desired := maxf(520,_body.get_combined_minimum_size().y+_title.get_parent().get_combined_minimum_size().y+72)
+	var desired := maxf(680 if _mobile_active else 520,_body.get_combined_minimum_size().y+_title.get_parent().get_combined_minimum_size().y+72)
 	_main_panel.anchor_bottom = 0
-	_main_panel.offset_bottom = minf(desired,_main_panel.get_parent_control().size.y)
+	_main_panel.offset_bottom = minf(desired,get_viewport_rect().size.y-_main_panel.get_global_rect().position.y-96.0) if _mobile_active else minf(desired,_main_panel.get_parent_control().size.y)
 
 func _wire_scene_focus() -> void:
 	if is_inside_tree() and _scene_actions.visible: UI.focus_loop(_chrome)
@@ -592,7 +762,7 @@ func _act(module_id: String, operation: String, args: Dictionary = {}) -> void:
 		if result.data.get("crafted") is bool: message = "Блюдо готово" if result.data.crafted else "Блюдо не получилось. Практика поможет в следующий раз"
 		if result.data.get("success") is bool: message = "Удалось" if result.data.success else "Не удалось. Последствия записаны в журнале"
 		if spent > 0: message += " · %d мин" % spent
-		if delta != 0: message += " · %+d ¤" % delta
+		if delta != 0: message += " · %+d €$" % delta
 		if int(s.world.education.absences) > absences: message += " · пропущено занятий: %d" % (int(s.world.education.absences)-absences)
 		if not previous_bond.is_empty():
 			var changes := Social.change_summary(previous_bond, Social.bond(Gameplay.simulation, target))
@@ -648,6 +818,10 @@ func _context_action(callback: Callable, caption: String) -> void:
 		return
 	callback.call()
 
+func _sleep_selected(minutes: int) -> void:
+	_context_action(_act.bind("needs", "sleep", {"minutes":minutes}), "Поспать · %d мин" % minutes)
+	if current_panel == "place" and not _status.disabled: _status.grab_focus()
+
 func _place() -> void:
 	var sim = Gameplay.simulation
 	var s: Dictionary = sim.state
@@ -655,7 +829,7 @@ func _place() -> void:
 	var room_context: String = sim.room_kind(str(s.world.location)) if sim.is_player_home_location(str(s.world.location)) else str(s.world.location)
 	match room_context:
 		"bedroom":
-			_context_button("Поспать · 8 часов", _act.bind("needs", "sleep", {"minutes":480}), "Выспаться. За это время город продолжит жить.", "bed")
+			_context_button("Поспать", _sleep_picker.show_picker, "Выберите длительность сна. За это время город продолжит жить.", "bed", "needs.sleep")
 			_context_button("Отдохнуть · 1 час", _act.bind("character", "rest", {"minutes":60}), "", "rest")
 			if float(s.player.needs.rested) < 70.0: _context_button("Вздремнуть · 30 мин", _act.bind("needs", "nap"), "Короткий сон в кровати", "bed")
 			_context_button("Сесть за работу", open_panel.bind("work"), "", "desk")
@@ -702,7 +876,7 @@ func _place() -> void:
 			_context_button("%s\n%s" % [npc.name,status],_open_npc.bind(id),"Поговорить с "+str(npc.name),"profile")
 	_context_button("Все контакты",open_panel.bind("people"))
 
-func _context_button(caption: String, callback: Callable, hint: String = "", _kind: String = "arrow") -> Button:
+func _context_button(caption: String, callback: Callable, hint: String = "", kind: String = "arrow", id_override: String = "") -> Button:
 	var bound: Array = callback.get_bound_arguments()
 	var method := str(callback.get_method())
 	var id := method
@@ -716,7 +890,10 @@ func _context_button(caption: String, callback: Callable, hint: String = "", _ki
 		if not caution.is_empty(): hint += "\n"+caution
 	elif method == "open_panel" and not bound.is_empty(): id = "screen."+str(bound[0])
 	elif method == "_open_npc" and not bound.is_empty(): id = "person."+str(bound[0])
-	return _scene_actions.add_action(id,caption,_context_action.bind(callback,caption),hint)
+	if not id_override.is_empty(): id = id_override
+	if id.begins_with("route."): kind = "marker"
+	elif id.begins_with("person."): kind = "profile"
+	return _scene_actions.add_action(id,caption,_context_action.bind(callback,caption),hint,kind)
 
 func _map() -> void:
 	_heading("Карта города", "Выберите метку на карте и подтвердите переход.")
@@ -1022,14 +1199,19 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel") or (event is InputEventJoypadButton and event.pressed and event.button_index == JOY_BUTTON_B):
 		if _queue.running: _queue.stop()
 		get_viewport().set_input_as_handled()
-		if _book_overlay.visible: _book_overlay.hide_book()
+		if _sleep_picker.visible: _sleep_picker.hide_picker()
+		elif _book_overlay.visible: _book_overlay.hide_book()
 		elif _sections_overlay.visible: _toggle_sections()
 		elif current_panel == "phone": _phone_view.go_back()
 		elif not _chrome.visible: _toggle_hud()
 		elif current_panel != "place": _back_panel()
+		elif _scene_actions.drawer_open:
+			_scene_actions.hide_drawer()
+			_refresh_hud(Gameplay.simulation.state)
 		else: _request_menu()
 		return
 	if event is InputEventKey and event.pressed and not event.echo:
+		if _sleep_picker.visible: return
 		if get_viewport().gui_get_focus_owner() is LineEdit: return
 		if _wait.disabled: return
 		if event.keycode == KEY_H:
@@ -1101,9 +1283,11 @@ func _request_place_action(module_id: String, operation: String, args: Dictionar
 
 func _toggle_book() -> void:
 	if _queue.running: _queue.stop()
+	if _sleep_picker.visible: _sleep_picker.hide_picker()
 	_sections_overlay.visible = false
 	if _book_overlay.visible: _book_overlay.hide_book()
 	else:
+		_scene_actions.hide_drawer()
 		_scene_actions.visible = false
 		_book_overlay.show_book()
 
@@ -1113,4 +1297,3 @@ func _open_companion(id: String) -> void:
 	_companion_window = preload("res://scripts/ui/gameplay/companion_window.gd").new()
 	_companion_window.npc_id = id
 	add_child(_companion_window)
-

@@ -38,13 +38,22 @@ func _run() -> void:
 		session.reset_character_profile()
 		var profile: Dictionary = session.get_character_profile()
 		profile.identity.full_name = "Житель песочницы"
-		if not session.apply_character_profile_v2(profile) or not gameplay.open_sandbox().ok: _finish(false,mode,"start"); return
+		profile.appearance.live2d = preload("res://scripts/characters/protagonist_appearance.gd").normalize_appearance({"shape":{"ParamAssSize":0.35,"ParamThighSize":-0.5},"outfit":"shirt_skirt"})
+		if not session.apply_character_profile_v2(profile): _finish(false,mode,"profile"); return
+		# Match core/game.gd's mirror confirmation boundary before opening the world.
+		gameplay._on_profile_changed(session.get_character_profile())
+		if not gameplay.open_sandbox().ok: _finish(false,mode,"start"); return
+		if int(session.get_character_profile().unspent_points) != gameplay.creation_budget(): _finish(false,mode,"creation_points"); return
 		if not gameplay.execute("social","generate",{"id":"newcomer","age":23}).ok: _finish(false,mode,"npc"); return
 		# Match normal world generation, which binds stable visual identities.
 		gameplay._bind_npc_art()
 		var sim = gameplay.simulation
 		if bool(sim.state.world.flags.student_enrolled) != enrolled or sim.state.world.flags.subject_computing or bool(sim.state.world.flags.subject_physics) != enrolled: _finish(false,mode,"enrollment"); return
 		var npc: Dictionary = sim.state.social.npcs.newcomer
+		# Meet a test-owned, off-duty resident in public. Teleporting a visitor
+		# into the player's private bedroom makes its next obligation unreachable.
+		npc.schedule = []
+		if not gameplay.execute("world","journey",{"id":sim.location_role("trade")}).ok: _finish(false,mode,"meeting_place"); return
 		sim.services.npc_agency._cancel(npc,"snapshot_fixture")
 		npc.location = sim.state.world.location
 		npc.activity = "rest"
@@ -53,7 +62,8 @@ func _run() -> void:
 		sim.services.npc_relationships._bond("newcomer","player").trust = 30.0
 		sim.services.npc_relationships._project("newcomer","player")
 		if not gameplay.execute("npc_stories","start",{"id":"newcomer"}).ok: _finish(false,mode,"story"); return
-		if not gameplay.execute("npc_stories","choose",{"id":"newcomer","node":"intro","choice":"help"}).ok: _finish(false,mode,"choice"); return
+		var choice: Dictionary = gameplay.execute("npc_stories","choose",{"id":"newcomer","node":"intro","choice":"help"})
+		if not choice.ok: _finish(false,mode,"choice:"+str(choice.error)); return
 		if not gameplay.execute("world","journey",{"id":"city_park"}).ok: _finish(false,mode,"first_visit"); return
 		var variables: Dictionary = _normal(dialogic.VAR.var_storage)
 		if not _continue(): _finish(false,mode,"continuation"); return
@@ -69,6 +79,9 @@ func _run() -> void:
 		session._sync_game_time_from_dialogic()
 		session._sync_character_profile_from_dialogic()
 		if not gameplay.restore_error.is_empty() or not gameplay.is_sandbox() or gameplay.phase != "free_roam": _finish(false,mode,"restore"); return
+		if int(session.get_character_profile().unspent_points) != gameplay.creation_budget(): _finish(false,mode,"restored_creation_points"); return
+		if session.get_character_profile().appearance.get("live2d") != packet.variables.Player.appearance.get("live2d"): _finish(false,mode,"restored_live2d_profile"); return
+		if gameplay.simulation.state.player.appearance.get("live2d") != packet.variables.Player.appearance.get("live2d"): _finish(false,mode,"restored_live2d_simulation"); return
 		if bool(gameplay.configuration.sandbox.education.enrolled) != enrolled or bool(gameplay.simulation.state.world.flags.student_enrolled) != enrolled: _finish(false,mode,"enrollment"); return
 		if gameplay.simulation.state.npc_stories.arcs.newcomer.goal.count != 1: _finish(false,mode,"partial_progress"); return
 		var ok := _continue()

@@ -596,8 +596,8 @@ func _meeting() -> void:
 func _bank() -> void:
 	var economy: Dictionary = Gameplay.simulation.state.economy
 	UI.label(_body, "На счёте", 16, UI.MUTED)
-	UI.label(_body, "%d ¤" % economy.bank, 46)
-	UI.label(_body, "С собой %d ¤   ·   долг %d ¤" % [economy.cash, economy.debt], 16, UI.MUTED)
+	UI.label(_body, "%d €$" % economy.bank, 46)
+	UI.label(_body, "С собой %d €$   ·   долг %d €$" % [economy.cash, economy.debt], 16, UI.MUTED)
 	var amount := SpinBox.new()
 	amount.min_value = 1
 	amount.max_value = 10000
@@ -612,7 +612,7 @@ func _bank() -> void:
 			_error = "" if result.ok else Names.error(str(result.error))
 			_rebuild())
 		button.set_meta("phone_focus","bank:"+id)
-	UI.label(_body, "По понедельникам: вклад +1 %, кредит +5 %. Лимит кредита — 1 000 ¤.", 14, UI.MUTED)
+	UI.label(_body, "По понедельникам: вклад +1 %, кредит +5 %. Лимит кредита — 1 000 €$.", 14, UI.MUTED)
 
 func _upcoming() -> Dictionary:
 	var result: Dictionary = {}

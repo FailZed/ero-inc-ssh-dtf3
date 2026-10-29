@@ -64,7 +64,7 @@ func _refresh() -> void:
 	_paused = false
 	_previewing = false
 	var streak := int(s.streak) if int(Gameplay.simulation.state.clock.day_index)-int(s.streak_day) <= 1 else 0
-	UI.label(_body,"Наличные %d ¤ · заработано здесь %d ¤ · серия рабочих дней %d / 7" % [Gameplay.simulation.state.economy.cash,s.totals.earnings,streak],21,UI.BLUE)
+	UI.label(_body,"Наличные %d €$ · заработано здесь %d €$ · серия рабочих дней %d / 7" % [Gameplay.simulation.state.economy.cash,s.totals.earnings,streak],21,UI.BLUE)
 	match page:
 		"jobs": _jobs()
 		"orders": _orders()
@@ -124,9 +124,9 @@ func _jobs() -> void:
 		if int(progress.level) < 5:
 			UI.label(card,"Следующая ступень: навык %d. Повышение только через навык." % progress.next_skill if progress.automatic else "Следующая ступень: навык %d и опыт %d / %d. Хорошая мини-игра ускоряет рост после достижения нужного навыка." % [progress.next_skill,progress.xp,progress.next_xp],18,UI.MUTED)
 		else: UI.label(card,"Максимальная ступень этой работы",18,UI.BLUE)
-		var pay_text := "оплата %d ¤" % service.wage(id,0.65) if job.kind == "shift" else "оплата %d–%d ¤" % [service.wage(id,0.0),service.wage(id,1.0)]
+		var pay_text := "оплата %d €$" % service.wage(id,0.65) if job.kind == "shift" else "оплата %d–%d €$" % [service.wage(id,0.0),service.wage(id,1.0)]
 		UI.label(card,"%s · %02d:00–%02d:00 · %d мин · силы −%d · %s" % [Names.title(Gameplay.simulation.services.livelihood.job_location(job)),int(job.hours[0])/60,int(job.hours[1])/60,job.minutes,ceili(float(job.energy)*Gameplay.simulation.multiplier("resource_cost")),pay_text],18,UI.MUTED)
-		if float(job.risk) > 0: UI.label(card,"Нелегально · риск задержания %.0f%% · штраф %d ¤ · расход на вход %d ¤" % [service.risk(id)*100,int(job.fine),int(job.get("fee",0))],19,UI.ORANGE)
+		if float(job.risk) > 0: UI.label(card,"Нелегально · риск задержания %.0f%% · штраф %d €$ · расход на вход %d €$" % [service.risk(id)*100,int(job.fine),int(job.get("fee",0))],19,UI.ORANGE)
 		var conflicts: Array = service.study_conflicts(id)
 		if not conflicts.is_empty():
 			for lesson in conflicts:
@@ -144,7 +144,7 @@ func _jobs() -> void:
 		if not preload("res://scripts/gameplay/action_policy.gd").commitments(Gameplay.simulation.state,int(Gameplay.simulation.state.clock.total_minutes)+int(job.minutes)).is_empty():
 			UI.label(card,"Во время смены наступит срок или встреча. Проверьте свои обязательства.",18,UI.ORANGE)
 		var row := UI.row(card)
-		UI.button(row,"СМЕНА · %d ¤" % service.wage(id,0.65 if job.kind == "shift" else 0.55),_act.bind("work",{"id":id,"interactive":false,"skip_classes":_skip_classes})).disabled = not reason.is_empty()
+		UI.button(row,"СМЕНА · %d €$" % service.wage(id,0.65 if job.kind == "shift" else 0.55),_act.bind("work",{"id":id,"interactive":false,"skip_classes":_skip_classes})).disabled = not reason.is_empty()
 		if job.kind != "shift": UI.button(row,"РАБОТАТЬ С МИНИ-ИГРОЙ",_act.bind("work",{"id":id,"interactive":true,"skip_classes":_skip_classes})).disabled = not reason.is_empty()
 		var workplace: String = Gameplay.simulation.services.livelihood.job_location(job)
 		if workplace != Gameplay.simulation.state.world.location and not workplace.is_empty(): UI.button(row,"К РАБОЧЕМУ МЕСТУ",_travel.bind(workplace))
@@ -161,7 +161,7 @@ func _orders() -> void:
 		var card := W.panel(grid)
 		W.illustration(card,Art.texture(str(offer.item),sim.catalog.items.get(offer.item,{})),100)
 		UI.label(card,offer.title,26,UI.BLUE)
-		UI.label(card,"%s × %d · оплата %d ¤" % [Names.title(offer.item),offer.quantity,offer.pay],20)
+		UI.label(card,"%s × %d · оплата %d €$" % [Names.title(offer.item),offer.quantity,offer.pay],20)
 		if not sim.state.livelihood.orders.has(offer.id): UI.button(card,"ВЗЯТЬ ЗАКАЗ",_act.bind("take_order",{"id":offer.id}))
 		else: UI.label(card,{"active":"Уже в работе","completed":"Выполнен","expired":"Срок истёк"}[str(sim.state.livelihood.orders[offer.id].status)],18,UI.MUTED)
 	for id in sim.state.livelihood.orders:
@@ -169,7 +169,7 @@ func _orders() -> void:
 		if order.status != "active": continue
 		var card := UI.card(_body)
 		UI.label(card,"В работе: "+str(order.title),24,UI.BLUE)
-		UI.label(card,"В сумке %d / %d · осталось %d мин · %d ¤" % [sim.state.inventory.items.get(order.item,0),order.quantity,int(order.deadline)-int(sim.state.clock.total_minutes),order.pay],20)
+		UI.label(card,"В сумке %d / %d · осталось %d мин · %d €$" % [sim.state.inventory.items.get(order.item,0),order.quantity,int(order.deadline)-int(sim.state.clock.total_minutes),order.pay],20)
 		UI.button(card,"ПЕРЕДАТЬ · 15 МИН",_act.bind("deliver",{"id":id}))
 	UI.button(_body,"К СЕВЕРНЫМ МАГАЗИНАМ",_travel.bind("north_shops"))
 
@@ -201,9 +201,9 @@ func _home() -> void:
 		UI.label(card,spec.description,20)
 		if level < int(spec.max_level):
 			var price := int(spec.price)*(level+1)
-			var buy := UI.button(card,"УЛУЧШИТЬ · %d ¤" % price,_act.bind("upgrade",{"id":id}))
+			var buy := UI.button(card,"УЛУЧШИТЬ · %d €$" % price,_act.bind("upgrade",{"id":id}))
 			buy.disabled = not Gameplay.simulation.is_player_home_location(str(Gameplay.simulation.state.world.location)) or int(Gameplay.simulation.state.economy.cash) < price
-			if buy.disabled: buy.tooltip_text = "Нужно находиться дома и иметь %d ¤." % price
+			if buy.disabled: buy.tooltip_text = "Нужно находиться дома и иметь %d €$." % price
 
 func _game(p: Dictionary) -> void:
 	var spec: Dictionary = Gameplay.simulation.services.livelihood.rules().jobs[p.id]
@@ -323,7 +323,7 @@ func _work_input(extra: Dictionary) -> void:
 
 func _act(operation: String, args: Dictionary) -> void:
 	var result: Dictionary = Gameplay.execute("livelihood",operation,args)
-	_status.text = "Оплата: %d ¤%s" % [result.data.pay," · задержание, назначен штраф" if result.data.get("caught",false) else ""] if result.ok and result.data.has("pay") else "" if result.ok else Names.error(str(result.error))
+	_status.text = "Оплата: %d €$%s" % [result.data.pay," · задержание, назначен штраф" if result.data.get("caught",false) else ""] if result.ok and result.data.has("pay") else "" if result.ok else Names.error(str(result.error))
 	if result.ok and result.data.has("correct"): _status.text = "Верно" if result.data.correct else "Ошибка · премия за качество ниже"
 	if result.ok and result.data.get("accelerated",false): _status.text += " · ускоренный карьерный рост"
 	if result.ok and int(result.data.get("missed_classes",0)) > 0: _status.text += " · пропущено занятий: %d" % int(result.data.missed_classes)

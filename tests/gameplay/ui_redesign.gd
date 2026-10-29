@@ -18,6 +18,16 @@ func run() -> void:
 		t.check(shell._phone_view.visible if id == "phone" else not shell._title.text.is_empty() and shell._body.get_child_count() > 0, "game screen renders and identifies " + id)
 	for id in ["family","digital","collection"]:
 		t.check(shell._nav_buttons.has(id), "on-demand section browser exposes " + id)
+	shell.open_panel("journal")
+	shell._choose_screen("available", "journal_tab")
+	t.check(shell._body.find_children("*", "Button", true, false).any(func(button): return button.text == "Принять"), "journal exposes a real quest acceptance action")
+	shell._choose_screen("day", "journal_tab")
+	t.check(shell._body.find_children("*", "Label", true, false).any(func(label): return "Обязательные деньги" in label.text), "journal shows the shared day budget and priorities")
+	shell.open_panel("digital")
+	shell._choose_screen("workbench", "digital_tab")
+	for tab in ["orders", "practice", "operations", "broadcast"]:
+		shell._choose_screen(tab, "computer_tab")
+		t.check(shell._body.get_child_count() > 0, "staged computer workbench renders " + tab)
 	shell.open_panel("profile")
 	for tab in ["skills", "perks", "attributes"]:
 		shell._select_profile_tab(tab)
@@ -69,6 +79,8 @@ func run() -> void:
 	shell.open_panel("journal")
 	await t.process_frame
 	t.check(not queue.running and before == t.gameplay.simulation.export_snapshot(), "opening a screen cancels a pending deferred execution")
+	shell._choose_screen("day", "journal_tab")
+	t.check(shell._body.find_children("*", "Label", true, false).any(func(label): return "Прогноз текущего плана" in label.text) and before == t.gameplay.simulation.export_snapshot(), "day view forecasts the queued action without changing world or RNG")
 	var cancel := InputEventJoypadButton.new()
 	cancel.button_index = JOY_BUTTON_B
 	cancel.pressed = true

@@ -65,11 +65,11 @@ func preview(npc: Dictionary, id: String) -> Dictionary:
 	if spec.kind == "hostile":
 		chance = float(spec.get("chance",0.55))+(sim.services.character.effective_stat("authority")-float(npc.stats.authority))*0.025+float(bond.fear)*0.003
 		if spec.get("effect","") == "steal":
-			var witnesses := 0
-			for other: Dictionary in sim.state.social.npcs.values():
-				if other.id != npc.id and other.location == npc.location: witnesses += 1
-			chance = clampf(0.25+sim.services.character.effective_stat("cunning")*0.025+float(sim.state.player.skills.get("stealth",0))*0.002-witnesses*0.06-float(sim.state.world.heat)*0.003,0.03,0.95)
-	chance = 1.0 if spec.get("certain",false) or spec.get("effect","") == "combat" else clampf(chance,0.05,0.95)
+			var theft: Dictionary = sim.services.security.preview("steal", {"npc":str(npc.id)})
+			chance = float(theft.data.chance_min)
+			if blocked.is_empty(): blocked = str(theft.data.blocked)
+	if spec.get("effect","") != "steal":
+		chance = 1.0 if spec.get("certain",false) or spec.get("effect","") == "combat" else clampf(chance,0.05,0.95)
 	return {"blocked":blocked,"chance":chance,"changes":spec.get("changes",{}).duplicate(),"rejected":spec.get("rejected",{}).duplicate(),"hostile":bool(spec.get("hostile",false)),"combat":spec.get("effect","") == "combat","fine":int(spec.get("fine",0)),"witnesses":_witnesses(npc),"cost":int(spec.get("cost",0)),"fear":float(spec.get("fear",0)),"repeat":int(sim.state.clock.total_minutes)-int(bond.recent.get(id,-10080))<180}
 
 func execute(operation: String, args: Dictionary) -> Dictionary:

@@ -231,9 +231,17 @@ func _test_windows() -> void:
 	var creator = load("res://scenes/ui/CharacterCreationModal.tscn").instantiate()
 	scene.add_child(creator)
 	creator.open_with_profile(session.get_character_profile(),session.get_character_stat_labels(),{},session.get_character_appearance_options())
+	check(creator._portrait.is_model_loaded() and creator._shape_sliders.size() == 6, "mirror loads GG Live2D with only its six supported body controls")
+	creator._set_shape(0.5, "ParamThighSize")
+	check(is_equal_approx(float(creator._portrait.get_appearance().shape.ParamThighSize), 0.5) and is_equal_approx(float(creator._profile.appearance.live2d.shape.ParamThighSize), 0.5), "body slider applies a real GG morph and keeps it in the pending profile")
+	creator._undo_appearance()
+	check(is_equal_approx(float(creator._portrait.get_appearance().shape.ParamThighSize), 0.0), "creator undo restores the previous Live2D shape")
+	creator._select_zone("face")
+	creator._set_palette("hair", "copper")
+	check(creator._zone == "face" and str(creator._portrait.get_appearance().palette.hair) == "copper" and creator._shape_sliders.is_empty(), "face mode offers real hair color without unsupported face sculpt controls")
 	creator._page = 1
 	creator._build_page()
-	check(creator._portrait != null and creator._stat_values.size() == 5,"mirror reflection and stat controls exist")
+	check(creator._portrait != null and creator._stat_values.size() == 5 and not creator._confirm.disabled,"GG mirror reflection, identity stats and confirmation remain usable")
 	creator.queue_free()
 	var guide = load("res://scripts/ui/gameplay/guided_exploration.gd").new()
 	gameplay.phase = "story"

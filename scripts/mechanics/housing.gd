@@ -47,7 +47,8 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			if not npc in property.tenants: return Rules.fail("not_a_tenant")
 			var person: Dictionary = sim.state.social.npcs[npc]
 			var original := str(property.original_homes.get(npc, person.home))
-			if person.location == person.home: person.location = original
+			# A tenancy change is not a journey. The current task finishes or is
+			# interrupted by its existing owner before agency plans a route home.
 			person.home = original
 			property.original_homes.erase(npc)
 			property.tenants.erase(npc)
@@ -64,6 +65,17 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			if operation == "sell" and not property.owned: return Rules.fail("property_not_owned")
 			if operation == "end_lease" and property.owned: return Rules.fail("property_not_rented")
 			if property.arrears > 0: return Rules.fail("unpaid_rent")
+			var returned_weight := 0.0
+			for item_id in property.equipment:
+				var quantity := int(property.equipment[item_id])
+				var item := definition("items", str(item_id))
+				if item.is_empty() or quantity <= 0: return Rules.fail("invalid_furniture")
+				returned_weight += quantity * float(item.get("weight", 0.0))
+			if sim.services.inventory.weight() + returned_weight > sim.services.inventory.capacity() + 0.00001:
+				return Rules.fail("inventory_capacity")
+			for item_id in property.equipment:
+				var returned: Dictionary = sim.services.inventory.change(str(item_id), int(property.equipment[item_id]))
+				if not returned.ok: return returned
 			if operation == "sell": sim.state.economy.cash += int(spec.get("price", 0) * float(spec.get("sell_ratio", 0.7)))
 			housing.properties.erase(id)
 			if housing.residence == id:

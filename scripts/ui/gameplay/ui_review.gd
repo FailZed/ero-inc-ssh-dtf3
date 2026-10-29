@@ -5,6 +5,7 @@ var destination := "res://docs/ui/captures/review"
 var report: Array[Dictionary] = []
 var quick := false
 var interaction_only := false
+var background_capture := false
 var failures: Array[String] = []
 
 func _ready() -> void:
@@ -12,6 +13,10 @@ func _ready() -> void:
 		if arg.begins_with("--capture="): destination = arg.trim_prefix("--capture=")
 		if arg == "--quick": quick = true
 		if arg == "--interaction-only": interaction_only = true
+		if arg == "--background-capture": background_capture = true
+	if background_capture:
+		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_NO_FOCUS,true)
+		DisplayServer.window_set_position(Vector2i(4000,4000))
 	GameSession.pause_autosave_runtime()
 	var config := preload("res://scripts/mechanics/setup_config.gd").defaults()
 	config.population.count = 12
@@ -72,11 +77,38 @@ func _ready() -> void:
 			await _capture("phone-chat",shell)
 			shell._phone_view._go_home()
 		if not quick:
-			var variants := {"activities":["activities_tab",["training","university","games"]],"work":["work_tab",["jobs","shop","channel","assets"]],"health":["health_tab",["treatment","adult_health","reproduction"]],"home":["home_tab",["properties","household"]],"journal":["journal_tab",["stories","history","achievements"]],"family":["family_tab",["duties","budget","history"]],"digital":["digital_tab",["history"]]}
+			var variants := {"activities":["activities_tab",["training","university","games"]],"work":["work_tab",["jobs","shop","channel","assets"]],"health":["health_tab",["treatment","adult_health","reproduction"]],"home":["home_tab",["properties","household"]],"journal":["journal_tab",["day","available","stories","history","achievements"]],"family":["family_tab",["duties","budget","history"]],"digital":["digital_tab",["history"]]}
 			if variants.has(id):
 				for tab in variants[id][1]:
 					shell._choose_screen(tab,variants[id][0])
 					await _capture(id+"-"+tab,shell)
+			if id == "digital":
+				var digital: Dictionary = Gameplay.simulation.state.digital
+				var saved_pending: Dictionary = digital.pending.duplicate(true)
+				var saved_serial: int = int(digital.serial)
+				var operation_id := str(Gameplay.simulation.catalog.digital_operations.keys()[0])
+				digital.serial = saved_serial+1
+				digital.pending = {"id":operation_id,"token":digital.serial,"expires":int(Gameplay.simulation.state.clock.total_minutes)+1440}
+				shell._choose_screen("tasks","digital_tab")
+				await _capture("digital-approaches",shell)
+				digital.pending = saved_pending
+				digital.serial = saved_serial
+				var workbench_checkpoint: Dictionary = Gameplay.simulation.export_snapshot()
+				Gameplay.simulation.state.world.location = "bedroom"
+				Gameplay.simulation.state.world.equipment = ["computer"]
+				shell._choose_screen("workbench","digital_tab")
+				shell._choose_screen("orders","computer_tab")
+				await _capture("digital-workbench-orders",shell)
+				var board: Array = Gameplay.simulation.services.computer.board()
+				for offer in board:
+					if bool(offer.locked): continue
+					var accepted: Dictionary = Gameplay.execute("computer","take_project",{"id":offer.id})
+					if accepted.ok:
+						shell.open_panel("digital")
+						await _capture("digital-workbench-active",shell)
+					break
+				Gameplay.simulation.restore_snapshot(workbench_checkpoint)
+				shell.open_panel("digital")
 			if id == "health":
 				for tab in ["protection","family"]:
 					shell._choose_screen(tab,"repro_tab")
@@ -227,6 +259,28 @@ func _ready() -> void:
 	conversation.configure("asuka", "free", shell._background.texture.resource_path)
 	add_child(conversation)
 	await _capture("conversation", conversation)
+	if is_instance_valid(conversation._live_stage):
+		var stage: Control = conversation._live_stage
+		stage._toggle_categories()
+		await _capture("conversation-categories",conversation)
+		stage._toggle_categories()
+		stage._toggle_tools()
+		await _capture("conversation-utilities",conversation)
+		stage._toggle_tools()
+		for tab in stage._tabs:
+			if str(tab.id) != stage._tab: continue
+			for item in tab.get("items",[]):
+				if not item.has("choices"): continue
+				stage._open_folder(str(item.title))
+				await _capture("conversation-submenu",conversation)
+				break
+			break
+		stage._show_matrix()
+		await _capture("conversation-matrix",conversation)
+		stage._close_matrix()
+		stage._show_history()
+		await _capture("conversation-history",conversation)
+		stage._close_detail()
 	conversation.queue_free()
 	await get_tree().process_frame
 	Gameplay.simulation.restore_snapshot(checkpoint)
@@ -316,7 +370,7 @@ func _finish() -> void:
 	get_tree().quit(0 if failures.is_empty() else 1)
 
 func _capture(id: String, surface: Node) -> void:
-	get_viewport().warp_mouse(Vector2(5, 5))
+	if not background_capture: get_viewport().warp_mouse(Vector2(5, 5))
 	for frame in range(4): await get_tree().process_frame
 	await RenderingServer.frame_post_draw
 	var bounds_ok := true
@@ -353,6 +407,8 @@ func _review_interaction(shell: Control) -> void:
 		npc.pinned_until = int(sim.state.clock.total_minutes)+1440
 	shell.open_panel("place")
 	await _capture("place",shell)
+	shell._dock_buttons.actions.pressed.emit()
+	await _capture("bed-actions",shell)
 	for page in ["people","places"]:
 		shell._scene_actions.select_page(page)
 		await _capture("scene-"+page,shell)

@@ -47,6 +47,7 @@ func run() -> void:
 	goals_and_prerequisites()
 	needs_and_commitments()
 	travel_and_interruptions()
+	h04_invitations_and_tenancy()
 	directed_memories_and_emotions()
 	social_autonomy()
 	player_influence()
@@ -164,6 +165,114 @@ func travel_and_interruptions() -> void:
 	hungry.needs.satiety = 0
 	advance(poor, 45)
 	t._check(hungry.needs.satiety > 15 and hungry.money == 0, "subsistence fallback avoids endless hunger without creating money")
+
+func h04_invitations_and_tenancy() -> void:
+	var sim = fresh()
+	var npc: Dictionary = sim.state.social.npcs.life_0
+	sim.services.npc_agency._cancel(npc,"h04_fixture")
+	npc.location = "global_map"
+	npc.activity = "create"
+	npc.pinned_until = 0
+	var work_started := int(sim.state.clock.total_minutes)
+	npc.mind.active = {"action":"create","phase":"action","destination":"global_map","partner":"","reason":"needs_and_personality","started":work_started,"due":work_started+30}
+	var skills_before: Dictionary = npc.skills.duplicate(true)
+	sim.services.social.relationship("life_0","player").trust = 25.0
+	var origin := str(npc.location)
+	var route: Dictionary = sim.services.npc_agency._route(npc,origin,str(sim.state.world.location))
+	var started := int(sim.state.clock.total_minutes)
+	var accepted: Dictionary = t.command(sim,"social","invite",{"id":"life_0","minutes":60})
+	t._check(accepted.ok and npc.location == origin and npc.activity == "appointment_travel", "remote invitation begins a real journey without teleporting")
+	t._check(npc.skills==skills_before, "the interrupted NPC action grants no early skill reward")
+	var visit: Dictionary = sim.state.social.appointments.back()
+	t._check(int(visit.minute)==started+int(route.minutes) and int(npc.pinned_until)==int(visit.minute)+61 and npc.mind.active.is_empty(), "invitation reserves travel and visit through the existing planner")
+	var pending: Dictionary = sim.export_snapshot()
+	var restored = fresh()
+	t._check(restored.restore_snapshot(pending).ok, "pending invitation survives snapshot restore")
+	var malformed: Dictionary = pending.duplicate(true)
+	malformed.state.social.appointments.back().erase("kind")
+	var restored_before: Dictionary = restored.export_snapshot()
+	t._check(not restored.restore_snapshot(malformed).ok and restored.export_snapshot()==restored_before, "duration without invitation kind is rejected atomically on restore")
+	malformed = pending.duplicate(true)
+	malformed.state.social.appointments.back().duration = -1
+	t._check(not restored.restore_snapshot(malformed).ok and restored.export_snapshot()==restored_before, "invalid invitation duration is rejected atomically on restore")
+	advance(sim,int(route.minutes)-1)
+	t._check(npc.location == origin, "guest stays at the origin until travel completes")
+	advance(sim,1)
+	t._check(npc.location == sim.state.world.location and visit.status == "pending", "guest arrives through the planner and remains for the booked visit")
+	advance(sim,60)
+	t._check(visit.status == "met" and int(npc.pinned_until)<=int(sim.state.clock.total_minutes), "invitation ends after the requested duration and releases the reservation")
+	advance(restored,int(route.minutes)+60)
+	t._check(restored.export_snapshot()==sim.export_snapshot(), "restored pending invitation replays the same arrival and completion")
+
+	var left = fresh()
+	var leaving_guest: Dictionary = left.state.social.npcs.life_0
+	left.services.npc_agency._cancel(leaving_guest,"h04_fixture")
+	leaving_guest.location = "global_map"
+	leaving_guest.activity = "rest"
+	leaving_guest.pinned_until = 0
+	left.services.social.relationship("life_0","player").trust = 25.0
+	t.command(left,"social","invite",{"id":"life_0","minutes":60})
+	t.command(left,"world","travel",{"id":"apartment_hall"})
+	t.command(left,"world","travel",{"id":"global_map"})
+	advance(left,1)
+	t._check(left.state.social.appointments.back().status=="cancelled" and int(leaving_guest.pinned_until)<=int(left.state.clock.total_minutes), "player departure cancels and releases the pending invitation")
+
+	var busy = fresh()
+	var guest: Dictionary = busy.state.social.npcs.life_0
+	busy.services.npc_agency._cancel(guest,"h04_fixture")
+	guest.location = "global_map"
+	guest.activity = "rest"
+	guest.pinned_until = 0
+	busy.services.social.relationship("life_0","player").trust = 25.0
+	var clock: Dictionary = busy.state.clock
+	guest.schedule = [{"activity":"work","location":"global_map","hours":[int(clock.minute_of_day)+30,int(clock.minute_of_day)+90],"weekdays":[int(clock.weekday)],"mandatory":true}]
+	var before: Dictionary = busy.export_snapshot()
+	var rng_before: int = busy.rng.state
+	var rejected: Dictionary = busy.command("social","invite",{"id":"life_0","minutes":60})
+	t._check(not rejected.ok and rejected.error=="invitation_calendar_conflict" and busy.export_snapshot()==before and busy.rng.state==rng_before, "calendar conflict rejects invitation without changing state or RNG")
+
+	var long_visit = fresh()
+	var long_guest: Dictionary = long_visit.state.social.npcs.life_0
+	long_visit.services.npc_agency._cancel(long_guest,"h04_fixture")
+	long_guest.location = "global_map"
+	long_guest.activity = "rest"
+	long_guest.pinned_until = 0
+	long_visit.services.social.relationship("life_0","player").trust = 25.0
+	var long_route: Dictionary = long_visit.services.npc_agency._route(long_guest,"global_map",str(long_visit.state.world.location))
+	accepted = long_visit.command("social","invite",{"id":"life_0","minutes":1440})
+	t._check(not long_route.is_empty() and int(long_route.minutes)>0 and accepted.ok,"24-hour invitation accepts nonzero travel time")
+	var future = fresh()
+	var future_guest: Dictionary = future.state.social.npcs.life_0
+	future.services.npc_agency._cancel(future_guest,"h04_fixture")
+	future_guest.location = "global_map"
+	future_guest.activity = "rest"
+	future_guest.pinned_until = 0
+	future.services.social.relationship("life_0","player").trust = 25.0
+	var tomorrow := int(future.state.clock.weekday)%7+1
+	future_guest.schedule = [{"activity":"work","location":"global_map","hours":[495,555],"weekdays":[tomorrow],"mandatory":true}]
+	before = future.export_snapshot()
+	rng_before = future.rng.state
+	rejected = future.command("social","invite",{"id":"life_0","minutes":1440})
+	t._check(not rejected.ok and rejected.error=="invitation_calendar_conflict" and future.export_snapshot()==before and future.rng.state==rng_before,"24-hour invitation checks next-day obligation and return travel atomically")
+
+	var home = fresh()
+	home.state.economy.cash = 5000
+	t.command(home,"housing","buy",{"id":"apartment"})
+	var tenant: Dictionary = home.state.social.npcs.life_0
+	home.services.npc_agency._cancel(tenant,"h04_fixture")
+	tenant.home = "global_map"
+	tenant.location = "bedroom"
+	tenant.activity = "rest"
+	tenant.pinned_until = 0
+	var now := int(home.state.clock.total_minutes)
+	tenant.mind.active = {"action":"rest","phase":"action","destination":"bedroom","partner":"","reason":"needs_and_personality","started":now,"due":now+15}
+	t.command(home,"housing","tenant",{"id":"apartment","npc":"life_0"})
+	t.command(home,"housing","remove_tenant",{"id":"apartment","npc":"life_0"})
+	t._check(tenant.home=="global_map" and tenant.location=="bedroom" and not tenant.mind.active.is_empty(), "tenancy ends without teleporting or discarding an active task")
+	advance(home,15)
+	t._check(tenant.location=="bedroom" and tenant.mind.active.get("phase","")=="travel", "former tenant finishes the task before agency plans travel to the original home")
+	advance(home,30)
+	t._check(tenant.location=="global_map", "former tenant follows the existing route out of the private residence")
 
 func directed_memories_and_emotions() -> void:
 	var sim = fresh("community", 2)

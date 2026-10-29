@@ -115,8 +115,9 @@ func _finish(c: Dictionary,result: String,deterrence: float = 0.0) -> void:
 	var memory := _memory(str(c.actor))
 	memory.deterrence = clampf(float(memory.deterrence)+deterrence,0,100)
 	if deterrence > 0: memory.impunity = maxf(0,float(memory.impunity)-10)
-	_state().history.append({"id":c.id,"minute":_now(),"result":result,"loss":c.loss})
-	while _state().history.size() > 64: _state().history.pop_front()
+	if c.target == "player" or c.observed:
+		_state().history.append({"id":c.id,"minute":_now(),"result":result,"loss":c.loss})
+		while _state().history.size() > 64: _state().history.pop_front()
 	_notify(c,result)
 	emit_event("pressure_resolved",{"id":c.id,"result":result,"loss":c.loss})
 

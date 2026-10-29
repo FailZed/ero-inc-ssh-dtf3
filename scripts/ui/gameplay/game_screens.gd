@@ -11,6 +11,8 @@ const Reproductive = preload("res://scripts/ui/gameplay/reproductive_panel.gd")
 const Book = preload("res://scripts/ui/gameplay/journal_book.gd")
 const Social = preload("res://scripts/gameplay/social_presentation.gd")
 const SocialStatus = preload("res://scripts/ui/gameplay/social_status.gd")
+const ComputerWorkbench = preload("res://scripts/ui/gameplay/computer_workbench.gd")
+const DayPlan = preload("res://scripts/ui/gameplay/day_plan_panel.gd")
 
 static func tabs(owner: Control, parent: Node, key: String, options: Dictionary, fallback: String) -> String:
 	var selected := str(owner._screen_state.get(key, fallback))
@@ -37,7 +39,10 @@ static func journal(owner: Control, parent: Node) -> void:
 	_compact_links(parent)
 	var sim = Gameplay.simulation
 	owner._heading("Мой дневник")
-	var tab := tabs(owner, parent, "journal_tab", {"tasks":"Мои дела", "stories":"Личные истории", "history":"Хроника", "achievements":"Достижения"}, "tasks")
+	var tab := tabs(owner, parent, "journal_tab", {"tasks":"Мои дела", "day":"План дня", "available":"Новые дела", "stories":"Личные истории", "history":"Хроника", "achievements":"Достижения"}, "tasks")
+	if tab == "day":
+		DayPlan.render(owner, parent)
+		return
 	if tab == "history":
 		var entries: Array = Gameplay.log_entries().duplicate()
 		entries.reverse()
@@ -46,6 +51,20 @@ static func journal(owner: Control, parent: Node) -> void:
 			var line := UI.row(parent, 16)
 			W.icon(line, "journal", 20, UI.MUTED)
 			UI.label(line, str(entry.text), 20)
+		return
+	if tab == "available":
+		var cards := W.grid(parent, 2)
+		var available: Dictionary = sim.services.events.execute("inspect", {})
+		for quest in available.data.quests:
+			if sim.state.journal.quests.has(quest.id): continue
+			var card := W.panel(cards)
+			UI.label(card, str(quest.title), 24)
+			UI.label(card, str(quest.description), 18, UI.MUTED)
+			if quest.available:
+				action(owner, card, "Принять задание", "Цели появятся в разделе «Мои дела»", "events", "start_quest", {"id":quest.id}, "Принять")
+			else:
+				UI.label(card, "Пока недоступно — выполните условия открытия", 17, UI.ORANGE)
+		if cards.get_child_count() == 0: W.empty(parent, "journal", "Все доступные дела приняты", "Новые задания появятся, когда откроются их условия.")
 		return
 	if tab == "stories":
 		var cards := W.grid(parent)
@@ -107,14 +126,23 @@ static func journal(owner: Control, parent: Node) -> void:
 			UI.button(page, "Заняться проектом" if item.id == "complete_project" else "Выбрать занятие", owner.open_panel.bind("work" if item.id == "complete_project" else "activities"))
 			action(owner, page, "Подтвердить выполнение", "Собеседник оценит результат обещанного дела", "social_rules", "fulfill", {"id":item.npc, "promise":item.id}, "Подтвердить")
 	elif chosen.kind == "quest":
+		var quest_spec: Dictionary = sim.catalog.quests[chosen.id]
 		UI.label(page, {"active":"В процессе", "completed":"Выполнено", "failed":"Срок истёк"}.get(item.status, "Завершено"), 18, UI.BLUE)
-		for objective in sim.catalog.quests[chosen.id].objectives:
+		if not str(quest_spec.get("description", "")).is_empty(): UI.label(page, str(quest_spec.description), 19, UI.MUTED)
+		if int(item.get("deadline", 0)) > 0 and item.status == "active":
+			var due: Dictionary = sim.calendar.snapshot(int(item.deadline))
+			UI.label(page, "До %s · %s" % [due.date_text, due.time_text], 17, UI.ORANGE)
+		var next_objective := ""
+		for objective in quest_spec.objectives:
 			var count := int(item.objectives.get(objective, 0))
-			var needed := int(sim.catalog.quests[chosen.id].objectives[objective])
-			UI.label(page, ("✓  " if count >= needed else "◇  ") + ("Позаниматься самостоятельно" if objective == "practice" else "Этап задания") + "  %d / %d" % [count, needed], 22)
+			var needed := int(quest_spec.objectives[objective])
+			var objective_label := str(quest_spec.get("objective_labels", {}).get(objective, "Позаниматься самостоятельно" if objective == "practice" else Names.title(str(objective))))
+			UI.label(page, ("✓  " if count >= needed else "◇  ") + objective_label + "  %d / %d" % [count, needed], 22)
+			if count < needed and next_objective.is_empty(): next_objective = str(objective)
 		if item.status == "active":
+			var destination: String = {"places":"map", "practice":"activities", "contact":"people", "study":"activities", "rest":"activities", "project":"digital", "assessment":"activities", "shifts":"work", "savings":"work", "training":"activities", "recovery":"health", "cook":"inventory", "gift":"people", "furnish":"home", "recruit":"club", "campaign":"club", "care":"family", "time":"family", "learning":"family", "outfit":"inventory", "support":"people", "cooperate":"people"}.get(next_objective, "activities")
 			UI.label(page, "Следующий шаг", 16, UI.MUTED)
-			W.primary(page, "Найти занятие", owner.open_panel.bind("activities"))
+			W.primary(page, "Перейти к делу", owner.open_panel.bind(destination))
 		if item.status == "completed" and not item.claimed: action(owner, page, "Задание выполнено", "Награда за ваши поступки", "events", "claim_quest", {"id":chosen.id}, "Получить награду")
 	else: action(owner,page,str(chosen.title),"Что-то изменилось в городе","events","fire",{"id":chosen.id},"Узнать, что произошло")
 
@@ -133,7 +161,7 @@ static func activities(owner: Control, parent: Node) -> void:
 	if tab == "training":
 		for id in sim.catalog.training_programs:
 			var spec: Dictionary = sim.catalog.training_programs[id]
-			action(owner, cards, "Силовая тренировка" if id == "strength" else Names.title(id), "%d мин · %d ¤ · выносливость −%d" % [spec.get("minutes",30),spec.get("cost",0),spec.get("energy",5)*sim.multiplier("resource_cost")], "activities", "practice", {"id":id}, "Тренироваться")
+			action(owner, cards, "Силовая тренировка" if id == "strength" else Names.title(id), "%d мин · %d €$ · выносливость −%d" % [spec.get("minutes",30),spec.get("cost",0),spec.get("energy",5)*sim.multiplier("resource_cost")], "activities", "practice", {"id":id}, "Тренироваться")
 		return
 	if tab == "games":
 		for id in ["blackjack","reaction","strength","guess","lockpick","timing","pushups"]:
@@ -159,7 +187,7 @@ static func activities(owner: Control, parent: Node) -> void:
 			if attendance.allowed: description += "\nСейчас: %d мин · опыт %d · результат +%.2f" % [attendance.minutes,attendance.xp,attendance.grade]
 		action(owner,cards,Names.title(id),description,"world","lesson",{"id":id},"На занятие")
 	action(owner, cards, "Домашнее задание", "45 мин · заниматься дома", "world", "homework", {}, "Заниматься")
-	if sim.state.world.education.get("expelled", false): action(owner, cards, "Восстановиться в университете", "30 мин · 50 ¤", "world", "appeal", {}, "Подать заявление")
+	if sim.state.world.education.get("expelled", false): action(owner, cards, "Восстановиться в университете", "30 мин · 50 €$", "world", "appeal", {}, "Подать заявление")
 
 static func work(owner: Control, parent: Node) -> void:
 	_compact_links(parent)
@@ -179,7 +207,7 @@ static func work(owner: Control, parent: Node) -> void:
 			UI.label(card, Names.title(id), 27)
 			var completed: bool = progress.get("completed", false)
 			var remaining := maxi(0, int(spec.effort)-int(progress.get("progress",0)))
-			UI.label(card, "Готово · оплата получена" if completed else "Осталось %d мин · оплата %d ¤" % [remaining,spec.get("pay",0)], 18, UI.MUTED)
+			UI.label(card, "Готово · оплата получена" if completed else "Осталось %d мин · оплата %d €$" % [remaining,spec.get("pay",0)], 18, UI.MUTED)
 			var bar := HUD.rail(card, 6, UI.BLUE)
 			bar.value = 100.0*float(progress.get("progress",0))/float(spec.effort)
 			if not completed: action(owner, card, "Поработать над проектом", "%d мин · нужен домашний компьютер" % mini(60,remaining), "economy", "project", {"id":id,"minutes":mini(60,remaining)}, "Работать · %d мин" % mini(60,remaining))
@@ -188,7 +216,7 @@ static func work(owner: Control, parent: Node) -> void:
 			var progress: Dictionary = state.careers.contracts.get(id,{})
 			var card := W.panel(cards)
 			UI.label(card, Names.title(id), 25)
-			UI.label(card, "От %d ¤ · срок %d ч" % [int(spec.pay)*0.75,int(spec.deadline)/60], 18, UI.MUTED)
+			UI.label(card, "От %d €$ · срок %d ч" % [int(spec.pay)*0.75,int(spec.deadline)/60], 18, UI.MUTED)
 			if progress.is_empty(): action(owner, card, "Новый заказ", "Профессия %d уровня" % spec.get("level",1), "careers", "take_contract", {"id":id}, "Взять заказ")
 			elif progress.status == "active": action(owner, card, "Работа над заказом", "До 60 мин за один подход", "careers", "work_contract", {"id":id,"minutes":60}, "Продолжить")
 			elif progress.status == "completed" and not progress.claimed: action(owner, card, "Заказ готов", "Можно получить оплату", "careers", "claim_contract", {"id":id}, "Сдать заказ")
@@ -196,10 +224,10 @@ static func work(owner: Control, parent: Node) -> void:
 	if tab == "jobs":
 		for id in sim.catalog.jobs:
 			var spec: Dictionary = sim.catalog.jobs[id]
-			action(owner, cards, Names.title(id), "%d мин · %d ¤" % [spec.get("minutes",60),spec.get("pay",0)], "economy", "work", {"id":id}, "Приступить")
+			action(owner, cards, Names.title(id), "%d мин · %d €$" % [spec.get("minutes",60),spec.get("pay",0)], "economy", "work", {"id":id}, "Приступить")
 		for id in sim.catalog.professions:
 			var spec: Dictionary = sim.catalog.professions[id]
-			if spec.has("pay"): action(owner,cards,Names.title(id),"%d мин · от %d ¤ за смену" % [spec.get("minutes",240),spec.pay],"careers","shift",{"id":id},"На смену")
+			if spec.has("pay"): action(owner,cards,Names.title(id),"%d мин · от %d €$ за смену" % [spec.get("minutes",240),spec.pay],"careers","shift",{"id":id},"На смену")
 		return
 	if tab == "channel":
 		UI.label(parent, "%d подписчиков" % state.economy.channel.followers, 22, UI.BLUE)
@@ -214,7 +242,7 @@ static func work(owner: Control, parent: Node) -> void:
 	for id in sim.catalog.assets:
 		var card := W.panel(cards)
 		UI.label(card, Names.title(id), 26)
-		if not state.economy.assets.has(id): action(owner,card,"Приобрести имущество","%d ¤" % sim.catalog.assets[id].price,"economy","buy_asset",{"id":id},"Купить")
+		if not state.economy.assets.has(id): action(owner,card,"Приобрести имущество","%d €$" % sim.catalog.assets[id].price,"economy","buy_asset",{"id":id},"Купить")
 		else:
 			UI.button(card,"Улучшить",owner._act.bind("economy","upgrade_asset",{"id":id}))
 			UI.button(card,"Продать",owner._act.bind("economy","sell_asset",{"id":id}))
@@ -240,10 +268,10 @@ static func _shop(owner: Control, parent: Node) -> void:
 		art.custom_minimum_size.y = 110
 		card.add_child(art)
 		UI.label(card,Names.title(id),23)
-		UI.label(card,"%d ¤ · у вас %d" % [roundi(float(item.get("price",0))*float(sim.catalog.shops[shop].get("price_multiplier",1))),int(sim.state.inventory.items.get(id,0))],18,UI.MUTED)
+		UI.label(card,"%d €$ · у вас %d" % [roundi(float(item.get("price",0))*float(sim.catalog.shops[shop].get("price_multiplier",1))),int(sim.state.inventory.items.get(id,0))],18,UI.MUTED)
 		UI.button(card,"Купить",owner._act.bind("inventory","buy",{"id":id,"shop":shop}))
 		if int(sim.state.inventory.items.get(id,0)) > 0: UI.button(card,"Продать один",owner._act.bind("inventory","sell",{"id":id,"shop":shop}))
-	if shop == "market": action(owner,parent,"Бодрящий тоник","15 ¤ · 2 мин · временный прилив сил; при частом употреблении вызывает привыкание","character","substance",{"id":"stimulant"},"Выпить на месте")
+	if shop == "market": action(owner,parent,"Бодрящий тоник","15 €$ · 2 мин · временный прилив сил; при частом употреблении вызывает привыкание","character","substance",{"id":"stimulant"},"Выпить на месте")
 
 static func health(owner: Control, parent: Node) -> void:
 	_compact_links(parent)
@@ -256,11 +284,11 @@ static func health(owner: Control, parent: Node) -> void:
 		var cards := W.grid(parent)
 		for id in sim.catalog.treatments:
 			var treatment: Dictionary = sim.catalog.treatments[id]
-			action(owner,cards,"Обратиться в клинику" if id == "clinic" else Names.title(id),"%d мин · %d ¤" % [treatment.get("minutes",0),treatment.get("cost",0)],"health","treat",{"id":id},"Лечиться")
+			action(owner,cards,"Обратиться в клинику" if id == "clinic" else Names.title(id),"%d мин · %d €$" % [treatment.get("minutes",0),treatment.get("cost",0)],"health","treat",{"id":id},"Лечиться")
 		for condition in sim.state.conditions.values():
-			if condition.get("id","") == "pregnancy": action(owner,cards,"Плановый уход","30 мин · 30 ¤","health","prenatal_care",{"target":condition.get("target","player")},"Пройти осмотр")
+			if condition.get("id","") == "pregnancy": action(owner,cards,"Плановый уход","30 мин · 30 €$","health","prenatal_care",{"target":condition.get("target","player")},"Пройти осмотр")
 		if sim.state.security.fine > 0:
-			action(owner,cards,"Оплатить штраф","%d ¤" % sim.state.security.fine,"security","pay_fine",{},"Оплатить")
+			action(owner,cards,"Оплатить штраф","%d €$" % sim.state.security.fine,"security","pay_fine",{},"Оплатить")
 			action(owner,cards,"Отбыть наказание","Потребуется игровое время","security","serve_sentence",{},"Отбыть наказание")
 		return
 	var columns := UI.row(parent,36)
@@ -310,13 +338,13 @@ static func home(owner: Control, parent: Node) -> void:
 			W.icon(card,"home",44)
 			UI.label(card,Names.title(id),27)
 			if property.is_empty():
-				action(owner,card,"Аренда","%d ¤ в месяц" % spec.monthly_rent,"housing","rent",{"id":id},"Арендовать")
-				action(owner,card,"Покупка","%d ¤" % spec.price,"housing","buy",{"id":id},"Купить")
+				action(owner,card,"Аренда","%d €$ в месяц" % spec.monthly_rent,"housing","rent",{"id":id},"Арендовать")
+				action(owner,card,"Покупка","%d €$" % spec.price,"housing","buy",{"id":id},"Купить")
 				if id == "social_housing": action(owner,card,"Помощь с жильём","После потери дома при нехватке средств","housing","emergency",{"id":id},"Обратиться за помощью")
 			else:
 				UI.label(card,"Ваш дом" if property.owned else "Арендуется",18,UI.BLUE)
 				if sim.state.housing.residence != id: action(owner,card,"Переезд","Сделать это жильё своим домом","housing","move_in",{"id":id},"Переехать")
-				if property.arrears > 0: action(owner,card,"Задолженность","%d ¤" % property.arrears,"housing","pay_arrears",{"id":id},"Погасить")
+				if property.arrears > 0: action(owner,card,"Задолженность","%d €$" % property.arrears,"housing","pay_arrears",{"id":id},"Погасить")
 				UI.button(card,"Продать жильё" if property.owned else "Завершить аренду",owner._act.bind("housing","sell" if property.owned else "end_lease",{"id":id}))
 		return
 	var id := str(sim.state.housing.residence)
@@ -373,14 +401,25 @@ static func digital(owner: Control, parent: Node) -> void:
 	W.icon(bar,"desk",24)
 	UI.label(bar,"EINC  /  СЕТЬ",15,UI.BLUE)
 	UI.label(bar,"Цифровой след %d / 100" % data.trace,16,UI.ORANGE if data.trace > 40 else UI.MUTED).horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	var tab := tabs(owner,desktop,"digital_tab",{"tasks":"Задачи","history":"История"},"tasks")
+	var tab := tabs(owner,desktop,"digital_tab",{"tasks":"Быстрые задачи","workbench":"Мастерская","history":"История"},"tasks")
+	if tab == "workbench":
+		ComputerWorkbench.render(owner, desktop)
+		return
 	if tab == "history":
 		for entry in data.history: UI.label(desktop,str(sim.catalog.digital_operations[entry.id].label) + (" · выполнено" if entry.success else " · не удалось"),20)
 		if data.history.is_empty(): W.empty(desktop,"desk","История пуста","Результаты выполненных задач появятся здесь.")
 		return
 	if not data.pending.is_empty():
 		var spec: Dictionary = sim.catalog.digital_operations[data.pending.id]
-		action(owner,desktop,str(spec.label),"%d мин · риск %d · возможный доход %d ¤" % [spec.minutes,spec.risk,spec.reward],"digital","resolve",{"id":data.pending.id,"token":data.pending.token},"Выполнить")
+		UI.label(desktop, str(spec.label) + " · выберите подход", 22)
+		var approaches := W.grid(desktop, 3)
+		for approach in ["careful", "balanced", "fast"]:
+			var preview: Dictionary = sim.services.digital.preview(str(data.pending.id), approach)
+			if not preview.ok: continue
+			var plan: Dictionary = preview.data
+			var title: String = {"careful":"Осторожно", "balanced":"Сбалансированно", "fast":"Быстро"}[approach]
+			var detail := "%d мин · успех ≈ %d%% · оплата до %d €$ · след ×%.2f" % [int(plan.minutes), roundi(float(plan.chance) * 100), int(plan.reward), float(plan.trace_scale)]
+			action(owner,approaches,title,detail,"digital","resolve",{"id":data.pending.id,"token":data.pending.token,"approach":approach},"Выбрать")
 		UI.button(desktop,"Отменить подготовку",owner._act.bind("digital","cancel"))
 	else:
 		var cards := W.grid(desktop)
@@ -397,10 +436,10 @@ static func family(owner: Control, parent: Node) -> void:
 	if tab == "budget":
 		var box := W.panel(parent,24)
 		UI.label(box,"Семейный запас",20,UI.MUTED)
-		UI.label(box,"%d ¤" % data.budget,46)
-		UI.label(box,"Потрачено %d ¤ · долг %d ¤" % [data.spent,data.arrears],18,UI.MUTED)
+		UI.label(box,"%d €$" % data.budget,46)
+		UI.label(box,"Потрачено %d €$ · долг %d €$" % [data.spent,data.arrears],18,UI.MUTED)
 		var row := UI.row(box)
-		for amount in [50,100]: UI.button(row,"Отложить %d ¤" % amount,owner._act.bind("family","deposit",{"amount":amount}))
+		for amount in [50,100]: UI.button(row,"Отложить %d €$" % amount,owner._act.bind("family","deposit",{"amount":amount}))
 		if data.arrears > 0: UI.button(box,"Погасить задолженность",owner._act.bind("family","pay_arrears"))
 		Reproductive.support(owner,parent)
 		return
@@ -463,8 +502,8 @@ static func family(owner: Control, parent: Node) -> void:
 	var actions := W.grid(detail,2)
 	for id in sim.catalog.family_actions:
 		var spec: Dictionary = sim.catalog.family_actions[id]
-		if person.stage in spec.stages: action(owner,actions,str(spec.label),"%d мин · %d ¤ · сил −%d" % [spec.minutes,spec.cost,spec.energy],"family","care",{"id":person.id,"action":id},str(spec.label))
-	action(owner,detail,"Помощь с уходом","8 часов помощи · 60 ¤","family","support",{"id":person.id},"Пригласить помощника")
+		if person.stage in spec.stages: action(owner,actions,str(spec.label),"%d мин · %d €$ · сил −%d" % [spec.minutes,spec.cost,spec.energy],"family","care",{"id":person.id,"action":id},str(spec.label))
+	action(owner,detail,"Помощь с уходом","8 часов помощи · 60 €$","family","support",{"id":person.id},"Пригласить помощника")
 
 static func club(owner: Control, parent: Node) -> void:
 	var sim = Gameplay.simulation
@@ -476,7 +515,7 @@ static func club(owner: Control, parent: Node) -> void:
 		return
 	var group: Dictionary = sim.state.organizations[id]
 	var tab := tabs(owner,parent,"club_tab",{"people":"Команда","projects":"Проекты","affairs":"Дела клуба"},"people")
-	UI.label(parent,"В клубе %d · бюджет %d ¤ · настроение %d" % [group.members.size(),group.budget,group.morale],18,UI.MUTED)
+	UI.label(parent,"В клубе %d · бюджет %d €$ · настроение %d" % [group.members.size(),group.budget,group.morale],18,UI.MUTED)
 	if tab == "people":
 		var cards := W.grid(parent)
 		for npc in group.members:
@@ -515,7 +554,7 @@ static func club(owner: Control, parent: Node) -> void:
 			if not group.campaigns.has(campaign): UI.button(parent,"Кампания: " + Names.title(campaign),owner._act.bind("institutions","campaign",{"id":id,"campaign":campaign}))
 			elif group.campaigns[campaign].status == "completed" and not group.campaigns[campaign].claimed: UI.button(parent,"Подвести итоги: " + Names.title(campaign),owner._act.bind("institutions","claim_campaign",{"id":id,"campaign":campaign}))
 		return
-	action(owner,parent,"Внести в общий бюджет","50 ¤ из своих средств","organizations","fund",{"id":id,"amount":50},"Внести 50 ¤")
+	action(owner,parent,"Внести в общий бюджет","50 €$ из своих средств","organizations","fund",{"id":id,"amount":50},"Внести 50 €$")
 	var settings := W.panel(parent)
 	UI.label(settings,"Куда движемся",24)
 	var focus := OptionButton.new()
@@ -607,7 +646,7 @@ static func person(owner: Control, parent: Node) -> void:
 	together.disabled = not local
 	together.tooltip_text = "Нужно встретиться лично" if not local else "Предложить жест и узнать ответ собеседника"
 	for venue in ["coffee","walk","cinema"]:
-		action(owner,activities,{"coffee":"Выпить кофе","walk":"Прогуляться","cinema":"Сходить в кино"}[venue],{"coffee":"60 мин · 15 ¤","walk":"45 мин · в хорошую погоду","cinema":"90 мин · 30 ¤"}[venue],"social_rules","date",{"id":id,"venue":venue},"Пригласить")
+		action(owner,activities,{"coffee":"Выпить кофе","walk":"Прогуляться","cinema":"Сходить в кино"}[venue],{"coffee":"60 мин · 15 €$","walk":"45 мин · в хорошую погоду","cinema":"90 мин · 30 €$"}[venue],"social_rules","date",{"id":id,"venue":venue},"Пригласить")
 	for key in Social.ACTIONS:
 		var forecast := Social.preview(sim,id,key)
 		var spec: Dictionary = sim.catalog.agency_actions[key]

@@ -3,10 +3,10 @@ extends RefCounted
 const UI = preload("res://scripts/ui/gameplay/ui_factory.gd")
 const HUD = preload("res://scripts/ui/gameplay/hud_widgets.gd")
 
-static func panel(parent: Node, padding: int = 20, color: Color = Color(0.035, 0.065, 0.085, 0.92)) -> VBoxContainer:
+static func panel(parent: Node, padding: int = 20, color: Color = Color(0.026, 0.055, 0.075, 0.92)) -> VBoxContainer:
 	var frame := PanelContainer.new()
 	frame.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	var style := UI.style(color, Color(0.35, 0.49, 0.58, 0.42))
+	var style := UI.style(color, Color(0.43, 0.62, 0.73, 0.58))
 	style.set_border_width_all(1)
 	style.set_content_margin_all(padding)
 	frame.add_theme_stylebox_override("panel", style)
@@ -33,9 +33,12 @@ static func tabs(parent: Node, items: Dictionary, selected: String, callback: Ca
 		button.custom_minimum_size.y = 42
 		button.add_theme_font_size_override("font_size", roundi(18 * UI.text_scale))
 		HUD.quiet_button(button)
+		button.add_theme_stylebox_override("normal", HUD.button_style(Color(0.012,0.029,0.043,0.45),Color(0.43,0.62,0.73,0.27)))
 		if id == selected:
 			button.set_meta("initial_focus",true)
-			button.add_theme_stylebox_override("normal", HUD.button_style(Color(0.12, 0.22, 0.28, 0.75), UI.BLUE))
+			var active := HUD.button_style(Color(0.06,0.15,0.21,0.90),UI.BLUE)
+			active.border_width_bottom = 2
+			button.add_theme_stylebox_override("normal",active)
 			button.modulate = UI.BLUE
 	return row
 
@@ -65,7 +68,13 @@ static func meter(parent: Node, title: String, amount: float, kind: String, maxi
 
 static func primary(parent: Node, title: String, callback: Callable) -> Button:
 	var result := UI.button(parent, title, callback)
-	result.add_theme_stylebox_override("normal", UI.style(Color("284657"), Color("8db8ce")))
+	var normal := UI.style(Color(0.11,0.23,0.30,0.93),Color(0.53,0.72,0.83,0.78))
+	normal.set_border_width_all(1)
+	var hover := UI.style(Color(0.16,0.32,0.41,0.97),UI.BLUE)
+	hover.set_border_width_all(1)
+	result.add_theme_stylebox_override("normal",normal)
+	result.add_theme_stylebox_override("hover",hover)
+	result.add_theme_stylebox_override("pressed",hover)
 	result.custom_minimum_size.y = 48
 	result.set_meta("initial_focus",true)
 	return result

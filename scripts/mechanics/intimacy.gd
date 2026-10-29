@@ -105,6 +105,13 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 			# Protection is consumed once, even when an ongoing encounter is interrupted later.
 			session.started = _now()
 			session.due = _now() + int(rules().session_minutes)
+			# A late start needs its own completion and aftercare window. Keep the
+			# participant reservation aligned with the extended session deadline.
+			var previous_reservation := int(session.reserved_until)
+			session.expires = maxi(int(session.expires), int(session.due) + int(rules().invitation_minutes))
+			session.reserved_until = int(session.expires) + 1
+			var participant: Dictionary = sim.state.social.npcs[session.npc]
+			if int(participant.pinned_until) == previous_reservation: participant.pinned_until = int(session.reserved_until)
 			_stage("active")
 		"active":
 			var result: Dictionary = sim.advance(maxi(0, int(session.due) - _now()))

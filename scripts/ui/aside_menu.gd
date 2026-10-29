@@ -81,6 +81,15 @@ func _ready() -> void:
 	$VBoxContainer/MenuButtons.move_child(_conversation_button,_workshop_button.get_index())
 	_conversation_button.disabled = not ClassDB.class_exists("GDCubismUserModel")
 	_conversation_button.tooltip_text = "Разговор с Никой · Live2D"
+	var window_size := DisplayServer.window_get_size()
+	if window_size.x > window_size.y and window_size.x <= 1100:
+		$VBoxContainer.anchor_top = 0.16
+		$VBoxContainer.anchor_bottom = 0.85
+		$VBoxContainer/MenuButtons.add_theme_constant_override("separation",8)
+		for button in [new_game_button,continue_game_button,load_game_button,save_game_button,settings_button,gallery_button,return_to_main_menu_button,exit_button,_workshop_button,_conversation_button]:
+			button.custom_minimum_size.y = 72
+			button.add_theme_font_size_override("font_size",32)
+			button.add_theme_constant_override("icon_max_width",30)
 	GameSession.language_changed.connect(_refresh_localized_ui)
 	apply_preset(initial_preset)
 

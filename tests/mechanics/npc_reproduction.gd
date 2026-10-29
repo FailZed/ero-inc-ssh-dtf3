@@ -18,7 +18,7 @@ func config() -> Dictionary:
 	male.home="npc_home_b"
 	var result:={"settings":{"start_minutes":480},"reproduction_rules":{"simulation":bio},"npc_reproduction_rules":{"simulation":auto},
 		"npc_templates":{"auto_female":female,"auto_male":male},"conditions":{"pregnancy":{"duration":100,"stages":[{"after":50}]}},
-		"locations":{"npc_home_a":{"routes":{"global_map":{"minutes":5}}},"npc_home_b":{"routes":{"global_map":{"minutes":5}}},"global_map":{"routes":{"npc_home_a":{"minutes":5},"npc_home_b":{"minutes":5}}}}}
+		"locations":{"npc_home_a":{"routes":{"global_map":{"minutes":5}}},"npc_home_b":{"routes":{"global_map":{"minutes":5}}},"global_map":{"routes":{"npc_home_a":{"minutes":5},"npc_home_b":{"minutes":5},"clinic":{"minutes":15}}}}}
 	return JSON.parse_string(JSON.stringify(result))
 
 func fresh(partners: bool = true, extensions: Dictionary = {}):

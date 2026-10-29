@@ -30,17 +30,19 @@ func windows(id: String, horizon: int = 1440) -> Array:
 				result.append({"kind":"schedule","action":action,"start":begin,"end":end,"location":str(entry.get("location",npc.home)),"priority":70})
 	for index in range(sim.state.social.appointments.size()):
 		var meeting: Dictionary = sim.state.social.appointments[index]
-		if meeting.npc!=id or meeting.status!="pending" or int(meeting.minute)+30<=now() or int(meeting.minute)>now()+horizon: continue
-		result.append({"kind":"appointment","action":"appointment","start":int(meeting.minute),"end":int(meeting.minute)+30,"location":str(meeting.location),"priority":80,"index":index})
+		var duration := int(meeting.get("duration",30))
+		if meeting.npc!=id or meeting.status!="pending" or int(meeting.minute)+duration<=now() or int(meeting.minute)>now()+horizon: continue
+		result.append({"kind":"appointment","action":"appointment","start":int(meeting.minute),"end":int(meeting.minute)+duration,"location":str(meeting.location),"priority":80,"index":index})
 	result.sort_custom(func(a,b): return int(a.start)<int(b.start) if a.start!=b.start else int(a.priority)>int(b.priority))
 	return result
 
 func conflict(id: String, destination: String, minutes: int, priority: int = 50, ignore_appointment: int = -1, ignore_schedule: int = -1, forecast: Dictionary = {}) -> String:
-	if minutes<0 or minutes>1440: return "invalid_time_delta"
+	if minutes<0: return "invalid_time_delta"
 	if priority>=100: return ""
 	var npc: Dictionary = sim.state.social.npcs[id]
 	var end := now()+minutes
-	var agenda: Array = forecast.windows if forecast.has("windows") else windows(id)
+	# Include the whole travel + activity window and the next day's obligations.
+	var agenda: Array = forecast.windows if forecast.has("windows") else windows(id,maxi(1440,minutes+1440))
 	var routes: Dictionary = forecast.get("routes",{})
 	for window in agenda:
 		if window.kind=="appointment" and int(window.index)==ignore_appointment: continue
@@ -48,7 +50,9 @@ func conflict(id: String, destination: String, minutes: int, priority: int = 50,
 		if end>int(window.start) and now()<int(window.end): return "schedule_conflict"
 		if int(window.start)<end: continue
 		var key := destination+":"+str(window.location)+":"+str(int(window.start))
-		if not routes.has(key): routes[key] = sim.services.npc_agency._route(npc,destination,str(window.location),int(window.start))
+		if not routes.has(key):
+			var invited_origin := destination if sim.is_player_home_location(destination) else ""
+			routes[key] = sim.services.npc_agency._route(npc,destination,str(window.location),int(window.start),false,invited_origin)
 		var route: Dictionary = routes[key]
 		if route.is_empty(): return "obligation_unreachable"
 		if end+int(route.minutes)>int(window.start): return "obligation_travel_conflict"
@@ -60,4 +64,3 @@ func site_open(destination: String, arrival: int, finish: int, actor_id: String 
 	for minute in [arrival,maxi(arrival,finish-1)]:
 		if not sim.services.world.actor_availability(destination,actor_id,int(minute)).ok: return false
 	return true
-

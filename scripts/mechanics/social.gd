@@ -53,11 +53,15 @@ func execute(operation: String, args: Dictionary) -> Dictionary:
 		"invite":
 			var available: Dictionary = sim.services.social_rules.availability(id, true)
 			if not available.ok: return available
-			if int(args.get("minutes", 60)) < 1 or int(args.get("minutes", 60)) > 1440: return Rules.fail("invalid_invitation_duration")
+			var minutes := int(args.get("minutes", 60))
+			if minutes < 1 or minutes > 1440: return Rules.fail("invalid_invitation_duration")
 			var relation := relationship(id, "player")
 			if float(relation.trust) < 10.0: return Rules.fail("insufficient_trust")
-			npc.location = sim.state.world.location
-			npc.pinned_until = int(sim.state.clock.total_minutes) + int(args.get("minutes", 60))
+			if sim.services.has("npc_planner") and sim.services.npc_agency.enabled():
+				return sim.services.npc_planner.invite(id,str(sim.state.world.location),minutes)
+			if npc.location != sim.state.world.location: return Rules.fail("npc_travel_unavailable")
+			if int(npc.pinned_until) > int(sim.state.clock.total_minutes): return Rules.fail("npc_busy")
+			npc.pinned_until = int(sim.state.clock.total_minutes) + minutes
 		_:
 			return Rules.fail("unknown_operation")
 	return Rules.ok()
@@ -207,7 +211,17 @@ func tick(minute: int) -> void:
 
 func settle_appointments(minute: int) -> void:
 	for appointment in sim.state.social.appointments:
-		if appointment.status != "pending" or minute < int(appointment.minute): continue
+		if appointment.status != "pending": continue
+		if appointment.get("kind", "") == "invitation":
+			if sim.state.world.location != appointment.location:
+				appointment.status = "cancelled"
+				appointment.reason = "player_left"
+				continue
+			if minute >= int(appointment.minute) + int(appointment.duration):
+				appointment.status = "met"
+				emit_event("invitation_completed", appointment)
+			continue
+		if minute < int(appointment.minute): continue
 		var npc: Dictionary = sim.state.social.npcs[appointment.npc]
 		var ready: bool = npc.location==appointment.location and (int(npc.pinned_until)<=minute or int(appointment.get("journey",{}).get("pin",-1))==int(npc.pinned_until))
 		if minute >= int(appointment.minute) + 30:

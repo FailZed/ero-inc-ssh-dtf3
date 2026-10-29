@@ -19,12 +19,12 @@ func run() -> void:
 	actor.location = "residential_district"
 	t.check(sim.services.npc_agency._destination(actor,sim.catalog.agency_actions.visit) == "riverside_cafe","NPC social outings choose shelter during rain")
 	sim.restore_snapshot(before)
-	for point in City.points():
-		var route: Dictionary = sim.services.world.route(str(point.runtime_id))
+	for point in City.points(sim.catalog):
+		var route: Dictionary = sim.services.world.route(str(point.id))
 		t.check(route.ok,"city marker has an actual walkable route: " + str(point.id))
 		t.check(before == sim.export_snapshot(),"route preview is pure: " + str(point.id))
-		var walk: Dictionary = sim.command("world","journey",{"id":point.runtime_id})
-		t.check(walk.ok and sim.state.world.location == point.runtime_id and int(sim.state.clock.total_minutes) == 2160+int(route.get("data",{}).get("minutes",0)),"journey reaches its marker and advances exactly its route time: " + str(point.id))
+		var walk: Dictionary = sim.command("world","journey",{"id":point.id})
+		t.check(walk.ok and sim.state.world.location == point.id and int(sim.state.clock.total_minutes) == 2160+int(route.get("data",{}).get("minutes",0)),"journey reaches its marker and advances exactly its route time: " + str(point.id))
 		sim.restore_snapshot(before)
 	var crossing: Dictionary = sim.services.world.route("north_beach")
 	t.check("pedestrian_bridge_north" in crossing.data.path and "pedestrian_bridge_south" in crossing.data.path,"north-bank journey crosses both ends of a bridge")

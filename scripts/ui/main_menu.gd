@@ -393,20 +393,27 @@ func _bind_language_controls() -> void:
 
 
 func _apply_settings_visual_style() -> void:
+	var window_size := DisplayServer.window_get_size()
+	var compact := window_size.x > window_size.y and window_size.x <= 1100
 	for panel in [settings_card,text_settings_card,language_settings_card]:
-		panel.add_theme_stylebox_override("panel",UI.style(Color(0.025,0.06,0.09,0.55),Color("38576d")))
+		panel.add_theme_stylebox_override("panel",UI.surface(16))
 	for title in [settings_header_title,autosave_title_label,time_settings_title_label,text_title_label,language_title_label]:
 		title.add_theme_color_override("font_color",UI.INK)
-		title.add_theme_font_size_override("font_size",32 if title == settings_header_title else 24)
+		var title_size := 40 if compact else 32
+		var section_size := 34 if compact else 24
+		title.add_theme_font_size_override("font_size",title_size if title == settings_header_title else section_size)
 	for label in [autosave_interval_label,autosave_value_label,text_speed_label,text_speed_value_label,language_hint_label,instant_text_hint_label,autosave_hint_label,day_length_label,day_length_hint_label,text_speed_hint_label]:
 		label.add_theme_color_override("font_color",UI.MUTED)
-		label.add_theme_font_size_override("font_size",18)
+		label.add_theme_font_size_override("font_size",27 if compact else 18)
 	for check in [autosave_enabled_check,autosave_time_check,autosave_choice_check,instant_text_check]:
-		check.custom_minimum_size.y = 46
-		check.add_theme_font_size_override("font_size",20)
+		check.custom_minimum_size.y = 70 if compact else 46
+		check.add_theme_font_size_override("font_size",28 if compact else 20)
 	for option in [language_option_button,day_length_option_button]:
-		option.custom_minimum_size.y = 50
-		option.add_theme_font_size_override("font_size",20)
+		option.custom_minimum_size.y = 70 if compact else 50
+		option.add_theme_font_size_override("font_size",28 if compact else 20)
+	for tab in [settings_game_tab,settings_text_tab,settings_language_tab]:
+		tab.custom_minimum_size.y = 68 if compact else 48
+		tab.add_theme_font_size_override("font_size",27 if compact else 19)
 
 func _show_settings_page(id: String) -> void:
 	_settings_page = id
